@@ -30,6 +30,7 @@ _COMPAT_ALIAS_TO_DISPLAY = {
 _DISPLAY_PRIORITY = [
     "alpha_rp_regime",
     "equal_weight_topk",
+    "original_equal",
 ]
 
 
