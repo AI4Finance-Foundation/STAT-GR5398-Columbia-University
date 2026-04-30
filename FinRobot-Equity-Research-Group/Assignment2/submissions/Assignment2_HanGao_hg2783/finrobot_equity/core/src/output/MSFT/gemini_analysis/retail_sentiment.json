@@ -1,0 +1,41 @@
+{
+  "ticker": "MSFT",
+  "period_days": 7,
+  "coverage": "3/3",
+  "coverage_ratio": 1.0,
+  "average_buzz": 82.8,
+  "bullish_avg": 48.0,
+  "source_alignment": "Wide divergence",
+  "sources": [
+    {
+      "key": "reddit",
+      "label": "Reddit",
+      "buzz_score": 83.3,
+      "bullish_pct": 33.0,
+      "activity_label": "Mentions",
+      "activity_value": 3156,
+      "trend": "falling",
+      "has_data": true
+    },
+    {
+      "key": "x",
+      "label": "X.com",
+      "buzz_score": 84.4,
+      "bullish_pct": 61.0,
+      "activity_label": "Mentions",
+      "activity_value": 3056,
+      "trend": "falling",
+      "has_data": true
+    },
+    {
+      "key": "polymarket",
+      "label": "Polymarket",
+      "buzz_score": 80.7,
+      "bullish_pct": 50.0,
+      "activity_label": "Trades",
+      "activity_value": 2104,
+      "trend": "rising",
+      "has_data": true
+    }
+  ]
+}
