@@ -1,0 +1,41 @@
+{
+  "ticker": "NVDA",
+  "period_days": 7,
+  "coverage": "3/3",
+  "coverage_ratio": 1.0,
+  "average_buzz": 76.5,
+  "bullish_avg": 53.3,
+  "source_alignment": "Wide divergence",
+  "sources": [
+    {
+      "key": "reddit",
+      "label": "Reddit",
+      "buzz_score": 76.0,
+      "bullish_pct": 38.0,
+      "activity_label": "Mentions",
+      "activity_value": 2233,
+      "trend": "falling",
+      "has_data": true
+    },
+    {
+      "key": "x",
+      "label": "X.com",
+      "buzz_score": 83.9,
+      "bullish_pct": 60.0,
+      "activity_label": "Mentions",
+      "activity_value": 3091,
+      "trend": "falling",
+      "has_data": true
+    },
+    {
+      "key": "polymarket",
+      "label": "Polymarket",
+      "buzz_score": 69.7,
+      "bullish_pct": 62.0,
+      "activity_label": "Trades",
+      "activity_value": 2467,
+      "trend": "falling",
+      "has_data": true
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "ticker": "GOOGL",
+  "period_days": 7,
+  "coverage": "3/3",
+  "coverage_ratio": 1.0,
+  "average_buzz": 79.6,
+  "bullish_avg": 58.0,
+  "source_alignment": "Wide divergence",
+  "sources": [
+    {
+      "key": "reddit",
+      "label": "Reddit",
+      "buzz_score": 83.6,
+      "bullish_pct": 38.0,
+      "activity_label": "Mentions",
+      "activity_value": 3117,
+      "trend": "rising",
+      "has_data": true
+    },
+    {
+      "key": "x",
+      "label": "X.com",
+      "buzz_score": 84.2,
+      "bullish_pct": 67.0,
+      "activity_label": "Mentions",
+      "activity_value": 2850,
+      "trend": "rising",
+      "has_data": true
+    },
+    {
+      "key": "polymarket",
+      "label": "Polymarket",
+      "buzz_score": 71.1,
+      "bullish_pct": 69.0,
+      "activity_label": "Trades",
+      "activity_value": 3638,
+      "trend": "falling",
+      "has_data": true
+    }
+  ]
+}
