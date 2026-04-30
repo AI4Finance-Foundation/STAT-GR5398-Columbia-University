@@ -1,25 +1,3 @@
-"""
-Evaluation harness for the FinGPT Signal Module
-------------------------------------------------
-Covers the three evaluation axes the A2 rubric asks for PLUS fills the
-gap from Assignment 1 (Binary Accuracy, MSE, ROUGE, inference time).
-
-    1. Direction Accuracy  (Binary + Ternary + 5-class bucket)
-    2. MSE of sentiment_score vs. realized-return proxy
-    3. ROUGE-1/2/L between model rationale and teacher-model answer
-    4. Mean inference time per sample (s)
-    5. [Signal-quality] Information Coefficient  (Spearman) vs realized returns
-    6. [Calibration] Reliability diagram bins — accuracy per confidence bucket
-
-Supports two evaluation modes:
-
-  * "legacy"     — ground truth comes from the Assignment 1 long-form teacher
-                   answer and is parsed with heuristic keywords.
-  * "simplified" — ground truth comes from the retrained dataset's target_text
-                   (e.g. "Up by 2-3%") which was produced by the
-                   simplify_example() function during retraining.
-"""
-
 from __future__ import annotations
 
 import re
@@ -37,9 +15,7 @@ from signal_module import (
 )
 
 
-# --------------------------------------------------------------------------- #
-# Ground-truth parsing — two modes
-# --------------------------------------------------------------------------- #
+
 def parse_gt_direction(answer_text: str) -> str:
     """Parse long-form teacher answer -> {Bullish, Neutral, Bearish}."""
     text = (answer_text or "").lower()
@@ -111,9 +87,7 @@ def bucket_to_magnitude(bucket: str) -> float:
     return m.get(bucket, 0.0)
 
 
-# --------------------------------------------------------------------------- #
 # Core metrics
-# --------------------------------------------------------------------------- #
 def binary_and_ternary_accuracy(preds: List[str], gts: List[str]) -> Dict[str, float]:
     n = max(1, len(preds))
     ternary = sum(p == g for p, g in zip(preds, gts)) / n
@@ -121,7 +95,7 @@ def binary_and_ternary_accuracy(preds: List[str], gts: List[str]) -> Dict[str, f
     pairs = [(p, g) for p, g in zip(preds, gts) if g != "Neutral" and p != "Neutral"]
     binary = (sum(p == g for p, g in pairs) / len(pairs)) if pairs else 0.0
 
-    # inclusive binary: if pred is Neutral on a non-Neutral GT, count as wrong
+    # inclusive binary
     pairs_incl = [(p, g) for p, g in zip(preds, gts) if g != "Neutral"]
     binary_incl = (
         sum(p == g for p, g in pairs_incl) / len(pairs_incl) if pairs_incl else 0.0
@@ -252,9 +226,7 @@ def expected_calibration_error(confs: List[float], correct: List[int],
     return round(ece, 4)
 
 
-# --------------------------------------------------------------------------- #
 # Top-level driver
-# --------------------------------------------------------------------------- #
 def evaluate(
     signals: List[SignalOutput],
     gt_answers: List[str],
