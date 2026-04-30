@@ -12,7 +12,7 @@
 
 ---
 
-## 🏆 Headline Results
+## Headline Results
 
 | Metric | Value |
 |--------|-------|
@@ -28,7 +28,7 @@
 
 ---
 
-## 🔑 Key Finding: The LLM is a Statistically Significant Contrarian
+## Key Finding: The LLM is a Statistically Significant Contrarian
 
 The fine-tuned FinGPT adapter produces IC = **−0.2122 (p = 0.034)** against real 5-day forward returns — statistically significant at the 5% level. The adapter is systematically over-bullish in a predominantly bearish test period (57% bearish outcomes), a known consequence of one-epoch fine-tuning on teacher-model labels with a bullish prior.
 
@@ -42,7 +42,7 @@ price/vol  ──► CNN-LSTM-Attention ──► LSTMSignalBridge ────�
 
 ---
 
-## 📦 Repository Structure
+## Repository Structure
 
 ```
 Assignment2_BeibeiXian_bx2233/
@@ -69,7 +69,7 @@ Assignment2_BeibeiXian_bx2233/
 
 ---
 
-## 🚀 Quickstart
+## Quickstart
 
 ### Requirements
 
@@ -120,7 +120,7 @@ ens_score  = ensemble_composite_score(signals[0], -lstm_score)  # contrarian + L
 
 ---
 
-## 📊 Evaluation Details
+## Evaluation Details
 
 ### Greedy vs. Self-Consistency (N = 5)
 
@@ -158,7 +158,7 @@ ens_score  = ensemble_composite_score(signals[0], -lstm_score)  # contrarian + L
 
 ---
 
-## 🏗️ Module Architecture
+## Module Architecture
 
 ```
 weekly Dow30 context
@@ -177,7 +177,7 @@ weekly Dow30 context
 
 ---
 
-## 🔬 Adapter Details
+## Adapter Details
 
 | Property | Value |
 |----------|-------|
@@ -198,7 +198,7 @@ weekly Dow30 context
 
 ---
 
-## 📋 Evaluation Harness
+## Evaluation Harness
 
 `evaluate_signal.py` returns a complete audit in one call:
 
@@ -221,7 +221,7 @@ Covers: binary / ternary / 5-class accuracy · MSE · ROUGE-1/2/L · inference t
 
 ---
 
-## 📚 References
+## References
 
 - FinGPT · AI4Finance Foundation · [github.com/AI4Finance-Foundation/FinGPT](https://github.com/AI4Finance-Foundation/FinGPT)
 - STAT-GR5398-Spring-2026 · [github.com/AI4Finance-Foundation/STAT-GR5398-Spring-2026](https://github.com/AI4Finance-Foundation/STAT-GR5398-Spring-2026)
