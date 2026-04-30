@@ -49,7 +49,7 @@ Assignment2_BeibeiXian_bx2233/
 ├── signal_module.py              
 ├── evaluate_signal.py            
 ├── lstm_signal_bridge.py         # Bridges CNN-LSTM-Attn predictions 
-├── FinGPT_Assignment2_Checkpoint50.ipynb   # Colab notebook 
+├── FinGPT_A2_cp50.ipynb   # Colab notebook 
 ├── requirements.txt
 └── outputs/
     ├── signals_greedy_100.jsonl
