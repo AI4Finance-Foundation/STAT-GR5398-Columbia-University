@@ -1,25 +1,4 @@
 """
-FinGPT Signal Module  —  GR5398 Assignment 2
-Author : Beibei Xian (bx2233), Columbia University
-Purpose: Turn a fine-tuned FinGPT (LoRA) model into a reusable, structured
-         quantitative-signal generator.  Free-text -> machine-readable JSON
-         signal that a downstream quant pipeline can consume directly.
-
-The module supports TWO formats:
-
-  1. "simplified"  (default for the re-trained A1 adapter, checkpoint-50):
-     Model is primed with  Output: {"prediction":"  and emits
-        Up 1-3%", "analysis":"..."}
-     Parser reconstructs the JSON and maps the 5-class bucket to a
-     continuous sentiment score in [-2, +2] and a direction in
-     {Bullish, Neutral, Bearish}.
-
-  2. "structured"  (original 6-field schema):
-     sentiment_score, direction, confidence, event_type, urgency, rationale
-     (kept for backward compatibility and for A/B comparisons.)
-
-Signal schema (post-parse, unified)
------------------------------------
 {
     "sentiment_score": float  in [-2.0, +2.0],
     "direction"      : str    in {"Bullish", "Neutral", "Bearish"},
@@ -45,9 +24,7 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 
-# --------------------------------------------------------------------------- #
 # Constants
-# --------------------------------------------------------------------------- #
 DIRECTION_CANON = {"Bullish", "Neutral", "Bearish"}
 
 DIRECTION_MAP = {
@@ -72,18 +49,12 @@ BUCKET_TO_SIGNAL: Dict[str, Tuple[str, float]] = {
     "Neutral":   ("Neutral", 0.0),
     "Down 1-3%": ("Bearish", -0.75),
     "Down 3-5%": ("Bearish", -1.5),
-    # tolerate "Up by more than 5%" / "Down by more than 5%" if they appear
     "Up >5%":    ("Bullish", 2.0),
     "Down >5%":  ("Bearish", -2.0),
 }
 
 VALID_BUCKETS = list(BUCKET_TO_SIGNAL.keys())
 
-# Simplified-mode prompt used during evaluation.  Matches training format
-# (re-train notebook builds a very similar prompt that primes the model with
-#  Output: {"prediction":" so the model completes the JSON).
-# NOTE: we use str.replace on __CLEAN_INPUT__ so that the many literal { and }
-# characters in the JSON schema don't conflict with str.format placeholders.
 SIMPLIFIED_EVAL_PROMPT = (
     'Return ONLY a JSON object.\n'
     'Use exactly this schema: {"prediction":"...", "analysis":"..."}\n'
@@ -95,7 +66,6 @@ SIMPLIFIED_EVAL_PROMPT = (
     'Output: {"prediction":"'
 )
 
-# Original 6-field system prompt (kept for backward compatibility).
 SYSTEM_PROMPT = """You are FinGPT-Signal, a specialized financial signal-generation module.
 You read a piece of financial news or company context and return ONLY a JSON
 object. Do NOT output any text before or after the JSON. Do NOT wrap it in
@@ -112,9 +82,7 @@ markdown code fences. Use the exact schema below.
 """
 
 
-# --------------------------------------------------------------------------- #
 # Structured signal container
-# --------------------------------------------------------------------------- #
 @dataclass
 class SignalOutput:
     sentiment_score: float
@@ -123,7 +91,7 @@ class SignalOutput:
     event_type: str
     urgency: float
     rationale: str
-    bucket: str = ""             # 5-class label for simplified mode
+    bucket: str = ""             
     raw_text: str = ""
     inference_time: float = 0.0
     samples: List[Dict] = field(default_factory=list)
@@ -136,9 +104,7 @@ class SignalOutput:
         return DIRECTION_TO_NUM.get(self.direction, 0)
 
 
-# --------------------------------------------------------------------------- #
 # Helpers — prompt cleaning + bucket parsing
-# --------------------------------------------------------------------------- #
 def strip_llama_wrapper(text: str) -> str:
     """Strip Llama-2 [INST]<<SYS>>...<</SYS>>[/INST] wrapping if present."""
     if text is None:
@@ -180,9 +146,7 @@ def bucket_to_signal(bucket: str) -> Tuple[str, float]:
     return BUCKET_TO_SIGNAL.get(bucket, ("Neutral", 0.0))
 
 
-# --------------------------------------------------------------------------- #
 # Core module
-# --------------------------------------------------------------------------- #
 class FinGPTSignalModule:
     """Reusable LLM-to-signal module built on a LoRA-fine-tuned FinGPT."""
 
@@ -313,7 +277,7 @@ class FinGPTSignalModule:
             "bucket": bucket,
             "direction": direction,
             "sentiment_score": sent,
-            "confidence": 0.5,           # placeholder; overwritten by self-consistency
+            "confidence": 0.5,           
             "event_type": "other",
             "urgency": 0.5,
             "rationale": analysis.strip()[:800],
@@ -519,15 +483,13 @@ class FinGPTSignalModule:
         return out
 
 
-# --------------------------------------------------------------------------- #
 # Composite signal example — simple linear combination
-# --------------------------------------------------------------------------- #
 def composite_score(sig: SignalOutput,
                     w_sent: float = 0.5,
                     w_dir: float  = 0.3,
                     w_urg: float  = 0.2) -> float:
     """Single scalar quant-signal (higher = more bullish), confidence-weighted."""
-    s = (w_sent * (sig.sentiment_score / 2.0)          # in [-1, +1]
-         + w_dir * sig.direction_num                    # in {-1, 0, +1}
-         + w_urg * sig.urgency * sig.direction_num)     # urgency-weighted sign
-    return float(s * sig.confidence)                    # confidence-weighted final
+    s = (w_sent * (sig.sentiment_score / 2.0)          
+         + w_dir * sig.direction_num                    
+         + w_urg * sig.urgency * sig.direction_num)     
+    return float(s * sig.confidence)                    
