@@ -1,45 +1,3 @@
-"""
-LSTM Signal Bridge  —  GR5398 Assignment 2 (Multi-Signal Extension)
-Author : Beibei Xian (bx2233), Columbia University
-
-Purpose
--------
-Bridge between the CNN-LSTM-Attention technical-signal model (EE4904 /
-Assignment 1 of the quant track) and the FinGPT signal module.
-
-The LSTM model is trained on the full S&P 500 universe using 24 price /
-volume / momentum features.  Because all 30 Dow30 stocks are in the S&P 500,
-the model produces predictions for them throughout the 2023-2024 test window —
-the same window used for FinGPT Assignment 2.
-
-Step-by-step workflow
----------------------
-1. In the LSTM notebook (EE4904subission_LSTM_Evaluation.ipynb), add ONE cell
-   at the end:
-
-       meta_test_lstm.to_csv("lstm_preds_sp500.csv", index=False)
-       # Download from Colab: files.download("lstm_preds_sp500.csv")
-
-2. Copy  lstm_preds_sp500.csv  next to this file (or pass its path when
-   constructing LSTMSignalBridge).
-
-3. In the A2 notebook:
-
-       from lstm_signal_bridge import LSTMSignalBridge
-       bridge = LSTMSignalBridge("lstm_preds_sp500.csv")
-       lstm_scores = bridge.get_scores_for_fingpt(test_inputs, test_targets)
-       # lstm_scores: List[float], one normalised score per FinGPT test sample
-
-Then pass  lstm_scores  into evaluate() and ensemble_composite_score().
-
-Normalisation
--------------
-The LSTM's  pred_ret_5d  is a cross-sectional z-score of the predicted 5-day
-return.  To blend with the FinGPT composite score (which lives in [-1, +1])
-we clip and normalise the LSTM z-score into the same range using a
-tanh squeeze: z_norm = tanh(z / 2).  Values beyond ±2σ map to ≈ ±0.96.
-"""
-
 from __future__ import annotations
 
 import re
@@ -95,20 +53,18 @@ _DOW30_NAME_TO_TICKER: Dict[str, str] = {
     "walgreen":         "WBA",
 }
 
-# Direct ticker regex (e.g. "(AAPL)" or "Ticker: AAPL")
 _TICKER_RE = re.compile(
     r'(?:\(|\bTicker:\s*)([A-Z]{1,5})(?:\)|\b)',
     re.IGNORECASE,
 )
 
-# Date regexes tried in order
 _DATE_RES = [
-    re.compile(r'(\d{4}-\d{2}-\d{2})'),        # 2023-05-01
-    re.compile(r'(\d{2}/\d{2}/\d{4})'),         # 05/01/2023
-    re.compile(r'(\w+ \d{1,2},?\s+\d{4})'),     # May 1, 2023
+    re.compile(r'(\d{4}-\d{2}-\d{2})'),        
+    re.compile(r'(\d{2}/\d{2}/\d{4})'),         
+    re.compile(r'(\w+ \d{1,2},?\s+\d{4})'),     
 ]
 
-# Known Dow30 tickers (used to validate regex matches)
+# Known Dow30 tickers 
 _DOW30_TICKERS = set(_DOW30_NAME_TO_TICKER.values())
 
 
@@ -158,21 +114,7 @@ def _tanh_normalize(z: float) -> float:
 # Main class
 # ---------------------------------------------------------------------------
 class LSTMSignalBridge:
-    """
-    Loads a CSV of LSTM predictions and provides per-sample lookup for the
-    FinGPT test set.
-
-    Parameters
-    ----------
-    csv_path : str
-        Path to  meta_test_lstm.csv  exported from the LSTM notebook.
-        Required columns: date, ticker, pred_ret_5d.
-        Optional: realized_ret_5d.
-    date_window_days : int
-        If no exact-date match is found for a (ticker, date) pair, accept the
-        nearest LSTM prediction within this many calendar days.
-    """
-
+    
     def __init__(self, csv_path: str, date_window_days: int = 7):
         self.date_window = timedelta(days=date_window_days)
         self._df = self._load(csv_path)
