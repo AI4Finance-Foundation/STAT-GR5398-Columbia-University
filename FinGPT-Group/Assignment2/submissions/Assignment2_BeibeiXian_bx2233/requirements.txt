@@ -1,0 +1,21 @@
+# Pinned to match the retrain notebook so the checkpoint-50 adapter loads
+# with exactly the same runtime it was trained under.
+torch==2.6.0
+torchvision==0.21.0
+torchaudio==2.6.0
+transformers==4.57.1
+peft==0.18.0
+bitsandbytes==0.49.2
+accelerate==1.6.0
+torchao>=0.16.0          # peft 0.18 requires this
+datasets>=2.18.0
+huggingface-hub>=0.23
+tokenizers>=0.20
+sentencepiece
+rouge-score
+scipy
+pandas
+matplotlib
+tqdm
+yfinance
+wandb

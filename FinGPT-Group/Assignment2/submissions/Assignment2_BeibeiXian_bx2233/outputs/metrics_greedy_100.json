@@ -1,0 +1,56 @@
+{
+  "n_samples": 100,
+  "mode": "simplified",
+  "direction_accuracy": {
+    "ternary_accuracy": 0.43,
+    "binary_accuracy": 0.43,
+    "binary_accuracy_inclusive": 0.43,
+    "n_ternary": 100,
+    "n_binary_strict": 100,
+    "n_binary_inclusive": 100
+  },
+  "bucket_accuracy": {
+    "bucket_accuracy": 0.32,
+    "same_direction_accuracy": 0.43,
+    "n": 100
+  },
+  "mse_vs_return_proxy": 14.4611,
+  "rouge": {
+    "rouge1": 0.268,
+    "rouge2": 0.0865,
+    "rougeL": 0.1444,
+    "n": 100
+  },
+  "avg_inference_time_s": 7.644,
+  "median_inference_time_s": 7.693,
+  "expected_calibration_error": 0.07,
+  "reliability_bins": [
+    {
+      "bin": "[0.40, 0.60)",
+      "avg_confidence": 0.5,
+      "accuracy": 0.43,
+      "count": 100
+    }
+  ],
+  "prediction_distribution": {
+    "Bullish": 70,
+    "Bearish": 30
+  },
+  "ground_truth_distribution": {
+    "Bullish": 43,
+    "Bearish": 57
+  },
+  "prediction_bucket_distribution": {
+    "Up 1-3%": 70,
+    "Down 1-3%": 29,
+    "Down 3-5%": 1
+  },
+  "ground_truth_bucket_distribution": {
+    "Up 1-3%": 29,
+    "Down 1-3%": 44,
+    "Up 3-5%": 11,
+    "Up >5%": 3,
+    "Down 3-5%": 7,
+    "Down >5%": 6
+  }
+}
