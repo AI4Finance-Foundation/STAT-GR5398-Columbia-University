@@ -1,7 +1,7 @@
 # 📈 FinGPT Quantitative Signal Module
 ### GR5398 Assignment 2 · Columbia University · Spring 2026
 
-**Author:** Beibei Xian (bx2233) &nbsp;|&nbsp; **Course:** STAT-GR5398 FinGPT LLM Track &nbsp;|&nbsp; **Base model:** DeepSeek-R1-Distill-Llama-8B
+**Author:** Beibei Xian (bx2233) &nbsp;|&nbsp; **Course:** STAT-GR5398 FinGPT Track &nbsp;|&nbsp; **Base model:** DeepSeek-R1-Distill-Llama-8B
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.6-orange?logo=pytorch)
