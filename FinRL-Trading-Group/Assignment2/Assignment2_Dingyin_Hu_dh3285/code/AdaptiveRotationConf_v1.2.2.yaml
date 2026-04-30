@@ -1,0 +1,222 @@
+
+# =====================================================
+# Adaptive Multi-Asset Rotation Strategy Configuration
+# Version: v1.2.2
+# =====================================================
+
+strategy:
+  name: adaptive_multi_asset_rotation
+  version: v1.2.2
+  base_frequency: daily
+  rebalance_frequency: weekly
+
+# -----------------------
+# Paths
+# -----------------------
+paths:
+  data_root: ./data/fmp_daily
+  output_root: ./src/strategies/output
+  state_dir: ./src/strategies/output/state/adaptive_rotation
+  audit_dir: ./src/strategies/output/audit/adaptive_rotation
+  weights_dir: ./src/strategies/output/weights/adaptive_rotation
+
+# -----------------------
+# Dates & History
+# -----------------------
+dates:
+  start_date: 2017-01-01        # data start date (not portfolio start)
+  end_date: null                # null = latest available
+
+history:
+  minimum_history_weeks: 26     # longest lookback requirement
+
+# -----------------------
+# Benchmark
+# -----------------------
+benchmark:
+  excess_return_benchmark: QQQ
+
+# -----------------------
+# Asset Groups (4 buckets)
+# -----------------------
+asset_groups:
+  group_a_growth_tech:
+    max_assets: 2
+    symbols:
+      - AAPL
+      - MSFT
+      - NVDA
+      - META
+      - AMZN
+      - GOOGL
+      - TSLA
+
+  group_b_cyclical:
+    max_assets: 2
+    symbols:
+      - JPM
+      - GS
+      - HD
+      - CAT
+      - UNP
+      - DE
+      - AXP
+
+  group_c_real_assets:
+    max_assets: 2
+    symbols:
+      - XOM
+      - CVX
+      - COP
+      - FCX
+      - BHP
+      - GLD
+      - SLV
+
+  group_d_defensive:
+    max_assets: 2
+    symbols:
+      - JNJ
+      - PG
+      - KO
+      - UNH
+      - NEE
+      - DUK
+      - PEP
+
+# -----------------------
+# Market Regime (Slow)
+# -----------------------
+market_regime:
+  slow_regime:
+    trend_ma_weeks: 26
+    drawdown_weeks: 13
+    drawdown_threshold: 0.10
+
+    volatility:
+      vix_lookback_years: 3
+      vix_z_threshold: 3.0
+
+    persistence_weeks: 2
+
+    mapping:
+      risk_on:
+        risk_score: 0
+        group_cap: 1.0
+        cash_floor: 0.0
+      neutral:
+        risk_score: 1
+        group_cap: 0.7
+        cash_floor: 0.1
+      risk_off:
+        risk_score: 2
+        group_cap: 0.5
+        cash_floor: 0.3
+
+# -----------------------
+# Fast Risk-Off Overlay
+# -----------------------
+fast_risk_off:
+  price_shock:
+    lookback_days: 3
+    drawdown_threshold: -0.03
+
+  volatility_shock:
+    vix_z_threshold: 3.0
+    delta_vix_z_threshold: 3.5
+
+  behavior:
+    group_cap: 0.3
+    cash_floor: 0.5
+    duration_days: 10
+
+  stop_loss_multiplier: 0.7
+
+# -----------------------
+# Group Strength & Ranking
+# -----------------------
+group_strength:
+  metric: risk_adjusted_return
+  lookback_weeks: 12
+  trend_filter: true
+
+ranking:
+  method: zscore
+  robust: true
+  top_n_per_group: 3
+
+  # Z-score calculation parameters
+  zscore_window: 12        # Fixed 12-week window for Z-score calculation
+  max_zscore: 20.0         # Cap Z-score to prevent extreme values
+  min_mad_threshold: 1e-6  # Minimum MAD to prevent division by near-zero
+
+# -----------------------
+# Exception Framework
+# -----------------------
+exception:
+  # Original persistence rule (M/K rule)
+  z_threshold: 2.5
+  lookback_weeks: 4
+  min_trigger_count: 2
+
+  reentry:
+    cooldown_weeks: 6
+    stricter_threshold_multiplier: 1.5
+
+  # New: Strong signal single-trigger rule
+  strong_signal:
+    enabled: true
+    z_threshold: 3.5               # Higher Z-score threshold for single trigger
+    return_multiplier: 1.5         # 12-week return must be > 1.5x QQQ
+    return_lookback_weeks: 12      # Lookback period for return comparison
+    require_positive_return: true  # Only accept positive absolute returns
+
+# -----------------------
+# Portfolio Construction
+# -----------------------
+portfolio:
+  max_active_groups: 2
+  allow_exception: true
+  exception_weight_multiplier: 1.5
+
+  weighting:
+    scheme: equal
+    residual_to_cash: true
+
+  # Fallback strategy when no groups qualify
+  fallback:
+    enabled: true
+    symbols: [SPY, QQQ, IAU, XLU, XLV]      # Fallback to market benchmarks
+    allocation: equal         # Equal weight between fallback symbols
+
+# -----------------------
+# Stop-Loss Rules
+# -----------------------
+stop_loss:
+  frequency: daily
+
+  absolute:
+    enabled: true
+    threshold: -0.05
+
+  trailing:
+    enabled: true
+    threshold: -0.10
+
+# -----------------------
+# Cooldown Rules
+# -----------------------
+cooldown:
+  after_stop_days: 20
+  block_reentry: true
+
+# -----------------------
+# Audit & State
+# -----------------------
+state:
+  persist_frequency: daily
+  format: json
+
+audit:
+  enabled: true
+  log_level: detailed
