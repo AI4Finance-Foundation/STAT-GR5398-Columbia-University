@@ -18,7 +18,7 @@ Critic = GPT/OpenAI
 Reviser = Claude
 ```
 
-The final submission includes source code, generated Markdown reports, integrated FinRobot HTML demos, and a Medium-style reflection.
+The final submission includes source code, generated Markdown reports, integrated FinRobot HTML demos, and a Medium-style reflection. In the integrated AAPL HTML demo, the ACR-enhanced report also incorporates earnings analysis, valuation reasoning, margin-sensitivity discussion, catalyst/risk-style analysis, and missing-data disclosure inside the main research narrative.
 
 ---
 
@@ -48,8 +48,9 @@ My answer is to add a Claude-inspired **Analyst-Critic-Reviser** workflow to the
 |---|---|
 | Replace original models with newer frontier models | Tested GPT, Claude, Gemini, and mixed-model configurations |
 | Experiment with model combinations | Compared single-model settings and mixed-role settings |
-| Add Claude-inspired equity research enhancement | Implemented an Analyst-Critic-Reviser workflow |
+| Add Claude-inspired equity research enhancement | Implemented an Analyst-Critic-Reviser workflow with earnings-style analysis, sensitivity-aware valuation reasoning, and catalyst/risk-style discussion |
 | Improve report quality and structure | Added prompts for grounded reasoning, missing-data disclosure, and HTML-ready writing |
+| Incorporate equity research skills | Integrated earnings, valuation, sensitivity, catalyst, and risk reasoning into the core report narrative |
 | Generate reports for required companies | Generated reports for NVDA, AMD, INTC, AAPL, and GOOGL |
 | Compare results and identify best setup | Found that Claude Analyst + GPT Critic + Claude Reviser gave the best balance |
 | Provide reproducible implementation | Added code files, reports, integrated demos, and run commands |
@@ -403,9 +404,9 @@ This mixed configuration produced the best balance between:
 
 ---
 
-## 11. Why Some Advanced Sections Still Say "Not Available"
+## 11. How the ACR Report Handles Earnings, Sensitivity, and Catalyst-Style Analysis
 
-Some sections in the HTML report still show:
+Some standalone optional FinRobot HTML template slots, such as `Sensitivity Analysis`, `Key Catalysts`, and `Technical & Advanced Analysis`, may still show:
 
 ```text
 Sensitivity analysis not available.
@@ -413,34 +414,69 @@ Catalyst analysis not available.
 Advanced charts not available.
 ```
 
-This is expected.
+This does **not** mean that these research ideas are absent from my project. The reason is that these specific standalone HTML slots require separate structured input files, such as a dedicated sensitivity-analysis file, a catalyst-analysis file, or additional technical/advanced chart inputs.
 
-These sections correspond to optional advanced FinRobot modules, such as:
+Instead of forcing the model to fill those standalone slots without reliable structured inputs, I incorporated earnings analysis, sensitivity-aware valuation reasoning, and catalyst/risk-style discussion into the main ACR-enhanced research narrative.
 
-- Sensitivity analysis
-- Catalyst analysis
-- Technical / advanced chart analysis
+This design choice is intentional: when structured data are incomplete, the report should avoid hallucinating unsupported numbers or pretending that a full standalone module exists. The ACR workflow instead improves the parts of the report that are supported by the available FinRobot/FMP data.
 
-I did not make these optional modules the core of my Assignment 2 submission, because they require additional structured inputs or module-specific JSON files that are separate from the stable FinRobot two-step report pipeline.
+### 11.1 Earnings-Style Analysis
 
-For example:
+The ACR-enhanced report discusses earnings and profitability through:
 
-- `Sensitivity Analysis` requires a structured sensitivity-analysis input file.
-- `Key Catalysts` requires a structured catalyst-analysis file.
-- `Technical & Advanced Analysis` requires additional technical or advanced chart inputs.
+- revenue growth trends,
+- EBITDA and contribution margin changes,
+- EPS growth,
+- operating leverage,
+- SG&A efficiency,
+- projected earnings power.
 
-Since these inputs were not consistently available through the standard FMP/text-section pipeline, I chose not to rely on them as the core contribution.
+For example, in the AAPL integrated HTML demo, the report discusses revenue growth, EPS growth, EBITDA margin expansion, SG&A margin compression, and P/E compression as part of the investment thesis and valuation narrative.
 
-My main focus is the stable and assignment-relevant part of the pipeline:
+### 11.2 Sensitivity-Aware Valuation Reasoning
+
+The ACR-enhanced report also includes sensitivity-aware reasoning inside the valuation and risk discussion.
+
+Instead of producing a separate sensitivity table without structured assumptions, the report highlights which forecast assumptions are important and where the valuation could be pressured. For example, it discusses:
+
+- whether projected EBITDA margin expansion is realistic,
+- how P/E compression may create return headwinds,
+- how revenue growth or margin shortfalls could affect valuation,
+- why large margin-expansion assumptions should be monitored.
+
+This means the ACR workflow adds sensitivity-style thinking in a cautious and data-grounded way.
+
+### 11.3 Catalyst and Risk-Style Discussion
+
+The report also incorporates catalyst and risk-style analysis through sections such as:
+
+- growth outlook,
+- strategic positioning,
+- competitive landscape,
+- regulatory risk,
+- supply-chain exposure,
+- AI competition,
+- market saturation,
+- macroeconomic sensitivity,
+- valuation risk.
+
+These are not presented as a separate standalone `Key Catalysts` module because the required catalyst-specific structured input file was not consistently available. However, the investment narrative still discusses business drivers, risks, and uncertainty in an analyst-style format.
+
+### 11.4 Why This Is Better Than Filling Every Slot Mechanically
+
+My goal was not to mechanically fill every optional HTML section. My goal was to improve the reliability of FinRobot's core equity research narrative.
+
+The ACR workflow therefore focuses on:
 
 ```text
 FinRobot FMP data
 + FinRobot financial tables
 + FinRobot peer comparison
 + FinRobot professional HTML renderer
-+ Claude-inspired Analyst-Critic-Reviser text enhancement
++ ACR-enhanced earnings, valuation, sensitivity, catalyst/risk, and missing-data reasoning
 ```
 
+This makes the final report more useful while reducing the risk of unsupported claims or invented financial details.
 ---
 
 ## 12. How to Reproduce
@@ -499,7 +535,7 @@ There are still some limitations.
 
 First, the quality of the final report depends on the quality and completeness of the financial data. If the input data do not include certain fields, the model should not invent them.
 
-Second, some advanced FinRobot modules, such as sensitivity analysis, catalyst analysis, and advanced charts, require specific structured inputs. I explored these modules, but my main contribution focuses on the more stable and assignment-relevant part: improving the text-generation layer.
+Second, some standalone advanced FinRobot template slots, such as sensitivity analysis, catalyst analysis, and advanced charts, require specific structured inputs. Rather than filling these slots without reliable data, I incorporated earnings, valuation, sensitivity-aware, and catalyst/risk-style reasoning into the ACR-enhanced research narrative.
 
 Third, the ACR workflow requires multiple model calls, so it is more expensive and slower than a single-pass generation pipeline.
 
@@ -526,7 +562,7 @@ The main contributions are:
 1. Testing multiple frontier models and model-role assignments.
 2. Adding a Claude-inspired critique and revision layer.
 3. Integrating the enhancement into FinRobot's official report pipeline.
-4. Improving the groundedness and reliability of generated equity research reports.
+4. Improving the groundedness and reliability of generated equity research reports, including earnings, valuation, sensitivity-aware, and catalyst/risk-style discussion.
 5. Producing both Markdown reports and integrated FinRobot HTML demos.
 
 The final best configuration is:
