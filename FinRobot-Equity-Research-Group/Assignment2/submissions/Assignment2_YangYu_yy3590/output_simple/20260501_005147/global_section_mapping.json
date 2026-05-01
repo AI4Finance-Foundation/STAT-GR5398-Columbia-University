@@ -1,0 +1,321 @@
+{
+  "generated_at_utc": "2026-05-01T01:45:55Z",
+  "run_id": "20260501_005147",
+  "run_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147",
+  "sections": [
+    "tagline",
+    "company_overview",
+    "investment_overview",
+    "valuation_overview",
+    "risks",
+    "competitor_analysis",
+    "major_takeaways",
+    "news_summary"
+  ],
+  "global_section_mapping": {
+    "tagline": {
+      "selected_model_tag": "claude_claude-opus-4-6",
+      "selected_model_provider": "claude",
+      "selected_model_name": "claude-opus-4-6",
+      "mean_score": 74.4,
+      "stddev_score": 7.838367,
+      "sample_count": 5,
+      "selection_rule": "highest_mean_then_lowest_stddev_then_cost_priority",
+      "ranked_models": [
+        {
+          "section": "tagline",
+          "model_tag": "claude_claude-opus-4-6",
+          "model_provider": "claude",
+          "model_name": "claude-opus-4-6",
+          "mean_score": 74.4,
+          "stddev_score": 7.838367,
+          "sample_count": 5
+        },
+        {
+          "section": "tagline",
+          "model_tag": "gemini_gemini-3.1-pro-preview",
+          "model_provider": "gemini",
+          "model_name": "gemini-3.1-pro-preview",
+          "mean_score": 66.4,
+          "stddev_score": 8.236504,
+          "sample_count": 5
+        },
+        {
+          "section": "tagline",
+          "model_tag": "openai_gpt-5.4",
+          "model_provider": "openai",
+          "model_name": "gpt-5.4",
+          "mean_score": 65.0,
+          "stddev_score": 10.0,
+          "sample_count": 5
+        }
+      ]
+    },
+    "company_overview": {
+      "selected_model_tag": "claude_claude-opus-4-6",
+      "selected_model_provider": "claude",
+      "selected_model_name": "claude-opus-4-6",
+      "mean_score": 83.6,
+      "stddev_score": 4.8,
+      "sample_count": 5,
+      "selection_rule": "highest_mean_then_lowest_stddev_then_cost_priority",
+      "ranked_models": [
+        {
+          "section": "company_overview",
+          "model_tag": "claude_claude-opus-4-6",
+          "model_provider": "claude",
+          "model_name": "claude-opus-4-6",
+          "mean_score": 83.6,
+          "stddev_score": 4.8,
+          "sample_count": 5
+        },
+        {
+          "section": "company_overview",
+          "model_tag": "openai_gpt-5.4",
+          "model_provider": "openai",
+          "model_name": "gpt-5.4",
+          "mean_score": 79.8,
+          "stddev_score": 2.856571,
+          "sample_count": 5
+        },
+        {
+          "section": "company_overview",
+          "model_tag": "gemini_gemini-3.1-pro-preview",
+          "model_provider": "gemini",
+          "model_name": "gemini-3.1-pro-preview",
+          "mean_score": 79.2,
+          "stddev_score": 4.069398,
+          "sample_count": 5
+        }
+      ]
+    },
+    "investment_overview": {
+      "selected_model_tag": "gemini_gemini-3.1-pro-preview",
+      "selected_model_provider": "gemini",
+      "selected_model_name": "gemini-3.1-pro-preview",
+      "mean_score": 82.0,
+      "stddev_score": 4.049691,
+      "sample_count": 5,
+      "selection_rule": "highest_mean_then_lowest_stddev_then_cost_priority",
+      "ranked_models": [
+        {
+          "section": "investment_overview",
+          "model_tag": "gemini_gemini-3.1-pro-preview",
+          "model_provider": "gemini",
+          "model_name": "gemini-3.1-pro-preview",
+          "mean_score": 82.0,
+          "stddev_score": 4.049691,
+          "sample_count": 5
+        },
+        {
+          "section": "investment_overview",
+          "model_tag": "openai_gpt-5.4",
+          "model_provider": "openai",
+          "model_name": "gpt-5.4",
+          "mean_score": 81.0,
+          "stddev_score": 2.0,
+          "sample_count": 5
+        },
+        {
+          "section": "investment_overview",
+          "model_tag": "claude_claude-opus-4-6",
+          "model_provider": "claude",
+          "model_name": "claude-opus-4-6",
+          "mean_score": 80.0,
+          "stddev_score": 3.162278,
+          "sample_count": 5
+        }
+      ]
+    },
+    "valuation_overview": {
+      "selected_model_tag": "gemini_gemini-3.1-pro-preview",
+      "selected_model_provider": "gemini",
+      "selected_model_name": "gemini-3.1-pro-preview",
+      "mean_score": 79.0,
+      "stddev_score": 4.898979,
+      "sample_count": 5,
+      "selection_rule": "highest_mean_then_lowest_stddev_then_cost_priority",
+      "ranked_models": [
+        {
+          "section": "valuation_overview",
+          "model_tag": "gemini_gemini-3.1-pro-preview",
+          "model_provider": "gemini",
+          "model_name": "gemini-3.1-pro-preview",
+          "mean_score": 79.0,
+          "stddev_score": 4.898979,
+          "sample_count": 5
+        },
+        {
+          "section": "valuation_overview",
+          "model_tag": "openai_gpt-5.4",
+          "model_provider": "openai",
+          "model_name": "gpt-5.4",
+          "mean_score": 76.0,
+          "stddev_score": 2.0,
+          "sample_count": 5
+        },
+        {
+          "section": "valuation_overview",
+          "model_tag": "claude_claude-opus-4-6",
+          "model_provider": "claude",
+          "model_name": "claude-opus-4-6",
+          "mean_score": 75.4,
+          "stddev_score": 2.57682,
+          "sample_count": 5
+        }
+      ]
+    },
+    "risks": {
+      "selected_model_tag": "claude_claude-opus-4-6",
+      "selected_model_provider": "claude",
+      "selected_model_name": "claude-opus-4-6",
+      "mean_score": 78.8,
+      "stddev_score": 3.429286,
+      "sample_count": 5,
+      "selection_rule": "highest_mean_then_lowest_stddev_then_cost_priority",
+      "ranked_models": [
+        {
+          "section": "risks",
+          "model_tag": "claude_claude-opus-4-6",
+          "model_provider": "claude",
+          "model_name": "claude-opus-4-6",
+          "mean_score": 78.8,
+          "stddev_score": 3.429286,
+          "sample_count": 5
+        },
+        {
+          "section": "risks",
+          "model_tag": "openai_gpt-5.4",
+          "model_provider": "openai",
+          "model_name": "gpt-5.4",
+          "mean_score": 78.4,
+          "stddev_score": 3.2,
+          "sample_count": 5
+        },
+        {
+          "section": "risks",
+          "model_tag": "gemini_gemini-3.1-pro-preview",
+          "model_provider": "gemini",
+          "model_name": "gemini-3.1-pro-preview",
+          "mean_score": 78.0,
+          "stddev_score": 2.44949,
+          "sample_count": 5
+        }
+      ]
+    },
+    "competitor_analysis": {
+      "selected_model_tag": "gemini_gemini-3.1-pro-preview",
+      "selected_model_provider": "gemini",
+      "selected_model_name": "gemini-3.1-pro-preview",
+      "mean_score": 84.0,
+      "stddev_score": 8.0,
+      "sample_count": 5,
+      "selection_rule": "highest_mean_then_lowest_stddev_then_cost_priority",
+      "ranked_models": [
+        {
+          "section": "competitor_analysis",
+          "model_tag": "gemini_gemini-3.1-pro-preview",
+          "model_provider": "gemini",
+          "model_name": "gemini-3.1-pro-preview",
+          "mean_score": 84.0,
+          "stddev_score": 8.0,
+          "sample_count": 5
+        },
+        {
+          "section": "competitor_analysis",
+          "model_tag": "openai_gpt-5.4",
+          "model_provider": "openai",
+          "model_name": "gpt-5.4",
+          "mean_score": 80.0,
+          "stddev_score": 4.472136,
+          "sample_count": 5
+        },
+        {
+          "section": "competitor_analysis",
+          "model_tag": "claude_claude-opus-4-6",
+          "model_provider": "claude",
+          "model_name": "claude-opus-4-6",
+          "mean_score": 77.0,
+          "stddev_score": 2.44949,
+          "sample_count": 5
+        }
+      ]
+    },
+    "major_takeaways": {
+      "selected_model_tag": "claude_claude-opus-4-6",
+      "selected_model_provider": "claude",
+      "selected_model_name": "claude-opus-4-6",
+      "mean_score": 77.4,
+      "stddev_score": 3.32265,
+      "sample_count": 5,
+      "selection_rule": "highest_mean_then_lowest_stddev_then_cost_priority",
+      "ranked_models": [
+        {
+          "section": "major_takeaways",
+          "model_tag": "claude_claude-opus-4-6",
+          "model_provider": "claude",
+          "model_name": "claude-opus-4-6",
+          "mean_score": 77.4,
+          "stddev_score": 3.32265,
+          "sample_count": 5
+        },
+        {
+          "section": "major_takeaways",
+          "model_tag": "gemini_gemini-3.1-pro-preview",
+          "model_provider": "gemini",
+          "model_name": "gemini-3.1-pro-preview",
+          "mean_score": 66.4,
+          "stddev_score": 8.236504,
+          "sample_count": 5
+        },
+        {
+          "section": "major_takeaways",
+          "model_tag": "openai_gpt-5.4",
+          "model_provider": "openai",
+          "model_name": "gpt-5.4",
+          "mean_score": 66.4,
+          "stddev_score": 8.236504,
+          "sample_count": 5
+        }
+      ]
+    },
+    "news_summary": {
+      "selected_model_tag": "gemini_gemini-3.1-pro-preview",
+      "selected_model_provider": "gemini",
+      "selected_model_name": "gemini-3.1-pro-preview",
+      "mean_score": 82.0,
+      "stddev_score": 2.44949,
+      "sample_count": 5,
+      "selection_rule": "highest_mean_then_lowest_stddev_then_cost_priority",
+      "ranked_models": [
+        {
+          "section": "news_summary",
+          "model_tag": "gemini_gemini-3.1-pro-preview",
+          "model_provider": "gemini",
+          "model_name": "gemini-3.1-pro-preview",
+          "mean_score": 82.0,
+          "stddev_score": 2.44949,
+          "sample_count": 5
+        },
+        {
+          "section": "news_summary",
+          "model_tag": "claude_claude-opus-4-6",
+          "model_provider": "claude",
+          "model_name": "claude-opus-4-6",
+          "mean_score": 79.0,
+          "stddev_score": 2.0,
+          "sample_count": 5
+        },
+        {
+          "section": "news_summary",
+          "model_tag": "openai_gpt-5.4",
+          "model_provider": "openai",
+          "model_name": "gpt-5.4",
+          "mean_score": 73.0,
+          "stddev_score": 11.224972,
+          "sample_count": 5
+        }
+      ]
+    }
+  }
+}
