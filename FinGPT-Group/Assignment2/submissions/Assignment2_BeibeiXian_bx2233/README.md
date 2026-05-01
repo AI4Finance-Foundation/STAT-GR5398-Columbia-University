@@ -47,7 +47,7 @@ price/vol  ──► CNN-LSTM-Attention ──► LSTMSignalBridge ────�
 ```
 Assignment2_BeibeiXian_bx2233/
 ├── README.md # You are here    
-├── Medium_link.md  
+├── Medium.com_link.md  
 ├── signal_module.py              
 ├── evaluate_signal.py            
 ├── lstm_signal_bridge.py         
