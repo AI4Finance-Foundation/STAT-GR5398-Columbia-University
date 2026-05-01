@@ -1,6 +1,4 @@
 # Assignment 2 Report  
-Adaptive Rotation Strategy with QQQ Rolling Selection
-
 ## 1. Strategy Overview
 
 In this assignment, I implemented the Adaptive Rotation Strategy and replaced the original fixed Growth Tech asset pool with a dynamic stock selection from Assignment 1 (QQQ rolling selection).
