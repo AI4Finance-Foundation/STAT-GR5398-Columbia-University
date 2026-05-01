@@ -1,5 +1,8 @@
 # FinRobot Equity Research Enhancement: Frontier LLM Experiments, FMP-Aware Caching, Two-Stage Evaluation, Section Mixing, and Role-Mixed Analyst/Critic Workflow
 
+## Related Medium Post
+https://medium.com/@yy3590/from-model-swap-to-workflow-engineering-upgrading-finrobot-for-equity-research-64fe49016f33
+
 ## Overview
 
 This project extends the FinRobot equity research workflow with a reproducible experiment framework across frontier models, plus workflow-level enhancements inspired by practical analyst/reviewer pipelines.
