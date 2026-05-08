@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="680" viewBox="0 0 1400 680" role="img">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0f172a" flood-opacity="0.12"/></filter>
+    <linearGradient id="blueSoft" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#eff6ff"/><stop offset="1" stop-color="#ecfeff"/></linearGradient>
+    <linearGradient id="greenSoft" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#ecfdf5"/><stop offset="1" stop-color="#f0fdfa"/></linearGradient>
+  </defs>
+  <style>
+    text { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial, sans-serif; fill: #162033; }
+    .title { font-size: 32px; font-weight: 850; }
+    .sub { font-size: 15px; fill: #64748b; }
+    .label { font-size: 15px; font-weight: 780; }
+    .small { font-size: 13px; fill: #64748b; }
+    .tiny { font-size: 11px; fill: #64748b; }
+    .metric { font-size: 26px; font-weight: 850; }
+    .axis { stroke: #94a3b8; stroke-width: 1.2; }
+    .grid { stroke: #dbe4ee; stroke-width: 1; }
+  </style>
+<rect width="1400" height="680" fill="#f7fafc"/>
+<rect x="34" y="30" width="1332" height="612" rx="30" fill="#ffffff" filter="url(#shadow)"/>
+<text x="72" y="84" class="title">FinGPT Signal Distribution</text>
+<text x="72" y="112" class="sub">Composite signal = sentiment x confidence x materiality. This figure uses the 85 submitted ticker-date observations.</text>
+<text x="90" y="154" class="label">Histogram by composite signal bucket</text>
+<rect x="90" y="390.5" width="78" height="79.5" rx="10" fill="#e11d48" opacity="0.82"/>
+<text x="116" y="380.5" class="small">7</text>
+<text x="84" y="496" class="tiny">-0.36</text>
+<text x="124" y="514" class="tiny">to</text>
+<text x="124" y="532" class="tiny">-0.24</text>
+<rect x="186" y="356.4" width="78" height="113.6" rx="10" fill="#e11d48" opacity="0.82"/>
+<text x="212" y="346.4" class="small">10</text>
+<text x="180" y="496" class="tiny">-0.24</text>
+<text x="220" y="514" class="tiny">to</text>
+<text x="220" y="532" class="tiny">-0.12</text>
+<rect x="282" y="367.7" width="78" height="102.3" rx="10" fill="#e11d48" opacity="0.82"/>
+<text x="308" y="357.7" class="small">9</text>
+<text x="276" y="496" class="tiny">-0.12</text>
+<text x="316" y="514" class="tiny">to</text>
+<text x="316" y="532" class="tiny">+0.00</text>
+<rect x="378" y="220.0" width="78" height="250.0" rx="10" fill="#10b981" opacity="0.82"/>
+<text x="404" y="210.0" class="small">22</text>
+<text x="372" y="496" class="tiny">+0.00</text>
+<text x="412" y="514" class="tiny">to</text>
+<text x="412" y="532" class="tiny">+0.12</text>
+<rect x="474" y="242.7" width="78" height="227.3" rx="10" fill="#10b981" opacity="0.82"/>
+<text x="500" y="232.7" class="small">20</text>
+<text x="468" y="496" class="tiny">+0.12</text>
+<text x="508" y="514" class="tiny">to</text>
+<text x="508" y="532" class="tiny">+0.24</text>
+<rect x="570" y="276.8" width="78" height="193.2" rx="10" fill="#10b981" opacity="0.82"/>
+<text x="596" y="266.8" class="small">17</text>
+<text x="564" y="496" class="tiny">+0.24</text>
+<text x="604" y="514" class="tiny">to</text>
+<text x="604" y="532" class="tiny">+0.36</text>
+<line x1="66" y1="470" x2="672" y2="470" class="axis"/>
+<text x="770" y="154" class="label">Average signal by ticker</text>
+<line x1="1000" y1="146" x2="1000" y2="532" stroke="#cbd5e1"/>
+<text x="770" y="174" class="small">AMZN</text>
+<rect x="1000.0" y="156" width="185.5" height="20" rx="10" fill="#10b981" opacity="0.84"/>
+<text x="1197.5" y="172" class="tiny">+0.258</text>
+<text x="770" y="208" class="small">AMAT</text>
+<rect x="1000.0" y="190" width="116.3" height="20" rx="10" fill="#10b981" opacity="0.84"/>
+<text x="1128.3" y="206" class="tiny">+0.162</text>
+<text x="770" y="242" class="small">ISRG</text>
+<rect x="1000.0" y="224" width="83.7" height="20" rx="10" fill="#10b981" opacity="0.84"/>
+<text x="1095.7" y="240" class="tiny">+0.116</text>
+<text x="770" y="276" class="small">TXN</text>
+<rect x="1000.0" y="258" width="78.9" height="20" rx="10" fill="#10b981" opacity="0.84"/>
+<text x="1090.9" y="274" class="tiny">+0.110</text>
+<text x="770" y="310" class="small">AMD</text>
+<rect x="1000.0" y="292" width="64.5" height="20" rx="10" fill="#10b981" opacity="0.84"/>
+<text x="1076.5" y="308" class="tiny">+0.090</text>
+<text x="770" y="344" class="small">GOOGL</text>
+<rect x="1000.0" y="326" width="63.4" height="20" rx="10" fill="#10b981" opacity="0.84"/>
+<text x="1075.4" y="342" class="tiny">+0.088</text>
+<text x="770" y="378" class="small">CSCO</text>
+<rect x="1000.0" y="360" width="59.1" height="20" rx="10" fill="#10b981" opacity="0.84"/>
+<text x="1071.1" y="376" class="tiny">+0.082</text>
+<text x="770" y="412" class="small">NFLX</text>
+<rect x="1000.0" y="394" width="28.2" height="20" rx="10" fill="#10b981" opacity="0.84"/>
+<text x="1040.2" y="410" class="tiny">+0.039</text>
+<text x="770" y="446" class="small">COST</text>
+<rect x="1000.0" y="428" width="12.1" height="20" rx="10" fill="#10b981" opacity="0.84"/>
+<text x="1024.1" y="444" class="tiny">+0.017</text>
+<text x="770" y="480" class="small">TSLA</text>
+<rect x="977.6" y="462" width="22.4" height="20" rx="10" fill="#e11d48" opacity="0.84"/>
+<text x="913.6" y="478" class="tiny">-0.031</text>
+<text x="770" y="514" class="small">META</text>
+<rect x="943.6" y="496" width="56.4" height="20" rx="10" fill="#e11d48" opacity="0.84"/>
+<text x="879.6" y="512" class="tiny">-0.078</text>
+<rect x="90" y="562" width="520" height="42" rx="14" fill="#f8fafc" stroke="#dbe4ee"/>
+<text x="112" y="588" class="small">Positive / negative observations: 59 / 26. Range: -0.336 to +0.336.</text>
+</svg>
