@@ -1,6 +1,7 @@
 # Assignment 3 — ContrarianFusion
 **GR5398 MA Mentored Research · Columbia University · Spring 2026**
-Beibei Xian · bx2233 · Mentor: Bruce Yang
+Medium Link: https://medium.com/@bx2233/contrarianfusion-when-my-llm-was-wrong-in-the-right-direction-part-2-9469dc4998a4?postPublishedType=initial
+
 
 ---
 
