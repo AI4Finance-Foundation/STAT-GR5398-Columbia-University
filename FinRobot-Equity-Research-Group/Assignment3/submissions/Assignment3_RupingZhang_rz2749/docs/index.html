@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FinRL + FinRobot + FinGPT Portfolio Pipeline</title>
+    <meta
+      name="description"
+      content="A static project demo for a layered stock-selection, research-confirmation, news-overlay, and portfolio backtest pipeline."
+    >
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Primary navigation">
+        <a class="brand" href="#top">FRG Portfolio</a>
+        <div class="nav-links">
+          <a href="#pipeline">Pipeline</a>
+          <a href="#results">Results</a>
+          <a href="#limits">Limits</a>
+          <a href="#reproducibility">Reproducibility</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-band">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">FinRL / FinRobot / FinGPT layered portfolio research</p>
+            <h1>Building a Modest AI-Assisted Portfolio Pipeline</h1>
+            <p class="authors">Rui Zhao, Qingyue Wang, Ruping Zhang</p>
+            <p class="lede">
+              This project connects quantitative stock selection, point-in-time research confirmation,
+              news sentiment scoring, portfolio weighting, and benchmark evaluation in one static
+              research prototype.
+            </p>
+            <p>
+              FinRL first generates weekly top-5 candidates, FinRobot filters and reweights those names
+              using fundamental and news-based evidence, and FinGPT applies a final no-lookahead sentiment
+              overlay before the portfolio is backtested against QQQ and SPY.
+            </p>
+            <div class="hero-actions" aria-label="Project links">
+              <a class="button primary" href="#results">Read the results</a>
+              <a class="button secondary" href="https://github.com/zzzzzzzzrrrrrrrrrrrrrr/pipeline-finrl-finrobot-fingpt">
+                View companion repository
+              </a>
+            </div>
+          </div>
+
+          <aside class="hero-panel" aria-label="Backtest summary">
+            <div class="panel-kicker">Backtest window</div>
+            <div class="panel-date">2026-01-01 to 2026-04-30</div>
+            <div class="hero-metrics">
+              <div>
+                <span>Total return</span>
+                <strong>12.84%</strong>
+              </div>
+              <div>
+                <span>Sharpe</span>
+                <strong>1.79</strong>
+              </div>
+              <div>
+                <span>Max drawdown</span>
+                <strong>-14.35%</strong>
+              </div>
+            </div>
+            <p class="small-note">
+              Metrics are read from <code>finrl/results/frg_portfolio_backtest</code>. They describe a short
+              backtest, not a validated live trading system.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="content-section" id="motivation">
+        <div class="section-heading">
+          <p class="eyebrow">Motivation</p>
+          <h2>What the project is trying to solve</h2>
+        </div>
+        <div class="two-column">
+          <p>
+            The practical question is whether a structured pipeline can turn noisy price data,
+            financial evidence, and news context into a portfolio decision that can be evaluated
+            transparently. Rather than treating an LLM as a standalone stock picker, the design assigns
+            each module a narrow role.
+          </p>
+          <p>
+            The final output is a weekly long-only portfolio with normalized weights, a fixed QQQ market
+            sleeve, selected individual stocks, and benchmark metrics. The useful output is not only a
+            return number; it is also a traceable record of which tickers were selected, how weights
+            changed, and where the strategy took risk.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-section" id="pipeline">
+        <div class="section-heading">
+          <p class="eyebrow">System architecture</p>
+          <h2>Pipeline overview</h2>
+        </div>
+
+        <figure class="wide-figure figure-emphasis">
+          <img src="assets/figures/strategy_blueprint.svg" alt="Strategy formation blueprint from data inputs through backtest">
+          <figcaption>
+            Strategy formation diagram. This is a mechanism chart, not a performance claim: it shows how the repository's
+            FinRL, FinRobot, and FinGPT components pass information into the final portfolio backtest.
+          </figcaption>
+        </figure>
+
+        <div class="workflow" aria-label="Project workflow">
+          <article class="workflow-card">
+            <span class="step-number">01</span>
+            <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+            <h3>Price and feature inputs</h3>
+            <p>Adjusted close prices are downloaded in the selection and backtest scripts. Momentum, volatility, and drawdown features are built point-in-time.</p>
+          </article>
+          <article class="workflow-card">
+            <span class="step-number">02</span>
+            <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+            <h3>FinRL selection</h3>
+            <p>A 20-stock universe is ranked weekly. The script combines ML scores and technical scores, then keeps the top 5 candidates.</p>
+          </article>
+          <article class="workflow-card">
+            <span class="step-number">03</span>
+            <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+            <h3>FinRobot research gate</h3>
+            <p>Selected names receive business quality, valuation, catalyst, and risk scores. These map into keep, reduce, reject, or modest overweight decisions.</p>
+          </article>
+          <article class="workflow-card">
+            <span class="step-number">04</span>
+            <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+            <h3>FinGPT news overlay</h3>
+            <p>A no-lookahead news signal turns sentiment, confidence, and materiality into a composite score that adjusts conviction.</p>
+          </article>
+          <article class="workflow-card">
+            <span class="step-number">05</span>
+            <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+            <h3>Portfolio construction</h3>
+            <p>The final portfolio blends a 60% QQQ sleeve with a 40% stock basket. Weights are normalized after each overlay.</p>
+          </article>
+          <article class="workflow-card">
+            <span class="step-number">06</span>
+            <h3>Backtest evaluation</h3>
+            <p>The final strategy is compared with QQQ and SPY using return, volatility, Sharpe, Sortino, and drawdown metrics.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="section-heading">
+          <p class="eyebrow">Data and preprocessing</p>
+          <h2>What the current repository supports</h2>
+        </div>
+
+        <div class="info-grid">
+          <article class="info-card">
+            <h3>Universe</h3>
+            <p>
+              The FinRL selection script defines a 20-name large-cap universe:
+              AAPL, MSFT, NVDA, META, AMZN, GOOGL, TSLA, AVGO, AMD, NFLX, ADBE,
+              COST, PEP, QCOM, CSCO, TXN, AMAT, AMGN, INTU, and ISRG.
+            </p>
+          </article>
+          <article class="info-card">
+            <h3>Time and frequency</h3>
+            <p>
+              The required study window is 2026-01-01 to 2026-04-30. Selection is weekly,
+              using Friday-style rebalance dates where available. The FinGPT signal file has
+              85 ticker-date observations across 17 rebalance dates.
+            </p>
+          </article>
+          <article class="info-card">
+            <h3>Feature handling</h3>
+            <p>
+              Price features include 20-day momentum, 60-day momentum, 20-day volatility, and
+              60-day drawdown. The script forward-fills isolated missing price observations
+              and drops all-empty rows or columns.
+            </p>
+          </article>
+          <article class="info-card">
+            <h3>Available artifacts</h3>
+            <p>
+              The repo includes generated CSV outputs, backtest images, and module scripts.
+              Raw external FinRobot dependencies, API keys, and a root README are not present
+              in this snapshot.
+            </p>
+          </article>
+        </div>
+
+        <figure class="wide-figure">
+          <img src="assets/figures/no_lookahead_timeline.svg" alt="No-lookahead information boundary timeline">
+          <figcaption>
+            Point-in-time information boundary used in the project narrative and scripts. The diagram is included to make
+            the data timing logic visible instead of burying it in text.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="content-section" id="methodology">
+        <div class="section-heading">
+          <p class="eyebrow">Methodology</p>
+          <h2>Readable version of the strategy logic</h2>
+        </div>
+
+        <div class="method-grid">
+          <article>
+            <h3>FinRL: candidate generation</h3>
+            <p>
+              FinRL is used as the first filter. The current script does not simply buy the whole
+              universe; it scores stocks with a hybrid ML and technical ranking process and selects
+              the weekly top 5 candidates. The output is a table of dates, tickers, ranks, scores,
+              and initial equal weights.
+            </p>
+          </article>
+          <article>
+            <h3>FinRobot: research confirmation</h3>
+            <p>
+              FinRobot acts as an analyst-style gate. It combines point-in-time financial and news
+              evidence into business quality, valuation, catalyst, and risk scores. The final score
+              becomes a multiplier: strong keep, keep, reduce, or reject. This layer is intended to
+              reduce blind reliance on the quantitative rank.
+            </p>
+          </article>
+          <article>
+            <h3>FinGPT: sentiment overlay</h3>
+            <p>
+              The FinGPT layer is used conservatively. The report describes a deterministic base
+              scoring layer plus an LLM-style calibration idea, producing sentiment, confidence, and
+              materiality values. The submitted signal file stores the resulting composite signal
+              for each ticker-date observation.
+            </p>
+          </article>
+          <article>
+            <h3>Backtesting and weights</h3>
+            <p>
+              The final backtest uses the layered FRG signals, a one-trading-day execution lag in the
+              backtest script, a transaction cost parameter of 0.001, a 60% QQQ market sleeve, and
+              QQQ/SPY buy-and-hold benchmarks.
+            </p>
+          </article>
+        </div>
+
+        <figure class="wide-figure">
+          <img src="assets/figures/portfolio_funnel.svg" alt="Portfolio construction funnel with observed counts">
+          <figcaption>
+            Portfolio construction funnel. Counts come from the submitted result files: 85 weekly candidate rows,
+            FinRobot action counts, FinGPT positive/negative signal counts, final selected flags, and the 60/40
+            QQQ/stock-sleeve construction.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="content-section results-section" id="results">
+        <div class="section-heading">
+          <p class="eyebrow">Backtest results</p>
+          <h2>What the result files show</h2>
+        </div>
+
+        <div class="metrics-row" aria-label="Key metrics">
+          <div class="metric-card accent-blue">
+            <span>FRG total return</span>
+            <strong>12.84%</strong>
+            <p>vs QQQ 7.14% and SPY 4.06%</p>
+          </div>
+          <div class="metric-card accent-green">
+            <span>FRG Sharpe</span>
+            <strong>1.79</strong>
+            <p>vs QQQ 1.32 and SPY 0.94</p>
+          </div>
+          <div class="metric-card accent-red">
+            <span>FRG max drawdown</span>
+            <strong>-14.35%</strong>
+            <p>deeper than QQQ and SPY</p>
+          </div>
+          <div class="metric-card accent-purple">
+            <span>FinGPT observations</span>
+            <strong>85</strong>
+            <p>59 positive and 26 negative signals</p>
+          </div>
+        </div>
+
+        <figure class="wide-figure figure-emphasis">
+          <img src="assets/figures/frg_dashboard_original.png" alt="Original FRG dashboard copied from the result folder">
+          <figcaption>
+            Original result dashboard copied from <code>finrl/results/frg_portfolio_backtest/frg_portfolio_backtest.png</code>.
+            It keeps the full result context together: equity curve, drawdown, metrics, and target allocation.
+          </figcaption>
+        </figure>
+
+        <figure class="wide-figure">
+          <img src="assets/figures/benchmark_metric_bars.svg" alt="Benchmark metric bars comparing FRG, QQQ, and SPY">
+          <figcaption>
+            Clean benchmark metric bars from the final FRG and aligned benchmark CSVs. This replaces the earlier
+            compressed return-risk chart so labels and values remain readable.
+          </figcaption>
+        </figure>
+
+        <figure class="wide-figure">
+          <img src="assets/figures/frg_growth_drawdown.svg" alt="FRG portfolio cumulative return and drawdown chart">
+          <figcaption>
+            FRG-only cumulative return and drawdown generated from <code>frg_portfolio_portfolio_values.csv</code>.
+            This split view focuses on the path of the final portfolio itself.
+          </figcaption>
+        </figure>
+
+        <figure class="wide-figure">
+          <img src="assets/figures/allocation_heatmap.svg" alt="FRG allocation heatmap">
+          <figcaption>
+            Allocation heatmap from <code>frg_portfolio_weight_signals.csv</code>. It is more readable than a
+            stacked area chart because many stock weights are tiny or active only in a few weeks.
+          </figcaption>
+        </figure>
+
+        <figure class="wide-figure">
+          <img src="assets/figures/finrl_selection_frequency.svg" alt="FinRL top-5 stock selection frequency chart">
+          <figcaption>
+            FinRL top-5 selection frequency. GOOGL and AMAT appear most often in the candidate set during the
+            required 2026-01-01 to 2026-04-30 window.
+          </figcaption>
+        </figure>
+
+        <figure class="wide-figure">
+          <img src="assets/figures/signal_distribution.svg" alt="FinGPT composite signal histogram and ticker averages">
+          <figcaption>
+            FinGPT signal distribution. The submitted signal file contains both bullish and bearish observations,
+            so the overlay is not a one-directional boost.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="content-section">
+        <div class="section-heading">
+          <p class="eyebrow">Key findings</p>
+          <h2>Modest conclusions from a short test</h2>
+        </div>
+
+        <div class="findings">
+          <article>
+            <h3>The final FRG backtest beat both benchmarks on return and Sharpe.</h3>
+            <p>
+              Over 2026-01-01 to 2026-04-30, the FRG portfolio reports 12.84% total return and
+              1.79 Sharpe, above QQQ and SPY in the aligned benchmark files.
+            </p>
+          </article>
+          <article>
+            <h3>The higher return came with a larger drawdown.</h3>
+            <p>
+              FRG's maximum drawdown is -14.35%, compared with -11.72% for QQQ and -8.88% for SPY.
+              The strategy accepted more downside risk during the period.
+            </p>
+          </article>
+          <article>
+            <h3>The combined system is only slightly above the available score-only run.</h3>
+            <p>
+              The full FRG result is close to the FinGPT score-only backtest artifact. That supports
+              a cautious interpretation: the pipeline integration is useful for structure and traceability,
+              but the current files do not prove a large standalone contribution from every layer.
+            </p>
+          </article>
+        </div>
+
+        <div class="table-card" role="region" aria-label="Metric table">
+          <table>
+            <thead>
+              <tr>
+                <th>Strategy</th>
+                <th>Total return</th>
+                <th>Annual return</th>
+                <th>Annual volatility</th>
+                <th>Sharpe</th>
+                <th>Max drawdown</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>FRG Portfolio</td>
+                <td>12.84%</td>
+                <td>46.30%</td>
+                <td>25.80%</td>
+                <td>1.79</td>
+                <td>-14.35%</td>
+              </tr>
+              <tr>
+                <td>QQQ Buy-Hold</td>
+                <td>7.14%</td>
+                <td>24.24%</td>
+                <td>18.41%</td>
+                <td>1.32</td>
+                <td>-11.72%</td>
+              </tr>
+              <tr>
+                <td>SPY Buy-Hold</td>
+                <td>4.06%</td>
+                <td>13.35%</td>
+                <td>14.16%</td>
+                <td>0.94</td>
+                <td>-8.88%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="content-section interpretation">
+        <div class="section-heading">
+          <p class="eyebrow">Interpretation</p>
+          <h2>How to read the results</h2>
+        </div>
+        <p>
+          This is best read as a pipeline demo and research prototype. The strongest evidence is that
+          the repo has a concrete, inspectable path from stock selection to research scoring, news
+          scoring, target weights, portfolio values, and benchmark metrics. The result is encouraging
+          for this short window, but the site deliberately avoids claiming broad robustness or live
+          profitability.
+        </p>
+        <p>
+          The 60% QQQ sleeve matters. It stabilizes the portfolio and makes the system partly a market
+          exposure strategy rather than a pure stock-selection strategy. The individual stock overlay
+          still affects performance and drawdown, but any interpretation should separate market beta
+          from alpha generated by FinRL, FinRobot, or FinGPT.
+        </p>
+      </section>
+
+      <section class="content-section" id="limits">
+        <div class="section-heading">
+          <p class="eyebrow">Limitations</p>
+          <h2>What is not proven yet</h2>
+        </div>
+        <div class="limit-grid">
+          <article>
+            <h3>Short test window</h3>
+            <p>The required 2026-01-01 to 2026-04-30 period is too short to establish stable performance.</p>
+          </article>
+          <article>
+            <h3>Data and dependency gaps</h3>
+            <p>The current export includes outputs, but not every raw data dependency or external FinRobot component needed for a clean rerun.</p>
+          </article>
+          <article>
+            <h3>Bias risks</h3>
+            <p>The scripts attempt no-lookahead handling, but survivorship bias, data availability timing, and benchmark alignment still require careful audit.</p>
+          </article>
+          <article>
+            <h3>Transaction costs and robustness</h3>
+            <p>A transaction cost parameter exists, but the repo does not include a full sensitivity study, turnover report, or walk-forward robustness grid.</p>
+          </article>
+          <article>
+            <h3>Signal quality uncertainty</h3>
+            <p>News and sentiment signals depend on filtering, keyword logic, and LLM-style calibration assumptions that can miss context.</p>
+          </article>
+          <article>
+            <h3>Benchmark limitations</h3>
+            <p>QQQ and SPY are useful references, but the strategy contains a fixed QQQ sleeve, so benchmark interpretation should be explicit.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section" id="reproducibility">
+        <div class="section-heading">
+          <p class="eyebrow">Reproducibility</p>
+          <h2>Where to inspect the project</h2>
+        </div>
+
+        <div class="repo-map">
+          <div>
+            <h3>Scripts</h3>
+            <p><code>finrl/scripts/</code>, <code>finrobot/scripts/</code>, and <code>fingpt/scripts/</code> contain the current pipeline scripts and runbooks.</p>
+          </div>
+          <div>
+            <h3>Results</h3>
+            <p><code>finrl/results/</code> and <code>finrobot/results/</code> contain the CSVs and figures used for this web page.</p>
+          </div>
+          <div>
+            <h3>Report</h3>
+            <p>The teammate's LaTeX narrative remains untouched at <code>report/main (1).tex</code>.</p>
+          </div>
+          <div>
+            <h3>Web layer</h3>
+            <p>This static site is isolated under <code>docs/</code> and uses copied or regenerated figures under <code>docs/assets/figures/</code>.</p>
+          </div>
+        </div>
+
+        <div class="note-card">
+          <h3>Known missing or unavailable artifacts</h3>
+          <p>
+            The root <code>README.md</code> requested in the brief is not present in this local snapshot.
+            No PDF report was found. Turnover, complete transaction-cost attribution, and full robustness
+            testing metrics were not available, so they are not claimed on this page.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Static GitHub Pages presentation for <code>pipeline_finrl_robot_gpt</code>.</p>
+      <p>Authors: Rui Zhao, Qingyue Wang, Ruping Zhang.</p>
+      <p>Built from repository artifacts without modifying original code, result files, or the LaTeX report.</p>
+    </footer>
+  </body>
+</html>
