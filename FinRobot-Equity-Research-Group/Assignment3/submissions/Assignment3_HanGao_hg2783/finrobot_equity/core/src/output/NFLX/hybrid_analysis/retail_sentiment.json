@@ -1,0 +1,41 @@
+{
+  "ticker": "NFLX",
+  "period_days": 7,
+  "coverage": "3/3",
+  "coverage_ratio": 1.0,
+  "average_buzz": 72.3,
+  "bullish_avg": 42.3,
+  "source_alignment": "Partial divergence",
+  "sources": [
+    {
+      "key": "reddit",
+      "label": "Reddit",
+      "buzz_score": 64.9,
+      "bullish_pct": 32.0,
+      "activity_label": "Mentions",
+      "activity_value": 286,
+      "trend": "stable",
+      "has_data": true
+    },
+    {
+      "key": "x",
+      "label": "X.com",
+      "buzz_score": 82.7,
+      "bullish_pct": 46.0,
+      "activity_label": "Mentions",
+      "activity_value": 2102,
+      "trend": "falling",
+      "has_data": true
+    },
+    {
+      "key": "polymarket",
+      "label": "Polymarket",
+      "buzz_score": 69.4,
+      "bullish_pct": 49.0,
+      "activity_label": "Trades",
+      "activity_value": 827,
+      "trend": "falling",
+      "has_data": true
+    }
+  ]
+}

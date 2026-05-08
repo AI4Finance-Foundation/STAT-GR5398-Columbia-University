@@ -1,0 +1,41 @@
+{
+  "ticker": "CRM",
+  "period_days": 7,
+  "coverage": "2/3",
+  "coverage_ratio": 0.67,
+  "average_buzz": 65.1,
+  "bullish_avg": 53.0,
+  "source_alignment": "Wide divergence",
+  "sources": [
+    {
+      "key": "reddit",
+      "label": "Reddit",
+      "buzz_score": 55.9,
+      "bullish_pct": 38.0,
+      "activity_label": "Mentions",
+      "activity_value": 98,
+      "trend": "rising",
+      "has_data": true
+    },
+    {
+      "key": "x",
+      "label": "X.com",
+      "buzz_score": 74.3,
+      "bullish_pct": 68.0,
+      "activity_label": "Mentions",
+      "activity_value": 750,
+      "trend": "stable",
+      "has_data": true
+    },
+    {
+      "key": "polymarket",
+      "label": "Polymarket",
+      "buzz_score": 0.0,
+      "bullish_pct": null,
+      "activity_label": "Trades",
+      "activity_value": 0,
+      "trend": "n/a",
+      "has_data": false
+    }
+  ]
+}
