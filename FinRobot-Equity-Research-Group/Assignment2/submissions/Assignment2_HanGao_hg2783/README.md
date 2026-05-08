@@ -4,8 +4,6 @@
 
 ## Medium Link 
 https://medium.com/@hg2783/enhancing-finrobot-equity-research-with-frontier-llms-model-role-assignment-and-claude-inspired-d581ea8c4a17
-## Output 
-STAT-GR5398-Spring-2026/FinRobot-Equity-Research-Group/Assignment2/submissions/Assignment2_HanGao_hg2783/finrobot_equity/core/src/output
 
 ## Overview
 

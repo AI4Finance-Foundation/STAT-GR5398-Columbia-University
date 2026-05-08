@@ -1,0 +1,41 @@
+{
+  "ticker": "TSLA",
+  "period_days": 7,
+  "coverage": "3/3",
+  "coverage_ratio": 1.0,
+  "average_buzz": 74.5,
+  "bullish_avg": 43.0,
+  "source_alignment": "Wide divergence",
+  "sources": [
+    {
+      "key": "reddit",
+      "label": "Reddit",
+      "buzz_score": 69.6,
+      "bullish_pct": 28.0,
+      "activity_label": "Mentions",
+      "activity_value": 927,
+      "trend": "rising",
+      "has_data": true
+    },
+    {
+      "key": "x",
+      "label": "X.com",
+      "buzz_score": 85.7,
+      "bullish_pct": 50.0,
+      "activity_label": "Mentions",
+      "activity_value": 3164,
+      "trend": "rising",
+      "has_data": true
+    },
+    {
+      "key": "polymarket",
+      "label": "Polymarket",
+      "buzz_score": 68.1,
+      "bullish_pct": 51.0,
+      "activity_label": "Trades",
+      "activity_value": 2496,
+      "trend": "falling",
+      "has_data": true
+    }
+  ]
+}

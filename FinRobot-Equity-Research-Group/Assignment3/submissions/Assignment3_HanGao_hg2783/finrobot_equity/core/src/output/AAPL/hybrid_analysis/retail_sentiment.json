@@ -1,0 +1,41 @@
+{
+  "ticker": "AAPL",
+  "period_days": 7,
+  "coverage": "3/3",
+  "coverage_ratio": 1.0,
+  "average_buzz": 75.1,
+  "bullish_avg": 49.0,
+  "source_alignment": "Wide divergence",
+  "sources": [
+    {
+      "key": "reddit",
+      "label": "Reddit",
+      "buzz_score": 73.4,
+      "bullish_pct": 31.0,
+      "activity_label": "Mentions",
+      "activity_value": 1811,
+      "trend": "falling",
+      "has_data": true
+    },
+    {
+      "key": "x",
+      "label": "X.com",
+      "buzz_score": 84.9,
+      "bullish_pct": 60.0,
+      "activity_label": "Mentions",
+      "activity_value": 3161,
+      "trend": "rising",
+      "has_data": true
+    },
+    {
+      "key": "polymarket",
+      "label": "Polymarket",
+      "buzz_score": 67.1,
+      "bullish_pct": 56.0,
+      "activity_label": "Trades",
+      "activity_value": 2047,
+      "trend": "falling",
+      "has_data": true
+    }
+  ]
+}

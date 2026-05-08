@@ -1,0 +1,41 @@
+{
+  "ticker": "META",
+  "period_days": 7,
+  "coverage": "3/3",
+  "coverage_ratio": 1.0,
+  "average_buzz": 76.3,
+  "bullish_avg": 39.3,
+  "source_alignment": "Wide divergence",
+  "sources": [
+    {
+      "key": "reddit",
+      "label": "Reddit",
+      "buzz_score": 76.0,
+      "bullish_pct": 28.0,
+      "activity_label": "Mentions",
+      "activity_value": 2987,
+      "trend": "stable",
+      "has_data": true
+    },
+    {
+      "key": "x",
+      "label": "X.com",
+      "buzz_score": 84.0,
+      "bullish_pct": 52.0,
+      "activity_label": "Mentions",
+      "activity_value": 3253,
+      "trend": "falling",
+      "has_data": true
+    },
+    {
+      "key": "polymarket",
+      "label": "Polymarket",
+      "buzz_score": 69.0,
+      "bullish_pct": 38.0,
+      "activity_label": "Trades",
+      "activity_value": 1698,
+      "trend": "falling",
+      "has_data": true
+    }
+  ]
+}

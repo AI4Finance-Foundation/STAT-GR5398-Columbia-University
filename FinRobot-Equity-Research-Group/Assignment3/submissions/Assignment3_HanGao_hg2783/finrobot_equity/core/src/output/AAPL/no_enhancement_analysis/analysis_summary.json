@@ -1,0 +1,69 @@
+{
+  "company_ticker": "AAPL",
+  "company_name": "Apple Inc.",
+  "analysis_date": "2026-04-26 19:12:55",
+  "data_source": "Financial Modeling Prep API",
+  "data_period": "annual",
+  "years_analyzed": 5,
+  "available_years": [
+    2025,
+    2024,
+    2023,
+    2022,
+    2021
+  ],
+  "latest_year": "2025A",
+  "forecast_years": [
+    "2025E",
+    "2026E",
+    "2027E"
+  ],
+  "peer_tickers": [],
+  "news_days_back": 5,
+  "news_articles_fetched": 0,
+  "enhanced_news_enabled": false,
+  "sensitivity_analysis_enabled": false,
+  "catalyst_analysis_enabled": false,
+  "sec_filing_analysis_enabled": false,
+  "sec_filing_types": [
+    "10-K",
+    "10-Q"
+  ],
+  "sec_filing_limit": 2,
+  "revenue_driver_analysis_enabled": false,
+  "forecast_config": {
+    "revenue_base_year": "2025A",
+    "revenue_growth_assumptions": {
+      "2025E": 0.05,
+      "2026E": 0.06,
+      "2027E": 0.04
+    },
+    "ebitda_growth_factor": 1.05,
+    "margin_improvement": {
+      "Contribution Margin": 0.01,
+      "EBITDA Margin": 0.01
+    },
+    "sga_margin_change": -0.005
+  },
+  "files_generated": {
+    "main_analysis": "financial_metrics_and_forecasts.csv",
+    "peer_ebitda": null,
+    "peer_ev_ebitda": null,
+    "company_news": null,
+    "enhanced_news": null,
+    "sec_filing_analysis": null,
+    "revenue_driver_analysis": null,
+    "sensitivity_analysis": null,
+    "catalyst_analysis": null,
+    "text_sections": [
+      "tagline",
+      "company_overview",
+      "investment_overview",
+      "valuation_overview",
+      "risks",
+      "competitor_analysis",
+      "major_takeaways",
+      "news_summary"
+    ]
+  }
+}
