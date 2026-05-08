@@ -7,6 +7,9 @@ FinRL generates the base portfolio using an adaptive rotation strategy (enhanced
 The strategy was backtested from 2026-01-01 to 2026-04-30 and outperformed SPY.
 ## File Description
 
+- `New story-Medium`
+  Medium Blog
+
 - `adaptive_rotation_engine_qqq.py`  
   Core implementation of the modified adaptive rotation strategy.
 
