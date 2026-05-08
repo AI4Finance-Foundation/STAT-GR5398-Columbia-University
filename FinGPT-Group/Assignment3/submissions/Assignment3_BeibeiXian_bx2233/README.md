@@ -84,6 +84,15 @@ python code/a3_signal_diagnostics.py
 ```
 
 ---
+## Data Leakage Fix (Phase 2 → Phase 3)
+A supplementary LSTM model in Phase 2 reported +3,228% cumulative return — immediately identified as data leakage. The LSTM was trained on 2020–2025 data but backtested from 2014, meaning it evaluated on its own training data.
+Phase 3 enforces a strict temporal firewall:
+
+Training window: 2020–2024
+Validation window: 2025
+Test window: 2026 Q1 (strictly out-of-sample, never seen during training)
+
+The honest Phase 3 result (+7.35%). 
 
 ## The Contrarian Inversion
 
