@@ -93,19 +93,9 @@ The core insight is a single line of code:
 contrarian_score = -composite_score(fingpt_signal)
 ```
 
-The FinGPT adapter says "Bullish" 90% of the time in 2026 Q1. This is not noise — it is a structural artifact of training on Dow30 blue-chip corporate news, which is dominated by earnings beats and analyst upgrades. A model that is *systematically* wrong in a predictable direction is an edge, not a failure.
+The FinGPT adapter says "Bullish" 90% of the time in 2026 Q1. This is not noise; it is a structural artifact of training on Dow30 blue-chip corporate news, which is dominated by earnings beats and analyst upgrades. A model that is *systematically* wrong in a predictable direction is an edge, not a failure.
 
 Validated by: Spearman(contrarian_score, Massive_sentiment) = **−0.3608** (p < 0.0001, N = 2,580).
-
----
-
-## What You Need to Add
-
-> **`data/fingpt_signals.csv`** — download from your Google Drive:
-> `A3_ContrarianFusion/outputs/fingpt_signals.csv`
-> This is the 2,580-row FinGPT inference output. Without it the backtest cannot run.
-
-> **`signal_module.py`** (optional for re-running inference) — copy from your Assignment 2 folder. Not needed if you only want to run the backtest on the existing signals.
 
 ---
 
