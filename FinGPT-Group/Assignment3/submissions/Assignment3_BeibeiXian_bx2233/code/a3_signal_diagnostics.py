@@ -1,21 +1,3 @@
-"""
-a3_signal_diagnostics.py
-GR5398 Assignment 3 — Signal Diagnostic Plots
-Beibei Xian (bx2233) · Columbia University · Spring 2026
-
-Reads fingpt_signals.csv and generates the 5-panel diagnostic figure:
-    Panel 1: Direction distribution pie chart (90% Bullish)
-    Panel 2: Contrarian score distribution
-    Panel 3: Weekly bullish rate over time
-    Panel 4: Spearman scatter vs Massive sentiment (ρ = −0.3608)
-    Panel 5: Raw bucket counts
-
-Output: outputs/signal_diagnostics.png
-
-Run:
-    python code/a3_signal_diagnostics.py
-"""
-
 import pandas as pd
 import numpy as np
 import matplotlib
@@ -31,7 +13,6 @@ OUTPUT_DIR.mkdir(exist_ok=True)
 
 
 def main():
-    # ── Load ─────────────────────────────────────────────────────────────────
     df = pd.read_csv(DATA_DIR / "fingpt_signals.csv")
     df["week_start"] = pd.to_datetime(df["week_start"])
 
@@ -142,7 +123,6 @@ def main():
     ax5.set_xlabel("Count", fontsize=9)
     ax5.grid(axis="x", alpha=0.3)
 
-    # ── Title & save ──────────────────────────────────────────────────────────
     fig.suptitle(
         "FinGPT Contrarian Signal Diagnostics — 2026 Q1  (N = 2,580 stock-day predictions)",
         fontsize=13, fontweight="bold", y=0.98,
