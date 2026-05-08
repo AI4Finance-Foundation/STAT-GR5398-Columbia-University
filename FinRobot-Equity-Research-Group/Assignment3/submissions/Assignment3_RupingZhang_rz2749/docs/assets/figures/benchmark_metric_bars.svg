@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" role="img">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0f172a" flood-opacity="0.12"/></filter>
+    <linearGradient id="blueSoft" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#eff6ff"/><stop offset="1" stop-color="#ecfeff"/></linearGradient>
+    <linearGradient id="greenSoft" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#ecfdf5"/><stop offset="1" stop-color="#f0fdfa"/></linearGradient>
+  </defs>
+  <style>
+    text { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial, sans-serif; fill: #162033; }
+    .title { font-size: 32px; font-weight: 850; }
+    .sub { font-size: 15px; fill: #64748b; }
+    .label { font-size: 15px; font-weight: 780; }
+    .small { font-size: 13px; fill: #64748b; }
+    .tiny { font-size: 11px; fill: #64748b; }
+    .metric { font-size: 26px; font-weight: 850; }
+    .axis { stroke: #94a3b8; stroke-width: 1.2; }
+    .grid { stroke: #dbe4ee; stroke-width: 1; }
+  </style>
+<rect width="1400" height="760" fill="#f7fafc"/>
+<rect x="34" y="30" width="1332" height="692" rx="30" fill="#ffffff" filter="url(#shadow)"/>
+<text x="72" y="84" class="title">Benchmark Metrics Snapshot</text>
+<text x="72" y="112" class="sub">Aligned metrics from the final FRG backtest CSVs. Longer bars are larger absolute values.</text>
+<text x="72" y="192" class="label">Total return</text>
+<text x="170" y="178" class="small">FRG Portfolio</text>
+<rect x="290" y="164" width="950" height="16" rx="8" fill="#edf2f7"/>
+<rect x="290" y="164" width="848.2" height="16" rx="8" fill="#2563eb" opacity="0.86"/>
+<text x="1150.2" y="177" class="small">12.84%</text>
+<text x="170" y="203" class="small">QQQ Buy-Hold</text>
+<rect x="290" y="189" width="950" height="16" rx="8" fill="#edf2f7"/>
+<rect x="290" y="189" width="471.3" height="16" rx="8" fill="#10b981" opacity="0.86"/>
+<text x="773.3" y="202" class="small">7.14%</text>
+<text x="170" y="228" class="small">SPY Buy-Hold</text>
+<rect x="290" y="214" width="950" height="16" rx="8" fill="#edf2f7"/>
+<rect x="290" y="214" width="268.2" height="16" rx="8" fill="#f97316" opacity="0.86"/>
+<text x="570.2" y="227" class="small">4.06%</text>
+<text x="72" y="298" class="label">Annual return</text>
+<text x="170" y="284" class="small">FRG Portfolio</text>
+<rect x="290" y="270" width="950" height="16" rx="8" fill="#edf2f7"/>
+<rect x="290" y="270" width="848.2" height="16" rx="8" fill="#2563eb" opacity="0.86"/>
+<text x="1150.2" y="283" class="small">46.30%</text>
+<text x="170" y="309" class="small">QQQ Buy-Hold</text>
+<rect x="290" y="295" width="950" height="16" rx="8" fill="#edf2f7"/>
+<rect x="290" y="295" width="444.1" height="16" rx="8" fill="#10b981" opacity="0.86"/>
+<text x="746.1" y="308" class="small">24.24%</text>
+<text x="170" y="334" class="small">SPY Buy-Hold</text>
+<rect x="290" y="320" width="950" height="16" rx="8" fill="#edf2f7"/>
+<rect x="290" y="320" width="244.6" height="16" rx="8" fill="#f97316" opacity="0.86"/>
+<text x="546.6" y="333" class="small">13.35%</text>
+<text x="72" y="404" class="label">Annual volatility</text>
+<text x="170" y="390" class="small">FRG Portfolio</text>
+<rect x="290" y="376" width="950" height="16" rx="8" fill="#edf2f7"/>
+<rect x="290" y="376" width="848.2" height="16" rx="8" fill="#2563eb" opacity="0.86"/>
+<text x="1150.2" y="389" class="small">25.80%</text>
+<text x="170" y="415" class="small">QQQ Buy-Hold</text>
+<rect x="290" y="401" width="950" height="16" rx="8" fill="#edf2f7"/>
+<rect x="290" y="401" width="605.1" height="16" rx="8" fill="#10b981" opacity="0.86"/>
+<text x="907.1" y="414" class="small">18.41%</text>
+<text x="170" y="440" class="small">SPY Buy-Hold</text>
+<rect x="290" y="426" width="950" height="16" rx="8" fill="#edf2f7"/>
+<rect x="290" y="426" width="465.5" height="16" rx="8" fill="#f97316" opacity="0.86"/>
+<text x="767.5" y="439" class="small">14.16%</text>
+<text x="72" y="510" class="label">Sharpe ratio</text>
+<text x="170" y="496" class="small">FRG Portfolio</text>
+<rect x="290" y="482" width="950" height="16" rx="8" fill="#edf2f7"/>
+<rect x="290" y="482" width="848.2" height="16" rx="8" fill="#2563eb" opacity="0.86"/>
+<text x="1150.2" y="495" class="small">1.79</text>
+<text x="170" y="521" class="small">QQQ Buy-Hold</text>
+<rect x="290" y="507" width="950" height="16" rx="8" fill="#edf2f7"/>
+<rect x="290" y="507" width="622.6" height="16" rx="8" fill="#10b981" opacity="0.86"/>
+<text x="924.6" y="520" class="small">1.32</text>
+<text x="170" y="546" class="small">SPY Buy-Hold</text>
+<rect x="290" y="532" width="950" height="16" rx="8" fill="#edf2f7"/>
+<rect x="290" y="532" width="445.8" height="16" rx="8" fill="#f97316" opacity="0.86"/>
+<text x="747.8" y="545" class="small">0.94</text>
+<text x="72" y="616" class="label">Max drawdown</text>
+<text x="170" y="602" class="small">FRG Portfolio</text>
+<rect x="290" y="588" width="950" height="16" rx="8" fill="#edf2f7"/>
+<rect x="290" y="588" width="848.2" height="16" rx="8" fill="#2563eb" opacity="0.86"/>
+<text x="1150.2" y="601" class="small">-14.35%</text>
+<text x="170" y="627" class="small">QQQ Buy-Hold</text>
+<rect x="290" y="613" width="950" height="16" rx="8" fill="#edf2f7"/>
+<rect x="290" y="613" width="693.0" height="16" rx="8" fill="#10b981" opacity="0.86"/>
+<text x="995.0" y="626" class="small">-11.72%</text>
+<text x="170" y="652" class="small">SPY Buy-Hold</text>
+<rect x="290" y="638" width="950" height="16" rx="8" fill="#edf2f7"/>
+<rect x="290" y="638" width="525.2" height="16" rx="8" fill="#f97316" opacity="0.86"/>
+<text x="827.2" y="651" class="small">-8.88%</text>
+<rect x="72" y="676" width="1210" height="34" rx="12" fill="#f8fafc" stroke="#dbe4ee"/>
+<text x="92" y="698" class="tiny">Note: FRG has higher return and Sharpe in this file, but also the deepest max drawdown. The period is short.</text>
+</svg>

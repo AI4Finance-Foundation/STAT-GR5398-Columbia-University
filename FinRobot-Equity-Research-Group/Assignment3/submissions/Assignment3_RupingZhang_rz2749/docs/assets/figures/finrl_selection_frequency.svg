@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0f172a" flood-opacity="0.12"/></filter>
+    <linearGradient id="blueSoft" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#eff6ff"/><stop offset="1" stop-color="#ecfeff"/></linearGradient>
+    <linearGradient id="greenSoft" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#ecfdf5"/><stop offset="1" stop-color="#f0fdfa"/></linearGradient>
+  </defs>
+  <style>
+    text { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial, sans-serif; fill: #162033; }
+    .title { font-size: 32px; font-weight: 850; }
+    .sub { font-size: 15px; fill: #64748b; }
+    .label { font-size: 15px; font-weight: 780; }
+    .small { font-size: 13px; fill: #64748b; }
+    .tiny { font-size: 11px; fill: #64748b; }
+    .metric { font-size: 26px; font-weight: 850; }
+    .axis { stroke: #94a3b8; stroke-width: 1.2; }
+    .grid { stroke: #dbe4ee; stroke-width: 1; }
+  </style>
+<rect width="1200" height="640" fill="#f7fafc"/>
+<rect x="34" y="30" width="1132" height="574" rx="30" fill="#ffffff" filter="url(#shadow)"/>
+<text x="72" y="84" class="title">FinRL Top-5 Selection Frequency</text>
+<text x="72" y="112" class="sub">How often each ticker appeared in the weekly top-5 candidate list.</text>
+<text x="78" y="178" class="label">GOOGL</text>
+<rect x="170" y="158" width="880" height="22" rx="11" fill="#edf2f7"/>
+<rect x="170" y="158" width="880.0" height="22" rx="11" fill="#2563eb" opacity="0.88"/>
+<text x="1062.0" y="175" class="small">15 weeks</text>
+<text x="78" y="216" class="label">AMAT</text>
+<rect x="170" y="196" width="880" height="22" rx="11" fill="#edf2f7"/>
+<rect x="170" y="196" width="762.7" height="22" rx="11" fill="#10b981" opacity="0.88"/>
+<text x="944.7" y="213" class="small">13 weeks</text>
+<text x="78" y="254" class="label">META</text>
+<rect x="170" y="234" width="880" height="22" rx="11" fill="#edf2f7"/>
+<rect x="170" y="234" width="645.3" height="22" rx="11" fill="#7c3aed" opacity="0.88"/>
+<text x="827.3" y="251" class="small">11 weeks</text>
+<text x="78" y="292" class="label">TSLA</text>
+<rect x="170" y="272" width="880" height="22" rx="11" fill="#edf2f7"/>
+<rect x="170" y="272" width="528.0" height="22" rx="11" fill="#f97316" opacity="0.88"/>
+<text x="710.0" y="289" class="small">9 weeks</text>
+<text x="78" y="330" class="label">ISRG</text>
+<rect x="170" y="310" width="880" height="22" rx="11" fill="#edf2f7"/>
+<rect x="170" y="310" width="469.3" height="22" rx="11" fill="#e11d48" opacity="0.88"/>
+<text x="651.3" y="327" class="small">8 weeks</text>
+<text x="78" y="368" class="label">TXN</text>
+<rect x="170" y="348" width="880" height="22" rx="11" fill="#edf2f7"/>
+<rect x="170" y="348" width="410.7" height="22" rx="11" fill="#06b6d4" opacity="0.88"/>
+<text x="592.7" y="365" class="small">7 weeks</text>
+<text x="78" y="406" class="label">NFLX</text>
+<rect x="170" y="386" width="880" height="22" rx="11" fill="#edf2f7"/>
+<rect x="170" y="386" width="410.7" height="22" rx="11" fill="#f59e0b" opacity="0.88"/>
+<text x="592.7" y="403" class="small">7 weeks</text>
+<text x="78" y="444" class="label">CSCO</text>
+<rect x="170" y="424" width="880" height="22" rx="11" fill="#edf2f7"/>
+<rect x="170" y="424" width="352.0" height="22" rx="11" fill="#64748b" opacity="0.88"/>
+<text x="534.0" y="441" class="small">6 weeks</text>
+<text x="78" y="482" class="label">AMD</text>
+<rect x="170" y="462" width="880" height="22" rx="11" fill="#edf2f7"/>
+<rect x="170" y="462" width="234.7" height="22" rx="11" fill="#db2777" opacity="0.88"/>
+<text x="416.7" y="479" class="small">4 weeks</text>
+<text x="78" y="520" class="label">COST</text>
+<rect x="170" y="500" width="880" height="22" rx="11" fill="#edf2f7"/>
+<rect x="170" y="500" width="234.7" height="22" rx="11" fill="#84cc16" opacity="0.88"/>
+<text x="416.7" y="517" class="small">4 weeks</text>
+<text x="78" y="558" class="label">AMZN</text>
+<rect x="170" y="538" width="880" height="22" rx="11" fill="#edf2f7"/>
+<rect x="170" y="538" width="58.7" height="22" rx="11" fill="#0f766e" opacity="0.88"/>
+<text x="240.7" y="555" class="small">1 weeks</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="560" viewBox="0 0 1400 560" role="img">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0f172a" flood-opacity="0.12"/></filter>
+    <linearGradient id="blueSoft" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#eff6ff"/><stop offset="1" stop-color="#ecfeff"/></linearGradient>
+    <linearGradient id="greenSoft" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#ecfdf5"/><stop offset="1" stop-color="#f0fdfa"/></linearGradient>
+  </defs>
+  <style>
+    text { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial, sans-serif; fill: #162033; }
+    .title { font-size: 32px; font-weight: 850; }
+    .sub { font-size: 15px; fill: #64748b; }
+    .label { font-size: 15px; font-weight: 780; }
+    .small { font-size: 13px; fill: #64748b; }
+    .tiny { font-size: 11px; fill: #64748b; }
+    .metric { font-size: 26px; font-weight: 850; }
+    .axis { stroke: #94a3b8; stroke-width: 1.2; }
+    .grid { stroke: #dbe4ee; stroke-width: 1; }
+  </style>
+<rect width="1400" height="560" fill="#f7fafc"/>
+<rect x="34" y="30" width="1332" height="492" rx="30" fill="#ffffff" filter="url(#shadow)"/>
+<text x="72" y="84" class="title">No-Lookahead Information Boundary</text>
+<text x="72" y="112" class="sub">Every rebalance date is treated as a decision date. Later information should not enter the signal.</text>
+<line x1="112" y1="260" x2="1288" y2="260" stroke="#94a3b8" stroke-width="4" stroke-linecap="round"/>
+<circle cx="192" cy="260" r="14" fill="#2563eb"/>
+<line x1="192" y1="274" x2="192" y2="338" stroke="#2563eb" stroke-width="2"/>
+<text x="110" y="366" class="label">t - 60d</text>
+<text x="110" y="390" class="small">rolling price features</text>
+<circle cx="472" cy="260" r="14" fill="#7c3aed"/>
+<line x1="472" y1="274" x2="472" y2="338" stroke="#7c3aed" stroke-width="2"/>
+<text x="390" y="366" class="label">t - 21d to t - 1d</text>
+<text x="390" y="390" class="small">FinGPT news window</text>
+<circle cx="762" cy="260" r="14" fill="#f97316"/>
+<line x1="762" y1="274" x2="762" y2="338" stroke="#f97316" stroke-width="2"/>
+<text x="680" y="366" class="label">acceptedDate &lt;= t</text>
+<text x="680" y="390" class="small">FinRobot filings</text>
+<circle cx="1012" cy="260" r="14" fill="#10b981"/>
+<line x1="1012" y1="274" x2="1012" y2="338" stroke="#10b981" stroke-width="2"/>
+<text x="930" y="366" class="label">rebalance date t</text>
+<text x="930" y="390" class="small">portfolio decision</text>
+<circle cx="1222" cy="260" r="14" fill="#e11d48"/>
+<line x1="1222" y1="274" x2="1222" y2="338" stroke="#e11d48" stroke-width="2"/>
+<text x="1140" y="366" class="label">t + 1 trading day</text>
+<text x="1140" y="390" class="small">execution lag</text>
+<rect x="392" y="176" width="320" height="42" rx="12" fill="#f5f3ff" stroke="#ddd6fe"/>
+<text x="414" y="202" class="small">news must be published before the rebalance</text>
+<rect x="702" y="176" width="298" height="42" rx="12" fill="#fff7ed" stroke="#fed7aa"/>
+<text x="724" y="202" class="small">financial statements filtered by acceptedDate</text>
+<rect x="72" y="432" width="1256" height="46" rx="14" fill="#f8fafc" stroke="#dbe4ee"/>
+<text x="94" y="461" class="small">This is an implementation claim from scripts/report text, not a guarantee that every external data dependency is fully auditable in this export.</text>
+</svg>

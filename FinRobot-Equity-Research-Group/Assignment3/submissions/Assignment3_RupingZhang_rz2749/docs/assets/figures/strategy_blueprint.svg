@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="660" viewBox="0 0 1600 660" role="img">
+  <defs><filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0f172a" flood-opacity="0.12"/></filter></defs>
+  <style>
+    text { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial, sans-serif; fill:#162033; }
+    .title { font-size:34px; font-weight:850; } .sub { font-size:15px; fill:#64748b; }
+    .label { font-size:15px; font-weight:800; } .small { font-size:13px; fill:#475569; }
+    .tiny { font-size:11px; fill:#64748b; } .metric { font-size:28px; font-weight:850; }
+  </style>
+<rect width="1600" height="660" fill="#f7fafc"/>
+<rect x="34" y="30" width="1532" height="592" rx="30" fill="#ffffff" filter="url(#shadow)"/>
+<text x="72" y="84" class="title">Strategy Formation Blueprint</text>
+<text x="72" y="112" class="sub">A clean formation chart for the full FinRL -> FinRobot -> FinGPT -> portfolio -> backtest workflow.</text>
+<rect x="74" y="168" width="210" height="142" rx="17" fill="#ffffff" stroke="#dbe4ee"/>
+<rect x="74" y="168" width="7" height="142" rx="4" fill="#475569"/>
+<text x="99" y="204" class="label">Data inputs</text>
+<text x="99" y="234" class="small">prices</text>
+<text x="99" y="254" class="small">fundamentals</text>
+<text x="99" y="274" class="small">company news</text>
+<line x1="296" y1="238" x2="312" y2="238" stroke="#cbd5e1" stroke-width="2.4" stroke-linecap="round"/><path d="M 312 238 l -10 -6 l 0 12 Z" fill="#cbd5e1"/>
+<rect x="326" y="168" width="210" height="142" rx="17" fill="#ffffff" stroke="#dbe4ee"/>
+<rect x="326" y="168" width="7" height="142" rx="4" fill="#2563eb"/>
+<text x="351" y="204" class="label">FinRL ranker</text>
+<text x="351" y="234" class="small">weekly top-5</text>
+<text x="351" y="254" class="small">quant candidates</text>
+<line x1="548" y1="238" x2="564" y2="238" stroke="#cbd5e1" stroke-width="2.4" stroke-linecap="round"/><path d="M 564 238 l -10 -6 l 0 12 Z" fill="#cbd5e1"/>
+<rect x="578" y="168" width="210" height="142" rx="17" fill="#ffffff" stroke="#dbe4ee"/>
+<rect x="578" y="168" width="7" height="142" rx="4" fill="#f97316"/>
+<text x="603" y="204" class="label">FinRobot gate</text>
+<text x="603" y="234" class="small">quality / value</text>
+<text x="603" y="254" class="small">catalyst / risk</text>
+<line x1="800" y1="238" x2="816" y2="238" stroke="#cbd5e1" stroke-width="2.4" stroke-linecap="round"/><path d="M 816 238 l -10 -6 l 0 12 Z" fill="#cbd5e1"/>
+<rect x="830" y="168" width="210" height="142" rx="17" fill="#ffffff" stroke="#dbe4ee"/>
+<rect x="830" y="168" width="7" height="142" rx="4" fill="#7c3aed"/>
+<text x="855" y="204" class="label">FinGPT overlay</text>
+<text x="855" y="234" class="small">sentiment</text>
+<text x="855" y="254" class="small">confidence</text>
+<text x="855" y="274" class="small">materiality</text>
+<line x1="1052" y1="238" x2="1068" y2="238" stroke="#cbd5e1" stroke-width="2.4" stroke-linecap="round"/><path d="M 1068 238 l -10 -6 l 0 12 Z" fill="#cbd5e1"/>
+<rect x="1082" y="168" width="210" height="142" rx="17" fill="#ffffff" stroke="#dbe4ee"/>
+<rect x="1082" y="168" width="7" height="142" rx="4" fill="#10b981"/>
+<text x="1107" y="204" class="label">Final weights</text>
+<text x="1107" y="234" class="small">60% QQQ sleeve</text>
+<text x="1107" y="254" class="small">40% stock basket</text>
+<line x1="1304" y1="238" x2="1320" y2="238" stroke="#cbd5e1" stroke-width="2.4" stroke-linecap="round"/><path d="M 1320 238 l -10 -6 l 0 12 Z" fill="#cbd5e1"/>
+<rect x="1334" y="168" width="210" height="142" rx="17" fill="#ffffff" stroke="#dbe4ee"/>
+<rect x="1334" y="168" width="7" height="142" rx="4" fill="#e11d48"/>
+<text x="1359" y="204" class="label">Backtest</text>
+<text x="1359" y="234" class="small">FRG portfolio</text>
+<text x="1359" y="254" class="small">vs QQQ and SPY</text>
+<rect x="74" y="380" width="350" height="112" rx="18" fill="#2563eb" opacity="0.10" stroke="#2563eb" stroke-opacity="0.32"/>
+<text x="94" y="414" class="label">Candidate generation</text>
+<text x="94" y="442" class="small">FinRL decides which stocks enter</text>
+<text x="94" y="462" class="small">the weekly candidate set.</text>
+<rect x="446" y="380" width="350" height="112" rx="18" fill="#f97316" opacity="0.10" stroke="#f97316" stroke-opacity="0.32"/>
+<text x="466" y="414" class="label">Research confirmation</text>
+<text x="466" y="442" class="small">FinRobot converts research evidence</text>
+<text x="466" y="462" class="small">into keep / reduce / reject multipliers.</text>
+<rect x="818" y="380" width="350" height="112" rx="18" fill="#7c3aed" opacity="0.10" stroke="#7c3aed" stroke-opacity="0.32"/>
+<text x="838" y="414" class="label">News conviction overlay</text>
+<text x="838" y="442" class="small">FinGPT changes position conviction</text>
+<text x="838" y="462" class="small">only after earlier filters have run.</text>
+<rect x="1190" y="380" width="350" height="112" rx="18" fill="#e11d48" opacity="0.10" stroke="#e11d48" stroke-opacity="0.32"/>
+<text x="1210" y="414" class="label">Evaluation layer</text>
+<text x="1210" y="442" class="small">The final portfolio is judged against</text>
+<text x="1210" y="462" class="small">QQQ and SPY benchmark files.</text>
+<rect x="72" y="548" width="1460" height="44" rx="14" fill="#f8fafc" stroke="#dbe4ee"/>
+<text x="94" y="576" class="small">Design rule: each layer has a narrow job. This chart explains system logic; it does not claim live profitability or broad robustness.</text>
+</svg>
