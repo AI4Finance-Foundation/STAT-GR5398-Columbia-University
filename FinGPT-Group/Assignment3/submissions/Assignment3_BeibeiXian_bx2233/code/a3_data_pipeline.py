@@ -1,26 +1,9 @@
-"""
-a3_data_pipeline.py
-GR5398 Assignment 3 — ContrarianFusion Data Pipeline
-Beibei Xian (bx2233) · Columbia University · Spring 2026
-
-Fetches all data needed before FinGPT inference:
-  1. Weekly prices       → data/prices_2026q1.csv
-  2. News articles       → data/news_2026q1.csv
-  3. FinGPT prompt inputs→ data/fingpt_inputs.csv   ← feed to FinGPT_A3_Inference.ipynb
-  4. Technical features  → data/features_2026q1.csv
-  5. Macro regime        → data/macro_regime.csv
-
-Run:
-    python code/a3_data_pipeline.py
-"""
-
 import os, time, requests
 import pandas as pd
 import numpy as np
 from pathlib import Path
 from fredapi import Fred
 
-# ── Config ────────────────────────────────────────────────────────────────────
 POLYGON_KEY = os.getenv("POLYGON_API_KEY", "8S0vgBEz3jtUMsOQlXTQNzij1gQnB7fH")
 FRED_KEY    = os.getenv("FRED_API_KEY",    "db1e550a25dbac2b3817204c4b39717c")
 POLY_BASE   = "https://api.polygon.io"
