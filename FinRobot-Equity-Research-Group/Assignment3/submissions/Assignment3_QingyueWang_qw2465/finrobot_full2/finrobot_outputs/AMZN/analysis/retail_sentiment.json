@@ -1,0 +1,41 @@
+{
+  "ticker": "AMZN",
+  "period_days": 7,
+  "coverage": "3/3",
+  "coverage_ratio": 1.0,
+  "average_buzz": 78.0,
+  "bullish_avg": 49.0,
+  "source_alignment": "Wide divergence",
+  "sources": [
+    {
+      "key": "reddit",
+      "label": "Reddit",
+      "buzz_score": 78.8,
+      "bullish_pct": 35.0,
+      "activity_label": "Mentions",
+      "activity_value": 1407,
+      "trend": "falling",
+      "has_data": true
+    },
+    {
+      "key": "x",
+      "label": "X.com",
+      "buzz_score": 83.5,
+      "bullish_pct": 54.0,
+      "activity_label": "Mentions",
+      "activity_value": 2804,
+      "trend": "falling",
+      "has_data": true
+    },
+    {
+      "key": "polymarket",
+      "label": "Polymarket",
+      "buzz_score": 71.6,
+      "bullish_pct": 58.0,
+      "activity_label": "Trades",
+      "activity_value": 2012,
+      "trend": "rising",
+      "has_data": true
+    }
+  ]
+}

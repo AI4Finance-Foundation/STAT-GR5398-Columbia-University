@@ -1,0 +1,55 @@
+{
+  "catalysts": [
+    {
+      "event_type": "market",
+      "description": "AMGEN ANNOUNCES ADDITIONAL $300 MILLION U.S. MANUFACTURING INVESTMENT, TOTALING NEARLY $2 BILLION OVER THE LAST YEAR",
+      "expected_date": "2026-05-04",
+      "impact_level": "low",
+      "probability": 0.5,
+      "sentiment": "neutral"
+    },
+    {
+      "event_type": "earnings",
+      "description": "AMGN Expected Quarterly Earnings",
+      "expected_date": "2026-08-04",
+      "impact_level": "high",
+      "probability": 0.95,
+      "sentiment": "neutral"
+    }
+  ],
+  "categorized": {
+    "positive": [],
+    "negative": [],
+    "neutral": [
+      {
+        "description": "AMGEN ANNOUNCES ADDITIONAL $300 MILLION U.S. MANUFACTURING INVESTMENT, TOTALING NEARLY $2 BILLION OVER THE LAST YEAR",
+        "impact": "low"
+      },
+      {
+        "description": "AMGN Expected Quarterly Earnings",
+        "impact": "high"
+      }
+    ]
+  },
+  "top_catalysts": [
+    {
+      "catalyst": "AMGEN ANNOUNCES ADDITIONAL $300 MILLION U.S. MANUFACTURING INVESTMENT, TOTALING NEARLY $2 BILLION OVER THE LAST YEAR",
+      "type": "market",
+      "impact_score": 1,
+      "probability": 0.5,
+      "sentiment": "neutral",
+      "weighted_impact": 0.0,
+      "expected_date": "2026-05-04"
+    },
+    {
+      "catalyst": "AMGN Expected Quarterly Earnings",
+      "type": "earnings",
+      "impact_score": 3,
+      "probability": 0.95,
+      "sentiment": "neutral",
+      "weighted_impact": 0.0,
+      "expected_date": "2026-08-04"
+    }
+  ],
+  "summary": "## Catalyst Analysis for AMGN\n\n### Events to Monitor\n- AMGEN ANNOUNCES ADDITIONAL $300 MILLION U.S. MANUFACTURING INVESTMENT, TOTALING NEARLY $2 BILLION OVER THE LAST YEAR (2026-05-04)\n- AMGN Expected Quarterly Earnings (2026-08-04)"
+}

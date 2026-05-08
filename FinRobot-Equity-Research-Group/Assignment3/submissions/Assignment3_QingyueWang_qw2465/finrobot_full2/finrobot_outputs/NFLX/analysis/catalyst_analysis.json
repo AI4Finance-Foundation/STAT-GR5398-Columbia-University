@@ -1,0 +1,98 @@
+{
+  "catalysts": [
+    {
+      "event_type": "acquisition",
+      "description": "What Did Netflix Learn From the Almost-Acquisition of a Major Rival?",
+      "expected_date": "2026-05-05",
+      "impact_level": "high",
+      "probability": 0.4,
+      "sentiment": "neutral"
+    },
+    {
+      "event_type": "acquisition",
+      "description": "Why Is Everyone Talking About Netflix Stock?",
+      "expected_date": "2026-05-02",
+      "impact_level": "high",
+      "probability": 0.4,
+      "sentiment": "neutral"
+    },
+    {
+      "event_type": "market",
+      "description": "Netflix Stock Investors Must See This Exciting Growth Strategy",
+      "expected_date": "2026-05-01",
+      "impact_level": "low",
+      "probability": 0.5,
+      "sentiment": "positive"
+    },
+    {
+      "event_type": "earnings",
+      "description": "NFLX Expected Quarterly Earnings",
+      "expected_date": "2026-08-04",
+      "impact_level": "high",
+      "probability": 0.95,
+      "sentiment": "neutral"
+    }
+  ],
+  "categorized": {
+    "positive": [
+      {
+        "description": "Netflix Stock Investors Must See This Exciting Growth Strategy",
+        "impact": "low"
+      }
+    ],
+    "negative": [],
+    "neutral": [
+      {
+        "description": "What Did Netflix Learn From the Almost-Acquisition of a Major Rival?",
+        "impact": "high"
+      },
+      {
+        "description": "Why Is Everyone Talking About Netflix Stock?",
+        "impact": "high"
+      },
+      {
+        "description": "NFLX Expected Quarterly Earnings",
+        "impact": "high"
+      }
+    ]
+  },
+  "top_catalysts": [
+    {
+      "catalyst": "Netflix Stock Investors Must See This Exciting Growth Strategy",
+      "type": "market",
+      "impact_score": 1,
+      "probability": 0.5,
+      "sentiment": "positive",
+      "weighted_impact": 0.5,
+      "expected_date": "2026-05-01"
+    },
+    {
+      "catalyst": "What Did Netflix Learn From the Almost-Acquisition of a Major Rival?",
+      "type": "acquisition",
+      "impact_score": 3,
+      "probability": 0.4,
+      "sentiment": "neutral",
+      "weighted_impact": 0.0,
+      "expected_date": "2026-05-05"
+    },
+    {
+      "catalyst": "Why Is Everyone Talking About Netflix Stock?",
+      "type": "acquisition",
+      "impact_score": 3,
+      "probability": 0.4,
+      "sentiment": "neutral",
+      "weighted_impact": 0.0,
+      "expected_date": "2026-05-02"
+    },
+    {
+      "catalyst": "NFLX Expected Quarterly Earnings",
+      "type": "earnings",
+      "impact_score": 3,
+      "probability": 0.95,
+      "sentiment": "neutral",
+      "weighted_impact": 0.0,
+      "expected_date": "2026-08-04"
+    }
+  ],
+  "summary": "## Catalyst Analysis for NFLX\n\n### Positive Catalysts (Upside Potential)\n- **Market** (2026-05-01): Netflix Stock Investors Must See This Exciting Growth Strategy\n  - Impact: LOW, Probability: 50%\n\n### Events to Monitor\n- What Did Netflix Learn From the Almost-Acquisition of a Major Rival? (2026-05-05)\n- Why Is Everyone Talking About Netflix Stock? (2026-05-02)\n- NFLX Expected Quarterly Earnings (2026-08-04)"
+}

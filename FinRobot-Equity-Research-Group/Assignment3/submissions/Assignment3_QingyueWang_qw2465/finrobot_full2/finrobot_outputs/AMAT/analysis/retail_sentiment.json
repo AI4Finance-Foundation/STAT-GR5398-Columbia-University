@@ -1,0 +1,41 @@
+{
+  "ticker": "AMAT",
+  "period_days": 7,
+  "coverage": "3/3",
+  "coverage_ratio": 1.0,
+  "average_buzz": 46.1,
+  "bullish_avg": 55.3,
+  "source_alignment": "Wide divergence",
+  "sources": [
+    {
+      "key": "reddit",
+      "label": "Reddit",
+      "buzz_score": 50.3,
+      "bullish_pct": 30.0,
+      "activity_label": "Mentions",
+      "activity_value": 27,
+      "trend": "rising",
+      "has_data": true
+    },
+    {
+      "key": "x",
+      "label": "X.com",
+      "buzz_score": 77.4,
+      "bullish_pct": 36.0,
+      "activity_label": "Mentions",
+      "activity_value": 676,
+      "trend": "rising",
+      "has_data": true
+    },
+    {
+      "key": "polymarket",
+      "label": "Polymarket",
+      "buzz_score": 10.6,
+      "bullish_pct": 100.0,
+      "activity_label": "Trades",
+      "activity_value": 1,
+      "trend": "falling",
+      "has_data": true
+    }
+  ]
+}

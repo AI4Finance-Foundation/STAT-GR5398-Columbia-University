@@ -1,0 +1,41 @@
+{
+  "ticker": "CSCO",
+  "period_days": 7,
+  "coverage": "3/3",
+  "coverage_ratio": 1.0,
+  "average_buzz": 44.6,
+  "bullish_avg": 57.0,
+  "source_alignment": "Wide divergence",
+  "sources": [
+    {
+      "key": "reddit",
+      "label": "Reddit",
+      "buzz_score": 55.3,
+      "bullish_pct": 33.0,
+      "activity_label": "Mentions",
+      "activity_value": 48,
+      "trend": "rising",
+      "has_data": true
+    },
+    {
+      "key": "x",
+      "label": "X.com",
+      "buzz_score": 37.3,
+      "bullish_pct": 38.0,
+      "activity_label": "Mentions",
+      "activity_value": 29,
+      "trend": "falling",
+      "has_data": true
+    },
+    {
+      "key": "polymarket",
+      "label": "Polymarket",
+      "buzz_score": 41.1,
+      "bullish_pct": 100.0,
+      "activity_label": "Trades",
+      "activity_value": 14,
+      "trend": "stable",
+      "has_data": true
+    }
+  ]
+}
