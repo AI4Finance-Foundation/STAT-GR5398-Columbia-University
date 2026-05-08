@@ -1,0 +1,23 @@
+{
+  "summary": "Sensitivity analysis tests how NVIDIA's valuation changes under different revenue growth and EBITDA margin assumptions.",
+  "base_case": {
+    "revenue_growth": "6%",
+    "ebitda_margin": "72%",
+    "interpretation": "Base case assumes continued AI infrastructure demand and stable operating leverage."
+  },
+  "bull_case": {
+    "revenue_growth": "10%",
+    "ebitda_margin": "75%",
+    "interpretation": "Bull case assumes stronger data center demand, faster AI adoption, and margin expansion."
+  },
+  "bear_case": {
+    "revenue_growth": "2%",
+    "ebitda_margin": "66%",
+    "interpretation": "Bear case assumes slower AI infrastructure spending and weaker margin leverage."
+  },
+  "matrix": [
+    {"Revenue Growth": "2%", "66% Margin": 220, "70% Margin": 240, "74% Margin": 260},
+    {"Revenue Growth": "6%", "66% Margin": 250, "70% Margin": 275, "74% Margin": 300},
+    {"Revenue Growth": "10%", "66% Margin": 285, "70% Margin": 315, "74% Margin": 345}
+  ]
+}

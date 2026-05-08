@@ -1,0 +1,1378 @@
+{
+  "run_id": "20260501_005147",
+  "generated_at_utc": "2026-05-01T01:32:29Z",
+  "mode": "full",
+  "tickers": [
+    "NVDA",
+    "AMD",
+    "INTC",
+    "AAPL",
+    "GOOGL"
+  ],
+  "models": [
+    {
+      "provider": "openai",
+      "name": "gpt-5.4",
+      "tag": "openai_gpt-5.4"
+    },
+    {
+      "provider": "claude",
+      "name": "claude-opus-4-6",
+      "tag": "claude_claude-opus-4-6"
+    },
+    {
+      "provider": "gemini",
+      "name": "gemini-3.1-pro-preview",
+      "tag": "gemini_gemini-3.1-pro-preview"
+    }
+  ],
+  "counts": {
+    "total_tasks": 15,
+    "success": 15,
+    "failed": 0,
+    "dry_run": 0
+  },
+  "storage_root": "/home/jovyan/work/FinRobot/output/storage/20260501_005147",
+  "fmp_cache": {
+    "task_count_with_manifest": 15,
+    "origin_counts": {
+      "fresh_fetch": 36,
+      "cache_hit": 189,
+      "fallback_stale_cache": 0,
+      "no_data": 0
+    },
+    "total_tracked_calls": 225,
+    "cache_hit_ratio": 0.84
+  },
+  "evaluation": {
+    "enabled": true,
+    "generated_at_utc": "2026-05-01T01:32:29Z",
+    "stage1": {
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "records": [
+        {
+          "ticker": "NVDA",
+          "company_name": "NVIDIA Corporation",
+          "model_provider": "openai",
+          "model_name": "gpt-5.4",
+          "model_tag": "openai_gpt-5.4",
+          "judge_provider": "openai",
+          "judge_model": "gpt-4o-mini",
+          "report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/NVDA/report/Professional_Equity_Report_NVDA.html",
+          "stage1_output": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/evaluation/stage1/NVDA/openai_gpt-5.4.json",
+          "status": "success",
+          "return_code": 0,
+          "stage1_score": 72.4,
+          "judge_origin": "stage1"
+        },
+        {
+          "ticker": "NVDA",
+          "company_name": "NVIDIA Corporation",
+          "model_provider": "claude",
+          "model_name": "claude-opus-4-6",
+          "model_tag": "claude_claude-opus-4-6",
+          "judge_provider": "openai",
+          "judge_model": "gpt-4o-mini",
+          "report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/NVDA/report/Professional_Equity_Report_NVDA.html",
+          "stage1_output": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/evaluation/stage1/NVDA/claude_claude-opus-4-6.json",
+          "status": "success",
+          "return_code": 0,
+          "stage1_score": 43.2,
+          "judge_origin": "stage1"
+        },
+        {
+          "ticker": "NVDA",
+          "company_name": "NVIDIA Corporation",
+          "model_provider": "gemini",
+          "model_name": "gemini-3.1-pro-preview",
+          "model_tag": "gemini_gemini-3.1-pro-preview",
+          "judge_provider": "openai",
+          "judge_model": "gpt-4o-mini",
+          "report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/NVDA/report/Professional_Equity_Report_NVDA.html",
+          "stage1_output": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/evaluation/stage1/NVDA/gemini_gemini-3.1-pro-preview.json",
+          "status": "success",
+          "return_code": 0,
+          "stage1_score": 48.1,
+          "judge_origin": "stage1"
+        },
+        {
+          "ticker": "AMD",
+          "company_name": "Advanced Micro Devices, Inc.",
+          "model_provider": "openai",
+          "model_name": "gpt-5.4",
+          "model_tag": "openai_gpt-5.4",
+          "judge_provider": "openai",
+          "judge_model": "gpt-4o-mini",
+          "report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/AMD/report/Professional_Equity_Report_AMD.html",
+          "stage1_output": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/evaluation/stage1/AMD/openai_gpt-5.4.json",
+          "status": "success",
+          "return_code": 0,
+          "stage1_score": 40.2,
+          "judge_origin": "stage1"
+        },
+        {
+          "ticker": "AMD",
+          "company_name": "Advanced Micro Devices, Inc.",
+          "model_provider": "claude",
+          "model_name": "claude-opus-4-6",
+          "model_tag": "claude_claude-opus-4-6",
+          "judge_provider": "openai",
+          "judge_model": "gpt-4o-mini",
+          "report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/AMD/report/Professional_Equity_Report_AMD.html",
+          "stage1_output": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/evaluation/stage1/AMD/claude_claude-opus-4-6.json",
+          "status": "success",
+          "return_code": 0,
+          "stage1_score": 43.2,
+          "judge_origin": "stage1"
+        },
+        {
+          "ticker": "AMD",
+          "company_name": "Advanced Micro Devices, Inc.",
+          "model_provider": "gemini",
+          "model_name": "gemini-3.1-pro-preview",
+          "model_tag": "gemini_gemini-3.1-pro-preview",
+          "judge_provider": "openai",
+          "judge_model": "gpt-4o-mini",
+          "report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/AMD/report/Professional_Equity_Report_AMD.html",
+          "stage1_output": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/evaluation/stage1/AMD/gemini_gemini-3.1-pro-preview.json",
+          "status": "success",
+          "return_code": 0,
+          "stage1_score": 43.2,
+          "judge_origin": "stage1"
+        },
+        {
+          "ticker": "INTC",
+          "company_name": "Intel Corporation",
+          "model_provider": "openai",
+          "model_name": "gpt-5.4",
+          "model_tag": "openai_gpt-5.4",
+          "judge_provider": "openai",
+          "judge_model": "gpt-4o-mini",
+          "report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/INTC/report/Professional_Equity_Report_INTC.html",
+          "stage1_output": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/evaluation/stage1/INTC/openai_gpt-5.4.json",
+          "status": "success",
+          "return_code": 0,
+          "stage1_score": 41.6,
+          "judge_origin": "stage1"
+        },
+        {
+          "ticker": "INTC",
+          "company_name": "Intel Corporation",
+          "model_provider": "claude",
+          "model_name": "claude-opus-4-6",
+          "model_tag": "claude_claude-opus-4-6",
+          "judge_provider": "openai",
+          "judge_model": "gpt-4o-mini",
+          "report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/INTC/report/Professional_Equity_Report_INTC.html",
+          "stage1_output": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/evaluation/stage1/INTC/claude_claude-opus-4-6.json",
+          "status": "success",
+          "return_code": 0,
+          "stage1_score": 43.2,
+          "judge_origin": "stage1"
+        },
+        {
+          "ticker": "INTC",
+          "company_name": "Intel Corporation",
+          "model_provider": "gemini",
+          "model_name": "gemini-3.1-pro-preview",
+          "model_tag": "gemini_gemini-3.1-pro-preview",
+          "judge_provider": "openai",
+          "judge_model": "gpt-4o-mini",
+          "report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/INTC/report/Professional_Equity_Report_INTC.html",
+          "stage1_output": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/evaluation/stage1/INTC/gemini_gemini-3.1-pro-preview.json",
+          "status": "success",
+          "return_code": 0,
+          "stage1_score": 47.6,
+          "judge_origin": "stage1"
+        },
+        {
+          "ticker": "AAPL",
+          "company_name": "Apple Inc.",
+          "model_provider": "openai",
+          "model_name": "gpt-5.4",
+          "model_tag": "openai_gpt-5.4",
+          "judge_provider": "openai",
+          "judge_model": "gpt-4o-mini",
+          "report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/AAPL/report/Professional_Equity_Report_AAPL.html",
+          "stage1_output": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/evaluation/stage1/AAPL/openai_gpt-5.4.json",
+          "status": "success",
+          "return_code": 0,
+          "stage1_score": 40.2,
+          "judge_origin": "stage1"
+        },
+        {
+          "ticker": "AAPL",
+          "company_name": "Apple Inc.",
+          "model_provider": "claude",
+          "model_name": "claude-opus-4-6",
+          "model_tag": "claude_claude-opus-4-6",
+          "judge_provider": "openai",
+          "judge_model": "gpt-4o-mini",
+          "report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/AAPL/report/Professional_Equity_Report_AAPL.html",
+          "stage1_output": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/evaluation/stage1/AAPL/claude_claude-opus-4-6.json",
+          "status": "success",
+          "return_code": 0,
+          "stage1_score": 43.2,
+          "judge_origin": "stage1"
+        },
+        {
+          "ticker": "AAPL",
+          "company_name": "Apple Inc.",
+          "model_provider": "gemini",
+          "model_name": "gemini-3.1-pro-preview",
+          "model_tag": "gemini_gemini-3.1-pro-preview",
+          "judge_provider": "openai",
+          "judge_model": "gpt-4o-mini",
+          "report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/AAPL/report/Professional_Equity_Report_AAPL.html",
+          "stage1_output": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/evaluation/stage1/AAPL/gemini_gemini-3.1-pro-preview.json",
+          "status": "success",
+          "return_code": 0,
+          "stage1_score": 43.2,
+          "judge_origin": "stage1"
+        },
+        {
+          "ticker": "GOOGL",
+          "company_name": "Alphabet Inc.",
+          "model_provider": "openai",
+          "model_name": "gpt-5.4",
+          "model_tag": "openai_gpt-5.4",
+          "judge_provider": "openai",
+          "judge_model": "gpt-4o-mini",
+          "report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/GOOGL/report/Professional_Equity_Report_GOOGL.html",
+          "stage1_output": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/evaluation/stage1/GOOGL/openai_gpt-5.4.json",
+          "status": "success",
+          "return_code": 0,
+          "stage1_score": 40.2,
+          "judge_origin": "stage1"
+        },
+        {
+          "ticker": "GOOGL",
+          "company_name": "Alphabet Inc.",
+          "model_provider": "claude",
+          "model_name": "claude-opus-4-6",
+          "model_tag": "claude_claude-opus-4-6",
+          "judge_provider": "openai",
+          "judge_model": "gpt-4o-mini",
+          "report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/GOOGL/report/Professional_Equity_Report_GOOGL.html",
+          "stage1_output": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/evaluation/stage1/GOOGL/claude_claude-opus-4-6.json",
+          "status": "success",
+          "return_code": 0,
+          "stage1_score": 44.6,
+          "judge_origin": "stage1"
+        },
+        {
+          "ticker": "GOOGL",
+          "company_name": "Alphabet Inc.",
+          "model_provider": "gemini",
+          "model_name": "gemini-3.1-pro-preview",
+          "model_tag": "gemini_gemini-3.1-pro-preview",
+          "judge_provider": "openai",
+          "judge_model": "gpt-4o-mini",
+          "report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/GOOGL/report/Professional_Equity_Report_GOOGL.html",
+          "stage1_output": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/evaluation/stage1/GOOGL/gemini_gemini-3.1-pro-preview.json",
+          "status": "success",
+          "return_code": 0,
+          "stage1_score": 43.2,
+          "judge_origin": "stage1"
+        }
+      ],
+      "success_count": 15,
+      "failed_count": 0
+    },
+    "stage2": {
+      "provider": "openai",
+      "model": "gpt-5-nano",
+      "margin_threshold": 4.0,
+      "max_pairs_per_ticker": 1,
+      "executed_pairs": 4,
+      "records": [
+        {
+          "ticker": "AMD",
+          "pair_index": 1,
+          "margin_stage1": 0.0,
+          "left_model_tag": "claude_claude-opus-4-6",
+          "left_model_provider": "claude",
+          "left_model_name": "claude-opus-4-6",
+          "right_model_tag": "gemini_gemini-3.1-pro-preview",
+          "right_model_provider": "gemini",
+          "right_model_name": "gemini-3.1-pro-preview",
+          "left_report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/AMD/report/Professional_Equity_Report_AMD.html",
+          "right_report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/AMD/report/Professional_Equity_Report_AMD.html",
+          "stage2_output": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/evaluation/stage2/AMD/pair_1_claude_claude-opus-4-6_vs_gemini_gemini-3.1-pro-preview.json",
+          "status": "success",
+          "return_code": 0,
+          "judge_provider": "openai",
+          "judge_model": "gpt-5-nano",
+          "winner": "B",
+          "score_a": 62.0,
+          "score_b": 68.0
+        },
+        {
+          "ticker": "INTC",
+          "pair_index": 1,
+          "margin_stage1": 1.6,
+          "left_model_tag": "claude_claude-opus-4-6",
+          "left_model_provider": "claude",
+          "left_model_name": "claude-opus-4-6",
+          "right_model_tag": "openai_gpt-5.4",
+          "right_model_provider": "openai",
+          "right_model_name": "gpt-5.4",
+          "left_report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/INTC/report/Professional_Equity_Report_INTC.html",
+          "right_report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/INTC/report/Professional_Equity_Report_INTC.html",
+          "stage2_output": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/evaluation/stage2/INTC/pair_1_claude_claude-opus-4-6_vs_openai_gpt-5.4.json",
+          "status": "success",
+          "return_code": 0,
+          "judge_provider": "openai",
+          "judge_model": "gpt-5-nano",
+          "winner": "A",
+          "score_a": 82.0,
+          "score_b": 70.0
+        },
+        {
+          "ticker": "AAPL",
+          "pair_index": 1,
+          "margin_stage1": 0.0,
+          "left_model_tag": "claude_claude-opus-4-6",
+          "left_model_provider": "claude",
+          "left_model_name": "claude-opus-4-6",
+          "right_model_tag": "gemini_gemini-3.1-pro-preview",
+          "right_model_provider": "gemini",
+          "right_model_name": "gemini-3.1-pro-preview",
+          "left_report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/AAPL/report/Professional_Equity_Report_AAPL.html",
+          "right_report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/AAPL/report/Professional_Equity_Report_AAPL.html",
+          "stage2_output": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/evaluation/stage2/AAPL/pair_1_claude_claude-opus-4-6_vs_gemini_gemini-3.1-pro-preview.json",
+          "status": "success",
+          "return_code": 0,
+          "judge_provider": "openai",
+          "judge_model": "gpt-5-nano",
+          "winner": "B",
+          "score_a": 70.0,
+          "score_b": 85.0
+        },
+        {
+          "ticker": "GOOGL",
+          "pair_index": 1,
+          "margin_stage1": 1.4,
+          "left_model_tag": "claude_claude-opus-4-6",
+          "left_model_provider": "claude",
+          "left_model_name": "claude-opus-4-6",
+          "right_model_tag": "gemini_gemini-3.1-pro-preview",
+          "right_model_provider": "gemini",
+          "right_model_name": "gemini-3.1-pro-preview",
+          "left_report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/GOOGL/report/Professional_Equity_Report_GOOGL.html",
+          "right_report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/GOOGL/report/Professional_Equity_Report_GOOGL.html",
+          "stage2_output": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/evaluation/stage2/GOOGL/pair_1_claude_claude-opus-4-6_vs_gemini_gemini-3.1-pro-preview.json",
+          "status": "success",
+          "return_code": 0,
+          "judge_provider": "openai",
+          "judge_model": "gpt-5-nano",
+          "winner": "TIE",
+          "score_a": 85.0,
+          "score_b": 85.0
+        }
+      ],
+      "success_count": 4,
+      "failed_count": 0
+    },
+    "final": {
+      "records": [
+        {
+          "ticker": "AAPL",
+          "company_name": "Apple Inc.",
+          "model_provider": "gemini",
+          "model_name": "gemini-3.1-pro-preview",
+          "model_tag": "gemini_gemini-3.1-pro-preview",
+          "report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/AAPL/report/Professional_Equity_Report_AAPL.html",
+          "stage1_score": 43.2,
+          "final_score": 59.92,
+          "judge_origin": "merged",
+          "stage2_pairs": [
+            {
+              "ticker": "AAPL",
+              "pair_index": 1,
+              "margin_stage1": 0.0,
+              "left_model_tag": "claude_claude-opus-4-6",
+              "left_model_provider": "claude",
+              "left_model_name": "claude-opus-4-6",
+              "right_model_tag": "gemini_gemini-3.1-pro-preview",
+              "right_model_provider": "gemini",
+              "right_model_name": "gemini-3.1-pro-preview",
+              "left_report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/AAPL/report/Professional_Equity_Report_AAPL.html",
+              "right_report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/AAPL/report/Professional_Equity_Report_AAPL.html",
+              "stage2_output": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/evaluation/stage2/AAPL/pair_1_claude_claude-opus-4-6_vs_gemini_gemini-3.1-pro-preview.json",
+              "status": "success",
+              "return_code": 0,
+              "judge_provider": "openai",
+              "judge_model": "gpt-5-nano",
+              "winner": "B",
+              "score_a": 70.0,
+              "score_b": 85.0
+            }
+          ],
+          "final_rank": 1
+        },
+        {
+          "ticker": "AAPL",
+          "company_name": "Apple Inc.",
+          "model_provider": "claude",
+          "model_name": "claude-opus-4-6",
+          "model_tag": "claude_claude-opus-4-6",
+          "report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/AAPL/report/Professional_Equity_Report_AAPL.html",
+          "stage1_score": 43.2,
+          "final_score": 53.92,
+          "judge_origin": "merged",
+          "stage2_pairs": [
+            {
+              "ticker": "AAPL",
+              "pair_index": 1,
+              "margin_stage1": 0.0,
+              "left_model_tag": "claude_claude-opus-4-6",
+              "left_model_provider": "claude",
+              "left_model_name": "claude-opus-4-6",
+              "right_model_tag": "gemini_gemini-3.1-pro-preview",
+              "right_model_provider": "gemini",
+              "right_model_name": "gemini-3.1-pro-preview",
+              "left_report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/AAPL/report/Professional_Equity_Report_AAPL.html",
+              "right_report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/AAPL/report/Professional_Equity_Report_AAPL.html",
+              "stage2_output": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/evaluation/stage2/AAPL/pair_1_claude_claude-opus-4-6_vs_gemini_gemini-3.1-pro-preview.json",
+              "status": "success",
+              "return_code": 0,
+              "judge_provider": "openai",
+              "judge_model": "gpt-5-nano",
+              "winner": "B",
+              "score_a": 70.0,
+              "score_b": 85.0
+            }
+          ],
+          "final_rank": 2
+        },
+        {
+          "ticker": "AAPL",
+          "company_name": "Apple Inc.",
+          "model_provider": "openai",
+          "model_name": "gpt-5.4",
+          "model_tag": "openai_gpt-5.4",
+          "report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/AAPL/report/Professional_Equity_Report_AAPL.html",
+          "stage1_score": 40.2,
+          "final_score": 40.2,
+          "judge_origin": "stage1",
+          "stage2_pairs": [],
+          "final_rank": 3
+        },
+        {
+          "ticker": "AMD",
+          "company_name": "Advanced Micro Devices, Inc.",
+          "model_provider": "gemini",
+          "model_name": "gemini-3.1-pro-preview",
+          "model_tag": "gemini_gemini-3.1-pro-preview",
+          "report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/AMD/report/Professional_Equity_Report_AMD.html",
+          "stage1_score": 43.2,
+          "final_score": 53.12,
+          "judge_origin": "merged",
+          "stage2_pairs": [
+            {
+              "ticker": "AMD",
+              "pair_index": 1,
+              "margin_stage1": 0.0,
+              "left_model_tag": "claude_claude-opus-4-6",
+              "left_model_provider": "claude",
+              "left_model_name": "claude-opus-4-6",
+              "right_model_tag": "gemini_gemini-3.1-pro-preview",
+              "right_model_provider": "gemini",
+              "right_model_name": "gemini-3.1-pro-preview",
+              "left_report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/AMD/report/Professional_Equity_Report_AMD.html",
+              "right_report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/AMD/report/Professional_Equity_Report_AMD.html",
+              "stage2_output": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/evaluation/stage2/AMD/pair_1_claude_claude-opus-4-6_vs_gemini_gemini-3.1-pro-preview.json",
+              "status": "success",
+              "return_code": 0,
+              "judge_provider": "openai",
+              "judge_model": "gpt-5-nano",
+              "winner": "B",
+              "score_a": 62.0,
+              "score_b": 68.0
+            }
+          ],
+          "final_rank": 1
+        },
+        {
+          "ticker": "AMD",
+          "company_name": "Advanced Micro Devices, Inc.",
+          "model_provider": "claude",
+          "model_name": "claude-opus-4-6",
+          "model_tag": "claude_claude-opus-4-6",
+          "report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/AMD/report/Professional_Equity_Report_AMD.html",
+          "stage1_score": 43.2,
+          "final_score": 50.72,
+          "judge_origin": "merged",
+          "stage2_pairs": [
+            {
+              "ticker": "AMD",
+              "pair_index": 1,
+              "margin_stage1": 0.0,
+              "left_model_tag": "claude_claude-opus-4-6",
+              "left_model_provider": "claude",
+              "left_model_name": "claude-opus-4-6",
+              "right_model_tag": "gemini_gemini-3.1-pro-preview",
+              "right_model_provider": "gemini",
+              "right_model_name": "gemini-3.1-pro-preview",
+              "left_report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/AMD/report/Professional_Equity_Report_AMD.html",
+              "right_report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/AMD/report/Professional_Equity_Report_AMD.html",
+              "stage2_output": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/evaluation/stage2/AMD/pair_1_claude_claude-opus-4-6_vs_gemini_gemini-3.1-pro-preview.json",
+              "status": "success",
+              "return_code": 0,
+              "judge_provider": "openai",
+              "judge_model": "gpt-5-nano",
+              "winner": "B",
+              "score_a": 62.0,
+              "score_b": 68.0
+            }
+          ],
+          "final_rank": 2
+        },
+        {
+          "ticker": "AMD",
+          "company_name": "Advanced Micro Devices, Inc.",
+          "model_provider": "openai",
+          "model_name": "gpt-5.4",
+          "model_tag": "openai_gpt-5.4",
+          "report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/AMD/report/Professional_Equity_Report_AMD.html",
+          "stage1_score": 40.2,
+          "final_score": 40.2,
+          "judge_origin": "stage1",
+          "stage2_pairs": [],
+          "final_rank": 3
+        },
+        {
+          "ticker": "GOOGL",
+          "company_name": "Alphabet Inc.",
+          "model_provider": "claude",
+          "model_name": "claude-opus-4-6",
+          "model_tag": "claude_claude-opus-4-6",
+          "report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/GOOGL/report/Professional_Equity_Report_GOOGL.html",
+          "stage1_score": 44.6,
+          "final_score": 60.76,
+          "judge_origin": "merged",
+          "stage2_pairs": [
+            {
+              "ticker": "GOOGL",
+              "pair_index": 1,
+              "margin_stage1": 1.4,
+              "left_model_tag": "claude_claude-opus-4-6",
+              "left_model_provider": "claude",
+              "left_model_name": "claude-opus-4-6",
+              "right_model_tag": "gemini_gemini-3.1-pro-preview",
+              "right_model_provider": "gemini",
+              "right_model_name": "gemini-3.1-pro-preview",
+              "left_report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/GOOGL/report/Professional_Equity_Report_GOOGL.html",
+              "right_report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/GOOGL/report/Professional_Equity_Report_GOOGL.html",
+              "stage2_output": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/evaluation/stage2/GOOGL/pair_1_claude_claude-opus-4-6_vs_gemini_gemini-3.1-pro-preview.json",
+              "status": "success",
+              "return_code": 0,
+              "judge_provider": "openai",
+              "judge_model": "gpt-5-nano",
+              "winner": "TIE",
+              "score_a": 85.0,
+              "score_b": 85.0
+            }
+          ],
+          "final_rank": 1
+        },
+        {
+          "ticker": "GOOGL",
+          "company_name": "Alphabet Inc.",
+          "model_provider": "gemini",
+          "model_name": "gemini-3.1-pro-preview",
+          "model_tag": "gemini_gemini-3.1-pro-preview",
+          "report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/GOOGL/report/Professional_Equity_Report_GOOGL.html",
+          "stage1_score": 43.2,
+          "final_score": 59.92,
+          "judge_origin": "merged",
+          "stage2_pairs": [
+            {
+              "ticker": "GOOGL",
+              "pair_index": 1,
+              "margin_stage1": 1.4,
+              "left_model_tag": "claude_claude-opus-4-6",
+              "left_model_provider": "claude",
+              "left_model_name": "claude-opus-4-6",
+              "right_model_tag": "gemini_gemini-3.1-pro-preview",
+              "right_model_provider": "gemini",
+              "right_model_name": "gemini-3.1-pro-preview",
+              "left_report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/GOOGL/report/Professional_Equity_Report_GOOGL.html",
+              "right_report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/GOOGL/report/Professional_Equity_Report_GOOGL.html",
+              "stage2_output": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/evaluation/stage2/GOOGL/pair_1_claude_claude-opus-4-6_vs_gemini_gemini-3.1-pro-preview.json",
+              "status": "success",
+              "return_code": 0,
+              "judge_provider": "openai",
+              "judge_model": "gpt-5-nano",
+              "winner": "TIE",
+              "score_a": 85.0,
+              "score_b": 85.0
+            }
+          ],
+          "final_rank": 2
+        },
+        {
+          "ticker": "GOOGL",
+          "company_name": "Alphabet Inc.",
+          "model_provider": "openai",
+          "model_name": "gpt-5.4",
+          "model_tag": "openai_gpt-5.4",
+          "report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/GOOGL/report/Professional_Equity_Report_GOOGL.html",
+          "stage1_score": 40.2,
+          "final_score": 40.2,
+          "judge_origin": "stage1",
+          "stage2_pairs": [],
+          "final_rank": 3
+        },
+        {
+          "ticker": "INTC",
+          "company_name": "Intel Corporation",
+          "model_provider": "claude",
+          "model_name": "claude-opus-4-6",
+          "model_tag": "claude_claude-opus-4-6",
+          "report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/INTC/report/Professional_Equity_Report_INTC.html",
+          "stage1_score": 43.2,
+          "final_score": 58.72,
+          "judge_origin": "merged",
+          "stage2_pairs": [
+            {
+              "ticker": "INTC",
+              "pair_index": 1,
+              "margin_stage1": 1.6,
+              "left_model_tag": "claude_claude-opus-4-6",
+              "left_model_provider": "claude",
+              "left_model_name": "claude-opus-4-6",
+              "right_model_tag": "openai_gpt-5.4",
+              "right_model_provider": "openai",
+              "right_model_name": "gpt-5.4",
+              "left_report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/INTC/report/Professional_Equity_Report_INTC.html",
+              "right_report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/INTC/report/Professional_Equity_Report_INTC.html",
+              "stage2_output": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/evaluation/stage2/INTC/pair_1_claude_claude-opus-4-6_vs_openai_gpt-5.4.json",
+              "status": "success",
+              "return_code": 0,
+              "judge_provider": "openai",
+              "judge_model": "gpt-5-nano",
+              "winner": "A",
+              "score_a": 82.0,
+              "score_b": 70.0
+            }
+          ],
+          "final_rank": 1
+        },
+        {
+          "ticker": "INTC",
+          "company_name": "Intel Corporation",
+          "model_provider": "openai",
+          "model_name": "gpt-5.4",
+          "model_tag": "openai_gpt-5.4",
+          "report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/INTC/report/Professional_Equity_Report_INTC.html",
+          "stage1_score": 41.6,
+          "final_score": 52.96,
+          "judge_origin": "merged",
+          "stage2_pairs": [
+            {
+              "ticker": "INTC",
+              "pair_index": 1,
+              "margin_stage1": 1.6,
+              "left_model_tag": "claude_claude-opus-4-6",
+              "left_model_provider": "claude",
+              "left_model_name": "claude-opus-4-6",
+              "right_model_tag": "openai_gpt-5.4",
+              "right_model_provider": "openai",
+              "right_model_name": "gpt-5.4",
+              "left_report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/INTC/report/Professional_Equity_Report_INTC.html",
+              "right_report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/INTC/report/Professional_Equity_Report_INTC.html",
+              "stage2_output": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/evaluation/stage2/INTC/pair_1_claude_claude-opus-4-6_vs_openai_gpt-5.4.json",
+              "status": "success",
+              "return_code": 0,
+              "judge_provider": "openai",
+              "judge_model": "gpt-5-nano",
+              "winner": "A",
+              "score_a": 82.0,
+              "score_b": 70.0
+            }
+          ],
+          "final_rank": 2
+        },
+        {
+          "ticker": "INTC",
+          "company_name": "Intel Corporation",
+          "model_provider": "gemini",
+          "model_name": "gemini-3.1-pro-preview",
+          "model_tag": "gemini_gemini-3.1-pro-preview",
+          "report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/INTC/report/Professional_Equity_Report_INTC.html",
+          "stage1_score": 47.6,
+          "final_score": 47.6,
+          "judge_origin": "stage1",
+          "stage2_pairs": [],
+          "final_rank": 3
+        },
+        {
+          "ticker": "NVDA",
+          "company_name": "NVIDIA Corporation",
+          "model_provider": "openai",
+          "model_name": "gpt-5.4",
+          "model_tag": "openai_gpt-5.4",
+          "report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/NVDA/report/Professional_Equity_Report_NVDA.html",
+          "stage1_score": 72.4,
+          "final_score": 72.4,
+          "judge_origin": "stage1",
+          "stage2_pairs": [],
+          "final_rank": 1
+        },
+        {
+          "ticker": "NVDA",
+          "company_name": "NVIDIA Corporation",
+          "model_provider": "gemini",
+          "model_name": "gemini-3.1-pro-preview",
+          "model_tag": "gemini_gemini-3.1-pro-preview",
+          "report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/NVDA/report/Professional_Equity_Report_NVDA.html",
+          "stage1_score": 48.1,
+          "final_score": 48.1,
+          "judge_origin": "stage1",
+          "stage2_pairs": [],
+          "final_rank": 2
+        },
+        {
+          "ticker": "NVDA",
+          "company_name": "NVIDIA Corporation",
+          "model_provider": "claude",
+          "model_name": "claude-opus-4-6",
+          "model_tag": "claude_claude-opus-4-6",
+          "report_path": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/NVDA/report/Professional_Equity_Report_NVDA.html",
+          "stage1_score": 43.2,
+          "final_score": 43.2,
+          "judge_origin": "stage1",
+          "stage2_pairs": [],
+          "final_rank": 3
+        }
+      ],
+      "winners_by_ticker": {
+        "NVDA": {
+          "model_tag": "openai_gpt-5.4",
+          "model_provider": "openai",
+          "model_name": "gpt-5.4",
+          "final_score": 72.4,
+          "judge_origin": "stage1"
+        },
+        "AMD": {
+          "model_tag": "gemini_gemini-3.1-pro-preview",
+          "model_provider": "gemini",
+          "model_name": "gemini-3.1-pro-preview",
+          "final_score": 53.12,
+          "judge_origin": "merged"
+        },
+        "INTC": {
+          "model_tag": "claude_claude-opus-4-6",
+          "model_provider": "claude",
+          "model_name": "claude-opus-4-6",
+          "final_score": 58.72,
+          "judge_origin": "merged"
+        },
+        "AAPL": {
+          "model_tag": "gemini_gemini-3.1-pro-preview",
+          "model_provider": "gemini",
+          "model_name": "gemini-3.1-pro-preview",
+          "final_score": 59.92,
+          "judge_origin": "merged"
+        },
+        "GOOGL": {
+          "model_tag": "claude_claude-opus-4-6",
+          "model_provider": "claude",
+          "model_name": "claude-opus-4-6",
+          "final_score": 60.76,
+          "judge_origin": "merged"
+        }
+      }
+    }
+  },
+  "tasks": [
+    {
+      "task_id": "01_NVDA_openai_gpt-5.4",
+      "run_id": "20260501_005147",
+      "sequence": 1,
+      "mode": "full",
+      "ticker": "NVDA",
+      "company_name": "NVIDIA Corporation",
+      "peer_tickers": [
+        "AMD",
+        "INTC"
+      ],
+      "model": {
+        "provider": "openai",
+        "name": "gpt-5.4",
+        "tag": "openai_gpt-5.4"
+      },
+      "status": "success",
+      "failure_reason": null,
+      "timing": {
+        "started_at_utc": "2026-05-01T00:51:47Z",
+        "finished_at_utc": "2026-05-01T00:54:20Z",
+        "duration_sec": 152.65
+      },
+      "return_codes": {
+        "generate_financial_analysis": 0,
+        "create_equity_report": 0
+      },
+      "missing_files": {
+        "analysis": [],
+        "report": []
+      },
+      "paths": {
+        "analysis_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/NVDA/analysis",
+        "report_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/NVDA/report",
+        "logs_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/NVDA/logs",
+        "storage_root": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/NVDA",
+        "run_meta": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/NVDA/run_meta.json"
+      }
+    },
+    {
+      "task_id": "02_NVDA_claude_claude-opus-4-6",
+      "run_id": "20260501_005147",
+      "sequence": 2,
+      "mode": "full",
+      "ticker": "NVDA",
+      "company_name": "NVIDIA Corporation",
+      "peer_tickers": [
+        "AMD",
+        "INTC"
+      ],
+      "model": {
+        "provider": "claude",
+        "name": "claude-opus-4-6",
+        "tag": "claude_claude-opus-4-6"
+      },
+      "status": "success",
+      "failure_reason": null,
+      "timing": {
+        "started_at_utc": "2026-05-01T00:54:20Z",
+        "finished_at_utc": "2026-05-01T00:56:26Z",
+        "duration_sec": 125.76
+      },
+      "return_codes": {
+        "generate_financial_analysis": 0,
+        "create_equity_report": 0
+      },
+      "missing_files": {
+        "analysis": [],
+        "report": []
+      },
+      "paths": {
+        "analysis_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/NVDA/analysis",
+        "report_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/NVDA/report",
+        "logs_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/NVDA/logs",
+        "storage_root": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/NVDA",
+        "run_meta": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/NVDA/run_meta.json"
+      }
+    },
+    {
+      "task_id": "03_NVDA_gemini_gemini-3.1-pro-preview",
+      "run_id": "20260501_005147",
+      "sequence": 3,
+      "mode": "full",
+      "ticker": "NVDA",
+      "company_name": "NVIDIA Corporation",
+      "peer_tickers": [
+        "AMD",
+        "INTC"
+      ],
+      "model": {
+        "provider": "gemini",
+        "name": "gemini-3.1-pro-preview",
+        "tag": "gemini_gemini-3.1-pro-preview"
+      },
+      "status": "success",
+      "failure_reason": null,
+      "timing": {
+        "started_at_utc": "2026-05-01T00:56:26Z",
+        "finished_at_utc": "2026-05-01T00:58:59Z",
+        "duration_sec": 152.95
+      },
+      "return_codes": {
+        "generate_financial_analysis": 0,
+        "create_equity_report": 0
+      },
+      "missing_files": {
+        "analysis": [],
+        "report": []
+      },
+      "paths": {
+        "analysis_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/NVDA/analysis",
+        "report_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/NVDA/report",
+        "logs_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/NVDA/logs",
+        "storage_root": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/NVDA",
+        "run_meta": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/NVDA/run_meta.json"
+      }
+    },
+    {
+      "task_id": "04_AMD_openai_gpt-5.4",
+      "run_id": "20260501_005147",
+      "sequence": 4,
+      "mode": "full",
+      "ticker": "AMD",
+      "company_name": "Advanced Micro Devices, Inc.",
+      "peer_tickers": [
+        "NVDA",
+        "INTC"
+      ],
+      "model": {
+        "provider": "openai",
+        "name": "gpt-5.4",
+        "tag": "openai_gpt-5.4"
+      },
+      "status": "success",
+      "failure_reason": null,
+      "timing": {
+        "started_at_utc": "2026-05-01T00:58:59Z",
+        "finished_at_utc": "2026-05-01T01:02:31Z",
+        "duration_sec": 211.98
+      },
+      "return_codes": {
+        "generate_financial_analysis": 0,
+        "create_equity_report": 0
+      },
+      "missing_files": {
+        "analysis": [],
+        "report": []
+      },
+      "paths": {
+        "analysis_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/AMD/analysis",
+        "report_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/AMD/report",
+        "logs_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/AMD/logs",
+        "storage_root": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/AMD",
+        "run_meta": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/AMD/run_meta.json"
+      }
+    },
+    {
+      "task_id": "05_AMD_claude_claude-opus-4-6",
+      "run_id": "20260501_005147",
+      "sequence": 5,
+      "mode": "full",
+      "ticker": "AMD",
+      "company_name": "Advanced Micro Devices, Inc.",
+      "peer_tickers": [
+        "NVDA",
+        "INTC"
+      ],
+      "model": {
+        "provider": "claude",
+        "name": "claude-opus-4-6",
+        "tag": "claude_claude-opus-4-6"
+      },
+      "status": "success",
+      "failure_reason": null,
+      "timing": {
+        "started_at_utc": "2026-05-01T01:02:31Z",
+        "finished_at_utc": "2026-05-01T01:04:35Z",
+        "duration_sec": 123.96
+      },
+      "return_codes": {
+        "generate_financial_analysis": 0,
+        "create_equity_report": 0
+      },
+      "missing_files": {
+        "analysis": [],
+        "report": []
+      },
+      "paths": {
+        "analysis_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/AMD/analysis",
+        "report_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/AMD/report",
+        "logs_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/AMD/logs",
+        "storage_root": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/AMD",
+        "run_meta": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/AMD/run_meta.json"
+      }
+    },
+    {
+      "task_id": "06_AMD_gemini_gemini-3.1-pro-preview",
+      "run_id": "20260501_005147",
+      "sequence": 6,
+      "mode": "full",
+      "ticker": "AMD",
+      "company_name": "Advanced Micro Devices, Inc.",
+      "peer_tickers": [
+        "NVDA",
+        "INTC"
+      ],
+      "model": {
+        "provider": "gemini",
+        "name": "gemini-3.1-pro-preview",
+        "tag": "gemini_gemini-3.1-pro-preview"
+      },
+      "status": "success",
+      "failure_reason": null,
+      "timing": {
+        "started_at_utc": "2026-05-01T01:04:35Z",
+        "finished_at_utc": "2026-05-01T01:06:55Z",
+        "duration_sec": 140.03
+      },
+      "return_codes": {
+        "generate_financial_analysis": 0,
+        "create_equity_report": 0
+      },
+      "missing_files": {
+        "analysis": [],
+        "report": []
+      },
+      "paths": {
+        "analysis_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/AMD/analysis",
+        "report_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/AMD/report",
+        "logs_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/AMD/logs",
+        "storage_root": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/AMD",
+        "run_meta": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/AMD/run_meta.json"
+      }
+    },
+    {
+      "task_id": "07_INTC_openai_gpt-5.4",
+      "run_id": "20260501_005147",
+      "sequence": 7,
+      "mode": "full",
+      "ticker": "INTC",
+      "company_name": "Intel Corporation",
+      "peer_tickers": [
+        "NVDA",
+        "AMD"
+      ],
+      "model": {
+        "provider": "openai",
+        "name": "gpt-5.4",
+        "tag": "openai_gpt-5.4"
+      },
+      "status": "success",
+      "failure_reason": null,
+      "timing": {
+        "started_at_utc": "2026-05-01T01:06:55Z",
+        "finished_at_utc": "2026-05-01T01:09:23Z",
+        "duration_sec": 148.06
+      },
+      "return_codes": {
+        "generate_financial_analysis": 0,
+        "create_equity_report": 0
+      },
+      "missing_files": {
+        "analysis": [],
+        "report": []
+      },
+      "paths": {
+        "analysis_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/INTC/analysis",
+        "report_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/INTC/report",
+        "logs_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/INTC/logs",
+        "storage_root": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/INTC",
+        "run_meta": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/INTC/run_meta.json"
+      }
+    },
+    {
+      "task_id": "08_INTC_claude_claude-opus-4-6",
+      "run_id": "20260501_005147",
+      "sequence": 8,
+      "mode": "full",
+      "ticker": "INTC",
+      "company_name": "Intel Corporation",
+      "peer_tickers": [
+        "NVDA",
+        "AMD"
+      ],
+      "model": {
+        "provider": "claude",
+        "name": "claude-opus-4-6",
+        "tag": "claude_claude-opus-4-6"
+      },
+      "status": "success",
+      "failure_reason": null,
+      "timing": {
+        "started_at_utc": "2026-05-01T01:09:23Z",
+        "finished_at_utc": "2026-05-01T01:11:29Z",
+        "duration_sec": 125.86
+      },
+      "return_codes": {
+        "generate_financial_analysis": 0,
+        "create_equity_report": 0
+      },
+      "missing_files": {
+        "analysis": [],
+        "report": []
+      },
+      "paths": {
+        "analysis_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/INTC/analysis",
+        "report_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/INTC/report",
+        "logs_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/INTC/logs",
+        "storage_root": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/INTC",
+        "run_meta": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/INTC/run_meta.json"
+      }
+    },
+    {
+      "task_id": "09_INTC_gemini_gemini-3.1-pro-preview",
+      "run_id": "20260501_005147",
+      "sequence": 9,
+      "mode": "full",
+      "ticker": "INTC",
+      "company_name": "Intel Corporation",
+      "peer_tickers": [
+        "NVDA",
+        "AMD"
+      ],
+      "model": {
+        "provider": "gemini",
+        "name": "gemini-3.1-pro-preview",
+        "tag": "gemini_gemini-3.1-pro-preview"
+      },
+      "status": "success",
+      "failure_reason": null,
+      "timing": {
+        "started_at_utc": "2026-05-01T01:11:29Z",
+        "finished_at_utc": "2026-05-01T01:14:00Z",
+        "duration_sec": 151.16
+      },
+      "return_codes": {
+        "generate_financial_analysis": 0,
+        "create_equity_report": 0
+      },
+      "missing_files": {
+        "analysis": [],
+        "report": []
+      },
+      "paths": {
+        "analysis_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/INTC/analysis",
+        "report_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/INTC/report",
+        "logs_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/INTC/logs",
+        "storage_root": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/INTC",
+        "run_meta": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/INTC/run_meta.json"
+      }
+    },
+    {
+      "task_id": "10_AAPL_openai_gpt-5.4",
+      "run_id": "20260501_005147",
+      "sequence": 10,
+      "mode": "full",
+      "ticker": "AAPL",
+      "company_name": "Apple Inc.",
+      "peer_tickers": [
+        "MSFT",
+        "GOOGL"
+      ],
+      "model": {
+        "provider": "openai",
+        "name": "gpt-5.4",
+        "tag": "openai_gpt-5.4"
+      },
+      "status": "success",
+      "failure_reason": null,
+      "timing": {
+        "started_at_utc": "2026-05-01T01:14:00Z",
+        "finished_at_utc": "2026-05-01T01:16:35Z",
+        "duration_sec": 154.92
+      },
+      "return_codes": {
+        "generate_financial_analysis": 0,
+        "create_equity_report": 0
+      },
+      "missing_files": {
+        "analysis": [],
+        "report": []
+      },
+      "paths": {
+        "analysis_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/AAPL/analysis",
+        "report_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/AAPL/report",
+        "logs_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/AAPL/logs",
+        "storage_root": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/AAPL",
+        "run_meta": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/AAPL/run_meta.json"
+      }
+    },
+    {
+      "task_id": "11_AAPL_claude_claude-opus-4-6",
+      "run_id": "20260501_005147",
+      "sequence": 11,
+      "mode": "full",
+      "ticker": "AAPL",
+      "company_name": "Apple Inc.",
+      "peer_tickers": [
+        "MSFT",
+        "GOOGL"
+      ],
+      "model": {
+        "provider": "claude",
+        "name": "claude-opus-4-6",
+        "tag": "claude_claude-opus-4-6"
+      },
+      "status": "success",
+      "failure_reason": null,
+      "timing": {
+        "started_at_utc": "2026-05-01T01:16:35Z",
+        "finished_at_utc": "2026-05-01T01:18:35Z",
+        "duration_sec": 119.91
+      },
+      "return_codes": {
+        "generate_financial_analysis": 0,
+        "create_equity_report": 0
+      },
+      "missing_files": {
+        "analysis": [],
+        "report": []
+      },
+      "paths": {
+        "analysis_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/AAPL/analysis",
+        "report_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/AAPL/report",
+        "logs_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/AAPL/logs",
+        "storage_root": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/AAPL",
+        "run_meta": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/AAPL/run_meta.json"
+      }
+    },
+    {
+      "task_id": "12_AAPL_gemini_gemini-3.1-pro-preview",
+      "run_id": "20260501_005147",
+      "sequence": 12,
+      "mode": "full",
+      "ticker": "AAPL",
+      "company_name": "Apple Inc.",
+      "peer_tickers": [
+        "MSFT",
+        "GOOGL"
+      ],
+      "model": {
+        "provider": "gemini",
+        "name": "gemini-3.1-pro-preview",
+        "tag": "gemini_gemini-3.1-pro-preview"
+      },
+      "status": "success",
+      "failure_reason": null,
+      "timing": {
+        "started_at_utc": "2026-05-01T01:18:35Z",
+        "finished_at_utc": "2026-05-01T01:21:05Z",
+        "duration_sec": 149.99
+      },
+      "return_codes": {
+        "generate_financial_analysis": 0,
+        "create_equity_report": 0
+      },
+      "missing_files": {
+        "analysis": [],
+        "report": []
+      },
+      "paths": {
+        "analysis_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/AAPL/analysis",
+        "report_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/AAPL/report",
+        "logs_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/AAPL/logs",
+        "storage_root": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/AAPL",
+        "run_meta": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/AAPL/run_meta.json"
+      }
+    },
+    {
+      "task_id": "13_GOOGL_openai_gpt-5.4",
+      "run_id": "20260501_005147",
+      "sequence": 13,
+      "mode": "full",
+      "ticker": "GOOGL",
+      "company_name": "Alphabet Inc.",
+      "peer_tickers": [
+        "MSFT",
+        "META"
+      ],
+      "model": {
+        "provider": "openai",
+        "name": "gpt-5.4",
+        "tag": "openai_gpt-5.4"
+      },
+      "status": "success",
+      "failure_reason": null,
+      "timing": {
+        "started_at_utc": "2026-05-01T01:21:05Z",
+        "finished_at_utc": "2026-05-01T01:23:14Z",
+        "duration_sec": 128.99
+      },
+      "return_codes": {
+        "generate_financial_analysis": 0,
+        "create_equity_report": 0
+      },
+      "missing_files": {
+        "analysis": [],
+        "report": []
+      },
+      "paths": {
+        "analysis_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/GOOGL/analysis",
+        "report_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/GOOGL/report",
+        "logs_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/GOOGL/logs",
+        "storage_root": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/GOOGL",
+        "run_meta": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/openai_gpt-5.4/GOOGL/run_meta.json"
+      }
+    },
+    {
+      "task_id": "14_GOOGL_claude_claude-opus-4-6",
+      "run_id": "20260501_005147",
+      "sequence": 14,
+      "mode": "full",
+      "ticker": "GOOGL",
+      "company_name": "Alphabet Inc.",
+      "peer_tickers": [
+        "MSFT",
+        "META"
+      ],
+      "model": {
+        "provider": "claude",
+        "name": "claude-opus-4-6",
+        "tag": "claude_claude-opus-4-6"
+      },
+      "status": "success",
+      "failure_reason": null,
+      "timing": {
+        "started_at_utc": "2026-05-01T01:23:14Z",
+        "finished_at_utc": "2026-05-01T01:25:05Z",
+        "duration_sec": 111.03
+      },
+      "return_codes": {
+        "generate_financial_analysis": 0,
+        "create_equity_report": 0
+      },
+      "missing_files": {
+        "analysis": [],
+        "report": []
+      },
+      "paths": {
+        "analysis_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/GOOGL/analysis",
+        "report_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/GOOGL/report",
+        "logs_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/GOOGL/logs",
+        "storage_root": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/GOOGL",
+        "run_meta": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/claude_claude-opus-4-6/GOOGL/run_meta.json"
+      }
+    },
+    {
+      "task_id": "15_GOOGL_gemini_gemini-3.1-pro-preview",
+      "run_id": "20260501_005147",
+      "sequence": 15,
+      "mode": "full",
+      "ticker": "GOOGL",
+      "company_name": "Alphabet Inc.",
+      "peer_tickers": [
+        "MSFT",
+        "META"
+      ],
+      "model": {
+        "provider": "gemini",
+        "name": "gemini-3.1-pro-preview",
+        "tag": "gemini_gemini-3.1-pro-preview"
+      },
+      "status": "success",
+      "failure_reason": null,
+      "timing": {
+        "started_at_utc": "2026-05-01T01:25:05Z",
+        "finished_at_utc": "2026-05-01T01:27:23Z",
+        "duration_sec": 137.93
+      },
+      "return_codes": {
+        "generate_financial_analysis": 0,
+        "create_equity_report": 0
+      },
+      "missing_files": {
+        "analysis": [],
+        "report": []
+      },
+      "paths": {
+        "analysis_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/GOOGL/analysis",
+        "report_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/GOOGL/report",
+        "logs_dir": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/GOOGL/logs",
+        "storage_root": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/GOOGL",
+        "run_meta": "/home/jovyan/work/FinRobot/output/storage/20260501_005147/gemini_gemini-3.1-pro-preview/GOOGL/run_meta.json"
+      }
+    }
+  ]
+}

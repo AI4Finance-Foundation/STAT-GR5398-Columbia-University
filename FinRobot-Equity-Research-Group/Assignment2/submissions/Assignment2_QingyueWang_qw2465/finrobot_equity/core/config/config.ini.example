@@ -1,0 +1,36 @@
+# =============================================================================
+# FinRobot Equity — config template
+# =============================================================================
+
+[API_KEYS]
+# --- Financial Modeling Prep ---
+# https://financialmodelingprep.com/developer
+fmp_api_key = YOUR_FMP_API_KEY
+
+# --- Primary LLM (OpenAI-compatible Chat Completions API) ---
+# Works with OpenAI, many proxies, Anthropic-compatible gateways, Gemini
+# OpenAI-style endpoint, etc. — as long as the client uses the same fields.
+#
+# OpenAI: https://platform.openai.com/account/api-keys
+openai_api_key = YOUR_OPENAI_COMPATIBLE_API_KEY
+
+# Default OpenAI: https://api.openai.com/v1
+# Anthropic (OpenAI-compatible adapter): https://api.anthropic.com/v1/
+# Gemini (OpenAI-compatible): https://generativelanguage.googleapis.com/v1beta/openai/
+openai_base_url = https://api.openai.com/v1
+
+# Examples: gpt-4.1, gpt-4o, gpt-4o-mini, claude-sonnet-4-6, gemini-3-flash-preview
+openai_model = gpt-4o
+
+# --- Optional: separate credentials for text regeneration (mixed models) ---
+# If commented or empty, regeneration uses openai_* above.
+#openai_regen_api_key = YOUR_REGEN_API_KEY
+#openai_regen_base_url = https://api.openai.com/v1
+#openai_regen_model = gpt-4o
+
+# --- Optional: Adanos (retail sentiment) ---
+# Leave empty to skip retail sentiment calls.
+adanos_api_key = YOUR_ADANOS_API_KEY_OR_LEAVE_EMPTY
+
+# Default: https://api.adanos.org
+adanos_base_url = https://api.adanos.org

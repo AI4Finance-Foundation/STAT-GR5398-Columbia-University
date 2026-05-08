@@ -46,10 +46,12 @@ price/vol  ──► CNN-LSTM-Attention ──► LSTMSignalBridge ────�
 
 ```
 Assignment2_BeibeiXian_bx2233/
+├── README.md # You are here    
+├── Medium.com_link.md  
 ├── signal_module.py              
 ├── evaluate_signal.py            
-├── lstm_signal_bridge.py         # Bridges CNN-LSTM-Attn predictions 
-├── FinGPT_A2_cp50.ipynb   # Colab notebook 
+├── lstm_signal_bridge.py         
+├── FinGPT_A2_cp50.ipynb   
 ├── requirements.txt
 └── outputs/
     ├── signals_greedy_100.jsonl

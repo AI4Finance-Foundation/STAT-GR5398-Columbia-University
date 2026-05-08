@@ -1,0 +1,41 @@
+{
+  "ticker": "AMD",
+  "period_days": 7,
+  "coverage": "3/3",
+  "coverage_ratio": 1.0,
+  "average_buzz": 55.5,
+  "bullish_avg": 65.3,
+  "source_alignment": "Wide divergence",
+  "sources": [
+    {
+      "key": "reddit",
+      "label": "Reddit",
+      "buzz_score": 70.9,
+      "bullish_pct": 33.0,
+      "activity_label": "Mentions",
+      "activity_value": 2077,
+      "trend": "falling",
+      "has_data": true
+    },
+    {
+      "key": "x",
+      "label": "X.com",
+      "buzz_score": 82.7,
+      "bullish_pct": 63.0,
+      "activity_label": "Mentions",
+      "activity_value": 2667,
+      "trend": "falling",
+      "has_data": true
+    },
+    {
+      "key": "polymarket",
+      "label": "Polymarket",
+      "buzz_score": 12.8,
+      "bullish_pct": 100.0,
+      "activity_label": "Trades",
+      "activity_value": 3,
+      "trend": "stable",
+      "has_data": true
+    }
+  ]
+}
