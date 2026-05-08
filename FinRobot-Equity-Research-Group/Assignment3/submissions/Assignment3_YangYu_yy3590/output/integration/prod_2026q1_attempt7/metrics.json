@@ -1,0 +1,72 @@
+{
+  "integration_run_id": "prod_2026q1_attempt7",
+  "window": {
+    "start": "2026-01-01",
+    "end": "2026-04-30"
+  },
+  "research_frequency": "monthly",
+  "research_mode": "generate-missing",
+  "news_controls": {
+    "enable_enhanced_news": true,
+    "enable_catalyst_analysis": true,
+    "news_days_back": 7,
+    "news_limit": 100
+  },
+  "overlay_controls": {
+    "no_op_band": [
+      0.95,
+      1.05
+    ],
+    "max_relative_adjustment": 0.35,
+    "defensive_stock_threshold": 0.5,
+    "defensive_cash_threshold": 0.2,
+    "defensive_max_relative_adjustment": 0.2,
+    "stock_boost_cash_funding_limit": 0.1,
+    "stock_boost_etf_funding_limit": 0.05
+  },
+  "active_setup": {
+    "setup_type": "single_model",
+    "selected_setup_id": "claude_only",
+    "analyst": {
+      "provider": "claude",
+      "model": "claude-opus-4-6"
+    },
+    "critic": null,
+    "critic_sections": [],
+    "source_comparison_run": null,
+    "selected_at": "2026-05-07T00:00:00Z",
+    "notes": "Use Claude for all production research generation."
+  },
+  "base_weights_path": "output/integration/prod_2026q1_attempt7/weights/base_weights_normalized.csv",
+  "adjusted_weights_path": "output/integration/prod_2026q1_attempt7/weights/adjusted_weights.csv",
+  "weight_history_path": "output/integration/prod_2026q1_attempt7/weights/weight_history.csv",
+  "research_flags_path": "output/integration/prod_2026q1_attempt7/audit/research_flags.json",
+  "decision_audit_path": "output/integration/prod_2026q1_attempt7/audit/decision_audit.json",
+  "research_snapshots_path": "output/integration/prod_2026q1_attempt7/audit/research_snapshots.json",
+  "equity_curves_path": "output/integration/prod_2026q1_attempt7/equity_curves.csv",
+  "equity_curves_error": null,
+  "performance": {
+    "finrl_only": {
+      "total_return": 0.1708718586041229,
+      "annualized_return": 0.6295200842385149,
+      "annualized_volatility": 0.27442061457293554,
+      "max_drawdown": -0.10484363158545462
+    },
+    "finrl_plus_finrobot": {
+      "total_return": 0.17867507949493722,
+      "annualized_return": 0.663370309727914,
+      "annualized_volatility": 0.26363291532374605,
+      "max_drawdown": -0.10484363158545451
+    },
+    "spy": {
+      "total_return": 0.051948989449441374,
+      "annualized_return": 0.16971751445511574,
+      "annualized_volatility": 0.1432386079206187,
+      "max_drawdown": -0.09133132097249075
+    },
+    "comparison": {
+      "finrobot_total_return_delta": 0.007803220890814311
+    }
+  },
+  "final_cash_weight": 0.0
+}
