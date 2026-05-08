@@ -1,25 +1,3 @@
-"""
-a3_backtest.py
-GR5398 Assignment 3 — ContrarianFusion Backtest
-Beibei Xian (bx2233) · Columbia University · Spring 2026
-
-Reads the FinGPT inference output and runs the full ContrarianFusion backtest,
-including the four-variant ablation study and equity curve plot.
-
-Inputs  (all in data/ folder):
-    fingpt_signals.csv    — 2,580 rows from FinGPT_A3_Inference.ipynb
-    prices_2026q1.csv     — weekly Dow30 + SPY prices
-    features_2026q1.csv   — FinRL-style technical features
-    macro_regime.csv      — FRED macro regime (optional)
-
-Outputs (written to outputs/):
-    ablation_results.csv
-    equity_curve_real.png
-
-Run:
-    python code/a3_backtest.py
-"""
-
 import pandas as pd
 import numpy as np
 import matplotlib
@@ -41,8 +19,6 @@ TOP_N = 6          # long positions per week
 BOT_N = 6          # short positions per week
 TC    = 0.001      # transaction cost 0.10% one-way
 
-
-# ── Load data ─────────────────────────────────────────────────────────────────
 def load_data():
     print("Loading data ...")
 
@@ -189,8 +165,6 @@ def compute_metrics(rets, spy_rets, label="Strategy"):
         "alpha_vs_spy":  total - spy_tot if spy_tot is not None else None,
     }
 
-
-# ── Ablation study ────────────────────────────────────────────────────────────
 def run_ablation(merged, px, macro):
     print("\n" + "=" * 62)
     print("ContrarianFusion — Ablation Study (Out-of-Sample 2026 Q1)")
@@ -229,8 +203,6 @@ def run_ablation(merged, px, macro):
 
     return all_rets, spy_rets_ref
 
-
-# ── Plot ──────────────────────────────────────────────────────────────────────
 def plot_equity_curves(all_rets, spy_rets):
     colors = {
         "FinGPT Contrarian only":   "#C00000",
@@ -262,8 +234,6 @@ def plot_equity_curves(all_rets, spy_rets):
     plt.close()
     print(f"✓ Saved → outputs/equity_curve_real.png")
 
-
-# ── Main ──────────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
     merged, px, macro = load_data()
     all_rets, spy_rets = run_ablation(merged, px, macro)
