@@ -10,7 +10,7 @@
 Weekly Alpha Pulse is a "Dual-Engine" quantitative trading system designed to navigate volatile markets by combining fundamental stability with AI-driven momentum. The strategy integrates:
 
 1.  **Fundamental Engine:** Utilizing high-dimension Quality Scores to filter for financially robust blue-chip assets.
-2.  **AI Sentiment Engine:** Leveraging **FinGPT (Llama-3)** to interpret weekly financial news and capture institutional sentiment inflection points.
+2.  **AI Sentiment Engine:** Leveraging **FinGPT ** to interpret weekly financial news and capture institutional sentiment inflection points.
 
 During a 17-week stress test (encompassing high volatility and V-shaped reversals), the strategy achieved a **10.01% cumulative return** with a maximum drawdown of only **3.95%**, significantly outperforming the S&P 500 benchmark.
 
