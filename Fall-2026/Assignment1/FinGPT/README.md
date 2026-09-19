@@ -13,6 +13,15 @@
 
 Assignment 1 Report Submission Due Day: Oct 12, 2026.
 
+### Pipeline at a glance
+
+| # | Step | Input | Output |
+| --- | --- | --- | --- |
+| 1 | Get data | HF dataset `FinGPT/fingpt-forecaster-dow30-202305-202405` — *or* Finnhub + OpenAI keys and a ticker list | A `DatasetDict` with `train` / `test` splits; each row has `prompt`, `answer`, `label`, `symbol`, `period` |
+| 2 | Fine-tune | Base model name, dataset, hyperparameters, `config.json`, HF token, Wandb key | LoRA adapter in `finetuned_models/{run_name}_{timestamp}/` + Wandb / TensorBoard logs |
+| 3 | Evaluate | Base model + your adapter + the `test` split | Generated answers and the metric dict from `calc_metrics()` |
+| 4 | Report | Everything above | Research report + Medium blog |
+
 ## 1. Prerequisites
 
 In this assignment, you are asked to:
@@ -135,6 +144,12 @@ In this task, we want you to train your own FinGPT model using **Dow Jones 30** 
 
 This step prepares and validates your dataset before LoRA fine-tuning.
 
+> **Input**: nothing (use the provided Hugging Face dataset), or a Finnhub key + an OpenAI key +
+> a list of tickers if you generate your own.
+> **Output**: a dataset directory whose rows each contain five fields — `prompt` (the company
+> introduction, news and financials), `answer` (the reference answer), `label`, `symbol`,
+> `period` — already split into `train` and `test`.
+
 Here we provide you with [Dow Jones 30 stock prompts](https://huggingface.co/datasets/FinGPT/fingpt-forecaster-dow30-202305-202405) from May 2023- May 2024, and you can directly use these prompts to fine-tune your own model.
 
 #### Optional: Generate sample dataset by yourself
@@ -233,6 +248,12 @@ CrowdStrike’s stock is poised for a **5%+ rise** in the upcoming week. The com
 
 ### 3.2 Fine-tune LLMs
 
+> **Input**: a base model from Hugging Face, the dataset from 3.1, your hyperparameters, the
+> DeepSpeed `config.json`, your HF token and your Wandb key.
+> **Output**: a LoRA adapter (`adapter_config.json` + adapter weights) written to
+> `finetuned_models/{run_name}_{YYYYMMDDHHMM}/` — **not** a full model copy; you load it on top of
+> the frozen base model at inference time. Training curves land in Wandb and TensorBoard.
+
 In this step, we want you to fine-tune some LLMs, to be specific, [Llama-3.1-8B](https://huggingface.co/meta-llama/Llama-3.1-8B), [DeepSeek-R1-Distill-Llama-8B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B) and [Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct). And you should run `train_lora.py` using command in `train.sh` in this part.
 
 First, you should put your HuggingFace token into your code and download these two pre-trained models into a cache folder:
@@ -304,6 +325,16 @@ model.print_trainable_parameters()
 > - It **defines the LoRA configuration and injects adapter layers** into the pretrained model.  
 > - It ensures that **only the LoRA adapter parameters are trainable**, while all original model weights remain frozen.
 
+Before you run anything, note that `train_lora.py` ships with a few values hard-coded — these are
+yours to fix, not to copy blindly:
+
+| Line | Ships as | What you should do |
+| --- | --- | --- |
+| `os.environ['WANDB_API_KEY']` | empty string | Read it from your environment, never commit it |
+| `model_name` | `deepseek-ai/DeepSeek-R1-Distill-Llama-8B` | Switch it per model you are comparing |
+| `load_dataset("dow30-202305-202405", from_remote=True)` | hard-coded | Wire it to `--dataset` if you use your own data |
+| `--base_model` | `chatglm2` / `llama2` only | Selects the LoRA target modules via `lora_module_dict` in `utils.py`; add an entry for any new architecture |
+
 After modified these parts above in `train_lora.py`, you can start you training using **deepspeed** by running `train.sh` (Windows system):
 
 ```shell
@@ -370,6 +401,12 @@ After done all these, you can see that your models are being trained on GPUs by 
 
 ### 3.3 Evaluate your model
 
+> **Input**: the frozen base model + your LoRA adapter, and the `test` split (prompts with their
+> reference answers).
+> **Output**: one generated answer per test prompt, plus the dictionary returned by
+> `calc_metrics()`: `valid_count`, `bin_acc`, `mse`, and three ROUGE dictionaries
+> (`pros_rouge_scores`, `cons_rouge_scores`, `anal_rouge_scores`).
+
 Now you get 2 fine-tuned model based on Llama3 and DeepSeek. You can try for generating some interesting answer using your own model. 
 
 However, in your report, you should compare the answers from your model and the teacher models quantitatively. The evaluation metrics are listed below:
@@ -385,6 +422,14 @@ However, in your report, you should compare the answers from your model and the 
 
 > [!NOTE]  
 > You can use the provided `calc_metrics()` function in `utils.py` or run `comparison.py` to automatically compute these metrics across all generated outputs.
+
+> [!WARNING]
+> `calc_metrics()` parses both your answer and the reference with `parse_answer()`, which requires
+> the **exact** three-block layout — `[Positive Developments]:` … `[Potential Concerns]:` …
+> `[Prediction & Analysis]:` containing `Prediction:` and `Analysis:`. Any pair that fails to parse
+> is silently dropped from the metrics. That is what `valid_count` counts, so **always report
+> `valid_count` next to your scores** — 90% accuracy over 5 parsable samples out of 50 is not a
+> result. A model whose formatting drifts will look artificially good here.
 
 Here is a brief example of quantitative analysis using `calc_metrics()`:
 
@@ -417,3 +462,24 @@ Especially, in evaluation parts, you should talk about:
 + Clarity and professionalism in reporting (Subjective Analysis)
 
 If you don't know what to say in your report, you can refer to [my blog on medium](https://medium.com/@SkylineYang/applying-new-llm-models-on-fingpt-fine-tune-deepseek-and-llama3-6ac9198d88b2).
+
+
+## 5. What to Submit
+
+Create `submissions/Assignment1_Name_UNI/` and include:
+
+1. **Code**: your modified `train_lora.py`, `train.sh`, `config.json`, `utils.py`, and any
+   notebook you used for data generation or evaluation
+2. **The LoRA adapter**, if it is small enough to commit (`adapter_config.json` + adapter weights).
+   Adapters are typically tens of MB — do **not** commit the base model or the `pretrained-models/`
+   cache
+3. **Evaluation output**: the raw generated answers and the metric table for every model you
+   compared, with `valid_count` included
+4. **Research report** (PDF) covering the six points in section 4
+5. **`README.md`** with the exact commands to reproduce your run, your hardware, and the link to
+   your Medium blog
+
+> [!WARNING]
+> ⚠️ **DO NOT SUBMIT YOUR OWN API KEY ONTO GITHUB!!!** Before committing, check
+> `train_lora.py` (`WANDB_API_KEY`), any `.env` file, and your notebook outputs — a key pasted into
+> a cell and saved with the notebook is still a leaked key.
