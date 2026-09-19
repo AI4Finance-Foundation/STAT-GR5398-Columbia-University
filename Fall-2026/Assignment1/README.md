@@ -9,7 +9,7 @@ doing, and submit into that track's `submissions/` folder.
 | --- | --- | --- |
 | [FinRL-Trading](./FinRL-Trading) — Quantitative Trading Strategy | [README](./FinRL-Trading/README.md) | [`source_code/`](./FinRL-Trading/source_code) |
 | [FinGPT](./FinGPT) — Financial Large Language Models | [README](./FinGPT/README.md) | [`source_code/`](./FinGPT/source_code) |
-| [FinRobot](./FinRobot) — Equity Research AI Agent | [README](./FinRobot/README.md) | [`source_code/`](./FinRobot/source_code) |
+| [FinRobot](./FinRobot) — Equity Research AI Agent | [README](./FinRobot/README.md) | [`finrobot_equity`](https://github.com/AI4Finance-Foundation/FinRobot/tree/master/finrobot_equity) + [`source_code/`](./FinRobot/source_code) |
 
 ## What you will learn
 
@@ -39,15 +39,24 @@ your own research. Read this first so you know what each track asks of you.
 - **Compare your fine-tuned model against the teacher model quantitatively**: binary accuracy,
   MSE, ROUGE-1/2/L, and inference time — not "it looks reasonable".
 
-### FinRobot — multi-agent equity research
+### FinRobot — auditing a production equity-research agent system
 
-- How to design a **Multi-Agent System (MAS)**: decompose a complex task into role-specific
-  agents that communicate through structured messages.
-- The **Expert / Shadow / UserProxy** pattern — execution, verification, and control separated
-  into distinct agents, which is what makes the system reliable and makes it terminate.
-- Generate annual research reports for at least 5 companies in one sector, automatically.
-- Then do the part the agents cannot: analyze those reports yourself against real historical
-  performance and current market information.
+Built on [`finrobot_equity`](https://github.com/AI4Finance-Foundation/FinRobot/tree/master/finrobot_equity),
+the pipeline behind [finrobot.ai](https://finrobot.ai) — eight specialist agents, real market
+data, and a rendered research report.
+
+- How a **Multi-Agent System (MAS)** is actually built in production: eight agents sharing one
+  evidence prompt, each returning a typed Pydantic object, orchestrated by a manager class.
+- Where the boundary sits between **deterministic calculation and LLM interpretation** — and how
+  to find the places where a system has quietly crossed it.
+- **Audit an AI system instead of admiring it**: reconcile its numbers against SEC filings,
+  reproduce its valuation by hand, and classify every claim in the generated prose as supported,
+  unsupported, or contradicted by the evidence it was given.
+- Measure what nobody measures: **grounding rate**, run-to-run **stability** on identical inputs,
+  forecast sensitivity, cost and runtime per report.
+- Then **improve one component** — add a verifier agent, replace the hard-coded growth
+  assumptions with a real forecast, build a DCF with explicit assumptions, or write the evaluation
+  harness — and prove the improvement with a before/after comparison.
 
 ### Across all three tracks
 
