@@ -1,0 +1,13 @@
+# FinRL-Trading track, Assignment 1
+#
+# pandas is pinned below 3.0: ml_model.py and the notebook were written against the
+# pandas 2 API. If you want to run on pandas 3, fixing what breaks is a fine
+# contribution — open a PR upstream.
+pandas>=2.0,<3
+numpy
+openpyxl          # reading/writing the sector{N}.xlsx files
+scikit-learn
+xgboost
+lightgbm
+yfinance          # SPY / QQQ benchmarks in the backtest
+matplotlib

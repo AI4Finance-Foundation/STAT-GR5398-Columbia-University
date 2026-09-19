@@ -22,7 +22,11 @@ your own research. Read this first so you know what each track asks of you.
   the semester looks like.
 - Build a portfolio from a selected universe, and learn the fundamentals of quantitative
   trading — especially **stock selection**.
-- Implement a **full backtest** on real historical data, instead of stopping at model metrics.
+- Build a sample that is actually honest: **point-in-time index membership** so delisted companies
+  stay in your universe (survivorship bias), and **filing dates rather than quarter ends** so you
+  never trade on numbers the market could not see yet (look-ahead bias).
+- Implement a **full backtest** on real historical data, with transaction costs, instead of
+  stopping at model metrics.
 - Judge a strategy on more than cumulative return.
 
 ### FinGPT — fine-tuning and evaluating financial LLMs

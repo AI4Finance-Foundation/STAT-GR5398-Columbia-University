@@ -75,7 +75,15 @@ if __name__ == '__main__':
     
     # features column: different base on sectors
     no_feature_column_names = args.no_feature_column_names
-    features_column = [x for x in sector_data.columns.values if (x not in no_feature_column_names) and (np.issubdtype(sector_data[x].dtype, np.number) and(not np.any(np.isnan(sector_data[x]))))]
+    # NOTE: the original line used np.issubdtype(dtype, np.number), which raises
+    # TypeError on pandas >= 3.0 because string columns now carry StringDtype.
+    # pd.api.types.is_numeric_dtype works on every pandas version.
+    features_column = [
+        x for x in sector_data.columns.values
+        if x not in no_feature_column_names
+        and pd.api.types.is_numeric_dtype(sector_data[x])
+        and not sector_data[x].isna().any()
+    ]
     
     #sector name
     sector_name = args.sector_name_input
