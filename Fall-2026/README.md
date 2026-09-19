@@ -5,8 +5,11 @@ tracks (FinRL-Trading, FinGPT, FinRobot).
 
 | Assignment | Status | Due |
 | --- | --- | --- |
-| [Assignment 1](./Assignment1) | Released | Oct 20, 2026 |
+| [Assignment 1](./Assignment1) | Released | Oct 12, 2026 |
 | Assignment 2 | TBA | TBA |
 | Assignment 3 | TBA | TBA |
+
+> [!IMPORTANT]
+> **The drop deadline is Tuesday, Oct 13, 2026** — one day after Assignment 1 is due.
 
 See the [course README](../README.md) for the description of each research track.

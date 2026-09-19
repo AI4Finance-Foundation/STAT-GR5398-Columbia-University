@@ -11,7 +11,7 @@
 > [!WARNING]  
 > ⚠️ **DO NOT SUBMIT YOUR OWN API KEY ONTO GITHUB!!!**
 
-Assignment 1 Report Submission Due Day: Oct 20, 2026.
+Assignment 1 Report Submission Due Day: Oct 12, 2026.
 
 ## 1. Prerequisites
 

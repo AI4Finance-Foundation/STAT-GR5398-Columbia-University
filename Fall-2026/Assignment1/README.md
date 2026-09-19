@@ -85,4 +85,9 @@ folder (same `Assignment1_Name_UNI` naming in each).
 > [!WARNING]
 > ⚠️ **DO NOT SUBMIT YOUR OWN API KEY ONTO GITHUB!!!**
 
-**Due: Oct 20, 2026.**
+**Due: Monday, Oct 12, 2026.**
+
+> [!IMPORTANT]
+> **Tuesday, Oct 13, 2026 is the drop deadline.** Assignment 1 is due the day before it, on
+> purpose: by then you will have run a real pipeline end to end and will know what this course
+> actually demands, so you can decide whether to stay enrolled with full information.

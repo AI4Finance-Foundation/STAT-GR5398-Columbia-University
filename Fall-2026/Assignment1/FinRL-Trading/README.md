@@ -10,4 +10,4 @@ In this assignment 1, we want you to :
 
 For detailed information of this assignment, please refer to `source_code/FinRL-Trading-Full-Workload.ipynb`.
 
-Assignment 1 Report Submission Due Day: **Oct 20, 2026**.
+Assignment 1 Report Submission Due Day: **Oct 12, 2026**.

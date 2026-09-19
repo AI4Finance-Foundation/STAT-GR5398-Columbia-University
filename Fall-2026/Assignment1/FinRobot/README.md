@@ -15,7 +15,7 @@ In this assignment, we would like you to run a tutorial of FinRobot ( `/source_c
 
 To find for more detailed informations, please refer to [FinRobot](https://github.com/AI4Finance-Foundation/FinRobot) and specific notebook file [agent_annual_report.ipynb](https://github.com/AI4Finance-Foundation/FinRobot/blob/master/tutorials_advanced/agent_annual_report.ipynb).
 
-Assignment 1 Financial Reports Submission Due Day: Oct 20, 2026
+Assignment 1 Financial Reports Submission Due Day: Oct 12, 2026
 
 ### 1. Multi-Agent System
 
