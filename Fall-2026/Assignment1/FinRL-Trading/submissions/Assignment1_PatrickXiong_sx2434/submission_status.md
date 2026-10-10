@@ -4,7 +4,7 @@ Author: Patrick Xiong (sx2434).
 
 Medium is published: https://medium.com/@sx2434/a-finrl-backtest-after-repairing-prices-identities-and-financial-dates-1771f8ed587d
 
-Course PR status: draft preparation; replace with verified URL once created.
+Course PR: https://github.com/AI4Finance-Foundation/STAT-GR5398-Columbia-University/pull/9 (created and verified in draft state).
 
 The 8 October results are preserved: 242 rolling windows, 10,204 forecasts; top-10 cumulative return 175.22% and maximum drawdown -34.54%, versus SPY 135.84% and -24.50%. Top-25 returned 127.08%. These are coverage-limited development results.
 

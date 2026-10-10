@@ -2,6 +2,8 @@
 
 **Status: draft; historical data repair pending WRDS approval.**
 
+Course PR: [#9 (draft)](https://github.com/AI4Finance-Foundation/STAT-GR5398-Columbia-University/pull/9).
+
 Medium: [https://medium.com/@sx2434/a-finrl-backtest-after-repairing-prices-identities-and-financial-dates-1771f8ed587d](https://medium.com/@sx2434/a-finrl-backtest-after-repairing-prices-identities-and-financial-dates-1771f8ed587d)
 
 Report: [research PDF](FinRL_Assignment1_Research_Draft.pdf).
