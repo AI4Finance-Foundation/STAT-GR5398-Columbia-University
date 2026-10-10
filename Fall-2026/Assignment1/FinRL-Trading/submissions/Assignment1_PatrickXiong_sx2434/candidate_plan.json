@@ -1,0 +1,18 @@
+{
+  "primary_rule": "global_top10",
+  "sensitivity_rules": [
+    "global_top25",
+    "sector_equal_top25",
+    "all_candidates_equal",
+    "five_day_disclosure_buffer"
+  ],
+  "reason": "top10 proposed submission rule selected using 10-07 development observations, frozen before 10-08 repaired results; not an untouched holdout",
+  "feature_sensitivity": "No feature-drop run: spot checks traced PE to quarter-price/quarterly-EPS and corrected fiscal-period joining. Five extra business days of disclosure eligibility tested with frozen forecasts.",
+  "full_window": "first available audited inference to 2025-09-30",
+  "common_window": "2020-09-01 to 2025-09-30",
+  "no_additional_hyperparameter_search": true,
+  "baseline_rule": "global_top25",
+  "initial_plan_created_at": "2026-10-08T01:53:08.753926-04:00",
+  "selection_record": "Initial setup plan began with top25; root/user-directed plan fixed top10 as proposed submission strategy before the first 10-08 repaired training began at 02:10:10. Exact amendment time not recorded.",
+  "record_updated_at": "2026-10-08T09:35:33.618628-04:00"
+}
