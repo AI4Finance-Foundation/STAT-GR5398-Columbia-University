@@ -4,6 +4,8 @@
 
 Medium: [https://medium.com/@sx2434/a-finrl-backtest-after-repairing-prices-identities-and-financial-dates-1771f8ed587d](https://medium.com/@sx2434/a-finrl-backtest-after-repairing-prices-identities-and-financial-dates-1771f8ed587d)
 
+Report: [research PDF](FinRL_Assignment1_Research_Draft.pdf).
+
 Unzip `research_outputs.zip` into this folder before running the commands below. The archive contains derived forecasts, diagnostics and comparison outputs; raw course datasets and recovered quotes are excluded.
 
 ## Research snapshot - 8 October 2026
@@ -127,7 +129,7 @@ reuses the fitted predictions and does not make a fresh network download.
   source choices, coverage, predictions, validation scores and importances.
 - `comparison_full/`, `comparison_common/`: metrics, daily NAV, holdings,
   cost/delay tests, disclosure buffer, stock/sector contributions and checks.
-- `output/pdf/FinRL_Assignment1_Research_Draft.pdf`, `Medium_draft.md`:
+- `FinRL_Assignment1_Research_Draft.pdf`, `Medium_draft.md`:
   evidence-backed drafts. The Medium article is published at the link above; the PDF remains a research draft.
 
 The original/first-rerun predictions in `reference/` are frozen comparison
@@ -192,3 +194,5 @@ dates are actual trading dates.
 The new-run entry point now generates its missing public-price probe inventory and benchmark input files before recovery. Its dispatch order was smoke-tested without downloading data or retraining. The previously verified clean replay used frozen inputs and saved predictions. No complete fresh-network refit of this updated public package has been certified. Reproduction relies on provider availability; network failures must stop the run. The PDF describes the 8 October experiment.
 
 Raw benchmark CSVs, recovered input prices, prepared financial inputs, caches and credentials are excluded from the public archive. The data-repair request lists and acceptance conditions are in `data_access/`.
+
+The compact archive omits daily stock-contribution ledgers; the backtest regenerates them. Aggregate attribution tables and checks are retained.
