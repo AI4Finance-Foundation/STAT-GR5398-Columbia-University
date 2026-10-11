@@ -1,0 +1,23 @@
+{
+  "adapter_config_file": "adapter_config.json",
+  "adapter_directory": "/content/drive/MyDrive/FinGPT_Assignment1/finetuned_models/llama_baseline",
+  "adapter_weights_bytes": 83945296,
+  "adapter_weights_file": "adapter_model.safetensors",
+  "adapter_weights_sha256": "2da74ab5ae2940cd8f5689750c0681bd491871d47b84c8e42e5373b7d6f2fff6",
+  "base_model_name_or_path": "meta-llama/Llama-3.1-8B",
+  "full_model_weights_present": false,
+  "lora_alpha": 16,
+  "lora_dropout": 0.1,
+  "peft_type": "LORA",
+  "rank": 8,
+  "target_modules": [
+    "down_proj",
+    "gate_proj",
+    "k_proj",
+    "o_proj",
+    "q_proj",
+    "up_proj",
+    "v_proj"
+  ],
+  "task_type": "CAUSAL_LM"
+}

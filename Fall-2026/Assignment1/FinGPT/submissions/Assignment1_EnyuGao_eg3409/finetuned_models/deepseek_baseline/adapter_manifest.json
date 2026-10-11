@@ -1,0 +1,23 @@
+{
+  "adapter_config_file": "adapter_config.json",
+  "adapter_directory": "/content/drive/MyDrive/FinGPT_Assignment1/finetuned_models/deepseek_baseline",
+  "adapter_weights_bytes": 83945296,
+  "adapter_weights_file": "adapter_model.safetensors",
+  "adapter_weights_sha256": "bbff92460b39cffab442c7de00145d3902476297d32589ef497d1f761e270e17",
+  "base_model_name_or_path": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+  "full_model_weights_present": false,
+  "lora_alpha": 16,
+  "lora_dropout": 0.1,
+  "peft_type": "LORA",
+  "rank": 8,
+  "target_modules": [
+    "down_proj",
+    "gate_proj",
+    "k_proj",
+    "o_proj",
+    "q_proj",
+    "up_proj",
+    "v_proj"
+  ],
+  "task_type": "CAUSAL_LM"
+}

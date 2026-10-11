@@ -1,0 +1,42 @@
+{
+  "adapter_manifest": {
+    "adapter_config_file": "adapter_config.json",
+    "adapter_directory": "/content/drive/MyDrive/FinGPT_Assignment1/finetuned_models/qwen_r16",
+    "adapter_weights_bytes": 161533192,
+    "adapter_weights_file": "adapter_model.safetensors",
+    "adapter_weights_sha256": "7951772a27e74ae4f6ea0d1d274ca099638c552f7f1fb6bb62b8b8efe1ddcbda",
+    "base_model_name_or_path": "Qwen/Qwen2.5-7B-Instruct",
+    "full_model_weights_present": false,
+    "lora_alpha": 16,
+    "lora_dropout": 0.1,
+    "peft_type": "LORA",
+    "rank": 16,
+    "target_modules": [
+      "down_proj",
+      "gate_proj",
+      "k_proj",
+      "o_proj",
+      "q_proj",
+      "up_proj",
+      "v_proj"
+    ],
+    "task_type": "CAUSAL_LM"
+  },
+  "adapter_path": "/content/drive/MyDrive/FinGPT_Assignment1/finetuned_models/qwen_r16",
+  "average_inference_seconds": 52.225436555790004,
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "complete": true,
+  "completed_samples": 300,
+  "dataset": "FinGPT/fingpt-forecaster-dow30-202305-202405",
+  "dataset_split": "test",
+  "generation_error_count": 0,
+  "generation_success_count": 300,
+  "overall_parse_rate": 1.0,
+  "parsable_samples": 300,
+  "parse_failure_reasons": {},
+  "parsing_success_rate": 1.0,
+  "schema_version": 1,
+  "selected_test_samples": 300,
+  "total_test_samples": 300,
+  "valid_count": 300
+}

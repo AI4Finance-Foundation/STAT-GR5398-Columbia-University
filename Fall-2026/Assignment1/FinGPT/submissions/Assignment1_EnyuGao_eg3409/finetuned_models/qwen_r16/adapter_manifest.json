@@ -1,0 +1,23 @@
+{
+  "adapter_config_file": "adapter_config.json",
+  "adapter_directory": "/content/drive/MyDrive/FinGPT_Assignment1/finetuned_models/qwen_r16",
+  "adapter_weights_bytes": 161533192,
+  "adapter_weights_file": "adapter_model.safetensors",
+  "adapter_weights_sha256": "7951772a27e74ae4f6ea0d1d274ca099638c552f7f1fb6bb62b8b8efe1ddcbda",
+  "base_model_name_or_path": "Qwen/Qwen2.5-7B-Instruct",
+  "full_model_weights_present": false,
+  "lora_alpha": 16,
+  "lora_dropout": 0.1,
+  "peft_type": "LORA",
+  "rank": 16,
+  "target_modules": [
+    "down_proj",
+    "gate_proj",
+    "k_proj",
+    "o_proj",
+    "q_proj",
+    "up_proj",
+    "v_proj"
+  ],
+  "task_type": "CAUSAL_LM"
+}
