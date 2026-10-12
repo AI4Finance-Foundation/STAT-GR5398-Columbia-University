@@ -10,12 +10,12 @@ Six baseline companies have eight actual section outputs and generated HTML repo
 
 ## Results and limits
 
--20 NVDA/AMD metric comparisons:16 matches,4 EBITDA-definition differences needing reconciliation.
--Independent DCF arithmetic checks for five companies and45 complete sensitivity scenarios. These are mechanical scenarios,not investment recommendations.
--Forecast-year validity8/15 to15/15. Separate68-sample SEC backtest MAPE13.74% to15.86%(worse).
--24 company/section grounding rows,576 provisional claims:177 Supported,397 Unsupported,2 Contradicted,after five recorded review corrections. Model-based extraction/entailment was not fully independently adjudicated; Unsupported is not synonymous with false.
--Three identical-input NVDA runs. Risk-category order is imposed by the prompt; detailed wording differs. No explicit agent rating/target was emitted,so those variances remain undefined.
--Initial two-step runtime35.5–42.0seconds/company. Saved-response cost subtotal$1.0731; some diagnostics and one truncated evaluation response excluded. Rates:$2input,$0.50cachedinput,$8output per milliontokens.
+- 20 NVDA/AMD metric comparisons:16 matches,4 EBITDA-definition differences needing reconciliation.
+- Independent DCF arithmetic checks for five companies and45 complete sensitivity scenarios. These are mechanical scenarios,not investment recommendations.
+- Forecast-year validity8/15 to15/15. Separate68-sample SEC backtest MAPE13.74% to15.86%(worse).
+- 24 company/section grounding rows,576 provisional claims:177 Supported,397 Unsupported,2 Contradicted,after five recorded review corrections. Model-based extraction/entailment was not fully independently adjudicated; Unsupported is not synonymous with false.
+- Three identical-input NVDA runs. Risk-category order is imposed by the prompt; detailed wording differs. No explicit agent rating/target was emitted,so those variances remain undefined.
+- Initial two-step runtime35.5–42.0seconds/company. Saved-response cost subtotal$1.0731; some diagnostics and one truncated evaluation response excluded. Rates:$2input,$0.50cachedinput,$8output per milliontokens.
 
 ## Archive layout — all evidence is included
 
@@ -25,9 +25,9 @@ Large evidence folders are compressed to keep web-upload batches manageable. Ext
 python unpack_evidence.py
 ```
 
--`reports_and_audits.zip`:actual_runs/{baseline,improved,evaluation,fmp_cache} with HTML/charts,CSV/JSON/TXT analysis folders,actual agent prompts/outputs; audit/ financial,forecast,valuation,grounding,stability,cost tables; charts/ and companion analysis/.
--`code_and_upstream.zip`:code/ reproducibility scripts; pinned upstream/ source; upstream_snapshot.tar.gz; course originals. Three patches are provided directly and in the evidence archives.
--`raw_source_data.zip`:data/sec/ raw CompanyFacts and original issuer filings,with lineage references in audit/.
+- `reports_and_audits.zip`:actual_runs/{baseline,improved,evaluation,fmp_cache} with HTML/charts,CSV/JSON/TXT analysis folders,actual agent prompts/outputs; audit/ financial,forecast,valuation,grounding,stability,cost tables; charts/ and companion analysis/.
+- `code_and_upstream.zip`:code/ reproducibility scripts; pinned upstream/ source; upstream_snapshot.tar.gz; course originals. Three patches are provided directly and in the evidence archives.
+- `raw_source_data.zip`:data/sec/ raw CompanyFacts and original issuer filings,with lineage references in audit/.
 
 For example,the NVIDIA report is `actual_runs/baseline/NVDA/report/Combined_Equity_Report_NVDA.html`; each company's inputs/outputs are under `actual_runs/baseline/TICKER/analysis/`. Full methods and constraints are in `CURRENT_STATUS.md` after extraction.
 
