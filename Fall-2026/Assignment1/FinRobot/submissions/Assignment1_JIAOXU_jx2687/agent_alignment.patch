@@ -1,0 +1,137 @@
+--- a/finrobot_equity/core/src/modules/equity_agents/agent_manager.py
++++ b/finrobot_equity/core/src/modules/equity_agents/agent_manager.py
+@@ -79,13 +79,34 @@
+         
+         # Run the agent with optional custom model
+         if custom_model:
+-            run_config = RunConfig(
+-                model_settings=ModelSettings(model=custom_model)
+-            )
++            run_config = RunConfig(model=custom_model)
+             result = await Runner.run(agent, financial_prompt, run_config=run_config)
+         else:
+             result = await Runner.run(agent, financial_prompt)
+         
++        # Preserve actual evidence and provider token usage for course audits.
++        evidence_dir = os.getenv('FINROBOT_EVIDENCE_DIR')
++        if evidence_dir:
++            from pathlib import Path
++            from dataclasses import asdict, is_dataclass
++            folder = Path(evidence_dir)
++            folder.mkdir(parents=True, exist_ok=True)
++            usage = []
++            for response in result.raw_responses:
++                u = response.usage
++                usage.append(asdict(u) if is_dataclass(u) else str(u))
++            final = result.final_output
++            record = {
++                'ticker': company_ticker, 'section': text_type,
++                'model_requested': custom_model,
++                'system_instructions': agent.instructions,
++                'user_prompt': financial_prompt,
++                'output': final.model_dump() if hasattr(final, 'model_dump') else str(final),
++                'provider_usage': usage,
++                'model_responses': len(result.raw_responses)
++            }
++            (folder / (text_type + '.json')).write_text(json.dumps(record, indent=2, default=lambda x: x.model_dump() if hasattr(x, "model_dump") else str(x)))
++
+         # Field mapping for each text type
+         field_mapping = {
+             'tagline': 'tagline',
+--- a/finrobot_equity/core/src/modules/text_generator_agents.py
++++ b/finrobot_equity/core/src/modules/text_generator_agents.py
+@@ -79,7 +79,7 @@
+     return prompt
+ 
+ 
+-def generate_text_section(data: Dict, prompt_type: str, api_key: str, company_name: str, company_ticker: str, base_url: str = None, model: str = None) -> str:
++def _legacy_generate_text_section(data: Dict, prompt_type: str, api_key: str, company_name: str, company_ticker: str, base_url: str = None, model: str = None) -> str:
+     """
+     Generates a specific text section for the equity report using OpenAI Chat API.
+     
+@@ -149,6 +149,31 @@
+         print(f"❌ Error generating '{prompt_type}': {e}")
+         return _get_fallback_text(prompt_type, company_name)
+ 
++def generate_text_section(data, prompt_type, api_key, company_name, company_ticker,
++                          base_url=None, model=None):
++    """Use the upstream typed specialist team required by the course.
++
++    Fail closed on provider errors instead of saving plausible fallback text.
++    """
++    import asyncio
++    import os
++    from openai import AsyncOpenAI
++    from agents import set_default_openai_client, set_tracing_disabled
++    from .equity_agents.agent_manager import EquityResearchAgentManager
++    if not api_key:
++        raise RuntimeError("OpenAI key missing; no synthetic fallback text generated")
++    os.environ['OPENAI_MODEL_NAME'] = model or 'gpt-4.1'
++    set_tracing_disabled(True)
++    async def run():
++        kwargs = {'api_key': api_key}
++        if base_url:
++            kwargs['base_url'] = base_url
++        async with AsyncOpenAI(**kwargs) as client:
++            set_default_openai_client(client, use_for_tracing=False)
++            return await EquityResearchAgentManager().generate_text_section(
++                data, prompt_type, company_name, company_ticker)
++    return asyncio.run(run())
++
+ # Backward compatibility - keep old function signature
+ def _query_openai(prompt: str, api_key: str) -> str:
+     """Legacy function for backward compatibility."""
+--- a/finrobot_equity/core/src/generate_financial_analysis.py
++++ b/finrobot_equity/core/src/generate_financial_analysis.py
+@@ -430,17 +430,6 @@
+             
+             # A single loop calling the unified generation function
+             for text_type in all_text_types:
+-                # Skip news_summary if no news data available
+-                if text_type == "news_summary" and not company_news:
+-                    print(f"Skipping 'news_summary' - no news data available")
+-                    # Create placeholder file
+-                    fallback_text = f"No recent news available for {args.company_name} ({args.company_ticker})."
+-                    file_path = os.path.join(text_output_dir, f"{text_type}.txt")
+-                    with open(file_path, "w", encoding="utf-8") as f:
+-                        f.write(fallback_text)
+-                    print(f"Created placeholder for '{text_type}' at {file_path}")
+-                    continue
+-                
+                 print(f"Generating '{text_type}' for {args.company_name} ({args.company_ticker})...")
+                 try:
+                     # Call the single, unified function for all types
+@@ -454,32 +443,13 @@
+                         model=openai_model
+                     )
+                     
+-                    # Fallback validation can remain here as a safety net
+-                    if text_type == "competitor_analysis" and (not generated_text or len(generated_text.split('.')) < 3):
+-                         print(f"⚠️ Warning: Competitor analysis seems too short, using fallback.")
+-                         generated_text = f"{args.company_name} demonstrates competitive positioning within its industry sector through consistent financial performance and strategic market positioning relative to key competitors."
+-                    
+-                    elif text_type == "major_takeaways" and "Revenue Growth:" not in generated_text:
+-                         print(f"⚠️ Warning: Major takeaways missing required sections, using fallback.")
+-                         generated_text = f"Revenue Growth: {args.company_name}'s revenue growth shows consistent performance trends.\n\nGross Profit Margin: {args.company_name}'s gross profit margins demonstrate operational effectiveness.\n\nSG&A Expense Margin: {args.company_name}'s SG&A expense management shows disciplined cost control.\n\nEBITDA Margin Stability: {args.company_name}'s EBITDA margin stability reflects strong underlying fundamentals."
+-
+-                    elif text_type == "news_summary" and (not generated_text or len(generated_text.split()) < 50):
+-                        print(f"⚠️ Warning: News summary seems too short, using fallback.")
+-                        generated_text = f"Recent news coverage for {args.company_name} reflects ongoing market interest and developments in the company's operations and strategic initiatives."
+-
+                     file_path = os.path.join(text_output_dir, f"{text_type}.txt")
+                     with open(file_path, "w", encoding="utf-8") as f:
+                         f.write(generated_text)
+                     print(f"✅ Successfully generated and saved '{text_type}' to {file_path}")
+                     
+                 except Exception as e:
+-                    print(f"Error generating text for '{text_type}': {e}")
+-                    # Create a fallback file if generation fails
+-                    fallback_text = f"{args.company_name} ({args.company_ticker}) {text_type.replace('_', ' ')} analysis not available."
+-                    file_path = os.path.join(text_output_dir, f"{text_type}.txt")
+-                    with open(file_path, "w", encoding="utf-8") as f:
+-                        f.write(fallback_text)
+-                    print(f"Created fallback text for '{text_type}' at {file_path}")
++                    raise RuntimeError(f"Agent section {text_type} failed: {type(e).__name__}") from None
+     else:
+         print("Skipping text generation (not enabled)")
+ 

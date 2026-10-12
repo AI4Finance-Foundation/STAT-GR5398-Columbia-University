@@ -1,0 +1,35 @@
+Reading fundamentals: work/clean_input/data/fundamental_data_full.csv
+  raw: 22,909 rows x 64 columns
+  43 rows had no filing date -> quarter end + 45 days
+  dropped 1,591 rows with no y_return label
+  after 2015-01-01..2025-09-30: 21,299 rows
+Applying point-in-time S&P 500 membership: work/clean_input/data/sp500_historical_constituents.csv
+  kept 19,007 of 21,299 rows (674 tickers, 692 before)
+  cleaned 0 inf and 1,444 NaN values across 52 features
+Wrote work/clean_input/prepared/final_ratios.csv  (19,007 rows x 59 cols)
+  sector10 (Energy): 1,005 rows, 41 tickers, 42 quarters -> work/clean_input/prepared/sector10.xlsx
+  sector15 (Basic Materials): 763 rows, 23 tickers, 41 quarters -> work/clean_input/prepared/sector15.xlsx
+  sector20 (Industrials): 2,711 rows, 92 tickers, 42 quarters -> work/clean_input/prepared/sector20.xlsx
+  sector25 (Consumer Cyclical): 2,373 rows, 89 tickers, 42 quarters -> work/clean_input/prepared/sector25.xlsx
+  sector30 (Consumer Defensive): 1,384 rows, 43 tickers, 42 quarters -> work/clean_input/prepared/sector30.xlsx
+  sector35 (Healthcare): 2,418 rows, 86 tickers, 42 quarters -> work/clean_input/prepared/sector35.xlsx
+  sector40 (Financial Services): 2,660 rows, 90 tickers, 42 quarters -> work/clean_input/prepared/sector40.xlsx
+  sector45 (Technology): 2,581 rows, 105 tickers, 42 quarters -> work/clean_input/prepared/sector45.xlsx
+  sector50 (Communication Services): 816 rows, 36 tickers, 42 quarters -> work/clean_input/prepared/sector50.xlsx
+  sector55 (Utilities): 1,120 rows, 32 tickers, 39 quarters -> work/clean_input/prepared/sector55.xlsx
+  sector60 (Real Estate): 1,176 rows, 37 tickers, 42 quarters -> work/clean_input/prepared/sector60.xlsx
+Reading prices: work/clean_input/data/finrl_trading.db
+  wrote 1,261,325 rows, 501 tickers -> work/clean_input/prepared/daily.csv
+  price range: 2015-06-15 .. 2025-09-30
+
+======================================================================
+Quarters available: 42  (2015-06-30 .. 2025-09-30)
+
+In fundamental_run_model.py, -first_trade_index N reserves the first N
+quarters for training only; trading starts at quarter N+1.
+  --trade-start 2020-06-30  ->  -first_trade_index 20
+  That leaves 22 quarters of out-of-sample trading (2020-06-30 .. 2025-09-30),
+  trained on 20 quarters of history.
+
+The default -first_trade_index 20 would start trading at 2020-06-30.
+======================================================================

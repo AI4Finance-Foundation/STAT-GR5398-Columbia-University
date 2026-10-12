@@ -1,0 +1,9 @@
+PASS: all SPY/QQQ/strategy reported metrics independently recomputed
+PASS: 1320 common closes / 1319 daily returns, same date index, initial NAV=1
+PASS: NAV identity, net=gross-cost, fee=.001*turnover*pretrade NAV / previous NAV
+PASS: 21 rebalances, all training/validation labels realized by cutoff
+PASS: selected feature availability<=cutoff, unique ticker/cutoff keys, missing target allocations zero, weights<=1
+PASS: Notebook executed sequentially, five code cells, no errors
+PASS: PDF four pages, metrics and name match, all four rendered pages visually inspected
+PASS: independent directory prepared from official inputs, cache fallback, rerun matches metrics/holdings/timing/importance exactly; predictions within 1.1e-16 (parallel floating-point reduction)
+PASS: package contains no raw database/prepared/input datasets or .env; common credential/private-key patterns absent

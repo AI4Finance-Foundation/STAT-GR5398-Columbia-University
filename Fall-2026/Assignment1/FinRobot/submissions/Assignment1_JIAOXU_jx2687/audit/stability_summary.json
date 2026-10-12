@@ -1,0 +1,26 @@
+{
+  "runs": 3,
+  "target_price_variance": null,
+  "missing_decisions": "Missing rating/target is a pipeline output limitation, not zero variance",
+  "risk_labels_per_run": [
+    [
+      "Market Risk",
+      "Competitive Risk",
+      "Operational Risk"
+    ],
+    [
+      "Market Risk",
+      "Competitive Risk",
+      "Operational Risk"
+    ],
+    [
+      "Market Risk",
+      "Competitive Risk",
+      "Operational Risk"
+    ]
+  ],
+  "decision_extraction": "Automated extraction with verbatim quotes; review required",
+  "risk_label_agreement": 1.0,
+  "category_order_is_prompt_specified": true,
+  "word_similarity": "risk_text_stability.csv; lexical similarity is not semantic or factual validity"
+}

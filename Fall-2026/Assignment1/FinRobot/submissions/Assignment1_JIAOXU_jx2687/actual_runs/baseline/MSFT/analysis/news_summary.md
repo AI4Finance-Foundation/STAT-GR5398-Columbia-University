@@ -1,0 +1,1 @@
+Error fetching news for MSFT: FMP HTTP 402: news/stock; credentials omitted
