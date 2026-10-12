@@ -1,0 +1,110 @@
+2026-10-05 16:18:13,068 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-05 16:18:17,200 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-05 16:18:18,334 - INFO - ✅ Chart saved: .\output\NVDA\report\NVDA_eps_pe.png
+2026-10-05 16:18:19,844 - INFO - ✅ Chart saved: .\output\NVDA\report\NVDA_eps_pe.pdf
+2026-10-05 16:18:19,850 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-05 16:18:19,850 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-05 16:18:19,857 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-05 16:18:19,857 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-05 16:18:20,206 - INFO - ✅ Chart saved: .\output\NVDA\report\NVDA_revenue_yoy.png
+2026-10-05 16:18:20,313 - INFO - ✅ Chart saved: .\output\NVDA\report\NVDA_revenue_yoy.pdf
+2026-10-05 16:18:20,322 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-05 16:18:20,322 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-05 16:18:20,328 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-05 16:18:20,329 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-05 16:18:20,738 - INFO - ✅ Chart saved: .\output\NVDA\report\NVDA_ebitda_margin.png
+2026-10-05 16:18:20,850 - INFO - ✅ Chart saved: .\output\NVDA\report\NVDA_ebitda_margin.pdf
+2026-10-05 16:18:21,019 - INFO - Calculating EV/EBITDA valuation...
+2026-10-05 16:18:21,020 - INFO - ✅ EV/EBITDA valuation: $81.92
+2026-10-05 16:18:21,020 - INFO - Calculating DCF valuation...
+2026-10-05 16:18:21,020 - INFO - ✅ DCF valuation: $82.69
+2026-10-05 16:18:21,020 - INFO - Calculating peer comparison valuation...
+2026-10-05 16:18:21,020 - INFO - Synthesizing valuation results...
+2026-10-05 16:18:21,020 - INFO - ✅ Synthesized target price: $82.24 (Range: $59.16 - $104.67)
+HTML reports will be saved to: .\output\NVDA\report
+✅ OpenAI API key loaded for text regeneration
+Auto-fetching market data for NVDA...
+Fetching comprehensive company metrics for NVDA...
+Successfully fetched metrics for NVDA
+✅ Successfully auto-fetched market data
+
+📊 Market Data Summary for NVDA:
+  Share Price: $238.90 (auto-fetched)
+  Target Price: $339.17 (auto-fetched)
+  Rating: Overweight (auto-fetched)
+  Market Cap: $5,786.40B (auto-fetched)
+  Sector: Technology (auto-fetched)
+📖 Loading and processing text content...
+📝 Processing tagline...
+✅ tagline validation passed (491 chars)
+📝 Processing company_overview...
+✅ company_overview validation passed (3006 chars)
+📝 Processing investment_overview...
+✅ investment_overview validation passed (1812 chars)
+📝 Processing valuation_overview...
+✅ valuation_overview validation passed (1736 chars)
+📝 Processing risks...
+✅ risks validation passed (1660 chars)
+📝 Processing competitor_analysis...
+🤖 Regenerating 'competitor_analysis' using AI...
+🤖 Generating 'competitor_analysis' text section...
+🤖 Using model: gpt-4o-mini
+✅ Successfully generated 'competitor_analysis' (1746 chars)
+✅ Successfully regenerated 'competitor_analysis' using AI
+📝 Processing major_takeaways...
+🤖 Regenerating 'major_takeaways' using AI...
+🤖 Generating 'major_takeaways' text section...
+🤖 Using model: gpt-4o-mini
+✅ Successfully generated 'major_takeaways' (1258 chars)
+✅ Successfully regenerated 'major_takeaways' using AI
+📝 Processing news_summary...
+✅ news_summary validation passed (55 chars)
+✅ All text content processed
+✅ Computed technical indicators for NVDA: Bullish
+Handling charts...
+✅ Revenue/EBITDA chart saved to .\output\NVDA\report\NVDA_revenue_ebitda_chart.png
+✅ EPS × PE chart saved to .\output\NVDA\report\NVDA_eps_pe_chart.png
+✅ EV/EBITDA peer chart saved to .\output\NVDA\report\NVDA_peer_ev_ebitda_chart.png
+Generating enhanced charts...
+✅ Loaded income statement data from output/NVDA/analysis\income_statement_raw_data.csv
+✅ Generated EPS × PE chart
+✅ Generated Revenue YoY chart
+✅ Generated EBITDA Margin chart
+Generating advanced charts...
+✅ Financial radar chart saved to .\output\NVDA\report\NVDA_financial_radar.png
+✅ Generated Financial Radar chart
+✅ Generated 4 enhanced charts total
+Performing valuation analysis...
+✅ Valuation analysis completed with 2 methods
+  Synthesized target: $82.24 (range $59.16-$104.67, upside -65.6%)
+Loading sensitivity analysis from output/NVDA/analysis/sensitivity_analysis.json...
+✅ Sensitivity analysis loaded
+Loading retail sentiment insights from output/NVDA/analysis\retail_sentiment.json...
+✅ Retail sentiment insights loaded
+Formatting tables for HTML...
+Loading Credit & Cashflow metrics from CSV...
+✅ Successfully loaded and formatted Credit & Cashflow metrics from CSV
+Processing peer EBITDA data with shape: (7, 4)
+Peer EBITDA columns: ['year', 'AMD', 'INTC', 'NVDA']
+Peer EBITDA index: [2021, 2022, 2023, 2024, 2025, 2026, 2027]
+✅ Successfully formatted peer EBITDA table
+Processing peer EV/EBITDA data with shape: (6, 3)
+Peer EV/EBITDA columns: ['AMD', 'INTC', 'NVDA']
+Peer EV/EBITDA index: [2021, 2022, 2023, 2024, 2025, 2026]
+✅ Successfully formatted peer EV/EBITDA table
+Generating professional HTML report (matching PDF structure)...
+✅ Generated Professional HTML Report: .\output\NVDA\report\Professional_Equity_Report_NVDA.html
+Generating combined HTML report (all sections in one file)...
+✅ Generated Combined HTML Report: .\output\NVDA\report\Combined_Equity_Report_NVDA.html
+Rendering legacy HTML pages...
+✅ Sensitivity/Catalyst content detected, adding Page 4
+✅ News/Charts content detected, adding Page 5
+Generated Page 1: .\output\NVDA\report\Equity_Report_Page1_NVDA.html
+Generated Page 2: .\output\NVDA\report\Equity_Report_Page2_NVDA.html
+Generated Page 3: .\output\NVDA\report\Equity_Report_Page3_NVDA.html
+Generated Page 4: .\output\NVDA\report\Equity_Report_Page4_NVDA.html
+Generated Page 5: .\output\NVDA\report\Equity_Report_Page5_NVDA.html
+
+✅ Equity report generation complete!
+📁 Reports saved to: .\output\NVDA\report
+🤖 Market data automatically fetched from FMP API

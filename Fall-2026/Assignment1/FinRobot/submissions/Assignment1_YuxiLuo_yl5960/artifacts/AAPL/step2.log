@@ -1,0 +1,110 @@
+2026-10-05 16:25:52,645 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-05 16:25:55,612 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-05 16:25:56,578 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\AAPL\report\AAPL_eps_pe.png
+2026-10-05 16:25:57,022 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\AAPL\report\AAPL_eps_pe.pdf
+2026-10-05 16:25:57,027 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-05 16:25:57,028 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-05 16:25:57,033 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-05 16:25:57,033 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-05 16:25:57,365 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\AAPL\report\AAPL_revenue_yoy.png
+2026-10-05 16:25:57,464 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\AAPL\report\AAPL_revenue_yoy.pdf
+2026-10-05 16:25:57,472 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-05 16:25:57,472 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-05 16:25:57,476 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-05 16:25:57,476 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-05 16:25:57,845 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\AAPL\report\AAPL_ebitda_margin.png
+2026-10-05 16:25:57,936 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\AAPL\report\AAPL_ebitda_margin.pdf
+2026-10-05 16:25:58,074 - INFO - Calculating EV/EBITDA valuation...
+2026-10-05 16:25:58,075 - INFO - ✅ EV/EBITDA valuation: $159.70
+2026-10-05 16:25:58,075 - INFO - Calculating DCF valuation...
+2026-10-05 16:25:58,075 - INFO - ✅ DCF valuation: $161.21
+2026-10-05 16:25:58,075 - INFO - Calculating peer comparison valuation...
+2026-10-05 16:25:58,075 - INFO - Synthesizing valuation results...
+2026-10-05 16:25:58,075 - INFO - ✅ Synthesized target price: $160.33 (Range: $115.34 - $204.06)
+HTML reports will be saved to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\AAPL\report
+✅ OpenAI API key loaded for text regeneration
+Auto-fetching market data for AAPL...
+Fetching comprehensive company metrics for AAPL...
+Successfully fetched metrics for AAPL
+✅ Successfully auto-fetched market data
+
+📊 Market Data Summary for AAPL:
+  Share Price: $332.89 (auto-fetched)
+  Target Price: $341.68 (auto-fetched)
+  Rating: Overweight (auto-fetched)
+  Market Cap: $4,889.27B (auto-fetched)
+  Sector: Technology (auto-fetched)
+📖 Loading and processing text content...
+📝 Processing tagline...
+✅ tagline validation passed (488 chars)
+📝 Processing company_overview...
+✅ company_overview validation passed (2455 chars)
+📝 Processing investment_overview...
+✅ investment_overview validation passed (1768 chars)
+📝 Processing valuation_overview...
+✅ valuation_overview validation passed (1596 chars)
+📝 Processing risks...
+✅ risks validation passed (1199 chars)
+📝 Processing competitor_analysis...
+🤖 Regenerating 'competitor_analysis' using AI...
+🤖 Generating 'competitor_analysis' text section...
+🤖 Using model: gpt-4o-mini
+✅ Successfully generated 'competitor_analysis' (1906 chars)
+✅ Successfully regenerated 'competitor_analysis' using AI
+📝 Processing major_takeaways...
+🤖 Regenerating 'major_takeaways' using AI...
+🤖 Generating 'major_takeaways' text section...
+🤖 Using model: gpt-4o-mini
+✅ Successfully generated 'major_takeaways' (1351 chars)
+✅ Successfully regenerated 'major_takeaways' using AI
+📝 Processing news_summary...
+✅ news_summary validation passed (47 chars)
+✅ All text content processed
+✅ Computed technical indicators for AAPL: Neutral
+Handling charts...
+✅ Revenue/EBITDA chart saved to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\AAPL\report\AAPL_revenue_ebitda_chart.png
+✅ EPS × PE chart saved to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\AAPL\report\AAPL_eps_pe_chart.png
+✅ EV/EBITDA peer chart saved to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\AAPL\report\AAPL_peer_ev_ebitda_chart.png
+Generating enhanced charts...
+✅ Loaded income statement data from D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\AAPL\analysis\income_statement_raw_data.csv
+✅ Generated EPS × PE chart
+✅ Generated Revenue YoY chart
+✅ Generated EBITDA Margin chart
+Generating advanced charts...
+✅ Financial radar chart saved to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\AAPL\report\AAPL_financial_radar.png
+✅ Generated Financial Radar chart
+✅ Generated 4 enhanced charts total
+Performing valuation analysis...
+✅ Valuation analysis completed with 2 methods
+  Synthesized target: $160.33 (range $115.34-$204.06, upside -51.8%)
+Loading sensitivity analysis from D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\AAPL\analysis\sensitivity_analysis.json...
+✅ Sensitivity analysis loaded
+Loading retail sentiment insights from D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\AAPL\analysis\retail_sentiment.json...
+✅ Retail sentiment insights loaded
+Formatting tables for HTML...
+Loading Credit & Cashflow metrics from CSV...
+✅ Successfully loaded and formatted Credit & Cashflow metrics from CSV
+Processing peer EBITDA data with shape: (7, 4)
+Peer EBITDA columns: ['year', 'AAPL', 'GOOGL', 'MSFT']
+Peer EBITDA index: [2021, 2022, 2023, 2024, 2025, 2026, 2027]
+✅ Successfully formatted peer EBITDA table
+Processing peer EV/EBITDA data with shape: (6, 3)
+Peer EV/EBITDA columns: ['AAPL', 'GOOGL', 'MSFT']
+Peer EV/EBITDA index: [2021, 2022, 2023, 2024, 2025, 2026]
+✅ Successfully formatted peer EV/EBITDA table
+Generating professional HTML report (matching PDF structure)...
+✅ Generated Professional HTML Report: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\AAPL\report\Professional_Equity_Report_AAPL.html
+Generating combined HTML report (all sections in one file)...
+✅ Generated Combined HTML Report: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\AAPL\report\Combined_Equity_Report_AAPL.html
+Rendering legacy HTML pages...
+✅ Sensitivity/Catalyst content detected, adding Page 4
+✅ News/Charts content detected, adding Page 5
+Generated Page 1: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\AAPL\report\Equity_Report_Page1_AAPL.html
+Generated Page 2: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\AAPL\report\Equity_Report_Page2_AAPL.html
+Generated Page 3: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\AAPL\report\Equity_Report_Page3_AAPL.html
+Generated Page 4: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\AAPL\report\Equity_Report_Page4_AAPL.html
+Generated Page 5: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\AAPL\report\Equity_Report_Page5_AAPL.html
+
+✅ Equity report generation complete!
+📁 Reports saved to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\AAPL\report
+🤖 Market data automatically fetched from FMP API

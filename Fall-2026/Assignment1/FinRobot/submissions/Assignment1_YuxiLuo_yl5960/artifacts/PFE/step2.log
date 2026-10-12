@@ -1,0 +1,110 @@
+2026-10-10 19:04:18,970 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 19:04:22,159 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 19:04:23,172 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\PFE\report\PFE_eps_pe.png
+2026-10-10 19:04:24,503 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\PFE\report\PFE_eps_pe.pdf
+2026-10-10 19:04:24,508 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:04:24,511 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:04:24,517 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:04:24,517 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:04:24,808 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\PFE\report\PFE_revenue_yoy.png
+2026-10-10 19:04:24,886 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\PFE\report\PFE_revenue_yoy.pdf
+2026-10-10 19:04:24,892 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:04:24,892 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:04:24,894 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:04:24,894 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:04:25,236 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\PFE\report\PFE_ebitda_margin.png
+2026-10-10 19:04:25,323 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\PFE\report\PFE_ebitda_margin.pdf
+2026-10-10 19:04:25,455 - INFO - Calculating EV/EBITDA valuation...
+2026-10-10 19:04:25,455 - INFO - ✅ EV/EBITDA valuation: $73.43
+2026-10-10 19:04:25,455 - INFO - Calculating DCF valuation...
+2026-10-10 19:04:25,457 - INFO - ✅ DCF valuation: $74.13
+2026-10-10 19:04:25,457 - INFO - Calculating peer comparison valuation...
+2026-10-10 19:04:25,457 - INFO - Synthesizing valuation results...
+2026-10-10 19:04:25,457 - INFO - ✅ Synthesized target price: $73.72 (Range: $53.04 - $93.83)
+HTML reports will be saved to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\PFE\report
+✅ OpenAI API key loaded for text regeneration
+Auto-fetching market data for PFE...
+Fetching comprehensive company metrics for PFE...
+Successfully fetched metrics for PFE
+✅ Successfully auto-fetched market data
+
+📊 Market Data Summary for PFE:
+  Share Price: $28.28 (auto-fetched)
+  Target Price: $29.17 (auto-fetched)
+  Rating: Neutral (auto-fetched)
+  Market Cap: $161.18B (auto-fetched)
+  Sector: Healthcare (auto-fetched)
+📖 Loading and processing text content...
+📝 Processing tagline...
+✅ tagline validation passed (490 chars)
+📝 Processing company_overview...
+✅ company_overview validation passed (2493 chars)
+📝 Processing investment_overview...
+✅ investment_overview validation passed (1637 chars)
+📝 Processing valuation_overview...
+✅ valuation_overview validation passed (1818 chars)
+📝 Processing risks...
+✅ risks validation passed (1152 chars)
+📝 Processing competitor_analysis...
+🤖 Regenerating 'competitor_analysis' using AI...
+🤖 Generating 'competitor_analysis' text section...
+🤖 Using model: gpt-4o-mini
+✅ Successfully generated 'competitor_analysis' (1907 chars)
+✅ Successfully regenerated 'competitor_analysis' using AI
+📝 Processing major_takeaways...
+🤖 Regenerating 'major_takeaways' using AI...
+🤖 Generating 'major_takeaways' text section...
+🤖 Using model: gpt-4o-mini
+✅ Successfully generated 'major_takeaways' (1189 chars)
+✅ Successfully regenerated 'major_takeaways' using AI
+📝 Processing news_summary...
+✅ news_summary validation passed (47 chars)
+✅ All text content processed
+✅ Computed technical indicators for PFE: Bullish
+Handling charts...
+✅ Revenue/EBITDA chart saved to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\PFE\report\PFE_revenue_ebitda_chart.png
+✅ EPS × PE chart saved to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\PFE\report\PFE_eps_pe_chart.png
+✅ EV/EBITDA peer chart saved to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\PFE\report\PFE_peer_ev_ebitda_chart.png
+Generating enhanced charts...
+✅ Loaded income statement data from D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\PFE\analysis\income_statement_raw_data.csv
+✅ Generated EPS × PE chart
+✅ Generated Revenue YoY chart
+✅ Generated EBITDA Margin chart
+Generating advanced charts...
+✅ Financial radar chart saved to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\PFE\report\PFE_financial_radar.png
+✅ Generated Financial Radar chart
+✅ Generated 4 enhanced charts total
+Performing valuation analysis...
+✅ Valuation analysis completed with 2 methods
+  Synthesized target: $73.72 (range $53.04-$93.83, upside 160.7%)
+Loading sensitivity analysis from D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\PFE\analysis\sensitivity_analysis.json...
+✅ Sensitivity analysis loaded
+Loading retail sentiment insights from D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\PFE\analysis\retail_sentiment.json...
+✅ Retail sentiment insights loaded
+Formatting tables for HTML...
+Loading Credit & Cashflow metrics from CSV...
+✅ Successfully loaded and formatted Credit & Cashflow metrics from CSV
+Processing peer EBITDA data with shape: (6, 4)
+Peer EBITDA columns: ['year', 'ABBV', 'JNJ', 'PFE']
+Peer EBITDA index: [2021, 2022, 2023, 2024, 2025, 2026]
+✅ Successfully formatted peer EBITDA table
+Processing peer EV/EBITDA data with shape: (5, 3)
+Peer EV/EBITDA columns: ['ABBV', 'JNJ', 'PFE']
+Peer EV/EBITDA index: [2021, 2022, 2023, 2024, 2025]
+✅ Successfully formatted peer EV/EBITDA table
+Generating professional HTML report (matching PDF structure)...
+✅ Generated Professional HTML Report: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\PFE\report\Professional_Equity_Report_PFE.html
+Generating combined HTML report (all sections in one file)...
+✅ Generated Combined HTML Report: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\PFE\report\Combined_Equity_Report_PFE.html
+Rendering legacy HTML pages...
+✅ Sensitivity/Catalyst content detected, adding Page 4
+✅ News/Charts content detected, adding Page 5
+Generated Page 1: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\PFE\report\Equity_Report_Page1_PFE.html
+Generated Page 2: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\PFE\report\Equity_Report_Page2_PFE.html
+Generated Page 3: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\PFE\report\Equity_Report_Page3_PFE.html
+Generated Page 4: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\PFE\report\Equity_Report_Page4_PFE.html
+Generated Page 5: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\PFE\report\Equity_Report_Page5_PFE.html
+
+✅ Equity report generation complete!
+📁 Reports saved to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\PFE\report
+🤖 Market data automatically fetched from FMP API

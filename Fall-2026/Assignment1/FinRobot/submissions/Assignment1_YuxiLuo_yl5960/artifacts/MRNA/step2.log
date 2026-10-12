@@ -1,0 +1,111 @@
+2026-10-10 19:07:17,216 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 19:07:19,624 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 19:07:20,757 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\report\MRNA_eps_pe.png
+2026-10-10 19:07:21,333 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\report\MRNA_eps_pe.pdf
+2026-10-10 19:07:21,339 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:07:21,340 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:07:21,348 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:07:21,348 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:07:21,702 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\report\MRNA_revenue_yoy.png
+2026-10-10 19:07:21,822 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\report\MRNA_revenue_yoy.pdf
+2026-10-10 19:07:21,828 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:07:21,828 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:07:21,834 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:07:21,834 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:07:22,241 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\report\MRNA_ebitda_margin.png
+2026-10-10 19:07:22,360 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\report\MRNA_ebitda_margin.pdf
+2026-10-10 19:07:22,553 - INFO - Calculating EV/EBITDA valuation...
+2026-10-10 19:07:22,554 - INFO - ✅ EV/EBITDA valuation: $4.53
+2026-10-10 19:07:22,554 - INFO - Calculating DCF valuation...
+2026-10-10 19:07:22,554 - INFO - ✅ DCF valuation: $4.58
+2026-10-10 19:07:22,555 - INFO - Calculating peer comparison valuation...
+2026-10-10 19:07:22,555 - INFO - Synthesizing valuation results...
+2026-10-10 19:07:22,555 - INFO - ✅ Synthesized target price: $4.55 (Range: $3.27 - $5.79)
+HTML reports will be saved to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\report
+✅ OpenAI API key loaded for text regeneration
+Auto-fetching market data for MRNA...
+Fetching comprehensive company metrics for MRNA...
+Successfully fetched metrics for MRNA
+✅ Successfully auto-fetched market data
+
+📊 Market Data Summary for MRNA:
+  Share Price: $225.00 (auto-fetched)
+  Target Price: $115.70 (auto-fetched)
+  Rating: Equal Weight (auto-fetched)
+  Market Cap: $89.28B (auto-fetched)
+  Sector: Healthcare (auto-fetched)
+📖 Loading and processing text content...
+📝 Processing tagline...
+✅ tagline validation passed (488 chars)
+📝 Processing company_overview...
+✅ company_overview validation passed (2630 chars)
+📝 Processing investment_overview...
+✅ investment_overview validation passed (1971 chars)
+📝 Processing valuation_overview...
+✅ valuation_overview validation passed (1715 chars)
+📝 Processing risks...
+✅ risks validation passed (1358 chars)
+📝 Processing competitor_analysis...
+⚠️ Detected CSV data in competitor_analysis, forcing AI regeneration...
+🤖 Regenerating 'competitor_analysis' using AI...
+🤖 Generating 'competitor_analysis' text section...
+🤖 Using model: gpt-4o-mini
+✅ Successfully generated 'competitor_analysis' (1884 chars)
+✅ Successfully regenerated 'competitor_analysis' using AI
+📝 Processing major_takeaways...
+🤖 Regenerating 'major_takeaways' using AI...
+🤖 Generating 'major_takeaways' text section...
+🤖 Using model: gpt-4o-mini
+✅ Successfully generated 'major_takeaways' (1316 chars)
+✅ Successfully regenerated 'major_takeaways' using AI
+📝 Processing news_summary...
+✅ news_summary validation passed (50 chars)
+✅ All text content processed
+✅ Computed technical indicators for MRNA: Bearish
+Handling charts...
+✅ Revenue/EBITDA chart saved to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\report\MRNA_revenue_ebitda_chart.png
+✅ EPS × PE chart saved to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\report\MRNA_eps_pe_chart.png
+✅ EV/EBITDA peer chart saved to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\report\MRNA_peer_ev_ebitda_chart.png
+Generating enhanced charts...
+✅ Loaded income statement data from D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\income_statement_raw_data.csv
+✅ Generated EPS × PE chart
+✅ Generated Revenue YoY chart
+✅ Generated EBITDA Margin chart
+Generating advanced charts...
+✅ Financial radar chart saved to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\report\MRNA_financial_radar.png
+✅ Generated Financial Radar chart
+✅ Generated 4 enhanced charts total
+Performing valuation analysis...
+✅ Valuation analysis completed with 2 methods
+  Synthesized target: $4.55 (range $3.27-$5.79, upside -98.0%)
+Loading sensitivity analysis from D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\sensitivity_analysis.json...
+✅ Sensitivity analysis loaded
+Loading retail sentiment insights from D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\retail_sentiment.json...
+✅ Retail sentiment insights loaded
+Formatting tables for HTML...
+Loading Credit & Cashflow metrics from CSV...
+✅ Successfully loaded and formatted Credit & Cashflow metrics from CSV
+Processing peer EBITDA data with shape: (6, 4)
+Peer EBITDA columns: ['year', 'JNJ', 'MRNA', 'PFE']
+Peer EBITDA index: [2021, 2022, 2023, 2024, 2025, 2026]
+✅ Successfully formatted peer EBITDA table
+Processing peer EV/EBITDA data with shape: (5, 3)
+Peer EV/EBITDA columns: ['JNJ', 'MRNA', 'PFE']
+Peer EV/EBITDA index: [2021, 2022, 2023, 2024, 2025]
+✅ Successfully formatted peer EV/EBITDA table
+Generating professional HTML report (matching PDF structure)...
+✅ Generated Professional HTML Report: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\report\Professional_Equity_Report_MRNA.html
+Generating combined HTML report (all sections in one file)...
+✅ Generated Combined HTML Report: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\report\Combined_Equity_Report_MRNA.html
+Rendering legacy HTML pages...
+✅ Sensitivity/Catalyst content detected, adding Page 4
+✅ News/Charts content detected, adding Page 5
+Generated Page 1: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\report\Equity_Report_Page1_MRNA.html
+Generated Page 2: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\report\Equity_Report_Page2_MRNA.html
+Generated Page 3: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\report\Equity_Report_Page3_MRNA.html
+Generated Page 4: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\report\Equity_Report_Page4_MRNA.html
+Generated Page 5: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\report\Equity_Report_Page5_MRNA.html
+
+✅ Equity report generation complete!
+📁 Reports saved to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\report
+🤖 Market data automatically fetched from FMP API

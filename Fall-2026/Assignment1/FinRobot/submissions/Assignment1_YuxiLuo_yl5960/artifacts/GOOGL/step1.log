@@ -1,0 +1,166 @@
+INFO:modules.news_integrator:Fetching enhanced news for GOOGL...
+ERROR:modules.news_integrator:Error fetching enhanced news: FMP /stable/news/stock returned 402: Restricted Endpoint: This endpoint is not available under your current subscription please visit our subscription page to upgrade your plan at https://financialmodelingprep.com/
+INFO:modules.sensitivity_analyzer:Analyzing revenue growth sensitivity...
+INFO:modules.sensitivity_analyzer:✅ Revenue sensitivity analysis complete: 5 scenarios
+INFO:modules.sensitivity_analyzer:Analyzing margin sensitivity...
+INFO:modules.sensitivity_analyzer:✅ Margin sensitivity analysis complete: 5 scenarios
+INFO:modules.sensitivity_analyzer:Generating comprehensive sensitivity table...
+INFO:modules.sensitivity_analyzer:✅ Combined sensitivity table generated: 5x5 matrix
+INFO:modules.sensitivity_analyzer:Calculating 95.0% confidence interval for Revenue...
+INFO:modules.sensitivity_analyzer:✅ Revenue CI: [329201253064.32, 603380200375.68] at 95.0% confidence
+INFO:modules.sensitivity_analyzer:Calculating 95.0% confidence interval for EBITDA...
+INFO:modules.sensitivity_analyzer:✅ EBITDA CI: [170197047834.25, 311947563594.23] at 95.0% confidence
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Output will be saved to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis
+Text outputs will be saved to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis
+Using OpenAI base URL: https://api.openai.com/v1
+Using model: gpt-4.1
+Starting FMP API-based financial analysis for Alphabet Inc. (GOOGL)
+Fetching financial data from FMP API...
+Fetching comprehensive financial data for GOOGL...
+Successfully fetched financial data from FMP API
+Retrieved 5 years of income statement data
+Available years: [2025, 2024, 2023, 2022, 2021]
+Processing historical financial metrics...
+
+Historical Metrics Extracted from API:
+                metrics           2025A           2024A           2023A           2022A           2021A
+0               Revenue  402836000000.0  350018000000.0  307394000000.0  282836000000.0  257637000000.0
+1    Cost of Operations  162535000000.0  146306000000.0  133332000000.0  126203000000.0  110939000000.0
+2                  SG&A   50175000000.0   41996000000.0   44342000000.0   42291000000.0   36422000000.0
+3   Contribution Profit  240301000000.0  203712000000.0  174062000000.0  156633000000.0  146698000000.0
+4   Contribution Margin           59.7%           58.2%           56.6%           55.4%           56.9%
+5                EBITDA  180698000000.0  135394000000.0   97971000000.0   85160000000.0  103521000000.0
+6         EBITDA Margin           44.9%           38.7%           31.9%           30.1%           40.2%
+7           SG&A Margin           12.5%           12.0%           14.4%           15.0%           14.1%
+8        Revenue Growth           15.1%           13.9%            8.7%            9.8%             N/A
+9                   EPS           10.91            8.13            5.84            4.59            5.69
+10             PE Ratio       28.762603       23.424354       24.131849       19.331155       25.427065
+Generating forecasts...
+Using 2025A as base year for forecasts
+Forecast assumptions:
+  Revenue Growth 2025E: 5.0%
+  Revenue Growth 2026E: 6.0%
+  Revenue Growth 2027E: 4.0%
+  Margin Improvement: 1.0% annually
+  SG&A Efficiency: -0.5% annually
+
+Final Metrics with Forecasts:
+                metrics           2021A           2022A           2023A           2024A           2025A           2025E           2026E                2027E   CAGR
+0               Revenue  257637000000.0  282836000000.0  307394000000.0  350018000000.0  402836000000.0  422977800000.0  448356468000.0       466290726720.0  11.8%
+1    Cost of Operations  110939000000.0  126203000000.0  133332000000.0  146306000000.0  162535000000.0  166230275400.0  171720527244.0  173926441066.559998    N/A
+2                  SG&A   36422000000.0   42291000000.0   44342000000.0   41996000000.0   50175000000.0   50757336000.0   51560993820.0   51291979939.199997    N/A
+3   Contribution Profit  146698000000.0  156633000000.0  174062000000.0  203712000000.0  240301000000.0  256747524600.0  276635940756.0  292364285653.440002    N/A
+4   Contribution Margin           56.9%           55.4%           56.6%           58.2%           59.7%           60.7%           61.7%                62.7%    N/A
+5                EBITDA  103521000000.0   85160000000.0   97971000000.0  135394000000.0  180698000000.0  205990188600.0  225074946936.0   241072305714.23999    N/A
+6         EBITDA Margin           40.2%           30.1%           31.9%           38.7%           44.9%           48.7%           50.2%                51.7%    N/A
+7           SG&A Margin           14.1%           15.0%           14.4%           12.0%           12.5%           12.0%           11.5%                11.0%    N/A
+8        Revenue Growth             N/A            9.8%            8.7%           13.9%           15.1%            5.0%            6.0%                 4.0%    N/A
+9                   EPS            5.69            4.59            5.84            8.13           10.91           11.57           12.39                13.01    N/A
+10             PE Ratio       25.427065       19.331155       24.131849       23.424354       28.762603            27.3            26.0                 24.7    N/A
+Successfully saved financial analysis to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\financial_metrics_and_forecasts.csv
+
+Fetching data for peer comparison: ['MSFT', 'META']
+Saved peer EBITDA comparison to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\peer_ebitda_comparison.csv
+Saved peer EV/EBITDA comparison to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\peer_ev_ebitda_comparison.csv
+
+Fetching company news for GOOGL...
+Saved enhanced news data to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\enhanced_news.json
+Saved news summary to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\news_summary.md
+Warning: No news data could be retrieved
+
+Fetching retail sentiment insights for GOOGL...
+Warning: Failed to fetch retail sentiment for GOOGL from Reddit: 401 Client Error: Unauthorized for url: https://api.adanos.org/reddit/stocks/v1/compare?tickers=GOOGL&days=7
+Warning: Failed to fetch retail sentiment for GOOGL from X.com: 401 Client Error: Unauthorized for url: https://api.adanos.org/x/stocks/v1/compare?tickers=GOOGL&days=7
+Warning: Failed to fetch retail sentiment for GOOGL from Polymarket: 401 Client Error: Unauthorized for url: https://api.adanos.org/polymarket/stocks/v1/compare?tickers=GOOGL&days=7
+Saved retail sentiment insights to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\retail_sentiment.json
+
+Performing sensitivity analysis...
+Saved sensitivity analysis to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\sensitivity_analysis.json
+Saved sensitivity summary to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\sensitivity_summary.md
+
+Generating AI-powered text sections...
+Generating 'tagline' for Alphabet Inc. (GOOGL)...
+🤖 Generating 'tagline' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+✅ Successfully generated 'tagline' (484 chars)
+✅ Successfully generated and saved 'tagline' to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\tagline.txt
+Generating 'company_overview' for Alphabet Inc. (GOOGL)...
+🤖 Generating 'company_overview' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+✅ Successfully generated 'company_overview' (2466 chars)
+✅ Successfully generated and saved 'company_overview' to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\company_overview.txt
+Generating 'investment_overview' for Alphabet Inc. (GOOGL)...
+🤖 Generating 'investment_overview' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+✅ Successfully generated 'investment_overview' (1807 chars)
+✅ Successfully generated and saved 'investment_overview' to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\investment_overview.txt
+Generating 'valuation_overview' for Alphabet Inc. (GOOGL)...
+🤖 Generating 'valuation_overview' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+✅ Successfully generated 'valuation_overview' (1684 chars)
+✅ Successfully generated and saved 'valuation_overview' to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\valuation_overview.txt
+Generating 'risks' for Alphabet Inc. (GOOGL)...
+🤖 Generating 'risks' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+✅ Successfully generated 'risks' (1344 chars)
+✅ Successfully generated and saved 'risks' to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\risks.txt
+Generating 'competitor_analysis' for Alphabet Inc. (GOOGL)...
+🤖 Generating 'competitor_analysis' text section...
+📡 Using API base URL: https://api.openai.com/v1INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+🤖 Using model: gpt-4.1
+✅ Successfully generated 'competitor_analysis' (1747 chars)
+✅ Successfully generated and saved 'competitor_analysis' to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\competitor_analysis.txt
+Generating 'major_takeaways' for Alphabet Inc. (GOOGL)...
+🤖 Generating 'major_takeaways' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+✅ Successfully generated 'major_takeaways' (916 chars)
+⚠️ Warning: Major takeaways missing required sections, using fallback.
+✅ Successfully generated and saved 'major_takeaways' to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\major_takeaways.txt
+Skipping 'news_summary' - no news data available
+Created placeholder for 'news_summary' at D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\news_summary.txt
+
+Saving additional financial statement data...
+Saved income_statement to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\income_statement_raw_data.csv (5 rows)
+Saved balance_sheet to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\balance_sheet_raw_data.csv (5 rows)
+Saved cash_flow to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\cash_flow_raw_data.csv (5 rows)
+Saved ratios to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\ratios_raw_data.csv (5 rows)
+Saved key_metrics to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\key_metrics_raw_data.csv (5 rows)
+Saved analysis summary to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\analysis_summary.json
+
+============================================================
+✅ Financial analysis completed successfully!
+📁 All outputs saved to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis
+📊 Main analysis file: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\financial_metrics_and_forecasts.csv
+📝 AI text sections generated and saved in: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis
+
+🚀 Ready to create equity report using:
+python create_equity_report.py \
+  --company-ticker GOOGL \
+  --company-name "Alphabet Inc." \
+  --analysis-csv D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\financial_metrics_and_forecasts.csv \
+  --ratios-csv D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\ratios_raw_data.csv \
+  --peer-ebitda-csv D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\peer_ebitda_comparison.csv \
+  --peer-ev-ebitda-csv D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\peer_ev_ebitda_comparison.csv \
+  --tagline-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\tagline.txt \
+  --company-overview-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\company_overview.txt \
+  --investment-overview-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\investment_overview.txt \
+  --valuation-overview-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\valuation_overview.txt \
+  --risks-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\risks.txt \
+  --competitor-analysis-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\competitor_analysis.txt \
+  --major-takeaways-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\major_takeaways.txt \
+  --news-summary-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\GOOGL\analysis\news_summary.txt
+
+🎯 All files ready for report generation!

@@ -1,0 +1,165 @@
+INFO:modules.news_integrator:Fetching enhanced news for UNH...
+ERROR:modules.news_integrator:Error fetching enhanced news: FMP /stable/news/stock returned 402: Restricted Endpoint: This endpoint is not available under your current subscription please visit our subscription page to upgrade your plan at https://financialmodelingprep.com/
+INFO:modules.sensitivity_analyzer:Analyzing revenue growth sensitivity...
+INFO:modules.sensitivity_analyzer:✅ Revenue sensitivity analysis complete: 5 scenarios
+INFO:modules.sensitivity_analyzer:Analyzing margin sensitivity...
+INFO:modules.sensitivity_analyzer:✅ Margin sensitivity analysis complete: 5 scenarios
+INFO:modules.sensitivity_analyzer:Generating comprehensive sensitivity table...
+INFO:modules.sensitivity_analyzer:✅ Combined sensitivity table generated: 5x5 matrix
+INFO:modules.sensitivity_analyzer:Calculating 95.0% confidence interval for Revenue...
+INFO:modules.sensitivity_analyzer:✅ Revenue CI: [365755834211.04, 670379673468.96] at 95.0% confidence
+INFO:modules.sensitivity_analyzer:Calculating 95.0% confidence interval for EBITDA...
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Output will be saved to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis
+Text outputs will be saved to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis
+Using OpenAI base URL: https://api.openai.com/v1
+Using model: gpt-4.1
+Starting FMP API-based financial analysis for UnitedHealth Group Incorporated (UNH)
+Fetching financial data from FMP API...
+Fetching comprehensive financial data for UNH...
+Successfully fetched financial data from FMP API
+Retrieved 5 years of income statement data
+Available years: [2025, 2024, 2023, 2022, 2021]
+Processing historical financial metrics...
+
+Historical Metrics Extracted from API:
+                metrics           2025A           2024A           2023A           2022A           2021A
+0               Revenue  447567000000.0  400278000000.0  371622000000.0  324162000000.0  287597000000.0
+1    Cost of Operations  364650000000.0  310879000000.0  280664000000.0  244545000000.0  217945000000.0
+2                  SG&A             NaN             NaN             NaN             NaN             NaN
+3   Contribution Profit   82917000000.0   89399000000.0   90958000000.0   79617000000.0   69652000000.0
+4   Contribution Margin           18.5%           22.3%           24.5%           24.6%           24.2%
+5                EBITDA   23060000000.0   28076000000.0   36330000000.0   31835000000.0   27073000000.0
+6         EBITDA Margin            5.2%            7.0%            9.8%            9.8%            9.4%
+7           SG&A Margin             NaN             NaN             NaN             NaN             NaN
+8        Revenue Growth           11.8%            7.7%           14.6%           12.7%             N/A
+9                   EPS           13.23           15.64           24.12           21.54           18.33
+10             PE Ratio       24.951625        32.34399       22.360697       24.613742       27.394435
+Generating forecasts...
+Using 2025A as base year for forecasts
+Forecast assumptions:
+  Revenue Growth 2025E: 5.0%
+  Revenue Growth 2026E: 6.0%
+  Revenue Growth 2027E: 4.0%
+  Margin Improvement: 1.0% annually
+  SG&A Efficiency: -0.5% annually
+
+Final Metrics with Forecasts:
+                metrics           2021A           2022A           2023A           2024A           2025A           2025E           2026E                2027E   CAGR
+0               Revenue  287597000000.0  324162000000.0  371622000000.0  400278000000.0  447567000000.0  469945350000.0  498142071000.0       518067753840.0  11.7%
+1    Cost of Operations  217945000000.0  244545000000.0  280664000000.0  310879000000.0  364650000000.0  378306006750.0  396022946445.0  406683186764.400024    N/A
+2                  SG&A             NaN             NaN             NaN             NaN             NaN            None            None                 None    N/A
+3   Contribution Profit   69652000000.0   79617000000.0   90958000000.0   89399000000.0   82917000000.0   91639343250.0  102119124555.0  111384567075.600006    N/A
+4   Contribution Margin           24.2%           24.6%           24.5%           22.3%           18.5%           19.5%           20.5%                21.5%    N/A
+5                EBITDA   27073000000.0   31835000000.0   36330000000.0   28076000000.0   23060000000.0            None            None                 None    N/A
+6         EBITDA Margin            9.4%            9.8%            9.8%            7.0%            5.2%            6.2%            7.2%                 8.2%    N/A
+7           SG&A Margin             NaN             NaN             NaN             NaN             NaN            None            None                 None    N/A
+8        Revenue Growth             N/A           12.7%           14.6%            7.7%           11.8%            5.0%            6.0%                 4.0%    N/A
+9                   EPS           18.33           21.54           24.12           15.64           13.23           14.03           15.02                15.78    N/A
+10             PE Ratio       27.394435       24.613742       22.360697        32.34399       24.951625            23.7            22.5                 21.4    N/A
+Successfully saved financial analysis to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\financial_metrics_and_forecasts.csv
+
+Fetching data for peer comparison: ['JNJ', 'PFE']
+Saved peer EBITDA comparison to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\peer_ebitda_comparison.csv
+Saved peer EV/EBITDA comparison to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\peer_ev_ebitda_comparison.csv
+
+Fetching company news for UNH...
+Saved enhanced news data to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\enhanced_news.json
+Saved news summary to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\news_summary.md
+Warning: No news data could be retrieved
+
+Fetching retail sentiment insights for UNH...
+Warning: Failed to fetch retail sentiment for UNH from Reddit: 401 Client Error: Unauthorized for url: https://api.adanos.org/reddit/stocks/v1/compare?tickers=UNH&days=7
+Warning: Failed to fetch retail sentiment for UNH from X.com: 401 Client Error: Unauthorized for url: https://api.adanos.org/x/stocks/v1/compare?tickers=UNH&days=7
+Warning: Failed to fetch retail sentiment for UNH from Polymarket: 401 Client Error: Unauthorized for url: https://api.adanos.org/polymarket/stocks/v1/compare?tickers=UNH&days=7
+Saved retail sentiment insights to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\retail_sentiment.json
+
+Performing sensitivity analysis...
+Saved sensitivity analysis to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\sensitivity_analysis.json
+Saved sensitivity summary to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\sensitivity_summary.md
+
+Generating AI-powered text sections...
+Generating 'tagline' for UnitedHealth Group Incorporated (UNH)...
+🤖 Generating 'tagline' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+✅ Successfully generated 'tagline' (395 chars)
+✅ Successfully generated and saved 'tagline' to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\tagline.txt
+Generating 'company_overview' for UnitedHealth Group Incorporated (UNH)...
+🤖 Generating 'company_overview' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+✅ Successfully generated 'company_overview' (2634 chars)
+✅ Successfully generated and saved 'company_overview' to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\company_overview.txt
+Generating 'investment_overview' for UnitedHealth Group Incorporated (UNH)...
+🤖 Generating 'investment_overview' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+✅ Successfully generated 'investment_overview' (1861 chars)
+✅ Successfully generated and saved 'investment_overview' to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\investment_overview.txt
+Generating 'valuation_overview' for UnitedHealth Group Incorporated (UNH)...
+🤖 Generating 'valuation_overview' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+✅ Successfully generated 'valuation_overview' (1610 chars)
+✅ Successfully generated and saved 'valuation_overview' to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\valuation_overview.txt
+Generating 'risks' for UnitedHealth Group Incorporated (UNH)...
+🤖 Generating 'risks' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+✅ Successfully generated 'risks' (1145 chars)
+✅ Successfully generated and saved 'risks' to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\risks.txt
+Generating 'competitor_analysis' for UnitedHealth Group Incorporated (UNH)...
+🤖 Generating 'competitor_analysis' text section...INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+✅ Successfully generated 'competitor_analysis' (1809 chars)
+✅ Successfully generated and saved 'competitor_analysis' to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\competitor_analysis.txt
+Generating 'major_takeaways' for UnitedHealth Group Incorporated (UNH)...
+🤖 Generating 'major_takeaways' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+✅ Successfully generated 'major_takeaways' (1236 chars)
+⚠️ Warning: Major takeaways missing required sections, using fallback.
+✅ Successfully generated and saved 'major_takeaways' to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\major_takeaways.txt
+Skipping 'news_summary' - no news data available
+Created placeholder for 'news_summary' at D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\news_summary.txt
+
+Saving additional financial statement data...
+Saved income_statement to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\income_statement_raw_data.csv (5 rows)
+Saved balance_sheet to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\balance_sheet_raw_data.csv (5 rows)
+Saved cash_flow to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\cash_flow_raw_data.csv (5 rows)
+Saved ratios to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\ratios_raw_data.csv (5 rows)
+Saved key_metrics to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\key_metrics_raw_data.csv (5 rows)
+Saved analysis summary to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\analysis_summary.json
+
+============================================================
+✅ Financial analysis completed successfully!
+📁 All outputs saved to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis
+📊 Main analysis file: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\financial_metrics_and_forecasts.csv
+📝 AI text sections generated and saved in: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis
+
+🚀 Ready to create equity report using:
+python create_equity_report.py \
+  --company-ticker UNH \
+  --company-name "UnitedHealth Group Incorporated" \
+  --analysis-csv D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\financial_metrics_and_forecasts.csv \
+  --ratios-csv D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\ratios_raw_data.csv \
+  --peer-ebitda-csv D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\peer_ebitda_comparison.csv \
+  --peer-ev-ebitda-csv D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\peer_ev_ebitda_comparison.csv \
+  --tagline-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\tagline.txt \
+  --company-overview-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\company_overview.txt \
+  --investment-overview-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\investment_overview.txt \
+  --valuation-overview-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\valuation_overview.txt \
+  --risks-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\risks.txt \
+  --competitor-analysis-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\competitor_analysis.txt \
+  --major-takeaways-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\major_takeaways.txt \
+  --news-summary-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\news_summary.txt
+
+🎯 All files ready for report generation!

@@ -1,0 +1,1 @@
+Error fetching news for INTC: FMP /stable/news/stock returned 402: Restricted Endpoint: This endpoint is not available under your current subscription please visit our subscription page to upgrade your plan at https://financialmodelingprep.com/

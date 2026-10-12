@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Auditing FinRobot</title>
+<style>
+  @page { size: A4; margin: 16mm 16mm 18mm 16mm; }
+  body { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; font-size: 10pt; line-height: 1.45; color: #1b1b1a; background: #ffffff; }
+  h1 { font-size: 17pt; margin: 0 0 2pt; line-height: 1.2; }
+  .byline { color: #52514e; margin-bottom: 10pt; }
+  h2 { font-size: 12.5pt; margin: 16pt 0 5pt; border-bottom: 1px solid #d9d8d4; padding-bottom: 2pt; break-after: avoid; }
+  h3 { font-size: 10.5pt; margin: 11pt 0 3pt; break-after: avoid; }
+  p { margin: 4pt 0 6pt; }
+  ul, ol { margin: 3pt 0 6pt 16pt; padding: 0; }
+  li { margin: 1.5pt 0; }
+  table { border-collapse: collapse; width: 100%; margin: 5pt 0 8pt; font-size: 8.8pt; break-inside: avoid; }
+  th, td { border-bottom: 1px solid #e4e3df; padding: 2.5pt 5pt; text-align: left; vertical-align: top; }
+  th { background: #f4f3f0; font-weight: 600; }
+  td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
+  .abstract { background: #f7f6f3; border-left: 3px solid #2a78d6; padding: 6pt 9pt; margin: 6pt 0 10pt; }
+  figure { margin: 6pt 0 10pt; break-inside: avoid; }
+  figure img { width: 100%; }
+  figcaption { font-size: 8.5pt; color: #52514e; margin-top: 2pt; }
+  code { font-family: Consolas, "Courier New", monospace; font-size: 8.8pt; background: #f4f3f0; padding: 0 2pt; }
+  .small { font-size: 8.5pt; color: #52514e; }
+  .grade-yes { color: #0a7a0a; font-weight: 600; } .grade-no { color: #b42f2f; font-weight: 600; } .grade-part { color: #9a6a00; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<h1>Can you trust an AI equity research report?<br>Auditing and improving FinRobot's equity pipeline</h1>
+<div class="byline">Yuxi Luo (yl5960) · STAT GR5398, Fall 2026 · Assignment 1 · October 2026</div>
+
+<div class="abstract">
+I ran FinRobot's <code>finrobot_equity</code> pipeline on ten companies and audited three things: the numbers, the
+valuation, and the prose. The reported financials are transcribed correctly. The valuation engine, however, reduces
+to one constant multiple (10.84x FY+3 EBITDA per share for every company), and ten of its sixteen assumptions are not
+shown. In the prose, 18% of claims are contradicted by the data the model was given, and two thirds of those
+contradictions are period or status errors: reported results called "projected" or "guidance", or the historical CAGR
+attached to forecast years. The cause is the evidence format, not the model inventing numbers. Labelling the
+evidence and adding a verifier cut contradicted claims from 16.3% to 1.3% across ten companies, with the same result
+on five held-out names. Most of the gain comes from labelling the evidence.
+</div>
+
+<h2>1. Setup</h2>
+<p><b>System.</b> <code>finrobot_equity</code> fetches statements, ratios and peers from Financial Modeling Prep (FMP), builds a
+three-year forecast, generates eight text sections with an LLM, and renders an HTML report. Three facts about the code
+path that actually runs shaped the audit:</p>
+<ul>
+<li><b>The eight-agent team is not used.</b> The CLI calls <code>text_generator_agents.generate_text_section</code>, a single
+Chat Completions call per section (temperature 0.7, max 1,000 tokens). <code>EquityResearchAgentManager</code> is never
+instantiated. The evidence for every section is therefore <code>_prepare_user_prompt</code>: three tables (financial metrics
+and forecast, peer EBITDA, peer EV/EBITDA), with news only for the news section.</li>
+<li><b>It does not run with a new FMP key.</b> FMP serves its legacy <code>/api/v3</code> and <code>/api/v4</code> endpoints only to
+pre-August-2025 subscribers, so all 13 endpoints return 403. I moved them to <code>/stable/</code>, mapped renamed fields
+back, and stopped error messages from printing the API key (patch 0001).</li>
+<li><b>Failures are silent.</b> Any API error yields canned text, and <code>major_takeaways</code> is replaced by canned text
+whenever the model omits the exact string "Revenue Growth:", which happened in 14 of 14 runs. Step 2 regenerates two
+sections with <code>gpt-4o-mini</code> regardless of the configured model.</li>
+</ul>
+
+<table>
+<tr><th>Component</th><th>Choice</th></tr>
+<tr><td>Code</td><td>FinRobot <code>2717499b</code> + patch 0001 (FMP <code>/stable/</code>) + patch 0002 (Part 3)</td></tr>
+<tr><td>Data</td><td>FMP free plan: 250 calls/day, no news endpoint, symbol whitelist; SEC EDGAR XBRL for the data audit; Yahoo Finance for FY-end prices and analyst consensus</td></tr>
+<tr><td>Models</td><td>Writer <code>gpt-4.1</code> (T=0.7); Step 2 regeneration <code>gpt-4o-mini</code>; audit judge <code>gpt-4.1</code> (T=0); verifier <code>gpt-4.1-mini</code> (T=0)</td></tr>
+<tr><td>Cost</td><td>About $9.6 in total: grounding judge $7.03 (recorded tokens), Part 3 writer ~$1.29, verifier $0.39, pipeline runs ~$0.90; FMP free</td></tr>
+<tr><td>Runtime</td><td>42–63 s per report (Step 1: 26–43 s, Step 2: 15–29 s); scoring 438 claims: about 12 minutes</td></tr>
+</table>
+
+<h2>2. Coverage universe</h2>
+<table>
+<tr><th>Set</th><th>Company (peers)</th><th>3-year price</th><th>Why it is in the set</th></tr>
+<tr><td rowspan="5">Starter</td><td>NVDA (AMD, INTC)</td><td class="n">+402%</td><td rowspan="5">Required starting set. All five rose over three years; INTC mostly in the last year (+177%).</td></tr>
+<tr><td>AMD (NVDA, INTC)</td><td class="n">+458%</td></tr>
+<tr><td>INTC (NVDA, AMD)</td><td class="n">+192%</td></tr>
+<tr><td>AAPL (MSFT, GOOGL)</td><td class="n">+91%</td></tr>
+<tr><td>GOOGL (MSFT, META)</td><td class="n">+157%</td></tr>
+<tr><td rowspan="5">Healthcare</td><td>ABBV (PFE, JNJ)</td><td class="n">+106%</td><td>Winner</td></tr>
+<tr><td>JNJ (PFE, ABBV)</td><td class="n">+80%</td><td>Winner</td></tr>
+<tr><td>PFE (JNJ, ABBV)</td><td class="n">+3%</td><td>Laggard</td></tr>
+<tr><td>UNH (JNJ, PFE)</td><td class="n">−23%</td><td>Laggard; managed care, no SG&amp;A line in FMP data</td></tr>
+<tr><td>MRNA (PFE, JNJ)</td><td class="n">+115%</td><td>Turnaround (+717% in one year after a collapse); loss-making, R&amp;D at 161% of revenue</td></tr>
+</table>
+<p class="small">Healthcare was chosen because R&amp;D-heavy companies stress the forecast (which omits R&amp;D) and include a loss-maker.
+The FMP free plan does not cover LLY, MRK, BMY, AMGN, GILD or any managed-care company, so UNH is compared with JNJ and PFE.
+The five healthcare names were not used while designing or tuning the Part 3 changes (the pilots used NVDA and AMD) and serve as a held-out set.</p>
+
+<h2>3. Audit results</h2>
+
+<h3>3.1 Data audit: do the numbers match the filings?</h3>
+<p>For NVDA and AAPL, 27 line items were checked against the 10-K XBRL facts. Each filing value carries its accession
+number (<code>audit/data_audit.csv</code>). 18 match within rounding, and every difference has an explanation:</p>
+<table>
+<tr><th>Item</th><th class="n">Pipeline</th><th class="n">Filing</th><th>Verdict and explanation</th></tr>
+<tr><td>NVDA EBITDA FY2026</td><td class="n">$144.6bn</td><td class="n">$133.2bn</td><td>Definition: FMP uses pre-tax income + interest + D&amp;A, so it counts $11.1bn of non-operating income (mostly investment gains). The report never says so.</td></tr>
+<tr><td>NVDA EV/EBITDA FY2026</td><td class="n">31.4x</td><td class="n">34.1x</td><td>Definition: the same EBITDA, plus lease liabilities counted as debt.</td></tr>
+<tr><td>NVDA EPS FY2024</td><td class="n">$1.21</td><td class="n">$12.05</td><td>Restated for the 10-for-1 split of June 2024. Correct, but undocumented.</td></tr>
+<tr><td>AAPL EBITDA FY2025</td><td class="n">$144.4bn</td><td class="n">$144.7bn</td><td>Same definition difference; immaterial for Apple (−0.2%).</td></tr>
+<tr><td>NVDA revenue "2025E"</td><td class="n">$226.7bn</td><td class="n">$130.5bn</td><td>Mislabelled period: forecast columns are hard-coded 2025E–2027E, so "2025E" is FY2027.</td></tr>
+<tr><td>AAPL revenue "2025E"</td><td class="n">$437.0bn</td><td class="n">$416.2bn</td><td>Mislabelled period: the table shows FY2025 twice.</td></tr>
+</table>
+<p>The data layer is not the problem; labels and definitions are. Net income and R&amp;D (8–9% of revenue) never reach the
+text sections at all.</p>
+
+<h3>3.2 Forecast and valuation: are the assumptions defensible?</h3>
+<p><b>Forecast.</b> The defaults (5% / 6% / 4% growth, +1pp gross margin, −0.5pp SG&amp;A margin a year) apply to every
+company. Next-year revenue comes out 9% (AAPL) to 45% (NVDA) below analyst consensus. Forecast EBITDA is computed as
+gross profit − SG&amp;A, so R&amp;D disappears in the first forecast year. AMD's EBITDA margin jumps from 21.0% to 39.0%,
+MRNA's loss of $2.6bn becomes a profit, and UNH, which has no SG&amp;A line, gets no forecast EBITDA at all. As revised
+assumptions I used consensus growth for FY+1 and FY+2, faded halfway to 5% for FY+3, with flat margins
+(<code>forecast_assumptions.csv</code> lists the CLI flags).</p>
+<p><b>Valuation.</b> I reproduced NVIDIA's $82.24 target by hand to the cent. The register of its assumptions
+(<code>valuation_assumptions.csv</code>) shows ten of sixteen are not visible in the report: net debt is set to 10% of EV,
+FCF to 60% of EBITDA, WACC to 10%, and the EV/EBITDA multiple is a 12x default printed as "Historical Avg Multiple". The
+peer method is dropped silently because Step 2 passes peer data in the wrong shape. With the expected input it would
+have returned $212.79. Both remaining methods are linear in one input, so for every company
+<b>target = 10.84 × FY+3 EBITDA / shares</b>.</p>
+<figure><img src="report_figures/fig3_engine_vs_price.png" alt="Engine target versus price">
+<figcaption>Figure 1. Engine target vs. market price. The sign and size of the "implied move" track the engine's constants,
+not the companies. PFE's +161% comes from forecast EBITDA that omits R&amp;D. UNH has no bar: FMP reports no SG&amp;A line for it, so the
+forecast EBITDA (gross profit − SG&amp;A) is empty, the engine returns NaN, and the report's valuation section is
+silently blank ("completed with 0 methods").</figcaption></figure>
+<p><b>Sensitivity.</b> ±5% revenue moves the target exactly ±5%, and ±2pp of margin moves it 3–7%. By the assignment's
+test the point estimate is therefore not "theater", but only because it is linear. Choices the reader never sees move
+it far more: consensus instead of default growth moves it +6% (AAPL) to +251% (NVDA); each company's own historical
+EV/EBITDA instead of 12x moves it +28% to +179%. The shipped sensitivity module never touches the target price, and its
+"95% confidence interval" is a hard-coded ±29.4% for every company.</p>
+
+<h3>3.3 Grounding: is the prose supported by the evidence?</h3>
+<p><b>Method.</b> <code>audit/grounding.py</code> rebuilds the exact prompt each section was written from. A <code>gpt-4.1</code> judge
+splits the section into atomic claims and labels each Supported, Unsupported or Contradicted, citing the cells it used
+and the year and status (reported vs. forecast) the claim asserts. Deterministic rules then override the judge where
+the cited cells and the claim's wording conflict: a reported value worded as a forecast, or the CAGR attributed to
+forecast years. A number check looks up every figure in the tables. Of a stratified sample of 65 claims, the scorer
+agrees with the hand review on 59 (91%). All 30 rule overrides were correct. The judge is lenient: 4 of 15 randomly
+sampled "Supported" claims were not.</p>
+<figure><img src="report_figures/fig1_grounding_by_section.png" alt="Verdicts by section">
+<figcaption>Figure 2. Verdicts for 345 claims in the Step 1 sections of the five starter companies. Corrected for the judge's
+measured leniency, the overall grounding rate is about 44% rather than the measured 57%.</figcaption></figure>
+<p><b>Which sections hallucinate most, and why it is structural.</b></p>
+<ul>
+<li><b>Unsupported claims follow the gap between what a section is asked for and what its prompt contains.</b>
+<code>company_overview</code> is asked for "business model, products/services, market position" and given three financial
+tables. 55% of its claims are unsupported: founding year, headquarters, product lines, market position. Overall,
+quantitative claims are 75% supported and 1% unsupported; qualitative claims are 28% supported and 63% unsupported.</li>
+<li><b>Contradictions come from the evidence format.</b> 23% of quantitative claims are contradicted. Of the 79
+contradictions, 31 present a reported figure as projected, expected or guidance, and 22 attach the historical CAGR
+to forecast years. The prompt has no date, so the model writes from its training cutoff: one section is headed
+"Investment Update – June 2024", and upstream patches only the title. Forecast columns labelled 2025E sit next to
+2025A/2026A, the CAGR column does not say which years it covers, and AMD's 2027 EBITDA appears twice with different
+values. Sections that ask for an "outlook" or "fair value" have the highest contradiction rates (22–24%).</li>
+<li><b><code>risks</code> does not behave as the assignment predicts</b>, because the 600–800-word risks agent is never
+called. The CLI asks for "5 key investment risks, concise". The model anchors each bullet on a table figure and phrases
+the rest as hypotheticals, which are not checkable claims. That gives a high grounding rate (75%) but not risk analysis.</li>
+<li><b>Step 2 makes two sections worse.</b> The gpt-4o-mini rewrite of <code>competitor_analysis</code> is 45% grounded
+against 79% for the gpt-4.1 version it replaces.</li>
+</ul>
+
+<h3>3.4 Stability: same input, three runs</h3>
+<table>
+<tr><th>Output</th><th>Run 1</th><th>Run 2</th><th>Run 3</th><th>Stable?</th></tr>
+<tr><td>Rating / target / engine target</td><td>Buy / $339.17 / $82.24</td><td>same</td><td>same</td><td>Yes, because no LLM produces them</td></tr>
+<tr><td>Top-3 risk categories</td><td>valuation, growth, margins</td><td>valuation, growth, competition</td><td>valuation, growth, competition</td><td>No (Jaccard 0.5 / 0.5 / 1.0; all five categories identical)</td></tr>
+<tr><td>Grounding rate (Step 1)</td><td>43%</td><td>44%</td><td>46%</td><td>In aggregate, yes</td></tr>
+<tr><td>Tagline grounding</td><td>100%</td><td>75%</td><td>50%</td><td>No; section-level results swing up to 100 points</td></tr>
+</table>
+<p>The error <i>rate</i> is a property of the prompt and evidence; which sentence is wrong is chance. That argues for fixing the
+prompt, not individual outputs, and for evaluating on many samples.</p>
+
+<h2>4. Improvement: labelled evidence and a verifier (Option A)</h2>
+<p><b>Design</b> (patch 0002: 4 files, +289/−20 lines, 5 unit tests).</p>
+<ol>
+<li><b>Evidence.</b> Forecast years are labelled from the base year (FY+1..FY+3). Every writer prompt starts with
+reading notes: the report date, which columns are reported and which are the pipeline's forecast (with its
+assumptions), the CAGR period, the projected peer year, and that the data has no guidance, consensus or news.</li>
+<li><b>Verifier</b> (<code>--enable-verifier</code>, <code>gpt-4.1-mini</code>). After each section is written, it checks the
+section against the writer's data plus the notes and replaces sentences that mislabel reported vs. forecast figures,
+misattribute the CAGR, misquote numbers or cite non-existent sources. Changes are exact sentence replacements, logged
+in <code>verifier_log.json</code>. Statements the data does not cover are listed, not deleted. A verifier error never
+blocks the report.</li>
+<li>The takeaways check no longer discards valid output (it matched "Revenue Growth:" exactly).</li>
+</ol>
+<p><b>Evaluation.</b> A 2 × 2 experiment on the same saved data: 10 companies × 7 sections, original vs. labelled prompt,
+each with and without the verifier. The writer is called exactly as the pipeline calls it. Each text is scored against
+the prompt its writer saw, using the Part 2.3 scorer plus an LLM-free status-error counter. The counter shows 0 false
+positives and detects 50/50 injected errors; its precision on real text is about 85%.</p>
+<figure><img src="report_figures/fig2_part3_contradicted.png" alt="Contradicted claims by condition">
+<figcaption>Figure 3. Share of claims contradicted by the writer's own data, 10 companies × 7 sections per condition;
+95% bootstrap intervals over company-sections.</figcaption></figure>
+<table>
+<tr><th>Metric</th><th class="n">C0 original</th><th class="n">C0 + verifier</th><th class="n">C1 labelled</th><th class="n">C1 + verifier</th></tr>
+<tr><td>Contradicted claims</td><td class="n">16.3%</td><td class="n">5.7%</td><td class="n">1.9%</td><td class="n">1.3%</td></tr>
+<tr><td>— held-out healthcare only</td><td class="n">16.6%</td><td class="n">6.6%</td><td class="n">1.5%</td><td class="n">1.3%</td></tr>
+<tr><td>Grounding rate</td><td class="n">57.6%</td><td class="n">68.4%</td><td class="n">82.5%</td><td class="n">84.1%</td></tr>
+<tr><td>Unsupported claims</td><td class="n">26.1%</td><td class="n">25.9%</td><td class="n">15.5%</td><td class="n">14.6%</td></tr>
+<tr><td>Supported claims (count)</td><td class="n">413</td><td class="n">506</td><td class="n">680</td><td class="n">686</td></tr>
+<tr><td>Status errors per section (LLM-free counter)</td><td class="n">1.47</td><td class="n">0.27</td><td class="n">0.03</td><td class="n">0.03</td></tr>
+<tr><td>Words per section</td><td class="n">227</td><td class="n">224</td><td class="n">244</td><td class="n">240</td></tr>
+</table>
+<ul>
+<li><b>Labelling the evidence does most of the work</b>, and it does not trade content for accuracy: supported claims
+rise by two thirds and sections get slightly longer.</li>
+<li><b>The verifier helps only with the context the writer lacked.</b> Without the report date it repeated the writer's
+error: it rewrote "consensus estimates project revenues to climb to $130.5 billion in 2025" as "revenues are projected
+to climb to $130.5 billion in 2025". On top of labelled evidence it adds little (1.9% → 1.3%, intervals overlap), so
+it is a cheap safety net (one mini call per section) rather than the fix.</li>
+<li><b>What it still gets wrong.</b>
+<ul>
+<li>Unsupported background claims remain (15%), because the overview still asks for content the data lacks.</li>
+<li>44% of the verifier's proposed corrections are dropped because the model did not quote the sentence verbatim, and
+some corrections are noise.</li>
+<li>Step 2's gpt-4o-mini rewrite bypasses both fixes.</li>
+<li>Forecast EBITDA still omits R&amp;D, and the valuation engine is unchanged.</li>
+</ul></li>
+</ul>
+
+<h2>5. Judgment: would I hand this to a portfolio manager?</h2>
+<table>
+<tr><th>Part of the report</th><th>Today</th><th>Why, and what would have to change</th></tr>
+<tr><td>Reported financial tables</td><td class="grade-part">Usable with caveats</td><td>Transcribed correctly; the EBITDA definition must be stated, and net income and R&amp;D should be shown.</td></tr>
+<tr><td>Forecast table</td><td class="grade-no">No</td><td>One set of constants for every company; R&amp;D omitted from EBITDA. Needs company-specific drivers (consensus or a model) and the full cost structure.</td></tr>
+<tr><td>Rating and target price</td><td class="grade-no">No</td><td>The page-1 rating is the analyst consensus restated, while the report's own valuation says −11% to −98% (or +161% for PFE). It needs one valuation with disclosed WACC, multiple and net debt, and the rating should follow from it.</td></tr>
+<tr><td>Numerical prose</td><td class="grade-part">With patch 0002, close</td><td>Contradictions fall from 16% to about 1%. It still needs a human read of anything tied to a decision.</td></tr>
+<tr><td>Descriptive prose (overview, competition)</td><td class="grade-no">No</td><td>12–55% of claims come from model memory. It needs source documents (filings text, segment data) in the evidence, or a narrower brief.</td></tr>
+<tr><td>Risks and news</td><td class="grade-no">No</td><td>Risks restate valuation figures; no news on the data plan. They need risk-relevant evidence (filing risk factors, news).</td></tr>
+</table>
+<p>The pipeline is a good drafting tool for the numerical description of reported results once the evidence is
+labelled. It is not yet a research product: the parts a PM would act on (forecast, valuation, rating) are fixed
+constants presented as analysis, and the report contradicts itself between page 1 and its valuation section.</p>
+
+<h3>So what is it good for?</h3>
+<ul>
+<li><b>As a first draft, not a verdict.</b> In about a minute and for under $0.10, it describes reported results
+correctly, and with patch 0002 about 1% of its numerical claims contradict the data. That is useful for drafting
+earnings updates across many names, or for covering names no analyst follows. The condition is that the rating,
+target and forecast are removed, or replaced by assumptions the PM sets, so the output becomes a labelled data brief.</li>
+<li><b>As a map of where to look.</b> The audit turns a uniformly confident document into one with calibrated trust.
+Reported tables and numerical description can be relied on; forecast, valuation, rating and descriptive claims need a
+human. Review time can go where the risk is.</li>
+<li><b>As a test harness.</b> The grounding scorer and the LLM-free counter apply to any system that writes from
+structured data, and they make prompt or model changes measurable before they ship.</li>
+</ul>
+<p>To support a PM's decision directly, four things would have to change:</p>
+<ol>
+<li>company-specific forecast drivers, with the full cost structure;</li>
+<li>a valuation with disclosed WACC, multiples and net debt, plus sensitivity;</li>
+<li>source documents and citations for descriptive claims;</li>
+<li>the verifier as a gate before publication, with a human signing off on any rating.</li>
+</ol>
+
+<h2>6. Limitations of this study</h2>
+<ul>
+<li>The judge and the writer are the same model family. The judge was measured at 91% agreement on 65 hand-reviewed
+claims and errs towards leniency, so grounding rates are, if anything, optimistic. In the hand review, Claude reviewed
+all 65 claims first and the author independently adjudicated the six disagreements.</li>
+<li>One sample per company-section and condition in Part 3. Section-level results vary a lot between runs (§3.4), so
+only pooled results (70 company-sections per condition) are reported.</li>
+<li>Coverage is limited by the FMP free plan: no news, a symbol whitelist, and no managed-care peers for UNH.</li>
+<li>The LLM-free counter's precision rules (clause boundaries, negation, explicit "A" labels, the starting point of a
+change, the position of forecast wording) were refined while inspecting the Part 3 texts, including the held-out
+names. It is therefore used only to corroborate. The headline result rests on the judge and its rules, which were
+fixed during the Part 2.3 audit, before Part 3, and not tuned on those texts.</li>
+<li>The data audit covers two companies (27 line items). The valuation was reproduced for one company and generalised
+through the closed form, which was checked on all five starter companies.</li>
+</ul>
+<p class="small">All tables, notebooks, patches and commands are in this folder; see <code>README.md</code>. Every number in this report
+is produced by the notebooks in <code>audit/</code>.</p>
+
+</body>
+</html>

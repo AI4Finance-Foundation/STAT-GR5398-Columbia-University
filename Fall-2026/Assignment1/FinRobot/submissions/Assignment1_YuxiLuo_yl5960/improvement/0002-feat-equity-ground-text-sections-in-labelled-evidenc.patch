@@ -1,0 +1,456 @@
+From cd76a072588ac0b0ba12e93614a482e63c5f5c83 Mon Sep 17 00:00:00 2001
+From: Yuxi Luo <yl5960@columbia.edu>
+Date: Sat, 10 Oct 2026 19:24:13 -0400
+Subject: [PATCH 2/2] feat(equity): ground text sections in labelled evidence,
+ add a verifier
+
+The text sections routinely presented reported results as forecasts or
+"guidance", attached the historical CAGR to forecast years and cited
+consensus that the data does not contain (2/3 of contradicted claims in
+an audit of five reports). The causes are in the evidence, not only the
+model: the prompt has no date, so the model writes from its training
+cutoff, and forecast columns were hard-coded 2025E-2027E regardless of
+the latest reported year.
+
+- Label forecast years from the base year (FY+1..FY+3). The
+  --revenue-growth-2025/2026/2027 flags keep their names and apply to
+  FY+1..FY+3. Escape % in their help strings (--help used to crash).
+- Start every writer prompt with reading notes: report date, which
+  columns are reported and which are the pipeline's forecast (with its
+  assumptions), the CAGR period, the projected peer year, and that the
+  data has no guidance, consensus or news. annotate=False reproduces
+  the old prompt.
+- Add modules/claim_verifier.py and --enable-verifier (default model
+  gpt-4.1-mini): after each section is written it is checked against the
+  writer's data; sentences that mislabel reported vs forecast figures,
+  misattribute the CAGR period, misquote numbers or cite non-existent
+  sources are replaced by exact-sentence corrections, logged in
+  verifier_log.json. Statements the data does not cover are listed,
+  not deleted. On any verifier error the text is left unchanged.
+- Stop replacing valid takeaways with canned text: the check required
+  the exact string "Revenue Growth:" and the model writes
+  "**Revenue Growth**", so every takeaways section was discarded.
+---
+ .../core/src/generate_financial_analysis.py   | 62 +++++++++---
+ .../core/src/modules/claim_verifier.py        | 99 +++++++++++++++++++
+ .../core/src/modules/text_generator_agents.py | 59 ++++++++++-
+ finrobot_equity/core/tests/test_verifier.py   | 89 +++++++++++++++++
+ 4 files changed, 289 insertions(+), 20 deletions(-)
+ create mode 100644 finrobot_equity/core/src/modules/claim_verifier.py
+ create mode 100644 finrobot_equity/core/tests/test_verifier.py
+
+diff --git a/finrobot_equity/core/src/generate_financial_analysis.py b/finrobot_equity/core/src/generate_financial_analysis.py
+index 009fa9a5..57216379 100644
+--- a/finrobot_equity/core/src/generate_financial_analysis.py
++++ b/finrobot_equity/core/src/generate_financial_analysis.py
+@@ -14,7 +14,8 @@ from modules.market_data_api import (
+     project_ebitda_for_peers,
+     get_company_news
+ )
+-from modules.text_generator_agents import generate_text_section
++from modules.text_generator_agents import generate_text_section, _prepare_user_prompt
++from modules.claim_verifier import verify_section
+ 
+ # 新增模块导入
+ from modules.sensitivity_analyzer import SensitivityAnalyzer
+@@ -55,11 +56,17 @@ def main():
+     parser.add_argument("--enable-enhanced-news", action="store_true", help="Enable enhanced news integration with categorization")
+ 
+     # Forecast Configuration
+-    parser.add_argument("--revenue-growth-2025", type=float, default=0.05, help="Revenue growth assumption for 2025E (default: 5%)")
+-    parser.add_argument("--revenue-growth-2026", type=float, default=0.06, help="Revenue growth assumption for 2026E (default: 6%)")
+-    parser.add_argument("--revenue-growth-2027", type=float, default=0.04, help="Revenue growth assumption for 2027E (default: 4%)")
+-    parser.add_argument("--margin-improvement", type=float, default=0.01, help="Annual margin improvement assumption (default: 1%)")
+-    parser.add_argument("--sga-margin-improvement", type=float, default=-0.005, help="SG&A margin change assumption (default: -0.5% efficiency gain)")
++    # The three growth flags keep their historical names but apply to the three years after the latest
++    # reported fiscal year (FY+1..FY+3), which is also how the forecast columns are now labelled.
++    parser.add_argument("--revenue-growth-2025", type=float, default=0.05, help="Revenue growth for the first forecast year, FY+1 (default: 5%%)")
++    parser.add_argument("--revenue-growth-2026", type=float, default=0.06, help="Revenue growth for FY+2 (default: 6%%)")
++    parser.add_argument("--revenue-growth-2027", type=float, default=0.04, help="Revenue growth for FY+3 (default: 4%%)")
++    parser.add_argument("--margin-improvement", type=float, default=0.01, help="Annual margin improvement assumption (default: 1%%)")
++    parser.add_argument("--sga-margin-improvement", type=float, default=-0.005, help="SG&A margin change assumption (default: -0.5%% efficiency gain)")
++
++    # Verifier
++    parser.add_argument("--enable-verifier", action="store_true", help="Check every generated section against the data it was written from and correct mislabelled numbers, periods and sources.")
++    parser.add_argument("--verifier-model", type=str, default="gpt-4.1-mini", help="Model used by the verifier (default: gpt-4.1-mini)")
+ 
+     # API Options
+     parser.add_argument("--period", type=str, default="annual", choices=["annual", "quarterly"], help="Data period (annual or quarterly)")
+@@ -160,13 +167,17 @@ def main():
+     
+     print(f"Using {latest_year} as base year for forecasts")
+     
++    # Label the forecast years from the base year. They used to be hard-coded as 2025E-2027E, which put
++    # e.g. "2025E" next to "2025A" (or after "2026A") and led the text sections to call reported results
++    # forecasts.
++    base_year = int(latest_year[:4])
++    forecast_years = [f"{base_year + i}E" for i in (1, 2, 3)]
+     forecast_config = {
+         "revenue_base_year": latest_year,
+-        "revenue_growth_assumptions": {
+-            "2025E": args.revenue_growth_2025, 
+-            "2026E": args.revenue_growth_2026, 
+-            "2027E": args.revenue_growth_2027
+-        }, 
++        "revenue_growth_assumptions": dict(zip(
++            forecast_years,
++            [args.revenue_growth_2025, args.revenue_growth_2026, args.revenue_growth_2027],
++        )),
+         "ebitda_growth_factor": 1.05,
+         "margin_improvement": {
+             "Contribution Margin": args.margin_improvement, 
+@@ -176,9 +187,8 @@ def main():
+     }
+     
+     print(f"Forecast assumptions:")
+-    print(f"  Revenue Growth 2025E: {args.revenue_growth_2025*100:.1f}%")
+-    print(f"  Revenue Growth 2026E: {args.revenue_growth_2026*100:.1f}%") 
+-    print(f"  Revenue Growth 2027E: {args.revenue_growth_2027*100:.1f}%")
++    for year, growth in forecast_config["revenue_growth_assumptions"].items():
++        print(f"  Revenue Growth {year}: {growth*100:.1f}%")
+     print(f"  Margin Improvement: {args.margin_improvement*100:.1f}% annually")
+     print(f"  SG&A Efficiency: {args.sga_margin_improvement*100:.1f}% annually")
+     
+@@ -404,6 +414,7 @@ def main():
+             print("Error: OpenAI API key not loaded. Skipping text generation.")
+         else:
+             data_for_text_gen = {
++                "report_date": pd.Timestamp.now().strftime("%Y-%m-%d"),
+                 "financial_metrics": final_data_df,
+                 "peer_ebitda": projected_peer_ebitda,
+                 "peer_ev_ebitda": df_ev_ebitda_peers,
+@@ -421,6 +432,8 @@ def main():
+                 "major_takeaways", "news_summary"  # NEW
+             ]
+             
++            verifier_log = []
++
+             # A single loop calling the unified generation function
+             for text_type in all_text_types:
+                 # Skip news_summary if no news data available
+@@ -446,13 +459,24 @@ def main():
+                         base_url=openai_base_url,
+                         model=openai_model
+                     )
+-                    
++
++                    if args.enable_verifier and generated_text:
++                        # Check the section against exactly the data its writer was given.
++                        evidence = _prepare_user_prompt(data_for_text_gen, text_type, args.company_name, args.company_ticker)
++                        generated_text, check = verify_section(generated_text, text_type, evidence, openai_api_key,
++                                                               base_url=openai_base_url, model=args.verifier_model)
++                        verifier_log.append(check)
++                        print(f"🔎 Verifier: {len(check['corrections'])} correction(s), "
++                              f"{len(check['unverified'])} unverified statement(s) in '{text_type}'")
++
+                     # Fallback validation can remain here as a safety net
+                     if text_type == "competitor_analysis" and (not generated_text or len(generated_text.split('.')) < 3):
+                          print(f"⚠️ Warning: Competitor analysis seems too short, using fallback.")
+                          generated_text = f"{args.company_name} demonstrates competitive positioning within its industry sector through consistent financial performance and strategic market positioning relative to key competitors."
+                     
+-                    elif text_type == "major_takeaways" and "Revenue Growth:" not in generated_text:
++                    # Match the heading loosely: the model usually writes "**Revenue Growth**" without the colon, and
++                    # the exact-string check replaced every generated takeaways section with the canned text below.
++                    elif text_type == "major_takeaways" and "revenue growth" not in generated_text.lower():
+                          print(f"⚠️ Warning: Major takeaways missing required sections, using fallback.")
+                          generated_text = f"Revenue Growth: {args.company_name}'s revenue growth shows consistent performance trends.\n\nGross Profit Margin: {args.company_name}'s gross profit margins demonstrate operational effectiveness.\n\nSG&A Expense Margin: {args.company_name}'s SG&A expense management shows disciplined cost control.\n\nEBITDA Margin Stability: {args.company_name}'s EBITDA margin stability reflects strong underlying fundamentals."
+ 
+@@ -473,6 +497,12 @@ def main():
+                     with open(file_path, "w", encoding="utf-8") as f:
+                         f.write(fallback_text)
+                     print(f"Created fallback text for '{text_type}' at {file_path}")
++
++            if args.enable_verifier:
++                verifier_log_path = os.path.join(output_dir, "verifier_log.json")
++                with open(verifier_log_path, "w", encoding="utf-8") as f:
++                    json.dump(verifier_log, f, indent=2, ensure_ascii=False)
++                print(f"Saved verifier log to: {verifier_log_path}")
+     else:
+         print("Skipping text generation (not enabled)")
+ 
+diff --git a/finrobot_equity/core/src/modules/claim_verifier.py b/finrobot_equity/core/src/modules/claim_verifier.py
+new file mode 100644
+index 00000000..2bb8399d
+--- /dev/null
++++ b/finrobot_equity/core/src/modules/claim_verifier.py
+@@ -0,0 +1,99 @@
++#!/usr/bin/env python
++# coding: utf-8
++"""Verifier for generated report sections.
++
++Runs after a section is written. It is given the section and exactly the data its writer was given, finds the
++sentences whose figures, periods or sources that data contradicts, and replaces them with minimal corrections.
++
++Corrections are applied by exact sentence replacement, so nothing else in the section can change. Statements the
++data neither supports nor contradicts (background knowledge) are left in place and listed as unverified: removing
++them would empty sections such as the company overview, whose prompt asks for exactly that kind of content, so they
++are surfaced for the reader instead.
++"""
++
++from typing import List, Literal, Optional, Tuple
++
++from openai import OpenAI
++from pydantic import BaseModel
++
++VERIFIER_INSTRUCTIONS = """You fact-check one section of an equity research report against DATA, the only information \
++its writer had.
++
++Go through SECTION sentence by sentence. For every figure in a sentence, first find the DATA cell it comes from and \
++note whether that cell is reported (a column ending in A, or a historical peer value) or a forecast (a column ending \
++in E, or the projected peer year). Then check the sentence's wording against that. A reported figure must be described \
++as reported or achieved, in the past tense: "projected", "expected", "estimated", "forecast", "guidance", "outlook" \
++or an "E" label attached to it is an error even if every number is right, and removing a false source such as \
++"consensus" does not fix it. A figure that matches DATA after rounding to the precision written is correct; do not \
++change it.
++
++A sentence needs a correction when:
++- a reported figure (a column ending in A, or a historical peer value) is presented as projected, expected, \
++estimated, forecast or guidance, or a forecast figure (a column ending in E, or the projected peer year) is presented \
++as reported or achieved;
++- a figure is attached to the wrong year, or carries the wrong year label (e.g. "2025E" for a reported 2025 value);
++- the CAGR is attributed to any period other than the one DATA gives;
++- a number, direction or comparison differs from DATA, or a quantifier ("doubled", "each year", "consistently", \
++"far ahead") is not borne out by the numbers;
++- it cites guidance, consensus, analysts or news that DATA does not contain.
++
++For each such sentence return the original sentence copied character for character from SECTION, the problem, and a \
++corrected sentence that fixes only that problem, otherwise keeps the writer's wording, and adds nothing that is not \
++in DATA. If a sentence cannot be corrected without inventing information, drop the unsupported part; return an empty \
++corrected sentence only if nothing true is left.
++
++Separately, list the sentences whose claims DATA does not cover at all (company history, products, strategy, market \
++position, regulation, competitors' plans). Do not change them.
++
++Leave opinions, recommendations and sentences consistent with DATA untouched."""
++
++
++class Correction(BaseModel):
++    original: str
++    problem: Literal["status", "period", "cagr_period", "value_or_comparison", "quantifier", "invented_source"]
++    explanation: str
++    corrected: str
++
++
++class VerifierOutput(BaseModel):
++    corrections: List[Correction]
++    unverified: List[str]
++
++
++def verify_section(text: str, section: str, evidence: str, api_key: str, base_url: Optional[str] = None,
++                   model: str = "gpt-4.1-mini", client: Optional[OpenAI] = None) -> Tuple[str, dict]:
++    """Returns (verified text, log entry). On any error the original text is returned unchanged."""
++    log = {"section": section, "model": model, "corrections": [], "not_applied": [], "unverified": []}
++    try:
++        if client is None:
++            client_kwargs = {"api_key": api_key, "max_retries": 5}
++            if base_url:
++                client_kwargs["base_url"] = base_url
++            client = OpenAI(**client_kwargs)
++        resp = client.chat.completions.parse(
++            model=model,
++            temperature=0,
++            response_format=VerifierOutput,
++            messages=[
++                {"role": "system", "content": VERIFIER_INSTRUCTIONS},
++                {"role": "user", "content": f"DATA\n<<<\n{evidence}\n>>>\n\nSECTION ({section})\n<<<\n{text}\n>>>"},
++            ],
++        )
++        result = resp.choices[0].message.parsed
++        log["usage"] = {"input_tokens": resp.usage.prompt_tokens, "output_tokens": resp.usage.completion_tokens}
++    except Exception as e:  # never block report generation on the verifier
++        log["error"] = str(e)[:300]
++        return text, log
++
++    revised = text
++    for c in result.corrections:
++        if c.original and c.original in revised and c.corrected != c.original:
++            revised = revised.replace(c.original, c.corrected, 1)
++            log["corrections"].append(c.model_dump())
++        else:
++            # Not found verbatim (or no change): never edit by guesswork.
++            log["not_applied"].append(c.model_dump())
++    log["unverified"] = result.unverified
++    revised = "\n".join(" ".join(line.split()) if line.strip() else "" for line in revised.split("\n")) \
++        if revised != text else revised
++    return revised, log
+diff --git a/finrobot_equity/core/src/modules/text_generator_agents.py b/finrobot_equity/core/src/modules/text_generator_agents.py
+index fa3d6262..89f7013c 100644
+--- a/finrobot_equity/core/src/modules/text_generator_agents.py
++++ b/finrobot_equity/core/src/modules/text_generator_agents.py
+@@ -1,6 +1,8 @@
+ #!/usr/bin/env python
+ # coding: utf-8
+ 
++import re
++
+ import pandas as pd
+ from typing import Dict, Optional
+ from openai import OpenAI
+@@ -47,16 +49,65 @@ def _df_to_string(df: Optional[pd.DataFrame], name: str) -> str:
+         return f"{name}:\n[Error formatting data: {e}]\n"
+ 
+ 
+-def _prepare_user_prompt(data: Dict, prompt_type: str, company_name: str, company_ticker: str) -> str:
+-    """Prepare user prompt with financial data."""
++_ACTUAL_COL = re.compile(r"^(\d{4})A$")
++_FORECAST_COL = re.compile(r"^(\d{4})E$")
++
++
++def _evidence_notes(data: Dict, prompt_type: str) -> str:
++    """Says which figures are reported, which are this pipeline's own forecast, and as of when.
++
++    Without this the tables do not say it, and the sections routinely called reported results
++    "projected" or "guidance" and attached the historical CAGR to the forecast years.
++    """
++    fm = data.get('financial_metrics')
++    lines = []
++    if data.get('report_date'):
++        lines.append(f"Report date: {data['report_date']}.")
++    if fm is not None and not fm.empty:
++        actual = sorted(c for c in fm.columns if isinstance(c, str) and _ACTUAL_COL.match(c))
++        forecast = sorted(c for c in fm.columns if isinstance(c, str) and _FORECAST_COL.match(c))
++        if actual:
++            lines.append(f"- Financial Metrics: {actual[0]} to {actual[-1]} are reported fiscal-year results; "
++                         f"the latest reported fiscal year is FY{actual[-1][:4]}.")
++        if forecast:
++            growth = ""
++            rows = fm[fm['metrics'] == 'Revenue Growth'] if 'metrics' in fm.columns else None
++            if rows is not None and not rows.empty:
++                growth = " (assumed revenue growth " + ", ".join(f"{c}: {rows.iloc[0][c]}" for c in forecast) + ")"
++            lines.append(f"- {forecast[0]} to {forecast[-1]} are this pipeline's own forecast, built from fixed "
++                         f"assumptions{growth}. They are not company guidance and not analyst consensus.")
++        if 'CAGR' in fm.columns and len(actual) > 1:
++            lines.append(f"- CAGR is the revenue CAGR from {actual[0]} to {actual[-1]} (reported years only).")
++    peer_ebitda = data.get('peer_ebitda')
++    if peer_ebitda is not None and not peer_ebitda.empty:
++        lines.append(f"- Peer EBITDA Comparison: the last year ({int(peer_ebitda.index.max())}) is this pipeline's "
++                     "projection from each company's average historical growth; earlier years are reported.")
++    if data.get('peer_ev_ebitda') is not None and not data['peer_ev_ebitda'].empty:
++        lines.append("- Peer EV/EBITDA Comparison: all values are historical.")
++    if peer_ebitda is not None or data.get('peer_ev_ebitda') is not None:
++        lines.append("- In the peer tables a year is the calendar year in which that company's fiscal year ends.")
++    lines.append("- 'Contribution Margin' is gross margin, (revenue - cost of revenue) / revenue. 'SG&A' excludes R&D.")
++    has_news = prompt_type == "news_summary" and data.get('company_news')
++    lines.append("- The data contains no company guidance and no analyst consensus"
++                 + ("." if has_news else ", and no news."))
++    lines.append("Describe reported figures as reported and forecast figures as this pipeline's forecast, "
++                 "and attach every figure to the period it belongs to.")
++    return "How to read this data:\n" + "\n".join(lines) + "\n\n"
++
++
++def _prepare_user_prompt(data: Dict, prompt_type: str, company_name: str, company_ticker: str,
++                         annotate: bool = True) -> str:
++    """Prepare user prompt with financial data. annotate=False reproduces the original prompt."""
+     financial_metrics = data.get('financial_metrics')
+     peer_ebitda = data.get('peer_ebitda')
+     peer_ev_ebitda = data.get('peer_ev_ebitda')
+     company_news = data.get('company_news')
+     retail_sentiment = data.get('retail_sentiment')
+-    
++
+     prompt = f"Company: {company_name} ({company_ticker})\n\n"
+-    
++    if annotate:
++        prompt += _evidence_notes(data, prompt_type)
++
+     if financial_metrics is not None and not financial_metrics.empty:
+         prompt += _df_to_string(financial_metrics, "Financial Metrics")
+     
+diff --git a/finrobot_equity/core/tests/test_verifier.py b/finrobot_equity/core/tests/test_verifier.py
+new file mode 100644
+index 00000000..b7712e0c
+--- /dev/null
++++ b/finrobot_equity/core/tests/test_verifier.py
+@@ -0,0 +1,89 @@
++"""Tests for the evidence notes and the section verifier (no network: the OpenAI client is faked)."""
++import os
++import sys
++from types import SimpleNamespace
++
++import pandas as pd
++
++sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "src"))
++
++from modules.claim_verifier import Correction, VerifierOutput, verify_section  # noqa: E402
++from modules.text_generator_agents import _prepare_user_prompt  # noqa: E402
++
++
++def _metrics():
++    return pd.DataFrame({
++        "metrics": ["Revenue", "EBITDA", "Revenue Growth"],
++        "2025A": [100.0, 40.0, "10.0%"],
++        "2026A": [120.0, 50.0, "20.0%"],
++        "2027E": [126.0, 53.0, "5.0%"],
++        "2028E": [133.6, 56.0, "6.0%"],
++        "CAGR": ["20.0%", "N/A", "N/A"],
++    }).astype(object)
++
++
++def _data():
++    peers = pd.DataFrame({"AAA": [40.0, 50.0, 60.0], "BBB": [10.0, 12.0, 14.0]}, index=[2025, 2026, 2027])
++    return {"financial_metrics": _metrics(), "peer_ebitda": peers, "peer_ev_ebitda": peers / 2,
++            "report_date": "2026-10-10"}
++
++
++def test_notes_state_date_status_and_cagr_period():
++    prompt = _prepare_user_prompt(_data(), "investment_overview", "Acme", "AAA")
++    assert "Report date: 2026-10-10." in prompt
++    assert "2025A to 2026A are reported" in prompt
++    assert "2027E to 2028E are this pipeline's own forecast" in prompt
++    assert "2027E: 5.0%" in prompt
++    assert "revenue CAGR from 2025A to 2026A" in prompt
++    assert "the last year (2027) is this pipeline's projection" in prompt
++    assert "no company guidance and no analyst consensus" in prompt
++
++
++def test_annotate_false_reproduces_the_original_prompt():
++    prompt = _prepare_user_prompt(_data(), "investment_overview", "Acme", "AAA", annotate=False)
++    assert "How to read this data" not in prompt
++    assert prompt.startswith("Company: Acme (AAA)\n\nFinancial Metrics:")
++
++
++class _FakeClient:
++    def __init__(self, output=None, error=None):
++        self._output, self._error = output, error
++        self.chat = SimpleNamespace(completions=SimpleNamespace(parse=self._parse))
++
++    def _parse(self, **kwargs):
++        if self._error:
++            raise self._error
++        usage = SimpleNamespace(prompt_tokens=10, completion_tokens=5)
++        return SimpleNamespace(choices=[SimpleNamespace(message=SimpleNamespace(parsed=self._output))], usage=usage)
++
++
++TEXT = "Revenue reached $120 in 2026. Guidance points to $126 in 2027. The brand is iconic."
++
++
++def test_verifier_replaces_only_matching_sentences_and_logs_everything():
++    out = VerifierOutput(
++        corrections=[
++            Correction(original="Guidance points to $126 in 2027.", problem="invented_source",
++                       explanation="no guidance in DATA", corrected="The pipeline forecasts $126 for 2027E."),
++            Correction(original="A sentence that is not in the text.", problem="status",
++                       explanation="hallucinated", corrected="Something else."),
++        ],
++        unverified=["The brand is iconic."],
++    )
++    revised, log = verify_section(TEXT, "investment_overview", "DATA", api_key=None, client=_FakeClient(out))
++    assert revised == "Revenue reached $120 in 2026. The pipeline forecasts $126 for 2027E. The brand is iconic."
++    assert len(log["corrections"]) == 1 and len(log["not_applied"]) == 1
++    assert log["unverified"] == ["The brand is iconic."]
++
++
++def test_verifier_returns_the_original_text_on_error():
++    revised, log = verify_section(TEXT, "risks", "DATA", api_key=None, client=_FakeClient(error=RuntimeError("boom")))
++    assert revised == TEXT
++    assert "boom" in log["error"]
++
++
++def test_forecast_labels_follow_the_base_year():
++    # mirrors generate_financial_analysis.py: labels are FY+1..FY+3 of the latest reported year
++    latest_year = "2026A"
++    base_year = int(latest_year[:4])
++    assert [f"{base_year + i}E" for i in (1, 2, 3)] == ["2027E", "2028E", "2029E"]
+-- 
+2.55.0.windows.5
+

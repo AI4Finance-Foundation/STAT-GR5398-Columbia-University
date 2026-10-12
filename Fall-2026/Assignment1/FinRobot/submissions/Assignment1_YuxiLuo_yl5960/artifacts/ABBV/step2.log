@@ -1,0 +1,111 @@
+2026-10-10 19:05:04,472 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 19:05:07,885 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 19:05:08,777 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\ABBV\report\ABBV_eps_pe.png
+2026-10-10 19:05:09,202 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\ABBV\report\ABBV_eps_pe.pdf
+2026-10-10 19:05:09,209 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:05:09,210 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:05:09,213 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:05:09,213 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:05:09,512 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\ABBV\report\ABBV_revenue_yoy.png
+2026-10-10 19:05:09,594 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\ABBV\report\ABBV_revenue_yoy.pdf
+2026-10-10 19:05:09,599 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:05:09,599 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:05:09,603 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:05:09,603 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:05:09,956 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\ABBV\report\ABBV_ebitda_margin.png
+2026-10-10 19:05:10,046 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\ABBV\report\ABBV_ebitda_margin.pdf
+2026-10-10 19:05:10,192 - INFO - Calculating EV/EBITDA valuation...
+2026-10-10 19:05:10,194 - INFO - ✅ EV/EBITDA valuation: $224.16
+2026-10-10 19:05:10,194 - INFO - Calculating DCF valuation...
+2026-10-10 19:05:10,194 - INFO - ✅ DCF valuation: $226.28
+2026-10-10 19:05:10,195 - INFO - Calculating peer comparison valuation...
+2026-10-10 19:05:10,195 - INFO - Synthesizing valuation results...
+2026-10-10 19:05:10,195 - INFO - ✅ Synthesized target price: $225.04 (Range: $161.90 - $286.43)
+HTML reports will be saved to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\ABBV\report
+✅ OpenAI API key loaded for text regeneration
+Auto-fetching market data for ABBV...
+Fetching comprehensive company metrics for ABBV...
+Successfully fetched metrics for ABBV
+✅ Successfully auto-fetched market data
+
+📊 Market Data Summary for ABBV:
+  Share Price: $276.47 (auto-fetched)
+  Target Price: $292.21 (auto-fetched)
+  Rating: Buy (auto-fetched)
+  Market Cap: $488.47B (auto-fetched)
+  Sector: Healthcare (auto-fetched)
+📖 Loading and processing text content...
+📝 Processing tagline...
+✅ tagline validation passed (520 chars)
+📝 Processing company_overview...
+✅ company_overview validation passed (2531 chars)
+📝 Processing investment_overview...
+✅ investment_overview validation passed (1824 chars)
+📝 Processing valuation_overview...
+✅ valuation_overview validation passed (1786 chars)
+📝 Processing risks...
+✅ risks validation passed (1106 chars)
+📝 Processing competitor_analysis...
+⚠️ Detected CSV data in competitor_analysis, forcing AI regeneration...
+🤖 Regenerating 'competitor_analysis' using AI...
+🤖 Generating 'competitor_analysis' text section...
+🤖 Using model: gpt-4o-mini
+✅ Successfully generated 'competitor_analysis' (1791 chars)
+✅ Successfully regenerated 'competitor_analysis' using AI
+📝 Processing major_takeaways...
+🤖 Regenerating 'major_takeaways' using AI...
+🤖 Generating 'major_takeaways' text section...
+🤖 Using model: gpt-4o-mini
+✅ Successfully generated 'major_takeaways' (1407 chars)
+✅ Successfully regenerated 'major_takeaways' using AI
+📝 Processing news_summary...
+✅ news_summary validation passed (48 chars)
+✅ All text content processed
+✅ Computed technical indicators for ABBV: Bullish
+Handling charts...
+✅ Revenue/EBITDA chart saved to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\ABBV\report\ABBV_revenue_ebitda_chart.png
+✅ EPS × PE chart saved to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\ABBV\report\ABBV_eps_pe_chart.png
+✅ EV/EBITDA peer chart saved to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\ABBV\report\ABBV_peer_ev_ebitda_chart.png
+Generating enhanced charts...
+✅ Loaded income statement data from D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\ABBV\analysis\income_statement_raw_data.csv
+✅ Generated EPS × PE chart
+✅ Generated Revenue YoY chart
+✅ Generated EBITDA Margin chart
+Generating advanced charts...
+✅ Financial radar chart saved to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\ABBV\report\ABBV_financial_radar.png
+✅ Generated Financial Radar chart
+✅ Generated 4 enhanced charts total
+Performing valuation analysis...
+✅ Valuation analysis completed with 2 methods
+  Synthesized target: $225.04 (range $161.90-$286.43, upside -18.6%)
+Loading sensitivity analysis from D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\ABBV\analysis\sensitivity_analysis.json...
+✅ Sensitivity analysis loaded
+Loading retail sentiment insights from D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\ABBV\analysis\retail_sentiment.json...
+✅ Retail sentiment insights loaded
+Formatting tables for HTML...
+Loading Credit & Cashflow metrics from CSV...
+✅ Successfully loaded and formatted Credit & Cashflow metrics from CSV
+Processing peer EBITDA data with shape: (6, 4)
+Peer EBITDA columns: ['year', 'ABBV', 'JNJ', 'PFE']
+Peer EBITDA index: [2021, 2022, 2023, 2024, 2025, 2026]
+✅ Successfully formatted peer EBITDA table
+Processing peer EV/EBITDA data with shape: (5, 3)
+Peer EV/EBITDA columns: ['ABBV', 'JNJ', 'PFE']
+Peer EV/EBITDA index: [2021, 2022, 2023, 2024, 2025]
+✅ Successfully formatted peer EV/EBITDA table
+Generating professional HTML report (matching PDF structure)...
+✅ Generated Professional HTML Report: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\ABBV\report\Professional_Equity_Report_ABBV.html
+Generating combined HTML report (all sections in one file)...
+✅ Generated Combined HTML Report: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\ABBV\report\Combined_Equity_Report_ABBV.html
+Rendering legacy HTML pages...
+✅ Sensitivity/Catalyst content detected, adding Page 4
+✅ News/Charts content detected, adding Page 5
+Generated Page 1: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\ABBV\report\Equity_Report_Page1_ABBV.html
+Generated Page 2: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\ABBV\report\Equity_Report_Page2_ABBV.html
+Generated Page 3: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\ABBV\report\Equity_Report_Page3_ABBV.html
+Generated Page 4: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\ABBV\report\Equity_Report_Page4_ABBV.html
+Generated Page 5: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\ABBV\report\Equity_Report_Page5_ABBV.html
+
+✅ Equity report generation complete!
+📁 Reports saved to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\ABBV\report
+🤖 Market data automatically fetched from FMP API
