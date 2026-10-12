@@ -1,0 +1,78 @@
+--- a/finrobot_equity/core/src/modules/financial_data_processor.py
++++ b/finrobot_equity/core/src/modules/financial_data_processor.py
+@@ -294,6 +294,43 @@
+             df_combined.loc[df_combined['metrics'] == 'SG&A Margin', year] = f"{sga_margin*100:.1f}%"
+         
+     return df_combined
++
++
++def build_data_driven_forecast_config(df_historical: pd.DataFrame, lookback: int = 2,
++                                      horizon: int = 3, growth_cap: float = 0.5) -> dict:
++    """Build transparent revenue-CAGR forecasts, retaining flat historical margins.
++
++    Inputs must already be point-in-time filtered. No consensus or predictive
++    accuracy is implied. The symmetric growth cap limits extrapolation and is
++    printed in the returned metadata, along with the uncapped estimate.
++    """
++    if lookback < 1 or horizon < 1 or not 0 < growth_cap < 1:
++        raise ValueError("lookback/horizon must be positive and 0 < growth_cap < 1")
++    years = sorted((c for c in df_historical.columns
++                    if isinstance(c, str) and c[:-1].isdigit() and c.endswith('A')),
++                   key=lambda c: int(c[:-1]))
++    revenue = df_historical.loc[df_historical['metrics'] == 'Revenue']
++    if len(revenue) != 1 or len(years) < lookback + 1:
++        raise ValueError("One revenue row and sufficient annual history are required")
++    selected = years[-lookback-1:]
++    if any(int(b[:-1])-int(a[:-1]) != 1 for a,b in zip(selected, selected[1:])):
++        raise ValueError("CAGR requires contiguous annual periods")
++    values = [float(revenue[y].iloc[0]) for y in selected]
++    if any(not np.isfinite(v) or v <= 0 for v in values):
++        raise ValueError("Historical revenue must be finite and strictly positive")
++    raw_growth = (values[-1] / values[0]) ** (1 / lookback) - 1
++    growth = float(np.clip(raw_growth, -growth_cap, growth_cap))
++    latest = int(years[-1][:-1])
++    return {
++        'revenue_base_year': years[-1],
++        'revenue_growth_assumptions': {f'{latest+i}E': growth for i in range(1,horizon+1)},
++        'margin_improvement': {'Contribution Margin': 0.0, 'EBITDA Margin': 0.0},
++        'sga_margin_change': 0.0,
++        'method': 'historical_revenue_cagr', 'lookback_years': lookback,
++        'uncapped_growth': raw_growth, 'growth_cap': growth_cap,
++        'growth_used': growth, 'training_years': selected,
++        'caveat': 'Not segment-adjusted; acquisition effects and regime shifts persist.'
++    }
+ 
+ def calculate_growth_and_forecasts(df_historical: pd.DataFrame, forecast_config: dict) -> pd.DataFrame:
+     """Appends growth rates and forecasts to the historical metrics DataFrame."""
+--- a/finrobot_equity/core/src/generate_financial_analysis.py
++++ b/finrobot_equity/core/src/generate_financial_analysis.py
+@@ -7,7 +7,7 @@
+ import json 
+ 
+ from modules.common_utils import load_config, get_api_key
+-from modules.financial_data_processor import calculate_growth_and_forecasts, extract_historical_metrics_from_api_data
++from modules.financial_data_processor import calculate_growth_and_forecasts, extract_historical_metrics_from_api_data, build_data_driven_forecast_config
+ from modules.market_data_api import (
+     get_comprehensive_financial_data,
+     combine_peer_financial_data,
+@@ -63,6 +63,8 @@
+ 
+     # API Options
+     parser.add_argument("--period", type=str, default="annual", choices=["annual", "quarterly"], help="Data period (annual or quarterly)")
++
++    parser.add_argument("--data-driven-forecasts", action="store_true", help="Use trailing two-year revenue CAGR and dynamic future years; flat margins")
+ 
+     args = parser.parse_args()
+ 
+@@ -182,6 +184,11 @@
+     print(f"  Margin Improvement: {args.margin_improvement*100:.1f}% annually")
+     print(f"  SG&A Efficiency: {args.sga_margin_improvement*100:.1f}% annually")
+     
++    if args.data_driven_forecasts:
++        forecast_config = build_data_driven_forecast_config(historical_metrics_df)
++    with open(os.path.join(output_dir, "forecast_assumptions.json"), "w") as fh:
++        json.dump(forecast_config, fh, indent=2)
++    print("Effective forecast assumptions:", json.dumps(forecast_config, indent=2))
+     final_data_df = calculate_growth_and_forecasts(historical_metrics_df, forecast_config)
+     print("\nFinal Metrics with Forecasts:")
+     print(final_data_df.to_string())

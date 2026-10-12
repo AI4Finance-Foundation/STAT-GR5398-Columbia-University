@@ -1,0 +1,86 @@
+--- a/finrobot_equity/core/src/modules/market_data_api.py
++++ b/finrobot_equity/core/src/modules/market_data_api.py
+@@ -3,7 +3,7 @@
+ 
+ import yfinance as yf
+ import pandas as pd
+-import requests
++from . import fmp_transport as requests
+ import datetime
+ import os
+ 
+--- a/finrobot_equity/core/src/modules/news_integrator.py
++++ b/finrobot_equity/core/src/modules/news_integrator.py
+@@ -444,7 +444,7 @@
+     Returns:
+         包含分类和分析的新闻数据字典
+     """
+-    import requests
++    from . import fmp_transport as requests
+     from datetime import datetime, timedelta
+     
+     try:
+--- /dev/null
++++ b/finrobot_equity/core/src/modules/fmp_transport.py
+@@ -0,0 +1,61 @@
++"""Small legacy-to-stable transport adapter. Keeps the course pipeline intact.
++Caches raw responses without credentials; preserves original fields and adds
++only documented legacy aliases. Missing/paid data raises, never fabricates rows.
++"""
++import os,json,hashlib
++from pathlib import Path
++from datetime import datetime,timezone
++from urllib.parse import urlsplit,parse_qsl,urlencode
++import requests as _requests
++exceptions=_requests.exceptions
++MAPPING={'enterprise-value':'enterprise-values','income-statement':'income-statement',
++ 'balance-sheet-statement':'balance-sheet-statement','cash-flow-statement':'cash-flow-statement',
++ 'ratios':'ratios','key-metrics':'key-metrics','quote-short':'quote-short','quote':'quote',
++ 'profile':'profile','market-capitalization':'market-capitalization','stock_news':'news/stock',
++ 'historical-price-full':'historical-price-eod/full','price-target':'price-target-summary',
++ 'upgrades-downgrades':'grades'}
++ALIASES={'priceToEarningsRatio':'priceEarningsRatio','debtToEquityRatio':'debtEquityRatio',
++ 'evToEBITDA':'enterpriseValueOverEBITDA','marketCap':'mktCap','lastDividend':'lastDiv',
++ 'averageVolume':'volAvg','exchange':'exchangeShortName','epsDiluted':'epsdiluted'}
++class Response:
++ def __init__(self,status,data,endpoint):self.status_code=status;self.data=data;self.endpoint=endpoint
++ def raise_for_status(self):
++  if self.status_code>=400:raise exceptions.HTTPError(f'FMP HTTP {self.status_code}: {self.endpoint}; credentials omitted')
++ def json(self):
++  if not isinstance(self.data,list):return self.data
++  rows=[]
++  for item in self.data:
++   row=item.copy()
++   for new,old in ALIASES.items():
++    if new in row and old not in row:row[old]=row[new]
++   rows.append(row)
++  if self.endpoint=='historical-price-eod/full':return {'historical':rows}
++  return rows
++
++def get(url,params=None,timeout=30,**kwargs):
++ parsed=urlsplit(url)
++ if parsed.hostname!='financialmodelingprep.com':return _requests.get(url,params=params,timeout=timeout,**kwargs)
++ parts=parsed.path.strip('/').split('/');query=dict(parse_qsl(parsed.query));query.update(params or {})
++ if parts[:2] not in [['api','v3'],['api','v4']]:return _requests.get(url,params=params,timeout=timeout,**kwargs)
++ legacy=parts[2]
++ if legacy not in MAPPING:raise exceptions.RequestException(f'Unsupported FMP migration endpoint: {legacy}')
++ endpoint=MAPPING[legacy]
++ if len(parts)>3:query['symbol']=parts[3]
++ if 'tickers' in query:query['symbols']=query.pop('tickers')
++ if legacy=='historical-price-full':query.pop('timeseries',None)
++ public={k:v for k,v in query.items() if k!='apikey'}
++ identifier=hashlib.sha256(json.dumps([endpoint,public],sort_keys=True).encode()).hexdigest()[:20]
++ folder=os.getenv('FMP_CACHE_DIR');path=Path(folder)/(identifier+'.json') if folder else None
++ if path and path.exists():
++  saved=json.loads(path.read_text());return Response(saved['status'],saved['data'],endpoint)
++ try:
++  r=_requests.get('https://financialmodelingprep.com/stable/'+endpoint,params=query,timeout=timeout,**kwargs)
++  try:data=r.json()
++  except ValueError:data={'error':'Non-JSON response','status':r.status_code}
++ except _requests.exceptions.RequestException as exc:
++  raise exceptions.RequestException(f'FMP transport {type(exc).__name__}; endpoint={endpoint}; credentials omitted') from None
++ if path:
++  path.parent.mkdir(parents=True,exist_ok=True)
++  path.write_text(json.dumps({'endpoint':endpoint,'query':public,'status':r.status_code,'data':data,
++      'retrieved_utc':datetime.now(timezone.utc).isoformat()},indent=2))
++ return Response(r.status_code,data,endpoint)
