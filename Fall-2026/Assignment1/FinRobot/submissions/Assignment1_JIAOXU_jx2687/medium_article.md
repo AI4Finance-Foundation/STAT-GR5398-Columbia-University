@@ -109,4 +109,4 @@ FinRobot was effective at assembling a readable research draft. The audit showed
 
 ---
 
-*Prepared for Columbia STAT GR5398 Fall 2026 Assignment 1. AI assistance was used in implementation, execution, evaluation scaffolding, and drafting. Results are based on saved experiment artifacts; automated evaluation limitations are stated above. This manuscript has not been published. The author should review it and ensure any required course disclosure accompanies publication.*
+*Prepared for Columbia STAT GR5398 Fall 2026 Assignment 1. AI assistance was used in implementation, execution, evaluation scaffolding, and drafting. Results are based on saved experiment artifacts; automated evaluation limitations are stated above. The analysis has been published on Medium; the article link is provided in README.md.*

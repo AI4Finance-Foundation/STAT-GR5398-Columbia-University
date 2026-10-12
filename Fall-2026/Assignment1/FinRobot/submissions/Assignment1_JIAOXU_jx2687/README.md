@@ -17,7 +17,26 @@ Six baseline companies have eight actual section outputs and generated HTML repo
 - Three identical-input NVDA runs. Risk-category order is imposed by the prompt; detailed wording differs. No explicit agent rating/target was emitted,so those variances remain undefined.
 - Initial two-step runtime35.5–42.0seconds/company. Saved-response cost subtotal$1.0731; some diagnostics and one truncated evaluation response excluded. Rates:$2input,$0.50cachedinput,$8output per milliontokens.
 
-## Archive layout — all evidence is included
+## Direct report and analysis folders
+
+The required files are also directly browsable in this repository:
+
+- `output/{TICKER}/analysis/`: actual CSV/JSON/TXT financial inputs and agent text.
+- `output/{TICKER}/report/`: complete generated HTML and chart images.
+- `actual_runs/`: baseline, improved and repeated-input agent evidence.
+- `audit/`: data, forecast/valuation, grounding and stability CSV/JSON tables.
+- `code/`: reproducibility and evaluation scripts.
+
+| Company | Generated report | Analysis |
+| --- | --- | --- |
+| NVDA | [HTML](output/NVDA/report/Combined_Equity_Report_NVDA.html) | [Files](output/NVDA/analysis/) |
+| AMD | [HTML](output/AMD/report/Combined_Equity_Report_AMD.html) | [Files](output/AMD/analysis/) |
+| INTC | [HTML](output/INTC/report/Combined_Equity_Report_INTC.html) | [Files](output/INTC/analysis/) |
+| AAPL | [HTML](output/AAPL/report/Combined_Equity_Report_AAPL.html) | [Files](output/AAPL/analysis/) |
+| MSFT | [HTML](output/MSFT/report/Combined_Equity_Report_MSFT.html) | [Files](output/MSFT/analysis/) |
+| GOOGL | [HTML](output/GOOGL/report/Combined_Equity_Report_GOOGL.html) | [Files](output/GOOGL/analysis/) |
+
+## Supplemental archives — full raw evidence is included
 
 Large evidence folders are compressed to keep web-upload batches manageable. Extract once:
 

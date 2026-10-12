@@ -1,0 +1,1 @@
+Error fetching news for AMD: FMP HTTP 402: news/stock; credentials omitted

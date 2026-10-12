@@ -1,0 +1,26 @@
+{
+  "ticker": "MSFT",
+  "section": "tagline",
+  "model_requested": "gpt-4.1",
+  "system_instructions": "You are an equity research analyst specializing in creating compelling executive taglines. Given financial data for a company, create a 3-sentence professional tagline that summarizes the company's financial position and outlook. Focus on strong fundamentals and valuation. Do not mention company ticker, use only the company name. Do not include projections or forecasts. Do not mention other companies. Be concise and professional.",
+  "user_prompt": "Financial data for Microsoft Corporation (MSFT):\n\n## Microsoft Corporation Financial Metrics and Forecasts\n|    | metrics             | 2022A              | 2023A              | 2024A             | 2025A              | 2026A              | 2025E          | 2026E          | 2027E           | CAGR   |\n|---:|:--------------------|:-------------------|:-------------------|:------------------|:-------------------|:-------------------|:---------------|:---------------|:----------------|:-------|\n|  0 | Revenue             | 198270000000.0     | 211915000000.0     | 245122000000.0    | 281724000000.0     | 331839000000.0     | 348430950000.0 | 369336807000.0 | 384110279280.0  | 13.7%  |\n|  1 | Cost of Operations  | 62650000000.0      | 65863000000.0      | 74114000000.0     | 87831000000.0      | 106374000000.0     | 108362025450.0 | 111170378907.0 | 111776091270.48 | N/A    |\n|  2 | SG&A                | 27725000000.0      | 30334000000.0      | 32065000000.0     | 32877000000.0      | 34666000000.0      | 34494664050.0  | 34717659858.0  | 34185814855.92  | N/A    |\n|  3 | Contribution Profit | 135620000000.0     | 146052000000.0     | 171008000000.0    | 193893000000.0     | 225465000000.0     | 240068924550.0 | 258166428093.0 | 272334188009.52 | N/A    |\n|  4 | Contribution Margin | 68.4%              | 68.9%              | 69.8%             | 68.8%              | 67.9%              | 68.9%          | 69.9%          | 70.9%           | N/A    |\n|  5 | EBITDA              | 100239000000.0     | 105140000000.0     | 133009000000.0    | 160165000000.0     | 207519000000.0     | 205574260500.0 | 223448768235.0 | 238148373153.6  | N/A    |\n|  6 | EBITDA Margin       | 50.6%              | 49.6%              | 54.3%             | 56.9%              | 62.5%              | 59.0%          | 60.5%          | 62.0%           | N/A    |\n|  7 | SG&A Margin         | 14.0%              | 14.3%              | 13.1%             | 11.7%              | 10.4%              | 9.9%           | 9.4%           | 8.9%            | N/A    |\n|  8 | Revenue Growth      | N/A                | 6.9%               | 15.7%             | 14.9%              | 17.8%              | 5.0%           | 6.0%           | 4.0%            | N/A    |\n|  9 | EPS                 | 9.7                | 9.72               | 11.86             | 13.7               | 18.0               | 19.09          | 20.44          | 21.47           | N/A    |\n| 10 | PE Ratio            | 26.477319587628866 | 35.034979423868315 | 38.51011804384486 | 36.307299270072996 | 20.723333333333333 | 19.7           | 18.7           | 17.8            | N/A    |\n\n## Peer EBITDA Comparison\n|   year |          AAPL |          MSFT |          NVDA |\n|-------:|--------------:|--------------:|--------------:|\n|   2021 |   1.23136e+11 | nan           | nan           |\n|   2022 |   1.33138e+11 |   1.00239e+11 |   1.1351e+10  |\n|   2023 |   1.29188e+11 |   1.0514e+11  |   5.986e+09   |\n|   2024 |   1.3493e+11  |   1.33009e+11 |   3.5583e+10  |\n|   2025 |   1.44427e+11 |   1.60165e+11 |   8.6137e+10  |\n|   2026 | nan           |   2.07519e+11 |   1.44552e+11 |\n|   2027 |   1.50435e+11 |   2.49738e+11 |   3.82001e+11 |\n\n## Peer EV/EBITDA Comparison\n|   year |     AAPL |     MSFT |     NVDA |\n|-------:|---------:|---------:|---------:|\n|   2021 |  20.7521 | nan      | nan      |\n|   2022 |  19.1395 |  19.8492 |  54.7187 |\n|   2023 |  21.5928 |  24.5425 |  81.0476 |\n|   2024 |  26.564  |  26.1148 |  43.4522 |\n|   2025 |  26.9699 |  23.5956 |  33.7774 |\n|   2026 | nan      |  13.8736 |  31.4283 |\n\n",
+  "output": {
+    "tagline": "Microsoft Corporation demonstrates robust financial fundamentals, marked by strong revenue growth and expanding profit margins. With industry-leading EBITDA margins and disciplined operational efficiency, the company continues to deliver substantial shareholder value. Its valuation reflects a solid balance between growth prospects and prudent capital allocation, underpinned by sustained earnings strength."
+  },
+  "provider_usage": [
+    {
+      "requests": 1,
+      "input_tokens": 1518,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 64,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1582
+    }
+  ],
+  "model_responses": 1
+}
