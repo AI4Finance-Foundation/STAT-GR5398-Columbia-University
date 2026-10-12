@@ -53,17 +53,13 @@ completed human reviews are in [`hitl/hitl.json`](./hitl/hitl.json).
 
 ## LoRA Adapter
 
-Adapter configurations, manifests, training results, and Trainer states are located in
-[`finetuned_models/`](./finetuned_models/):
+The complete Qwen rank-8 LoRA adapter is located in
+[`lora_adapter_qwen_r8/`](./lora_adapter_qwen_r8/) and contains only:
 
-- `finetuned_models/qwen_baseline/`
-- `finetuned_models/llama_baseline/`
-- `finetuned_models/deepseek_baseline/`
-- `finetuned_models/qwen_r16/`
+- `adapter_config.json`
+- `adapter_model.safetensors`
 
-Adapter configurations, manifests, training results, and Trainer states are included. Adapter
-weight files are omitted because their combined size made the GitHub transfer unreliable. Full
-base-model weights, model caches, and checkpoint model weights are also excluded.
+No full base-model weights, model caches, or training checkpoints are included.
 
 ## Report 
 [PDF Report](./FinGPT_report.pdf)
