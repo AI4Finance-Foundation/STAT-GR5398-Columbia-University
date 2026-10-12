@@ -1,0 +1,19 @@
+只读覆盖核对： {"selection_rows": 174571, "selected_tickers": 418, "selection_nulls": 0, "selection_duplicate_keys": 0, "price_rows": 1275978, "price_tickers": 506, "backtest_price_rows": 608371, "backtest_price_tickers": 505, "overlap_selection_rows": 157891, "no_calendar_rows": 6045, "no_calendar_dates": 48, "missing_price_rows_on_calendar": 15601, "missing_price_tickers_on_calendar": 60, "tickers_absent_from_full_db": 62}
+全库缺失 ticker： AAL, ABMD, ALK, AMTM, ANSS, ANTM, ATVI, BIO, BRK.B, BWA, CDAY, CE, CMA, CTLT, CTXS, CXO, CZR, DXC, ENPH, ETSY, FBHS, FISV, FLIR, FLS, FLT, FMC, FRC, FTI, GPS, HBI, ILMN, IPGP, JNPR, KSS, KSU, LNC, MKTX, MRO, MXIM, NLOK, NLSN, OGN, PBCT, PKI, PXD, QRVO, RE, RHI, SBNY, SEE, SIVB, TFX, UNM, VNT, WHR, WLTW, WRK, WU, XLNX, XRAY, XRX, ZION
+库内快照 2025-10-16 成员 503 成员缺价 0 额外价格 ticker ['BRK', 'QQQ', 'SPY']
+库内快照 2025-10-17 成员 503 成员缺价 0 额外价格 ticker ['BRK', 'QQQ', 'SPY']
+标签核对： 21318 条；最大误差 4.99977066602264e-07 零标签 12
+ sector    quarter earliest_signal latest_validation_label_end  validation_labels_not_realized_at_signal
+     10 2020-06-30      2020-07-24                  2020-09-01                                        26
+     15 2020-09-30      2020-08-12                  2020-12-01                                        42
+     20 2020-06-30      2020-05-01                  2020-09-01                                       134
+     25 2020-06-30      2020-05-19                  2020-09-01                                       131
+     30 2020-06-30      2020-05-28                  2020-09-01                                        72
+     35 2020-06-30      2020-05-06                  2020-09-01                                       118
+     40 2020-06-30      2020-06-30                  2020-09-01                                        71
+     45 2020-06-30      2020-05-05                  2020-09-01                                       135
+     50 2020-06-30      2020-07-20                  2020-09-01                                        22
+     55 2021-03-31      2021-04-22                  2021-06-01                                        28
+     60 2020-06-30      2020-07-27                  2020-09-01                                        31
+模型获胜行业窗口数： {'xgb': 88, 'rf': 87, 'gbm': 63}
+暂停绩效结论：缺价未解决；信号时点验证标签尚未实现；未计算任何 NAV 或相对收益。
