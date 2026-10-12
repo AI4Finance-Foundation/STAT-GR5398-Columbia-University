@@ -125,13 +125,7 @@ These commands describe the original project layout and are **not guaranteed to 
 
 **Model and usage records:** The three-run NVDA stability test documents GPT-4.1-mini, temperature 0.7. The customized generator specifies temperature 0.7 and an output-token limit of 1000 per section; the exact model selected for each of the original five-company generation runs is not fully recoverable from submitted logs. Per-company wall-clock runtimes, complete token usage, exact API costs, and total spend were **not consistently recorded** and are not represented as zero.
 
-## 6. Limitations and Research Judgment
-
-These reports are **not yet decision-grade investment research**. Reproducible financial calculations are useful, but the observed grounding errors—in particular unsupported risk narratives, confused actual-versus-estimate periods, and incorrect peer-value attribution—make unverified LLM explanations unsuitable for direct portfolio-manager use. Greater trust would require deterministic metric provenance, atomic-claim checking, primary-source reconciliation, realistic valuation assumptions, independent review of qualitative claims, and broader held-out evaluation of the verifier.
-
-The verifier results demonstrate improvements on targeted regression cases; they do not establish generalization or a reduction in the original reports' measured Grounding Rate. All figures are research or teaching examples, **not investment advice**.
-
-## 7. Report and Published Article
+## 6. Report and Published Article
 
 - **Full research report:** [`research_report.pdf`](research_report.pdf) (editable version: [`research_report.md`](research_report.md))
 - **Five company HTML reports:** [`reports/`](reports/)
