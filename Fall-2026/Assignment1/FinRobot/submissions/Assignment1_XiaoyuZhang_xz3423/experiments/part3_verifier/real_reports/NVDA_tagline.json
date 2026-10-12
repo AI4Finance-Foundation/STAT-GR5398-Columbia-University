@@ -1,0 +1,28 @@
+{
+  "verifier_version": "0.2",
+  "units": "CSV in USD; claims converted to USD billions",
+  "years_available": [
+    "2022A",
+    "2023A",
+    "2024A",
+    "2025A",
+    "2026A",
+    "2027E",
+    "2028E",
+    "2029E"
+  ],
+  "findings": [
+    {
+      "rule": "EBITDA_VALUE_MISMATCH",
+      "status": "contradicted",
+      "evidence": "$215.9 billion by 2026A",
+      "reason": "Claimed EBITDA differs from NVDA CSV. Check company and metric attribution.",
+      "year": "2026A",
+      "claimed_billions": 215.9,
+      "csv_ebitda_billions": 144.552,
+      "difference_billions": 71.348
+    }
+  ],
+  "finding_count": 1,
+  "limitations": "Heuristic numeric screening. Company and metric attribution may require manual review."
+}

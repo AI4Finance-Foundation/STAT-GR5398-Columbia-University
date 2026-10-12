@@ -1,0 +1,1 @@
+Error fetching news for NVDA: 403 Client Error: Forbidden for url: https://financialmodelingprep.com/api/v3/stock_news?tickers=NVDA&from=2026-10-04&to=2026-10-09&limit=50&apikey=[REDACTED]
