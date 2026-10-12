@@ -30,6 +30,9 @@ The benchmark-fallback rule was developed after inspecting the cash-initialized 
 Assignment1_KevinMa_km4189/
 ├── README.md
 ├── requirements.txt
+├── prepare_data.py
+├── ml_model.py
+├── fundamental_run_model.py
 ├── Assignment1_Portfolio_Research.ipynb
 ├── 5398_Assignment_1.pdf
 ├── figures/                  # Five final report figures
@@ -61,37 +64,70 @@ The selected outputs in `results/` include:
 
 The optional intermediate `results/stock_selected.csv` is an input to the portfolio research extension. The full notebook generates additional diagnostic CSVs that are not all included in this compact submission.
 
-## Viewing and reproduction
+## Viewing and Reproducing the Results
 
-### Review the completed work (no data download required)
+### Review the completed research
 
-1. Open the PDF for methods, summary tables, and conclusions.
-2. Open the notebook to inspect code and its **saved outputs**. The independent research begins after the original separator labeled “Your own strategy and visulization can be built based on the above code.”
-3. See `figures/` for publication figures and `results/` for machine-readable evidence.
+The submitted notebook includes the code and saved outputs from the completed experiments. The PDF report summarizes the methodology, portfolio performance, robustness tests, and limitations.
 
-### Re-running the analysis (additional inputs required)
+The `figures/` and `results/` directories contain selected visualizations and machine-readable research outputs.
+
+### Reproduction from a clean clone
 
 **Environment:** Python 3.11 is recommended.
 
-```bash
-python -m pip install -r requirements.txt
+The notebook was developed and executed from the repository's `source_code/` directory. To reproduce the experiments, the submitted notebook and helper scripts should be copied into that directory, preserving the original working-directory structure.
+
+**Step 1 — Clone the repository and install dependencies.**
+
+From the repository root:
+
+```powershell
+python -m pip install -r submissions/Assignment1_KevinMa_km4189/requirements.txt
+```
+
+**Step 2 — Prepare the input data.**
+
+Use the original dataset files in the repository's `data/` directory. Extract `finrl_trading.7z` to obtain `finrl_trading.db` if it has not already been extracted.
+
+Copy the submitted notebook and helper scripts into `source_code/`:
+
+```powershell
+Copy-Item submissions/Assignment1_KevinMa_km4189/Assignment1_Portfolio_Research.ipynb source_code/
+
+Copy-Item submissions/Assignment1_KevinMa_km4189/*.py source_code/
+```
+
+**Step 3 — Run the data preparation pipeline.**
+
+From the repository root:
+
+```powershell
+cd source_code
+
+python prepare_data.py --db ../data/finrl_trading.db --fundamentals ../data/fundamental_data_full.csv --constituents ../data/sp500_historical_constituents.csv --output-dir ./prepared --start 2015-01-01 --end 2025-09-30 --trade-start 2020-09-30
+```
+
+This generates `prepared/final_ratios.csv`, eleven sector-specific Excel files, and `prepared/daily.csv`.
+
+**Step 4 — Execute the research notebook.**
+
+Remain inside `source_code/` and launch:
+
+```powershell
 jupyter notebook Assignment1_Portfolio_Research.ipynb
 ```
 
-Open Jupyter **from the directory containing the notebook**. Several cells use relative paths and assume that this directory is the working directory.
+Run the notebook's initial imports, but skip the original Section 1 preprocessing execution, which contains empty path placeholders for the alternative WRDS workflow. Its preprocessing functionality is replaced by `prepare_data.py`.
 
-This compact submission does **not** contain all raw data and helper scripts needed for a clean end-to-end run. The original workflow uses:
+Run Section 2 (stock selection) to regenerate the sector-level model predictions and `results/stock_selected.csv`. Then execute the portfolio construction, backtesting, and independent research cells in order.
 
-- `prepared/daily.csv` — adjusted daily stock prices;
-- `prepared/final_ratios.csv` and `prepared/sector{N}.xlsx` — processed fundamental data;
-- `results/stock_selected.csv` — historical ML-selected stock observations;
-- `results/sector{N}/` — original sector-by-sector prediction and model-selection CSVs;
-- `prepare_data.py`, `fundamental_run_model.py`, and `ml_model.py` — original data preparation/model helpers;
-- adjacent raw `data/` files for independent PIT reconstruction, including `fundamental_data_full.csv` and `sp500_historical_constituents.csv`.
+The original model-training stage may take substantial time. Some benchmark downloads use `yfinance` and require internet access.
 
-The original first-stage notebook contains **empty path placeholders** for its WRDS-style preprocessing route. To reproduce the reported study from source data, obtain the source files/scripts from the course's [FinRL-Trading repository](https://github.com/AI4Finance-Foundation/FinRL-Trading), prepare the inputs, complete the upstream model-selection run, and then execute the portfolio research cells **in notebook order**. Do not select **Run All** in an empty checkout and expect a clean run. Some benchmark-price retrieval uses `yfinance` and requires network access.
+**Important:** Relative paths are based on executing the notebook from `source_code/`. In particular, the point-in-time audit expects the original dataset under `../data/`.
 
-The five report figures were saved from the completed local research session. Figures 1 and 2 use verified numeric summaries rather than querying raw CSVs again in their plotting cells; the preceding diagnostic and strategy-comparison cells provide their underlying analyses. Figure 2's final formatting cell depends on the preceding Figure 2 plotting cell, while Figure 3's save step depends on the previously-created `fig` object.
+The raw dataset and generated `prepared/` files are intentionally excluded from the submission because they can be regenerated. The submitted `results/` files provide reference outputs from the completed research run.
+
 
 ## Methodological limitations
 
