@@ -1,0 +1,600 @@
+{
+  "protocol_version": "machine-adjudication-v1",
+  "run_id": "INTC_final_reasoning_v8_2",
+  "evidence_run_id": "INTC_baseline_1",
+  "raw_judge_audit": null,
+  "sections": {
+    "tagline": {
+      "source_sha256": "78a42676c25bd3a0fbe1ad08ff65f23de0b75bf59b88aaf2404a9fae67911f80",
+      "evidence_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef",
+      "units": [
+        {
+          "unit_id": 10,
+          "atoms": [
+            {
+              "claim": "Intel has strong fundamentals.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "The favorable fundamentals and market-state assertions are not established by these data; attractive entry is an investment opinion."
+            }
+          ],
+          "nonfactual_reason": ""
+        }
+      ]
+    },
+    "company_overview": {
+      "source_sha256": "2b96e6a7523a0340ce9d6d0e8a4a1747ab08e51b4a5c72f46e1cdeae242005ce",
+      "evidence_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef",
+      "units": [
+        {
+          "unit_id": 3,
+          "atoms": [
+            {
+              "claim": "Intel specializes in semiconductor manufacturing.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "The writer prompt contains financial/peer tables and one earnings-news excerpt; it supplies no evidence for this specific business, causal or risk proposition."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 4,
+          "atoms": [
+            {
+              "claim": "Intel specializes in computing innovation.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "The writer prompt contains financial/peer tables and one earnings-news excerpt; it supplies no evidence for this specific business, causal or risk proposition."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 14,
+          "atoms": [
+            {
+              "claim": "Intel has a broad product portfolio.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "The writer prompt contains financial/peer tables and one earnings-news excerpt; it supplies no evidence for this specific business, causal or risk proposition."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 34,
+          "atoms": [
+            {
+              "claim": "Intel aims to regain technological leadership.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "The writer prompt contains financial/peer tables and one earnings-news excerpt; it supplies no evidence for this specific business, causal or risk proposition."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 44,
+          "atoms": [
+            {
+              "claim": "Intel is investing heavily in new product development.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original writer tables and supplied short news excerpt do not establish this specific business, comparative or causal assertion.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 45,
+          "atoms": [
+            {
+              "claim": "Intel is investing heavily in capacity expansion.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original writer tables and supplied short news excerpt do not establish this specific business, comparative or causal assertion.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 58,
+          "atoms": [
+            {
+              "claim": "Pat Gelsinger returned to lead Intel in early 2021.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "unverifiable",
+              "evidence": [],
+              "reason": "The writer prompt contains financial/peer tables and one earnings-news excerpt; it supplies no evidence for this specific business, causal or risk proposition."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 83,
+          "atoms": [
+            {
+              "claim": "Intel faces intense competition.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "The writer prompt contains financial/peer tables and one earnings-news excerpt; it supplies no evidence for this specific business, causal or risk proposition."
+            }
+          ],
+          "nonfactual_reason": ""
+        }
+      ]
+    },
+    "investment_overview": {
+      "source_sha256": "3d533fa167b4215aa06396f4d78867a7e656c5afc7cc69aab1e72d733f57dd18",
+      "evidence_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef",
+      "units": [
+        {
+          "unit_id": 0,
+          "atoms": [],
+          "nonfactual_reason": "Investment-thesis status heading."
+        },
+        {
+          "unit_id": 1,
+          "atoms": [],
+          "nonfactual_reason": "Section heading."
+        },
+        {
+          "unit_id": 19,
+          "atoms": [],
+          "nonfactual_reason": "Section heading."
+        },
+        {
+          "unit_id": 26,
+          "atoms": [
+            {
+              "claim": "Intel reported non-GAAP EPS0.42.",
+              "claim_type": "quantitative",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 47
+                }
+              ],
+              "reason": "Line46 explicitly reports value."
+            },
+            {
+              "claim": "Positive non-GAAP EPS establishes improving underlying operations.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No previous-quarter/non-GAAP comparison or operating bridge appears in the prompt."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 36,
+          "atoms": [],
+          "nonfactual_reason": "Section heading."
+        },
+        {
+          "unit_id": 47,
+          "atoms": [
+            {
+              "claim": "Intel recent actual EPS has been negative.",
+              "classification": "Supported",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 4
+                },
+                {
+                  "line_start": 15,
+                  "line_end": 15
+                }
+              ],
+              "reason": "2024A EPS-4.38 and2025A EPS-0.0589; earlier actual years were positive.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            },
+            {
+              "claim": "Intel forecast EPS remains negative through2028.",
+              "classification": "Supported",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 4
+                },
+                {
+                  "line_start": 15,
+                  "line_end": 15
+                }
+              ],
+              "reason": "2026E=-0.06,2027E=-0.07,2028E=-0.07. The word outlook signals forecast status.",
+              "numeric_status": "correct",
+              "claim_type": "quantitative"
+            },
+            {
+              "claim": "Intel EPS outlook has historically been negative.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original writer tables and supplied short news excerpt do not establish this specific business, comparative or causal assertion.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            },
+            {
+              "claim": "GAAP losses temper investor enthusiasm.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original writer tables and supplied short news excerpt do not establish this specific business, comparative or causal assertion.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 56,
+          "atoms": [
+            {
+              "claim": "Intel faces ongoing headwinds.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Broad external headwinds not specified by the limited evidence; thesis review status is the writer opinion."
+            }
+          ],
+          "nonfactual_reason": ""
+        }
+      ]
+    },
+    "valuation_overview": {
+      "source_sha256": "600f102b47f9ca25f57d619051d85d97377b3e5eec66fc18b938bc3826fe86ea",
+      "evidence_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef",
+      "units": [
+        {
+          "unit_id": 21,
+          "atoms": [
+            {
+              "claim": "NVIDIA EV/EBITDA multiples remain consistently higher than Intel.",
+              "claim_type": "factual",
+              "classification": "Contradicted",
+              "numeric_status": "not_numeric",
+              "evidence": [
+                {
+                  "line_start": 30,
+                  "line_end": 36
+                }
+              ],
+              "reason": "2024 NVDA43.4522 is lower thanINTC106.938; the unqualified persistence claim has a counterexample."
+            },
+            {
+              "claim": "NVIDIA higher multiples reflect stronger growth prospects.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "The writer prompt contains financial/peer tables and one earnings-news excerpt; it supplies no evidence for this specific business, causal or risk proposition."
+            },
+            {
+              "claim": "NVIDIA higher multiples reflect better profitability metrics.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "The writer prompt contains financial/peer tables and one earnings-news excerpt; it supplies no evidence for this specific business, causal or risk proposition."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 24,
+          "atoms": [
+            {
+              "claim": "AMD EV/EBITDA multiples are generally higher than Intel.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "not_numeric",
+              "evidence": [
+                {
+                  "line_start": 30,
+                  "line_end": 36
+                }
+              ],
+              "reason": "AMD higher in4 of5 shared years;2024 exception prevents always but permits generally."
+            },
+            {
+              "claim": "AMD higher multiples reflect market recognition of its improving competitive position.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "The writer prompt contains financial/peer tables and one earnings-news excerpt; it supplies no evidence for this specific business, causal or risk proposition."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 27,
+          "atoms": [
+            {
+              "claim": "Intel latest actual earnings are low to negative.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "not_numeric",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 4
+                },
+                {
+                  "line_start": 15,
+                  "line_end": 15
+                }
+              ],
+              "reason": "Actual EPS2024/2025 negative."
+            },
+            {
+              "claim": "Intel actual margins are lower than earlier actual years.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "not_numeric",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 4
+                },
+                {
+                  "line_start": 12,
+                  "line_end": 12
+                }
+              ],
+              "reason": "2025A27.2% below2021A42.9%."
+            },
+            {
+              "claim": "Intel earnings and margins explain its valuation discount to peers.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "A valuation causal decomposition is absent."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 53,
+          "atoms": [
+            {
+              "claim": "Intel faces fundamental challenges in its competitive environment.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Reasonable valuation is opinion; the competitive premise is not evidenced by peer selection alone."
+            }
+          ],
+          "nonfactual_reason": ""
+        }
+      ]
+    },
+    "risks": {
+      "source_sha256": "ab20382e1fc4da8863c3d167ca6c45682646186e2cb3f4b18ccdefc0377eccb3",
+      "evidence_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef",
+      "units": [
+        {
+          "unit_id": 31,
+          "atoms": [
+            {
+              "claim": "Intel profitability is under pressure.",
+              "classification": "Supported",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 4
+                },
+                {
+                  "line_start": 15,
+                  "line_end": 15
+                },
+                {
+                  "line_start": 4,
+                  "line_end": 4
+                },
+                {
+                  "line_start": 10,
+                  "line_end": 10
+                },
+                {
+                  "line_start": 4,
+                  "line_end": 4
+                },
+                {
+                  "line_start": 12,
+                  "line_end": 12
+                }
+              ],
+              "reason": "Recent actual EPS is negative and both margins remain below2021A; this limited financial characterization does not identify causes.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 46,
+          "atoms": [
+            {
+              "claim": "Intel operates in politically sensitive jurisdictions.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "The writer prompt contains financial/peer tables and one earnings-news excerpt; it supplies no evidence for this specific business, causal or risk proposition."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 62,
+          "atoms": [
+            {
+              "claim": "Intel has a strong brand.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No brand evidence or resource/capital data in the writer prompt; risk-management recommendations are normative."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 63,
+          "atoms": [
+            {
+              "claim": "Intel has significant resources.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No brand evidence or resource/capital data in the writer prompt; risk-management recommendations are normative."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 68,
+          "atoms": [
+            {
+              "claim": "An evolving regulatory landscape threatens disruption to Intel.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No regulation/impact evidence accompanies this normative recommendation."
+            }
+          ],
+          "nonfactual_reason": ""
+        }
+      ]
+    },
+    "competitor_analysis": {
+      "source_sha256": "b439eb542b9b16dae3b31f582eb71510985f4a26dbb0245da0a5b2dd6f206254",
+      "evidence_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef",
+      "units": [
+        {
+          "unit_id": 1,
+          "atoms": [
+            {
+              "claim": "The semiconductor industry is highly competitive.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "The writer prompt contains financial/peer tables and one earnings-news excerpt; it supplies no evidence for this specific business, causal or risk proposition."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 21,
+          "atoms": [
+            {
+              "claim": "AMD has a strong product portfolio.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "The writer prompt contains financial/peer tables and one earnings-news excerpt; it supplies no evidence for this specific business, causal or risk proposition."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 53,
+          "atoms": [
+            {
+              "claim": "TSMC manufactures chips for AMD.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "The writer prompt contains financial/peer tables and one earnings-news excerpt; it supplies no evidence for this specific business, causal or risk proposition."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 54,
+          "atoms": [
+            {
+              "claim": "TSMC manufactures chips for NVIDIA.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "The writer prompt contains financial/peer tables and one earnings-news excerpt; it supplies no evidence for this specific business, causal or risk proposition."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 69,
+          "atoms": [
+            {
+              "claim": "Intel benefits from brand recognition.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "The writer prompt contains financial/peer tables and one earnings-news excerpt; it supplies no evidence for this specific business, causal or risk proposition."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 70,
+          "atoms": [
+            {
+              "claim": "Intel benefits from proprietary technology.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "The writer prompt contains financial/peer tables and one earnings-news excerpt; it supplies no evidence for this specific business, causal or risk proposition."
+            }
+          ],
+          "nonfactual_reason": ""
+        }
+      ]
+    },
+    "major_takeaways": {
+      "source_sha256": "dc6f873b1fafc6ba030773cda1e82e5871652d328c64b800f8155f8beefcecbc",
+      "evidence_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef",
+      "units": []
+    },
+    "news_summary": {
+      "source_sha256": "869da884001c730c91601f831f18a097b461fb8c6b40fcd3c721efda9be489f9",
+      "evidence_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef",
+      "units": []
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "input_sources": {
+    "analysis": {
+      "path": "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\snapshots\\AAPL\\analysis\\financial_metrics_and_forecasts.csv",
+      "sha256": "ccbb7b1ff327b9a2c032bb19b1a8a4ba9e274523146fa2bdc048a8e399e387d7"
+    },
+    "valuation_inputs": {
+      "path": "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\snapshots\\AAPL\\valuation_inputs.json",
+      "sha256": "5549408f6aa8ae79ee866c7b7d3c00adb1d551836dceb0fa8b706cc7989898ef"
+    },
+    "key_metrics": {
+      "path": "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\snapshots\\AAPL\\analysis\\key_metrics_raw_data.csv",
+      "sha256": "4d884d143ccec8d9b34dfd3924cce90e44b9c5adae7e39bd669bbc2896d11e03"
+    }
+  },
+  "independent_results": {
+    "EV/EBITDA": {
+      "enterprise_value": 4964382417498.307,
+      "assumed_net_debt": 496438241749.8307,
+      "equity_value": 4467944175748.476,
+      "target_price": 306.14561254887053,
+      "low_estimate": 253.65683997114755,
+      "high_estimate": 358.6343851265936
+    },
+    "DCF": {
+      "assumptions": {
+        "growth_rate_1_5": 0.1,
+        "growth_rate_6_10": 0.05,
+        "terminal_growth": 0.025,
+        "wacc": 0.1,
+        "projection_years": 10
+      },
+      "cash_flows": [
+        {
+          "horizon": 1,
+          "growth": 0.1,
+          "fcf": 108643700000.00002,
+          "present_value": 98767000000.0
+        },
+        {
+          "horizon": 2,
+          "growth": 0.1,
+          "fcf": 119508070000.00003,
+          "present_value": 98767000000.00002
+        },
+        {
+          "horizon": 3,
+          "growth": 0.1,
+          "fcf": 131458877000.00005,
+          "present_value": 98767000000.0
+        },
+        {
+          "horizon": 4,
+          "growth": 0.1,
+          "fcf": 144604764700.00006,
+          "present_value": 98767000000.00002
+        },
+        {
+          "horizon": 5,
+          "growth": 0.1,
+          "fcf": 159065241170.0001,
+          "present_value": 98767000000.00003
+        },
+        {
+          "horizon": 6,
+          "growth": 0.05,
+          "fcf": 167018503228.5001,
+          "present_value": 94277590909.09091
+        },
+        {
+          "horizon": 7,
+          "growth": 0.05,
+          "fcf": 175369428389.9251,
+          "present_value": 89992245867.7686
+        },
+        {
+          "horizon": 8,
+          "growth": 0.05,
+          "fcf": 184137899809.4214,
+          "present_value": 85901689237.41548
+        },
+        {
+          "horizon": 9,
+          "growth": 0.05,
+          "fcf": 193344794799.89246,
+          "present_value": 81997066999.35114
+        },
+        {
+          "horizon": 10,
+          "growth": 0.05,
+          "fcf": 203012034539.8871,
+          "present_value": 78269927590.28972
+        }
+      ],
+      "base_fcf": 98767000000.0,
+      "pv_explicit_fcf": 924273520603.9159,
+      "terminal_value": 2774497805378.456,
+      "pv_terminal": 1069689010400.6257,
+      "enterprise_value": 1993962531004.5415,
+      "assumed_net_debt": 199396253100.45416,
+      "equity_value": 1794566277904.0874,
+      "target_price": 122.96451584837843,
+      "low_estimate": 116.62267636493284,
+      "high_estimate": 129.973395161886,
+      "fcf_source": "caller free_cash_flow",
+      "fcf_period": "2025-09-27 00:00:00"
+    }
+  }
+}

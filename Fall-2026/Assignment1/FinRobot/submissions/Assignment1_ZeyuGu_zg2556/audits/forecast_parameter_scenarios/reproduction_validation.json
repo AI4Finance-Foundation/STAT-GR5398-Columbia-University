@@ -1,0 +1,214 @@
+{
+  "status": "PASS",
+  "scientific_artifact_files_byte_identical": 33,
+  "exclusions": {
+    "manifest.json": "Actual upstream path and runtime differ; source comparison records raw-byte or CRLF-to-LF-only identity",
+    "runtime_cost.csv": "Measured elapsed runtime is not deterministic"
+  },
+  "original_manifest_sha256": "743f4d9becaf726d1aff76ffb4c72624dcba22b177ef06b8db0cfef17f59b94f",
+  "replay_manifest_sha256": "b23d8fbc643ff297b5f25d8bb96f9bf50a3e10f745b79dce5efdd400f595e435",
+  "driver_sha256": "ccd9a0ced02b2d27f35abbed303a3a614c11c80648fc239a5861fce054a69130",
+  "tests_source_sha256": "b29aeb0f86b7fc02023e8aa97911b08ac24d2f40268e907a30314855b1d8a2d1",
+  "tests_log_sha256": "3abc7febbd3129939af644b162d5c96a5020088e2e9771757eac1f75b90c9417",
+  "unit_tests_passed": 6,
+  "comparisons": [
+    {
+      "path": "AMD/analyst_deceleration/engine_ev_ebitda.json",
+      "sha256": "8cdfe012934937187d8bfc2ed78df8b5c84afbf5d1f87b24187a54f2f9dcbe78",
+      "replay_sha256": "8cdfe012934937187d8bfc2ed78df8b5c84afbf5d1f87b24187a54f2f9dcbe78",
+      "byte_identical": true
+    },
+    {
+      "path": "AMD/analyst_deceleration/financial_metrics_and_forecasts.csv",
+      "sha256": "61e4f2041cf4e92019ef55634f3e993864a9f139842b6541303d5b84baa3a704",
+      "replay_sha256": "61e4f2041cf4e92019ef55634f3e993864a9f139842b6541303d5b84baa3a704",
+      "byte_identical": true
+    },
+    {
+      "path": "AMD/analyst_deceleration/forecast_config.json",
+      "sha256": "b79f7a8723002b37282281a618f9db2240fb4d8376298f3330c6555a5eac7492",
+      "replay_sha256": "b79f7a8723002b37282281a618f9db2240fb4d8376298f3330c6555a5eac7492",
+      "byte_identical": true
+    },
+    {
+      "path": "AMD/analyst_deceleration/historical_metrics.csv",
+      "sha256": "51ae475ac5c61c205b355f8e1aa6c4a4a0e23eed784ea2a4444ed4b6d31c1c1c",
+      "replay_sha256": "51ae475ac5c61c205b355f8e1aa6c4a4a0e23eed784ea2a4444ed4b6d31c1c1c",
+      "byte_identical": true
+    },
+    {
+      "path": "AMD/analyst_deceleration/independent_ev_ebitda.json",
+      "sha256": "6f0d95928e5c0afa29355bf83bfbb3dce90d359f3452d69a1489d33569c59e2a",
+      "replay_sha256": "6f0d95928e5c0afa29355bf83bfbb3dce90d359f3452d69a1489d33569c59e2a",
+      "byte_identical": true
+    },
+    {
+      "path": "AMD/analyst_deceleration/independent_forecast_check.csv",
+      "sha256": "7ab2a200e2fbbc515885f54cf9802cafb15f6a90d81a8a5e388cdb5f8214b7a3",
+      "replay_sha256": "7ab2a200e2fbbc515885f54cf9802cafb15f6a90d81a8a5e388cdb5f8214b7a3",
+      "byte_identical": true
+    },
+    {
+      "path": "AMD/default_replay/engine_ev_ebitda.json",
+      "sha256": "7ba706fc3d6764e57090475760d22d910b8bef0b9875784088001403776b3e04",
+      "replay_sha256": "7ba706fc3d6764e57090475760d22d910b8bef0b9875784088001403776b3e04",
+      "byte_identical": true
+    },
+    {
+      "path": "AMD/default_replay/financial_metrics_and_forecasts.csv",
+      "sha256": "d7756b4b6a8907583c2fa281bf420873e71bb5a0f03be53b02cd092fca3737a4",
+      "replay_sha256": "d7756b4b6a8907583c2fa281bf420873e71bb5a0f03be53b02cd092fca3737a4",
+      "byte_identical": true
+    },
+    {
+      "path": "AMD/default_replay/forecast_config.json",
+      "sha256": "178a25f419f46199f65b51a4a47c6248dd8061760f7c94be763088068cf80145",
+      "replay_sha256": "178a25f419f46199f65b51a4a47c6248dd8061760f7c94be763088068cf80145",
+      "byte_identical": true
+    },
+    {
+      "path": "AMD/default_replay/historical_metrics.csv",
+      "sha256": "51ae475ac5c61c205b355f8e1aa6c4a4a0e23eed784ea2a4444ed4b6d31c1c1c",
+      "replay_sha256": "51ae475ac5c61c205b355f8e1aa6c4a4a0e23eed784ea2a4444ed4b6d31c1c1c",
+      "byte_identical": true
+    },
+    {
+      "path": "AMD/default_replay/independent_ev_ebitda.json",
+      "sha256": "fe5fa5b36f80c3f8d44271448d8a958e7590035a1e1b16f9e6d4617074d98ca5",
+      "replay_sha256": "fe5fa5b36f80c3f8d44271448d8a958e7590035a1e1b16f9e6d4617074d98ca5",
+      "byte_identical": true
+    },
+    {
+      "path": "AMD/default_replay/independent_forecast_check.csv",
+      "sha256": "ced41daf707a7d3118d1129885ef6849a6b6abffda45b660d559ae04eafa5975",
+      "replay_sha256": "ced41daf707a7d3118d1129885ef6849a6b6abffda45b660d559ae04eafa5975",
+      "byte_identical": true
+    },
+    {
+      "path": "baseline_cell_reconciliation.csv",
+      "sha256": "da3cbe4356819f0fe87ff6b66edf649273d60e944925304f4578fa4952340599",
+      "replay_sha256": "da3cbe4356819f0fe87ff6b66edf649273d60e944925304f4578fa4952340599",
+      "byte_identical": true
+    },
+    {
+      "path": "definition_caveats.csv",
+      "sha256": "74c3fe6240945b4e0a8e431b8b06fa3fc70452c0f957e963cc3858b74337687a",
+      "replay_sha256": "74c3fe6240945b4e0a8e431b8b06fa3fc70452c0f957e963cc3858b74337687a",
+      "byte_identical": true
+    },
+    {
+      "path": "execution.log",
+      "sha256": "9fdaefc8f6ac2ef741398178ce00c06b7be7a8a9700bd91d606048f74a9a59c9",
+      "replay_sha256": "9fdaefc8f6ac2ef741398178ce00c06b7be7a8a9700bd91d606048f74a9a59c9",
+      "byte_identical": true
+    },
+    {
+      "path": "forecast_comparison.csv",
+      "sha256": "7e00176d2e66b80b441d45125db4d2d94cfff43e77701ba104786140af785508",
+      "replay_sha256": "7e00176d2e66b80b441d45125db4d2d94cfff43e77701ba104786140af785508",
+      "byte_identical": true
+    },
+    {
+      "path": "independent_arithmetic_reconciliation.csv",
+      "sha256": "9a9a817d33e47f22927b4a8051a362a35b0da600701cb34ebb5b37eead80607f",
+      "replay_sha256": "9a9a817d33e47f22927b4a8051a362a35b0da600701cb34ebb5b37eead80607f",
+      "byte_identical": true
+    },
+    {
+      "path": "input_hashes.json",
+      "sha256": "d6974e9309f363895028033f08879017fabc45b3ffcf44221726701f64b5a1ba",
+      "replay_sha256": "d6974e9309f363895028033f08879017fabc45b3ffcf44221726701f64b5a1ba",
+      "byte_identical": true
+    },
+    {
+      "path": "network_guard.json",
+      "sha256": "c802106d86c0fc42c284a9b4314432f144685a2af3d7c7763785941204c48e75",
+      "replay_sha256": "c802106d86c0fc42c284a9b4314432f144685a2af3d7c7763785941204c48e75",
+      "byte_identical": true
+    },
+    {
+      "path": "NVDA/analyst_deceleration/engine_ev_ebitda.json",
+      "sha256": "5b5049290993a150aa2e7a01d2d5ec0eb0ec1c5f765fec0091aac90509b9f5de",
+      "replay_sha256": "5b5049290993a150aa2e7a01d2d5ec0eb0ec1c5f765fec0091aac90509b9f5de",
+      "byte_identical": true
+    },
+    {
+      "path": "NVDA/analyst_deceleration/financial_metrics_and_forecasts.csv",
+      "sha256": "3721d4a5db3bb3e7cdbd5b978955b0fa5aa8e7334be0aed871e838bea66100ad",
+      "replay_sha256": "3721d4a5db3bb3e7cdbd5b978955b0fa5aa8e7334be0aed871e838bea66100ad",
+      "byte_identical": true
+    },
+    {
+      "path": "NVDA/analyst_deceleration/forecast_config.json",
+      "sha256": "68d02ff876a6883970ed0fa6fa20c7403143d6d2be2de83758326ae54b4b7be6",
+      "replay_sha256": "68d02ff876a6883970ed0fa6fa20c7403143d6d2be2de83758326ae54b4b7be6",
+      "byte_identical": true
+    },
+    {
+      "path": "NVDA/analyst_deceleration/historical_metrics.csv",
+      "sha256": "d4e39a2483a3becae767b5147e68d51cd949fa0295d4a3113a3397345f305ba4",
+      "replay_sha256": "d4e39a2483a3becae767b5147e68d51cd949fa0295d4a3113a3397345f305ba4",
+      "byte_identical": true
+    },
+    {
+      "path": "NVDA/analyst_deceleration/independent_ev_ebitda.json",
+      "sha256": "ba5bf9be1dc21ada5cbfa812705e0fc3bbbb2389bed4b47ca185f094ba0af6d4",
+      "replay_sha256": "ba5bf9be1dc21ada5cbfa812705e0fc3bbbb2389bed4b47ca185f094ba0af6d4",
+      "byte_identical": true
+    },
+    {
+      "path": "NVDA/analyst_deceleration/independent_forecast_check.csv",
+      "sha256": "50953707e96105b107c0df5b1c81f0d6b763f82a73c0d13cac1cecb00fd1ba0f",
+      "replay_sha256": "50953707e96105b107c0df5b1c81f0d6b763f82a73c0d13cac1cecb00fd1ba0f",
+      "byte_identical": true
+    },
+    {
+      "path": "NVDA/default_replay/engine_ev_ebitda.json",
+      "sha256": "d4b56a2b6b8adbb728eb6d1a9a311ccd8e13344eb1d1ebddc25b005d1d03bf7b",
+      "replay_sha256": "d4b56a2b6b8adbb728eb6d1a9a311ccd8e13344eb1d1ebddc25b005d1d03bf7b",
+      "byte_identical": true
+    },
+    {
+      "path": "NVDA/default_replay/financial_metrics_and_forecasts.csv",
+      "sha256": "df8090cc55e257bc6c123576ed63fdd5394f564216c39968518aeddf09932e7f",
+      "replay_sha256": "df8090cc55e257bc6c123576ed63fdd5394f564216c39968518aeddf09932e7f",
+      "byte_identical": true
+    },
+    {
+      "path": "NVDA/default_replay/forecast_config.json",
+      "sha256": "8337d3a7ca05e4e6c92f74e54560c66dc28301161ea56bc110fc1bcec8579d87",
+      "replay_sha256": "8337d3a7ca05e4e6c92f74e54560c66dc28301161ea56bc110fc1bcec8579d87",
+      "byte_identical": true
+    },
+    {
+      "path": "NVDA/default_replay/historical_metrics.csv",
+      "sha256": "d4e39a2483a3becae767b5147e68d51cd949fa0295d4a3113a3397345f305ba4",
+      "replay_sha256": "d4e39a2483a3becae767b5147e68d51cd949fa0295d4a3113a3397345f305ba4",
+      "byte_identical": true
+    },
+    {
+      "path": "NVDA/default_replay/independent_ev_ebitda.json",
+      "sha256": "9024921d70e355a9a7aa7ed8fc706b50998a1b43588e69bbe1e0c4ce881d8d67",
+      "replay_sha256": "9024921d70e355a9a7aa7ed8fc706b50998a1b43588e69bbe1e0c4ce881d8d67",
+      "byte_identical": true
+    },
+    {
+      "path": "NVDA/default_replay/independent_forecast_check.csv",
+      "sha256": "6b31fe0884d98535459835d890a14fa0fe513c3d376bfbfac22b480d06706ab4",
+      "replay_sha256": "6b31fe0884d98535459835d890a14fa0fe513c3d376bfbfac22b480d06706ab4",
+      "byte_identical": true
+    },
+    {
+      "path": "preserved_experiment_hashes.json",
+      "sha256": "488a1faac09ebb2e25bb3bc94b7e542eafb90ed6c84c02a6d9f93595eb05214c",
+      "replay_sha256": "488a1faac09ebb2e25bb3bc94b7e542eafb90ed6c84c02a6d9f93595eb05214c",
+      "byte_identical": true
+    },
+    {
+      "path": "target_price_comparison.csv",
+      "sha256": "877f8c0db9194a6745cde0c2297ff19e49e2423d1024b831fc5a0e0e12822436",
+      "replay_sha256": "877f8c0db9194a6745cde0c2297ff19e49e2423d1024b831fc5a0e0e12822436",
+      "byte_identical": true
+    }
+  ]
+}

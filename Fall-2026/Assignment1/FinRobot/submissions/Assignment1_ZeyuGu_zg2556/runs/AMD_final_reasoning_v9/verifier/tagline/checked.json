@@ -1,0 +1,1316 @@
+{
+  "original_text": "Advanced Micro Devices, Inc. demonstrates robust revenue growth with a compound annual growth rate exceeding 20%, supported by expanding contribution margins reaching over 50%. The company maintains strong EBITDA margins, projected to rise to over 40%, reflecting efficient operational management despite increasing SG&A expenses. Valuation metrics indicate a premium positioning, underscoring confidence in AMD's solid financial fundamentals and market presence.",
+  "revised_text": "The supplied Revenue CAGR cell is 20.5%; the 2021A to 2025A actual endpoints imply 20.49% CAGR. Across the table's 2021A to 2028E endpoints, the implied Revenue CAGR is 13.59%; 2028E is a model forecast.\n\n[UNVERIFIED - evidence not supplied] AMD demonstrates robust revenue growth.\n\nAMD contribution margin is forecast at 50.5% in 2026E, 51.5% in 2027E, and 52.5% in 2028E.\n\n[UNVERIFIED - evidence not supplied] AMD's revenue growth is supported by expanding contribution margins.\n\n[UNVERIFIED - evidence not supplied] AMD maintains strong EBITDA margins.\n\nAMD EBITDA margin is forecast at 40.5% in 2027E and 42.0% in 2028E.\n\n[UNVERIFIED - evidence not supplied] AMD's EBITDA margins reflect efficient operational management.\n\nAMD SG&A is forecast at 4240852770.0 in 2027E and 4210010204.4 in 2028E.\n\n[UNVERIFIED - evidence not supplied] AMD has efficient operational management despite increasing SG&A expenses.\n\n[UNVERIFIED - evidence not supplied] AMD's valuation metrics indicate a premium positioning.\n\n[UNVERIFIED - evidence not supplied] AMD has solid financial fundamentals.\n\n[UNVERIFIED - evidence not supplied] AMD has market presence.\n\n[UNVERIFIED - evidence not supplied] AMD's valuation metrics underscore confidence in AMD's solid financial fundamentals.\n\n[UNVERIFIED - evidence not supplied] AMD's valuation metrics underscore confidence in AMD's market presence.",
+  "claims": [
+    {
+      "claim_id": "u0c0",
+      "source_id": 0,
+      "source_start": 0,
+      "source_end": 113,
+      "source_quote_occurrences": 1,
+      "original_quote": "Advanced Micro Devices, Inc. demonstrates robust revenue growth with a compound annual growth rate exceeding 20%,",
+      "claim": "AMD has a compound annual growth rate exceeding 20%.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 6,
+          "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The revenue row shows a CAGR of 20.5%. The threshold wording should be corrected to the directly evidenced value and period shown in the table.",
+      "action": "correct",
+      "revised_claim": "AMD revenue CAGR is 20.5% in the table from 2021A to 2028E.",
+      "number_bindings": [
+        {
+          "claim_number": "20.5%",
+          "evidence_line": 6,
+          "evidence_number": "20.5%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2021A",
+          "evidence_line": 4,
+          "evidence_number": "2021A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028E",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "20.5%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2021",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [
+        {
+          "original_binding": {
+            "claim_number": "2021A",
+            "evidence_line": 4,
+            "evidence_number": "2021A",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2021",
+            "evidence_line": 4,
+            "evidence_number": "2021",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+        },
+        {
+          "original_binding": {
+            "claim_number": "2028E",
+            "evidence_line": 4,
+            "evidence_number": "2028E",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2028",
+            "evidence_line": 4,
+            "evidence_number": "2028",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+        }
+      ],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "The supplied Revenue CAGR cell is 20.5%; the 2021A to 2025A actual endpoints imply 20.49% CAGR. Across the table's 2021A to 2028E endpoints, the implied Revenue CAGR is 13.59%; 2028E is a model forecast.",
+      "release_text_source": "original_prompt_endpoints_deterministic_clarification",
+      "verification_status": "deterministic_horizon_clarified",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "pre_semantic_guard_release": {
+        "released_text": "AMD revenue CAGR is 20.5% in the table from 2021A to 2028E.",
+        "retained_as_verified": true,
+        "verification_status": "machine_checked",
+        "release_text_source": "revised_claim"
+      },
+      "semantic_horizon_check": {
+        "rule": "displayed_revenue_cagr_and_table_extent_clarification",
+        "original_released_text": "AMD revenue CAGR is 20.5% in the table from 2021A to 2028E.",
+        "revised_released_text": "The supplied Revenue CAGR cell is 20.5%; the 2021A to 2025A actual endpoints imply 20.49% CAGR. Across the table's 2021A to 2028E endpoints, the implied Revenue CAGR is 13.59%; 2028E is a model forecast.",
+        "original_semantic_verdict": "Not inferred by this rule; table extent may be ambiguous.",
+        "company": "Advanced Micro Devices, Inc.",
+        "ticker": "AMD",
+        "displayed_cell": "20.5%",
+        "historical_calculation": {
+          "start": "2021A",
+          "end": "2025A",
+          "start_value": "16434000000.0",
+          "end_value": "34639000000.0",
+          "year_intervals": 4,
+          "percent": "20.4912516451710281425241385541148270",
+          "display_percent": "20.49",
+          "formula": "100 * ((end_value / start_value) ** (1 / year_intervals) - 1)",
+          "contains_forecast_endpoint": false
+        },
+        "table_endpoint_calculation": {
+          "start": "2021A",
+          "end": "2028E",
+          "start_value": "16434000000.0",
+          "end_value": "40095335280.0",
+          "year_intervals": 7,
+          "percent": "13.5888742161967996235759731398560310",
+          "display_percent": "13.59",
+          "formula": "100 * ((end_value / start_value) ** (1 / year_intervals) - 1)",
+          "contains_forecast_endpoint": true
+        },
+        "evidence": [
+          {
+            "line_number": 4,
+            "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+          },
+          {
+            "line_number": 6,
+            "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+          }
+        ],
+        "limitations": "A narrow deterministic clarification, not general semantic validation. The development cohort informed this rule. No held-out claim."
+      }
+    },
+    {
+      "claim_id": "u0c1",
+      "source_id": 0,
+      "source_start": 0,
+      "source_end": 113,
+      "source_quote_occurrences": 1,
+      "original_quote": "Advanced Micro Devices, Inc. demonstrates robust revenue growth with a compound annual growth rate exceeding 20%,",
+      "claim": "AMD demonstrates robust revenue growth.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The table provides revenue values and a CAGR, but 'robust' is a qualitative characterization not directly established by supplied evidence.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] AMD demonstrates robust revenue growth.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u0c2",
+      "source_id": 0,
+      "source_start": 114,
+      "source_end": 176,
+      "source_quote_occurrences": 1,
+      "original_quote": "supported by expanding contribution margins reaching over 50%.",
+      "claim": "AMD's contribution margins are expanding.",
+      "classification": "Contradicted",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 10,
+          "quote": "|  4 | Contribution Margin | 48.2%             | 44.9%         | 46.1%             | 49.4%              | 49.5%             | 50.5%         | 51.5%         | 52.5%         | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The contribution margin series is not consistently expanding because it declines from 48.2% in 2021A to 44.9% in 2022A before rising later. A specific corrected statement should use the directly evidenced forecast values above 50%.",
+      "action": "correct",
+      "revised_claim": "AMD contribution margin is forecast at 50.5% in 2026E, 51.5% in 2027E, and 52.5% in 2028E.",
+      "number_bindings": [
+        {
+          "claim_number": "50.5%",
+          "evidence_line": 10,
+          "evidence_number": "50.5%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2026E",
+          "evidence_line": 4,
+          "evidence_number": "2026E",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "51.5%",
+          "evidence_line": 10,
+          "evidence_number": "51.5%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2027E",
+          "evidence_line": 4,
+          "evidence_number": "2027E",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "52.5%",
+          "evidence_line": 10,
+          "evidence_number": "52.5%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028E",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "50.5%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2026",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "51.5%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2027",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "52.5%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [
+        {
+          "original_binding": {
+            "claim_number": "2026E",
+            "evidence_line": 4,
+            "evidence_number": "2026E",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2026",
+            "evidence_line": 4,
+            "evidence_number": "2026",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+        },
+        {
+          "original_binding": {
+            "claim_number": "2027E",
+            "evidence_line": 4,
+            "evidence_number": "2027E",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2027",
+            "evidence_line": 4,
+            "evidence_number": "2027",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+        },
+        {
+          "original_binding": {
+            "claim_number": "2028E",
+            "evidence_line": 4,
+            "evidence_number": "2028E",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2028",
+            "evidence_line": 4,
+            "evidence_number": "2028",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+        }
+      ],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "AMD contribution margin is forecast at 50.5% in 2026E, 51.5% in 2027E, and 52.5% in 2028E.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u0c3",
+      "source_id": 0,
+      "source_start": 114,
+      "source_end": 176,
+      "source_quote_occurrences": 1,
+      "original_quote": "supported by expanding contribution margins reaching over 50%.",
+      "claim": "AMD's contribution margins reach over 50%.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 10,
+          "quote": "|  4 | Contribution Margin | 48.2%             | 44.9%         | 46.1%             | 49.4%              | 49.5%             | 50.5%         | 51.5%         | 52.5%         | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The contribution margin row shows forecast values above 50%. The threshold wording should be corrected to the directly evidenced forecast values.",
+      "action": "correct",
+      "revised_claim": "AMD contribution margin is forecast at 50.5% in 2026E, 51.5% in 2027E, and 52.5% in 2028E.",
+      "number_bindings": [
+        {
+          "claim_number": "50.5%",
+          "evidence_line": 10,
+          "evidence_number": "50.5%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2026E",
+          "evidence_line": 4,
+          "evidence_number": "2026E",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "51.5%",
+          "evidence_line": 10,
+          "evidence_number": "51.5%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2027E",
+          "evidence_line": 4,
+          "evidence_number": "2027E",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "52.5%",
+          "evidence_line": 10,
+          "evidence_number": "52.5%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028E",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "50.5%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2026",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "51.5%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2027",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "52.5%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [
+        {
+          "original_binding": {
+            "claim_number": "2026E",
+            "evidence_line": 4,
+            "evidence_number": "2026E",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2026",
+            "evidence_line": 4,
+            "evidence_number": "2026",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+        },
+        {
+          "original_binding": {
+            "claim_number": "2027E",
+            "evidence_line": 4,
+            "evidence_number": "2027E",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2027",
+            "evidence_line": 4,
+            "evidence_number": "2027",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+        },
+        {
+          "original_binding": {
+            "claim_number": "2028E",
+            "evidence_line": 4,
+            "evidence_number": "2028E",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2028",
+            "evidence_line": 4,
+            "evidence_number": "2028",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+        }
+      ],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "AMD contribution margin is forecast at 50.5% in 2026E, 51.5% in 2027E, and 52.5% in 2028E.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u0c4",
+      "source_id": 0,
+      "source_start": 114,
+      "source_end": 176,
+      "source_quote_occurrences": 1,
+      "original_quote": "supported by expanding contribution margins reaching over 50%.",
+      "claim": "AMD's revenue growth is supported by expanding contribution margins.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The supplied evidence does not establish this causal relationship.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] AMD's revenue growth is supported by expanding contribution margins.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u0c5",
+      "source_id": 0,
+      "source_start": 177,
+      "source_end": 252,
+      "source_quote_occurrences": 1,
+      "original_quote": "The company maintains strong EBITDA margins, projected to rise to over 40%,",
+      "claim": "AMD maintains strong EBITDA margins.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The EBITDA margin row provides percentages, but 'strong' is a qualitative judgment not directly established by supplied evidence.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] AMD maintains strong EBITDA margins.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u0c6",
+      "source_id": 0,
+      "source_start": 177,
+      "source_end": 252,
+      "source_quote_occurrences": 1,
+      "original_quote": "The company maintains strong EBITDA margins, projected to rise to over 40%,",
+      "claim": "AMD EBITDA margin is projected to rise to over 40%.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 12,
+          "quote": "|  6 | EBITDA Margin       | 25.3%             | 23.4%         | 18.3%             | 20.4%              | 21.0%             | 39.0%         | 40.5%         | 42.0%         | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The EBITDA margin row shows forecast values above 40%. The threshold wording should be corrected to the directly evidenced values and periods.",
+      "action": "correct",
+      "revised_claim": "AMD EBITDA margin is forecast at 40.5% in 2027E and 42.0% in 2028E.",
+      "number_bindings": [
+        {
+          "claim_number": "40.5%",
+          "evidence_line": 12,
+          "evidence_number": "40.5%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2027E",
+          "evidence_line": 4,
+          "evidence_number": "2027E",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "42.0%",
+          "evidence_line": 12,
+          "evidence_number": "42.0%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028E",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "40.5%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2027",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "42.0%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [
+        {
+          "original_binding": {
+            "claim_number": "2027E",
+            "evidence_line": 4,
+            "evidence_number": "2027E",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2027",
+            "evidence_line": 4,
+            "evidence_number": "2027",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+        },
+        {
+          "original_binding": {
+            "claim_number": "2028E",
+            "evidence_line": 4,
+            "evidence_number": "2028E",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2028",
+            "evidence_line": 4,
+            "evidence_number": "2028",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+        }
+      ],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "AMD EBITDA margin is forecast at 40.5% in 2027E and 42.0% in 2028E.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u0c7",
+      "source_id": 0,
+      "source_start": 253,
+      "source_end": 330,
+      "source_quote_occurrences": 1,
+      "original_quote": "reflecting efficient operational management despite increasing SG&A expenses.",
+      "claim": "AMD's EBITDA margins reflect efficient operational management.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The supplied evidence does not provide a stated causal explanation tying EBITDA margins to efficient operational management.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] AMD's EBITDA margins reflect efficient operational management.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u0c8",
+      "source_id": 0,
+      "source_start": 253,
+      "source_end": 330,
+      "source_quote_occurrences": 1,
+      "original_quote": "reflecting efficient operational management despite increasing SG&A expenses.",
+      "claim": "AMD's SG&A expenses are increasing.",
+      "classification": "Contradicted",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 8,
+          "quote": "|  2 | SG&A                | 1448000000.0      | 2336000000.0  | 2352000000.0      | 2783000000.0       | 4144000000.0      | 4182659250.0  | 4240852770.0  | 4210010204.4  | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The SG&A row is not strictly increasing because it declines from 4,240,852,770.0 in 2027E to 4,210,010,204.4 in 2028E.",
+      "action": "correct",
+      "revised_claim": "AMD SG&A is forecast at 4240852770.0 in 2027E and 4210010204.4 in 2028E.",
+      "number_bindings": [
+        {
+          "claim_number": "4240852770.0",
+          "evidence_line": 8,
+          "evidence_number": "4240852770.0",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2027E",
+          "evidence_line": 4,
+          "evidence_number": "2027E",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "4210010204.4",
+          "evidence_line": 8,
+          "evidence_number": "4210010204.4",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028E",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "4240852770.0",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2027",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "4210010204.4",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [
+        {
+          "original_binding": {
+            "claim_number": "2027E",
+            "evidence_line": 4,
+            "evidence_number": "2027E",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2027",
+            "evidence_line": 4,
+            "evidence_number": "2027",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+        },
+        {
+          "original_binding": {
+            "claim_number": "2028E",
+            "evidence_line": 4,
+            "evidence_number": "2028E",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2028",
+            "evidence_line": 4,
+            "evidence_number": "2028",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+        }
+      ],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "AMD SG&A is forecast at 4240852770.0 in 2027E and 4210010204.4 in 2028E.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u0c9",
+      "source_id": 0,
+      "source_start": 253,
+      "source_end": 330,
+      "source_quote_occurrences": 1,
+      "original_quote": "reflecting efficient operational management despite increasing SG&A expenses.",
+      "claim": "AMD has efficient operational management despite increasing SG&A expenses.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The supplied evidence does not establish this qualitative conclusion or the 'despite' relationship.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] AMD has efficient operational management despite increasing SG&A expenses.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u0c10",
+      "source_id": 0,
+      "source_start": 331,
+      "source_end": 463,
+      "source_quote_occurrences": 1,
+      "original_quote": "Valuation metrics indicate a premium positioning, underscoring confidence in AMD's solid financial fundamentals and market presence.",
+      "claim": "AMD's valuation metrics indicate a premium positioning.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The evidence includes AMD PE and peer EV/EBITDA data, but it does not directly establish the qualitative inference of 'premium positioning.'",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] AMD's valuation metrics indicate a premium positioning.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u0c11",
+      "source_id": 0,
+      "source_start": 331,
+      "source_end": 463,
+      "source_quote_occurrences": 1,
+      "original_quote": "Valuation metrics indicate a premium positioning, underscoring confidence in AMD's solid financial fundamentals and market presence.",
+      "claim": "AMD has solid financial fundamentals.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "This qualitative assessment is not directly established by the supplied evidence.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] AMD has solid financial fundamentals.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u0c12",
+      "source_id": 0,
+      "source_start": 331,
+      "source_end": 463,
+      "source_quote_occurrences": 1,
+      "original_quote": "Valuation metrics indicate a premium positioning, underscoring confidence in AMD's solid financial fundamentals and market presence.",
+      "claim": "AMD has market presence.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The supplied evidence does not directly establish AMD's market presence.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] AMD has market presence.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u0c13",
+      "source_id": 0,
+      "source_start": 331,
+      "source_end": 463,
+      "source_quote_occurrences": 1,
+      "original_quote": "Valuation metrics indicate a premium positioning, underscoring confidence in AMD's solid financial fundamentals and market presence.",
+      "claim": "AMD's valuation metrics underscore confidence in AMD's solid financial fundamentals.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The supplied evidence does not establish this causal or interpretive conclusion.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] AMD's valuation metrics underscore confidence in AMD's solid financial fundamentals.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u0c14",
+      "source_id": 0,
+      "source_start": 331,
+      "source_end": 463,
+      "source_quote_occurrences": 1,
+      "original_quote": "Valuation metrics indicate a premium positioning, underscoring confidence in AMD's solid financial fundamentals and market presence.",
+      "claim": "AMD's valuation metrics underscore confidence in AMD's market presence.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The supplied evidence does not establish this causal or interpretive conclusion.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] AMD's valuation metrics underscore confidence in AMD's market presence.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    }
+  ],
+  "units": [
+    {
+      "source_id": 0,
+      "claims": [
+        {
+          "original_quote": "Advanced Micro Devices, Inc. demonstrates robust revenue growth with a compound annual growth rate exceeding 20%,",
+          "claim": "AMD has a compound annual growth rate exceeding 20%.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 6
+            }
+          ],
+          "reason": "The revenue row shows a CAGR of 20.5%. The threshold wording should be corrected to the directly evidenced value and period shown in the table.",
+          "action": "correct",
+          "revised_claim": "AMD revenue CAGR is 20.5% in the table from 2021A to 2028E.",
+          "number_bindings": [
+            {
+              "claim_number": "20.5%",
+              "evidence_line": 6,
+              "evidence_number": "20.5%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2021A",
+              "evidence_line": 4,
+              "evidence_number": "2021A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028E",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "Advanced Micro Devices, Inc. demonstrates robust revenue growth with a compound annual growth rate exceeding 20%,",
+          "claim": "AMD demonstrates robust revenue growth.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The table provides revenue values and a CAGR, but 'robust' is a qualitative characterization not directly established by supplied evidence.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "supported by expanding contribution margins reaching over 50%.",
+          "claim": "AMD's contribution margins are expanding.",
+          "classification": "Contradicted",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 10
+            }
+          ],
+          "reason": "The contribution margin series is not consistently expanding because it declines from 48.2% in 2021A to 44.9% in 2022A before rising later. A specific corrected statement should use the directly evidenced forecast values above 50%.",
+          "action": "correct",
+          "revised_claim": "AMD contribution margin is forecast at 50.5% in 2026E, 51.5% in 2027E, and 52.5% in 2028E.",
+          "number_bindings": [
+            {
+              "claim_number": "50.5%",
+              "evidence_line": 10,
+              "evidence_number": "50.5%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2026E",
+              "evidence_line": 4,
+              "evidence_number": "2026E",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "51.5%",
+              "evidence_line": 10,
+              "evidence_number": "51.5%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2027E",
+              "evidence_line": 4,
+              "evidence_number": "2027E",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "52.5%",
+              "evidence_line": 10,
+              "evidence_number": "52.5%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028E",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "supported by expanding contribution margins reaching over 50%.",
+          "claim": "AMD's contribution margins reach over 50%.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 10
+            }
+          ],
+          "reason": "The contribution margin row shows forecast values above 50%. The threshold wording should be corrected to the directly evidenced forecast values.",
+          "action": "correct",
+          "revised_claim": "AMD contribution margin is forecast at 50.5% in 2026E, 51.5% in 2027E, and 52.5% in 2028E.",
+          "number_bindings": [
+            {
+              "claim_number": "50.5%",
+              "evidence_line": 10,
+              "evidence_number": "50.5%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2026E",
+              "evidence_line": 4,
+              "evidence_number": "2026E",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "51.5%",
+              "evidence_line": 10,
+              "evidence_number": "51.5%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2027E",
+              "evidence_line": 4,
+              "evidence_number": "2027E",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "52.5%",
+              "evidence_line": 10,
+              "evidence_number": "52.5%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028E",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "supported by expanding contribution margins reaching over 50%.",
+          "claim": "AMD's revenue growth is supported by expanding contribution margins.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The supplied evidence does not establish this causal relationship.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The company maintains strong EBITDA margins, projected to rise to over 40%,",
+          "claim": "AMD maintains strong EBITDA margins.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The EBITDA margin row provides percentages, but 'strong' is a qualitative judgment not directly established by supplied evidence.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The company maintains strong EBITDA margins, projected to rise to over 40%,",
+          "claim": "AMD EBITDA margin is projected to rise to over 40%.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 12
+            }
+          ],
+          "reason": "The EBITDA margin row shows forecast values above 40%. The threshold wording should be corrected to the directly evidenced values and periods.",
+          "action": "correct",
+          "revised_claim": "AMD EBITDA margin is forecast at 40.5% in 2027E and 42.0% in 2028E.",
+          "number_bindings": [
+            {
+              "claim_number": "40.5%",
+              "evidence_line": 12,
+              "evidence_number": "40.5%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2027E",
+              "evidence_line": 4,
+              "evidence_number": "2027E",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "42.0%",
+              "evidence_line": 12,
+              "evidence_number": "42.0%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028E",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "reflecting efficient operational management despite increasing SG&A expenses.",
+          "claim": "AMD's EBITDA margins reflect efficient operational management.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The supplied evidence does not provide a stated causal explanation tying EBITDA margins to efficient operational management.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "reflecting efficient operational management despite increasing SG&A expenses.",
+          "claim": "AMD's SG&A expenses are increasing.",
+          "classification": "Contradicted",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 8
+            }
+          ],
+          "reason": "The SG&A row is not strictly increasing because it declines from 4,240,852,770.0 in 2027E to 4,210,010,204.4 in 2028E.",
+          "action": "correct",
+          "revised_claim": "AMD SG&A is forecast at 4240852770.0 in 2027E and 4210010204.4 in 2028E.",
+          "number_bindings": [
+            {
+              "claim_number": "4240852770.0",
+              "evidence_line": 8,
+              "evidence_number": "4240852770.0",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2027E",
+              "evidence_line": 4,
+              "evidence_number": "2027E",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "4210010204.4",
+              "evidence_line": 8,
+              "evidence_number": "4210010204.4",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028E",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "reflecting efficient operational management despite increasing SG&A expenses.",
+          "claim": "AMD has efficient operational management despite increasing SG&A expenses.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The supplied evidence does not establish this qualitative conclusion or the 'despite' relationship.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Valuation metrics indicate a premium positioning, underscoring confidence in AMD's solid financial fundamentals and market presence.",
+          "claim": "AMD's valuation metrics indicate a premium positioning.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The evidence includes AMD PE and peer EV/EBITDA data, but it does not directly establish the qualitative inference of 'premium positioning.'",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Valuation metrics indicate a premium positioning, underscoring confidence in AMD's solid financial fundamentals and market presence.",
+          "claim": "AMD has solid financial fundamentals.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "This qualitative assessment is not directly established by the supplied evidence.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Valuation metrics indicate a premium positioning, underscoring confidence in AMD's solid financial fundamentals and market presence.",
+          "claim": "AMD has market presence.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The supplied evidence does not directly establish AMD's market presence.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Valuation metrics indicate a premium positioning, underscoring confidence in AMD's solid financial fundamentals and market presence.",
+          "claim": "AMD's valuation metrics underscore confidence in AMD's solid financial fundamentals.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The supplied evidence does not establish this causal or interpretive conclusion.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Valuation metrics indicate a premium positioning, underscoring confidence in AMD's solid financial fundamentals and market presence.",
+          "claim": "AMD's valuation metrics underscore confidence in AMD's market presence.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The supplied evidence does not establish this causal or interpretive conclusion.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    }
+  ],
+  "verifier_version": "9.0-explicit-cagr-endpoint-clarification",
+  "release_deduplication": "Identical complete released strings appear once per section; all original claim rows and mappings remain. This is not semantic paraphrase deduplication.",
+  "unquoted_nonfactual_connectors": [],
+  "deterministic_validation_failures": [],
+  "deterministic_failure_count": 0,
+  "verified_claim_count": 5,
+  "unverified_annotation_count": 10,
+  "withheld_claim_count": 0,
+  "claim_retention_rate": 1.0,
+  "supported_valid_retention_count": 3,
+  "automatic_year_binding_count": 0,
+  "limitations": "UNVERIFIED annotations preserve unsupported or deterministically rejected assertions for review and must not be counted as grounded facts. A claim's original machine classification is preserved even when deterministic checks reject it; retained_as_verified is then false. Rejected contradicted corrections remain in the audit but are withheld from the narrative. Semantic judgments are machine-assisted, not human-validated. Lexical quote coverage does not prove exhaustive semantic atomization. Exact numeric/year matches do not establish entity/period alignment or dimensional validity of conversions. Repeated source quotes may have ambiguous first-occurrence offsets. V9 additionally clarifies a narrowly recognized displayed Revenue CAGR using explicit original-prompt endpoints; historical and forecast intervals are separated. Original machine classifications and failed binding diagnostics remain unchanged for traceability.",
+  "semantic_horizon_check_count": 1
+}

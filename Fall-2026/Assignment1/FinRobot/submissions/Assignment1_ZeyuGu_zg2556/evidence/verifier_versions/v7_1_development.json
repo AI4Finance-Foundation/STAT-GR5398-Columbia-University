@@ -1,0 +1,8 @@
+{
+  "version": "7.1-semantic-review-neutral-connector-repair",
+  "parent_source_sha256": "5c55074f203697118b263abf0663b88697c73df6743704d1a36d375e88aba16f",
+  "source_sha256": "9e4b0da4dc5d259c4ffea48f1c1b4371df5862cdb24f9110643163f0b521b40a",
+  "change": "Only add three finite discourse connectors: in summary, in conclusion, overall. No factual gaps become optional.",
+  "generation_note": "Explicit reuse of wire-confirmed V7 responses where valid. Missing sections require fresh calls; reuse is not independent generation.",
+  "semantic_instruction_change": false
+}

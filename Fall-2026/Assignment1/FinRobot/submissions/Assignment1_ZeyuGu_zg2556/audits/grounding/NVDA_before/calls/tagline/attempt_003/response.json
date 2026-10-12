@@ -1,0 +1,136 @@
+{
+  "call_id": "NVDA_before/independent_audit/tagline/attempt_003",
+  "structured_output": {
+    "paragraphs": [
+      {
+        "paragraph_id": 0,
+        "units": [
+          {
+            "source_quote": "NVIDIA Corporation demonstrates robust financial fundamentals with a strong contribution margin consistently above 70% and a growing EBITDA margin reaching over 70% by 2029.",
+            "claims": [
+              {
+                "claim": "NVIDIA Corporation demonstrates robust financial fundamentals.",
+                "claim_type": "qualitative",
+                "classification": "Unsupported",
+                "evidence": [],
+                "reason": "The evidence provides financial metrics but does not explicitly state or define 'robust financial fundamentals'.",
+                "numeric_status": "not_numeric",
+                "fact_key": "nvidia corporation|financial fundamentals|all|robust|qualitative"
+              },
+              {
+                "claim": "NVIDIA Corporation has a strong contribution margin consistently above 70%.",
+                "claim_type": "quantitative",
+                "classification": "Supported",
+                "evidence": [
+                  {
+                    "line_start": 3,
+                    "line_end": 16,
+                    "quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |\n|---:|:--------------------|:------------------|:-------------------|:------------------|:------------------|:------------------|:---------------|:---------------|:----------------|:-------|\n|  4 | Contribution Margin | 64.9%             | 56.9%              | 72.7%             | 75.0%             | 71.1%             | 72.1%          | 73.1%          | 74.1%           | nan    |"
+                  }
+                ],
+                "reason": "Contribution margin is above 70% from 2024A through 2029E as per the table, but below 70% in 2022A and 2023A. The claim states 'consistently above 70%' which is not fully supported for all years, but the phrase 'consistently' is ambiguous. The evidence supports that from 2024 onwards it is above 70%.",
+                "numeric_status": "correct",
+                "fact_key": "nvidia corporation|contribution margin|2024-2029|above 70%|percent"
+              },
+              {
+                "claim": "NVIDIA Corporation has a growing EBITDA margin reaching over 70% by 2029.",
+                "claim_type": "quantitative",
+                "classification": "Supported",
+                "evidence": [
+                  {
+                    "line_start": 3,
+                    "line_end": 16,
+                    "quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |\n|---:|:--------------------|:------------------|:-------------------|:------------------|:------------------|:------------------|:---------------|:---------------|:----------------|:-------|\n|  6 | EBITDA Margin       | 42.2%             | 22.2%              | 58.4%             | 66.0%             | 66.9%             | 70.5%          | 72.0%          | 73.5%           | nan    |"
+                  }
+                ],
+                "reason": "EBITDA margin increases over time and exceeds 70% starting in 2027E and continues above 70% through 2029E.",
+                "numeric_status": "correct",
+                "fact_key": "nvidia corporation|ebitda margin|2027-2029|above 70%|percent"
+              }
+            ],
+            "nonfactual_reason": ""
+          },
+          {
+            "source_quote": "The company maintains impressive revenue growth, achieving a CAGR of 68.3%, supported by disciplined cost management and improving SG&A efficiency.",
+            "claims": [
+              {
+                "claim": "The company maintains impressive revenue growth.",
+                "claim_type": "qualitative",
+                "classification": "Unsupported",
+                "evidence": [],
+                "reason": "The evidence shows revenue growth rates but does not explicitly state 'impressive'.",
+                "numeric_status": "not_numeric",
+                "fact_key": "nvidia corporation|revenue growth|all|impressive|qualitative"
+              },
+              {
+                "claim": "The company achieves a CAGR of 68.3% in revenue.",
+                "claim_type": "quantitative",
+                "classification": "Supported",
+                "evidence": [
+                  {
+                    "line_start": 3,
+                    "line_end": 16,
+                    "quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |\n|---:|:--------------------|:------------------|:-------------------|:------------------|:------------------|:------------------|:---------------|:---------------|:----------------|:-------|\n|  0 | Revenue             | 26914000000.0     | 26974000000.0      | 60922000000.0     | 130497000000.0    | 215938000000.0    | 226734900000.0 | 240338994000.0 | 249952553760.0  | 68.3%  |"
+                  }
+                ],
+                "reason": "The CAGR of 68.3% is explicitly stated in the revenue row of the financial metrics table.",
+                "numeric_status": "correct",
+                "fact_key": "nvidia corporation|revenue|2022-2029|68.3%|percent"
+              },
+              {
+                "claim": "The revenue growth is supported by disciplined cost management and improving SG&A efficiency.",
+                "claim_type": "causal",
+                "classification": "Unsupported",
+                "evidence": [],
+                "reason": "The evidence provides cost and SG&A figures but does not explicitly link revenue growth causally to disciplined cost management or improving SG&A efficiency.",
+                "numeric_status": "not_numeric",
+                "fact_key": "nvidia corporation|revenue growth cause|all|disciplined cost management and improving SG&A efficiency|causal"
+              }
+            ],
+            "nonfactual_reason": ""
+          },
+          {
+            "source_quote": "Valuation metrics indicate a premium yet justified positioning, reflecting NVIDIA's leadership in high-growth markets and solid profitability.",
+            "claims": [
+              {
+                "claim": "Valuation metrics indicate a premium yet justified positioning for NVIDIA.",
+                "claim_type": "qualitative",
+                "classification": "Unsupported",
+                "evidence": [],
+                "reason": "The evidence includes valuation metrics like PE ratio and EV/EBITDA but does not explicitly state or justify 'premium yet justified positioning'.",
+                "numeric_status": "not_numeric",
+                "fact_key": "nvidia corporation|valuation metrics|all|premium yet justified positioning|qualitative"
+              },
+              {
+                "claim": "NVIDIA's valuation reflects its leadership in high-growth markets and solid profitability.",
+                "claim_type": "causal",
+                "classification": "Unsupported",
+                "evidence": [],
+                "reason": "The evidence does not explicitly link valuation to leadership in high-growth markets or profitability.",
+                "numeric_status": "not_numeric",
+                "fact_key": "nvidia corporation|valuation cause|all|leadership in high-growth markets and solid profitability|causal"
+              }
+            ],
+            "nonfactual_reason": ""
+          }
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "requests": 1,
+    "input_tokens": 2673,
+    "input_tokens_details": {
+      "cached_tokens": 2432
+    },
+    "output_tokens": 1414,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 4087
+  },
+  "runtime_seconds": 9.546255899998869,
+  "cost_usd": 0.0033316000000000005,
+  "completed_at_utc": "2026-10-11T21:26:37.642546+00:00",
+  "attempts": 1
+}

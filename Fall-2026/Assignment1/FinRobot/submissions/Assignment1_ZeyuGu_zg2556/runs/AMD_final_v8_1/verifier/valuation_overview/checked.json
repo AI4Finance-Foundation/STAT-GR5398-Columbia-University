@@ -1,0 +1,1126 @@
+{
+  "original_text": "Advanced Micro Devices, Inc. (AMD) currently exhibits a high valuation relative to its historical and industry peers, as evidenced by its very elevated PE ratio, which peaked dramatically in 2023 and remains substantially above typical levels. Historically, AMD's PE ratio surged to over 270 in 2023, driven largely by a significant decline in EPS during that year, followed by a partial normalization but still elevated levels in subsequent years. This volatility in earnings, combined with strong top-line growth, has contributed to swings in valuation multiples.\n\nWhen benchmarked against industry peers such as Intel and Nvidia, AMD's valuation multiples, including EV/EBITDA, are notably higher or at least at the upper end of the peer spectrum. For instance, AMD's EV/EBITDA ratio has ranged from mid-40s to near 60 in recent years, significantly above Intel's single-digit to low double-digit multiples and comparable to Nvidia's higher multiples, which reflects market recognition of AMD's growth potential and competitive position in the semiconductor sector.\n\nFundamentally, AMD has demonstrated robust revenue growth with a compound annual growth rate exceeding 20%, alongside improving contribution margins and a recovering EPS trajectory after a dip in 2023. EBITDA margins are forecasted to increase materially, indicating improving operational leverage and profitability. These factors support a premium valuation due to strong growth prospects and improving profitability metrics.\n\nThe elevated valuation thus primarily reflects high growth expectations from investors, driven by AMD's expanding market share in CPUs and GPUs, innovations, and strategic positioning against competitors. The semiconductor industry's cyclical nature and recent macroeconomic uncertainties contribute to earnings volatility, which explains the sharp PE ratio fluctuations. While these factors justify a premium to some extent, the historically high levels suggest caution, as the valuation incorporates significant optimism about sustained growth and margin expansion.\n\nMarket risks include potential industry cyclicality, competitive pressures, and macroeconomic challenges that could impact AMD's ability to maintain its growth and margin trajectory. However, AMD's improving fundamentals and competitive strengths provide a margin of safety relative to peers with weaker growth or profitability profiles.\n\nIn summary, AMD's current valuation is high but reflects justified growth expectations and improving fundamentals within the semiconductor industry context. Investors should be aware of the elevated valuation multiples and the associated risks, but given AMD's competitive positioning and profitability outlook, the valuation contains a growth premium rather than a speculative bubble or a value trap.",
+  "revised_text": "[UNVERIFIED - deterministic evidence/number check failed] Advanced Micro Devices, Inc. (AMD) currently exhibits a high valuation relative to its historical and industry peers, as evidenced by its very elevated PE ratio, which peaked dramatically in 2023 and remains substantially above typical levels.\n\n[UNVERIFIED - deterministic evidence/number check failed] Historically, AMD's PE ratio surged to over 270 in 2023, driven largely by a significant decline in EPS during that year, followed by a partial normalization but still elevated levels in subsequent years.\n\n[UNVERIFIED - deterministic evidence/number check failed] This volatility in earnings, combined with strong top-line growth, has contributed to swings in valuation multiples.\n\n[UNVERIFIED - deterministic evidence/number check failed] When benchmarked against industry peers such as Intel and Nvidia, AMD's valuation multiples, including EV/EBITDA, are notably higher or at least at the upper end of the peer spectrum.\n\n[UNVERIFIED - deterministic evidence/number check failed] For instance, AMD's EV/EBITDA ratio has ranged from mid-40s to near 60 in recent years, significantly above Intel's single-digit to low double-digit multiples and comparable to Nvidia's higher multiples, which reflects market recognition of AMD's growth potential and competitive position in the semiconductor sector.\n\n[UNVERIFIED - evidence not supplied] The high valuation multiples reflect market recognition of AMD's growth potential and competitive position in the semiconductor sector.\n\n[UNVERIFIED - deterministic evidence/number check failed] Fundamentally, AMD has demonstrated robust revenue growth with a compound annual growth rate exceeding 20%, alongside improving contribution margins and a recovering EPS trajectory after a dip in 2023.\n\n[UNVERIFIED - deterministic evidence/number check failed] EBITDA margins are forecasted to increase materially, indicating improving operational leverage and profitability.\n\n[UNVERIFIED - evidence not supplied] These factors support a premium valuation due to strong growth prospects and improving profitability metrics.\n\n[UNVERIFIED - evidence not supplied] The elevated valuation primarily reflects high growth expectations from investors, driven by AMD's expanding market share in CPUs and GPUs, innovations, and strategic positioning against competitors.\n\n[UNVERIFIED - evidence not supplied] The semiconductor industry's cyclical nature and recent macroeconomic uncertainties contribute to earnings volatility, which explains the sharp PE ratio fluctuations.\n\n[UNVERIFIED - evidence not supplied] The historically high valuation levels suggest caution, as the valuation incorporates significant optimism about sustained growth and margin expansion.\n\n[UNVERIFIED - evidence not supplied] Market risks include potential industry cyclicality, competitive pressures, and macroeconomic challenges that could impact AMD's ability to maintain its growth and margin trajectory.\n\n[UNVERIFIED - evidence not supplied] AMD's improving fundamentals and competitive strengths provide a margin of safety relative to peers with weaker growth or profitability profiles.\n\n[UNVERIFIED - evidence not supplied] AMD's current valuation is high but reflects justified growth expectations and improving fundamentals within the semiconductor industry context.\n\n[UNVERIFIED - evidence not supplied] Given AMD's competitive positioning and profitability outlook, the valuation contains a growth premium rather than a speculative bubble or a value trap.",
+  "claims": [
+    {
+      "claim_id": "u0c0",
+      "source_id": 0,
+      "source_start": 0,
+      "source_end": 243,
+      "source_quote_occurrences": 1,
+      "original_quote": "Advanced Micro Devices, Inc. (AMD) currently exhibits a high valuation relative to its historical and industry peers, as evidenced by its very elevated PE ratio, which peaked dramatically in 2023 and remains substantially above typical levels.",
+      "claim": "AMD currently exhibits a high valuation relative to its historical and industry peers, as evidenced by its very elevated PE ratio, which peaked dramatically in 2023 and remains substantially above typical levels.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 16,
+          "quote": "| 10 | PE Ratio            | 55.99233716475096 | 76.2          | 278.1320754716981 | 123.95049504950495 | 80.52059925093633 | 76.5          | 72.7          | 69.0          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The PE ratio for AMD in 2023A is 278.13, which is much higher than previous years and remains high in subsequent years. Peer EV/EBITDA ratios are also lower, supporting the claim of high valuation relative to peers.",
+      "action": "keep",
+      "revised_claim": "AMD currently exhibits a high valuation relative to its historical and industry peers, as evidenced by its very elevated PE ratio, which peaked dramatically in 2023 and remains substantially above typical levels.",
+      "number_bindings": [
+        {
+          "claim_number": "2023",
+          "evidence_line": 4,
+          "evidence_number": "2023A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "278.13",
+          "evidence_line": 16,
+          "evidence_number": "278.1320754716981",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2023:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Advanced Micro Devices, Inc. (AMD) currently exhibits a high valuation relative to its historical and industry peers, as evidenced by its very elevated PE ratio, which peaked dramatically in 2023 and remains substantially above typical levels.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u0c1",
+      "source_id": 0,
+      "source_start": 244,
+      "source_end": 448,
+      "source_quote_occurrences": 1,
+      "original_quote": "Historically, AMD's PE ratio surged to over 270 in 2023, driven largely by a significant decline in EPS during that year, followed by a partial normalization but still elevated levels in subsequent years.",
+      "claim": "Historically, AMD's PE ratio surged to over 270 in 2023, driven largely by a significant decline in EPS during that year, followed by a partial normalization but still elevated levels in subsequent years.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 15,
+          "quote": "|  9 | EPS                 | 2.61              | 0.85          | 0.53              | 1.01               | 2.67              | 2.83          | 3.03          | 3.18          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 16,
+          "quote": "| 10 | PE Ratio            | 55.99233716475096 | 76.2          | 278.1320754716981 | 123.95049504950495 | 80.52059925093633 | 76.5          | 72.7          | 69.0          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The PE ratio in 2023A is 278.13, and the EPS in 2023A is 0.53, which is a significant decline from 0.85 in 2022A and 2.61 in 2021A. The PE ratio then drops to 123.95 in 2024A and 80.52 in 2025A, which are still elevated.",
+      "action": "keep",
+      "revised_claim": "Historically, AMD's PE ratio surged to over 270 in 2023, driven largely by a significant decline in EPS during that year, followed by a partial normalization but still elevated levels in subsequent years.",
+      "number_bindings": [
+        {
+          "claim_number": "2023",
+          "evidence_line": 4,
+          "evidence_number": "2023A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "278.13",
+          "evidence_line": 16,
+          "evidence_number": "278.1320754716981",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "0.53",
+          "evidence_line": 15,
+          "evidence_number": "0.53",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "270",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:270:missing_binding",
+        "numeric_check_failed:2023:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Historically, AMD's PE ratio surged to over 270 in 2023, driven largely by a significant decline in EPS during that year, followed by a partial normalization but still elevated levels in subsequent years.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u0c2",
+      "source_id": 0,
+      "source_start": 449,
+      "source_end": 565,
+      "source_quote_occurrences": 1,
+      "original_quote": "This volatility in earnings, combined with strong top-line growth, has contributed to swings in valuation multiples.",
+      "claim": "This volatility in earnings, combined with strong top-line growth, has contributed to swings in valuation multiples.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 6,
+          "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 8,
+          "quote": "|  2 | SG&A                | 1448000000.0      | 2336000000.0  | 2352000000.0      | 2783000000.0       | 4144000000.0      | 4182659250.0  | 4240852770.0  | 4210010204.4  | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 15,
+          "quote": "|  9 | EPS                 | 2.61              | 0.85          | 0.53              | 1.01               | 2.67              | 2.83          | 3.03          | 3.18          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 16,
+          "quote": "| 10 | PE Ratio            | 55.99233716475096 | 76.2          | 278.1320754716981 | 123.95049504950495 | 80.52059925093633 | 76.5          | 72.7          | 69.0          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "Revenue growth is strong (CAGR 20.5%), and EPS is volatile, which aligns with swings in PE ratio.",
+      "action": "keep",
+      "revised_claim": "Volatility in AMD's earnings, combined with strong top-line growth, has contributed to swings in valuation multiples.",
+      "number_bindings": [
+        {
+          "claim_number": "20.5",
+          "evidence_line": 6,
+          "evidence_number": "20.5%",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] This volatility in earnings, combined with strong top-line growth, has contributed to swings in valuation multiples.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u1c0",
+      "source_id": 1,
+      "source_start": 567,
+      "source_end": 750,
+      "source_quote_occurrences": 1,
+      "original_quote": "When benchmarked against industry peers such as Intel and Nvidia, AMD's valuation multiples, including EV/EBITDA, are notably higher or at least at the upper end of the peer spectrum.",
+      "claim": "When benchmarked against industry peers such as Intel and Nvidia, AMD's valuation multiples, including EV/EBITDA, are notably higher or at least at the upper end of the peer spectrum.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 32,
+          "quote": "|   2021 |  42.1013 |   7.13058 | nan      |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 33,
+          "quote": "|   2022 |  17.9136 |   6.54873 |  54.7187 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 34,
+          "quote": "|   2023 |  57.1197 |  22.4823  |  81.0476 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 35,
+          "quote": "|   2024 |  38.2717 | 106.938   |  43.4522 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 36,
+          "quote": "|   2025 |  47.8456 |  14.4982  |  33.7774 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "AMD's EV/EBITDA ratios are higher than Intel's and comparable to Nvidia's, supporting the claim that AMD is at the upper end of the peer spectrum.",
+      "action": "keep",
+      "revised_claim": "When benchmarked against industry peers such as Intel and Nvidia, AMD's valuation multiples, including EV/EBITDA, are notably higher or at least at the upper end of the peer spectrum.",
+      "number_bindings": [
+        {
+          "claim_number": "42.1013",
+          "evidence_line": 32,
+          "evidence_number": "42.1013",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "57.1197",
+          "evidence_line": 34,
+          "evidence_number": "57.1197",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] When benchmarked against industry peers such as Intel and Nvidia, AMD's valuation multiples, including EV/EBITDA, are notably higher or at least at the upper end of the peer spectrum.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u1c1",
+      "source_id": 1,
+      "source_start": 751,
+      "source_end": 1068,
+      "source_quote_occurrences": 1,
+      "original_quote": "For instance, AMD's EV/EBITDA ratio has ranged from mid-40s to near 60 in recent years, significantly above Intel's single-digit to low double-digit multiples and comparable to Nvidia's higher multiples, which reflects market recognition of AMD's growth potential and competitive position in the semiconductor sector.",
+      "claim": "AMD's EV/EBITDA ratio has ranged from mid-40s to near 60 in recent years, significantly above Intel's single-digit to low double-digit multiples and comparable to Nvidia's higher multiples.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 32,
+          "quote": "|   2021 |  42.1013 |   7.13058 | nan      |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 33,
+          "quote": "|   2022 |  17.9136 |   6.54873 |  54.7187 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 34,
+          "quote": "|   2023 |  57.1197 |  22.4823  |  81.0476 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 35,
+          "quote": "|   2024 |  38.2717 | 106.938   |  43.4522 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 36,
+          "quote": "|   2025 |  47.8456 |  14.4982  |  33.7774 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "AMD's EV/EBITDA ratios are 42.1 (2021), 17.9 (2022), 57.1 (2023), 38.3 (2024), and 47.8 (2025), which are higher than Intel's ratios and comparable to Nvidia's higher multiples.",
+      "action": "keep",
+      "revised_claim": "AMD's EV/EBITDA ratio has ranged from mid-40s to near 60 in recent years, significantly above Intel's single-digit to low double-digit multiples and comparable to Nvidia's higher multiples.",
+      "number_bindings": [
+        {
+          "claim_number": "42.1013",
+          "evidence_line": 32,
+          "evidence_number": "42.1013",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "57.1197",
+          "evidence_line": 34,
+          "evidence_number": "57.1197",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "-40",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "60",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:-40:missing_binding",
+        "numeric_check_failed:60:missing_binding"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] For instance, AMD's EV/EBITDA ratio has ranged from mid-40s to near 60 in recent years, significantly above Intel's single-digit to low double-digit multiples and comparable to Nvidia's higher multiples, which reflects market recognition of AMD's growth potential and competitive position in the semiconductor sector.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u1c2",
+      "source_id": 1,
+      "source_start": 955,
+      "source_end": 1068,
+      "source_quote_occurrences": 1,
+      "original_quote": "which reflects market recognition of AMD's growth potential and competitive position in the semiconductor sector.",
+      "claim": "The high valuation multiples reflect market recognition of AMD's growth potential and competitive position in the semiconductor sector.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for the market's reasoning or AMD's competitive position.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] The high valuation multiples reflect market recognition of AMD's growth potential and competitive position in the semiconductor sector.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u2c0",
+      "source_id": 2,
+      "source_start": 1070,
+      "source_end": 1271,
+      "source_quote_occurrences": 1,
+      "original_quote": "Fundamentally, AMD has demonstrated robust revenue growth with a compound annual growth rate exceeding 20%, alongside improving contribution margins and a recovering EPS trajectory after a dip in 2023.",
+      "claim": "AMD has demonstrated robust revenue growth with a compound annual growth rate exceeding 20%, alongside improving contribution margins and a recovering EPS trajectory after a dip in 2023.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 6,
+          "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 10,
+          "quote": "|  4 | Contribution Margin | 48.2%             | 44.9%         | 46.1%             | 49.4%              | 49.5%             | 50.5%         | 51.5%         | 52.5%         | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 15,
+          "quote": "|  9 | EPS                 | 2.61              | 0.85          | 0.53              | 1.01               | 2.67              | 2.83          | 3.03          | 3.18          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "Revenue CAGR is 20.5%, contribution margin improves from 44.9% in 2022A to 52.5% in 2028E, and EPS recovers after a dip in 2023A.",
+      "action": "keep",
+      "revised_claim": "AMD has demonstrated robust revenue growth with a compound annual growth rate of 20.5%, alongside improving contribution margins and a recovering EPS trajectory after a dip in 2023.",
+      "number_bindings": [
+        {
+          "claim_number": "20.5",
+          "evidence_line": 6,
+          "evidence_number": "20.5%",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "20.5%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:20.5%:missing_binding",
+        "numeric_check_failed:2023:missing_binding"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Fundamentally, AMD has demonstrated robust revenue growth with a compound annual growth rate exceeding 20%, alongside improving contribution margins and a recovering EPS trajectory after a dip in 2023.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u2c1",
+      "source_id": 2,
+      "source_start": 1272,
+      "source_end": 1386,
+      "source_quote_occurrences": 1,
+      "original_quote": "EBITDA margins are forecasted to increase materially, indicating improving operational leverage and profitability.",
+      "claim": "EBITDA margins are forecasted to increase materially, indicating improving operational leverage and profitability.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 12,
+          "quote": "|  6 | EBITDA Margin       | 25.3%             | 23.4%         | 18.3%             | 20.4%              | 21.0%             | 39.0%         | 40.5%         | 42.0%         | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "EBITDA margin rises from 21.0% in 2025A to 42.0% in 2028E, indicating a material increase.",
+      "action": "keep",
+      "revised_claim": "EBITDA margins are forecasted to increase materially for AMD.",
+      "number_bindings": [
+        {
+          "claim_number": "42.0",
+          "evidence_line": 12,
+          "evidence_number": "42.0%",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] EBITDA margins are forecasted to increase materially, indicating improving operational leverage and profitability.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u2c2",
+      "source_id": 2,
+      "source_start": 1387,
+      "source_end": 1496,
+      "source_quote_occurrences": 1,
+      "original_quote": "These factors support a premium valuation due to strong growth prospects and improving profitability metrics.",
+      "claim": "These factors support a premium valuation due to strong growth prospects and improving profitability metrics.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided that these factors are the reason for the premium valuation.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] These factors support a premium valuation due to strong growth prospects and improving profitability metrics.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u3c0",
+      "source_id": 3,
+      "source_start": 1498,
+      "source_end": 1702,
+      "source_quote_occurrences": 1,
+      "original_quote": "The elevated valuation thus primarily reflects high growth expectations from investors, driven by AMD's expanding market share in CPUs and GPUs, innovations, and strategic positioning against competitors.",
+      "claim": "The elevated valuation primarily reflects high growth expectations from investors, driven by AMD's expanding market share in CPUs and GPUs, innovations, and strategic positioning against competitors.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for the reasons behind the elevated valuation or AMD's market share and innovations.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] The elevated valuation primarily reflects high growth expectations from investors, driven by AMD's expanding market share in CPUs and GPUs, innovations, and strategic positioning against competitors.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u3c1",
+      "source_id": 3,
+      "source_start": 1703,
+      "source_end": 1869,
+      "source_quote_occurrences": 1,
+      "original_quote": "The semiconductor industry's cyclical nature and recent macroeconomic uncertainties contribute to earnings volatility, which explains the sharp PE ratio fluctuations.",
+      "claim": "The semiconductor industry's cyclical nature and recent macroeconomic uncertainties contribute to earnings volatility, which explains the sharp PE ratio fluctuations.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for the causes of earnings volatility or PE ratio fluctuations.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] The semiconductor industry's cyclical nature and recent macroeconomic uncertainties contribute to earnings volatility, which explains the sharp PE ratio fluctuations.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u3c2",
+      "source_id": 3,
+      "source_start": 1870,
+      "source_end": 2065,
+      "source_quote_occurrences": 1,
+      "original_quote": "While these factors justify a premium to some extent, the historically high levels suggest caution, as the valuation incorporates significant optimism about sustained growth and margin expansion.",
+      "claim": "The historically high valuation levels suggest caution, as the valuation incorporates significant optimism about sustained growth and margin expansion.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for the justification or caution regarding valuation optimism.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] The historically high valuation levels suggest caution, as the valuation incorporates significant optimism about sustained growth and margin expansion.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u4c0",
+      "source_id": 4,
+      "source_start": 2067,
+      "source_end": 2249,
+      "source_quote_occurrences": 1,
+      "original_quote": "Market risks include potential industry cyclicality, competitive pressures, and macroeconomic challenges that could impact AMD's ability to maintain its growth and margin trajectory.",
+      "claim": "Market risks include potential industry cyclicality, competitive pressures, and macroeconomic challenges that could impact AMD's ability to maintain its growth and margin trajectory.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for these specific market risks or their impact on AMD.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Market risks include potential industry cyclicality, competitive pressures, and macroeconomic challenges that could impact AMD's ability to maintain its growth and margin trajectory.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u4c1",
+      "source_id": 4,
+      "source_start": 2250,
+      "source_end": 2404,
+      "source_quote_occurrences": 1,
+      "original_quote": "However, AMD's improving fundamentals and competitive strengths provide a margin of safety relative to peers with weaker growth or profitability profiles.",
+      "claim": "AMD's improving fundamentals and competitive strengths provide a margin of safety relative to peers with weaker growth or profitability profiles.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for AMD's margin of safety or comparison to peers' growth or profitability profiles.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] AMD's improving fundamentals and competitive strengths provide a margin of safety relative to peers with weaker growth or profitability profiles.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u5c0",
+      "source_id": 5,
+      "source_start": 2406,
+      "source_end": 2562,
+      "source_quote_occurrences": 1,
+      "original_quote": "In summary, AMD's current valuation is high but reflects justified growth expectations and improving fundamentals within the semiconductor industry context.",
+      "claim": "AMD's current valuation is high but reflects justified growth expectations and improving fundamentals within the semiconductor industry context.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for the justification of growth expectations or fundamentals in relation to valuation.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] AMD's current valuation is high but reflects justified growth expectations and improving fundamentals within the semiconductor industry context.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u5c1",
+      "source_id": 5,
+      "source_start": 2563,
+      "source_end": 2807,
+      "source_quote_occurrences": 1,
+      "original_quote": "Investors should be aware of the elevated valuation multiples and the associated risks, but given AMD's competitive positioning and profitability outlook, the valuation contains a growth premium rather than a speculative bubble or a value trap.",
+      "claim": "Given AMD's competitive positioning and profitability outlook, the valuation contains a growth premium rather than a speculative bubble or a value trap.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for AMD's competitive positioning, profitability outlook, or the nature of the valuation premium.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Given AMD's competitive positioning and profitability outlook, the valuation contains a growth premium rather than a speculative bubble or a value trap.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    }
+  ],
+  "units": [
+    {
+      "source_id": 0,
+      "claims": [
+        {
+          "original_quote": "Advanced Micro Devices, Inc. (AMD) currently exhibits a high valuation relative to its historical and industry peers, as evidenced by its very elevated PE ratio, which peaked dramatically in 2023 and remains substantially above typical levels.",
+          "claim": "AMD currently exhibits a high valuation relative to its historical and industry peers, as evidenced by its very elevated PE ratio, which peaked dramatically in 2023 and remains substantially above typical levels.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 16
+            }
+          ],
+          "reason": "The PE ratio for AMD in 2023A is 278.13, which is much higher than previous years and remains high in subsequent years. Peer EV/EBITDA ratios are also lower, supporting the claim of high valuation relative to peers.",
+          "action": "keep",
+          "revised_claim": "AMD currently exhibits a high valuation relative to its historical and industry peers, as evidenced by its very elevated PE ratio, which peaked dramatically in 2023 and remains substantially above typical levels.",
+          "number_bindings": [
+            {
+              "claim_number": "2023",
+              "evidence_line": 4,
+              "evidence_number": "2023A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "278.13",
+              "evidence_line": 16,
+              "evidence_number": "278.1320754716981",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "Historically, AMD's PE ratio surged to over 270 in 2023, driven largely by a significant decline in EPS during that year, followed by a partial normalization but still elevated levels in subsequent years.",
+          "claim": "Historically, AMD's PE ratio surged to over 270 in 2023, driven largely by a significant decline in EPS during that year, followed by a partial normalization but still elevated levels in subsequent years.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 15
+            },
+            {
+              "line_number": 16
+            }
+          ],
+          "reason": "The PE ratio in 2023A is 278.13, and the EPS in 2023A is 0.53, which is a significant decline from 0.85 in 2022A and 2.61 in 2021A. The PE ratio then drops to 123.95 in 2024A and 80.52 in 2025A, which are still elevated.",
+          "action": "keep",
+          "revised_claim": "Historically, AMD's PE ratio surged to over 270 in 2023, driven largely by a significant decline in EPS during that year, followed by a partial normalization but still elevated levels in subsequent years.",
+          "number_bindings": [
+            {
+              "claim_number": "2023",
+              "evidence_line": 4,
+              "evidence_number": "2023A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "278.13",
+              "evidence_line": 16,
+              "evidence_number": "278.1320754716981",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "0.53",
+              "evidence_line": 15,
+              "evidence_number": "0.53",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "This volatility in earnings, combined with strong top-line growth, has contributed to swings in valuation multiples.",
+          "claim": "This volatility in earnings, combined with strong top-line growth, has contributed to swings in valuation multiples.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 6
+            },
+            {
+              "line_number": 8
+            },
+            {
+              "line_number": 15
+            },
+            {
+              "line_number": 16
+            }
+          ],
+          "reason": "Revenue growth is strong (CAGR 20.5%), and EPS is volatile, which aligns with swings in PE ratio.",
+          "action": "keep",
+          "revised_claim": "Volatility in AMD's earnings, combined with strong top-line growth, has contributed to swings in valuation multiples.",
+          "number_bindings": [
+            {
+              "claim_number": "20.5",
+              "evidence_line": 6,
+              "evidence_number": "20.5%",
+              "transform": "identity"
+            }
+          ]
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 1,
+      "claims": [
+        {
+          "original_quote": "When benchmarked against industry peers such as Intel and Nvidia, AMD's valuation multiples, including EV/EBITDA, are notably higher or at least at the upper end of the peer spectrum.",
+          "claim": "When benchmarked against industry peers such as Intel and Nvidia, AMD's valuation multiples, including EV/EBITDA, are notably higher or at least at the upper end of the peer spectrum.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 32
+            },
+            {
+              "line_number": 33
+            },
+            {
+              "line_number": 34
+            },
+            {
+              "line_number": 35
+            },
+            {
+              "line_number": 36
+            }
+          ],
+          "reason": "AMD's EV/EBITDA ratios are higher than Intel's and comparable to Nvidia's, supporting the claim that AMD is at the upper end of the peer spectrum.",
+          "action": "keep",
+          "revised_claim": "When benchmarked against industry peers such as Intel and Nvidia, AMD's valuation multiples, including EV/EBITDA, are notably higher or at least at the upper end of the peer spectrum.",
+          "number_bindings": [
+            {
+              "claim_number": "42.1013",
+              "evidence_line": 32,
+              "evidence_number": "42.1013",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "57.1197",
+              "evidence_line": 34,
+              "evidence_number": "57.1197",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "For instance, AMD's EV/EBITDA ratio has ranged from mid-40s to near 60 in recent years, significantly above Intel's single-digit to low double-digit multiples and comparable to Nvidia's higher multiples, which reflects market recognition of AMD's growth potential and competitive position in the semiconductor sector.",
+          "claim": "AMD's EV/EBITDA ratio has ranged from mid-40s to near 60 in recent years, significantly above Intel's single-digit to low double-digit multiples and comparable to Nvidia's higher multiples.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 32
+            },
+            {
+              "line_number": 33
+            },
+            {
+              "line_number": 34
+            },
+            {
+              "line_number": 35
+            },
+            {
+              "line_number": 36
+            }
+          ],
+          "reason": "AMD's EV/EBITDA ratios are 42.1 (2021), 17.9 (2022), 57.1 (2023), 38.3 (2024), and 47.8 (2025), which are higher than Intel's ratios and comparable to Nvidia's higher multiples.",
+          "action": "keep",
+          "revised_claim": "AMD's EV/EBITDA ratio has ranged from mid-40s to near 60 in recent years, significantly above Intel's single-digit to low double-digit multiples and comparable to Nvidia's higher multiples.",
+          "number_bindings": [
+            {
+              "claim_number": "42.1013",
+              "evidence_line": 32,
+              "evidence_number": "42.1013",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "57.1197",
+              "evidence_line": 34,
+              "evidence_number": "57.1197",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "which reflects market recognition of AMD's growth potential and competitive position in the semiconductor sector.",
+          "claim": "The high valuation multiples reflect market recognition of AMD's growth potential and competitive position in the semiconductor sector.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for the market's reasoning or AMD's competitive position.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 2,
+      "claims": [
+        {
+          "original_quote": "Fundamentally, AMD has demonstrated robust revenue growth with a compound annual growth rate exceeding 20%, alongside improving contribution margins and a recovering EPS trajectory after a dip in 2023.",
+          "claim": "AMD has demonstrated robust revenue growth with a compound annual growth rate exceeding 20%, alongside improving contribution margins and a recovering EPS trajectory after a dip in 2023.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 6
+            },
+            {
+              "line_number": 10
+            },
+            {
+              "line_number": 15
+            }
+          ],
+          "reason": "Revenue CAGR is 20.5%, contribution margin improves from 44.9% in 2022A to 52.5% in 2028E, and EPS recovers after a dip in 2023A.",
+          "action": "keep",
+          "revised_claim": "AMD has demonstrated robust revenue growth with a compound annual growth rate of 20.5%, alongside improving contribution margins and a recovering EPS trajectory after a dip in 2023.",
+          "number_bindings": [
+            {
+              "claim_number": "20.5",
+              "evidence_line": 6,
+              "evidence_number": "20.5%",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "EBITDA margins are forecasted to increase materially, indicating improving operational leverage and profitability.",
+          "claim": "EBITDA margins are forecasted to increase materially, indicating improving operational leverage and profitability.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 12
+            }
+          ],
+          "reason": "EBITDA margin rises from 21.0% in 2025A to 42.0% in 2028E, indicating a material increase.",
+          "action": "keep",
+          "revised_claim": "EBITDA margins are forecasted to increase materially for AMD.",
+          "number_bindings": [
+            {
+              "claim_number": "42.0",
+              "evidence_line": 12,
+              "evidence_number": "42.0%",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "These factors support a premium valuation due to strong growth prospects and improving profitability metrics.",
+          "claim": "These factors support a premium valuation due to strong growth prospects and improving profitability metrics.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided that these factors are the reason for the premium valuation.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 3,
+      "claims": [
+        {
+          "original_quote": "The elevated valuation thus primarily reflects high growth expectations from investors, driven by AMD's expanding market share in CPUs and GPUs, innovations, and strategic positioning against competitors.",
+          "claim": "The elevated valuation primarily reflects high growth expectations from investors, driven by AMD's expanding market share in CPUs and GPUs, innovations, and strategic positioning against competitors.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for the reasons behind the elevated valuation or AMD's market share and innovations.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The semiconductor industry's cyclical nature and recent macroeconomic uncertainties contribute to earnings volatility, which explains the sharp PE ratio fluctuations.",
+          "claim": "The semiconductor industry's cyclical nature and recent macroeconomic uncertainties contribute to earnings volatility, which explains the sharp PE ratio fluctuations.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for the causes of earnings volatility or PE ratio fluctuations.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "While these factors justify a premium to some extent, the historically high levels suggest caution, as the valuation incorporates significant optimism about sustained growth and margin expansion.",
+          "claim": "The historically high valuation levels suggest caution, as the valuation incorporates significant optimism about sustained growth and margin expansion.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for the justification or caution regarding valuation optimism.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 4,
+      "claims": [
+        {
+          "original_quote": "Market risks include potential industry cyclicality, competitive pressures, and macroeconomic challenges that could impact AMD's ability to maintain its growth and margin trajectory.",
+          "claim": "Market risks include potential industry cyclicality, competitive pressures, and macroeconomic challenges that could impact AMD's ability to maintain its growth and margin trajectory.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for these specific market risks or their impact on AMD.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "However, AMD's improving fundamentals and competitive strengths provide a margin of safety relative to peers with weaker growth or profitability profiles.",
+          "claim": "AMD's improving fundamentals and competitive strengths provide a margin of safety relative to peers with weaker growth or profitability profiles.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for AMD's margin of safety or comparison to peers' growth or profitability profiles.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 5,
+      "claims": [
+        {
+          "original_quote": "In summary, AMD's current valuation is high but reflects justified growth expectations and improving fundamentals within the semiconductor industry context.",
+          "claim": "AMD's current valuation is high but reflects justified growth expectations and improving fundamentals within the semiconductor industry context.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for the justification of growth expectations or fundamentals in relation to valuation.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Investors should be aware of the elevated valuation multiples and the associated risks, but given AMD's competitive positioning and profitability outlook, the valuation contains a growth premium rather than a speculative bubble or a value trap.",
+          "claim": "Given AMD's competitive positioning and profitability outlook, the valuation contains a growth premium rather than a speculative bubble or a value trap.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for AMD's competitive positioning, profitability outlook, or the nature of the valuation premium.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    }
+  ],
+  "verifier_version": "8.1-exact-display-wrapper-binding",
+  "release_deduplication": "Identical complete released strings appear once per section; all original claim rows and mappings remain. This is not semantic paraphrase deduplication.",
+  "unquoted_nonfactual_connectors": [],
+  "deterministic_validation_failures": [
+    {
+      "claim_id": "u0c0",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2023:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u0c1",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:270:missing_binding",
+        "numeric_check_failed:2023:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "270",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u0c2",
+      "errors": [
+        "number_binding_set_mismatch"
+      ],
+      "numeric_results": []
+    },
+    {
+      "claim_id": "u1c0",
+      "errors": [
+        "number_binding_set_mismatch"
+      ],
+      "numeric_results": []
+    },
+    {
+      "claim_id": "u1c1",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:-40:missing_binding",
+        "numeric_check_failed:60:missing_binding"
+      ],
+      "numeric_results": [
+        {
+          "token": "-40",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "60",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u2c0",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:20.5%:missing_binding",
+        "numeric_check_failed:2023:missing_binding"
+      ],
+      "numeric_results": [
+        {
+          "token": "20.5%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u2c1",
+      "errors": [
+        "number_binding_set_mismatch"
+      ],
+      "numeric_results": []
+    }
+  ],
+  "deterministic_failure_count": 7,
+  "verified_claim_count": 0,
+  "unverified_annotation_count": 16,
+  "withheld_claim_count": 0,
+  "claim_retention_rate": 1.0,
+  "supported_valid_retention_count": 0,
+  "automatic_year_binding_count": 0,
+  "limitations": "UNVERIFIED annotations preserve unsupported or deterministically rejected assertions for review and must not be counted as grounded facts. A claim's original machine classification is preserved even when deterministic checks reject it; retained_as_verified is then false. Rejected contradicted corrections remain in the audit but are withheld from the narrative. Semantic judgments are machine-assisted, not human-validated. Lexical quote coverage does not prove exhaustive semantic atomization. Exact numeric/year matches do not establish entity/period alignment or dimensional validity of conversions. Repeated source quotes may have ambiguous first-occurrence offsets."
+}

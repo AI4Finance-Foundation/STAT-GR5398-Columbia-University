@@ -1,0 +1,326 @@
+[
+  {
+    "section": "tagline",
+    "prior_unit": {
+      "unit_id": 0,
+      "paragraph_id": 0,
+      "start": 0,
+      "end": 59,
+      "text": "AMD revenue CAGR is 20.5% in the table from 2021A to 2028E."
+    },
+    "prior_atoms": [
+      {
+        "claim_id": "adjudicated.tagline.p0.u0.c0",
+        "claim": "The AMD revenue table displays a generic20.5% CAGR.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "fact_key": "amd|the amd revenue table displays a generic20.5% cagr.",
+        "reason": "Literal generic table cell.",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4,
+            "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+          },
+          {
+            "line_start": 6,
+            "line_end": 6,
+            "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+          }
+        ]
+      },
+      {
+        "claim_id": "adjudicated.tagline.p0.u0.c1",
+        "claim": "AMD revenue CAGR is 20.5% in the table from 2021A to 2028E.",
+        "claim_type": "quantitative",
+        "classification": "Unsupported",
+        "numeric_status": "unverifiable",
+        "fact_key": "amd|amd revenue cagr is 20.5% in the table from 2021a to 2028e.",
+        "reason": "From 2021A to 2028E follows in the table and can describe table coverage. Do not silently relocate that modifier onto the CAGR calculation. Unsupported is a conservative treatment of the unresolved financial interval, not a conclusion that the literal displayed cell or table extent is false. Do not create a second interval atom that the sentence does not assert. Any already-supported literal table-cell atom remains separate; do not automatically promote the ambiguous financial interpretation to Supported.",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4,
+            "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+          },
+          {
+            "line_start": 6,
+            "line_end": 6,
+            "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "section": "company_overview",
+    "prior_unit": {
+      "unit_id": 19,
+      "paragraph_id": 19,
+      "start": 2094,
+      "end": 2148,
+      "text": "The AMD revenue row lists CAGR of 20.5% through 2028E."
+    },
+    "prior_atoms": [
+      {
+        "claim_id": "adjudicated.company_overview.p19.u19.c0",
+        "claim": "The AMD revenue table displays a generic20.5% CAGR.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "fact_key": "amd|the amd revenue table displays a generic20.5% cagr.",
+        "reason": "Literal generic table cell.",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4,
+            "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+          },
+          {
+            "line_start": 6,
+            "line_end": 6,
+            "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+          }
+        ]
+      },
+      {
+        "claim_id": "adjudicated.company_overview.p19.u19.c1",
+        "claim": "The AMD revenue row lists CAGR of 20.5% through 2028E.",
+        "claim_type": "quantitative",
+        "classification": "Unsupported",
+        "numeric_status": "unverifiable",
+        "fact_key": "amd|the amd revenue row lists cagr of 20.5% through 2028e.",
+        "reason": "The revenue row lists CAGR through 2028E is ambiguous table/row metadata language. It neither supplies a CAGR start year nor explicitly says CAGR over the whole displayed interval. Unsupported is a conservative treatment of the unresolved financial interval, not a conclusion that the literal displayed cell or table extent is false. Do not create a second interval atom that the sentence does not assert. Any already-supported literal table-cell atom remains separate; do not automatically promote the ambiguous financial interpretation to Supported.",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4,
+            "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+          },
+          {
+            "line_start": 6,
+            "line_end": 6,
+            "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "section": "investment_overview",
+    "prior_unit": {
+      "unit_id": 57,
+      "paragraph_id": 57,
+      "start": 5777,
+      "end": 5847,
+      "text": "AMD's revenue CAGR is 20.5% in the table spanning 2021A through 2028E."
+    },
+    "prior_atoms": [
+      {
+        "claim_id": "adjudicated.investment_overview.p57.u57.c0",
+        "claim": "The AMD revenue table displays a generic20.5% CAGR.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "fact_key": "amd|the amd revenue table displays a generic20.5% cagr.",
+        "reason": "Literal generic table cell.",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4,
+            "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+          },
+          {
+            "line_start": 6,
+            "line_end": 6,
+            "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+          }
+        ]
+      },
+      {
+        "claim_id": "adjudicated.investment_overview.p57.u57.c1",
+        "claim": "AMD's revenue CAGR is 20.5% in the table spanning 2021A through 2028E.",
+        "claim_type": "quantitative",
+        "classification": "Unsupported",
+        "numeric_status": "unverifiable",
+        "fact_key": "amd|amd's revenue cagr is 20.5% in the table spanning 2021a through 2028e.",
+        "reason": "Spanning 2021A through 2028E explicitly describes the table. Converting this to the financial proposition CAGR from 2021A to 2028E is stronger than the source sentence. Unsupported is a conservative treatment of the unresolved financial interval, not a conclusion that the literal displayed cell or table extent is false. Do not create a second interval atom that the sentence does not assert. Any already-supported literal table-cell atom remains separate; do not automatically promote the ambiguous financial interpretation to Supported.",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4,
+            "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+          },
+          {
+            "line_start": 6,
+            "line_end": 6,
+            "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "section": "competitor_analysis",
+    "prior_unit": {
+      "unit_id": 82,
+      "paragraph_id": 82,
+      "start": 8174,
+      "end": 8233,
+      "text": "AMD revenue CAGR is projected at 20.5% from 2021A to 2028E."
+    },
+    "prior_atoms": [
+      {
+        "claim_id": "adjudicated.competitor_analysis.p82.u82.c0",
+        "claim": "The AMD revenue table displays a generic20.5% CAGR.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "fact_key": "amd|the amd revenue table displays a generic20.5% cagr.",
+        "reason": "Literal generic table cell.",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4,
+            "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+          },
+          {
+            "line_start": 6,
+            "line_end": 6,
+            "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+          }
+        ]
+      },
+      {
+        "claim_id": "adjudicated.competitor_analysis.p82.u82.c1",
+        "claim": "AMD revenue CAGR from2021A to2028E is20.5%.",
+        "claim_type": "quantitative",
+        "classification": "Contradicted",
+        "numeric_status": "incorrect",
+        "fact_key": "amd|amd revenue cagr from2021a to2028e is20.5%.",
+        "reason": "(40095335280/16434000000)^(1/7)-1 =13.588874%, not20.5%;20.491252% is the historical2021A–2025A CAGR.",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4,
+            "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+          },
+          {
+            "line_start": 6,
+            "line_end": 6,
+            "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "section": "major_takeaways",
+    "prior_unit": {
+      "unit_id": 0,
+      "paragraph_id": 0,
+      "start": 0,
+      "end": 62,
+      "text": "AMD Revenue has a 20.5% CAGR from 2021A to 2028E in the table."
+    },
+    "prior_atoms": [
+      {
+        "claim_id": "adjudicated.major_takeaways.p0.u0.c0",
+        "claim": "The AMD revenue table displays a generic20.5% CAGR.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "fact_key": "amd|the amd revenue table displays a generic20.5% cagr.",
+        "reason": "Literal generic table cell.",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4,
+            "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+          },
+          {
+            "line_start": 6,
+            "line_end": 6,
+            "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+          }
+        ]
+      },
+      {
+        "claim_id": "adjudicated.major_takeaways.p0.u0.c1",
+        "claim": "AMD revenue CAGR from2021A to2028E is20.5%.",
+        "claim_type": "quantitative",
+        "classification": "Contradicted",
+        "numeric_status": "incorrect",
+        "fact_key": "amd|amd revenue cagr from2021a to2028e is20.5%.",
+        "reason": "(40095335280/16434000000)^(1/7)-1 =13.588874%, not20.5%;20.491252% is the historical2021A–2025A CAGR.",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4,
+            "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+          },
+          {
+            "line_start": 6,
+            "line_end": 6,
+            "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "section": "news_summary",
+    "prior_unit": {
+      "unit_id": 16,
+      "paragraph_id": 16,
+      "start": 1620,
+      "end": 1683,
+      "text": "AMD's revenue CAGR is 20.5% across 2021A to 2028E in the table."
+    },
+    "prior_atoms": [
+      {
+        "claim_id": "adjudicated.news_summary.p16.u16.c0",
+        "claim": "The AMD revenue table displays a generic20.5% CAGR.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "fact_key": "amd|the amd revenue table displays a generic20.5% cagr.",
+        "reason": "Literal generic table cell.",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4,
+            "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+          },
+          {
+            "line_start": 6,
+            "line_end": 6,
+            "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+          }
+        ]
+      },
+      {
+        "claim_id": "adjudicated.news_summary.p16.u16.c1",
+        "claim": "AMD revenue CAGR from2021A to2028E is20.5%.",
+        "claim_type": "quantitative",
+        "classification": "Contradicted",
+        "numeric_status": "incorrect",
+        "fact_key": "amd|amd revenue cagr from2021a to2028e is20.5%.",
+        "reason": "(40095335280/16434000000)^(1/7)-1 =13.588874%, not20.5%;20.491252% is the historical2021A–2025A CAGR.",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4,
+            "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+          },
+          {
+            "line_start": 6,
+            "line_end": 6,
+            "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+          }
+        ]
+      }
+    ]
+  }
+]

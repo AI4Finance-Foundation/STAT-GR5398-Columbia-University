@@ -1,0 +1,406 @@
+{
+  "call_id": "QCOM_final_v7/verifier/risks",
+  "structured_output": {
+    "units": [
+      {
+        "source_id": 0,
+        "claims": [
+          {
+            "original_quote": "QUALCOMM Incorporated operates in a dynamic and highly competitive semiconductor and telecommunications technology industry, which exposes it to a broad range of risks that could impact its financial performance and long-term valuation.",
+            "claim": "QUALCOMM Incorporated operates in the semiconductor and telecommunications technology industry.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence in the supplied prompt establishes the specific industries in which QUALCOMM operates.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "QUALCOMM Incorporated operates in a dynamic and highly competitive semiconductor and telecommunications technology industry, which exposes it to a broad range of risks that could impact its financial performance and long-term valuation.",
+            "claim": "QUALCOMM Incorporated is exposed to a broad range of risks that could impact its financial performance and long-term valuation.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence in the supplied prompt lists or confirms the broad range of risks or their impact on financial performance and valuation.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 1,
+        "claims": [
+          {
+            "original_quote": "Market risks primarily revolve around fluctuations in customer demand and macroeconomic conditions.",
+            "claim": "Market risks for QUALCOMM primarily revolve around fluctuations in customer demand and macroeconomic conditions.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence in the supplied prompt confirms that these are the primary market risks for QUALCOMM.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The company’s revenue growth, though projected to be strong at a compound annual growth rate of 11.2% through 2028, could be threatened by economic slowdowns, geopolitical tensions, or disruptions in end markets such as smartphones and automotive sectors.",
+            "claim": "QUALCOMM’s revenue growth is projected to be strong at a compound annual growth rate of 11.2% through 2028.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 6
+              },
+              {
+                "line_number": 4
+              }
+            ],
+            "reason": "The financial table explicitly lists a CAGR of 11.2% for revenue through 2028.",
+            "action": "keep",
+            "revised_claim": "QUALCOMM’s revenue growth is projected to be strong at a compound annual growth rate of 11.2% through 2028.",
+            "number_bindings": [
+              {
+                "claim_number": "11.2%",
+                "evidence_line": 6,
+                "evidence_number": "11.2%",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "The company’s revenue growth, though projected to be strong at a compound annual growth rate of 11.2% through 2028, could be threatened by economic slowdowns, geopolitical tensions, or disruptions in end markets such as smartphones and automotive sectors.",
+            "claim": "QUALCOMM’s revenue growth could be threatened by economic slowdowns, geopolitical tensions, or disruptions in end markets such as smartphones and automotive sectors.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence in the supplied prompt confirms these specific threats to revenue growth.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Additionally, shifts in technology adoption cycles or consumer preferences could reduce demand for QUALCOMM’s key products and licensing revenue streams.",
+            "claim": "Shifts in technology adoption cycles or consumer preferences could reduce demand for QUALCOMM’s key products and licensing revenue streams.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence in the supplied prompt confirms this causal relationship.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 2,
+        "claims": [
+          {
+            "original_quote": "Competitive risks are significant for QUALCOMM given the rapid pace of innovation in semiconductor technology and intense rivalry from both established players and emerging challengers.",
+            "claim": "Competitive risks are significant for QUALCOMM due to rapid innovation in semiconductor technology and intense rivalry from established and emerging competitors.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence in the supplied prompt confirms the significance of competitive risks or the sources of competition.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The risk of technological obsolescence is particularly acute, as competitors may develop alternative chip architectures or communication technologies that undercut QUALCOMM’s market share.",
+            "claim": "There is a risk that competitors may develop alternative chip architectures or communication technologies that undercut QUALCOMM’s market share.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence in the supplied prompt confirms this specific risk or its impact on market share.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Price competition, especially in chipset markets, could compress margins and reduce profitability.",
+            "claim": "Price competition in chipset markets could compress QUALCOMM’s margins and reduce profitability.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence in the supplied prompt confirms this causal relationship for QUALCOMM.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "QUALCOMM’s licensing business also faces risks from patent disputes and challenges to its intellectual property, which could limit its ability to monetize its innovations.",
+            "claim": "QUALCOMM’s licensing business faces risks from patent disputes and intellectual property challenges, which could limit its ability to monetize its innovations.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence in the supplied prompt confirms these specific risks or their impact on monetization.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 3,
+        "claims": [
+          {
+            "original_quote": "Operational risks include supply chain disruptions and execution challenges.",
+            "claim": "Operational risks for QUALCOMM include supply chain disruptions and execution challenges.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence in the supplied prompt confirms these as operational risks for QUALCOMM.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The semiconductor industry is vulnerable to component shortages, manufacturing delays, and logistical bottlenecks, any of which could impair QUALCOMM’s ability to meet customer demand and delay product launches.",
+            "claim": "Component shortages, manufacturing delays, and logistical bottlenecks in the semiconductor industry could impair QUALCOMM’s ability to meet customer demand and delay product launches.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence in the supplied prompt confirms these specific risks or their impact on QUALCOMM.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Furthermore, the company’s reliance on key personnel for research and development innovation poses a risk if it fails to attract or retain top talent, potentially slowing product development and eroding competitive advantage.",
+            "claim": "QUALCOMM’s reliance on key personnel for research and development innovation poses a risk if it fails to attract or retain top talent, potentially slowing product development and eroding competitive advantage.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence in the supplied prompt confirms this risk or its consequences for QUALCOMM.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 4,
+        "claims": [
+          {
+            "original_quote": "Financial risks are evident in QUALCOMM’s capital structure and cash flow dynamics.",
+            "claim": "Financial risks are evident in QUALCOMM’s capital structure and cash flow dynamics.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence in the supplied prompt confirms the presence of financial risks in these areas for QUALCOMM.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Although the company shows robust EBITDA growth and contribution margins expanding over the forecast period, it must carefully manage its operating expenses and capital investments to sustain profitability.",
+            "claim": "QUALCOMM shows robust EBITDA growth over the forecast period.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 11
+              },
+              {
+                "line_number": 4
+              }
+            ],
+            "reason": "The financial table shows increasing EBITDA values from 2023A to 2028E, indicating robust growth.",
+            "action": "keep",
+            "revised_claim": "QUALCOMM shows robust EBITDA growth over the forecast period.",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Although the company shows robust EBITDA growth and contribution margins expanding over the forecast period, it must carefully manage its operating expenses and capital investments to sustain profitability.",
+            "claim": "QUALCOMM’s contribution margins are expanding over the forecast period.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 10
+              },
+              {
+                "line_number": 4
+              }
+            ],
+            "reason": "The financial table shows contribution margin increasing from 55.7% in 2023A to 58.4% in 2028E.",
+            "action": "keep",
+            "revised_claim": "QUALCOMM’s contribution margins are expanding over the forecast period.",
+            "number_bindings": [
+              {
+                "claim_number": "55.7%",
+                "evidence_line": 10,
+                "evidence_number": "55.7%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "58.4%",
+                "evidence_line": 10,
+                "evidence_number": "58.4%",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Although the company shows robust EBITDA growth and contribution margins expanding over the forecast period, it must carefully manage its operating expenses and capital investments to sustain profitability.",
+            "claim": "QUALCOMM must carefully manage its operating expenses and capital investments to sustain profitability.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence in the supplied prompt confirms this requirement for QUALCOMM.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Reliance on capital markets for financing, or potential tightening of debt covenants, could constrain financial flexibility.",
+            "claim": "Reliance on capital markets for financing or tightening of debt covenants could constrain QUALCOMM’s financial flexibility.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence in the supplied prompt confirms this risk for QUALCOMM.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The absence of available data on price-earnings multiples and forward valuation metrics increases uncertainty about market perceptions of risk and valuation.",
+            "claim": "The absence of available data on price-earnings multiples and forward valuation metrics increases uncertainty about market perceptions of risk and valuation for QUALCOMM.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 16
+              },
+              {
+                "line_number": 4
+              }
+            ],
+            "reason": "The financial table shows 'nan' for PE Ratio and the text notes the absence of these metrics.",
+            "action": "keep",
+            "revised_claim": "The absence of available data on price-earnings multiples and forward valuation metrics increases uncertainty about market perceptions of risk and valuation for QUALCOMM.",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 5,
+        "claims": [
+          {
+            "original_quote": "Regulatory and ESG risks also present material threats.",
+            "claim": "Regulatory and ESG risks present material threats to QUALCOMM.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence in the supplied prompt confirms the materiality of these threats for QUALCOMM.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "QUALCOMM operates in a highly regulated environment with ongoing scrutiny over antitrust issues, patent licensing practices, and export controls, particularly given geopolitical tensions involving the U.S. and China.",
+            "claim": "QUALCOMM operates in a highly regulated environment with ongoing scrutiny over antitrust issues, patent licensing practices, and export controls, particularly given geopolitical tensions involving the U.S. and China.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence in the supplied prompt confirms these specific regulatory exposures for QUALCOMM.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Changes in government regulations or adverse legal rulings could increase compliance costs or restrict market access.",
+            "claim": "Changes in government regulations or adverse legal rulings could increase QUALCOMM’s compliance costs or restrict market access.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence in the supplied prompt confirms this causal relationship for QUALCOMM.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Environmental liabilities related to manufacturing processes and reputational risks from ESG concerns could also impact the company’s brand and investor appeal.",
+            "claim": "Environmental liabilities related to manufacturing processes and reputational risks from ESG concerns could impact QUALCOMM’s brand and investor appeal.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence in the supplied prompt confirms this risk or its impact for QUALCOMM.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 6,
+        "claims": [
+          {
+            "original_quote": "In summary, the most critical risks for QUALCOMM include the threat of technological disruption and intensified competition that could erode market share and compress margins, supply chain vulnerabilities that may impair operational execution, and regulatory/legal challenges that could increase costs and limit strategic flexibility.",
+            "claim": "The most critical risks for QUALCOMM include technological disruption and intensified competition that could erode market share and compress margins, supply chain vulnerabilities that may impair operational execution, and regulatory/legal challenges that could increase costs and limit strategic flexibility.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence in the supplied prompt confirms these as the most critical risks for QUALCOMM.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "These core risks have the potential to materially impact revenue growth, profitability, and valuation.",
+            "claim": "These core risks have the potential to materially impact QUALCOMM’s revenue growth, profitability, and valuation.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence in the supplied prompt confirms the material impact of these risks for QUALCOMM.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "While the company demonstrates strong financial metrics and operational scale, these mitigating factors may not fully offset the rapid external changes and regulatory pressures faced.",
+            "claim": "QUALCOMM demonstrates strong financial metrics and operational scale.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 6
+              },
+              {
+                "line_number": 11
+              },
+              {
+                "line_number": 10
+              },
+              {
+                "line_number": 4
+              }
+            ],
+            "reason": "The financial table shows strong revenue, EBITDA, and contribution margin figures, supporting the claim of strong financial metrics and operational scale.",
+            "action": "keep",
+            "revised_claim": "QUALCOMM demonstrates strong financial metrics and operational scale.",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "While the company demonstrates strong financial metrics and operational scale, these mitigating factors may not fully offset the rapid external changes and regulatory pressures faced.",
+            "claim": "These mitigating factors may not fully offset the rapid external changes and regulatory pressures faced by QUALCOMM.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence in the supplied prompt confirms the inability of these factors to offset external changes and regulatory pressures.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Investment teams should closely monitor developments in technology innovation, geopolitical regulatory environments, and supply chain stability to assess ongoing risk exposure and the resilience of QUALCOMM’s business model.",
+            "claim": "Investment teams should closely monitor developments in technology innovation, geopolitical regulatory environments, and supply chain stability to assess ongoing risk exposure and the resilience of QUALCOMM’s business model.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence in the supplied prompt supports this recommendation or its rationale.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "usage": {
+    "requests": 1,
+    "input_tokens": 4503,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 3082,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 7585
+  },
+  "runtime_seconds": 11.860695700001088,
+  "cost_usd": 0.033662,
+  "completed_at_utc": "2026-10-11T23:30:26.550124+00:00",
+  "attempts": 1
+}

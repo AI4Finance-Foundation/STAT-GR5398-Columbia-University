@@ -1,0 +1,321 @@
+{
+  "run_id": "AMD_final_reasoning_v8_2",
+  "ticker": "AMD",
+  "company_name": "Advanced Micro Devices, Inc.",
+  "started_at_utc": "2026-10-12T05:29:42.736995+00:00",
+  "upstream_sha": "2717499b8e30f242640af08c4ad9afd1113c2d45",
+  "state": "rendered",
+  "source_analysis": "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\snapshots\\AMD\\analysis",
+  "input_hashes": {
+    "alternate_news_input.json": "e22353f7b7baa836def08f7dbc5b00c20302ac4c89ddf4b8f3a20922dae1863b",
+    "analysis_summary.json": "7bf8594aca9939b5a625c07a122883a34cda11c43edebb1eafbbd8fe2e635998",
+    "balance_sheet_raw_data.csv": "d684ec03f1ee46c66f06680b23251e9ff9112fab35a8d00d4ac10db472ac2784",
+    "cash_flow_raw_data.csv": "6de07bafdb2025998069fa405aec4cf5d05cd9eb63fea2ce8d7551e1e949ce52",
+    "catalyst_analysis.json": "2435f05d4ea681612c5ea2814f49a02a8b79f88c156b17b37814f12217ce06fe",
+    "catalyst_summary.md": "8c1dc34049d0efdd1bd006331aa93e26ea1b8893439bb90acdcc3fc40952ac7e",
+    "company_news.json": "d56fbdf1d23357e3c5efbe89e0cd2eefad7f7d8b6a3a874bf3e3167df6b4101c",
+    "enhanced_news.json": "1ae11f3e4e4820468dc8f48e42084015cb88cedf034ef66e73f231975dd5136a",
+    "financial_metrics_and_forecasts.csv": "d7756b4b6a8907583c2fa281bf420873e71bb5a0f03be53b02cd092fca3737a4",
+    "financial_period_provenance.csv": "de3e1c04260e342333bb72e571986aeb69627701908c8804edb00815baffee79",
+    "forecast_assumptions_audit.csv": "932aca4aaa8ff943b443b2a2ec01c4434a8efb804f9a0b4b099ec95667f1d101",
+    "forecast_config.json": "3a6c983190057a09d3592eab7cf4963ef73a0e2338ba7ffb764e50767db1b133",
+    "forecast_config_original_labels.json": "0de9a1501ea46916ff6cbd03d3cff239a4bebbf30ae568f64342f67449a818af",
+    "historical_prices.csv": "df47b52c1dc949e542da5afaace65f6d14fe556f35d7e1ece3f47469e49970c5",
+    "income_statement_raw_data.csv": "a33e1cd8a653dba627852e50345fdef29c17f24c7ebf84c0e17c0d0a2a35bf2f",
+    "key_metrics_raw_data.csv": "24eecc49d470a514f72337e5ca967149512bdf69746e1acaf21d0a93e8e5e823",
+    "news_article_provenance.json": "e22353f7b7baa836def08f7dbc5b00c20302ac4c89ddf4b8f3a20922dae1863b",
+    "news_status.json": "51b4ff366a20b1d97afd30a62d97f9043611c9395f256e3cecee75821ad5f94b",
+    "news_summary.md": "4264af676fe31758d717efc74279b1af0c37c2fd56ee275bf0bc9a638723b69c",
+    "news_window_filter.json": "0c979a5dc127067e417b403bc828d4b68f58088c74be7dc35a39459d56dd8c0e",
+    "peer_ebitda_comparison.csv": "9cfbfea122b7e372decb26bc41dd0ef8f954eadc3961378f7055586cb747ccbf",
+    "peer_ev_ebitda_comparison.csv": "5e3229eacdcf71bb487c055be68b58c78ea4e3ec488631614e649b33e18a9ff7",
+    "price_performance.json": "6487d21c5b14c0be01987a9bdd29c2db92002db3f1190bdc9b33a90eef36f7e6",
+    "ratios_raw_data.csv": "dc900560c1c1c53865aaf6e1cedbb3d6654c193ab6c935f92320c478d5814485",
+    "sensitivity_analysis.json": "a2f39837c7cf7675b808218c874edbce2c636e1b2edf6f6dffe63fe7f3a27c68",
+    "sensitivity_summary.md": "9438a6aa5fc1d6dc3f35c75c85fe6771963eef99fbb368abd59864e08d3e188e"
+  },
+  "evidence_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+  "model": "gpt-4.1-mini",
+  "temperature": 0.7,
+  "max_tokens": 4000,
+  "variant": "option_A_verifier",
+  "baseline_departure": "Current upstream CLI uses a legacy plain chat wrapper. This runner uses the actual eight typed agents and their unmodified original instructions/shared evidence prompt.",
+  "render_input_hashes": {
+    "manifest.json": "6c90038194339f636bbd62fa680521b06e3d6907a11d011e1ffb6082a1a2571b",
+    "market_snapshot.json": "be0faae7e5b597864086c2c7b43dc0f526c5d1e44e8a6c5cfca6502a96f4cc13",
+    "valuation/dcf_cash_flows.csv": "fcdf442c48a07ef4f4cd5825fa52c391aa558ceac73ea49428391c6621442a29",
+    "valuation/engine_valuation.json": "3088a2b65a65d813f1c8d24412c5452d4ae52cb07fbfee1206cb353a40ea381b",
+    "valuation/independent_valuation.ipynb": "e0e92ef4770c0bcbdc4840df0ed68f809beb255f906100e01f4376d187c0a755",
+    "valuation/independent_valuation.json": "4a7d605e7905e5d0c4c105247d9056acbc3836633509a92ffd6d6035592ceb9b",
+    "valuation/valuation_assumptions.csv": "fded16b1b0c85f8f665aee1022325feef3f9cd10dd0d075eb48f4f2bfab7fe8e",
+    "valuation/valuation_reconciliation.csv": "e864c9edc17ff9a6798d2de9465c06df266945cc596e246d342c96290f4f66e7",
+    "valuation_inputs.json": "23b8ecdbc795d75ebae8321f1e1af416b58bae7b7872c1beede4922c80ecda11"
+  },
+  "parent_run_id": "AMD_baseline_1",
+  "verifier_parameters": {
+    "model": "gpt-5.4-2026-03-05",
+    "temperature": null,
+    "validator_source_sha256": "8a6e6e37d6d6578f15a70dafb8acf34fea0ae3745f2a6eec38be07d5661a42a8",
+    "max_tokens": 20000,
+    "max_validation_repairs": 2,
+    "provider_base_url": "https://api.openai.com/v1",
+    "instructions_sha256": "bddfb7299fb4e88e63021b283434697fef52bbc859968168de0a7149fe34141a",
+    "output_schema": {
+      "$defs": {
+        "AtomicClaim": {
+          "properties": {
+            "original_quote": {
+              "title": "Original Quote",
+              "type": "string"
+            },
+            "claim": {
+              "title": "Claim",
+              "type": "string"
+            },
+            "classification": {
+              "enum": [
+                "Supported",
+                "Unsupported",
+                "Contradicted"
+              ],
+              "title": "Classification",
+              "type": "string"
+            },
+            "evidence": {
+              "items": {
+                "$ref": "#/$defs/EvidenceQuote"
+              },
+              "title": "Evidence",
+              "type": "array"
+            },
+            "reason": {
+              "title": "Reason",
+              "type": "string"
+            },
+            "action": {
+              "enum": [
+                "keep",
+                "correct",
+                "withhold"
+              ],
+              "title": "Action",
+              "type": "string"
+            },
+            "revised_claim": {
+              "title": "Revised Claim",
+              "type": "string"
+            },
+            "number_bindings": {
+              "items": {
+                "$ref": "#/$defs/NumberBinding"
+              },
+              "title": "Number Bindings",
+              "type": "array"
+            }
+          },
+          "required": [
+            "original_quote",
+            "claim",
+            "classification",
+            "evidence",
+            "reason",
+            "action",
+            "revised_claim",
+            "number_bindings"
+          ],
+          "title": "AtomicClaim",
+          "type": "object"
+        },
+        "EvidenceQuote": {
+          "additionalProperties": false,
+          "properties": {
+            "line_number": {
+              "title": "Line Number",
+              "type": "integer"
+            }
+          },
+          "required": [
+            "line_number"
+          ],
+          "title": "EvidenceQuote",
+          "type": "object"
+        },
+        "NumberBinding": {
+          "properties": {
+            "claim_number": {
+              "title": "Claim Number",
+              "type": "string"
+            },
+            "evidence_line": {
+              "title": "Evidence Line",
+              "type": "integer"
+            },
+            "evidence_number": {
+              "title": "Evidence Number",
+              "type": "string"
+            },
+            "transform": {
+              "enum": [
+                "identity",
+                "divide_100",
+                "multiply_100",
+                "divide_million",
+                "divide_billion"
+              ],
+              "title": "Transform",
+              "type": "string"
+            }
+          },
+          "required": [
+            "claim_number",
+            "evidence_line",
+            "evidence_number",
+            "transform"
+          ],
+          "title": "NumberBinding",
+          "type": "object"
+        },
+        "UnitReview": {
+          "properties": {
+            "source_id": {
+              "title": "Source Id",
+              "type": "integer"
+            },
+            "claims": {
+              "items": {
+                "$ref": "#/$defs/AtomicClaim"
+              },
+              "title": "Claims",
+              "type": "array"
+            },
+            "nonfactual_reason": {
+              "title": "Nonfactual Reason",
+              "type": "string"
+            }
+          },
+          "required": [
+            "source_id",
+            "claims",
+            "nonfactual_reason"
+          ],
+          "title": "UnitReview",
+          "type": "object"
+        }
+      },
+      "properties": {
+        "units": {
+          "items": {
+            "$ref": "#/$defs/UnitReview"
+          },
+          "title": "Units",
+          "type": "array"
+        }
+      },
+      "required": [
+        "units"
+      ],
+      "title": "VerifierResponse",
+      "type": "object"
+    },
+    "reasoning_effort": "low",
+    "output_limit_parameter": "max_completion_tokens",
+    "temperature_omitted": true,
+    "reuse_review_run": "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\runs\\AMD_final_reasoning_v8_1",
+    "reuse_source_manifest_sha256": "ad3806e1fa2f5f28182eaef64c1141c4049a997fc7ef500a2a38077a291a621e"
+  },
+  "parent_analysis_hashes": {
+    "alternate_news_input.json": "e22353f7b7baa836def08f7dbc5b00c20302ac4c89ddf4b8f3a20922dae1863b",
+    "analysis_summary.json": "7bf8594aca9939b5a625c07a122883a34cda11c43edebb1eafbbd8fe2e635998",
+    "balance_sheet_raw_data.csv": "d684ec03f1ee46c66f06680b23251e9ff9112fab35a8d00d4ac10db472ac2784",
+    "cash_flow_raw_data.csv": "6de07bafdb2025998069fa405aec4cf5d05cd9eb63fea2ce8d7551e1e949ce52",
+    "catalyst_analysis.json": "2435f05d4ea681612c5ea2814f49a02a8b79f88c156b17b37814f12217ce06fe",
+    "catalyst_summary.md": "8c1dc34049d0efdd1bd006331aa93e26ea1b8893439bb90acdcc3fc40952ac7e",
+    "company_news.json": "d56fbdf1d23357e3c5efbe89e0cd2eefad7f7d8b6a3a874bf3e3167df6b4101c",
+    "company_overview.txt": "32dc5141652456de20589e38cc0dbdb8b58dcd7306cbf6ddc49086a5d54356a8",
+    "competitor_analysis.txt": "8c0b22bf6ad5624a510e84c4fd7e05b86d72cbf4014c76df54c1f2e88744f42d",
+    "enhanced_news.json": "1ae11f3e4e4820468dc8f48e42084015cb88cedf034ef66e73f231975dd5136a",
+    "financial_metrics_and_forecasts.csv": "d7756b4b6a8907583c2fa281bf420873e71bb5a0f03be53b02cd092fca3737a4",
+    "financial_period_provenance.csv": "de3e1c04260e342333bb72e571986aeb69627701908c8804edb00815baffee79",
+    "forecast_assumptions_audit.csv": "932aca4aaa8ff943b443b2a2ec01c4434a8efb804f9a0b4b099ec95667f1d101",
+    "forecast_config.json": "3a6c983190057a09d3592eab7cf4963ef73a0e2338ba7ffb764e50767db1b133",
+    "forecast_config_original_labels.json": "0de9a1501ea46916ff6cbd03d3cff239a4bebbf30ae568f64342f67449a818af",
+    "historical_prices.csv": "df47b52c1dc949e542da5afaace65f6d14fe556f35d7e1ece3f47469e49970c5",
+    "income_statement_raw_data.csv": "a33e1cd8a653dba627852e50345fdef29c17f24c7ebf84c0e17c0d0a2a35bf2f",
+    "investment_overview.txt": "0aa64a359afeab8be6128fd8acf826b9f61e7540556b44b31766109801c88f12",
+    "key_metrics_raw_data.csv": "24eecc49d470a514f72337e5ca967149512bdf69746e1acaf21d0a93e8e5e823",
+    "major_takeaways.txt": "51f58f5ad66fb3abd251485b92531dffe373e8150ba0e5a2fd28271fbdcc3f92",
+    "news_article_provenance.json": "e22353f7b7baa836def08f7dbc5b00c20302ac4c89ddf4b8f3a20922dae1863b",
+    "news_status.json": "51b4ff366a20b1d97afd30a62d97f9043611c9395f256e3cecee75821ad5f94b",
+    "news_summary.md": "4264af676fe31758d717efc74279b1af0c37c2fd56ee275bf0bc9a638723b69c",
+    "news_summary.txt": "3dbe35f01fa3e4a66275b8eee2284b6b191e8ef001b71a8c4856f550ed934456",
+    "news_window_filter.json": "0c979a5dc127067e417b403bc828d4b68f58088c74be7dc35a39459d56dd8c0e",
+    "peer_ebitda_comparison.csv": "9cfbfea122b7e372decb26bc41dd0ef8f954eadc3961378f7055586cb747ccbf",
+    "peer_ev_ebitda_comparison.csv": "5e3229eacdcf71bb487c055be68b58c78ea4e3ec488631614e649b33e18a9ff7",
+    "price_performance.json": "6487d21c5b14c0be01987a9bdd29c2db92002db3f1190bdc9b33a90eef36f7e6",
+    "ratios_raw_data.csv": "dc900560c1c1c53865aaf6e1cedbb3d6654c193ab6c935f92320c478d5814485",
+    "risks.txt": "43ed23bcedf12513b973855d65feb690dcd3cb84c9557583c8ab144eb5c648aa",
+    "sensitivity_analysis.json": "a2f39837c7cf7675b808218c874edbce2c636e1b2edf6f6dffe63fe7f3a27c68",
+    "sensitivity_summary.md": "9438a6aa5fc1d6dc3f35c75c85fe6771963eef99fbb368abd59864e08d3e188e",
+    "tagline.txt": "fc61295a0c6876b2b1bd26aea78d2a4fca7e38b0a0c7e077569cb487dfc848f7",
+    "valuation_overview.txt": "7eae6c9ab3ce4b232e8db15cd11006e378982e99a411c2404655a50d34447215"
+  },
+  "resume_events": [],
+  "completed_sections": [
+    "tagline",
+    "company_overview",
+    "investment_overview",
+    "valuation_overview",
+    "risks",
+    "competitor_analysis",
+    "major_takeaways",
+    "news_summary"
+  ],
+  "completed_at_utc": "2026-10-12T05:29:43.383887+00:00",
+  "analysis_hashes": {
+    "alternate_news_input.json": "e22353f7b7baa836def08f7dbc5b00c20302ac4c89ddf4b8f3a20922dae1863b",
+    "analysis_summary.json": "7bf8594aca9939b5a625c07a122883a34cda11c43edebb1eafbbd8fe2e635998",
+    "balance_sheet_raw_data.csv": "d684ec03f1ee46c66f06680b23251e9ff9112fab35a8d00d4ac10db472ac2784",
+    "cash_flow_raw_data.csv": "6de07bafdb2025998069fa405aec4cf5d05cd9eb63fea2ce8d7551e1e949ce52",
+    "catalyst_analysis.json": "2435f05d4ea681612c5ea2814f49a02a8b79f88c156b17b37814f12217ce06fe",
+    "catalyst_summary.md": "8c1dc34049d0efdd1bd006331aa93e26ea1b8893439bb90acdcc3fc40952ac7e",
+    "company_news.json": "d56fbdf1d23357e3c5efbe89e0cd2eefad7f7d8b6a3a874bf3e3167df6b4101c",
+    "company_overview.txt": "2edd37470a6795bb06dad7354fb219647f6a5197ef3b8d3d09ffb2d727845f72",
+    "competitor_analysis.txt": "23c2f57b5d331b1f447fd883c2ade930f6a1cb94a21fa2ae2f770e671d80e44c",
+    "enhanced_news.json": "1ae11f3e4e4820468dc8f48e42084015cb88cedf034ef66e73f231975dd5136a",
+    "financial_metrics_and_forecasts.csv": "d7756b4b6a8907583c2fa281bf420873e71bb5a0f03be53b02cd092fca3737a4",
+    "financial_period_provenance.csv": "de3e1c04260e342333bb72e571986aeb69627701908c8804edb00815baffee79",
+    "forecast_assumptions_audit.csv": "932aca4aaa8ff943b443b2a2ec01c4434a8efb804f9a0b4b099ec95667f1d101",
+    "forecast_config.json": "3a6c983190057a09d3592eab7cf4963ef73a0e2338ba7ffb764e50767db1b133",
+    "forecast_config_original_labels.json": "0de9a1501ea46916ff6cbd03d3cff239a4bebbf30ae568f64342f67449a818af",
+    "historical_prices.csv": "df47b52c1dc949e542da5afaace65f6d14fe556f35d7e1ece3f47469e49970c5",
+    "income_statement_raw_data.csv": "a33e1cd8a653dba627852e50345fdef29c17f24c7ebf84c0e17c0d0a2a35bf2f",
+    "investment_overview.txt": "45c12461e751e96a9a8d43d92cee24e01a19eef7757eabca4b772b3301caea53",
+    "key_metrics_raw_data.csv": "24eecc49d470a514f72337e5ca967149512bdf69746e1acaf21d0a93e8e5e823",
+    "major_takeaways.txt": "51a4462a73f874832d427472e75f7506f934121f2e420f76f1e6eead1c6733bd",
+    "news_article_provenance.json": "e22353f7b7baa836def08f7dbc5b00c20302ac4c89ddf4b8f3a20922dae1863b",
+    "news_status.json": "51b4ff366a20b1d97afd30a62d97f9043611c9395f256e3cecee75821ad5f94b",
+    "news_summary.md": "4264af676fe31758d717efc74279b1af0c37c2fd56ee275bf0bc9a638723b69c",
+    "news_summary.txt": "c7cf8231ced0b3cd3a9abe73e11be3646b526fff6b0e2a99d692123142f67d0a",
+    "news_window_filter.json": "0c979a5dc127067e417b403bc828d4b68f58088c74be7dc35a39459d56dd8c0e",
+    "peer_ebitda_comparison.csv": "9cfbfea122b7e372decb26bc41dd0ef8f954eadc3961378f7055586cb747ccbf",
+    "peer_ev_ebitda_comparison.csv": "5e3229eacdcf71bb487c055be68b58c78ea4e3ec488631614e649b33e18a9ff7",
+    "price_performance.json": "6487d21c5b14c0be01987a9bdd29c2db92002db3f1190bdc9b33a90eef36f7e6",
+    "ratios_raw_data.csv": "dc900560c1c1c53865aaf6e1cedbb3d6654c193ab6c935f92320c478d5814485",
+    "risks.txt": "14e4327724fa46279c2b8e30be36320d18f6b7cfe7821c2e46cbfbc18584128b",
+    "sensitivity_analysis.json": "a2f39837c7cf7675b808218c874edbce2c636e1b2edf6f6dffe63fe7f3a27c68",
+    "sensitivity_summary.md": "9438a6aa5fc1d6dc3f35c75c85fe6771963eef99fbb368abd59864e08d3e188e",
+    "tagline.txt": "2ac54e7698062ae3e91ba66afa4fb7d773630d917430fa4d953524d4de7288f7",
+    "valuation_overview.txt": "9a8f819aa305196339ae04d55b47b438c1a0247838dc8157f78b4392a6dd34e9"
+  },
+  "rendered_at_utc": "2026-10-12T05:29:45.560664+00:00",
+  "report_hashes": {
+    "AMD_eps_pe_chart.png": "7a21b2811d7e4149b7c413a8c8341931c548063f75f586021f2f57e42fc5ae38",
+    "AMD_peer_ev_ebitda_chart.png": "b6a5e1784774cb503aef8c3a348f6d2ac4bdb986294d9cb7f3cebdc22157bd30",
+    "AMD_revenue_ebitda_chart.png": "86f6c1faa1a1bcfea68957ec0658c0e33f1639af7563fe0de0627ef76c514251",
+    "assets/eps_pe_chart_path_7a21b2811d7e4149.png": "7a21b2811d7e4149b7c413a8c8341931c548063f75f586021f2f57e42fc5ae38",
+    "assets/ev_ebitda_chart_path_b6a5e1784774cb50.png": "b6a5e1784774cb503aef8c3a348f6d2ac4bdb986294d9cb7f3cebdc22157bd30",
+    "assets/revenue_chart_path_86f6c1faa1a1bcfe.png": "86f6c1faa1a1bcfea68957ec0658c0e33f1639af7563fe0de0627ef76c514251",
+    "Audited_Equity_Report_AMD.html": "162c1dbe91191200d011d0ac1af01582ed15dd65f06f80697073ff6d7b984de3",
+    "rendered_section_texts.json": "39dda73ddeb7704f0324f1ac03da164b77253a93c9b0c4e4063ca1eec132a4ef"
+  }
+}

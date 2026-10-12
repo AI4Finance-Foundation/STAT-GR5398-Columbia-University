@@ -1,0 +1,257 @@
+{
+  "run_id": "INTC_final_v3",
+  "ticker": "INTC",
+  "company_name": "Intel Corporation",
+  "started_at_utc": "2026-10-11T21:47:44.275665+00:00",
+  "upstream_sha": "2717499b8e30f242640af08c4ad9afd1113c2d45",
+  "state": "verifying",
+  "source_analysis": "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\snapshots\\INTC_news_v2\\analysis",
+  "input_hashes": {
+    "alternate_news_input.json": "e5f9b8c588ce79fbf3fc3dcdafa58b47a5a4414c5a32f36f597a403775c26b45",
+    "analysis_summary.json": "2b0c8e85b4146f0a921b52b3a6bcf3bef56790941993ff7ac66dddb06279e3f7",
+    "balance_sheet_raw_data.csv": "84f805bc6aac88d71ef907efbbd35684f3ffe78473181b146df4955e15b3b9ca",
+    "cash_flow_raw_data.csv": "b175074ebddfaaa6f32e7a76c212948bcfb95f549786c447fc24862bf9a27cdc",
+    "catalyst_analysis.json": "640f2ee2db74ce73182d4857a2961c79b79a6134af7ca39269edc4ee86b83e86",
+    "catalyst_summary.md": "83c41f5c6b126ba4463336801cbb2c44e47cf8704d8ceefe349de1c33e95afbd",
+    "company_news.json": "b4930f784564806893cc0a9a5b9bdfef61651416a511874fd1f0a1e78f7bf697",
+    "enhanced_news.json": "ebe106761a1c4066168df248f44456aa3c0125e01ab6927b4466b671ee1bc824",
+    "financial_metrics_and_forecasts.csv": "b89c1e6c5bf117d2dbb34b7987e56b61b7edf48959edf711d373cba6fb46b408",
+    "financial_period_provenance.csv": "c07ab73d364c4e84f5a5cc80a8d8a53afa548c4d66cd1dc9f4079122a2426375",
+    "forecast_assumptions_audit.csv": "64cc8d71b8d7502943e7f25a76ebca7af456c38389d36275bb7286ef8e0a1622",
+    "forecast_config.json": "3a6c983190057a09d3592eab7cf4963ef73a0e2338ba7ffb764e50767db1b133",
+    "forecast_config_original_labels.json": "0de9a1501ea46916ff6cbd03d3cff239a4bebbf30ae568f64342f67449a818af",
+    "historical_prices.csv": "557822ba80d66cf9a5e01bb0c5d5ce4d2ed468468eb1f6d8c825b078969fb156",
+    "income_statement_raw_data.csv": "7e98244c50743e11c6d1c9f04f91edeaa1884161e212d4376eb1dac09be19a2f",
+    "key_metrics_raw_data.csv": "af5ecfdb6d60dd3e8571b83bea8f40b277ad50a6be3ad150b7bedc98f4a22933",
+    "news_article_provenance.json": "e5f9b8c588ce79fbf3fc3dcdafa58b47a5a4414c5a32f36f597a403775c26b45",
+    "news_status.json": "5bcbed94957313d0fa289f5e73537db6ba9a8a8e4f5844bbd2cc3a90a1b09f5f",
+    "news_summary.md": "6543e18b7f8d3bbb401ecc4708b5dec16a8229e2b60f163bd9e2d9e015a16914",
+    "news_window_filter.json": "0c979a5dc127067e417b403bc828d4b68f58088c74be7dc35a39459d56dd8c0e",
+    "peer_ebitda_comparison.csv": "9cfbfea122b7e372decb26bc41dd0ef8f954eadc3961378f7055586cb747ccbf",
+    "peer_ev_ebitda_comparison.csv": "5e3229eacdcf71bb487c055be68b58c78ea4e3ec488631614e649b33e18a9ff7",
+    "price_performance.json": "bc0d82e2b701a478ad9023f548f8b078608ddcaacf11cb8be6178cda22283037",
+    "ratios_raw_data.csv": "0d0694eec9312401107ad086c2a0a432d1e2788cc303c999fef61a8714021fc4",
+    "sensitivity_analysis.json": "d54e02822ebd4bdaa666b285ef660dbcdb730e44d77ae9aa4b7b1763ea7b0019",
+    "sensitivity_summary.md": "3fff278ba622832c5388b8190802019912524e18fb0c785101dbdead89ab34ea"
+  },
+  "evidence_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef",
+  "model": "gpt-4.1-mini",
+  "temperature": 0.7,
+  "max_tokens": 4000,
+  "variant": "option_A_verifier",
+  "baseline_departure": "Current upstream CLI uses a legacy plain chat wrapper. This runner uses the actual eight typed agents and their unmodified original instructions/shared evidence prompt.",
+  "render_input_hashes": {
+    "manifest.json": "96a89729ca0ea80eda04829f4771f04a294271de93b561ba24277104f56cddb5",
+    "market_snapshot.json": "0e776d557e457c631f3751100f1454277e54845806bac08f95a291ac7cd5936f",
+    "valuation/dcf_cash_flows.csv": "b134366acda08fd84395e34c15b93db4c8d2d989692c88ca9fa5ebd14685c2da",
+    "valuation/engine_valuation.json": "85729c5929e8151e9593926d58ce31ac826a1fd0d7cff53c75c3041a92e4bc95",
+    "valuation/independent_valuation.ipynb": "91165cfc5c1f9f8caddb138c4f16e0dccbbc7ba06eff98892a8f6409d61ec1a8",
+    "valuation/independent_valuation.json": "c861d9f269ee5619568b11e14ba19206f02212a64339fe133b008e32340de0d4",
+    "valuation/valuation_assumptions.csv": "865c7c85536e6fb1f846a468bdc147f59d5707628d6b6e5c6ad4a79cc508f50b",
+    "valuation/valuation_reconciliation.csv": "ca2b2eee9978bc1aafdeb278458c816236168bd37e0cac7703b00dc86909db20",
+    "valuation_inputs.json": "cbb137a9eca31e67d0554aac3ee36ce3705677fa0dbe4dd77e53d6741585cbb4"
+  },
+  "parent_run_id": "INTC_baseline_1",
+  "verifier_parameters": {
+    "model": "gpt-4.1",
+    "temperature": 0,
+    "max_tokens": 26000,
+    "max_validation_repairs": 2,
+    "provider_base_url": "https://api.openai.com/v1",
+    "instructions_sha256": "703d71b1688656852413dffa36b417e8d860b47b9b77fca8f87c8b9fd17f381e",
+    "output_schema": {
+      "$defs": {
+        "AtomicClaim": {
+          "properties": {
+            "original_quote": {
+              "title": "Original Quote",
+              "type": "string"
+            },
+            "claim": {
+              "title": "Claim",
+              "type": "string"
+            },
+            "classification": {
+              "enum": [
+                "Supported",
+                "Unsupported",
+                "Contradicted"
+              ],
+              "title": "Classification",
+              "type": "string"
+            },
+            "evidence": {
+              "items": {
+                "$ref": "#/$defs/EvidenceQuote"
+              },
+              "title": "Evidence",
+              "type": "array"
+            },
+            "reason": {
+              "title": "Reason",
+              "type": "string"
+            },
+            "action": {
+              "enum": [
+                "keep",
+                "correct",
+                "withhold"
+              ],
+              "title": "Action",
+              "type": "string"
+            },
+            "revised_claim": {
+              "title": "Revised Claim",
+              "type": "string"
+            },
+            "number_bindings": {
+              "items": {
+                "$ref": "#/$defs/NumberBinding"
+              },
+              "title": "Number Bindings",
+              "type": "array"
+            }
+          },
+          "required": [
+            "original_quote",
+            "claim",
+            "classification",
+            "evidence",
+            "reason",
+            "action",
+            "revised_claim",
+            "number_bindings"
+          ],
+          "title": "AtomicClaim",
+          "type": "object"
+        },
+        "EvidenceQuote": {
+          "additionalProperties": false,
+          "properties": {
+            "line_number": {
+              "title": "Line Number",
+              "type": "integer"
+            }
+          },
+          "required": [
+            "line_number"
+          ],
+          "title": "EvidenceQuote",
+          "type": "object"
+        },
+        "NumberBinding": {
+          "properties": {
+            "claim_number": {
+              "title": "Claim Number",
+              "type": "string"
+            },
+            "evidence_line": {
+              "title": "Evidence Line",
+              "type": "integer"
+            },
+            "evidence_number": {
+              "title": "Evidence Number",
+              "type": "string"
+            },
+            "transform": {
+              "enum": [
+                "identity",
+                "divide_100",
+                "multiply_100",
+                "divide_million",
+                "divide_billion"
+              ],
+              "title": "Transform",
+              "type": "string"
+            }
+          },
+          "required": [
+            "claim_number",
+            "evidence_line",
+            "evidence_number",
+            "transform"
+          ],
+          "title": "NumberBinding",
+          "type": "object"
+        },
+        "UnitReview": {
+          "properties": {
+            "source_id": {
+              "title": "Source Id",
+              "type": "integer"
+            },
+            "claims": {
+              "items": {
+                "$ref": "#/$defs/AtomicClaim"
+              },
+              "title": "Claims",
+              "type": "array"
+            },
+            "nonfactual_reason": {
+              "title": "Nonfactual Reason",
+              "type": "string"
+            }
+          },
+          "required": [
+            "source_id",
+            "claims",
+            "nonfactual_reason"
+          ],
+          "title": "UnitReview",
+          "type": "object"
+        }
+      },
+      "properties": {
+        "units": {
+          "items": {
+            "$ref": "#/$defs/UnitReview"
+          },
+          "title": "Units",
+          "type": "array"
+        }
+      },
+      "required": [
+        "units"
+      ],
+      "title": "VerifierResponse",
+      "type": "object"
+    }
+  },
+  "parent_analysis_hashes": {
+    "alternate_news_input.json": "e5f9b8c588ce79fbf3fc3dcdafa58b47a5a4414c5a32f36f597a403775c26b45",
+    "analysis_summary.json": "2b0c8e85b4146f0a921b52b3a6bcf3bef56790941993ff7ac66dddb06279e3f7",
+    "balance_sheet_raw_data.csv": "84f805bc6aac88d71ef907efbbd35684f3ffe78473181b146df4955e15b3b9ca",
+    "cash_flow_raw_data.csv": "b175074ebddfaaa6f32e7a76c212948bcfb95f549786c447fc24862bf9a27cdc",
+    "catalyst_analysis.json": "640f2ee2db74ce73182d4857a2961c79b79a6134af7ca39269edc4ee86b83e86",
+    "catalyst_summary.md": "83c41f5c6b126ba4463336801cbb2c44e47cf8704d8ceefe349de1c33e95afbd",
+    "company_news.json": "b4930f784564806893cc0a9a5b9bdfef61651416a511874fd1f0a1e78f7bf697",
+    "company_overview.txt": "952fef6a252a67652bae357ca5656073d53a134a3b54b6eeaf624951ea46d5f8",
+    "competitor_analysis.txt": "31c42f6dcc53a6aec392c24095990034ee4f10a302c07d37ac651ec80cae04c9",
+    "enhanced_news.json": "ebe106761a1c4066168df248f44456aa3c0125e01ab6927b4466b671ee1bc824",
+    "financial_metrics_and_forecasts.csv": "b89c1e6c5bf117d2dbb34b7987e56b61b7edf48959edf711d373cba6fb46b408",
+    "financial_period_provenance.csv": "c07ab73d364c4e84f5a5cc80a8d8a53afa548c4d66cd1dc9f4079122a2426375",
+    "forecast_assumptions_audit.csv": "64cc8d71b8d7502943e7f25a76ebca7af456c38389d36275bb7286ef8e0a1622",
+    "forecast_config.json": "3a6c983190057a09d3592eab7cf4963ef73a0e2338ba7ffb764e50767db1b133",
+    "forecast_config_original_labels.json": "0de9a1501ea46916ff6cbd03d3cff239a4bebbf30ae568f64342f67449a818af",
+    "historical_prices.csv": "557822ba80d66cf9a5e01bb0c5d5ce4d2ed468468eb1f6d8c825b078969fb156",
+    "income_statement_raw_data.csv": "7e98244c50743e11c6d1c9f04f91edeaa1884161e212d4376eb1dac09be19a2f",
+    "investment_overview.txt": "096bda246caef2e90ed8196c03bbc536635895f220f7a97e1807db2439f2788c",
+    "key_metrics_raw_data.csv": "af5ecfdb6d60dd3e8571b83bea8f40b277ad50a6be3ad150b7bedc98f4a22933",
+    "major_takeaways.txt": "0f978e8a0f545b0f4a6a30d100f828cab728dc4681bcf21e9688e35fbecdf715",
+    "news_article_provenance.json": "e5f9b8c588ce79fbf3fc3dcdafa58b47a5a4414c5a32f36f597a403775c26b45",
+    "news_status.json": "5bcbed94957313d0fa289f5e73537db6ba9a8a8e4f5844bbd2cc3a90a1b09f5f",
+    "news_summary.md": "6543e18b7f8d3bbb401ecc4708b5dec16a8229e2b60f163bd9e2d9e015a16914",
+    "news_summary.txt": "a11ba4974e5305b5b69442d2326d9b349c5e851533d9604501a8eef97b4856b1",
+    "news_window_filter.json": "0c979a5dc127067e417b403bc828d4b68f58088c74be7dc35a39459d56dd8c0e",
+    "peer_ebitda_comparison.csv": "9cfbfea122b7e372decb26bc41dd0ef8f954eadc3961378f7055586cb747ccbf",
+    "peer_ev_ebitda_comparison.csv": "5e3229eacdcf71bb487c055be68b58c78ea4e3ec488631614e649b33e18a9ff7",
+    "price_performance.json": "bc0d82e2b701a478ad9023f548f8b078608ddcaacf11cb8be6178cda22283037",
+    "ratios_raw_data.csv": "0d0694eec9312401107ad086c2a0a432d1e2788cc303c999fef61a8714021fc4",
+    "risks.txt": "47ed4a5f9660b60e413fb36b8b441145b488e838101703ed6d54fcb15c1da858",
+    "sensitivity_analysis.json": "d54e02822ebd4bdaa666b285ef660dbcdb730e44d77ae9aa4b7b1763ea7b0019",
+    "sensitivity_summary.md": "3fff278ba622832c5388b8190802019912524e18fb0c785101dbdead89ab34ea",
+    "tagline.txt": "d869c68e6512b0badfd2ef3f2e8c16eb6ccb9ec021227080429afc8a1cdf5df8",
+    "valuation_overview.txt": "408fd4f283ec7392b8f416fb4870e4f68c9160bee54039db13910629df77ccba"
+  },
+  "resume_events": []
+}

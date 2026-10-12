@@ -1,0 +1,31 @@
+{
+  "updated_at_utc": "2026-10-12T06:46:51.020499+00:00",
+  "phase": "local_research_revision_complete_integrity_and_export_recorded_separately",
+  "assignment_complete": false,
+  "live_paid_driver_session_id": null,
+  "new_paid_call_needed": false,
+  "settled_cost_usd": 10.045071499999999,
+  "approved_cap_usd": 20,
+  "unsettled_calls": [],
+  "current_followup": "V9.1; original V6/V7.1/V8.2 and initial evaluator labels remain preserved.",
+  "study": "docs/verifier_semantic_v9_followup.md",
+  "complete_pairs": "config/grounding_reasoning_v9_1_pairs.json",
+  "after_counts": {
+    "supported": 570,
+    "unsupported": 1415,
+    "contradicted": 0,
+    "claims": 1985,
+    "numeric_unverifiable": 51
+  },
+  "measurement_boundary": "Evaluator scope corrections change labels only; V9/V9.1 then clarify original-prompt horizons/ranges. Development cohort, machine-assisted audit, no human review or held-out guarantee.",
+  "verification": "Clean patch apply;235 tests+6 subtests;24 CSVs byte-identical on offline metric reproduction;true copied-submission V8.2/V9.1 replay with original-root Python reads denied;16-page PDF actual/exact prior visual coverage.",
+  "publication": "User explicitly deferred Medium and course PR. Do not publish or ask again without later user direction.",
+  "remaining": [
+    "Medium publication and its real URL deferred by user",
+    "Course master PR deferred by user",
+    "Strict zero-error certification unavailable: historical experiment errors and unresolved narratives remain disclosed"
+  ],
+  "delivery_integrity": "evidence/delivery_validation.json",
+  "scoped_local_export": "evidence/course_submission_diff.json",
+  "next": "No new paid experiment is needed for saved local reproduction. Read README and current validation/export manifests. Refresh scan/inventory/scoped export only if files change; publication requires later user direction. Do not confuse replay with new independent generation."
+}

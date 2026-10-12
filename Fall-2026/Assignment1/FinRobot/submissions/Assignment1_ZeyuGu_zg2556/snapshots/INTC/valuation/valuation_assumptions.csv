@@ -1,0 +1,19 @@
+ticker,run_id,assumption,value,source,interpretation
+INTC,INTC-20261011T211000Z-snapshot,EBITDA,18720591795.36,financial_metrics_and_forecasts.csv:EBITDA/2028E,"terminal forecast, not latest historical EBITDA"
+INTC,INTC-20261011T211000Z-snapshot,EBITDA period,2028E,last A/E column in analysis CSV,preserves baseline selector
+INTC,INTC-20261011T211000Z-snapshot,Shares,5043999747.0,"{""sources"": [{""source_url"": ""https://financialmodelingprep.com/stable/shares-float?symbol=INTC"", ""fetched_at_utc"": ""2026-10-11T21:21:04.682019+00:00"", ""status_code"": 200, ""content_type"": ""application/json; charset=utf-8"", ""body_sha256"": ""5a6f067cfb77bf6fe2dc7b613fc03ca57faa8a84151a8bc4bda8bab10db64105"", ""secret_echo_redacted"": false, ""runtime_seconds"": 0.08138700000017707, ""response_key"": ""b1324846a7f03173fb3d3411f373b1d2b7ed8374952cb265ec6ff70fc43c68dc""}], ""json_location"": ""[0].outstandingShares"", ""unit"": ""shares""}",actual share count must match valuation units
+INTC,INTC-20261011T211000Z-snapshot,Historical mean EV/EBITDA,31.519502799624366,observed sample mean,unweighted sample mean; fiscal/calendar labels require source audit
+INTC,INTC-20261011T211000Z-snapshot,Historical sample standard deviation,42.65457669541252,"sample standard deviation, denominator n-1",observations=5
+INTC,INTC-20261011T211000Z-snapshot,Target multiple,31.519502799624366,observed sample mean,same multiple across sensitivity cases
+INTC,INTC-20261011T211000Z-snapshot,Net debt rule,0.1,hard-coded baseline,10% of each modeled enterprise value; NOT balance-sheet debt; low/high multiples hold central debt fixed
+INTC,INTC-20261011T211000Z-snapshot,Price floor,0,hard-coded baseline,negative equity valuations clipped to zero
+INTC,INTC-20261011T211000Z-snapshot,EV/EBITDA discount rate,N/A,no discounting in baseline multiple method,terminal forecast is not discounted back to observation date
+INTC,INTC-20261011T211000Z-snapshot,EV/EBITDA terminal growth,N/A,multiple method,not a DCF assumption
+INTC,INTC-20261011T211000Z-snapshot,Base FCF,-4949000000.0,caller free_cash_flow,period=2025-12-27 00:00:00; caller FCF definition must be disclosed
+INTC,INTC-20261011T211000Z-snapshot,DCF low/high range,+/-1pp terminal discount denominator only,hard-coded baseline,"not a full WACC sensitivity: explicit PV, terminal-value denominator and net debt remain fixed"
+INTC,INTC-20261011T211000Z-snapshot,Confidence weights,EV/EBITDA 0.7; peers 0.6; DCF 0.5,hard-coded baseline,"heuristic weights, not statistical confidence"
+INTC,INTC-20261011T211000Z-snapshot,growth_rate_1_5,0.1,caller/default DCF assumption,ten-year horizon growth defaults 10% then 5%; terminal default 2.5%; WACC default 10%
+INTC,INTC-20261011T211000Z-snapshot,growth_rate_6_10,0.05,caller/default DCF assumption,ten-year horizon growth defaults 10% then 5%; terminal default 2.5%; WACC default 10%
+INTC,INTC-20261011T211000Z-snapshot,terminal_growth,0.025,caller/default DCF assumption,ten-year horizon growth defaults 10% then 5%; terminal default 2.5%; WACC default 10%
+INTC,INTC-20261011T211000Z-snapshot,wacc,0.1,caller/default DCF assumption,ten-year horizon growth defaults 10% then 5%; terminal default 2.5%; WACC default 10%
+INTC,INTC-20261011T211000Z-snapshot,projection_years,10,caller/default DCF assumption,ten-year horizon growth defaults 10% then 5%; terminal default 2.5%; WACC default 10%

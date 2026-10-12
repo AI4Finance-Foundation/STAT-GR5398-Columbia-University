@@ -1,0 +1,194 @@
+{
+  "checked_at_utc": "2026-10-11T22:51:43.143496+00:00",
+  "status": "PASS",
+  "notebooks_checked": 9,
+  "valuation_csvs_unchanged": true,
+  "valuation_csv_sha256": {
+    "snapshots\\AAPL\\valuation\\dcf_cash_flows.csv": "8c8988db415974e94166811e9056936777523c777bbcfa64da2b336f368d5b42",
+    "snapshots\\AAPL\\valuation\\valuation_assumptions.csv": "b40417c953470a89aded6da55dd48a271c14bf34d903cd16116fe491e0988bd2",
+    "snapshots\\AAPL\\valuation\\valuation_reconciliation.csv": "8dc584dba7222780eb9b9ab4aa2a78c19c67b75a84801159921193e5a04e3dde",
+    "snapshots\\AAPL_news_v2\\valuation\\dcf_cash_flows.csv": "8c8988db415974e94166811e9056936777523c777bbcfa64da2b336f368d5b42",
+    "snapshots\\AAPL_news_v2\\valuation\\valuation_assumptions.csv": "d14007b47734e15c036f9cab7546e1a59300ccc309f25295a9a0d99d400cf117",
+    "snapshots\\AAPL_news_v2\\valuation\\valuation_reconciliation.csv": "5216f2a811cba7ac0d29df26d65a34cf9b1969b919bc53976f5ecceec02a2a04",
+    "snapshots\\AMD\\valuation\\dcf_cash_flows.csv": "fcdf442c48a07ef4f4cd5825fa52c391aa558ceac73ea49428391c6621442a29",
+    "snapshots\\AMD\\valuation\\valuation_assumptions.csv": "fded16b1b0c85f8f665aee1022325feef3f9cd10dd0d075eb48f4f2bfab7fe8e",
+    "snapshots\\AMD\\valuation\\valuation_reconciliation.csv": "e864c9edc17ff9a6798d2de9465c06df266945cc596e246d342c96290f4f66e7",
+    "snapshots\\AVGO_public_v1\\valuation\\dcf_cash_flows.csv": "0a5c3fb81c6a2a9c2dd82f2f44adfb13988cfb8c2636e2a73f0f0fc8e26e87c5",
+    "snapshots\\AVGO_public_v1\\valuation\\valuation_assumptions.csv": "295450d57e3af44884ee5aed33d07ac6ee0a9f5933074e88076b984a39e606a2",
+    "snapshots\\AVGO_public_v1\\valuation\\valuation_reconciliation.csv": "6d5da76f80d9b9ffa2e461db217ec83e54bbc35680d748a5fdb5a2df6b86f139",
+    "snapshots\\GOOGL\\valuation\\dcf_cash_flows.csv": "7c894b631e7133358a9e2b565e91825d5625e771ed818d610aadb21b5d5f7a43",
+    "snapshots\\GOOGL\\valuation\\valuation_assumptions.csv": "d3af9846839a3b042c630bf407e7662bc59facce953d063326fcd17cad0e3764",
+    "snapshots\\GOOGL\\valuation\\valuation_reconciliation.csv": "167bb894a67519fe3c8e8aa9c1f2ac8aef31af324636527c79bc109d5637f53d",
+    "snapshots\\INTC\\valuation\\dcf_cash_flows.csv": "b134366acda08fd84395e34c15b93db4c8d2d989692c88ca9fa5ebd14685c2da",
+    "snapshots\\INTC\\valuation\\valuation_assumptions.csv": "aa93c778cdeb1c7990f5555610a737cd20e5eac7d46eb83b4cb818ccab77417e",
+    "snapshots\\INTC\\valuation\\valuation_reconciliation.csv": "10d4145f8d0fe3131e4814327a0750a959e8ab055ea00f1efd3a0a16c0284160",
+    "snapshots\\INTC_news_v2\\valuation\\dcf_cash_flows.csv": "b134366acda08fd84395e34c15b93db4c8d2d989692c88ca9fa5ebd14685c2da",
+    "snapshots\\INTC_news_v2\\valuation\\valuation_assumptions.csv": "865c7c85536e6fb1f846a468bdc147f59d5707628d6b6e5c6ad4a79cc508f50b",
+    "snapshots\\INTC_news_v2\\valuation\\valuation_reconciliation.csv": "ca2b2eee9978bc1aafdeb278458c816236168bd37e0cac7703b00dc86909db20",
+    "snapshots\\NVDA\\valuation\\dcf_cash_flows.csv": "a6848b96b759f6386f5608a8d5134c6c869d4fecffe442377df0e11bdfcabcb3",
+    "snapshots\\NVDA\\valuation\\valuation_assumptions.csv": "c30a51bceeef7a55ed7a861ff5aea87a25ed0751b43bbf49e5c61398b1e57c62",
+    "snapshots\\NVDA\\valuation\\valuation_reconciliation.csv": "f4a297b0f678243a1d23bde384af5a3866c7a0e9ee1f8b659be55da6cb326e90",
+    "snapshots\\QCOM_public_v1\\valuation\\dcf_cash_flows.csv": "db5eaf538f1ee29fe2a9cf68e18289f620e5a46a9c2247a6762c980c74b2009d",
+    "snapshots\\QCOM_public_v1\\valuation\\valuation_assumptions.csv": "6889f6634f02798463438779ffb4946d430a638e9c39acbebb106fe75822fdd1",
+    "snapshots\\QCOM_public_v1\\valuation\\valuation_reconciliation.csv": "0fde21458fe1deecbd5c4aaf7a40a28a932f62c59118755dd67734b3262ee263"
+  },
+  "python_version": "3.11.15 (main, Mar 10 2026, 18:12:25) [MSC v.1944 64 bit (AMD64)]",
+  "relative_tolerance": 1e-12,
+  "absolute_tolerance": 1e-07,
+  "method": "Execute original notebook code cells in fresh Python -I, relocated minimal submission, sockets forbidden; deep result comparison with floating-point tolerance. No kernel rendering was needed for numeric cells.",
+  "checks": [
+    {
+      "snapshot": "AAPL",
+      "notebook": "snapshots/AAPL/valuation/independent_valuation.ipynb",
+      "notebook_sha256": "13600ed4ef4c102bea99c653ee17f63a2d950fecf98c7d4dbedcb3bc989620cf",
+      "independent_result_numeric_match": true,
+      "bitwise_numeric_match": true,
+      "floating_point_differences": [],
+      "relocated_without_upstream": true,
+      "network_disabled": true,
+      "source_inputs": {
+        "scripts/independent_valuation.py": "e1e03f60ae40261c1f90bc183eaf1eea2f3690d8d3b161d2bfd7ae5378b4a562",
+        "snapshots/AAPL/valuation/independent_valuation.ipynb": "13600ed4ef4c102bea99c653ee17f63a2d950fecf98c7d4dbedcb3bc989620cf",
+        "snapshots/AAPL/valuation_inputs.json": "5549408f6aa8ae79ee866c7b7d3c00adb1d551836dceb0fa8b706cc7989898ef",
+        "snapshots/AAPL/analysis/financial_metrics_and_forecasts.csv": "ccbb7b1ff327b9a2c032bb19b1a8a4ba9e274523146fa2bdc048a8e399e387d7",
+        "snapshots/AAPL/analysis/key_metrics_raw_data.csv": "4d884d143ccec8d9b34dfd3924cce90e44b9c5adae7e39bd669bbc2896d11e03"
+      }
+    },
+    {
+      "snapshot": "AAPL_news_v2",
+      "notebook": "snapshots/AAPL_news_v2/valuation/independent_valuation.ipynb",
+      "notebook_sha256": "c57dc8e2f4bbd28176e2b7f9442247c86f5132133e28de4515fef756b9c9ac9b",
+      "independent_result_numeric_match": true,
+      "bitwise_numeric_match": true,
+      "floating_point_differences": [],
+      "relocated_without_upstream": true,
+      "network_disabled": true,
+      "source_inputs": {
+        "scripts/independent_valuation.py": "e1e03f60ae40261c1f90bc183eaf1eea2f3690d8d3b161d2bfd7ae5378b4a562",
+        "snapshots/AAPL_news_v2/valuation/independent_valuation.ipynb": "c57dc8e2f4bbd28176e2b7f9442247c86f5132133e28de4515fef756b9c9ac9b",
+        "snapshots/AAPL_news_v2/valuation_inputs.json": "ddb2622620f61b56f6f78ab1d48061400d14ba6951044eea078d77097a629c1e",
+        "snapshots/AAPL_news_v2/analysis/financial_metrics_and_forecasts.csv": "ccbb7b1ff327b9a2c032bb19b1a8a4ba9e274523146fa2bdc048a8e399e387d7",
+        "snapshots/AAPL_news_v2/analysis/key_metrics_raw_data.csv": "4d884d143ccec8d9b34dfd3924cce90e44b9c5adae7e39bd669bbc2896d11e03"
+      }
+    },
+    {
+      "snapshot": "AMD",
+      "notebook": "snapshots/AMD/valuation/independent_valuation.ipynb",
+      "notebook_sha256": "e0e92ef4770c0bcbdc4840df0ed68f809beb255f906100e01f4376d187c0a755",
+      "independent_result_numeric_match": true,
+      "bitwise_numeric_match": true,
+      "floating_point_differences": [],
+      "relocated_without_upstream": true,
+      "network_disabled": true,
+      "source_inputs": {
+        "scripts/independent_valuation.py": "e1e03f60ae40261c1f90bc183eaf1eea2f3690d8d3b161d2bfd7ae5378b4a562",
+        "snapshots/AMD/valuation/independent_valuation.ipynb": "e0e92ef4770c0bcbdc4840df0ed68f809beb255f906100e01f4376d187c0a755",
+        "snapshots/AMD/valuation_inputs.json": "23b8ecdbc795d75ebae8321f1e1af416b58bae7b7872c1beede4922c80ecda11",
+        "snapshots/AMD/analysis/financial_metrics_and_forecasts.csv": "d7756b4b6a8907583c2fa281bf420873e71bb5a0f03be53b02cd092fca3737a4",
+        "snapshots/AMD/analysis/key_metrics_raw_data.csv": "24eecc49d470a514f72337e5ca967149512bdf69746e1acaf21d0a93e8e5e823"
+      }
+    },
+    {
+      "snapshot": "AVGO_public_v1",
+      "notebook": "snapshots/AVGO_public_v1/valuation/independent_valuation.ipynb",
+      "notebook_sha256": "a60cdb15ceedd450be24235d0a636a3b266343521f43e69f8e628a04808504de",
+      "independent_result_numeric_match": true,
+      "bitwise_numeric_match": true,
+      "floating_point_differences": [],
+      "relocated_without_upstream": true,
+      "network_disabled": true,
+      "source_inputs": {
+        "scripts/independent_valuation.py": "e1e03f60ae40261c1f90bc183eaf1eea2f3690d8d3b161d2bfd7ae5378b4a562",
+        "snapshots/AVGO_public_v1/valuation/independent_valuation.ipynb": "a60cdb15ceedd450be24235d0a636a3b266343521f43e69f8e628a04808504de",
+        "snapshots/AVGO_public_v1/valuation_inputs.json": "eada361f8b06bf8dbcd590eb6a0aa94b98c5fc22d6c451c7239d21ee75c9d472",
+        "snapshots/AVGO_public_v1/analysis/financial_metrics_and_forecasts.csv": "0a898df7089840483e2e447ab6cefceca8151bb4d2ed2fca417657ede80e82bb",
+        "snapshots/AVGO_public_v1/analysis/key_metrics_raw_data.csv": "f0b58a9233e0d96320fd7322faf0d04694e38d0d4ec4d99251b7abca3a7806c3"
+      }
+    },
+    {
+      "snapshot": "GOOGL",
+      "notebook": "snapshots/GOOGL/valuation/independent_valuation.ipynb",
+      "notebook_sha256": "83651e6df3534355a1bf937768b829768be5e6861276633b79c8ba5bf848a292",
+      "independent_result_numeric_match": true,
+      "bitwise_numeric_match": true,
+      "floating_point_differences": [],
+      "relocated_without_upstream": true,
+      "network_disabled": true,
+      "source_inputs": {
+        "scripts/independent_valuation.py": "e1e03f60ae40261c1f90bc183eaf1eea2f3690d8d3b161d2bfd7ae5378b4a562",
+        "snapshots/GOOGL/valuation/independent_valuation.ipynb": "83651e6df3534355a1bf937768b829768be5e6861276633b79c8ba5bf848a292",
+        "snapshots/GOOGL/valuation_inputs.json": "28d0c6d9d904b968d25bef8ad5386a9cf18cfa4ca6f16b678bac7fbb606a9b49",
+        "snapshots/GOOGL/analysis/financial_metrics_and_forecasts.csv": "73108a419722113bc54480bff01d89d73c6583a838e275e4376ef78f9f9d310c",
+        "snapshots/GOOGL/analysis/key_metrics_raw_data.csv": "352a8a6fc7e5f955137cd62bb58b6fb9aeb32ed88fc9ef1287dcc51244c8814d"
+      }
+    },
+    {
+      "snapshot": "INTC",
+      "notebook": "snapshots/INTC/valuation/independent_valuation.ipynb",
+      "notebook_sha256": "694a9df043e279abe2dd02eb5275c439f9b205fcc9b93956d83d5cf156b47016",
+      "independent_result_numeric_match": true,
+      "bitwise_numeric_match": true,
+      "floating_point_differences": [],
+      "relocated_without_upstream": true,
+      "network_disabled": true,
+      "source_inputs": {
+        "scripts/independent_valuation.py": "e1e03f60ae40261c1f90bc183eaf1eea2f3690d8d3b161d2bfd7ae5378b4a562",
+        "snapshots/INTC/valuation/independent_valuation.ipynb": "694a9df043e279abe2dd02eb5275c439f9b205fcc9b93956d83d5cf156b47016",
+        "snapshots/INTC/valuation_inputs.json": "98357e3f8300f2fa34da0f44c033ac894ed51cc55eee6aa1c6a47167f1b6f78c",
+        "snapshots/INTC/analysis/financial_metrics_and_forecasts.csv": "b89c1e6c5bf117d2dbb34b7987e56b61b7edf48959edf711d373cba6fb46b408",
+        "snapshots/INTC/analysis/key_metrics_raw_data.csv": "af5ecfdb6d60dd3e8571b83bea8f40b277ad50a6be3ad150b7bedc98f4a22933"
+      }
+    },
+    {
+      "snapshot": "INTC_news_v2",
+      "notebook": "snapshots/INTC_news_v2/valuation/independent_valuation.ipynb",
+      "notebook_sha256": "91165cfc5c1f9f8caddb138c4f16e0dccbbc7ba06eff98892a8f6409d61ec1a8",
+      "independent_result_numeric_match": true,
+      "bitwise_numeric_match": true,
+      "floating_point_differences": [],
+      "relocated_without_upstream": true,
+      "network_disabled": true,
+      "source_inputs": {
+        "scripts/independent_valuation.py": "e1e03f60ae40261c1f90bc183eaf1eea2f3690d8d3b161d2bfd7ae5378b4a562",
+        "snapshots/INTC_news_v2/valuation/independent_valuation.ipynb": "91165cfc5c1f9f8caddb138c4f16e0dccbbc7ba06eff98892a8f6409d61ec1a8",
+        "snapshots/INTC_news_v2/valuation_inputs.json": "cbb137a9eca31e67d0554aac3ee36ce3705677fa0dbe4dd77e53d6741585cbb4",
+        "snapshots/INTC_news_v2/analysis/financial_metrics_and_forecasts.csv": "b89c1e6c5bf117d2dbb34b7987e56b61b7edf48959edf711d373cba6fb46b408",
+        "snapshots/INTC_news_v2/analysis/key_metrics_raw_data.csv": "af5ecfdb6d60dd3e8571b83bea8f40b277ad50a6be3ad150b7bedc98f4a22933"
+      }
+    },
+    {
+      "snapshot": "NVDA",
+      "notebook": "snapshots/NVDA/valuation/independent_valuation.ipynb",
+      "notebook_sha256": "0f5bf5803003872ffaa0fde3fadd4e0cef54acfb43d2262b2333409b69a2e081",
+      "independent_result_numeric_match": true,
+      "bitwise_numeric_match": true,
+      "floating_point_differences": [],
+      "relocated_without_upstream": true,
+      "network_disabled": true,
+      "source_inputs": {
+        "scripts/independent_valuation.py": "e1e03f60ae40261c1f90bc183eaf1eea2f3690d8d3b161d2bfd7ae5378b4a562",
+        "snapshots/NVDA/valuation/independent_valuation.ipynb": "0f5bf5803003872ffaa0fde3fadd4e0cef54acfb43d2262b2333409b69a2e081",
+        "snapshots/NVDA/valuation_inputs.json": "99ed437b529f9448faf18bb3157978ac554645e7d389f4bc07b209240536cad5",
+        "snapshots/NVDA/analysis/financial_metrics_and_forecasts.csv": "df8090cc55e257bc6c123576ed63fdd5394f564216c39968518aeddf09932e7f",
+        "snapshots/NVDA/analysis/key_metrics_raw_data.csv": "5a220a30cedfa2462f4fea566e3bd00bad29c8a3ab7b7f5266ef348a9590f401"
+      }
+    },
+    {
+      "snapshot": "QCOM_public_v1",
+      "notebook": "snapshots/QCOM_public_v1/valuation/independent_valuation.ipynb",
+      "notebook_sha256": "f139530ff6888d0ca6bdc8e49e1d84aafe82743ad99ccad418d040578dc3c8fa",
+      "independent_result_numeric_match": true,
+      "bitwise_numeric_match": true,
+      "floating_point_differences": [],
+      "relocated_without_upstream": true,
+      "network_disabled": true,
+      "source_inputs": {
+        "scripts/independent_valuation.py": "e1e03f60ae40261c1f90bc183eaf1eea2f3690d8d3b161d2bfd7ae5378b4a562",
+        "snapshots/QCOM_public_v1/valuation/independent_valuation.ipynb": "f139530ff6888d0ca6bdc8e49e1d84aafe82743ad99ccad418d040578dc3c8fa",
+        "snapshots/QCOM_public_v1/valuation_inputs.json": "d0c5e922f794fed9ab64b8e0dbe92d41bb5847a5e1eb2f36da81261c65d53cf1",
+        "snapshots/QCOM_public_v1/analysis/financial_metrics_and_forecasts.csv": "0ade7f94592cb9e33d703d06adec257a1e79f696f5792349348f567271983153",
+        "snapshots/QCOM_public_v1/analysis/key_metrics_raw_data.csv": "f49be0aef9764c282dfb4a212b54032469350f2a1c995be1d151858c666c288d"
+      }
+    }
+  ]
+}

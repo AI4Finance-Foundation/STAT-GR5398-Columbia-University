@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EXxQCa3QzROKoA5kSBiBvqQlD5y4l",
+  "object": "chat.completion",
+  "created": 1791761948,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"units\":[{\"unit_id\":0,\"claims\":[{\"claim\":\"Intel's revenue has experienced a significant decline from $79.0 billion in 2021 to $53.1 billion in 2024\",\"claim_type\":\"factual\",\"classification\":\"Supported\",\"evidence\":[{\"line_start\":6,\"line_end\":6}],\"reason\":\"The table in line 6 shows Revenue for 2021A as 79024000000.0 ($79.0B) and for 2024A as 53101000000.0 ($53.1B), both in actuals. The claim matches these values and the direction of change.\",\"numeric_status\":\"correct\",\"fact_key\":\"intel|revenue|2021-2024|decline_from_79b_to_53.1b|usd\"}],\"nonfactual_reason\":\"\"},{\"unit_id\":1,\"claims\":[{\"claim\":\"reflecting a compounded annual decline of -9.6%\",\"claim_type\":\"quantitative\",\"classification\":\"Supported\",\"evidence\":[{\"line_start\":6,\"line_end\":6}],\"reason\":\"The CAGR column for Revenue in line 6 is -9.6%. The periods used are 2021A to 2024A, which matches the claim context.\",\"numeric_status\":\"correct\",\"fact_key\":\"intel|revenue_cagr|2021-2024|-9.6%|percent\"}],\"nonfactual_reason\":\"\"},{\"unit_id\":5,\"claims\":[{\"claim\":\"Intel's contribution margin has compressed sharply from 55.4% in 2021 to 32.7% in 2024, indicating considerable margin erosion.\",\"claim_type\":\"factual\",\"classification\":\"Supported\",\"evidence\":[{\"line_start\":10,\"line_end\":10}],\"reason\":\"Line 10 shows Contribution Margin for 2021A as 55.4% and for 2024A as 32.7%. The claim's numbers and direction are correct. The qualitative phrase 'indicating considerable margin erosion' is supported by the magnitude of the decline.\",\"numeric_status\":\"correct\",\"fact_key\":\"intel|contribution_margin|2021-2024|decline_from_55.4%_to_32.7%|percent\"}],\"nonfactual_reason\":\"\"},{\"unit_id\":9,\"claims\":[{\"claim\":\"The SG&A margin increased from 8.3% in 2021 to a peak of 11.1% in 2022, before gradually declining to 7.2% by 2028.\",\"claim_type\":\"factual\",\"classification\":\"Supported\",\"evidence\":[{\"line_start\":13,\"line_end\":13}],\"reason\":\"Line 13 shows SG&A Margin: 2021A = 8.3%, 2022A = 11.1% (the peak), and 2028E = 7.2%. The trend described matches the data.\",\"numeric_status\":\"correct\",\"fact_key\":\"intel|sga_margin|2021-2028|peak_11.1%_2022_decline_7.2%_2028|percent\"}],\"nonfactual_reason\":\"\"},{\"unit_id\":13,\"claims\":[{\"claim\":\"Intel's EBITDA margin has exhibited pronounced volatility, plunging from 42.9% in 2021 to a low of 2.3% in 2024 before recovering to 30.6% by 2028.\",\"claim_type\":\"factual\",\"classification\":\"Supported\",\"evidence\":[{\"line_start\":12,\"line_end\":12}],\"reason\":\"Line 12 shows EBITDA Margin: 2021A = 42.9%, 2024A = 2.3% (the lowest value in the visible period), and 2028E = 30.6%. The claim's numbers and trend are correct.\",\"numeric_status\":\"correct\",\"fact_key\":\"intel|ebitda_margin|2021-2028|volatility_42.9%_to_2.3%_to_30.6%|percent\"}],\"nonfactual_reason\":\"\"}]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3112,
+    "completion_tokens": 843,
+    "total_tokens": 3955,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_8808cca3cb"
+}

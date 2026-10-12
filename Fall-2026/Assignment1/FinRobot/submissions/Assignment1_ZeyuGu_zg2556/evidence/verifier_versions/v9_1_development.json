@@ -1,0 +1,474 @@
+{
+  "created_at_utc": "2026-10-12T06:33:06.969964+00:00",
+  "candidate_version": "9.1",
+  "parent_sha256": "ff9c5553330db88ae262bb69e6a799b7ed75c71ae8c76331526ea0d510c4691b",
+  "fragment_sha256": "f982b199485357e33af5940b13cc3cd52535bcf488197804293b4d87bb00d605",
+  "source_sha256": "0800a2efe9c2d438a5fb574292560dd773272b8494d3eb43467d1cd232d09f16",
+  "saved_v9_files": 24,
+  "saved_v9_claim_rows": 1494,
+  "changed_rows": 1,
+  "changed_sections": 1,
+  "inventory": [
+    {
+      "run_id": "AMD_final_reasoning_v9",
+      "ticker": "AMD",
+      "section": "company_overview",
+      "checked_path": "runs/AMD_final_reasoning_v9/verifier/company_overview/checked.json",
+      "checked_sha256": "c7bb115cbc009538e297e27e54e7074fd5755bada8bc3242c5cf9127bbc9f872",
+      "prompt_path": "runs/AMD_baseline_1/agents/company_overview/prompt.txt",
+      "prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "row_count": 55,
+      "changed_rows": 0,
+      "prior_text_sha256": "ad0b4f41c1911853bbf0a9d32fcedeb6df0acf5a702acdf43c80cce60f948c50",
+      "candidate_text_sha256": "ad0b4f41c1911853bbf0a9d32fcedeb6df0acf5a702acdf43c80cce60f948c50"
+    },
+    {
+      "run_id": "AMD_final_reasoning_v9",
+      "ticker": "AMD",
+      "section": "competitor_analysis",
+      "checked_path": "runs/AMD_final_reasoning_v9/verifier/competitor_analysis/checked.json",
+      "checked_sha256": "7ecbdeda8e81db5ddde75c5c93c864890d6a0fc3d6b851dc98bf6fd8ea7fbcac",
+      "prompt_path": "runs/AMD_baseline_1/agents/competitor_analysis/prompt.txt",
+      "prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "row_count": 109,
+      "changed_rows": 0,
+      "prior_text_sha256": "ec78e3a4160a7f5e60ea6ff4fee3da166df88acf40e1a3362fabc25a32c5f750",
+      "candidate_text_sha256": "ec78e3a4160a7f5e60ea6ff4fee3da166df88acf40e1a3362fabc25a32c5f750"
+    },
+    {
+      "run_id": "AMD_final_reasoning_v9",
+      "ticker": "AMD",
+      "section": "investment_overview",
+      "checked_path": "runs/AMD_final_reasoning_v9/verifier/investment_overview/checked.json",
+      "checked_sha256": "70b84bf96112cc41d92c4f8b6f88c1001778179d668b3ba3042f716b4cea277c",
+      "prompt_path": "runs/AMD_baseline_1/agents/investment_overview/prompt.txt",
+      "prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "row_count": 64,
+      "changed_rows": 0,
+      "prior_text_sha256": "7b8af08ab91c3b29fd5e399eba80710ff17c9d39c591a3033ebb05c4690d3d76",
+      "candidate_text_sha256": "7b8af08ab91c3b29fd5e399eba80710ff17c9d39c591a3033ebb05c4690d3d76"
+    },
+    {
+      "run_id": "AMD_final_reasoning_v9",
+      "ticker": "AMD",
+      "section": "major_takeaways",
+      "checked_path": "runs/AMD_final_reasoning_v9/verifier/major_takeaways/checked.json",
+      "checked_sha256": "59ed85cc275ae053abce4d9956935b84228898c7d29e28932186e1436f1c3995",
+      "prompt_path": "runs/AMD_baseline_1/agents/major_takeaways/prompt.txt",
+      "prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "row_count": 40,
+      "changed_rows": 0,
+      "prior_text_sha256": "efec349ebfd3ac23805df5da66c9043c50121ffcdda58160dc906302db9a026e",
+      "candidate_text_sha256": "efec349ebfd3ac23805df5da66c9043c50121ffcdda58160dc906302db9a026e"
+    },
+    {
+      "run_id": "AMD_final_reasoning_v9",
+      "ticker": "AMD",
+      "section": "news_summary",
+      "checked_path": "runs/AMD_final_reasoning_v9/verifier/news_summary/checked.json",
+      "checked_sha256": "8298f988175987a68324e920e2c708a6baea927ac61ca52f6b7a608105f208db",
+      "prompt_path": "runs/AMD_baseline_1/agents/news_summary/prompt.txt",
+      "prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "row_count": 38,
+      "changed_rows": 0,
+      "prior_text_sha256": "46cedc7f01862a282deae46781fff14abef5083a98ec1bea4b0af804390ca4d2",
+      "candidate_text_sha256": "46cedc7f01862a282deae46781fff14abef5083a98ec1bea4b0af804390ca4d2"
+    },
+    {
+      "run_id": "AMD_final_reasoning_v9",
+      "ticker": "AMD",
+      "section": "risks",
+      "checked_path": "runs/AMD_final_reasoning_v9/verifier/risks/checked.json",
+      "checked_sha256": "b5c14a80f851a4ad9566eadc99648324069cee658b9174a4ac1b36a45d0de723",
+      "prompt_path": "runs/AMD_baseline_1/agents/risks/prompt.txt",
+      "prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "row_count": 109,
+      "changed_rows": 0,
+      "prior_text_sha256": "f37c04ba0a06ca1e8de464b83cc1c7f8dac38f289fe210adcf059cedc13c9534",
+      "candidate_text_sha256": "f37c04ba0a06ca1e8de464b83cc1c7f8dac38f289fe210adcf059cedc13c9534"
+    },
+    {
+      "run_id": "AMD_final_reasoning_v9",
+      "ticker": "AMD",
+      "section": "tagline",
+      "checked_path": "runs/AMD_final_reasoning_v9/verifier/tagline/checked.json",
+      "checked_sha256": "b454b251def0758f8b8c23ed54c168d0a86683f69c05a6363084b5416d439105",
+      "prompt_path": "runs/AMD_baseline_1/agents/tagline/prompt.txt",
+      "prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "row_count": 15,
+      "changed_rows": 0,
+      "prior_text_sha256": "f28c2f8f15b229837bd132546ed72cbb6c4a391d714ad5e24a70dc9afe85effd",
+      "candidate_text_sha256": "f28c2f8f15b229837bd132546ed72cbb6c4a391d714ad5e24a70dc9afe85effd"
+    },
+    {
+      "run_id": "AMD_final_reasoning_v9",
+      "ticker": "AMD",
+      "section": "valuation_overview",
+      "checked_path": "runs/AMD_final_reasoning_v9/verifier/valuation_overview/checked.json",
+      "checked_sha256": "939053943f483e68f7e11f0482cdcdb3bdc86ac1138fbabbdbc9548befebe97e",
+      "prompt_path": "runs/AMD_baseline_1/agents/valuation_overview/prompt.txt",
+      "prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "row_count": 35,
+      "changed_rows": 1,
+      "prior_text_sha256": "1e73df859d44670a862b12afd108e24943add8148a77c2b9d31f2e2b6999173c",
+      "candidate_text_sha256": "4e3769bfbaa992ba17fbb9b5736e92c92be746d1bc77e65f70341f25a23486da"
+    },
+    {
+      "run_id": "INTC_final_reasoning_v9",
+      "ticker": "INTC",
+      "section": "company_overview",
+      "checked_path": "runs/INTC_final_reasoning_v9/verifier/company_overview/checked.json",
+      "checked_sha256": "dd90874529b43b65d43423f51d647c9785c464bf11829ec76f53f4aa0073c08a",
+      "prompt_path": "runs/INTC_baseline_1/agents/company_overview/prompt.txt",
+      "prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef",
+      "row_count": 95,
+      "changed_rows": 0,
+      "prior_text_sha256": "2b96e6a7523a0340ce9d6d0e8a4a1747ab08e51b4a5c72f46e1cdeae242005ce",
+      "candidate_text_sha256": "2b96e6a7523a0340ce9d6d0e8a4a1747ab08e51b4a5c72f46e1cdeae242005ce"
+    },
+    {
+      "run_id": "INTC_final_reasoning_v9",
+      "ticker": "INTC",
+      "section": "competitor_analysis",
+      "checked_path": "runs/INTC_final_reasoning_v9/verifier/competitor_analysis/checked.json",
+      "checked_sha256": "4296462c90545ae5f246921831e66bf67a2f327e507e172925e24822e4960dfe",
+      "prompt_path": "runs/INTC_baseline_1/agents/competitor_analysis/prompt.txt",
+      "prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef",
+      "row_count": 126,
+      "changed_rows": 0,
+      "prior_text_sha256": "b439eb542b9b16dae3b31f582eb71510985f4a26dbb0245da0a5b2dd6f206254",
+      "candidate_text_sha256": "b439eb542b9b16dae3b31f582eb71510985f4a26dbb0245da0a5b2dd6f206254"
+    },
+    {
+      "run_id": "INTC_final_reasoning_v9",
+      "ticker": "INTC",
+      "section": "investment_overview",
+      "checked_path": "runs/INTC_final_reasoning_v9/verifier/investment_overview/checked.json",
+      "checked_sha256": "b7fa87596c0e03344bd5a688b968d48e05a636b727df6a6a5b4bb8e2b877875a",
+      "prompt_path": "runs/INTC_baseline_1/agents/investment_overview/prompt.txt",
+      "prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef",
+      "row_count": 60,
+      "changed_rows": 0,
+      "prior_text_sha256": "3d533fa167b4215aa06396f4d78867a7e656c5afc7cc69aab1e72d733f57dd18",
+      "candidate_text_sha256": "3d533fa167b4215aa06396f4d78867a7e656c5afc7cc69aab1e72d733f57dd18"
+    },
+    {
+      "run_id": "INTC_final_reasoning_v9",
+      "ticker": "INTC",
+      "section": "major_takeaways",
+      "checked_path": "runs/INTC_final_reasoning_v9/verifier/major_takeaways/checked.json",
+      "checked_sha256": "7d516bdf8ddacfe8724346e3d607811e3005a43d1ac8569a9133c050a66b52e5",
+      "prompt_path": "runs/INTC_baseline_1/agents/major_takeaways/prompt.txt",
+      "prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef",
+      "row_count": 38,
+      "changed_rows": 0,
+      "prior_text_sha256": "dc6f873b1fafc6ba030773cda1e82e5871652d328c64b800f8155f8beefcecbc",
+      "candidate_text_sha256": "dc6f873b1fafc6ba030773cda1e82e5871652d328c64b800f8155f8beefcecbc"
+    },
+    {
+      "run_id": "INTC_final_reasoning_v9",
+      "ticker": "INTC",
+      "section": "news_summary",
+      "checked_path": "runs/INTC_final_reasoning_v9/verifier/news_summary/checked.json",
+      "checked_sha256": "eed6dcc2dd366f6e6474c5f1e1b5181a46d50ebe0a84e321fec0730ab418b144",
+      "prompt_path": "runs/INTC_baseline_1/agents/news_summary/prompt.txt",
+      "prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef",
+      "row_count": 30,
+      "changed_rows": 0,
+      "prior_text_sha256": "869da884001c730c91601f831f18a097b461fb8c6b40fcd3c721efda9be489f9",
+      "candidate_text_sha256": "869da884001c730c91601f831f18a097b461fb8c6b40fcd3c721efda9be489f9"
+    },
+    {
+      "run_id": "INTC_final_reasoning_v9",
+      "ticker": "INTC",
+      "section": "risks",
+      "checked_path": "runs/INTC_final_reasoning_v9/verifier/risks/checked.json",
+      "checked_sha256": "6ee835be00e1a38e2e15b330b4b0795d4b7ba6f5eaa3886d20758046edfaa24f",
+      "prompt_path": "runs/INTC_baseline_1/agents/risks/prompt.txt",
+      "prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef",
+      "row_count": 72,
+      "changed_rows": 0,
+      "prior_text_sha256": "862c2ad4efa6be84d5ba09d48fa3db3f1c385bbef60f6589474f062acd5d1e6c",
+      "candidate_text_sha256": "862c2ad4efa6be84d5ba09d48fa3db3f1c385bbef60f6589474f062acd5d1e6c"
+    },
+    {
+      "run_id": "INTC_final_reasoning_v9",
+      "ticker": "INTC",
+      "section": "tagline",
+      "checked_path": "runs/INTC_final_reasoning_v9/verifier/tagline/checked.json",
+      "checked_sha256": "dc8bb45c9c8f1c650a585df9c1473820d2e48b31f4098f07bf923a83e139eaa7",
+      "prompt_path": "runs/INTC_baseline_1/agents/tagline/prompt.txt",
+      "prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef",
+      "row_count": 12,
+      "changed_rows": 0,
+      "prior_text_sha256": "78a42676c25bd3a0fbe1ad08ff65f23de0b75bf59b88aaf2404a9fae67911f80",
+      "candidate_text_sha256": "78a42676c25bd3a0fbe1ad08ff65f23de0b75bf59b88aaf2404a9fae67911f80"
+    },
+    {
+      "run_id": "INTC_final_reasoning_v9",
+      "ticker": "INTC",
+      "section": "valuation_overview",
+      "checked_path": "runs/INTC_final_reasoning_v9/verifier/valuation_overview/checked.json",
+      "checked_sha256": "a8743f120f70d69dbab1a3e3271c752f98214e5fc19634de2fa8a3b03af12e1c",
+      "prompt_path": "runs/INTC_baseline_1/agents/valuation_overview/prompt.txt",
+      "prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef",
+      "row_count": 66,
+      "changed_rows": 0,
+      "prior_text_sha256": "bb456b27bd88630c28fb866daddd7df1be5d21303613918d4a25c0f763363054",
+      "candidate_text_sha256": "bb456b27bd88630c28fb866daddd7df1be5d21303613918d4a25c0f763363054"
+    },
+    {
+      "run_id": "NVDA_final_reasoning_v9",
+      "ticker": "NVDA",
+      "section": "company_overview",
+      "checked_path": "runs/NVDA_final_reasoning_v9/verifier/company_overview/checked.json",
+      "checked_sha256": "0c524444e3caa3c429131eac3d43ccd788e7acdf2c675c623d19e82885befc08",
+      "prompt_path": "runs/NVDA_baseline_1/agents/company_overview/prompt.txt",
+      "prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "row_count": 109,
+      "changed_rows": 0,
+      "prior_text_sha256": "12d273211a48e1a3634ca7974da5d01819edcc3b48aef7d9c827edf07a8efb25",
+      "candidate_text_sha256": "12d273211a48e1a3634ca7974da5d01819edcc3b48aef7d9c827edf07a8efb25"
+    },
+    {
+      "run_id": "NVDA_final_reasoning_v9",
+      "ticker": "NVDA",
+      "section": "competitor_analysis",
+      "checked_path": "runs/NVDA_final_reasoning_v9/verifier/competitor_analysis/checked.json",
+      "checked_sha256": "e04f14e1b1c4f067e96e999301eb6169641ae2efd0a1928526977bebebc459c8",
+      "prompt_path": "runs/NVDA_baseline_1/agents/competitor_analysis/prompt.txt",
+      "prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "row_count": 88,
+      "changed_rows": 0,
+      "prior_text_sha256": "41a2f6d8c089553e6e9fabcc92bd6bbcbaade1bf6fec7e2ad4ab3d2eb2aa4923",
+      "candidate_text_sha256": "41a2f6d8c089553e6e9fabcc92bd6bbcbaade1bf6fec7e2ad4ab3d2eb2aa4923"
+    },
+    {
+      "run_id": "NVDA_final_reasoning_v9",
+      "ticker": "NVDA",
+      "section": "investment_overview",
+      "checked_path": "runs/NVDA_final_reasoning_v9/verifier/investment_overview/checked.json",
+      "checked_sha256": "b222503dc9482bbddaab9a1d0325d9a61af91e50601761324e7f0c64a94e1c19",
+      "prompt_path": "runs/NVDA_baseline_1/agents/investment_overview/prompt.txt",
+      "prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "row_count": 59,
+      "changed_rows": 0,
+      "prior_text_sha256": "6a806c093c0666246b0906f930e88a2d811b0f68ec0be6baaf255eab71f88d66",
+      "candidate_text_sha256": "6a806c093c0666246b0906f930e88a2d811b0f68ec0be6baaf255eab71f88d66"
+    },
+    {
+      "run_id": "NVDA_final_reasoning_v9",
+      "ticker": "NVDA",
+      "section": "major_takeaways",
+      "checked_path": "runs/NVDA_final_reasoning_v9/verifier/major_takeaways/checked.json",
+      "checked_sha256": "1ca9598de47571a5cf07e848076d03b282ec26202b50c34bf8a824540d7d919a",
+      "prompt_path": "runs/NVDA_baseline_1/agents/major_takeaways/prompt.txt",
+      "prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "row_count": 56,
+      "changed_rows": 0,
+      "prior_text_sha256": "172603fbb36642ea7fc049c4cc388b2ff2e9e2ff6ec43e88a47ecd8412303ba1",
+      "candidate_text_sha256": "172603fbb36642ea7fc049c4cc388b2ff2e9e2ff6ec43e88a47ecd8412303ba1"
+    },
+    {
+      "run_id": "NVDA_final_reasoning_v9",
+      "ticker": "NVDA",
+      "section": "news_summary",
+      "checked_path": "runs/NVDA_final_reasoning_v9/verifier/news_summary/checked.json",
+      "checked_sha256": "b98a4d2b94f5b11a6dff6542562c994a7db65bae37f96701c959dc38b28a26aa",
+      "prompt_path": "runs/NVDA_baseline_1/agents/news_summary/prompt.txt",
+      "prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "row_count": 51,
+      "changed_rows": 0,
+      "prior_text_sha256": "5a3a62d40ead8bcf663ce8756e23433006032415b56acde553c9c2e6f36f7ce3",
+      "candidate_text_sha256": "5a3a62d40ead8bcf663ce8756e23433006032415b56acde553c9c2e6f36f7ce3"
+    },
+    {
+      "run_id": "NVDA_final_reasoning_v9",
+      "ticker": "NVDA",
+      "section": "risks",
+      "checked_path": "runs/NVDA_final_reasoning_v9/verifier/risks/checked.json",
+      "checked_sha256": "5bde984366155f58b6f6c3102e3579c7e0656a505000cd90ac9d6f89d0896a13",
+      "prompt_path": "runs/NVDA_baseline_1/agents/risks/prompt.txt",
+      "prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "row_count": 106,
+      "changed_rows": 0,
+      "prior_text_sha256": "eee1551786e84d71d2a67c16d9b22e2825d241d27c475b2742b8698dd0866641",
+      "candidate_text_sha256": "eee1551786e84d71d2a67c16d9b22e2825d241d27c475b2742b8698dd0866641"
+    },
+    {
+      "run_id": "NVDA_final_reasoning_v9",
+      "ticker": "NVDA",
+      "section": "tagline",
+      "checked_path": "runs/NVDA_final_reasoning_v9/verifier/tagline/checked.json",
+      "checked_sha256": "c1ec7881b6bc88f49dbf031c47d24d7a4ca6abbeb0777522351d60d7c964d3bc",
+      "prompt_path": "runs/NVDA_baseline_1/agents/tagline/prompt.txt",
+      "prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "row_count": 12,
+      "changed_rows": 0,
+      "prior_text_sha256": "3795d43e7af57c6c258e63cc8b3f397c23ca3ca912e54bac901faa4a384f4718",
+      "candidate_text_sha256": "3795d43e7af57c6c258e63cc8b3f397c23ca3ca912e54bac901faa4a384f4718"
+    },
+    {
+      "run_id": "NVDA_final_reasoning_v9",
+      "ticker": "NVDA",
+      "section": "valuation_overview",
+      "checked_path": "runs/NVDA_final_reasoning_v9/verifier/valuation_overview/checked.json",
+      "checked_sha256": "c6a8195725160c7fd2778278141b987b7e327630071d6eab455d51efbba74768",
+      "prompt_path": "runs/NVDA_baseline_1/agents/valuation_overview/prompt.txt",
+      "prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "row_count": 49,
+      "changed_rows": 0,
+      "prior_text_sha256": "1eaf15dbd6e60a8737f0974b80b0c64a2e7c100302e52c3e162bae923fcefe40",
+      "candidate_text_sha256": "1eaf15dbd6e60a8737f0974b80b0c64a2e7c100302e52c3e162bae923fcefe40"
+    }
+  ],
+  "changes": [
+    {
+      "run_id": "AMD_final_reasoning_v9",
+      "ticker": "AMD",
+      "section": "valuation_overview",
+      "checked_path": "runs/AMD_final_reasoning_v9/verifier/valuation_overview/checked.json",
+      "checked_sha256": "939053943f483e68f7e11f0482cdcdb3bdc86ac1138fbabbdbc9548befebe97e",
+      "prompt_path": "runs/AMD_baseline_1/agents/valuation_overview/prompt.txt",
+      "prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "row_count": 35,
+      "changed_rows": 1,
+      "prior_text_sha256": "1e73df859d44670a862b12afd108e24943add8148a77c2b9d31f2e2b6999173c",
+      "candidate_text_sha256": "4e3769bfbaa992ba17fbb9b5736e92c92be746d1bc77e65f70341f25a23486da",
+      "changes": [
+        {
+          "claim_id": "u1c1",
+          "old_release": "[UNVERIFIED - evidence not supplied] AMD's EV/EBITDA ratio has ranged from the mid-40s to near 60 in recent years.",
+          "new_release": "Across the supplied EV/EBITDA rows aligned with AMD's 2021A through 2025A actual columns, the minimum is 17.9136x (2022A) and the maximum is 57.1197x (2023A). This scope uses the supplied annual rows through AMD's last actual column.",
+          "source_start": 751,
+          "source_end": 838,
+          "clarification": {
+            "rule": "isolated_ev_ebitda_range_supplied_actual_rows",
+            "rule_version": "9.1",
+            "original_released_text": "[UNVERIFIED - evidence not supplied] AMD's EV/EBITDA ratio has ranged from the mid-40s to near 60 in recent years.",
+            "original_range_expression": {
+              "lower": "the mid-40s",
+              "upper": "near 60",
+              "window": "recent years"
+            },
+            "revised_released_text": "Across the supplied EV/EBITDA rows aligned with AMD's 2021A through 2025A actual columns, the minimum is 17.9136x (2022A) and the maximum is 57.1197x (2023A). This scope uses the supplied annual rows through AMD's last actual column.",
+            "original_semantic_verdict": "Not inferred; the original recent-years interval is unspecified.",
+            "ticker": "AMD",
+            "company": "Advanced Micro Devices, Inc.",
+            "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+            "selection_rule": "Use every peer-table subject value whose year matches an explicitly A-labeled subject column, with contiguous actual years and complete positive finite values; no forecast column enters the calculation.",
+            "first_actual": "2021A",
+            "last_actual": "2025A",
+            "observations": [
+              {
+                "year": 2021,
+                "actual_label": "2021A",
+                "value": "42.1013",
+                "source_value": "42.1013",
+                "source_row_label": "2021",
+                "line_number": 32,
+                "quote": "|   2021 |  42.1013 |   7.13058 | nan      |"
+              },
+              {
+                "year": 2022,
+                "actual_label": "2022A",
+                "value": "17.9136",
+                "source_value": "17.9136",
+                "source_row_label": "2022",
+                "line_number": 33,
+                "quote": "|   2022 |  17.9136 |   6.54873 |  54.7187 |"
+              },
+              {
+                "year": 2023,
+                "actual_label": "2023A",
+                "value": "57.1197",
+                "source_value": "57.1197",
+                "source_row_label": "2023",
+                "line_number": 34,
+                "quote": "|   2023 |  57.1197 |  22.4823  |  81.0476 |"
+              },
+              {
+                "year": 2024,
+                "actual_label": "2024A",
+                "value": "38.2717",
+                "source_value": "38.2717",
+                "source_row_label": "2024",
+                "line_number": 35,
+                "quote": "|   2024 |  38.2717 | 106.938   |  43.4522 |"
+              },
+              {
+                "year": 2025,
+                "actual_label": "2025A",
+                "value": "47.8456",
+                "source_value": "47.8456",
+                "source_row_label": "2025",
+                "line_number": 36,
+                "quote": "|   2025 |  47.8456 |  14.4982  |  33.7774 |"
+              }
+            ],
+            "calculation": {
+              "formula": "minimum = min(subject EV/EBITDA values over selected actual rows); maximum = max(subject EV/EBITDA values over the same rows)",
+              "minimum": "17.9136",
+              "minimum_years": [
+                "2022A"
+              ],
+              "maximum": "57.1197",
+              "maximum_years": [
+                "2023A"
+              ],
+              "selected_row_count": 5,
+              "interpolation": false,
+              "forecast_values_used": false
+            },
+            "evidence": [
+              {
+                "line_number": 1,
+                "quote": "Financial data for Advanced Micro Devices, Inc. (AMD):"
+              },
+              {
+                "line_number": 4,
+                "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+              },
+              {
+                "line_number": 29,
+                "quote": "## Peer EV/EBITDA Comparison"
+              },
+              {
+                "line_number": 30,
+                "quote": "|   year |      AMD |      INTC |     NVDA |"
+              },
+              {
+                "line_number": 32,
+                "quote": "|   2021 |  42.1013 |   7.13058 | nan      |"
+              },
+              {
+                "line_number": 33,
+                "quote": "|   2022 |  17.9136 |   6.54873 |  54.7187 |"
+              },
+              {
+                "line_number": 34,
+                "quote": "|   2023 |  57.1197 |  22.4823  |  81.0476 |"
+              },
+              {
+                "line_number": 35,
+                "quote": "|   2024 |  38.2717 | 106.938   |  43.4522 |"
+              },
+              {
+                "line_number": 36,
+                "quote": "|   2025 |  47.8456 |  14.4982  |  33.7774 |"
+              }
+            ],
+            "limitations": "Only a supplied-table range clarification. Fiscal-year labels do not prove identical calendar period ends across companies. This rule does not infer the original recent-years window, assess a valuation premium or validate the provider's EV/EBITDA calculation. Development examples informed the grammar; no held-out claim."
+          }
+        }
+      ]
+    }
+  ],
+  "new_paid_calls": 0,
+  "upstream_written": false,
+  "authentic_runs_written": false,
+  "audit_labels_read": false,
+  "held_out_evaluation": false,
+  "scope": "Narrow additional release clarification within Option A. The rule was designed after inspecting a residual development failure. This probe is not an independent after audit or a perfect-score claim.",
+  "trigger": "Only a complete isolated explicit-subject EV/EBITDA recent-years range sentence. Exact focal identity, actual columns and complete positive finite EV/EBITDA rows are required. Other predicates, unknown scope/metric, dates and malformed rows abstain."
+}

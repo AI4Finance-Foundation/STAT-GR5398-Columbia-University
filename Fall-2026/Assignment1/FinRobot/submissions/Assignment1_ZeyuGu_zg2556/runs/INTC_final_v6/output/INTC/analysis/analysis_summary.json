@@ -1,0 +1,55 @@
+{
+  "company_ticker": "INTC",
+  "company_name": "Intel Corporation",
+  "run_id": "INTC-20261011T211000Z-snapshot-derived-e8bf7838",
+  "analysis_date": "2026-10-11T21:10:00+00:00",
+  "data_source": "Financial Modeling Prep API frozen snapshot",
+  "data_period": "annual",
+  "years_analyzed": 5,
+  "available_years": [
+    "2021A",
+    "2022A",
+    "2023A",
+    "2024A",
+    "2025A"
+  ],
+  "latest_year": "2025A",
+  "forecast_years": [
+    "2026E",
+    "2027E",
+    "2028E"
+  ],
+  "forecast_config": {
+    "revenue_base_year": "2025A",
+    "revenue_growth_assumptions": {
+      "2026E": 0.05,
+      "2027E": 0.06,
+      "2028E": 0.04
+    },
+    "ebitda_growth_factor": 1.05,
+    "margin_improvement": {
+      "Contribution Margin": 0.01,
+      "EBITDA Margin": 0.01
+    },
+    "sga_margin_change": -0.005,
+    "forecast_label_mapping": {
+      "2025E": "2026E",
+      "2026E": "2027E",
+      "2027E": "2028E"
+    },
+    "forecast_origin": "2025A",
+    "forecast_basis": "annual periods after latest observed actual; not calendar-year projections"
+  },
+  "peer_tickers": [
+    "NVDA",
+    "AMD"
+  ],
+  "news_days_back": 90,
+  "news_articles_fetched": 1,
+  "news_articles_in_evidence": 1,
+  "enhanced_news_enabled": true,
+  "sensitivity_analysis_enabled": true,
+  "catalyst_analysis_enabled": true,
+  "text_sections": [],
+  "text_generation_status": "not run by this deterministic capture stage"
+}

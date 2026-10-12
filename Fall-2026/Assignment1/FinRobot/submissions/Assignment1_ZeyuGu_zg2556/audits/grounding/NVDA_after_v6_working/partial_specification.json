@@ -1,0 +1,2917 @@
+{
+  "protocol_version": "machine-adjudication-v1",
+  "run_id": "NVDA_final_v6",
+  "evidence_run_id": "NVDA_baseline_1",
+  "raw_judge_audit": null,
+  "sections": {
+    "tagline": {
+      "source_sha256": "e0c9ee0684e93e2550bea55c06be50faf1492210539e523ace7ba560df57c89c",
+      "evidence_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "units": [
+        {
+          "unit_id": 3,
+          "atoms": [
+            {
+              "claim": "NVIDIA has a premium valuation relative to an unstated benchmark.",
+              "claim_type": "qualitative",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No benchmark is specified; peer EV/EBITDA is mixed and does not establish a universal premium."
+            },
+            {
+              "claim": "NVIDIA leads high-growth markets.",
+              "claim_type": "qualitative",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No market shares, industry growth rates or leadership comparison are provided."
+            },
+            {
+              "claim": "NVIDIA has positive profitability.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "not_numeric",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 4
+                },
+                {
+                  "line_start": 12,
+                  "line_end": 12
+                }
+              ],
+              "reason": "All displayed actual EBITDA margins are positive; the evaluative word solid adds no separately testable threshold."
+            },
+            {
+              "claim": "Market leadership and profitability explain NVIDIA valuation positioning.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No evidence links the observed multiples causally to market leadership."
+            }
+          ],
+          "nonfactual_reason": ""
+        }
+      ]
+    },
+    "company_overview": {
+      "source_sha256": "dc324f74a597fd6b43b30dccb042cddd59257f1acc5c467b242d92b007927a52",
+      "evidence_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "units": [
+        {
+          "unit_id": 0,
+          "atoms": [
+            {
+              "claim": "NVIDIA is a leading technology company.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Line 1 identifies the company only; no business-description or product evidence is supplied."
+            },
+            {
+              "claim": "NVIDIA designs GPUs.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Line 1 identifies the company only; no business-description or product evidence is supplied."
+            },
+            {
+              "claim": "NVIDIA manufactures GPUs.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Line 1 identifies the company only; no business-description or product evidence is supplied."
+            },
+            {
+              "claim": "NVIDIA specializes in advanced computing technologies.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Line 1 identifies the company only; no business-description or product evidence is supplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 9,
+          "atoms": [
+            {
+              "claim": "NVIDIA 2023 revenue was about $27 billion.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 6
+                }
+              ],
+              "reason": "2023A is $26.974 billion."
+            },
+            {
+              "claim": "NVIDIA 2024 revenue was about $60.9 billion.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 6
+                }
+              ],
+              "reason": "2024A is $60.922 billion."
+            },
+            {
+              "claim": "NVIDIA 2025 revenue of about $130.5 billion is an estimate.",
+              "claim_type": "quantitative",
+              "classification": "Contradicted",
+              "numeric_status": "incorrect",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 6
+                }
+              ],
+              "reason": "Column header explicitly labels 2025A as an actual, whereas the source calls it an estimate/projection in this current report. The amount alone is not the error."
+            },
+            {
+              "claim": "NVIDIA revenue CAGR from 2023 to 2025 exceeded 68%.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 6
+                }
+              ],
+              "reason": "Using the stated endpoints, (130497/26974)^(1/2)-1 = 119.9518%, which does exceed 68%. The generic 68.3% CAGR column is not the calculation for this interval."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 11,
+          "atoms": [
+            {
+              "claim": "NVIDIA EBITDA margin was 22.2% in 2023.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 4
+                },
+                {
+                  "line_start": 12,
+                  "line_end": 12
+                }
+              ],
+              "reason": "2023A is 22.2%."
+            },
+            {
+              "claim": "NVIDIA expected EBITDA margin of 66% in 2025.",
+              "claim_type": "quantitative",
+              "classification": "Contradicted",
+              "numeric_status": "incorrect",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 4
+                },
+                {
+                  "line_start": 12,
+                  "line_end": 12
+                }
+              ],
+              "reason": "Column header explicitly labels 2025A as an actual, whereas the source calls it an estimate/projection in this current report. The amount alone is not the error."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 18,
+          "atoms": [
+            {
+              "claim": "Huang vision fostered innovation.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No statements about Huang or leadership effects are supplied."
+            },
+            {
+              "claim": "Huang vision positioned NVIDIA as an AI hardware/software pioneer.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No statements about Huang or leadership effects are supplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        }
+      ]
+    },
+    "investment_overview": {
+      "source_sha256": "5e01a16aaebadc3663b99ba7f0ccdd5328e9f8da1865ebad3fdcecd9756a090d",
+      "evidence_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "units": [
+        {
+          "unit_id": 0,
+          "atoms": [],
+          "nonfactual_reason": "Heading or a pure valuation/research recommendation with no additional independently testable premise; factual premises in other units are audited separately."
+        },
+        {
+          "unit_id": 1,
+          "atoms": [],
+          "nonfactual_reason": "Heading or a pure valuation/research recommendation with no additional independently testable premise; factual premises in other units are audited separately."
+        },
+        {
+          "unit_id": 2,
+          "atoms": [
+            {
+              "claim": "NVIDIA reported Q2 FY2027 revenue of $96.2 billion.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "The title identifiesQ2FY2027 and excerpt gives96.2."
+            },
+            {
+              "claim": "Reported Q2 FY2027 revenue grew106% year over year.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "The excerpt states106%YoY."
+            },
+            {
+              "claim": "Reported Q2 FY2027 revenue grew18% sequentially.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "The excerpt states18%frompreviousquarter."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 3,
+          "atoms": [
+            {
+              "claim": "NVIDIA reported Q2 FY2027 revenue of $96.2 billion.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "The title identifiesQ2FY2027 and excerpt gives96.2."
+            },
+            {
+              "claim": "Reported Q2 FY2027 revenue grew106% year over year.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "The excerpt states106%YoY."
+            },
+            {
+              "claim": "Reported Q2 FY2027 revenue grew18% sequentially.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "The excerpt states18%frompreviousquarter."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 4,
+          "atoms": [
+            {
+              "claim": "NVIDIA reported Q2 FY2027 revenue of $96.2 billion.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "The title identifiesQ2FY2027 and excerpt gives96.2."
+            },
+            {
+              "claim": "Reported Q2 FY2027 revenue grew106% year over year.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "The excerpt states106%YoY."
+            },
+            {
+              "claim": "Reported Q2 FY2027 revenue grew18% sequentially.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "The excerpt states18%frompreviousquarter."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 5,
+          "atoms": [
+            {
+              "claim": "Data Center was the primary contributor to the reported revenue growth.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "not_numeric",
+              "evidence": [
+                {
+                  "line_start": 44,
+                  "line_end": 46
+                }
+              ],
+              "reason": "Article 1 reports total revenue 96.2, YoY +106%, and Data Center revenue 89.0, YoY +117%. Implied changes are 96.2-96.2/2.06 and 89-89/2.17; Data Center accounts for about 96.94% of the reported total increase. This is an accounting contribution, not proof of AI/cloud demand causality."
+            },
+            {
+              "claim": "Data Center continued a previously established role as primary growth driver.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "The single quarterly comparison does not establish continuing primacy across earlier quarters."
+            },
+            {
+              "claim": "Data Center revenue grew117%YoY.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 44,
+                  "line_end": 46
+                }
+              ],
+              "reason": "The excerpt explicitly reports117%."
+            },
+            {
+              "claim": "NVIDIA dominates AI infrastructure.",
+              "claim_type": "qualitative",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No market-share or competitor-product evidence is supplied."
+            },
+            {
+              "claim": "NVIDIA dominates cloud-computing infrastructure.",
+              "claim_type": "qualitative",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No cloud-market evidence is supplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 8,
+          "atoms": [
+            {
+              "claim": "Reported quarterly gross margin was75%.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "BothGAAPandnonGAAPgrossmargin75.0%."
+            },
+            {
+              "claim": "The reported gross margin was consistent with management guidance.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No prior management-guidance value is supplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 11,
+          "atoms": [
+            {
+              "claim": "NVIDIA EPS beat expectations.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No consensus, forecast or other expectations value is provided."
+            },
+            {
+              "claim": "Reported GAAP diluted EPS was$2.46.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "Excerpt givesGAAP2.46."
+            },
+            {
+              "claim": "Reported non-GAAP diluted EPS was$2.22.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "Excerpt givesnonGAAP2.22."
+            },
+            {
+              "claim": "Efficient cost management explains the EPS result.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No cost-causality evidence is supplied."
+            },
+            {
+              "claim": "A high-margin product mix explains the EPS result.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No product-margin/mix evidence is supplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 12,
+          "atoms": [
+            {
+              "claim": "NVIDIA EPS beat expectations.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No consensus, forecast or other expectations value is provided."
+            },
+            {
+              "claim": "Reported GAAP diluted EPS was$2.46.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "Excerpt givesGAAP2.46."
+            },
+            {
+              "claim": "Reported non-GAAP diluted EPS was$2.22.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "Excerpt givesnonGAAP2.22."
+            },
+            {
+              "claim": "Efficient cost management explains the EPS result.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No cost-causality evidence is supplied."
+            },
+            {
+              "claim": "A high-margin product mix explains the EPS result.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No product-margin/mix evidence is supplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 17,
+          "atoms": [],
+          "nonfactual_reason": "Heading or a pure valuation/research recommendation with no additional independently testable premise; factual premises in other units are audited separately."
+        },
+        {
+          "unit_id": 18,
+          "atoms": [
+            {
+              "claim": "NVIDIA Q2FY2027 performance significantly exceeded market expectations.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "unverifiable",
+              "evidence": [],
+              "reason": "No market expectations are supplied."
+            },
+            {
+              "claim": "Reported quarterly revenue more than doubled year over year to$96.2billion.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "106%YoY means2.06timespriorrevenue; amount96.2matches."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 19,
+          "atoms": [
+            {
+              "claim": "NVIDIA Q2FY2027 performance significantly exceeded market expectations.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "unverifiable",
+              "evidence": [],
+              "reason": "No market expectations are supplied."
+            },
+            {
+              "claim": "Reported quarterly revenue more than doubled year over year to$96.2billion.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "106%YoY means2.06timespriorrevenue; amount96.2matches."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 20,
+          "atoms": [
+            {
+              "claim": "Data Center contributed predominantly to the reported revenue increase.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "not_numeric",
+              "evidence": [
+                {
+                  "line_start": 44,
+                  "line_end": 46
+                }
+              ],
+              "reason": "Article 1 reports total revenue 96.2, YoY +106%, and Data Center revenue 89.0, YoY +117%. Implied changes are 96.2-96.2/2.06 and 89-89/2.17; Data Center accounts for about 96.94% of the reported total increase. This is an accounting contribution, not proof of AI/cloud demand causality."
+            },
+            {
+              "claim": "Reported Data Center growth was117%.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 44,
+                  "line_end": 46
+                }
+              ],
+              "reason": "117%YoYexplicit."
+            },
+            {
+              "claim": "This growth reflects robust AI-workload adoption.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Noadoptionmeasureorcausalstatementissupplied."
+            },
+            {
+              "claim": "This growth reflects robust cloud-service adoption.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Nocloud-serviceadoptionevidenceissupplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 21,
+          "atoms": [
+            {
+              "claim": "Reported quarterly gross margin was75%.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "75.0%reported."
+            },
+            {
+              "claim": "Gross margin held steady at75%.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "unverifiable",
+              "evidence": [],
+              "reason": "Prior-quartergrossmarginisnotprovided;theannualcomparisoncannotestablishsteadinessforthisquarter."
+            },
+            {
+              "claim": "This gross margin signals operational efficiency despite expansion.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Nogross-marginattributiontooperatingefficiencyissupplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 22,
+          "atoms": [
+            {
+              "claim": "EPS outperformed consensus forecasts.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Noconsensusforecastissupplied."
+            },
+            {
+              "claim": "Reported GAAP EPS was$2.46.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "2.46matchesreportedGAAPdilutedEPS."
+            },
+            {
+              "claim": "Reported non-GAAP EPS was$2.22.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "2.22matchesreportednonGAAPdilutedEPS."
+            },
+            {
+              "claim": "Contribution margins supported the EPS beat.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "NoEPSbeatbenchmarkorprofitbridgeissupplied."
+            },
+            {
+              "claim": "Prudent expense management supported the EPS beat.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Noexpense-managementevidenceorEPSbenchmarkissupplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 23,
+          "atoms": [
+            {
+              "claim": "EPS outperformed consensus forecasts.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Noconsensusforecastissupplied."
+            },
+            {
+              "claim": "Reported GAAP EPS was$2.46.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "2.46matchesreportedGAAPdilutedEPS."
+            },
+            {
+              "claim": "Reported non-GAAP EPS was$2.22.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "2.22matchesreportednonGAAPdilutedEPS."
+            },
+            {
+              "claim": "Contribution margins supported the EPS beat.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "NoEPSbeatbenchmarkorprofitbridgeissupplied."
+            },
+            {
+              "claim": "Prudent expense management supported the EPS beat.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Noexpense-managementevidenceorEPSbenchmarkissupplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 25,
+          "atoms": [],
+          "nonfactual_reason": "Heading or a pure valuation/research recommendation with no additional independently testable premise; factual premises in other units are audited separately."
+        }
+      ]
+    },
+    "valuation_overview": {
+      "source_sha256": "32eb1198d1fd997dd3595e42f19e4c5549a8cdea3914b66ace84ae67e78a591d",
+      "evidence_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "units": [
+        {
+          "unit_id": 0,
+          "atoms": [
+            {
+              "claim": "NVIDIA trailing PE is elevated relative to AMD.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "The prompt has NVIDIA PE and peer EV/EBITDA, but no peer PE series or true analyst forward-PE comparison."
+            },
+            {
+              "claim": "NVIDIA trailing PE is elevated relative to Intel.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "The prompt has NVIDIA PE and peer EV/EBITDA, but no peer PE series or true analyst forward-PE comparison."
+            },
+            {
+              "claim": "NVIDIA forward PE is elevated relative to AMD.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "The prompt has NVIDIA PE and peer EV/EBITDA, but no peer PE series or true analyst forward-PE comparison."
+            },
+            {
+              "claim": "NVIDIA forward PE is elevated relative to Intel.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "The prompt has NVIDIA PE and peer EV/EBITDA, but no peer PE series or true analyst forward-PE comparison."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 1,
+          "atoms": [
+            {
+              "claim": "NVIDIA historical PE ranged from approximately35 to over100.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 4
+                },
+                {
+                  "line_start": 16,
+                  "line_end": 16
+                }
+              ],
+              "reason": "ActualPEmin37.8235andmax106.4444;approximately35isanexplicitroughapproximation,notanexactlowerbound."
+            },
+            {
+              "claim": "PE movements reflect market exuberance.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Nomarketsentimentevidenceissupplied."
+            },
+            {
+              "claim": "PE movements reflect market correction.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Nopricereturnorcorrectionseriesissupplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 2,
+          "atoms": [
+            {
+              "claim": "NVIDIA latest displayed actual PE is around35–40.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 4
+                },
+                {
+                  "line_start": 16,
+                  "line_end": 16
+                }
+              ],
+              "reason": "2026A37.8235liesinrange."
+            },
+            {
+              "claim": "NVIDIA PE is significantly higher than traditional semiconductor peers.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "NopeerPEvaluesareprovided."
+            },
+            {
+              "claim": "Traditional semiconductor peers generally have lower valuations.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "ThelimitedEV/EBITDAtableismixed;nogeneralpeervaluationbenchmarkissupplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 3,
+          "atoms": [
+            {
+              "claim": "NVIDIA recent historical revenue CAGR exceeds60%.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 6
+                }
+              ],
+              "reason": "2022A–2026ACAGR68.3014%isabove60%."
+            },
+            {
+              "claim": "That revenue growth supports the elevated valuation level.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Noequilibriumvaluationorcausalpricingevidenceissupplied."
+            },
+            {
+              "claim": "AI demand primarily drove NVIDIA annual revenue growth.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Noannualrevenuegrowthdecompositionbytheseendmarketsissupplied."
+            },
+            {
+              "claim": "Data-center demand primarily drove NVIDIA annual revenue growth.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Noannualrevenuegrowthdecompositionbytheseendmarketsissupplied."
+            },
+            {
+              "claim": "Gaming demand primarily drove NVIDIA annual revenue growth.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Noannualrevenuegrowthdecompositionbytheseendmarketsissupplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 6,
+          "atoms": [
+            {
+              "claim": "NVIDIA latest EV/EBITDA is above30.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 29,
+                  "line_end": 37
+                }
+              ],
+              "reason": "2026NVDA31.4283>30."
+            },
+            {
+              "claim": "NVIDIA EV/EBITDA has moderated from earlier peaks.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "not_numeric",
+              "evidence": [
+                {
+                  "line_start": 29,
+                  "line_end": 37
+                }
+              ],
+              "reason": "2023peak81.0476declinesto31.4283in2026;normalizationistheinterpretationofthisnumericaldecline."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 9,
+          "atoms": [
+            {
+              "claim": "Earlier NVIDIA valuation peaks coincided with AI optimism.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No historical sentiment or adoption series is supplied to establish coincident changes."
+            },
+            {
+              "claim": "Earlier valuation peaks coincided with accelerated data-center GPU adoption.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No historical sentiment or adoption series is supplied to establish coincident changes."
+            },
+            {
+              "claim": "Earlier valuation peaks coincided with accelerated autonomous-application GPU adoption.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No historical sentiment or adoption series is supplied to establish coincident changes."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 11,
+          "atoms": [
+            {
+              "claim": "Current valuation embeds sustained high growth expectations.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Valuation multiples do not identify the particular market expectations asserted."
+            },
+            {
+              "claim": "Those expectations are driven by AI adoption.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Valuation multiples do not identify the particular market expectations asserted."
+            },
+            {
+              "claim": "Those expectations are driven by data-center expansion.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Valuation multiples do not identify the particular market expectations asserted."
+            },
+            {
+              "claim": "Those expectations are driven by innovation.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Valuation multiples do not identify the particular market expectations asserted."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 12,
+          "atoms": [
+            {
+              "claim": "Comparable companies with NVIDIA growth prospects are scarce.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No universe-wide comparable-company or technology-moat evidence is supplied."
+            },
+            {
+              "claim": "Comparable companies with NVIDIA technological moats are scarce.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No universe-wide comparable-company or technology-moat evidence is supplied."
+            },
+            {
+              "claim": "Scarcity rather than speculation explains NVIDIA premium.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No universe-wide comparable-company or technology-moat evidence is supplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 15,
+          "atoms": [
+            {
+              "claim": "NVIDIA premium reflects high growth expectations.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No investor expectations or speculative-positioning evidence is supplied."
+            },
+            {
+              "claim": "NVIDIA premium reflects scarcity.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No investor expectations or speculative-positioning evidence is supplied."
+            },
+            {
+              "claim": "NVIDIA premium does not reflect speculative excess.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No investor expectations or speculative-positioning evidence is supplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 16,
+          "atoms": [],
+          "nonfactual_reason": "Heading or a pure valuation/research recommendation with no additional independently testable premise; factual premises in other units are audited separately."
+        },
+        {
+          "unit_id": 17,
+          "atoms": [
+            {
+              "claim": "NVIDIA forecast profitability is positive.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "not_numeric",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 4
+                },
+                {
+                  "line_start": 12,
+                  "line_end": 12
+                }
+              ],
+              "reason": "AllfutureEBITDAmarginsarepositive;strongisanevaluativeadjective."
+            },
+            {
+              "claim": "NVIDIA has a dominant market position.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Nocomparativemarket-shareevidenceissupplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        }
+      ]
+    },
+    "risks": {
+      "source_sha256": "809053d24a05cfaea4f845dd5d02f442df68e984de7cac5e031131a2f4029f4b",
+      "evidence_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "units": [
+        {
+          "unit_id": 0,
+          "atoms": [
+            {
+              "claim": "Market risks could materially affect NVIDIA performance.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No risk inventory or quantified risk impacts is supplied; plausibility is not grounding."
+            },
+            {
+              "claim": "Competitive risks could materially affect NVIDIA performance.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No risk inventory or quantified risk impacts is supplied; plausibility is not grounding."
+            },
+            {
+              "claim": "Operational risks could materially affect NVIDIA performance.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No risk inventory or quantified risk impacts is supplied; plausibility is not grounding."
+            },
+            {
+              "claim": "Financial risks could materially affect NVIDIA valuation.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No risk inventory or quantified risk impacts is supplied; plausibility is not grounding."
+            },
+            {
+              "claim": "Regulatory risks could materially affect NVIDIA valuation.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No risk inventory or quantified risk impacts is supplied; plausibility is not grounding."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 2,
+          "atoms": [
+            {
+              "claim": "The projected expansion relies heavily on AI demand.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No product-demand assumptions are supplied for the forecast."
+            },
+            {
+              "claim": "The projected expansion relies heavily on data-center demand.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No product-demand assumptions are supplied for the forecast."
+            },
+            {
+              "claim": "The projected expansion relies heavily on gaming demand.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No product-demand assumptions are supplied for the forecast."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 3,
+          "atoms": [
+            {
+              "claim": "A macroeconomic downturn could sharply reduce NVIDIA demand.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No macro-demand sensitivity or relevant observed shock is supplied."
+            },
+            {
+              "claim": "A global recession could sharply reduce NVIDIA demand.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No macro-demand sensitivity or relevant observed shock is supplied."
+            },
+            {
+              "claim": "Lower technology spending could sharply reduce NVIDIA demand.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No macro-demand sensitivity or relevant observed shock is supplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 7,
+          "atoms": [
+            {
+              "claim": "Price wars could erode NVIDIA margins.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No pricing-strategy, market-share or product-competition evidence is supplied."
+            },
+            {
+              "claim": "Competitors seek NVIDIA GPU market share.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No pricing-strategy, market-share or product-competition evidence is supplied."
+            },
+            {
+              "claim": "Competitors seek NVIDIA AI-accelerator market share.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No pricing-strategy, market-share or product-competition evidence is supplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 8,
+          "atoms": [
+            {
+              "claim": "Rapid innovation makes obsolescence a persistent NVIDIA threat.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No technology-obsolescence, performance leadership or market-share response evidence is supplied."
+            },
+            {
+              "claim": "Loss of GPU-performance leadership could reduce market share.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No technology-obsolescence, performance leadership or market-share response evidence is supplied."
+            },
+            {
+              "claim": "Loss of GPU-efficiency leadership could reduce market share.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No technology-obsolescence, performance leadership or market-share response evidence is supplied."
+            },
+            {
+              "claim": "Loss of AI-capability leadership could reduce market share.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No technology-obsolescence, performance leadership or market-share response evidence is supplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 11,
+          "atoms": [
+            {
+              "claim": "NVIDIA has significant supply-chain vulnerabilities.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Nosupply-chainfactsareintheprompt."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 12,
+          "atoms": [
+            {
+              "claim": "The industry depends on few foundries.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No foundry, materials, sourcing or disruption evidence is supplied."
+            },
+            {
+              "claim": "The industry depends on limited raw-material sources.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No foundry, materials, sourcing or disruption evidence is supplied."
+            },
+            {
+              "claim": "This dependence makes NVIDIA vulnerable to geopolitical disruption.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No foundry, materials, sourcing or disruption evidence is supplied."
+            },
+            {
+              "claim": "This dependence makes NVIDIA vulnerable to natural disasters.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No foundry, materials, sourcing or disruption evidence is supplied."
+            },
+            {
+              "claim": "This dependence makes NVIDIA vulnerable to capacity constraints.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No foundry, materials, sourcing or disruption evidence is supplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 13,
+          "atoms": [
+            {
+              "claim": "NVIDIA has an ambitious production scale-up.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Nooutput-unit/capacity/productionplanissupplied."
+            },
+            {
+              "claim": "NVIDIA forecast revenue expands over the next three years.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "not_numeric",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 6
+                }
+              ],
+              "reason": "2026A215.938bnrises to2029E249.953bn;thissupportstheexpansioncomponentonly."
+            },
+            {
+              "claim": "This production and revenue scale-up establishes execution risk.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Nocapacity/executionconstraintissupplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 14,
+          "atoms": [
+            {
+              "claim": "Product-launch delays could impair NVIDIA competitiveness.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No product-launch schedule, quality evidence or competitive response is supplied."
+            },
+            {
+              "claim": "Product quality-control problems could impair NVIDIA competitiveness.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No product-launch schedule, quality evidence or competitive response is supplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 16,
+          "atoms": [
+            {
+              "claim": "NVIDIA has large expansion plans.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Forecast revenues alone do not establish management expansion plans, capex or working-capital needs."
+            },
+            {
+              "claim": "Those plans may require substantial capital expenditure.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Forecast revenues alone do not establish management expansion plans, capex or working-capital needs."
+            },
+            {
+              "claim": "Those plans may require substantial working capital.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Forecast revenues alone do not establish management expansion plans, capex or working-capital needs."
+            },
+            {
+              "claim": "Those requirements create financial risks.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Forecast revenues alone do not establish management expansion plans, capex or working-capital needs."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 17,
+          "atoms": [
+            {
+              "claim": "The current supplied evidence does not explicitly state debt levels.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "not_numeric",
+              "evidence": [
+                {
+                  "line_start": 1,
+                  "line_end": 48
+                }
+              ],
+              "reason": "Inspectionofall48promptlinesshowsfinancial/peertablesandoneearnings-excerpt,butnodebtobservation;thisisastatementaboutpromptcoverage."
+            },
+            {
+              "claim": "NVIDIA relies on capital markets to finance growth.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Nofinancingpolicy,capitalraisingorcash-dependenceissupplied."
+            },
+            {
+              "claim": "This reliance could expose NVIDIA to changing financing costs.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Nofinancingexposureissupplied."
+            },
+            {
+              "claim": "This reliance could expose NVIDIA to changing capital availability.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Nofinancingexposureissupplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 18,
+          "atoms": [
+            {
+              "claim": "Minor earnings disappointments could cause disproportionate NVIDIA price declines.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No earnings-surprise or stock-price response evidence is supplied."
+            },
+            {
+              "claim": "Those price declines could affect investor confidence.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No earnings-surprise or stock-price response evidence is supplied."
+            },
+            {
+              "claim": "Those price declines could affect NVIDIA financial flexibility.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No earnings-surprise or stock-price response evidence is supplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 19,
+          "atoms": [
+            {
+              "claim": "NVIDIA is a global technology firm.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No geographic classification or regulatory exposure is supplied."
+            },
+            {
+              "claim": "NVIDIA faces evolving export-control regulations.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No geographic classification or regulatory exposure is supplied."
+            },
+            {
+              "claim": "NVIDIA faces evolving data-privacy regulations.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No geographic classification or regulatory exposure is supplied."
+            },
+            {
+              "claim": "NVIDIA faces evolving environmental standards.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No geographic classification or regulatory exposure is supplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 20,
+          "atoms": [
+            {
+              "claim": "Non-compliance could impose additional NVIDIA costs.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No regulatory-impact analysis is supplied."
+            },
+            {
+              "claim": "Regulatory changes could impose additional NVIDIA costs.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No regulatory-impact analysis is supplied."
+            },
+            {
+              "claim": "Non-compliance or regulatory changes could limit NVIDIA market access.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No regulatory-impact analysis is supplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 21,
+          "atoms": [
+            {
+              "claim": "NVIDIA faces intellectual-property litigation risk.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No litigation, IP dispute, antitrust case or industry litigation-rate evidence is supplied."
+            },
+            {
+              "claim": "NVIDIA faces antitrust scrutiny.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No litigation, IP dispute, antitrust case or industry litigation-rate evidence is supplied."
+            },
+            {
+              "claim": "These litigation risks are common in the semiconductor industry.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No litigation, IP dispute, antitrust case or industry litigation-rate evidence is supplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 22,
+          "atoms": [
+            {
+              "claim": "NVIDIA faces potential environmental liabilities.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No environmental liability, stakeholder-priority or reputation evidence is supplied."
+            },
+            {
+              "claim": "NVIDIA faces potential ESG reputational damage.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No environmental liability, stakeholder-priority or reputation evidence is supplied."
+            },
+            {
+              "claim": "Stakeholder focus on ESG is increasing.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No environmental liability, stakeholder-priority or reputation evidence is supplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 24,
+          "atoms": [
+            {
+              "claim": "The preceding risks directly affect NVIDIA ability to meet revenue forecasts.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No links between the enumerated risks and forecast outcomes are supplied."
+            },
+            {
+              "claim": "The preceding risks directly affect NVIDIA ability to meet profitability forecasts.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No links between the enumerated risks and forecast outcomes are supplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 25,
+          "atoms": [
+            {
+              "claim": "NVIDIA strong market position mitigates risks.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No competitive-position, leadership or portfolio diversification evidence is supplied."
+            },
+            {
+              "claim": "NVIDIA technological leadership mitigates risks.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No competitive-position, leadership or portfolio diversification evidence is supplied."
+            },
+            {
+              "claim": "NVIDIA diversified product portfolio mitigates risks.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No competitive-position, leadership or portfolio diversification evidence is supplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        }
+      ]
+    },
+    "competitor_analysis": {
+      "source_sha256": "8e51688b98ba83501227a535066b10dfed12c4cd1511bf443966e60fddbabdb1",
+      "evidence_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "units": [
+        {
+          "unit_id": 0,
+          "atoms": [
+            {
+              "claim": "NVIDIA operates in a highly competitive semiconductor industry.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Financial data and company identity do not establish product activities or industry rivalry."
+            },
+            {
+              "claim": "NVIDIA operates in the technology industry.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Financial data and company identity do not establish product activities or industry rivalry."
+            },
+            {
+              "claim": "NVIDIA focuses primarily on GPUs.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Financial data and company identity do not establish product activities or industry rivalry."
+            },
+            {
+              "claim": "NVIDIA focuses on AI computing.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Financial data and company identity do not establish product activities or industry rivalry."
+            },
+            {
+              "claim": "NVIDIA focuses on data-center solutions.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Financial data and company identity do not establish product activities or industry rivalry."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 1,
+          "atoms": [
+            {
+              "claim": "NVIDIA operates in a highly competitive semiconductor industry.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Financial data and company identity do not establish product activities or industry rivalry."
+            },
+            {
+              "claim": "NVIDIA operates in the technology industry.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Financial data and company identity do not establish product activities or industry rivalry."
+            },
+            {
+              "claim": "NVIDIA focuses primarily on GPUs.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Financial data and company identity do not establish product activities or industry rivalry."
+            },
+            {
+              "claim": "NVIDIA focuses on AI computing.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Financial data and company identity do not establish product activities or industry rivalry."
+            },
+            {
+              "claim": "NVIDIA focuses on data-center solutions.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Financial data and company identity do not establish product activities or industry rivalry."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 2,
+          "atoms": [
+            {
+              "claim": "NVIDIA revenue grew rapidly over its recent actual history.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "not_numeric",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 6
+                }
+              ],
+              "reason": "2023A26.974bnto2026A215.938bnistheobservedbasis;rapidisanevaluativeadjective."
+            },
+            {
+              "claim": "NVIDIA EBITDA margin increased over its recent actual history.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "not_numeric",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 4
+                },
+                {
+                  "line_start": 12,
+                  "line_end": 12
+                }
+              ],
+              "reason": "2023A22.2%to2026A66.9%."
+            },
+            {
+              "claim": "These financial changes establish a robust market presence.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Nocompetitivemarketdataissupplied."
+            },
+            {
+              "claim": "These financial changes establish strategic positioning.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Nostrategydataissupplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 3,
+          "atoms": [
+            {
+              "claim": "NVIDIA revenue grew rapidly over its recent actual history.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "not_numeric",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 6
+                }
+              ],
+              "reason": "2023A26.974bnto2026A215.938bnistheobservedbasis;rapidisanevaluativeadjective."
+            },
+            {
+              "claim": "NVIDIA EBITDA margin increased over its recent actual history.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "not_numeric",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 4
+                },
+                {
+                  "line_start": 12,
+                  "line_end": 12
+                }
+              ],
+              "reason": "2023A22.2%to2026A66.9%."
+            },
+            {
+              "claim": "These financial changes establish a robust market presence.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Nocompetitivemarketdataissupplied."
+            },
+            {
+              "claim": "These financial changes establish strategic positioning.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Nostrategydataissupplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 6,
+          "atoms": [],
+          "nonfactual_reason": "Heading or a pure valuation/research recommendation with no additional independently testable premise; factual premises in other units are audited separately."
+        },
+        {
+          "unit_id": 7,
+          "atoms": [
+            {
+              "claim": "AMD is a selected NVIDIA comparison peer.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "not_numeric",
+              "evidence": [
+                {
+                  "line_start": 18,
+                  "line_end": 27
+                }
+              ],
+              "reason": "AMDappearsinthepeertable."
+            },
+            {
+              "claim": "Intel is a selected NVIDIA comparison peer.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "not_numeric",
+              "evidence": [
+                {
+                  "line_start": 18,
+                  "line_end": 27
+                }
+              ],
+              "reason": "INTCappearsinthepeertable."
+            },
+            {
+              "claim": "AMD and Intel are NVIDIA main competitors.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Selectedfinancialcomparatorsarenotproofofprimarycompetitivepositions."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 9,
+          "atoms": [
+            {
+              "claim": "AMD benefits from strong product innovation.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No AMD product, innovation or pricing-strategy facts are supplied."
+            },
+            {
+              "claim": "AMD benefits from a diversified product portfolio.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No AMD product, innovation or pricing-strategy facts are supplied."
+            },
+            {
+              "claim": "AMD benefits from competitive pricing.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No AMD product, innovation or pricing-strategy facts are supplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 18,
+          "atoms": [],
+          "nonfactual_reason": "Heading or a pure valuation/research recommendation with no additional independently testable premise; factual premises in other units are audited separately."
+        },
+        {
+          "unit_id": 19,
+          "atoms": [
+            {
+              "claim": "NVIDIA moat depends on intangible assets.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No evidence identifies sources of NVIDIA moat."
+            },
+            {
+              "claim": "NVIDIA moat depends on network effects.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No evidence identifies sources of NVIDIA moat."
+            },
+            {
+              "claim": "NVIDIA moat depends on switching costs.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "No evidence identifies sources of NVIDIA moat."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 23,
+          "atoms": [
+            {
+              "claim": "NVIDIA competitive moat is widening.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Nomarket-share/switching-cost/competitiveadvantagetrendissupplied."
+            },
+            {
+              "claim": "NVIDIA revenue growth is accelerating in the projected period.",
+              "claim_type": "qualitative",
+              "classification": "Contradicted",
+              "numeric_status": "not_numeric",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 6
+                },
+                {
+                  "line_start": 14,
+                  "line_end": 14
+                }
+              ],
+              "reason": "Forecastgrowth5%,6%,4%isnotasustainedacceleration;prioractualgrowth125.9%,114.2%,65.5%decelerates."
+            },
+            {
+              "claim": "NVIDIA revenue CAGR projected through2029 is68.3%.",
+              "claim_type": "quantitative",
+              "classification": "Contradicted",
+              "numeric_status": "incorrect",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 6
+                }
+              ],
+              "reason": "2022A26.914bnto2029E249.952554bnover7years=>37.4892%;actual2022–2026CAGRis68.3014%."
+            },
+            {
+              "claim": "NVIDIA contribution margins were consistently above70%.",
+              "claim_type": "quantitative",
+              "classification": "Contradicted",
+              "numeric_status": "incorrect",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 4
+                },
+                {
+                  "line_start": 10,
+                  "line_end": 10
+                }
+              ],
+              "reason": "2022A64.9%and2023A56.9%arecounterexamples."
+            },
+            {
+              "claim": "NVIDIA EBITDA margin is projected above70% by2029.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 4
+                },
+                {
+                  "line_start": 12,
+                  "line_end": 12
+                }
+              ],
+              "reason": "2029E73.5%isabove70%."
+            },
+            {
+              "claim": "These financial projections demonstrate a widening moat.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Financialforecastsarenotevidenceofcompetitive-advantagetrends."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 24,
+          "atoms": [
+            {
+              "claim": "NVIDIA competitive moat is widening.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Nomarket-share/switching-cost/competitiveadvantagetrendissupplied."
+            },
+            {
+              "claim": "NVIDIA revenue growth is accelerating in the projected period.",
+              "claim_type": "qualitative",
+              "classification": "Contradicted",
+              "numeric_status": "not_numeric",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 6
+                },
+                {
+                  "line_start": 14,
+                  "line_end": 14
+                }
+              ],
+              "reason": "Forecastgrowth5%,6%,4%isnotasustainedacceleration;prioractualgrowth125.9%,114.2%,65.5%decelerates."
+            },
+            {
+              "claim": "NVIDIA revenue CAGR projected through2029 is68.3%.",
+              "claim_type": "quantitative",
+              "classification": "Contradicted",
+              "numeric_status": "incorrect",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 6
+                }
+              ],
+              "reason": "2022A26.914bnto2029E249.952554bnover7years=>37.4892%;actual2022–2026CAGRis68.3014%."
+            },
+            {
+              "claim": "NVIDIA contribution margins were consistently above70%.",
+              "claim_type": "quantitative",
+              "classification": "Contradicted",
+              "numeric_status": "incorrect",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 4
+                },
+                {
+                  "line_start": 10,
+                  "line_end": 10
+                }
+              ],
+              "reason": "2022A64.9%and2023A56.9%arecounterexamples."
+            },
+            {
+              "claim": "NVIDIA EBITDA margin is projected above70% by2029.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 4
+                },
+                {
+                  "line_start": 12,
+                  "line_end": 12
+                }
+              ],
+              "reason": "2029E73.5%isabove70%."
+            },
+            {
+              "claim": "These financial projections demonstrate a widening moat.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Financialforecastsarenotevidenceofcompetitive-advantagetrends."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 27,
+          "atoms": [
+            {
+              "claim": "NVIDIA reported strong Data Center revenue growth.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "not_numeric",
+              "evidence": [
+                {
+                  "line_start": 44,
+                  "line_end": 46
+                }
+              ],
+              "reason": "Theexcerptreports117%YoYgrowth."
+            },
+            {
+              "claim": "This growth establishes NVIDIA dominant data-center GPU share.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "SegmentgrowthaloneandwithoutindustrydenominatordoesnotestablishGPUmarketshare."
+            },
+            {
+              "claim": "NVIDIA data-center dominance strengthens its moat.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Neitherdominancenormoattrendisestablished."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 29,
+          "atoms": [
+            {
+              "claim": "NVIDIA has higher EV/EBITDA multiples than both peers.",
+              "claim_type": "qualitative",
+              "classification": "Contradicted",
+              "numeric_status": "not_numeric",
+              "evidence": [
+                {
+                  "line_start": 29,
+                  "line_end": 37
+                }
+              ],
+              "reason": "Latestcommon2025NVDA33.7774<AMD47.8456;notapremiumoverboth."
+            },
+            {
+              "claim": "The valuation multiples demonstrate confidence in durable competitive advantages.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Noexpectationorsentimentevidenceisprovided."
+            }
+          ],
+          "nonfactual_reason": ""
+        }
+      ]
+    },
+    "major_takeaways": {
+      "source_sha256": "7ccf532fa6523d7cb260c82a0215f1bf29fea5c0e0265b43a91014d1edbd4cec",
+      "evidence_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "units": [
+        {
+          "unit_id": 2,
+          "atoms": [
+            {
+              "claim": "Leadership in AI markets fueled NVIDIA explosive growth.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Noleadershipordemandcausalityevidenceissupplied."
+            },
+            {
+              "claim": "Leadership in data-center markets fueled NVIDIA explosive growth.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Segmentgrowthdoesnotestablishleadershipasitscause."
+            },
+            {
+              "claim": "The recentQ2FY2027 report shows106%YoY total revenue growth.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "106%reported."
+            },
+            {
+              "claim": "The recentQ2FY2027 report shows117%YoY Data Center revenue growth.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 44,
+                  "line_end": 46
+                }
+              ],
+              "reason": "117%reported."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 7,
+          "atoms": [
+            {
+              "claim": "NVIDIA contribution margin fell to56.9%in2023.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 4
+                },
+                {
+                  "line_start": 10,
+                  "line_end": 10
+                }
+              ],
+              "reason": "2022A64.9%falls to2023A56.9%."
+            },
+            {
+              "claim": "NVIDIA contribution margin is around72–75%from2024onward.",
+              "claim_type": "quantitative",
+              "classification": "Contradicted",
+              "numeric_status": "incorrect",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 4
+                },
+                {
+                  "line_start": 10,
+                  "line_end": 10
+                }
+              ],
+              "reason": "2026A71.1%liesbelowthe72–75%range;thegivenone-decimalvaluesdonotround71.1to72."
+            },
+            {
+              "claim": "NVIDIA revenue scales upward over this displayed period.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "not_numeric",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 6
+                }
+              ],
+              "reason": "Annualrevenuesincreasefrom2023through2026;futurevaluescontinueupward."
+            },
+            {
+              "claim": "The margin rebound reflects improving cost efficiency.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Nogross-margincomponentcausalbridgeissupplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 8,
+          "atoms": [
+            {
+              "claim": "The forecast maintains NVIDIA gross/contribution margin above70%over the medium term.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 4
+                },
+                {
+                  "line_start": 10,
+                  "line_end": 10
+                }
+              ],
+              "reason": "2027E72.1%,2028E73.1%,2029E74.1%;theseareforecasts,notalreadyrealizedresults."
+            },
+            {
+              "claim": "These margins establish premium product positioning.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Noproductpricingorpositioningdataissupplied."
+            },
+            {
+              "claim": "These margins establish cost optimization.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Nocost-optimizationevidenceissupplied."
+            },
+            {
+              "claim": "These margins establish a robust moat.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Marginlevelsalonedonotestablishdurablecompetitiveadvantage."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 18,
+          "atoms": [
+            {
+              "claim": "NVIDIA has a premium margin to peers.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Peer margins, market shares and operating-quality evidence are absent."
+            },
+            {
+              "claim": "Dominant share in high-value segments explains that margin.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Peer margins, market shares and operating-quality evidence are absent."
+            },
+            {
+              "claim": "Operational excellence explains that margin.",
+              "claim_type": "factual",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Peer margins, market shares and operating-quality evidence are absent."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 19,
+          "atoms": [
+            {
+              "claim": "NVIDIA EV/EBITDA remains above30 throughout its displayed actual series.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 29,
+                  "line_end": 37
+                }
+              ],
+              "reason": "NVDA2022–2026values54.7187,81.0476,43.4522,33.7774,31.4283;highisanevaluativeadjectiveanddoesnotmeanaboveeverypeer."
+            },
+            {
+              "claim": "Margin strength supports a valuation premium.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Noequilibriumvaluationtestisprovided."
+            }
+          ],
+          "nonfactual_reason": ""
+        }
+      ]
+    },
+    "news_summary": {
+      "source_sha256": "8a8f10524cd719cec1a9de0c6d47911c361a8b4fea85817c2fad5ad4b9b67492",
+      "evidence_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "units": [
+        {
+          "unit_id": 2,
+          "atoms": [
+            {
+              "claim": "Q2FY2027 revenue more than doubled year over year.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "106%YoYgrowthmeansmorethandoubling."
+            },
+            {
+              "claim": "Q2FY2027 gross margin and EPS were positive.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "Grossmargin75%;GAAPEPS2.46andnonGAAP2.22arepositive."
+            },
+            {
+              "claim": "Gross margins supported the revenue doubling.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Nomargins-to-salescausalbridgeissupplied."
+            },
+            {
+              "claim": "EPS supported the revenue doubling.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "NoEPS-to-salescausalbridgeissupplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 3,
+          "atoms": [
+            {
+              "claim": "Q2FY2027 revenue more than doubled year over year.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "106%YoYgrowthmeansmorethandoubling."
+            },
+            {
+              "claim": "Q2FY2027 gross margin and EPS were positive.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "Grossmargin75%;GAAPEPS2.46andnonGAAP2.22arepositive."
+            },
+            {
+              "claim": "Gross margins supported the revenue doubling.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Nomargins-to-salescausalbridgeissupplied."
+            },
+            {
+              "claim": "EPS supported the revenue doubling.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "NoEPS-to-salescausalbridgeissupplied."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 5,
+          "atoms": [
+            {
+              "claim": "NVIDIA released Q2FY2027 results.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "Titleanddatedarticlereportidentifytheevent."
+            },
+            {
+              "claim": "Those results reported$96.2billion revenue.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "Amountmatches."
+            },
+            {
+              "claim": "Those results reported106%YoY revenue growth.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "Growthmatches."
+            },
+            {
+              "claim": "Those results reported18%sequential revenue growth.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "Growthmatches."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 6,
+          "atoms": [
+            {
+              "claim": "Data Center primarily contributed to the reported revenue surge.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "not_numeric",
+              "evidence": [
+                {
+                  "line_start": 44,
+                  "line_end": 46
+                }
+              ],
+              "reason": "Article 1 reports total revenue 96.2, YoY +106%, and Data Center revenue 89.0, YoY +117%. Implied changes are 96.2-96.2/2.06 and 89-89/2.17; Data Center accounts for about 96.94% of the reported total increase. This is an accounting contribution, not proof of AI/cloud demand causality."
+            },
+            {
+              "claim": "Reported Data Center revenue grew117%year over year.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 44,
+                  "line_end": 46
+                }
+              ],
+              "reason": "117%matches."
+            },
+            {
+              "claim": "Reported Data Center revenue was$89billion.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 44,
+                  "line_end": 46
+                }
+              ],
+              "reason": "89.0billionmatches."
+            },
+            {
+              "claim": "This growth establishes AI-infrastructure dominance.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Nocomparativemarket-shareevidence."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 8,
+          "atoms": [
+            {
+              "claim": "Reported quarterly gross margin was75.0%.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "BothGAAPandnonGAAPgrossmargin75.0%."
+            },
+            {
+              "claim": "Reported GAAP EPS was$2.46.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "GAAPdilutedEPS2.46."
+            },
+            {
+              "claim": "These margins and EPS demonstrate efficiency despite expansion.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Noefficiencyattributionintheprovidedexcerpt."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 9,
+          "atoms": [
+            {
+              "claim": "Reported quarterly gross margin was75.0%.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "BothGAAPandnonGAAPgrossmargin75.0%."
+            },
+            {
+              "claim": "Reported GAAP EPS was$2.46.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 46
+                }
+              ],
+              "reason": "GAAPdilutedEPS2.46."
+            },
+            {
+              "claim": "These margins and EPS demonstrate efficiency despite expansion.",
+              "claim_type": "causal",
+              "classification": "Unsupported",
+              "numeric_status": "not_numeric",
+              "evidence": [],
+              "reason": "Noefficiencyattributionintheprovidedexcerpt."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 12,
+          "atoms": [
+            {
+              "claim": "The long-term forecast shows68.3%revenueCAGRfrom2022through2029.",
+              "claim_type": "quantitative",
+              "classification": "Contradicted",
+              "numeric_status": "incorrect",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 6
+                }
+              ],
+              "reason": "Endpoint2022A26.914bnto2029E249.952554bnover7years=>37.4892%;68.3%belongs toactual2022–2026."
+            },
+            {
+              "claim": "NVIDIA EBITDA margin is forecast above70%by2029.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 4
+                },
+                {
+                  "line_start": 12,
+                  "line_end": 12
+                }
+              ],
+              "reason": "2029E73.5%."
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 13,
+          "atoms": [
+            {
+              "claim": "The long-term forecast shows68.3%revenueCAGRfrom2022through2029.",
+              "claim_type": "quantitative",
+              "classification": "Contradicted",
+              "numeric_status": "incorrect",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 6
+                }
+              ],
+              "reason": "Endpoint2022A26.914bnto2029E249.952554bnover7years=>37.4892%;68.3%belongs toactual2022–2026."
+            },
+            {
+              "claim": "NVIDIA EBITDA margin is forecast above70%by2029.",
+              "claim_type": "factual",
+              "classification": "Supported",
+              "numeric_status": "correct",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 4
+                },
+                {
+                  "line_start": 12,
+                  "line_end": 12
+                }
+              ],
+              "reason": "2029E73.5%."
+            }
+          ],
+          "nonfactual_reason": ""
+        }
+      ]
+    }
+  }
+}

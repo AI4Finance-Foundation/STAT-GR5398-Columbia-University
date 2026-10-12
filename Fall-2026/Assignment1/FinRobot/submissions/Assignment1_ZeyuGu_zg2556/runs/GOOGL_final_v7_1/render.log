@@ -1,0 +1,33 @@
+HTML reports will be saved to: C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\runs\GOOGL_final_v7_1\output\GOOGL\report
+Loaded frozen market snapshot
+
+📊 Market Data Summary for GOOGL:
+  Share Price: $351.66 (auto-fetched)
+  Target Price: $431.83 (auto-fetched)
+  Rating: Buy (auto-fetched)
+  Market Cap: $4,255.83B (auto-fetched)
+  Sector: Communication Services (auto-fetched)
+📖 Loading and processing text content...
+Handling charts...
+✅ Revenue/EBITDA chart saved to C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\runs\GOOGL_final_v7_1\output\GOOGL\report\GOOGL_revenue_ebitda_chart.png
+✅ EPS × PE chart saved to C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\runs\GOOGL_final_v7_1\output\GOOGL\report\GOOGL_eps_pe_chart.png
+✅ EV/EBITDA peer chart saved to C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\runs\GOOGL_final_v7_1\output\GOOGL\report\GOOGL_peer_ev_ebitda_chart.png
+Loading sensitivity analysis from C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\runs\GOOGL_final_v7_1\output\GOOGL\analysis\sensitivity_analysis.json...
+✅ Sensitivity analysis loaded
+Loading catalyst analysis from C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\runs\GOOGL_final_v7_1\output\GOOGL\analysis\catalyst_analysis.json...
+✅ Catalyst analysis loaded (sentiments re-validated)
+Loading enhanced news from C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\runs\GOOGL_final_v7_1\output\GOOGL\analysis\enhanced_news.json...
+✅ Enhanced news loaded
+Formatting tables for HTML...
+Loading Credit & Cashflow metrics from CSV...
+Warning: The ratios CSV file is missing required columns (e.g., 'calendarYear' or ratio columns).
+❌ Failed to load Credit & Cashflow metrics from CSV
+Processing peer EBITDA data with shape: (7, 4)
+Peer EBITDA columns: ['year', 'AAPL', 'GOOGL', 'NVDA']
+Peer EBITDA index: [2021, 2022, 2023, 2024, 2025, 2026, 2027]
+✅ Successfully formatted peer EBITDA table
+Processing peer EV/EBITDA data with shape: (6, 3)
+Peer EV/EBITDA columns: ['AAPL', 'GOOGL', 'NVDA']
+Peer EV/EBITDA index: [2021, 2022, 2023, 2024, 2025, 2026]
+✅ Successfully formatted peer EV/EBITDA table
+Generated exact-text audited HTML report: C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\runs\GOOGL_final_v7_1\output\GOOGL\report\Audited_Equity_Report_GOOGL.html

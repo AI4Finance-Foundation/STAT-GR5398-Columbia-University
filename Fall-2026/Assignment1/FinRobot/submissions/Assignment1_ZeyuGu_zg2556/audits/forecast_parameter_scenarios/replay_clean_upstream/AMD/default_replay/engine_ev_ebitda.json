@@ -1,0 +1,29 @@
+{
+  "method": "EV/EBITDA",
+  "target_price": 377.8356249290765,
+  "low_estimate": 227.4883852752593,
+  "high_estimate": 528.1828645828937,
+  "assumptions": {
+    "EBITDA": 16840040817.6,
+    "EBITDA Period": "2028E",
+    "EBITDA Source": "analysis last A/E column",
+    "Target Multiple": 40.650387746319076,
+    "Historical Avg Multiple": 40.650387746319076,
+    "Historical Multiple Sample Std": 14.557934368145627,
+    "Multiple Source": "key_metrics.enterpriseValueOverEBITDA sample mean",
+    "Enterprise Value": 684554188899.2802,
+    "Net Debt": 68455418889.92802,
+    "Equity Value": 616098770009.3522,
+    "Range Debt Treatment": "hold base-case assumed net debt fixed across low/high multiples",
+    "Discount Rate": null,
+    "Terminal Growth": null,
+    "Shares Outstanding": 1630600000,
+    "Shares Source": "caller input",
+    "Net Debt Source": "ASSUMPTION: 10% of model enterprise value; not observed balance-sheet debt",
+    "Net Debt Fraction": 0.1,
+    "Price Floor": 0,
+    "Current Price": 608.1
+  },
+  "confidence": 0.7,
+  "description": "Based on 40.7x EV/EBITDA multiple"
+}

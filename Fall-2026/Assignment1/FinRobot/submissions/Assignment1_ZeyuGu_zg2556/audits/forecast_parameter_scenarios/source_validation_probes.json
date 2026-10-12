@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "driver_sha256": "ccd9a0ced02b2d27f35abbed303a3a614c11c80648fc239a5861fce054a69130",
+  "records": [
+    {
+      "module": "financial_data_processor",
+      "variant": "original",
+      "result": "ACCEPTED",
+      "binding": {
+        "actual_sha256": "be237216f95c028827c0ad745c5ae32f5743fd1658c02abca28d571a882141bd",
+        "baseline_raw_sha256": "be237216f95c028827c0ad745c5ae32f5743fd1658c02abca28d571a882141bd",
+        "crlf_to_lf_sha256": "d38f85d0f6e47cb288fde64140e7a6f0bbb86c432ab25431fac928ada1eaf81a",
+        "comparison": "raw bytes"
+      }
+    },
+    {
+      "module": "financial_data_processor",
+      "variant": "CRLF_to_LF_only",
+      "result": "ACCEPTED",
+      "binding": {
+        "actual_sha256": "d38f85d0f6e47cb288fde64140e7a6f0bbb86c432ab25431fac928ada1eaf81a",
+        "baseline_raw_sha256": "be237216f95c028827c0ad745c5ae32f5743fd1658c02abca28d571a882141bd",
+        "crlf_to_lf_sha256": "d38f85d0f6e47cb288fde64140e7a6f0bbb86c432ab25431fac928ada1eaf81a",
+        "comparison": "CRLF-to-LF only"
+      }
+    },
+    {
+      "module": "financial_data_processor",
+      "variant": "additional_source_text",
+      "result": "REJECTED"
+    },
+    {
+      "module": "valuation_engine",
+      "variant": "original",
+      "result": "ACCEPTED",
+      "binding": {
+        "actual_sha256": "decce50ea666b7b1b2236efe737e0e3c4814b876764ebe8407dea4cf7100745c",
+        "baseline_raw_sha256": "decce50ea666b7b1b2236efe737e0e3c4814b876764ebe8407dea4cf7100745c",
+        "crlf_to_lf_sha256": "3253ee53248935c7ae7fd8ac9ff18a2e760a58913d72e1c29e5b541ab13081cd",
+        "comparison": "raw bytes"
+      }
+    },
+    {
+      "module": "valuation_engine",
+      "variant": "CRLF_to_LF_only",
+      "result": "ACCEPTED",
+      "binding": {
+        "actual_sha256": "3253ee53248935c7ae7fd8ac9ff18a2e760a58913d72e1c29e5b541ab13081cd",
+        "baseline_raw_sha256": "decce50ea666b7b1b2236efe737e0e3c4814b876764ebe8407dea4cf7100745c",
+        "crlf_to_lf_sha256": "3253ee53248935c7ae7fd8ac9ff18a2e760a58913d72e1c29e5b541ab13081cd",
+        "comparison": "CRLF-to-LF only"
+      }
+    },
+    {
+      "module": "valuation_engine",
+      "variant": "additional_source_text",
+      "result": "REJECTED"
+    }
+  ]
+}

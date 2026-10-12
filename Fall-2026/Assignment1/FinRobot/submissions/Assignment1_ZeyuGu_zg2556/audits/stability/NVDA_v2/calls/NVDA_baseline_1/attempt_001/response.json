@@ -1,0 +1,37 @@
+{
+  "call_id": "NVDA_v2/stability_v2/NVDA_baseline_1/attempt_001",
+  "structured_output": {
+    "ratings": [],
+    "targets": [],
+    "risks": [
+      {
+        "source_unit_id": 3,
+        "taxonomy": "demand_cyclicality"
+      },
+      {
+        "source_unit_id": 5,
+        "taxonomy": "export_controls_geopolitics"
+      },
+      {
+        "source_unit_id": 6,
+        "taxonomy": "competition"
+      }
+    ]
+  },
+  "usage": {
+    "requests": 1,
+    "input_tokens": 10041,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 51,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10092
+  },
+  "runtime_seconds": 1.3102598000004946,
+  "cost_usd": 0.02049,
+  "completed_at_utc": "2026-10-11T21:47:53.544151+00:00",
+  "attempts": 1
+}

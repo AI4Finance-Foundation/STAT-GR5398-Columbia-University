@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EXxNVcSAQn76hhWr0SzyTvZdxvonr",
+  "object": "chat.completion",
+  "created": 1791761781,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"units\":[{\"unit_id\":0,\"claims\":[{\"claim\":\"Intel Corporation demonstrates robust contribution margins.\",\"claim_type\":\"qualitative\",\"classification\":\"Supported\",\"evidence\":[{\"line_start\":10,\"line_end\":10}],\"reason\":\"The table in line 10 shows Intel's contribution margin for 2021A-2028E, with actuals of 55.4% (2021A), 42.6% (2022A), and 40.0% (2023A). These are relatively high margins, supporting the qualitative claim of 'robust' contribution margins.\",\"numeric_status\":\"not_numeric\",\"fact_key\":\"intel corporation|contribution margin|2021A-2023A|robust\"}],\"nonfactual_reason\":\"\"},{\"unit_id\":1,\"claims\":[{\"claim\":\"Intel Corporation maintains a significant EBITDA presence despite recent revenue declines.\",\"claim_type\":\"causal\",\"classification\":\"Supported\",\"evidence\":[{\"line_start\":6,\"line_end\":6},{\"line_start\":11,\"line_end\":11}],\"reason\":\"The revenue row (line 6) shows a decline from $79.0B (2021A) to $54.2B (2023A). The EBITDA row (line 11) shows Intel's EBITDA remains substantial: $33.9B (2021A), $21.3B (2022A), $11.2B (2023A). This supports the claim that Intel maintains a significant EBITDA presence despite revenue declines.\",\"numeric_status\":\"not_numeric\",\"fact_key\":\"intel corporation|ebitda presence despite revenue declines|2021A-2023A|significant\"}],\"nonfactual_reason\":\"\"}]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2870,
+    "completion_tokens": 349,
+    "total_tokens": 3219,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_85db8cd50c"
+}

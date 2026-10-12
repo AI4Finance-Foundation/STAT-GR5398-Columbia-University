@@ -1,0 +1,780 @@
+{
+  "original_text": "Recent financial disclosures from QUALCOMM Incorporated for the quarter ended June 28, 2026, reveal a slight decline in total revenues compared to the prior year period, with total revenues of $9.947 billion down from $10.365 billion. Operating income also decreased notably to $1.626 billion from $2.762 billion in the previous year’s quarter. These results contrast with earlier projections of steady revenue growth and margin expansion through 2028, highlighting near-term operational pressures despite a positive long-term outlook.\n\nKey developments include QUALCOMM’s latest 10-Q filing showing sequential revenue and operating income declines, which may indicate challenges in equipment and services segments. Despite this, the company’s long-term revenue CAGR of 11.2% and improving contribution margins suggest ongoing strength in licensing and efficiency gains. The quarterly results, however, signal potential short-term headwinds that could temper near-term stock performance.\n\nInvestors should closely monitor the company’s ability to stabilize revenues and margins in upcoming quarters, as well as any strategic responses to competitive pressures. The contrast between recent quarterly results and the optimistic longer-term financial forecast underscores the importance of evaluating both immediate operational execution and the broader growth trajectory.\n\nOverall, the news tone is cautiously neutral to slightly negative in the short term due to declining quarterly revenues and earnings, but remains positive over the longer term given robust financial metrics and growth projections. This mixed sentiment may lead to increased volatility in the stock price as the market digests the latest operational data alongside the favorable outlook for future years.",
+  "revised_text": "[UNVERIFIED - deterministic evidence/number check failed] Recent financial disclosures from QUALCOMM Incorporated for the quarter ended June 28, 2026, reveal a slight decline in total revenues compared to the prior year period, with total revenues of $9.947 billion down from $10.365 billion.\n\n[UNVERIFIED - deterministic evidence/number check failed] Operating income also decreased notably to $1.626 billion from $2.762 billion in the previous year’s quarter.\n\n[UNVERIFIED - deterministic evidence/number check failed] These results contrast with earlier projections of steady revenue growth and margin expansion through 2028, highlighting near-term operational pressures despite a positive long-term outlook.\n\n[UNVERIFIED - deterministic evidence/number check failed] Key developments include QUALCOMM’s latest 10-Q filing showing sequential revenue and operating income declines, which may indicate challenges in equipment and services segments.\n\n[UNVERIFIED - deterministic evidence/number check failed] Despite this, the company’s long-term revenue CAGR of 11.2% and improving contribution margins suggest ongoing strength in licensing and efficiency gains.\n\n[UNVERIFIED - evidence not supplied] The quarterly results signal potential short-term headwinds that could temper near-term stock performance.\n\n[UNVERIFIED - evidence not supplied] Investors should closely monitor the company’s ability to stabilize revenues and margins in upcoming quarters, as well as any strategic responses to competitive pressures.\n\nThere is a contrast between recent quarterly results and the optimistic longer-term financial forecast.\n\n[UNVERIFIED - evidence not supplied] The news tone is cautiously neutral to slightly negative in the short term due to declining quarterly revenues and earnings, but remains positive over the longer term given robust financial metrics and growth projections.\n\n[UNVERIFIED - evidence not supplied] This mixed sentiment may lead to increased volatility in the stock price as the market digests the latest operational data alongside the favorable outlook for future years.",
+  "claims": [
+    {
+      "claim_id": "u0c0",
+      "source_id": 0,
+      "source_start": 0,
+      "source_end": 234,
+      "source_quote_occurrences": 1,
+      "original_quote": "Recent financial disclosures from QUALCOMM Incorporated for the quarter ended June 28, 2026, reveal a slight decline in total revenues compared to the prior year period, with total revenues of $9.947 billion down from $10.365 billion.",
+      "claim": "QUALCOMM Incorporated reported total revenues of $9.947 billion for the quarter ended June 28, 2026, which is a decline from $10.365 billion in the prior year period.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 68,
+          "quote": "9,947",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 69,
+          "quote": "10,365",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The quoted revenue figures for the respective quarters are directly supported by the evidence table.",
+      "action": "keep",
+      "revised_claim": "QUALCOMM Incorporated reported total revenues of $9.947 billion for the quarter ended June 28, 2026, which is a decline from $10.365 billion in the prior year period.",
+      "number_bindings": [
+        {
+          "claim_number": "9.947",
+          "evidence_line": 68,
+          "evidence_number": "9,947",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2026",
+          "evidence_line": 44,
+          "evidence_number": "2026",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "10.365",
+          "evidence_line": 69,
+          "evidence_number": "10,365",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "9.947",
+          "passed": false,
+          "reason": "numeric_mismatch",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "28",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "10.365",
+          "passed": false,
+          "reason": "numeric_mismatch",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:9.947:numeric_mismatch",
+        "numeric_check_failed:28:missing_binding",
+        "numeric_check_failed:2026:number_not_in_cited_evidence_line",
+        "numeric_check_failed:10.365:numeric_mismatch"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Recent financial disclosures from QUALCOMM Incorporated for the quarter ended June 28, 2026, reveal a slight decline in total revenues compared to the prior year period, with total revenues of $9.947 billion down from $10.365 billion.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "fd460a0f3d15e11255a01b8a5484582b2838815031a95ffa48aa21df673e1f4d"
+    },
+    {
+      "claim_id": "u0c1",
+      "source_id": 0,
+      "source_start": 235,
+      "source_end": 344,
+      "source_quote_occurrences": 1,
+      "original_quote": "Operating income also decreased notably to $1.626 billion from $2.762 billion in the previous year’s quarter.",
+      "claim": "Operating income for QUALCOMM Incorporated decreased to $1.626 billion from $2.762 billion in the previous year's quarter.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 99,
+          "quote": "1,626",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 100,
+          "quote": "2,762",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The operating income figures for the two quarters are directly supported by the evidence table.",
+      "action": "keep",
+      "revised_claim": "Operating income for QUALCOMM Incorporated decreased to $1.626 billion from $2.762 billion in the previous year's quarter.",
+      "number_bindings": [
+        {
+          "claim_number": "1.626",
+          "evidence_line": 99,
+          "evidence_number": "1,626",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2.762",
+          "evidence_line": 100,
+          "evidence_number": "2,762",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "1.626",
+          "passed": false,
+          "reason": "numeric_mismatch",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2.762",
+          "passed": false,
+          "reason": "numeric_mismatch",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "numeric_check_failed:1.626:numeric_mismatch",
+        "numeric_check_failed:2.762:numeric_mismatch"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Operating income also decreased notably to $1.626 billion from $2.762 billion in the previous year’s quarter.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "fd460a0f3d15e11255a01b8a5484582b2838815031a95ffa48aa21df673e1f4d"
+    },
+    {
+      "claim_id": "u0c2",
+      "source_id": 0,
+      "source_start": 345,
+      "source_end": 535,
+      "source_quote_occurrences": 1,
+      "original_quote": "These results contrast with earlier projections of steady revenue growth and margin expansion through 2028, highlighting near-term operational pressures despite a positive long-term outlook.",
+      "claim": "Recent results contrast with earlier projections of steady revenue growth and margin expansion through 2028, highlighting near-term operational pressures despite a positive long-term outlook.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 6,
+          "quote": "|  0 | Revenue             | 35820000000.0 | 38962000000.0 | 44284000000.0 | 46498200000.0 | 49288092000.0 | 51259615680.0  | 11.2%  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 10,
+          "quote": "|  4 | Contribution Margin | 55.7%         | 56.2%         | 55.4%         | 56.4%         | 57.4%         | 58.4%          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The financial table provides projections of revenue growth and margin expansion through 2028, supporting the claim that recent results contrast with these projections.",
+      "action": "keep",
+      "revised_claim": "Recent results contrast with earlier projections of steady revenue growth and margin expansion through 2028, highlighting near-term operational pressures despite a positive long-term outlook.",
+      "number_bindings": [
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] These results contrast with earlier projections of steady revenue growth and margin expansion through 2028, highlighting near-term operational pressures despite a positive long-term outlook.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "fd460a0f3d15e11255a01b8a5484582b2838815031a95ffa48aa21df673e1f4d"
+    },
+    {
+      "claim_id": "u1c0",
+      "source_id": 1,
+      "source_start": 537,
+      "source_end": 715,
+      "source_quote_occurrences": 1,
+      "original_quote": "Key developments include QUALCOMM’s latest 10-Q filing showing sequential revenue and operating income declines, which may indicate challenges in equipment and services segments.",
+      "claim": "QUALCOMM’s latest 10-Q filing shows sequential revenue and operating income declines, which may indicate challenges in equipment and services segments.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 68,
+          "quote": "9,947",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 99,
+          "quote": "1,626",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The evidence shows declines in both revenue and operating income in the latest quarter compared to the prior year period. However, the specific attribution to equipment and services segments is not directly supported.",
+      "action": "correct",
+      "revised_claim": "QUALCOMM’s latest 10-Q filing shows sequential revenue and operating income declines.",
+      "number_bindings": [],
+      "numeric_results": [
+        {
+          "token": "10",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:10:missing_binding"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Key developments include QUALCOMM’s latest 10-Q filing showing sequential revenue and operating income declines, which may indicate challenges in equipment and services segments.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "fd460a0f3d15e11255a01b8a5484582b2838815031a95ffa48aa21df673e1f4d"
+    },
+    {
+      "claim_id": "u1c1",
+      "source_id": 1,
+      "source_start": 716,
+      "source_end": 870,
+      "source_quote_occurrences": 1,
+      "original_quote": "Despite this, the company’s long-term revenue CAGR of 11.2% and improving contribution margins suggest ongoing strength in licensing and efficiency gains.",
+      "claim": "The company’s long-term revenue CAGR is 11.2% and contribution margins are improving.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 6,
+          "quote": "|  0 | Revenue             | 35820000000.0 | 38962000000.0 | 44284000000.0 | 46498200000.0 | 49288092000.0 | 51259615680.0  | 11.2%  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 10,
+          "quote": "|  4 | Contribution Margin | 55.7%         | 56.2%         | 55.4%         | 56.4%         | 57.4%         | 58.4%          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The table provides a revenue CAGR of 11.2% and shows contribution margin increasing from 55.7% in 2023A to 58.4% in 2028E.",
+      "action": "correct",
+      "revised_claim": "The company’s long-term revenue CAGR is 11.2% and contribution margins are improving.",
+      "number_bindings": [
+        {
+          "claim_number": "11.2",
+          "evidence_line": 6,
+          "evidence_number": "11.2%",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "11.2%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:11.2%:missing_binding"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Despite this, the company’s long-term revenue CAGR of 11.2% and improving contribution margins suggest ongoing strength in licensing and efficiency gains.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "fd460a0f3d15e11255a01b8a5484582b2838815031a95ffa48aa21df673e1f4d"
+    },
+    {
+      "claim_id": "u1c2",
+      "source_id": 1,
+      "source_start": 871,
+      "source_end": 987,
+      "source_quote_occurrences": 1,
+      "original_quote": "The quarterly results, however, signal potential short-term headwinds that could temper near-term stock performance.",
+      "claim": "The quarterly results signal potential short-term headwinds that could temper near-term stock performance.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The evidence does not provide information about stock performance or directly link quarterly results to stock performance.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] The quarterly results signal potential short-term headwinds that could temper near-term stock performance.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "fd460a0f3d15e11255a01b8a5484582b2838815031a95ffa48aa21df673e1f4d"
+    },
+    {
+      "claim_id": "u2c0",
+      "source_id": 2,
+      "source_start": 989,
+      "source_end": 1160,
+      "source_quote_occurrences": 1,
+      "original_quote": "Investors should closely monitor the company’s ability to stabilize revenues and margins in upcoming quarters, as well as any strategic responses to competitive pressures.",
+      "claim": "Investors should closely monitor the company’s ability to stabilize revenues and margins in upcoming quarters, as well as any strategic responses to competitive pressures.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "This is a recommendation and forward-looking statement, not a factual claim supported by the evidence.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Investors should closely monitor the company’s ability to stabilize revenues and margins in upcoming quarters, as well as any strategic responses to competitive pressures.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "fd460a0f3d15e11255a01b8a5484582b2838815031a95ffa48aa21df673e1f4d"
+    },
+    {
+      "claim_id": "u2c1",
+      "source_id": 2,
+      "source_start": 1161,
+      "source_end": 1369,
+      "source_quote_occurrences": 1,
+      "original_quote": "The contrast between recent quarterly results and the optimistic longer-term financial forecast underscores the importance of evaluating both immediate operational execution and the broader growth trajectory.",
+      "claim": "There is a contrast between recent quarterly results and the optimistic longer-term financial forecast.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 68,
+          "quote": "9,947",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 69,
+          "quote": "10,365",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 6,
+          "quote": "|  0 | Revenue             | 35820000000.0 | 38962000000.0 | 44284000000.0 | 46498200000.0 | 49288092000.0 | 51259615680.0  | 11.2%  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The evidence shows recent quarterly declines and a longer-term forecast of growth, supporting the claim of a contrast.",
+      "action": "correct",
+      "revised_claim": "There is a contrast between recent quarterly results and the optimistic longer-term financial forecast.",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "There is a contrast between recent quarterly results and the optimistic longer-term financial forecast.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "fd460a0f3d15e11255a01b8a5484582b2838815031a95ffa48aa21df673e1f4d"
+    },
+    {
+      "claim_id": "u3c0",
+      "source_id": 3,
+      "source_start": 1371,
+      "source_end": 1601,
+      "source_quote_occurrences": 1,
+      "original_quote": "Overall, the news tone is cautiously neutral to slightly negative in the short term due to declining quarterly revenues and earnings, but remains positive over the longer term given robust financial metrics and growth projections.",
+      "claim": "The news tone is cautiously neutral to slightly negative in the short term due to declining quarterly revenues and earnings, but remains positive over the longer term given robust financial metrics and growth projections.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "This is a qualitative assessment of news tone and sentiment, not a factual claim supported by the evidence.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] The news tone is cautiously neutral to slightly negative in the short term due to declining quarterly revenues and earnings, but remains positive over the longer term given robust financial metrics and growth projections.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "fd460a0f3d15e11255a01b8a5484582b2838815031a95ffa48aa21df673e1f4d"
+    },
+    {
+      "claim_id": "u3c1",
+      "source_id": 3,
+      "source_start": 1602,
+      "source_end": 1774,
+      "source_quote_occurrences": 1,
+      "original_quote": "This mixed sentiment may lead to increased volatility in the stock price as the market digests the latest operational data alongside the favorable outlook for future years.",
+      "claim": "This mixed sentiment may lead to increased volatility in the stock price as the market digests the latest operational data alongside the favorable outlook for future years.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "There is no evidence provided regarding stock price volatility or market reactions.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] This mixed sentiment may lead to increased volatility in the stock price as the market digests the latest operational data alongside the favorable outlook for future years.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "fd460a0f3d15e11255a01b8a5484582b2838815031a95ffa48aa21df673e1f4d"
+    }
+  ],
+  "units": [
+    {
+      "source_id": 0,
+      "claims": [
+        {
+          "original_quote": "Recent financial disclosures from QUALCOMM Incorporated for the quarter ended June 28, 2026, reveal a slight decline in total revenues compared to the prior year period, with total revenues of $9.947 billion down from $10.365 billion.",
+          "claim": "QUALCOMM Incorporated reported total revenues of $9.947 billion for the quarter ended June 28, 2026, which is a decline from $10.365 billion in the prior year period.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 68
+            },
+            {
+              "line_number": 69
+            }
+          ],
+          "reason": "The quoted revenue figures for the respective quarters are directly supported by the evidence table.",
+          "action": "keep",
+          "revised_claim": "QUALCOMM Incorporated reported total revenues of $9.947 billion for the quarter ended June 28, 2026, which is a decline from $10.365 billion in the prior year period.",
+          "number_bindings": [
+            {
+              "claim_number": "9.947",
+              "evidence_line": 68,
+              "evidence_number": "9,947",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2026",
+              "evidence_line": 44,
+              "evidence_number": "2026",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "10.365",
+              "evidence_line": 69,
+              "evidence_number": "10,365",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "Operating income also decreased notably to $1.626 billion from $2.762 billion in the previous year’s quarter.",
+          "claim": "Operating income for QUALCOMM Incorporated decreased to $1.626 billion from $2.762 billion in the previous year's quarter.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 99
+            },
+            {
+              "line_number": 100
+            }
+          ],
+          "reason": "The operating income figures for the two quarters are directly supported by the evidence table.",
+          "action": "keep",
+          "revised_claim": "Operating income for QUALCOMM Incorporated decreased to $1.626 billion from $2.762 billion in the previous year's quarter.",
+          "number_bindings": [
+            {
+              "claim_number": "1.626",
+              "evidence_line": 99,
+              "evidence_number": "1,626",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2.762",
+              "evidence_line": 100,
+              "evidence_number": "2,762",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "These results contrast with earlier projections of steady revenue growth and margin expansion through 2028, highlighting near-term operational pressures despite a positive long-term outlook.",
+          "claim": "Recent results contrast with earlier projections of steady revenue growth and margin expansion through 2028, highlighting near-term operational pressures despite a positive long-term outlook.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 6
+            },
+            {
+              "line_number": 10
+            }
+          ],
+          "reason": "The financial table provides projections of revenue growth and margin expansion through 2028, supporting the claim that recent results contrast with these projections.",
+          "action": "keep",
+          "revised_claim": "Recent results contrast with earlier projections of steady revenue growth and margin expansion through 2028, highlighting near-term operational pressures despite a positive long-term outlook.",
+          "number_bindings": [
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            }
+          ]
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 1,
+      "claims": [
+        {
+          "original_quote": "Key developments include QUALCOMM’s latest 10-Q filing showing sequential revenue and operating income declines, which may indicate challenges in equipment and services segments.",
+          "claim": "QUALCOMM’s latest 10-Q filing shows sequential revenue and operating income declines, which may indicate challenges in equipment and services segments.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 68
+            },
+            {
+              "line_number": 99
+            }
+          ],
+          "reason": "The evidence shows declines in both revenue and operating income in the latest quarter compared to the prior year period. However, the specific attribution to equipment and services segments is not directly supported.",
+          "action": "correct",
+          "revised_claim": "QUALCOMM’s latest 10-Q filing shows sequential revenue and operating income declines.",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Despite this, the company’s long-term revenue CAGR of 11.2% and improving contribution margins suggest ongoing strength in licensing and efficiency gains.",
+          "claim": "The company’s long-term revenue CAGR is 11.2% and contribution margins are improving.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 6
+            },
+            {
+              "line_number": 10
+            }
+          ],
+          "reason": "The table provides a revenue CAGR of 11.2% and shows contribution margin increasing from 55.7% in 2023A to 58.4% in 2028E.",
+          "action": "correct",
+          "revised_claim": "The company’s long-term revenue CAGR is 11.2% and contribution margins are improving.",
+          "number_bindings": [
+            {
+              "claim_number": "11.2",
+              "evidence_line": 6,
+              "evidence_number": "11.2%",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "The quarterly results, however, signal potential short-term headwinds that could temper near-term stock performance.",
+          "claim": "The quarterly results signal potential short-term headwinds that could temper near-term stock performance.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The evidence does not provide information about stock performance or directly link quarterly results to stock performance.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 2,
+      "claims": [
+        {
+          "original_quote": "Investors should closely monitor the company’s ability to stabilize revenues and margins in upcoming quarters, as well as any strategic responses to competitive pressures.",
+          "claim": "Investors should closely monitor the company’s ability to stabilize revenues and margins in upcoming quarters, as well as any strategic responses to competitive pressures.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "This is a recommendation and forward-looking statement, not a factual claim supported by the evidence.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The contrast between recent quarterly results and the optimistic longer-term financial forecast underscores the importance of evaluating both immediate operational execution and the broader growth trajectory.",
+          "claim": "There is a contrast between recent quarterly results and the optimistic longer-term financial forecast.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 68
+            },
+            {
+              "line_number": 69
+            },
+            {
+              "line_number": 6
+            }
+          ],
+          "reason": "The evidence shows recent quarterly declines and a longer-term forecast of growth, supporting the claim of a contrast.",
+          "action": "correct",
+          "revised_claim": "There is a contrast between recent quarterly results and the optimistic longer-term financial forecast.",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 3,
+      "claims": [
+        {
+          "original_quote": "Overall, the news tone is cautiously neutral to slightly negative in the short term due to declining quarterly revenues and earnings, but remains positive over the longer term given robust financial metrics and growth projections.",
+          "claim": "The news tone is cautiously neutral to slightly negative in the short term due to declining quarterly revenues and earnings, but remains positive over the longer term given robust financial metrics and growth projections.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "This is a qualitative assessment of news tone and sentiment, not a factual claim supported by the evidence.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "This mixed sentiment may lead to increased volatility in the stock price as the market digests the latest operational data alongside the favorable outlook for future years.",
+          "claim": "This mixed sentiment may lead to increased volatility in the stock price as the market digests the latest operational data alongside the favorable outlook for future years.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "There is no evidence provided regarding stock price volatility or market reactions.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    }
+  ],
+  "verifier_version": "8.1-exact-display-wrapper-binding",
+  "release_deduplication": "Identical complete released strings appear once per section; all original claim rows and mappings remain. This is not semantic paraphrase deduplication.",
+  "unquoted_nonfactual_connectors": [],
+  "deterministic_validation_failures": [
+    {
+      "claim_id": "u0c0",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:9.947:numeric_mismatch",
+        "numeric_check_failed:28:missing_binding",
+        "numeric_check_failed:2026:number_not_in_cited_evidence_line",
+        "numeric_check_failed:10.365:numeric_mismatch"
+      ],
+      "numeric_results": [
+        {
+          "token": "9.947",
+          "passed": false,
+          "reason": "numeric_mismatch",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "28",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "10.365",
+          "passed": false,
+          "reason": "numeric_mismatch",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u0c1",
+      "errors": [
+        "numeric_check_failed:1.626:numeric_mismatch",
+        "numeric_check_failed:2.762:numeric_mismatch"
+      ],
+      "numeric_results": [
+        {
+          "token": "1.626",
+          "passed": false,
+          "reason": "numeric_mismatch",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2.762",
+          "passed": false,
+          "reason": "numeric_mismatch",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u0c2",
+      "errors": [
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u1c0",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:10:missing_binding"
+      ],
+      "numeric_results": [
+        {
+          "token": "10",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u1c1",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:11.2%:missing_binding"
+      ],
+      "numeric_results": [
+        {
+          "token": "11.2%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ]
+    }
+  ],
+  "deterministic_failure_count": 5,
+  "verified_claim_count": 1,
+  "unverified_annotation_count": 9,
+  "withheld_claim_count": 0,
+  "claim_retention_rate": 1.0,
+  "supported_valid_retention_count": 1,
+  "automatic_year_binding_count": 0,
+  "limitations": "UNVERIFIED annotations preserve unsupported or deterministically rejected assertions for review and must not be counted as grounded facts. A claim's original machine classification is preserved even when deterministic checks reject it; retained_as_verified is then false. Rejected contradicted corrections remain in the audit but are withheld from the narrative. Semantic judgments are machine-assisted, not human-validated. Lexical quote coverage does not prove exhaustive semantic atomization. Exact numeric/year matches do not establish entity/period alignment or dimensional validity of conversions. Repeated source quotes may have ambiguous first-occurrence offsets."
+}

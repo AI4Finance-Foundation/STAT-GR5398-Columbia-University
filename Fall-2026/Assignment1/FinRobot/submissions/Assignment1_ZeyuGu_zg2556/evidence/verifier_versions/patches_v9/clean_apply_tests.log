@@ -1,0 +1,42 @@
+...................................................................... [ 43%]
+........................................F........................... [ 86%]
+......................                                                   [100%]
+================================== FAILURES ===================================
+____ test_frozen_render_sibling_inputs_preserve_wrapper_and_reject_changes ____
+
+tmp_path = WindowsPath('C:/Users/zeyug/AppData/Local/Temp/pytest-of-zeyug/pytest-32/test_frozen_render_sibling_inp0')
+
+    def test_frozen_render_sibling_inputs_preserve_wrapper_and_reject_changes(tmp_path):
+        snapshot=tmp_path/'snapshot';(snapshot/'analysis').mkdir(parents=True)
+        market={'metrics':{'share_price':123.0},'as_of_utc':'2026-10-11T21:10:00+00:00'}
+        write_json(snapshot/'market_snapshot.json',market)
+        write_json(snapshot/'manifest.json',{'status':'frozen','upstream_sha':e.UPSTREAM_SHA,
+           'run_id':'fixture-snapshot','file_hashes':{'market_snapshot.json':e.sha256((snapshot/'market_snapshot.json').read_bytes())}})
+        run=tmp_path/'run';run.mkdir();manifest={'source_analysis':str(snapshot/'analysis')}
+>       output=e.freeze_render_inputs(run,manifest)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_experiment_resume.py:268: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\experiment.py:656: in freeze_render_inputs
+    source, snapshot, supplements = resolve_render_snapshot(manifest)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+manifest = {'source_analysis': 'C:\\Users\\zeyug\\AppData\\Local\\Temp\\pytest-of-zeyug\\pytest-32\\test_frozen_render_sibling_inp0\\snapshot\\analysis'}
+
+    def resolve_render_snapshot(manifest):
+        """Resolve by content, preferring this submission over historical host paths.
+    
+        Both actual analysis bytes and all render supplements must match the saved
+        identities. Equal company names or equal analysis alone are insufficient:
+        two snapshots can have the same accounts but different market observations.
+        """
+>       expected_inputs = manifest["input_hashes"]
+                          ^^^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'input_hashes'
+
+scripts\experiment.py:589: KeyError
+=========================== short test summary info ===========================
+FAILED tests/test_experiment_resume.py::test_frozen_render_sibling_inputs_preserve_wrapper_and_reject_changes
+1 failed, 159 passed, 6 subtests passed in 4.65s

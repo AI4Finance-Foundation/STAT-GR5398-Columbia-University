@@ -1,0 +1,30 @@
+[
+  {
+    "section": "valuation_overview",
+    "prior_unit": {
+      "unit_id": 10,
+      "paragraph_id": 10,
+      "start": 1032,
+      "end": 1146,
+      "text": "[UNVERIFIED - evidence not supplied] AMD's EV/EBITDA ratio has ranged from the mid-40s to near 60 in recent years."
+    },
+    "prior_atoms": [
+      {
+        "claim_id": "adjudicated.valuation_overview.p10.u10.c0",
+        "claim": "AMD's EV/EBITDA ratio has ranged from the mid-40s to near60 in recent years.",
+        "claim_type": "quantitative",
+        "classification": "Contradicted",
+        "numeric_status": "incorrect",
+        "fact_key": "amd|amd's ev/ebitda ratio has ranged from the mid-40s to near60 in recent years.",
+        "reason": "Retain Contradicted: this is an explicit numerical range, not merely a qualitative premium. AMD2024 EV/EBITDA38.2717 falls below the mid-40s and occurs in every contiguous recent multi-year window ending at the last supplied AMD actual year2025. AMD2022 is17.9136. The supplied2023-2025 range is38.2717-57.1197; supplied2021-2025 range is17.9136-57.1197. Do not add only to the source atom, or silently choose a new window as a supposed original meaning. A repair can explicitly state the selected supplied period and its min/max, keeping original text and provenance. Near60 is a reasonable approximation to57.1197; the lower bound is the failure.",
+        "evidence": [
+          {
+            "line_start": 29,
+            "line_end": 37,
+            "quote": "## Peer EV/EBITDA Comparison\n|   year |      AMD |      INTC |     NVDA |\n|-------:|---------:|----------:|---------:|\n|   2021 |  42.1013 |   7.13058 | nan      |\n|   2022 |  17.9136 |   6.54873 |  54.7187 |\n|   2023 |  57.1197 |  22.4823  |  81.0476 |\n|   2024 |  38.2717 | 106.938   |  43.4522 |\n|   2025 |  47.8456 |  14.4982  |  33.7774 |\n|   2026 | nan      | nan       |  31.4283 |"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "call_id": "AMD_v7_1_changed_audit/tagline/1",
+  "structured_output": {
+    "units": [
+      {
+        "unit_id": 2,
+        "claims": [
+          {
+            "claim": "The rise in EBITDA margin reflects efficient operational management despite increasing SG&A expenses.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is supplied in the original writer evidence to support the causal relationship between the rise in EBITDA margin and efficient operational management despite increasing SG&A expenses. The unit is explicitly marked as unverified and no data or analysis is provided to substantiate the claim.",
+            "numeric_status": "unverifiable",
+            "fact_key": "amd|ebitda_margin_causal|unspecified|operational_management|not_numeric"
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "usage": {
+    "requests": 1,
+    "input_tokens": 2859,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 134,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2993
+  },
+  "runtime_seconds": 1.343730599997798,
+  "cost_usd": 0.00679,
+  "completed_at_utc": "2026-10-11T23:35:49.090485+00:00",
+  "attempts": 1
+}

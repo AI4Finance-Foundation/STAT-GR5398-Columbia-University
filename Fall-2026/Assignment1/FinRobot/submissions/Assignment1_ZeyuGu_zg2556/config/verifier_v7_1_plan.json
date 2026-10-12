@@ -1,0 +1,198 @@
+[
+  {
+    "id": "NVDA_final_v7_1",
+    "completion_manifest": "runs/NVDA_final_v7_1/manifest.json",
+    "completed_states": [
+      "generated",
+      "rendered"
+    ],
+    "resume_if_incomplete": true,
+    "continue_on_error": true,
+    "argv": [
+      "scripts/experiment.py",
+      "--upstream",
+      "{upstream}",
+      "verify",
+      "--run",
+      "runs/NVDA_baseline_1",
+      "--final-run",
+      "runs/NVDA_final_v7_1",
+      "--budget",
+      "config/budget.evaluation.json",
+      "--ledger",
+      "evidence/costs.jsonl",
+      "--max-tokens",
+      "26000",
+      "--reuse-review-run",
+      "runs/NVDA_final_v7"
+    ]
+  },
+  {
+    "id": "AMD_final_v7_1",
+    "completion_manifest": "runs/AMD_final_v7_1/manifest.json",
+    "completed_states": [
+      "generated",
+      "rendered"
+    ],
+    "resume_if_incomplete": true,
+    "continue_on_error": true,
+    "argv": [
+      "scripts/experiment.py",
+      "--upstream",
+      "{upstream}",
+      "verify",
+      "--run",
+      "runs/AMD_baseline_1",
+      "--final-run",
+      "runs/AMD_final_v7_1",
+      "--budget",
+      "config/budget.evaluation.json",
+      "--ledger",
+      "evidence/costs.jsonl",
+      "--max-tokens",
+      "26000",
+      "--reuse-review-run",
+      "runs/AMD_final_v7"
+    ]
+  },
+  {
+    "id": "INTC_final_v7_1",
+    "completion_manifest": "runs/INTC_final_v7_1/manifest.json",
+    "completed_states": [
+      "generated",
+      "rendered"
+    ],
+    "resume_if_incomplete": true,
+    "continue_on_error": true,
+    "argv": [
+      "scripts/experiment.py",
+      "--upstream",
+      "{upstream}",
+      "verify",
+      "--run",
+      "runs/INTC_baseline_1",
+      "--final-run",
+      "runs/INTC_final_v7_1",
+      "--budget",
+      "config/budget.evaluation.json",
+      "--ledger",
+      "evidence/costs.jsonl",
+      "--max-tokens",
+      "26000",
+      "--reuse-review-run",
+      "runs/INTC_final_v7"
+    ]
+  },
+  {
+    "id": "AVGO_final_v7_1",
+    "completion_manifest": "runs/AVGO_final_v7_1/manifest.json",
+    "completed_states": [
+      "generated",
+      "rendered"
+    ],
+    "resume_if_incomplete": true,
+    "continue_on_error": true,
+    "argv": [
+      "scripts/experiment.py",
+      "--upstream",
+      "{upstream}",
+      "verify",
+      "--run",
+      "runs/AVGO_baseline_1",
+      "--final-run",
+      "runs/AVGO_final_v7_1",
+      "--budget",
+      "config/budget.evaluation.json",
+      "--ledger",
+      "evidence/costs.jsonl",
+      "--max-tokens",
+      "26000",
+      "--reuse-review-run",
+      "runs/AVGO_final_v7"
+    ]
+  },
+  {
+    "id": "QCOM_final_v7_1",
+    "completion_manifest": "runs/QCOM_final_v7_1/manifest.json",
+    "completed_states": [
+      "generated",
+      "rendered"
+    ],
+    "resume_if_incomplete": true,
+    "continue_on_error": true,
+    "argv": [
+      "scripts/experiment.py",
+      "--upstream",
+      "{upstream}",
+      "verify",
+      "--run",
+      "runs/QCOM_baseline_1",
+      "--final-run",
+      "runs/QCOM_final_v7_1",
+      "--budget",
+      "config/budget.evaluation.json",
+      "--ledger",
+      "evidence/costs.jsonl",
+      "--max-tokens",
+      "26000",
+      "--reuse-review-run",
+      "runs/QCOM_final_v7"
+    ]
+  },
+  {
+    "id": "AAPL_final_v7_1",
+    "completion_manifest": "runs/AAPL_final_v7_1/manifest.json",
+    "completed_states": [
+      "generated",
+      "rendered"
+    ],
+    "resume_if_incomplete": true,
+    "continue_on_error": true,
+    "argv": [
+      "scripts/experiment.py",
+      "--upstream",
+      "{upstream}",
+      "verify",
+      "--run",
+      "runs/AAPL_baseline_1",
+      "--final-run",
+      "runs/AAPL_final_v7_1",
+      "--budget",
+      "config/budget.evaluation.json",
+      "--ledger",
+      "evidence/costs.jsonl",
+      "--max-tokens",
+      "26000",
+      "--reuse-review-run",
+      "runs/AAPL_final_v7"
+    ]
+  },
+  {
+    "id": "GOOGL_final_v7_1",
+    "completion_manifest": "runs/GOOGL_final_v7_1/manifest.json",
+    "completed_states": [
+      "generated",
+      "rendered"
+    ],
+    "resume_if_incomplete": true,
+    "continue_on_error": true,
+    "argv": [
+      "scripts/experiment.py",
+      "--upstream",
+      "{upstream}",
+      "verify",
+      "--run",
+      "runs/GOOGL_baseline_1",
+      "--final-run",
+      "runs/GOOGL_final_v7_1",
+      "--budget",
+      "config/budget.evaluation.json",
+      "--ledger",
+      "evidence/costs.jsonl",
+      "--max-tokens",
+      "26000",
+      "--reuse-review-run",
+      "runs/GOOGL_final_v7"
+    ]
+  }
+]

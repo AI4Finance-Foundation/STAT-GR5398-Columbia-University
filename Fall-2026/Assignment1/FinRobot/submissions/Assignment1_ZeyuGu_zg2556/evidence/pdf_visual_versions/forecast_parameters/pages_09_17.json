@@ -1,0 +1,173 @@
+{
+  "schema": "actual-page-visual-review-v1",
+  "reviewed_utc": "2026-10-12T10:50:36.710057+00:00",
+  "reviewer": "forecast_release_integrity task agent (machine visual review, no human certification)",
+  "source_path": "docs/research_report.md",
+  "source_sha256": "9fe1e92ebb0cd956f28cce4f3740ca6d53a1879736e82b72e32d33630e840126",
+  "pdf_path": "output/pdf/research_report.pdf",
+  "pdf_sha256": "1d77a21b0494a6017959895f12bfdf94795782d4d1b4dd2a7df69fd8b6de27fa",
+  "page_count_total": 17,
+  "pages_actually_viewed": [
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "scope": "Actual full-page PNG inspection of pages 9 through 17, supplemented by identical/nonblank pixel bindings of repeated page furniture; not text-only or thumbnail-only review.",
+  "all_page_headers_identical_nonblank": true,
+  "all_author_footer_regions_identical": true,
+  "observed_defects": [],
+  "passed": true,
+  "limitations": "Visual QA does not certify financial semantics. Repeated page-furniture regions appeared omitted in some tool display contexts; raw pixel hashes prove identical nonblank regions, and separately viewed pages 9, 10, 12, 14 and 17 visibly display them.",
+  "pages": [
+    {
+      "page": 9,
+      "png_relative": "tmp/pdfs/research-9fe1e92ebb0c-1d77a21b/page-09.png",
+      "png_sha256": "f60a35bc57af63ed49454348c2768afa69fd674b04692958ae2b88be823d8ff5",
+      "dimensions": [
+        910,
+        1287
+      ],
+      "actually_viewed_full_page": true,
+      "view_tool": "functions.exec -> tools.view_image(detail='original') -> image(detail='original')",
+      "visual_result": "PASS",
+      "observed_notes": "Grounding-audit continuation, stability table and Option A text all legible; no clipped cells or overlap. Page-number 9 visible.",
+      "header_region_sha256": "bd377bb7da269d3f6ef4e9b0b063e57851aad197447ac85baad5636315bf6670",
+      "header_nonwhite_pixels": 1061,
+      "footer_author_region_sha256": "af7c8172b46822ee132a944e844d53d70a44250adf68c5f73beb3597130f928d"
+    },
+    {
+      "page": 10,
+      "png_relative": "tmp/pdfs/research-9fe1e92ebb0c-1d77a21b/page-10.png",
+      "png_sha256": "d0b8c39772832e8450357e133ff7e0417e82d1ac194cc5bac1360670b648ad38",
+      "dimensions": [
+        910,
+        1287
+      ],
+      "actually_viewed_full_page": true,
+      "view_tool": "functions.exec -> tools.view_image(detail='original') -> image(detail='original')",
+      "visual_result": "PASS",
+      "observed_notes": "Both grounding/contradiction and warning tables are legible; no row clipping, missing glyphs or overlap. Page-number 10 visible. Header/author confirmed in separate full-page image view.",
+      "header_region_sha256": "bd377bb7da269d3f6ef4e9b0b063e57851aad197447ac85baad5636315bf6670",
+      "header_nonwhite_pixels": 1061,
+      "footer_author_region_sha256": "af7c8172b46822ee132a944e844d53d70a44250adf68c5f73beb3597130f928d"
+    },
+    {
+      "page": 11,
+      "png_relative": "tmp/pdfs/research-9fe1e92ebb0c-1d77a21b/page-11.png",
+      "png_sha256": "9fd562acf67be122b80c8496e3ff99ab6bc0d1a2857418c1cab1cdd1d044f0b0",
+      "dimensions": [
+        910,
+        1287
+      ],
+      "actually_viewed_full_page": true,
+      "view_tool": "functions.exec -> tools.view_image(detail='original') -> image(detail='original')",
+      "visual_result": "PASS",
+      "observed_notes": "Two-panel V6 chart and the V7.1 comparison table are fully visible; axes, legends, captions and cells remain legible. Long paragraph continues on the next page without clipping.",
+      "header_region_sha256": "bd377bb7da269d3f6ef4e9b0b063e57851aad197447ac85baad5636315bf6670",
+      "header_nonwhite_pixels": 1061,
+      "footer_author_region_sha256": "af7c8172b46822ee132a944e844d53d70a44250adf68c5f73beb3597130f928d"
+    },
+    {
+      "page": 12,
+      "png_relative": "tmp/pdfs/research-9fe1e92ebb0c-1d77a21b/page-12.png",
+      "png_sha256": "528e01ef3a3685a51a2cc4f54b5182cc6f6e6d268047b099e25dd45235013d3c",
+      "dimensions": [
+        910,
+        1287
+      ],
+      "actually_viewed_full_page": true,
+      "view_tool": "functions.exec -> tools.view_image(detail='original') -> image(detail='original')",
+      "visual_result": "PASS",
+      "observed_notes": "Dense prose and Sections 9.2 and 9.3 remain inside margins; paragraphs continue across pages without lost characters. Page-number 12 visible.",
+      "header_region_sha256": "bd377bb7da269d3f6ef4e9b0b063e57851aad197447ac85baad5636315bf6670",
+      "header_nonwhite_pixels": 1061,
+      "footer_author_region_sha256": "af7c8172b46822ee132a944e844d53d70a44250adf68c5f73beb3597130f928d"
+    },
+    {
+      "page": 13,
+      "png_relative": "tmp/pdfs/research-9fe1e92ebb0c-1d77a21b/page-13.png",
+      "png_sha256": "d6fb077d21cd01c87457cad136009ad243b84c786569f0b6309025f904b3d158",
+      "dimensions": [
+        910,
+        1287
+      ],
+      "actually_viewed_full_page": true,
+      "view_tool": "functions.exec -> tools.view_image(detail='original') -> image(detail='original')",
+      "visual_result": "PASS",
+      "observed_notes": "Four-version semantic comparison table is complete and legible; preserved limitation/cost prose readable; no clipping or overlap. Page-number 13 visible.",
+      "header_region_sha256": "bd377bb7da269d3f6ef4e9b0b063e57851aad197447ac85baad5636315bf6670",
+      "header_nonwhite_pixels": 1061,
+      "footer_author_region_sha256": "af7c8172b46822ee132a944e844d53d70a44250adf68c5f73beb3597130f928d"
+    },
+    {
+      "page": 14,
+      "png_relative": "tmp/pdfs/research-9fe1e92ebb0c-1d77a21b/page-14.png",
+      "png_sha256": "f6c66ea6346ce3c17db6dd5e15f69ac6d92d34a188f1e212aa75218a4c102b3a",
+      "dimensions": [
+        910,
+        1287
+      ],
+      "actually_viewed_full_page": true,
+      "view_tool": "functions.exec -> tools.view_image(detail='original') -> image(detail='original')",
+      "visual_result": "PASS",
+      "observed_notes": "Seven-company stage-cost table complete, readable and aligned; narrative and Section 11 heading have clear spacing. Header/author/page-number 14 visible.",
+      "header_region_sha256": "bd377bb7da269d3f6ef4e9b0b063e57851aad197447ac85baad5636315bf6670",
+      "header_nonwhite_pixels": 1061,
+      "footer_author_region_sha256": "af7c8172b46822ee132a944e844d53d70a44250adf68c5f73beb3597130f928d"
+    },
+    {
+      "page": 15,
+      "png_relative": "tmp/pdfs/research-9fe1e92ebb0c-1d77a21b/page-15.png",
+      "png_sha256": "a236d2f19c864a68eda36c5b430623d734130884ea070587f25c3f7146afa9ee",
+      "dimensions": [
+        910,
+        1287
+      ],
+      "actually_viewed_full_page": true,
+      "view_tool": "functions.exec -> tools.view_image(detail='original') -> image(detail='original')",
+      "visual_result": "PASS",
+      "observed_notes": "Section 12 has readable submission/provenance and publication-deferred text; intentional whitespace before separate figures section. No clipped or missing content. Page-number 15 visible.",
+      "header_region_sha256": "bd377bb7da269d3f6ef4e9b0b063e57851aad197447ac85baad5636315bf6670",
+      "header_nonwhite_pixels": 1061,
+      "footer_author_region_sha256": "af7c8172b46822ee132a944e844d53d70a44250adf68c5f73beb3597130f928d"
+    },
+    {
+      "page": 16,
+      "png_relative": "tmp/pdfs/research-9fe1e92ebb0c-1d77a21b/page-16.png",
+      "png_sha256": "f03be0d7b4d6cfa4ea336663c960149eb734b87e2135e6c17ef3b313ecb283f5",
+      "dimensions": [
+        910,
+        1287
+      ],
+      "actually_viewed_full_page": true,
+      "view_tool": "functions.exec -> tools.view_image(detail='original') -> image(detail='original')",
+      "visual_result": "PASS",
+      "observed_notes": "NVDA heatmap fully present; all 25 annotated cells, horizontal/vertical axis labels, color scale, title and caption fit the page and are readable. Page-number 16 visible.",
+      "header_region_sha256": "bd377bb7da269d3f6ef4e9b0b063e57851aad197447ac85baad5636315bf6670",
+      "header_nonwhite_pixels": 1061,
+      "footer_author_region_sha256": "af7c8172b46822ee132a944e844d53d70a44250adf68c5f73beb3597130f928d"
+    },
+    {
+      "page": 17,
+      "png_relative": "tmp/pdfs/research-9fe1e92ebb0c-1d77a21b/page-17.png",
+      "png_sha256": "b25e6d3d57966ba3c58023462cb3a1e50f86b7018c03f6ad043d6b618050edc0",
+      "dimensions": [
+        910,
+        1287
+      ],
+      "actually_viewed_full_page": true,
+      "view_tool": "functions.exec -> tools.view_image(detail='original') -> image(detail='original')",
+      "visual_result": "PASS",
+      "observed_notes": "AVGO heatmap fully present; all 25 annotated cells, axis labels, color scale, title and caption fit and are readable. Header/author/page-number 17 visible.",
+      "header_region_sha256": "bd377bb7da269d3f6ef4e9b0b063e57851aad197447ac85baad5636315bf6670",
+      "header_nonwhite_pixels": 1061,
+      "footer_author_region_sha256": "af7c8172b46822ee132a944e844d53d70a44250adf68c5f73beb3597130f928d"
+    }
+  ]
+}

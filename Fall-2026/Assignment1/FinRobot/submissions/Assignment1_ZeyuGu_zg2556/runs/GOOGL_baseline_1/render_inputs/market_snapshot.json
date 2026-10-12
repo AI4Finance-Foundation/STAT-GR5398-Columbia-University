@@ -1,0 +1,39 @@
+{
+  "ticker": "GOOGL",
+  "run_id": "GOOGL-20261011T211000Z-snapshot",
+  "as_of_utc": "2026-10-11T21:10:00+00:00",
+  "metrics": {
+    "share_price": 351.66,
+    "target_price": 431.83,
+    "market_cap": 4255.828454835,
+    "volume": 29.598993,
+    "fwd_pe": 28.762603116406968,
+    "pb_ratio": 9.155601362985081,
+    "dividend_yield": 0.24455439913552862,
+    "free_float": 90.29016129310116,
+    "roe": 31.82786895115167,
+    "net_debt_to_equity": 0.14277870757227312,
+    "rating": "Buy",
+    "beta": 1.211,
+    "sector": "Communication Services",
+    "industry": "Internet Content & Information",
+    "exchange": "NASDAQ",
+    "52w_range": "$239.71 - $408.61",
+    "shares_outstanding": 12102111286,
+    "target_price_source": "FMP stable/price-target-consensus: targetConsensus (changed from legacy latest analyst target)",
+    "rating_source": "FMP stable/grades: latest newGrade or action",
+    "shares_source": "FMP stable/shares-float: outstandingShares"
+  },
+  "classification_observed": {
+    "sector": "Communication Services",
+    "industry": "Internet Content & Information"
+  },
+  "provenance_notes": {
+    "free_float": "stable/shares-float observation replaces legacy hard-coded 95%; unavailable if endpoint fails",
+    "fwd_pe": "historical ratios/key-metrics PE mislabeled as forward PE upstream; not analyst forecast EPS multiple",
+    "net_debt_to_equity": "historical debtEquityRatio, not independently derived net-debt/equity",
+    "target_price": "stable price-target-consensus targetConsensus, a disclosed semantic change from legacy single-analyst target; not engine target",
+    "rating": "latest single newGrade or action, not LLM recommendation",
+    "dividend_yield": "lastDiv/current price; upstream assumes lastDiv is annual"
+  }
+}

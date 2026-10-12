@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EXxPlqtN2rh0esCH9EWJW2s4p3Z54",
+  "object": "chat.completion",
+  "created": 1791761921,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"units\":[{\"unit_id\":0,\"claims\":[{\"claim\":\"Intel Corporation demonstrates robust contribution margins.\",\"claim_type\":\"qualitative\",\"classification\":\"Unsupported\",\"evidence\":[],\"reason\":\"The term 'robust' is qualitative and subjective, but if interpreted as consistently high or strong, the evidence table (lines 4-10) shows that Intel's contribution margin has declined from 55.4% in 2021 to 32.7% in 2024A, with a partial recovery to 37.8% in 2028E. There is no explicit definition of 'robust' or a benchmark for comparison, and the margin has dropped significantly over the period. Thus, the claim is unsupported by the evidence provided.\",\"numeric_status\":\"not_numeric\",\"fact_key\":\"intel corporation|contribution margin|unspecified|robust|percent\"}],\"nonfactual_reason\":\"\"},{\"unit_id\":1,\"claims\":[{\"claim\":\"Intel Corporation maintains a significant EBITDA presence despite recent revenue declines.\",\"claim_type\":\"qualitative\",\"classification\":\"Supported\",\"evidence\":[{\"line_start\":4,\"line_end\":12}],\"reason\":\"The evidence (lines 4-12) shows that Intel's EBITDA remains in the billions (e.g., $33.87B in 2021A, $21.30B in 2022A, $11.24B in 2023A, $1.20B in 2024A, and forecasted to recover in subsequent years), even as revenue declines from $79.02B in 2021A to $53.10B in 2024A. This supports the claim that Intel maintains a significant EBITDA presence despite revenue declines.\",\"numeric_status\":\"not_numeric\",\"fact_key\":\"intel corporation|ebitda presence|2021A-2024A|significant|usd\"}],\"nonfactual_reason\":\"\"}]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2870,
+    "completion_tokens": 387,
+    "total_tokens": 3257,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_8808cca3cb"
+}

@@ -1,0 +1,81 @@
+{
+  "run_id": "AAPL_baseline_1",
+  "checked_at_utc": "2026-10-11T21:34:15.580164+00:00",
+  "browser": "Microsoft Edge headless via Playwright",
+  "html_sha256": "978b44c4a0664a0e562fc4050f3b7dd4bbcf3402754f3768fed98025a5ced754",
+  "sections": [
+    {
+      "section": "tagline",
+      "exact_text_match": true,
+      "source_sha256": "597822e00204fdbd3f999cf41d66fbabdeabee1806c2713987bebc73ed5ea38b",
+      "rendered_sha256": "597822e00204fdbd3f999cf41d66fbabdeabee1806c2713987bebc73ed5ea38b"
+    },
+    {
+      "section": "company_overview",
+      "exact_text_match": true,
+      "source_sha256": "62ef9b7543b0f775476d757829ed25da12f3f09c1f7bc833347bd828cb2e520e",
+      "rendered_sha256": "62ef9b7543b0f775476d757829ed25da12f3f09c1f7bc833347bd828cb2e520e"
+    },
+    {
+      "section": "investment_overview",
+      "exact_text_match": true,
+      "source_sha256": "bc7cc2fb361f7f17cf277a0bc8979367a4c5a4391593cd6b55d814a50f5adcd2",
+      "rendered_sha256": "bc7cc2fb361f7f17cf277a0bc8979367a4c5a4391593cd6b55d814a50f5adcd2"
+    },
+    {
+      "section": "valuation_overview",
+      "exact_text_match": true,
+      "source_sha256": "6efcb1097c53c620cc71b53134598ec8b1b545ab1bdfb2b9a3a280527bb043af",
+      "rendered_sha256": "6efcb1097c53c620cc71b53134598ec8b1b545ab1bdfb2b9a3a280527bb043af"
+    },
+    {
+      "section": "risks",
+      "exact_text_match": true,
+      "source_sha256": "41127805508101aed3f6c40215bfbf4bbd991af07bb90839ae260e07b67ce99e",
+      "rendered_sha256": "41127805508101aed3f6c40215bfbf4bbd991af07bb90839ae260e07b67ce99e"
+    },
+    {
+      "section": "competitor_analysis",
+      "exact_text_match": true,
+      "source_sha256": "09ff95edbd8b5d7bad67b2f82b2df0f90dd169d051d09d6759811eeca1b380e4",
+      "rendered_sha256": "09ff95edbd8b5d7bad67b2f82b2df0f90dd169d051d09d6759811eeca1b380e4"
+    },
+    {
+      "section": "major_takeaways",
+      "exact_text_match": true,
+      "source_sha256": "672017ff381ee8de906206812cd18cd52a2ebb24aaa5fa51f9cc4f1dd2690299",
+      "rendered_sha256": "672017ff381ee8de906206812cd18cd52a2ebb24aaa5fa51f9cc4f1dd2690299"
+    },
+    {
+      "section": "news_summary",
+      "exact_text_match": true,
+      "source_sha256": "8b9507dcd2f889bebdae984b08268894db848709cdd4f404259eb9cce243f848",
+      "rendered_sha256": "8b9507dcd2f889bebdae984b08268894db848709cdd4f404259eb9cce243f848"
+    }
+  ],
+  "images": [
+    {
+      "src": "assets/revenue_chart_path_652cd15ee14030b5.png",
+      "complete": true,
+      "width": 1041,
+      "height": 589
+    },
+    {
+      "src": "assets/eps_pe_chart_path_f3a07a80bcaa3204.png",
+      "complete": true,
+      "width": 1038,
+      "height": 589
+    },
+    {
+      "src": "assets/ev_ebitda_chart_path_664a804bc54572d6.png",
+      "complete": true,
+      "width": 1039,
+      "height": 590
+    }
+  ],
+  "page_errors": [],
+  "desktop_horizontal_overflow": false,
+  "mobile_horizontal_overflow": false,
+  "financial_correctness_scope": "Not certified here: numeric/factual claims are evaluated in separate audit tables.",
+  "passed": true
+}

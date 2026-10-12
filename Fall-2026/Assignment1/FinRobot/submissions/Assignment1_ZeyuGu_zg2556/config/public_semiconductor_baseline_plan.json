@@ -1,0 +1,56 @@
+[
+  {
+    "id": "AVGO_baseline_1",
+    "completion_manifest": "runs/AVGO_baseline_1/manifest.json",
+    "completed_states": [
+      "generated",
+      "rendered"
+    ],
+    "resume_if_incomplete": true,
+    "argv": [
+      "scripts/experiment.py",
+      "--upstream",
+      "{upstream}",
+      "narrate",
+      "--analysis",
+      "snapshots/AVGO_public_v1/analysis",
+      "--ticker",
+      "AVGO",
+      "--company-name",
+      "Broadcom Inc.",
+      "--run",
+      "runs/AVGO_baseline_1",
+      "--budget",
+      "config/budget.approved.json",
+      "--ledger",
+      "evidence/costs.jsonl"
+    ]
+  },
+  {
+    "id": "QCOM_baseline_1",
+    "completion_manifest": "runs/QCOM_baseline_1/manifest.json",
+    "completed_states": [
+      "generated",
+      "rendered"
+    ],
+    "resume_if_incomplete": true,
+    "argv": [
+      "scripts/experiment.py",
+      "--upstream",
+      "{upstream}",
+      "narrate",
+      "--analysis",
+      "snapshots/QCOM_public_v1/analysis",
+      "--ticker",
+      "QCOM",
+      "--company-name",
+      "QUALCOMM Incorporated",
+      "--run",
+      "runs/QCOM_baseline_1",
+      "--budget",
+      "config/budget.approved.json",
+      "--ledger",
+      "evidence/costs.jsonl"
+    ]
+  }
+]

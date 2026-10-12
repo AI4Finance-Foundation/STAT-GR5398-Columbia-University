@@ -1,0 +1,1000 @@
+{
+  "tagline": {
+    "selected_attempt": "audits\\grounding\\AMD_after_v7_1_working\\changed_unit_calls_blind\\tagline\\attempt_001",
+    "response_sha256": "645628d0d33ec029a91dcefbf3889422ad640a8ac63a77b39374c9d9513d36a8",
+    "units": [
+      {
+        "unit_id": 2,
+        "claims": [
+          {
+            "claim": "The rise in EBITDA margin reflects efficient operational management despite increasing SG&A expenses.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence table provides actual and forecasted EBITDA margin and SG&A expenses for AMD, but does not establish a causal relationship between the rise in EBITDA margin and efficient operational management, nor does it explicitly link this to increasing SG&A expenses. The claim is a causal interpretation not directly supported by the data.",
+            "numeric_status": "unverifiable",
+            "fact_key": "amd|ebitda_margin_rise_cause|unspecified|operational_management|not_numeric"
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "company_overview": {
+    "selected_attempt": "audits\\grounding\\AMD_after_v7_1_working\\changed_unit_calls_blind\\company_overview\\attempt_001",
+    "response_sha256": "e597fdb7cacdc8c8c5e04de863db4329c04ffd6ee1f08504a5a2ac32e462ea1f",
+    "units": [
+      {
+        "unit_id": 11,
+        "claims": [
+          {
+            "claim": "The improvement in AMD's contribution margin is supported by robust product demand and operational efficiency.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence table provides historical and forecasted contribution margin values for AMD (line 10), but does not attribute the improvement to robust product demand or operational efficiency. No explicit causal link is established in the evidence.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|contribution_margin_improvement|all_periods|product_demand_operational_efficiency"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 19,
+        "claims": [
+          {
+            "claim": "AMD’s market capitalization has grown considerably, with its stock price showing significant appreciation though accompanied by volatility typical of the semiconductor sector.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The provided evidence does not include any data or discussion of AMD's market capitalization, stock price, or volatility. No table or news excerpt addresses these metrics.",
+            "numeric_status": "unverifiable",
+            "fact_key": "amd|market_cap_growth_stock_price_volatility|unspecified_period|considerable_appreciation_volatility"
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "investment_overview": {
+    "selected_attempt": "audits\\grounding\\AMD_after_v7_1_working\\changed_unit_calls_blind\\investment_overview\\attempt_001",
+    "response_sha256": "686271b6e518ade201c66232659beaaa2e7a55aefe0ccbe5cc51f4f2645fca72",
+    "units": [
+      {
+        "unit_id": 3,
+        "claims": [
+          {
+            "claim": "AMD's Q2 2026 results beat market expectations.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is provided in the original writer evidence regarding market expectations or whether AMD's Q2 2026 results beat them. The news summary provides actual results but does not compare them to expectations.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|q2_2026_results|beat_market_expectations|qualitative"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 13,
+        "claims": [
+          {
+            "claim": "AMD's Q2 2026 revenue represented solid sequential growth.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence provides Q2 2026 revenue ($11.5 billion) but does not provide Q1 2026 revenue or any sequential comparison, nor does it define 'solid'. Thus, the claim is unsupported.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|revenue|q2_2026|solid_sequential_growth|qualitative"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 14,
+        "claims": [
+          {
+            "claim": "AMD's Q2 2026 revenue exceeded analyst consensus.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No analyst consensus revenue figure is provided in the evidence, nor is there a comparison to such a figure. The claim is therefore unsupported.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|revenue|q2_2026|exceeded_analyst_consensus|qualitative"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 18,
+        "claims": [
+          {
+            "claim": "AMD's Q2 2026 non-GAAP diluted EPS surpassed market expectations.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence provides the non-GAAP diluted EPS ($1.66) but does not provide market expectations or a comparison. Thus, the claim is unsupported.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|non_gaap_diluted_eps|q2_2026|surpassed_market_expectations|qualitative"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 22,
+        "claims": [
+          {
+            "claim": "AMD’s EBITDA remains lower than Nvidia’s in 2025.",
+            "claim_type": "qualitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 25,
+                "line_end": 25
+              }
+            ],
+            "reason": "The Peer EBITDA Comparison table shows AMD's 2025 EBITDA as 7.275e+09 and Nvidia's as 8.6137e+10, confirming AMD's EBITDA is lower than Nvidia's in 2025.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd_vs_nvidia|ebitda|2025|amd_lower|qualitative"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 24,
+        "claims": [
+          {
+            "claim": "AMD’s EBITDA is growing at a faster pace than Nvidia’s, reinforcing AMD’s competitive positioning.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence provides annual EBITDA values for both companies but does not calculate or compare growth rates, nor does it establish causality regarding competitive positioning. The claim is unsupported.",
+            "numeric_status": "unverifiable",
+            "fact_key": "amd_vs_nvidia|ebitda_growth_rate|multi_year|amd_faster|qualitative"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 29,
+        "claims": [
+          {
+            "claim": "AMD’s strategic focus on advanced semiconductor technologies and diversified end markets continues to support its competitive moat.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is provided regarding AMD's strategic focus or its effect on competitive moat. The claim is a qualitative/causal assertion without direct support in the evidence.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|strategic_focus|ongoing|supports_competitive_moat|qualitative"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 31,
+        "claims": [
+          {
+            "claim": "AMD's elevated valuation multiples are justified by the sustained revenue CAGR exceeding 20% and improving profitability.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "While the table shows a revenue CAGR of 20.5%, there is no evidence justifying valuation multiples or linking them causally to revenue CAGR and profitability. The claim is unsupported.",
+            "numeric_status": "unverifiable",
+            "fact_key": "amd|valuation_multiples|current|justified_by_cagr_and_profitability|qualitative"
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "valuation_overview": {
+    "selected_attempt": "audits\\grounding\\AMD_after_v7_1_working\\changed_unit_calls_blind\\valuation_overview\\attempt_001",
+    "response_sha256": "1fa91db5cb45e7bc237778cd05039ddeb954af2fd7fb8b6e6d52f6504a472d03",
+    "units": [
+      {
+        "unit_id": 5,
+        "claims": [
+          {
+            "claim": "The high valuation multiples reflect market recognition of AMD's growth potential and competitive position in the semiconductor sector.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence provides AMD's valuation multiples (e.g., PE Ratio, EV/EBITDA) but does not establish that these are due to market recognition of growth potential and competitive position. No direct causal link or market sentiment analysis is present in the evidence.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|valuation_multiples|causal|market_recognition_growth_potential|not_numeric"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 11,
+        "claims": [
+          {
+            "claim": "The historically high valuation levels suggest caution, as the valuation incorporates significant optimism about sustained growth and margin expansion.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence shows high valuation levels for AMD (e.g., PE Ratio, EV/EBITDA), but does not establish that these levels suggest caution or that they incorporate significant optimism about sustained growth and margin expansion. No explicit analysis or commentary in the evidence supports this causal interpretation.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|valuation_levels|historically_high|suggest_caution_optimism_growth_margin|not_numeric"
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "risks": {
+    "selected_attempt": "audits\\grounding\\AMD_after_v7_1_working\\changed_unit_calls_blind\\risks\\attempt_001",
+    "response_sha256": "6ad2b72b816cc94bdb5ec8f9edc9106c407ee355951247ede341d591d50f4726",
+    "units": [
+      {
+        "unit_id": 0,
+        "claims": [
+          {
+            "claim": "Advanced Micro Devices, Inc. (AMD) operates in the highly competitive semiconductor industry.",
+            "claim_type": "factual",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence in the supplied data directly states that AMD operates in the 'highly competitive semiconductor industry.' The evidence provides financial data and peer comparisons but does not describe the competitive nature of the industry.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|industry|current|semiconductor"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 15,
+        "claims": [
+          {
+            "claim": "While AMD has demonstrated strong revenue growth, its profitability margins have shown volatility, with EBITDA margins fluctuating and a notably high PE ratio indicating elevated market expectations.",
+            "claim_type": "qualitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 6,
+                "line_end": 6
+              },
+              {
+                "line_start": 12,
+                "line_end": 12
+              },
+              {
+                "line_start": 16,
+                "line_end": 16
+              }
+            ],
+            "reason": "The table shows AMD's revenue increasing from 2021A to 2025A, supporting 'strong revenue growth.' EBITDA margin values (25.3%, 23.4%, 18.3%, 20.4%, 21.0%) show fluctuation, supporting 'volatility.' PE ratio values (55.99, 76.2, 278.13, 123.95, 80.52) are high, supporting 'notably high PE ratio.'",
+            "numeric_status": "correct",
+            "fact_key": "amd|revenue_growth_and_profitability_volatility|2021A-2025A|qualitative"
+          },
+          {
+            "claim": "AMD has demonstrated strong revenue growth.",
+            "claim_type": "qualitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 6,
+                "line_end": 6
+              }
+            ],
+            "reason": "Revenue increases from $16.43B (2021A) to $34.64B (2025A), supporting strong growth.",
+            "numeric_status": "correct",
+            "fact_key": "amd|revenue|2021A-2025A|growth"
+          },
+          {
+            "claim": "AMD's profitability margins have shown volatility, with EBITDA margins fluctuating.",
+            "claim_type": "qualitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 12,
+                "line_end": 12
+              }
+            ],
+            "reason": "EBITDA margin values (25.3%, 23.4%, 18.3%, 20.4%, 21.0%) fluctuate over the years, supporting the claim of volatility.",
+            "numeric_status": "correct",
+            "fact_key": "amd|ebitda_margin|2021A-2025A|fluctuating"
+          },
+          {
+            "claim": "AMD has a notably high PE ratio indicating elevated market expectations.",
+            "claim_type": "qualitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 16,
+                "line_end": 16
+              }
+            ],
+            "reason": "PE ratio values (55.99, 76.2, 278.13, 123.95, 80.52) are high, supporting the claim of a notably high PE ratio and suggesting elevated market expectations.",
+            "numeric_status": "correct",
+            "fact_key": "amd|pe_ratio|2021A-2025A|high"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 21,
+        "claims": [
+          {
+            "claim": "Reputational risks could arise from supply chain labor practices or environmental impacts for AMD.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence in the supplied data discusses reputational risks, supply chain labor practices, or environmental impacts for AMD.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|reputational_risk|current|supply_chain_or_environment"
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "competitor_analysis": {
+    "selected_attempt": "audits\\grounding\\AMD_after_v7_1_working\\changed_unit_calls_blind\\competitor_analysis\\attempt_001",
+    "response_sha256": "344ac6f81e6d7febbeffa3431f569ba5afc7c44869047431a72948ab2bd810c7",
+    "units": [
+      {
+        "unit_id": 1,
+        "claims": [
+          {
+            "claim": "AMD primarily focuses on the design and manufacturing of microprocessors, graphics processors, and related technologies for computing and visualization.",
+            "claim_type": "factual",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence in the original writer evidence directly states AMD's primary focus or business activities. The financial tables and news do not describe AMD's business model or product focus.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|primary_focus|unspecified|microprocessors_graphics_related|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 2,
+        "claims": [
+          {
+            "claim": "AMD's competitive landscape is dominated by Intel Corporation, NVIDIA Corporation, and emerging ARM-based chip developers.",
+            "claim_type": "factual",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The original writer evidence provides financial and peer comparison data but does not explicitly state that AMD's competitive landscape is 'dominated' by these entities.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|competitive_landscape|unspecified|intel_nvidia_arm|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 3,
+        "claims": [
+          {
+            "claim": "ARM-based chip developers are gaining traction in specific market segments.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence in the original writer evidence discusses ARM-based chip developers' market traction or segment performance.",
+            "numeric_status": "not_numeric",
+            "fact_key": "arm_chip_developers|market_traction|unspecified|gaining|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 4,
+        "claims": [
+          {
+            "claim": "Intel Corporation is AMD's most direct and longstanding competitor.",
+            "claim_type": "factual",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "While Intel is included in peer comparisons, the evidence does not state that Intel is AMD's 'most direct and longstanding competitor.'",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|amd_competitor_status|unspecified|most_direct_longstanding|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 5,
+        "claims": [
+          {
+            "claim": "Intel has a strong presence in the CPU market for personal computers, servers, and data centers.",
+            "claim_type": "factual",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence in the original writer evidence describes Intel's market presence or specific market segments.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|cpu_market_presence|unspecified|strong_pc_servers_datacenters|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 6,
+        "claims": [
+          {
+            "claim": "Intel's strategic advantages include extensive manufacturing capabilities, significant scale, and deep relationships with OEMs and enterprise customers.",
+            "claim_type": "factual",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence in the original writer evidence discusses Intel's strategic advantages or relationships.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|strategic_advantages|unspecified|manufacturing_scale_relationships|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 7,
+        "claims": [
+          {
+            "claim": "Intel uses an integrated device manufacturing model, while AMD uses a fabless approach.",
+            "claim_type": "factual",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence in the original writer evidence describes the manufacturing models of Intel or AMD.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel_amd|manufacturing_model|unspecified|integrated_vs_fabless|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 8,
+        "claims": [
+          {
+            "claim": "Intel's integrated device manufacturing model gives it control over its supply chain but exposes it to high capital expenditures.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence in the original writer evidence discusses Intel's supply chain control or capital expenditures related to its manufacturing model.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|manufacturing_model_effects|unspecified|supply_chain_control_capex|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 10,
+        "claims": [
+          {
+            "claim": "NVIDIA Corporation is a primary competitor to AMD, especially in the GPU market and increasingly in data center and AI computing segments.",
+            "claim_type": "factual",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "While NVIDIA is included in peer comparisons, the evidence does not state that NVIDIA is a 'primary competitor' or specify the GPU, data center, or AI segments.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia|amd_competitor_status|unspecified|primary_gpu_datacenter_ai|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 11,
+        "claims": [
+          {
+            "claim": "NVIDIA's strategic strengths include leadership in GPU technology, a strong brand, and an expanding ecosystem around AI, deep learning, and autonomous vehicles.",
+            "claim_type": "factual",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence in the original writer evidence discusses NVIDIA's strategic strengths, brand, or ecosystem.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia|strategic_strengths|unspecified|gpu_brand_ecosystem|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 12,
+        "claims": [
+          {
+            "claim": "NVIDIA's ability to innovate in high-performance computing and its acquisitions, such as Mellanox, bolster its competitive positioning.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence in the original writer evidence discusses NVIDIA's innovation, acquisitions, or competitive positioning.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia|innovation_acquisitions|unspecified|competitive_positioning|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 13,
+        "claims": [
+          {
+            "claim": "NVIDIA and AMD compete directly in GPUs, but NVIDIA has a broader focus on AI and data center solutions.",
+            "claim_type": "factual",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence in the original writer evidence discusses the competitive focus or direct competition between NVIDIA and AMD in GPUs or other segments.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia_amd|competition_scope|unspecified|gpu_ai_datacenter|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 14,
+        "claims": [
+          {
+            "claim": "NVIDIA's broader focus on AI and data center solutions presents a different competitive dynamic.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence in the original writer evidence discusses NVIDIA's focus or the resulting competitive dynamic.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia|competitive_dynamic|unspecified|ai_datacenter_broader|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 15,
+        "claims": [
+          {
+            "claim": "Emerging threats to AMD include companies leveraging ARM architecture, such as Apple with its M1 and M2 chips, and other semiconductor startups targeting niche segments with specialized chips.",
+            "claim_type": "factual",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence in the original writer evidence discusses ARM-based threats, Apple, or startups targeting niche segments.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|emerging_threats|unspecified|arm_apple_startups|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 16,
+        "claims": [
+          {
+            "claim": "ARM-based players challenge traditional x86 architectures, where AMD has its core competency, particularly in mobile and edge computing markets.",
+            "claim_type": "factual",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence in the original writer evidence discusses ARM-based players challenging x86 or AMD's core competency in these markets.",
+            "numeric_status": "not_numeric",
+            "fact_key": "arm_players|challenge_x86|unspecified|amd_core_mobile_edge|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 17,
+        "claims": [
+          {
+            "claim": "AMD benefits from several factors that contribute to a durable competitive advantage.",
+            "claim_type": "factual",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence in the original writer evidence discusses AMD's competitive advantage or contributing factors.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|competitive_advantage|unspecified|durable_factors|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 18,
+        "claims": [
+          {
+            "claim": "AMD has a strong portfolio of intellectual property and design expertise, particularly in high-performance CPUs and GPUs, which constitutes an intangible asset moat.",
+            "claim_type": "factual",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence in the original writer evidence discusses AMD's intellectual property, design expertise, or intangible asset moat.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|intellectual_property|unspecified|strong_cpu_gpu_moat|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 19,
+        "claims": [
+          {
+            "claim": "AMD's recent successes with Ryzen CPUs and Radeon GPUs have improved brand perception and market share, creating increased customer loyalty and switching costs.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence in the original writer evidence discusses Ryzen, Radeon, brand perception, market share, or customer loyalty.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|ryzen_radeon_success|unspecified|brand_market_loyalty|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 20,
+        "claims": [
+          {
+            "claim": "AMD's fabless model allows it to remain flexible and capital-efficient by contracting manufacturing to leading foundries like TSMC, enabling access to advanced process technologies without heavy investment burden.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence in the original writer evidence discusses AMD's fabless model, TSMC, or capital efficiency.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|fabless_model|unspecified|flexibility_capital_efficiency|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 21,
+        "claims": [
+          {
+            "claim": "AMD benefits from network effects in its ecosystem of software developers and OEM partnerships, which help optimize performance and compatibility on AMD platforms.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence in the original writer evidence discusses AMD's network effects, ecosystem, or performance optimization.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|network_effects|unspecified|ecosystem_performance|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 22,
+        "claims": [
+          {
+            "claim": "AMD's ecosystem strength fosters a positive feedback loop that can enhance market adoption.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence in the original writer evidence discusses AMD's ecosystem strength or positive feedback loops.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|ecosystem_strength|unspecified|feedback_loop_market_adoption|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "major_takeaways": {
+    "selected_attempt": "audits\\grounding\\AMD_after_v7_1_working\\changed_unit_calls_blind\\major_takeaways\\attempt_001",
+    "response_sha256": "65d7eee0f73837de9a6caa39fdece59c72a00c2dce08c378ad7d26637270c7ea",
+    "units": [
+      {
+        "unit_id": 0,
+        "claims": [
+          {
+            "claim": "AMD's revenue trajectory, highlighted by a 20.5% CAGR from 2021 to 2028",
+            "claim_type": "quantitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The table header (line 4) and row 0 (line 6) show a 20.5% CAGR, but the periods for actuals are 2021A to 2025A, and forecasts are 2026E-2028E. The CAGR column does not specify if it is for actuals only or includes forecasts. The claim asserts a 20.5% CAGR from 2021 to 2028, but the evidence does not show a historical CAGR for that full period, and the 2028 value is a forecast, not an actual. Therefore, the claim is Unsupported.",
+            "numeric_status": "unverifiable",
+            "fact_key": "amd|revenue_cagr|2021-2028|20.5%"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 2,
+        "claims": [
+          {
+            "claim": "AMD's revenue growth is fueled primarily by strong demand in high-performance computing and graphics segments, reflecting the company's successful product innovation and market expansion strategies.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence in the supplied data attributes revenue growth to high-performance computing and graphics segments, product innovation, or market expansion strategies. The table only provides aggregate financials, not segment or causal breakdowns.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|revenue_growth_cause|unspecified|high_performance_computing_graphics_product_innovation_market_expansion"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 3,
+        "claims": [
+          {
+            "claim": "AMD's robust growth suggests a sustainable competitive advantage bolstered by diversified revenue streams, enhancing AMD's market positioning in a highly competitive semiconductor landscape.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence in the supplied data supports the existence of diversified revenue streams, sustainable competitive advantage, or enhanced market positioning. The tables provide only aggregate financials and peer comparisons, not qualitative or causal analysis.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|competitive_advantage_cause|unspecified|diversified_revenue_streams_market_positioning"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 5,
+        "claims": [
+          {
+            "claim": "AMD's margin expansion is driven by product mix optimization toward higher-margin offerings and cost management initiatives.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence in the supplied data attributes margin expansion to product mix optimization or cost management. The tables show margin figures but do not provide causal explanations or breakdowns.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|margin_expansion_cause|unspecified|product_mix_optimization_cost_management"
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "news_summary": {
+    "selected_attempt": "audits\\grounding\\AMD_after_v7_1_working\\changed_unit_calls_blind\\news_summary\\attempt_001",
+    "response_sha256": "fb627015cc817d48b6a7cc196e058fc8301abd588b14edd836702dd2aea901dc",
+    "units": [
+      {
+        "unit_id": 1,
+        "claims": [
+          {
+            "claim": "AMD's second quarter 2026 results reflect robust revenue growth and solid margin expansion.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence provides the Q2 2026 revenue and margin figures, but does not provide a comparison to prior periods or quantify 'robust' growth or 'solid' expansion. No historical Q2 data is given for direct comparison.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|revenue_growth_and_margin_expansion|q2_2026|robust_and_solid"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 3,
+        "claims": [
+          {
+            "claim": "AMD announced its second quarter 2026 financial results, reporting $11.5 billion in revenue.",
+            "claim_type": "quantitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 44,
+                "line_end": 44
+              }
+            ],
+            "reason": "Line 44 of the evidence states 'Second quarter revenue was $11.5 billion,' which matches the claim for Q2 2026.",
+            "numeric_status": "correct",
+            "fact_key": "amd|revenue|q2_2026|11500000000"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 5,
+        "claims": [
+          {
+            "claim": "Operating income stood at $2.0 billion for the second quarter of 2026.",
+            "claim_type": "quantitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 44,
+                "line_end": 44
+              }
+            ],
+            "reason": "Line 44 states 'operating income was $2.0 billion' for Q2 2026, matching the claim.",
+            "numeric_status": "correct",
+            "fact_key": "amd|operating_income|q2_2026|2000000000"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 6,
+        "claims": [
+          {
+            "claim": "Net income was $2.3 billion for the second quarter of 2026.",
+            "claim_type": "quantitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 44,
+                "line_end": 44
+              }
+            ],
+            "reason": "Line 44 states 'net income was $2.3 billion' for Q2 2026, matching the claim.",
+            "numeric_status": "correct",
+            "fact_key": "amd|net_income|q2_2026|2300000000"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 7,
+        "claims": [
+          {
+            "claim": "Diluted earnings per share was $1.38 for the second quarter of 2026.",
+            "claim_type": "quantitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 44,
+                "line_end": 44
+              }
+            ],
+            "reason": "Line 44 states 'diluted earnings per share was $1.38' for Q2 2026, matching the claim.",
+            "numeric_status": "correct",
+            "fact_key": "amd|diluted_eps|q2_2026|1.38"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 10,
+        "claims": [
+          {
+            "claim": "The financial metrics reveal a projected compound annual growth rate (CAGR) in revenue of 20.5% between 2021 and 2028.",
+            "claim_type": "quantitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 4,
+                "line_end": 6
+              }
+            ],
+            "reason": "The table header and row 0 show a CAGR of 20.5% for revenue from 2021A to 2028E. The periods and values align with the claim.",
+            "numeric_status": "correct",
+            "fact_key": "amd|revenue_cagr|2021-2028|20.5%"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 11,
+        "claims": [
+          {
+            "claim": "Earnings per share are estimated to increase from $1.01 in 2024 to $3.18 in 2028.",
+            "claim_type": "quantitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 4,
+                "line_end": 15
+              }
+            ],
+            "reason": "The table row for EPS shows $1.01 for 2024A and $3.18 for 2028E, matching the claim. These are estimates for 2028.",
+            "numeric_status": "correct",
+            "fact_key": "amd|eps_increase|2024-2028|1.01_to_3.18"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 12,
+        "claims": [
+          {
+            "claim": "The increase in earnings per share supports a strong long-term investment case for AMD.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence provides the EPS increase but does not establish that this supports a 'strong long-term investment case.' This is an interpretation, not a directly evidenced fact.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|eps_increase_supports_investment_case|future|yes"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 13,
+        "claims": [
+          {
+            "claim": "When compared to peers Intel and Nvidia, AMD's EBITDA growth is solid.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence provides EBITDA values for AMD, Intel, and Nvidia, but does not define 'solid' or provide a direct comparison or benchmark for this qualitative assessment.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|ebitda_growth_vs_peers|multi-year|solid"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 14,
+        "claims": [
+          {
+            "claim": "AMD's EBITDA growth is smaller in absolute terms relative to Nvidia's larger scale.",
+            "claim_type": "qualitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 18,
+                "line_end": 27
+              }
+            ],
+            "reason": "The peer EBITDA table shows Nvidia's EBITDA is much larger than AMD's in absolute terms for all years where both are present, supporting the claim.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|ebitda_growth_vs_nvidia|multi-year|smaller_absolute"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 16,
+        "claims": [
+          {
+            "claim": "AMD's high EV/EBITDA multiples reflect market optimism and elevated valuation levels.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence provides high EV/EBITDA multiples for AMD, but does not establish that these reflect market optimism or elevated valuation levels. The causal link is not evidenced.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|high_ev_ebitda_reflects_optimism|multi-year|yes"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 18,
+        "claims": [
+          {
+            "claim": "Overall market sentiment from the recent earnings release is predominantly positive.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is provided regarding market sentiment or its positivity; the evidence only provides financial results, not sentiment analysis.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|market_sentiment|post_earnings|positive"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 19,
+        "claims": [
+          {
+            "claim": "AMD is demonstrating resilience and execution strength in a competitive semiconductor landscape.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is provided for 'resilience' or 'execution strength'; these are qualitative judgments not directly supported by the financial data or news.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|resilience_and_execution|current|yes"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 20,
+        "claims": [
+          {
+            "claim": "Improvements in non-GAAP profitability metrics and revenue growth reinforce confidence in AMD's strategic initiatives and product portfolio.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence provides non-GAAP profitability and revenue growth figures, but does not establish that these reinforce confidence in strategy or product portfolio. The causal link is not evidenced.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|non_gaap_improvements_reinforce_confidence|current|yes"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 22,
+        "claims": [
+          {
+            "claim": "The near-term stock performance is likely to benefit from these solid financial results.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is provided regarding stock performance or its likely benefit from financial results. This is a forward-looking opinion, not a supported fact.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|stock_performance_benefit_from_results|near_term|likely"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 23,
+        "claims": [
+          {
+            "claim": "Valuation multiples warrant cautious consideration given market expectations.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is provided regarding the need for caution or the nature of market expectations. This is an opinion, not a supported fact.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|valuation_multiples_warrant_caution|current|yes"
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  }
+}

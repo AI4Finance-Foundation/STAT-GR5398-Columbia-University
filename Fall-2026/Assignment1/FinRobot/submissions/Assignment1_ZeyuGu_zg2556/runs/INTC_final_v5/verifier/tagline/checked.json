@@ -1,0 +1,575 @@
+{
+  "original_text": "Intel Corporation demonstrates robust contribution margins and maintains a significant EBITDA presence despite recent revenue declines. The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience. Valuation metrics suggest an attractive entry point relative to historical levels, underscoring strong fundamentals amid market fluctuations.",
+  "revised_text": "[UNVERIFIED - deterministic evidence/number check failed] Intel Corporation demonstrates robust contribution margins\n\n[UNVERIFIED - deterministic evidence/number check failed] maintains a significant EBITDA presence despite recent revenue declines\n\n[UNVERIFIED - deterministic evidence/number check failed] The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience.\n\n[UNVERIFIED - evidence not supplied] Valuation metrics suggest an attractive entry point relative to historical levels, underscoring strong fundamentals amid market fluctuations.",
+  "claims": [
+    {
+      "claim_id": "u0c0",
+      "source_id": 0,
+      "source_start": 0,
+      "source_end": 58,
+      "source_quote_occurrences": 1,
+      "original_quote": "Intel Corporation demonstrates robust contribution margins",
+      "claim": "Intel Corporation demonstrates robust contribution margins.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 10,
+          "quote": "|  4 | Contribution Margin | 55.4%              | 42.6%              | 40.0%         | 32.7%              | 34.8%              | 35.8%         | 36.8%         | 37.8%          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "Contribution margin values are provided for multiple years, and while they have declined, they remain substantial, supporting the claim of robust margins.",
+      "action": "keep",
+      "revised_claim": "Intel Corporation demonstrates robust contribution margins.",
+      "number_bindings": [
+        {
+          "claim_number": "55.4%",
+          "evidence_line": 10,
+          "evidence_number": "55.4%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "42.6%",
+          "evidence_line": 10,
+          "evidence_number": "42.6%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "40.0%",
+          "evidence_line": 10,
+          "evidence_number": "40.0%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "32.7%",
+          "evidence_line": 10,
+          "evidence_number": "32.7%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "34.8%",
+          "evidence_line": 10,
+          "evidence_number": "34.8%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "35.8%",
+          "evidence_line": 10,
+          "evidence_number": "35.8%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "36.8%",
+          "evidence_line": 10,
+          "evidence_number": "36.8%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "37.8%",
+          "evidence_line": 10,
+          "evidence_number": "37.8%",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Intel Corporation demonstrates robust contribution margins",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u0c1",
+      "source_id": 0,
+      "source_start": 63,
+      "source_end": 134,
+      "source_quote_occurrences": 1,
+      "original_quote": "maintains a significant EBITDA presence despite recent revenue declines",
+      "claim": "Intel Corporation maintains a significant EBITDA presence despite recent revenue declines.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 6,
+          "quote": "|  0 | Revenue             | 79024000000.0      | 63054000000.0      | 54228000000.0 | 53101000000.0      | 52853000000.0      | 55495650000.0 | 58825389000.0 | 61178404560.0  | -9.6%  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 11,
+          "quote": "|  5 | EBITDA              | 33874000000.0      | 21299000000.0      | 11242000000.0 | 1203000000.0       | 14354000000.0      | 15316799400.0 | 17118188199.0 | 18720591795.36 | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "EBITDA values remain substantial even as revenue has declined, supporting the claim.",
+      "action": "keep",
+      "revised_claim": "Intel Corporation maintains a significant EBITDA presence despite recent revenue declines.",
+      "number_bindings": [
+        {
+          "claim_number": "33874000000.0",
+          "evidence_line": 11,
+          "evidence_number": "33874000000.0",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "21299000000.0",
+          "evidence_line": 11,
+          "evidence_number": "21299000000.0",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "11242000000.0",
+          "evidence_line": 11,
+          "evidence_number": "11242000000.0",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "1203000000.0",
+          "evidence_line": 11,
+          "evidence_number": "1203000000.0",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "14354000000.0",
+          "evidence_line": 11,
+          "evidence_number": "14354000000.0",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "79024000000.0",
+          "evidence_line": 6,
+          "evidence_number": "79024000000.0",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "63054000000.0",
+          "evidence_line": 6,
+          "evidence_number": "63054000000.0",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "54228000000.0",
+          "evidence_line": 6,
+          "evidence_number": "54228000000.0",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "53101000000.0",
+          "evidence_line": 6,
+          "evidence_number": "53101000000.0",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] maintains a significant EBITDA presence despite recent revenue declines",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u0c2",
+      "source_id": 0,
+      "source_start": 136,
+      "source_end": 255,
+      "source_quote_occurrences": 1,
+      "original_quote": "The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience.",
+      "claim": "The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 8,
+          "quote": "|  2 | SG&A                | 6543000000.0       | 7002000000.0       | 5634000000.0  | 5507000000.0       | 4624000000.0       | 4550643300.0  | 4529554953.0  | 4404845128.32  | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 13,
+          "quote": "|  7 | SG&A Margin         | 8.3%               | 11.1%              | 10.4%         | 10.4%              | 8.7%               | 8.2%          | 7.7%          | 7.2%           | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "SG&A and SG&A margin figures show a decline, indicating improving efficiency and cost management.",
+      "action": "keep",
+      "revised_claim": "The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience.",
+      "number_bindings": [
+        {
+          "claim_number": "6543000000.0",
+          "evidence_line": 8,
+          "evidence_number": "6543000000.0",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "7002000000.0",
+          "evidence_line": 8,
+          "evidence_number": "7002000000.0",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "5634000000.0",
+          "evidence_line": 8,
+          "evidence_number": "5634000000.0",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "5507000000.0",
+          "evidence_line": 8,
+          "evidence_number": "5507000000.0",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "4624000000.0",
+          "evidence_line": 8,
+          "evidence_number": "4624000000.0",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "8.3%",
+          "evidence_line": 13,
+          "evidence_number": "8.3%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "11.1%",
+          "evidence_line": 13,
+          "evidence_number": "11.1%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "10.4%",
+          "evidence_line": 13,
+          "evidence_number": "10.4%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "10.4%",
+          "evidence_line": 13,
+          "evidence_number": "10.4%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "8.7%",
+          "evidence_line": 13,
+          "evidence_number": "8.7%",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "duplicate_number_binding",
+        "number_binding_set_mismatch"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u0c3",
+      "source_id": 0,
+      "source_start": 256,
+      "source_end": 397,
+      "source_quote_occurrences": 1,
+      "original_quote": "Valuation metrics suggest an attractive entry point relative to historical levels, underscoring strong fundamentals amid market fluctuations.",
+      "claim": "Valuation metrics suggest an attractive entry point relative to historical levels, underscoring strong fundamentals amid market fluctuations.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided comparing current valuation metrics to historical levels or supporting the claim of an attractive entry point or strong fundamentals.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Valuation metrics suggest an attractive entry point relative to historical levels, underscoring strong fundamentals amid market fluctuations.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    }
+  ],
+  "units": [
+    {
+      "source_id": 0,
+      "claims": [
+        {
+          "original_quote": "Intel Corporation demonstrates robust contribution margins",
+          "claim": "Intel Corporation demonstrates robust contribution margins.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 10
+            }
+          ],
+          "reason": "Contribution margin values are provided for multiple years, and while they have declined, they remain substantial, supporting the claim of robust margins.",
+          "action": "keep",
+          "revised_claim": "Intel Corporation demonstrates robust contribution margins.",
+          "number_bindings": [
+            {
+              "claim_number": "55.4%",
+              "evidence_line": 10,
+              "evidence_number": "55.4%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "42.6%",
+              "evidence_line": 10,
+              "evidence_number": "42.6%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "40.0%",
+              "evidence_line": 10,
+              "evidence_number": "40.0%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "32.7%",
+              "evidence_line": 10,
+              "evidence_number": "32.7%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "34.8%",
+              "evidence_line": 10,
+              "evidence_number": "34.8%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "35.8%",
+              "evidence_line": 10,
+              "evidence_number": "35.8%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "36.8%",
+              "evidence_line": 10,
+              "evidence_number": "36.8%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "37.8%",
+              "evidence_line": 10,
+              "evidence_number": "37.8%",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "maintains a significant EBITDA presence despite recent revenue declines",
+          "claim": "Intel Corporation maintains a significant EBITDA presence despite recent revenue declines.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 6
+            },
+            {
+              "line_number": 11
+            }
+          ],
+          "reason": "EBITDA values remain substantial even as revenue has declined, supporting the claim.",
+          "action": "keep",
+          "revised_claim": "Intel Corporation maintains a significant EBITDA presence despite recent revenue declines.",
+          "number_bindings": [
+            {
+              "claim_number": "33874000000.0",
+              "evidence_line": 11,
+              "evidence_number": "33874000000.0",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "21299000000.0",
+              "evidence_line": 11,
+              "evidence_number": "21299000000.0",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "11242000000.0",
+              "evidence_line": 11,
+              "evidence_number": "11242000000.0",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "1203000000.0",
+              "evidence_line": 11,
+              "evidence_number": "1203000000.0",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "14354000000.0",
+              "evidence_line": 11,
+              "evidence_number": "14354000000.0",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "79024000000.0",
+              "evidence_line": 6,
+              "evidence_number": "79024000000.0",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "63054000000.0",
+              "evidence_line": 6,
+              "evidence_number": "63054000000.0",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "54228000000.0",
+              "evidence_line": 6,
+              "evidence_number": "54228000000.0",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "53101000000.0",
+              "evidence_line": 6,
+              "evidence_number": "53101000000.0",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience.",
+          "claim": "The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 8
+            },
+            {
+              "line_number": 13
+            }
+          ],
+          "reason": "SG&A and SG&A margin figures show a decline, indicating improving efficiency and cost management.",
+          "action": "keep",
+          "revised_claim": "The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience.",
+          "number_bindings": [
+            {
+              "claim_number": "6543000000.0",
+              "evidence_line": 8,
+              "evidence_number": "6543000000.0",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "7002000000.0",
+              "evidence_line": 8,
+              "evidence_number": "7002000000.0",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "5634000000.0",
+              "evidence_line": 8,
+              "evidence_number": "5634000000.0",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "5507000000.0",
+              "evidence_line": 8,
+              "evidence_number": "5507000000.0",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "4624000000.0",
+              "evidence_line": 8,
+              "evidence_number": "4624000000.0",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "8.3%",
+              "evidence_line": 13,
+              "evidence_number": "8.3%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "11.1%",
+              "evidence_line": 13,
+              "evidence_number": "11.1%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "10.4%",
+              "evidence_line": 13,
+              "evidence_number": "10.4%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "10.4%",
+              "evidence_line": 13,
+              "evidence_number": "10.4%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "8.7%",
+              "evidence_line": 13,
+              "evidence_number": "8.7%",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "Valuation metrics suggest an attractive entry point relative to historical levels, underscoring strong fundamentals amid market fluctuations.",
+          "claim": "Valuation metrics suggest an attractive entry point relative to historical levels, underscoring strong fundamentals amid market fluctuations.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided comparing current valuation metrics to historical levels or supporting the claim of an attractive entry point or strong fundamentals.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    }
+  ],
+  "verifier_version": "5-retain-supported-corrections-and-fail-closed-withhold",
+  "unquoted_nonfactual_connectors": [
+    {
+      "source_id": 0,
+      "start": 58,
+      "end": 63,
+      "text": " and ",
+      "nonfactual_connector": true
+    }
+  ],
+  "deterministic_validation_failures": [
+    {
+      "claim_id": "u0c0",
+      "errors": [
+        "number_binding_set_mismatch"
+      ],
+      "numeric_results": []
+    },
+    {
+      "claim_id": "u0c1",
+      "errors": [
+        "number_binding_set_mismatch"
+      ],
+      "numeric_results": []
+    },
+    {
+      "claim_id": "u0c2",
+      "errors": [
+        "duplicate_number_binding",
+        "number_binding_set_mismatch"
+      ],
+      "numeric_results": []
+    }
+  ],
+  "deterministic_failure_count": 3,
+  "verified_claim_count": 0,
+  "unverified_annotation_count": 4,
+  "withheld_claim_count": 0,
+  "claim_retention_rate": 1.0,
+  "supported_valid_retention_count": 0,
+  "automatic_year_binding_count": 0,
+  "limitations": "UNVERIFIED annotations preserve unsupported or deterministically rejected assertions for review and must not be counted as grounded facts. A claim's original machine classification is preserved even when deterministic checks reject it; retained_as_verified is then false. Rejected contradicted corrections remain in the audit but are withheld from the narrative. Semantic judgments are machine-assisted, not human-validated. Lexical quote coverage does not prove exhaustive semantic atomization. Exact numeric/year matches do not establish entity/period alignment or dimensional validity of conversions. Repeated source quotes may have ambiguous first-occurrence offsets."
+}

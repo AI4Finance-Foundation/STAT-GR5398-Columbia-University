@@ -1,0 +1,27 @@
+{
+  "probes": [
+    {
+      "probe": "socket.create_connection",
+      "result": "REJECTED_BEFORE_IO",
+      "reason": "Network and subprocess execution are disabled in this offline experiment"
+    },
+    {
+      "probe": "socket.getaddrinfo",
+      "result": "REJECTED_BEFORE_IO",
+      "reason": "Network and subprocess execution are disabled in this offline experiment"
+    },
+    {
+      "probe": "socket.connect",
+      "result": "REJECTED_BEFORE_IO",
+      "reason": "Network and subprocess execution are disabled in this offline experiment"
+    },
+    {
+      "probe": "subprocess.Popen",
+      "result": "REJECTED_BEFORE_IO",
+      "reason": "Network and subprocess execution are disabled in this offline experiment"
+    }
+  ],
+  "unexpected_attempts": 0,
+  "new_model_calls": 0,
+  "limitation": "Python socket/DNS/subprocess rejection, not an operating-system sandbox. Only processor and valuation modules execute; no model SDK imported."
+}

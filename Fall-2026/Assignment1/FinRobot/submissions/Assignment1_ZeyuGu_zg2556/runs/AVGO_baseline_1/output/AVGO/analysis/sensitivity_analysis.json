@@ -1,0 +1,141 @@
+{
+  "revenue_sensitivity": {
+    "Growth Delta": {
+      "0": "-5.0%",
+      "1": "-2.5%",
+      "2": "+0.0%",
+      "3": "+2.5%",
+      "4": "+5.0%"
+    },
+    "2026E": {
+      "0": 63727282500.0,
+      "1": 65404316250.0,
+      "2": 67081350000.0,
+      "3": 68758383750.0,
+      "4": 70435417500.0
+    },
+    "2027E": {
+      "0": 67550919450.0,
+      "1": 69328575225.0,
+      "2": 71106231000.0,
+      "3": 72883886775.0,
+      "4": 74661542550.0
+    },
+    "2028E": {
+      "0": 70252956228.0,
+      "1": 72101718234.0,
+      "2": 73950480240.0,
+      "3": 75799242246.0,
+      "4": 77648004252.0
+    }
+  },
+  "margin_sensitivity": {
+    "Margin Delta": {
+      "0": "-2.0%",
+      "1": "-1.0%",
+      "2": "+0.0%",
+      "3": "+1.0%",
+      "4": "+2.0%"
+    },
+    "2026E EBITDA Margin": {
+      "0": "60.7%",
+      "1": "61.7%",
+      "2": "62.7%",
+      "3": "63.7%",
+      "4": "64.7%"
+    },
+    "2026E EBITDA": {
+      "0": 40718379450.0,
+      "1": 41389192950.0,
+      "2": 42060006450.0,
+      "3": 42730819950.0,
+      "4": 43401633450.0
+    },
+    "2027E EBITDA Margin": {
+      "0": "62.2%",
+      "1": "63.2%",
+      "2": "64.2%",
+      "3": "65.2%",
+      "4": "66.2%"
+    },
+    "2027E EBITDA": {
+      "0": 44228075682.0,
+      "1": 44939137992.0,
+      "2": 45650200302.0,
+      "3": 46361262612.0,
+      "4": 47072324922.0
+    },
+    "2028E EBITDA Margin": {
+      "0": "63.7%",
+      "1": "64.7%",
+      "2": "65.7%",
+      "3": "66.7%",
+      "4": "67.7%"
+    },
+    "2028E EBITDA": {
+      "0": 47106455912.88,
+      "1": 47845960715.28,
+      "2": 48585465517.68,
+      "3": 49324970320.08,
+      "4": 50064475122.48
+    }
+  },
+  "combined_sensitivity": {
+    "Margin -2.0%": {
+      "-5.0%": "$44.8B",
+      "-2.5%": "$45.9B",
+      "+0.0%": "$47.1B",
+      "+2.5%": "$48.3B",
+      "+5.0%": "$49.5B"
+    },
+    "Margin -1.0%": {
+      "-5.0%": "$45.5B",
+      "-2.5%": "$46.6B",
+      "+0.0%": "$47.8B",
+      "+2.5%": "$49.0B",
+      "+5.0%": "$50.2B"
+    },
+    "Margin +0.0%": {
+      "-5.0%": "$46.2B",
+      "-2.5%": "$47.4B",
+      "+0.0%": "$48.6B",
+      "+2.5%": "$49.8B",
+      "+5.0%": "$51.0B"
+    },
+    "Margin +1.0%": {
+      "-5.0%": "$46.9B",
+      "-2.5%": "$48.1B",
+      "+0.0%": "$49.3B",
+      "+2.5%": "$50.6B",
+      "+5.0%": "$51.8B"
+    },
+    "Margin +2.0%": {
+      "-5.0%": "$47.6B",
+      "-2.5%": "$48.8B",
+      "+0.0%": "$50.1B",
+      "+2.5%": "$51.3B",
+      "+5.0%": "$52.6B"
+    }
+  },
+  "confidence_intervals": {
+    "Revenue": {
+      "base": 73950480240.0,
+      "lower": 52209039049.44,
+      "upper": 95691921430.56,
+      "confidence": 0.95,
+      "assumed_std_ratio": 0.15,
+      "z_score": 1.96,
+      "interpretation": "Assumed normal scenario band; not an empirically calibrated confidence interval"
+    },
+    "EBITDA": {
+      "base": 48585465517.68,
+      "lower": 34301338655.482082,
+      "upper": 62869592379.877914,
+      "confidence": 0.95,
+      "assumed_std_ratio": 0.15,
+      "z_score": 1.96,
+      "interpretation": "Assumed normal scenario band; not an empirically calibrated confidence interval"
+    }
+  },
+  "summary": "## Sensitivity Analysis Summary\n\n### Key Assumptions:\n- 2026E Revenue Growth: 5.0%\n- 2026E EBITDA Margin: 62.7%\n- 2027E Revenue Growth: 6.0%\n- 2027E EBITDA Margin: 64.2%\n- 2028E Revenue Growth: 4.0%\n- 2028E EBITDA Margin: 65.7%\n\n### Assumed Scenario Bands (not calibrated confidence intervals):\n- Revenue: $52.2B - $95.7B (normal-theory 95% label; fixed 15% assumed standard deviation)\n- EBITDA: $34.3B - $62.9B (normal-theory 95% label; fixed 15% assumed standard deviation)\n\n### Sensitivity Notes:\n- revenue: {'range': (-0.05, 0.05), 'steps': 5, 'unit': 'relative change in forecast revenue LEVEL, not growth-rate percentage points'}\n- margin: {'range': (-0.02, 0.02), 'steps': 5, 'unit': 'absolute margin fraction change; multiply by 100 for percentage points'}\n- combined: {'revenue_range': (-0.05, 0.05), 'margin_range': (-0.02, 0.02), 'steps': 5, 'output': 'EBITDA in billions; not target price'}\n- Revenue shocks multiply each forecast revenue level; they do not compound an annual growth-rate shock.\n- A margin input of 0.02 is +2 percentage points, not a relative 2% margin change.\n- The native combined matrix is rounded EBITDA, not a target-price sensitivity or valuation confidence range."
+}

@@ -1,0 +1,375 @@
+{
+  "checked_at_utc": "2026-10-12T06:46:46.439760+00:00",
+  "reviewer": "Codex task agent; machine visual review through view_image",
+  "human_review_performed": false,
+  "semantic_certification": false,
+  "passed_for_requested_visual_scope": true,
+  "scope": "Three desktop covers and risk-text viewports; all nine chart figures; three 375px mobile covers; all 13 new explanation paragraphs at desktop 1360px and mobile 375px widths (12 CAGR occurrences plus one AMD actual-window EV/EBITDA range).",
+  "actual_images_opened_with_view_image": [
+    {
+      "path": "evidence/browser_semantic_v9_1/NVDA/cover.png",
+      "sha256": "daf400643ccd7791e7ba4b62713b8f43a77479ca2c3647bf2567c085043cab90",
+      "scope": "desktop cover"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/NVDA/risks.png",
+      "sha256": "cc7efe690650d3b69132e63bf8d9a069596b2e0fe034bc489cb2f4426297c3eb",
+      "scope": "desktop risk narrative viewport"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/NVDA/chart_1.png",
+      "sha256": "aae55fd69edfd742e8ff9c31875fe3ec5b8930c12a6663b8393d133eb72a14e1",
+      "scope": "complete chart figure with labels and caption"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/NVDA/chart_2.png",
+      "sha256": "3cf551bc5a4d3bfc4b49afcd1fb568e395ebfe7df2ae58319c843308df154b7f",
+      "scope": "complete chart figure with labels and caption"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/NVDA/chart_3.png",
+      "sha256": "e68626dbf4f8fca1e63572c981512dc2b3e372a1c545c163c10334677d2fe77b",
+      "scope": "complete chart figure with labels and caption"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/range_checks_final/NVDA/mobile/cover.png",
+      "sha256": "82cf805e8b6af92f5b6b4f5d90a1cfedbe6af8d220dad76246f69b907292ce92",
+      "scope": "375px mobile cover"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/AMD/cover.png",
+      "sha256": "6396bd0765e7d464c281b93b4098f8d3adc3a1e416302138de554bc30e1a296c",
+      "scope": "desktop cover"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/AMD/risks.png",
+      "sha256": "2f4235be1331f6c98eef34c25793c32d60b91e0c9fbbddf84d64b8a67f3dec2b",
+      "scope": "desktop risk narrative viewport"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/AMD/chart_1.png",
+      "sha256": "ad97e6541ee19deb2d006f7cb3dde25159840864edff288037d07bb2584ebf5e",
+      "scope": "complete chart figure with labels and caption"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/AMD/chart_2.png",
+      "sha256": "deffd0d43c01a30237a5ee4a70184ba19a40f9bd70b564489764d61750e04235",
+      "scope": "complete chart figure with labels and caption"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/AMD/chart_3.png",
+      "sha256": "b4b1be4354440202b918da5af89aa22a0e1c593d443077b88588e2ef8c811ff8",
+      "scope": "complete chart figure with labels and caption"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/range_checks_final/AMD/mobile/cover.png",
+      "sha256": "60a9a31febe6c2106d4f812282965df857b1ec417328df60a2686d161afb013f",
+      "scope": "375px mobile cover"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/INTC/cover.png",
+      "sha256": "af39bc73f6c83bcebafbd89366eddec5b53664eccd84a9e3365421dab3eb2459",
+      "scope": "desktop cover"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/INTC/risks.png",
+      "sha256": "92b35aba2998eaa7d864449c64b1c8282327573b182c61a40e0d55be491dcc79",
+      "scope": "desktop risk narrative viewport"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/INTC/chart_1.png",
+      "sha256": "0df88b2f4c874f0df8640e3cf11da8bae972de177e1e165b1f8d2c48354dc3a9",
+      "scope": "complete chart figure with labels and caption"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/INTC/chart_2.png",
+      "sha256": "9f3008358e346eba26a92d05913f46c240f273df5915f34e7da6ab411c17ddf9",
+      "scope": "complete chart figure with labels and caption"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/INTC/chart_3.png",
+      "sha256": "2dc0ccbd18242df54c5ed5108834095740ee9ac2074dde04eabf2c2d9437d487",
+      "scope": "complete chart figure with labels and caption"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/range_checks_final/INTC/mobile/cover.png",
+      "sha256": "c2c63b3e971f9724787eb7200423d7f70acc0e2481879f39cd03f7b31d2ecc76",
+      "scope": "375px mobile cover"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/range_checks_final/NVDA/desktop/01_risks_cagr.png",
+      "sha256": "65d9357ca1391e337fe0cc7e7a23dd0c63663f50d32537823f9f73367f0b064e",
+      "scope": "complete new CAGR/EV-EBITDA explanation captured with live TextNode Range coordinates"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/range_checks_final/NVDA/desktop/04_news_summary_cagr.png",
+      "sha256": "873de7d1b8aba14dad4763a2b25d2197c625e5cb671dc15b8f73e1b4a5b12872",
+      "scope": "complete new CAGR/EV-EBITDA explanation captured with live TextNode Range coordinates"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/range_checks_final/NVDA/mobile/01_risks_cagr.png",
+      "sha256": "3113d53b74aca528bd770b72892640fcd873f793dc1e1b58c6205313001ddb81",
+      "scope": "complete new CAGR/EV-EBITDA explanation captured with live TextNode Range coordinates"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/range_checks_final/NVDA/mobile/02_competitor_analysis_cagr.png",
+      "sha256": "e080382f14f85f39af424b8ab0ff86b4dbd8444af1d0ea2baa44c172c4f3f8ba",
+      "scope": "complete new CAGR/EV-EBITDA explanation captured with live TextNode Range coordinates"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/range_checks_final/NVDA/mobile/03_major_takeaways_cagr.png",
+      "sha256": "b057a82f48561d6235d531aff272ba1a9592eb302cb935b391df14b3154d5528",
+      "scope": "complete new CAGR/EV-EBITDA explanation captured with live TextNode Range coordinates"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/range_checks_final/AMD/desktop/01_tagline_cagr.png",
+      "sha256": "97c75bb9b5ce0cc4f42655bcb229e9fc3a3ea86600ed167a7bd07644a98edd96",
+      "scope": "complete new CAGR/EV-EBITDA explanation captured with live TextNode Range coordinates"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/range_checks_final/AMD/desktop/03_investment_overview_cagr.png",
+      "sha256": "a7f31004df380eb3489c2813904236cb435e1d2c44a62cdf74e311f7171accea",
+      "scope": "complete new CAGR/EV-EBITDA explanation captured with live TextNode Range coordinates"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/range_checks_final/AMD/desktop/04_valuation_overview_ev_ebitda_range.png",
+      "sha256": "77d8166cd331e8aaf5ec63c1c9eafb088a7ff397ec11c530251f51cc413f8a33",
+      "scope": "complete new CAGR/EV-EBITDA explanation captured with live TextNode Range coordinates"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/range_checks_final/AMD/mobile/01_tagline_cagr.png",
+      "sha256": "8ee6f2441d8f36d9d82757db28a5364899c6f06e03e9402eb437c8a4dc5bb097",
+      "scope": "complete new CAGR/EV-EBITDA explanation captured with live TextNode Range coordinates"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/range_checks_final/AMD/mobile/02_company_overview_cagr.png",
+      "sha256": "ec9988ab3d9e03e4d45a8b2f51db046c94428676ed3e4c889aa45e234576aba1",
+      "scope": "complete new CAGR/EV-EBITDA explanation captured with live TextNode Range coordinates"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/range_checks_final/AMD/mobile/03_investment_overview_cagr.png",
+      "sha256": "6a35cc67a3fe854c4ab49e612f9229b4445d5bd14680b49b5ff0e8a4f331feea",
+      "scope": "complete new CAGR/EV-EBITDA explanation captured with live TextNode Range coordinates"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/range_checks_final/AMD/mobile/04_valuation_overview_ev_ebitda_range.png",
+      "sha256": "166f961b89df3daae30e8eaf846437849817b67ea670ffedf2156e103af338f9",
+      "scope": "complete new CAGR/EV-EBITDA explanation captured with live TextNode Range coordinates"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/range_checks_final/INTC/desktop/01_valuation_overview_cagr.png",
+      "sha256": "6cc1dd002d94916b42930cf46290f86c093eee79d029ee8696cb860781b9b517",
+      "scope": "complete new CAGR/EV-EBITDA explanation captured with live TextNode Range coordinates"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/range_checks_final/INTC/mobile/01_valuation_overview_cagr.png",
+      "sha256": "73af833bc924da84775765557efe9d45b68c03054d8699f6e74a697572b6b533",
+      "scope": "complete new CAGR/EV-EBITDA explanation captured with live TextNode Range coordinates"
+    }
+  ],
+  "actual_images_opened_count": 32,
+  "exact_hash_reuse": [
+    {
+      "path": "evidence/browser_semantic_v9_1/range_checks_final/NVDA/desktop/02_competitor_analysis_cagr.png",
+      "sha256": "65d9357ca1391e337fe0cc7e7a23dd0c63663f50d32537823f9f73367f0b064e",
+      "visually_reviewed_identical_reference": "evidence/browser_semantic_v9_1/range_checks_final/NVDA/desktop/01_risks_cagr.png",
+      "method": "exact full PNG SHA-256 equality, not approximate comparison"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/range_checks_final/NVDA/desktop/03_major_takeaways_cagr.png",
+      "sha256": "65d9357ca1391e337fe0cc7e7a23dd0c63663f50d32537823f9f73367f0b064e",
+      "visually_reviewed_identical_reference": "evidence/browser_semantic_v9_1/range_checks_final/NVDA/desktop/01_risks_cagr.png",
+      "method": "exact full PNG SHA-256 equality, not approximate comparison"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/range_checks_final/NVDA/mobile/04_news_summary_cagr.png",
+      "sha256": "e080382f14f85f39af424b8ab0ff86b4dbd8444af1d0ea2baa44c172c4f3f8ba",
+      "visually_reviewed_identical_reference": "evidence/browser_semantic_v9_1/range_checks_final/NVDA/mobile/02_competitor_analysis_cagr.png",
+      "method": "exact full PNG SHA-256 equality, not approximate comparison"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/range_checks_final/AMD/desktop/02_company_overview_cagr.png",
+      "sha256": "97c75bb9b5ce0cc4f42655bcb229e9fc3a3ea86600ed167a7bd07644a98edd96",
+      "visually_reviewed_identical_reference": "evidence/browser_semantic_v9_1/range_checks_final/AMD/desktop/01_tagline_cagr.png",
+      "method": "exact full PNG SHA-256 equality, not approximate comparison"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/range_checks_final/AMD/desktop/05_competitor_analysis_cagr.png",
+      "sha256": "97c75bb9b5ce0cc4f42655bcb229e9fc3a3ea86600ed167a7bd07644a98edd96",
+      "visually_reviewed_identical_reference": "evidence/browser_semantic_v9_1/range_checks_final/AMD/desktop/01_tagline_cagr.png",
+      "method": "exact full PNG SHA-256 equality, not approximate comparison"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/range_checks_final/AMD/desktop/06_major_takeaways_cagr.png",
+      "sha256": "97c75bb9b5ce0cc4f42655bcb229e9fc3a3ea86600ed167a7bd07644a98edd96",
+      "visually_reviewed_identical_reference": "evidence/browser_semantic_v9_1/range_checks_final/AMD/desktop/01_tagline_cagr.png",
+      "method": "exact full PNG SHA-256 equality, not approximate comparison"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/range_checks_final/AMD/desktop/07_news_summary_cagr.png",
+      "sha256": "97c75bb9b5ce0cc4f42655bcb229e9fc3a3ea86600ed167a7bd07644a98edd96",
+      "visually_reviewed_identical_reference": "evidence/browser_semantic_v9_1/range_checks_final/AMD/desktop/01_tagline_cagr.png",
+      "method": "exact full PNG SHA-256 equality, not approximate comparison"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/range_checks_final/AMD/mobile/05_competitor_analysis_cagr.png",
+      "sha256": "8ee6f2441d8f36d9d82757db28a5364899c6f06e03e9402eb437c8a4dc5bb097",
+      "visually_reviewed_identical_reference": "evidence/browser_semantic_v9_1/range_checks_final/AMD/mobile/01_tagline_cagr.png",
+      "method": "exact full PNG SHA-256 equality, not approximate comparison"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/range_checks_final/AMD/mobile/06_major_takeaways_cagr.png",
+      "sha256": "6a35cc67a3fe854c4ab49e612f9229b4445d5bd14680b49b5ff0e8a4f331feea",
+      "visually_reviewed_identical_reference": "evidence/browser_semantic_v9_1/range_checks_final/AMD/mobile/03_investment_overview_cagr.png",
+      "method": "exact full PNG SHA-256 equality, not approximate comparison"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/range_checks_final/AMD/mobile/07_news_summary_cagr.png",
+      "sha256": "6a35cc67a3fe854c4ab49e612f9229b4445d5bd14680b49b5ff0e8a4f331feea",
+      "visually_reviewed_identical_reference": "evidence/browser_semantic_v9_1/range_checks_final/AMD/mobile/03_investment_overview_cagr.png",
+      "method": "exact full PNG SHA-256 equality, not approximate comparison"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/range_checks_final/INTC/desktop/02_risks_cagr.png",
+      "sha256": "6cc1dd002d94916b42930cf46290f86c093eee79d029ee8696cb860781b9b517",
+      "visually_reviewed_identical_reference": "evidence/browser_semantic_v9_1/range_checks_final/INTC/desktop/01_valuation_overview_cagr.png",
+      "method": "exact full PNG SHA-256 equality, not approximate comparison"
+    },
+    {
+      "path": "evidence/browser_semantic_v9_1/range_checks_final/INTC/mobile/02_risks_cagr.png",
+      "sha256": "73af833bc924da84775765557efe9d45b68c03054d8699f6e74a697572b6b533",
+      "visually_reviewed_identical_reference": "evidence/browser_semantic_v9_1/range_checks_final/INTC/mobile/01_valuation_overview_cagr.png",
+      "method": "exact full PNG SHA-256 equality, not approximate comparison"
+    }
+  ],
+  "exact_hash_reuse_count": 12,
+  "old_release_screenshots_reused": false,
+  "html_sources": [
+    {
+      "ticker": "NVDA",
+      "path": "runs/NVDA_final_reasoning_v9_1/output/NVDA/report/Audited_Equity_Report_NVDA.html",
+      "sha256": "185dc512c5b6ce8babaa9845fb9de03d9539039466a101ce409823b9fcdc98a0",
+      "qa_json": "evidence/browser_semantic_v9_1/NVDA/qa.json",
+      "qa_sha256": "b291c7e83741743e80e5b32592f53ecc8e071ef6ba3b0b02e510b6b093d3a096"
+    },
+    {
+      "ticker": "AMD",
+      "path": "runs/AMD_final_reasoning_v9_1/output/AMD/report/Audited_Equity_Report_AMD.html",
+      "sha256": "23a809c4719435ef57925205600137960f9edc2d29b5a14d00253fef7d23c7c1",
+      "qa_json": "evidence/browser_semantic_v9_1/AMD/qa.json",
+      "qa_sha256": "8524561a739570aa858ddddd851eb391b1cf5decd9744e19b02cd17739628b72"
+    },
+    {
+      "ticker": "INTC",
+      "path": "runs/INTC_final_reasoning_v9_1/output/INTC/report/Audited_Equity_Report_INTC.html",
+      "sha256": "970477b4acf385e9bb2754ac9a746c8d12a8f82f4ea35f3794262640b4c3f0e3",
+      "qa_json": "evidence/browser_semantic_v9_1/INTC/qa.json",
+      "qa_sha256": "bcaef98856fe2f8ca5da8cb2f6a4863fc8698b8cd8ce50aec0aba9a694348762"
+    }
+  ],
+  "range_geometry": [
+    {
+      "ticker": "NVDA",
+      "viewport": "desktop",
+      "geometry": {
+        "pageWidth": 1360,
+        "scrollWidth": 1360,
+        "height": 39463,
+        "replacementCharacter": false
+      },
+      "new_paragraphs": 4,
+      "all_range_line_boxes_inside_section_and_viewport": true,
+      "eight_source_sections_identical": true,
+      "html_sha256": "185dc512c5b6ce8babaa9845fb9de03d9539039466a101ce409823b9fcdc98a0"
+    },
+    {
+      "ticker": "NVDA",
+      "viewport": "mobile",
+      "geometry": {
+        "pageWidth": 375,
+        "scrollWidth": 375,
+        "height": 62057,
+        "replacementCharacter": false
+      },
+      "new_paragraphs": 4,
+      "all_range_line_boxes_inside_section_and_viewport": true,
+      "eight_source_sections_identical": true,
+      "html_sha256": "185dc512c5b6ce8babaa9845fb9de03d9539039466a101ce409823b9fcdc98a0"
+    },
+    {
+      "ticker": "AMD",
+      "viewport": "desktop",
+      "geometry": {
+        "pageWidth": 1360,
+        "scrollWidth": 1360,
+        "height": 36691,
+        "replacementCharacter": false
+      },
+      "new_paragraphs": 7,
+      "all_range_line_boxes_inside_section_and_viewport": true,
+      "eight_source_sections_identical": true,
+      "html_sha256": "23a809c4719435ef57925205600137960f9edc2d29b5a14d00253fef7d23c7c1"
+    },
+    {
+      "ticker": "AMD",
+      "viewport": "mobile",
+      "geometry": {
+        "pageWidth": 375,
+        "scrollWidth": 375,
+        "height": 57937,
+        "replacementCharacter": false
+      },
+      "new_paragraphs": 7,
+      "all_range_line_boxes_inside_section_and_viewport": true,
+      "eight_source_sections_identical": true,
+      "html_sha256": "23a809c4719435ef57925205600137960f9edc2d29b5a14d00253fef7d23c7c1"
+    },
+    {
+      "ticker": "INTC",
+      "viewport": "desktop",
+      "geometry": {
+        "pageWidth": 1360,
+        "scrollWidth": 1360,
+        "height": 37545,
+        "replacementCharacter": false
+      },
+      "new_paragraphs": 2,
+      "all_range_line_boxes_inside_section_and_viewport": true,
+      "eight_source_sections_identical": true,
+      "html_sha256": "970477b4acf385e9bb2754ac9a746c8d12a8f82f4ea35f3794262640b4c3f0e3"
+    },
+    {
+      "ticker": "INTC",
+      "viewport": "mobile",
+      "geometry": {
+        "pageWidth": 375,
+        "scrollWidth": 375,
+        "height": 58256,
+        "replacementCharacter": false
+      },
+      "new_paragraphs": 2,
+      "all_range_line_boxes_inside_section_and_viewport": true,
+      "eight_source_sections_identical": true,
+      "html_sha256": "970477b4acf385e9bb2754ac9a746c8d12a8f82f4ea35f3794262640b4c3f0e3"
+    }
+  ],
+  "range_qa_path": "evidence/browser_semantic_v9_1/range_checks_final/range_qa.json",
+  "range_qa_sha256": "c2b41cc676aab4dd07b279afa3df06f50392b76c91c040201a8a9e423fe8e67a",
+  "range_script_sha256": "84e60ee1b2c54af40dd15eee8e5f959e734bbc1600f2b56bb7d43494ede0b593",
+  "findings": [
+    "Desktop company names, audit notice and frozen market labels are readable; the mobile layout wraps company names and explanatory prose without page-width overflow.",
+    "All nine full chart figures display titles, legends, fiscal-year labels, axes and captions without missing images or replacement characters. Actual/forecast suffixes and negative INTC EPS/PE remain visible; this is layout review, not validation of those financial assumptions.",
+    "CAGR explanations visibly distinguish actual endpoints from forecast endpoints. The AMD range sentence displays the complete 2021A-through-2025A window, 17.9136x (2022A) minimum and 57.1197x (2023A) maximum in both viewport widths.",
+    "Every new paragraph Range has line boxes inside both the source section and viewport. Live DOM text matched all eight saved section texts before/after capture, with no report or DOM content modification.",
+    "Normal viewport screenshots can show neighboring lines crossing the screenshot boundary; this is not document truncation. The targeted Range clips contain each entire new explanation.",
+    "N/A explanatory legends are intentional missing-data disclosures, not broken content. The root QA first attempt and its rule correction remain preserved separately."
+  ],
+  "limitations": "This is a machine visual review of the specified views, not human proofreading, an exhaustive visual scan of every line of the 39k-plus-pixel desktop reports, or a claim that financial statements are factually correct. Browser source-text/hash and geometry checks cover the remaining saved narrative; independent claim audits govern truth.",
+  "capture_history": {
+    "selected": "range_checks_final",
+    "preliminary_full_page_range_captures": "range_checks",
+    "interrupted_local_path_argument_trial": "range_checks_scrolled; interrupted before range_qa.json, so not an accepted proof",
+    "note": "Both complete capture modes yield exact matching PNG hashes for all 26 target range images; final captures scroll each range into the real viewport before clipping."
+  },
+  "reproduction_command_from_submission": "python -B scripts/qa_semantic_ranges.py --output-dir reproduction/semantic_ranges_new"
+}

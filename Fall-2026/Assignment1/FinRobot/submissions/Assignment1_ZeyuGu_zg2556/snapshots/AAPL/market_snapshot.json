@@ -1,0 +1,39 @@
+{
+  "ticker": "AAPL",
+  "run_id": "AAPL-20261011T211000Z-snapshot",
+  "as_of_utc": "2026-10-11T21:10:00+00:00",
+  "metrics": {
+    "share_price": 336.64,
+    "target_price": 341.68,
+    "market_cap": 4944.35152384,
+    "volume": 50.560951,
+    "fwd_pe": 34.1068090787717,
+    "pb_ratio": 51.79151546797228,
+    "dividend_yield": 0.31487642585551334,
+    "free_float": 99.87879921341867,
+    "roe": 151.91298333175104,
+    "net_debt_to_equity": 1.5241072518411023,
+    "rating": "Overweight",
+    "beta": 1.069,
+    "sector": "Technology",
+    "industry": "Consumer Electronics",
+    "exchange": "NASDAQ",
+    "52w_range": "$243.42 - $345.34",
+    "shares_outstanding": 14594180000,
+    "target_price_source": "FMP stable/price-target-consensus: targetConsensus (changed from legacy latest analyst target)",
+    "rating_source": "FMP stable/grades: latest newGrade or action",
+    "shares_source": "FMP stable/shares-float: outstandingShares"
+  },
+  "classification_observed": {
+    "sector": "Technology",
+    "industry": "Consumer Electronics"
+  },
+  "provenance_notes": {
+    "free_float": "stable/shares-float observation replaces legacy hard-coded 95%; unavailable if endpoint fails",
+    "fwd_pe": "historical ratios/key-metrics PE mislabeled as forward PE upstream; not analyst forecast EPS multiple",
+    "net_debt_to_equity": "historical debtEquityRatio, not independently derived net-debt/equity",
+    "target_price": "stable price-target-consensus targetConsensus, a disclosed semantic change from legacy single-analyst target; not engine target",
+    "rating": "latest single newGrade or action, not LLM recommendation",
+    "dividend_yield": "lastDiv/current price; upstream assumes lastDiv is annual"
+  }
+}

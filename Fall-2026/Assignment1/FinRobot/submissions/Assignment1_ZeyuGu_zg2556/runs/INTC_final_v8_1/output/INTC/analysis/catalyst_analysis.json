@@ -1,0 +1,60 @@
+{
+  "catalysts": [
+    {
+      "event_type": "earnings",
+      "description": "Intel Reports Second-Quarter 2026 Financial Results",
+      "expected_date": "2026-07-23",
+      "impact_level": "high",
+      "probability": 0.95,
+      "sentiment": "negative",
+      "source": "Intel Investor Relations",
+      "details": "News Summary\nSecond-quarter revenue was $16.1 billion, up 25% year-over-year (YoY).\nSecond-quarter earnings (loss) per share (EPS) attributable to Intel was $(2.16); non-GAAP EPS attributable to Intel was $0.42.\nForecasting third-quarter 2026 revenue of $15.8 billion to $16.8 billion; expecting third-quarter EPS attributable to Intel of $0.31 and non-GAAP EPS attributable to Intel of $0.38.\nSANTA CLARA, Calif.--(BUSINESS WIRE)--\nIntel Corporation today reported second-quarter 2026 financial resu"
+    },
+    {
+      "event_type": "earnings",
+      "description": "INTC Expected Quarterly Earnings",
+      "expected_date": "2027-01-09",
+      "impact_level": "high",
+      "probability": 0.95,
+      "sentiment": "neutral",
+      "source": "Estimated Calendar",
+      "details": ""
+    }
+  ],
+  "categorized": {
+    "positive": [],
+    "negative": [
+      {
+        "description": "Intel Reports Second-Quarter 2026 Financial Results",
+        "impact": "high"
+      }
+    ],
+    "neutral": [
+      {
+        "description": "INTC Expected Quarterly Earnings",
+        "impact": "high"
+      }
+    ]
+  },
+  "top_catalysts": [
+    {
+      "catalyst": "Intel Reports Second-Quarter 2026 Financial Results",
+      "type": "earnings",
+      "impact_score": 3,
+      "probability": 0.95,
+      "sentiment": "negative",
+      "weighted_impact": -2.8499999999999996,
+      "expected_date": "2026-07-23"
+    },
+    {
+      "catalyst": "INTC Expected Quarterly Earnings",
+      "type": "earnings",
+      "impact_score": 3,
+      "probability": 0.95,
+      "sentiment": "neutral",
+      "weighted_impact": 0.0,
+      "expected_date": "2027-01-09"
+    }
+  ],
+  "summary": "## Catalyst Analysis for INTC\n\n### Risk Factors (Downside Risks)\n- **Earnings** (2026-07-23): Intel Reports Second-Quarter 2026 Financial Results\n  - Impact: HIGH, Probability: 95%\n\n### Events to Monitor\n- INTC Expected Quarterly Earnings (2027-01-09)"
+}

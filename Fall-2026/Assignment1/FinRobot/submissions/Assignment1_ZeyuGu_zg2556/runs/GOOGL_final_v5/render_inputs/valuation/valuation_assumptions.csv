@@ -1,0 +1,19 @@
+ticker,run_id,assumption,value,source,interpretation
+GOOGL,GOOGL-20261011T211000Z-snapshot,EBITDA,241072305714.24,financial_metrics_and_forecasts.csv:EBITDA/2028E,"terminal forecast, not latest historical EBITDA"
+GOOGL,GOOGL-20261011T211000Z-snapshot,EBITDA period,2028E,last A/E column in analysis CSV,preserves baseline selector
+GOOGL,GOOGL-20261011T211000Z-snapshot,Shares,12102111286.0,"{""sources"": [{""source_url"": ""https://financialmodelingprep.com/stable/shares-float?symbol=GOOGL"", ""fetched_at_utc"": ""2026-10-11T21:21:12.043761+00:00"", ""status_code"": 200, ""content_type"": ""application/json; charset=utf-8"", ""body_sha256"": ""6ebd0d11e6d46e1b39c1957c00576e43ef700841e8e43ee81137f4a3b7afa752"", ""secret_echo_redacted"": false, ""runtime_seconds"": 0.07878789999995206, ""response_key"": ""196884e0b0abc72159f867e70ba8bcff589509e329ee0812fccb08715432146a""}], ""json_location"": ""[0].outstandingShares"", ""unit"": ""shares""}",actual share count must match valuation units
+GOOGL,GOOGL-20261011T211000Z-snapshot,Historical mean EV/EBITDA,17.835547045130713,observed sample mean,unweighted sample mean; fiscal/calendar labels require source audit
+GOOGL,GOOGL-20261011T211000Z-snapshot,Historical sample standard deviation,2.719425802529161,"sample standard deviation, denominator n-1",observations=5
+GOOGL,GOOGL-20261011T211000Z-snapshot,Target multiple,17.835547045130713,observed sample mean,same multiple across sensitivity cases
+GOOGL,GOOGL-20261011T211000Z-snapshot,Net debt rule,0.1,hard-coded baseline,10% of each modeled enterprise value; NOT balance-sheet debt; low/high multiples hold central debt fixed
+GOOGL,GOOGL-20261011T211000Z-snapshot,Price floor,0,hard-coded baseline,negative equity valuations clipped to zero
+GOOGL,GOOGL-20261011T211000Z-snapshot,EV/EBITDA discount rate,N/A,no discounting in baseline multiple method,terminal forecast is not discounted back to observation date
+GOOGL,GOOGL-20261011T211000Z-snapshot,EV/EBITDA terminal growth,N/A,multiple method,not a DCF assumption
+GOOGL,GOOGL-20261011T211000Z-snapshot,Base FCF,73266000000.0,caller free_cash_flow,period=2025-12-31 00:00:00; caller FCF definition must be disclosed
+GOOGL,GOOGL-20261011T211000Z-snapshot,DCF low/high range,+/-1pp terminal discount denominator only,hard-coded baseline,"not a full WACC sensitivity: explicit PV, terminal-value denominator and net debt remain fixed"
+GOOGL,GOOGL-20261011T211000Z-snapshot,Confidence weights,EV/EBITDA 0.7; peers 0.6; DCF 0.5,hard-coded baseline,"heuristic weights, not statistical confidence"
+GOOGL,GOOGL-20261011T211000Z-snapshot,growth_rate_1_5,0.1,caller/default DCF assumption,ten-year horizon growth defaults 10% then 5%; terminal default 2.5%; WACC default 10%
+GOOGL,GOOGL-20261011T211000Z-snapshot,growth_rate_6_10,0.05,caller/default DCF assumption,ten-year horizon growth defaults 10% then 5%; terminal default 2.5%; WACC default 10%
+GOOGL,GOOGL-20261011T211000Z-snapshot,terminal_growth,0.025,caller/default DCF assumption,ten-year horizon growth defaults 10% then 5%; terminal default 2.5%; WACC default 10%
+GOOGL,GOOGL-20261011T211000Z-snapshot,wacc,0.1,caller/default DCF assumption,ten-year horizon growth defaults 10% then 5%; terminal default 2.5%; WACC default 10%
+GOOGL,GOOGL-20261011T211000Z-snapshot,projection_years,10,caller/default DCF assumption,ten-year horizon growth defaults 10% then 5%; terminal default 2.5%; WACC default 10%

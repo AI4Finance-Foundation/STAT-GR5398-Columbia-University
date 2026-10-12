@@ -1,0 +1,1227 @@
+{
+  "review_version": "post-release-cagr-scope-review-v1",
+  "created_utc": "2026-10-12T06:14:24.865771+00:00",
+  "reviewer": "Codex task agent; independent read-only re-examination of existing audit labels against original writer prompts",
+  "human_review_performed": false,
+  "canonical_files_modified": false,
+  "paid_api_calls": 0,
+  "purpose": "Proposal artifact only. No canonical audit or generated text is relabeled. Mathematical clarifications must not retroactively change original sentence meaning.",
+  "classification_policy": "A true, source-bound financial CAGR interval conflicting with endpoint arithmetic is Contradicted. Ambiguous table-spanning/through modifiers do not license inventing a statistical interval; retained financial-scope claims are proposed Unsupported/unverifiable, not automatically Supported. Literal displayed-cell and table-span assertions are separate from computed growth-interval claims.",
+  "counts": {
+    "after_cagr_rows": 12,
+    "after_retain_contradicted": 7,
+    "after_propose_unsupported_due_to_ambiguous_scope": 5,
+    "before_cagr_assertions_reviewed": 19,
+    "before_same_table_scope_errors": 0,
+    "before_label_changes_proposed": 0
+  },
+  "formula": "CAGR_percent = 100 * ((end_value / start_value) ** (1 / (end_year - start_year)) - 1); annual comparable periods, positive source values, explicit A/E basis; compare to stated precision or stated inequality.",
+  "source_calculations": {
+    "NVDA": {
+      "source_header_line": 4,
+      "source_revenue_line": 6,
+      "start_label": "2022A",
+      "start_value": 26914000000.0,
+      "last_actual_label": "2026A",
+      "last_actual_value": 215938000000.0,
+      "last_forecast_label": "2029E",
+      "last_forecast_value": 249952553760.0,
+      "generic_displayed_cagr": "68.3%",
+      "actual_n": 4,
+      "actual_cagr_pct": 68.30139148028267,
+      "mixed_n": 7,
+      "mixed_actual_forecast_cagr_pct": 37.48916542181464,
+      "future_n": 3,
+      "future_only_cagr_pct": 4.996825300838603,
+      "all_visible_start_cagrs_ending_last_forecast": {
+        "2022A": 37.48916542181464,
+        "2023A": 44.92791274085486,
+        "2024A": 32.62233964163703,
+        "2025A": 17.64250476187861,
+        "2026A": 4.996825300838603,
+        "2027E": 4.995237987253498,
+        "2028E": 4.0000000000000036
+      }
+    },
+    "AMD": {
+      "source_header_line": 4,
+      "source_revenue_line": 6,
+      "start_label": "2021A",
+      "start_value": 16434000000.0,
+      "last_actual_label": "2025A",
+      "last_actual_value": 34639000000.0,
+      "last_forecast_label": "2028E",
+      "last_forecast_value": 40095335280.0,
+      "generic_displayed_cagr": "20.5%",
+      "actual_n": 4,
+      "actual_cagr_pct": 20.491251645171026,
+      "mixed_n": 7,
+      "mixed_actual_forecast_cagr_pct": 13.588874216196789,
+      "future_n": 3,
+      "future_only_cagr_pct": 4.996825300838603,
+      "all_visible_start_cagrs_ending_last_forecast": {
+        "2021A": 13.588874216196789,
+        "2022A": 9.234688382281654,
+        "2023A": 12.070203320383976,
+        "2024A": 11.668756086394527,
+        "2025A": 4.996825300838603,
+        "2026E": 4.995237987253498,
+        "2027E": 4.0000000000000036
+      }
+    },
+    "INTC": {
+      "source_header_line": 4,
+      "source_revenue_line": 6,
+      "start_label": "2021A",
+      "start_value": 79024000000.0,
+      "last_actual_label": "2025A",
+      "last_actual_value": 52853000000.0,
+      "last_forecast_label": "2028E",
+      "last_forecast_value": 61178404560.0,
+      "generic_displayed_cagr": "-9.6%",
+      "actual_n": 4,
+      "actual_cagr_pct": -9.566849990677328,
+      "mixed_n": 7,
+      "mixed_actual_forecast_cagr_pct": -3.590489706962474,
+      "future_n": 3,
+      "future_only_cagr_pct": 4.996825300838603,
+      "all_visible_start_cagrs_ending_last_forecast": {
+        "2021A": -3.590489706962474,
+        "2022A": -0.5020229900639994,
+        "2023A": 2.4412600944536456,
+        "2024A": 3.6033651061442296,
+        "2025A": 4.996825300838603,
+        "2026E": 4.995237987253498,
+        "2027E": 4.0000000000000036
+      }
+    }
+  },
+  "after_proposals": [
+    {
+      "audit_path": "audits/grounding/comparison_reasoning_v8_2/remaining_errors.csv",
+      "ticker": "NVDA",
+      "run_id": "NVDA_final_reasoning_v8_2",
+      "section": "risks",
+      "claim_id": "adjudicated.risks.p3.u3.c1",
+      "source_quote": "The revenue row shows a 68.3% CAGR for 2022A through 2029E.",
+      "original_claim": "NVIDIA revenue CAGR from2022A to2029E is68.3%.",
+      "original_classification": "Contradicted",
+      "original_numeric_status": "incorrect",
+      "scope_type": "explicit_cagr_period",
+      "proposed_classification": "Contradicted",
+      "proposed_numeric_status": "incorrect",
+      "faithful_claim": "The revenue row shows a 68.3% CAGR for 2022A through 2029E.",
+      "reason": "The original explicitly attaches the rate to the stated CAGR period (for/from/across, or for the period shown through the last forecast column). Using its source endpoints and seven annual intervals gives 37.489165422%, not 68.3%. The generic cell instead numerically matches the four-year actual interval; no scope is added to the original statement.",
+      "proposal_action": "retain_label_and_original_scope",
+      "atomization_caution": "Preserve the claimed interval. The independently recomputed formula is a clarification, not a rewrite of what the report originally meant.",
+      "source_file": "runs/NVDA_final_reasoning_v8_2/output/NVDA/analysis/risks.txt",
+      "source_start": 364,
+      "source_end": 423,
+      "source_sha256": "c7a4860c4f43e88965cfa8e720381c624210a28c8aabb6c1de53288d164fde68",
+      "writer_prompt": "runs/NVDA_baseline_1/agents/risks/prompt.txt",
+      "writer_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 26914000000.0     | 26974000000.0      | 60922000000.0     | 130497000000.0    | 215938000000.0    | 226734900000.0 | 240338994000.0 | 249952553760.0  | 68.3%  |"
+        }
+      ]
+    },
+    {
+      "audit_path": "audits/grounding/comparison_reasoning_v8_2/remaining_errors.csv",
+      "ticker": "NVDA",
+      "run_id": "NVDA_final_reasoning_v8_2",
+      "section": "competitor_analysis",
+      "claim_id": "adjudicated.competitor_analysis.p55.u55.c1",
+      "source_quote": "NVIDIA's revenue CAGR is 68.3% in the table through 2029E.",
+      "original_claim": "NVIDIA revenue CAGR from2022A to2029E is68.3%.",
+      "original_classification": "Contradicted",
+      "original_numeric_status": "incorrect",
+      "scope_type": "table_extent_modifier_ambiguous",
+      "proposed_classification": "Unsupported",
+      "proposed_numeric_status": "unverifiable",
+      "faithful_claim": "NVIDIA's revenue CAGR is 68.3% in the table through 2029E.",
+      "reason": "The phrase in the table through 2029E can modify the table extent. It does not explicitly state a CAGR start/end interval. The audit inserts from 2022A to 2029E.",
+      "proposal_action": "replace_overstrong_interval_paraphrase_with_unresolved_original_scope",
+      "atomization_caution": "Unsupported is a conservative treatment of the unresolved financial interval, not a conclusion that the literal displayed cell or table extent is false. Do not create a second interval atom that the sentence does not assert. Any already-supported literal table-cell atom remains separate; do not automatically promote the ambiguous financial interpretation to Supported.",
+      "source_file": "runs/NVDA_final_reasoning_v8_2/output/NVDA/analysis/competitor_analysis.txt",
+      "source_start": 5332,
+      "source_end": 5390,
+      "source_sha256": "3e4b0ddd21177a82ef0eb91504088519cddf5483428e13882a4d85f76104ed2a",
+      "writer_prompt": "runs/NVDA_baseline_1/agents/competitor_analysis/prompt.txt",
+      "writer_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 26914000000.0     | 26974000000.0      | 60922000000.0     | 130497000000.0    | 215938000000.0    | 226734900000.0 | 240338994000.0 | 249952553760.0  | 68.3%  |"
+        }
+      ]
+    },
+    {
+      "audit_path": "audits/grounding/comparison_reasoning_v8_2/remaining_errors.csv",
+      "ticker": "NVDA",
+      "run_id": "NVDA_final_reasoning_v8_2",
+      "section": "major_takeaways",
+      "claim_id": "adjudicated.major_takeaways.p1.u1.c1",
+      "source_quote": "NVIDIA revenue CAGR is 68.3% in the table spanning 2022A to 2029E.",
+      "original_claim": "NVIDIA revenue CAGR from2022A to2029E is68.3%.",
+      "original_classification": "Contradicted",
+      "original_numeric_status": "incorrect",
+      "scope_type": "table_extent_modifier_ambiguous",
+      "proposed_classification": "Unsupported",
+      "proposed_numeric_status": "unverifiable",
+      "faithful_claim": "NVIDIA revenue CAGR is 68.3% in the table spanning 2022A to 2029E.",
+      "reason": "Spanning 2022A to 2029E grammatically modifies the table. The original reports the displayed CAGR cell and table span; it does not unambiguously assign that entire span to the CAGR.",
+      "proposal_action": "replace_overstrong_interval_paraphrase_with_unresolved_original_scope",
+      "atomization_caution": "Unsupported is a conservative treatment of the unresolved financial interval, not a conclusion that the literal displayed cell or table extent is false. Do not create a second interval atom that the sentence does not assert. Any already-supported literal table-cell atom remains separate; do not automatically promote the ambiguous financial interpretation to Supported.",
+      "source_file": "runs/NVDA_final_reasoning_v8_2/output/NVDA/analysis/major_takeaways.txt",
+      "source_start": 122,
+      "source_end": 188,
+      "source_sha256": "317ab8b23d08c7a089242c69de55f45bf97e96b0887aa4c4475af2b96bbf4ee2",
+      "writer_prompt": "runs/NVDA_baseline_1/agents/major_takeaways/prompt.txt",
+      "writer_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 26914000000.0     | 26974000000.0      | 60922000000.0     | 130497000000.0    | 215938000000.0    | 226734900000.0 | 240338994000.0 | 249952553760.0  | 68.3%  |"
+        }
+      ]
+    },
+    {
+      "audit_path": "audits/grounding/comparison_reasoning_v8_2/remaining_errors.csv",
+      "ticker": "NVDA",
+      "run_id": "NVDA_final_reasoning_v8_2",
+      "section": "news_summary",
+      "claim_id": "adjudicated.news_summary.p19.u19.c1",
+      "source_quote": "The revenue table shows a CAGR of 68.3% across 2022A to 2029E.",
+      "original_claim": "NVIDIA revenue CAGR from2022A to2029E is68.3%.",
+      "original_classification": "Contradicted",
+      "original_numeric_status": "incorrect",
+      "scope_type": "explicit_cagr_period",
+      "proposed_classification": "Contradicted",
+      "proposed_numeric_status": "incorrect",
+      "faithful_claim": "The revenue table shows a CAGR of 68.3% across 2022A to 2029E.",
+      "reason": "The original explicitly attaches the rate to the stated CAGR period (for/from/across, or for the period shown through the last forecast column). Using its source endpoints and seven annual intervals gives 37.489165422%, not 68.3%. The generic cell instead numerically matches the four-year actual interval; no scope is added to the original statement.",
+      "proposal_action": "retain_label_and_original_scope",
+      "atomization_caution": "Preserve the claimed interval. The independently recomputed formula is a clarification, not a rewrite of what the report originally meant.",
+      "source_file": "runs/NVDA_final_reasoning_v8_2/output/NVDA/analysis/news_summary.txt",
+      "source_start": 2284,
+      "source_end": 2346,
+      "source_sha256": "c42abef1db1b5c68b0a5cd010545855fbfa8935f2345d08dc1e6f2add8fa3f15",
+      "writer_prompt": "runs/NVDA_baseline_1/agents/news_summary/prompt.txt",
+      "writer_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 26914000000.0     | 26974000000.0      | 60922000000.0     | 130497000000.0    | 215938000000.0    | 226734900000.0 | 240338994000.0 | 249952553760.0  | 68.3%  |"
+        }
+      ]
+    },
+    {
+      "audit_path": "audits/grounding/comparison_reasoning_v8_2/remaining_errors.csv",
+      "ticker": "AMD",
+      "run_id": "AMD_final_reasoning_v8_2",
+      "section": "tagline",
+      "claim_id": "adjudicated.tagline.p0.u0.c1",
+      "source_quote": "AMD revenue CAGR is 20.5% in the table from 2021A to 2028E.",
+      "original_claim": "AMD revenue CAGR from2021A to2028E is20.5%.",
+      "original_classification": "Contradicted",
+      "original_numeric_status": "incorrect",
+      "scope_type": "table_extent_modifier_ambiguous",
+      "proposed_classification": "Unsupported",
+      "proposed_numeric_status": "unverifiable",
+      "faithful_claim": "AMD revenue CAGR is 20.5% in the table from 2021A to 2028E.",
+      "reason": "From 2021A to 2028E follows in the table and can describe table coverage. Do not silently relocate that modifier onto the CAGR calculation.",
+      "proposal_action": "replace_overstrong_interval_paraphrase_with_unresolved_original_scope",
+      "atomization_caution": "Unsupported is a conservative treatment of the unresolved financial interval, not a conclusion that the literal displayed cell or table extent is false. Do not create a second interval atom that the sentence does not assert. Any already-supported literal table-cell atom remains separate; do not automatically promote the ambiguous financial interpretation to Supported.",
+      "source_file": "runs/AMD_final_reasoning_v8_2/output/AMD/analysis/tagline.txt",
+      "source_start": 0,
+      "source_end": 59,
+      "source_sha256": "27259039b25fa9d37820715c218d6ab71622e00936f04d9e6e1d5a8c1c72afc3",
+      "writer_prompt": "runs/AMD_baseline_1/agents/tagline/prompt.txt",
+      "writer_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+        }
+      ]
+    },
+    {
+      "audit_path": "audits/grounding/comparison_reasoning_v8_2/remaining_errors.csv",
+      "ticker": "AMD",
+      "run_id": "AMD_final_reasoning_v8_2",
+      "section": "company_overview",
+      "claim_id": "adjudicated.company_overview.p19.u19.c1",
+      "source_quote": "The AMD revenue row lists CAGR of 20.5% through 2028E.",
+      "original_claim": "AMD revenue CAGR from2021A to2028E is20.5%.",
+      "original_classification": "Contradicted",
+      "original_numeric_status": "incorrect",
+      "scope_type": "table_extent_modifier_ambiguous",
+      "proposed_classification": "Unsupported",
+      "proposed_numeric_status": "unverifiable",
+      "faithful_claim": "The AMD revenue row lists CAGR of 20.5% through 2028E.",
+      "reason": "The revenue row lists CAGR through 2028E is ambiguous table/row metadata language. It neither supplies a CAGR start year nor explicitly says CAGR over the whole displayed interval.",
+      "proposal_action": "replace_overstrong_interval_paraphrase_with_unresolved_original_scope",
+      "atomization_caution": "Unsupported is a conservative treatment of the unresolved financial interval, not a conclusion that the literal displayed cell or table extent is false. Do not create a second interval atom that the sentence does not assert. Any already-supported literal table-cell atom remains separate; do not automatically promote the ambiguous financial interpretation to Supported.",
+      "source_file": "runs/AMD_final_reasoning_v8_2/output/AMD/analysis/company_overview.txt",
+      "source_start": 2094,
+      "source_end": 2148,
+      "source_sha256": "836c5b96e7251e5b6af10f371d32292699f3cb4497029a960a463bb4d7365348",
+      "writer_prompt": "runs/AMD_baseline_1/agents/company_overview/prompt.txt",
+      "writer_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+        }
+      ]
+    },
+    {
+      "audit_path": "audits/grounding/comparison_reasoning_v8_2/remaining_errors.csv",
+      "ticker": "AMD",
+      "run_id": "AMD_final_reasoning_v8_2",
+      "section": "investment_overview",
+      "claim_id": "adjudicated.investment_overview.p57.u57.c1",
+      "source_quote": "AMD's revenue CAGR is 20.5% in the table spanning 2021A through 2028E.",
+      "original_claim": "AMD revenue CAGR from2021A to2028E is20.5%.",
+      "original_classification": "Contradicted",
+      "original_numeric_status": "incorrect",
+      "scope_type": "table_extent_modifier_ambiguous",
+      "proposed_classification": "Unsupported",
+      "proposed_numeric_status": "unverifiable",
+      "faithful_claim": "AMD's revenue CAGR is 20.5% in the table spanning 2021A through 2028E.",
+      "reason": "Spanning 2021A through 2028E explicitly describes the table. Converting this to the financial proposition CAGR from 2021A to 2028E is stronger than the source sentence.",
+      "proposal_action": "replace_overstrong_interval_paraphrase_with_unresolved_original_scope",
+      "atomization_caution": "Unsupported is a conservative treatment of the unresolved financial interval, not a conclusion that the literal displayed cell or table extent is false. Do not create a second interval atom that the sentence does not assert. Any already-supported literal table-cell atom remains separate; do not automatically promote the ambiguous financial interpretation to Supported.",
+      "source_file": "runs/AMD_final_reasoning_v8_2/output/AMD/analysis/investment_overview.txt",
+      "source_start": 5777,
+      "source_end": 5847,
+      "source_sha256": "3ff3b814a1aa30c4c3e969f23713e2dd0ec298f38c399a7cc2a0da24625b9de2",
+      "writer_prompt": "runs/AMD_baseline_1/agents/investment_overview/prompt.txt",
+      "writer_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+        }
+      ]
+    },
+    {
+      "audit_path": "audits/grounding/comparison_reasoning_v8_2/remaining_errors.csv",
+      "ticker": "AMD",
+      "run_id": "AMD_final_reasoning_v8_2",
+      "section": "competitor_analysis",
+      "claim_id": "adjudicated.competitor_analysis.p82.u82.c1",
+      "source_quote": "AMD revenue CAGR is projected at 20.5% from 2021A to 2028E.",
+      "original_claim": "AMD revenue CAGR from2021A to2028E is20.5%.",
+      "original_classification": "Contradicted",
+      "original_numeric_status": "incorrect",
+      "scope_type": "explicit_cagr_period",
+      "proposed_classification": "Contradicted",
+      "proposed_numeric_status": "incorrect",
+      "faithful_claim": "AMD revenue CAGR is projected at 20.5% from 2021A to 2028E.",
+      "reason": "The original explicitly attaches the rate to the stated CAGR period (for/from/across, or for the period shown through the last forecast column). Using its source endpoints and seven annual intervals gives 13.588874216%, not 20.5%. The generic cell instead numerically matches the four-year actual interval; no scope is added to the original statement.",
+      "proposal_action": "retain_label_and_original_scope",
+      "atomization_caution": "Preserve the claimed interval. The independently recomputed formula is a clarification, not a rewrite of what the report originally meant.",
+      "source_file": "runs/AMD_final_reasoning_v8_2/output/AMD/analysis/competitor_analysis.txt",
+      "source_start": 8174,
+      "source_end": 8233,
+      "source_sha256": "5228e5db477799aad5db306643972f3943f83b1bba0ecbe5fd864dd349e31144",
+      "writer_prompt": "runs/AMD_baseline_1/agents/competitor_analysis/prompt.txt",
+      "writer_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+        }
+      ]
+    },
+    {
+      "audit_path": "audits/grounding/comparison_reasoning_v8_2/remaining_errors.csv",
+      "ticker": "AMD",
+      "run_id": "AMD_final_reasoning_v8_2",
+      "section": "major_takeaways",
+      "claim_id": "adjudicated.major_takeaways.p0.u0.c1",
+      "source_quote": "AMD Revenue has a 20.5% CAGR from 2021A to 2028E in the table.",
+      "original_claim": "AMD revenue CAGR from2021A to2028E is20.5%.",
+      "original_classification": "Contradicted",
+      "original_numeric_status": "incorrect",
+      "scope_type": "explicit_cagr_period",
+      "proposed_classification": "Contradicted",
+      "proposed_numeric_status": "incorrect",
+      "faithful_claim": "AMD Revenue has a 20.5% CAGR from 2021A to 2028E in the table.",
+      "reason": "The original explicitly attaches the rate to the stated CAGR period (for/from/across, or for the period shown through the last forecast column). Using its source endpoints and seven annual intervals gives 13.588874216%, not 20.5%. The generic cell instead numerically matches the four-year actual interval; no scope is added to the original statement.",
+      "proposal_action": "retain_label_and_original_scope",
+      "atomization_caution": "Preserve the claimed interval. The independently recomputed formula is a clarification, not a rewrite of what the report originally meant.",
+      "source_file": "runs/AMD_final_reasoning_v8_2/output/AMD/analysis/major_takeaways.txt",
+      "source_start": 0,
+      "source_end": 62,
+      "source_sha256": "3e2d82f008a543e7d9da5ea91cb632fac2095f0ad265ac4597fb4be8c1d0a8e1",
+      "writer_prompt": "runs/AMD_baseline_1/agents/major_takeaways/prompt.txt",
+      "writer_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+        }
+      ]
+    },
+    {
+      "audit_path": "audits/grounding/comparison_reasoning_v8_2/remaining_errors.csv",
+      "ticker": "AMD",
+      "run_id": "AMD_final_reasoning_v8_2",
+      "section": "news_summary",
+      "claim_id": "adjudicated.news_summary.p16.u16.c1",
+      "source_quote": "AMD's revenue CAGR is 20.5% across 2021A to 2028E in the table.",
+      "original_claim": "AMD revenue CAGR from2021A to2028E is20.5%.",
+      "original_classification": "Contradicted",
+      "original_numeric_status": "incorrect",
+      "scope_type": "explicit_cagr_period",
+      "proposed_classification": "Contradicted",
+      "proposed_numeric_status": "incorrect",
+      "faithful_claim": "AMD's revenue CAGR is 20.5% across 2021A to 2028E in the table.",
+      "reason": "The original explicitly attaches the rate to the stated CAGR period (for/from/across, or for the period shown through the last forecast column). Using its source endpoints and seven annual intervals gives 13.588874216%, not 20.5%. The generic cell instead numerically matches the four-year actual interval; no scope is added to the original statement.",
+      "proposal_action": "retain_label_and_original_scope",
+      "atomization_caution": "Preserve the claimed interval. The independently recomputed formula is a clarification, not a rewrite of what the report originally meant.",
+      "source_file": "runs/AMD_final_reasoning_v8_2/output/AMD/analysis/news_summary.txt",
+      "source_start": 1620,
+      "source_end": 1683,
+      "source_sha256": "90821426e58453f65132bb430635dbfe478c197915e347a7376634d4f7712448",
+      "writer_prompt": "runs/AMD_baseline_1/agents/news_summary/prompt.txt",
+      "writer_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+        }
+      ]
+    },
+    {
+      "audit_path": "audits/grounding/comparison_reasoning_v8_2/remaining_errors.csv",
+      "ticker": "INTC",
+      "run_id": "INTC_final_reasoning_v8_2",
+      "section": "valuation_overview",
+      "claim_id": "adjudicated.valuation_overview.p14.u14.c1",
+      "source_quote": "Intel's Revenue CAGR is -9.6% for the period shown through 2028E.",
+      "original_claim": "Intel revenue CAGR from2021A to2028E is-9.6%.",
+      "original_classification": "Contradicted",
+      "original_numeric_status": "incorrect",
+      "scope_type": "explicit_cagr_period",
+      "proposed_classification": "Contradicted",
+      "proposed_numeric_status": "incorrect",
+      "faithful_claim": "Intel's Revenue CAGR is -9.6% for the period shown through 2028E.",
+      "reason": "The original explicitly attaches the rate to the stated CAGR period (for/from/across, or for the period shown through the last forecast column). Using its source endpoints and seven annual intervals gives -3.590489707%, not -9.6%. The generic cell instead numerically matches the four-year actual interval; no scope is added to the original statement.",
+      "proposal_action": "retain_label_and_original_scope",
+      "atomization_caution": "Preserve the claimed interval. The independently recomputed formula is a clarification, not a rewrite of what the report originally meant.",
+      "source_file": "runs/INTC_final_reasoning_v8_2/output/INTC/analysis/valuation_overview.txt",
+      "source_start": 1178,
+      "source_end": 1243,
+      "source_sha256": "600f102b47f9ca25f57d619051d85d97377b3e5eec66fc18b938bc3826fe86ea",
+      "writer_prompt": "runs/INTC_baseline_1/agents/valuation_overview/prompt.txt",
+      "writer_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 79024000000.0      | 63054000000.0      | 54228000000.0 | 53101000000.0      | 52853000000.0      | 55495650000.0 | 58825389000.0 | 61178404560.0  | -9.6%  |"
+        }
+      ]
+    },
+    {
+      "audit_path": "audits/grounding/comparison_reasoning_v8_2/remaining_errors.csv",
+      "ticker": "INTC",
+      "run_id": "INTC_final_reasoning_v8_2",
+      "section": "risks",
+      "claim_id": "adjudicated.risks.p3.u3.c1",
+      "source_quote": "Intel revenue CAGR is -9.6% from 2021A to 2028E in the table.",
+      "original_claim": "Intel revenue CAGR from2021A to2028E is-9.6%.",
+      "original_classification": "Contradicted",
+      "original_numeric_status": "incorrect",
+      "scope_type": "explicit_cagr_period",
+      "proposed_classification": "Contradicted",
+      "proposed_numeric_status": "incorrect",
+      "faithful_claim": "Intel revenue CAGR is -9.6% from 2021A to 2028E in the table.",
+      "reason": "The original explicitly attaches the rate to the stated CAGR period (for/from/across, or for the period shown through the last forecast column). Using its source endpoints and seven annual intervals gives -3.590489707%, not -9.6%. The generic cell instead numerically matches the four-year actual interval; no scope is added to the original statement.",
+      "proposal_action": "retain_label_and_original_scope",
+      "atomization_caution": "Preserve the claimed interval. The independently recomputed formula is a clarification, not a rewrite of what the report originally meant.",
+      "source_file": "runs/INTC_final_reasoning_v8_2/output/INTC/analysis/risks.txt",
+      "source_start": 391,
+      "source_end": 452,
+      "source_sha256": "ab20382e1fc4da8863c3d167ca6c45682646186e2cb3f4b18ccdefc0377eccb3",
+      "writer_prompt": "runs/INTC_baseline_1/agents/risks/prompt.txt",
+      "writer_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 79024000000.0      | 63054000000.0      | 54228000000.0 | 53101000000.0      | 52853000000.0      | 55495650000.0 | 58825389000.0 | 61178404560.0  | -9.6%  |"
+        }
+      ]
+    }
+  ],
+  "before_review": [
+    {
+      "audit_path": "audits/grounding/NVDA_before_reasoning_erratum_adjudicated/claims.csv",
+      "ticker": "NVDA",
+      "run_id": "NVDA_baseline_1",
+      "section": "tagline",
+      "claim_id": "adjudicated.tagline.p0.u1.c0",
+      "source_quote": "The company maintains impressive revenue growth, achieving a CAGR of 68.3%, supported by disciplined cost management and improving SG&A efficiency. ",
+      "original_claim": "NVIDIA achieved revenue CAGR of 68.3%.",
+      "original_classification": "Supported",
+      "original_numeric_status": "correct",
+      "scope_type": "unqualified_achieved_rate",
+      "proposed_classification": "Supported",
+      "proposed_numeric_status": "correct",
+      "faithful_claim": "NVIDIA achieved revenue CAGR of 68.3%.",
+      "same_table_scope_error_found": false,
+      "proposal_action": "retain_label; preserve source qualifiers and clarify calculation rationale where noted",
+      "reason": "No table-scope modifier and no explicit conflicting period. The supplied CAGR cell and matching actual endpoints support the narrow achieved-CAGR assertion; do not add a through-2029 scope.",
+      "source_file": "runs/NVDA_baseline_1/output/NVDA/analysis/tagline.txt",
+      "source_start": 174,
+      "source_end": 322,
+      "source_sha256": "aebb04a670b52de71793ad6ddd9f8676701033708a37210afa12dd251d059196",
+      "writer_prompt": "runs/NVDA_baseline_1/agents/tagline/prompt.txt",
+      "writer_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 26914000000.0     | 26974000000.0      | 60922000000.0     | 130497000000.0    | 215938000000.0    | 226734900000.0 | 240338994000.0 | 249952553760.0  | 68.3%  |"
+        }
+      ]
+    },
+    {
+      "audit_path": "audits/grounding/NVDA_before_reasoning_erratum_adjudicated/claims.csv",
+      "ticker": "NVDA",
+      "run_id": "NVDA_baseline_1",
+      "section": "company_overview",
+      "claim_id": "adjudicated.company_overview.p2.u8.c3",
+      "source_quote": "In 2023, total revenue was approximately $27 billion, with a dramatic increase to $60.9 billion in 2024 and an estimated $130.5 billion in 2025, reflecting a compound annual growth rate exceeding 68% over this period. ",
+      "original_claim": "NVIDIA revenue CAGR from 2023 to 2025 exceeded 68%.",
+      "original_classification": "Supported",
+      "original_numeric_status": "correct",
+      "scope_type": "explicit_deictic_period",
+      "proposed_classification": "Supported",
+      "proposed_numeric_status": "correct",
+      "faithful_claim": "NVIDIA revenue CAGR from 2023 to 2025 exceeded 68%.",
+      "same_table_scope_error_found": false,
+      "proposal_action": "retain_label; preserve source qualifiers and clarify calculation rationale where noted",
+      "reason": "Over this period refers directly to the stated 2023-to-2025 revenue observations. CAGR119.951834% exceeds68%; preserve inequality rather than require equality. The separate estimated-2025 error is not this atom.",
+      "source_file": "runs/NVDA_baseline_1/output/NVDA/analysis/company_overview.txt",
+      "source_start": 1507,
+      "source_end": 1725,
+      "source_sha256": "096a951e08e31da864f295d9a2aecbdd52c34a6086556211c3ab53b10fcfeb67",
+      "writer_prompt": "runs/NVDA_baseline_1/agents/company_overview/prompt.txt",
+      "writer_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 26914000000.0     | 26974000000.0      | 60922000000.0     | 130497000000.0    | 215938000000.0    | 226734900000.0 | 240338994000.0 | 249952553760.0  | 68.3%  |"
+        }
+      ]
+    },
+    {
+      "audit_path": "audits/grounding/NVDA_before_reasoning_erratum_adjudicated/claims.csv",
+      "ticker": "NVDA",
+      "run_id": "NVDA_baseline_1",
+      "section": "valuation_overview",
+      "claim_id": "adjudicated.valuation_overview.p0.u3.c0",
+      "source_quote": "This elevated valuation level is supported by NVIDIA's exceptional revenue growth trajectory, with a compound annual growth rate exceeding 60% over the recent years, driven primarily by surging demand in AI, data center, and gaming sectors. ",
+      "original_claim": "NVIDIA recent historical revenue CAGR exceeds60%.",
+      "original_classification": "Supported",
+      "original_numeric_status": "correct",
+      "scope_type": "unspecified_recent_historical_rate",
+      "proposed_classification": "Supported",
+      "proposed_numeric_status": "correct",
+      "faithful_claim": "NVIDIA recent historical revenue CAGR exceeds60%.",
+      "same_table_scope_error_found": false,
+      "proposal_action": "retain_label; preserve source qualifiers and clarify calculation rationale where noted",
+      "reason": "No table extent is asserted. The supplied historical CAGR68.301391% supports exceeding60%; do not interpret this as future CAGR or every individual annual growth rate.",
+      "source_file": "runs/NVDA_baseline_1/output/NVDA/analysis/valuation_overview.txt",
+      "source_start": 480,
+      "source_end": 721,
+      "source_sha256": "e2541783198ef525d2969fa2c1fc55342226e9f3459c86da42256b44008bf44e",
+      "writer_prompt": "runs/NVDA_baseline_1/agents/valuation_overview/prompt.txt",
+      "writer_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 26914000000.0     | 26974000000.0      | 60922000000.0     | 130497000000.0    | 215938000000.0    | 226734900000.0 | 240338994000.0 | 249952553760.0  | 68.3%  |"
+        }
+      ]
+    },
+    {
+      "audit_path": "audits/grounding/NVDA_before_reasoning_erratum_adjudicated/claims.csv",
+      "ticker": "NVDA",
+      "run_id": "NVDA_baseline_1",
+      "section": "risks",
+      "claim_id": "adjudicated.risks.p1.u1.c0",
+      "source_quote": "From a market risk perspective, NVIDIA's projected revenue growth is extraordinarily high, with compound annual growth rates exceeding 60% in some years. ",
+      "original_claim": "NVIDIA projected revenue growth has compound rates above60% in some forecast years.",
+      "original_classification": "Contradicted",
+      "original_numeric_status": "incorrect",
+      "scope_type": "explicit_projected_growth_basis",
+      "proposed_classification": "Contradicted",
+      "proposed_numeric_status": "incorrect",
+      "faithful_claim": "NVIDIA projected revenue growth has compound rates above60% in some forecast years.",
+      "same_table_scope_error_found": false,
+      "proposal_action": "retain_label; preserve source qualifiers and clarify calculation rationale where noted",
+      "reason": "Projected growth is explicitly the subject, not table coverage. Future annual growth is5%,6%,4% and future-only CAGR4.996825%, so projected rates exceeding60% conflict; do not impose a particular historical start year.",
+      "source_file": "runs/NVDA_baseline_1/output/NVDA/analysis/risks.txt",
+      "source_start": 199,
+      "source_end": 353,
+      "source_sha256": "ffcf831b9d2476c9e821c30f1b2a1ee93bf687b501e756c34cc23d8bdf1602c4",
+      "writer_prompt": "runs/NVDA_baseline_1/agents/risks/prompt.txt",
+      "writer_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 26914000000.0     | 26974000000.0      | 60922000000.0     | 130497000000.0    | 215938000000.0    | 226734900000.0 | 240338994000.0 | 249952553760.0  | 68.3%  |"
+        }
+      ]
+    },
+    {
+      "audit_path": "audits/grounding/NVDA_before_reasoning_erratum_adjudicated/claims.csv",
+      "ticker": "NVDA",
+      "run_id": "NVDA_baseline_1",
+      "section": "competitor_analysis",
+      "claim_id": "adjudicated.competitor_analysis.p5.u18.c2",
+      "source_quote": "The company’s moat is widening, supported by accelerating revenue growth (CAGR of 68.3% projected through 2029), high contribution margins consistently above 70%, and increasing EBITDA margins reaching over 70% by 2029. ",
+      "original_claim": "NVIDIA revenue CAGR projected through2029 is68.3%.",
+      "original_classification": "Contradicted",
+      "original_numeric_status": "incorrect",
+      "scope_type": "explicit_cagr_forecast_end_start_unspecified",
+      "proposed_classification": "Contradicted",
+      "proposed_numeric_status": "incorrect",
+      "faithful_claim": "NVIDIA revenue CAGR projected through2029 is68.3%.",
+      "same_table_scope_error_found": false,
+      "proposal_action": "retain_label; preserve source qualifiers and clarify calculation rationale where noted",
+      "reason": "Projected through2029 directly modifies CAGR, not a table. Keep the contradiction for the explicit forecast-end claim, but correct the rationale: the source does not specify2022 as its start. All admissible visible starts ending2029E give4.000000% to44.927913%, none68.3%. The last-actual-to-forecast CAGR is4.996825%. Do not rewrite the original as explicitly from2022.",
+      "source_file": "runs/NVDA_baseline_1/output/NVDA/analysis/competitor_analysis.txt",
+      "source_start": 2414,
+      "source_end": 2634,
+      "source_sha256": "98714628f3d0fa0130ed0f4954aaff0e2f8de54ec6120215b62fcf5ab3a3d012",
+      "writer_prompt": "runs/NVDA_baseline_1/agents/competitor_analysis/prompt.txt",
+      "writer_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 26914000000.0     | 26974000000.0      | 60922000000.0     | 130497000000.0    | 215938000000.0    | 226734900000.0 | 240338994000.0 | 249952553760.0  | 68.3%  |"
+        }
+      ]
+    },
+    {
+      "audit_path": "audits/grounding/NVDA_before_reasoning_erratum_adjudicated/claims.csv",
+      "ticker": "NVDA",
+      "run_id": "NVDA_baseline_1",
+      "section": "major_takeaways",
+      "claim_id": "adjudicated.major_takeaways.p0.u0.c0",
+      "source_quote": "Revenue Growth: NVIDIA's revenue trajectory from 2022 to 2029 demonstrates extraordinary expansion, with a CAGR of 68.3%, primarily driven by a monumental surge between 2023 and 2026 where revenue jumps from $27 billion to over $215 billion. ",
+      "original_claim": "NVIDIA revenue CAGR from2022through2029 is68.3%.",
+      "original_classification": "Contradicted",
+      "original_numeric_status": "incorrect",
+      "scope_type": "explicit_trajectory_period",
+      "proposed_classification": "Contradicted",
+      "proposed_numeric_status": "incorrect",
+      "faithful_claim": "NVIDIA revenue CAGR from2022through2029 is68.3%.",
+      "same_table_scope_error_found": false,
+      "proposal_action": "retain_label; preserve source qualifiers and clarify calculation rationale where noted",
+      "reason": "The sentence explicitly gives the revenue trajectory from2022 to2029 followed by its CAGR. Seven-interval endpoint calculation37.489165% directly conflicts with68.3%; no table-scope inference is needed.",
+      "source_file": "runs/NVDA_baseline_1/output/NVDA/analysis/major_takeaways.txt",
+      "source_start": 0,
+      "source_end": 242,
+      "source_sha256": "009a3554d2f26a06d1b566ef1c3d690083d07f4b7bdcc25291a77b73be6aeb02",
+      "writer_prompt": "runs/NVDA_baseline_1/agents/major_takeaways/prompt.txt",
+      "writer_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 26914000000.0     | 26974000000.0      | 60922000000.0     | 130497000000.0    | 215938000000.0    | 226734900000.0 | 240338994000.0 | 249952553760.0  | 68.3%  |"
+        }
+      ]
+    },
+    {
+      "audit_path": "audits/grounding/NVDA_before_reasoning_erratum_adjudicated/claims.csv",
+      "ticker": "NVDA",
+      "run_id": "NVDA_baseline_1",
+      "section": "news_summary",
+      "claim_id": "adjudicated.news_summary.p2.u7.c0",
+      "source_quote": "Additionally, the company’s long-term financial forecasts indicate a compound annual growth rate (CAGR) in revenue of approximately 68.3% from 2022 through 2029, with EBITDA margins expanding significantly to over 70% by 2029. ",
+      "original_claim": "The long-term forecast shows68.3%revenueCAGRfrom2022through2029.",
+      "original_classification": "Contradicted",
+      "original_numeric_status": "incorrect",
+      "scope_type": "explicit_cagr_period",
+      "proposed_classification": "Contradicted",
+      "proposed_numeric_status": "incorrect",
+      "faithful_claim": "The long-term forecast shows68.3%revenueCAGRfrom2022through2029.",
+      "same_table_scope_error_found": false,
+      "proposal_action": "retain_label; preserve source qualifiers and clarify calculation rationale where noted",
+      "reason": "CAGR from2022 through2029 is explicit;37.489165%, not68.3%.",
+      "source_file": "runs/NVDA_baseline_1/output/NVDA/analysis/news_summary.txt",
+      "source_start": 1160,
+      "source_end": 1387,
+      "source_sha256": "cf21bd435cf565f610a002111583460f41891631b212330ad5a9a2440668e771",
+      "writer_prompt": "runs/NVDA_baseline_1/agents/news_summary/prompt.txt",
+      "writer_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 26914000000.0     | 26974000000.0      | 60922000000.0     | 130497000000.0    | 215938000000.0    | 226734900000.0 | 240338994000.0 | 249952553760.0  | 68.3%  |"
+        }
+      ]
+    },
+    {
+      "audit_path": "audits/grounding/AMD_before_adjudicated_v2/claims.csv",
+      "ticker": "AMD",
+      "run_id": "AMD_baseline_1",
+      "section": "tagline",
+      "claim_id": "adjudicated.tagline.p0.u0.c0",
+      "source_quote": "Advanced Micro Devices, Inc. demonstrates robust revenue growth with a compound annual growth rate exceeding 20%, supported by expanding contribution margins reaching over 50%. ",
+      "original_claim": "AMD revenue CAGR exceeds 20%.",
+      "original_classification": "Supported",
+      "original_numeric_status": "correct",
+      "scope_type": "unqualified_rate",
+      "proposed_classification": "Supported",
+      "proposed_numeric_status": "correct",
+      "faithful_claim": "AMD revenue CAGR exceeds 20%.",
+      "same_table_scope_error_found": false,
+      "proposal_action": "retain_label; preserve source qualifiers and clarify calculation rationale where noted",
+      "reason": "No period is supplied and no table span is asserted. The displayed20.5% and actual endpoint20.491252% support exceeds20% without adding a2028 horizon.",
+      "source_file": "runs/AMD_baseline_1/output/AMD/analysis/tagline.txt",
+      "source_start": 0,
+      "source_end": 177,
+      "source_sha256": "fc61295a0c6876b2b1bd26aea78d2a4fca7e38b0a0c7e077569cb487dfc848f7",
+      "writer_prompt": "runs/AMD_baseline_1/agents/tagline/prompt.txt",
+      "writer_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+        }
+      ]
+    },
+    {
+      "audit_path": "audits/grounding/AMD_before_adjudicated_v2/claims.csv",
+      "ticker": "AMD",
+      "run_id": "AMD_baseline_1",
+      "section": "company_overview",
+      "claim_id": "adjudicated.company_overview.p2.u9.c1",
+      "source_quote": "Its revenue streams have grown significantly over recent years, reflecting a compound annual growth rate of about 20.5% from 2021 to 2028. ",
+      "original_claim": "AMD revenue CAGR is about 20.5% from 2021 to 2028.",
+      "original_classification": "Contradicted",
+      "original_numeric_status": "incorrect",
+      "scope_type": "explicit_cagr_period",
+      "proposed_classification": "Contradicted",
+      "proposed_numeric_status": "incorrect",
+      "faithful_claim": "AMD revenue CAGR is about 20.5% from 2021 to 2028.",
+      "same_table_scope_error_found": false,
+      "proposal_action": "retain_label; preserve source qualifiers and clarify calculation rationale where noted",
+      "reason": "About20.5% from2021 to2028 attaches the interval directly to CAGR. Seven-interval13.588874% is far outside ordinary rounding; retain Contradicted.",
+      "source_file": "runs/AMD_baseline_1/output/AMD/analysis/company_overview.txt",
+      "source_start": 1486,
+      "source_end": 1625,
+      "source_sha256": "ef73438ef6a49fce9388deb8d7803cf3838c00337c875ffdeac084fd5be783c7",
+      "writer_prompt": "runs/AMD_baseline_1/agents/company_overview/prompt.txt",
+      "writer_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+        }
+      ]
+    },
+    {
+      "audit_path": "audits/grounding/AMD_before_adjudicated_v2/claims.csv",
+      "ticker": "AMD",
+      "run_id": "AMD_baseline_1",
+      "section": "investment_overview",
+      "claim_id": "adjudicated.investment_overview.p3.u19.c1",
+      "source_quote": "Although valuation multiples remain elevated, they are justified by the sustained revenue CAGR exceeding 20% and improving profitability. ",
+      "original_claim": "AMD recent actual revenue CAGR exceeds 20%.",
+      "original_classification": "Supported",
+      "original_numeric_status": "correct",
+      "scope_type": "unqualified_rate_with_sustained_qualifier",
+      "proposed_classification": "Supported",
+      "proposed_numeric_status": "correct",
+      "faithful_claim": "AMD recent actual revenue CAGR exceeds 20%.",
+      "same_table_scope_error_found": false,
+      "proposal_action": "retain_label; preserve source qualifiers and clarify calculation rationale where noted",
+      "reason": "No table extent or explicit future horizon is supplied. The narrow rate exceeds20% matches the cell and actual endpoints. The source adjective sustained must not be silently reinterpreted as every rolling interval; this is a separate qualifier limitation, not a table-span error.",
+      "source_file": "runs/AMD_baseline_1/output/AMD/analysis/investment_overview.txt",
+      "source_start": 2220,
+      "source_end": 2358,
+      "source_sha256": "04669293d74b573f8199910699b1b092fa18d5725347d50612b5375f89b4eb40",
+      "writer_prompt": "runs/AMD_baseline_1/agents/investment_overview/prompt.txt",
+      "writer_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+        }
+      ]
+    },
+    {
+      "audit_path": "audits/grounding/AMD_before_adjudicated_v2/claims.csv",
+      "ticker": "AMD",
+      "run_id": "AMD_baseline_1",
+      "section": "valuation_overview",
+      "claim_id": "adjudicated.valuation_overview.p2.u5.c0",
+      "source_quote": "Fundamentally, AMD has demonstrated robust revenue growth with a compound annual growth rate exceeding 20%, alongside improving contribution margins and a recovering EPS trajectory after a dip in 2023. ",
+      "original_claim": "AMD actual revenue CAGR exceeds20%.",
+      "original_classification": "Supported",
+      "original_numeric_status": "correct",
+      "scope_type": "unqualified_demonstrated_rate",
+      "proposed_classification": "Supported",
+      "proposed_numeric_status": "correct",
+      "faithful_claim": "AMD actual revenue CAGR exceeds20%.",
+      "same_table_scope_error_found": false,
+      "proposal_action": "retain_label; preserve source qualifiers and clarify calculation rationale where noted",
+      "reason": "Has demonstrated revenue CAGR exceeding20% is historical wording with no explicit conflicting period; the displayed actual-endpoint rate20.491252% supports it.",
+      "source_file": "runs/AMD_baseline_1/output/AMD/analysis/valuation_overview.txt",
+      "source_start": 1070,
+      "source_end": 1272,
+      "source_sha256": "512d7b3206ecc17e39bda6c1e81256d93f30f8d603c75ebf371f985f952a331d",
+      "writer_prompt": "runs/AMD_baseline_1/agents/valuation_overview/prompt.txt",
+      "writer_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+        }
+      ]
+    },
+    {
+      "audit_path": "audits/grounding/AMD_before_adjudicated_v2/claims.csv",
+      "ticker": "AMD",
+      "run_id": "AMD_baseline_1",
+      "section": "competitor_analysis",
+      "claim_id": "adjudicated.competitor_analysis.p6.u19.c0",
+      "source_quote": "The company's revenue growth, projected at a compound annual growth rate (CAGR) of 20.5% from 2021 to 2028, alongside improving contribution margins and EBITDA margins, signals strengthening operational leverage and competitive positioning. ",
+      "original_claim": "AMD projected revenue CAGR is20.5% from2021 to2028.",
+      "original_classification": "Contradicted",
+      "original_numeric_status": "incorrect",
+      "scope_type": "explicit_cagr_period",
+      "proposed_classification": "Contradicted",
+      "proposed_numeric_status": "incorrect",
+      "faithful_claim": "AMD projected revenue CAGR is20.5% from2021 to2028.",
+      "same_table_scope_error_found": false,
+      "proposal_action": "retain_label; preserve source qualifiers and clarify calculation rationale where noted",
+      "reason": "Projected CAGR20.5% from2021 to2028 is an explicit financial interval, not table metadata; source endpoints imply13.588874%.",
+      "source_file": "runs/AMD_baseline_1/output/AMD/analysis/competitor_analysis.txt",
+      "source_start": 3098,
+      "source_end": 3339,
+      "source_sha256": "447773b61dac2e687c4ab05f436b91131f33f4f2b29dd647b2df148fdf0822cc",
+      "writer_prompt": "runs/AMD_baseline_1/agents/competitor_analysis/prompt.txt",
+      "writer_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+        }
+      ]
+    },
+    {
+      "audit_path": "audits/grounding/AMD_before_adjudicated_v2/claims.csv",
+      "ticker": "AMD",
+      "run_id": "AMD_baseline_1",
+      "section": "major_takeaways",
+      "claim_id": "adjudicated.major_takeaways.p0.u0.c0",
+      "source_quote": "Revenue Growth: AMD's revenue trajectory, highlighted by a 20.5% CAGR from 2021 to 2028, is fueled primarily by strong demand in high-performance computing and graphics segments, reflecting the company's successful product innovation and market expansion strategies. ",
+      "original_claim": "AMD revenue CAGR from2021 to2028 is20.5%.",
+      "original_classification": "Contradicted",
+      "original_numeric_status": "incorrect",
+      "scope_type": "explicit_cagr_period",
+      "proposed_classification": "Contradicted",
+      "proposed_numeric_status": "incorrect",
+      "faithful_claim": "AMD revenue CAGR from2021 to2028 is20.5%.",
+      "same_table_scope_error_found": false,
+      "proposal_action": "retain_label; preserve source qualifiers and clarify calculation rationale where noted",
+      "reason": "20.5% CAGR from2021 to2028 directly binds the rate and interval;13.588874% is the correct endpoint result.",
+      "source_file": "runs/AMD_baseline_1/output/AMD/analysis/major_takeaways.txt",
+      "source_start": 0,
+      "source_end": 267,
+      "source_sha256": "d4ccc99b97cddf534c9ac629d20ca41d08102447e989324bbb981e34c92e8399",
+      "writer_prompt": "runs/AMD_baseline_1/agents/major_takeaways/prompt.txt",
+      "writer_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+        }
+      ]
+    },
+    {
+      "audit_path": "audits/grounding/AMD_before_adjudicated_v2/claims.csv",
+      "ticker": "AMD",
+      "run_id": "AMD_baseline_1",
+      "section": "news_summary",
+      "claim_id": "adjudicated.news_summary.p2.u6.c0",
+      "source_quote": "The financial metrics reveal a projected compound annual growth rate (CAGR) in revenue of 20.5% between 2021 and 2028, with EBITDA margins improving significantly in the forecast period, reaching over 40% by 2028. ",
+      "original_claim": "AMD projected revenue CAGR between2021 and2028 is20.5%.",
+      "original_classification": "Contradicted",
+      "original_numeric_status": "incorrect",
+      "scope_type": "explicit_cagr_period",
+      "proposed_classification": "Contradicted",
+      "proposed_numeric_status": "incorrect",
+      "faithful_claim": "AMD projected revenue CAGR between2021 and2028 is20.5%.",
+      "same_table_scope_error_found": false,
+      "proposal_action": "retain_label; preserve source qualifiers and clarify calculation rationale where noted",
+      "reason": "Projected CAGR20.5% between2021 and2028 explicitly states interval;13.588874% conflicts.",
+      "source_file": "runs/AMD_baseline_1/output/AMD/analysis/news_summary.txt",
+      "source_start": 844,
+      "source_end": 1058,
+      "source_sha256": "370efcafa9f8a1d242c358cb1e2bde0c4668ce35e278170d5dccbcc923ab5b5f",
+      "writer_prompt": "runs/AMD_baseline_1/agents/news_summary/prompt.txt",
+      "writer_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+        }
+      ]
+    },
+    {
+      "audit_path": "audits/grounding/INTC_before_adjudicated/claims.csv",
+      "ticker": "INTC",
+      "run_id": "INTC_baseline_1",
+      "section": "investment_overview",
+      "claim_id": "adjudicated.investment_overview.p1.u5.c1",
+      "source_quote": "- Despite revenue growth, Intel's long-term revenue CAGR remains negative at -9.6%, and its historical EPS trajectory has been weak with substantial losses projected through 2028.",
+      "original_claim": "Intel historical revenue CAGR is -9.6%.",
+      "original_classification": "Supported",
+      "original_numeric_status": "correct",
+      "scope_type": "unqualified_rate",
+      "proposed_classification": "Supported",
+      "proposed_numeric_status": "correct",
+      "faithful_claim": "Intel historical revenue CAGR is -9.6%.",
+      "same_table_scope_error_found": false,
+      "proposal_action": "retain_label; preserve source qualifiers and clarify calculation rationale where noted",
+      "reason": "Long-term revenue CAGR-9.6% has no end year. The later through2028 phrase modifies projected EPS losses, not CAGR. Existing audit correctly keeps these separate; actual CAGR-9.566850% supports the displayed rate.",
+      "source_file": "runs/INTC_baseline_1/output/INTC/analysis/investment_overview.txt",
+      "source_start": 493,
+      "source_end": 672,
+      "source_sha256": "9949750e3de7b0b6cc6c1883ae4655f8e76f7d819112769a94b08b1a40a000e6",
+      "writer_prompt": "runs/INTC_baseline_1/agents/investment_overview/prompt.txt",
+      "writer_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 79024000000.0      | 63054000000.0      | 54228000000.0 | 53101000000.0      | 52853000000.0      | 55495650000.0 | 58825389000.0 | 61178404560.0  | -9.6%  |"
+        }
+      ]
+    },
+    {
+      "audit_path": "audits/grounding/INTC_before_adjudicated/claims.csv",
+      "ticker": "INTC",
+      "run_id": "INTC_baseline_1",
+      "section": "investment_overview",
+      "claim_id": "adjudicated.investment_overview.p3.u19.c0",
+      "source_quote": "The long-term negative revenue CAGR and previously depressed EBITDA margins suggest structural challenges remain. ",
+      "original_claim": "Intel historical revenue CAGR is negative.",
+      "original_classification": "Supported",
+      "original_numeric_status": "not_numeric",
+      "scope_type": "unqualified_direction",
+      "proposed_classification": "Supported",
+      "proposed_numeric_status": "not_numeric",
+      "faithful_claim": "Intel historical revenue CAGR is negative.",
+      "same_table_scope_error_found": false,
+      "proposal_action": "retain_label; preserve source qualifiers and clarify calculation rationale where noted",
+      "reason": "Negative long-term CAGR has no table-span modifier; the supplied cell and actual endpoint calculation are negative. Do not import the EPS forecast horizon from another sentence.",
+      "source_file": "runs/INTC_baseline_1/output/INTC/analysis/investment_overview.txt",
+      "source_start": 2461,
+      "source_end": 2575,
+      "source_sha256": "9949750e3de7b0b6cc6c1883ae4655f8e76f7d819112769a94b08b1a40a000e6",
+      "writer_prompt": "runs/INTC_baseline_1/agents/investment_overview/prompt.txt",
+      "writer_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 79024000000.0      | 63054000000.0      | 54228000000.0 | 53101000000.0      | 52853000000.0      | 55495650000.0 | 58825389000.0 | 61178404560.0  | -9.6%  |"
+        }
+      ]
+    },
+    {
+      "audit_path": "audits/grounding/INTC_before_adjudicated/claims.csv",
+      "ticker": "INTC",
+      "run_id": "INTC_baseline_1",
+      "section": "valuation_overview",
+      "claim_id": "adjudicated.valuation_overview.p0.u3.c3",
+      "source_quote": "Intel's revenue has contracted substantially from $79 billion in 2021 to an estimated $53 billion in 2025, representing a nearly 10% compound annual decline. ",
+      "original_claim": "Intel2021–2025 revenue compounded down nearly10% annually.",
+      "original_classification": "Supported",
+      "original_numeric_status": "correct",
+      "scope_type": "explicit_deictic_period",
+      "proposed_classification": "Supported",
+      "proposed_numeric_status": "correct",
+      "faithful_claim": "Intel2021–2025 revenue compounded down nearly10% annually.",
+      "same_table_scope_error_found": false,
+      "proposal_action": "retain_label; preserve source qualifiers and clarify calculation rationale where noted",
+      "reason": "The sentence states revenue from2021 to2025 then nearly10% compound annual decline. Actual endpoint-9.566850% supports nearly10%; the estimated2025 qualifier is a separate error already split out.",
+      "source_file": "runs/INTC_baseline_1/output/INTC/analysis/valuation_overview.txt",
+      "source_start": 480,
+      "source_end": 638,
+      "source_sha256": "01d9aec74d023745fee78fd02c30f96c53eb094bb755c31af24d21ceeba760f6",
+      "writer_prompt": "runs/INTC_baseline_1/agents/valuation_overview/prompt.txt",
+      "writer_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 79024000000.0      | 63054000000.0      | 54228000000.0 | 53101000000.0      | 52853000000.0      | 55495650000.0 | 58825389000.0 | 61178404560.0  | -9.6%  |"
+        }
+      ]
+    },
+    {
+      "audit_path": "audits/grounding/INTC_before_adjudicated/claims.csv",
+      "ticker": "INTC",
+      "run_id": "INTC_baseline_1",
+      "section": "risks",
+      "claim_id": "adjudicated.risks.p1.u2.c1",
+      "source_quote": "From a market perspective, Intel is grappling with declining revenues evidenced by a compound annual growth rate of -9.6% from 2021 to 2028, reflecting decreasing customer demand and possible macroeconomic headwinds. ",
+      "original_claim": "Intel revenue CAGR from2021 to2028 is-9.6%.",
+      "original_classification": "Contradicted",
+      "original_numeric_status": "incorrect",
+      "scope_type": "explicit_cagr_period",
+      "proposed_classification": "Contradicted",
+      "proposed_numeric_status": "incorrect",
+      "faithful_claim": "Intel revenue CAGR from2021 to2028 is-9.6%.",
+      "same_table_scope_error_found": false,
+      "proposal_action": "retain_label; preserve source qualifiers and clarify calculation rationale where noted",
+      "reason": "CAGR-9.6% from2021 to2028 is explicit, so compare the seven-interval-3.590490%, not the four-year historical cell.",
+      "source_file": "runs/INTC_baseline_1/output/INTC/analysis/risks.txt",
+      "source_start": 260,
+      "source_end": 477,
+      "source_sha256": "d38fe71d3e35801e94884b67a6fe63af55a4becdcc95006748e3e367c28b822a",
+      "writer_prompt": "runs/INTC_baseline_1/agents/risks/prompt.txt",
+      "writer_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 79024000000.0      | 63054000000.0      | 54228000000.0 | 53101000000.0      | 52853000000.0      | 55495650000.0 | 58825389000.0 | 61178404560.0  | -9.6%  |"
+        }
+      ]
+    },
+    {
+      "audit_path": "audits/grounding/INTC_before_adjudicated/claims.csv",
+      "ticker": "INTC",
+      "run_id": "INTC_baseline_1",
+      "section": "major_takeaways",
+      "claim_id": "adjudicated.major_takeaways.p0.u0.c2",
+      "source_quote": "Revenue Growth: Intel's revenue has experienced a significant decline from $79.0 billion in 2021 to $53.1 billion in 2024, reflecting a compounded annual decline of -9.6%. ",
+      "original_claim": "Intel2021–2024 revenue CAGR was-9.6%.",
+      "original_classification": "Contradicted",
+      "original_numeric_status": "incorrect",
+      "scope_type": "explicit_deictic_period",
+      "proposed_classification": "Contradicted",
+      "proposed_numeric_status": "incorrect",
+      "faithful_claim": "Intel2021–2024 revenue CAGR was-9.6%.",
+      "same_table_scope_error_found": false,
+      "proposal_action": "retain_label; preserve source qualifiers and clarify calculation rationale where noted",
+      "reason": "Revenue from2021 to2024 immediately followed by compounded annual decline explicitly links interval and rate. Three-year CAGR-12.411337%, not-9.6%; this is not table-scope overatomization.",
+      "source_file": "runs/INTC_baseline_1/output/INTC/analysis/major_takeaways.txt",
+      "source_start": 0,
+      "source_end": 172,
+      "source_sha256": "7fdf9fd319bb87a7f9259c3f43e085f76d48a2345bb730897616259cc5743819",
+      "writer_prompt": "runs/INTC_baseline_1/agents/major_takeaways/prompt.txt",
+      "writer_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef",
+      "prompt_evidence": [
+        {
+          "line_start": 4,
+          "line_end": 4,
+          "quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |"
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quote": "|  0 | Revenue             | 79024000000.0      | 63054000000.0      | 54228000000.0 | 53101000000.0      | 52853000000.0      | 55495650000.0 | 58825389000.0 | 61178404560.0  | -9.6%  |"
+        }
+      ]
+    }
+  ],
+  "before_label_change_ids": [],
+  "limits": [
+    "This review concerns CAGR scope fidelity, not all other atoms or factual errors.",
+    "Conservative ambiguity classification does not imply the literal table cell is false and must not create an additional assertion absent from the source.",
+    "Some baseline atoms add historical/recent wording to unqualified rate assertions; supporting actual endpoint calculations are given as evidence, not claimed verbatim source wording.",
+    "AMD baseline investment_overview uses sustained; its current narrow CAGR atom does not prove every rolling-window CAGR exceeds20%. No new rolling-period claim or label change is manufactured in this focused table-scope review.",
+    "NVDA baseline competitor_analysis names a forecast end but not a start. The audit rationale should show all admissible visible start/end tests or future-period incompatibility, rather than asserting the writer explicitly chose2022."
+  ]
+}

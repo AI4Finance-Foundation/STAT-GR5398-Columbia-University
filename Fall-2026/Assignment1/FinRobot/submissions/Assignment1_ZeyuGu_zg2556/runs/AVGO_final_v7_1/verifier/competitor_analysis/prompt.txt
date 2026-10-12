@@ -1,0 +1,99 @@
+ORIGINAL EVIDENCE PROMPT (line numbers added only for locating evidence):
+1: Financial data for Broadcom Inc. (AVGO):
+2: 
+3: ## Broadcom Inc. Financial Metrics and Forecasts
+4: |    | metrics             | 2023A         | 2024A         | 2025A         | 2026E         | 2027E         | 2028E          | CAGR   |
+5: |---:|:--------------------|:--------------|:--------------|:--------------|:--------------|:--------------|:---------------|:-------|
+6: |  0 | Revenue             | 35819000000.0 | 51574000000.0 | 63887000000.0 | 67081350000.0 | 71106231000.0 | 73950480240.0  | 33.6%  |
+7: |  1 | Cost of Operations  | 11129000000.0 | 19065000000.0 | 20593000000.0 | 20929381200.0 | 21474081762.0 | 21593540230.08 | nan    |
+8: |  2 | SG&A                | 1592000000.0  | 4959000000.0  | 4211000000.0  | 4091962350.0  | 3981948936.0  | 3771474492.24  | nan    |
+9: |  3 | Contribution Profit | 24690000000.0 | 32509000000.0 | 43294000000.0 | 46151968800.0 | 49632149238.0 | 52356940009.92 | nan    |
+10: |  4 | Contribution Margin | 68.9%         | 63.0%         | 67.8%         | 68.8%         | 69.8%         | 70.8%          | nan    |
+11: |  5 | EBITDA              | 20042000000.0 | 23473000000.0 | 34259000000.0 | 42060006450.0 | 45650200302.0 | 48585465517.68 | nan    |
+12: |  6 | EBITDA Margin       | 56.0%         | 45.5%         | 53.6%         | 62.7%         | 64.2%         | 65.7%          | nan    |
+13: |  7 | SG&A Margin         | 4.4%          | 9.6%          | 6.6%          | 6.1%          | 5.6%          | 5.1%           | nan    |
+14: |  8 | Revenue Growth      | nan           | 44.0%         | 23.9%         | 5.0%          | 6.0%          | 4.0%           | nan    |
+15: |  9 | EPS                 | 3.39          | 1.27          | 4.91          | 5.21          | 5.57          | 5.86           | nan    |
+16: | 10 | PE Ratio            | nan           | nan           | nan           | nan           | nan           | nan            | nan    |
+17: 
+18: ## Peer EBITDA Comparison
+19: |   year |          NVDA |           AMD |          AVGO |
+20: |-------:|--------------:|--------------:|--------------:|
+21: |   2021 | nan           |   4.166e+09   | nan           |
+22: |   2022 |   1.1351e+10  |   5.534e+09   | nan           |
+23: |   2023 |   5.986e+09   |   4.149e+09   |   2.0042e+10  |
+24: |   2024 |   3.5583e+10  |   5.258e+09   |   2.3473e+10  |
+25: |   2025 |   8.6137e+10  |   7.275e+09   |   3.4259e+10  |
+26: |   2026 |   1.44552e+11 | nan           | nan           |
+27: |   2027 |   3.82001e+11 |   8.60087e+09 |   4.50625e+10 |
+28: 
+29: ## Peer EV/EBITDA Comparison
+30: |   year |     NVDA |      AMD |   AVGO |
+31: |-------:|---------:|---------:|-------:|
+32: |   2021 | nan      |  42.1013 |    nan |
+33: |   2022 |  54.7187 |  17.9136 |    nan |
+34: |   2023 |  81.0476 |  57.1197 |    nan |
+35: |   2024 |  43.4522 |  38.2717 |    nan |
+36: |   2025 |  33.7774 |  47.8456 |    nan |
+37: |   2026 |  31.4283 | nan      |    nan |
+38: 
+39: ## Recent News for Broadcom Inc. (AVGO)
+40: 
+41: ### Article 1
+42: **Title:** Broadcom Inc. Form 10-Q financial disclosure for period ended 2026-08-02
+43: **Date:** 2026-09-09T21:56:42+00:00
+44: **Summary:** Fiscal Quarter Ended
+45: Three Fiscal Quarters Ended
+46: August 2,
+47: 2026
+48: August 3,
+49: 2025
+50: August 2,
+51: 2026
+52: August 3,
+53: 2025
+54: (In millions, except per share data)
+55: Net revenue:
+56: Products
+57: $
+58: 24,279
+59: $
+60: 11,173
+61: $
+62: 55,301
+63: $
+64: 31,625
+65: Subscriptions and services
+66: 5,312
+67: 4,779
+68: 15,788
+69: 14,247
+70: Total net revenue
+71: 29,591
+72: 15,952
+73: 71,089
+74: 45,872
+75: Cost of revenue:
+76: Cost of products sold
+77: 6,983
+78: 3,098
+79: 15,689
+80: 8,515
+81: Cost of subscriptions and services
+82: 641
+83: 606
+84: 1,915
+85: 1,758
+86: Amortization of acquisition-related intangible assets
+87: 1,499
+88: 1,519
+89: 4,422
+90: 4,486
+91: 
+92: 
+93: 
+94: ## Explicit input provenance and limitations (not news)
+95: Subject annual data: public SEC 10-K FY2023-2025 comparative statements, as filed in FY2025 10-K; not a historical backtest. Price: Yahoo Finance Oct 9, 2026 raw daily close (USD); shares: latest SEC cover-page count dated 2026-08-28. Historical subject PE and EV/EBITDA, analyst grade/target, float, and forward PE are unavailable. Engine EV/EBITDA uses explicit DEFAULT 12x +/-3x, not observed multiples. Engine net debt=10% of modeled EV; FCF=GAAP OCF-capex, not established unlevered FCF; WACC=10%, growth=10% then5%, terminal=2.5%. Historic subject EBITDA=GAAP operating income+cash-flow D&A (AVGO includes ROU amortization); peer EBITDA is FMP-defined and not identical. Forecast EBITDA=gross profit-SG&A excludes R&D. Peer projection uses upstream one-step growth at global last-year+1; periods differ. News consists of one literal SEC 10-Q table, not comprehensive press coverage. Catalyst dates/probabilities and native sensitivity bands are upstream heuristics, not observations.
+
+DRAFT SOURCE UNITS (cover every unit and every atomic claim):
+[{"source_id": 0, "start": 0, "end": 23, "text": "I. Primary Competitors:"}, {"source_id": 1, "start": 24, "end": 288, "text": "Broadcom Inc. (AVGO) operates in the semiconductor and infrastructure software solutions industry, competing primarily with NVIDIA Corporation, Advanced Micro Devices (AMD), and certain emerging players in the semiconductor fabless and integrated circuits market. "}, {"source_id": 2, "start": 290, "end": 866, "text": "NVIDIA Corporation is one of Broadcom's key rivals, especially in graphics processing units (GPUs), data center accelerators, and AI-related chips. NVIDIA’s strategic advantage lies in its strong brand recognition, leadership in GPU technology, and a robust ecosystem around AI, gaming, and professional visualization markets. Its large and growing data center business generates significant EBITDA, as seen in its rapid growth from $5.986 billion in 2023 to an estimated $382 billion in 2027, indicating a deepening moat in high-performance computing and AI hardware markets."}, {"source_id": 3, "start": 868, "end": 1331, "text": "AMD is another primary competitor known for its CPUs and GPUs, targeting both consumer and enterprise segments. AMD’s strategic strengths include its competitive performance-per-dollar value, strong design capabilities, and growing presence in data centers. While smaller than NVIDIA in EBITDA terms, AMD’s consistent innovation and competitive pricing give it leverage against Broadcom’s product lines in certain markets, particularly in processors and graphics."}, {"source_id": 4, "start": 1333, "end": 1668, "text": "Emerging threats include companies focusing on specialized chips, such as AI accelerators and custom silicon for cloud providers, along with new entrants in the semiconductor IP and fabless design sphere. These players, while not yet matching Broadcom’s scale, could disrupt specific niches where Broadcom currently holds market share."}, {"source_id": 5, "start": 1670, "end": 1690, "text": "II. Moat Assessment:"}, {"source_id": 6, "start": 1691, "end": 2280, "text": "Broadcom’s competitive moat is primarily built on a combination of intangible assets, cost advantages, and high switching costs. The company’s extensive patent portfolio and proprietary technology in semiconductor design and infrastructure software create substantial barriers to entry for competitors. Its scale allows for cost efficiencies in manufacturing and R&D, supporting strong contribution margins around 68-70% and EBITDA margins improving towards 65% by 2028. These margins reflect a stable and potentially widening moat due to operational leverage and product mix optimization."}, {"source_id": 7, "start": 2282, "end": 2734, "text": "The company's diversified revenue streams—from products to subscriptions and services—also contribute to recurring revenue, enhancing customer stickiness and reducing volatility. This diversification supports switching costs as customers integrate Broadcom’s solutions deeply into their technology stacks. Furthermore, Broadcom’s strategic acquisitions have augmented its intangible asset base and expanded its addressable market, reinforcing its moat."}, {"source_id": 8, "start": 2736, "end": 3214, "text": "Compared to its peers, Broadcom’s EBITDA is substantial and growing, although NVIDIA’s explosive growth in data centers and AI chips represents a formidable challenge. Broadcom’s moat appears stable to slightly widening, underpinned by its broad product portfolio and integrated software-services approach. However, the rapid innovation cycle in semiconductors and the emergence of new specialized chipmakers require continuous investment to maintain this competitive advantage."}, {"source_id": 9, "start": 3216, "end": 3543, "text": "In summary, Broadcom holds a strong competitive position with a durable moat based on intangible assets, cost leadership, and switching costs. While competition from NVIDIA and AMD remains intense, Broadcom’s strategic advantages and financial strength provide resilience and potential for continued growth in its core markets."}]

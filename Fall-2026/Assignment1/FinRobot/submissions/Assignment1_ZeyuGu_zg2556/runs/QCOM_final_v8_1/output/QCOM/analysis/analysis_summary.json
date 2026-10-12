@@ -1,0 +1,47 @@
+{
+  "company_ticker": "QCOM",
+  "company_name": "QUALCOMM Incorporated",
+  "data_source": "Public SEC annual financials + Yahoo price; FMP peer snapshot; no WRDS",
+  "analysis_date": "2026-10-11T21:10:00+00:00",
+  "years_analyzed": 3,
+  "available_years": [
+    "2023A",
+    "2024A",
+    "2025A"
+  ],
+  "forecast_years": [
+    "2026E",
+    "2027E",
+    "2028E"
+  ],
+  "forecast_config": {
+    "revenue_base_year": "2025A",
+    "revenue_growth_assumptions": {
+      "2026E": 0.05,
+      "2027E": 0.06,
+      "2028E": 0.04
+    },
+    "ebitda_growth_factor": 1.05,
+    "margin_improvement": {
+      "Contribution Margin": 0.01,
+      "EBITDA Margin": 0.01
+    },
+    "sga_margin_change": -0.005,
+    "forecast_label_mapping": {
+      "2025E": "2026E",
+      "2026E": "2027E",
+      "2027E": "2028E"
+    },
+    "forecast_origin": "2025A",
+    "forecast_basis": "annual periods after latest observed actual; not calendar-year projections"
+  },
+  "peer_tickers": [
+    "AMD",
+    "INTC"
+  ],
+  "enhanced_news_enabled": true,
+  "sensitivity_analysis_enabled": true,
+  "catalyst_analysis_enabled": true,
+  "news_days_back": 90,
+  "source_compatibility_departure": "Subject annual data: public SEC 10-K FY2023-2025 comparative statements, as filed in FY2025 10-K; not a historical backtest. Price: Yahoo Finance Oct 9, 2026 raw daily close (USD); shares: latest SEC cover-page count dated 2026-07-27. Historical subject PE and EV/EBITDA, analyst grade/target, float, and forward PE are unavailable. Engine EV/EBITDA uses explicit DEFAULT 12x +/-3x, not observed multiples. Engine net debt=10% of modeled EV; FCF=GAAP OCF-capex, not established unlevered FCF; WACC=10%, growth=10% then5%, terminal=2.5%. Historic subject EBITDA=GAAP operating income+cash-flow D&A (AVGO includes ROU amortization); peer EBITDA is FMP-defined and not identical. Forecast EBITDA=gross profit-SG&A excludes R&D. Peer projection uses upstream one-step growth at global last-year+1; periods differ. News consists of one literal SEC 10-Q table, not comprehensive press coverage. Catalyst dates/probabilities and native sensitivity bands are upstream heuristics, not observations."
+}

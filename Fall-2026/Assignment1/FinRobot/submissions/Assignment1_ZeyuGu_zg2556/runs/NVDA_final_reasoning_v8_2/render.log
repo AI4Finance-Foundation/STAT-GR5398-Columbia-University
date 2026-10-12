@@ -1,0 +1,33 @@
+HTML reports will be saved to: C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\runs\NVDA_final_reasoning_v8_2\output\NVDA\report
+Loaded frozen market snapshot
+
+📊 Market Data Summary for NVDA:
+  Share Price: $229.28 (auto-fetched)
+  Target Price: $339.17 (auto-fetched)
+  Rating: Overweight (auto-fetched)
+  Market Cap: $5,553.39B (auto-fetched)
+  Sector: Technology (auto-fetched)
+📖 Loading and processing text content...
+Handling charts...
+✅ Revenue/EBITDA chart saved to C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\runs\NVDA_final_reasoning_v8_2\output\NVDA\report\NVDA_revenue_ebitda_chart.png
+✅ EPS × PE chart saved to C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\runs\NVDA_final_reasoning_v8_2\output\NVDA\report\NVDA_eps_pe_chart.png
+✅ EV/EBITDA peer chart saved to C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\runs\NVDA_final_reasoning_v8_2\output\NVDA\report\NVDA_peer_ev_ebitda_chart.png
+Loading sensitivity analysis from C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\runs\NVDA_final_reasoning_v8_2\output\NVDA\analysis\sensitivity_analysis.json...
+✅ Sensitivity analysis loaded
+Loading catalyst analysis from C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\runs\NVDA_final_reasoning_v8_2\output\NVDA\analysis\catalyst_analysis.json...
+✅ Catalyst analysis loaded (sentiments re-validated)
+Loading enhanced news from C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\runs\NVDA_final_reasoning_v8_2\output\NVDA\analysis\enhanced_news.json...
+✅ Enhanced news loaded
+Formatting tables for HTML...
+Loading Credit & Cashflow metrics from CSV...
+Warning: The ratios CSV file is missing required columns (e.g., 'calendarYear' or ratio columns).
+❌ Failed to load Credit & Cashflow metrics from CSV
+Processing peer EBITDA data with shape: (7, 4)
+Peer EBITDA columns: ['year', 'AMD', 'INTC', 'NVDA']
+Peer EBITDA index: [2021, 2022, 2023, 2024, 2025, 2026, 2027]
+✅ Successfully formatted peer EBITDA table
+Processing peer EV/EBITDA data with shape: (6, 3)
+Peer EV/EBITDA columns: ['AMD', 'INTC', 'NVDA']
+Peer EV/EBITDA index: [2021, 2022, 2023, 2024, 2025, 2026]
+✅ Successfully formatted peer EV/EBITDA table
+Generated exact-text audited HTML report: C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\runs\NVDA_final_reasoning_v8_2\output\NVDA\report\Audited_Equity_Report_NVDA.html

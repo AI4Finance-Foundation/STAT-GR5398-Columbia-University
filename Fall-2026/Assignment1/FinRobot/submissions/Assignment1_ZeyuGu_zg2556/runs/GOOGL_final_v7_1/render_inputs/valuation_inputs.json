@@ -1,0 +1,63 @@
+{
+  "ticker": "GOOGL",
+  "run_id": "GOOGL-20261011T211000Z-snapshot",
+  "current_price": 351.66,
+  "shares_outstanding": 12102111286,
+  "currency": "USD",
+  "peer_data": {
+    "AAPL": {
+      "ev_ebitda": 26.969935053694947,
+      "period_end_year": "2025"
+    },
+    "NVDA": {
+      "ev_ebitda": 31.428342257457523,
+      "period_end_year": "2026"
+    }
+  },
+  "source_metadata": {
+    "shares_outstanding": {
+      "sources": [
+        {
+          "source_url": "https://financialmodelingprep.com/stable/shares-float?symbol=GOOGL",
+          "fetched_at_utc": "2026-10-11T21:21:12.043761+00:00",
+          "status_code": 200,
+          "content_type": "application/json; charset=utf-8",
+          "body_sha256": "6ebd0d11e6d46e1b39c1957c00576e43ef700841e8e43ee81137f4a3b7afa752",
+          "secret_echo_redacted": false,
+          "runtime_seconds": 0.07878789999995206,
+          "response_key": "196884e0b0abc72159f867e70ba8bcff589509e329ee0812fccb08715432146a"
+        }
+      ],
+      "json_location": "[0].outstandingShares",
+      "unit": "shares"
+    },
+    "current_price": {
+      "sources": [
+        {
+          "source_url": "https://financialmodelingprep.com/stable/quote-short?symbol=GOOGL",
+          "fetched_at_utc": "2026-10-11T21:21:11.245597+00:00",
+          "status_code": 200,
+          "content_type": "application/json; charset=utf-8",
+          "body_sha256": "a3923c2bd6439ced0bb65e81ab23ed13f1f0c3c7ea439a4196832a66e15c8a72",
+          "secret_echo_redacted": false,
+          "runtime_seconds": 0.07919659999970463,
+          "response_key": "f5e1e4013413c2dd7fe28a2d920087cdc62b6bb344a16cc299954f104b6c6df0"
+        }
+      ],
+      "unit": "USD/share",
+      "as_of_utc": "2026-10-11T21:10:00+00:00"
+    },
+    "peer_data": {
+      "path": "analysis/peer_ev_ebitda_comparison.csv",
+      "selection": "latest nonmissing annual period per peer; may differ across companies"
+    },
+    "free_cash_flow": {
+      "path": "analysis/cash_flow_raw_data.csv",
+      "row_selector": "latest date",
+      "field": "freeCashFlow",
+      "unit": "USD"
+    }
+  },
+  "free_cash_flow": 73266000000.0,
+  "free_cash_flow_period": "2025-12-31 00:00:00"
+}

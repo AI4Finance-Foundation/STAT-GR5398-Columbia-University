@@ -1,0 +1,1013 @@
+{
+  "original_text": "Recent news for Alphabet Inc. highlights a robust financial performance with the company reporting strong revenue growth in the second quarter of 2026, continuing its trend of double-digit growth. This performance underscores Alphabet's solid position in the technology sector, driven by its core Google Services and expanding business segments.\n\nThe key developments for investors to note include Alphabet's second quarter 2026 financial results, which showed a 24% increase in consolidated revenues to $119.8 billion, marking the 12th consecutive quarter of double-digit revenue growth. This sustained growth is a positive indicator of the company’s operational strength and market demand for its products. Additionally, Google Services revenues rose 15% to $94.5 billion, with a notable 17% growth in Google Search, reinforcing the core advertising business. These results suggest continued momentum in Alphabet’s advertising revenues, a critical driver of its earnings.\n\nFrom a valuation perspective, Alphabet's EBITDA margin has been improving, reaching 48.7% in 2026 with projected growth into the high 50s by 2028, signaling increasing operational efficiency. The company’s EPS is forecast to grow steadily, reaching an estimated $11.57 in 2026 and $13.01 by 2028, reflecting strong earnings growth potential. Compared to peers like Apple and Nvidia, Alphabet's EBITDA is competitive, and its EV/EBITDA multiples suggest it remains attractively valued relative to high-growth peers such as Nvidia.\n\nThe overall market sentiment around Alphabet appears positive, supported by consistent revenue growth, margin expansion, and solid earnings projections. This positive outlook may contribute to near-term stock price appreciation, particularly as the company continues to capitalize on its dominant position in digital advertising and cloud services. Investors should monitor upcoming earnings releases and any strategic initiatives that could further enhance Alphabet's growth trajectory or operational leverage.",
+  "revised_text": "[UNVERIFIED - deterministic evidence/number check failed] Recent news for Alphabet Inc. highlights a robust financial performance with the company reporting strong revenue growth in the second quarter of 2026, continuing its trend of double-digit growth.\n\n[UNVERIFIED - evidence not supplied] Alphabet's performance underscores its solid position in the technology sector, driven by its core Google Services and expanding business segments.\n\n[UNVERIFIED - deterministic evidence/number check failed] The key developments for investors to note include Alphabet's second quarter 2026 financial results, which showed a 24% increase in consolidated revenues to $119.8 billion, marking the 12th consecutive quarter of double-digit revenue growth.\n\n[UNVERIFIED - evidence not supplied] This sustained growth is a positive indicator of Alphabet's operational strength and market demand for its products.\n\n[UNVERIFIED - deterministic evidence/number check failed] Additionally, Google Services revenues rose 15% to $94.5 billion, with a notable 17% growth in Google Search, reinforcing the core advertising business.\n\n[UNVERIFIED - evidence not supplied] These results suggest continued momentum in Alphabet’s advertising revenues, a critical driver of its earnings.\n\n[UNVERIFIED - deterministic evidence/number check failed] From a valuation perspective, Alphabet's EBITDA margin has been improving, reaching 48.7% in 2026 with projected growth into the high 50s by 2028, signaling increasing operational efficiency.\n\n[UNVERIFIED - deterministic evidence/number check failed] The company’s EPS is forecast to grow steadily, reaching an estimated $11.57 in 2026 and $13.01 by 2028, reflecting strong earnings growth potential.\n\n[UNVERIFIED - evidence not supplied] Alphabet's EBITDA is competitive compared to peers like Apple and Nvidia, and its EV/EBITDA multiples suggest it remains attractively valued relative to high-growth peers such as Nvidia.\n\n[UNVERIFIED - evidence not supplied] The overall market sentiment around Alphabet appears positive, supported by consistent revenue growth, margin expansion, and solid earnings projections.\n\n[UNVERIFIED - evidence not supplied] This positive outlook may contribute to near-term stock price appreciation, particularly as Alphabet continues to capitalize on its dominant position in digital advertising and cloud services.\n\n[UNVERIFIED - evidence not supplied] Investors should monitor upcoming earnings releases and any strategic initiatives that could further enhance Alphabet's growth trajectory or operational leverage.",
+  "claims": [
+    {
+      "claim_id": "u0c0",
+      "source_id": 0,
+      "source_start": 0,
+      "source_end": 196,
+      "source_quote_occurrences": 1,
+      "original_quote": "Recent news for Alphabet Inc. highlights a robust financial performance with the company reporting strong revenue growth in the second quarter of 2026, continuing its trend of double-digit growth.",
+      "claim": "Alphabet Inc. reported strong revenue growth in the second quarter of 2026, continuing its trend of double-digit growth.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 47,
+          "quote": "• Consolidated Alphabet revenues increased  24%, or 23% in constant currency, to $119.8 billion, reflecting ",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 48,
+          "quote": "strong performance across the business and our 12th consecutive quarter of double-digit revenue growth. ",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The evidence states that consolidated Alphabet revenues increased 24% in Q2 2026 and that this was the 12th consecutive quarter of double-digit revenue growth.",
+      "action": "keep",
+      "revised_claim": "Alphabet Inc. reported strong revenue growth in the second quarter of 2026, continuing its trend of double-digit growth.",
+      "number_bindings": [
+        {
+          "claim_number": "2026",
+          "evidence_line": 47,
+          "evidence_number": "2026",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "24",
+          "evidence_line": 47,
+          "evidence_number": "24",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2026,",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2026,:missing_binding"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Recent news for Alphabet Inc. highlights a robust financial performance with the company reporting strong revenue growth in the second quarter of 2026, continuing its trend of double-digit growth.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u0c1",
+      "source_id": 0,
+      "source_start": 197,
+      "source_end": 345,
+      "source_quote_occurrences": 1,
+      "original_quote": "This performance underscores Alphabet's solid position in the technology sector, driven by its core Google Services and expanding business segments.",
+      "claim": "Alphabet's performance underscores its solid position in the technology sector, driven by its core Google Services and expanding business segments.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for Alphabet's overall position in the technology sector or the role of expanding business segments.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Alphabet's performance underscores its solid position in the technology sector, driven by its core Google Services and expanding business segments.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u1c0",
+      "source_id": 1,
+      "source_start": 347,
+      "source_end": 588,
+      "source_quote_occurrences": 1,
+      "original_quote": "The key developments for investors to note include Alphabet's second quarter 2026 financial results, which showed a 24% increase in consolidated revenues to $119.8 billion, marking the 12th consecutive quarter of double-digit revenue growth.",
+      "claim": "Alphabet's second quarter 2026 financial results showed a 24% increase in consolidated revenues to $119.8 billion, marking the 12th consecutive quarter of double-digit revenue growth.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 47,
+          "quote": "• Consolidated Alphabet revenues increased  24%, or 23% in constant currency, to $119.8 billion, reflecting ",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 48,
+          "quote": "strong performance across the business and our 12th consecutive quarter of double-digit revenue growth. ",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The evidence directly states the 24% increase to $119.8 billion and the 12th consecutive quarter of double-digit growth.",
+      "action": "keep",
+      "revised_claim": "Alphabet's second quarter 2026 financial results showed a 24% increase in consolidated revenues to $119.8 billion, marking the 12th consecutive quarter of double-digit revenue growth.",
+      "number_bindings": [
+        {
+          "claim_number": "2026",
+          "evidence_line": 47,
+          "evidence_number": "2026",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "24",
+          "evidence_line": 47,
+          "evidence_number": "24",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "119.8",
+          "evidence_line": 47,
+          "evidence_number": "119.8",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "12",
+          "evidence_line": 48,
+          "evidence_number": "12",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "24%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "119.8",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "12",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2026:number_not_in_cited_evidence_line",
+        "numeric_check_failed:24%:missing_binding"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] The key developments for investors to note include Alphabet's second quarter 2026 financial results, which showed a 24% increase in consolidated revenues to $119.8 billion, marking the 12th consecutive quarter of double-digit revenue growth.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u1c1",
+      "source_id": 1,
+      "source_start": 589,
+      "source_end": 708,
+      "source_quote_occurrences": 1,
+      "original_quote": "This sustained growth is a positive indicator of the company’s operational strength and market demand for its products.",
+      "claim": "This sustained growth is a positive indicator of Alphabet's operational strength and market demand for its products.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for the causal link between growth and operational strength or market demand.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] This sustained growth is a positive indicator of Alphabet's operational strength and market demand for its products.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u1c2",
+      "source_id": 1,
+      "source_start": 709,
+      "source_end": 861,
+      "source_quote_occurrences": 1,
+      "original_quote": "Additionally, Google Services revenues rose 15% to $94.5 billion, with a notable 17% growth in Google Search, reinforcing the core advertising business.",
+      "claim": "Google Services revenues rose 15% to $94.5 billion in the second quarter of 2026, with a 17% growth in Google Search.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 49,
+          "quote": "• Google Services revenues increased 15% to $94.5 billion, led by 17% growth in Google Sea",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The evidence states Google Services revenues increased 15% to $94.5 billion, led by 17% growth in Google Search.",
+      "action": "keep",
+      "revised_claim": "Google Services revenues rose 15% to $94.5 billion in the second quarter of 2026, with a 17% growth in Google Search.",
+      "number_bindings": [
+        {
+          "claim_number": "15",
+          "evidence_line": 49,
+          "evidence_number": "15",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "94.5",
+          "evidence_line": 49,
+          "evidence_number": "94.5",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "17",
+          "evidence_line": 49,
+          "evidence_number": "17",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "15%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "94.5",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2026,",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "17%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:15%:missing_binding",
+        "numeric_check_failed:2026,:missing_binding",
+        "numeric_check_failed:17%:missing_binding"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Additionally, Google Services revenues rose 15% to $94.5 billion, with a notable 17% growth in Google Search, reinforcing the core advertising business.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u1c3",
+      "source_id": 1,
+      "source_start": 862,
+      "source_end": 973,
+      "source_quote_occurrences": 1,
+      "original_quote": "These results suggest continued momentum in Alphabet’s advertising revenues, a critical driver of its earnings.",
+      "claim": "These results suggest continued momentum in Alphabet’s advertising revenues, a critical driver of its earnings.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for the causal relationship or the criticality of advertising revenues to earnings.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] These results suggest continued momentum in Alphabet’s advertising revenues, a critical driver of its earnings.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u2c0",
+      "source_id": 2,
+      "source_start": 975,
+      "source_end": 1166,
+      "source_quote_occurrences": 1,
+      "original_quote": "From a valuation perspective, Alphabet's EBITDA margin has been improving, reaching 48.7% in 2026 with projected growth into the high 50s by 2028, signaling increasing operational efficiency.",
+      "claim": "Alphabet's EBITDA margin reached 48.7% in 2026 and is projected to grow into the high 50s by 2028.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 12,
+          "quote": "|  6 | EBITDA Margin       | 40.2%              | 30.1%             | 31.9%              | 38.7%             | 44.9%              | 48.7%          | 50.2%          | 51.7%           | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The evidence table shows EBITDA margin at 48.7% in 2026 and 51.7% in 2028E, which is in the low 50s, not high 50s. The claim about 'high 50s' is not fully supported, but the 48.7% and 51.7% are directly evidenced.",
+      "action": "correct",
+      "revised_claim": "Alphabet's EBITDA margin reached 48.7% in 2026 and is projected to reach 51.7% in 2028E.",
+      "number_bindings": [
+        {
+          "claim_number": "48.7",
+          "evidence_line": 12,
+          "evidence_number": "48.7",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2026",
+          "evidence_line": 4,
+          "evidence_number": "2026E",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "51.7",
+          "evidence_line": 12,
+          "evidence_number": "51.7",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "48.7%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "51.7%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:48.7%:missing_binding",
+        "numeric_check_failed:2026:number_not_in_cited_evidence_line",
+        "numeric_check_failed:51.7%:missing_binding",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] From a valuation perspective, Alphabet's EBITDA margin has been improving, reaching 48.7% in 2026 with projected growth into the high 50s by 2028, signaling increasing operational efficiency.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u2c1",
+      "source_id": 2,
+      "source_start": 1167,
+      "source_end": 1316,
+      "source_quote_occurrences": 1,
+      "original_quote": "The company’s EPS is forecast to grow steadily, reaching an estimated $11.57 in 2026 and $13.01 by 2028, reflecting strong earnings growth potential.",
+      "claim": "Alphabet's EPS is forecast to reach $11.57 in 2026 and $13.01 by 2028.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 15,
+          "quote": "|  9 | EPS                 | 5.69               | 4.59              | 5.84               | 8.13              | 10.91              | 11.57          | 12.39          | 13.01           | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The evidence table shows EPS of 11.57 in 2026E and 13.01 in 2028E.",
+      "action": "keep",
+      "revised_claim": "Alphabet's EPS is forecast to reach $11.57 in 2026 and $13.01 by 2028.",
+      "number_bindings": [
+        {
+          "claim_number": "11.57",
+          "evidence_line": 15,
+          "evidence_number": "11.57",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2026",
+          "evidence_line": 4,
+          "evidence_number": "2026E",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "13.01",
+          "evidence_line": 15,
+          "evidence_number": "13.01",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "11.57",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "13.01",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2026:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] The company’s EPS is forecast to grow steadily, reaching an estimated $11.57 in 2026 and $13.01 by 2028, reflecting strong earnings growth potential.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u2c2",
+      "source_id": 2,
+      "source_start": 1317,
+      "source_end": 1504,
+      "source_quote_occurrences": 1,
+      "original_quote": "Compared to peers like Apple and Nvidia, Alphabet's EBITDA is competitive, and its EV/EBITDA multiples suggest it remains attractively valued relative to high-growth peers such as Nvidia.",
+      "claim": "Alphabet's EBITDA is competitive compared to peers like Apple and Nvidia, and its EV/EBITDA multiples suggest it remains attractively valued relative to high-growth peers such as Nvidia.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence or comparative analysis is provided for the competitiveness of EBITDA or the attractiveness of EV/EBITDA multiples relative to peers.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Alphabet's EBITDA is competitive compared to peers like Apple and Nvidia, and its EV/EBITDA multiples suggest it remains attractively valued relative to high-growth peers such as Nvidia.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u3c0",
+      "source_id": 3,
+      "source_start": 1506,
+      "source_end": 1658,
+      "source_quote_occurrences": 1,
+      "original_quote": "The overall market sentiment around Alphabet appears positive, supported by consistent revenue growth, margin expansion, and solid earnings projections.",
+      "claim": "The overall market sentiment around Alphabet appears positive, supported by consistent revenue growth, margin expansion, and solid earnings projections.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for market sentiment or the causal relationship to the listed factors.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] The overall market sentiment around Alphabet appears positive, supported by consistent revenue growth, margin expansion, and solid earnings projections.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u3c1",
+      "source_id": 3,
+      "source_start": 1659,
+      "source_end": 1854,
+      "source_quote_occurrences": 1,
+      "original_quote": "This positive outlook may contribute to near-term stock price appreciation, particularly as the company continues to capitalize on its dominant position in digital advertising and cloud services.",
+      "claim": "This positive outlook may contribute to near-term stock price appreciation, particularly as Alphabet continues to capitalize on its dominant position in digital advertising and cloud services.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for the causal relationship between outlook and stock price or for Alphabet's dominance in digital advertising and cloud services.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] This positive outlook may contribute to near-term stock price appreciation, particularly as Alphabet continues to capitalize on its dominant position in digital advertising and cloud services.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u3c2",
+      "source_id": 3,
+      "source_start": 1855,
+      "source_end": 2017,
+      "source_quote_occurrences": 1,
+      "original_quote": "Investors should monitor upcoming earnings releases and any strategic initiatives that could further enhance Alphabet's growth trajectory or operational leverage.",
+      "claim": "Investors should monitor upcoming earnings releases and any strategic initiatives that could further enhance Alphabet's growth trajectory or operational leverage.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "This is a recommendation and not a factual claim supported by evidence.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Investors should monitor upcoming earnings releases and any strategic initiatives that could further enhance Alphabet's growth trajectory or operational leverage.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    }
+  ],
+  "units": [
+    {
+      "source_id": 0,
+      "claims": [
+        {
+          "original_quote": "Recent news for Alphabet Inc. highlights a robust financial performance with the company reporting strong revenue growth in the second quarter of 2026, continuing its trend of double-digit growth.",
+          "claim": "Alphabet Inc. reported strong revenue growth in the second quarter of 2026, continuing its trend of double-digit growth.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 47
+            },
+            {
+              "line_number": 48
+            }
+          ],
+          "reason": "The evidence states that consolidated Alphabet revenues increased 24% in Q2 2026 and that this was the 12th consecutive quarter of double-digit revenue growth.",
+          "action": "keep",
+          "revised_claim": "Alphabet Inc. reported strong revenue growth in the second quarter of 2026, continuing its trend of double-digit growth.",
+          "number_bindings": [
+            {
+              "claim_number": "2026",
+              "evidence_line": 47,
+              "evidence_number": "2026",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "24",
+              "evidence_line": 47,
+              "evidence_number": "24",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "This performance underscores Alphabet's solid position in the technology sector, driven by its core Google Services and expanding business segments.",
+          "claim": "Alphabet's performance underscores its solid position in the technology sector, driven by its core Google Services and expanding business segments.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for Alphabet's overall position in the technology sector or the role of expanding business segments.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 1,
+      "claims": [
+        {
+          "original_quote": "The key developments for investors to note include Alphabet's second quarter 2026 financial results, which showed a 24% increase in consolidated revenues to $119.8 billion, marking the 12th consecutive quarter of double-digit revenue growth.",
+          "claim": "Alphabet's second quarter 2026 financial results showed a 24% increase in consolidated revenues to $119.8 billion, marking the 12th consecutive quarter of double-digit revenue growth.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 47
+            },
+            {
+              "line_number": 48
+            }
+          ],
+          "reason": "The evidence directly states the 24% increase to $119.8 billion and the 12th consecutive quarter of double-digit growth.",
+          "action": "keep",
+          "revised_claim": "Alphabet's second quarter 2026 financial results showed a 24% increase in consolidated revenues to $119.8 billion, marking the 12th consecutive quarter of double-digit revenue growth.",
+          "number_bindings": [
+            {
+              "claim_number": "2026",
+              "evidence_line": 47,
+              "evidence_number": "2026",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "24",
+              "evidence_line": 47,
+              "evidence_number": "24",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "119.8",
+              "evidence_line": 47,
+              "evidence_number": "119.8",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "12",
+              "evidence_line": 48,
+              "evidence_number": "12",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "This sustained growth is a positive indicator of the company’s operational strength and market demand for its products.",
+          "claim": "This sustained growth is a positive indicator of Alphabet's operational strength and market demand for its products.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for the causal link between growth and operational strength or market demand.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Additionally, Google Services revenues rose 15% to $94.5 billion, with a notable 17% growth in Google Search, reinforcing the core advertising business.",
+          "claim": "Google Services revenues rose 15% to $94.5 billion in the second quarter of 2026, with a 17% growth in Google Search.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 49
+            }
+          ],
+          "reason": "The evidence states Google Services revenues increased 15% to $94.5 billion, led by 17% growth in Google Search.",
+          "action": "keep",
+          "revised_claim": "Google Services revenues rose 15% to $94.5 billion in the second quarter of 2026, with a 17% growth in Google Search.",
+          "number_bindings": [
+            {
+              "claim_number": "15",
+              "evidence_line": 49,
+              "evidence_number": "15",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "94.5",
+              "evidence_line": 49,
+              "evidence_number": "94.5",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "17",
+              "evidence_line": 49,
+              "evidence_number": "17",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "These results suggest continued momentum in Alphabet’s advertising revenues, a critical driver of its earnings.",
+          "claim": "These results suggest continued momentum in Alphabet’s advertising revenues, a critical driver of its earnings.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for the causal relationship or the criticality of advertising revenues to earnings.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 2,
+      "claims": [
+        {
+          "original_quote": "From a valuation perspective, Alphabet's EBITDA margin has been improving, reaching 48.7% in 2026 with projected growth into the high 50s by 2028, signaling increasing operational efficiency.",
+          "claim": "Alphabet's EBITDA margin reached 48.7% in 2026 and is projected to grow into the high 50s by 2028.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 12
+            }
+          ],
+          "reason": "The evidence table shows EBITDA margin at 48.7% in 2026 and 51.7% in 2028E, which is in the low 50s, not high 50s. The claim about 'high 50s' is not fully supported, but the 48.7% and 51.7% are directly evidenced.",
+          "action": "correct",
+          "revised_claim": "Alphabet's EBITDA margin reached 48.7% in 2026 and is projected to reach 51.7% in 2028E.",
+          "number_bindings": [
+            {
+              "claim_number": "48.7",
+              "evidence_line": 12,
+              "evidence_number": "48.7",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2026",
+              "evidence_line": 4,
+              "evidence_number": "2026E",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "51.7",
+              "evidence_line": 12,
+              "evidence_number": "51.7",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "The company’s EPS is forecast to grow steadily, reaching an estimated $11.57 in 2026 and $13.01 by 2028, reflecting strong earnings growth potential.",
+          "claim": "Alphabet's EPS is forecast to reach $11.57 in 2026 and $13.01 by 2028.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 15
+            }
+          ],
+          "reason": "The evidence table shows EPS of 11.57 in 2026E and 13.01 in 2028E.",
+          "action": "keep",
+          "revised_claim": "Alphabet's EPS is forecast to reach $11.57 in 2026 and $13.01 by 2028.",
+          "number_bindings": [
+            {
+              "claim_number": "11.57",
+              "evidence_line": 15,
+              "evidence_number": "11.57",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2026",
+              "evidence_line": 4,
+              "evidence_number": "2026E",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "13.01",
+              "evidence_line": 15,
+              "evidence_number": "13.01",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "Compared to peers like Apple and Nvidia, Alphabet's EBITDA is competitive, and its EV/EBITDA multiples suggest it remains attractively valued relative to high-growth peers such as Nvidia.",
+          "claim": "Alphabet's EBITDA is competitive compared to peers like Apple and Nvidia, and its EV/EBITDA multiples suggest it remains attractively valued relative to high-growth peers such as Nvidia.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence or comparative analysis is provided for the competitiveness of EBITDA or the attractiveness of EV/EBITDA multiples relative to peers.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 3,
+      "claims": [
+        {
+          "original_quote": "The overall market sentiment around Alphabet appears positive, supported by consistent revenue growth, margin expansion, and solid earnings projections.",
+          "claim": "The overall market sentiment around Alphabet appears positive, supported by consistent revenue growth, margin expansion, and solid earnings projections.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for market sentiment or the causal relationship to the listed factors.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "This positive outlook may contribute to near-term stock price appreciation, particularly as the company continues to capitalize on its dominant position in digital advertising and cloud services.",
+          "claim": "This positive outlook may contribute to near-term stock price appreciation, particularly as Alphabet continues to capitalize on its dominant position in digital advertising and cloud services.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for the causal relationship between outlook and stock price or for Alphabet's dominance in digital advertising and cloud services.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Investors should monitor upcoming earnings releases and any strategic initiatives that could further enhance Alphabet's growth trajectory or operational leverage.",
+          "claim": "Investors should monitor upcoming earnings releases and any strategic initiatives that could further enhance Alphabet's growth trajectory or operational leverage.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "This is a recommendation and not a factual claim supported by evidence.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    }
+  ],
+  "verifier_version": "6-reject-structural-only-evidence",
+  "unquoted_nonfactual_connectors": [],
+  "deterministic_validation_failures": [
+    {
+      "claim_id": "u0c0",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2026,:missing_binding"
+      ],
+      "numeric_results": [
+        {
+          "token": "2026,",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u1c0",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2026:number_not_in_cited_evidence_line",
+        "numeric_check_failed:24%:missing_binding"
+      ],
+      "numeric_results": [
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "24%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "119.8",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "12",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u1c2",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:15%:missing_binding",
+        "numeric_check_failed:2026,:missing_binding",
+        "numeric_check_failed:17%:missing_binding"
+      ],
+      "numeric_results": [
+        {
+          "token": "15%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "94.5",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2026,",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "17%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u2c0",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:48.7%:missing_binding",
+        "numeric_check_failed:2026:number_not_in_cited_evidence_line",
+        "numeric_check_failed:51.7%:missing_binding",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "48.7%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "51.7%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u2c1",
+      "errors": [
+        "numeric_check_failed:2026:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "11.57",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "13.01",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    }
+  ],
+  "deterministic_failure_count": 5,
+  "verified_claim_count": 0,
+  "unverified_annotation_count": 12,
+  "withheld_claim_count": 0,
+  "claim_retention_rate": 1.0,
+  "supported_valid_retention_count": 0,
+  "automatic_year_binding_count": 0,
+  "limitations": "UNVERIFIED annotations preserve unsupported or deterministically rejected assertions for review and must not be counted as grounded facts. A claim's original machine classification is preserved even when deterministic checks reject it; retained_as_verified is then false. Rejected contradicted corrections remain in the audit but are withheld from the narrative. Semantic judgments are machine-assisted, not human-validated. Lexical quote coverage does not prove exhaustive semantic atomization. Exact numeric/year matches do not establish entity/period alignment or dimensional validity of conversions. Repeated source quotes may have ambiguous first-occurrence offsets."
+}

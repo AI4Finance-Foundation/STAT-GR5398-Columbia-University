@@ -1,0 +1,773 @@
+{
+  "original_text": "Intel Corporation demonstrates robust contribution margins and maintains a significant EBITDA presence despite recent revenue declines. The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience. Valuation metrics suggest an attractive entry point relative to historical levels, underscoring strong fundamentals amid market fluctuations.",
+  "revised_text": "Intel reported a contribution margin of 34.8% in 2025A.\n\n[UNVERIFIED - evidence not supplied] Intel's contribution margins are robust.\n\nIntel reported EBITDA of 14354000000.0 in 2025A.\n\n[UNVERIFIED - evidence not supplied] Intel's EBITDA presence is significant.\n\nIntel's revenue declined from 54228000000.0 in 2023A to 53101000000.0 in 2024A and 52853000000.0 in 2025A.\n\n[UNVERIFIED - evidence not supplied] Intel exhibits disciplined cost management.\n\n[UNVERIFIED - evidence not supplied] Intel's SG&A efficiency is improving.\n\n[UNVERIFIED - evidence not supplied] Improving SG&A efficiency supports Intel's operational resilience.\n\n[UNVERIFIED - evidence not supplied] Intel has operational resilience.\n\n[UNVERIFIED - evidence not supplied] Valuation metrics suggest an attractive entry point relative to historical levels.\n\n[UNVERIFIED - evidence not supplied] Intel has strong fundamentals.\n\n[UNVERIFIED - evidence not supplied] Intel is amid market fluctuations.",
+  "claims": [
+    {
+      "claim_id": "u0c0",
+      "source_id": 0,
+      "source_start": 0,
+      "source_end": 135,
+      "source_quote_occurrences": 1,
+      "original_quote": "Intel Corporation demonstrates robust contribution margins and maintains a significant EBITDA presence despite recent revenue declines.",
+      "claim": "Intel has reported contribution margins.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 10,
+          "quote": "|  4 | Contribution Margin | 55.4%              | 42.6%              | 40.0%         | 32.7%              | 34.8%              | 35.8%         | 36.8%         | 37.8%          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The evidence table reports Intel contribution margin values, including a 2025A figure.",
+      "action": "keep",
+      "revised_claim": "Intel reported a contribution margin of 34.8% in 2025A.",
+      "number_bindings": [
+        {
+          "claim_number": "34.8%",
+          "evidence_line": 10,
+          "evidence_number": "34.8%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2025A",
+          "evidence_line": 4,
+          "evidence_number": "2025A",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "34.8%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2025",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [
+        {
+          "original_binding": {
+            "claim_number": "2025A",
+            "evidence_line": 4,
+            "evidence_number": "2025A",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2025",
+            "evidence_line": 4,
+            "evidence_number": "2025",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |"
+        }
+      ],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "Intel reported a contribution margin of 34.8% in 2025A.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u0c1",
+      "source_id": 0,
+      "source_start": 0,
+      "source_end": 135,
+      "source_quote_occurrences": 1,
+      "original_quote": "Intel Corporation demonstrates robust contribution margins and maintains a significant EBITDA presence despite recent revenue declines.",
+      "claim": "Intel's contribution margins are robust.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The evidence provides contribution margin figures but does not define or support the qualitative characterization 'robust.'",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Intel's contribution margins are robust.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u0c2",
+      "source_id": 0,
+      "source_start": 0,
+      "source_end": 135,
+      "source_quote_occurrences": 1,
+      "original_quote": "Intel Corporation demonstrates robust contribution margins and maintains a significant EBITDA presence despite recent revenue declines.",
+      "claim": "Intel has reported EBITDA.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 11,
+          "quote": "|  5 | EBITDA              | 33874000000.0      | 21299000000.0      | 11242000000.0 | 1203000000.0       | 14354000000.0      | 15316799400.0 | 17118188199.0 | 18720591795.36 | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The financial table reports Intel EBITDA values, including a 2025A amount.",
+      "action": "keep",
+      "revised_claim": "Intel reported EBITDA of 14354000000.0 in 2025A.",
+      "number_bindings": [
+        {
+          "claim_number": "14354000000.0",
+          "evidence_line": 11,
+          "evidence_number": "14354000000.0",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2025A",
+          "evidence_line": 4,
+          "evidence_number": "2025A",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "14354000000.0",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2025",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [
+        {
+          "original_binding": {
+            "claim_number": "2025A",
+            "evidence_line": 4,
+            "evidence_number": "2025A",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2025",
+            "evidence_line": 4,
+            "evidence_number": "2025",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |"
+        }
+      ],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "Intel reported EBITDA of 14354000000.0 in 2025A.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u0c3",
+      "source_id": 0,
+      "source_start": 0,
+      "source_end": 135,
+      "source_quote_occurrences": 1,
+      "original_quote": "Intel Corporation demonstrates robust contribution margins and maintains a significant EBITDA presence despite recent revenue declines.",
+      "claim": "Intel's EBITDA presence is significant.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The evidence reports EBITDA values but does not support the qualitative assessment 'significant.'",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Intel's EBITDA presence is significant.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u0c4",
+      "source_id": 0,
+      "source_start": 0,
+      "source_end": 135,
+      "source_quote_occurrences": 1,
+      "original_quote": "Intel Corporation demonstrates robust contribution margins and maintains a significant EBITDA presence despite recent revenue declines.",
+      "claim": "Intel's revenue has recently declined.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 6,
+          "quote": "|  0 | Revenue             | 79024000000.0      | 63054000000.0      | 54228000000.0 | 53101000000.0      | 52853000000.0      | 55495650000.0 | 58825389000.0 | 61178404560.0  | -9.6%  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The revenue row shows declines from 2023A to 2024A and again to 2025A.",
+      "action": "keep",
+      "revised_claim": "Intel's revenue declined from 54228000000.0 in 2023A to 53101000000.0 in 2024A and 52853000000.0 in 2025A.",
+      "number_bindings": [
+        {
+          "claim_number": "54228000000.0",
+          "evidence_line": 6,
+          "evidence_number": "54228000000.0",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2023A",
+          "evidence_line": 4,
+          "evidence_number": "2023A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "53101000000.0",
+          "evidence_line": 6,
+          "evidence_number": "53101000000.0",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2024A",
+          "evidence_line": 4,
+          "evidence_number": "2024A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "52853000000.0",
+          "evidence_line": 6,
+          "evidence_number": "52853000000.0",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2025A",
+          "evidence_line": 4,
+          "evidence_number": "2025A",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "54228000000.0",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2023",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "53101000000.0",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2024",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "52853000000.0",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2025",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [
+        {
+          "original_binding": {
+            "claim_number": "2023A",
+            "evidence_line": 4,
+            "evidence_number": "2023A",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2023",
+            "evidence_line": 4,
+            "evidence_number": "2023",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |"
+        },
+        {
+          "original_binding": {
+            "claim_number": "2024A",
+            "evidence_line": 4,
+            "evidence_number": "2024A",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2024",
+            "evidence_line": 4,
+            "evidence_number": "2024",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |"
+        },
+        {
+          "original_binding": {
+            "claim_number": "2025A",
+            "evidence_line": 4,
+            "evidence_number": "2025A",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2025",
+            "evidence_line": 4,
+            "evidence_number": "2025",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |"
+        }
+      ],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "Intel's revenue declined from 54228000000.0 in 2023A to 53101000000.0 in 2024A and 52853000000.0 in 2025A.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u0c5",
+      "source_id": 0,
+      "source_start": 136,
+      "source_end": 255,
+      "source_quote_occurrences": 1,
+      "original_quote": "The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience.",
+      "claim": "Intel exhibits disciplined cost management.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The evidence contains cost and SG&A figures but does not support the qualitative judgment 'disciplined cost management.'",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Intel exhibits disciplined cost management.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u0c6",
+      "source_id": 0,
+      "source_start": 136,
+      "source_end": 255,
+      "source_quote_occurrences": 1,
+      "original_quote": "The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience.",
+      "claim": "Intel's SG&A efficiency is improving.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The evidence reports SG&A and SG&A margin values, but it does not establish 'efficiency' as the correct interpretation.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Intel's SG&A efficiency is improving.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u0c7",
+      "source_id": 0,
+      "source_start": 136,
+      "source_end": 255,
+      "source_quote_occurrences": 1,
+      "original_quote": "The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience.",
+      "claim": "Improving SG&A efficiency supports Intel's operational resilience.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The supplied evidence does not support this causal link.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Improving SG&A efficiency supports Intel's operational resilience.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u0c8",
+      "source_id": 0,
+      "source_start": 136,
+      "source_end": 255,
+      "source_quote_occurrences": 1,
+      "original_quote": "The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience.",
+      "claim": "Intel has operational resilience.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "Operational resilience is a qualitative business assessment not established by the supplied tables or news excerpt.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Intel has operational resilience.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u0c9",
+      "source_id": 0,
+      "source_start": 256,
+      "source_end": 397,
+      "source_quote_occurrences": 1,
+      "original_quote": "Valuation metrics suggest an attractive entry point relative to historical levels, underscoring strong fundamentals amid market fluctuations.",
+      "claim": "Valuation metrics suggest an attractive entry point relative to historical levels.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The evidence includes valuation metrics, but it does not support the investment opinion that they imply an attractive entry point relative to history.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Valuation metrics suggest an attractive entry point relative to historical levels.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u0c10",
+      "source_id": 0,
+      "source_start": 256,
+      "source_end": 397,
+      "source_quote_occurrences": 1,
+      "original_quote": "Valuation metrics suggest an attractive entry point relative to historical levels, underscoring strong fundamentals amid market fluctuations.",
+      "claim": "Intel has strong fundamentals.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The evidence does not directly establish the qualitative conclusion 'strong fundamentals.'",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Intel has strong fundamentals.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u0c11",
+      "source_id": 0,
+      "source_start": 256,
+      "source_end": 397,
+      "source_quote_occurrences": 1,
+      "original_quote": "Valuation metrics suggest an attractive entry point relative to historical levels, underscoring strong fundamentals amid market fluctuations.",
+      "claim": "Intel is amid market fluctuations.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The supplied evidence does not provide facts about market fluctuations affecting Intel.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Intel is amid market fluctuations.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    }
+  ],
+  "units": [
+    {
+      "source_id": 0,
+      "claims": [
+        {
+          "original_quote": "Intel Corporation demonstrates robust contribution margins and maintains a significant EBITDA presence despite recent revenue declines.",
+          "claim": "Intel has reported contribution margins.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 10
+            }
+          ],
+          "reason": "The evidence table reports Intel contribution margin values, including a 2025A figure.",
+          "action": "keep",
+          "revised_claim": "Intel reported a contribution margin of 34.8% in 2025A.",
+          "number_bindings": [
+            {
+              "claim_number": "34.8%",
+              "evidence_line": 10,
+              "evidence_number": "34.8%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2025A",
+              "evidence_line": 4,
+              "evidence_number": "2025A",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "Intel Corporation demonstrates robust contribution margins and maintains a significant EBITDA presence despite recent revenue declines.",
+          "claim": "Intel's contribution margins are robust.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The evidence provides contribution margin figures but does not define or support the qualitative characterization 'robust.'",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Intel Corporation demonstrates robust contribution margins and maintains a significant EBITDA presence despite recent revenue declines.",
+          "claim": "Intel has reported EBITDA.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 11
+            }
+          ],
+          "reason": "The financial table reports Intel EBITDA values, including a 2025A amount.",
+          "action": "keep",
+          "revised_claim": "Intel reported EBITDA of 14354000000.0 in 2025A.",
+          "number_bindings": [
+            {
+              "claim_number": "14354000000.0",
+              "evidence_line": 11,
+              "evidence_number": "14354000000.0",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2025A",
+              "evidence_line": 4,
+              "evidence_number": "2025A",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "Intel Corporation demonstrates robust contribution margins and maintains a significant EBITDA presence despite recent revenue declines.",
+          "claim": "Intel's EBITDA presence is significant.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The evidence reports EBITDA values but does not support the qualitative assessment 'significant.'",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Intel Corporation demonstrates robust contribution margins and maintains a significant EBITDA presence despite recent revenue declines.",
+          "claim": "Intel's revenue has recently declined.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 6
+            }
+          ],
+          "reason": "The revenue row shows declines from 2023A to 2024A and again to 2025A.",
+          "action": "keep",
+          "revised_claim": "Intel's revenue declined from 54228000000.0 in 2023A to 53101000000.0 in 2024A and 52853000000.0 in 2025A.",
+          "number_bindings": [
+            {
+              "claim_number": "54228000000.0",
+              "evidence_line": 6,
+              "evidence_number": "54228000000.0",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2023A",
+              "evidence_line": 4,
+              "evidence_number": "2023A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "53101000000.0",
+              "evidence_line": 6,
+              "evidence_number": "53101000000.0",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2024A",
+              "evidence_line": 4,
+              "evidence_number": "2024A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "52853000000.0",
+              "evidence_line": 6,
+              "evidence_number": "52853000000.0",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2025A",
+              "evidence_line": 4,
+              "evidence_number": "2025A",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience.",
+          "claim": "Intel exhibits disciplined cost management.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The evidence contains cost and SG&A figures but does not support the qualitative judgment 'disciplined cost management.'",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience.",
+          "claim": "Intel's SG&A efficiency is improving.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The evidence reports SG&A and SG&A margin values, but it does not establish 'efficiency' as the correct interpretation.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience.",
+          "claim": "Improving SG&A efficiency supports Intel's operational resilience.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The supplied evidence does not support this causal link.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience.",
+          "claim": "Intel has operational resilience.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "Operational resilience is a qualitative business assessment not established by the supplied tables or news excerpt.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Valuation metrics suggest an attractive entry point relative to historical levels, underscoring strong fundamentals amid market fluctuations.",
+          "claim": "Valuation metrics suggest an attractive entry point relative to historical levels.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The evidence includes valuation metrics, but it does not support the investment opinion that they imply an attractive entry point relative to history.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Valuation metrics suggest an attractive entry point relative to historical levels, underscoring strong fundamentals amid market fluctuations.",
+          "claim": "Intel has strong fundamentals.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The evidence does not directly establish the qualitative conclusion 'strong fundamentals.'",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Valuation metrics suggest an attractive entry point relative to historical levels, underscoring strong fundamentals amid market fluctuations.",
+          "claim": "Intel is amid market fluctuations.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The supplied evidence does not provide facts about market fluctuations affecting Intel.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    }
+  ],
+  "verifier_version": "9.0-explicit-cagr-endpoint-clarification",
+  "release_deduplication": "Identical complete released strings appear once per section; all original claim rows and mappings remain. This is not semantic paraphrase deduplication.",
+  "unquoted_nonfactual_connectors": [],
+  "deterministic_validation_failures": [],
+  "deterministic_failure_count": 0,
+  "verified_claim_count": 3,
+  "unverified_annotation_count": 9,
+  "withheld_claim_count": 0,
+  "claim_retention_rate": 1.0,
+  "supported_valid_retention_count": 3,
+  "automatic_year_binding_count": 0,
+  "limitations": "UNVERIFIED annotations preserve unsupported or deterministically rejected assertions for review and must not be counted as grounded facts. A claim's original machine classification is preserved even when deterministic checks reject it; retained_as_verified is then false. Rejected contradicted corrections remain in the audit but are withheld from the narrative. Semantic judgments are machine-assisted, not human-validated. Lexical quote coverage does not prove exhaustive semantic atomization. Exact numeric/year matches do not establish entity/period alignment or dimensional validity of conversions. Repeated source quotes may have ambiguous first-occurrence offsets. V9 additionally clarifies a narrowly recognized displayed Revenue CAGR using explicit original-prompt endpoints; historical and forecast intervals are separated. Original machine classifications and failed binding diagnostics remain unchanged for traceability.",
+  "semantic_horizon_check_count": 0
+}

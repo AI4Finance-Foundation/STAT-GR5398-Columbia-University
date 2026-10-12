@@ -1,0 +1,57 @@
+ORIGINAL EVIDENCE PROMPT (line numbers added only for locating evidence):
+1: Financial data for Apple Inc. (AAPL):
+2: 
+3: ## Apple Inc. Financial Metrics and Forecasts
+4: |    | metrics             | 2021A              | 2022A              | 2023A             | 2024A             | 2025A            | 2026E          | 2027E          | 2028E           | CAGR   |
+5: |---:|:--------------------|:-------------------|:-------------------|:------------------|:------------------|:-----------------|:---------------|:---------------|:----------------|:-------|
+6: |  0 | Revenue             | 365817000000.0     | 394328000000.0     | 383285000000.0    | 391035000000.0    | 416161000000.0   | 436969050000.0 | 463187193000.0 | 481714680720.0  | 3.3%   |
+7: |  1 | Cost of Operations  | 212981000000.0     | 223546000000.0     | 214137000000.0    | 210352000000.0    | 220960000000.0   | 227660875050.0 | 236688655623.0 | 241339055040.72 | nan    |
+8: |  2 | SG&A                | 21973000000.0      | 25094000000.0      | 24932000000.0     | 26097000000.0     | 27601000000.0    | 26655112050.0  | 25938482808.0  | 24567448716.72  | nan    |
+9: |  3 | Contribution Profit | 152836000000.0     | 170782000000.0     | 169148000000.0    | 180683000000.0    | 195201000000.0   | 209308174950.0 | 226498537377.0 | 240375625679.28 | nan    |
+10: |  4 | Contribution Margin | 41.8%              | 43.3%              | 44.1%             | 46.2%             | 46.9%            | 47.9%          | 48.9%          | 49.9%           | nan    |
+11: |  5 | EBITDA              | 123136000000.0     | 133138000000.0     | 129188000000.0    | 134930000000.0    | 144427000000.0   | 182653062900.0 | 200560054569.0 | 215808176962.56 | nan    |
+12: |  6 | EBITDA Margin       | 33.7%              | 33.8%              | 33.7%             | 34.5%             | 34.7%            | 41.8%          | 43.3%          | 44.8%           | nan    |
+13: |  7 | SG&A Margin         | 6.0%               | 6.4%               | 6.5%              | 6.7%              | 6.6%             | 6.1%           | 5.6%           | 5.1%            | nan    |
+14: |  8 | Revenue Growth      | nan                | 7.8%               | -2.8%             | 2.0%              | 6.4%             | 5.0%           | 6.0%           | 4.0%            | nan    |
+15: |  9 | EPS                 | 5.67               | 6.15               | 6.16              | 6.11              | 7.49             | 7.94           | 8.5            | 8.93            | nan    |
+16: | 10 | PE Ratio            | 25.911816578483243 | 24.460162601626017 | 27.79383116883117 | 37.28150572831424 | 34.1068090787717 | 32.4           | 30.8           | 29.2            | nan    |
+17: 
+18: ## Peer EBITDA Comparison
+19: |   year |          AAPL |           AMD |          NVDA |
+20: |-------:|--------------:|--------------:|--------------:|
+21: |   2021 |   1.23136e+11 |   4.166e+09   | nan           |
+22: |   2022 |   1.33138e+11 |   5.534e+09   |   1.1351e+10  |
+23: |   2023 |   1.29188e+11 |   4.149e+09   |   5.986e+09   |
+24: |   2024 |   1.3493e+11  |   5.258e+09   |   3.5583e+10  |
+25: |   2025 |   1.44427e+11 |   7.275e+09   |   8.6137e+10  |
+26: |   2026 | nan           | nan           |   1.44552e+11 |
+27: |   2027 |   1.50435e+11 |   8.60087e+09 |   3.82001e+11 |
+28: 
+29: ## Peer EV/EBITDA Comparison
+30: |   year |     AAPL |      AMD |     NVDA |
+31: |-------:|---------:|---------:|---------:|
+32: |   2021 |  20.7521 |  42.1013 | nan      |
+33: |   2022 |  19.1395 |  17.9136 |  54.7187 |
+34: |   2023 |  21.5928 |  57.1197 |  81.0476 |
+35: |   2024 |  26.564  |  38.2717 |  43.4522 |
+36: |   2025 |  26.9699 |  47.8456 |  33.7774 |
+37: |   2026 | nan      | nan      |  31.4283 |
+38: 
+39: ## Recent News for Apple Inc. (AAPL)
+40: 
+41: ### Article 1
+42: **Title:** Apple reports third quarter results
+43: **Date:** 2026-07-30T00:00:00-04:00
+44: **Summary:** CUPERTINO, CALIFORNIA
+45: Apple today announced financial results for its fiscal 2026 third quarter ended June 27, 2026. The Company posted quarterly revenue of $109.4 billion, up 16 percent year over year. Company gross margin was 50.1 percent, including a favorable impact of approximately 2 percentage points from tariff refunds. Diluted earnings per share was $2.02, up 29 percent year over year, and included a favorable impact of $0.11 from tariff refunds.
+46: “Today, Apple is proud to report our stro
+47: 
+
+DRAFT SOURCE UNITS (cover every unit and every atomic claim):
+[{"source_id": 0, "start": 0, "end": 444, "text": "Apple Inc. demonstrates robust financial health with a consistent revenue CAGR of 3.3% and improving contribution margins reaching nearly 50% by 2028. The company maintains strong profitability, reflected in expanding EBITDA margins rising to 44.8% and solid EPS growth. Valuation metrics indicate a premium positioning with a PE ratio stabilizing around 30, underscoring confidence in its sustainable earnings power and operational efficiency."}]
+
+VALIDATION REPAIR (not additional factual evidence):
+The previous structured review failed deterministic validation. Return a complete corrected review covering every original source unit and all its claims. Preserve supported substantive facts. Use ONLY the ORIGINAL EVIDENCE PROMPT above for facts and citations. The prior review is a candidate to correct, never a source of factual evidence.
+DIAGNOSTIC: Verifier omitted text within source unit 0
+PREVIOUS CANDIDATE REVIEW:
+{"units": [{"claims": [{"action": "keep", "claim": "Apple Inc. has a consistent revenue CAGR of 3.3%.", "classification": "Supported", "evidence": [{"line_number": 4}, {"line_number": 6}], "number_bindings": [{"claim_number": "3.3%", "evidence_line": 6, "evidence_number": "3.3%", "transform": "identity"}], "original_quote": "Apple Inc. demonstrates robust financial health with a consistent revenue CAGR of 3.3%", "reason": "The table header and the Revenue row show a CAGR of 3.3%.", "revised_claim": "Apple Inc. has a consistent revenue CAGR of 3.3%."}, {"action": "correct", "claim": "Apple Inc.'s contribution margin reaches nearly 50% by 2028.", "classification": "Supported", "evidence": [{"line_number": 4}, {"line_number": 10}], "number_bindings": [{"claim_number": "49.9%", "evidence_line": 10, "evidence_number": "49.9%", "transform": "identity"}, {"claim_number": "2028", "evidence_line": 4, "evidence_number": "2028E", "transform": "identity"}], "original_quote": "improving contribution margins reaching nearly 50% by 2028", "reason": "The Contribution Margin row shows 49.9% for 2028E, which is nearly 50%.", "revised_claim": "Apple Inc.'s contribution margin is 49.9% in 2028E."}, {"action": "correct", "claim": "Apple Inc.'s EBITDA margin rises to 44.8%.", "classification": "Supported", "evidence": [{"line_number": 4}, {"line_number": 12}], "number_bindings": [{"claim_number": "44.8%", "evidence_line": 12, "evidence_number": "44.8%", "transform": "identity"}, {"claim_number": "2028", "evidence_line": 4, "evidence_number": "2028E", "transform": "identity"}], "original_quote": "The company maintains strong profitability, reflected in expanding EBITDA margins rising to 44.8%", "reason": "The EBITDA Margin row shows 44.8% for 2028E.", "revised_claim": "Apple Inc.'s EBITDA margin is 44.8% in 2028E."}, {"action": "withhold", "claim": "Apple Inc. has solid EPS growth.", "classification": "Unsupported", "evidence": [], "number_bindings": [], "original_quote": "and solid EPS growth.", "reason": "No explicit evidence or quantitative statement about the magnitude or consistency of EPS growth is provided in the evidence.", "revised_claim": ""}, {"action": "correct", "claim": "Apple Inc.'s PE ratio stabilizes around 30.", "classification": "Supported", "evidence": [{"line_number": 4}, {"line_number": 16}], "number_bindings": [{"claim_number": "2026", "evidence_line": 4, "evidence_number": "2026E", "transform": "identity"}, {"claim_number": "32.4", "evidence_line": 16, "evidence_number": "32.4", "transform": "identity"}, {"claim_number": "2027", "evidence_line": 4, "evidence_number": "2027E", "transform": "identity"}, {"claim_number": "30.8", "evidence_line": 16, "evidence_number": "30.8", "transform": "identity"}, {"claim_number": "2028", "evidence_line": 4, "evidence_number": "2028E", "transform": "identity"}, {"claim_number": "29.2", "evidence_line": 16, "evidence_number": "29.2", "transform": "identity"}], "original_quote": "Valuation metrics indicate a premium positioning with a PE ratio stabilizing around 30, underscoring confidence in its sustainable earnings power and operational efficiency.", "reason": "The PE Ratio row shows values of 32.4, 30.8, and 29.2 for 2026E, 2027E, and 2028E, which is around 30.", "revised_claim": "Apple Inc.'s PE ratio is around 30 from 2026E to 2028E."}, {"action": "withhold", "claim": "Apple Inc.'s PE ratio indicates confidence in its sustainable earnings power and operational efficiency.", "classification": "Unsupported", "evidence": [], "number_bindings": [], "original_quote": "Valuation metrics indicate a premium positioning with a PE ratio stabilizing around 30, underscoring confidence in its sustainable earnings power and operational efficiency.", "reason": "No direct evidence links the PE ratio to confidence in sustainable earnings power or operational efficiency.", "revised_claim": ""}], "nonfactual_reason": "", "source_id": 0}]}

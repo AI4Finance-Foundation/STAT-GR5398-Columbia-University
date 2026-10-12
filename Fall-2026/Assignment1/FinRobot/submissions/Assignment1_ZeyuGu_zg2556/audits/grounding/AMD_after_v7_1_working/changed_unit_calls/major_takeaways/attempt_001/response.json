@@ -1,0 +1,88 @@
+{
+  "call_id": "AMD_v7_1_changed_audit/major_takeaways/1",
+  "structured_output": {
+    "units": [
+      {
+        "unit_id": 0,
+        "claims": [
+          {
+            "claim": "AMD's revenue trajectory, highlighted by a 20.5% CAGR from 2021 to 2028",
+            "claim_type": "quantitative",
+            "classification": "Contradicted",
+            "evidence": [
+              {
+                "line_start": 4,
+                "line_end": 6
+              }
+            ],
+            "reason": "The table shows AMD's revenue for 2021A as 16,434,000,000 and for 2028E as 40,095,335,280. The CAGR column for Revenue is listed as 20.5%. However, the period from 2021 to 2028 is 7 years. Calculating CAGR: ((40,095,335,280 / 16,434,000,000)^(1/7))-1 = (2.4406)^(0.142857)-1 ≈ 0.136 or 13.6%. The stated 20.5% CAGR is not supported by the actual numbers in the table.",
+            "numeric_status": "incorrect",
+            "fact_key": "amd|revenue_cagr|2021-2028|20.5%"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 2,
+        "claims": [
+          {
+            "claim": "AMD's revenue growth is fueled primarily by strong demand in high-performance computing and graphics segments, reflecting the company's successful product innovation and market expansion strategies.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is supplied in the original writer evidence to support the causal attribution of revenue growth to high-performance computing, graphics, product innovation, or market expansion strategies.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|revenue_growth_cause|unspecified|high_performance_graphics_innovation_expansion"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 3,
+        "claims": [
+          {
+            "claim": "AMD's robust growth suggests a sustainable competitive advantage bolstered by diversified revenue streams, enhancing AMD's market positioning in a highly competitive semiconductor landscape.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is supplied in the original writer evidence to support the claim that AMD's growth suggests a sustainable competitive advantage or that it is bolstered by diversified revenue streams or enhances market positioning.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|growth_competitive_advantage|unspecified|diversified_revenue_market_position"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 5,
+        "claims": [
+          {
+            "claim": "AMD's margin expansion is driven by product mix optimization toward higher-margin offerings and cost management initiatives.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is supplied in the original writer evidence to support the causal claim that margin expansion is driven by product mix optimization or cost management initiatives.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|margin_expansion_cause|unspecified|product_mix_cost_management"
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "usage": {
+    "requests": 1,
+    "input_tokens": 3064,
+    "input_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "output_tokens": 599,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 3663
+  },
+  "runtime_seconds": 2.9011399000009988,
+  "cost_usd": 0.01092,
+  "completed_at_utc": "2026-10-11T23:36:12.024322+00:00",
+  "attempts": 1
+}

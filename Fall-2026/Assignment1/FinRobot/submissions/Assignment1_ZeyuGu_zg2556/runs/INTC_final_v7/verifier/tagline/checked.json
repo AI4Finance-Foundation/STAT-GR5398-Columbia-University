@@ -1,0 +1,216 @@
+{
+  "original_text": "Intel Corporation demonstrates robust contribution margins and maintains a significant EBITDA presence despite recent revenue declines. The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience. Valuation metrics suggest an attractive entry point relative to historical levels, underscoring strong fundamentals amid market fluctuations.",
+  "revised_text": "Intel Corporation demonstrates robust contribution margins.\n\nIntel Corporation maintains a significant EBITDA presence despite recent revenue declines.\n\nThe company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience.\n\n[UNVERIFIED - evidence not supplied] Valuation metrics suggest an attractive entry point relative to historical levels, underscoring strong fundamentals amid market fluctuations.",
+  "claims": [
+    {
+      "claim_id": "u0c0",
+      "source_id": 0,
+      "source_start": 0,
+      "source_end": 58,
+      "source_quote_occurrences": 1,
+      "original_quote": "Intel Corporation demonstrates robust contribution margins",
+      "claim": "Intel Corporation demonstrates robust contribution margins.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 10,
+          "quote": "|  4 | Contribution Margin | 55.4%              | 42.6%              | 40.0%         | 32.7%              | 34.8%              | 35.8%         | 36.8%         | 37.8%          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "Contribution margin values are provided for multiple years, and while they have declined, they remain substantial, supporting the claim of robust margins.",
+      "action": "keep",
+      "revised_claim": "Intel Corporation demonstrates robust contribution margins.",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "Intel Corporation demonstrates robust contribution margins.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u0c1",
+      "source_id": 0,
+      "source_start": 63,
+      "source_end": 134,
+      "source_quote_occurrences": 1,
+      "original_quote": "maintains a significant EBITDA presence despite recent revenue declines",
+      "claim": "Intel Corporation maintains a significant EBITDA presence despite recent revenue declines.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 6,
+          "quote": "|  0 | Revenue             | 79024000000.0      | 63054000000.0      | 54228000000.0 | 53101000000.0      | 52853000000.0      | 55495650000.0 | 58825389000.0 | 61178404560.0  | -9.6%  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 11,
+          "quote": "|  5 | EBITDA              | 33874000000.0      | 21299000000.0      | 11242000000.0 | 1203000000.0       | 14354000000.0      | 15316799400.0 | 17118188199.0 | 18720591795.36 | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "EBITDA values remain positive and substantial even as revenue has declined, supporting the claim.",
+      "action": "keep",
+      "revised_claim": "Intel Corporation maintains a significant EBITDA presence despite recent revenue declines.",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "Intel Corporation maintains a significant EBITDA presence despite recent revenue declines.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u0c2",
+      "source_id": 0,
+      "source_start": 136,
+      "source_end": 255,
+      "source_quote_occurrences": 1,
+      "original_quote": "The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience.",
+      "claim": "The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 8,
+          "quote": "|  2 | SG&A                | 6543000000.0       | 7002000000.0       | 5634000000.0  | 5507000000.0       | 4624000000.0       | 4550643300.0  | 4529554953.0  | 4404845128.32  | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 13,
+          "quote": "|  7 | SG&A Margin         | 8.3%               | 11.1%              | 10.4%         | 10.4%              | 8.7%               | 8.2%          | 7.7%          | 7.2%           | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "SG&A and SG&A margin both show a declining trend, indicating improving efficiency and cost management.",
+      "action": "keep",
+      "revised_claim": "The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience.",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u0c3",
+      "source_id": 0,
+      "source_start": 256,
+      "source_end": 397,
+      "source_quote_occurrences": 1,
+      "original_quote": "Valuation metrics suggest an attractive entry point relative to historical levels, underscoring strong fundamentals amid market fluctuations.",
+      "claim": "Valuation metrics suggest an attractive entry point relative to historical levels, underscoring strong fundamentals amid market fluctuations.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The evidence provides PE ratios and EV/EBITDA values but does not explicitly support the claim that these metrics suggest an attractive entry point or strong fundamentals relative to historical levels.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Valuation metrics suggest an attractive entry point relative to historical levels, underscoring strong fundamentals amid market fluctuations.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    }
+  ],
+  "units": [
+    {
+      "source_id": 0,
+      "claims": [
+        {
+          "original_quote": "Intel Corporation demonstrates robust contribution margins",
+          "claim": "Intel Corporation demonstrates robust contribution margins.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 10
+            }
+          ],
+          "reason": "Contribution margin values are provided for multiple years, and while they have declined, they remain substantial, supporting the claim of robust margins.",
+          "action": "keep",
+          "revised_claim": "Intel Corporation demonstrates robust contribution margins.",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "maintains a significant EBITDA presence despite recent revenue declines",
+          "claim": "Intel Corporation maintains a significant EBITDA presence despite recent revenue declines.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 6
+            },
+            {
+              "line_number": 11
+            }
+          ],
+          "reason": "EBITDA values remain positive and substantial even as revenue has declined, supporting the claim.",
+          "action": "keep",
+          "revised_claim": "Intel Corporation maintains a significant EBITDA presence despite recent revenue declines.",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience.",
+          "claim": "The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 8
+            },
+            {
+              "line_number": 13
+            }
+          ],
+          "reason": "SG&A and SG&A margin both show a declining trend, indicating improving efficiency and cost management.",
+          "action": "keep",
+          "revised_claim": "The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience.",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Valuation metrics suggest an attractive entry point relative to historical levels, underscoring strong fundamentals amid market fluctuations.",
+          "claim": "Valuation metrics suggest an attractive entry point relative to historical levels, underscoring strong fundamentals amid market fluctuations.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The evidence provides PE ratios and EV/EBITDA values but does not explicitly support the claim that these metrics suggest an attractive entry point or strong fundamentals relative to historical levels.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    }
+  ],
+  "verifier_version": "7-semantic-period-peer-horizon-review",
+  "release_deduplication": "Identical complete released strings appear once per section; all original claim rows and mappings remain. This is not semantic paraphrase deduplication.",
+  "unquoted_nonfactual_connectors": [
+    {
+      "source_id": 0,
+      "start": 58,
+      "end": 63,
+      "text": " and ",
+      "nonfactual_connector": true
+    }
+  ],
+  "deterministic_validation_failures": [],
+  "deterministic_failure_count": 0,
+  "verified_claim_count": 3,
+  "unverified_annotation_count": 1,
+  "withheld_claim_count": 0,
+  "claim_retention_rate": 1.0,
+  "supported_valid_retention_count": 3,
+  "automatic_year_binding_count": 0,
+  "limitations": "UNVERIFIED annotations preserve unsupported or deterministically rejected assertions for review and must not be counted as grounded facts. A claim's original machine classification is preserved even when deterministic checks reject it; retained_as_verified is then false. Rejected contradicted corrections remain in the audit but are withheld from the narrative. Semantic judgments are machine-assisted, not human-validated. Lexical quote coverage does not prove exhaustive semantic atomization. Exact numeric/year matches do not establish entity/period alignment or dimensional validity of conversions. Repeated source quotes may have ambiguous first-occurrence offsets."
+}

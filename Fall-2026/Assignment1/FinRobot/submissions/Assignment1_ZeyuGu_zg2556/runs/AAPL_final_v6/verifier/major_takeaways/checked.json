@@ -1,0 +1,1530 @@
+{
+  "original_text": "Revenue Growth: Apple's revenue trajectory exhibits a compound annual growth rate of 3.3% from 2021 through 2028, reflecting a recovery and acceleration after a dip in 2023 (-2.8%). This growth is driven by a rebound in product demand and expanded service offerings, as evidenced by the 16% year-over-year increase in Q3 2026 revenue to $109.4 billion. The sustainability of this growth lies in Apple's diversified ecosystem and continuous innovation, reinforcing its dominant market position and capacity to capture consumer spending despite macroeconomic challenges.\n\nGross Profit Margin: Apple's contribution margin has steadily improved from 41.8% in 2021 to an anticipated 49.9% by 2028. This margin expansion is primarily fueled by operational leverage, cost efficiencies, and pricing power, supported by tariff refunds that contributed approximately 2 percentage points in gross margin during Q3 2026. Such margin enhancement underscores Apple's competitive moat, reflecting high-quality products and robust supply chain management that enable premium pricing and superior profitability.\n\nSG&A Expense Margin: The SG&A margin shows a peak at 6.7% in 2024 followed by a decline to 5.1% in 2028, indicating improved operating leverage and disciplined expense management. Despite nominal increases in absolute SG&A spending, the decreasing margin reveals scalability in Apple's operations and effective management execution, allowing the company to invest strategically while leveraging fixed costs over growing revenues, which enhances free cash flow generation and shareholder value.\n\nEBITDA Margin Stability: Apple's EBITDA margin remains resilient and improving, from 33.7% in 2021 to an estimated 44.8% in 2028. This margin superiority compared to peers such as AMD and Nvidia—whose EBITDA figures are substantially lower and exhibit greater volatility—reflects Apple's strong profitability quality and operational efficiency. The premium EBITDA margin supports a higher valuation multiple (EV/EBITDA ranging mid-20s), signaling market recognition of Apple's durable competitive advantage and solid investment attractiveness for institutional investors seeking stable earnings with growth potential.",
+  "revised_text": "[UNVERIFIED - deterministic evidence/number check failed] Revenue Growth: Apple's revenue trajectory exhibits a compound annual growth rate of 3.3% from 2021 through 2028\n\n[UNVERIFIED - deterministic evidence/number check failed] reflecting a recovery and acceleration after a dip in 2023 (-2.8%)\n\n[UNVERIFIED - deterministic evidence/number check failed] as evidenced by the 16% year-over-year increase in Q3 2026 revenue to $109.4 billion\n\n[UNVERIFIED - evidence not supplied] Apple's growth is driven by a rebound in product demand and expanded service offerings.\n\n[UNVERIFIED - evidence not supplied] The sustainability of Apple's growth is due to its diversified ecosystem and continuous innovation, which reinforce its dominant market position and capacity to capture consumer spending despite macroeconomic challenges.\n\n[UNVERIFIED - deterministic evidence/number check failed] Apple's contribution margin has steadily improved from 41.8% in 2021 to an anticipated 49.9% by 2028.\n\n[UNVERIFIED - deterministic evidence/number check failed] supported by tariff refunds that contributed approximately 2 percentage points in gross margin during Q3 2026.\n\n[UNVERIFIED - evidence not supplied] Apple's margin expansion is primarily fueled by operational leverage, cost efficiencies, and pricing power.\n\n[UNVERIFIED - evidence not supplied] Apple's margin enhancement underscores its competitive moat, reflecting high-quality products and robust supply chain management that enable premium pricing and superior profitability.\n\n[UNVERIFIED - deterministic evidence/number check failed] The SG&A margin shows a peak at 6.7% in 2024 followed by a decline to 5.1% in 2028\n\n[UNVERIFIED - evidence not supplied] The decline in SG&A margin indicates improved operating leverage and disciplined expense management.\n\n[UNVERIFIED - evidence not supplied] Despite nominal increases in absolute SG&A spending, the decreasing margin reveals scalability in Apple's operations and effective management execution, allowing the company to invest strategically while leveraging fixed costs over growing revenues, which enhances free cash flow generation and shareholder value.\n\n[UNVERIFIED - deterministic evidence/number check failed] Apple's EBITDA margin remains resilient and improving, from 33.7% in 2021 to an estimated 44.8% in 2028.\n\nApple's EBITDA margin is superior to peers such as AMD and Nvidia, whose EBITDA figures are substantially lower and exhibit greater volatility.\n\n[UNVERIFIED - deterministic evidence/number check failed] The premium EBITDA margin supports a higher valuation multiple (EV/EBITDA ranging mid-20s), signaling market recognition of Apple's durable competitive advantage and solid investment attractiveness for institutional investors seeking stable earnings with growth potential.\n\n[UNVERIFIED - evidence not supplied] Apple's premium EBITDA margin and valuation multiple signal market recognition of its durable competitive advantage and investment attractiveness for institutional investors seeking stable earnings with growth potential.",
+  "claims": [
+    {
+      "claim_id": "u0c0",
+      "source_id": 0,
+      "source_start": 0,
+      "source_end": 112,
+      "source_quote_occurrences": 1,
+      "original_quote": "Revenue Growth: Apple's revenue trajectory exhibits a compound annual growth rate of 3.3% from 2021 through 2028",
+      "claim": "Apple's revenue compound annual growth rate is 3.3% from 2021 through 2028.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A              | 2022A              | 2023A             | 2024A             | 2025A            | 2026E          | 2027E          | 2028E           | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 6,
+          "quote": "|  0 | Revenue             | 365817000000.0     | 394328000000.0     | 383285000000.0    | 391035000000.0    | 416161000000.0   | 436969050000.0 | 463187193000.0 | 481714680720.0  | 3.3%   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The CAGR for revenue from 2021 to 2028 is explicitly stated in the table.",
+      "action": "keep",
+      "revised_claim": "Apple's revenue compound annual growth rate is 3.3% from 2021 through 2028.",
+      "number_bindings": [
+        {
+          "claim_number": "2021",
+          "evidence_line": 4,
+          "evidence_number": "2021A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "3.3%",
+          "evidence_line": 6,
+          "evidence_number": "3.3%",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "3.3%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2021",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2021:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Revenue Growth: Apple's revenue trajectory exhibits a compound annual growth rate of 3.3% from 2021 through 2028",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u0c1",
+      "source_id": 0,
+      "source_start": 114,
+      "source_end": 180,
+      "source_quote_occurrences": 1,
+      "original_quote": "reflecting a recovery and acceleration after a dip in 2023 (-2.8%)",
+      "claim": "Apple's revenue declined by 2.8% in 2023, followed by a recovery and acceleration.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A              | 2022A              | 2023A             | 2024A             | 2025A            | 2026E          | 2027E          | 2028E           | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 8,
+          "quote": "|  2 | SG&A                | 21973000000.0      | 25094000000.0      | 24932000000.0     | 26097000000.0     | 27601000000.0    | 26655112050.0  | 25938482808.0  | 24567448716.72  | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The table shows -2.8% revenue growth in 2023, with positive growth in subsequent years.",
+      "action": "keep",
+      "revised_claim": "Apple's revenue declined by 2.8% in 2023, followed by a recovery and acceleration.",
+      "number_bindings": [
+        {
+          "claim_number": "2023",
+          "evidence_line": 4,
+          "evidence_number": "2023A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "-2.8%",
+          "evidence_line": 8,
+          "evidence_number": "-2.8%",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2.8%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2023,",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2.8%:missing_binding",
+        "numeric_check_failed:2023,:missing_binding"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] reflecting a recovery and acceleration after a dip in 2023 (-2.8%)",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u0c2",
+      "source_id": 0,
+      "source_start": 267,
+      "source_end": 351,
+      "source_quote_occurrences": 1,
+      "original_quote": "as evidenced by the 16% year-over-year increase in Q3 2026 revenue to $109.4 billion",
+      "claim": "Apple's Q3 2026 revenue was $109.4 billion, representing a 16% year-over-year increase.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 45,
+          "quote": "Apple today announced financial results for its fiscal 2026 third quarter ended June 27, 2026. The Company posted quarterly revenue of $109.4 billion, up 16 percent year over year. Company gross margin was 50.1 percent, including a favorable impact of approximately 2 percentage points from tariff refunds. Diluted earnings per share was $2.02, up 29 percent year over year, and included a favorable impact of $0.11 from tariff refunds.",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The news summary states Q3 2026 revenue was $109.4 billion, up 16% year over year.",
+      "action": "keep",
+      "revised_claim": "Apple's Q3 2026 revenue was $109.4 billion, representing a 16% year-over-year increase.",
+      "number_bindings": [
+        {
+          "claim_number": "2026",
+          "evidence_line": 45,
+          "evidence_number": "2026",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "109.4",
+          "evidence_line": 45,
+          "evidence_number": "109.4",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "16",
+          "evidence_line": 45,
+          "evidence_number": "16",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "3",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2026",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "109.4",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "16%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:3:missing_binding",
+        "numeric_check_failed:16%:missing_binding"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] as evidenced by the 16% year-over-year increase in Q3 2026 revenue to $109.4 billion",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u0c3",
+      "source_id": 0,
+      "source_start": 182,
+      "source_end": 266,
+      "source_quote_occurrences": 1,
+      "original_quote": "This growth is driven by a rebound in product demand and expanded service offerings,",
+      "claim": "Apple's growth is driven by a rebound in product demand and expanded service offerings.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for the causal explanation of growth drivers.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Apple's growth is driven by a rebound in product demand and expanded service offerings.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u0c4",
+      "source_id": 0,
+      "source_start": 353,
+      "source_end": 568,
+      "source_quote_occurrences": 1,
+      "original_quote": "The sustainability of this growth lies in Apple's diversified ecosystem and continuous innovation, reinforcing its dominant market position and capacity to capture consumer spending despite macroeconomic challenges.",
+      "claim": "The sustainability of Apple's growth is due to its diversified ecosystem and continuous innovation, which reinforce its dominant market position and capacity to capture consumer spending despite macroeconomic challenges.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for the causal explanation or qualitative assessment of Apple's ecosystem, innovation, or market position.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] The sustainability of Apple's growth is due to its diversified ecosystem and continuous innovation, which reinforce its dominant market position and capacity to capture consumer spending despite macroeconomic challenges.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u1c0",
+      "source_id": 1,
+      "source_start": 591,
+      "source_end": 692,
+      "source_quote_occurrences": 1,
+      "original_quote": "Apple's contribution margin has steadily improved from 41.8% in 2021 to an anticipated 49.9% by 2028.",
+      "claim": "Apple's contribution margin improved from 41.8% in 2021 to an anticipated 49.9% by 2028.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A              | 2022A              | 2023A             | 2024A             | 2025A            | 2026E          | 2027E          | 2028E           | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 10,
+          "quote": "|  4 | Contribution Margin | 41.8%              | 43.3%              | 44.1%             | 46.2%             | 46.9%            | 47.9%          | 48.9%          | 49.9%           | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The table shows contribution margin of 41.8% in 2021 and 49.9% in 2028E.",
+      "action": "keep",
+      "revised_claim": "Apple's contribution margin improved from 41.8% in 2021 to an anticipated 49.9% by 2028.",
+      "number_bindings": [
+        {
+          "claim_number": "41.8%",
+          "evidence_line": 10,
+          "evidence_number": "41.8%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2021",
+          "evidence_line": 4,
+          "evidence_number": "2021A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "49.9%",
+          "evidence_line": 10,
+          "evidence_number": "49.9%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "41.8%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2021",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "49.9%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2021:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Apple's contribution margin has steadily improved from 41.8% in 2021 to an anticipated 49.9% by 2028.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u1c1",
+      "source_id": 1,
+      "source_start": 798,
+      "source_end": 908,
+      "source_quote_occurrences": 1,
+      "original_quote": "supported by tariff refunds that contributed approximately 2 percentage points in gross margin during Q3 2026.",
+      "claim": "Tariff refunds contributed approximately 2 percentage points in gross margin during Q3 2026.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 45,
+          "quote": "Apple today announced financial results for its fiscal 2026 third quarter ended June 27, 2026. The Company posted quarterly revenue of $109.4 billion, up 16 percent year over year. Company gross margin was 50.1 percent, including a favorable impact of approximately 2 percentage points from tariff refunds. Diluted earnings per share was $2.02, up 29 percent year over year, and included a favorable impact of $0.11 from tariff refunds.",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The news summary states gross margin included a favorable impact of approximately 2 percentage points from tariff refunds in Q3 2026.",
+      "action": "keep",
+      "revised_claim": "Tariff refunds contributed approximately 2 percentage points in gross margin during Q3 2026.",
+      "number_bindings": [
+        {
+          "claim_number": "2",
+          "evidence_line": 45,
+          "evidence_number": "2",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2026",
+          "evidence_line": 45,
+          "evidence_number": "2026",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "3",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2026",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:3:missing_binding"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] supported by tariff refunds that contributed approximately 2 percentage points in gross margin during Q3 2026.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u1c2",
+      "source_id": 1,
+      "source_start": 693,
+      "source_end": 796,
+      "source_quote_occurrences": 1,
+      "original_quote": "This margin expansion is primarily fueled by operational leverage, cost efficiencies, and pricing power",
+      "claim": "Apple's margin expansion is primarily fueled by operational leverage, cost efficiencies, and pricing power.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for the causal explanation of margin expansion.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Apple's margin expansion is primarily fueled by operational leverage, cost efficiencies, and pricing power.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u1c3",
+      "source_id": 1,
+      "source_start": 909,
+      "source_end": 1094,
+      "source_quote_occurrences": 1,
+      "original_quote": "Such margin enhancement underscores Apple's competitive moat, reflecting high-quality products and robust supply chain management that enable premium pricing and superior profitability.",
+      "claim": "Apple's margin enhancement underscores its competitive moat, reflecting high-quality products and robust supply chain management that enable premium pricing and superior profitability.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for the qualitative assessment of Apple's competitive moat, product quality, or supply chain management.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Apple's margin enhancement underscores its competitive moat, reflecting high-quality products and robust supply chain management that enable premium pricing and superior profitability.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u2c0",
+      "source_id": 2,
+      "source_start": 1117,
+      "source_end": 1199,
+      "source_quote_occurrences": 1,
+      "original_quote": "The SG&A margin shows a peak at 6.7% in 2024 followed by a decline to 5.1% in 2028",
+      "claim": "Apple's SG&A margin peaks at 6.7% in 2024 and declines to 5.1% in 2028.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A              | 2022A              | 2023A             | 2024A             | 2025A            | 2026E          | 2027E          | 2028E           | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 13,
+          "quote": "|  7 | SG&A Margin         | 6.0%               | 6.4%               | 6.5%              | 6.7%              | 6.6%             | 6.1%           | 5.6%           | 5.1%            | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The table shows SG&A margin of 6.7% in 2024 and 5.1% in 2028E.",
+      "action": "keep",
+      "revised_claim": "Apple's SG&A margin peaks at 6.7% in 2024 and declines to 5.1% in 2028.",
+      "number_bindings": [
+        {
+          "claim_number": "6.7%",
+          "evidence_line": 13,
+          "evidence_number": "6.7%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2024",
+          "evidence_line": 4,
+          "evidence_number": "2024A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "5.1%",
+          "evidence_line": 13,
+          "evidence_number": "5.1%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "6.7%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2024",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "5.1%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2024:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] The SG&A margin shows a peak at 6.7% in 2024 followed by a decline to 5.1% in 2028",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u2c1",
+      "source_id": 2,
+      "source_start": 1201,
+      "source_end": 1274,
+      "source_quote_occurrences": 1,
+      "original_quote": "indicating improved operating leverage and disciplined expense management",
+      "claim": "The decline in SG&A margin indicates improved operating leverage and disciplined expense management.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for the causal explanation of the SG&A margin decline.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] The decline in SG&A margin indicates improved operating leverage and disciplined expense management.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u2c2",
+      "source_id": 2,
+      "source_start": 1276,
+      "source_end": 1589,
+      "source_quote_occurrences": 1,
+      "original_quote": "Despite nominal increases in absolute SG&A spending, the decreasing margin reveals scalability in Apple's operations and effective management execution, allowing the company to invest strategically while leveraging fixed costs over growing revenues, which enhances free cash flow generation and shareholder value.",
+      "claim": "Despite nominal increases in absolute SG&A spending, the decreasing margin reveals scalability in Apple's operations and effective management execution, allowing the company to invest strategically while leveraging fixed costs over growing revenues, which enhances free cash flow generation and shareholder value.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for the causal explanation or qualitative assessment of scalability, management execution, or impact on free cash flow and shareholder value.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Despite nominal increases in absolute SG&A spending, the decreasing margin reveals scalability in Apple's operations and effective management execution, allowing the company to invest strategically while leveraging fixed costs over growing revenues, which enhances free cash flow generation and shareholder value.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u3c0",
+      "source_id": 3,
+      "source_start": 1616,
+      "source_end": 1720,
+      "source_quote_occurrences": 1,
+      "original_quote": "Apple's EBITDA margin remains resilient and improving, from 33.7% in 2021 to an estimated 44.8% in 2028.",
+      "claim": "Apple's EBITDA margin improves from 33.7% in 2021 to an estimated 44.8% in 2028.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A              | 2022A              | 2023A             | 2024A             | 2025A            | 2026E          | 2027E          | 2028E           | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 12,
+          "quote": "|  6 | EBITDA Margin       | 33.7%              | 33.8%              | 33.7%             | 34.5%             | 34.7%            | 41.8%          | 43.3%          | 44.8%           | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The table shows EBITDA margin of 33.7% in 2021 and 44.8% in 2028E.",
+      "action": "keep",
+      "revised_claim": "Apple's EBITDA margin improves from 33.7% in 2021 to an estimated 44.8% in 2028.",
+      "number_bindings": [
+        {
+          "claim_number": "33.7%",
+          "evidence_line": 12,
+          "evidence_number": "33.7%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2021",
+          "evidence_line": 4,
+          "evidence_number": "2021A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "44.8%",
+          "evidence_line": 12,
+          "evidence_number": "44.8%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "33.7%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2021",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "44.8%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2021:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Apple's EBITDA margin remains resilient and improving, from 33.7% in 2021 to an estimated 44.8% in 2028.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u3c1",
+      "source_id": 3,
+      "source_start": 1721,
+      "source_end": 1935,
+      "source_quote_occurrences": 1,
+      "original_quote": "This margin superiority compared to peers such as AMD and Nvidia—whose EBITDA figures are substantially lower and exhibit greater volatility—reflects Apple's strong profitability quality and operational efficiency.",
+      "claim": "Apple's EBITDA margin is superior to peers such as AMD and Nvidia, whose EBITDA figures are substantially lower and exhibit greater volatility.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 19,
+          "quote": "|   year |          AAPL |           AMD |          NVDA |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 20,
+          "quote": "|-------:|--------------:|--------------:|--------------:|",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 21,
+          "quote": "|   2021 |   1.23136e+11 |   4.166e+09   | nan           |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 22,
+          "quote": "|   2022 |   1.33138e+11 |   5.534e+09   |   1.1351e+10  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 23,
+          "quote": "|   2023 |   1.29188e+11 |   4.149e+09   |   5.986e+09   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 24,
+          "quote": "|   2024 |   1.3493e+11  |   5.258e+09   |   3.5583e+10  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 25,
+          "quote": "|   2025 |   1.44427e+11 |   7.275e+09   |   8.6137e+10  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 27,
+          "quote": "|   2027 |   1.50435e+11 |   8.60087e+09 |   3.82001e+11 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "Peer EBITDA table shows Apple's EBITDA is much higher than AMD and Nvidia for the years shown, and Nvidia's figures are more volatile.",
+      "action": "keep",
+      "revised_claim": "Apple's EBITDA margin is superior to peers such as AMD and Nvidia, whose EBITDA figures are substantially lower and exhibit greater volatility.",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "Apple's EBITDA margin is superior to peers such as AMD and Nvidia, whose EBITDA figures are substantially lower and exhibit greater volatility.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u3c2",
+      "source_id": 3,
+      "source_start": 1936,
+      "source_end": 2208,
+      "source_quote_occurrences": 1,
+      "original_quote": "The premium EBITDA margin supports a higher valuation multiple (EV/EBITDA ranging mid-20s), signaling market recognition of Apple's durable competitive advantage and solid investment attractiveness for institutional investors seeking stable earnings with growth potential.",
+      "claim": "Apple's EV/EBITDA multiple ranges in the mid-20s.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 29,
+          "quote": "## Peer EV/EBITDA Comparison",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 31,
+          "quote": "|-------:|---------:|---------:|---------:|",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 32,
+          "quote": "|   2021 |  20.7521 |  42.1013 | nan      |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 33,
+          "quote": "|   2022 |  19.1395 |  17.9136 |  54.7187 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 34,
+          "quote": "|   2023 |  21.5928 |  57.1197 |  81.0476 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 35,
+          "quote": "|   2024 |  26.564  |  38.2717 |  43.4522 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 36,
+          "quote": "|   2025 |  26.9699 |  47.8456 |  33.7774 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The EV/EBITDA table shows Apple's multiple is in the mid-20s for 2021-2025.",
+      "action": "keep",
+      "revised_claim": "Apple's EV/EBITDA multiple ranges in the mid-20s.",
+      "number_bindings": [],
+      "numeric_results": [
+        {
+          "token": "-20",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:-20:missing_binding"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] The premium EBITDA margin supports a higher valuation multiple (EV/EBITDA ranging mid-20s), signaling market recognition of Apple's durable competitive advantage and solid investment attractiveness for institutional investors seeking stable earnings with growth potential.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u3c3",
+      "source_id": 3,
+      "source_start": 2028,
+      "source_end": 2208,
+      "source_quote_occurrences": 1,
+      "original_quote": "signaling market recognition of Apple's durable competitive advantage and solid investment attractiveness for institutional investors seeking stable earnings with growth potential.",
+      "claim": "Apple's premium EBITDA margin and valuation multiple signal market recognition of its durable competitive advantage and investment attractiveness for institutional investors seeking stable earnings with growth potential.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for the causal explanation or qualitative assessment of market recognition, competitive advantage, or investment attractiveness.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Apple's premium EBITDA margin and valuation multiple signal market recognition of its durable competitive advantage and investment attractiveness for institutional investors seeking stable earnings with growth potential.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    }
+  ],
+  "units": [
+    {
+      "source_id": 0,
+      "claims": [
+        {
+          "original_quote": "Revenue Growth: Apple's revenue trajectory exhibits a compound annual growth rate of 3.3% from 2021 through 2028",
+          "claim": "Apple's revenue compound annual growth rate is 3.3% from 2021 through 2028.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 6
+            }
+          ],
+          "reason": "The CAGR for revenue from 2021 to 2028 is explicitly stated in the table.",
+          "action": "keep",
+          "revised_claim": "Apple's revenue compound annual growth rate is 3.3% from 2021 through 2028.",
+          "number_bindings": [
+            {
+              "claim_number": "2021",
+              "evidence_line": 4,
+              "evidence_number": "2021A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "3.3%",
+              "evidence_line": 6,
+              "evidence_number": "3.3%",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "reflecting a recovery and acceleration after a dip in 2023 (-2.8%)",
+          "claim": "Apple's revenue declined by 2.8% in 2023, followed by a recovery and acceleration.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 8
+            }
+          ],
+          "reason": "The table shows -2.8% revenue growth in 2023, with positive growth in subsequent years.",
+          "action": "keep",
+          "revised_claim": "Apple's revenue declined by 2.8% in 2023, followed by a recovery and acceleration.",
+          "number_bindings": [
+            {
+              "claim_number": "2023",
+              "evidence_line": 4,
+              "evidence_number": "2023A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "-2.8%",
+              "evidence_line": 8,
+              "evidence_number": "-2.8%",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "as evidenced by the 16% year-over-year increase in Q3 2026 revenue to $109.4 billion",
+          "claim": "Apple's Q3 2026 revenue was $109.4 billion, representing a 16% year-over-year increase.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 45
+            }
+          ],
+          "reason": "The news summary states Q3 2026 revenue was $109.4 billion, up 16% year over year.",
+          "action": "keep",
+          "revised_claim": "Apple's Q3 2026 revenue was $109.4 billion, representing a 16% year-over-year increase.",
+          "number_bindings": [
+            {
+              "claim_number": "2026",
+              "evidence_line": 45,
+              "evidence_number": "2026",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "109.4",
+              "evidence_line": 45,
+              "evidence_number": "109.4",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "16",
+              "evidence_line": 45,
+              "evidence_number": "16",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "This growth is driven by a rebound in product demand and expanded service offerings,",
+          "claim": "Apple's growth is driven by a rebound in product demand and expanded service offerings.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for the causal explanation of growth drivers.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The sustainability of this growth lies in Apple's diversified ecosystem and continuous innovation, reinforcing its dominant market position and capacity to capture consumer spending despite macroeconomic challenges.",
+          "claim": "The sustainability of Apple's growth is due to its diversified ecosystem and continuous innovation, which reinforce its dominant market position and capacity to capture consumer spending despite macroeconomic challenges.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for the causal explanation or qualitative assessment of Apple's ecosystem, innovation, or market position.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 1,
+      "claims": [
+        {
+          "original_quote": "Apple's contribution margin has steadily improved from 41.8% in 2021 to an anticipated 49.9% by 2028.",
+          "claim": "Apple's contribution margin improved from 41.8% in 2021 to an anticipated 49.9% by 2028.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 10
+            }
+          ],
+          "reason": "The table shows contribution margin of 41.8% in 2021 and 49.9% in 2028E.",
+          "action": "keep",
+          "revised_claim": "Apple's contribution margin improved from 41.8% in 2021 to an anticipated 49.9% by 2028.",
+          "number_bindings": [
+            {
+              "claim_number": "41.8%",
+              "evidence_line": 10,
+              "evidence_number": "41.8%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2021",
+              "evidence_line": 4,
+              "evidence_number": "2021A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "49.9%",
+              "evidence_line": 10,
+              "evidence_number": "49.9%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "supported by tariff refunds that contributed approximately 2 percentage points in gross margin during Q3 2026.",
+          "claim": "Tariff refunds contributed approximately 2 percentage points in gross margin during Q3 2026.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 45
+            }
+          ],
+          "reason": "The news summary states gross margin included a favorable impact of approximately 2 percentage points from tariff refunds in Q3 2026.",
+          "action": "keep",
+          "revised_claim": "Tariff refunds contributed approximately 2 percentage points in gross margin during Q3 2026.",
+          "number_bindings": [
+            {
+              "claim_number": "2",
+              "evidence_line": 45,
+              "evidence_number": "2",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2026",
+              "evidence_line": 45,
+              "evidence_number": "2026",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "This margin expansion is primarily fueled by operational leverage, cost efficiencies, and pricing power",
+          "claim": "Apple's margin expansion is primarily fueled by operational leverage, cost efficiencies, and pricing power.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for the causal explanation of margin expansion.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Such margin enhancement underscores Apple's competitive moat, reflecting high-quality products and robust supply chain management that enable premium pricing and superior profitability.",
+          "claim": "Apple's margin enhancement underscores its competitive moat, reflecting high-quality products and robust supply chain management that enable premium pricing and superior profitability.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for the qualitative assessment of Apple's competitive moat, product quality, or supply chain management.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 2,
+      "claims": [
+        {
+          "original_quote": "The SG&A margin shows a peak at 6.7% in 2024 followed by a decline to 5.1% in 2028",
+          "claim": "Apple's SG&A margin peaks at 6.7% in 2024 and declines to 5.1% in 2028.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 13
+            }
+          ],
+          "reason": "The table shows SG&A margin of 6.7% in 2024 and 5.1% in 2028E.",
+          "action": "keep",
+          "revised_claim": "Apple's SG&A margin peaks at 6.7% in 2024 and declines to 5.1% in 2028.",
+          "number_bindings": [
+            {
+              "claim_number": "6.7%",
+              "evidence_line": 13,
+              "evidence_number": "6.7%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2024",
+              "evidence_line": 4,
+              "evidence_number": "2024A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "5.1%",
+              "evidence_line": 13,
+              "evidence_number": "5.1%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "indicating improved operating leverage and disciplined expense management",
+          "claim": "The decline in SG&A margin indicates improved operating leverage and disciplined expense management.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for the causal explanation of the SG&A margin decline.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Despite nominal increases in absolute SG&A spending, the decreasing margin reveals scalability in Apple's operations and effective management execution, allowing the company to invest strategically while leveraging fixed costs over growing revenues, which enhances free cash flow generation and shareholder value.",
+          "claim": "Despite nominal increases in absolute SG&A spending, the decreasing margin reveals scalability in Apple's operations and effective management execution, allowing the company to invest strategically while leveraging fixed costs over growing revenues, which enhances free cash flow generation and shareholder value.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for the causal explanation or qualitative assessment of scalability, management execution, or impact on free cash flow and shareholder value.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 3,
+      "claims": [
+        {
+          "original_quote": "Apple's EBITDA margin remains resilient and improving, from 33.7% in 2021 to an estimated 44.8% in 2028.",
+          "claim": "Apple's EBITDA margin improves from 33.7% in 2021 to an estimated 44.8% in 2028.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 12
+            }
+          ],
+          "reason": "The table shows EBITDA margin of 33.7% in 2021 and 44.8% in 2028E.",
+          "action": "keep",
+          "revised_claim": "Apple's EBITDA margin improves from 33.7% in 2021 to an estimated 44.8% in 2028.",
+          "number_bindings": [
+            {
+              "claim_number": "33.7%",
+              "evidence_line": 12,
+              "evidence_number": "33.7%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2021",
+              "evidence_line": 4,
+              "evidence_number": "2021A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "44.8%",
+              "evidence_line": 12,
+              "evidence_number": "44.8%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "This margin superiority compared to peers such as AMD and Nvidia—whose EBITDA figures are substantially lower and exhibit greater volatility—reflects Apple's strong profitability quality and operational efficiency.",
+          "claim": "Apple's EBITDA margin is superior to peers such as AMD and Nvidia, whose EBITDA figures are substantially lower and exhibit greater volatility.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 19
+            },
+            {
+              "line_number": 20
+            },
+            {
+              "line_number": 21
+            },
+            {
+              "line_number": 22
+            },
+            {
+              "line_number": 23
+            },
+            {
+              "line_number": 24
+            },
+            {
+              "line_number": 25
+            },
+            {
+              "line_number": 27
+            }
+          ],
+          "reason": "Peer EBITDA table shows Apple's EBITDA is much higher than AMD and Nvidia for the years shown, and Nvidia's figures are more volatile.",
+          "action": "keep",
+          "revised_claim": "Apple's EBITDA margin is superior to peers such as AMD and Nvidia, whose EBITDA figures are substantially lower and exhibit greater volatility.",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The premium EBITDA margin supports a higher valuation multiple (EV/EBITDA ranging mid-20s), signaling market recognition of Apple's durable competitive advantage and solid investment attractiveness for institutional investors seeking stable earnings with growth potential.",
+          "claim": "Apple's EV/EBITDA multiple ranges in the mid-20s.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 29
+            },
+            {
+              "line_number": 31
+            },
+            {
+              "line_number": 32
+            },
+            {
+              "line_number": 33
+            },
+            {
+              "line_number": 34
+            },
+            {
+              "line_number": 35
+            },
+            {
+              "line_number": 36
+            }
+          ],
+          "reason": "The EV/EBITDA table shows Apple's multiple is in the mid-20s for 2021-2025.",
+          "action": "keep",
+          "revised_claim": "Apple's EV/EBITDA multiple ranges in the mid-20s.",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "signaling market recognition of Apple's durable competitive advantage and solid investment attractiveness for institutional investors seeking stable earnings with growth potential.",
+          "claim": "Apple's premium EBITDA margin and valuation multiple signal market recognition of its durable competitive advantage and investment attractiveness for institutional investors seeking stable earnings with growth potential.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for the causal explanation or qualitative assessment of market recognition, competitive advantage, or investment attractiveness.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    }
+  ],
+  "verifier_version": "6-reject-structural-only-evidence",
+  "unquoted_nonfactual_connectors": [
+    {
+      "source_id": 1,
+      "start": 0,
+      "end": 21,
+      "text": "Gross Profit Margin: ",
+      "nonfactual_connector": true
+    },
+    {
+      "source_id": 2,
+      "start": 0,
+      "end": 21,
+      "text": "SG&A Expense Margin: ",
+      "nonfactual_connector": true
+    },
+    {
+      "source_id": 3,
+      "start": 0,
+      "end": 25,
+      "text": "EBITDA Margin Stability: ",
+      "nonfactual_connector": true
+    }
+  ],
+  "deterministic_validation_failures": [
+    {
+      "claim_id": "u0c0",
+      "errors": [
+        "numeric_check_failed:2021:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "3.3%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2021",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u0c1",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2.8%:missing_binding",
+        "numeric_check_failed:2023,:missing_binding"
+      ],
+      "numeric_results": [
+        {
+          "token": "2.8%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2023,",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u0c2",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:3:missing_binding",
+        "numeric_check_failed:16%:missing_binding"
+      ],
+      "numeric_results": [
+        {
+          "token": "3",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2026",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "109.4",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "16%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u1c0",
+      "errors": [
+        "numeric_check_failed:2021:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "41.8%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2021",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "49.9%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u1c1",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:3:missing_binding"
+      ],
+      "numeric_results": [
+        {
+          "token": "2",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "3",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2026",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u2c0",
+      "errors": [
+        "numeric_check_failed:2024:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "6.7%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2024",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "5.1%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u3c0",
+      "errors": [
+        "numeric_check_failed:2021:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "33.7%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2021",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "44.8%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u3c2",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:-20:missing_binding"
+      ],
+      "numeric_results": [
+        {
+          "token": "-20",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ]
+    }
+  ],
+  "deterministic_failure_count": 8,
+  "verified_claim_count": 1,
+  "unverified_annotation_count": 15,
+  "withheld_claim_count": 0,
+  "claim_retention_rate": 1.0,
+  "supported_valid_retention_count": 1,
+  "automatic_year_binding_count": 0,
+  "limitations": "UNVERIFIED annotations preserve unsupported or deterministically rejected assertions for review and must not be counted as grounded facts. A claim's original machine classification is preserved even when deterministic checks reject it; retained_as_verified is then false. Rejected contradicted corrections remain in the audit but are withheld from the narrative. Semantic judgments are machine-assisted, not human-validated. Lexical quote coverage does not prove exhaustive semantic atomization. Exact numeric/year matches do not establish entity/period alignment or dimensional validity of conversions. Repeated source quotes may have ambiguous first-occurrence offsets."
+}

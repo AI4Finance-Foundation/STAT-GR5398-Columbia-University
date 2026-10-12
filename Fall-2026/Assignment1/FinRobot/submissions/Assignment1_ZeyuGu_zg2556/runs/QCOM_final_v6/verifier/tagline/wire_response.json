@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EXwX8HYtvstamc53EdaKqMWptax17",
+  "object": "chat.completion",
+  "created": 1791758534,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"units\":[{\"source_id\":0,\"claims\":[{\"original_quote\":\"QUALCOMM Incorporated demonstrates robust financial fundamentals characterized by consistent revenue growth and expanding contribution margins.\",\"claim\":\"QUALCOMM Incorporated demonstrates robust financial fundamentals characterized by consistent revenue growth and expanding contribution margins.\",\"classification\":\"Supported\",\"evidence\":[{\"line_number\":6},{\"line_number\":10}],\"reason\":\"The financial table shows revenue increasing each year from 2023A to 2028E, and contribution margin rising from 55.7% in 2023A to 58.4% in 2028E, supporting the claim of consistent revenue growth and expanding contribution margins.\",\"action\":\"keep\",\"revised_claim\":\"QUALCOMM Incorporated demonstrates robust financial fundamentals characterized by consistent revenue growth from 2023A to 2028E and expanding contribution margins over the same period.\",\"number_bindings\":[{\"claim_number\":\"2023\",\"evidence_line\":4,\"evidence_number\":\"2023\",\"transform\":\"identity\"},{\"claim_number\":\"2028\",\"evidence_line\":4,\"evidence_number\":\"2028\",\"transform\":\"identity\"},{\"claim_number\":\"35820000000.0\",\"evidence_line\":6,\"evidence_number\":\"35820000000.0\",\"transform\":\"identity\"},{\"claim_number\":\"51259615680.0\",\"evidence_line\":6,\"evidence_number\":\"51259615680.0\",\"transform\":\"identity\"},{\"claim_number\":\"55.7%\",\"evidence_line\":10,\"evidence_number\":\"55.7%\",\"transform\":\"identity\"},{\"claim_number\":\"58.4%\",\"evidence_line\":10,\"evidence_number\":\"58.4%\",\"transform\":\"identity\"}]},{\"original_quote\":\"The company maintains strong operational efficiency with improving EBITDA margins and disciplined SG&A expense management.\",\"claim\":\"The company maintains strong operational efficiency with improving EBITDA margins and disciplined SG&A expense management.\",\"classification\":\"Supported\",\"evidence\":[{\"line_number\":12},{\"line_number\":13}],\"reason\":\"EBITDA margin increases from 26.8% in 2023A to 52.9% in 2028E, and SG&A margin decreases from 6.9% in 2023A to 5.5% in 2028E, indicating improving EBITDA margins and disciplined SG&A expense management.\",\"action\":\"keep\",\"revised_claim\":\"The company maintains strong operational efficiency with EBITDA margin improving from 26.8% in 2023A to 52.9% in 2028E and SG&A margin decreasing from 6.9% in 2023A to 5.5% in 2028E.\",\"number_bindings\":[{\"claim_number\":\"26.8%\",\"evidence_line\":12,\"evidence_number\":\"26.8%\",\"transform\":\"identity\"},{\"claim_number\":\"52.9%\",\"evidence_line\":12,\"evidence_number\":\"52.9%\",\"transform\":\"identity\"},{\"claim_number\":\"6.9%\",\"evidence_line\":13,\"evidence_number\":\"6.9%\",\"transform\":\"identity\"},{\"claim_number\":\"5.5%\",\"evidence_line\":13,\"evidence_number\":\"5.5%\",\"transform\":\"identity\"}]},{\"original_quote\":\"Its valuation reflects solid profitability and a resilient business model within its industry.\",\"claim\":\"Its valuation reflects solid profitability and a resilient business model within its industry.\",\"classification\":\"Unsupported\",\"evidence\":[],\"reason\":\"There is no evidence provided regarding valuation metrics, profitability relative to valuation, or qualitative assessment of business model resilience.\",\"action\":\"withhold\",\"revised_claim\":\"\",\"number_bindings\":[]}],\"nonfactual_reason\":\"\"}]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3183,
+    "completion_tokens": 738,
+    "total_tokens": 3921,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_d3fa955e2a"
+}

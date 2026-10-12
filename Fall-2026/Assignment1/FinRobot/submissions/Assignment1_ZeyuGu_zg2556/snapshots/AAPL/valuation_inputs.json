@@ -1,0 +1,63 @@
+{
+  "ticker": "AAPL",
+  "run_id": "AAPL-20261011T211000Z-snapshot",
+  "current_price": 336.64,
+  "shares_outstanding": 14594180000,
+  "currency": "USD",
+  "peer_data": {
+    "NVDA": {
+      "ev_ebitda": 31.428342257457523,
+      "period_end_year": "2026"
+    },
+    "AMD": {
+      "ev_ebitda": 47.845602749140895,
+      "period_end_year": "2025"
+    }
+  },
+  "source_metadata": {
+    "shares_outstanding": {
+      "sources": [
+        {
+          "source_url": "https://financialmodelingprep.com/stable/shares-float?symbol=AAPL",
+          "fetched_at_utc": "2026-10-11T21:21:08.597677+00:00",
+          "status_code": 200,
+          "content_type": "application/json; charset=utf-8",
+          "body_sha256": "1f3d96c6d0d9d46543e0ec2dc0df1387e11026e057c136e3a0c6b45ac500a7a9",
+          "secret_echo_redacted": false,
+          "runtime_seconds": 0.07615879999866593,
+          "response_key": "f7148bc95d200378f04c24589d2ad2e5054af6a557638257b5c171c0c1a92f21"
+        }
+      ],
+      "json_location": "[0].outstandingShares",
+      "unit": "shares"
+    },
+    "current_price": {
+      "sources": [
+        {
+          "source_url": "https://financialmodelingprep.com/stable/quote-short?symbol=AAPL",
+          "fetched_at_utc": "2026-10-11T21:21:07.732356+00:00",
+          "status_code": 200,
+          "content_type": "application/json; charset=utf-8",
+          "body_sha256": "1bf77fe9451998bb1b24cf1035391651248df2e4205a2f643ddef8d0927e6df9",
+          "secret_echo_redacted": false,
+          "runtime_seconds": 0.0932596000002377,
+          "response_key": "d12537a507455cb717ae03ca629dbb2c6a33422fba809195be1321f4347d89e7"
+        }
+      ],
+      "unit": "USD/share",
+      "as_of_utc": "2026-10-11T21:10:00+00:00"
+    },
+    "peer_data": {
+      "path": "analysis/peer_ev_ebitda_comparison.csv",
+      "selection": "latest nonmissing annual period per peer; may differ across companies"
+    },
+    "free_cash_flow": {
+      "path": "analysis/cash_flow_raw_data.csv",
+      "row_selector": "latest date",
+      "field": "freeCashFlow",
+      "unit": "USD"
+    }
+  },
+  "free_cash_flow": 98767000000.0,
+  "free_cash_flow_period": "2025-09-27 00:00:00"
+}

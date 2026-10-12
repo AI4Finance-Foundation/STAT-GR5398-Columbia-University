@@ -1,0 +1,29 @@
+{
+  "generated_at_utc": "2026-10-12T06:30:36.131043+00:00",
+  "pairs": [
+    {
+      "before": "audits/grounding/NVDA_before_reasoning_v8_2_corrected",
+      "after": "audits/grounding/NVDA_after_reasoning_v9_adjudicated",
+      "final_run": "runs/NVDA_final_reasoning_v9"
+    },
+    {
+      "before": "audits/grounding/AMD_before_reasoning_v8_2_corrected",
+      "after": "audits/grounding/AMD_after_reasoning_v9_adjudicated",
+      "final_run": "runs/AMD_final_reasoning_v9"
+    },
+    {
+      "before": "audits/grounding/INTC_before_reasoning_v8_2_corrected",
+      "after": "audits/grounding/INTC_after_reasoning_v9_adjudicated",
+      "final_run": "runs/INTC_final_reasoning_v9"
+    }
+  ],
+  "companies": [
+    "AMD",
+    "INTC",
+    "NVDA"
+  ],
+  "course_scope_complete": true,
+  "human_review_performed": false,
+  "unresolved_verifier_billing": [],
+  "limitations": "Independent prompts but possibly same model family. Fact-key/evidence-span retention are proxies, not proof of semantic fact preservation; inspect full mappings and remaining errors. Unverified annotations remain unsupported claims. Cost columns include canonical and archived attempts within each compared final run, are repeated on section rows and must not be summed. Separate abandoned run costs belong in the global experiment ledger."
+}

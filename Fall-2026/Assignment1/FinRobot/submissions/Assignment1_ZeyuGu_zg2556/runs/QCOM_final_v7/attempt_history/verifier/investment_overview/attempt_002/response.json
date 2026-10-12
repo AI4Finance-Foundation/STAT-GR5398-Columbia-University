@@ -1,0 +1,746 @@
+{
+  "call_id": "QCOM_final_v7/verifier/investment_overview/attempt_002",
+  "structured_output": {
+    "units": [
+      {
+        "source_id": 0,
+        "claims": [
+          {
+            "original_quote": "Thesis Status: Thesis Under Review",
+            "claim": "The investment thesis for Qualcomm is currently under review.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 0
+              }
+            ],
+            "reason": "The statement directly indicates the thesis status as under review.",
+            "action": "keep",
+            "revised_claim": "The investment thesis for Qualcomm is currently under review.",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 1,
+        "claims": [],
+        "nonfactual_reason": "No factual, causal, comparative, historical, or numeric assertions are present in this unit."
+      },
+      {
+        "source_id": 2,
+        "claims": [
+          {
+            "original_quote": "Qualcomm's revenue for the first nine months of fiscal 2026 declined slightly compared to the prior year, driven by weakness in equipment and services segment, while licensing revenue remained stable.",
+            "claim": "Qualcomm's revenue for the first nine months of fiscal 2026 declined slightly compared to the prior year.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 70
+              },
+              {
+                "line_number": 71
+              }
+            ],
+            "reason": "The nine-month cumulative revenue for 2026 is $32.798 billion, compared to $33.013 billion for the prior year, indicating a slight decline.",
+            "action": "keep",
+            "revised_claim": "Qualcomm's revenue for the first nine months of fiscal 2026 declined slightly compared to the prior year.",
+            "number_bindings": [
+              {
+                "claim_number": "2026",
+                "evidence_line": 70,
+                "evidence_number": "32,798",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2025",
+                "evidence_line": 71,
+                "evidence_number": "33,013",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Qualcomm's revenue for the first nine months of fiscal 2026 declined slightly compared to the prior year, driven by weakness in equipment and services segment, while licensing revenue remained stable.",
+            "claim": "The decline in Qualcomm's revenue for the first nine months of fiscal 2026 was driven by weakness in the equipment and services segment.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 59
+              },
+              {
+                "line_number": 61
+              }
+            ],
+            "reason": "Equipment and services revenue declined from $28.193 billion to $28.002 billion, supporting the claim of weakness in this segment.",
+            "action": "keep",
+            "revised_claim": "The decline in Qualcomm's revenue for the first nine months of fiscal 2026 was driven by weakness in the equipment and services segment.",
+            "number_bindings": [
+              {
+                "claim_number": "2026",
+                "evidence_line": 59,
+                "evidence_number": "28,002",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2025",
+                "evidence_line": 61,
+                "evidence_number": "28,193",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Qualcomm's revenue for the first nine months of fiscal 2026 declined slightly compared to the prior year, driven by weakness in equipment and services segment, while licensing revenue remained stable.",
+            "claim": "Licensing revenue for Qualcomm remained stable in the first nine months of fiscal 2026 compared to the prior year.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 65
+              },
+              {
+                "line_number": 66
+              }
+            ],
+            "reason": "Licensing revenue was $4.796 billion in 2026 and $4.820 billion in 2025, indicating stability.",
+            "action": "keep",
+            "revised_claim": "Licensing revenue for Qualcomm remained stable in the first nine months of fiscal 2026 compared to the prior year.",
+            "number_bindings": [
+              {
+                "claim_number": "2026",
+                "evidence_line": 65,
+                "evidence_number": "4,796",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2025",
+                "evidence_line": 66,
+                "evidence_number": "4,820",
+                "transform": "identity"
+              }
+            ]
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 3,
+        "claims": [
+          {
+            "original_quote": "Operating income dropped significantly in the quarter ended June 28, 2026, reflecting margin pressure despite cost controls.",
+            "claim": "Operating income dropped significantly in the quarter ended June 28, 2026.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 99
+              },
+              {
+                "line_number": 100
+              }
+            ],
+            "reason": "Operating income fell from $2.762 billion to $1.626 billion year-over-year for the quarter ended June 28, 2026.",
+            "action": "keep",
+            "revised_claim": "Operating income dropped significantly in the quarter ended June 28, 2026.",
+            "number_bindings": [
+              {
+                "claim_number": "2026",
+                "evidence_line": 99,
+                "evidence_number": "1,626",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2025",
+                "evidence_line": 100,
+                "evidence_number": "2,762",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Operating income dropped significantly in the quarter ended June 28, 2026, reflecting margin pressure despite cost controls.",
+            "claim": "The drop in operating income in the quarter ended June 28, 2026, reflected margin pressure despite cost controls.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "There is no direct evidence in the supplied data attributing the drop in operating income to margin pressure or cost controls.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 4,
+        "claims": [
+          {
+            "original_quote": "The company continues to invest heavily in R&D, indicating a focus on future technology development amid near-term challenges.",
+            "claim": "The company continues to invest heavily in R&D.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 79
+              },
+              {
+                "line_number": 80
+              }
+            ],
+            "reason": "R&D expenses increased from $2.226 billion to $2.607 billion year-over-year for the quarter, indicating continued investment.",
+            "action": "keep",
+            "revised_claim": "The company continues to invest heavily in R&D.",
+            "number_bindings": [
+              {
+                "claim_number": "2026",
+                "evidence_line": 79,
+                "evidence_number": "2,607",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2025",
+                "evidence_line": 80,
+                "evidence_number": "2,226",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "The company continues to invest heavily in R&D, indicating a focus on future technology development amid near-term challenges.",
+            "claim": "The company's heavy R&D investment indicates a focus on future technology development amid near-term challenges.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "There is no direct evidence in the supplied data linking R&D investment to a focus on future technology development or near-term challenges.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 5,
+        "claims": [
+          {
+            "original_quote": "EBITDA growth remains healthy in long-term projections, but the recent quarterly results signal potential headwinds in the near term.",
+            "claim": "EBITDA growth remains healthy in long-term projections.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 11
+              }
+            ],
+            "reason": "The financial table shows increasing EBITDA values from 2023A through 2028E, indicating healthy projected growth.",
+            "action": "keep",
+            "revised_claim": "EBITDA growth remains healthy in long-term projections.",
+            "number_bindings": [
+              {
+                "claim_number": "2023",
+                "evidence_line": 11,
+                "evidence_number": "9597000000.0",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2028",
+                "evidence_line": 11,
+                "evidence_number": "27116336694.72",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "EBITDA growth remains healthy in long-term projections, but the recent quarterly results signal potential headwinds in the near term.",
+            "claim": "The recent quarterly results signal potential headwinds in the near term for EBITDA growth.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "There is no direct evidence in the supplied data explicitly linking recent quarterly results to potential headwinds for EBITDA growth.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 6,
+        "claims": [
+          {
+            "original_quote": "Peer comparison shows Qualcomm maintaining a strong EBITDA position relative to competitors, though valuation multiples are not currently available for direct comparison.",
+            "claim": "Peer comparison shows Qualcomm maintaining a strong EBITDA position relative to competitors.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 23
+              },
+              {
+                "line_number": 24
+              },
+              {
+                "line_number": 25
+              },
+              {
+                "line_number": 26
+              }
+            ],
+            "reason": "The peer EBITDA table shows Qualcomm's EBITDA is higher than AMD's and, except for 2026, higher than Intel's in some years, supporting a strong position.",
+            "action": "keep",
+            "revised_claim": "Peer comparison shows Qualcomm maintaining a strong EBITDA position relative to competitors.",
+            "number_bindings": [
+              {
+                "claim_number": "2023",
+                "evidence_line": 23,
+                "evidence_number": "9.597e+09",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2024",
+                "evidence_line": 24,
+                "evidence_number": "1.1777e+10",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2025",
+                "evidence_line": 25,
+                "evidence_number": "1.3957e+10",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2026",
+                "evidence_line": 26,
+                "evidence_number": "1.6834e+10",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Peer comparison shows Qualcomm maintaining a strong EBITDA position relative to competitors, though valuation multiples are not currently available for direct comparison.",
+            "claim": "Valuation multiples are not currently available for direct comparison.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 30
+              },
+              {
+                "line_number": 31
+              },
+              {
+                "line_number": 32
+              },
+              {
+                "line_number": 33
+              },
+              {
+                "line_number": 34
+              },
+              {
+                "line_number": 35
+              }
+            ],
+            "reason": "The EV/EBITDA table shows 'nan' for QCOM in all years, indicating valuation multiples are not available.",
+            "action": "keep",
+            "revised_claim": "Valuation multiples are not currently available for direct comparison.",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 7,
+        "claims": [],
+        "nonfactual_reason": "No factual, causal, comparative, historical, or numeric assertions are present in this unit."
+      },
+      {
+        "source_id": 8,
+        "claims": [
+          {
+            "original_quote": "Qualcomm's latest quarterly financials for Q3 fiscal 2026 reveal total revenues of $9.947 billion, a slight decrease from $10.365 billion in the same quarter last year.",
+            "claim": "Qualcomm's total revenues for Q3 fiscal 2026 were $9.947 billion, a slight decrease from $10.365 billion in the same quarter last year.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 68
+              },
+              {
+                "line_number": 69
+              }
+            ],
+            "reason": "The quarterly revenue figures are directly provided in the evidence.",
+            "action": "keep",
+            "revised_claim": "Qualcomm's total revenues for Q3 fiscal 2026 were $9.947 billion, a slight decrease from $10.365 billion in the same quarter last year.",
+            "number_bindings": [
+              {
+                "claim_number": "2026",
+                "evidence_line": 68,
+                "evidence_number": "9,947",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2025",
+                "evidence_line": 69,
+                "evidence_number": "10,365",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "This was primarily due to a decline in the equipment and services segment revenues from $8.893 billion to $8.475 billion, whereas licensing revenues remained flat at $1.472 billion.",
+            "claim": "The decrease in total revenues was primarily due to a decline in the equipment and services segment revenues from $8.893 billion to $8.475 billion.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 57
+              },
+              {
+                "line_number": 55
+              }
+            ],
+            "reason": "Equipment and services segment revenue declined from $8.893 billion to $8.475 billion, supporting the claim.",
+            "action": "keep",
+            "revised_claim": "The decrease in total revenues was primarily due to a decline in the equipment and services segment revenues from $8.893 billion to $8.475 billion.",
+            "number_bindings": [
+              {
+                "claim_number": "2025",
+                "evidence_line": 57,
+                "evidence_number": "8,893",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2026",
+                "evidence_line": 55,
+                "evidence_number": "8,475",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "This was primarily due to a decline in the equipment and services segment revenues from $8.893 billion to $8.475 billion, whereas licensing revenues remained flat at $1.472 billion.",
+            "claim": "Licensing revenues remained flat at $1.472 billion for Q3 fiscal 2026 and the same quarter last year.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 63
+              },
+              {
+                "line_number": 64
+              }
+            ],
+            "reason": "Licensing revenues were $1.472 billion in both periods.",
+            "action": "keep",
+            "revised_claim": "Licensing revenues remained flat at $1.472 billion for Q3 fiscal 2026 and the same quarter last year.",
+            "number_bindings": [
+              {
+                "claim_number": "2026",
+                "evidence_line": 63,
+                "evidence_number": "1,472",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2025",
+                "evidence_line": 64,
+                "evidence_number": "1,472",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Operating income fell sharply to $1.626 billion from $2.762 billion year-over-year, indicating margin compression likely driven by increased operating costs and investment spending.",
+            "claim": "Operating income fell sharply to $1.626 billion from $2.762 billion year-over-year.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 99
+              },
+              {
+                "line_number": 100
+              }
+            ],
+            "reason": "Operating income figures for both periods are directly provided.",
+            "action": "keep",
+            "revised_claim": "Operating income fell sharply to $1.626 billion from $2.762 billion year-over-year.",
+            "number_bindings": [
+              {
+                "claim_number": "2026",
+                "evidence_line": 99,
+                "evidence_number": "1,626",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2025",
+                "evidence_line": 100,
+                "evidence_number": "2,762",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Operating income fell sharply to $1.626 billion from $2.762 billion year-over-year, indicating margin compression likely driven by increased operating costs and investment spending.",
+            "claim": "The sharp fall in operating income indicates margin compression likely driven by increased operating costs and investment spending.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "There is no direct evidence attributing the margin compression to increased operating costs and investment spending.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Costs and expenses rose to $8.321 billion versus $7.603 billion previously, with research and development expenses notably increasing from $2.226 billion to $2.607 billion, underscoring the company's commitment to innovation despite short-term profitability pressures.",
+            "claim": "Costs and expenses rose to $8.321 billion versus $7.603 billion previously.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 94
+              },
+              {
+                "line_number": 95
+              }
+            ],
+            "reason": "Total costs and expenses for both periods are directly provided.",
+            "action": "keep",
+            "revised_claim": "Costs and expenses rose to $8.321 billion versus $7.603 billion previously.",
+            "number_bindings": [
+              {
+                "claim_number": "2026",
+                "evidence_line": 94,
+                "evidence_number": "8,321",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2025",
+                "evidence_line": 95,
+                "evidence_number": "7,603",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Costs and expenses rose to $8.321 billion versus $7.603 billion previously, with research and development expenses notably increasing from $2.226 billion to $2.607 billion, underscoring the company's commitment to innovation despite short-term profitability pressures.",
+            "claim": "Research and development expenses increased from $2.226 billion to $2.607 billion.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 80
+              },
+              {
+                "line_number": 79
+              }
+            ],
+            "reason": "R&D expenses for both periods are directly provided.",
+            "action": "keep",
+            "revised_claim": "Research and development expenses increased from $2.226 billion to $2.607 billion.",
+            "number_bindings": [
+              {
+                "claim_number": "2025",
+                "evidence_line": 80,
+                "evidence_number": "2,226",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2026",
+                "evidence_line": 79,
+                "evidence_number": "2,607",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Research and development expenses notably increasing from $2.226 billion to $2.607 billion, underscoring the company's commitment to innovation despite short-term profitability pressures.",
+            "claim": "The increase in research and development expenses underscores the company's commitment to innovation despite short-term profitability pressures.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "There is no direct evidence linking the increase in R&D expenses to a commitment to innovation or short-term profitability pressures.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The nine-month cumulative revenue also showed a mild decline to $32.798 billion from $33.013 billion the prior year, reinforcing a trend of near-term revenue headwinds.",
+            "claim": "The nine-month cumulative revenue showed a mild decline to $32.798 billion from $33.013 billion the prior year.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 70
+              },
+              {
+                "line_number": 71
+              }
+            ],
+            "reason": "Nine-month cumulative revenue figures for both periods are directly provided.",
+            "action": "keep",
+            "revised_claim": "The nine-month cumulative revenue showed a mild decline to $32.798 billion from $33.013 billion the prior year.",
+            "number_bindings": [
+              {
+                "claim_number": "2026",
+                "evidence_line": 70,
+                "evidence_number": "32,798",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2025",
+                "evidence_line": 71,
+                "evidence_number": "33,013",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "The nine-month cumulative revenue also showed a mild decline to $32.798 billion from $33.013 billion the prior year, reinforcing a trend of near-term revenue headwinds.",
+            "claim": "The mild decline in nine-month cumulative revenue reinforces a trend of near-term revenue headwinds.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "There is no direct evidence establishing a trend of near-term revenue headwinds beyond the observed decline.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 9,
+        "claims": [],
+        "nonfactual_reason": "No factual, causal, comparative, historical, or numeric assertions are present in this unit."
+      },
+      {
+        "source_id": 10,
+        "claims": [
+          {
+            "original_quote": "The core investment thesis for Qualcomm has traditionally centered on its leading position in licensing essential semiconductor technologies, stable recurring revenue streams from licensing, and sustained innovation through R&D investment driving long-term growth.",
+            "claim": "The core investment thesis for Qualcomm has traditionally centered on its leading position in licensing essential semiconductor technologies.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "There is no direct evidence in the supplied data establishing Qualcomm's leading position in licensing essential semiconductor technologies.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The core investment thesis for Qualcomm has traditionally centered on its leading position in licensing essential semiconductor technologies, stable recurring revenue streams from licensing, and sustained innovation through R&D investment driving long-term growth.",
+            "claim": "The core investment thesis for Qualcomm has traditionally centered on stable recurring revenue streams from licensing.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "There is no direct evidence in the supplied data establishing stable recurring revenue streams as the core of the investment thesis.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The core investment thesis for Qualcomm has traditionally centered on its leading position in licensing essential semiconductor technologies, stable recurring revenue streams from licensing, and sustained innovation through R&D investment driving long-term growth.",
+            "claim": "The core investment thesis for Qualcomm has traditionally centered on sustained innovation through R&D investment driving long-term growth.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "There is no direct evidence in the supplied data establishing sustained innovation through R&D investment as the core of the investment thesis.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The recent quarterly performance, characterized by flat licensing revenues and declining equipment and services sales, challenges the near-term growth assumptions.",
+            "claim": "The recent quarterly performance, characterized by flat licensing revenues and declining equipment and services sales, challenges the near-term growth assumptions.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "There is no direct evidence linking the recent performance to a challenge of near-term growth assumptions.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "However, the stable licensing revenue supports the resilience of this segment, a cornerstone of the thesis.",
+            "claim": "The stable licensing revenue supports the resilience of this segment, a cornerstone of the thesis.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "There is no direct evidence establishing that stable licensing revenue is a cornerstone of the thesis or supports resilience.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The increased R&D spend aligns with the thesis's emphasis on technological leadership, potentially positioning Qualcomm well for future market cycles.",
+            "claim": "The increased R&D spend aligns with the thesis's emphasis on technological leadership, potentially positioning Qualcomm well for future market cycles.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "There is no direct evidence linking increased R&D spend to the thesis's emphasis on technological leadership or future market positioning.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The decline in operating income and margin pressure introduce some uncertainty, prompting a review of near-term profitability expectations and cash flow generation.",
+            "claim": "The decline in operating income and margin pressure introduce some uncertainty, prompting a review of near-term profitability expectations and cash flow generation.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "There is no direct evidence linking the decline in operating income and margin pressure to a review of profitability expectations and cash flow generation.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Nonetheless, the long-term revenue and EBITDA growth projections remain robust, suggesting that while the thesis is under review due to short-term softness and margin pressure, the strategic fundamentals and market position remain intact pending further updates.",
+            "claim": "The long-term revenue and EBITDA growth projections remain robust.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 6
+              },
+              {
+                "line_number": 11
+              }
+            ],
+            "reason": "The financial table shows increasing revenue and EBITDA projections through 2028E, supporting the claim of robust long-term projections.",
+            "action": "keep",
+            "revised_claim": "The long-term revenue and EBITDA growth projections remain robust.",
+            "number_bindings": [
+              {
+                "claim_number": "2023",
+                "evidence_line": 6,
+                "evidence_number": "35820000000.0",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2028",
+                "evidence_line": 6,
+                "evidence_number": "51259615680.0",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2023",
+                "evidence_line": 11,
+                "evidence_number": "9597000000.0",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2028",
+                "evidence_line": 11,
+                "evidence_number": "27116336694.72",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Nonetheless, the long-term revenue and EBITDA growth projections remain robust, suggesting that while the thesis is under review due to short-term softness and margin pressure, the strategic fundamentals and market position remain intact pending further updates.",
+            "claim": "While the thesis is under review due to short-term softness and margin pressure, the strategic fundamentals and market position remain intact pending further updates.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "There is no direct evidence establishing that strategic fundamentals and market position remain intact.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "usage": {
+    "requests": 1,
+    "input_tokens": 10133,
+    "input_tokens_details": {
+      "cached_tokens": 4352
+    },
+    "output_tokens": 4774,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14907
+  },
+  "runtime_seconds": 16.15475200000219,
+  "cost_usd": 0.058458,
+  "completed_at_utc": "2026-10-11T23:29:45.814428+00:00",
+  "attempts": 1
+}

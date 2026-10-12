@@ -1,0 +1,1469 @@
+{
+  "original_text": "Revenue Growth: Broadcom's revenue nearly doubled from $35.8B in 2023 to $63.9B in 2025, driven primarily by a substantial 44% growth in 2024 and a strong 24% in 2025 before moderating to single-digit growth thereafter. This surge reflects successful expansion in both product and subscription/service lines, as confirmed by the 10-Q data showing significant increases in net revenue for products and subscriptions. The rapid growth is likely fueled by strategic acquisitions, strong market demand, and an expanding product portfolio. While growth moderates over time, the high initial CAGR of 33.6% underscores Broadcom’s strengthening market position and capacity to capitalize on industry trends, positioning it as a dominant player in semiconductors and enterprise software.\n\nGross Profit Margin: Contribution margins demonstrate a rebound from 63.0% in 2024 to 70.8% by 2028, indicating improving operational efficiency and pricing power. The margin dip in 2024 aligns with elevated cost of operations but recovers as scale and cost controls take effect. This margin expansion signals effective cost optimization and reinforces Broadcom's competitive moat, reflecting a high-quality business with sustainable profitability. The gross margin recovery also suggests resilience in managing supply chain and input costs, which is critical in a capital-intensive semiconductor environment.\n\nSG&A Expense Margin: SG&A margin spiked to 9.6% in 2024, likely due to integration costs or investments supporting the rapid revenue ramp, before declining steadily to 5.1% by 2028. This trend reveals strong operating leverage and improving cost discipline as the company scales, showcasing management’s execution capability in controlling expenses relative to growth. The declining SG&A margin enhances free cash flow potential and underscores scalability, which is a positive signal for long-term operating efficiency and margin sustainability.\n\nEBITDA Margin Stability: Broadcom's EBITDA margin experienced volatility but is projected to improve markedly from 45.5% in 2024 to 65.7% by 2028, reflecting a quality earnings profile. Compared to peers like Nvidia, which reported EBITDA of $35.6B in 2024 versus Broadcom’s $23.5B, Broadcom maintains competitive profitability on a slightly smaller scale. The margin expansion and solid EBITDA growth enhance valuation attractiveness by supporting robust cash flow generation. This positions Broadcom favorably within its peer group for investors seeking a combination of growth, profitability, and margin resilience in the semiconductor and infrastructure software sectors.",
+  "revised_text": "[UNVERIFIED - deterministic evidence/number check failed] Broadcom's revenue nearly doubled from $35.8B in 2023 to $63.9B in 2025\n\n[UNVERIFIED - deterministic evidence/number check failed] driven primarily by a substantial 44% growth in 2024 and a strong 24% in 2025 before moderating to single-digit growth thereafter.\n\n[UNVERIFIED - deterministic evidence/number check failed] This surge reflects successful expansion in both product and subscription/service lines, as confirmed by the 10-Q data showing significant increases in net revenue for products and subscriptions.\n\n[UNVERIFIED - evidence not supplied] The rapid growth is likely fueled by strategic acquisitions, strong market demand, and an expanding product portfolio.\n\n[UNVERIFIED - evidence not supplied] The high initial CAGR of 33.6% underscores Broadcom’s strengthening market position and capacity to capitalize on industry trends, positioning it as a dominant player in semiconductors and enterprise software.\n\n[UNVERIFIED - deterministic evidence/number check failed] Contribution margins demonstrate a rebound from 63.0% in 2024 to 70.8% by 2028, indicating improving operational efficiency and pricing power.\n\n[UNVERIFIED - evidence not supplied] The margin dip in 2024 aligns with elevated cost of operations but recovers as scale and cost controls take effect.\n\n[UNVERIFIED - evidence not supplied] This margin expansion signals effective cost optimization and reinforces Broadcom's competitive moat, reflecting a high-quality business with sustainable profitability.\n\n[UNVERIFIED - evidence not supplied] The gross margin recovery suggests resilience in managing supply chain and input costs, which is critical in a capital-intensive semiconductor environment.\n\n[UNVERIFIED - deterministic evidence/number check failed] SG&A margin spiked to 9.6% in 2024, likely due to integration costs or investments supporting the rapid revenue ramp, before declining steadily to 5.1% by 2028.\n\n[UNVERIFIED - evidence not supplied] This trend reveals strong operating leverage and improving cost discipline as the company scales, showcasing management’s execution capability in controlling expenses relative to growth.\n\n[UNVERIFIED - evidence not supplied] The declining SG&A margin enhances free cash flow potential and underscores scalability, which is a positive signal for long-term operating efficiency and margin sustainability.\n\n[UNVERIFIED - deterministic evidence/number check failed] Broadcom's EBITDA margin experienced volatility but is projected to improve markedly from 45.5% in 2024 to 65.7% by 2028, reflecting a quality earnings profile.\n\n[UNVERIFIED - deterministic evidence/number check failed] Compared to peers like Nvidia, which reported EBITDA of $35.6B in 2024 versus Broadcom’s $23.5B, Broadcom maintains competitive profitability on a slightly smaller scale.\n\n[UNVERIFIED - evidence not supplied] Broadcom maintains competitive profitability on a slightly smaller scale.\n\n[UNVERIFIED - evidence not supplied] The margin expansion and solid EBITDA growth enhance valuation attractiveness by supporting robust cash flow generation.\n\n[UNVERIFIED - evidence not supplied] This positions Broadcom favorably within its peer group for investors seeking a combination of growth, profitability, and margin resilience in the semiconductor and infrastructure software sectors.",
+  "claims": [
+    {
+      "claim_id": "u0c0",
+      "source_id": 0,
+      "source_start": 16,
+      "source_end": 87,
+      "source_quote_occurrences": 1,
+      "original_quote": "Broadcom's revenue nearly doubled from $35.8B in 2023 to $63.9B in 2025",
+      "claim": "Broadcom's revenue nearly doubled from $35.8B in 2023 to $63.9B in 2025.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 6,
+          "quote": "|  0 | Revenue             | 35819000000.0 | 51574000000.0 | 63887000000.0 | 67081350000.0 | 71106231000.0 | 73950480240.0  | 33.6%  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The 2023A revenue is $35,819,000,000 and the 2025A revenue is $63,887,000,000, which is nearly double.",
+      "action": "keep",
+      "revised_claim": "Broadcom's revenue nearly doubled from $35.8B in 2023 to $63.9B in 2025.",
+      "number_bindings": [
+        {
+          "claim_number": "2023",
+          "evidence_line": 4,
+          "evidence_number": "2023A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "35.8",
+          "evidence_line": 6,
+          "evidence_number": "35819000000.0",
+          "transform": "divide_billion"
+        },
+        {
+          "claim_number": "2025",
+          "evidence_line": 4,
+          "evidence_number": "2025A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "63.9",
+          "evidence_line": 6,
+          "evidence_number": "63887000000.0",
+          "transform": "divide_billion"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "35.8",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "63.9",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2025",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2023:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2025:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Broadcom's revenue nearly doubled from $35.8B in 2023 to $63.9B in 2025",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u0c1",
+      "source_id": 0,
+      "source_start": 89,
+      "source_end": 219,
+      "source_quote_occurrences": 1,
+      "original_quote": "driven primarily by a substantial 44% growth in 2024 and a strong 24% in 2025 before moderating to single-digit growth thereafter.",
+      "claim": "Broadcom's revenue grew by 44% in 2024 and by 23.9% in 2025 before moderating to single-digit growth thereafter.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 14,
+          "quote": "|  8 | Revenue Growth      | nan           | 44.0%         | 23.9%         | 5.0%          | 6.0%          | 4.0%           | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The revenue growth rates for 2024 and 2025 are 44.0% and 23.9%, respectively, and subsequent years show single-digit growth.",
+      "action": "correct",
+      "revised_claim": "Broadcom's revenue grew by 44% in 2024 and by 23.9% in 2025 before moderating to single-digit growth thereafter.",
+      "number_bindings": [
+        {
+          "claim_number": "44",
+          "evidence_line": 14,
+          "evidence_number": "44.0%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2024",
+          "evidence_line": 4,
+          "evidence_number": "2024A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "23.9",
+          "evidence_line": 14,
+          "evidence_number": "23.9%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2025",
+          "evidence_line": 4,
+          "evidence_number": "2025A",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "44%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2024",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "23.9%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2025",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:44%:missing_binding",
+        "numeric_check_failed:2024:number_not_in_cited_evidence_line",
+        "numeric_check_failed:23.9%:missing_binding",
+        "numeric_check_failed:2025:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] driven primarily by a substantial 44% growth in 2024 and a strong 24% in 2025 before moderating to single-digit growth thereafter.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u0c2",
+      "source_id": 0,
+      "source_start": 220,
+      "source_end": 415,
+      "source_quote_occurrences": 1,
+      "original_quote": "This surge reflects successful expansion in both product and subscription/service lines, as confirmed by the 10-Q data showing significant increases in net revenue for products and subscriptions.",
+      "claim": "The revenue surge reflects successful expansion in both product and subscription/service lines, as confirmed by the 10-Q data showing significant increases in net revenue for products and subscriptions.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 58,
+          "quote": "24,279",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 60,
+          "quote": "11,173",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 62,
+          "quote": "55,301",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 64,
+          "quote": "31,625",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 66,
+          "quote": "5,312",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 67,
+          "quote": "4,779",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 68,
+          "quote": "15,788",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 69,
+          "quote": "14,247",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The 10-Q data shows increases in net revenue for both products and subscriptions/services between the periods reported.",
+      "action": "keep",
+      "revised_claim": "The revenue surge reflects successful expansion in both product and subscription/service lines, as confirmed by the 10-Q data showing significant increases in net revenue for products and subscriptions.",
+      "number_bindings": [],
+      "numeric_results": [
+        {
+          "token": "10",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:10:missing_binding"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] This surge reflects successful expansion in both product and subscription/service lines, as confirmed by the 10-Q data showing significant increases in net revenue for products and subscriptions.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u0c3",
+      "source_id": 0,
+      "source_start": 416,
+      "source_end": 534,
+      "source_quote_occurrences": 1,
+      "original_quote": "The rapid growth is likely fueled by strategic acquisitions, strong market demand, and an expanding product portfolio.",
+      "claim": "The rapid growth is likely fueled by strategic acquisitions, strong market demand, and an expanding product portfolio.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for the causes of growth such as acquisitions, market demand, or product portfolio expansion.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] The rapid growth is likely fueled by strategic acquisitions, strong market demand, and an expanding product portfolio.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u0c4",
+      "source_id": 0,
+      "source_start": 535,
+      "source_end": 778,
+      "source_quote_occurrences": 1,
+      "original_quote": "While growth moderates over time, the high initial CAGR of 33.6% underscores Broadcom’s strengthening market position and capacity to capitalize on industry trends, positioning it as a dominant player in semiconductors and enterprise software.",
+      "claim": "The high initial CAGR of 33.6% underscores Broadcom’s strengthening market position and capacity to capitalize on industry trends, positioning it as a dominant player in semiconductors and enterprise software.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "While the CAGR is provided, there is no evidence for market position, capacity to capitalize on trends, or dominance in semiconductors and enterprise software.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] The high initial CAGR of 33.6% underscores Broadcom’s strengthening market position and capacity to capitalize on industry trends, positioning it as a dominant player in semiconductors and enterprise software.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u1c0",
+      "source_id": 1,
+      "source_start": 801,
+      "source_end": 943,
+      "source_quote_occurrences": 1,
+      "original_quote": "Contribution margins demonstrate a rebound from 63.0% in 2024 to 70.8% by 2028, indicating improving operational efficiency and pricing power.",
+      "claim": "Contribution margins rebound from 63.0% in 2024 to 70.8% by 2028.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 10,
+          "quote": "|  4 | Contribution Margin | 68.9%         | 63.0%         | 67.8%         | 68.8%         | 69.8%         | 70.8%          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The contribution margin is 63.0% in 2024 and 70.8% in 2028.",
+      "action": "keep",
+      "revised_claim": "Contribution margins rebound from 63.0% in 2024 to 70.8% by 2028.",
+      "number_bindings": [
+        {
+          "claim_number": "63.0",
+          "evidence_line": 10,
+          "evidence_number": "63.0%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2024",
+          "evidence_line": 4,
+          "evidence_number": "2024A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "70.8",
+          "evidence_line": 10,
+          "evidence_number": "70.8%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "63.0%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2024",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "70.8%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:63.0%:missing_binding",
+        "numeric_check_failed:2024:number_not_in_cited_evidence_line",
+        "numeric_check_failed:70.8%:missing_binding",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Contribution margins demonstrate a rebound from 63.0% in 2024 to 70.8% by 2028, indicating improving operational efficiency and pricing power.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u1c1",
+      "source_id": 1,
+      "source_start": 944,
+      "source_end": 1059,
+      "source_quote_occurrences": 1,
+      "original_quote": "The margin dip in 2024 aligns with elevated cost of operations but recovers as scale and cost controls take effect.",
+      "claim": "The margin dip in 2024 aligns with elevated cost of operations but recovers as scale and cost controls take effect.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided linking the margin dip to elevated cost of operations or the recovery to scale and cost controls.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] The margin dip in 2024 aligns with elevated cost of operations but recovers as scale and cost controls take effect.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u1c2",
+      "source_id": 1,
+      "source_start": 1060,
+      "source_end": 1228,
+      "source_quote_occurrences": 1,
+      "original_quote": "This margin expansion signals effective cost optimization and reinforces Broadcom's competitive moat, reflecting a high-quality business with sustainable profitability.",
+      "claim": "This margin expansion signals effective cost optimization and reinforces Broadcom's competitive moat, reflecting a high-quality business with sustainable profitability.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for cost optimization, competitive moat, or sustainable profitability.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] This margin expansion signals effective cost optimization and reinforces Broadcom's competitive moat, reflecting a high-quality business with sustainable profitability.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u1c3",
+      "source_id": 1,
+      "source_start": 1229,
+      "source_end": 1389,
+      "source_quote_occurrences": 1,
+      "original_quote": "The gross margin recovery also suggests resilience in managing supply chain and input costs, which is critical in a capital-intensive semiconductor environment.",
+      "claim": "The gross margin recovery suggests resilience in managing supply chain and input costs, which is critical in a capital-intensive semiconductor environment.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for resilience in managing supply chain and input costs.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] The gross margin recovery suggests resilience in managing supply chain and input costs, which is critical in a capital-intensive semiconductor environment.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u2c0",
+      "source_id": 2,
+      "source_start": 1412,
+      "source_end": 1572,
+      "source_quote_occurrences": 1,
+      "original_quote": "SG&A margin spiked to 9.6% in 2024, likely due to integration costs or investments supporting the rapid revenue ramp, before declining steadily to 5.1% by 2028.",
+      "claim": "SG&A margin spiked to 9.6% in 2024 before declining steadily to 5.1% by 2028.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 13,
+          "quote": "|  7 | SG&A Margin         | 4.4%          | 9.6%          | 6.6%          | 6.1%          | 5.6%          | 5.1%           | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "SG&A margin is 9.6% in 2024 and 5.1% in 2028, showing a decline.",
+      "action": "keep",
+      "revised_claim": "SG&A margin spiked to 9.6% in 2024 before declining steadily to 5.1% by 2028.",
+      "number_bindings": [
+        {
+          "claim_number": "9.6",
+          "evidence_line": 13,
+          "evidence_number": "9.6%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2024",
+          "evidence_line": 4,
+          "evidence_number": "2024A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "5.1",
+          "evidence_line": 13,
+          "evidence_number": "5.1%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "9.6%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2024",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "5.1%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:9.6%:missing_binding",
+        "numeric_check_failed:2024:number_not_in_cited_evidence_line",
+        "numeric_check_failed:5.1%:missing_binding",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] SG&A margin spiked to 9.6% in 2024, likely due to integration costs or investments supporting the rapid revenue ramp, before declining steadily to 5.1% by 2028.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u2c1",
+      "source_id": 2,
+      "source_start": 1573,
+      "source_end": 1759,
+      "source_quote_occurrences": 1,
+      "original_quote": "This trend reveals strong operating leverage and improving cost discipline as the company scales, showcasing management’s execution capability in controlling expenses relative to growth.",
+      "claim": "This trend reveals strong operating leverage and improving cost discipline as the company scales, showcasing management’s execution capability in controlling expenses relative to growth.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for operating leverage, cost discipline, or management execution capability.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] This trend reveals strong operating leverage and improving cost discipline as the company scales, showcasing management’s execution capability in controlling expenses relative to growth.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u2c2",
+      "source_id": 2,
+      "source_start": 1760,
+      "source_end": 1937,
+      "source_quote_occurrences": 1,
+      "original_quote": "The declining SG&A margin enhances free cash flow potential and underscores scalability, which is a positive signal for long-term operating efficiency and margin sustainability.",
+      "claim": "The declining SG&A margin enhances free cash flow potential and underscores scalability, which is a positive signal for long-term operating efficiency and margin sustainability.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for the impact on free cash flow, scalability, or long-term efficiency.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] The declining SG&A margin enhances free cash flow potential and underscores scalability, which is a positive signal for long-term operating efficiency and margin sustainability.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u3c0",
+      "source_id": 3,
+      "source_start": 1964,
+      "source_end": 2124,
+      "source_quote_occurrences": 1,
+      "original_quote": "Broadcom's EBITDA margin experienced volatility but is projected to improve markedly from 45.5% in 2024 to 65.7% by 2028, reflecting a quality earnings profile.",
+      "claim": "Broadcom's EBITDA margin is projected to improve from 45.5% in 2024 to 65.7% by 2028.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 12,
+          "quote": "|  6 | EBITDA Margin       | 56.0%         | 45.5%         | 53.6%         | 62.7%         | 64.2%         | 65.7%          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "EBITDA margin is 45.5% in 2024 and 65.7% in 2028.",
+      "action": "keep",
+      "revised_claim": "Broadcom's EBITDA margin is projected to improve from 45.5% in 2024 to 65.7% by 2028.",
+      "number_bindings": [
+        {
+          "claim_number": "45.5",
+          "evidence_line": 12,
+          "evidence_number": "45.5%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2024",
+          "evidence_line": 4,
+          "evidence_number": "2024A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "65.7",
+          "evidence_line": 12,
+          "evidence_number": "65.7%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "45.5%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2024",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "65.7%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:45.5%:missing_binding",
+        "numeric_check_failed:2024:number_not_in_cited_evidence_line",
+        "numeric_check_failed:65.7%:missing_binding",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Broadcom's EBITDA margin experienced volatility but is projected to improve markedly from 45.5% in 2024 to 65.7% by 2028, reflecting a quality earnings profile.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u3c1",
+      "source_id": 3,
+      "source_start": 2125,
+      "source_end": 2295,
+      "source_quote_occurrences": 1,
+      "original_quote": "Compared to peers like Nvidia, which reported EBITDA of $35.6B in 2024 versus Broadcom’s $23.5B, Broadcom maintains competitive profitability on a slightly smaller scale.",
+      "claim": "In 2024, Nvidia reported EBITDA of $35.6B and Broadcom reported EBITDA of $23.5B.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 24,
+          "quote": "|   2024 |   3.5583e+10  |   5.258e+09   |   2.3473e+10  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The 2024 EBITDA for Nvidia is $35,583,000,000 and for Broadcom is $23,473,000,000.",
+      "action": "correct",
+      "revised_claim": "In 2024, Nvidia reported EBITDA of $35.6B and Broadcom reported EBITDA of $23.5B.",
+      "number_bindings": [
+        {
+          "claim_number": "2024",
+          "evidence_line": 24,
+          "evidence_number": "2024",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "35.6",
+          "evidence_line": 24,
+          "evidence_number": "3.5583e+10",
+          "transform": "divide_billion"
+        },
+        {
+          "claim_number": "23.5",
+          "evidence_line": 24,
+          "evidence_number": "2.3473e+10",
+          "transform": "divide_billion"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2024,",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "35.6",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "23.5",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2024,:missing_binding"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Compared to peers like Nvidia, which reported EBITDA of $35.6B in 2024 versus Broadcom’s $23.5B, Broadcom maintains competitive profitability on a slightly smaller scale.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u3c2",
+      "source_id": 3,
+      "source_start": 2222,
+      "source_end": 2295,
+      "source_quote_occurrences": 1,
+      "original_quote": "Broadcom maintains competitive profitability on a slightly smaller scale.",
+      "claim": "Broadcom maintains competitive profitability on a slightly smaller scale.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for the qualitative assessment of competitive profitability or scale.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Broadcom maintains competitive profitability on a slightly smaller scale.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u3c3",
+      "source_id": 3,
+      "source_start": 2296,
+      "source_end": 2416,
+      "source_quote_occurrences": 1,
+      "original_quote": "The margin expansion and solid EBITDA growth enhance valuation attractiveness by supporting robust cash flow generation.",
+      "claim": "The margin expansion and solid EBITDA growth enhance valuation attractiveness by supporting robust cash flow generation.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for the impact on valuation or cash flow generation.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] The margin expansion and solid EBITDA growth enhance valuation attractiveness by supporting robust cash flow generation.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u3c4",
+      "source_id": 3,
+      "source_start": 2417,
+      "source_end": 2614,
+      "source_quote_occurrences": 1,
+      "original_quote": "This positions Broadcom favorably within its peer group for investors seeking a combination of growth, profitability, and margin resilience in the semiconductor and infrastructure software sectors.",
+      "claim": "This positions Broadcom favorably within its peer group for investors seeking a combination of growth, profitability, and margin resilience in the semiconductor and infrastructure software sectors.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for Broadcom's position within its peer group or investor preferences.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] This positions Broadcom favorably within its peer group for investors seeking a combination of growth, profitability, and margin resilience in the semiconductor and infrastructure software sectors.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    }
+  ],
+  "units": [
+    {
+      "source_id": 0,
+      "claims": [
+        {
+          "original_quote": "Broadcom's revenue nearly doubled from $35.8B in 2023 to $63.9B in 2025",
+          "claim": "Broadcom's revenue nearly doubled from $35.8B in 2023 to $63.9B in 2025.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 6
+            }
+          ],
+          "reason": "The 2023A revenue is $35,819,000,000 and the 2025A revenue is $63,887,000,000, which is nearly double.",
+          "action": "keep",
+          "revised_claim": "Broadcom's revenue nearly doubled from $35.8B in 2023 to $63.9B in 2025.",
+          "number_bindings": [
+            {
+              "claim_number": "2023",
+              "evidence_line": 4,
+              "evidence_number": "2023A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "35.8",
+              "evidence_line": 6,
+              "evidence_number": "35819000000.0",
+              "transform": "divide_billion"
+            },
+            {
+              "claim_number": "2025",
+              "evidence_line": 4,
+              "evidence_number": "2025A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "63.9",
+              "evidence_line": 6,
+              "evidence_number": "63887000000.0",
+              "transform": "divide_billion"
+            }
+          ]
+        },
+        {
+          "original_quote": "driven primarily by a substantial 44% growth in 2024 and a strong 24% in 2025 before moderating to single-digit growth thereafter.",
+          "claim": "Broadcom's revenue grew by 44% in 2024 and by 23.9% in 2025 before moderating to single-digit growth thereafter.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 14
+            }
+          ],
+          "reason": "The revenue growth rates for 2024 and 2025 are 44.0% and 23.9%, respectively, and subsequent years show single-digit growth.",
+          "action": "correct",
+          "revised_claim": "Broadcom's revenue grew by 44% in 2024 and by 23.9% in 2025 before moderating to single-digit growth thereafter.",
+          "number_bindings": [
+            {
+              "claim_number": "44",
+              "evidence_line": 14,
+              "evidence_number": "44.0%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2024",
+              "evidence_line": 4,
+              "evidence_number": "2024A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "23.9",
+              "evidence_line": 14,
+              "evidence_number": "23.9%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2025",
+              "evidence_line": 4,
+              "evidence_number": "2025A",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "This surge reflects successful expansion in both product and subscription/service lines, as confirmed by the 10-Q data showing significant increases in net revenue for products and subscriptions.",
+          "claim": "The revenue surge reflects successful expansion in both product and subscription/service lines, as confirmed by the 10-Q data showing significant increases in net revenue for products and subscriptions.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 58
+            },
+            {
+              "line_number": 60
+            },
+            {
+              "line_number": 62
+            },
+            {
+              "line_number": 64
+            },
+            {
+              "line_number": 66
+            },
+            {
+              "line_number": 67
+            },
+            {
+              "line_number": 68
+            },
+            {
+              "line_number": 69
+            }
+          ],
+          "reason": "The 10-Q data shows increases in net revenue for both products and subscriptions/services between the periods reported.",
+          "action": "keep",
+          "revised_claim": "The revenue surge reflects successful expansion in both product and subscription/service lines, as confirmed by the 10-Q data showing significant increases in net revenue for products and subscriptions.",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The rapid growth is likely fueled by strategic acquisitions, strong market demand, and an expanding product portfolio.",
+          "claim": "The rapid growth is likely fueled by strategic acquisitions, strong market demand, and an expanding product portfolio.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for the causes of growth such as acquisitions, market demand, or product portfolio expansion.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "While growth moderates over time, the high initial CAGR of 33.6% underscores Broadcom’s strengthening market position and capacity to capitalize on industry trends, positioning it as a dominant player in semiconductors and enterprise software.",
+          "claim": "The high initial CAGR of 33.6% underscores Broadcom’s strengthening market position and capacity to capitalize on industry trends, positioning it as a dominant player in semiconductors and enterprise software.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "While the CAGR is provided, there is no evidence for market position, capacity to capitalize on trends, or dominance in semiconductors and enterprise software.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 1,
+      "claims": [
+        {
+          "original_quote": "Contribution margins demonstrate a rebound from 63.0% in 2024 to 70.8% by 2028, indicating improving operational efficiency and pricing power.",
+          "claim": "Contribution margins rebound from 63.0% in 2024 to 70.8% by 2028.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 10
+            }
+          ],
+          "reason": "The contribution margin is 63.0% in 2024 and 70.8% in 2028.",
+          "action": "keep",
+          "revised_claim": "Contribution margins rebound from 63.0% in 2024 to 70.8% by 2028.",
+          "number_bindings": [
+            {
+              "claim_number": "63.0",
+              "evidence_line": 10,
+              "evidence_number": "63.0%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2024",
+              "evidence_line": 4,
+              "evidence_number": "2024A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "70.8",
+              "evidence_line": 10,
+              "evidence_number": "70.8%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "The margin dip in 2024 aligns with elevated cost of operations but recovers as scale and cost controls take effect.",
+          "claim": "The margin dip in 2024 aligns with elevated cost of operations but recovers as scale and cost controls take effect.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided linking the margin dip to elevated cost of operations or the recovery to scale and cost controls.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "This margin expansion signals effective cost optimization and reinforces Broadcom's competitive moat, reflecting a high-quality business with sustainable profitability.",
+          "claim": "This margin expansion signals effective cost optimization and reinforces Broadcom's competitive moat, reflecting a high-quality business with sustainable profitability.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for cost optimization, competitive moat, or sustainable profitability.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The gross margin recovery also suggests resilience in managing supply chain and input costs, which is critical in a capital-intensive semiconductor environment.",
+          "claim": "The gross margin recovery suggests resilience in managing supply chain and input costs, which is critical in a capital-intensive semiconductor environment.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for resilience in managing supply chain and input costs.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 2,
+      "claims": [
+        {
+          "original_quote": "SG&A margin spiked to 9.6% in 2024, likely due to integration costs or investments supporting the rapid revenue ramp, before declining steadily to 5.1% by 2028.",
+          "claim": "SG&A margin spiked to 9.6% in 2024 before declining steadily to 5.1% by 2028.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 13
+            }
+          ],
+          "reason": "SG&A margin is 9.6% in 2024 and 5.1% in 2028, showing a decline.",
+          "action": "keep",
+          "revised_claim": "SG&A margin spiked to 9.6% in 2024 before declining steadily to 5.1% by 2028.",
+          "number_bindings": [
+            {
+              "claim_number": "9.6",
+              "evidence_line": 13,
+              "evidence_number": "9.6%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2024",
+              "evidence_line": 4,
+              "evidence_number": "2024A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "5.1",
+              "evidence_line": 13,
+              "evidence_number": "5.1%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "This trend reveals strong operating leverage and improving cost discipline as the company scales, showcasing management’s execution capability in controlling expenses relative to growth.",
+          "claim": "This trend reveals strong operating leverage and improving cost discipline as the company scales, showcasing management’s execution capability in controlling expenses relative to growth.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for operating leverage, cost discipline, or management execution capability.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The declining SG&A margin enhances free cash flow potential and underscores scalability, which is a positive signal for long-term operating efficiency and margin sustainability.",
+          "claim": "The declining SG&A margin enhances free cash flow potential and underscores scalability, which is a positive signal for long-term operating efficiency and margin sustainability.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for the impact on free cash flow, scalability, or long-term efficiency.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 3,
+      "claims": [
+        {
+          "original_quote": "Broadcom's EBITDA margin experienced volatility but is projected to improve markedly from 45.5% in 2024 to 65.7% by 2028, reflecting a quality earnings profile.",
+          "claim": "Broadcom's EBITDA margin is projected to improve from 45.5% in 2024 to 65.7% by 2028.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 12
+            }
+          ],
+          "reason": "EBITDA margin is 45.5% in 2024 and 65.7% in 2028.",
+          "action": "keep",
+          "revised_claim": "Broadcom's EBITDA margin is projected to improve from 45.5% in 2024 to 65.7% by 2028.",
+          "number_bindings": [
+            {
+              "claim_number": "45.5",
+              "evidence_line": 12,
+              "evidence_number": "45.5%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2024",
+              "evidence_line": 4,
+              "evidence_number": "2024A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "65.7",
+              "evidence_line": 12,
+              "evidence_number": "65.7%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "Compared to peers like Nvidia, which reported EBITDA of $35.6B in 2024 versus Broadcom’s $23.5B, Broadcom maintains competitive profitability on a slightly smaller scale.",
+          "claim": "In 2024, Nvidia reported EBITDA of $35.6B and Broadcom reported EBITDA of $23.5B.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 24
+            }
+          ],
+          "reason": "The 2024 EBITDA for Nvidia is $35,583,000,000 and for Broadcom is $23,473,000,000.",
+          "action": "correct",
+          "revised_claim": "In 2024, Nvidia reported EBITDA of $35.6B and Broadcom reported EBITDA of $23.5B.",
+          "number_bindings": [
+            {
+              "claim_number": "2024",
+              "evidence_line": 24,
+              "evidence_number": "2024",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "35.6",
+              "evidence_line": 24,
+              "evidence_number": "3.5583e+10",
+              "transform": "divide_billion"
+            },
+            {
+              "claim_number": "23.5",
+              "evidence_line": 24,
+              "evidence_number": "2.3473e+10",
+              "transform": "divide_billion"
+            }
+          ]
+        },
+        {
+          "original_quote": "Broadcom maintains competitive profitability on a slightly smaller scale.",
+          "claim": "Broadcom maintains competitive profitability on a slightly smaller scale.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for the qualitative assessment of competitive profitability or scale.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The margin expansion and solid EBITDA growth enhance valuation attractiveness by supporting robust cash flow generation.",
+          "claim": "The margin expansion and solid EBITDA growth enhance valuation attractiveness by supporting robust cash flow generation.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for the impact on valuation or cash flow generation.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "This positions Broadcom favorably within its peer group for investors seeking a combination of growth, profitability, and margin resilience in the semiconductor and infrastructure software sectors.",
+          "claim": "This positions Broadcom favorably within its peer group for investors seeking a combination of growth, profitability, and margin resilience in the semiconductor and infrastructure software sectors.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for Broadcom's position within its peer group or investor preferences.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    }
+  ],
+  "verifier_version": "7-semantic-period-peer-horizon-review",
+  "release_deduplication": "Identical complete released strings appear once per section; all original claim rows and mappings remain. This is not semantic paraphrase deduplication.",
+  "unquoted_nonfactual_connectors": [
+    {
+      "source_id": 0,
+      "start": 0,
+      "end": 16,
+      "text": "Revenue Growth: ",
+      "nonfactual_connector": true
+    },
+    {
+      "source_id": 1,
+      "start": 0,
+      "end": 21,
+      "text": "Gross Profit Margin: ",
+      "nonfactual_connector": true
+    },
+    {
+      "source_id": 2,
+      "start": 0,
+      "end": 21,
+      "text": "SG&A Expense Margin: ",
+      "nonfactual_connector": true
+    },
+    {
+      "source_id": 3,
+      "start": 0,
+      "end": 25,
+      "text": "EBITDA Margin Stability: ",
+      "nonfactual_connector": true
+    }
+  ],
+  "deterministic_validation_failures": [
+    {
+      "claim_id": "u0c0",
+      "errors": [
+        "numeric_check_failed:2023:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2025:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "35.8",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "63.9",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2025",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u0c1",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:44%:missing_binding",
+        "numeric_check_failed:2024:number_not_in_cited_evidence_line",
+        "numeric_check_failed:23.9%:missing_binding",
+        "numeric_check_failed:2025:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "44%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2024",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "23.9%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2025",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u0c2",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:10:missing_binding"
+      ],
+      "numeric_results": [
+        {
+          "token": "10",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u1c0",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:63.0%:missing_binding",
+        "numeric_check_failed:2024:number_not_in_cited_evidence_line",
+        "numeric_check_failed:70.8%:missing_binding",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "63.0%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2024",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "70.8%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u2c0",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:9.6%:missing_binding",
+        "numeric_check_failed:2024:number_not_in_cited_evidence_line",
+        "numeric_check_failed:5.1%:missing_binding",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "9.6%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2024",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "5.1%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u3c0",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:45.5%:missing_binding",
+        "numeric_check_failed:2024:number_not_in_cited_evidence_line",
+        "numeric_check_failed:65.7%:missing_binding",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "45.5%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2024",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "65.7%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u3c1",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2024,:missing_binding"
+      ],
+      "numeric_results": [
+        {
+          "token": "2024,",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "35.6",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "23.5",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ]
+    }
+  ],
+  "deterministic_failure_count": 7,
+  "verified_claim_count": 0,
+  "unverified_annotation_count": 17,
+  "withheld_claim_count": 0,
+  "claim_retention_rate": 1.0,
+  "supported_valid_retention_count": 0,
+  "automatic_year_binding_count": 0,
+  "limitations": "UNVERIFIED annotations preserve unsupported or deterministically rejected assertions for review and must not be counted as grounded facts. A claim's original machine classification is preserved even when deterministic checks reject it; retained_as_verified is then false. Rejected contradicted corrections remain in the audit but are withheld from the narrative. Semantic judgments are machine-assisted, not human-validated. Lexical quote coverage does not prove exhaustive semantic atomization. Exact numeric/year matches do not establish entity/period alignment or dimensional validity of conversions. Repeated source quotes may have ambiguous first-occurrence offsets."
+}

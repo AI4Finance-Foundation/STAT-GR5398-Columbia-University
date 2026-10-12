@@ -1,0 +1,21 @@
+{
+  "rows": 20,
+  "companies": [
+    "AMD",
+    "NVDA"
+  ],
+  "verdict_counts": {
+    "MATCH_WITHIN_DISPLAY_PRECISION": 16,
+    "RECONCILED_CONTINUING_PRE_EQUITY_DEFINITION": 2,
+    "RECONCILED_NET_INCOME_BASED_DEFINITION": 2
+  },
+  "requires_explanation": [
+    "NVDA/EBITDA",
+    "NVDA/EBITDA Margin",
+    "AMD/EBITDA",
+    "AMD/EBITDA Margin"
+  ],
+  "unresolved_rows": [],
+  "sec_reference_sha256": "30d0d459caa7944a542dab4e00f88bc4ed1129044570784780ae89924bf44714",
+  "sec_ingredients_sha256": "504a5be4b4dcac768b9fba448043def0492e0b0bd2fc3a6b27d2bbf76d9bcfaf"
+}

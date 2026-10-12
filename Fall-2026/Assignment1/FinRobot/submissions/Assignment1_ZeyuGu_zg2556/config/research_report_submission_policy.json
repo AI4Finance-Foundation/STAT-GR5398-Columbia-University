@@ -1,0 +1,18 @@
+{
+  "updated_at_utc": "2026-10-12T19:44:40.390240+00:00",
+  "user_direction": "Exclude editable research report LaTeX/Markdown and older report editions from the course PR. Keep all local originals and the open editor unchanged.",
+  "selected_pdf": "output/pdf/research_report_submission.pdf",
+  "excluded_globs": [
+    "docs/research_report.md",
+    "docs/latex/**",
+    "output/pdf/research_report.pdf",
+    "output/pdf/research_report_latex.pdf",
+    "output/pdf/research_report_build.json",
+    "evidence/document_history/**",
+    "evidence/manuscript_versions/research_report_*.md",
+    "evidence/latex_release/**",
+    "evidence/submission_pdf_review/extracted_text.txt"
+  ],
+  "scope_note": "Research-report source/build history only. Experimental runs, raw data, audits, notebooks, code, the current Medium article and README remain submitted.",
+  "publication_authorized": false
+}

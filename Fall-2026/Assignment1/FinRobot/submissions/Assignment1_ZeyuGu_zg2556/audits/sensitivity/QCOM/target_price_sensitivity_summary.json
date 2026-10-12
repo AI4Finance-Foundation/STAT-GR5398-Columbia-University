@@ -1,0 +1,42 @@
+{
+  "ticker": "QCOM",
+  "run_id": "QCOM_public_v1",
+  "valuation_method": "EV/EBITDA",
+  "ebitda_period": "2028E",
+  "base_target_price": 278.91089171712,
+  "minimum_target_price": 254.947753666944,
+  "maximum_target_price": 303.928513289856,
+  "maximum_native_margin_rounding_price_gap": 0.0,
+  "local_revenue_elasticity": 1.0,
+  "local_price_pct_change_per_plus_1pp_margin": 1.8903591682419658,
+  "elasticity_formula": "d log(price) / d log(revenue) = 1, and percent price change for +1pp margin = 1/base_margin_fraction, before zero clipping",
+  "scenario_count": 25,
+  "input_sources": {
+    "analysis": {
+      "path": "snapshots\\QCOM_public_v1\\analysis\\financial_metrics_and_forecasts.csv",
+      "sha256": "0ade7f94592cb9e33d703d06adec257a1e79f696f5792349348f567271983153"
+    },
+    "valuation_inputs": {
+      "path": "snapshots\\QCOM_public_v1\\valuation_inputs.json",
+      "sha256": "d0c5e922f794fed9ab64b8e0dbe92d41bb5847a5e1eb2f36da81261c65d53cf1"
+    },
+    "key_metrics": {
+      "path": "snapshots\\QCOM_public_v1\\analysis\\key_metrics_raw_data.csv",
+      "sha256": "f49be0aef9764c282dfb4a212b54032469350f2a1c995be1d151858c666c288d"
+    }
+  },
+  "frozen_assumptions": {
+    "target_multiple": 12.0,
+    "shares": 1050000000.0,
+    "net_debt_rule": "10% of scenario enterprise value, exactly as baseline method"
+  },
+  "interpretation": [
+    "Revenue shock is a relative change in forecast LEVEL, not a change in annual growth rate.",
+    "Margin shock is an absolute percentage-point change; 0.02 means 2pp.",
+    "The exact grid starts from EBITDA/revenue to preserve the baseline zero-shock valuation.",
+    "The native rounded-margin counterpart uses the displayed one-decimal margin and is saved in each CSV row.",
+    "All scenario EBITDA values are propagated without the native matrix's $0.1bn rounding.",
+    "This is a deterministic scenario range, not a probability interval, investment recommendation, or calibrated fair value.",
+    "The range omits uncertainty in the target multiple, shares, observed debt, forecast model structure, and timing."
+  ]
+}

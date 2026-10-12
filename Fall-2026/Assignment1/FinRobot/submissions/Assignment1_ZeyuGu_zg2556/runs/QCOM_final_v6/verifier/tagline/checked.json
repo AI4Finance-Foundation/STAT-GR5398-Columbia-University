@@ -1,0 +1,442 @@
+{
+  "original_text": "QUALCOMM Incorporated demonstrates robust financial fundamentals characterized by consistent revenue growth and expanding contribution margins. The company maintains strong operational efficiency with improving EBITDA margins and disciplined SG&A expense management. Its valuation reflects solid profitability and a resilient business model within its industry.",
+  "revised_text": "[UNVERIFIED - deterministic evidence/number check failed] QUALCOMM Incorporated demonstrates robust financial fundamentals characterized by consistent revenue growth and expanding contribution margins.\n\n[UNVERIFIED - deterministic evidence/number check failed] The company maintains strong operational efficiency with improving EBITDA margins and disciplined SG&A expense management.\n\n[UNVERIFIED - evidence not supplied] Its valuation reflects solid profitability and a resilient business model within its industry.",
+  "claims": [
+    {
+      "claim_id": "u0c0",
+      "source_id": 0,
+      "source_start": 0,
+      "source_end": 143,
+      "source_quote_occurrences": 1,
+      "original_quote": "QUALCOMM Incorporated demonstrates robust financial fundamentals characterized by consistent revenue growth and expanding contribution margins.",
+      "claim": "QUALCOMM Incorporated demonstrates robust financial fundamentals characterized by consistent revenue growth and expanding contribution margins.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 6,
+          "quote": "|  0 | Revenue             | 35820000000.0 | 38962000000.0 | 44284000000.0 | 46498200000.0 | 49288092000.0 | 51259615680.0  | 11.2%  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 10,
+          "quote": "|  4 | Contribution Margin | 55.7%         | 56.2%         | 55.4%         | 56.4%         | 57.4%         | 58.4%          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The financial table shows revenue increasing each year from 2023A to 2028E, and contribution margin rising from 55.7% in 2023A to 58.4% in 2028E, supporting the claim of consistent revenue growth and expanding contribution margins.",
+      "action": "keep",
+      "revised_claim": "QUALCOMM Incorporated demonstrates robust financial fundamentals characterized by consistent revenue growth from 2023A to 2028E and expanding contribution margins over the same period.",
+      "number_bindings": [
+        {
+          "claim_number": "2023",
+          "evidence_line": 4,
+          "evidence_number": "2023",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "35820000000.0",
+          "evidence_line": 6,
+          "evidence_number": "35820000000.0",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "51259615680.0",
+          "evidence_line": 6,
+          "evidence_number": "51259615680.0",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "55.7%",
+          "evidence_line": 10,
+          "evidence_number": "55.7%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "58.4%",
+          "evidence_line": 10,
+          "evidence_number": "58.4%",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2023:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] QUALCOMM Incorporated demonstrates robust financial fundamentals characterized by consistent revenue growth and expanding contribution margins.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "fd460a0f3d15e11255a01b8a5484582b2838815031a95ffa48aa21df673e1f4d"
+    },
+    {
+      "claim_id": "u0c1",
+      "source_id": 0,
+      "source_start": 144,
+      "source_end": 266,
+      "source_quote_occurrences": 1,
+      "original_quote": "The company maintains strong operational efficiency with improving EBITDA margins and disciplined SG&A expense management.",
+      "claim": "The company maintains strong operational efficiency with improving EBITDA margins and disciplined SG&A expense management.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 12,
+          "quote": "|  6 | EBITDA Margin       | 26.8%         | 30.2%         | 31.5%         | 49.9%         | 51.4%         | 52.9%          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 13,
+          "quote": "|  7 | SG&A Margin         | 6.9%          | 7.1%          | 7.0%          | 6.5%          | 6.0%          | 5.5%           | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "EBITDA margin increases from 26.8% in 2023A to 52.9% in 2028E, and SG&A margin decreases from 6.9% in 2023A to 5.5% in 2028E, indicating improving EBITDA margins and disciplined SG&A expense management.",
+      "action": "keep",
+      "revised_claim": "The company maintains strong operational efficiency with EBITDA margin improving from 26.8% in 2023A to 52.9% in 2028E and SG&A margin decreasing from 6.9% in 2023A to 5.5% in 2028E.",
+      "number_bindings": [
+        {
+          "claim_number": "26.8%",
+          "evidence_line": 12,
+          "evidence_number": "26.8%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "52.9%",
+          "evidence_line": 12,
+          "evidence_number": "52.9%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "6.9%",
+          "evidence_line": 13,
+          "evidence_number": "6.9%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "5.5%",
+          "evidence_line": 13,
+          "evidence_number": "5.5%",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "26.8%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "52.9%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "6.9%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "5.5%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2023:missing_binding",
+        "numeric_check_failed:2028:missing_binding",
+        "numeric_check_failed:2023:missing_binding",
+        "numeric_check_failed:2028:missing_binding"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] The company maintains strong operational efficiency with improving EBITDA margins and disciplined SG&A expense management.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "fd460a0f3d15e11255a01b8a5484582b2838815031a95ffa48aa21df673e1f4d"
+    },
+    {
+      "claim_id": "u0c2",
+      "source_id": 0,
+      "source_start": 267,
+      "source_end": 361,
+      "source_quote_occurrences": 1,
+      "original_quote": "Its valuation reflects solid profitability and a resilient business model within its industry.",
+      "claim": "Its valuation reflects solid profitability and a resilient business model within its industry.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "There is no evidence provided regarding valuation metrics, profitability relative to valuation, or qualitative assessment of business model resilience.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Its valuation reflects solid profitability and a resilient business model within its industry.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "fd460a0f3d15e11255a01b8a5484582b2838815031a95ffa48aa21df673e1f4d"
+    }
+  ],
+  "units": [
+    {
+      "source_id": 0,
+      "claims": [
+        {
+          "original_quote": "QUALCOMM Incorporated demonstrates robust financial fundamentals characterized by consistent revenue growth and expanding contribution margins.",
+          "claim": "QUALCOMM Incorporated demonstrates robust financial fundamentals characterized by consistent revenue growth and expanding contribution margins.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 6
+            },
+            {
+              "line_number": 10
+            }
+          ],
+          "reason": "The financial table shows revenue increasing each year from 2023A to 2028E, and contribution margin rising from 55.7% in 2023A to 58.4% in 2028E, supporting the claim of consistent revenue growth and expanding contribution margins.",
+          "action": "keep",
+          "revised_claim": "QUALCOMM Incorporated demonstrates robust financial fundamentals characterized by consistent revenue growth from 2023A to 2028E and expanding contribution margins over the same period.",
+          "number_bindings": [
+            {
+              "claim_number": "2023",
+              "evidence_line": 4,
+              "evidence_number": "2023",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "35820000000.0",
+              "evidence_line": 6,
+              "evidence_number": "35820000000.0",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "51259615680.0",
+              "evidence_line": 6,
+              "evidence_number": "51259615680.0",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "55.7%",
+              "evidence_line": 10,
+              "evidence_number": "55.7%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "58.4%",
+              "evidence_line": 10,
+              "evidence_number": "58.4%",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "The company maintains strong operational efficiency with improving EBITDA margins and disciplined SG&A expense management.",
+          "claim": "The company maintains strong operational efficiency with improving EBITDA margins and disciplined SG&A expense management.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 12
+            },
+            {
+              "line_number": 13
+            }
+          ],
+          "reason": "EBITDA margin increases from 26.8% in 2023A to 52.9% in 2028E, and SG&A margin decreases from 6.9% in 2023A to 5.5% in 2028E, indicating improving EBITDA margins and disciplined SG&A expense management.",
+          "action": "keep",
+          "revised_claim": "The company maintains strong operational efficiency with EBITDA margin improving from 26.8% in 2023A to 52.9% in 2028E and SG&A margin decreasing from 6.9% in 2023A to 5.5% in 2028E.",
+          "number_bindings": [
+            {
+              "claim_number": "26.8%",
+              "evidence_line": 12,
+              "evidence_number": "26.8%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "52.9%",
+              "evidence_line": 12,
+              "evidence_number": "52.9%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "6.9%",
+              "evidence_line": 13,
+              "evidence_number": "6.9%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "5.5%",
+              "evidence_line": 13,
+              "evidence_number": "5.5%",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "Its valuation reflects solid profitability and a resilient business model within its industry.",
+          "claim": "Its valuation reflects solid profitability and a resilient business model within its industry.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "There is no evidence provided regarding valuation metrics, profitability relative to valuation, or qualitative assessment of business model resilience.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    }
+  ],
+  "verifier_version": "6-reject-structural-only-evidence",
+  "unquoted_nonfactual_connectors": [],
+  "deterministic_validation_failures": [
+    {
+      "claim_id": "u0c0",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2023:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u0c1",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2023:missing_binding",
+        "numeric_check_failed:2028:missing_binding",
+        "numeric_check_failed:2023:missing_binding",
+        "numeric_check_failed:2028:missing_binding"
+      ],
+      "numeric_results": [
+        {
+          "token": "26.8%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "52.9%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "6.9%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "5.5%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ]
+    }
+  ],
+  "deterministic_failure_count": 2,
+  "verified_claim_count": 0,
+  "unverified_annotation_count": 3,
+  "withheld_claim_count": 0,
+  "claim_retention_rate": 1.0,
+  "supported_valid_retention_count": 0,
+  "automatic_year_binding_count": 0,
+  "limitations": "UNVERIFIED annotations preserve unsupported or deterministically rejected assertions for review and must not be counted as grounded facts. A claim's original machine classification is preserved even when deterministic checks reject it; retained_as_verified is then false. Rejected contradicted corrections remain in the audit but are withheld from the narrative. Semantic judgments are machine-assisted, not human-validated. Lexical quote coverage does not prove exhaustive semantic atomization. Exact numeric/year matches do not establish entity/period alignment or dimensional validity of conversions. Repeated source quotes may have ambiguous first-occurrence offsets."
+}

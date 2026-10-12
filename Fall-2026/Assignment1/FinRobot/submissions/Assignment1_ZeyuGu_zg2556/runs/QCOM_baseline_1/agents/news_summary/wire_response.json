@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EXwPbIdxEBftVqNufvH6Jqhv6pKcq",
+  "object": "chat.completion",
+  "created": 1791758067,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"news_summary\":\"Recent financial disclosures from QUALCOMM Incorporated for the quarter ended June 28, 2026, reveal a slight decline in total revenues compared to the prior year period, with total revenues of $9.947 billion down from $10.365 billion. Operating income also decreased notably to $1.626 billion from $2.762 billion in the previous year’s quarter. These results contrast with earlier projections of steady revenue growth and margin expansion through 2028, highlighting near-term operational pressures despite a positive long-term outlook.\\n\\nKey developments include QUALCOMM’s latest 10-Q filing showing sequential revenue and operating income declines, which may indicate challenges in equipment and services segments. Despite this, the company’s long-term revenue CAGR of 11.2% and improving contribution margins suggest ongoing strength in licensing and efficiency gains. The quarterly results, however, signal potential short-term headwinds that could temper near-term stock performance.\\n\\nInvestors should closely monitor the company’s ability to stabilize revenues and margins in upcoming quarters, as well as any strategic responses to competitive pressures. The contrast between recent quarterly results and the optimistic longer-term financial forecast underscores the importance of evaluating both immediate operational execution and the broader growth trajectory.\\n\\nOverall, the news tone is cautiously neutral to slightly negative in the short term due to declining quarterly revenues and earnings, but remains positive over the longer term given robust financial metrics and growth projections. This mixed sentiment may lead to increased volatility in the stock price as the market digests the latest operational data alongside the favorable outlook for future years.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2099,
+    "completion_tokens": 316,
+    "total_tokens": 2415,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_c8f7b32faf"
+}

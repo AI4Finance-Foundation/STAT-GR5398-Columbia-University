@@ -1,0 +1,8 @@
+{
+  "error_type": "ValueError",
+  "message": "Deterministic verifier validation failed: [{\"claim_id\": \"u0c0\", \"errors\": [\"duplicate_number_binding\", \"number_binding_set_mismatch\", \"numeric_check_failed:70%:numeric_mismatch\", \"numeric_check_failed:2025:number_not_in_cited_evidence_line\", \"numeric_check_failed:2029:number_not_in_cited_evidence_line\", \"numeric_check_failed:2029:number_not_in_cited_evidence_line\"], \"numeric_results\": [{\"token\": \"70%\", \"passed\": false, \"reason\": \"numeric_mismatch\"}, {\"token\": \"2025\", \"passed\": false, \"reason\": \"number_not_in_cited_evidence_line\"}, {\"token\": \"2029\", \"passed\": false, \"reason\": \"number_not_in_cited_evidence_line\"}, {\"token\": \"73.5%\", \"passed\": true, \"reason\": \"matched_at_display_precision\"}, {\"token\": \"2029\", \"passed\": false, \"reason\": \"number_not_in_cited_evidence_line\"}]}, {\"claim_id\": \"u0c1\", \"errors\": [\"numeric_check_failed:2022:number_not_in_cited_evidence_line\", \"numeric_check_failed:2029:number_not_in_cited_evidence_line\"], \"numeric_results\": [{\"token\": \"68.3%\", \"passed\": true, \"reason\": \"matched_at_display_precision\"}, {\"token\": \"2022\", \"passed\": false, \"reason\": \"number_not_in_cited_evidence_line\"}, {\"token\": \"2029\", \"passed\": false, \"reason\": \"number_not_in_cited_evidence_line\"}]}, {\"claim_id\": \"u0c2\", \"errors\": [\"empty_atomic_claim\"], \"numeric_results\": []}]",
+  "repair_index": 2,
+  "base_prompt_sha256": "0cd1e1add7cccadf50fe5884835bee953d7c13cdadd76054e5f03df2e6cf4c9d",
+  "evidence_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+  "original_sha256": "aebb04a670b52de71793ad6ddd9f8676701033708a37210afa12dd251d059196"
+}

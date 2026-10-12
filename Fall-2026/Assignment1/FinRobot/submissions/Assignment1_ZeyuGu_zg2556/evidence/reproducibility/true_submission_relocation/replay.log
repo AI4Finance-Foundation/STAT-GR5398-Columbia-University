@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "C:\Users\zeyug\AppData\Local\Temp\frrel-7ccfkyct\submission\scripts\validate_submission_relocation.py", line 242, in <module>
+    main()
+  File "C:\Users\zeyug\AppData\Local\Temp\frrel-7ccfkyct\submission\scripts\validate_submission_relocation.py", line 138, in main
+    run_worker(args)
+  File "C:\Users\zeyug\AppData\Local\Temp\frrel-7ccfkyct\submission\scripts\validate_submission_relocation.py", line 75, in run_worker
+    isolation_probe(args.blocked_root)
+  File "C:\Users\zeyug\AppData\Local\Temp\frrel-7ccfkyct\submission\scripts\validate_submission_relocation.py", line 70, in isolation_probe
+    assert not (Path(blocked_root)/"snapshots").exists(), "Original-root stat isolation failed"
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\zeyug\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py", line 1235, in exists
+    self.stat()
+  File "C:\Users\zeyug\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\pathlib.py", line 1013, in stat
+    return os.stat(self, follow_symlinks=follow_symlinks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\zeyug\AppData\Local\Temp\frrel-7ccfkyct\submission\scripts\validate_submission_relocation.py", line 52, in guarded
+    raise FileNotFoundError("Original submission isolated for migration test")
+FileNotFoundError: Original submission isolated for migration test

@@ -1,0 +1,19 @@
+{
+  "period": "2029E",
+  "formula": "EV = EBITDA * mean(saved historical multiples); debt = 0.1 * EV; target = max((EV-debt)/saved shares, 0)",
+  "shares": 24221000000,
+  "historical_multiples": [
+    "31.428342257457523",
+    "33.77740227776681",
+    "43.4522187561476",
+    "81.04764450384229",
+    "54.71865033917717"
+  ],
+  "values_decimal": {
+    "target_multiple": "48.8848516268782786",
+    "enterprise_value": "8980886725672.933548665926788960",
+    "assumed_net_debt": "898088672567.293354866592678896",
+    "equity_value": "8082798053105.640193799334110064",
+    "target_price": "333.7103362002246064902082535842450765864"
+  }
+}

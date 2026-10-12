@@ -1,0 +1,39 @@
+{
+  "ticker": "NVDA",
+  "run_id": "NVDA-20261011T211000Z-snapshot",
+  "as_of_utc": "2026-10-11T21:10:00+00:00",
+  "metrics": {
+    "share_price": 229.28,
+    "target_price": 339.17,
+    "market_cap": 5553.39088,
+    "volume": 129.661621,
+    "fwd_pe": 37.82352941176471,
+    "pb_ratio": 28.87746263342933,
+    "dividend_yield": 0.12212142358688069,
+    "free_float": 95.88978985178152,
+    "roe": 76.33333969089534,
+    "net_debt_to_equity": 0.07255249756823254,
+    "rating": "Overweight",
+    "beta": 2.217,
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "exchange": "NASDAQ",
+    "52w_range": "$164.27 - $243.37",
+    "shares_outstanding": 24221000000,
+    "target_price_source": "FMP stable/price-target-consensus: targetConsensus (changed from legacy latest analyst target)",
+    "rating_source": "FMP stable/grades: latest newGrade or action",
+    "shares_source": "FMP stable/shares-float: outstandingShares"
+  },
+  "classification_observed": {
+    "sector": "Technology",
+    "industry": "Semiconductors"
+  },
+  "provenance_notes": {
+    "free_float": "stable/shares-float observation replaces legacy hard-coded 95%; unavailable if endpoint fails",
+    "fwd_pe": "historical ratios/key-metrics PE mislabeled as forward PE upstream; not analyst forecast EPS multiple",
+    "net_debt_to_equity": "historical debtEquityRatio, not independently derived net-debt/equity",
+    "target_price": "stable price-target-consensus targetConsensus, a disclosed semantic change from legacy single-analyst target; not engine target",
+    "rating": "latest single newGrade or action, not LLM recommendation",
+    "dividend_yield": "lastDiv/current price; upstream assumes lastDiv is annual"
+  }
+}

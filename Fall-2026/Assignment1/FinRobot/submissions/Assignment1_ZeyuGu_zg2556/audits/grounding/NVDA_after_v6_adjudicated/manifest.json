@@ -1,0 +1,80 @@
+{
+  "state": "complete",
+  "auditor_version": "machine-adjudication-v1",
+  "ticker": "NVDA",
+  "run_id": "NVDA_final_v6",
+  "source_run": "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\runs\\NVDA_final_v6",
+  "evidence_run": "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\runs\\NVDA_baseline_1",
+  "sections": [
+    "tagline",
+    "company_overview",
+    "investment_overview",
+    "valuation_overview",
+    "risks",
+    "competitor_analysis",
+    "major_takeaways",
+    "news_summary"
+  ],
+  "completed_at_utc": "2026-10-11T22:47:38.119028+00:00",
+  "source_hashes": {
+    "tagline": "e0c9ee0684e93e2550bea55c06be50faf1492210539e523ace7ba560df57c89c",
+    "company_overview": "dc324f74a597fd6b43b30dccb042cddd59257f1acc5c467b242d92b007927a52",
+    "investment_overview": "5e01a16aaebadc3663b99ba7f0ccdd5328e9f8da1865ebad3fdcecd9756a090d",
+    "valuation_overview": "32eb1198d1fd997dd3595e42f19e4c5549a8cdea3914b66ace84ae67e78a591d",
+    "risks": "809053d24a05cfaea4f845dd5d02f442df68e984de7cac5e031131a2f4029f4b",
+    "competitor_analysis": "8e51688b98ba83501227a535066b10dfed12c4cd1511bf443966e60fddbabdb1",
+    "major_takeaways": "7ccf532fa6523d7cb260c82a0215f1bf29fea5c0e0265b43a91014d1edbd4cec",
+    "news_summary": "8a8f10524cd719cec1a9de0c6d47911c361a8b4fea85817c2fad5ad4b9b67492"
+  },
+  "evidence_hashes": {
+    "tagline": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+    "company_overview": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+    "investment_overview": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+    "valuation_overview": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+    "risks": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+    "competitor_analysis": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+    "major_takeaways": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+    "news_summary": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4"
+  },
+  "instructions_sha256": "d6030264732168f5bf083cefea075f0337e1a831d3fb89d64705a48667f537b2",
+  "auditor_model": "Codex-assisted source adjudication; model identifier not exported",
+  "human_review_performed": false,
+  "claim_csv_sha256": "32499b32ff7a6a3a651360b19274e2a2e794a540b914f77d7e238831fc40556c",
+  "text_coverage_sha256": "6eff78392df3f1f5b692518539c7fdabfa3b3a28a44bde795dfbd6b61bf3d01b",
+  "reviewed_specification_sha256": "1c2f0ef12eead9ab1965d74a7493cc0b16e8a591b944aa90a2a1661537c92c09",
+  "raw_judge_audit": null,
+  "review_scope": "Every deterministic source unit and explicitly decomposed factual premise; no sampling.",
+  "adjudication_tokens": null,
+  "adjudication_cost_usd": null,
+  "adjudication_runtime_seconds": null,
+  "cost_limitation": "Codex task-agent authoring is not instrumented by the direct API ledger; unavailable does not mean zero. Raw API judge and verifier usage remains in the shared ledger.",
+  "lexical_fallback_fact_key_count": 514,
+  "retention_limitation": "Without explicit fact_key, retention uses lowercased claim text; this lexical proxy can miss paraphrases. Inspect evidence-span retention and original claim mappings.",
+  "resume_fingerprint": {
+    "source_hashes": {
+      "tagline": "e0c9ee0684e93e2550bea55c06be50faf1492210539e523ace7ba560df57c89c",
+      "company_overview": "dc324f74a597fd6b43b30dccb042cddd59257f1acc5c467b242d92b007927a52",
+      "investment_overview": "5e01a16aaebadc3663b99ba7f0ccdd5328e9f8da1865ebad3fdcecd9756a090d",
+      "valuation_overview": "32eb1198d1fd997dd3595e42f19e4c5549a8cdea3914b66ace84ae67e78a591d",
+      "risks": "809053d24a05cfaea4f845dd5d02f442df68e984de7cac5e031131a2f4029f4b",
+      "competitor_analysis": "8e51688b98ba83501227a535066b10dfed12c4cd1511bf443966e60fddbabdb1",
+      "major_takeaways": "7ccf532fa6523d7cb260c82a0215f1bf29fea5c0e0265b43a91014d1edbd4cec",
+      "news_summary": "8a8f10524cd719cec1a9de0c6d47911c361a8b4fea85817c2fad5ad4b9b67492"
+    },
+    "evidence_hashes": {
+      "tagline": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "company_overview": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "investment_overview": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "valuation_overview": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "risks": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "competitor_analysis": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "major_takeaways": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4",
+      "news_summary": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4"
+    },
+    "provider": "Codex task-agent session",
+    "schema_sha256": "6820ddeba2a98fe2591991684b0ce0343adbfa1c252b52443cdbee08990df60e",
+    "temperature": "not_exported",
+    "max_tokens": "not_exported"
+  },
+  "limitations": "Independent machine judgment can still miss implicit facts or misclassify evidence. This is not human validation. Measurement protocol was revised after raw-judge pilot failures."
+}

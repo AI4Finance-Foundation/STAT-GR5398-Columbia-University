@@ -1,0 +1,28 @@
+{
+  "call_id": "preflight_2026-10-11T21:14:25.371682+00:00",
+  "agent_name": "StructuredOutputProbe",
+  "model": "gpt-4.1-mini",
+  "provider_base_url": "https://api.openai.com/v1",
+  "instructions": "Return ok true.",
+  "evidence_prompt": "Confirm structured output.",
+  "evidence_sha256": "b686ec03706448e5eca07106dbbd94c2b6b12876434a7b0e7cbe1d2cfd64f3a7",
+  "instructions_sha256": "0f24f4e80d6a4aa2ff5982fdf88ff7d60db4b6d6c82056ce05729d3c5f1da847",
+  "temperature": 0,
+  "max_output_tokens": 32,
+  "tracing_disabled": true,
+  "sdk_retries": 0,
+  "timestamp_utc": "2026-10-11T21:14:25.372681+00:00",
+  "output_schema": {
+    "properties": {
+      "ok": {
+        "title": "Ok",
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "ok"
+    ],
+    "title": "ProbeResponse",
+    "type": "object"
+  }
+}

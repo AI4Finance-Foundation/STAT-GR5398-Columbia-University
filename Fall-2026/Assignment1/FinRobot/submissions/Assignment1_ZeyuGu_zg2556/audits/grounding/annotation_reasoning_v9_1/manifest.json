@@ -1,0 +1,24 @@
+{
+  "created_utc": "2026-10-12T06:38:28.477491+00:00",
+  "pairs": [
+    {
+      "before": "audits/grounding/NVDA_before_reasoning_v8_2_corrected",
+      "after": "audits/grounding/NVDA_after_reasoning_v9_1_adjudicated",
+      "final_run": "runs/NVDA_final_reasoning_v9_1"
+    },
+    {
+      "before": "audits/grounding/AMD_before_reasoning_v8_2_corrected",
+      "after": "audits/grounding/AMD_after_reasoning_v9_1_adjudicated",
+      "final_run": "runs/AMD_final_reasoning_v9_1"
+    },
+    {
+      "before": "audits/grounding/INTC_before_reasoning_v8_2_corrected",
+      "after": "audits/grounding/INTC_after_reasoning_v9_1_adjudicated",
+      "final_run": "runs/INTC_final_reasoning_v9_1"
+    }
+  ],
+  "human_review_performed": false,
+  "baseline_warning_count": 0,
+  "baseline_warning_recall": 0,
+  "limitations": "Warning detection is deterministic; semantic labels are independent Codex-assisted judgments with no human validation. Lexical keys do not establish unique semantic facts. Repetition changes raw denominators. No correction is inferred from annotation."
+}

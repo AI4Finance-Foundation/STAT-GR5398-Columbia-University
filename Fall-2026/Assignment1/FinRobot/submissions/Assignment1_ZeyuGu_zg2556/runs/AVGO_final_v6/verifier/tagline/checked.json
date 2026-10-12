@@ -1,0 +1,454 @@
+{
+  "original_text": "Broadcom Inc. demonstrates robust financial fundamentals with a strong contribution margin improving from 68.9% to 70.8% and a solid EBITDA margin increasing to 65.7% by 2028. The company maintains substantial revenue growth, reflected in a 33.6% CAGR from 2023 to 2028, supported by disciplined cost management and efficient SG&A control. Broadcom's financial position underscores its operational strength and attractive valuation metrics within its sector.",
+  "revised_text": "[UNVERIFIED - deterministic evidence/number check failed] Broadcom Inc. demonstrates robust financial fundamentals with a strong contribution margin improving from 68.9% to 70.8% and a solid EBITDA margin increasing to 65.7% by 2028.\n\n[UNVERIFIED - deterministic evidence/number check failed] The company maintains substantial revenue growth, reflected in a 33.6% CAGR from 2023 to 2028, supported by disciplined cost management and efficient SG&A control.\n\n[UNVERIFIED - evidence not supplied] Broadcom Inc.'s revenue growth from 2023 to 2028 is supported by disciplined cost management and efficient SG&A control.\n\n[UNVERIFIED - evidence not supplied] Broadcom's financial position demonstrates operational strength and attractive valuation metrics within its sector.",
+  "claims": [
+    {
+      "claim_id": "u0c0",
+      "source_id": 0,
+      "source_start": 0,
+      "source_end": 175,
+      "source_quote_occurrences": 1,
+      "original_quote": "Broadcom Inc. demonstrates robust financial fundamentals with a strong contribution margin improving from 68.9% to 70.8% and a solid EBITDA margin increasing to 65.7% by 2028.",
+      "claim": "Broadcom Inc. has a contribution margin of 68.9% in 2023 and 70.8% in 2028, and an EBITDA margin of 65.7% in 2028.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2023A         | 2024A         | 2025A         | 2026E         | 2027E         | 2028E          | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 10,
+          "quote": "|  4 | Contribution Margin | 68.9%         | 63.0%         | 67.8%         | 68.8%         | 69.8%         | 70.8%          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 12,
+          "quote": "|  6 | EBITDA Margin       | 56.0%         | 45.5%         | 53.6%         | 62.7%         | 64.2%         | 65.7%          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The table provides contribution margin values for 2023 and 2028, and EBITDA margin for 2028.",
+      "action": "keep",
+      "revised_claim": "Broadcom Inc. has a contribution margin of 68.9% in 2023 and 70.8% in 2028, and an EBITDA margin of 65.7% in 2028.",
+      "number_bindings": [
+        {
+          "claim_number": "68.9",
+          "evidence_line": 10,
+          "evidence_number": "68.9",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2023",
+          "evidence_line": 4,
+          "evidence_number": "2023A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "70.8",
+          "evidence_line": 10,
+          "evidence_number": "70.8",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "65.7",
+          "evidence_line": 12,
+          "evidence_number": "65.7",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "68.9%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "70.8%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028,",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "65.7%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:68.9%:missing_binding",
+        "numeric_check_failed:2023:number_not_in_cited_evidence_line",
+        "numeric_check_failed:70.8%:missing_binding",
+        "numeric_check_failed:2028,:missing_binding",
+        "numeric_check_failed:65.7%:missing_binding",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Broadcom Inc. demonstrates robust financial fundamentals with a strong contribution margin improving from 68.9% to 70.8% and a solid EBITDA margin increasing to 65.7% by 2028.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u0c1",
+      "source_id": 0,
+      "source_start": 176,
+      "source_end": 339,
+      "source_quote_occurrences": 1,
+      "original_quote": "The company maintains substantial revenue growth, reflected in a 33.6% CAGR from 2023 to 2028, supported by disciplined cost management and efficient SG&A control.",
+      "claim": "Broadcom Inc. has a 33.6% revenue CAGR from 2023 to 2028.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2023A         | 2024A         | 2025A         | 2026E         | 2027E         | 2028E          | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 6,
+          "quote": "|  0 | Revenue             | 35819000000.0 | 51574000000.0 | 63887000000.0 | 67081350000.0 | 71106231000.0 | 73950480240.0  | 33.6%  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The table shows a 33.6% CAGR for revenue from 2023 to 2028.",
+      "action": "keep",
+      "revised_claim": "Broadcom Inc. has a 33.6% revenue CAGR from 2023 to 2028.",
+      "number_bindings": [
+        {
+          "claim_number": "33.6",
+          "evidence_line": 6,
+          "evidence_number": "33.6",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2023",
+          "evidence_line": 4,
+          "evidence_number": "2023A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "33.6%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:33.6%:missing_binding",
+        "numeric_check_failed:2023:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] The company maintains substantial revenue growth, reflected in a 33.6% CAGR from 2023 to 2028, supported by disciplined cost management and efficient SG&A control.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u0c2",
+      "source_id": 0,
+      "source_start": 176,
+      "source_end": 339,
+      "source_quote_occurrences": 1,
+      "original_quote": "The company maintains substantial revenue growth, reflected in a 33.6% CAGR from 2023 to 2028, supported by disciplined cost management and efficient SG&A control.",
+      "claim": "Broadcom Inc.'s revenue growth from 2023 to 2028 is supported by disciplined cost management and efficient SG&A control.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "There is no direct evidence in the supplied data attributing revenue growth to cost management or SG&A control.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Broadcom Inc.'s revenue growth from 2023 to 2028 is supported by disciplined cost management and efficient SG&A control.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u0c3",
+      "source_id": 0,
+      "source_start": 340,
+      "source_end": 458,
+      "source_quote_occurrences": 1,
+      "original_quote": "Broadcom's financial position underscores its operational strength and attractive valuation metrics within its sector.",
+      "claim": "Broadcom's financial position demonstrates operational strength and attractive valuation metrics within its sector.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for operational strength or valuation metrics in the supplied data.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Broadcom's financial position demonstrates operational strength and attractive valuation metrics within its sector.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    }
+  ],
+  "units": [
+    {
+      "source_id": 0,
+      "claims": [
+        {
+          "original_quote": "Broadcom Inc. demonstrates robust financial fundamentals with a strong contribution margin improving from 68.9% to 70.8% and a solid EBITDA margin increasing to 65.7% by 2028.",
+          "claim": "Broadcom Inc. has a contribution margin of 68.9% in 2023 and 70.8% in 2028, and an EBITDA margin of 65.7% in 2028.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 10
+            },
+            {
+              "line_number": 12
+            }
+          ],
+          "reason": "The table provides contribution margin values for 2023 and 2028, and EBITDA margin for 2028.",
+          "action": "keep",
+          "revised_claim": "Broadcom Inc. has a contribution margin of 68.9% in 2023 and 70.8% in 2028, and an EBITDA margin of 65.7% in 2028.",
+          "number_bindings": [
+            {
+              "claim_number": "68.9",
+              "evidence_line": 10,
+              "evidence_number": "68.9",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2023",
+              "evidence_line": 4,
+              "evidence_number": "2023A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "70.8",
+              "evidence_line": 10,
+              "evidence_number": "70.8",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "65.7",
+              "evidence_line": 12,
+              "evidence_number": "65.7",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "The company maintains substantial revenue growth, reflected in a 33.6% CAGR from 2023 to 2028, supported by disciplined cost management and efficient SG&A control.",
+          "claim": "Broadcom Inc. has a 33.6% revenue CAGR from 2023 to 2028.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 6
+            }
+          ],
+          "reason": "The table shows a 33.6% CAGR for revenue from 2023 to 2028.",
+          "action": "keep",
+          "revised_claim": "Broadcom Inc. has a 33.6% revenue CAGR from 2023 to 2028.",
+          "number_bindings": [
+            {
+              "claim_number": "33.6",
+              "evidence_line": 6,
+              "evidence_number": "33.6",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2023",
+              "evidence_line": 4,
+              "evidence_number": "2023A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "The company maintains substantial revenue growth, reflected in a 33.6% CAGR from 2023 to 2028, supported by disciplined cost management and efficient SG&A control.",
+          "claim": "Broadcom Inc.'s revenue growth from 2023 to 2028 is supported by disciplined cost management and efficient SG&A control.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "There is no direct evidence in the supplied data attributing revenue growth to cost management or SG&A control.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Broadcom's financial position underscores its operational strength and attractive valuation metrics within its sector.",
+          "claim": "Broadcom's financial position demonstrates operational strength and attractive valuation metrics within its sector.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for operational strength or valuation metrics in the supplied data.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    }
+  ],
+  "verifier_version": "6-reject-structural-only-evidence",
+  "unquoted_nonfactual_connectors": [],
+  "deterministic_validation_failures": [
+    {
+      "claim_id": "u0c0",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:68.9%:missing_binding",
+        "numeric_check_failed:2023:number_not_in_cited_evidence_line",
+        "numeric_check_failed:70.8%:missing_binding",
+        "numeric_check_failed:2028,:missing_binding",
+        "numeric_check_failed:65.7%:missing_binding",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "68.9%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "70.8%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028,",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "65.7%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u0c1",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:33.6%:missing_binding",
+        "numeric_check_failed:2023:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "33.6%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    }
+  ],
+  "deterministic_failure_count": 2,
+  "verified_claim_count": 0,
+  "unverified_annotation_count": 4,
+  "withheld_claim_count": 0,
+  "claim_retention_rate": 1.0,
+  "supported_valid_retention_count": 0,
+  "automatic_year_binding_count": 0,
+  "limitations": "UNVERIFIED annotations preserve unsupported or deterministically rejected assertions for review and must not be counted as grounded facts. A claim's original machine classification is preserved even when deterministic checks reject it; retained_as_verified is then false. Rejected contradicted corrections remain in the audit but are withheld from the narrative. Semantic judgments are machine-assisted, not human-validated. Lexical quote coverage does not prove exhaustive semantic atomization. Exact numeric/year matches do not establish entity/period alignment or dimensional validity of conversions. Repeated source quotes may have ambiguous first-occurrence offsets."
+}

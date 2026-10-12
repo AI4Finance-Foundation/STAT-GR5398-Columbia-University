@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EXxQG13ucyyWJPMcHVNA2PVshwG5e",
+  "object": "chat.completion",
+  "created": 1791761952,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"units\":[{\"unit_id\":2,\"claims\":[{\"claim\":\"Intel provided guidance for third quarter 2026 revenue between $15.8 billion and $16.8 billion.\",\"claim_type\":\"factual\",\"classification\":\"Supported\",\"evidence\":[{\"line_start\":47,\"line_end\":47}],\"reason\":\"The news summary in lines 47 states: 'Forecasting third-quarter 2026 revenue of $15.8 billion to $16.8 billion.' This matches the claim's entity (Intel), metric (revenue), period (Q3 2026), and forecasted range ($15.8B-$16.8B).\",\"numeric_status\":\"correct\",\"fact_key\":\"intel|revenue|q3_2026|15.8-16.8_billion_usd\"}],\"nonfactual_reason\":\"\"},{\"unit_id\":3,\"claims\":[{\"claim\":\"Intel provided a non-GAAP EPS forecast of $0.38 for the third quarter of 2026.\",\"claim_type\":\"factual\",\"classification\":\"Supported\",\"evidence\":[{\"line_start\":47,\"line_end\":47}],\"reason\":\"Line 47 states: 'expecting third-quarter EPS attributable to Intel of $0.31 and non-GAAP EPS attributable to Intel of $0.38.' This matches the claim's entity (Intel), metric (non-GAAP EPS), period (Q3 2026), and forecast value ($0.38).\",\"numeric_status\":\"correct\",\"fact_key\":\"intel|non-gaap_eps|q3_2026|0.38_usd\"}],\"nonfactual_reason\":\"\"},{\"unit_id\":5,\"claims\":[{\"claim\":\"Intel has experienced a multi-year declining revenue trend.\",\"claim_type\":\"qualitative\",\"classification\":\"Supported\",\"evidence\":[{\"line_start\":6,\"line_end\":6}],\"reason\":\"The table in line 6 shows Intel's actual revenue declining from $79,024,000,000 in 2021A to $54,228,000,000 in 2023A, supporting a multi-year declining trend. The trend is visible for all actual years shown.\",\"numeric_status\":\"not_numeric\",\"fact_key\":\"intel|revenue_trend|2021a-2023a|declining\"}],\"nonfactual_reason\":\"\"},{\"unit_id\":6,\"claims\":[{\"claim\":\"Intel has continued negative GAAP earnings despite positive non-GAAP results.\",\"claim_type\":\"qualitative\",\"classification\":\"Supported\",\"evidence\":[{\"line_start\":15,\"line_end\":15},{\"line_start\":46,\"line_end\":46}],\"reason\":\"Line 15 shows negative GAAP EPS for 2024A and 2025A, and line 46 shows Q2 2026 GAAP EPS of $(2.16) and non-GAAP EPS of $0.42, supporting the claim that negative GAAP earnings continue despite positive non-GAAP results.\",\"numeric_status\":\"not_numeric\",\"fact_key\":\"intel|gaap_vs_nongaap_earnings|2024a-2026q2|negative_vs_positive\"}],\"nonfactual_reason\":\"\"},{\"unit_id\":9,\"claims\":[{\"claim\":\"NVIDIA has much higher EBITDA than Intel.\",\"claim_type\":\"qualitative\",\"classification\":\"Supported\",\"evidence\":[{\"line_start\":18,\"line_end\":27}],\"reason\":\"The peer EBITDA table (lines 18-27) shows that in 2024, NVDA's EBITDA ($35.583B) is much higher than Intel's ($1.203B), and in 2025, NVDA's EBITDA ($86.137B) is much higher than Intel's ($14.354B). This supports the claim for the periods where both values are present.\",\"numeric_status\":\"not_numeric\",\"fact_key\":\"nvidia_vs_intel|ebitda|2024-2025|nvidia_much_higher\"}],\"nonfactual_reason\":\"\"},{\"unit_id\":10,\"claims\":[{\"claim\":\"NVIDIA has much higher valuation multiples than Intel.\",\"claim_type\":\"qualitative\",\"classification\":\"Supported\",\"evidence\":[{\"line_start\":29,\"line_end\":37}],\"reason\":\"The peer EV/EBITDA table (lines 29-37) shows that in 2023, NVDA's EV/EBITDA (81.05) is much higher than Intel's (22.48), and in 2022, NVDA's (54.72) is much higher than Intel's (6.55). This supports the claim for the periods where both values are present.\",\"numeric_status\":\"not_numeric\",\"fact_key\":\"nvidia_vs_intel|ev_ebitda|2022-2023|nvidia_much_higher\"}],\"nonfactual_reason\":\"\"},{\"unit_id\":12,\"claims\":[{\"claim\":\"Market sentiment surrounding Intel appears cautiously optimistic due to revenue growth and positive non-GAAP earnings.\",\"claim_type\":\"causal\",\"classification\":\"Unsupported\",\"evidence\":[],\"reason\":\"No evidence is provided regarding market sentiment or its causes. The evidence only provides financial data and news, not sentiment analysis or market commentary.\",\"numeric_status\":\"unverifiable\",\"fact_key\":\"intel|market_sentiment|2026|cautiously_optimistic_due_to_growth\"}],\"nonfactual_reason\":\"\"},{\"unit_id\":13,\"claims\":[{\"claim\":\"Market sentiment is tempered by sustained GAAP losses and the need for continued strategic execution to restore profitability and growth.\",\"claim_type\":\"causal\",\"classification\":\"Unsupported\",\"evidence\":[],\"reason\":\"No evidence is provided regarding market sentiment or its causes. The evidence only provides financial data and news, not sentiment analysis or market commentary.\",\"numeric_status\":\"unverifiable\",\"fact_key\":\"intel|market_sentiment|2026|tempered_by_gaap_losses_and_strategy\"}],\"nonfactual_reason\":\"\"}]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3176,
+    "completion_tokens": 1200,
+    "total_tokens": 4376,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_8808cca3cb"
+}

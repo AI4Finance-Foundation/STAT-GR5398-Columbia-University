@@ -1,0 +1,42 @@
+{
+  "ticker": "INTC",
+  "run_id": "INTC-20261011T211000Z-snapshot-derived-e8bf7838",
+  "valuation_method": "EV/EBITDA",
+  "ebitda_period": "2028E",
+  "base_target_price": 105.28497176667821,
+  "minimum_target_price": 93.48342100982505,
+  "maximum_target_price": 117.77465959390182,
+  "maximum_native_margin_rounding_price_gap": 0.0,
+  "local_revenue_elasticity": 1.0,
+  "local_price_pct_change_per_plus_1pp_margin": 3.2679738562091503,
+  "elasticity_formula": "d log(price) / d log(revenue) = 1, and percent price change for +1pp margin = 1/base_margin_fraction, before zero clipping",
+  "scenario_count": 25,
+  "input_sources": {
+    "analysis": {
+      "path": "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\snapshots\\INTC_news_v2\\analysis\\financial_metrics_and_forecasts.csv",
+      "sha256": "b89c1e6c5bf117d2dbb34b7987e56b61b7edf48959edf711d373cba6fb46b408"
+    },
+    "valuation_inputs": {
+      "path": "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\snapshots\\INTC_news_v2\\valuation_inputs.json",
+      "sha256": "cbb137a9eca31e67d0554aac3ee36ce3705677fa0dbe4dd77e53d6741585cbb4"
+    },
+    "key_metrics": {
+      "path": "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\snapshots\\INTC_news_v2\\analysis\\key_metrics_raw_data.csv",
+      "sha256": "af5ecfdb6d60dd3e8571b83bea8f40b277ad50a6be3ad150b7bedc98f4a22933"
+    }
+  },
+  "frozen_assumptions": {
+    "target_multiple": 31.519502799624366,
+    "shares": 5043999747.0,
+    "net_debt_rule": "10% of scenario enterprise value, exactly as baseline method"
+  },
+  "interpretation": [
+    "Revenue shock is a relative change in forecast LEVEL, not a change in annual growth rate.",
+    "Margin shock is an absolute percentage-point change; 0.02 means 2pp.",
+    "The exact grid starts from EBITDA/revenue to preserve the baseline zero-shock valuation.",
+    "The native rounded-margin counterpart uses the displayed one-decimal margin and is saved in each CSV row.",
+    "All scenario EBITDA values are propagated without the native matrix's $0.1bn rounding.",
+    "This is a deterministic scenario range, not a probability interval, investment recommendation, or calibrated fair value.",
+    "The range omits uncertainty in the target multiple, shares, observed debt, forecast model structure, and timing."
+  ]
+}

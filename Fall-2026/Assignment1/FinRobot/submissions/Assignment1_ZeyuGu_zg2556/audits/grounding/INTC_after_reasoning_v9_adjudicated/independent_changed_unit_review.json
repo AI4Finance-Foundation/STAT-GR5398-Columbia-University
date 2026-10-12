@@ -1,0 +1,234 @@
+[
+  {
+    "source_unit_id": 14,
+    "source_text": "The supplied Revenue CAGR cell is -9.6%; the 2021A to 2025A actual endpoints imply -9.57% CAGR. ",
+    "calculation": {
+      "start": "2021A",
+      "end": "2025A",
+      "start_value": "79024000000.0",
+      "end_value": "52853000000.0",
+      "elapsed_years": 4,
+      "percent": "-9.56684999067733495820464007502425847458323068576429004806280",
+      "precision": 60,
+      "formula": "100 * (exp((ln(end_value) - ln(start_value)) / elapsed_years) - 1)",
+      "start_role": "actual",
+      "end_role": "actual"
+    },
+    "header_line": 4,
+    "revenue_line": 6,
+    "atoms": [
+      {
+        "claim": "INTC's supplied Revenue row displays a CAGR cell of -9.6%.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Literal original Revenue CAGR cell is -9.6%. This statement concerns the supplied cell, not an inferred statistical period.",
+        "fact_key": "intc|revenue_cagr_display_cell|generic|-9.6|percent"
+      },
+      {
+        "claim": "INTC Revenue CAGR from 2021A to 2025A is -9.57%, using actual endpoints.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Independent Decimal ln/exp calculation: Revenue(2025A)=52853000000.0, Revenue(2021A)=79024000000.0; elapsed fiscal-year intervals=4; 100*(exp((ln(end)-ln(start))/n)-1)=-9.56684999067733495820464007502425847458323068576429004806280%. At the sentence's displayed precision the arithmetic agrees=True; asserted endpoint role/scope agrees=True. This is prompt-conditional arithmetic, not external verification of the financial inputs.",
+        "fact_key": "intc|revenue_cagr|2021a:2025a|-9.57|percent"
+      }
+    ],
+    "section": "valuation_overview",
+    "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+  },
+  {
+    "source_unit_id": 15,
+    "source_text": "Across the table's 2021A to 2028E endpoints, the implied Revenue CAGR is -3.59%; 2028E is a model forecast.",
+    "calculation": {
+      "start": "2021A",
+      "end": "2028E",
+      "start_value": "79024000000.0",
+      "end_value": "61178404560.0",
+      "elapsed_years": 7,
+      "percent": "-3.59048970696247516748754869539343424916870786289802467163390",
+      "precision": 60,
+      "formula": "100 * (exp((ln(end_value) - ln(start_value)) / elapsed_years) - 1)",
+      "start_role": "actual",
+      "end_role": "forecast"
+    },
+    "header_line": 4,
+    "revenue_line": 6,
+    "atoms": [
+      {
+        "claim": "INTC Revenue CAGR from 2021A to 2028E is -3.59%, using the full table's endpoints, including the forecast endpoint.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Independent Decimal ln/exp calculation: Revenue(2028E)=61178404560.0, Revenue(2021A)=79024000000.0; elapsed fiscal-year intervals=7; 100*(exp((ln(end)-ln(start))/n)-1)=-3.59048970696247516748754869539343424916870786289802467163390%. At the sentence's displayed precision the arithmetic agrees=True; asserted endpoint role/scope agrees=True. This is prompt-conditional arithmetic, not external verification of the financial inputs.",
+        "fact_key": "intc|revenue_cagr|2021a:2028e|-3.59|percent"
+      },
+      {
+        "claim": "INTC's 2028E Revenue endpoint is a model forecast.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "The original table is explicitly headed Financial Metrics and Forecasts; 2028E has the E estimate label, not an A actual label. This supports model/table forecast status only, not management guidance or realization.",
+        "fact_key": "intc|revenue_period_role|2028e|forecast|categorical"
+      }
+    ],
+    "section": "valuation_overview",
+    "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+  },
+  {
+    "source_unit_id": 3,
+    "source_text": "The supplied Revenue CAGR cell is -9.6%; the 2021A to 2025A actual endpoints imply -9.57% CAGR. ",
+    "calculation": {
+      "start": "2021A",
+      "end": "2025A",
+      "start_value": "79024000000.0",
+      "end_value": "52853000000.0",
+      "elapsed_years": 4,
+      "percent": "-9.56684999067733495820464007502425847458323068576429004806280",
+      "precision": 60,
+      "formula": "100 * (exp((ln(end_value) - ln(start_value)) / elapsed_years) - 1)",
+      "start_role": "actual",
+      "end_role": "actual"
+    },
+    "header_line": 4,
+    "revenue_line": 6,
+    "atoms": [
+      {
+        "claim": "INTC's supplied Revenue row displays a CAGR cell of -9.6%.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Literal original Revenue CAGR cell is -9.6%. This statement concerns the supplied cell, not an inferred statistical period.",
+        "fact_key": "intc|revenue_cagr_display_cell|generic|-9.6|percent"
+      },
+      {
+        "claim": "INTC Revenue CAGR from 2021A to 2025A is -9.57%, using actual endpoints.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Independent Decimal ln/exp calculation: Revenue(2025A)=52853000000.0, Revenue(2021A)=79024000000.0; elapsed fiscal-year intervals=4; 100*(exp((ln(end)-ln(start))/n)-1)=-9.56684999067733495820464007502425847458323068576429004806280%. At the sentence's displayed precision the arithmetic agrees=True; asserted endpoint role/scope agrees=True. This is prompt-conditional arithmetic, not external verification of the financial inputs.",
+        "fact_key": "intc|revenue_cagr|2021a:2025a|-9.57|percent"
+      }
+    ],
+    "section": "risks",
+    "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+  },
+  {
+    "source_unit_id": 4,
+    "source_text": "Across the table's 2021A to 2028E endpoints, the implied Revenue CAGR is -3.59%; 2028E is a model forecast.",
+    "calculation": {
+      "start": "2021A",
+      "end": "2028E",
+      "start_value": "79024000000.0",
+      "end_value": "61178404560.0",
+      "elapsed_years": 7,
+      "percent": "-3.59048970696247516748754869539343424916870786289802467163390",
+      "precision": 60,
+      "formula": "100 * (exp((ln(end_value) - ln(start_value)) / elapsed_years) - 1)",
+      "start_role": "actual",
+      "end_role": "forecast"
+    },
+    "header_line": 4,
+    "revenue_line": 6,
+    "atoms": [
+      {
+        "claim": "INTC Revenue CAGR from 2021A to 2028E is -3.59%, using the full table's endpoints, including the forecast endpoint.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Independent Decimal ln/exp calculation: Revenue(2028E)=61178404560.0, Revenue(2021A)=79024000000.0; elapsed fiscal-year intervals=7; 100*(exp((ln(end)-ln(start))/n)-1)=-3.59048970696247516748754869539343424916870786289802467163390%. At the sentence's displayed precision the arithmetic agrees=True; asserted endpoint role/scope agrees=True. This is prompt-conditional arithmetic, not external verification of the financial inputs.",
+        "fact_key": "intc|revenue_cagr|2021a:2028e|-3.59|percent"
+      },
+      {
+        "claim": "INTC's 2028E Revenue endpoint is a model forecast.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "The original table is explicitly headed Financial Metrics and Forecasts; 2028E has the E estimate label, not an A actual label. This supports model/table forecast status only, not management guidance or realization.",
+        "fact_key": "intc|revenue_period_role|2028e|forecast|categorical"
+      }
+    ],
+    "section": "risks",
+    "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+  }
+]

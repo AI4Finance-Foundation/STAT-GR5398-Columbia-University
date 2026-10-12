@@ -1,0 +1,377 @@
+{
+  "original_text": "Advanced Micro Devices, Inc. demonstrates robust revenue growth with a compound annual growth rate exceeding 20%, supported by expanding contribution margins reaching over 50%. The company maintains strong EBITDA margins, projected to rise to over 40%, reflecting efficient operational management despite increasing SG&A expenses. Valuation metrics indicate a premium positioning, underscoring confidence in AMD's solid financial fundamentals and market presence.",
+  "revised_text": "Advanced Micro Devices, Inc. demonstrates robust revenue growth with a compound annual growth rate of 20.5%.\n\n[UNVERIFIED - deterministic evidence/number check failed] supported by expanding contribution margins reaching over 50%\n\n[UNVERIFIED - deterministic evidence/number check failed] The company maintains strong EBITDA margins, projected to rise to over 40%, reflecting efficient operational management despite increasing SG&A expenses.\n\n[UNVERIFIED - evidence not supplied] The projected rise in EBITDA margin reflects efficient operational management despite increasing SG&A expenses.\n\n[UNVERIFIED - evidence not supplied] Valuation metrics indicate a premium positioning for AMD, underscoring confidence in its solid financial fundamentals and market presence.",
+  "claims": [
+    {
+      "claim_id": "u0c0",
+      "source_id": 0,
+      "source_start": 0,
+      "source_end": 112,
+      "source_quote_occurrences": 1,
+      "original_quote": "Advanced Micro Devices, Inc. demonstrates robust revenue growth with a compound annual growth rate exceeding 20%",
+      "claim": "Advanced Micro Devices, Inc. demonstrates robust revenue growth with a compound annual growth rate exceeding 20%.",
+      "classification": "Contradicted",
+      "evidence": [
+        {
+          "line_number": 6,
+          "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The CAGR for revenue is explicitly stated as 20.5%, which does not exceed 20% but is slightly above it. The claim should be corrected to match the evidenced value.",
+      "action": "correct",
+      "revised_claim": "Advanced Micro Devices, Inc. demonstrates robust revenue growth with a compound annual growth rate of 20.5%.",
+      "number_bindings": [
+        {
+          "claim_number": "20.5%",
+          "evidence_line": 6,
+          "evidence_number": "20.5%",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "20.5%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "Advanced Micro Devices, Inc. demonstrates robust revenue growth with a compound annual growth rate of 20.5%.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u0c1",
+      "source_id": 0,
+      "source_start": 114,
+      "source_end": 175,
+      "source_quote_occurrences": 1,
+      "original_quote": "supported by expanding contribution margins reaching over 50%",
+      "claim": "AMD's contribution margins are expanding and are projected to reach over 50%.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 10,
+          "quote": "|  4 | Contribution Margin | 48.2%             | 44.9%         | 46.1%             | 49.4%              | 49.5%             | 50.5%         | 51.5%         | 52.5%         | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The contribution margin is forecast to reach 52.5% in 2028E, which is over 50%.",
+      "action": "keep",
+      "revised_claim": "AMD's contribution margin is forecast to reach 52.5% in 2028E.",
+      "number_bindings": [
+        {
+          "claim_number": "52.5%",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "52.5%",
+          "evidence_line": 10,
+          "evidence_number": "52.5%",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "52.5%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "duplicate_number_binding",
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2028:missing_binding"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] supported by expanding contribution margins reaching over 50%",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u0c2",
+      "source_id": 0,
+      "source_start": 177,
+      "source_end": 330,
+      "source_quote_occurrences": 1,
+      "original_quote": "The company maintains strong EBITDA margins, projected to rise to over 40%, reflecting efficient operational management despite increasing SG&A expenses.",
+      "claim": "AMD's EBITDA margin is projected to rise to over 40%.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 12,
+          "quote": "|  6 | EBITDA Margin       | 25.3%             | 23.4%         | 18.3%             | 20.4%              | 21.0%             | 39.0%         | 40.5%         | 42.0%         | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "EBITDA margin is forecast to reach 42.0% in 2028E, which is over 40%.",
+      "action": "keep",
+      "revised_claim": "AMD's EBITDA margin is forecast to reach 42.0% in 2028E.",
+      "number_bindings": [
+        {
+          "claim_number": "42.0%",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "42.0%",
+          "evidence_line": 12,
+          "evidence_number": "42.0%",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "42.0%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "duplicate_number_binding",
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2028:missing_binding"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] The company maintains strong EBITDA margins, projected to rise to over 40%, reflecting efficient operational management despite increasing SG&A expenses.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u0c3",
+      "source_id": 0,
+      "source_start": 253,
+      "source_end": 330,
+      "source_quote_occurrences": 1,
+      "original_quote": "reflecting efficient operational management despite increasing SG&A expenses.",
+      "claim": "The projected rise in EBITDA margin reflects efficient operational management despite increasing SG&A expenses.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for the causal relationship between EBITDA margin rise and operational management or SG&A expense trends.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] The projected rise in EBITDA margin reflects efficient operational management despite increasing SG&A expenses.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u0c4",
+      "source_id": 0,
+      "source_start": 331,
+      "source_end": 463,
+      "source_quote_occurrences": 1,
+      "original_quote": "Valuation metrics indicate a premium positioning, underscoring confidence in AMD's solid financial fundamentals and market presence.",
+      "claim": "Valuation metrics indicate a premium positioning for AMD, underscoring confidence in its solid financial fundamentals and market presence.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for the interpretation of valuation metrics as premium positioning or the causal link to confidence in financial fundamentals and market presence.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Valuation metrics indicate a premium positioning for AMD, underscoring confidence in its solid financial fundamentals and market presence.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    }
+  ],
+  "units": [
+    {
+      "source_id": 0,
+      "claims": [
+        {
+          "original_quote": "Advanced Micro Devices, Inc. demonstrates robust revenue growth with a compound annual growth rate exceeding 20%",
+          "claim": "Advanced Micro Devices, Inc. demonstrates robust revenue growth with a compound annual growth rate exceeding 20%.",
+          "classification": "Contradicted",
+          "evidence": [
+            {
+              "line_number": 6
+            }
+          ],
+          "reason": "The CAGR for revenue is explicitly stated as 20.5%, which does not exceed 20% but is slightly above it. The claim should be corrected to match the evidenced value.",
+          "action": "correct",
+          "revised_claim": "Advanced Micro Devices, Inc. demonstrates robust revenue growth with a compound annual growth rate of 20.5%.",
+          "number_bindings": [
+            {
+              "claim_number": "20.5%",
+              "evidence_line": 6,
+              "evidence_number": "20.5%",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "supported by expanding contribution margins reaching over 50%",
+          "claim": "AMD's contribution margins are expanding and are projected to reach over 50%.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 10
+            }
+          ],
+          "reason": "The contribution margin is forecast to reach 52.5% in 2028E, which is over 50%.",
+          "action": "keep",
+          "revised_claim": "AMD's contribution margin is forecast to reach 52.5% in 2028E.",
+          "number_bindings": [
+            {
+              "claim_number": "52.5%",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "52.5%",
+              "evidence_line": 10,
+              "evidence_number": "52.5%",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "The company maintains strong EBITDA margins, projected to rise to over 40%, reflecting efficient operational management despite increasing SG&A expenses.",
+          "claim": "AMD's EBITDA margin is projected to rise to over 40%.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 12
+            }
+          ],
+          "reason": "EBITDA margin is forecast to reach 42.0% in 2028E, which is over 40%.",
+          "action": "keep",
+          "revised_claim": "AMD's EBITDA margin is forecast to reach 42.0% in 2028E.",
+          "number_bindings": [
+            {
+              "claim_number": "42.0%",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "42.0%",
+              "evidence_line": 12,
+              "evidence_number": "42.0%",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "reflecting efficient operational management despite increasing SG&A expenses.",
+          "claim": "The projected rise in EBITDA margin reflects efficient operational management despite increasing SG&A expenses.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for the causal relationship between EBITDA margin rise and operational management or SG&A expense trends.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Valuation metrics indicate a premium positioning, underscoring confidence in AMD's solid financial fundamentals and market presence.",
+          "claim": "Valuation metrics indicate a premium positioning for AMD, underscoring confidence in its solid financial fundamentals and market presence.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for the interpretation of valuation metrics as premium positioning or the causal link to confidence in financial fundamentals and market presence.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    }
+  ],
+  "verifier_version": "4-exact-nonfactual-connectors-and-gap-diagnostics",
+  "unquoted_nonfactual_connectors": [],
+  "deterministic_validation_failures": [
+    {
+      "claim_id": "u0c1",
+      "errors": [
+        "duplicate_number_binding",
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2028:missing_binding"
+      ],
+      "numeric_results": [
+        {
+          "token": "52.5%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u0c2",
+      "errors": [
+        "duplicate_number_binding",
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2028:missing_binding"
+      ],
+      "numeric_results": [
+        {
+          "token": "42.0%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ]
+    }
+  ],
+  "deterministic_failure_count": 2,
+  "verified_claim_count": 1,
+  "unverified_annotation_count": 4,
+  "withheld_claim_count": 0,
+  "claim_retention_rate": 1.0,
+  "supported_valid_retention_count": 0,
+  "automatic_year_binding_count": 0,
+  "limitations": "UNVERIFIED annotations preserve unsupported or deterministically rejected assertions for review and must not be counted as grounded facts. A claim's original machine classification is preserved even when deterministic checks reject it; retained_as_verified is then false. Rejected contradicted corrections remain in the audit but are withheld from the narrative. Semantic judgments are machine-assisted, not human-validated. Lexical quote coverage does not prove exhaustive semantic atomization. Exact numeric/year matches do not establish entity/period alignment or dimensional validity of conversions. Repeated source quotes may have ambiguous first-occurrence offsets."
+}

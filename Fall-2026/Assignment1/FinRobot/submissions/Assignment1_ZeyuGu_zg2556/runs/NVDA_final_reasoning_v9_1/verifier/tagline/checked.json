@@ -1,0 +1,1073 @@
+{
+  "original_text": "NVIDIA Corporation demonstrates robust financial fundamentals with a strong contribution margin consistently above 70% and a growing EBITDA margin reaching over 70% by 2029. The company maintains impressive revenue growth, achieving a CAGR of 68.3%, supported by disciplined cost management and improving SG&A efficiency. Valuation metrics indicate a premium yet justified positioning, reflecting NVIDIA's leadership in high-growth markets and solid profitability.",
+  "revised_text": "[UNVERIFIED - evidence not supplied] NVIDIA Corporation demonstrates robust financial fundamentals.\n\nNVIDIA's contribution margin is 72.7% in 2024A, 75.0% in 2025A, 71.1% in 2026A, 72.1% in 2027E, 73.1% in 2028E, and 74.1% in 2029E.\n\nNVIDIA's EBITDA margin is 70.5% in 2027E, 72.0% in 2028E, and 73.5% in 2029E.\n\nNVIDIA's EBITDA margin is 73.5% in 2029E.\n\n[UNVERIFIED - evidence not supplied] The company maintains impressive revenue growth.\n\nThe table lists a 68.3% CAGR for NVIDIA revenue.\n\n[UNVERIFIED - evidence not supplied] NVIDIA's revenue growth is supported by disciplined cost management.\n\n[UNVERIFIED - evidence not supplied] NVIDIA has improving SG&A efficiency.\n\n[UNVERIFIED - evidence not supplied] Valuation metrics indicate NVIDIA has a premium valuation positioning.\n\n[UNVERIFIED - evidence not supplied] NVIDIA's valuation positioning is justified.\n\n[UNVERIFIED - evidence not supplied] NVIDIA has leadership in high-growth markets.\n\n[UNVERIFIED - evidence not supplied] NVIDIA has solid profitability.",
+  "claims": [
+    {
+      "claim_id": "u0c0",
+      "source_id": 0,
+      "source_start": 0,
+      "source_end": 61,
+      "source_quote_occurrences": 1,
+      "original_quote": "NVIDIA Corporation demonstrates robust financial fundamentals",
+      "claim": "NVIDIA Corporation demonstrates robust financial fundamentals.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "This is a qualitative assessment and the supplied evidence does not define or directly establish 'robust financial fundamentals.'",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] NVIDIA Corporation demonstrates robust financial fundamentals.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4"
+    },
+    {
+      "claim_id": "u0c1",
+      "source_id": 0,
+      "source_start": 62,
+      "source_end": 118,
+      "source_quote_occurrences": 1,
+      "original_quote": "with a strong contribution margin consistently above 70%",
+      "claim": "NVIDIA's contribution margin is consistently above 70%.",
+      "classification": "Contradicted",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 10,
+          "quote": "|  4 | Contribution Margin | 64.9%             | 56.9%              | 72.7%             | 75.0%             | 71.1%             | 72.1%          | 73.1%          | 74.1%           | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The evidence shows contribution margin was 64.9% in 2022A and 56.9% in 2023A, so it was not consistently above 70%. The correction states the directly evidenced years in which contribution margin exceeds 70%.",
+      "action": "correct",
+      "revised_claim": "NVIDIA's contribution margin is 72.7% in 2024A, 75.0% in 2025A, 71.1% in 2026A, 72.1% in 2027E, 73.1% in 2028E, and 74.1% in 2029E.",
+      "number_bindings": [
+        {
+          "claim_number": "72.7%",
+          "evidence_line": 10,
+          "evidence_number": "72.7%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2024A",
+          "evidence_line": 4,
+          "evidence_number": "2024A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "75.0%",
+          "evidence_line": 10,
+          "evidence_number": "75.0%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2025A",
+          "evidence_line": 4,
+          "evidence_number": "2025A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "71.1%",
+          "evidence_line": 10,
+          "evidence_number": "71.1%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2026A",
+          "evidence_line": 4,
+          "evidence_number": "2026A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "72.1%",
+          "evidence_line": 10,
+          "evidence_number": "72.1%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2027E",
+          "evidence_line": 4,
+          "evidence_number": "2027E",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "73.1%",
+          "evidence_line": 10,
+          "evidence_number": "73.1%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028E",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "74.1%",
+          "evidence_line": 10,
+          "evidence_number": "74.1%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2029E",
+          "evidence_line": 4,
+          "evidence_number": "2029E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "72.7%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2024",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "75.0%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2025",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "71.1%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2026",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "72.1%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2027",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "73.1%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "74.1%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2029",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [
+        {
+          "original_binding": {
+            "claim_number": "2024A",
+            "evidence_line": 4,
+            "evidence_number": "2024A",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2024",
+            "evidence_line": 4,
+            "evidence_number": "2024",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+        },
+        {
+          "original_binding": {
+            "claim_number": "2025A",
+            "evidence_line": 4,
+            "evidence_number": "2025A",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2025",
+            "evidence_line": 4,
+            "evidence_number": "2025",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+        },
+        {
+          "original_binding": {
+            "claim_number": "2026A",
+            "evidence_line": 4,
+            "evidence_number": "2026A",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2026",
+            "evidence_line": 4,
+            "evidence_number": "2026",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+        },
+        {
+          "original_binding": {
+            "claim_number": "2027E",
+            "evidence_line": 4,
+            "evidence_number": "2027E",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2027",
+            "evidence_line": 4,
+            "evidence_number": "2027",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+        },
+        {
+          "original_binding": {
+            "claim_number": "2028E",
+            "evidence_line": 4,
+            "evidence_number": "2028E",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2028",
+            "evidence_line": 4,
+            "evidence_number": "2028",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+        },
+        {
+          "original_binding": {
+            "claim_number": "2029E",
+            "evidence_line": 4,
+            "evidence_number": "2029E",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2029",
+            "evidence_line": 4,
+            "evidence_number": "2029",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+        }
+      ],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "NVIDIA's contribution margin is 72.7% in 2024A, 75.0% in 2025A, 71.1% in 2026A, 72.1% in 2027E, 73.1% in 2028E, and 74.1% in 2029E.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4"
+    },
+    {
+      "claim_id": "u0c2",
+      "source_id": 0,
+      "source_start": 119,
+      "source_end": 146,
+      "source_quote_occurrences": 1,
+      "original_quote": "and a growing EBITDA margin",
+      "claim": "NVIDIA's EBITDA margin is growing.",
+      "classification": "Contradicted",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 12,
+          "quote": "|  6 | EBITDA Margin       | 42.2%             | 22.2%              | 58.4%             | 66.0%             | 66.9%             | 70.5%          | 72.0%          | 73.5%           | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The evidence does not show a uniformly growing EBITDA margin across the displayed periods because it declines from 42.2% in 2022A to 22.2% in 2023A. The correction states the directly evidenced forecast increases in later periods.",
+      "action": "correct",
+      "revised_claim": "NVIDIA's EBITDA margin is 70.5% in 2027E, 72.0% in 2028E, and 73.5% in 2029E.",
+      "number_bindings": [
+        {
+          "claim_number": "70.5%",
+          "evidence_line": 12,
+          "evidence_number": "70.5%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2027E",
+          "evidence_line": 4,
+          "evidence_number": "2027E",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "72.0%",
+          "evidence_line": 12,
+          "evidence_number": "72.0%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028E",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "73.5%",
+          "evidence_line": 12,
+          "evidence_number": "73.5%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2029E",
+          "evidence_line": 4,
+          "evidence_number": "2029E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "70.5%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2027",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "72.0%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "73.5%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2029",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [
+        {
+          "original_binding": {
+            "claim_number": "2027E",
+            "evidence_line": 4,
+            "evidence_number": "2027E",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2027",
+            "evidence_line": 4,
+            "evidence_number": "2027",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+        },
+        {
+          "original_binding": {
+            "claim_number": "2028E",
+            "evidence_line": 4,
+            "evidence_number": "2028E",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2028",
+            "evidence_line": 4,
+            "evidence_number": "2028",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+        },
+        {
+          "original_binding": {
+            "claim_number": "2029E",
+            "evidence_line": 4,
+            "evidence_number": "2029E",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2029",
+            "evidence_line": 4,
+            "evidence_number": "2029",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+        }
+      ],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "NVIDIA's EBITDA margin is 70.5% in 2027E, 72.0% in 2028E, and 73.5% in 2029E.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4"
+    },
+    {
+      "claim_id": "u0c3",
+      "source_id": 0,
+      "source_start": 147,
+      "source_end": 173,
+      "source_quote_occurrences": 1,
+      "original_quote": "reaching over 70% by 2029.",
+      "claim": "NVIDIA's EBITDA margin reaches over 70% by 2029.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 12,
+          "quote": "|  6 | EBITDA Margin       | 42.2%             | 22.2%              | 58.4%             | 66.0%             | 66.9%             | 70.5%          | 72.0%          | 73.5%           | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The evidence shows EBITDA margin of 73.5% in 2029E. The revision uses the directly evidenced value rather than a threshold formulation.",
+      "action": "correct",
+      "revised_claim": "NVIDIA's EBITDA margin is 73.5% in 2029E.",
+      "number_bindings": [
+        {
+          "claim_number": "73.5%",
+          "evidence_line": 12,
+          "evidence_number": "73.5%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2029E",
+          "evidence_line": 4,
+          "evidence_number": "2029E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "73.5%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2029",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [
+        {
+          "original_binding": {
+            "claim_number": "2029E",
+            "evidence_line": 4,
+            "evidence_number": "2029E",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2029",
+            "evidence_line": 4,
+            "evidence_number": "2029",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+        }
+      ],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "NVIDIA's EBITDA margin is 73.5% in 2029E.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4"
+    },
+    {
+      "claim_id": "u0c4",
+      "source_id": 0,
+      "source_start": 174,
+      "source_end": 221,
+      "source_quote_occurrences": 1,
+      "original_quote": "The company maintains impressive revenue growth",
+      "claim": "The company maintains impressive revenue growth.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "'Impressive' is a qualitative characterization not directly established by the supplied evidence.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] The company maintains impressive revenue growth.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4"
+    },
+    {
+      "claim_id": "u0c5",
+      "source_id": 0,
+      "source_start": 223,
+      "source_end": 248,
+      "source_quote_occurrences": 1,
+      "original_quote": "achieving a CAGR of 68.3%",
+      "claim": "NVIDIA achieves a CAGR of 68.3%.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 6,
+          "quote": "|  0 | Revenue             | 26914000000.0     | 26974000000.0      | 60922000000.0     | 130497000000.0    | 215938000000.0    | 226734900000.0 | 240338994000.0 | 249952553760.0  | 68.3%  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The revenue row in the table lists a CAGR of 68.3%.",
+      "action": "correct",
+      "revised_claim": "The table lists a 68.3% CAGR for NVIDIA revenue.",
+      "number_bindings": [
+        {
+          "claim_number": "68.3%",
+          "evidence_line": 6,
+          "evidence_number": "68.3%",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "68.3%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "The table lists a 68.3% CAGR for NVIDIA revenue.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4"
+    },
+    {
+      "claim_id": "u0c6",
+      "source_id": 0,
+      "source_start": 250,
+      "source_end": 290,
+      "source_quote_occurrences": 1,
+      "original_quote": "supported by disciplined cost management",
+      "claim": "NVIDIA's revenue growth is supported by disciplined cost management.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The supplied evidence provides financial figures but does not directly establish this causal explanation or the characterization of management discipline.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] NVIDIA's revenue growth is supported by disciplined cost management.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4"
+    },
+    {
+      "claim_id": "u0c7",
+      "source_id": 0,
+      "source_start": 291,
+      "source_end": 321,
+      "source_quote_occurrences": 1,
+      "original_quote": "and improving SG&A efficiency.",
+      "claim": "NVIDIA has improving SG&A efficiency.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The evidence includes SG&A and SG&A margin figures, but it does not directly establish 'efficiency' as such. The protocol does not allow treating this qualitative operational explanation as supported solely from the table.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] NVIDIA has improving SG&A efficiency.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4"
+    },
+    {
+      "claim_id": "u0c8",
+      "source_id": 0,
+      "source_start": 322,
+      "source_end": 358,
+      "source_quote_occurrences": 1,
+      "original_quote": "Valuation metrics indicate a premium",
+      "claim": "Valuation metrics indicate NVIDIA has a premium valuation positioning.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The supplied evidence does not directly establish a premium valuation positioning on a comparable basis across peers and metrics.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Valuation metrics indicate NVIDIA has a premium valuation positioning.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4"
+    },
+    {
+      "claim_id": "u0c9",
+      "source_id": 0,
+      "source_start": 359,
+      "source_end": 384,
+      "source_quote_occurrences": 1,
+      "original_quote": "yet justified positioning",
+      "claim": "NVIDIA's valuation positioning is justified.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The evidence does not directly establish that any valuation level is justified.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] NVIDIA's valuation positioning is justified.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4"
+    },
+    {
+      "claim_id": "u0c10",
+      "source_id": 0,
+      "source_start": 386,
+      "source_end": 439,
+      "source_quote_occurrences": 1,
+      "original_quote": "reflecting NVIDIA's leadership in high-growth markets",
+      "claim": "NVIDIA has leadership in high-growth markets.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The supplied evidence does not provide direct support for leadership or for the company's market exposure being 'high-growth markets.'",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] NVIDIA has leadership in high-growth markets.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4"
+    },
+    {
+      "claim_id": "u0c11",
+      "source_id": 0,
+      "source_start": 440,
+      "source_end": 464,
+      "source_quote_occurrences": 1,
+      "original_quote": "and solid profitability.",
+      "claim": "NVIDIA has solid profitability.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "This is a qualitative characterization not directly established by the supplied evidence.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] NVIDIA has solid profitability.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4"
+    }
+  ],
+  "units": [
+    {
+      "source_id": 0,
+      "claims": [
+        {
+          "original_quote": "NVIDIA Corporation demonstrates robust financial fundamentals",
+          "claim": "NVIDIA Corporation demonstrates robust financial fundamentals.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "This is a qualitative assessment and the supplied evidence does not define or directly establish 'robust financial fundamentals.'",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "with a strong contribution margin consistently above 70%",
+          "claim": "NVIDIA's contribution margin is consistently above 70%.",
+          "classification": "Contradicted",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 10
+            }
+          ],
+          "reason": "The evidence shows contribution margin was 64.9% in 2022A and 56.9% in 2023A, so it was not consistently above 70%. The correction states the directly evidenced years in which contribution margin exceeds 70%.",
+          "action": "correct",
+          "revised_claim": "NVIDIA's contribution margin is 72.7% in 2024A, 75.0% in 2025A, 71.1% in 2026A, 72.1% in 2027E, 73.1% in 2028E, and 74.1% in 2029E.",
+          "number_bindings": [
+            {
+              "claim_number": "72.7%",
+              "evidence_line": 10,
+              "evidence_number": "72.7%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2024A",
+              "evidence_line": 4,
+              "evidence_number": "2024A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "75.0%",
+              "evidence_line": 10,
+              "evidence_number": "75.0%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2025A",
+              "evidence_line": 4,
+              "evidence_number": "2025A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "71.1%",
+              "evidence_line": 10,
+              "evidence_number": "71.1%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2026A",
+              "evidence_line": 4,
+              "evidence_number": "2026A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "72.1%",
+              "evidence_line": 10,
+              "evidence_number": "72.1%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2027E",
+              "evidence_line": 4,
+              "evidence_number": "2027E",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "73.1%",
+              "evidence_line": 10,
+              "evidence_number": "73.1%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028E",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "74.1%",
+              "evidence_line": 10,
+              "evidence_number": "74.1%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2029E",
+              "evidence_line": 4,
+              "evidence_number": "2029E",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "and a growing EBITDA margin",
+          "claim": "NVIDIA's EBITDA margin is growing.",
+          "classification": "Contradicted",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 12
+            }
+          ],
+          "reason": "The evidence does not show a uniformly growing EBITDA margin across the displayed periods because it declines from 42.2% in 2022A to 22.2% in 2023A. The correction states the directly evidenced forecast increases in later periods.",
+          "action": "correct",
+          "revised_claim": "NVIDIA's EBITDA margin is 70.5% in 2027E, 72.0% in 2028E, and 73.5% in 2029E.",
+          "number_bindings": [
+            {
+              "claim_number": "70.5%",
+              "evidence_line": 12,
+              "evidence_number": "70.5%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2027E",
+              "evidence_line": 4,
+              "evidence_number": "2027E",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "72.0%",
+              "evidence_line": 12,
+              "evidence_number": "72.0%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028E",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "73.5%",
+              "evidence_line": 12,
+              "evidence_number": "73.5%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2029E",
+              "evidence_line": 4,
+              "evidence_number": "2029E",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "reaching over 70% by 2029.",
+          "claim": "NVIDIA's EBITDA margin reaches over 70% by 2029.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 12
+            }
+          ],
+          "reason": "The evidence shows EBITDA margin of 73.5% in 2029E. The revision uses the directly evidenced value rather than a threshold formulation.",
+          "action": "correct",
+          "revised_claim": "NVIDIA's EBITDA margin is 73.5% in 2029E.",
+          "number_bindings": [
+            {
+              "claim_number": "73.5%",
+              "evidence_line": 12,
+              "evidence_number": "73.5%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2029E",
+              "evidence_line": 4,
+              "evidence_number": "2029E",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "The company maintains impressive revenue growth",
+          "claim": "The company maintains impressive revenue growth.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "'Impressive' is a qualitative characterization not directly established by the supplied evidence.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "achieving a CAGR of 68.3%",
+          "claim": "NVIDIA achieves a CAGR of 68.3%.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 6
+            }
+          ],
+          "reason": "The revenue row in the table lists a CAGR of 68.3%.",
+          "action": "correct",
+          "revised_claim": "The table lists a 68.3% CAGR for NVIDIA revenue.",
+          "number_bindings": [
+            {
+              "claim_number": "68.3%",
+              "evidence_line": 6,
+              "evidence_number": "68.3%",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "supported by disciplined cost management",
+          "claim": "NVIDIA's revenue growth is supported by disciplined cost management.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The supplied evidence provides financial figures but does not directly establish this causal explanation or the characterization of management discipline.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "and improving SG&A efficiency.",
+          "claim": "NVIDIA has improving SG&A efficiency.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The evidence includes SG&A and SG&A margin figures, but it does not directly establish 'efficiency' as such. The protocol does not allow treating this qualitative operational explanation as supported solely from the table.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Valuation metrics indicate a premium",
+          "claim": "Valuation metrics indicate NVIDIA has a premium valuation positioning.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The supplied evidence does not directly establish a premium valuation positioning on a comparable basis across peers and metrics.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "yet justified positioning",
+          "claim": "NVIDIA's valuation positioning is justified.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The evidence does not directly establish that any valuation level is justified.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "reflecting NVIDIA's leadership in high-growth markets",
+          "claim": "NVIDIA has leadership in high-growth markets.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The supplied evidence does not provide direct support for leadership or for the company's market exposure being 'high-growth markets.'",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "and solid profitability.",
+          "claim": "NVIDIA has solid profitability.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "This is a qualitative characterization not directly established by the supplied evidence.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    }
+  ],
+  "verifier_version": "9.1-explicit-actual-ev-ebitda-range",
+  "release_deduplication": "Identical complete released strings appear once per section; all original claim rows and mappings remain. This is not semantic paraphrase deduplication.",
+  "unquoted_nonfactual_connectors": [],
+  "deterministic_validation_failures": [],
+  "deterministic_failure_count": 0,
+  "verified_claim_count": 4,
+  "unverified_annotation_count": 8,
+  "withheld_claim_count": 0,
+  "claim_retention_rate": 1.0,
+  "supported_valid_retention_count": 2,
+  "automatic_year_binding_count": 0,
+  "limitations": "UNVERIFIED annotations preserve unsupported or deterministically rejected assertions for review and must not be counted as grounded facts. A claim's original machine classification is preserved even when deterministic checks reject it; retained_as_verified is then false. Rejected contradicted corrections remain in the audit but are withheld from the narrative. Semantic judgments are machine-assisted, not human-validated. Lexical quote coverage does not prove exhaustive semantic atomization. Exact numeric/year matches do not establish entity/period alignment or dimensional validity of conversions. Repeated source quotes may have ambiguous first-occurrence offsets. V9 additionally clarifies a narrowly recognized displayed Revenue CAGR using explicit original-prompt endpoints; historical and forecast intervals are separated. Original machine classifications and failed binding diagnostics remain unchanged for traceability. V9.1 replaces only isolated, identified EV/EBITDA range sentences with explicitly scoped supplied-actual-row extrema. It retains prior paid claims, evidence, labels and number-check failures; the development probe is not an independent accuracy score.",
+  "semantic_horizon_check_count": 0,
+  "ev_ebitda_range_check_count": 0
+}

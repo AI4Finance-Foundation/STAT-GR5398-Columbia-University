@@ -1,0 +1,148 @@
+{
+  "results": [
+    {
+      "method": "EV/EBITDA",
+      "target_price": 319.75336479813757,
+      "low_estimate": 265.5827962963514,
+      "high_estimate": 373.9239332999237,
+      "assumptions": {
+        "EBITDA": 241072305714.24,
+        "EBITDA Period": "2028E",
+        "EBITDA Source": "analysis last A/E column",
+        "Target Multiple": 17.835547045130717,
+        "Historical Avg Multiple": 17.835547045130717,
+        "Historical Multiple Sample Std": 2.7194258025291607,
+        "Multiple Source": "key_metrics.enterpriseValueOverEBITDA sample mean",
+        "Enterprise Value": 4299656449844.462,
+        "Net Debt": 429965644984.4462,
+        "Equity Value": 3869690804860.0156,
+        "Range Debt Treatment": "hold base-case assumed net debt fixed across low/high multiples",
+        "Discount Rate": null,
+        "Terminal Growth": null,
+        "Shares Outstanding": 12102111286.0,
+        "Shares Source": "caller input",
+        "Net Debt Source": "ASSUMPTION: 10% of model enterprise value; not observed balance-sheet debt",
+        "Net Debt Fraction": 0.1,
+        "Price Floor": 0,
+        "Current Price": 351.66
+      },
+      "confidence": 0.7,
+      "description": "Based on 17.8x EV/EBITDA multiple"
+    },
+    {
+      "method": "Peer Comparison",
+      "target_price": 523.4783553710415,
+      "low_estimate": 479.07294217395037,
+      "high_estimate": 567.8837685681327,
+      "assumptions": {
+        "Peer Avg Multiple": 29.199138655576235,
+        "Peer Range": "27.0x - 31.4x",
+        "Number of Peers": 2,
+        "EBITDA": 241072305714.24,
+        "EBITDA Period": "2028E",
+        "Net Debt": 703910368056.9557,
+        "Peer Multiples": [
+          26.969935053694947,
+          31.428342257457523
+        ],
+        "Range Debt Treatment": "hold base-case assumed net debt fixed across peer multiples",
+        "Shares Outstanding": 12102111286.0,
+        "Shares Source": "caller input",
+        "Net Debt Source": "ASSUMPTION: 10% of model enterprise value; not observed balance-sheet debt",
+        "Net Debt Fraction": 0.1,
+        "Price Floor": 0,
+        "Current Price": 351.66
+      },
+      "confidence": 0.6,
+      "description": "Based on 2 peer companies"
+    },
+    {
+      "method": "DCF",
+      "target_price": 109.99906141933253,
+      "low_estimate": 104.32590940439475,
+      "high_estimate": 116.2689201730388,
+      "assumptions": {
+        "growth_rate_1_5": 0.1,
+        "growth_rate_6_10": 0.05,
+        "terminal_growth": 0.025,
+        "wacc": 0.1,
+        "projection_years": 10,
+        "Base FCF": 73266000000.0,
+        "FCF Source": "caller free_cash_flow",
+        "FCF Period": "2025-12-31 00:00:00",
+        "PV Explicit FCF": 685632081166.4473,
+        "Terminal Value": 2058140433635.3025,
+        "PV Terminal Value": 793502232891.6768,
+        "Enterprise Value": 1479134314058.124,
+        "Net Debt": 147913431405.8124,
+        "Equity Value": 1331220882652.3115,
+        "Range Calculation": "only terminal discount denominator varies by WACC +/-1pp; explicit PV, terminal value and debt remain fixed",
+        "Shares Outstanding": 12102111286.0,
+        "Shares Source": "caller input",
+        "Net Debt Source": "ASSUMPTION: 10% of model enterprise value; not observed balance-sheet debt",
+        "Net Debt Fraction": 0.1,
+        "Price Floor": 0,
+        "Current Price": 351.66
+      },
+      "confidence": 0.5,
+      "description": "Based on 10.0% WACC"
+    }
+  ],
+  "football_field": {
+    "EV/EBITDA": {
+      "low": 265.5827962963514,
+      "mid": 319.75336479813757,
+      "high": 373.9239332999237
+    },
+    "Peer Comparison": {
+      "low": 479.07294217395037,
+      "mid": 523.4783553710415,
+      "high": 567.8837685681327
+    },
+    "DCF": {
+      "low": 104.32590940439475,
+      "mid": 109.99906141933253,
+      "high": 116.2689201730388
+    },
+    "current_price": 351.66
+  },
+  "synthesis": {
+    "target_price": 329.39661071721525,
+    "range": [
+      104.32590940439475,
+      567.8837685681327
+    ],
+    "methods_used": 3,
+    "current_price": 351.66,
+    "upside": -6.330941614850927,
+    "individual_results": [
+      {
+        "method": "EV/EBITDA",
+        "target": 319.75336479813757,
+        "range": [
+          265.5827962963514,
+          373.9239332999237
+        ],
+        "confidence": 0.7
+      },
+      {
+        "method": "Peer Comparison",
+        "target": 523.4783553710415,
+        "range": [
+          479.07294217395037,
+          567.8837685681327
+        ],
+        "confidence": 0.6
+      },
+      {
+        "method": "DCF",
+        "target": 109.99906141933253,
+        "range": [
+          104.32590940439475,
+          116.2689201730388
+        ],
+        "confidence": 0.5
+      }
+    ]
+  }
+}

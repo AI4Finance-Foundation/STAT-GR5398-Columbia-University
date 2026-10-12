@@ -1,0 +1,74 @@
+{
+  "writer_target_price": {
+    "status": "N/A: no explicit per-share target in any writer run"
+  },
+  "writer_rating_variance": {
+    "status": "N/A: only one run has a unique standard rating; do not report one-observation zero variance"
+  },
+  "writer_rating_labels": [
+    "not_stated",
+    "conditional_hold_or_increase",
+    "overweight"
+  ],
+  "fmp_target_price": {
+    "observed_n": 3,
+    "missing_n": 0,
+    "mean": 339.17,
+    "sample_variance": 0.0,
+    "minimum": 339.17,
+    "maximum": 339.17,
+    "complete_three_run_measure": true
+  },
+  "fmp_interpretation": "Frozen provider input; zero variance provides no evidence of LLM stability.",
+  "risk_lists": [
+    [
+      "demand_cyclicality",
+      "macro_currency",
+      "competition"
+    ],
+    [
+      "demand_cyclicality",
+      "revenue_concentration",
+      "export_controls_geopolitics"
+    ],
+    [
+      "demand_cyclicality",
+      "revenue_concentration",
+      "supply_capacity"
+    ]
+  ],
+  "risk_pairs": [
+    {
+      "run_a": "NVDA_baseline_1",
+      "run_b": "NVDA_baseline_2",
+      "risk_jaccard": 0.2,
+      "kendall_tau_shared": "N/A",
+      "shared_categories": "[\"demand_cyclicality\"]",
+      "rank_basis": "First substantive textual mention; fixed taxonomy order for within-sentence ties. Not importance ranking."
+    },
+    {
+      "run_a": "NVDA_baseline_1",
+      "run_b": "NVDA_baseline_3",
+      "risk_jaccard": 0.2,
+      "kendall_tau_shared": "N/A",
+      "shared_categories": "[\"demand_cyclicality\"]",
+      "rank_basis": "First substantive textual mention; fixed taxonomy order for within-sentence ties. Not importance ranking."
+    },
+    {
+      "run_a": "NVDA_baseline_2",
+      "run_b": "NVDA_baseline_3",
+      "risk_jaccard": 0.5,
+      "kendall_tau_shared": 1.0,
+      "shared_categories": "[\"demand_cyclicality\", \"revenue_concentration\"]",
+      "rank_basis": "First substantive textual mention; fixed taxonomy order for within-sentence ties. Not importance ranking."
+    }
+  ],
+  "generation_count": 3,
+  "independent_writer_calls": 24,
+  "classification_method": "Explicit Codex-assisted reading of all risk units and recommendation passages; not human validation.",
+  "adjudication_api_cost_usd": null,
+  "adjudication_tokens": null,
+  "adjudication_runtime_seconds": null,
+  "accounting_note": "Codex authoring usage is not instrumented by direct API ledger. Legacy API extraction failures are preserved and charged in the global ledger.",
+  "limitations": "Three draws are a small sample. Risk taxonomy is subjective, segment concentration is not customer concentration, first mention is not importance, within-sentence ties use arbitrary fixed taxonomy order. Category overlap can hide differences in detailed exposures. Explicit labels alone do not exhaust implicit sentiment."
+}

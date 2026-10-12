@@ -1,0 +1,33 @@
+{
+  "derived_at_utc": "2026-10-11T23:34:40.732519+00:00",
+  "source_run": "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\runs\\AAPL_final_v7",
+  "source_directory": "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\runs\\AAPL_final_v7\\verifier\\major_takeaways",
+  "source_call_id": "AAPL_final_v7/verifier/major_takeaways/attempt_003",
+  "original_sha256": "672017ff381ee8de906206812cd18cd52a2ebb24aaa5fa51f9cc4f1dd2690299",
+  "evidence_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679",
+  "copied_file_hashes": {
+    "request.json": "ca5c3ff1b1cfa232b6e1201b88729d5abccba93ee4a88fe25a9b485562caf880",
+    "response.json": "a132d06457857fc721d4050b529696527b7f9bfa921eacafacd7b06f77426253",
+    "wire_request.json": "078142408a96be6376d05601d9a486d2d68b9acb26a6d77a1404147e162c7e9a",
+    "wire_response.json": "e348cfb410e70a99b3332a5b76603d3e13c22a6cc7efde3602e68034385d21ed",
+    "http_response.json": "5de3ffcd52ff98b15d2b66cacb4def2974dcc89416c90efb068cf39d99015836",
+    "prompt.txt": "c1034150b56db6193726194cffee7b23a145d1dee1b4f44f70f8f34cd794d8da",
+    "instructions.txt": "98de5c7ddf3e74875884ef942d52056c7d86d4732a7141ed0fa3b9129c84cf3f"
+  },
+  "preceding_candidates": [
+    {
+      "directory": "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\runs\\AAPL_final_v7\\attempt_history\\verifier\\major_takeaways\\attempt_001",
+      "new_validator_error": "Verifier omitted text within source unit 0: ['. This growth is driven by a rebound in product demand and expanded service offerings, ']",
+      "response_sha256": "fb5d9ef0c67171fef7ead56aa4e612cac50724df2e65887663ae89798ad45876"
+    },
+    {
+      "directory": "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\runs\\AAPL_final_v7\\attempt_history\\verifier\\major_takeaways\\attempt_002",
+      "new_validator_error": "Verifier omitted text within source unit 2: [', indicating improved operating leverage and disciplined expense management. ']",
+      "response_sha256": "4511895cfd766623e307ec8f1506e64b0d5e04345563fde4fb933966cc5c819f"
+    }
+  ],
+  "selection_rule": "Earliest saved wire-confirmed review passing new deterministic validator.",
+  "new_model_generation": false,
+  "incremental_model_cost_usd": 0,
+  "cost_note": "The historical call is billed once in global ledger; copied response retains actual source usage/cost, not a second charge."
+}

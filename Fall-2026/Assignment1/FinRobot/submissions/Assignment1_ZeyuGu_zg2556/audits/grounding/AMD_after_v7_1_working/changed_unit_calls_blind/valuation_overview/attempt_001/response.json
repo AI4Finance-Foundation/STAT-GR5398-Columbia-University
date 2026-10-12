@@ -1,0 +1,53 @@
+{
+  "call_id": "AMD_v7_1_changed_audit_blind/valuation_overview/1",
+  "structured_output": {
+    "units": [
+      {
+        "unit_id": 5,
+        "claims": [
+          {
+            "claim": "The high valuation multiples reflect market recognition of AMD's growth potential and competitive position in the semiconductor sector.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence provides AMD's valuation multiples (e.g., PE Ratio, EV/EBITDA) but does not establish that these are due to market recognition of growth potential and competitive position. No direct causal link or market sentiment analysis is present in the evidence.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|valuation_multiples|causal|market_recognition_growth_potential|not_numeric"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 11,
+        "claims": [
+          {
+            "claim": "The historically high valuation levels suggest caution, as the valuation incorporates significant optimism about sustained growth and margin expansion.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence shows high valuation levels for AMD (e.g., PE Ratio, EV/EBITDA), but does not establish that these levels suggest caution or that they incorporate significant optimism about sustained growth and margin expansion. No explicit analysis or commentary in the evidence supports this causal interpretation.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|valuation_levels|historically_high|suggest_caution_optimism_growth_margin|not_numeric"
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "usage": {
+    "requests": 1,
+    "input_tokens": 2912,
+    "input_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "output_tokens": 281,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 3193
+  },
+  "runtime_seconds": 1.5289943000025232,
+  "cost_usd": 0.008072,
+  "completed_at_utc": "2026-10-11T23:38:16.539023+00:00",
+  "attempts": 1
+}

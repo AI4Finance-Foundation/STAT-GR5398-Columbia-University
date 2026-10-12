@@ -1,0 +1,1042 @@
+{
+  "tagline": {
+    "selected_attempt": "audits\\grounding\\INTC_after_v7_1_working\\changed_unit_calls\\tagline\\attempt_001",
+    "response_sha256": "23f046230122622d232598778a3f1fa302799f8c7d7b2447d119cde6ea8f128e",
+    "units": [
+      {
+        "unit_id": 0,
+        "claims": [
+          {
+            "claim": "Intel Corporation demonstrates robust contribution margins.",
+            "claim_type": "qualitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 10,
+                "line_end": 10
+              }
+            ],
+            "reason": "The table in line 10 shows Intel's contribution margin for 2021A-2028E, with actuals of 55.4% (2021A), 42.6% (2022A), and 40.0% (2023A). These are relatively high margins, supporting the qualitative claim of 'robust' contribution margins.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel corporation|contribution margin|2021A-2023A|robust"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 1,
+        "claims": [
+          {
+            "claim": "Intel Corporation maintains a significant EBITDA presence despite recent revenue declines.",
+            "claim_type": "causal",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 6,
+                "line_end": 6
+              },
+              {
+                "line_start": 11,
+                "line_end": 11
+              }
+            ],
+            "reason": "The revenue row (line 6) shows a decline from $79.0B (2021A) to $54.2B (2023A). The EBITDA row (line 11) shows Intel's EBITDA remains substantial: $33.9B (2021A), $21.3B (2022A), $11.2B (2023A). This supports the claim that Intel maintains a significant EBITDA presence despite revenue declines.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel corporation|ebitda presence despite revenue declines|2021A-2023A|significant"
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "company_overview": {
+    "selected_attempt": "audits\\grounding\\INTC_after_v7_1_working\\changed_unit_calls\\company_overview\\attempt_001",
+    "response_sha256": "63506c1a500e1779a24887130efd5a411daed854fcf5dab0996f159d2d3196c6",
+    "units": [
+      {
+        "unit_id": 2,
+        "claims": [
+          {
+            "claim": "Intel holds a significant position within the global semiconductor industry, servicing a diverse customer base that includes OEMs, cloud service providers, and enterprise customers across North America, Europe, and Asia.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The unit is explicitly marked as [UNVERIFIED - evidence not supplied], and there is no supporting evidence in the original writer evidence lines for Intel's industry position or customer base.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|industry_position_and_customer_base|unspecified|significant|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 5,
+        "claims": [
+          {
+            "claim": "Intel's revenue streams derive from product sales across several segments, including Client Computing, Data Center, Internet of Things, and Mobileye for autonomous driving technologies.",
+            "claim_type": "factual",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is provided in the original writer evidence lines about the specific revenue segments or the inclusion of Mobileye. The financial tables do not break down revenue by segment.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|revenue_segments|unspecified|client_computing_data_center_iot_mobileye|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 9,
+        "claims": [
+          {
+            "claim": "In 2023, the Client Computing segment contributed the largest share of Intel's revenue, followed by Data Center and other growth areas.",
+            "claim_type": "factual",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The unit is explicitly marked as [UNVERIFIED - evidence not supplied], and there is no segment revenue breakdown in the original writer evidence lines or tables for 2023.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|largest_revenue_segment|2023|client_computing|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 10,
+        "claims": [
+          {
+            "claim": "Intel has experienced recent revenue declines compared to prior years.",
+            "claim_type": "qualitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 6,
+                "line_end": 6
+              }
+            ],
+            "reason": "The financial metrics table shows a decline in revenue from 2021A ($79,024,000,000) to 2022A ($63,054,000,000) and 2023A ($54,228,000,000), supporting the claim of recent revenue declines compared to prior years.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|revenue_trend|recent_years|decline|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 11,
+        "claims": [
+          {
+            "claim": "Intel is investing heavily in new product development and capacity expansion, including next-generation processors and chip packaging technologies.",
+            "claim_type": "factual",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The unit is explicitly marked as [UNVERIFIED - evidence not supplied], and there is no evidence in the original writer evidence lines about Intel's investments in product development or capacity expansion.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|investment_focus|unspecified|product_development_capacity_expansion|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 12,
+        "claims": [
+          {
+            "claim": "The company is focusing on high-growth markets such as artificial intelligence, autonomous vehicles, and 5G infrastructure.",
+            "claim_type": "factual",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The unit is explicitly marked as [UNVERIFIED - evidence not supplied], and there is no evidence in the original writer evidence lines about Intel's focus on these markets.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|market_focus|unspecified|ai_autonomous_vehicles_5g|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 13,
+        "claims": [
+          {
+            "claim": "Intel was founded in 1968.",
+            "claim_type": "factual",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The unit is explicitly marked as [UNVERIFIED - evidence not supplied], and there is no evidence in the original writer evidence lines about Intel's founding year.",
+            "numeric_status": "unverifiable",
+            "fact_key": "intel|founding_year|1968|1968|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 14,
+        "claims": [
+          {
+            "claim": "Intel has evolved through numerous strategic milestones, including pioneering microprocessor development, expanding into data center technologies, and recent acquisitions to bolster its capabilities in AI and autonomous driving.",
+            "claim_type": "factual",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The unit is explicitly marked as [UNVERIFIED - evidence not supplied], and there is no evidence in the original writer evidence lines about Intel's strategic milestones or acquisitions.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|strategic_milestones|unspecified|microprocessor_data_center_ai_autonomous|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 15,
+        "claims": [
+          {
+            "claim": "Pat Gelsinger is the current CEO of Intel and returned to lead the company in early 2021.",
+            "claim_type": "factual",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The unit is explicitly marked as [UNVERIFIED - evidence not supplied], and there is no evidence in the original writer evidence lines about Pat Gelsinger's role or return date.",
+            "numeric_status": "unverifiable",
+            "fact_key": "intel|ceo|2021|pat_gelsinger|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 16,
+        "claims": [
+          {
+            "claim": "Under Pat Gelsinger's leadership, Intel has refocused on manufacturing excellence and technology innovation.",
+            "claim_type": "factual",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The unit is explicitly marked as [UNVERIFIED - evidence not supplied], and there is no evidence in the original writer evidence lines about Intel's strategic focus under Pat Gelsinger.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|leadership_focus|2021_onward|manufacturing_technology|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 22,
+        "claims": [
+          {
+            "claim": "AMD and NVIDIA have gained market share in high-performance computing and graphics processing units.",
+            "claim_type": "factual",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The unit is explicitly marked as [UNVERIFIED - evidence not supplied], and there is no evidence in the original writer evidence lines about AMD and NVIDIA's market share gains.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd_nvidia|market_share_gain|unspecified|high_performance_computing_gpus|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 24,
+        "claims": [
+          {
+            "claim": "The semiconductor industry is characterized by rapid technological innovation, cyclical demand, and significant capital expenditure requirements.",
+            "claim_type": "factual",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The unit is explicitly marked as [UNVERIFIED - evidence not supplied], and there is no evidence in the original writer evidence lines about these industry characteristics.",
+            "numeric_status": "not_numeric",
+            "fact_key": "semiconductor_industry|characteristics|unspecified|innovation_cyclicality_capex|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 25,
+        "claims": [
+          {
+            "claim": "These industry characteristics shape Intel’s strategic priorities and financial performance.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The unit is explicitly marked as [UNVERIFIED - evidence not supplied], and there is no evidence in the original writer evidence lines linking industry characteristics to Intel's strategy or performance.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|industry_characteristics_impact|unspecified|strategy_financial_performance|not_applicable"
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "investment_overview": {
+    "selected_attempt": "audits\\grounding\\INTC_after_v7_1_working\\changed_unit_calls\\investment_overview\\attempt_001",
+    "response_sha256": "b44d04db0372acbf0cd575245c368a94cfab27ace539b056203217de1a6ace87",
+    "units": [
+      {
+        "unit_id": 14,
+        "claims": [
+          {
+            "claim": "The non-GAAP EPS of $0.42 in Q2 2026 suggests underlying operations are improving.",
+            "claim_type": "causal",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 46,
+                "line_end": 46
+              }
+            ],
+            "reason": "The news summary in line 46 states 'non-GAAP EPS attributable to Intel was $0.42' for Q2 2026, supporting the factual premise of the non-GAAP EPS value. The causal interpretation ('suggests underlying operations are improving') is an opinion, but the factual premise about the EPS value is supported.",
+            "numeric_status": "correct",
+            "fact_key": "intel|non-gaap eps|q2 2026|0.42|usd"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 19,
+        "claims": [
+          {
+            "claim": "Intel's recent quarter’s revenue growth is a positive development.",
+            "claim_type": "qualitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 45,
+                "line_end": 45
+              }
+            ],
+            "reason": "Line 45 states 'Second-quarter revenue was $16.1 billion, up 25% year-over-year (YoY),' supporting the factual premise of revenue growth in the recent quarter. The 'positive development' is an opinion, but the factual premise of revenue growth is supported.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|revenue growth|q2 2026|25% yoy|usd"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 23,
+        "claims": [
+          {
+            "claim": "Persistent GAAP losses and a historically negative EPS outlook through 2028 temper enthusiasm.",
+            "claim_type": "factual",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 15,
+                "line_end": 15
+              }
+            ],
+            "reason": "The table in line 15 shows negative EPS values for 2024A, 2025A, 2026E, 2027E, and 2028E, supporting the claim of a historically negative EPS outlook through 2028. The word 'persistent' is supported by the consecutive negative values. The phrase 'temper enthusiasm' is an opinion, but the factual premise is supported.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|eps outlook|2024a-2028e|negative|usd"
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "valuation_overview": {
+    "selected_attempt": "audits\\grounding\\INTC_after_v7_1_working\\changed_unit_calls\\valuation_overview\\attempt_001",
+    "response_sha256": "5cd48d5eae2151515477b196000ad374d00a941c97b1ec5ae7d44106219d1e02",
+    "units": [
+      {
+        "unit_id": 0,
+        "claims": [
+          {
+            "claim": "Intel Corporation's current valuation is influenced by operational challenges and changing market dynamics.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is supplied in the original writer evidence to support the claim that Intel's current valuation is influenced by operational challenges and changing market dynamics. The financial tables and news do not attribute valuation changes to these specific causes.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel corporation|valuation|current|influenced by operational challenges and changing market dynamics|causal"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 2,
+        "claims": [
+          {
+            "claim": "The volatility in Intel's PE ratio reflects severe earnings pressure amid revenue declines and margin compression.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "While the PE ratio values and revenue/margin data are present, the causal link that the volatility in PE ratio 'reflects' severe earnings pressure amid revenue declines and margin compression is not established by the evidence. The evidence does not explicitly connect these factors as cause and effect.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel corporation|pe ratio volatility|unspecified|reflects severe earnings pressure amid revenue declines and margin compression|causal"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 7,
+        "claims": [
+          {
+            "claim": "Nvidia's EV/EBITDA multiples remain significantly higher than Intel's.",
+            "claim_type": "qualitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 29,
+                "line_end": 37
+              }
+            ],
+            "reason": "The Peer EV/EBITDA Comparison table shows that for all years where both Nvidia and Intel have data (2022, 2023, 2024, 2025), Nvidia's EV/EBITDA is higher than Intel's, often by a large margin (e.g., 2023: NVDA 81.0476 vs INTC 22.4823; 2024: NVDA 43.4522 vs INTC 106.938, but in this year Intel's is higher, so the claim of 'remain significantly higher' is contradicted for 2024). However, in 2024, Intel's multiple is higher than Nvidia's, so the claim that Nvidia's multiples 'remain' higher is contradicted by this counterexample.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia|ev/ebitda multiple|all years with data|higher than intel|qualitative"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 8,
+        "claims": [
+          {
+            "claim": "AMD's EV/EBITDA multiples are generally higher than Intel's.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [
+              {
+                "line_start": 29,
+                "line_end": 37
+              }
+            ],
+            "reason": "The Peer EV/EBITDA Comparison table shows that in 2021, AMD's multiple (42.1013) is higher than Intel's (7.13058); in 2022, AMD (17.9136) is higher than Intel (6.54873); in 2023, AMD (57.1197) is higher than Intel (22.4823); in 2024, AMD (38.2717) is lower than Intel (106.938); in 2025, AMD (47.8456) is higher than Intel (14.4982). Thus, in 2024, Intel's multiple is higher, so the claim that AMD's multiples are 'generally' higher is not fully supported nor contradicted, as 'generally' is vague and not quantified. The evidence does not establish a clear majority or trend, so the claim is Unsupported.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|ev/ebitda multiple|all years with data|generally higher than intel|qualitative"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 9,
+        "claims": [
+          {
+            "claim": "Intel's low to negative earnings and shrinking margins provide a rationale for its subdued valuation relative to peers.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "While the financial tables show low to negative earnings and shrinking margins, the causal link that these provide a rationale for subdued valuation relative to peers is not established in the evidence. No explicit connection is made between these metrics and valuation in the supplied data.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel corporation|low to negative earnings and shrinking margins|unspecified|provide rationale for subdued valuation relative to peers|causal"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 10,
+        "claims": [
+          {
+            "claim": "Intel's current valuation is indicative of the market's cautious stance regarding its near-term earnings recovery and strategic execution risks.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is supplied that links Intel's current valuation to the market's stance on earnings recovery and execution risks. The financial data does not attribute valuation to these factors.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel corporation|valuation|current|indicative of market's cautious stance on earnings recovery and execution risks|causal"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 11,
+        "claims": [
+          {
+            "claim": "Ongoing competitive pressures, technological transition challenges, and execution issues have eroded Intel's market share and profitability and are primary drivers of its valuation trend.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is supplied that directly links these factors to erosion of market share, profitability, or valuation trend. The financial tables do not attribute changes to these causes.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel corporation|competitive pressures, technological transition, execution issues|unspecified|eroded market share, profitability, and driven valuation trend|causal"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 13,
+        "claims": [
+          {
+            "claim": "Intel's historical dominance is being challenged, as reflected in its deteriorating revenue and margin profile.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "While the tables show deteriorating revenue and margin profile, the claim that this reflects a challenge to Intel's historical dominance is not directly supported by the evidence. No explicit comparison to historical dominance or competitors is provided.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel corporation|historical dominance|recent years|being challenged as reflected in deteriorating revenue and margin|causal"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 14,
+        "claims": [
+          {
+            "claim": "Market sentiment has been tempered by operational headwinds and cyclical downturns impacting semiconductor demand.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is supplied that links market sentiment to operational headwinds and cyclical downturns. The financial data does not discuss market sentiment or its causes.",
+            "numeric_status": "not_numeric",
+            "fact_key": "market sentiment|tempered|recent period|by operational headwinds and cyclical downturns impacting semiconductor demand|causal"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 15,
+        "claims": [
+          {
+            "claim": "Intel's current valuation reflects market expectations of a protracted recovery rather than a bubble or scarcity premium.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is supplied that links Intel's valuation to market expectations of a protracted recovery or rules out a bubble/scarcity premium. The financial data does not discuss market expectations or valuation drivers.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel corporation|valuation|current|reflects market expectations of protracted recovery not bubble or scarcity premium|causal"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 17,
+        "claims": [
+          {
+            "claim": "Intel's valuation does not constitute a clear value trap purely by valuation level, but investors must be wary of execution risk and structural shifts in the semiconductor landscape that could further impair profitability.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is supplied to support or contradict the claim about value trap status or the need for caution regarding execution risk and structural shifts. The financial data does not address these qualitative assessments.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel corporation|valuation|current|not clear value trap by valuation, but execution risk and structural shifts could impair profitability|causal"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 20,
+        "claims": [
+          {
+            "claim": "Intel's valuation incorporates significant risks related to operational execution and industry competition.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is supplied that links Intel's valuation to risks related to operational execution and industry competition. The financial data does not attribute valuation to these risks.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel corporation|valuation|current|incorporates significant risks related to operational execution and industry competition|causal"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 21,
+        "claims": [
+          {
+            "claim": "Investors considering Intel should weigh the margin of safety provided by the current low valuation against uncertainties about the company's ability to regain growth momentum and profitability.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is supplied regarding the margin of safety, current valuation, or uncertainties about growth momentum and profitability. The financial data does not discuss investment considerations or recommendations.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel corporation|investment consideration|current|weigh margin of safety of low valuation vs uncertainties about growth and profitability|qualitative"
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "risks": {
+    "selected_attempt": "audits\\grounding\\INTC_after_v7_1_working\\changed_unit_calls\\risks\\attempt_001",
+    "response_sha256": "28db4381a76f9879bc5bda8a3c42f30fcd0076b512103a53180472381b50156b",
+    "units": [
+      {
+        "unit_id": 2,
+        "claims": [
+          {
+            "claim": "Intel is grappling with declining revenues evidenced by a compound annual growth rate of -9.6% from 2021 to 2028.",
+            "claim_type": "factual",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 4,
+                "line_end": 6
+              }
+            ],
+            "reason": "The table header and row for Revenue show a CAGR of -9.6% for the period 2021A to 2028E. The claim matches the entity (Intel), metric (Revenue), period (2021 to 2028), and value (-9.6%). The CAGR is explicitly stated in the evidence.",
+            "numeric_status": "correct",
+            "fact_key": "intel|revenue_cagr|2021-2028|-9.6%"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 6,
+        "claims": [
+          {
+            "claim": "AMD and NVIDIA have shown stronger EBITDA growth and superior EV/EBITDA multiples than Intel in recent years.",
+            "claim_type": "qualitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 18,
+                "line_end": 37
+              }
+            ],
+            "reason": "The peer comparison tables for EBITDA and EV/EBITDA show that AMD and NVIDIA have higher or more positive EBITDA growth and higher EV/EBITDA multiples than Intel in the years 2021-2025. For example, NVIDIA's EBITDA grows significantly, and its EV/EBITDA multiples are higher than Intel's in most years. AMD's EV/EBITDA multiples are also higher than Intel's in most years. This supports the qualitative claim of stronger growth and superior multiples.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd_nvidia|ebitda_ev_ebitda_comparison|recent_years|stronger_than_intel"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 13,
+        "claims": [
+          {
+            "claim": "Intel’s profitability is under pressure.",
+            "claim_type": "qualitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 11,
+                "line_end": 12
+              },
+              {
+                "line_start": 14,
+                "line_end": 14
+              }
+            ],
+            "reason": "The EBITDA and EBITDA margin rows show a significant decline from 2021 to 2024, indicating pressure on profitability. EBITDA drops from $33.87B in 2021 to $1.2B in 2024, and EBITDA margin drops from 42.9% to 2.3%.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|profitability|recent_years|under_pressure"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 14,
+        "claims": [
+          {
+            "claim": "Intel's EBITDA margin dropped from 42.9% in 2021 to a forecast of 2.3% in 2024.",
+            "claim_type": "quantitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 12,
+                "line_end": 12
+              }
+            ],
+            "reason": "The EBITDA Margin row shows 42.9% for 2021A and 2.3% for 2024A (forecast). The claim matches the entity, metric, periods, and values.",
+            "numeric_status": "correct",
+            "fact_key": "intel|ebitda_margin|2021|42.9%"
+          },
+          {
+            "claim": "Intel's EBITDA margin dropped from 42.9% in 2021 to a forecast of 2.3% in 2024.",
+            "claim_type": "quantitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 12,
+                "line_end": 12
+              }
+            ],
+            "reason": "The EBITDA Margin row shows 42.9% for 2021A and 2.3% for 2024A (forecast). The claim matches the entity, metric, periods, and values.",
+            "numeric_status": "correct",
+            "fact_key": "intel|ebitda_margin|2024|2.3%"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 21,
+        "claims": [
+          {
+            "claim": "Steep decline and volatility in revenue and profitability are critical risks for Intel that threaten valuation and investor confidence.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is supplied in the original writer evidence to support the causal link between revenue/profitability trends and threats to valuation and investor confidence. The claim is also marked as [UNVERIFIED].",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|revenue_profitability_decline_volatility|recent_years|threaten_valuation_investor_confidence"
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "competitor_analysis": {
+    "selected_attempt": "audits\\grounding\\INTC_after_v7_1_working\\changed_unit_calls\\competitor_analysis\\attempt_001",
+    "response_sha256": "cdd6d0ee67ca9990fe0e4874a8471c2089b53f1f74f5dae981d046bc71c3c4f5",
+    "units": [
+      {
+        "unit_id": 18,
+        "claims": [
+          {
+            "claim": "Intel's contribution margin and EBITDA margins have contracted.",
+            "claim_type": "qualitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 4,
+                "line_end": 13
+              }
+            ],
+            "reason": "The table in lines 4-13 shows both Contribution Margin and EBITDA Margin for Intel from 2021A to 2028E. Contribution Margin drops from 55.4% (2021A) to 40.0% (2023A), and EBITDA Margin drops from 42.9% (2021A) to 20.7% (2023A), confirming contraction. The claim is about historical contraction, and the actual data supports this trend.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|contribution_margin_and_ebitda_margin|2021A-2023A|contracted|percent"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 19,
+        "claims": [
+          {
+            "claim": "Intel’s EPS has become negative in recent years.",
+            "claim_type": "qualitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 4,
+                "line_end": 15
+              }
+            ],
+            "reason": "The table in lines 4-15 shows Intel's EPS: 2021A (4.89), 2022A (1.95), 2023A (0.4), 2024A (-4.38), 2025A (-0.0589), 2026E (-0.06), 2027E (-0.07), 2028E (-0.07). EPS turns negative in 2024A and remains negative in subsequent years. 'Recent years' can reasonably include the most recent actuals and forecasts, so the claim is supported.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|eps|recent_years|negative|usd"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 21,
+        "claims": [
+          {
+            "claim": "Intel’s moat is narrowing due to delays in manufacturing process advancements, competitor innovations, and shifting market dynamics toward specialized and heterogeneous computing solutions where Intel is less dominant.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is supplied in the original writer evidence to support the claim about Intel's moat narrowing or the specific causes listed (manufacturing delays, competitor innovations, market dynamics, or dominance in specialized computing).",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|moat|recent_years|narrowing_due_to_competition_and_market_shift|qualitative"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 25,
+        "claims": [
+          {
+            "claim": "Intel's moat is narrowing but has potential to stabilize if Intel can leverage its scale, innovate effectively, and restore confidence in its manufacturing capabilities.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is supplied in the original writer evidence to support the claim about Intel's moat narrowing, its potential to stabilize, or the conditions under which this might occur.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|moat|future|narrowing_but_potential_to_stabilize|qualitative"
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "major_takeaways": {
+    "selected_attempt": "audits\\grounding\\INTC_after_v7_1_working\\changed_unit_calls\\major_takeaways\\attempt_001",
+    "response_sha256": "bc7519457d98984daed5d17658a153111144ac440bbc10cac6efc329a71aa1a7",
+    "units": [
+      {
+        "unit_id": 0,
+        "claims": [
+          {
+            "claim": "Intel's revenue has experienced a significant decline from $79.0 billion in 2021 to $53.1 billion in 2024",
+            "claim_type": "quantitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 6,
+                "line_end": 6
+              }
+            ],
+            "reason": "The table in line 6 shows Revenue for 2021A as 79024000000.0 ($79.0B) and for 2024A as 53101000000.0 ($53.1B), matching the claim. Entity: Intel, Metric: Revenue, Periods: 2021A and 2024A, Unit: USD, Actuals. The numbers and periods align exactly.",
+            "numeric_status": "correct",
+            "fact_key": "intel|revenue|2021a|79024000000.0"
+          },
+          {
+            "claim": "Intel's revenue has experienced a significant decline from $79.0 billion in 2021 to $53.1 billion in 2024",
+            "claim_type": "qualitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 6,
+                "line_end": 6
+              }
+            ],
+            "reason": "The revenue dropped from $79.0B to $53.1B, which is a significant decline. The table supports this qualitative assessment.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|revenue_decline|2021a-2024a|significant"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 1,
+        "claims": [
+          {
+            "claim": "reflecting a compounded annual decline of -9.6%",
+            "claim_type": "quantitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 6,
+                "line_end": 6
+              }
+            ],
+            "reason": "The CAGR column for Revenue in line 6 is -9.6%. Entity: Intel, Metric: Revenue CAGR, Period: 2021A-2024A, Value: -9.6%. The periods and value match.",
+            "numeric_status": "correct",
+            "fact_key": "intel|revenue_cagr|2021a-2024a|-9.6%"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 5,
+        "claims": [
+          {
+            "claim": "Intel's contribution margin has compressed sharply from 55.4% in 2021 to 32.7% in 2024, indicating considerable margin erosion.",
+            "claim_type": "quantitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 10,
+                "line_end": 10
+              }
+            ],
+            "reason": "Contribution Margin for 2021A is 55.4% and for 2024A is 32.7% in line 10. Entity: Intel, Metric: Contribution Margin, Periods: 2021A and 2024A, Unit: %, Actuals. The numbers and periods match.",
+            "numeric_status": "correct",
+            "fact_key": "intel|contribution_margin|2021a|55.4%"
+          },
+          {
+            "claim": "Intel's contribution margin has compressed sharply from 55.4% in 2021 to 32.7% in 2024, indicating considerable margin erosion.",
+            "claim_type": "qualitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 10,
+                "line_end": 10
+              }
+            ],
+            "reason": "A drop from 55.4% to 32.7% is a sharp compression, supporting the qualitative claim of considerable margin erosion.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|contribution_margin_erosion|2021a-2024a|considerable"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 9,
+        "claims": [
+          {
+            "claim": "The SG&A margin increased from 8.3% in 2021 to a peak of 11.1% in 2022, before gradually declining to 7.2% by 2028.",
+            "claim_type": "quantitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 13,
+                "line_end": 13
+              }
+            ],
+            "reason": "SG&A Margin is 8.3% (2021A), 11.1% (2022A), and 7.2% (2028E) in line 13. The peak is in 2022, and the decline to 7.2% by 2028 is shown. Entity: Intel, Metric: SG&A Margin, Periods: 2021A, 2022A, 2028E, Unit: %, Actual/Estimate as labeled.",
+            "numeric_status": "correct",
+            "fact_key": "intel|sga_margin|2021a|8.3%"
+          },
+          {
+            "claim": "The SG&A margin increased from 8.3% in 2021 to a peak of 11.1% in 2022, before gradually declining to 7.2% by 2028.",
+            "claim_type": "qualitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 13,
+                "line_end": 13
+              }
+            ],
+            "reason": "The trend described matches the table: increase to a peak, then gradual decline.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|sga_margin_trend|2021a-2028e|peak_then_decline"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 13,
+        "claims": [
+          {
+            "claim": "Intel's EBITDA margin has exhibited pronounced volatility, plunging from 42.9% in 2021 to a low of 2.3% in 2024 before recovering to 30.6% by 2028.",
+            "claim_type": "quantitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 12,
+                "line_end": 12
+              }
+            ],
+            "reason": "EBITDA Margin is 42.9% (2021A), 2.3% (2024A), and 30.6% (2028E) in line 12. The lowest value is in 2024, and the recovery to 30.6% by 2028 is shown. Entity: Intel, Metric: EBITDA Margin, Periods: 2021A, 2024A, 2028E, Unit: %, Actual/Estimate as labeled.",
+            "numeric_status": "correct",
+            "fact_key": "intel|ebitda_margin|2021a|42.9%"
+          },
+          {
+            "claim": "Intel's EBITDA margin has exhibited pronounced volatility, plunging from 42.9% in 2021 to a low of 2.3% in 2024 before recovering to 30.6% by 2028.",
+            "claim_type": "qualitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 12,
+                "line_end": 12
+              }
+            ],
+            "reason": "The margin drops sharply and then recovers, which is pronounced volatility as described.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|ebitda_margin_volatility|2021a-2028e|pronounced"
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "news_summary": {
+    "selected_attempt": "audits\\grounding\\INTC_after_v7_1_working\\changed_unit_calls\\news_summary\\attempt_001",
+    "response_sha256": "a2f71ffed02334676adba7462f8b8a98549ef50f8d14f0ae8c11691566be26e5",
+    "units": [
+      {
+        "unit_id": 2,
+        "claims": [
+          {
+            "claim": "Intel provided guidance for third quarter 2026 revenue between $15.8 billion and $16.8 billion.",
+            "claim_type": "factual",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 47,
+                "line_end": 47
+              }
+            ],
+            "reason": "The news summary in lines 47 states: 'Forecasting third-quarter 2026 revenue of $15.8 billion to $16.8 billion.' This matches the claim for Q3 2026 revenue guidance. Entity: Intel, Metric: Revenue, Period: Q3 2026, Value: $15.8B-$16.8B, Unit: USD, Basis: Forecast.",
+            "numeric_status": "correct",
+            "fact_key": "intel|revenue|2026q3|15.8-16.8b|usd"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 3,
+        "claims": [
+          {
+            "claim": "Intel provided a non-GAAP EPS forecast of $0.38 for the third quarter of 2026.",
+            "claim_type": "factual",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 47,
+                "line_end": 47
+              }
+            ],
+            "reason": "Line 47 states: 'expecting third-quarter EPS attributable to Intel of $0.31 and non-GAAP EPS attributable to Intel of $0.38.' This matches the claim for Q3 2026 non-GAAP EPS forecast. Entity: Intel, Metric: non-GAAP EPS, Period: Q3 2026, Value: $0.38, Unit: USD, Basis: Forecast.",
+            "numeric_status": "correct",
+            "fact_key": "intel|non-gaap eps|2026q3|0.38|usd"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 5,
+        "claims": [
+          {
+            "claim": "Intel has experienced a multi-year declining revenue trend.",
+            "claim_type": "qualitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 6,
+                "line_end": 6
+              }
+            ],
+            "reason": "The table in line 6 shows Intel's revenue declining from $79,024,000,000 in 2021A to $54,228,000,000 in 2023A, and further to $53,101,000,000 in 2024A and $52,853,000,000 in 2025A. This supports a multi-year declining trend. Entity: Intel, Metric: Revenue, Period: 2021A-2025A, Trend: Declining.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|revenue trend|2021a-2025a|declining|usd"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 6,
+        "claims": [
+          {
+            "claim": "Intel has continued negative GAAP earnings despite positive non-GAAP results.",
+            "claim_type": "qualitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 15,
+                "line_end": 15
+              },
+              {
+                "line_start": 46,
+                "line_end": 46
+              }
+            ],
+            "reason": "Line 15 shows negative GAAP EPS for 2024A (-4.38), 2025A (-0.0589), 2026E (-0.06), 2027E (-0.07), 2028E (-0.07). Line 46 in the news summary for Q2 2026 shows GAAP EPS of $(2.16) and non-GAAP EPS of $0.42, indicating negative GAAP but positive non-GAAP results. Entity: Intel, Metric: GAAP EPS/Non-GAAP EPS, Period: 2024A-2026, Trend: Negative GAAP, Positive non-GAAP.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|gaap vs non-gaap earnings|2024a-2026|negative vs positive|usd"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 9,
+        "claims": [
+          {
+            "claim": "NVIDIA has much higher EBITDA than Intel.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence table (lines 18-27) provides some years where NVIDIA's EBITDA is higher than Intel's (e.g., 2024, 2025, 2027), but not for all years (e.g., 2021, 2022, 2023). The claim is general and unqualified, but the evidence does not show NVIDIA consistently has much higher EBITDA than Intel for all periods. The claim is unsupported as stated.",
+            "numeric_status": "unverifiable",
+            "fact_key": "nvidia|ebitda|all_years|much higher than intel|usd"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 10,
+        "claims": [
+          {
+            "claim": "NVIDIA has much higher valuation multiples than Intel.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The EV/EBITDA table (lines 29-37) shows that NVIDIA's valuation multiples are higher than Intel's in some years (2022, 2023, 2024), but not all years (e.g., 2025, 2026, 2027 are missing or lower). The claim is general and unqualified, but the evidence does not show NVIDIA consistently has much higher valuation multiples than Intel for all periods. The claim is unsupported as stated.",
+            "numeric_status": "unverifiable",
+            "fact_key": "nvidia|ev/ebitda|all_years|much higher than intel|ratio"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 12,
+        "claims": [
+          {
+            "claim": "[UNVERIFIED - evidence not supplied] Market sentiment surrounding Intel appears cautiously optimistic due to revenue growth and positive non-GAAP earnings.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The unit itself states evidence is not supplied. No evidence is provided for market sentiment or the causal link to revenue growth and positive non-GAAP earnings.",
+            "numeric_status": "unverifiable",
+            "fact_key": "intel|market sentiment|2026|cautiously optimistic due to revenue growth and positive non-gaap earnings|n/a"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 13,
+        "claims": [
+          {
+            "claim": "[UNVERIFIED - evidence not supplied] Market sentiment is tempered by sustained GAAP losses and the need for continued strategic execution to restore profitability and growth.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The unit itself states evidence is not supplied. No evidence is provided for market sentiment or the causal link to GAAP losses and strategic execution.",
+            "numeric_status": "unverifiable",
+            "fact_key": "intel|market sentiment|2026|tempered by gaap losses and need for execution|n/a"
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  }
+}

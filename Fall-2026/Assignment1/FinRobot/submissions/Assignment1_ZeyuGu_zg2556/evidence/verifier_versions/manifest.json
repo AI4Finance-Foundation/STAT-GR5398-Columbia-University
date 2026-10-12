@@ -1,0 +1,21 @@
+{
+  "v1_failed_run": "NVDA_final_1",
+  "failed_attempts": 3,
+  "input_tokens": 10212,
+  "output_tokens": 2545,
+  "cost_usd": 0.0081568,
+  "runtime_seconds": 16.140252600000167,
+  "versions": {
+    "verifier_agent_v1.py": "dc591ddfff82dd7b4134680e03258c117a4847ef017bbda9a44facc22d62e816",
+    "verifier_agent_v2.py": "ac43557613c8df820a26510af43f621301be831a3190bdb0f16c2baf72ba94d5",
+    "verifier_agent_v3.py": "1cb5c3341ce70fc1799f87d026ff6a15523fd98315737542434db7bf3e4e5856",
+    "verifier_agent_v4.py": "6c210ea7bd19acfdc77074a74e588f35152880591143884713166ab128ac41b8",
+    "verifier_agent_v5.py": "1daead1044cd4c0cf58c0653aa51692285c5fb78577722a0f1b4944c6f236323",
+    "verifier_agent_v6.py": "565c01ba67520e5ed96c0cd1a9f9f9315cf91d792bdc6b0fbb6c25e86b69a3ee"
+  },
+  "v2_status": "Implementation and offline regression tests pass; paid experiment outcome is separately recorded in *_final_v2 run manifests.",
+  "v3_status": "50 offline verifier/resume tests passed. New V3 paid run IDs required; no V3 empirical success implied by software tests.",
+  "canonical_version": "6-reject-structural-only-evidence",
+  "canonical_pairs": "config/grounding_v6_pairs.json",
+  "status": "All seven final_v6 runs rendered; three full independent before/after inventories complete; residual semantic errors remain."
+}

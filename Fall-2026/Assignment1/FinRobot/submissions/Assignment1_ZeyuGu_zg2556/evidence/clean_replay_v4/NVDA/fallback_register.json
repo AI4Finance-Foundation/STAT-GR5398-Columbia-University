@@ -1,0 +1,66 @@
+[
+  {
+    "field": "forecast_config",
+    "value": {
+      "revenue_base_year": "2026A",
+      "revenue_growth_assumptions": {
+        "2027E": 0.05,
+        "2028E": 0.06,
+        "2029E": 0.04
+      },
+      "ebitda_growth_factor": 1.05,
+      "margin_improvement": {
+        "Contribution Margin": 0.01,
+        "EBITDA Margin": 0.01
+      },
+      "sga_margin_change": -0.005,
+      "forecast_label_mapping": {
+        "2025E": "2027E",
+        "2026E": "2028E",
+        "2027E": "2029E"
+      },
+      "forecast_origin": "2026A",
+      "forecast_basis": "annual periods after latest observed actual; not calendar-year projections"
+    },
+    "status": "model_assumption",
+    "reason": "Universal upstream CLI defaults, not company guidance or a fitted forecast"
+  },
+  {
+    "field": "valuation.net_debt",
+    "value": "10% of model enterprise value",
+    "status": "model_assumption",
+    "reason": "Baseline engine does not use actual balance-sheet net debt"
+  },
+  {
+    "field": "dcf.defaults",
+    "value": {
+      "growth_years_1_5": 0.1,
+      "growth_years_6_10": 0.05,
+      "wacc": 0.1,
+      "terminal_growth": 0.025
+    },
+    "status": "model_assumption",
+    "reason": "Fixed upstream DCF inputs, not estimated company financing costs/growth"
+  },
+  {
+    "field": "native_sensitivity.confidence_intervals",
+    "value": "fixed 15% standard deviation with normal quantile",
+    "status": "model_assumption",
+    "reason": "Uncalibrated scenario band; no historical standard deviation estimated"
+  },
+  {
+    "field": "catalyst_analysis.catalysts[1]",
+    "value": {
+      "event_type": "earnings",
+      "description": "NVDA Expected Quarterly Earnings",
+      "expected_date": "2027-01-09",
+      "impact_level": "high",
+      "probability": 0.95,
+      "sentiment": "neutral",
+      "source": "Estimated Calendar",
+      "details": ""
+    },
+    "status": "assumption",
+    "reason": "Upstream default earnings event at as-of+90 days, 95% heuristic probability; not actual scheduled earnings"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "method": "Standard-library Decimal at 50 digits; no production forecast or valuation imports",
+  "inputs": {
+    "snapshots/NVDA/analysis/financial_metrics_and_forecasts.csv": "df8090cc55e257bc6c123576ed63fdd5394f564216c39968518aeddf09932e7f",
+    "snapshots/NVDA/analysis/key_metrics_raw_data.csv": "5a220a30cedfa2462f4fea566e3bd00bad29c8a3ab7b7f5266ef348a9590f401",
+    "snapshots/NVDA/valuation_inputs.json": "99ed437b529f9448faf18bb3157978ac554645e7d389f4bc07b209240536cad5",
+    "snapshots/AMD/analysis/financial_metrics_and_forecasts.csv": "d7756b4b6a8907583c2fa281bf420873e71bb5a0f03be53b02cd092fca3737a4",
+    "snapshots/AMD/analysis/key_metrics_raw_data.csv": "24eecc49d470a514f72337e5ca967149512bdf69746e1acaf21d0a93e8e5e823",
+    "snapshots/AMD/valuation_inputs.json": "23b8ecdbc795d75ebae8321f1e1af416b58bae7b7872c1beede4922c80ecda11"
+  },
+  "forecast_rows": 132,
+  "valuation_rows": 4,
+  "source_sha256": "5931eb82f0cfc9c5dce82c39dadf4dd9b775688358a175978a6c134d3a1df791",
+  "outputs": {
+    "precomputed_expected_ev_ebitda.csv": "3367349666725fd35ee6fec08be62aa457aef2d8a66e6456a03f11085ccd91dc",
+    "precomputed_expected_forecasts.csv": "2ddfc8ac52dffe807d2571f283c7d94e24609415847661137fb678040a7f0b5c"
+  }
+}

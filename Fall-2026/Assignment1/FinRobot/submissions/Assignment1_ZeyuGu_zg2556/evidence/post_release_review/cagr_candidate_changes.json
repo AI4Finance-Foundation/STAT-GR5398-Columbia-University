@@ -1,0 +1,530 @@
+[
+  {
+    "ticker": "NVDA",
+    "section": "competitor_analysis",
+    "claim_id": "u7c2",
+    "rule": "displayed_revenue_cagr_and_table_extent_clarification",
+    "original_released_text": "NVIDIA's revenue CAGR is 68.3% in the table through 2029E.",
+    "revised_released_text": "The supplied Revenue CAGR cell is 68.3%; the 2022A to 2026A actual endpoints imply 68.30% CAGR. Across the table's 2022A to 2029E endpoints, the implied Revenue CAGR is 37.49%; 2029E is a model forecast.",
+    "original_semantic_verdict": "Not inferred by this rule; table extent may be ambiguous.",
+    "company": "NVIDIA Corporation",
+    "displayed_cell": "68.3%",
+    "historical_calculation": {
+      "start": "2022A",
+      "end": "2026A",
+      "start_value": "26914000000.0",
+      "end_value": "215938000000.0",
+      "year_intervals": 4,
+      "percent": "68.3013914802826775585786003439648290",
+      "display_percent": "68.30",
+      "formula": "100 * ((end_value / start_value) ** (1 / year_intervals) - 1)",
+      "contains_forecast_endpoint": false
+    },
+    "table_endpoint_calculation": {
+      "start": "2022A",
+      "end": "2029E",
+      "start_value": "26914000000.0",
+      "end_value": "249952553760.0",
+      "year_intervals": 7,
+      "percent": "37.4891654218146338990062288281236910",
+      "display_percent": "37.49",
+      "formula": "100 * ((end_value / start_value) ** (1 / year_intervals) - 1)",
+      "contains_forecast_endpoint": true
+    },
+    "evidence": [
+      {
+        "line_number": 4,
+        "quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+      },
+      {
+        "line_number": 6,
+        "quote": "|  0 | Revenue             | 26914000000.0     | 26974000000.0      | 60922000000.0     | 130497000000.0    | 215938000000.0    | 226734900000.0 | 240338994000.0 | 249952553760.0  | 68.3%  |"
+      }
+    ],
+    "limitations": "A narrow deterministic clarification, not general semantic validation. The development cohort informed this rule. No held-out claim."
+  },
+  {
+    "ticker": "NVDA",
+    "section": "major_takeaways",
+    "claim_id": "u0c1",
+    "rule": "displayed_revenue_cagr_and_table_extent_clarification",
+    "original_released_text": "NVIDIA revenue CAGR is 68.3% in the table spanning 2022A to 2029E.",
+    "revised_released_text": "The supplied Revenue CAGR cell is 68.3%; the 2022A to 2026A actual endpoints imply 68.30% CAGR. Across the table's 2022A to 2029E endpoints, the implied Revenue CAGR is 37.49%; 2029E is a model forecast.",
+    "original_semantic_verdict": "Not inferred by this rule; table extent may be ambiguous.",
+    "company": "NVIDIA Corporation",
+    "displayed_cell": "68.3%",
+    "historical_calculation": {
+      "start": "2022A",
+      "end": "2026A",
+      "start_value": "26914000000.0",
+      "end_value": "215938000000.0",
+      "year_intervals": 4,
+      "percent": "68.3013914802826775585786003439648290",
+      "display_percent": "68.30",
+      "formula": "100 * ((end_value / start_value) ** (1 / year_intervals) - 1)",
+      "contains_forecast_endpoint": false
+    },
+    "table_endpoint_calculation": {
+      "start": "2022A",
+      "end": "2029E",
+      "start_value": "26914000000.0",
+      "end_value": "249952553760.0",
+      "year_intervals": 7,
+      "percent": "37.4891654218146338990062288281236910",
+      "display_percent": "37.49",
+      "formula": "100 * ((end_value / start_value) ** (1 / year_intervals) - 1)",
+      "contains_forecast_endpoint": true
+    },
+    "evidence": [
+      {
+        "line_number": 4,
+        "quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+      },
+      {
+        "line_number": 6,
+        "quote": "|  0 | Revenue             | 26914000000.0     | 26974000000.0      | 60922000000.0     | 130497000000.0    | 215938000000.0    | 226734900000.0 | 240338994000.0 | 249952553760.0  | 68.3%  |"
+      }
+    ],
+    "limitations": "A narrow deterministic clarification, not general semantic validation. The development cohort informed this rule. No held-out claim."
+  },
+  {
+    "ticker": "NVDA",
+    "section": "news_summary",
+    "claim_id": "u2c0",
+    "rule": "displayed_revenue_cagr_and_table_extent_clarification",
+    "original_released_text": "The revenue table shows a CAGR of 68.3% across 2022A to 2029E.",
+    "revised_released_text": "The supplied Revenue CAGR cell is 68.3%; the 2022A to 2026A actual endpoints imply 68.30% CAGR. Across the table's 2022A to 2029E endpoints, the implied Revenue CAGR is 37.49%; 2029E is a model forecast.",
+    "original_semantic_verdict": "Not inferred by this rule; table extent may be ambiguous.",
+    "company": "NVIDIA Corporation",
+    "displayed_cell": "68.3%",
+    "historical_calculation": {
+      "start": "2022A",
+      "end": "2026A",
+      "start_value": "26914000000.0",
+      "end_value": "215938000000.0",
+      "year_intervals": 4,
+      "percent": "68.3013914802826775585786003439648290",
+      "display_percent": "68.30",
+      "formula": "100 * ((end_value / start_value) ** (1 / year_intervals) - 1)",
+      "contains_forecast_endpoint": false
+    },
+    "table_endpoint_calculation": {
+      "start": "2022A",
+      "end": "2029E",
+      "start_value": "26914000000.0",
+      "end_value": "249952553760.0",
+      "year_intervals": 7,
+      "percent": "37.4891654218146338990062288281236910",
+      "display_percent": "37.49",
+      "formula": "100 * ((end_value / start_value) ** (1 / year_intervals) - 1)",
+      "contains_forecast_endpoint": true
+    },
+    "evidence": [
+      {
+        "line_number": 4,
+        "quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+      },
+      {
+        "line_number": 6,
+        "quote": "|  0 | Revenue             | 26914000000.0     | 26974000000.0      | 60922000000.0     | 130497000000.0    | 215938000000.0    | 226734900000.0 | 240338994000.0 | 249952553760.0  | 68.3%  |"
+      }
+    ],
+    "limitations": "A narrow deterministic clarification, not general semantic validation. The development cohort informed this rule. No held-out claim."
+  },
+  {
+    "ticker": "NVDA",
+    "section": "risks",
+    "claim_id": "u1c1",
+    "rule": "displayed_revenue_cagr_and_table_extent_clarification",
+    "original_released_text": "The revenue row shows a 68.3% CAGR for 2022A through 2029E.",
+    "revised_released_text": "The supplied Revenue CAGR cell is 68.3%; the 2022A to 2026A actual endpoints imply 68.30% CAGR. Across the table's 2022A to 2029E endpoints, the implied Revenue CAGR is 37.49%; 2029E is a model forecast.",
+    "original_semantic_verdict": "Not inferred by this rule; table extent may be ambiguous.",
+    "company": "NVIDIA Corporation",
+    "displayed_cell": "68.3%",
+    "historical_calculation": {
+      "start": "2022A",
+      "end": "2026A",
+      "start_value": "26914000000.0",
+      "end_value": "215938000000.0",
+      "year_intervals": 4,
+      "percent": "68.3013914802826775585786003439648290",
+      "display_percent": "68.30",
+      "formula": "100 * ((end_value / start_value) ** (1 / year_intervals) - 1)",
+      "contains_forecast_endpoint": false
+    },
+    "table_endpoint_calculation": {
+      "start": "2022A",
+      "end": "2029E",
+      "start_value": "26914000000.0",
+      "end_value": "249952553760.0",
+      "year_intervals": 7,
+      "percent": "37.4891654218146338990062288281236910",
+      "display_percent": "37.49",
+      "formula": "100 * ((end_value / start_value) ** (1 / year_intervals) - 1)",
+      "contains_forecast_endpoint": true
+    },
+    "evidence": [
+      {
+        "line_number": 4,
+        "quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+      },
+      {
+        "line_number": 6,
+        "quote": "|  0 | Revenue             | 26914000000.0     | 26974000000.0      | 60922000000.0     | 130497000000.0    | 215938000000.0    | 226734900000.0 | 240338994000.0 | 249952553760.0  | 68.3%  |"
+      }
+    ],
+    "limitations": "A narrow deterministic clarification, not general semantic validation. The development cohort informed this rule. No held-out claim."
+  },
+  {
+    "ticker": "AMD",
+    "section": "company_overview",
+    "claim_id": "u2c3",
+    "rule": "displayed_revenue_cagr_and_table_extent_clarification",
+    "original_released_text": "The AMD revenue row lists CAGR of 20.5% through 2028E.",
+    "revised_released_text": "The supplied Revenue CAGR cell is 20.5%; the 2021A to 2025A actual endpoints imply 20.49% CAGR. Across the table's 2021A to 2028E endpoints, the implied Revenue CAGR is 13.59%; 2028E is a model forecast.",
+    "original_semantic_verdict": "Not inferred by this rule; table extent may be ambiguous.",
+    "company": "Advanced Micro Devices, Inc.",
+    "displayed_cell": "20.5%",
+    "historical_calculation": {
+      "start": "2021A",
+      "end": "2025A",
+      "start_value": "16434000000.0",
+      "end_value": "34639000000.0",
+      "year_intervals": 4,
+      "percent": "20.4912516451710281425241385541148270",
+      "display_percent": "20.49",
+      "formula": "100 * ((end_value / start_value) ** (1 / year_intervals) - 1)",
+      "contains_forecast_endpoint": false
+    },
+    "table_endpoint_calculation": {
+      "start": "2021A",
+      "end": "2028E",
+      "start_value": "16434000000.0",
+      "end_value": "40095335280.0",
+      "year_intervals": 7,
+      "percent": "13.5888742161967996235759731398560310",
+      "display_percent": "13.59",
+      "formula": "100 * ((end_value / start_value) ** (1 / year_intervals) - 1)",
+      "contains_forecast_endpoint": true
+    },
+    "evidence": [
+      {
+        "line_number": 4,
+        "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+      },
+      {
+        "line_number": 6,
+        "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+      }
+    ],
+    "limitations": "A narrow deterministic clarification, not general semantic validation. The development cohort informed this rule. No held-out claim."
+  },
+  {
+    "ticker": "AMD",
+    "section": "competitor_analysis",
+    "claim_id": "u6c2",
+    "rule": "displayed_revenue_cagr_and_table_extent_clarification",
+    "original_released_text": "AMD revenue CAGR is projected at 20.5% from 2021A to 2028E.",
+    "revised_released_text": "The supplied Revenue CAGR cell is 20.5%; the 2021A to 2025A actual endpoints imply 20.49% CAGR. Across the table's 2021A to 2028E endpoints, the implied Revenue CAGR is 13.59%; 2028E is a model forecast.",
+    "original_semantic_verdict": "Not inferred by this rule; table extent may be ambiguous.",
+    "company": "Advanced Micro Devices, Inc.",
+    "displayed_cell": "20.5%",
+    "historical_calculation": {
+      "start": "2021A",
+      "end": "2025A",
+      "start_value": "16434000000.0",
+      "end_value": "34639000000.0",
+      "year_intervals": 4,
+      "percent": "20.4912516451710281425241385541148270",
+      "display_percent": "20.49",
+      "formula": "100 * ((end_value / start_value) ** (1 / year_intervals) - 1)",
+      "contains_forecast_endpoint": false
+    },
+    "table_endpoint_calculation": {
+      "start": "2021A",
+      "end": "2028E",
+      "start_value": "16434000000.0",
+      "end_value": "40095335280.0",
+      "year_intervals": 7,
+      "percent": "13.5888742161967996235759731398560310",
+      "display_percent": "13.59",
+      "formula": "100 * ((end_value / start_value) ** (1 / year_intervals) - 1)",
+      "contains_forecast_endpoint": true
+    },
+    "evidence": [
+      {
+        "line_number": 4,
+        "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+      },
+      {
+        "line_number": 6,
+        "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+      }
+    ],
+    "limitations": "A narrow deterministic clarification, not general semantic validation. The development cohort informed this rule. No held-out claim."
+  },
+  {
+    "ticker": "AMD",
+    "section": "investment_overview",
+    "claim_id": "u10c21",
+    "rule": "displayed_revenue_cagr_and_table_extent_clarification",
+    "original_released_text": "AMD's revenue CAGR is 20.5% in the table spanning 2021A through 2028E.",
+    "revised_released_text": "The supplied Revenue CAGR cell is 20.5%; the 2021A to 2025A actual endpoints imply 20.49% CAGR. Across the table's 2021A to 2028E endpoints, the implied Revenue CAGR is 13.59%; 2028E is a model forecast.",
+    "original_semantic_verdict": "Not inferred by this rule; table extent may be ambiguous.",
+    "company": "Advanced Micro Devices, Inc.",
+    "displayed_cell": "20.5%",
+    "historical_calculation": {
+      "start": "2021A",
+      "end": "2025A",
+      "start_value": "16434000000.0",
+      "end_value": "34639000000.0",
+      "year_intervals": 4,
+      "percent": "20.4912516451710281425241385541148270",
+      "display_percent": "20.49",
+      "formula": "100 * ((end_value / start_value) ** (1 / year_intervals) - 1)",
+      "contains_forecast_endpoint": false
+    },
+    "table_endpoint_calculation": {
+      "start": "2021A",
+      "end": "2028E",
+      "start_value": "16434000000.0",
+      "end_value": "40095335280.0",
+      "year_intervals": 7,
+      "percent": "13.5888742161967996235759731398560310",
+      "display_percent": "13.59",
+      "formula": "100 * ((end_value / start_value) ** (1 / year_intervals) - 1)",
+      "contains_forecast_endpoint": true
+    },
+    "evidence": [
+      {
+        "line_number": 4,
+        "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+      },
+      {
+        "line_number": 6,
+        "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+      }
+    ],
+    "limitations": "A narrow deterministic clarification, not general semantic validation. The development cohort informed this rule. No held-out claim."
+  },
+  {
+    "ticker": "AMD",
+    "section": "major_takeaways",
+    "claim_id": "u0c0",
+    "rule": "displayed_revenue_cagr_and_table_extent_clarification",
+    "original_released_text": "AMD Revenue has a 20.5% CAGR from 2021A to 2028E in the table.",
+    "revised_released_text": "The supplied Revenue CAGR cell is 20.5%; the 2021A to 2025A actual endpoints imply 20.49% CAGR. Across the table's 2021A to 2028E endpoints, the implied Revenue CAGR is 13.59%; 2028E is a model forecast.",
+    "original_semantic_verdict": "Not inferred by this rule; table extent may be ambiguous.",
+    "company": "Advanced Micro Devices, Inc.",
+    "displayed_cell": "20.5%",
+    "historical_calculation": {
+      "start": "2021A",
+      "end": "2025A",
+      "start_value": "16434000000.0",
+      "end_value": "34639000000.0",
+      "year_intervals": 4,
+      "percent": "20.4912516451710281425241385541148270",
+      "display_percent": "20.49",
+      "formula": "100 * ((end_value / start_value) ** (1 / year_intervals) - 1)",
+      "contains_forecast_endpoint": false
+    },
+    "table_endpoint_calculation": {
+      "start": "2021A",
+      "end": "2028E",
+      "start_value": "16434000000.0",
+      "end_value": "40095335280.0",
+      "year_intervals": 7,
+      "percent": "13.5888742161967996235759731398560310",
+      "display_percent": "13.59",
+      "formula": "100 * ((end_value / start_value) ** (1 / year_intervals) - 1)",
+      "contains_forecast_endpoint": true
+    },
+    "evidence": [
+      {
+        "line_number": 4,
+        "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+      },
+      {
+        "line_number": 6,
+        "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+      }
+    ],
+    "limitations": "A narrow deterministic clarification, not general semantic validation. The development cohort informed this rule. No held-out claim."
+  },
+  {
+    "ticker": "AMD",
+    "section": "news_summary",
+    "claim_id": "u2c0",
+    "rule": "displayed_revenue_cagr_and_table_extent_clarification",
+    "original_released_text": "AMD's revenue CAGR is 20.5% across 2021A to 2028E in the table.",
+    "revised_released_text": "The supplied Revenue CAGR cell is 20.5%; the 2021A to 2025A actual endpoints imply 20.49% CAGR. Across the table's 2021A to 2028E endpoints, the implied Revenue CAGR is 13.59%; 2028E is a model forecast.",
+    "original_semantic_verdict": "Not inferred by this rule; table extent may be ambiguous.",
+    "company": "Advanced Micro Devices, Inc.",
+    "displayed_cell": "20.5%",
+    "historical_calculation": {
+      "start": "2021A",
+      "end": "2025A",
+      "start_value": "16434000000.0",
+      "end_value": "34639000000.0",
+      "year_intervals": 4,
+      "percent": "20.4912516451710281425241385541148270",
+      "display_percent": "20.49",
+      "formula": "100 * ((end_value / start_value) ** (1 / year_intervals) - 1)",
+      "contains_forecast_endpoint": false
+    },
+    "table_endpoint_calculation": {
+      "start": "2021A",
+      "end": "2028E",
+      "start_value": "16434000000.0",
+      "end_value": "40095335280.0",
+      "year_intervals": 7,
+      "percent": "13.5888742161967996235759731398560310",
+      "display_percent": "13.59",
+      "formula": "100 * ((end_value / start_value) ** (1 / year_intervals) - 1)",
+      "contains_forecast_endpoint": true
+    },
+    "evidence": [
+      {
+        "line_number": 4,
+        "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+      },
+      {
+        "line_number": 6,
+        "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+      }
+    ],
+    "limitations": "A narrow deterministic clarification, not general semantic validation. The development cohort informed this rule. No held-out claim."
+  },
+  {
+    "ticker": "AMD",
+    "section": "tagline",
+    "claim_id": "u0c0",
+    "rule": "displayed_revenue_cagr_and_table_extent_clarification",
+    "original_released_text": "AMD revenue CAGR is 20.5% in the table from 2021A to 2028E.",
+    "revised_released_text": "The supplied Revenue CAGR cell is 20.5%; the 2021A to 2025A actual endpoints imply 20.49% CAGR. Across the table's 2021A to 2028E endpoints, the implied Revenue CAGR is 13.59%; 2028E is a model forecast.",
+    "original_semantic_verdict": "Not inferred by this rule; table extent may be ambiguous.",
+    "company": "Advanced Micro Devices, Inc.",
+    "displayed_cell": "20.5%",
+    "historical_calculation": {
+      "start": "2021A",
+      "end": "2025A",
+      "start_value": "16434000000.0",
+      "end_value": "34639000000.0",
+      "year_intervals": 4,
+      "percent": "20.4912516451710281425241385541148270",
+      "display_percent": "20.49",
+      "formula": "100 * ((end_value / start_value) ** (1 / year_intervals) - 1)",
+      "contains_forecast_endpoint": false
+    },
+    "table_endpoint_calculation": {
+      "start": "2021A",
+      "end": "2028E",
+      "start_value": "16434000000.0",
+      "end_value": "40095335280.0",
+      "year_intervals": 7,
+      "percent": "13.5888742161967996235759731398560310",
+      "display_percent": "13.59",
+      "formula": "100 * ((end_value / start_value) ** (1 / year_intervals) - 1)",
+      "contains_forecast_endpoint": true
+    },
+    "evidence": [
+      {
+        "line_number": 4,
+        "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |"
+      },
+      {
+        "line_number": 6,
+        "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |"
+      }
+    ],
+    "limitations": "A narrow deterministic clarification, not general semantic validation. The development cohort informed this rule. No held-out claim."
+  },
+  {
+    "ticker": "INTC",
+    "section": "risks",
+    "claim_id": "u1c0",
+    "rule": "displayed_revenue_cagr_and_table_extent_clarification",
+    "original_released_text": "Intel revenue CAGR is -9.6% from 2021A to 2028E in the table.",
+    "revised_released_text": "The supplied Revenue CAGR cell is -9.6%; the 2021A to 2025A actual endpoints imply -9.57% CAGR. Across the table's 2021A to 2028E endpoints, the implied Revenue CAGR is -3.59%; 2028E is a model forecast.",
+    "original_semantic_verdict": "Not inferred by this rule; table extent may be ambiguous.",
+    "company": "Intel Corporation",
+    "displayed_cell": "-9.6%",
+    "historical_calculation": {
+      "start": "2021A",
+      "end": "2025A",
+      "start_value": "79024000000.0",
+      "end_value": "52853000000.0",
+      "year_intervals": 4,
+      "percent": "-9.56684999067733495820464007502425850",
+      "display_percent": "-9.57",
+      "formula": "100 * ((end_value / start_value) ** (1 / year_intervals) - 1)",
+      "contains_forecast_endpoint": false
+    },
+    "table_endpoint_calculation": {
+      "start": "2021A",
+      "end": "2028E",
+      "start_value": "79024000000.0",
+      "end_value": "61178404560.0",
+      "year_intervals": 7,
+      "percent": "-3.59048970696247516748754869539343420",
+      "display_percent": "-3.59",
+      "formula": "100 * ((end_value / start_value) ** (1 / year_intervals) - 1)",
+      "contains_forecast_endpoint": true
+    },
+    "evidence": [
+      {
+        "line_number": 4,
+        "quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |"
+      },
+      {
+        "line_number": 6,
+        "quote": "|  0 | Revenue             | 79024000000.0      | 63054000000.0      | 54228000000.0 | 53101000000.0      | 52853000000.0      | 55495650000.0 | 58825389000.0 | 61178404560.0  | -9.6%  |"
+      }
+    ],
+    "limitations": "A narrow deterministic clarification, not general semantic validation. The development cohort informed this rule. No held-out claim."
+  },
+  {
+    "ticker": "INTC",
+    "section": "valuation_overview",
+    "claim_id": "u0c14",
+    "rule": "displayed_revenue_cagr_and_table_extent_clarification",
+    "original_released_text": "Intel's Revenue CAGR is -9.6% for the period shown through 2028E.",
+    "revised_released_text": "The supplied Revenue CAGR cell is -9.6%; the 2021A to 2025A actual endpoints imply -9.57% CAGR. Across the table's 2021A to 2028E endpoints, the implied Revenue CAGR is -3.59%; 2028E is a model forecast.",
+    "original_semantic_verdict": "Not inferred by this rule; table extent may be ambiguous.",
+    "company": "Intel Corporation",
+    "displayed_cell": "-9.6%",
+    "historical_calculation": {
+      "start": "2021A",
+      "end": "2025A",
+      "start_value": "79024000000.0",
+      "end_value": "52853000000.0",
+      "year_intervals": 4,
+      "percent": "-9.56684999067733495820464007502425850",
+      "display_percent": "-9.57",
+      "formula": "100 * ((end_value / start_value) ** (1 / year_intervals) - 1)",
+      "contains_forecast_endpoint": false
+    },
+    "table_endpoint_calculation": {
+      "start": "2021A",
+      "end": "2028E",
+      "start_value": "79024000000.0",
+      "end_value": "61178404560.0",
+      "year_intervals": 7,
+      "percent": "-3.59048970696247516748754869539343420",
+      "display_percent": "-3.59",
+      "formula": "100 * ((end_value / start_value) ** (1 / year_intervals) - 1)",
+      "contains_forecast_endpoint": true
+    },
+    "evidence": [
+      {
+        "line_number": 4,
+        "quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |"
+      },
+      {
+        "line_number": 6,
+        "quote": "|  0 | Revenue             | 79024000000.0      | 63054000000.0      | 54228000000.0 | 53101000000.0      | 52853000000.0      | 55495650000.0 | 58825389000.0 | 61178404560.0  | -9.6%  |"
+      }
+    ],
+    "limitations": "A narrow deterministic clarification, not general semantic validation. The development cohort informed this rule. No held-out claim."
+  }
+]

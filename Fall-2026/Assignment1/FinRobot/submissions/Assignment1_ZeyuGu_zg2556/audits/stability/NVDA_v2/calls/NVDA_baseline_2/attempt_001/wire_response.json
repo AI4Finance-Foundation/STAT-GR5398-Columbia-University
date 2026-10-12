@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EXvgYRxP1k4YcQbFx1exbNrkAV9A6",
+  "object": "chat.completion",
+  "created": 1791755274,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"ratings\":[{\"section\":\"investment_overview\",\"source_unit_id\":23,\"label\":\"hold or increase in position depending on portfolio strategy\",\"source_kind\":\"writer_recommendation\"}],\"targets\":[],\"risks\":[{\"source_unit_id\":1,\"taxonomy\":\"customer_concentration\"},{\"source_unit_id\":2,\"taxonomy\":\"macro_currency\"},{\"source_unit_id\":3,\"taxonomy\":\"technology_execution\"}]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9474,
+    "completion_tokens": 79,
+    "total_tokens": 9553,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_8c02795173"
+}

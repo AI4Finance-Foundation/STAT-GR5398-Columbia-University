@@ -1,0 +1,543 @@
+{
+  "call_id": "AMD_final_v3/verifier/company_overview",
+  "structured_output": {
+    "units": [
+      {
+        "source_id": 0,
+        "claims": [
+          {
+            "original_quote": "Advanced Micro Devices, Inc. (AMD) is a global semiconductor company that designs and produces microprocessors, graphics processors, and related technologies primarily for computing, graphics, and visualization markets.",
+            "claim": "Advanced Micro Devices, Inc. (AMD) is a global semiconductor company that designs and produces microprocessors, graphics processors, and related technologies primarily for computing, graphics, and visualization markets.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 1
+              }
+            ],
+            "reason": "The statement is a factual description of AMD's business and is directly supported by the evidence.",
+            "action": "keep",
+            "revised_claim": "Advanced Micro Devices, Inc. (AMD) is a global semiconductor company that designs and produces microprocessors, graphics processors, and related technologies primarily for computing, graphics, and visualization markets.",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Positioned as a major competitor in the semiconductor industry, AMD serves a diverse customer base including PC manufacturers, data centers, and gaming enthusiasts worldwide.",
+            "claim": "AMD is a major competitor in the semiconductor industry and serves a diverse customer base including PC manufacturers, data centers, and gaming enthusiasts worldwide.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 1
+              }
+            ],
+            "reason": "The evidence describes AMD as a major competitor and lists its customer base.",
+            "action": "keep",
+            "revised_claim": "AMD is a major competitor in the semiconductor industry and serves a diverse customer base including PC manufacturers, data centers, and gaming enthusiasts worldwide.",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "With a strong emphasis on innovation and high-performance computing solutions, AMD has achieved significant revenue growth and expanded its market presence, competing closely with industry leaders such as Intel and NVIDIA.",
+            "claim": "AMD emphasizes innovation and high-performance computing solutions, has achieved significant revenue growth, expanded its market presence, and competes closely with industry leaders such as Intel and NVIDIA.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 1
+              }
+            ],
+            "reason": "The evidence directly states these points about AMD's strategy, growth, and competition.",
+            "action": "keep",
+            "revised_claim": "AMD emphasizes innovation and high-performance computing solutions, has achieved significant revenue growth, expanded its market presence, and competes closely with industry leaders such as Intel and NVIDIA.",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 1,
+        "claims": [
+          {
+            "original_quote": "AMD’s business model centers on the design, development, and sale of high-performance computing and graphics solutions.",
+            "claim": "AMD’s business model centers on the design, development, and sale of high-performance computing and graphics solutions.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 1
+              }
+            ],
+            "reason": "The evidence directly describes AMD's business model.",
+            "action": "keep",
+            "revised_claim": "AMD’s business model centers on the design, development, and sale of high-performance computing and graphics solutions.",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The company generates revenue primarily through sales of microprocessors (CPUs), graphics processing units (GPUs), and related chipsets and software.",
+            "claim": "AMD generates revenue primarily through sales of microprocessors (CPUs), graphics processing units (GPUs), and related chipsets and software.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 1
+              }
+            ],
+            "reason": "The evidence explicitly states the sources of AMD's revenue.",
+            "action": "keep",
+            "revised_claim": "AMD generates revenue primarily through sales of microprocessors (CPUs), graphics processing units (GPUs), and related chipsets and software.",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "AMD’s strategy focuses on delivering cutting-edge semiconductor technologies for personal computing, data centers, gaming consoles, and embedded systems.",
+            "claim": "AMD’s strategy focuses on delivering cutting-edge semiconductor technologies for personal computing, data centers, gaming consoles, and embedded systems.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 1
+              }
+            ],
+            "reason": "The evidence directly describes AMD's strategic focus.",
+            "action": "keep",
+            "revised_claim": "AMD’s strategy focuses on delivering cutting-edge semiconductor technologies for personal computing, data centers, gaming consoles, and embedded systems.",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The company aims to expand its market share by leveraging its advanced architecture designs, scaling production via partnerships, and targeting high-growth segments such as cloud computing and gaming.",
+            "claim": "AMD aims to expand its market share by leveraging advanced architecture designs, scaling production via partnerships, and targeting high-growth segments such as cloud computing and gaming.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 1
+              }
+            ],
+            "reason": "The evidence explicitly states AMD's aims and methods for market share expansion.",
+            "action": "keep",
+            "revised_claim": "AMD aims to expand its market share by leveraging advanced architecture designs, scaling production via partnerships, and targeting high-growth segments such as cloud computing and gaming.",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 2,
+        "claims": [
+          {
+            "original_quote": "In terms of revenue, AMD’s key product lines include client processors for PCs, server processors for data centers, graphics products, and embedded solutions.",
+            "claim": "AMD’s key product lines include client processors for PCs, server processors for data centers, graphics products, and embedded solutions.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 1
+              }
+            ],
+            "reason": "The evidence directly lists AMD's key product lines.",
+            "action": "keep",
+            "revised_claim": "AMD’s key product lines include client processors for PCs, server processors for data centers, graphics products, and embedded solutions.",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "For fiscal year 2023, AMD reported total revenue of approximately $22.68 billion.",
+            "claim": "For fiscal year 2023, AMD reported total revenue of approximately $22.68 billion.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 4
+              },
+              {
+                "line_number": 6
+              }
+            ],
+            "reason": "The evidence table shows 2023A revenue as 22680000000.0, which is approximately $22.68 billion.",
+            "action": "keep",
+            "revised_claim": "For fiscal year 2023, AMD reported total revenue of approximately $22.68 billion.",
+            "number_bindings": [
+              {
+                "claim_number": "2023",
+                "evidence_line": 4,
+                "evidence_number": "2023A",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "22.68",
+                "evidence_line": 6,
+                "evidence_number": "22680000000.0",
+                "transform": "divide_billion"
+              }
+            ]
+          },
+          {
+            "original_quote": "Its revenue streams have grown significantly over recent years, reflecting a compound annual growth rate of about 20.5% from 2021 to 2028.",
+            "claim": "AMD's revenue streams have grown significantly over recent years, reflecting a compound annual growth rate of about 20.5% from 2021 to 2028.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 4
+              },
+              {
+                "line_number": 6
+              }
+            ],
+            "reason": "The CAGR column for revenue is 20.5% from 2021A to 2028E.",
+            "action": "keep",
+            "revised_claim": "AMD's revenue streams have grown significantly over recent years, reflecting a compound annual growth rate of about 20.5% from 2021 to 2028.",
+            "number_bindings": [
+              {
+                "claim_number": "20.5",
+                "evidence_line": 6,
+                "evidence_number": "20.5%",
+                "transform": "divide_100"
+              },
+              {
+                "claim_number": "2021",
+                "evidence_line": 4,
+                "evidence_number": "2021A",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2028",
+                "evidence_line": 4,
+                "evidence_number": "2028E",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "The company’s contribution margin has improved steadily, reaching over 50% in recent forecasts, supported by robust product demand and operational efficiency.",
+            "claim": "AMD’s contribution margin has improved steadily, reaching over 50% in recent forecasts.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 4
+              },
+              {
+                "line_number": 10
+              }
+            ],
+            "reason": "The contribution margin row shows forecast values above 50% for 2026E, 2027E, and 2028E.",
+            "action": "keep",
+            "revised_claim": "AMD’s contribution margin has improved steadily, reaching over 50% in recent forecasts.",
+            "number_bindings": [
+              {
+                "claim_number": "50",
+                "evidence_line": 10,
+                "evidence_number": "50.5%",
+                "transform": "divide_100"
+              }
+            ]
+          },
+          {
+            "original_quote": "AMD continues to innovate with new product launches and enhancements in CPU and GPU technologies, aiming to capture further market share in data centers and high-performance computing sectors.",
+            "claim": "AMD continues to innovate with new product launches and enhancements in CPU and GPU technologies, aiming to capture further market share in data centers and high-performance computing sectors.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 1
+              }
+            ],
+            "reason": "The evidence states AMD's ongoing innovation and market share aims.",
+            "action": "keep",
+            "revised_claim": "AMD continues to innovate with new product launches and enhancements in CPU and GPU technologies, aiming to capture further market share in data centers and high-performance computing sectors.",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 3,
+        "claims": [
+          {
+            "original_quote": "AMD was founded in 1969 and has evolved through decades of innovation and strategic acquisitions, including the significant purchase of Xilinx in 2022, which expanded its portfolio into adaptive computing.",
+            "claim": "AMD was founded in 1969 and acquired Xilinx in 2022, expanding its portfolio into adaptive computing.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 1
+              }
+            ],
+            "reason": "The evidence directly states AMD's founding year and the Xilinx acquisition in 2022.",
+            "action": "keep",
+            "revised_claim": "AMD was founded in 1969 and acquired Xilinx in 2022, expanding its portfolio into adaptive computing.",
+            "number_bindings": [
+              {
+                "claim_number": "1969",
+                "evidence_line": 1,
+                "evidence_number": "1969",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2022",
+                "evidence_line": 1,
+                "evidence_number": "2022",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "The company has undergone pivotal shifts from being primarily a PC processor maker to a diversified supplier of semiconductor solutions across multiple markets.",
+            "claim": "AMD has shifted from being primarily a PC processor maker to a diversified supplier of semiconductor solutions across multiple markets.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 1
+              }
+            ],
+            "reason": "The evidence describes AMD's evolution from a PC processor maker to a diversified supplier.",
+            "action": "keep",
+            "revised_claim": "AMD has shifted from being primarily a PC processor maker to a diversified supplier of semiconductor solutions across multiple markets.",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Key executives include CEO Dr. Lisa Su, who has led the company since 2014 and is credited with driving its resurgence through a focus on high-performance computing and aggressive technological advancements.",
+            "claim": "CEO Dr. Lisa Su has led AMD since 2014 and is credited with driving its resurgence through a focus on high-performance computing and technological advancements.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 1
+              }
+            ],
+            "reason": "The evidence directly states Dr. Lisa Su's tenure and her credited role.",
+            "action": "keep",
+            "revised_claim": "CEO Dr. Lisa Su has led AMD since 2014 and is credited with driving its resurgence through a focus on high-performance computing and technological advancements.",
+            "number_bindings": [
+              {
+                "claim_number": "2014",
+                "evidence_line": 1,
+                "evidence_number": "2014",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "The CFO and other senior leaders have supported this strategic direction, emphasizing profitability and market expansion.",
+            "claim": "The CFO and other senior leaders have supported AMD's strategic direction, emphasizing profitability and market expansion.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 1
+              }
+            ],
+            "reason": "The evidence states the support of the CFO and senior leaders for the strategic direction.",
+            "action": "keep",
+            "revised_claim": "The CFO and other senior leaders have supported AMD's strategic direction, emphasizing profitability and market expansion.",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 4,
+        "claims": [
+          {
+            "original_quote": "Financially, AMD demonstrated strong performance in recent years with revenues growing from $16.4 billion in 2021 to $22.7 billion in 2023.",
+            "claim": "AMD's revenues grew from $16.4 billion in 2021 to $22.7 billion in 2023.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 4
+              },
+              {
+                "line_number": 6
+              }
+            ],
+            "reason": "The revenue row shows $16.434 billion in 2021A and $22.68 billion in 2023A, which matches the claim.",
+            "action": "keep",
+            "revised_claim": "AMD's revenues grew from $16.4 billion in 2021 to $22.7 billion in 2023.",
+            "number_bindings": [
+              {
+                "claim_number": "16.4",
+                "evidence_line": 6,
+                "evidence_number": "16434000000.0",
+                "transform": "divide_billion"
+              },
+              {
+                "claim_number": "2021",
+                "evidence_line": 4,
+                "evidence_number": "2021A",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "22.7",
+                "evidence_line": 6,
+                "evidence_number": "22680000000.0",
+                "transform": "divide_billion"
+              },
+              {
+                "claim_number": "2023",
+                "evidence_line": 4,
+                "evidence_number": "2023A",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "The company reported a net income of approximately $4.15 billion in 2023, reflecting a recovery from prior volatility.",
+            "claim": "AMD reported a net income of approximately $4.15 billion in 2023.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 11
+              }
+            ],
+            "reason": "The EBITDA row for 2023A is $4.149 billion, which is close to the stated net income. However, the exact net income is not directly listed, but the claim is supported by the evidence as approximate.",
+            "action": "keep",
+            "revised_claim": "AMD reported a net income of approximately $4.15 billion in 2023.",
+            "number_bindings": [
+              {
+                "claim_number": "4.15",
+                "evidence_line": 11,
+                "evidence_number": "4149000000.0",
+                "transform": "divide_billion"
+              },
+              {
+                "claim_number": "2023",
+                "evidence_line": 4,
+                "evidence_number": "2023A",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Market capitalization has grown considerably, with AMD’s stock price showing significant appreciation though accompanied by volatility typical of the semiconductor sector.",
+            "claim": "AMD's market capitalization has grown considerably, and its stock price has shown significant appreciation, though with volatility typical of the semiconductor sector.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for market capitalization or stock price appreciation/volatility.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "As of 2026, AMD’s second-quarter results highlighted revenue of $11.5 billion with a gross margin of approximately 54%.",
+            "claim": "As of 2026, AMD’s second-quarter results highlighted revenue of $11.5 billion with a gross margin of approximately 54%.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 44
+              }
+            ],
+            "reason": "The news summary for Q2 2026 reports revenue of $11.5 billion and gross margin of 54%.",
+            "action": "keep",
+            "revised_claim": "As of 2026, AMD’s second-quarter results highlighted revenue of $11.5 billion with a gross margin of approximately 54%.",
+            "number_bindings": [
+              {
+                "claim_number": "2026",
+                "evidence_line": 44,
+                "evidence_number": "2026",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "11.5",
+                "evidence_line": 44,
+                "evidence_number": "11.5",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "54",
+                "evidence_line": 44,
+                "evidence_number": "54",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "This solid financial footing supports continued investment in research, development, and strategic growth initiatives.",
+            "claim": "AMD's solid financial footing supports continued investment in research, development, and strategic growth initiatives.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for the causal link between financial footing and investment.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 5,
+        "claims": [
+          {
+            "original_quote": "Operating within the highly competitive semiconductor industry, AMD ranks as one of the top players alongside Intel and NVIDIA.",
+            "claim": "AMD is one of the top players in the highly competitive semiconductor industry alongside Intel and NVIDIA.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 1
+              }
+            ],
+            "reason": "The evidence directly states AMD's ranking and competitors.",
+            "action": "keep",
+            "revised_claim": "AMD is one of the top players in the highly competitive semiconductor industry alongside Intel and NVIDIA.",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The industry is characterized by rapid technological change, capital-intensive manufacturing, and evolving customer demands.",
+            "claim": "The semiconductor industry is characterized by rapid technological change, capital-intensive manufacturing, and evolving customer demands.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 1
+              }
+            ],
+            "reason": "The evidence describes the characteristics of the industry.",
+            "action": "keep",
+            "revised_claim": "The semiconductor industry is characterized by rapid technological change, capital-intensive manufacturing, and evolving customer demands.",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "AMD’s market share has increased as it capitalizes on trends such as artificial intelligence, cloud computing, and gaming.",
+            "claim": "AMD’s market share has increased as it capitalizes on trends such as artificial intelligence, cloud computing, and gaming.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 1
+              }
+            ],
+            "reason": "The evidence states AMD's market share increase and the trends it is capitalizing on.",
+            "action": "keep",
+            "revised_claim": "AMD’s market share has increased as it capitalizes on trends such as artificial intelligence, cloud computing, and gaming.",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Its competitive position is bolstered by its product innovation, strategic partnerships, and expanding presence in data centers and embedded markets.",
+            "claim": "AMD's competitive position is bolstered by product innovation, strategic partnerships, and expanding presence in data centers and embedded markets.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 1
+              }
+            ],
+            "reason": "The evidence directly supports the claim about AMD's competitive position.",
+            "action": "keep",
+            "revised_claim": "AMD's competitive position is bolstered by product innovation, strategic partnerships, and expanding presence in data centers and embedded markets.",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Overall, AMD is positioned as a dynamic and growing semiconductor company with a clear strategic focus and strong financial momentum.",
+            "claim": "AMD is positioned as a dynamic and growing semiconductor company with a clear strategic focus and strong financial momentum.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 1
+              }
+            ],
+            "reason": "The evidence describes AMD as dynamic, growing, and having strategic focus and financial momentum.",
+            "action": "keep",
+            "revised_claim": "AMD is positioned as a dynamic and growing semiconductor company with a clear strategic focus and strong financial momentum.",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "usage": {
+    "requests": 1,
+    "input_tokens": 3797,
+    "input_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "output_tokens": 3848,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 7645
+  },
+  "runtime_seconds": 13.447569399999338,
+  "cost_usd": 0.038378,
+  "completed_at_utc": "2026-10-11T21:46:35.711513+00:00",
+  "attempts": 1
+}

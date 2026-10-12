@@ -1,0 +1,794 @@
+{
+  "call_id": "INTC_final_reasoning_v8_1/verifier/major_takeaways",
+  "structured_output": {
+    "units": [
+      {
+        "source_id": 0,
+        "claims": [
+          {
+            "original_quote": "Revenue Growth: Intel's revenue has experienced a significant decline from $79.0 billion in 2021 to $53.1 billion in 2024,",
+            "claim": "Intel's revenue declined from $79.0 billion in 2021 to $53.1 billion in 2024.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 4
+              },
+              {
+                "line_number": 6
+              }
+            ],
+            "reason": "The table reports revenue of 79024000000.0 in 2021A and 53101000000.0 in 2024A.",
+            "action": "correct",
+            "revised_claim": "Intel revenue was 79024000000.0 in 2021A and 53101000000.0 in 2024A.",
+            "number_bindings": [
+              {
+                "claim_number": "79024000000.0",
+                "evidence_line": 6,
+                "evidence_number": "79024000000.0",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2021",
+                "evidence_line": 4,
+                "evidence_number": "2021A",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "53101000000.0",
+                "evidence_line": 6,
+                "evidence_number": "53101000000.0",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2024",
+                "evidence_line": 4,
+                "evidence_number": "2024A",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "reflecting a compounded annual decline of -9.6%.",
+            "claim": "Intel's revenue decline from 2021 to 2024 reflects a compounded annual decline of -9.6%.",
+            "classification": "Contradicted",
+            "evidence": [
+              {
+                "line_number": 4
+              },
+              {
+                "line_number": 6
+              }
+            ],
+            "reason": "The -9.6% CAGR shown in the table is not established as a 2021-to-2024 CAGR, and the 2021A and 2024A revenue endpoints do not support that specific horizon claim.",
+            "action": "correct",
+            "revised_claim": "The Revenue row shows a CAGR of -9.6%.",
+            "number_bindings": [
+              {
+                "claim_number": "-9.6%",
+                "evidence_line": 6,
+                "evidence_number": "-9.6%",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "This contraction is primarily driven by challenging market conditions,",
+            "claim": "Intel's revenue contraction is primarily driven by challenging market conditions.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence provides revenue figures but no stated cause related to market conditions.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "competitive pressures,",
+            "claim": "Intel's revenue contraction is primarily driven by competitive pressures.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not state competitive pressures as a cause of revenue contraction.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "and shifts in product demand,",
+            "claim": "Intel's revenue contraction is primarily driven by shifts in product demand.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not state product-demand shifts as a cause of revenue contraction.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "which have led to a shrinking top line for several years.",
+            "claim": "Challenging market conditions, competitive pressures, and shifts in product demand have led to Intel's shrinking top line for several years.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The causal linkage and the cited causes are not provided in the evidence.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The modest recovery projected starting 2026 with growth rates of 4-6%",
+            "claim": "Intel has a projected revenue recovery starting in 2026 with growth rates of 4-6%.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 4
+              },
+              {
+                "line_number": 14
+              }
+            ],
+            "reason": "The Revenue Growth row shows forecast growth of 5.0% in 2026E, 6.0% in 2027E, and 4.0% in 2028E.",
+            "action": "correct",
+            "revised_claim": "Intel forecast Revenue Growth is 5.0% in 2026E, 6.0% in 2027E, and 4.0% in 2028E.",
+            "number_bindings": [
+              {
+                "claim_number": "5.0%",
+                "evidence_line": 14,
+                "evidence_number": "5.0%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2026",
+                "evidence_line": 4,
+                "evidence_number": "2026E",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "6.0%",
+                "evidence_line": 14,
+                "evidence_number": "6.0%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2027",
+                "evidence_line": 4,
+                "evidence_number": "2027E",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "4.0%",
+                "evidence_line": 14,
+                "evidence_number": "4.0%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2028",
+                "evidence_line": 4,
+                "evidence_number": "2028E",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "suggests some stabilization",
+            "claim": "Intel's projected 2026-2028 revenue growth suggests some stabilization.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "Stabilization is an interpretive conclusion not directly stated in the evidence.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "but not a robust rebound.",
+            "claim": "Intel's projected 2026-2028 revenue growth does not indicate a robust rebound.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "This evaluative characterization is not directly established by the supplied evidence.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The prolonged revenue decline",
+            "claim": "Intel experienced a prolonged revenue decline.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 4
+              },
+              {
+                "line_number": 6
+              },
+              {
+                "line_number": 14
+              }
+            ],
+            "reason": "Revenue declines are shown from 2021A through 2025A, with negative Revenue Growth in 2022A, 2023A, 2024A, and 2025A.",
+            "action": "correct",
+            "revised_claim": "Intel revenue declined from 79024000000.0 in 2021A to 52853000000.0 in 2025A.",
+            "number_bindings": [
+              {
+                "claim_number": "79024000000.0",
+                "evidence_line": 6,
+                "evidence_number": "79024000000.0",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2021",
+                "evidence_line": 4,
+                "evidence_number": "2021A",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "52853000000.0",
+                "evidence_line": 6,
+                "evidence_number": "52853000000.0",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2025",
+                "evidence_line": 4,
+                "evidence_number": "2025A",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "undermines Intel's market position relative to peers who have demonstrated growth,",
+            "claim": "Intel's prolonged revenue decline undermines its market position relative to peers who have demonstrated growth.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence does not provide peer revenue growth data or Intel market-position evidence.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "signaling potential structural issues in competitiveness and market share retention.",
+            "claim": "Intel's prolonged revenue decline signals potential structural issues in competitiveness and market share retention.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence does not establish competitiveness issues or market-share retention effects.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 1,
+        "claims": [
+          {
+            "original_quote": "Gross Profit Margin: Intel's contribution margin has compressed sharply from 55.4% in 2021 to 32.7% in 2024,",
+            "claim": "Intel's contribution margin declined from 55.4% in 2021 to 32.7% in 2024.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 4
+              },
+              {
+                "line_number": 10
+              }
+            ],
+            "reason": "The Contribution Margin row reports 55.4% in 2021A and 32.7% in 2024A.",
+            "action": "correct",
+            "revised_claim": "Intel Contribution Margin was 55.4% in 2021A and 32.7% in 2024A.",
+            "number_bindings": [
+              {
+                "claim_number": "55.4%",
+                "evidence_line": 10,
+                "evidence_number": "55.4%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2021",
+                "evidence_line": 4,
+                "evidence_number": "2021A",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "32.7%",
+                "evidence_line": 10,
+                "evidence_number": "32.7%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2024",
+                "evidence_line": 4,
+                "evidence_number": "2024A",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "indicating considerable margin erosion.",
+            "claim": "Intel's contribution margin decline indicates considerable margin erosion.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The numerical decline is shown, but the qualitative interpretation 'considerable margin erosion' is not explicitly stated in the evidence.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Factors likely include pricing pressure,",
+            "claim": "Intel's contribution margin compression likely included pricing pressure.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No cause of contribution-margin change is stated in the evidence.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "rising cost of operations,",
+            "claim": "Intel's contribution margin compression likely included rising cost of operations.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "Although cost of operations values are reported, the evidence does not state that this caused contribution-margin compression.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "and possibly increased investments or inefficiencies.",
+            "claim": "Intel's contribution margin compression likely included increased investments or inefficiencies.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence does not discuss investments or inefficiencies as causes.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "This margin contraction reflects weakened pricing power and operational challenges,",
+            "claim": "Intel's margin contraction reflects weakened pricing power and operational challenges.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence reports margins but does not establish pricing power or operational challenges as explanations.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "eroding competitive moats.",
+            "claim": "Intel's margin contraction is eroding its competitive moat.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence contains no direct statement about competitive moats.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Although an incremental margin improvement is observed post-2024 (up to 37.8% by 2028),",
+            "claim": "Intel's contribution margin improves after 2024 and reaches 37.8% by 2028.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 4
+              },
+              {
+                "line_number": 10
+              }
+            ],
+            "reason": "Contribution Margin rises from 32.7% in 2024A to 34.8% in 2025A, 35.8% in 2026E, 36.8% in 2027E, and 37.8% in 2028E.",
+            "action": "correct",
+            "revised_claim": "Intel forecast Contribution Margin is 37.8% in 2028E, up from 32.7% in 2024A.",
+            "number_bindings": [
+              {
+                "claim_number": "37.8%",
+                "evidence_line": 10,
+                "evidence_number": "37.8%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2028",
+                "evidence_line": 4,
+                "evidence_number": "2028E",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "32.7%",
+                "evidence_line": 10,
+                "evidence_number": "32.7%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2024",
+                "evidence_line": 4,
+                "evidence_number": "2024A",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "it remains well below historical levels,",
+            "claim": "Intel's 2028 contribution margin remains below its historical 2021 level.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 4
+              },
+              {
+                "line_number": 10
+              }
+            ],
+            "reason": "Contribution Margin is 37.8% in 2028E versus 55.4% in 2021A.",
+            "action": "correct",
+            "revised_claim": "Intel forecast Contribution Margin is 37.8% in 2028E versus 55.4% in 2021A.",
+            "number_bindings": [
+              {
+                "claim_number": "37.8%",
+                "evidence_line": 10,
+                "evidence_number": "37.8%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2028",
+                "evidence_line": 4,
+                "evidence_number": "2028E",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "55.4%",
+                "evidence_line": 10,
+                "evidence_number": "55.4%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2021",
+                "evidence_line": 4,
+                "evidence_number": "2021A",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "signaling a lower-quality margin profile and diminished business leverage compared to prior periods.",
+            "claim": "Intel's post-2024 contribution-margin level signals a lower-quality margin profile and diminished business leverage versus prior periods.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "These qualitative assessments are not directly supplied by the evidence.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 2,
+        "claims": [
+          {
+            "original_quote": "SG&A Expense Margin: The SG&A margin increased from 8.3% in 2021 to a peak of 11.1% in 2022, before gradually declining to 7.2% by 2028.",
+            "claim": "Intel's SG&A margin increased from 8.3% in 2021 to a peak of 11.1% in 2022 before declining to 7.2% by 2028.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 4
+              },
+              {
+                "line_number": 13
+              }
+            ],
+            "reason": "The SG&A Margin row shows 8.3% in 2021A, 11.1% in 2022A, and 7.2% in 2028E, and 11.1% is the highest value shown in that row.",
+            "action": "correct",
+            "revised_claim": "Intel SG&A Margin was 8.3% in 2021A, 11.1% in 2022A, and 7.2% in 2028E.",
+            "number_bindings": [
+              {
+                "claim_number": "8.3%",
+                "evidence_line": 13,
+                "evidence_number": "8.3%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2021",
+                "evidence_line": 4,
+                "evidence_number": "2021A",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "11.1%",
+                "evidence_line": 13,
+                "evidence_number": "11.1%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2022",
+                "evidence_line": 4,
+                "evidence_number": "2022A",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "7.2%",
+                "evidence_line": 13,
+                "evidence_number": "7.2%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2028",
+                "evidence_line": 4,
+                "evidence_number": "2028E",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "This trend suggests management's efforts to improve operational efficiency and scalability through cost control measures.",
+            "claim": "The SG&A margin trend suggests Intel management is improving operational efficiency and scalability through cost control measures.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence provides SG&A margin values but no attribution to management actions, efficiency, scalability, or cost controls.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The declining SG&A margin post-2022",
+            "claim": "Intel's SG&A margin declines after 2022.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 4
+              },
+              {
+                "line_number": 13
+              }
+            ],
+            "reason": "SG&A Margin declines from 11.1% in 2022A to 10.4% in 2023A and 2024A, 8.7% in 2025A, 8.2% in 2026E, 7.7% in 2027E, and 7.2% in 2028E.",
+            "action": "keep",
+            "revised_claim": "Intel's SG&A margin declines after 2022.",
+            "number_bindings": [
+              {
+                "claim_number": "2022",
+                "evidence_line": 4,
+                "evidence_number": "2022A",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "indicates better operating leverage as revenue stabilizes,",
+            "claim": "Intel's declining SG&A margin after 2022 indicates better operating leverage as revenue stabilizes.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence does not state operating leverage improvement or revenue stabilization as conclusions from SG&A margin changes.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "reflecting disciplined expense management and potential for improved profitability leverage.",
+            "claim": "Intel's declining SG&A margin after 2022 reflects disciplined expense management and potential for improved profitability leverage.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence does not attribute SG&A-margin changes to disciplined expense management or profitability leverage.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "This operational focus on expense reduction is a positive sign of management execution amid revenue headwinds.",
+            "claim": "Intel has an operational focus on expense reduction, and that is a positive sign of management execution amid revenue headwinds.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence does not discuss management execution, operational focus, or revenue headwinds in those terms.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 3,
+        "claims": [
+          {
+            "original_quote": "EBITDA Margin Stability: Intel's EBITDA margin has exhibited pronounced volatility, plunging from 42.9% in 2021 to a low of 2.3% in 2024 before recovering to 30.6% by 2028.",
+            "claim": "Intel's EBITDA margin fell from 42.9% in 2021 to a low of 2.3% in 2024 and then recovered to 30.6% by 2028.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 4
+              },
+              {
+                "line_number": 12
+              }
+            ],
+            "reason": "The EBITDA Margin row shows 42.9% in 2021A, 2.3% in 2024A, and 30.6% in 2028E, with 2.3% the lowest value shown.",
+            "action": "correct",
+            "revised_claim": "Intel EBITDA Margin was 42.9% in 2021A, 2.3% in 2024A, and 30.6% in 2028E.",
+            "number_bindings": [
+              {
+                "claim_number": "42.9%",
+                "evidence_line": 12,
+                "evidence_number": "42.9%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2021",
+                "evidence_line": 4,
+                "evidence_number": "2021A",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2.3%",
+                "evidence_line": 12,
+                "evidence_number": "2.3%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2024",
+                "evidence_line": 4,
+                "evidence_number": "2024A",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "30.6%",
+                "evidence_line": 12,
+                "evidence_number": "30.6%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2028",
+                "evidence_line": 4,
+                "evidence_number": "2028E",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Compared to peers such as AMD and NVIDIA, Intel's margin contraction is more severe,",
+            "claim": "Intel's EBITDA margin contraction is more severe than AMD's and NVIDIA's.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence provides peer EBITDA levels, not peer EBITDA margins or peer margin contraction.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "highlighting challenges in profitability quality and competitive positioning.",
+            "claim": "Intel's EBITDA margin contraction highlights challenges in profitability quality and competitive positioning.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence does not directly establish profitability-quality or competitive-positioning challenges.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The substantial margin compression",
+            "claim": "Intel experienced substantial EBITDA margin compression.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "While EBITDA margin declined, the qualitative label 'substantial' is not directly stated in the evidence.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "and volatile EBITDA profile",
+            "claim": "Intel has a volatile EBITDA profile.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence reports changing EBITDA values and margins, but 'volatile' is an interpretive characterization not explicitly stated.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "raise concerns about sustainable profitability and valuation risk.",
+            "claim": "Intel's EBITDA margin compression and EBITDA profile raise concerns about sustainable profitability and valuation risk.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "This is an evaluative conclusion not directly supplied by the evidence.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The elevated EV/EBITDA multiples relative to peers in recent years",
+            "claim": "Intel had elevated EV/EBITDA multiples relative to peers in recent years.",
+            "classification": "Contradicted",
+            "evidence": [
+              {
+                "line_number": 30
+              },
+              {
+                "line_number": 32
+              },
+              {
+                "line_number": 33
+              },
+              {
+                "line_number": 34
+              },
+              {
+                "line_number": 35
+              },
+              {
+                "line_number": 36
+              }
+            ],
+            "reason": "Intel's EV/EBITDA is not consistently elevated relative to peers: in 2023 and 2025 it is below both AMD and NVDA, while in 2024 it is above both.",
+            "action": "correct",
+            "revised_claim": "Intel EV/EBITDA was 106.938 in 2024, versus 38.2717 for AMD and 43.4522 for NVDA.",
+            "number_bindings": [
+              {
+                "claim_number": "106.938",
+                "evidence_line": 35,
+                "evidence_number": "106.938",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2024",
+                "evidence_line": 30,
+                "evidence_number": "2024",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "38.2717",
+                "evidence_line": 35,
+                "evidence_number": "38.2717",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "43.4522",
+                "evidence_line": 35,
+                "evidence_number": "43.4522",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "reflect market skepticism.",
+            "claim": "Intel's elevated EV/EBITDA multiples reflect market skepticism.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence reports valuation multiples but does not state investor skepticism as the reason.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "For investors, this signals a transitional phase",
+            "claim": "Intel is in a transitional phase.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence does not directly characterize Intel as being in a transitional phase.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "requiring close monitoring of margin recovery and competitive dynamics to assess investment attractiveness.",
+            "claim": "Investors need to closely monitor Intel's margin recovery and competitive dynamics to assess investment attractiveness.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "This is investment advice or interpretation, not a fact directly established by the evidence.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "usage": {
+    "requests": 1,
+    "input_tokens": 4126,
+    "input_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "output_tokens": 6316,
+    "output_tokens_details": {
+      "reasoning_tokens": 1400
+    },
+    "total_tokens": 10442
+  },
+  "runtime_seconds": 73.87547479999921,
+  "cost_usd": 0.105055,
+  "completed_at_utc": "2026-10-12T05:40:03.285712+00:00",
+  "attempts": 1
+}

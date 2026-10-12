@@ -1,0 +1,218 @@
+[
+  {
+    "section": "risks",
+    "prior_unit": {
+      "unit_id": 3,
+      "paragraph_id": 3,
+      "start": 364,
+      "end": 423,
+      "text": "The revenue row shows a 68.3% CAGR for 2022A through 2029E."
+    },
+    "prior_atoms": [
+      {
+        "claim_id": "adjudicated.risks.p3.u3.c0",
+        "claim": "The revenue table displays a generic CAGR of68.3%.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "fact_key": "nvda|the revenue table displays a generic cagr of68.3%.",
+        "reason": "The generic CAGR cell is literally68.3%, but it has no right to redefine the endpoint interval.",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4,
+            "quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+          },
+          {
+            "line_start": 6,
+            "line_end": 6,
+            "quote": "|  0 | Revenue             | 26914000000.0     | 26974000000.0      | 60922000000.0     | 130497000000.0    | 215938000000.0    | 226734900000.0 | 240338994000.0 | 249952553760.0  | 68.3%  |"
+          }
+        ]
+      },
+      {
+        "claim_id": "adjudicated.risks.p3.u3.c1",
+        "claim": "NVIDIA revenue CAGR from2022A to2029E is68.3%.",
+        "claim_type": "quantitative",
+        "classification": "Contradicted",
+        "numeric_status": "incorrect",
+        "fact_key": "nvda|nvidia revenue cagr from2022a to2029e is68.3%.",
+        "reason": "(249952553760/26914000000)^(1/7)-1 =37.4892%, not68.3%; the latter matches the historical2022A–2026A interval.",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4,
+            "quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+          },
+          {
+            "line_start": 6,
+            "line_end": 6,
+            "quote": "|  0 | Revenue             | 26914000000.0     | 26974000000.0      | 60922000000.0     | 130497000000.0    | 215938000000.0    | 226734900000.0 | 240338994000.0 | 249952553760.0  | 68.3%  |"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "section": "competitor_analysis",
+    "prior_unit": {
+      "unit_id": 55,
+      "paragraph_id": 55,
+      "start": 5332,
+      "end": 5390,
+      "text": "NVIDIA's revenue CAGR is 68.3% in the table through 2029E."
+    },
+    "prior_atoms": [
+      {
+        "claim_id": "adjudicated.competitor_analysis.p55.u55.c0",
+        "claim": "The revenue table displays a generic CAGR of68.3%.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "fact_key": "nvda|the revenue table displays a generic cagr of68.3%.",
+        "reason": "The generic CAGR cell is literally68.3%, but it has no right to redefine the endpoint interval.",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4,
+            "quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+          },
+          {
+            "line_start": 6,
+            "line_end": 6,
+            "quote": "|  0 | Revenue             | 26914000000.0     | 26974000000.0      | 60922000000.0     | 130497000000.0    | 215938000000.0    | 226734900000.0 | 240338994000.0 | 249952553760.0  | 68.3%  |"
+          }
+        ]
+      },
+      {
+        "claim_id": "adjudicated.competitor_analysis.p55.u55.c1",
+        "claim": "NVIDIA's revenue CAGR is 68.3% in the table through 2029E.",
+        "claim_type": "quantitative",
+        "classification": "Unsupported",
+        "numeric_status": "unverifiable",
+        "fact_key": "nvda|nvidia's revenue cagr is 68.3% in the table through 2029e.",
+        "reason": "The phrase in the table through 2029E can modify the table extent. It does not explicitly state a CAGR start/end interval. The audit inserts from 2022A to 2029E. Unsupported is a conservative treatment of the unresolved financial interval, not a conclusion that the literal displayed cell or table extent is false. Do not create a second interval atom that the sentence does not assert. Any already-supported literal table-cell atom remains separate; do not automatically promote the ambiguous financial interpretation to Supported.",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4,
+            "quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+          },
+          {
+            "line_start": 6,
+            "line_end": 6,
+            "quote": "|  0 | Revenue             | 26914000000.0     | 26974000000.0      | 60922000000.0     | 130497000000.0    | 215938000000.0    | 226734900000.0 | 240338994000.0 | 249952553760.0  | 68.3%  |"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "section": "major_takeaways",
+    "prior_unit": {
+      "unit_id": 1,
+      "paragraph_id": 1,
+      "start": 122,
+      "end": 188,
+      "text": "NVIDIA revenue CAGR is 68.3% in the table spanning 2022A to 2029E."
+    },
+    "prior_atoms": [
+      {
+        "claim_id": "adjudicated.major_takeaways.p1.u1.c0",
+        "claim": "The revenue table displays a generic CAGR of68.3%.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "fact_key": "nvda|the revenue table displays a generic cagr of68.3%.",
+        "reason": "The generic CAGR cell is literally68.3%, but it has no right to redefine the endpoint interval.",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4,
+            "quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+          },
+          {
+            "line_start": 6,
+            "line_end": 6,
+            "quote": "|  0 | Revenue             | 26914000000.0     | 26974000000.0      | 60922000000.0     | 130497000000.0    | 215938000000.0    | 226734900000.0 | 240338994000.0 | 249952553760.0  | 68.3%  |"
+          }
+        ]
+      },
+      {
+        "claim_id": "adjudicated.major_takeaways.p1.u1.c1",
+        "claim": "NVIDIA revenue CAGR is 68.3% in the table spanning 2022A to 2029E.",
+        "claim_type": "quantitative",
+        "classification": "Unsupported",
+        "numeric_status": "unverifiable",
+        "fact_key": "nvda|nvidia revenue cagr is 68.3% in the table spanning 2022a to 2029e.",
+        "reason": "Spanning 2022A to 2029E grammatically modifies the table. The original reports the displayed CAGR cell and table span; it does not unambiguously assign that entire span to the CAGR. Unsupported is a conservative treatment of the unresolved financial interval, not a conclusion that the literal displayed cell or table extent is false. Do not create a second interval atom that the sentence does not assert. Any already-supported literal table-cell atom remains separate; do not automatically promote the ambiguous financial interpretation to Supported.",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4,
+            "quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+          },
+          {
+            "line_start": 6,
+            "line_end": 6,
+            "quote": "|  0 | Revenue             | 26914000000.0     | 26974000000.0      | 60922000000.0     | 130497000000.0    | 215938000000.0    | 226734900000.0 | 240338994000.0 | 249952553760.0  | 68.3%  |"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "section": "news_summary",
+    "prior_unit": {
+      "unit_id": 19,
+      "paragraph_id": 19,
+      "start": 2284,
+      "end": 2346,
+      "text": "The revenue table shows a CAGR of 68.3% across 2022A to 2029E."
+    },
+    "prior_atoms": [
+      {
+        "claim_id": "adjudicated.news_summary.p19.u19.c0",
+        "claim": "The revenue table displays a generic CAGR of68.3%.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "fact_key": "nvda|the revenue table displays a generic cagr of68.3%.",
+        "reason": "The generic CAGR cell is literally68.3%, but it has no right to redefine the endpoint interval.",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4,
+            "quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+          },
+          {
+            "line_start": 6,
+            "line_end": 6,
+            "quote": "|  0 | Revenue             | 26914000000.0     | 26974000000.0      | 60922000000.0     | 130497000000.0    | 215938000000.0    | 226734900000.0 | 240338994000.0 | 249952553760.0  | 68.3%  |"
+          }
+        ]
+      },
+      {
+        "claim_id": "adjudicated.news_summary.p19.u19.c1",
+        "claim": "NVIDIA revenue CAGR from2022A to2029E is68.3%.",
+        "claim_type": "quantitative",
+        "classification": "Contradicted",
+        "numeric_status": "incorrect",
+        "fact_key": "nvda|nvidia revenue cagr from2022a to2029e is68.3%.",
+        "reason": "(249952553760/26914000000)^(1/7)-1 =37.4892%, not68.3%; the latter matches the historical2022A–2026A interval.",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4,
+            "quote": "|    | metrics             | 2022A             | 2023A              | 2024A             | 2025A             | 2026A             | 2027E          | 2028E          | 2029E           | CAGR   |"
+          },
+          {
+            "line_start": 6,
+            "line_end": 6,
+            "quote": "|  0 | Revenue             | 26914000000.0     | 26974000000.0      | 60922000000.0     | 130497000000.0    | 215938000000.0    | 226734900000.0 | 240338994000.0 | 249952553760.0  | 68.3%  |"
+          }
+        ]
+      }
+    ]
+  }
+]

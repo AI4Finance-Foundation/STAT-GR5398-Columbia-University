@@ -1,0 +1,1573 @@
+{
+  "original_text": "Revenue Growth: Intel's revenue has experienced a significant decline from $79.0 billion in 2021 to $53.1 billion in 2024, reflecting a compounded annual decline of -9.6%. This contraction is primarily driven by challenging market conditions, competitive pressures, and shifts in product demand, which have led to a shrinking top line for several years. The modest recovery projected starting 2026 with growth rates of 4-6% suggests some stabilization but not a robust rebound. The prolonged revenue decline undermines Intel's market position relative to peers who have demonstrated growth, signaling potential structural issues in competitiveness and market share retention.\n\nGross Profit Margin: Intel's contribution margin has compressed sharply from 55.4% in 2021 to 32.7% in 2024, indicating considerable margin erosion. Factors likely include pricing pressure, rising cost of operations, and possibly increased investments or inefficiencies. This margin contraction reflects weakened pricing power and operational challenges, eroding competitive moats. Although an incremental margin improvement is observed post-2024 (up to 37.8% by 2028), it remains well below historical levels, signaling a lower-quality margin profile and diminished business leverage compared to prior periods.\n\nSG&A Expense Margin: The SG&A margin increased from 8.3% in 2021 to a peak of 11.1% in 2022, before gradually declining to 7.2% by 2028. This trend suggests management's efforts to improve operational efficiency and scalability through cost control measures. The declining SG&A margin post-2022 indicates better operating leverage as revenue stabilizes, reflecting disciplined expense management and potential for improved profitability leverage. This operational focus on expense reduction is a positive sign of management execution amid revenue headwinds.\n\nEBITDA Margin Stability: Intel's EBITDA margin has exhibited pronounced volatility, plunging from 42.9% in 2021 to a low of 2.3% in 2024 before recovering to 30.6% by 2028. Compared to peers such as AMD and NVIDIA, Intel's margin contraction is more severe, highlighting challenges in profitability quality and competitive positioning. The substantial margin compression and volatile EBITDA profile raise concerns about sustainable profitability and valuation risk. The elevated EV/EBITDA multiples relative to peers in recent years reflect market skepticism. For investors, this signals a transitional phase requiring close monitoring of margin recovery and competitive dynamics to assess investment attractiveness.",
+  "revised_text": "[UNVERIFIED - deterministic evidence/number check failed] Intel's revenue has experienced a significant decline from $79.0 billion in 2021 to $53.1 billion in 2024\n\n[UNVERIFIED - deterministic evidence/number check failed] reflecting a compounded annual decline of -9.6%\n\n[UNVERIFIED - evidence not supplied] This contraction is primarily driven by challenging market conditions, competitive pressures, and shifts in product demand, which have led to a shrinking top line for several years.\n\n[UNVERIFIED - deterministic evidence/number check failed] The modest recovery projected starting 2026 with growth rates of 4-6% suggests some stabilization but not a robust rebound.\n\n[UNVERIFIED - evidence not supplied] The prolonged revenue decline undermines Intel's market position relative to peers who have demonstrated growth, signaling potential structural issues in competitiveness and market share retention.\n\n[UNVERIFIED - deterministic evidence/number check failed] Intel's contribution margin has compressed sharply from 55.4% in 2021 to 32.7% in 2024, indicating considerable margin erosion.\n\n[UNVERIFIED - evidence not supplied] Factors likely include pricing pressure, rising cost of operations, and possibly increased investments or inefficiencies.\n\n[UNVERIFIED - evidence not supplied] This margin contraction reflects weakened pricing power and operational challenges, eroding competitive moats.\n\n[UNVERIFIED - deterministic evidence/number check failed] Although an incremental margin improvement is observed post-2024 (up to 37.8% by 2028), it remains well below historical levels, signaling a lower-quality margin profile and diminished business leverage compared to prior periods.\n\n[UNVERIFIED - deterministic evidence/number check failed] The SG&A margin increased from 8.3% in 2021 to a peak of 11.1% in 2022, before gradually declining to 7.2% by 2028.\n\n[UNVERIFIED - evidence not supplied] This trend suggests management's efforts to improve operational efficiency and scalability through cost control measures.\n\n[UNVERIFIED - evidence not supplied] The declining SG&A margin post-2022 indicates better operating leverage as revenue stabilizes, reflecting disciplined expense management and potential for improved profitability leverage.\n\n[UNVERIFIED - evidence not supplied] This operational focus on expense reduction is a positive sign of management execution amid revenue headwinds.\n\n[UNVERIFIED - deterministic evidence/number check failed] Intel's EBITDA margin has exhibited pronounced volatility, plunging from 42.9% in 2021 to a low of 2.3% in 2024 before recovering to 30.6% by 2028.\n\n[UNVERIFIED - evidence not supplied] Compared to peers such as AMD and NVIDIA, Intel's margin contraction is more severe, highlighting challenges in profitability quality and competitive positioning.\n\n[UNVERIFIED - evidence not supplied] The substantial margin compression and volatile EBITDA profile raise concerns about sustainable profitability and valuation risk.\n\n[UNVERIFIED - evidence not supplied] The elevated EV/EBITDA multiples relative to peers in recent years reflect market skepticism.\n\n[UNVERIFIED - evidence not supplied] For investors, this signals a transitional phase requiring close monitoring of margin recovery and competitive dynamics to assess investment attractiveness.",
+  "claims": [
+    {
+      "claim_id": "u0c0",
+      "source_id": 0,
+      "source_start": 16,
+      "source_end": 121,
+      "source_quote_occurrences": 1,
+      "original_quote": "Intel's revenue has experienced a significant decline from $79.0 billion in 2021 to $53.1 billion in 2024",
+      "claim": "Intel's revenue declined from $79.0 billion in 2021 to $53.1 billion in 2024.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 6,
+          "quote": "|  0 | Revenue             | 79024000000.0      | 63054000000.0      | 54228000000.0 | 53101000000.0      | 52853000000.0      | 55495650000.0 | 58825389000.0 | 61178404560.0  | -9.6%  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The revenue values for 2021 and 2024 are directly provided in the table.",
+      "action": "keep",
+      "revised_claim": "Intel's revenue declined from $79.0 billion in 2021 to $53.1 billion in 2024.",
+      "number_bindings": [
+        {
+          "claim_number": "79.0",
+          "evidence_line": 6,
+          "evidence_number": "79024000000.0",
+          "transform": "divide_billion"
+        },
+        {
+          "claim_number": "2021",
+          "evidence_line": 4,
+          "evidence_number": "2021A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "53.1",
+          "evidence_line": 6,
+          "evidence_number": "53101000000.0",
+          "transform": "divide_billion"
+        },
+        {
+          "claim_number": "2024",
+          "evidence_line": 4,
+          "evidence_number": "2024A",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "79.0",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2021",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "53.1",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2024",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2021:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2024:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Intel's revenue has experienced a significant decline from $79.0 billion in 2021 to $53.1 billion in 2024",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u0c1",
+      "source_id": 0,
+      "source_start": 123,
+      "source_end": 170,
+      "source_quote_occurrences": 1,
+      "original_quote": "reflecting a compounded annual decline of -9.6%",
+      "claim": "This revenue decline reflects a compounded annual decline of -9.6%.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 6,
+          "quote": "|  0 | Revenue             | 79024000000.0      | 63054000000.0      | 54228000000.0 | 53101000000.0      | 52853000000.0      | 55495650000.0 | 58825389000.0 | 61178404560.0  | -9.6%  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The CAGR column for revenue shows -9.6%.",
+      "action": "keep",
+      "revised_claim": "This revenue decline reflects a compounded annual decline of -9.6%.",
+      "number_bindings": [
+        {
+          "claim_number": "-9.6",
+          "evidence_line": 6,
+          "evidence_number": "-9.6%",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "-9.6%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:-9.6%:missing_binding"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] reflecting a compounded annual decline of -9.6%",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u0c2",
+      "source_id": 0,
+      "source_start": 172,
+      "source_end": 353,
+      "source_quote_occurrences": 1,
+      "original_quote": "This contraction is primarily driven by challenging market conditions, competitive pressures, and shifts in product demand, which have led to a shrinking top line for several years.",
+      "claim": "This contraction is primarily driven by challenging market conditions, competitive pressures, and shifts in product demand, which have led to a shrinking top line for several years.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for the causes of the revenue contraction.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] This contraction is primarily driven by challenging market conditions, competitive pressures, and shifts in product demand, which have led to a shrinking top line for several years.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u0c3",
+      "source_id": 0,
+      "source_start": 354,
+      "source_end": 477,
+      "source_quote_occurrences": 1,
+      "original_quote": "The modest recovery projected starting 2026 with growth rates of 4-6% suggests some stabilization but not a robust rebound.",
+      "claim": "A modest recovery is projected for Intel starting in 2026 with growth rates of 4-6%.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 14,
+          "quote": "|  8 | Revenue Growth      | nan                | -20.2%             | -14.0%        | -2.1%              | -0.5%              | 5.0%          | 6.0%          | 4.0%           | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The revenue growth row shows 5.0% in 2026, 6.0% in 2027, and 4.0% in 2028.",
+      "action": "keep",
+      "revised_claim": "A modest recovery is projected for Intel starting in 2026 with growth rates of 4-6%.",
+      "number_bindings": [
+        {
+          "claim_number": "2026",
+          "evidence_line": 4,
+          "evidence_number": "2026E",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "4",
+          "evidence_line": 14,
+          "evidence_number": "4.0%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "6",
+          "evidence_line": 14,
+          "evidence_number": "6.0%",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "4",
+          "passed": false,
+          "reason": "identity_changes_percent_unit",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "6%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2026:number_not_in_cited_evidence_line",
+        "numeric_check_failed:4:identity_changes_percent_unit",
+        "numeric_check_failed:6%:missing_binding"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] The modest recovery projected starting 2026 with growth rates of 4-6% suggests some stabilization but not a robust rebound.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u0c4",
+      "source_id": 0,
+      "source_start": 478,
+      "source_end": 675,
+      "source_quote_occurrences": 1,
+      "original_quote": "The prolonged revenue decline undermines Intel's market position relative to peers who have demonstrated growth, signaling potential structural issues in competitiveness and market share retention.",
+      "claim": "The prolonged revenue decline undermines Intel's market position relative to peers who have demonstrated growth, signaling potential structural issues in competitiveness and market share retention.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided regarding peers' growth or Intel's market position and competitiveness.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] The prolonged revenue decline undermines Intel's market position relative to peers who have demonstrated growth, signaling potential structural issues in competitiveness and market share retention.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u1c0",
+      "source_id": 1,
+      "source_start": 698,
+      "source_end": 825,
+      "source_quote_occurrences": 1,
+      "original_quote": "Intel's contribution margin has compressed sharply from 55.4% in 2021 to 32.7% in 2024, indicating considerable margin erosion.",
+      "claim": "Intel's contribution margin declined from 55.4% in 2021 to 32.7% in 2024.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 10,
+          "quote": "|  4 | Contribution Margin | 55.4%              | 42.6%              | 40.0%         | 32.7%              | 34.8%              | 35.8%         | 36.8%         | 37.8%          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The contribution margin values for 2021 and 2024 are directly provided in the table.",
+      "action": "keep",
+      "revised_claim": "Intel's contribution margin declined from 55.4% in 2021 to 32.7% in 2024.",
+      "number_bindings": [
+        {
+          "claim_number": "55.4",
+          "evidence_line": 10,
+          "evidence_number": "55.4%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2021",
+          "evidence_line": 4,
+          "evidence_number": "2021A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "32.7",
+          "evidence_line": 10,
+          "evidence_number": "32.7%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2024",
+          "evidence_line": 4,
+          "evidence_number": "2024A",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "55.4%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2021",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "32.7%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2024",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:55.4%:missing_binding",
+        "numeric_check_failed:2021:number_not_in_cited_evidence_line",
+        "numeric_check_failed:32.7%:missing_binding",
+        "numeric_check_failed:2024:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Intel's contribution margin has compressed sharply from 55.4% in 2021 to 32.7% in 2024, indicating considerable margin erosion.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u1c1",
+      "source_id": 1,
+      "source_start": 826,
+      "source_end": 947,
+      "source_quote_occurrences": 1,
+      "original_quote": "Factors likely include pricing pressure, rising cost of operations, and possibly increased investments or inefficiencies.",
+      "claim": "Factors likely include pricing pressure, rising cost of operations, and possibly increased investments or inefficiencies.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for the causes of margin compression.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Factors likely include pricing pressure, rising cost of operations, and possibly increased investments or inefficiencies.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u1c2",
+      "source_id": 1,
+      "source_start": 948,
+      "source_end": 1058,
+      "source_quote_occurrences": 1,
+      "original_quote": "This margin contraction reflects weakened pricing power and operational challenges, eroding competitive moats.",
+      "claim": "This margin contraction reflects weakened pricing power and operational challenges, eroding competitive moats.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for weakened pricing power, operational challenges, or erosion of competitive moats.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] This margin contraction reflects weakened pricing power and operational challenges, eroding competitive moats.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u1c3",
+      "source_id": 1,
+      "source_start": 1059,
+      "source_end": 1288,
+      "source_quote_occurrences": 1,
+      "original_quote": "Although an incremental margin improvement is observed post-2024 (up to 37.8% by 2028), it remains well below historical levels, signaling a lower-quality margin profile and diminished business leverage compared to prior periods.",
+      "claim": "Intel's contribution margin is projected to improve to 37.8% by 2028, but this remains below historical levels.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 10,
+          "quote": "|  4 | Contribution Margin | 55.4%              | 42.6%              | 40.0%         | 32.7%              | 34.8%              | 35.8%         | 36.8%         | 37.8%          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The contribution margin for 2028 is 37.8%, which is below the 2021 level of 55.4%.",
+      "action": "keep",
+      "revised_claim": "Intel's contribution margin is projected to improve to 37.8% by 2028, but this remains below historical levels.",
+      "number_bindings": [
+        {
+          "claim_number": "37.8",
+          "evidence_line": 10,
+          "evidence_number": "37.8%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "37.8%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028,",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:37.8%:missing_binding",
+        "numeric_check_failed:2028,:missing_binding"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Although an incremental margin improvement is observed post-2024 (up to 37.8% by 2028), it remains well below historical levels, signaling a lower-quality margin profile and diminished business leverage compared to prior periods.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u2c0",
+      "source_id": 2,
+      "source_start": 1311,
+      "source_end": 1426,
+      "source_quote_occurrences": 1,
+      "original_quote": "The SG&A margin increased from 8.3% in 2021 to a peak of 11.1% in 2022, before gradually declining to 7.2% by 2028.",
+      "claim": "The SG&A margin increased from 8.3% in 2021 to 11.1% in 2022, then declined to 7.2% by 2028.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 13,
+          "quote": "|  7 | SG&A Margin         | 8.3%               | 11.1%              | 10.4%         | 10.4%              | 8.7%               | 8.2%          | 7.7%          | 7.2%           | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The SG&A margin values for 2021, 2022, and 2028 are directly provided in the table.",
+      "action": "keep",
+      "revised_claim": "The SG&A margin increased from 8.3% in 2021 to 11.1% in 2022, then declined to 7.2% by 2028.",
+      "number_bindings": [
+        {
+          "claim_number": "8.3",
+          "evidence_line": 13,
+          "evidence_number": "8.3%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2021",
+          "evidence_line": 4,
+          "evidence_number": "2021A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "11.1",
+          "evidence_line": 13,
+          "evidence_number": "11.1%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2022",
+          "evidence_line": 4,
+          "evidence_number": "2022A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "7.2",
+          "evidence_line": 13,
+          "evidence_number": "7.2%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "8.3%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2021",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "11.1%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2022,",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "7.2%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:8.3%:missing_binding",
+        "numeric_check_failed:2021:number_not_in_cited_evidence_line",
+        "numeric_check_failed:11.1%:missing_binding",
+        "numeric_check_failed:2022,:missing_binding",
+        "numeric_check_failed:7.2%:missing_binding",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] The SG&A margin increased from 8.3% in 2021 to a peak of 11.1% in 2022, before gradually declining to 7.2% by 2028.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u2c1",
+      "source_id": 2,
+      "source_start": 1427,
+      "source_end": 1548,
+      "source_quote_occurrences": 1,
+      "original_quote": "This trend suggests management's efforts to improve operational efficiency and scalability through cost control measures.",
+      "claim": "This trend suggests management's efforts to improve operational efficiency and scalability through cost control measures.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for management's efforts or intent.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] This trend suggests management's efforts to improve operational efficiency and scalability through cost control measures.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u2c2",
+      "source_id": 2,
+      "source_start": 1549,
+      "source_end": 1736,
+      "source_quote_occurrences": 1,
+      "original_quote": "The declining SG&A margin post-2022 indicates better operating leverage as revenue stabilizes, reflecting disciplined expense management and potential for improved profitability leverage.",
+      "claim": "The declining SG&A margin post-2022 indicates better operating leverage as revenue stabilizes, reflecting disciplined expense management and potential for improved profitability leverage.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for operating leverage, revenue stabilization, or disciplined expense management.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] The declining SG&A margin post-2022 indicates better operating leverage as revenue stabilizes, reflecting disciplined expense management and potential for improved profitability leverage.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u2c3",
+      "source_id": 2,
+      "source_start": 1737,
+      "source_end": 1847,
+      "source_quote_occurrences": 1,
+      "original_quote": "This operational focus on expense reduction is a positive sign of management execution amid revenue headwinds.",
+      "claim": "This operational focus on expense reduction is a positive sign of management execution amid revenue headwinds.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for management execution or operational focus.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] This operational focus on expense reduction is a positive sign of management execution amid revenue headwinds.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u3c0",
+      "source_id": 3,
+      "source_start": 1874,
+      "source_end": 2021,
+      "source_quote_occurrences": 1,
+      "original_quote": "Intel's EBITDA margin has exhibited pronounced volatility, plunging from 42.9% in 2021 to a low of 2.3% in 2024 before recovering to 30.6% by 2028.",
+      "claim": "Intel's EBITDA margin declined from 42.9% in 2021 to 2.3% in 2024, then is projected to recover to 30.6% by 2028.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 12,
+          "quote": "|  6 | EBITDA Margin       | 42.9%              | 33.8%              | 20.7%         | 2.3%               | 27.2%              | 27.6%         | 29.1%         | 30.6%          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The EBITDA margin values for 2021, 2024, and 2028 are directly provided in the table.",
+      "action": "keep",
+      "revised_claim": "Intel's EBITDA margin declined from 42.9% in 2021 to 2.3% in 2024, then is projected to recover to 30.6% by 2028.",
+      "number_bindings": [
+        {
+          "claim_number": "42.9",
+          "evidence_line": 12,
+          "evidence_number": "42.9%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2021",
+          "evidence_line": 4,
+          "evidence_number": "2021A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2.3",
+          "evidence_line": 12,
+          "evidence_number": "2.3%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2024",
+          "evidence_line": 4,
+          "evidence_number": "2024A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "30.6",
+          "evidence_line": 12,
+          "evidence_number": "30.6%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "42.9%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2021",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2.3%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2024,",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "30.6%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:42.9%:missing_binding",
+        "numeric_check_failed:2021:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2.3%:missing_binding",
+        "numeric_check_failed:2024,:missing_binding",
+        "numeric_check_failed:30.6%:missing_binding",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Intel's EBITDA margin has exhibited pronounced volatility, plunging from 42.9% in 2021 to a low of 2.3% in 2024 before recovering to 30.6% by 2028.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u3c1",
+      "source_id": 3,
+      "source_start": 2022,
+      "source_end": 2184,
+      "source_quote_occurrences": 1,
+      "original_quote": "Compared to peers such as AMD and NVIDIA, Intel's margin contraction is more severe, highlighting challenges in profitability quality and competitive positioning.",
+      "claim": "Compared to peers such as AMD and NVIDIA, Intel's margin contraction is more severe, highlighting challenges in profitability quality and competitive positioning.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided comparing Intel's margin contraction to AMD and NVIDIA or discussing profitability quality and competitive positioning.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Compared to peers such as AMD and NVIDIA, Intel's margin contraction is more severe, highlighting challenges in profitability quality and competitive positioning.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u3c2",
+      "source_id": 3,
+      "source_start": 2185,
+      "source_end": 2314,
+      "source_quote_occurrences": 1,
+      "original_quote": "The substantial margin compression and volatile EBITDA profile raise concerns about sustainable profitability and valuation risk.",
+      "claim": "The substantial margin compression and volatile EBITDA profile raise concerns about sustainable profitability and valuation risk.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for concerns about sustainable profitability or valuation risk.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] The substantial margin compression and volatile EBITDA profile raise concerns about sustainable profitability and valuation risk.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u3c3",
+      "source_id": 3,
+      "source_start": 2315,
+      "source_end": 2408,
+      "source_quote_occurrences": 1,
+      "original_quote": "The elevated EV/EBITDA multiples relative to peers in recent years reflect market skepticism.",
+      "claim": "The elevated EV/EBITDA multiples relative to peers in recent years reflect market skepticism.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for market skepticism or a direct comparison of EV/EBITDA multiples to peers.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] The elevated EV/EBITDA multiples relative to peers in recent years reflect market skepticism.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u3c4",
+      "source_id": 3,
+      "source_start": 2409,
+      "source_end": 2565,
+      "source_quote_occurrences": 1,
+      "original_quote": "For investors, this signals a transitional phase requiring close monitoring of margin recovery and competitive dynamics to assess investment attractiveness.",
+      "claim": "For investors, this signals a transitional phase requiring close monitoring of margin recovery and competitive dynamics to assess investment attractiveness.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for the need for close monitoring or the transitional phase for investors.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] For investors, this signals a transitional phase requiring close monitoring of margin recovery and competitive dynamics to assess investment attractiveness.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    }
+  ],
+  "units": [
+    {
+      "source_id": 0,
+      "claims": [
+        {
+          "original_quote": "Intel's revenue has experienced a significant decline from $79.0 billion in 2021 to $53.1 billion in 2024",
+          "claim": "Intel's revenue declined from $79.0 billion in 2021 to $53.1 billion in 2024.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 6
+            },
+            {
+              "line_number": 4
+            }
+          ],
+          "reason": "The revenue values for 2021 and 2024 are directly provided in the table.",
+          "action": "keep",
+          "revised_claim": "Intel's revenue declined from $79.0 billion in 2021 to $53.1 billion in 2024.",
+          "number_bindings": [
+            {
+              "claim_number": "79.0",
+              "evidence_line": 6,
+              "evidence_number": "79024000000.0",
+              "transform": "divide_billion"
+            },
+            {
+              "claim_number": "2021",
+              "evidence_line": 4,
+              "evidence_number": "2021A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "53.1",
+              "evidence_line": 6,
+              "evidence_number": "53101000000.0",
+              "transform": "divide_billion"
+            },
+            {
+              "claim_number": "2024",
+              "evidence_line": 4,
+              "evidence_number": "2024A",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "reflecting a compounded annual decline of -9.6%",
+          "claim": "This revenue decline reflects a compounded annual decline of -9.6%.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 6
+            },
+            {
+              "line_number": 4
+            }
+          ],
+          "reason": "The CAGR column for revenue shows -9.6%.",
+          "action": "keep",
+          "revised_claim": "This revenue decline reflects a compounded annual decline of -9.6%.",
+          "number_bindings": [
+            {
+              "claim_number": "-9.6",
+              "evidence_line": 6,
+              "evidence_number": "-9.6%",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "This contraction is primarily driven by challenging market conditions, competitive pressures, and shifts in product demand, which have led to a shrinking top line for several years.",
+          "claim": "This contraction is primarily driven by challenging market conditions, competitive pressures, and shifts in product demand, which have led to a shrinking top line for several years.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for the causes of the revenue contraction.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The modest recovery projected starting 2026 with growth rates of 4-6% suggests some stabilization but not a robust rebound.",
+          "claim": "A modest recovery is projected for Intel starting in 2026 with growth rates of 4-6%.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 14
+            },
+            {
+              "line_number": 4
+            }
+          ],
+          "reason": "The revenue growth row shows 5.0% in 2026, 6.0% in 2027, and 4.0% in 2028.",
+          "action": "keep",
+          "revised_claim": "A modest recovery is projected for Intel starting in 2026 with growth rates of 4-6%.",
+          "number_bindings": [
+            {
+              "claim_number": "2026",
+              "evidence_line": 4,
+              "evidence_number": "2026E",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "4",
+              "evidence_line": 14,
+              "evidence_number": "4.0%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "6",
+              "evidence_line": 14,
+              "evidence_number": "6.0%",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "The prolonged revenue decline undermines Intel's market position relative to peers who have demonstrated growth, signaling potential structural issues in competitiveness and market share retention.",
+          "claim": "The prolonged revenue decline undermines Intel's market position relative to peers who have demonstrated growth, signaling potential structural issues in competitiveness and market share retention.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided regarding peers' growth or Intel's market position and competitiveness.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 1,
+      "claims": [
+        {
+          "original_quote": "Intel's contribution margin has compressed sharply from 55.4% in 2021 to 32.7% in 2024, indicating considerable margin erosion.",
+          "claim": "Intel's contribution margin declined from 55.4% in 2021 to 32.7% in 2024.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 10
+            },
+            {
+              "line_number": 4
+            }
+          ],
+          "reason": "The contribution margin values for 2021 and 2024 are directly provided in the table.",
+          "action": "keep",
+          "revised_claim": "Intel's contribution margin declined from 55.4% in 2021 to 32.7% in 2024.",
+          "number_bindings": [
+            {
+              "claim_number": "55.4",
+              "evidence_line": 10,
+              "evidence_number": "55.4%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2021",
+              "evidence_line": 4,
+              "evidence_number": "2021A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "32.7",
+              "evidence_line": 10,
+              "evidence_number": "32.7%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2024",
+              "evidence_line": 4,
+              "evidence_number": "2024A",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "Factors likely include pricing pressure, rising cost of operations, and possibly increased investments or inefficiencies.",
+          "claim": "Factors likely include pricing pressure, rising cost of operations, and possibly increased investments or inefficiencies.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for the causes of margin compression.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "This margin contraction reflects weakened pricing power and operational challenges, eroding competitive moats.",
+          "claim": "This margin contraction reflects weakened pricing power and operational challenges, eroding competitive moats.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for weakened pricing power, operational challenges, or erosion of competitive moats.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Although an incremental margin improvement is observed post-2024 (up to 37.8% by 2028), it remains well below historical levels, signaling a lower-quality margin profile and diminished business leverage compared to prior periods.",
+          "claim": "Intel's contribution margin is projected to improve to 37.8% by 2028, but this remains below historical levels.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 10
+            },
+            {
+              "line_number": 4
+            }
+          ],
+          "reason": "The contribution margin for 2028 is 37.8%, which is below the 2021 level of 55.4%.",
+          "action": "keep",
+          "revised_claim": "Intel's contribution margin is projected to improve to 37.8% by 2028, but this remains below historical levels.",
+          "number_bindings": [
+            {
+              "claim_number": "37.8",
+              "evidence_line": 10,
+              "evidence_number": "37.8%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            }
+          ]
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 2,
+      "claims": [
+        {
+          "original_quote": "The SG&A margin increased from 8.3% in 2021 to a peak of 11.1% in 2022, before gradually declining to 7.2% by 2028.",
+          "claim": "The SG&A margin increased from 8.3% in 2021 to 11.1% in 2022, then declined to 7.2% by 2028.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 13
+            },
+            {
+              "line_number": 4
+            }
+          ],
+          "reason": "The SG&A margin values for 2021, 2022, and 2028 are directly provided in the table.",
+          "action": "keep",
+          "revised_claim": "The SG&A margin increased from 8.3% in 2021 to 11.1% in 2022, then declined to 7.2% by 2028.",
+          "number_bindings": [
+            {
+              "claim_number": "8.3",
+              "evidence_line": 13,
+              "evidence_number": "8.3%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2021",
+              "evidence_line": 4,
+              "evidence_number": "2021A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "11.1",
+              "evidence_line": 13,
+              "evidence_number": "11.1%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2022",
+              "evidence_line": 4,
+              "evidence_number": "2022A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "7.2",
+              "evidence_line": 13,
+              "evidence_number": "7.2%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "This trend suggests management's efforts to improve operational efficiency and scalability through cost control measures.",
+          "claim": "This trend suggests management's efforts to improve operational efficiency and scalability through cost control measures.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for management's efforts or intent.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The declining SG&A margin post-2022 indicates better operating leverage as revenue stabilizes, reflecting disciplined expense management and potential for improved profitability leverage.",
+          "claim": "The declining SG&A margin post-2022 indicates better operating leverage as revenue stabilizes, reflecting disciplined expense management and potential for improved profitability leverage.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for operating leverage, revenue stabilization, or disciplined expense management.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "This operational focus on expense reduction is a positive sign of management execution amid revenue headwinds.",
+          "claim": "This operational focus on expense reduction is a positive sign of management execution amid revenue headwinds.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for management execution or operational focus.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 3,
+      "claims": [
+        {
+          "original_quote": "Intel's EBITDA margin has exhibited pronounced volatility, plunging from 42.9% in 2021 to a low of 2.3% in 2024 before recovering to 30.6% by 2028.",
+          "claim": "Intel's EBITDA margin declined from 42.9% in 2021 to 2.3% in 2024, then is projected to recover to 30.6% by 2028.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 12
+            },
+            {
+              "line_number": 4
+            }
+          ],
+          "reason": "The EBITDA margin values for 2021, 2024, and 2028 are directly provided in the table.",
+          "action": "keep",
+          "revised_claim": "Intel's EBITDA margin declined from 42.9% in 2021 to 2.3% in 2024, then is projected to recover to 30.6% by 2028.",
+          "number_bindings": [
+            {
+              "claim_number": "42.9",
+              "evidence_line": 12,
+              "evidence_number": "42.9%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2021",
+              "evidence_line": 4,
+              "evidence_number": "2021A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2.3",
+              "evidence_line": 12,
+              "evidence_number": "2.3%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2024",
+              "evidence_line": 4,
+              "evidence_number": "2024A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "30.6",
+              "evidence_line": 12,
+              "evidence_number": "30.6%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "Compared to peers such as AMD and NVIDIA, Intel's margin contraction is more severe, highlighting challenges in profitability quality and competitive positioning.",
+          "claim": "Compared to peers such as AMD and NVIDIA, Intel's margin contraction is more severe, highlighting challenges in profitability quality and competitive positioning.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided comparing Intel's margin contraction to AMD and NVIDIA or discussing profitability quality and competitive positioning.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The substantial margin compression and volatile EBITDA profile raise concerns about sustainable profitability and valuation risk.",
+          "claim": "The substantial margin compression and volatile EBITDA profile raise concerns about sustainable profitability and valuation risk.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for concerns about sustainable profitability or valuation risk.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The elevated EV/EBITDA multiples relative to peers in recent years reflect market skepticism.",
+          "claim": "The elevated EV/EBITDA multiples relative to peers in recent years reflect market skepticism.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for market skepticism or a direct comparison of EV/EBITDA multiples to peers.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "For investors, this signals a transitional phase requiring close monitoring of margin recovery and competitive dynamics to assess investment attractiveness.",
+          "claim": "For investors, this signals a transitional phase requiring close monitoring of margin recovery and competitive dynamics to assess investment attractiveness.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for the need for close monitoring or the transitional phase for investors.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    }
+  ],
+  "verifier_version": "7.1-semantic-review-neutral-connector-repair",
+  "release_deduplication": "Identical complete released strings appear once per section; all original claim rows and mappings remain. This is not semantic paraphrase deduplication.",
+  "unquoted_nonfactual_connectors": [
+    {
+      "source_id": 0,
+      "start": 0,
+      "end": 16,
+      "text": "Revenue Growth: ",
+      "nonfactual_connector": true
+    },
+    {
+      "source_id": 1,
+      "start": 0,
+      "end": 21,
+      "text": "Gross Profit Margin: ",
+      "nonfactual_connector": true
+    },
+    {
+      "source_id": 2,
+      "start": 0,
+      "end": 21,
+      "text": "SG&A Expense Margin: ",
+      "nonfactual_connector": true
+    },
+    {
+      "source_id": 3,
+      "start": 0,
+      "end": 25,
+      "text": "EBITDA Margin Stability: ",
+      "nonfactual_connector": true
+    }
+  ],
+  "deterministic_validation_failures": [
+    {
+      "claim_id": "u0c0",
+      "errors": [
+        "numeric_check_failed:2021:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2024:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "79.0",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2021",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "53.1",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2024",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u0c1",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:-9.6%:missing_binding"
+      ],
+      "numeric_results": [
+        {
+          "token": "-9.6%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u0c3",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2026:number_not_in_cited_evidence_line",
+        "numeric_check_failed:4:identity_changes_percent_unit",
+        "numeric_check_failed:6%:missing_binding"
+      ],
+      "numeric_results": [
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "4",
+          "passed": false,
+          "reason": "identity_changes_percent_unit",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "6%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u1c0",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:55.4%:missing_binding",
+        "numeric_check_failed:2021:number_not_in_cited_evidence_line",
+        "numeric_check_failed:32.7%:missing_binding",
+        "numeric_check_failed:2024:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "55.4%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2021",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "32.7%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2024",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u1c3",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:37.8%:missing_binding",
+        "numeric_check_failed:2028,:missing_binding"
+      ],
+      "numeric_results": [
+        {
+          "token": "37.8%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028,",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u2c0",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:8.3%:missing_binding",
+        "numeric_check_failed:2021:number_not_in_cited_evidence_line",
+        "numeric_check_failed:11.1%:missing_binding",
+        "numeric_check_failed:2022,:missing_binding",
+        "numeric_check_failed:7.2%:missing_binding",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "8.3%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2021",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "11.1%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2022,",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "7.2%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u3c0",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:42.9%:missing_binding",
+        "numeric_check_failed:2021:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2.3%:missing_binding",
+        "numeric_check_failed:2024,:missing_binding",
+        "numeric_check_failed:30.6%:missing_binding",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "42.9%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2021",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2.3%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2024,",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "30.6%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    }
+  ],
+  "deterministic_failure_count": 7,
+  "verified_claim_count": 0,
+  "unverified_annotation_count": 18,
+  "withheld_claim_count": 0,
+  "claim_retention_rate": 1.0,
+  "supported_valid_retention_count": 0,
+  "automatic_year_binding_count": 0,
+  "limitations": "UNVERIFIED annotations preserve unsupported or deterministically rejected assertions for review and must not be counted as grounded facts. A claim's original machine classification is preserved even when deterministic checks reject it; retained_as_verified is then false. Rejected contradicted corrections remain in the audit but are withheld from the narrative. Semantic judgments are machine-assisted, not human-validated. Lexical quote coverage does not prove exhaustive semantic atomization. Exact numeric/year matches do not establish entity/period alignment or dimensional validity of conversions. Repeated source quotes may have ambiguous first-occurrence offsets."
+}
