@@ -1,0 +1,90 @@
+[
+  {
+    "architecture": "Llama-3.1-8B",
+    "total_count": 300,
+    "valid_count": 206,
+    "coverage": 0.6866666666666666,
+    "prediction_parse_failures": 94,
+    "reference_parse_failures": 3,
+    "bin_acc": 0.46601941747572817,
+    "mse": 7.138349514563107,
+    "unconditional_direction_accuracy": 0.32,
+    "pros_rouge_scores": {
+      "rouge1": 0.2559713999050094,
+      "rouge2": 0.07040158212054552,
+      "rougeL": 0.17465010922020138
+    },
+    "cons_rouge_scores": {
+      "rouge1": 0.2185618988726945,
+      "rouge2": 0.04335371630093576,
+      "rougeL": 0.14458704825016783
+    },
+    "anal_rouge_scores": {
+      "rouge1": 0.2753025817102704,
+      "rouge2": 0.06629697040156868,
+      "rougeL": 0.1522290589326641
+    },
+    "model": "base",
+    "mean_inference_s": 9.329963595769996,
+    "median_inference_s": 9.281387257062477,
+    "token_limit_count": 138,
+    "mean_generated_tokens": 389.73333333333335,
+    "device": "cuda",
+    "latency_note": "elapsed_s is single-example time for old records, amortized batch time for batch>1; do not compare mixed overall means as single-example latency",
+    "latency_strata": {
+      "12": {
+        "n": 12,
+        "mean_elapsed_s": 10.335278774499935
+      },
+      "16": {
+        "n": 288,
+        "mean_elapsed_s": 9.288075463322915
+      }
+    },
+    "label_direction_accuracy_all_rows": 0.32
+  },
+  {
+    "architecture": "Llama-3.1-8B",
+    "total_count": 300,
+    "valid_count": 250,
+    "coverage": 0.8333333333333334,
+    "prediction_parse_failures": 48,
+    "reference_parse_failures": 3,
+    "bin_acc": 0.492,
+    "mse": 9.792,
+    "unconditional_direction_accuracy": 0.41,
+    "pros_rouge_scores": {
+      "rouge1": 0.3698535182882105,
+      "rouge2": 0.11346281980159535,
+      "rougeL": 0.22024272148323884
+    },
+    "cons_rouge_scores": {
+      "rouge1": 0.3251352326555559,
+      "rouge2": 0.08859189715095662,
+      "rougeL": 0.20337852782372517
+    },
+    "anal_rouge_scores": {
+      "rouge1": 0.38137447659357576,
+      "rouge2": 0.10074665652607148,
+      "rougeL": 0.20227367747535213
+    },
+    "model": "lora",
+    "mean_inference_s": 14.026529952610002,
+    "median_inference_s": 13.417735543874983,
+    "token_limit_count": 141,
+    "mean_generated_tokens": 464.7,
+    "device": "cuda",
+    "latency_note": "elapsed_s is single-example time for old records, amortized batch time for batch>1; do not compare mixed overall means as single-example latency",
+    "latency_strata": {
+      "4": {
+        "n": 4,
+        "mean_elapsed_s": 23.29170031400008
+      },
+      "8": {
+        "n": 296,
+        "mean_elapsed_s": 13.901324947726351
+      }
+    },
+    "label_direction_accuracy_all_rows": 0.41333333333333333
+  }
+]

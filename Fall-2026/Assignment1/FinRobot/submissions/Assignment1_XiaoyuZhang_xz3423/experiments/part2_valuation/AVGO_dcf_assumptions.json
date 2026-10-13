@@ -1,0 +1,38 @@
+{
+  "ticker": "AVGO",
+  "method": "Five-year illustrative FCF-proxy DCF",
+  "base_fiscal_year": 2025,
+  "base_fcf_proxy_usd": 26914000000.0,
+  "growth_assumptions": {
+    "2026": 0.05,
+    "2027": 0.06,
+    "2028": 0.04,
+    "2029": 0.04,
+    "2030": 0.04
+  },
+  "discount_rate_base": 0.11,
+  "terminal_growth_base": 0.03,
+  "discount_rate_sensitivity": [
+    0.09,
+    0.1,
+    0.11,
+    0.12,
+    0.13
+  ],
+  "terminal_growth_sensitivity": [
+    0.02,
+    0.03,
+    0.04
+  ],
+  "present_value_explicit_usd": 113890085102.37318,
+  "present_value_terminal_usd": 257457634151.63678,
+  "discounted_cash_flow_proxy_usd": 371347719254.00995,
+  "limitations": [
+    "OCF minus CapEx is an FCF proxy, not verified FCFE or FCFF.",
+    "The assumed discount rate is not a calibrated WACC.",
+    "This is not a stock price target or formal equity valuation.",
+    "Capital expenditure classifications require 10-K review.",
+    "No adjustment for net debt, excess cash, or diluted shares.",
+    "Forecast growth and terminal assumptions are illustrative."
+  ]
+}

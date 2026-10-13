@@ -1,0 +1,13 @@
+{
+  "evaluation_unit": "one test passage",
+  "positive_label": "At least one manually identified financial grounding error",
+  "negative_label": "No known error under tested rules",
+  "limitations": [
+    "Small manually curated benchmark.",
+    "Constructed examples are not natural model outputs.",
+    "Two original agent sections are included when found.",
+    "This does not measure full-report accuracy.",
+    "Verifier alerts requiring review count as detections.",
+    "Source data and gold labels should be independently reviewed."
+  ]
+}

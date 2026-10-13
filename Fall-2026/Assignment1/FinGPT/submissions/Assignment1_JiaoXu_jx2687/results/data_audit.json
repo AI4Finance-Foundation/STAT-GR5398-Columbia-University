@@ -1,0 +1,185 @@
+{
+  "train": {
+    "count": 1230,
+    "symbols": [
+      "AAPL",
+      "AMGN",
+      "AXP",
+      "BA",
+      "CAT",
+      "CRM",
+      "CSCO",
+      "CVX",
+      "DIS",
+      "DOW",
+      "GS",
+      "HD",
+      "HON",
+      "IBM",
+      "INTC",
+      "JNJ",
+      "JPM",
+      "KO",
+      "MCD",
+      "MMM",
+      "MRK",
+      "MSFT",
+      "NKE",
+      "PG",
+      "TRV",
+      "UNH",
+      "V",
+      "VZ",
+      "WBA",
+      "WMT"
+    ],
+    "start_min": "2023-05-14",
+    "start_max": "2024-02-18",
+    "end_max": "2024-02-25",
+    "missing": {
+      "prompt": 0,
+      "answer": 0,
+      "label": 0,
+      "symbol": 0,
+      "period": 0
+    },
+    "duplicate_prompt": 0,
+    "duplicate_symbol_period": 0,
+    "label_counts": {
+      "up by 0-1%": 188,
+      "up by 1-2%": 173,
+      "down by 0-1%": 169,
+      "down by 1-2%": 132,
+      "up by 2-3%": 121,
+      "down by 2-3%": 99,
+      "up by 3-4%": 79,
+      "up by more than 5%": 76,
+      "down by 3-4%": 61,
+      "down by more than 5%": 51,
+      "up by 4-5%": 50,
+      "down by 4-5%": 31
+    },
+    "direction_counts": {
+      "up": 687,
+      "down": 543
+    },
+    "reference_parse_valid": 1229,
+    "crypto_prompt_count": 1230,
+    "assumed_target_in_prompt": 0,
+    "parsed_reference_label_mismatch": 0,
+    "financial_period_after_forecast_count": 64,
+    "past_price_window_end_after_forecast_count": 0
+  },
+  "test": {
+    "count": 300,
+    "symbols": [
+      "AAPL",
+      "AMGN",
+      "AXP",
+      "BA",
+      "CAT",
+      "CRM",
+      "CSCO",
+      "CVX",
+      "DIS",
+      "DOW",
+      "GS",
+      "HD",
+      "HON",
+      "IBM",
+      "INTC",
+      "JNJ",
+      "JPM",
+      "KO",
+      "MCD",
+      "MMM",
+      "MRK",
+      "MSFT",
+      "NKE",
+      "PG",
+      "TRV",
+      "UNH",
+      "V",
+      "VZ",
+      "WBA",
+      "WMT"
+    ],
+    "start_min": "2024-02-25",
+    "start_max": "2024-04-28",
+    "end_max": "2024-05-05",
+    "missing": {
+      "prompt": 0,
+      "answer": 0,
+      "label": 0,
+      "symbol": 0,
+      "period": 0
+    },
+    "duplicate_prompt": 0,
+    "duplicate_symbol_period": 0,
+    "label_counts": {
+      "down by 0-1%": 51,
+      "down by 1-2%": 42,
+      "up by 0-1%": 41,
+      "up by 1-2%": 40,
+      "up by 2-3%": 23,
+      "down by 2-3%": 23,
+      "down by more than 5%": 20,
+      "down by 3-4%": 18,
+      "up by 3-4%": 17,
+      "up by more than 5%": 10,
+      "down by 4-5%": 9,
+      "up by 4-5%": 6
+    },
+    "direction_counts": {
+      "down": 163,
+      "up": 137
+    },
+    "reference_parse_valid": 297,
+    "crypto_prompt_count": 300,
+    "assumed_target_in_prompt": 0,
+    "parsed_reference_label_mismatch": 0,
+    "financial_period_after_forecast_count": 2,
+    "past_price_window_end_after_forecast_count": 0
+  },
+  "cross_split_duplicate_prompts": 0,
+  "cross_split_symbol_period_overlap": 0,
+  "global_train_end_le_test_start": true,
+  "experiment": {
+    "seed": 5398,
+    "counts": {
+      "train": 60,
+      "validation": 30,
+      "test": 30
+    },
+    "selection": "2 fixed random historical train rows / ticker; earliest validation and test row / ticker; all 30 symbols",
+    "train_target_end_max": "2024-01-07",
+    "validation_start_min": "2024-01-28",
+    "test_start_min": "2024-02-25",
+    "validation_not_used_for_hyperparameter_selection": true,
+    "train_unique_target_weeks": 2,
+    "validation_unique_target_weeks": 1,
+    "test_unique_target_weeks": 1,
+    "direction_counts": {
+      "train": {
+        "up": 39,
+        "down": 21
+      },
+      "validation": {
+        "down": 11,
+        "up": 19
+      },
+      "test": {
+        "down": 18,
+        "up": 12
+      }
+    }
+  },
+  "limitations": [
+    "No news publication timestamps or filing/availability dates in the released rows. Quarter end is not filing date.",
+    "Current-profile market capitalization and shares outstanding can leak future snapshots into historical prompts.",
+    "Official upstream teacher code conditions analysis on realized future movement. The released dataset card does not confirm its exact generation recipe; hindsight contamination is a material risk. ROUGE does not establish independent forecasting ability.",
+    "Dataset card does not state a license or provide raw prices/news provenance. Raw data here is a local review copy; confirm redistribution permission before GitHub commit.",
+    "Base model pretraining cutoff may overlap test dates; no claim of clean prospective market performance.",
+    "No trading backtest requested or executed."
+  ]
+}

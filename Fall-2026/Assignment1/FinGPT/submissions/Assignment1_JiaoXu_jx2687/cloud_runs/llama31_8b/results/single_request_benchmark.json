@@ -1,0 +1,34 @@
+[
+  {
+    "variant": "base",
+    "n": 6,
+    "sample_indices": [
+      0,
+      9,
+      70,
+      149,
+      230,
+      299
+    ],
+    "mean_single_request_s": 26.18504608250017,
+    "median_single_request_s": 28.307065685499765,
+    "mean_generated_tokens": 354.3333333333333,
+    "scope": "Six predeclared cases; synchronized prefill+decode, batch1SDPA, loading/warmup excluded; observational latency, no confidence claim"
+  },
+  {
+    "variant": "lora",
+    "n": 6,
+    "sample_indices": [
+      0,
+      9,
+      70,
+      149,
+      230,
+      299
+    ],
+    "mean_single_request_s": 55.32088323700009,
+    "median_single_request_s": 54.43086959749962,
+    "mean_generated_tokens": 444.8333333333333,
+    "scope": "Six predeclared cases; synchronized prefill+decode, batch1SDPA, loading/warmup excluded; observational latency, no confidence claim"
+  }
+]

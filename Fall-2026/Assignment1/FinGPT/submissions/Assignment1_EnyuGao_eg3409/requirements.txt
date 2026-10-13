@@ -1,0 +1,18 @@
+# Versions recorded by the completed Google Colab T4 runs.
+# In Colab, keep the preinstalled CUDA-enabled torch build and install the
+# remaining lines with the command documented in README.md.
+torch==2.11.0
+transformers==5.18.0
+peft==0.21.2
+accelerate==1.15.0
+datasets==5.0.1
+bitsandbytes==0.50.2; platform_system == "Linux"
+
+# Evaluation, plotting, and artifact support.
+rouge-score==0.1.2
+scikit-learn==1.7.2
+tensorboard==2.21.0
+matplotlib==3.10.6
+safetensors
+pyarrow
+

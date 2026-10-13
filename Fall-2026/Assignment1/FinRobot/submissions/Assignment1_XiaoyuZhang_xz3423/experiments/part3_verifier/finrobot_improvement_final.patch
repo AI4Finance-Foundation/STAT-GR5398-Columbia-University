@@ -1,0 +1,1022 @@
+diff --git a/finrobot_equity/core/src/create_equity_report.py b/finrobot_equity/core/src/create_equity_report.py
+index 2acd947c..d8e81f63 100644
+--- a/finrobot_equity/core/src/create_equity_report.py
++++ b/finrobot_equity/core/src/create_equity_report.py
+@@ -47,6 +47,18 @@ def load_credit_cashflow_metrics_from_csv(file_path: str) -> pd.DataFrame:
+     try:
+         df = pd.read_csv(file_path)
+ 
++        # Compatibility mapping: FMP Stable API
++        df = df.rename(columns={
++            "fiscalYear": "calendarYear",
++            "debtToEquityRatio": "debtEquityRatio",
++            "debtToAssetsRatio": "debtRatio",
++            "interestCoverageRatio": "interestCoverage",
++        })
++
++        # Do not invent an unavailable financial ratio
++        if "cashFlowToDebtRatio" not in df.columns:
++            df["cashFlowToDebtRatio"] = float("nan")
++
+         # Define the mapping from CSV columns to the desired metric names
+         metric_mapping = {
+             'debtEquityRatio': 'Debt/Equity',
+@@ -434,11 +446,11 @@ def main():
+ 
+     # Apply the logic for each metric
+     share_price = get_value(args.share_price, 'share_price', 0.0, lambda x: f"${x:.2f}")
+-    target_price = get_value(args.target_price, 'target_price', 0.0, lambda x: f"${x:.2f}")
++    target_price = get_value(args.target_price, 'target_price', "N/A", lambda x: f"${x:.2f}")
+     rating = get_value(args.rating, 'rating', "N/A")
+     market_cap = get_value(args.market_cap, 'market_cap', 0.0, lambda x: f"${x:,.2f}B")
+     volume = get_value(args.volume, 'volume', 0.0, lambda x: f"{x:.2f}M")
+-    fwd_pe = get_value(args.fwd_pe, 'fwd_pe', 0.0, lambda x: f"{x:.1f}x")
++    fwd_pe = f"{args.fwd_pe:.1f}x" if args.fwd_pe is not None and args.fwd_pe > 0 else "N/A"  # Do not substitute historical P/E
+     pb_ratio = get_value(args.pb_ratio, 'pb_ratio', 0.0, lambda x: f"{x:.2f}x")
+     dividend_yield = get_value(args.dividend_yield, 'dividend_yield', "N/A", lambda x: f"{x:.2f}%" if isinstance(x, (int, float)) else str(x))
+     free_float = get_value(args.free_float, 'free_float', "N/A", lambda x: f"{x:.1f}%" if isinstance(x, (int, float)) else str(x))
+@@ -1034,6 +1046,32 @@ def main():
+     for page_num, template in enumerate(templates, 1):
+         page_path = os.path.join(output_dir, f"{args.html_report_prefix}_Page{page_num}_{args.company_ticker}.html")
+         html_content = render_html_report(template, report_data)
++
++        # Add data provenance before saving the final HTML.
++        provenance_note = (
++            '<footer id="finrobot-data-provenance" '
++            'style="max-width:900px;margin:24px auto;padding:16px;'
++            'font-size:12px;line-height:1.7;color:#475569;'
++            'border-top:1px solid #cbd5e1;">'
++            '<strong>Data provenance:</strong> '
++            'Financial statements and market data: '
++            'Financial Modeling Prep (FMP). '
++            'The analyst target price and rating are external analyst '
++            'consensus from FMP, not independent FinRobot valuations. '
++            'Forecast figures are FinRobot model estimates based on '
++            'explicit assumptions, not company-reported actual results. '
++            'Forward P/E is N/A when no verified forward estimate '
++            'is available.'
++            '</footer>'
++        )
++        if 'id="finrobot-data-provenance"' not in html_content:
++            if "</body>" in html_content:
++                html_content = html_content.replace(
++                    "</body>", provenance_note + "</body>", 1
++                )
++            else:
++                html_content += provenance_note
++
+         with open(page_path, "w", encoding="utf-8") as f:
+             f.write(html_content)
+         print(f"Generated Page {page_num}: {page_path}")
+diff --git a/finrobot_equity/core/src/generate_financial_analysis.py b/finrobot_equity/core/src/generate_financial_analysis.py
+index 009fa9a5..67e2a2dc 100644
+--- a/finrobot_equity/core/src/generate_financial_analysis.py
++++ b/finrobot_equity/core/src/generate_financial_analysis.py
+@@ -42,6 +42,7 @@ def main():
+ 
+     # Text Generation
+     parser.add_argument("--generate-text-sections", action="store_true", help="Enable generation of text sections using OpenAI.")
++    parser.add_argument("--verify-generated-text", action="store_true", help="Save financial grounding verification JSON for AI text sections.")
+     parser.add_argument("--text-output-dir", type=str, default=None, help="Directory to save generated text files.")
+ 
+     # NEWS PARAMETERS
+@@ -55,11 +56,11 @@ def main():
+     parser.add_argument("--enable-enhanced-news", action="store_true", help="Enable enhanced news integration with categorization")
+ 
+     # Forecast Configuration
+-    parser.add_argument("--revenue-growth-2025", type=float, default=0.05, help="Revenue growth assumption for 2025E (default: 5%)")
+-    parser.add_argument("--revenue-growth-2026", type=float, default=0.06, help="Revenue growth assumption for 2026E (default: 6%)")
+-    parser.add_argument("--revenue-growth-2027", type=float, default=0.04, help="Revenue growth assumption for 2027E (default: 4%)")
+-    parser.add_argument("--margin-improvement", type=float, default=0.01, help="Annual margin improvement assumption (default: 1%)")
+-    parser.add_argument("--sga-margin-improvement", type=float, default=-0.005, help="SG&A margin change assumption (default: -0.5% efficiency gain)")
++    parser.add_argument("--revenue-growth-2025", type=float, default=0.05, help="Revenue growth assumption for 2025E (default: 5%%)")
++    parser.add_argument("--revenue-growth-2026", type=float, default=0.06, help="Revenue growth assumption for 2026E (default: 6%%)")
++    parser.add_argument("--revenue-growth-2027", type=float, default=0.04, help="Revenue growth assumption for 2027E (default: 4%%)")
++    parser.add_argument("--margin-improvement", type=float, default=0.01, help="Annual margin improvement assumption (default: 1%%)")
++    parser.add_argument("--sga-margin-improvement", type=float, default=-0.005, help="SG&A margin change assumption (default: -0.5%% efficiency gain)")
+ 
+     # API Options
+     parser.add_argument("--period", type=str, default="annual", choices=["annual", "quarterly"], help="Data period (annual or quarterly)")
+@@ -163,9 +164,12 @@ def main():
+     forecast_config = {
+         "revenue_base_year": latest_year,
+         "revenue_growth_assumptions": {
+-            "2025E": args.revenue_growth_2025, 
+-            "2026E": args.revenue_growth_2026, 
+-            "2027E": args.revenue_growth_2027
++            f"{int(latest_year[:4]) + i}E": rate
++            for i, rate in enumerate([
++                args.revenue_growth_2025,
++                args.revenue_growth_2026,
++                args.revenue_growth_2027
++            ], start=1)
+         }, 
+         "ebitda_growth_factor": 1.05,
+         "margin_improvement": {
+@@ -176,9 +180,8 @@ def main():
+     }
+     
+     print(f"Forecast assumptions:")
+-    print(f"  Revenue Growth 2025E: {args.revenue_growth_2025*100:.1f}%")
+-    print(f"  Revenue Growth 2026E: {args.revenue_growth_2026*100:.1f}%") 
+-    print(f"  Revenue Growth 2027E: {args.revenue_growth_2027*100:.1f}%")
++    for year, rate in forecast_config["revenue_growth_assumptions"].items():
++        print(f"  Revenue Growth {year}: {rate*100:.1f}%")
+     print(f"  Margin Improvement: {args.margin_improvement*100:.1f}% annually")
+     print(f"  SG&A Efficiency: {args.sga_margin_improvement*100:.1f}% annually")
+     
+@@ -446,6 +449,47 @@ def main():
+                         base_url=openai_base_url,
+                         model=openai_model
+                     )
++
++                    # BEGIN FINANCIAL VERIFIER INTEGRATION
++                    if args.verify_generated_text:
++                        import json as _grounding_json
++                        from pathlib import Path as _GroundingPath
++                        try:
++                            import importlib.util as _grounding_importlib
++                            _verifier_source = _GroundingPath(__file__).resolve().parent / 'financial_grounding_verifier.v03.py'
++                            _spec = _grounding_importlib.spec_from_file_location('financial_grounding_verifier_v03', _verifier_source)
++                            _module = _grounding_importlib.module_from_spec(_spec)
++                            _spec.loader.exec_module(_module)
++                            _verify_grounding = _module.verify
++                            _audit_dir = _GroundingPath(
++                                args.output_dir or
++                                f"output/{args.company_ticker}/analysis"
++                            )
++                            _audit_csv = _audit_dir / args.output_csv_name
++                            _audit_output_dir = _GroundingPath(
++                                args.text_output_dir or str(_audit_dir)
++                            )
++                            _audit_output_dir.mkdir(parents=True, exist_ok=True)
++                            _audit_path = (
++                                _audit_output_dir /
++                                f"{text_type}_grounding_verification.json"
++                            )
++                            _audit_result = _verify_grounding(
++                                generated_text, str(_audit_csv)
++                            )
++                            _audit_path.write_text(
++                                _grounding_json.dumps(
++                                    _audit_result, indent=2, default=str
++                                ),
++                                encoding="utf-8"
++                            )
++                            print(f"Grounding verification saved: {_audit_path}")
++                        except Exception as _grounding_error:
++                            print(
++                                f"WARNING: grounding verification failed "
++                                f"for {text_type}: {_grounding_error}"
++                            )
++                    # END FINANCIAL VERIFIER INTEGRATION
+                     
+                     # Fallback validation can remain here as a safety net
+                     if text_type == "competitor_analysis" and (not generated_text or len(generated_text.split('.')) < 3):
+diff --git a/finrobot_equity/core/src/modules/market_data_api.py b/finrobot_equity/core/src/modules/market_data_api.py
+index ed927133..66e273cb 100644
+--- a/finrobot_equity/core/src/modules/market_data_api.py
++++ b/finrobot_equity/core/src/modules/market_data_api.py
+@@ -56,7 +56,7 @@ def get_fmp_ratios_and_key_metrics(ticker: str, api_key: [REDACTED], period: str = "ann
+     ratios_df, key_metrics_df = None, None
+     try:
+         # Ratios
+-        ratios_url = f"https://financialmodelingprep.com/api/v3/ratios/{ticker}?period={period}&limit={limit}&apikey=[REDACTED]}"
++        ratios_url = f"https://financialmodelingprep.com/stable/ratios?symbol={ticker}&period={period}&limit={limit}&apikey=[REDACTED]}"
+         response_ratios = requests.get(ratios_url)
+         response_ratios.raise_for_status()
+         ratios_data = response_ratios.json()
+@@ -66,7 +66,7 @@ def get_fmp_ratios_and_key_metrics(ticker: str, api_key: [REDACTED], period: str = "ann
+             ratios_df["year"] = ratios_df["date"].dt.year
+ 
+         # Key Metrics
+-        key_metrics_url = f"https://financialmodelingprep.com/api/v3/key-metrics/{ticker}?period={period}&limit={limit}&apikey=[REDACTED]}"
++        key_metrics_url = f"https://financialmodelingprep.com/stable/key-metrics?symbol={ticker}&period={period}&limit={limit}&apikey=[REDACTED]}"
+         response_key_metrics = requests.get(key_metrics_url)
+         response_key_metrics.raise_for_status()
+         key_metrics_data = response_key_metrics.json()
+@@ -85,7 +85,7 @@ def get_fmp_ratios_and_key_metrics(ticker: str, api_key: [REDACTED], period: str = "ann
+ def get_fmp_income_statement(ticker: str, api_key: [REDACTED], period: str = "annual", limit: int = 5) -> pd.DataFrame | None:
+     """Fetches income statement data from FMP API."""
+     try:
+-        url = f"https://financialmodelingprep.com/api/v3/income-statement/{ticker}?period={period}&limit={limit}&apikey=[REDACTED]}"
++        url = f"https://financialmodelingprep.com/stable/income-statement?symbol={ticker}&period={period}&limit={limit}&apikey=[REDACTED]}"
+         response = requests.get(url)
+         response.raise_for_status()
+         data = response.json()
+@@ -106,7 +106,7 @@ def get_fmp_income_statement(ticker: str, api_key: [REDACTED], period: str = "annual",
+ def get_fmp_balance_sheet(ticker: str, api_key: [REDACTED], period: str = "annual", limit: int = 5) -> pd.DataFrame | None:
+     """Fetches balance sheet data from FMP API."""
+     try:
+-        url = f"https://financialmodelingprep.com/api/v3/balance-sheet-statement/{ticker}?period={period}&limit={limit}&apikey=[REDACTED]}"
++        url = f"https://financialmodelingprep.com/stable/balance-sheet-statement?symbol={ticker}&period={period}&limit={limit}&apikey=[REDACTED]}"
+         response = requests.get(url)
+         response.raise_for_status()
+         data = response.json()
+@@ -127,7 +127,7 @@ def get_fmp_balance_sheet(ticker: str, api_key: [REDACTED], period: str = "annual", lim
+ def get_fmp_cash_flow_statement(ticker: str, api_key: [REDACTED], period: str = "annual", limit: int = 5) -> pd.DataFrame | None:
+     """Fetches cash flow statement data from FMP API."""
+     try:
+-        url = f"https://financialmodelingprep.com/api/v3/cash-flow-statement/{ticker}?period={period}&limit={limit}&apikey=[REDACTED]}"
++        url = f"https://financialmodelingprep.com/stable/cash-flow-statement?symbol={ticker}&period={period}&limit={limit}&apikey=[REDACTED]}"
+         response = requests.get(url)
+         response.raise_for_status()
+         data = response.json()
+@@ -182,7 +182,7 @@ def combine_peer_financial_data(tickers: list[str], api_key: [REDACTED], years_limit: i
+             for _, row in key_metrics_df.iterrows():
+                 year = row["year"]
+                 if year not in ticker_data: ticker_data[year] = {}
+-                ticker_data[year]["EV/EBITDA"] = row.get("enterpriseValueOverEBITDA")
++                ticker_data[year]["EV/EBITDA"] = row.get("evToEBITDA")
+         
+         if ticker_data:
+             all_peers_data[ticker] = ticker_data
+@@ -239,7 +239,7 @@ def project_ebitda_for_peers(df_ebitda_historical: pd.DataFrame, num_projection_
+ 
+ def get_fmp_current_price(ticker: str, api_key: [REDACTED] -> float | None:
+     """Fetches the latest stock price from Financial Modeling Prep API."""
+-    url = f"https://financialmodelingprep.com/api/v3/quote-short/{ticker}?apikey=[REDACTED]}"
++    url = f"https://financialmodelingprep.com/stable/quote?symbol={ticker}&apikey=[REDACTED]}"
+     try:
+         response = requests.get(url)
+         response.raise_for_status()
+@@ -249,7 +249,7 @@ def get_fmp_current_price(ticker: str, api_key: [REDACTED] -> float | None:
+             if "price" in quote_data and quote_data["price"] is not None:
+                 return float(quote_data["price"])
+             else:
+-                url_full_quote = f"https://financialmodelingprep.com/api/v3/quote/{ticker}?apikey=[REDACTED]}"
++                url_full_quote = f"https://financialmodelingprep.com/stable/quote?symbol={ticker}&apikey=[REDACTED]}"
+                 response_full = requests.get(url_full_quote)
+                 response_full.raise_for_status()
+                 data_full = response_full.json()
+@@ -304,88 +304,62 @@ def get_analyst_insights(ticker: str, api_key: [REDACTED] = None) -> tuple[str | None,
+         
+     return rating, target_price
+ 
++
+ def get_fmp_target_price(ticker: str, api_key: [REDACTED] -> float | None:
+-    """Fetches the latest analyst target price from Financial Modeling Prep API v4."""
+-    url = f"https://financialmodelingprep.com/api/v4/price-target?symbol={ticker}&apikey=[REDACTED]}"
++    """Fetch external analyst target-price consensus from FMP Stable."""
+     try:
+-        response = requests.get(url)
++        response = requests.get(
++            "https://financialmodelingprep.com/stable/price-target-consensus",
++            params={"symbol": ticker, "apikey": api_key},
++            timeout=20,
++        )
+         response.raise_for_status()
+         data = response.json()
+-        if data and isinstance(data, list) and len(data) > 0:
+-            for item in data:
+-                try:
+-                    item['parsedDate'] = pd.to_datetime(item.get('publishedDate'))
+-                except Exception as e:
+-                    print(f"Warning: Could not parse publishedDate '{item.get('publishedDate')}' for {ticker}: {e}")
+-                    item['parsedDate'] = None
+-            
+-            valid_data = [item for item in data if item['parsedDate'] is not None]
+-            
+-            if not valid_data:
+-                print(f"No valid published dates found in FMP target price data for {ticker}.")
+-                return None
+ 
+-            latest_target_info = sorted(valid_data, key=lambda x: x['parsedDate'], reverse=True)[0]
+-            
+-            if "priceTarget" in latest_target_info and latest_target_info["priceTarget"] is not None:
+-                return float(latest_target_info["priceTarget"])
+-            else:
+-                print(f"Price target not found in the latest FMP data for {ticker}. Data: {latest_target_info}")
+-                return None
+-        else:
+-            print(f"No target price data or unexpected format returned from FMP for {ticker}. Response: {data}")
+-            return None
+-    except requests.exceptions.RequestException as e:
+-        print(f"Error fetching FMP target price for {ticker}: {e}")
+-        return None
+-    except (KeyError, ValueError, TypeError) as e:
+-        print(f"Error processing FMP target price data for {ticker}: {e}. Response: {data if 'data' in locals() else 'N/A'}")
+-        return None
++        if isinstance(data, list) and data:
++            row = next(
++                (x for x in data if x.get("symbol") == ticker),
++                None,
++            )
++            if row:
++                value = row.get("targetConsensus")
++                if value is not None and float(value) > 0:
++                    return float(value)
++    except Exception as e:
++        print(f"Target consensus unavailable for {ticker}: {type(e).__name__}")
++
++    return None
++
+ 
+ def get_fmp_analyst_rating(ticker: str, api_key: [REDACTED] -> str | None:
+-    """Fetches the latest analyst rating (e.g., Buy, Hold, Sell) from Financial Modeling Prep API v4."""
+-    url = f"https://financialmodelingprep.com/api/v4/upgrades-downgrades?symbol={ticker}&apikey=[REDACTED]}"
++    """Fetch external analyst rating consensus from FMP Stable."""
+     try:
+-        response = requests.get(url)
++        response = requests.get(
++            "https://financialmodelingprep.com/stable/grades-consensus",
++            params={"symbol": ticker, "apikey": api_key},
++            timeout=20,
++        )
+         response.raise_for_status()
+         data = response.json()
+-        if data and isinstance(data, list) and len(data) > 0:
+-            for item in data:
+-                try:
+-                    item['parsedDate'] = pd.to_datetime(item.get('publishedDate'))
+-                except Exception as e:
+-                    print(f"Warning: Could not parse publishedDate '{item.get('publishedDate')}' for {ticker}: {e}")
+-                    item['parsedDate'] = None
+-            
+-            valid_data = [item for item in data if item['parsedDate'] is not None]
+ 
+-            if not valid_data:
+-                print(f"No valid published dates found in FMP analyst rating data for {ticker}.")
+-                return None
++        if isinstance(data, list) and data:
++            row = next(
++                (x for x in data if x.get("symbol") == ticker),
++                None,
++            )
++            if row:
++                value = row.get("consensus")
++                if isinstance(value, str) and value.strip():
++                    return value.strip()
++    except Exception as e:
++        print(f"Rating consensus unavailable for {ticker}: {type(e).__name__}")
++
++    return None
+ 
+-            latest_rating_info = sorted(valid_data, key=lambda x: x['parsedDate'], reverse=True)[0]
+-            
+-            if "newGrade" in latest_rating_info and latest_rating_info["newGrade"]:
+-                return str(latest_rating_info["newGrade"])
+-            elif "action" in latest_rating_info and latest_rating_info["action"]:
+-                 print(f"newGrade not found, using action: {latest_rating_info['action']} for {ticker}")
+-                 return str(latest_rating_info["action"])
+-            else:
+-                print(f"Analyst rating (newGrade or action) not found in the latest FMP data for {ticker}. Data: {latest_rating_info}")
+-                return None
+-        else:
+-            print(f"No analyst rating data or unexpected format returned from FMP for {ticker}. Response: {data}")
+-            return None
+-    except requests.exceptions.RequestException as e:
+-        print(f"Error fetching FMP analyst rating for {ticker}: {e}")
+-        return None
+-    except (KeyError, ValueError, TypeError) as e:
+-        print(f"Error processing FMP analyst rating data for {ticker}: {e}. Response: {data if 'data' in locals() else 'N/A'}")
+-        return None
+ 
+ def get_fmp_company_profile(ticker: str, api_key: [REDACTED] -> dict | None:
+     """Fetches comprehensive company profile data from FMP API."""
+-    url = f"https://financialmodelingprep.com/api/v3/profile/{ticker}?apikey=[REDACTED]}"
++    url = f"https://financialmodelingprep.com/stable/profile?symbol={ticker}&apikey=[REDACTED]}"
+     try:
+         response = requests.get(url)
+         response.raise_for_status()
+@@ -404,7 +378,7 @@ def get_fmp_company_profile(ticker: str, api_key: [REDACTED] -> dict | None:
+ 
+ def get_fmp_market_cap(ticker: str, api_key: [REDACTED] -> float | None:
+     """Fetches current market capitalization from FMP API."""
+-    url = f"https://financialmodelingprep.com/api/v3/market-capitalization/{ticker}?apikey=[REDACTED]}"
++    url = f"https://financialmodelingprep.com/stable/market-capitalization?symbol={ticker}&apikey=[REDACTED]}"
+     try:
+         response = requests.get(url)
+         response.raise_for_status()
+@@ -463,8 +437,8 @@ def get_comprehensive_company_metrics(ticker: str, api_key: [REDACTED] -> dict:
+     # 3. Get company profile data
+     profile = get_fmp_company_profile(ticker, api_key)
+     if profile:
+-        metrics['market_cap'] = profile.get('mktCap', 0) / 1e9 if profile.get('mktCap') else None  # Convert to billions
+-        metrics['volume'] = profile.get('volAvg', 0) / 1e6 if profile.get('volAvg') else None  # Convert to millions
++        metrics['market_cap'] = profile.get('marketCap', 0) / 1e9 if profile.get('marketCap') else None  # Convert to billions
++        metrics['volume'] = profile.get('averageVolume', profile.get('volume', 0)) / 1e6 if profile.get('averageVolume', profile.get('volume')) else None  # Convert to millions
+         metrics['beta'] = profile.get('beta')
+         metrics['sector'] = profile.get('sector', 'N/A')
+         metrics['industry'] = profile.get('industry', 'N/A')
+@@ -472,7 +446,7 @@ def get_comprehensive_company_metrics(ticker: str, api_key: [REDACTED] -> dict:
+     
+     # 4. Get detailed quote data (volume, 52w range, shares outstanding)
+     try:
+-        quote_url = f"https://financialmodelingprep.com/api/v3/quote/{ticker}?apikey=[REDACTED]}"
++        quote_url = f"https://financialmodelingprep.com/stable/quote?symbol={ticker}&apikey=[REDACTED]}"
+         response = requests.get(quote_url)
+         response.raise_for_status()
+         quote_data = response.json()
+diff --git a/finrobot_equity/core/src/modules/text_generator_agents.py b/finrobot_equity/core/src/modules/text_generator_agents.py
+index fa3d6262..bbe51755 100644
+--- a/finrobot_equity/core/src/modules/text_generator_agents.py
++++ b/finrobot_equity/core/src/modules/text_generator_agents.py
+@@ -31,7 +31,7 @@ SYSTEM_PROMPTS = {
+     "valuation_overview": "You are a valuation analyst. Write a valuation analysis (200-300 words) covering current valuation metrics, peer comparison, and fair value assessment. Use plain text, no markdown.",
+     "risks": "You are a risk analyst. List 5 key investment risks in bullet point format. Be specific and concise.",
+     "competitor_analysis": "You are a competitive analyst. Write a competitor analysis (200-300 words) comparing the company to its peers. Use plain text, no markdown.",
+-    "major_takeaways": "You are a financial analyst. Provide 4 major takeaways covering: Revenue Growth, Gross Profit Margin, SG&A Expense Margin, and EBITDA Margin. Format each with a header followed by 1-2 sentences.",
++    "major_takeaways": "You are a financial analyst. Provide exactly four evidence-based takeaways based only on the supplied financial metrics. Use exactly these four plain-text headings, each followed by 1-2 sentences, with no markdown or numbering: Revenue Growth:, Gross Profit Margin:, SG&A Expense Margin:, EBITDA Margin Stability:. Begin the response with Revenue Growth:. Include specific figures and years when available. Do not invent missing data or external explanations.",
+     "news_summary": "You are a financial news analyst. Summarize the recent news (200-300 words) highlighting key developments and their investment implications. Use plain text, no markdown."
+ }
+ 
+@@ -47,6 +47,56 @@ def _df_to_string(df: Optional[pd.DataFrame], name: str) -> str:
+         return f"{name}:\n[Error formatting data: {e}]\n"
+ 
+ 
++
++def _financial_grounding_rules(financial_metrics):
++    """Build grounding rules from actual and forecast year labels."""
++    rules = [
++        "FINANCIAL EVIDENCE RULES:",
++        "A means Actual; E means Estimate or Forecast.",
++        "Do not describe historical actuals as forecasts.",
++        "Do not describe forecast estimates as historical results.",
++        "Do not invent unsupported financial values or market claims.",
++
++        "For each financial amount, verify the exact metric, year, and company.",
++        "Never confuse the focal company with its peers.",
++        "Do not use historical EV/EBITDA as a forward multiple.",
++        "Do not call a stock undervalued, fairly valued, or overvalued "
++        "without a clearly stated valuation calculation.",
++        "Never extend a historical CAGR into forecast years.",
++        "Do not infer causal explanations without supporting evidence.",
++        "Contribution Margin is NOT automatically Gross Profit Margin.",
++        "Do not confuse EBITDA Margin with reported operating margin.",
++        "Use the exact names of metrics supplied in the dataset.",
++        "If information is unavailable, explicitly say it is unavailable.",
++    ]
++
++    if financial_metrics is not None and not financial_metrics.empty:
++        actual = sorted(
++            [str(c) for c in financial_metrics.columns
++             if str(c).endswith("A") and str(c)[:-1].isdigit()],
++            key=lambda x: int(x[:-1])
++        )
++        forecast = sorted(
++            [str(c) for c in financial_metrics.columns
++             if str(c).endswith("E") and str(c)[:-1].isdigit()],
++            key=lambda x: int(x[:-1])
++        )
++
++        if actual:
++            rules.append("Actual financial years: " + ", ".join(actual))
++        if forecast:
++            rules.append("Forecast financial years: " + ", ".join(forecast))
++
++        if len(actual) >= 2:
++            rules.append(
++                f"The CAGR column represents historical CAGR for "
++                f"{actual[0]} through {actual[-1]}, "
++                "not the entire forecast period."
++            )
++
++    return "\n".join(rules)
++
++
+ def _prepare_user_prompt(data: Dict, prompt_type: str, company_name: str, company_ticker: str) -> str:
+     """Prepare user prompt with financial data."""
+     financial_metrics = data.get('financial_metrics')
+@@ -75,6 +125,14 @@ def _prepare_user_prompt(data: Dict, prompt_type: str, company_name: str, compan
+     if prompt_type == "news_summary" and retail_sentiment:
+         prompt += "\n" + format_retail_sentiment_for_prompt(retail_sentiment) + "\n"
+ 
++    if data.get("data_provenance"):
++        prompt += (
++            "\n\nDATA SOURCE AND ANALYSIS CONSTRAINTS:\n"
++            + str(data["data_provenance"])
++            + "\n"
++        )
++
++    prompt += "\n\n" + _financial_grounding_rules(financial_metrics)
+     prompt += f"\nPlease provide the {prompt_type.replace('_', ' ')} based on the above data."
+     return prompt
+ 
+
+diff --git a/finrobot_equity/core/src/financial_grounding_verifier.py b/finrobot_equity/core/src/financial_grounding_verifier.py
+new file mode 100644
+index 00000000..d8b49a59
+--- /dev/null
++++ b/finrobot_equity/core/src/financial_grounding_verifier.py
+@@ -0,0 +1,231 @@
++import argparse
++import json
++import re
++from pathlib import Path
++
++import pandas as pd
++
++
++AMOUNT_YEAR = re.compile(
++    r"\$\s*([\d,]+(?:\.\d+)?)\s*"
++    r"(billion|million|B|M)\s+"
++    r"(?:in|by|for|during)\s+"
++    r"(20\d{2}[AE])\b",
++    re.IGNORECASE,
++)
++
++ESTIMATED_ACTUAL = re.compile(
++    r"\b(?:an?\s+)?(?:estimated|forecasted|projected)"
++    r"\s+(?:at\s+|to\s+|approximately\s+|around\s+)?"
++    r"\$?\s*[\d,]+(?:\.\d+)?\s*"
++    r"(?:billion|million|B|M)?\s+"
++    r"(?:in|by|for)\s+(20\d{2}A)\b",
++    re.IGNORECASE,
++)
++
++
++def verify(text, csv_path):
++    df = pd.read_csv(csv_path)
++
++    if "metrics" not in df.columns:
++        raise ValueError("CSV must contain a metrics column")
++
++    year_cols = [
++        str(c) for c in df.columns
++        if re.fullmatch(r"20\d{2}[AE]", str(c))
++    ]
++
++    def get_billion(metric, year):
++        if year not in df.columns:
++            return None
++
++        rows = df[
++            df["metrics"].astype(str).str.strip().str.lower()
++            == metric.lower()
++        ]
++        if rows.empty:
++            return None
++
++        value = pd.to_numeric(
++            rows.iloc[0][year], errors="coerce"
++        )
++
++        if pd.isna(value):
++            return None
++
++        # CSV uses absolute USD, not USD billions.
++        return float(value) / 1e9
++
++    findings = []
++    seen = set()
++
++    def add(rule, evidence, status, reason, **extra):
++        key = (rule, evidence.strip().lower())
++        if key in seen:
++            return
++        seen.add(key)
++        findings.append({
++            "rule": rule,
++            "status": status,
++            "evidence": evidence.strip(),
++            "reason": reason,
++            **extra,
++        })
++
++    # 1. Detect "estimated $144.55 billion in 2026A"
++    # without recording the same phrase twice.
++    for m in ESTIMATED_ACTUAL.finditer(text):
++        add(
++            "ACTUAL_FORECAST_MISMATCH",
++            m.group(0),
++            "contradicted",
++            "Actual-year figure is described as an estimate.",
++            year=m.group(1),
++        )
++
++    # 2. Split paragraphs into approximate sentences.
++    # Preserve decimal points in financial amounts.
++    sentences = re.split(
++        r"(?<=[.!?])\s+(?=[A-Z])",
++        text.replace("\n", " ")
++    )
++
++    for sentence in sentences:
++        matches = list(AMOUNT_YEAR.finditer(sentence))
++        if not matches:
++            continue
++
++        # An EBITDA claim needs an explicit EBITDA context.
++        # This is a screening heuristic rather than full semantic parsing.
++        if not re.search(r"\bEBITDA\b", sentence, re.IGNORECASE):
++            continue
++
++        for m in matches:
++            claimed = float(m.group(1).replace(",", ""))
++            unit = m.group(2).lower()
++            year = m.group(3)
++
++            if unit in ("million", "m"):
++                claimed /= 1000.0
++
++            actual = get_billion("EBITDA", year)
++            revenue = get_billion("Revenue", year)
++
++            if actual is None:
++                continue
++
++            # Determine the text immediately before this claim.
++            prefix = sentence[:m.start()]
++            local = prefix[-140:]
++
++            # Avoid comparing clearly attributed peer amounts
++            # against NVDA's financial data.
++            peer_attribution = bool(re.search(
++                r"(?:AMD|Intel|INTC|Broadcom|Qualcomm)"
++                r"(?:'s)?\s+(?:EBITDA|earnings)"
++                r"[^.;]{0,90}$",
++                local,
++                re.IGNORECASE,
++            ))
++
++            if peer_attribution:
++                continue
++
++            # If the sentence includes a peer comparison but the
++            # claim is ambiguous, flag attribution for review.
++            # The larger mismatch is still retained as a finding.
++            possible_peer_context = bool(re.search(
++                r"\b(?:AMD|Intel|INTC)\b",
++                sentence,
++                re.IGNORECASE,
++            ))
++
++            # Dollar values are rounded in generated prose.
++            tolerance = max(0.15, 0.02 * abs(actual))
++
++            if abs(claimed - actual) > tolerance:
++                add(
++                    "EBITDA_VALUE_MISMATCH",
++                    m.group(0),
++                    "needs_review" if possible_peer_context
++                    else "contradicted",
++                    "Claimed EBITDA differs from NVDA CSV. "
++                    "Check company and metric attribution.",
++                    year=year,
++                    claimed_billions=claimed,
++                    csv_ebitda_billions=round(actual, 4),
++                    difference_billions=round(
++                        claimed - actual, 4
++                    ),
++                )
++
++            if (
++                revenue is not None
++                and claimed > revenue * 1.02
++            ):
++                add(
++                    "AMOUNT_EXCEEDS_REVENUE",
++                    m.group(0),
++                    "needs_review" if possible_peer_context
++                    else "contradicted",
++                    "Claimed EBITDA exceeds corresponding "
++                    "annual revenue; verify attribution.",
++                    year=year,
++                    claimed_billions=claimed,
++                    revenue_billions=round(revenue, 4),
++                )
++
++    return {
++        "verifier_version": "0.2",
++        "units": "CSV in USD; claims converted to USD billions",
++        "years_available": year_cols,
++        "findings": findings,
++        "finding_count": len(findings),
++        "limitations": (
++            "Heuristic numeric screening. Company and metric "
++            "attribution may require manual review."
++        ),
++    }
++
++
++def main():
++    parser = argparse.ArgumentParser()
++    parser.add_argument("--text", required=True)
++    parser.add_argument("--csv", required=True)
++    parser.add_argument("--out", required=True)
++    args = parser.parse_args()
++
++    result = verify(
++        Path(args.text).read_text(encoding="utf-8"),
++        args.csv,
++    )
++
++    path = Path(args.out)
++    path.parent.mkdir(parents=True, exist_ok=True)
++    path.write_text(
++        json.dumps(result, indent=2),
++        encoding="utf-8",
++    )
++
++    print("Financial Grounding Verifier v0.2")
++    print("Units:", result["units"])
++    print("Findings:", result["finding_count"])
++
++    for i, item in enumerate(result["findings"], 1):
++        print(f"\n[{i}] {item['rule']}")
++        print("Status:", item["status"])
++        print("Evidence:", item["evidence"])
++        print("Reason:", item["reason"])
++
++        if "csv_ebitda_billions" in item:
++            print(
++                "CSV EBITDA:",
++                item["csv_ebitda_billions"],
++                "billion USD",
++            )
++
++    print("\nSaved:", path)
++
++
++if __name__ == "__main__":
++    main()
+
+diff --git a/finrobot_equity/core/src/financial_grounding_verifier.v03.py b/finrobot_equity/core/src/financial_grounding_verifier.v03.py
+new file mode 100644
+index 00000000..cadad655
+--- /dev/null
++++ b/finrobot_equity/core/src/financial_grounding_verifier.v03.py
+@@ -0,0 +1,282 @@
++import argparse
++import json
++import re
++from pathlib import Path
++
++import pandas as pd
++
++
++AMOUNT_YEAR = re.compile(
++    r"\$\s*([\d,]+(?:\.\d+)?)\s*"
++    r"(billion|million|B|M)\s+"
++    r"(?:in|by|for|during)\s+"
++    r"(20\d{2}[AE])\b",
++    re.IGNORECASE,
++)
++
++ESTIMATED_ACTUAL = re.compile(
++    r"\b(?:an?\s+)?(?:estimated|forecasted|projected)"
++    r"\s+(?:at\s+|to\s+|approximately\s+|around\s+)?"
++    r"\$?\s*[\d,]+(?:\.\d+)?\s*"
++    r"(?:billion|million|B|M)?\s+"
++    r"(?:in|by|for)\s+(20\d{2}A)\b",
++    re.IGNORECASE,
++)
++
++
++
++METRIC_LABEL = re.compile(
++    r"\b(?:"
++    r"cost of operations|cost of revenue|"
++    r"operating cash flow|contribution profit|"
++    r"gross profit|net income|"
++    r"revenue|sales|EBITDA|"
++    r"EPS|SG&A"
++    r")\b",
++    re.IGNORECASE,
++)
++
++
++def attributed_metric(prefix):
++    """Find nearest explicit metric before a dollar amount."""
++    matches = list(METRIC_LABEL.finditer(prefix[-180:]))
++    if not matches:
++        return None
++
++    metric = matches[-1].group(0).lower()
++    return "Revenue" if metric == "sales" else metric
++
++
++HISTORICAL_TREND_FORECAST = re.compile(
++    r"\bprojected\b[^.!?\\n]{0,200}?"
++    r"\bfrom\s+\$[\d,.]+\s*(?:B|M|billion|million)"
++    r"\s+in\s+20\d{2}A"
++    r"[^.!?\\n]{0,100}?"
++    r"\bto\s+\$[\d,.]+\s*(?:B|M|billion|million)"
++    r"\s+in\s+20\d{2}A\b",
++    re.IGNORECASE,
++)
++
++
++def verify(text, csv_path):
++    df = pd.read_csv(csv_path)
++
++    if "metrics" not in df.columns:
++        raise ValueError("CSV must contain a metrics column")
++
++    year_cols = [
++        str(c) for c in df.columns
++        if re.fullmatch(r"20\d{2}[AE]", str(c))
++    ]
++
++    def get_billion(metric, year):
++        if year not in df.columns:
++            return None
++
++        rows = df[
++            df["metrics"].astype(str).str.strip().str.lower()
++            == metric.lower()
++        ]
++        if rows.empty:
++            return None
++
++        value = pd.to_numeric(
++            rows.iloc[0][year], errors="coerce"
++        )
++
++        if pd.isna(value):
++            return None
++
++        # CSV uses absolute USD, not USD billions.
++        return float(value) / 1e9
++
++    findings = []
++    seen = set()
++
++    def add(rule, evidence, status, reason, **extra):
++        key = (rule, evidence.strip().lower())
++        if key in seen:
++            return
++        seen.add(key)
++        findings.append({
++            "rule": rule,
++            "status": status,
++            "evidence": evidence.strip(),
++            "reason": reason,
++            **extra,
++        })
++
++    # 1. Detect "estimated $144.55 billion in 2026A"
++    # without recording the same phrase twice.
++    for m in ESTIMATED_ACTUAL.finditer(text):
++        add(
++            "ACTUAL_FORECAST_MISMATCH",
++            m.group(0),
++            "contradicted",
++            "Actual-year figure is described as an estimate.",
++            year=m.group(1),
++        )
++
++    # Actual-to-actual change described as a projection.
++    for m in HISTORICAL_TREND_FORECAST.finditer(text):
++        add(
++            "HISTORICAL_TREND_CALLED_FORECAST",
++            m.group(0),
++            "contradicted",
++            "Both endpoints are labeled Actual (A), "
++            "but the change is described as projected.",
++        )
++
++    # 2. Split paragraphs into approximate sentences.
++    # Preserve decimal points in financial amounts.
++    sentences = re.split(
++        r"(?<=[.!?])\s+(?=[A-Z])",
++        text.replace("\n", " ")
++    )
++
++    for sentence in sentences:
++        matches = list(AMOUNT_YEAR.finditer(sentence))
++        if not matches:
++            continue
++
++        # An EBITDA claim needs an explicit EBITDA context.
++        # This is a screening heuristic rather than full semantic parsing.
++        if not re.search(r"\bEBITDA\b", sentence, re.IGNORECASE):
++            continue
++
++        for m in matches:
++            claimed = float(m.group(1).replace(",", ""))
++            unit = m.group(2).lower()
++            year = m.group(3)
++
++            if unit in ("million", "m"):
++                claimed /= 1000.0
++
++            actual = get_billion("EBITDA", year)
++            revenue = get_billion("Revenue", year)
++
++            if actual is None:
++                continue
++
++            # Determine the text immediately before this claim.
++            prefix = sentence[:m.start()]
++            local = prefix[-140:]
++
++            metric = attributed_metric(prefix)
++
++            # Do not compare Revenue, Cost of Operations,
++            # EPS, etc. against EBITDA.
++            if metric != "ebitda":
++                continue
++
++            # Avoid comparing clearly attributed peer amounts
++            # against NVDA's financial data.
++            peer_attribution = bool(re.search(
++                r"(?:AMD|Intel|INTC|Broadcom|Qualcomm)"
++                r"(?:'s)?\s+(?:EBITDA|earnings)"
++                r"[^.;]{0,90}$",
++                local,
++                re.IGNORECASE,
++            ))
++
++            if peer_attribution:
++                continue
++
++            # If the sentence includes a peer comparison but the
++            # claim is ambiguous, flag attribution for review.
++            # The larger mismatch is still retained as a finding.
++            possible_peer_context = bool(re.search(
++                r"\b(?:AMD|Intel|INTC)\b",
++                sentence,
++                re.IGNORECASE,
++            ))
++
++            # Dollar values are rounded in generated prose.
++            tolerance = max(0.15, 0.02 * abs(actual))
++
++            if abs(claimed - actual) > tolerance:
++                add(
++                    "EBITDA_VALUE_MISMATCH",
++                    m.group(0),
++                    "needs_review" if possible_peer_context
++                    else "contradicted",
++                    "Claimed EBITDA differs from NVDA CSV. "
++                    "Check company and metric attribution.",
++                    year=year,
++                    claimed_billions=claimed,
++                    csv_ebitda_billions=round(actual, 4),
++                    difference_billions=round(
++                        claimed - actual, 4
++                    ),
++                )
++
++            if (
++                revenue is not None
++                and claimed > revenue * 1.02
++            ):
++                add(
++                    "AMOUNT_EXCEEDS_REVENUE",
++                    m.group(0),
++                    "needs_review" if possible_peer_context
++                    else "contradicted",
++                    "Claimed EBITDA exceeds corresponding "
++                    "annual revenue; verify attribution.",
++                    year=year,
++                    claimed_billions=claimed,
++                    revenue_billions=round(revenue, 4),
++                )
++
++    return {
++        "verifier_version": "0.3",
++        "units": "CSV in USD; claims converted to USD billions",
++        "years_available": year_cols,
++        "findings": findings,
++        "finding_count": len(findings),
++        "limitations": (
++            "Heuristic numeric screening. Company and metric "
++            "attribution may require manual review."
++        ),
++    }
++
++
++def main():
++    parser = argparse.ArgumentParser()
++    parser.add_argument("--text", required=True)
++    parser.add_argument("--csv", required=True)
++    parser.add_argument("--out", required=True)
++    args = parser.parse_args()
++
++    result = verify(
++        Path(args.text).read_text(encoding="utf-8"),
++        args.csv,
++    )
++
++    path = Path(args.out)
++    path.parent.mkdir(parents=True, exist_ok=True)
++    path.write_text(
++        json.dumps(result, indent=2),
++        encoding="utf-8",
++    )
++
++    print("Financial Grounding Verifier v0.3")
++    print("Units:", result["units"])
++    print("Findings:", result["finding_count"])
++
++    for i, item in enumerate(result["findings"], 1):
++        print(f"\n[{i}] {item['rule']}")
++        print("Status:", item["status"])
++        print("Evidence:", item["evidence"])
++        print("Reason:", item["reason"])
++
++        if "csv_ebitda_billions" in item:
++            print(
++                "CSV EBITDA:",
++                item["csv_ebitda_billions"],
++                "billion USD",
++            )
++
++    print("\nSaved:", path)
++
++
++if __name__ == "__main__":
++    main()

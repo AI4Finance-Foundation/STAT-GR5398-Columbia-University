@@ -1,0 +1,1077 @@
+{
+  "args": {
+    "model": "/content/drive/MyDrive/FinGPT_STAT_GR5398_Assignment1/model_cache/hub/models--meta-llama--Llama-3.1-8B/snapshots/d04e592bb4f6aa9cfee91e2e20afa771667e1d4b",
+    "arch": "llama3",
+    "dataset": "data/local_subset",
+    "run_name": "llama31_8b",
+    "max_length": 2048,
+    "prompt_budget": 896,
+    "epochs": 1,
+    "offline": true,
+    "quant8": true,
+    "ds_config": null,
+    "full_answers": false
+  },
+  "model_revision": "d04e592bb4f6aa9cfee91e2e20afa771667e1d4b",
+  "device": "cuda",
+  "dtype": "torch.float16",
+  "torch": "2.11.0+cu130",
+  "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "cuda_available": true,
+  "mps_available": false,
+  "parameter_count_method": "PEFT.get_nb_trainable_parameters with4bit storage correction",
+  "trainable_parameters": 20971520,
+  "total_parameters": 8051232768,
+  "trainable_percent": 0.26047588741133265,
+  "frozen_hash_scope": "first4096 elements only; all requires_grad audited",
+  "quantization": "4bit NF4 double quant",
+  "train_runtime_wall_s": 357.937793005,
+  "training_metrics": {
+    "train_runtime": 357.3506,
+    "train_samples_per_second": 0.168,
+    "train_steps_per_second": 0.042,
+    "total_flos": 3690232886992896.0,
+    "train_loss": 1.7046602328618368,
+    "epoch": 1.0
+  },
+  "validation_metrics": {
+    "eval_loss": 1.678718090057373,
+    "eval_runtime": 56.5194,
+    "eval_samples_per_second": 0.531,
+    "eval_steps_per_second": 0.531,
+    "epoch": 1.0
+  },
+  "train_log": [
+    {
+      "loss": 1.7398,
+      "grad_norm": 0.5837144255638123,
+      "learning_rate": 5e-05,
+      "epoch": 0.06666666666666667,
+      "step": 1
+    },
+    {
+      "loss": 1.7845,
+      "grad_norm": 0.5409992933273315,
+      "learning_rate": 5e-05,
+      "epoch": 0.13333333333333333,
+      "step": 2
+    },
+    {
+      "loss": 1.7428,
+      "grad_norm": 0.48019251227378845,
+      "learning_rate": 5e-05,
+      "epoch": 0.2,
+      "step": 3
+    },
+    {
+      "loss": 1.701,
+      "grad_norm": 0.5568996071815491,
+      "learning_rate": 5e-05,
+      "epoch": 0.26666666666666666,
+      "step": 4
+    },
+    {
+      "loss": 1.7377,
+      "grad_norm": 0.4965391457080841,
+      "learning_rate": 5e-05,
+      "epoch": 0.3333333333333333,
+      "step": 5
+    },
+    {
+      "loss": 1.7273,
+      "grad_norm": 0.5206658244132996,
+      "learning_rate": 5e-05,
+      "epoch": 0.4,
+      "step": 6
+    },
+    {
+      "loss": 1.5317,
+      "grad_norm": 0.568626880645752,
+      "learning_rate": 5e-05,
+      "epoch": 0.4666666666666667,
+      "step": 7
+    },
+    {
+      "loss": 1.5769,
+      "grad_norm": 0.5967841744422913,
+      "learning_rate": 5e-05,
+      "epoch": 0.5333333333333333,
+      "step": 8
+    },
+    {
+      "loss": 1.637,
+      "grad_norm": 0.5848677754402161,
+      "learning_rate": 5e-05,
+      "epoch": 0.6,
+      "step": 9
+    },
+    {
+      "loss": 1.5976,
+      "grad_norm": 0.5716153979301453,
+      "learning_rate": 5e-05,
+      "epoch": 0.6666666666666666,
+      "step": 10
+    },
+    {
+      "loss": 1.6989,
+      "grad_norm": 0.7606001496315002,
+      "learning_rate": 5e-05,
+      "epoch": 0.7333333333333333,
+      "step": 11
+    },
+    {
+      "loss": 1.8466,
+      "grad_norm": 0.7295596599578857,
+      "learning_rate": 5e-05,
+      "epoch": 0.8,
+      "step": 12
+    },
+    {
+      "loss": 1.8912,
+      "grad_norm": 0.6886530518531799,
+      "learning_rate": 5e-05,
+      "epoch": 0.8666666666666667,
+      "step": 13
+    },
+    {
+      "loss": 1.594,
+      "grad_norm": 0.6941683888435364,
+      "learning_rate": 5e-05,
+      "epoch": 0.9333333333333333,
+      "step": 14
+    },
+    {
+      "loss": 1.763,
+      "grad_norm": 0.6941888332366943,
+      "learning_rate": 5e-05,
+      "epoch": 1.0,
+      "step": 15
+    },
+    {
+      "train_runtime": 357.3506,
+      "train_samples_per_second": 0.168,
+      "train_steps_per_second": 0.042,
+      "total_flos": 3690232886992896.0,
+      "train_loss": 1.7046602328618368,
+      "epoch": 1.0,
+      "step": 15
+    },
+    {
+      "eval_loss": 1.678718090057373,
+      "eval_runtime": 56.5194,
+      "eval_samples_per_second": 0.531,
+      "eval_steps_per_second": 0.531,
+      "epoch": 1.0,
+      "step": 15
+    }
+  ],
+  "frozen_parameter_hash_before": "3597281a29ad3e392168c7c36bd5cfbbb4b60090ae70760cebbc2e3e58057d11",
+  "frozen_parameter_hash_after": "3597281a29ad3e392168c7c36bd5cfbbb4b60090ae70760cebbc2e3e58057d11",
+  "changed_adapter_tensors": 448,
+  "max_length_observed": 1397,
+  "context_shortened_count": 89,
+  "tokenization": [
+    {
+      "original_body_tokens": 1084,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1014,
+      "target_tokens": 339,
+      "symbol": "AAPL",
+      "period": "2023-11-19 to 2023-11-26"
+    },
+    {
+      "original_body_tokens": 1074,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 369,
+      "symbol": "AAPL",
+      "period": "2023-12-31 to 2024-01-07"
+    },
+    {
+      "original_body_tokens": 2035,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1014,
+      "target_tokens": 366,
+      "symbol": "AMGN",
+      "period": "2023-11-19 to 2023-11-26"
+    },
+    {
+      "original_body_tokens": 1810,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 379,
+      "symbol": "AMGN",
+      "period": "2023-12-31 to 2024-01-07"
+    },
+    {
+      "original_body_tokens": 1054,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 340,
+      "symbol": "AXP",
+      "period": "2023-11-19 to 2023-11-26"
+    },
+    {
+      "original_body_tokens": 991,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1014,
+      "target_tokens": 312,
+      "symbol": "AXP",
+      "period": "2023-12-31 to 2024-01-07"
+    },
+    {
+      "original_body_tokens": 967,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 282,
+      "symbol": "BA",
+      "period": "2023-11-19 to 2023-11-26"
+    },
+    {
+      "original_body_tokens": 1825,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 353,
+      "symbol": "BA",
+      "period": "2023-12-31 to 2024-01-07"
+    },
+    {
+      "original_body_tokens": 1904,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1014,
+      "target_tokens": 322,
+      "symbol": "CAT",
+      "period": "2023-11-19 to 2023-11-26"
+    },
+    {
+      "original_body_tokens": 980,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 340,
+      "symbol": "CAT",
+      "period": "2023-12-31 to 2024-01-07"
+    },
+    {
+      "original_body_tokens": 1061,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1014,
+      "target_tokens": 313,
+      "symbol": "CRM",
+      "period": "2023-11-19 to 2023-11-26"
+    },
+    {
+      "original_body_tokens": 1289,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1014,
+      "target_tokens": 362,
+      "symbol": "CRM",
+      "period": "2023-12-31 to 2024-01-07"
+    },
+    {
+      "original_body_tokens": 1970,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 346,
+      "symbol": "CSCO",
+      "period": "2023-11-19 to 2023-11-26"
+    },
+    {
+      "original_body_tokens": 1001,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 366,
+      "symbol": "CSCO",
+      "period": "2023-12-31 to 2024-01-07"
+    },
+    {
+      "original_body_tokens": 1074,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1014,
+      "target_tokens": 380,
+      "symbol": "CVX",
+      "period": "2023-11-19 to 2023-11-26"
+    },
+    {
+      "original_body_tokens": 1292,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 340,
+      "symbol": "CVX",
+      "period": "2023-12-31 to 2024-01-07"
+    },
+    {
+      "original_body_tokens": 1080,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 372,
+      "symbol": "DIS",
+      "period": "2023-11-19 to 2023-11-26"
+    },
+    {
+      "original_body_tokens": 1356,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 369,
+      "symbol": "DIS",
+      "period": "2023-12-31 to 2024-01-07"
+    },
+    {
+      "original_body_tokens": 1101,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 380,
+      "symbol": "DOW",
+      "period": "2023-11-19 to 2023-11-26"
+    },
+    {
+      "original_body_tokens": 1395,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1014,
+      "target_tokens": 343,
+      "symbol": "DOW",
+      "period": "2023-12-31 to 2024-01-07"
+    },
+    {
+      "original_body_tokens": 1792,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1014,
+      "target_tokens": 356,
+      "symbol": "GS",
+      "period": "2023-11-19 to 2023-11-26"
+    },
+    {
+      "original_body_tokens": 996,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 309,
+      "symbol": "GS",
+      "period": "2023-12-31 to 2024-01-07"
+    },
+    {
+      "original_body_tokens": 1625,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 340,
+      "symbol": "HD",
+      "period": "2023-11-19 to 2023-11-26"
+    },
+    {
+      "original_body_tokens": 1736,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 381,
+      "symbol": "HD",
+      "period": "2023-12-31 to 2024-01-07"
+    },
+    {
+      "original_body_tokens": 1509,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 371,
+      "symbol": "HON",
+      "period": "2023-11-19 to 2023-11-26"
+    },
+    {
+      "original_body_tokens": 1417,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 380,
+      "symbol": "HON",
+      "period": "2023-12-31 to 2024-01-07"
+    },
+    {
+      "original_body_tokens": 1800,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 381,
+      "symbol": "IBM",
+      "period": "2023-11-19 to 2023-11-26"
+    },
+    {
+      "original_body_tokens": 1944,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 379,
+      "symbol": "IBM",
+      "period": "2023-12-31 to 2024-01-07"
+    },
+    {
+      "original_body_tokens": 1936,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 344,
+      "symbol": "INTC",
+      "period": "2023-11-19 to 2023-11-26"
+    },
+    {
+      "original_body_tokens": 1373,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1014,
+      "target_tokens": 330,
+      "symbol": "INTC",
+      "period": "2023-12-31 to 2024-01-07"
+    },
+    {
+      "original_body_tokens": 1160,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 352,
+      "symbol": "JNJ",
+      "period": "2023-11-19 to 2023-11-26"
+    },
+    {
+      "original_body_tokens": 1629,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 369,
+      "symbol": "JNJ",
+      "period": "2023-12-31 to 2024-01-07"
+    },
+    {
+      "original_body_tokens": 1081,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 379,
+      "symbol": "JPM",
+      "period": "2023-11-19 to 2023-11-26"
+    },
+    {
+      "original_body_tokens": 1325,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1014,
+      "target_tokens": 370,
+      "symbol": "JPM",
+      "period": "2023-12-31 to 2024-01-07"
+    },
+    {
+      "original_body_tokens": 1520,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 358,
+      "symbol": "KO",
+      "period": "2023-11-19 to 2023-11-26"
+    },
+    {
+      "original_body_tokens": 1627,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 352,
+      "symbol": "KO",
+      "period": "2023-12-31 to 2024-01-07"
+    },
+    {
+      "original_body_tokens": 1999,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 357,
+      "symbol": "MCD",
+      "period": "2023-11-19 to 2023-11-26"
+    },
+    {
+      "original_body_tokens": 1884,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 355,
+      "symbol": "MCD",
+      "period": "2023-12-31 to 2024-01-07"
+    },
+    {
+      "original_body_tokens": 964,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1013,
+      "target_tokens": 275,
+      "symbol": "MMM",
+      "period": "2023-11-19 to 2023-11-26"
+    },
+    {
+      "original_body_tokens": 1321,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 369,
+      "symbol": "MMM",
+      "period": "2023-12-31 to 2024-01-07"
+    },
+    {
+      "original_body_tokens": 1453,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1014,
+      "target_tokens": 351,
+      "symbol": "MRK",
+      "period": "2023-11-19 to 2023-11-26"
+    },
+    {
+      "original_body_tokens": 970,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1014,
+      "target_tokens": 345,
+      "symbol": "MRK",
+      "period": "2023-12-31 to 2024-01-07"
+    },
+    {
+      "original_body_tokens": 1615,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 380,
+      "symbol": "MSFT",
+      "period": "2023-11-19 to 2023-11-26"
+    },
+    {
+      "original_body_tokens": 1244,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 381,
+      "symbol": "MSFT",
+      "period": "2023-12-31 to 2024-01-07"
+    },
+    {
+      "original_body_tokens": 1259,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1013,
+      "target_tokens": 359,
+      "symbol": "NKE",
+      "period": "2023-11-19 to 2023-11-26"
+    },
+    {
+      "original_body_tokens": 1072,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 347,
+      "symbol": "NKE",
+      "period": "2023-12-31 to 2024-01-07"
+    },
+    {
+      "original_body_tokens": 1980,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1014,
+      "target_tokens": 310,
+      "symbol": "PG",
+      "period": "2023-11-19 to 2023-11-26"
+    },
+    {
+      "original_body_tokens": 1347,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1014,
+      "target_tokens": 354,
+      "symbol": "PG",
+      "period": "2023-12-31 to 2024-01-07"
+    },
+    {
+      "original_body_tokens": 821,
+      "body_budget": 896,
+      "context_shortened": false,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 929,
+      "target_tokens": 297,
+      "symbol": "TRV",
+      "period": "2023-11-19 to 2023-11-26"
+    },
+    {
+      "original_body_tokens": 912,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 377,
+      "symbol": "TRV",
+      "period": "2023-12-31 to 2024-01-07"
+    },
+    {
+      "original_body_tokens": 1314,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 321,
+      "symbol": "UNH",
+      "period": "2023-11-19 to 2023-11-26"
+    },
+    {
+      "original_body_tokens": 1053,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 332,
+      "symbol": "UNH",
+      "period": "2023-12-31 to 2024-01-07"
+    },
+    {
+      "original_body_tokens": 1808,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1014,
+      "target_tokens": 373,
+      "symbol": "V",
+      "period": "2023-11-19 to 2023-11-26"
+    },
+    {
+      "original_body_tokens": 1396,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 321,
+      "symbol": "V",
+      "period": "2023-12-31 to 2024-01-07"
+    },
+    {
+      "original_body_tokens": 1928,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 365,
+      "symbol": "VZ",
+      "period": "2023-11-19 to 2023-11-26"
+    },
+    {
+      "original_body_tokens": 1024,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 343,
+      "symbol": "VZ",
+      "period": "2023-12-31 to 2024-01-07"
+    },
+    {
+      "original_body_tokens": 1524,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 346,
+      "symbol": "WBA",
+      "period": "2023-11-19 to 2023-11-26"
+    },
+    {
+      "original_body_tokens": 1318,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1014,
+      "target_tokens": 354,
+      "symbol": "WBA",
+      "period": "2023-12-31 to 2024-01-07"
+    },
+    {
+      "original_body_tokens": 1464,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1014,
+      "target_tokens": 276,
+      "symbol": "WMT",
+      "period": "2023-11-19 to 2023-11-26"
+    },
+    {
+      "original_body_tokens": 1801,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 319,
+      "symbol": "WMT",
+      "period": "2023-12-31 to 2024-01-07"
+    },
+    {
+      "original_body_tokens": 1404,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 381,
+      "symbol": "AAPL",
+      "period": "2024-01-28 to 2024-02-04"
+    },
+    {
+      "original_body_tokens": 1585,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1014,
+      "target_tokens": 364,
+      "symbol": "AMGN",
+      "period": "2024-01-28 to 2024-02-04"
+    },
+    {
+      "original_body_tokens": 914,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 328,
+      "symbol": "AXP",
+      "period": "2024-01-28 to 2024-02-04"
+    },
+    {
+      "original_body_tokens": 1579,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 380,
+      "symbol": "BA",
+      "period": "2024-01-28 to 2024-02-04"
+    },
+    {
+      "original_body_tokens": 1419,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 324,
+      "symbol": "CAT",
+      "period": "2024-01-28 to 2024-02-04"
+    },
+    {
+      "original_body_tokens": 1150,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": true,
+      "prompt_tokens": 1014,
+      "target_tokens": 373,
+      "symbol": "CRM",
+      "period": "2024-01-28 to 2024-02-04"
+    },
+    {
+      "original_body_tokens": 2846,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 381,
+      "symbol": "CSCO",
+      "period": "2024-01-28 to 2024-02-04"
+    },
+    {
+      "original_body_tokens": 999,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 349,
+      "symbol": "CVX",
+      "period": "2024-01-28 to 2024-02-04"
+    },
+    {
+      "original_body_tokens": 980,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 305,
+      "symbol": "DIS",
+      "period": "2024-01-28 to 2024-02-04"
+    },
+    {
+      "original_body_tokens": 1679,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 314,
+      "symbol": "DOW",
+      "period": "2024-01-28 to 2024-02-04"
+    },
+    {
+      "original_body_tokens": 1358,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 348,
+      "symbol": "GS",
+      "period": "2024-01-28 to 2024-02-04"
+    },
+    {
+      "original_body_tokens": 937,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 269,
+      "symbol": "HD",
+      "period": "2024-01-28 to 2024-02-04"
+    },
+    {
+      "original_body_tokens": 1164,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 359,
+      "symbol": "HON",
+      "period": "2024-01-28 to 2024-02-04"
+    },
+    {
+      "original_body_tokens": 966,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 371,
+      "symbol": "IBM",
+      "period": "2024-01-28 to 2024-02-04"
+    },
+    {
+      "original_body_tokens": 1716,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 342,
+      "symbol": "INTC",
+      "period": "2024-01-28 to 2024-02-04"
+    },
+    {
+      "original_body_tokens": 1831,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 323,
+      "symbol": "JNJ",
+      "period": "2024-01-28 to 2024-02-04"
+    },
+    {
+      "original_body_tokens": 1704,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1014,
+      "target_tokens": 364,
+      "symbol": "JPM",
+      "period": "2024-01-28 to 2024-02-04"
+    },
+    {
+      "original_body_tokens": 1009,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 301,
+      "symbol": "KO",
+      "period": "2024-01-28 to 2024-02-04"
+    },
+    {
+      "original_body_tokens": 1109,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 346,
+      "symbol": "MCD",
+      "period": "2024-01-28 to 2024-02-04"
+    },
+    {
+      "original_body_tokens": 1355,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1014,
+      "target_tokens": 332,
+      "symbol": "MMM",
+      "period": "2024-01-28 to 2024-02-04"
+    },
+    {
+      "original_body_tokens": 1325,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 369,
+      "symbol": "MRK",
+      "period": "2024-01-28 to 2024-02-04"
+    },
+    {
+      "original_body_tokens": 1868,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 340,
+      "symbol": "MSFT",
+      "period": "2024-01-28 to 2024-02-04"
+    },
+    {
+      "original_body_tokens": 1751,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1014,
+      "target_tokens": 302,
+      "symbol": "NKE",
+      "period": "2024-01-28 to 2024-02-04"
+    },
+    {
+      "original_body_tokens": 1019,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 311,
+      "symbol": "PG",
+      "period": "2024-01-28 to 2024-02-04"
+    },
+    {
+      "original_body_tokens": 1297,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 365,
+      "symbol": "TRV",
+      "period": "2024-01-28 to 2024-02-04"
+    },
+    {
+      "original_body_tokens": 1492,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 321,
+      "symbol": "UNH",
+      "period": "2024-01-28 to 2024-02-04"
+    },
+    {
+      "original_body_tokens": 1616,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 350,
+      "symbol": "V",
+      "period": "2024-01-28 to 2024-02-04"
+    },
+    {
+      "original_body_tokens": 1684,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1015,
+      "target_tokens": 318,
+      "symbol": "VZ",
+      "period": "2024-01-28 to 2024-02-04"
+    },
+    {
+      "original_body_tokens": 1620,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": false,
+      "prompt_tokens": 1014,
+      "target_tokens": 329,
+      "symbol": "WBA",
+      "period": "2024-01-28 to 2024-02-04"
+    },
+    {
+      "original_body_tokens": 1415,
+      "body_budget": 896,
+      "context_shortened": true,
+      "future_financial_block_removed": true,
+      "prompt_tokens": 1015,
+      "target_tokens": 382,
+      "symbol": "WMT",
+      "period": "2024-01-28 to 2024-02-04"
+    }
+  ],
+  "compact_training_answers": true
+}
