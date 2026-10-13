@@ -1,0 +1,81 @@
+2026-10-12 22:33:54,317 - INFO - Calculating EV/EBITDA valuation...
+2026-10-12 22:33:54,318 - INFO - ✅ EV/EBITDA valuation: $0.00
+2026-10-12 22:33:54,318 - INFO - Calculating DCF valuation...
+2026-10-12 22:33:54,319 - INFO - ✅ DCF valuation: $0.00
+2026-10-12 22:33:54,319 - INFO - Calculating peer comparison valuation...
+2026-10-12 22:33:54,320 - INFO - ✅ Peer comparison valuation: $0.00
+2026-10-12 22:33:54,320 - INFO - Synthesizing valuation results...
+HTML reports will be saved to: ./output/NVDA/report
+Auto-fetching market data for NVDA...
+Fetching comprehensive company metrics for NVDA...
+Error fetching FMP current price for NVDA: 429 Client Error: Too Many Requests for url: https://financialmodelingprep.com/stable/quote-short?symbol=NVDA&apikey=XXXXX
+Error fetching FMP target price for NVDA: 429 Client Error: Too Many Requests for url: https://financialmodelingprep.com/stable/price-target-consensus?symbol=NVDA&apikey=XXXXX
+Error fetching FMP analyst rating for NVDA: 429 Client Error: Too Many Requests for url: https://financialmodelingprep.com/stable/grades?symbol=NVDA&apikey=XXXXX
+Error fetching company profile for NVDA: 429 Client Error: Too Many Requests for url: https://financialmodelingprep.com/stable/profile?symbol=NVDA&apikey=XXXXX
+Warning: Could not fetch quote data: 429 Client Error: Too Many Requests for url: https://financialmodelingprep.com/stable/quote?symbol=NVDA&apikey=XXXXX
+Error fetching FMP ratios/key metrics for NVDA: 429 Client Error: Too Many Requests for url: https://financialmodelingprep.com/stable/ratios?symbol=NVDA&period=annual&limit=1&apikey=XXXXX
+Successfully fetched metrics for NVDA
+✅ Successfully auto-fetched market data
+
+📊 Market Data Summary for NVDA:
+  Share Price: 0.0 (auto-fetched)
+  Target Price: 0.0 (auto-fetched)
+  Rating: N/A (auto-fetched)
+  Market Cap: 0.0 (auto-fetched)
+  Sector: Technology (auto-fetched)
+📖 Loading and processing text content...
+📝 Processing tagline...
+✅ tagline validation passed (406 chars)
+📝 Processing company_overview...
+✅ company_overview validation passed (2703 chars)
+📝 Processing investment_overview...
+✅ investment_overview validation passed (1936 chars)
+📝 Processing valuation_overview...
+✅ valuation_overview validation passed (1711 chars)
+📝 Processing risks...
+✅ risks validation passed (1166 chars)
+📝 Processing competitor_analysis...
+✅ competitor_analysis validation passed (1789 chars)
+📝 Processing major_takeaways...
+✅ major_takeaways validation passed (1134 chars)
+📝 Processing news_summary...
+✅ news_summary validation passed (1867 chars)
+✅ All text content processed
+⚠️ Could not compute technical indicators: 429 Client Error: Too Many Requests for url: https://financialmodelingprep.com/stable/historical-price-eod/full?symbol=NVDA&apikey=XXXXX
+Handling charts...
+✅ Revenue/EBITDA chart saved to ./output/NVDA/report/NVDA_revenue_ebitda_chart.png
+Warning: EPS or PE data is non-numeric.
+✅ EV/EBITDA peer chart saved to ./output/NVDA/report/NVDA_peer_ev_ebitda_chart.png
+Performing valuation analysis...
+✅ Loaded historical key metrics for valuation (5 rows)
+✅ Loaded latest actual Free Cash Flow for valuation: $96.68B
+✅ Valuation analysis completed with 0 methods
+Loading sensitivity analysis from ./output/NVDA/analysis/sensitivity_analysis.json...
+✅ Sensitivity analysis loaded
+Loading catalyst analysis from ./output/NVDA/analysis/catalyst_analysis.json...
+✅ Catalyst analysis loaded (sentiments re-validated)
+Formatting tables for HTML...
+Loading Credit & Cashflow metrics from CSV...
+✅ Successfully loaded and formatted Credit & Cashflow metrics from CSV
+Processing peer EBITDA data with shape: (7, 4)
+Peer EBITDA columns: ['year', 'AMD', 'INTC', 'NVDA']
+Peer EBITDA index: [2021, 2022, 2023, 2024, 2025, 2026, 2027]
+✅ Successfully formatted peer EBITDA table
+Processing peer EV/EBITDA data with shape: (6, 3)
+Peer EV/EBITDA columns: ['AMD', 'INTC', 'NVDA']
+Peer EV/EBITDA index: [2021, 2022, 2023, 2024, 2025, 2026]
+✅ Successfully formatted peer EV/EBITDA table
+Generating professional HTML report (matching PDF structure)...
+✅ Generated Professional HTML Report: ./output/NVDA/report/Professional_Equity_Report_NVDA.html
+Generating combined HTML report (all sections in one file)...
+✅ Generated Combined HTML Report: ./output/NVDA/report/Combined_Equity_Report_NVDA.html
+Rendering legacy HTML pages...
+✅ Sensitivity/Catalyst content detected, adding Page 4
+Generated Page 1: ./output/NVDA/report/Equity_Report_Page1_NVDA.html
+Generated Page 2: ./output/NVDA/report/Equity_Report_Page2_NVDA.html
+Generated Page 3: ./output/NVDA/report/Equity_Report_Page3_NVDA.html
+Generated Page 4: ./output/NVDA/report/Equity_Report_Page4_NVDA.html
+
+✅ Equity report generation complete!
+📁 Reports saved to: ./output/NVDA/report
+🤖 Market data automatically fetched from FMP API
