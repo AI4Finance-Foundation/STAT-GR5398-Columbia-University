@@ -204,7 +204,7 @@ def main():
     styles.add(ParagraphStyle(name='SmallR', parent=styles['BodyR'], fontSize=8.1, leading=10.7, spaceAfter=6))
     styles.add(ParagraphStyle(name='TitleR', parent=styles['BodyR'], fontSize=25, leading=29, spaceAfter=18))
     styles.add(ParagraphStyle(name='HeadR', parent=styles['BodyR'], fontSize=15, leading=19, spaceBefore=10, spaceAfter=10))
-    styles.add(ParagraphStyle(name='AuthorR', fontName='STSong-Light', fontSize=10, leading=13, spaceAfter=7))
+    styles.add(ParagraphStyle(name='AuthorR', fontName='Helvetica', fontSize=10, leading=13, spaceAfter=7))
     story = []
     def p(text, style='BodyR'): story.append(Paragraph(text, styles[style]))
     def h(text): p(text, 'HeadR')
@@ -216,7 +216,7 @@ def main():
         story.append(t); story.append(Spacer(1, 9))
     p('FinGPT: a retrospective<br/>of three LoRA experiments', 'TitleR')
     p('Fall-2026 Assignment1 | Validation and authorized final-test research report', 'SmallR')
-    p('Author: 熊善志 (Shanzhi Xiong) | UNI: sx2434', 'AuthorR')
+    p('Author: Patrick Xiong | UNI: sx2434', 'AuthorR')
     p('<b>Scope.</b> This report retains the original data and reference answers. It evaluates Qwen2.5-7B-Instruct, DeepSeek-R1-Distill-Llama-8B and Llama-3.1-8B BASE, each before and after one epoch of 8-bit LoRA training. It describes observed failures rather than claiming a repaired forecasting dataset.')
     p('All three adapters completed 990 training examples and 248 optimizer steps. The same 240 validation identities were used for checkpoint selection and generation. The six model/adapter variants produced 1,440 original-prompt outputs. The frozen final-test protocol subsequently produced 1,800 outputs on 300 identical identities, after real user authorization. An additional 48 HITL prompt-comparison outputs are a separate development experiment.')
     h('What the evidence supports')
@@ -300,7 +300,7 @@ def main():
         canvas.drawRightString(553, 25, str(doc.page))
     pdf = out / 'output/pdf/FINGPT_THREE_MODEL_RETROSPECTIVE_FINAL_RESULTS.pdf'
     SimpleDocTemplate(str(pdf), pagesize=(595.28,841.89), leftMargin=55, rightMargin=55, topMargin=45, bottomMargin=47,
-                      title='FinGPT three-model retrospective final results', author='熊善志 (Shanzhi Xiong); UNI: sx2434').build(story, onFirstPage=footer, onLaterPages=footer)
+                      title='FinGPT three-model retrospective final results', author='Patrick Xiong; UNI: sx2434').build(story, onFirstPage=footer, onLaterPages=footer)
     print(json.dumps({'pdf': str(pdf), 'validation_outputs':1440, 'test_outputs':1800, 'validation_only':False, 'actual_run_independent_review_completed':True, 'text_corrections_applied':True}))
 
 if __name__ == '__main__': main()

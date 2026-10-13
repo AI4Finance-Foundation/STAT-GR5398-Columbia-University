@@ -30,8 +30,8 @@ The subsequent frozen final test produced 1,800 answers on 300 retained identiti
 
 Claude Opus 5.5 High independently checked the actual run, reproduced its recorded results and identified the text clarifications applied here. The author reviewed and accepted the materials for publication and course submission. Human ratings and AI assessments remain separately identified.
 
-Author: 熊善志 (Shanzhi Xiong), Columbia UNI sx2434.
+Author: Patrick Xiong, Columbia UNI sx2434.
 
-Code, report, adapters and evaluation evidence: [FinGPT Assignment 1 submission](https://github.com/AI4Finance-Foundation/STAT-GR5398-Columbia-University/tree/master/Fall-2026/Assignment1/FinGPT/submissions/Assignment1_ShanZhiXiong_sx2434).
+Code, report, adapters and evaluation evidence: [FinGPT Assignment 1 submission](https://github.com/AI4Finance-Foundation/STAT-GR5398-Columbia-University/tree/master/Fall-2026/Assignment1/FinGPT/submissions/Assignment1_PatrickXiong_sx2434).
 
 Published article: https://medium.com/@sx2434/lora-improved-financial-answer-format-without-establishing-forecasting-skill-9ee2d2397ca7
