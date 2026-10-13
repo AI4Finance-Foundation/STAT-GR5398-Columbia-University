@@ -1,6 +1,6 @@
 # STAT GR5398 Assignment1 — Llama-3.1-8B
 
-Llama training and all300base plus300LoRA evaluations are completed and independently validated. The student explicitly chose Llama only. **The second-model requirement is NOT COMPLETED; no instructor waiver is assumed.** This is prepared work, not a submitted assignment. Student: JIAO XU; UNI: jx2687. The student reports reviewing the work; numeric HITL ratings remain blank and additional AI policy is unverified. Medium publication is complete; course submission has not occurred.
+Llama training and all300base plus300LoRA evaluations are completed and independently validated. The student explicitly chose Llama only. **The second-model requirement is NOT COMPLETED; no instructor waiver is assumed.** This package accompanies the authorized course PR submission. Student: JIAO XU; UNI: jx2687. The student reports reviewing the work; numeric HITL ratings remain blank and additional AI policy is unverified. Medium publication is complete.
 
 ## Inspect
 
@@ -18,7 +18,7 @@ Llama training and all300base plus300LoRA evaluations are completed and independ
 
 GPU execution: Google Colab Tesla T4,15360MiB GPU RAM,~12.67GB system RAM; Python3.13.15, torch2.11.0+cu130, transformers4.57.6, peft0.18.1, datasets4.8.5, bitsandbytes0.50.2. Exact versions in cloud_runs/llama31_8b/results/cloud_environment.json. Repeated runtime resets delayed progress; persistent cache/results were finally saved to a dedicated Drive folder. No FinRL or Positron environment was modified.
 
-Dataset: FinGPT/fingpt-forecaster-dow30-202305-202405, revision4b234310115a6f2cb5806dcd95f801b60d177882, original1230train/300test. Fixed subset60train/30validation, all300test. Raw parquet hashes and source provenance: provenance.json and run provenance.json. Model: meta-llama/Llama-3.1-8B, revisiond04e592bb4f6aa9cfee91e2e20afa771667e1d4b.
+Dataset: FinGPT/fingpt-forecaster-dow30-202305-202405, revision4b234310115a6f2cb5806dcd95f801b60d177882, original1230train/300test. Fixed subset60train/30validation, all300test. Raw parquet files are excluded from the public submission because redistribution permissions are unverified. Original-source hashes and provenance: provenance.json and run provenance.json. Model: meta-llama/Llama-3.1-8B, revisiond04e592bb4f6aa9cfee91e2e20afa771667e1d4b.
 
 ## Actual GPU commands
 
@@ -56,3 +56,16 @@ Formal submission directory: Fall-2026/Assignment1/FinGPT/submissions/Assignment
 [https://medium.com/@xujiao0224/fingpt-forecaster-with-llama-3-1-8b-formatting-gains-are-not-forecasting-proof-df1b7fa0e030](https://medium.com/@xujiao0224/fingpt-forecaster-with-llama-3-1-8b-formatting-gains-are-not-forecasting-proof-df1b7fa0e030)
 
 Publication verified live in Medium. The PDF has been updated to reflect publication. The blog preserves AI assistance disclosure and the incomplete second-model requirement.
+
+## Restore dataset for reproduction
+
+Within `cloud_runs/llama31_8b/`, fetch the pinned public dataset before running `prepare_data.py`:
+
+```python
+from datasets import load_dataset
+from pathlib import Path
+d = load_dataset("FinGPT/fingpt-forecaster-dow30-202305-202405", revision="4b234310115a6f2cb5806dcd95f801b60d177882")
+Path("data/raw").mkdir(parents=True, exist_ok=True)
+for split in ["train", "test"]:
+    d[split].to_parquet(f"data/raw/{split}.parquet")
+```

@@ -1,6 +1,6 @@
 # Assignment 1 FinGPT 原文核对与状态
 
-核对日期：2026-10-11（America/New_York）。课程 Git commit：`8c38d8f0125e6b5c4b08db140046f3396e2020b0`。本表只把原文明确事项列为作业要求；不把学期研究目标加成作业硬性要求。状态于2026-10-12更新；指定8B实验未完成。最终PDF和GPU_Review Notebook现为已执行的Llama8B成果；旧0.5B报告单独保留为辅助材料。
+核对日期：2026-10-11（America/New_York）。课程 Git commit：`8c38d8f0125e6b5c4b08db140046f3396e2020b0`。本表只把原文明确事项列为作业要求；不把学期研究目标加成作业硬性要求。状态于2026-10-12更新；Llama指定8B实验已完成；第二模型完整比较未完成。最终PDF和GPU_Review Notebook现为已执行的Llama8B成果；旧0.5B报告单独保留为辅助材料。
 
 ## 原文来源
 
@@ -18,13 +18,13 @@
 | 项目 | 状态 | 依据和可检查成果 |
 |---|---|---|
 | 核对 Forecaster 全流程 | 已完成 | Targets 与 pipeline 表；本项目沿用 Dow30 prompt/answer、LoRA、结构化预测和课程指标，不替换为情绪分类 |
-| 获取 Dow30 数据：prompt/answer/label/symbol/period，train/test | 已完成 | §3.1；完整 parquet 1230/300 条，`data/raw/`；另有可复现 60/30/30 本地辅助子集；指定8B实验使用60/30/300划分 |
+| 获取 Dow30 数据：prompt/answer/label/symbol/period，train/test | 已完成 | §3.1；完整 parquet 1230/300 条已用于实验；公开提交仅提供原始来源和哈希，重新下载方法在README；另有可复现 60/30/30 本地辅助子集；指定8B实验使用60/30/300划分 |
 | 数据概况与质量检查 | 已完成 | §4 brief analysis；`results/data_audit.json`、Notebook；缺失、重复、时间边界、标签分布、前视风险均记录 |
-| 使用 LoRA/PEFT 冻结基础模型训练 | 部分完成，指定模型要求未完成 | §0、§3.2；本地 0.5B 实验的最终训练日志/adapter 见 `results/training.json` 和 `finetuned_models/`；不等同于指定模型 |
+| 使用 LoRA/PEFT 冻结基础模型训练 | Llama已完成；第二模型未完成 | §0、§3.2；Llama8B实际训练日志和adapter验证见 cloud_runs/llama31_8b/results/；448个LoRA张量发生更新且有限；权重80MiB未随GitHub提交 |
 | 选定 Llama-3.1-8B、DeepSeek-R1-Distill-Llama-8B 的微调/比较 | 部分完成 | §3.2 逐个列出；同文又说 two models，存在内部数量不一致，按用户2026-10-11指示，采用较简单的两模型解释：Llama3.1-8B和DeepSeek8B；Qwen7B不计入本次选择范围，教师是否接受此解释无法验证。已连接用户Colab Tesla T4并验证CUDA；DeepSeek8B的60条QLoRA训练、30条验证和adapter保存已完成，本地检查点哈希校验通过；DeepSeek评估按用户2026-10-12指令停止，Drive保留160条base、0条LoRA输出；Llama一轮训练、300条base和300条LoRA评估、六例单请求耗时测试均已完成；完整指标独立重算通过，最终PDF/Notebook已检查。DeepSeek完整比较仍未完成 |
 | 按 GPU 显存设置长度、batch、累积和精度 | 本地与DeepSeek CUDA配置已实际运行 | §3.2；Apple MPS、0.5B float16、LoRA float32、batch1、accum4、1536 序列上限；`train_lora.py` |
 | DeepSpeed、8-bit 与 Wandb/TensorBoard 监控 | 未完整完成 | §3.2；实际T4采用4-bit NF4 double quant；首个8-bit加载失败，确切错误未保留。不使用DeepSpeed，使用TensorBoard；这些是有记录的资源适配，不能谎称完全满足原文8-bit/DeepSpeed配置 |
-| 从基础模型+adapter生成测试回答 | Llama完整完成；第二模型未完成 | §3.3；`results/base_answers.jsonl`、`lora_answers.jsonl` 每模型30条；同一固定测试周、30家公司 |
+| 从基础模型+adapter生成测试回答 | Llama完整完成；第二模型未完成 | §3.3；cloud_runs/llama31_8b/results/base_answers.jsonl 和 lora_answers.jsonl 各300条；30家公司、10个测试周 |
 | 与教师参考量化比较，报告 valid_count | Llama完整完成；第二模型未完成 | §3.3；`results/metrics.json`/`.csv`；严格格式解析、不补写生成结果，保留失败样本；教师是数据集附带参考，未重新调用 API |
 | bin_acc、MSE、分段ROUGE1/2/L | Llama完整完成；第二模型未完成 | §3.3；course-compatible midpoint编码、ROUGE F1；空有效集分数为 null，明确覆盖率；不能用参考相似度证明收益 |
 | 推理时间 | Llama完整完成；第二模型未完成 | §3.3、§4；GPU同步、先warmup、每条真实耗时；包含prefill+decode，不包含模型加载 |
@@ -64,3 +64,5 @@ Assignment 1 总说明写“track(s)”，明确多track分别提交相同命名
 Llama300base/300LoRA原始输出与原始test符号、期间、标签、参考答案逐条一致；指标重算通过。有效配对206/250，coverage68.67%/83.33%，bin_acc46.60%/49.20%，MSE7.13835/9.792。448个adapter张量全部有限，20,971,520元素；SHA256记录在full_validation.json。Notebook四个代码单元格以独立内核无错误执行；PDF四页全部渲染并检查。第二模型、本人HITL、Name/UNI和最终提交仍未完成；Medium博客已发表并验证。
 
 博客发表验证：https://medium.com/@xujiao0224/fingpt-forecaster-with-llama-3-1-8b-formatting-gains-are-not-forecasting-proof-df1b7fa0e030。用户确认已审阅博客稿；定性评分工作表尚未代填。
+
+提交状态更新：JIAO XU (jx2687) 已明确授权课程PR提交；Medium已发布。个人报告审阅由用户确认，数值HITL评分仍为空。第二模型比较未完成，adapter权重因大小未上传。原始parquet因再分发权限未验证而不公开上传，README给出固定revision下载方法。

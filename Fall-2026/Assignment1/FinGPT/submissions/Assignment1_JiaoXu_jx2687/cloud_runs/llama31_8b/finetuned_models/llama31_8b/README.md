@@ -1,207 +1,71 @@
----
-base_model: /content/drive/MyDrive/FinGPT_STAT_GR5398_Assignment1/model_cache/hub/models--meta-llama--Llama-3.1-8B/snapshots/d04e592bb4f6aa9cfee91e2e20afa771667e1d4b
-library_name: peft
-pipeline_tag: text-generation
-tags:
-- base_model:adapter:/content/drive/MyDrive/FinGPT_STAT_GR5398_Assignment1/model_cache/hub/models--meta-llama--Llama-3.1-8B/snapshots/d04e592bb4f6aa9cfee91e2e20afa771667e1d4b
-- lora
-- transformers
----
+# STAT GR5398 Assignment1 — Llama-3.1-8B
 
-# Model Card for Model ID
+Llama training and all300base plus300LoRA evaluations are completed and independently validated. The student explicitly chose Llama only. **The second-model requirement is NOT COMPLETED; no instructor waiver is assumed.** This package accompanies the authorized course PR submission. Student: JIAO XU; UNI: jx2687. The student reports reviewing the work; numeric HITL ratings remain blank and additional AI policy is unverified. Medium publication is complete.
 
-<!-- Provide a quick summary of what the model is/does. -->
+## Inspect
 
+- Research_Report.pdf: final actual Llama report, four pages, rendered and visually checked.
+- FinGPT_Assignment1_GPU_Review.ipynb: four code cells executed in a fresh isolated local kernel; no error outputs.
+- results/gpu_metrics.json and gpu_metrics.csv: final metric tables and all-case direction accuracy.
+- cloud_runs/llama31_8b/results/: training.json, base_answers.jsonl and lora_answers.jsonl (300 each), metrics.json, full_validation.json, single_request_benchmark.json/.jsonl, environment and cache manifests.
+- cloud_runs/llama31_8b/finetuned_models/llama31_8b/: adapter configuration and validation evidence. The 80MiB weight file is retained locally, omitted from this GitHub submission due to size; original dense base model is not included.
+- HITL_review_Llama.csv: six predeclared paired cases; human ratings are blank for the student to fill.
+- REQUIREMENTS_CHECKLIST.md: original requirements, completed work, omissions and course-policy uncertainty.
+- Medium_Reviewed.md: published AI-assisted article, reviewed by the student. Medium URL: https://medium.com/@xujiao0224/fingpt-forecaster-with-llama-3-1-8b-formatting-gains-are-not-forecasting-proof-df1b7fa0e030
+- AI_DISCLOSURE.md and sources/: disclosure and exact course sources.
 
+## Environment and data
 
-## Model Details
+GPU execution: Google Colab Tesla T4,15360MiB GPU RAM,~12.67GB system RAM; Python3.13.15, torch2.11.0+cu130, transformers4.57.6, peft0.18.1, datasets4.8.5, bitsandbytes0.50.2. Exact versions in cloud_runs/llama31_8b/results/cloud_environment.json. Repeated runtime resets delayed progress; persistent cache/results were finally saved to a dedicated Drive folder. No FinRL or Positron environment was modified.
 
-### Model Description
+Dataset: FinGPT/fingpt-forecaster-dow30-202305-202405, revision4b234310115a6f2cb5806dcd95f801b60d177882, original1230train/300test. Fixed subset60train/30validation, all300test. Raw parquet files are excluded from the public submission because redistribution permissions are unverified. Original-source hashes and provenance: provenance.json and run provenance.json. Model: meta-llama/Llama-3.1-8B, revisiond04e592bb4f6aa9cfee91e2e20afa771667e1d4b.
 
-<!-- Provide a longer summary of what this model is. -->
+## Actual GPU commands
 
+Executed within the independent llama31_8b workspace (the MODEL_SNAPSHOT points to the pinned authorized cache):
 
+```sh
+python prepare_data.py
+python train_lora.py --model "$MODEL_SNAPSHOT" --arch llama3 --run_name llama31_8b --quant8 --offline --max_length 2048
+python evaluate.py --model "$MODEL_SNAPSHOT" --batch_size 16 --max_new_tokens 512
+python benchmark_inference.py --model "$MODEL_SNAPSHOT"
+```
 
-- **Developed by:** [More Information Needed]
-- **Funded by [optional]:** [More Information Needed]
-- **Shared by [optional]:** [More Information Needed]
-- **Model type:** [More Information Needed]
-- **Language(s) (NLP):** [More Information Needed]
-- **License:** [More Information Needed]
-- **Finetuned from model [optional]:** [More Information Needed]
+Historical --quant8 flag selects4-bit NF4 in this modified script; the saved training manifest records this explicitly. LoRA rank8/alpha16/dropout0.1, batch1,accum4,lr5e-5,one epoch,seed5398. Prompt budget896 and shortened teacher training answers; evaluation references are unchanged. Inference starts at batch16 and automatically falls back to8 for adapter inference on T4. No DeepSpeed; TensorBoard used. These adaptations are not exact compliance with the original8-bit/DeepSpeed recipe.
 
-### Model Sources [optional]
+Local final validation/build commands from the workspace root:
 
-<!-- Provide the basic links for the model. -->
+```sh
+work/fingpt/venv/bin/python outputs/fingpt/cloud/validate_cloud_run.py outputs/fingpt/cloud_runs/llama31_8b
+work/fingpt/venv/bin/python outputs/fingpt/build_gpu_deliverables.py
+work/fingpt/venv/bin/python outputs/fingpt/execute_notebook.py FinGPT_Assignment1_GPU_Review.ipynb
+```
 
-- **Repository:** [More Information Needed]
-- **Paper [optional]:** [More Information Needed]
-- **Demo [optional]:** [More Information Needed]
+The cloud runs were resumed without retraining after interruptions. Preserve old raw records; do not run all historical Colab cells. For a clean rerun use the documented run scripts in a fresh separate directory. Hugging Face credentials must remain in Colab Secret and are not part of this package.
 
-## Uses
+## Interpretation and submission
 
-<!-- Address questions around how the model is intended to be used, including the foreseeable users of the model and those affected by the model. -->
+LoRA improves paired formatting coverage68.67%→83.33%, conditional teacher-direction accuracy46.60%→49.20%; midpoint MSE worsens7.1383→9.7920. All-case provided-label direction accuracy32.00%→41.33%, below the fixed always-up baseline45.67%. Lexical ROUGE overlap is not factual grounding. Missing point-in-time timestamps, hindsight-conditioned teacher explanations, pretraining overlap and small training subset prevent unbiased forecasting or profitability claims.
 
-### Direct Use
+The local Qwen0.5B experiment is auxiliary (Local_Qwen_Research_Report.pdf); it is not the final Llama result and is excluded from the prepared Llama package. DeepSeek partial work is retained outside that package, with its full comparison requirement marked incomplete.
 
-<!-- This section is for the model use without fine-tuning or plugging into a larger ecosystem/app. -->
+Formal submission directory: Fall-2026/Assignment1/FinGPT/submissions/Assignment1_JiaoXu_jx2687. Submitted work is AI-assisted and reviewed by the student. Numeric HITL ratings are unfilled; no full-compliance claim is made. The repository permits multiple Assignment1 tracks in separate folders; this does not establish personal degree-credit eligibility.
 
-[More Information Needed]
+## Published blog
 
-### Downstream Use [optional]
+[https://medium.com/@xujiao0224/fingpt-forecaster-with-llama-3-1-8b-formatting-gains-are-not-forecasting-proof-df1b7fa0e030](https://medium.com/@xujiao0224/fingpt-forecaster-with-llama-3-1-8b-formatting-gains-are-not-forecasting-proof-df1b7fa0e030)
 
-<!-- This section is for the model use when fine-tuned for a task, or when plugged into a larger ecosystem/app -->
+Publication verified live in Medium. The PDF has been updated to reflect publication. The blog preserves AI assistance disclosure and the incomplete second-model requirement.
 
-[More Information Needed]
+## Restore dataset for reproduction
 
-### Out-of-Scope Use
+Within `cloud_runs/llama31_8b/`, fetch the pinned public dataset before running `prepare_data.py`:
 
-<!-- This section addresses misuse, malicious use, and uses that the model will not work well for. -->
-
-[More Information Needed]
-
-## Bias, Risks, and Limitations
-
-<!-- This section is meant to convey both technical and sociotechnical limitations. -->
-
-[More Information Needed]
-
-### Recommendations
-
-<!-- This section is meant to convey recommendations with respect to the bias, risk, and technical limitations. -->
-
-Users (both direct and downstream) should be made aware of the risks, biases and limitations of the model. More information needed for further recommendations.
-
-## How to Get Started with the Model
-
-Use the code below to get started with the model.
-
-[More Information Needed]
-
-## Training Details
-
-### Training Data
-
-<!-- This should link to a Dataset Card, perhaps with a short stub of information on what the training data is all about as well as documentation related to data pre-processing or additional filtering. -->
-
-[More Information Needed]
-
-### Training Procedure
-
-<!-- This relates heavily to the Technical Specifications. Content here should link to that section when it is relevant to the training procedure. -->
-
-#### Preprocessing [optional]
-
-[More Information Needed]
-
-
-#### Training Hyperparameters
-
-- **Training regime:** [More Information Needed] <!--fp32, fp16 mixed precision, bf16 mixed precision, bf16 non-mixed precision, fp16 non-mixed precision, fp8 mixed precision -->
-
-#### Speeds, Sizes, Times [optional]
-
-<!-- This section provides information about throughput, start/end time, checkpoint size if relevant, etc. -->
-
-[More Information Needed]
-
-## Evaluation
-
-<!-- This section describes the evaluation protocols and provides the results. -->
-
-### Testing Data, Factors & Metrics
-
-#### Testing Data
-
-<!-- This should link to a Dataset Card if possible. -->
-
-[More Information Needed]
-
-#### Factors
-
-<!-- These are the things the evaluation is disaggregating by, e.g., subpopulations or domains. -->
-
-[More Information Needed]
-
-#### Metrics
-
-<!-- These are the evaluation metrics being used, ideally with a description of why. -->
-
-[More Information Needed]
-
-### Results
-
-[More Information Needed]
-
-#### Summary
-
-
-
-## Model Examination [optional]
-
-<!-- Relevant interpretability work for the model goes here -->
-
-[More Information Needed]
-
-## Environmental Impact
-
-<!-- Total emissions (in grams of CO2eq) and additional considerations, such as electricity usage, go here. Edit the suggested text below accordingly -->
-
-Carbon emissions can be estimated using the [Machine Learning Impact calculator](https://mlco2.github.io/impact#compute) presented in [Lacoste et al. (2019)](https://arxiv.org/abs/1910.09700).
-
-- **Hardware Type:** [More Information Needed]
-- **Hours used:** [More Information Needed]
-- **Cloud Provider:** [More Information Needed]
-- **Compute Region:** [More Information Needed]
-- **Carbon Emitted:** [More Information Needed]
-
-## Technical Specifications [optional]
-
-### Model Architecture and Objective
-
-[More Information Needed]
-
-### Compute Infrastructure
-
-[More Information Needed]
-
-#### Hardware
-
-[More Information Needed]
-
-#### Software
-
-[More Information Needed]
-
-## Citation [optional]
-
-<!-- If there is a paper or blog post introducing the model, the APA and Bibtex information for that should go in this section. -->
-
-**BibTeX:**
-
-[More Information Needed]
-
-**APA:**
-
-[More Information Needed]
-
-## Glossary [optional]
-
-<!-- If relevant, include terms and calculations in this section that can help readers understand the model or model card. -->
-
-[More Information Needed]
-
-## More Information [optional]
-
-[More Information Needed]
-
-## Model Card Authors [optional]
-
-[More Information Needed]
-
-## Model Card Contact
-
-[More Information Needed]
-### Framework versions
-
-- PEFT 0.18.1
+```python
+from datasets import load_dataset
+from pathlib import Path
+d = load_dataset("FinGPT/fingpt-forecaster-dow30-202305-202405", revision="4b234310115a6f2cb5806dcd95f801b60d177882")
+Path("data/raw").mkdir(parents=True, exist_ok=True)
+for split in ["train", "test"]:
+    d[split].to_parquet(f"data/raw/{split}.parquet")
+```
