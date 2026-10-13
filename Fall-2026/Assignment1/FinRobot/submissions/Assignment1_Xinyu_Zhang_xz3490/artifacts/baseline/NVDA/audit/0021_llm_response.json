@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-10-12T09:35:02.693830+00:00",
+  "elapsed_seconds": 5.1684,
+  "http_status": 200,
+  "body": {
+    "id": "chatcmpl-EY6iozsZ9ZuGtBCmF08HerfZpwQWO",
+    "object": "chat.completion",
+    "created": 1791797698,
+    "model": "gpt-4.1-2025-04-14",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "NVIDIA Corporation (NVDA) has established itself as the clear leader in the semiconductor industry, particularly in the high-growth AI and data center markets. When compared to key peers such as Advanced Micro Devices (AMD) and Intel (INTC), NVIDIA demonstrates superior financial performance, growth prospects, and profitability.\n\nRevenue growth is a standout metric for NVIDIA. The company’s top line surged from $26.9 billion in 2023 to $60.9 billion in 2024, with further explosive growth expected to reach $130.5 billion in 2025 and $215.9 billion in 2026. This CAGR of 68.3% is far ahead of industry averages and far outpaces AMD and Intel, who have not shown comparable revenue trajectories.\n\nProfitability is another area where NVIDIA excels. Its EBITDA margin has expanded significantly, from 22.2% in 2023 to an estimated 70.5% by 2025, reflecting strong operating leverage and product mix shift to higher-margin AI accelerators. In comparison, AMD and Intel’s EBITDA margins remain much lower, with AMD’s forecast 2027 EBITDA at $8.6 billion and Intel’s at $47.4 billion, both dwarfed by NVIDIA’s projected $382 billion.\n\nValuation multiples reflect NVIDIA’s premium positioning. Its EV/EBITDA, while high at 81x in 2023, is expected to normalize to around 31x by 2026 as earnings catch up to rapid growth. AMD’s EV/EBITDA fluctuates in the 18x–57x range, and Intel’s, while generally lower, spiked in 2024 due to earnings compression.\n\nIn summary, NVIDIA’s unmatched growth, expanding margins, and leading role in AI position it well ahead of its main competitors. While its valuation is elevated, the fundamentals and growth outlook justify the premium, making NVIDIA the dominant force in the sector compared to AMD and Intel.",
+          "refusal": null,
+          "annotations": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1444,
+      "completion_tokens": 396,
+      "total_tokens": 1840,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": "fp_4d7e3a4d69"
+  }
+}

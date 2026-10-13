@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-10-12T19:25:33.351548+00:00",
+  "elapsed_seconds": 3.3151,
+  "http_status": 200,
+  "body": {
+    "id": "chatcmpl-EYFwI4jWhls2STg8jFKoQK6oGqg8W",
+    "object": "chat.completion",
+    "created": 1791833130,
+    "model": "gpt-4.1-2025-04-14",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "NVIDIA Corporation (NVDA) Investment Update\n\nNVIDIA has delivered exceptional financial performance over the last three years, with a sharp acceleration in growth driven by surging demand for its AI and data center products. In fiscal 2024, revenue more than doubled year-over-year to $60.9 billion, up 125.9%, reflecting NVIDIA’s unique position as the leading provider of advanced GPUs for AI workloads. Looking ahead, revenue is projected to surpass $130 billion in 2025 and $215 billion by 2026, representing a remarkable revenue CAGR of 68.3% from 2022 to 2027E.\n\nProfitability has scaled with revenue. EBITDA margins expanded from 22.2% in 2023 to 58.4% in 2024, and are expected to reach over 73% by 2027. EPS has increased sharply, from $0.18 in 2023 to $1.21 in 2024, and is forecast to grow to $5.88 by 2027. Cost discipline is evident, with SG&A margin declining to below 1% by 2027E.\n\nNVIDIA’s growth is underpinned by its dominance in AI chips, with broad adoption across hyperscalers, cloud providers, and enterprises investing in generative AI and accelerated computing. Its product roadmap continues to outpace competitors, and the high efficiency of its operations supports exceptional profitability.\n\nIn peer comparison, NVIDIA’s EBITDA ($35.6 billion in 2024) far outstrips AMD and Intel, and its EV/EBITDA multiple is normalizing (43.5x in 2024, trending down to 31.4x by 2026). While the stock’s valuation remains premium, this is supported by industry-leading growth, margin expansion, and sustained earnings momentum.\n\nOutlook: NVIDIA’s leadership in AI hardware and accelerating financials position it as a core long-term compounder in technology. While valuations are elevated, strong execution and sector tailwinds justify continued investor confidence.",
+          "refusal": null,
+          "annotations": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1448,
+      "completion_tokens": 415,
+      "total_tokens": 1863,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": "fp_4146aea85b"
+  }
+}

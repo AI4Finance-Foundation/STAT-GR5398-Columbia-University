@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-10-12T18:39:02.886900+00:00",
+  "elapsed_seconds": 1.7412,
+  "http_status": 200,
+  "body": {
+    "id": "chatcmpl-EYFDJOhyzksOrbgH70aBzo6TtaYzv",
+    "object": "chat.completion",
+    "created": 1791830341,
+    "model": "gpt-4.1-2025-04-14",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Apple Inc. maintains a strong financial position, with steadily growing revenues (3.3% CAGR through 2027E) and industry-leading EBITDA margins projected to reach nearly 45% by 2027. The company demonstrates robust profitability and operational efficiency, consistently outperforming peers like Cisco and remaining competitive with high-growth names such as Nvidia. Despite a premium valuation (EV/EBITDA of 27x in 2025E), Apple’s solid earnings growth and expanding margins continue to support its leadership in the technology sector.",
+          "refusal": null,
+          "annotations": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1444,
+      "completion_tokens": 106,
+      "total_tokens": 1550,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": "fp_f25d2b37b0"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-10-12T09:34:51.704985+00:00",
+  "elapsed_seconds": 3.4446,
+  "http_status": 200,
+  "body": {
+    "id": "chatcmpl-EY6ie96kzDAbxF9fHkzQnxSsd0GOD",
+    "object": "chat.completion",
+    "created": 1791797688,
+    "model": "gpt-4.1-2025-04-14",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "NVIDIA Corporation (NVDA) – Investment Update\n\nNVIDIA has delivered exceptional financial performance over the past three years, cementing its position as the leading provider of AI and accelerated computing solutions. Revenue reached $60.9 billion in FY2024, a year-on-year increase of 125.9%, and is projected to more than double again in FY2025 to $130.5 billion. This rapid top-line expansion is being driven by surging demand for NVIDIA’s data center GPUs and AI platforms, as cloud providers, enterprises, and governments ramp up investments in generative AI and high-performance computing.\n\nProfitability has scaled even faster. EBITDA jumped from $6.0 billion in FY2023 to $35.6 billion in FY2024, and is forecast to reach $86.1 billion in FY2025, equating to a margin of 66.0%. Contribution margin has expanded sharply, reflecting strong operating leverage and disciplined cost control, while SG&A as a percentage of revenue is set to decline further to just 2.7% in FY2025. EPS is also on a steep upward trajectory, expected to rise from $1.21 in FY2024 to $2.97 in FY2025 and $4.93 in FY2026.\n\nCompared to peers, NVIDIA’s EBITDA outpaces both AMD and Intel by a wide margin, and the company’s EV/EBITDA multiple, while still elevated at 33.8x for FY2025, is quickly normalizing as earnings scale. With a three-year revenue CAGR of 68.3% and robust margin expansion, NVIDIA’s long-term outlook remains highly favorable. The company is well positioned to benefit from sustained AI infrastructure buildout, new product launches, and ecosystem expansion, supporting continued growth and shareholder value creation.",
+          "refusal": null,
+          "annotations": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1448,
+      "completion_tokens": 366,
+      "total_tokens": 1814,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": "fp_233583e333"
+  }
+}

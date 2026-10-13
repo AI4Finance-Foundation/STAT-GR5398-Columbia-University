@@ -1,0 +1,152 @@
+{
+  "started_at_utc": "2026-10-12T18:39:27.757201+00:00",
+  "company_ticker": "CSCO",
+  "company_name": "Cisco Systems, Inc.",
+  "peer_tickers": [
+    "AAPL",
+    "NVDA"
+  ],
+  "git_commit": "2717499b8e30f242640af08c4ad9afd1113c2d45",
+  "python_version": "3.10.6 (v3.10.6:9c7b4bd164, Aug  1 2022, 17:13:48) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "pipeline_argv": [
+    "/Users/nancy/Documents/FinRobot_A1/FinRobot/finrobot_equity/core/src/generate_financial_analysis.py",
+    "--company-ticker",
+    "CSCO",
+    "--company-name",
+    "Cisco Systems, Inc.",
+    "--config-file",
+    "/Users/nancy/Documents/FinRobot_A1/FinRobot/finrobot_equity/core/config/config.ini",
+    "--years-limit",
+    "5",
+    "--output-dir",
+    "/Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/CSCO_baseline_20261012_183927_756856Z/analysis",
+    "--text-output-dir",
+    "/Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/CSCO_baseline_20261012_183927_756856Z/analysis",
+    "--peer-tickers",
+    "AAPL",
+    "NVDA",
+    "--period",
+    "annual",
+    "--generate-text-sections",
+    "--enable-sensitivity-analysis"
+  ],
+  "settings": {
+    "openai_base_url": "https://api.openai.com/v1",
+    "openai_model": "gpt-4.1"
+  },
+  "pipeline_source_sha256": "1595d12c4946530af3af9252dc6e5a31e3784e04f4edcb768bd22cb749c68cbf",
+  "stage": "analysis_only",
+  "api_cost_usd": null,
+  "capture_transports": [
+    "requests",
+    "httpx"
+  ],
+  "capture_headers": false,
+  "capture_streaming_responses": false,
+  "finished_at_utc": "2026-10-12T18:39:52.727786+00:00",
+  "exit_code": 0,
+  "captured_llm_http_attempts": 7,
+  "captured_fmp_http_attempts": 15,
+  "analysis_files": [
+    {
+      "path": "analysis/analysis_summary.json",
+      "bytes": 1475,
+      "sha256": "9240ecadab0868cbf20f59f0973b09b9e45913bb9bba81d9c00256f035fc1cde"
+    },
+    {
+      "path": "analysis/balance_sheet_raw_data.csv",
+      "bytes": 3920,
+      "sha256": "5de7714bc019a796c32abe85b6e4953125c11a04628accfc02f40073c8819284"
+    },
+    {
+      "path": "analysis/cash_flow_raw_data.csv",
+      "bytes": 3453,
+      "sha256": "898fd3fb9db24b996cf477cce903bac1d7f4cdc60218ba324e24bc487f4432ce"
+    },
+    {
+      "path": "analysis/company_overview.txt",
+      "bytes": 2817,
+      "sha256": "c8852bfd9cc1fc30a19aa219f3c06cd064afa08b74b837f37a0695b3d8aab9d2"
+    },
+    {
+      "path": "analysis/competitor_analysis.txt",
+      "bytes": 1878,
+      "sha256": "0a1d7d107ba9b9055b0223b220621c5015893d8f032a69036c42aef5d24e0b35"
+    },
+    {
+      "path": "analysis/financial_metrics_and_forecasts.csv",
+      "bytes": 1127,
+      "sha256": "8b3bccf6fa68eb363aa293d891c3eb5ac86602425008b8f84589b8c91cf95c5c"
+    },
+    {
+      "path": "analysis/income_statement_raw_data.csv",
+      "bytes": 2719,
+      "sha256": "b66b8fbd81e73fe3038c8f9ead8da729eed790b6327f5ca5e2acac6ef5895fa3"
+    },
+    {
+      "path": "analysis/investment_overview.txt",
+      "bytes": 1928,
+      "sha256": "c8963b20307c0c357594b265edb32155d5474d1c87c9abb56b41c61a37cf4a9c"
+    },
+    {
+      "path": "analysis/key_metrics_raw_data.csv",
+      "bytes": 4853,
+      "sha256": "db6b84517e6bd76473f0a8a3b952c69b1f3293c174e8f1fc72c146611b216467"
+    },
+    {
+      "path": "analysis/major_takeaways.txt",
+      "bytes": 406,
+      "sha256": "1340c7f921cdd480dd7930a991ed09c1619072cd4d0698a4ea92f69a277f1971"
+    },
+    {
+      "path": "analysis/news_summary.txt",
+      "bytes": 56,
+      "sha256": "42562b04bfb615abc7342403bee867d601b534181ee85e099e94c15fd2846cd4"
+    },
+    {
+      "path": "analysis/peer_ebitda_comparison.csv",
+      "bytes": 329,
+      "sha256": "6ff3ac10cc6c8f61c18fe2f705b2ace7862bfa45144486c7b33b190f8b0e728d"
+    },
+    {
+      "path": "analysis/peer_ev_ebitda_comparison.csv",
+      "bytes": 326,
+      "sha256": "70a5348059a6d5b3724ae2fbfc6e03ece888f7d8c51154563695a5f19f5f37d8"
+    },
+    {
+      "path": "analysis/ratios_raw_data.csv",
+      "bytes": 7902,
+      "sha256": "adf4db36300ddcdc7f4cee93be35bacb550d3df808dd325a9023ceac8fe3526e"
+    },
+    {
+      "path": "analysis/retail_sentiment.json",
+      "bytes": 857,
+      "sha256": "512e32608246f49702cbe0d9b9c9cc8de7600ea0938d1789645924bb78f57aae"
+    },
+    {
+      "path": "analysis/risks.txt",
+      "bytes": 1114,
+      "sha256": "7aa360704dc1e879513affc6e3520c62816a8fb4417e69a922a2b4f6fb195f30"
+    },
+    {
+      "path": "analysis/sensitivity_analysis.json",
+      "bytes": 3350,
+      "sha256": "16cb1a927f032f4a7f38d01433cae45844a43bde173bb65a5943bba729a0417c"
+    },
+    {
+      "path": "analysis/sensitivity_summary.md",
+      "bytes": 520,
+      "sha256": "58516a721d71a136dc72c6e36d16d3c18a7715346ef2ccd6d8efb57450ae2e41"
+    },
+    {
+      "path": "analysis/tagline.txt",
+      "bytes": 401,
+      "sha256": "c49eedc0537f79fb1fa57a2ca61dbec61e9d70188791c1ed2863d1ea9a4cce36"
+    },
+    {
+      "path": "analysis/valuation_overview.txt",
+      "bytes": 1590,
+      "sha256": "18e51c05126cd7afab5dc2730c3a475baf9bdab443022e351378b8f2ec0f7f1c"
+    }
+  ]
+}

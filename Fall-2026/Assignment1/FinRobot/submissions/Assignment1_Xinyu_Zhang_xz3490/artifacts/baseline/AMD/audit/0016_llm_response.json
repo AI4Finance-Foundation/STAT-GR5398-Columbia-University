@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-10-12T18:13:22.123616+00:00",
+  "elapsed_seconds": 2.4529,
+  "http_status": 200,
+  "body": {
+    "id": "chatcmpl-EYEoTpYYIJT2tlkR7XbVWfZ06COup",
+    "object": "chat.completion",
+    "created": 1791828801,
+    "model": "gpt-4.1-2025-04-14",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "AMD demonstrates robust revenue growth with a projected 20.5% CAGR through 2027 and expanding contribution and EBITDA margins, reflecting improving operational efficiency. Despite near-term volatility in profitability and elevated valuation multiples relative to peers, the company is well-positioned to capitalize on strong end-market demand. Sustained investment in R&D and controlled SG&A expenses underpin AMD’s strengthening competitive position in the semiconductor industry.",
+          "refusal": null,
+          "annotations": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1436,
+      "completion_tokens": 80,
+      "total_tokens": 1516,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": "fp_99c6909298"
+  }
+}

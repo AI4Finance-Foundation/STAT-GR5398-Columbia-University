@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-10-12T19:25:30.023931+00:00",
+  "elapsed_seconds": 5.4561,
+  "http_status": 200,
+  "body": {
+    "id": "chatcmpl-EYFwDf7nRNvT6mnTMqxGLiqAcJtNm",
+    "object": "chat.completion",
+    "created": 1791833125,
+    "model": "gpt-4.1-2025-04-14",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "NVIDIA Corporation (NVDA) is a global leader in visual computing technology and artificial intelligence (AI) hardware and software. Founded in 1993, NVIDIA revolutionized the graphics processing unit (GPU) market with its invention of the GPU in 1999, which became the engine of modern computer graphics and, more recently, the backbone of AI computing. The company’s core business model centers around designing, developing, and selling high-performance GPUs, systems on a chip (SoCs), and related software. NVIDIA’s products are integral in diverse markets, including gaming, professional visualization, data centers, and automotive.\n\nNVIDIA’s flagship product families include the GeForce GPUs for gaming, Quadro for professional graphics, and the data center-focused NVIDIA A100 and H100 GPUs, which dominate the AI and machine learning accelerator market. NVIDIA also provides high-performance computing solutions, networking products (Mellanox), and a robust software ecosystem including CUDA, its proprietary parallel computing platform, which has driven widespread adoption in AI research and enterprise applications.\n\nNVIDIA’s market position is exceptionally strong, particularly in the data center segment, where it has emerged as the preferred hardware vendor for AI workloads. Its competitive advantage lies in its advanced GPU architectures and comprehensive software stack, which competitors have struggled to match. Compared to peers AMD and Intel, NVIDIA’s EBITDA and margins have surged dramatically in recent years, highlighting its operational leverage and leadership in high-growth areas.\n\nFinancially, NVIDIA has demonstrated explosive growth. Revenue soared from $26.9 billion in FY2023 to $60.9 billion in FY2024, and is projected to more than double to $130.5 billion in FY2025 and reach nearly $216 billion in FY2026—a remarkable CAGR of 68.3%. Contribution and EBITDA margins have also expanded, with EBITDA margin rising from 22.2% in 2023 to an estimated 73.5% by 2027, indicating both top-line momentum and disciplined cost management. Earnings per share (EPS) have rapidly increased, and while NVIDIA’s price-to-earnings (PE) and EV/EBITDA multiples remain high, they are trending downward as earnings scale, reflecting the market’s confidence in sustained growth.\n\nIn summary, NVIDIA’s robust business model, innovation leadership, and dominant market position—especially in AI and data center technologies—have translated into outstanding recent financial performance and position the company as a critical enabler of the AI-driven digital economy.",
+          "refusal": null,
+          "annotations": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1452,
+      "completion_tokens": 497,
+      "total_tokens": 1949,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": "fp_bee1fbc891"
+  }
+}

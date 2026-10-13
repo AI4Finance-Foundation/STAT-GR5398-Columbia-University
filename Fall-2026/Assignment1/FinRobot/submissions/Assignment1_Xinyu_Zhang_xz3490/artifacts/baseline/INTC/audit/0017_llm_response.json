@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-10-12T18:13:59.090186+00:00",
+  "elapsed_seconds": 4.7368,
+  "http_status": 200,
+  "body": {
+    "id": "chatcmpl-EYEp1Du7z2rXoZCtM69M7Df1uPwsl",
+    "object": "chat.completion",
+    "created": 1791828835,
+    "model": "gpt-4.1-2025-04-14",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Intel Corporation (NASDAQ: INTC) is a global leader in semiconductor design and manufacturing, historically best known for its dominant position in the x86 microprocessor market, which powers the majority of personal computers and data centers worldwide. Intel’s business model is vertically integrated: the company designs, manufactures, and sells a wide range of semiconductor products, leveraging its own fabrication facilities (“fabs”) to maintain control over quality and supply.\n\nIntel’s product portfolio encompasses central processing units (CPUs) for desktops, laptops, and servers, as well as graphics processing units (GPUs), networking components, memory products, and emerging solutions in artificial intelligence (AI), edge computing, and autonomous systems. The company’s core revenue historically came from its Client Computing Group (PC CPUs), but it is actively investing in its Data Center and AI Group, Foundry Services (manufacturing chips for third parties), and new markets such as automotive (Mobileye) and programmable solutions (FPGAs).\n\nDespite its strong legacy, Intel has faced significant challenges in recent years. The company’s revenue has declined sharply, from $79.0 billion in 2021 to $54.2 billion in 2023, with a compounded annual growth rate (CAGR) of -9.6%. Profitability has also deteriorated: EBITDA fell from $33.9 billion in 2021 to $1.2 billion in 2024, with margins compressed from 42.9% to just 2.3% during this period. This underperformance is largely attributed to competitive pressures from rivals like AMD and NVIDIA, delays in advanced manufacturing process nodes, market share erosion, and cyclical weakness in the PC and server markets.\n\nLooking forward, Intel is focused on regaining technology leadership through aggressive investment in advanced manufacturing (notably its next-generation process nodes), expanding its foundry business to serve external customers, and capturing growth in AI and automotive sectors. While near-term financials remain under pressure—2024 and 2025 earnings per share (EPS) are negative and revenue growth is modest—the company projects a return to growth and margin recovery by 2025-2027, driven by renewed product competitiveness and operational efficiency.\n\nIn comparison to its peers, Intel’s EBITDA and valuation multiples have lagged, reflecting investor concerns but also potential upside if its turnaround efforts succeed. The company’s market position remains substantial, but Intel’s future depends on successful execution of its strategic roadmap amid fierce industry competition and rapid technological change.",
+          "refusal": null,
+          "annotations": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1441,
+      "completion_tokens": 499,
+      "total_tokens": 1940,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": "fp_92655ee460"
+  }
+}

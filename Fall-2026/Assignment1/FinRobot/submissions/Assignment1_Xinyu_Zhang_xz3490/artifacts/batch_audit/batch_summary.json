@@ -1,0 +1,76 @@
+{
+  "started_at_utc": "2026-10-12T18:38:57.382658+00:00",
+  "sector": "Technology",
+  "requested_tickers": [
+    "AAPL",
+    "CSCO"
+  ],
+  "included_runs": [
+    "/Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/NVDA_baseline_20261012_093437_937103Z",
+    "/Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/AMD_baseline_20261012_181316_703880Z",
+    "/Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z"
+  ],
+  "source_sha256": {
+    "create_equity_report.py": "af1c3e298dfc099caad803b9587d131983a7a173bf37303491a1baedfa9ad7f6",
+    "generate_financial_analysis.py": "1595d12c4946530af3af9252dc6e5a31e3784e04f4edcb768bd22cb749c68cbf",
+    "generate_pdf_report.py": "0ab0e920b3652b7636358a2fe1ff84e6bcae9f4f5a1a59c458acee1e3c91d4a6",
+    "modules/catalyst_analyzer.py": "65a4ebba92f7ee98944cbe01b0b9c30feb334a5ed344e50100cac0e08416e530",
+    "modules/chart_generator.py": "2eae6fb9dc7de0dd850654279de9e68549c83bf859d244d437f4503bffc583c0",
+    "modules/common_utils.py": "810b3074e85cac4b160b175b5425930ebc83b183319943f63528c780fe301dfc",
+    "modules/enhanced_chart_generator.py": "f70b8b31133c5ff9287f09c4b10758d1ce2e1a5034b7c7f50e3010ad27d3b2b4",
+    "modules/enhanced_text_generator.py": "e09107b59bbb5f65423a30ab475aecf84f36d934e0d5750e26656ed76daace97",
+    "modules/equity_agents/__init__.py": "c2fea11628f34dffd47615cfe29a8a60b9d5c3f41ed0b040bb20aaebc078fc96",
+    "modules/equity_agents/agent_manager.py": "fc334c2a35ea34629d90f133134172f9a4cb64f420248a2d33893eaf4046f856",
+    "modules/equity_agents/company_overview_agent.py": "f2678311f6fa5741216dd4c13153f8d81367d615d27a04428f070cb25c44abaf",
+    "modules/equity_agents/competitor_analysis_agent.py": "ccc21dced3c850a7cb8bba3c6256c27045062757e24dad49f6ad6b12c0c928bf",
+    "modules/equity_agents/investment_overview_agent.py": "2bb1e9d5b43f5d6716ae0116df403fbba242a4489ba890fb549f7626dc078c49",
+    "modules/equity_agents/major_takeaways_agent.py": "47bf4b4e16fc0c308bbc4d42986bba696f1de34ecc3c8ab65f1718e26d5a6081",
+    "modules/equity_agents/news_summary_agent.py": "ebb0a705d26ed185b7cdaed21d6bd202bb83e6a968b890ed1957f0c22f77b8fb",
+    "modules/equity_agents/risks_agent.py": "cfcf9793a184dfa55cc6e40a4444a9ce7848a5045285c0abadcf06d9e20c87b0",
+    "modules/equity_agents/tagline_agent.py": "c188128e56329174dcac041aa0a6187ae79b078004758ba39f0ed79dc62203bc",
+    "modules/equity_agents/valuation_overview_agent.py": "c3d02d5c07c0498b1e0e892ff0ddac88327f2efa6c39db64520a4607dda2f092",
+    "modules/financial_data_processor.py": "0cfc251b8f8a1fba8dc16ba1ca52d6eb92ccf160a5bc881c24adfa885425c726",
+    "modules/fmp_stable.py": "9edfa39a6d50034c9c0cd1d20e2cec4044cfd2f2fb13322cb35401312cdfad4c",
+    "modules/html_renderer.py": "b1345905d5f9e97dc4fbc50baf2c2de67b46be9c3de6e77cc1990e36d6a83179",
+    "modules/html_template_professional.py": "0c3f17ffed61f3e7add079e90ecd3d451e4ea3518404a42dce976c5cd1941462",
+    "modules/market_data_api.py": "8339d8594a3a90acd8fd6a4540973994f624acc7bee1b86836b2e90fd773cc29",
+    "modules/news_integrator.py": "dd034cad6bc76972ead09aab60eaa5b3423a3647a1d604e7ac616a44fc784dc6",
+    "modules/pdf_generator.py": "5da8037419c5da6f764db918883adaa3de885149151b8d72f0aad526178e8ef6",
+    "modules/professional_pdf_report.py": "1527a83e7e9a3b85d9ba364266994716089bc8e99125f50e77c1cedface7237d",
+    "modules/report_data_loader.py": "ca9590d1a83ebe9c64a1667d490ae409c9585fee9496c9575aa27276b2e3d5bb",
+    "modules/report_structure.py": "cb1c786e323cc8e481811cd78df6594667fadb31a6e915c0da6b6ba0e9bf5662",
+    "modules/retail_sentiment_client.py": "1e744cd0498dcdd03183652da2f0170da895791a523a85b75e705cde3474ff53",
+    "modules/sensitivity_analyzer.py": "edc42f04d39361d20d130595d8bdde506da6a42e4dfead180d427471728cfa34",
+    "modules/text_generator_agents.py": "a8b9f427f4081ec611ba1d8b71b8c2258e5d76a2dd735d28f565154fcc36bf6f",
+    "modules/valuation_engine.py": "3256aa3bfc5aa7378a904696930ab4437c752f028a1e16a253f654b7e22a54b0"
+  },
+  "runs": [
+    {
+      "ticker": "AAPL",
+      "analysis_exit_code": 0,
+      "run_dir": "/Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/AAPL_baseline_20261012_183858_023825Z",
+      "llm_attempts": 7,
+      "fmp_attempts": 15,
+      "render_exit_code": 0,
+      "analysis_unchanged": true
+    },
+    {
+      "ticker": "CSCO",
+      "analysis_exit_code": 0,
+      "run_dir": "/Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/CSCO_baseline_20261012_183927_756856Z",
+      "llm_attempts": 7,
+      "fmp_attempts": 15,
+      "render_exit_code": 0,
+      "analysis_unchanged": true
+    }
+  ],
+  "finished_at_utc": "2026-10-12T18:39:55.523475+00:00",
+  "exit_code": 0,
+  "coverage_tickers": [
+    "NVDA",
+    "AMD",
+    "INTC",
+    "AAPL",
+    "CSCO"
+  ]
+}

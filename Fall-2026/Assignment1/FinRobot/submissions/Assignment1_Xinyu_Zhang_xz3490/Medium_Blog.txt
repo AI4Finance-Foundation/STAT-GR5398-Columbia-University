@@ -1,0 +1,57 @@
+Checking FinRobot’s Equity Reports
+
+What I found in my STAT GR5398 project
+
+Xinyu Zhang
+
+One sentence in my AMD report said that its 38.3x EV/EBITDA was higher than Intel’s 106.9x. The numbers were right there, but the comparison was wrong. This was one of the clearest mistakes I found while checking the reports for this assignment.
+
+I used FinRobot to generate equity reports for NVIDIA, AMD, Intel, Apple and Cisco, with two peers for each company. All five were classified as Technology by the data provider. They still have quite different businesses, so I treated the peer comparisons cautiously, especially those involving Apple and Cisco.
+
+The reports used GPT-4.1 and took about 27–33 seconds each for analysis and rendering. Including two additional NVIDIA runs, the 49 recorded model calls cost an estimated $0.2646. That amount covers the calls saved in my audit files; it does not include earlier connection tests. Once the reports were generated, I worked through the financial tables, forecast calculations and written sections to see which parts I could verify.
+
+I started with ten financial metrics each for NVIDIA and Apple, comparing the FY2025 values with their SEC filings. Sixteen of the twenty checks matched within rounding. The other four involved EBITDA or EBITDA margin, where the definitions differed.
+
+For example, NVIDIA’s operating income plus depreciation and amortization gave $83.317 billion. The data provider reported EBITDA of $86.137 billion. I could reconcile that second number using pretax income, interest expense, and depreciation and amortization. The difference was explainable, but the report did not make the definition clear. This check also reminded me to match fiscal periods: NVIDIA and Apple both had a column called FY2025, but their fiscal years ended on different dates.
+
+The forecasts were harder to justify. The default revenue-growth rates were 5%, 6% and 4% for every company. NVIDIA’s recent growth and Intel’s recent decline looked very different in the historical data, yet they received the same forward growth path. Gross margin was also assumed to improve by one percentage point annually, while SG&A margin fell by half a point.
+
+When I checked the calculation, forecast EBITDA was gross profit minus SG&A. Historical EBITDA came from the provider, so the forecast changed the definition and left out other operating expenses. That made some of the projected margin improvement difficult to interpret. I also found fixed 2025E–2027E headings alongside actual data that already extended through 2025 or 2026. Across the five reports, seven forecast-year labels overlapped actual years.
+
+There was another inconsistency in NVIDIA’s inputs. The main table had about $183.7 billion of EBITDA in the column labelled 2027E, while the peer table had a $382 billion projection for 2027. Both tables were supplied to the model. If the model repeated the peer-table number correctly, the paragraph could still disagree with the main forecast. Checking the model’s answer alone would not resolve that problem.
+
+For the text audit, I listed 288 statements across all eight saved sections for NVIDIA, AMD and Intel. I classified each statement according to whether the evidence in that company’s prompt supported it. Eighty-eight statements were supported, fifty contradicted the inputs, and the remaining 150 lacked evidence in the prompt.
+
+Some of those unsupported statements were familiar company facts, such as product descriptions or manufacturing arrangements. They may be correct, but the financial tables supplied to the model did not establish them. Other statements attributed growth to AI demand or explained valuation using investor expectations, without data showing those relationships. I kept these separate from clear errors like the AMD/Intel multiple comparison or a historical growth rate being described as a forecast.
+
+Looking at the prompts helped explain why this happened. The company-overview instructions asked for products and market position, while the evidence mostly consisted of financial tables. The valuation instructions asked for fair value without supplying a current quote or an intrinsic valuation calculation. I also checked which code actually ran: the command-line route generated the sections one after another using Chat Completions. It did not use the separate typed agent manager described in the assignment.
+
+To test consistency, I ran NVIDIA three times with identical financial inputs and model request bodies. The first report put competition third among its risks; the next two put margin pressure third. The average similarity of the top-three risk sets was 0.667. With only three runs, this is a small check, but the change shows that the ordering was not fixed.
+
+The headline rating stayed Overweight because it came from the same frozen data-provider response. The target price could not be compared meaningfully: its endpoint was blocked, and the report displayed zero. I treated it as missing data. News retrieval was also blocked, so the saved “No recent news available” message did not tell me whether the company actually had recent news.
+
+I found a separate issue when comparing the text files with the HTML reports. The renderer treated text containing more than twenty commas as CSV data. All five competitor sections met that condition and were replaced with a generic paragraph. A formatting check also replaced the generated takeaway sections. The original files were still saved, but readers of the HTML did not see the same text I was auditing.
+
+For the improvement, I chose the forecasting component because I could evaluate it against historical outcomes. I used recent median revenue growth, bounded between -25% and +50%, then moved the growth rate halfway toward a 5% anchor each year. Margins came from trailing historical medians. Forecast years followed the latest actual fiscal year, and forecast EBITDA kept the provider’s historical definition. The bounds and anchor were assumptions I made explicit; the historical data did not determine them.
+
+I tested two earlier one-year forecasts for each company, giving ten comparisons. Revenue mean absolute percentage error fell from 14.0% to 10.2%, with six of the ten forecasts improving. EBITDA weighted absolute error fell from 29.5% to 20.1%. There were also results that went the other way: revenue median error increased, and Intel’s revenue forecasts worsened in both tests. I would need more testing before relying on this method for a new forecast.
+
+These results have limits. I downloaded the historical data at one time, so the figures may include later restatements. The sample was small, and the test covered one-year forecasts rather than the full three-year path. I also did not regenerate the written reports after changing the forecast, so I cannot claim that this change improved the prose.
+
+Finally, I reproduced the EV/EBITDA valuation independently and matched the engine’s arithmetic. Doing that exposed assumptions that were easy to miss in the report: it used the final forecast-column EBITDA, an average historical multiple, net debt equal to 10% of enterprise value, and no discounting. I would want to reconsider those inputs before using the resulting price in an investment decision.
+
+I would be comfortable sharing the filing-checked historical rows with their sources, fiscal dates and definitions. I would keep the valuation conclusions and company narratives under review. For this project, the error tables and calculations were more useful to me than the final recommendation: they showed exactly what I could explain and where I still needed better evidence.
+
+Sources
+
+NVIDIA FY2025 Form 10-K:
+https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/nvda-20250126.htm
+
+Apple FY2025 Form 10-K:
+https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm
+
+FinRobot source at the audited commit:
+https://github.com/AI4Finance-Foundation/FinRobot/tree/2717499b8e30f242640af08c4ad9afd1113c2d45/finrobot_equity/core/src
+
+GPT-4.1 model and pricing:
+https://developers.openai.com/api/docs/models/gpt-4.1

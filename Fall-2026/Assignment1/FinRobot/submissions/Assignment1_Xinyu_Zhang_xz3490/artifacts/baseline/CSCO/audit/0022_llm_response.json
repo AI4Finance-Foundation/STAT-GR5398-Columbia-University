@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-10-12T18:39:52.711466+00:00",
+  "elapsed_seconds": 2.1392,
+  "http_status": 200,
+  "body": {
+    "id": "chatcmpl-EYFE6lngxL0urn59g16BCUQrvdE6t",
+    "object": "chat.completion",
+    "created": 1791830390,
+    "model": "gpt-4.1-2025-04-14",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**Revenue Growth**  \nCisco’s revenue has shown volatility recently, with a 10.6% increase in 2023, a -5.6% decline in 2024, and a projected rebound to mid-single digit growth in the following years (CAGR of 5.3% through 2027E). This pattern reflects sensitivity to market cycles, but also signals a return to steady growth in the medium term.\n\n**Gross Profit Margin**  \nGross profit margins (Contribution Margin) have remained robust and are expected to improve, rising from 62.5% in 2022 to an estimated 67.5% by 2027E. This indicates Cisco’s continued ability to maintain pricing power and operational efficiency in its core business.\n\n**SG&A Expense Margin**  \nSG&A expenses as a percentage of revenue have been relatively stable, peaking at 24.6% in 2025 before declining to 21.1% by 2027E. The downward trend in SG&A margin suggests improving cost discipline and efficiency gains over the forecast period.\n\n**EBITDA Margin**  \nEBITDA margin declined from 32.6% in 2022 to 27.1% in 2025, but is expected to rebound sharply to 46.4% by 2027E. This anticipated margin expansion points to significant profitability improvement, likely driven by revenue growth leverage and better cost control.",
+          "refusal": null,
+          "annotations": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1449,
+      "completion_tokens": 289,
+      "total_tokens": 1738,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": "fp_10687f7978"
+  }
+}

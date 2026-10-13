@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-10-12T19:25:40.979086+00:00",
+  "elapsed_seconds": 3.4798,
+  "http_status": 200,
+  "body": {
+    "id": "chatcmpl-EYFwPsLz5Gba0dKt8DdikgP174jo6",
+    "object": "chat.completion",
+    "created": 1791833137,
+    "model": "gpt-4.1-2025-04-14",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Certainly. Based on the provided financial metrics and peer comparison data for NVIDIA Corporation (NVDA), here are 5 key investment risks:\n\n- **Valuation Risk**: NVIDIA’s current and projected PE and EV/EBITDA multiples are significantly higher than peers (e.g., 2023 EV/EBITDA: NVDA 81.0 vs. AMD 57.1, INTC 22.5), indicating premium valuation and potential vulnerability to market corrections if growth expectations are not met.\n\n- **Revenue Growth Sustainability**: The company shows extraordinary revenue growth in 2024 and 2025 (125.9% and 114.2% YoY), but this is expected to slow dramatically to single digits by 2026-2027, raising concerns about the ability to maintain high growth rates and justify current valuation levels.\n\n- **Margin Compression Risk**: While EBITDA margin is projected to expand (from 22.2% in 2023 to 73.5% in 2027), any increase in competition, operational costs, or R&D/Sales expenses could pressure margins, especially as SG&A margin is forecasted to decline uncommonly low.\n\n- **Competitive Pressure**: Peer data shows AMD and INTC are also investing and growing (e.g., rising EBITDA for AMD, recovering for INTC by 2027), suggesting risk of market share loss or price competition, particularly as the semiconductor/AI market matures.\n\n- **Execution Risk on Forecasts**: The financial projections for revenue, EBITDA, and margins are highly optimistic. Any operational missteps, supply chain constraints, regulatory changes, or delayed AI/semiconductor adoption could result in significant underperformance versus these aggressive forecasts.",
+          "refusal": null,
+          "annotations": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1435,
+      "completion_tokens": 349,
+      "total_tokens": 1784,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": "fp_4146aea85b"
+  }
+}

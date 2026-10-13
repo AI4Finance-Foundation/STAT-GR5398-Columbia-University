@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-10-12T19:26:03.047085+00:00",
+  "elapsed_seconds": 3.0542,
+  "http_status": 200,
+  "body": {
+    "id": "chatcmpl-EYFwmhLcjAdahcCdjwnFrklExkDlX",
+    "object": "chat.completion",
+    "created": 1791833160,
+    "model": "gpt-4.1-2025-04-14",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "NVIDIA Corporation (NVDA) continues to deliver exceptional financial performance, driven by surging demand for its advanced GPUs and AI-focused solutions. In fiscal 2024, revenue more than doubled year-on-year to $60.9 billion, with expectations to more than double again in 2025 to $130.5 billion. This explosive topline growth is primarily fueled by the accelerating adoption of generative AI and large language models, which require massive compute power—an area where NVIDIA’s data center products are the clear market leader.\n\nProfitability has expanded in tandem with revenue. Contribution margin reached 72.7% in 2024 and is projected to remain above 70% through 2027, reflecting strong pricing power and operational leverage. EBITDA margin jumped from 22.2% in 2023 to 58.4% in 2024 and is expected to climb above 70% by 2027, underscoring the scalability of NVIDIA’s business model. SG&A as a percentage of revenue has declined significantly, indicating disciplined cost management despite rapid growth.\n\nCompared to peers, NVIDIA is outpacing both AMD and Intel in EBITDA growth. NVIDIA’s estimated 2027 EBITDA of $382 billion dwarfs AMD’s $8.6 billion and Intel’s $47.4 billion. While the company’s EV/EBITDA multiple remains elevated (31.4x for 2026E), this premium reflects NVIDIA’s dominant market position and superior growth trajectory.\n\nLooking ahead, NVIDIA is well-positioned to sustain strong growth, supported by robust demand for AI infrastructure, continued innovation, and expanding applications across industries. While valuation remains high, the exceptional earnings momentum and widening competitive moat support a positive outlook for long-term investors.",
+          "refusal": null,
+          "annotations": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1448,
+      "completion_tokens": 351,
+      "total_tokens": 1799,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": "fp_4146aea85b"
+  }
+}

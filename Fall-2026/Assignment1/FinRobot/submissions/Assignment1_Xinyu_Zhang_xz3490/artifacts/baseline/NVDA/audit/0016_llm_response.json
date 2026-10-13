@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-10-12T09:34:43.745813+00:00",
+  "elapsed_seconds": 2.1457,
+  "http_status": 200,
+  "body": {
+    "id": "chatcmpl-EY6iZFsUvmXCvt3ZSVSzH7gn5l5nH",
+    "object": "chat.completion",
+    "created": 1791797683,
+    "model": "gpt-4.1-2025-04-14",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "NVIDIA demonstrates exceptional financial momentum, with revenue and EBITDA projected to grow at a CAGR of over 68%, far outpacing peers. The company maintains industry-leading profitability, evidenced by expanding EBITDA margins exceeding 70% and robust contribution margins above 72%. Despite a premium valuation, NVIDIA’s sustained earnings growth and operational leverage solidify its position as the dominant force in the semiconductor sector.",
+          "refusal": null,
+          "annotations": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1445,
+      "completion_tokens": 78,
+      "total_tokens": 1523,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": "fp_836ac77dde"
+  }
+}

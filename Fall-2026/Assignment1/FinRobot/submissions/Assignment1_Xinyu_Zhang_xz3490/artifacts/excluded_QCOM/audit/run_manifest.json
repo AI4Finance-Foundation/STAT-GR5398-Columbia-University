@@ -1,0 +1,51 @@
+{
+  "started_at_utc": "2026-10-12T18:14:23.615151+00:00",
+  "company_ticker": "QCOM",
+  "company_name": "QUALCOMM Incorporated",
+  "peer_tickers": [
+    "AVGO",
+    "NVDA"
+  ],
+  "git_commit": "2717499b8e30f242640af08c4ad9afd1113c2d45",
+  "python_version": "3.10.6 (v3.10.6:9c7b4bd164, Aug  1 2022, 17:13:48) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "pipeline_argv": [
+    "/Users/nancy/Documents/FinRobot_A1/FinRobot/finrobot_equity/core/src/generate_financial_analysis.py",
+    "--company-ticker",
+    "QCOM",
+    "--company-name",
+    "QUALCOMM Incorporated",
+    "--config-file",
+    "/Users/nancy/Documents/FinRobot_A1/FinRobot/finrobot_equity/core/config/config.ini",
+    "--years-limit",
+    "5",
+    "--output-dir",
+    "/Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/QCOM_baseline_20261012_181423_614833Z/analysis",
+    "--text-output-dir",
+    "/Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/QCOM_baseline_20261012_181423_614833Z/analysis",
+    "--peer-tickers",
+    "AVGO",
+    "NVDA",
+    "--period",
+    "annual",
+    "--generate-text-sections",
+    "--enable-sensitivity-analysis"
+  ],
+  "settings": {
+    "openai_base_url": "https://api.openai.com/v1",
+    "openai_model": "gpt-4.1"
+  },
+  "pipeline_source_sha256": "1595d12c4946530af3af9252dc6e5a31e3784e04f4edcb768bd22cb749c68cbf",
+  "stage": "analysis_only",
+  "api_cost_usd": null,
+  "capture_transports": [
+    "requests",
+    "httpx"
+  ],
+  "capture_headers": false,
+  "capture_streaming_responses": false,
+  "finished_at_utc": "2026-10-12T18:14:24.457678+00:00",
+  "exit_code": 0,
+  "captured_llm_http_attempts": 0,
+  "captured_fmp_http_attempts": 5,
+  "analysis_files": []
+}
