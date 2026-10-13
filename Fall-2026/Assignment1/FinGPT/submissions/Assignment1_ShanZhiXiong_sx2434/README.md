@@ -76,7 +76,7 @@ Llama BASE contains234/300 Up/Down placeholders. All220 course-valid pairs parse
 
 ## Sources and reproduction
 
-The exact executed final-test source, PLAN.json, dependency hashes, original human authorization, first-read receipt, derived policy, three scoped read receipts, all900 native prepared prompts, native tokenizer copies, complete1,800 token/boundary receipts, raw outputs and CPU metric recheck are preserved. `final_test/COMPLETED_FILES_SHA256.json` commits every completed remote file. `final_test/LOCAL_VERIFICATION.json` records local re-encoding/decoding and18 reproduced metric groups. These mechanical checks are authored by Codex, not independent Claude acceptance.
+The public submission includes the executed final-test source and frozen plan in `final_test_executor/`, all 1,800 raw generated answers and their token/boundary receipts, the exact test-source snapshot, and `final_test/LOCAL_VERIFICATION.json` recording local re-encoding/decoding and 18 metric groups. The complete original review archive additionally retains private authorization/first-read evidence, all 900 prepared prompts and native tokenizer copies; those extra files are not claimed to be present in this curated public folder. Mechanical checks were authored by Codex. The separately included Claude actual-results report records the independent review.
 
 `code/train_lora.py`, `train.sh`, `config.json` and `utils.py` are independently reviewed fresh-reproduction wrappers. Their default is a CPU plan. Historical executed sources and selected248 adapters are preserved separately; wrappers did not produce those earlier runs. Validation commands/hardware/full source commitments are preserved in `validation_stage_history/README.md`. All three trained selected adapters are in `selected_adapters/`. Base weights and credentials are excluded.
 
@@ -98,7 +98,7 @@ Actual human feedback contains18 selected claims plus a quick note and earlier p
 
 Financial headers in61 train and3 validation rows postdate prediction origin; all1,230 development rows lack complete independent availability evidence. This does not prove all rows leaked, and retrospective disclosure does not clean training data. The original DeepSeek adapter's unclosed reasoning supervision remains a confound. No target repair, new training or claim of a clean forecasting benchmark is made.
 
-Prior independent reviews accepted training/validation/HITL corrections and the prospective test protocol. The actual completed-test audit is also included; its limited scope does not certify clean data, predictive ability, completed HITL or the entire assignment. `CURRENT_SCOPE.json` and later actual-results acceptance records govern current status; old generation-time pending statements in archived validation material are historical.
+Prior independent reviews accepted training/validation/HITL corrections and the prospective test protocol. The actual completed-test audit is also included; its limited scope does not certify clean data, predictive ability, completed HITL or the entire assignment. This README and `SUBMISSION_STATUS.json` govern the public delivery status. Earlier generation-time pending statements in preserved historical material describe the original review freeze.
 
 
 ## Historical training launch commands
