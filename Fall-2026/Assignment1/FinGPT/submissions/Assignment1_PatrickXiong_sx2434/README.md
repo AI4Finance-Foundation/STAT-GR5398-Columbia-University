@@ -3,7 +3,7 @@
 **Author:** Patrick Xiong  
 **UNI:** sx2434  
 **Medium blog:** [https://medium.com/@sx2434/lora-improved-financial-answer-format-without-establishing-forecasting-skill-9ee2d2397ca7](https://medium.com/@sx2434/lora-improved-financial-answer-format-without-establishing-forecasting-skill-9ee2d2397ca7)  
-**Course submission:** [Assignment1_Patrick_Xiong_sx2434](https://github.com/AI4Finance-Foundation/STAT-GR5398-Columbia-University/tree/master/Fall-2026/Assignment1/FinGPT/submissions/Assignment1_Patrick_Xiong_sx2434)
+**Course submission:** [Assignment1_PatrickXiong_sx2434](https://github.com/AI4Finance-Foundation/STAT-GR5398-Columbia-University/tree/master/Fall-2026/Assignment1/FinGPT/submissions/Assignment1_PatrickXiong_sx2434)
 
 Start with **[Report.pdf](Report.pdf)**. This submission includes three trained LoRA adapters, 1,440 validation answers, 1,800 final-test answers, and a separate 48-output HITL prompt experiment. All scientific outputs and selected adapters are preserved byte-for-byte from the accepted review package. The user accepted the materials and authorized publication/submission. No additional training, test-based selection or new human ratings were performed during submission.
 

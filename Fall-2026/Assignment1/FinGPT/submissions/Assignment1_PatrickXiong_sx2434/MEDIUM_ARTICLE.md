@@ -32,6 +32,6 @@ Claude Opus 5.5 High independently checked the actual run, reproduced its record
 
 Author: Patrick Xiong, Columbia UNI sx2434.
 
-Code, report, adapters and evaluation evidence: [FinGPT Assignment 1 submission](https://github.com/AI4Finance-Foundation/STAT-GR5398-Columbia-University/tree/master/Fall-2026/Assignment1/FinGPT/submissions/Assignment1_Patrick_Xiong_sx2434).
+Code, report, adapters and evaluation evidence: [FinGPT Assignment 1 submission](https://github.com/AI4Finance-Foundation/STAT-GR5398-Columbia-University/tree/master/Fall-2026/Assignment1/FinGPT/submissions/Assignment1_PatrickXiong_sx2434).
 
 Published article: https://medium.com/@sx2434/lora-improved-financial-answer-format-without-establishing-forecasting-skill-9ee2d2397ca7
