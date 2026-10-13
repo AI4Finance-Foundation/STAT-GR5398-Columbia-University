@@ -1,0 +1,159 @@
+{
+  "started_at_utc": "2026-10-12T19:25:20.441628+00:00",
+  "company_ticker": "NVDA",
+  "company_name": "NVIDIA Corporation",
+  "peer_tickers": [
+    "AMD",
+    "INTC"
+  ],
+  "git_commit": "2717499b8e30f242640af08c4ad9afd1113c2d45",
+  "python_version": "3.10.6 (v3.10.6:9c7b4bd164, Aug  1 2022, 17:13:48) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "pipeline_argv": [
+    "/Users/nancy/Documents/FinRobot_A1/FinRobot/finrobot_equity/core/src/generate_financial_analysis.py",
+    "--company-ticker",
+    "NVDA",
+    "--company-name",
+    "NVIDIA Corporation",
+    "--config-file",
+    "/Users/nancy/Documents/FinRobot_A1/FinRobot/finrobot_equity/core/config/config.ini",
+    "--years-limit",
+    "5",
+    "--output-dir",
+    "/Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/NVDA_baseline_20261012_192520_441274Z/analysis",
+    "--text-output-dir",
+    "/Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/NVDA_baseline_20261012_192520_441274Z/analysis",
+    "--peer-tickers",
+    "AMD",
+    "INTC",
+    "--period",
+    "annual",
+    "--generate-text-sections",
+    "--enable-sensitivity-analysis"
+  ],
+  "settings": {
+    "openai_base_url": "https://api.openai.com/v1",
+    "openai_model": "gpt-4.1"
+  },
+  "pipeline_source_sha256": "1595d12c4946530af3af9252dc6e5a31e3784e04f4edcb768bd22cb749c68cbf",
+  "stage": "analysis_only",
+  "api_cost_usd": null,
+  "capture_transports": [
+    "requests",
+    "httpx"
+  ],
+  "capture_headers": false,
+  "capture_streaming_responses": false,
+  "finished_at_utc": "2026-10-12T19:25:47.192995+00:00",
+  "exit_code": 0,
+  "captured_llm_http_attempts": 7,
+  "captured_fmp_http_attempts": 15,
+  "analysis_files": [
+    {
+      "path": "analysis/analysis_summary.json",
+      "bytes": 1473,
+      "sha256": "9bb597afd0a3a89082d3189deb10ea9fc2518dcf2647e0acf0aa125dfc2fe8c0"
+    },
+    {
+      "path": "analysis/balance_sheet_raw_data.csv",
+      "bytes": 4080,
+      "sha256": "61bd3fc66b82f9fef2bf0db5ca2d9442eeb7487e2f350b1b1e3ff75f3a1099d1"
+    },
+    {
+      "path": "analysis/cash_flow_raw_data.csv",
+      "bytes": 3285,
+      "sha256": "88d0fb55198bc9c92bcdddca429e577062b3d9f986449af2ecee545d94d0b8b9"
+    },
+    {
+      "path": "analysis/company_overview.txt",
+      "bytes": 2603,
+      "sha256": "001aced8c3fab72a41772527d6307495bc34df7addd3fa5e8b8b9b598bbb4217"
+    },
+    {
+      "path": "analysis/competitor_analysis.txt",
+      "bytes": 1571,
+      "sha256": "f6b9fd3eade3d869762c014951a522cfc59a353e1c4c2a3bab941e87632fc0eb"
+    },
+    {
+      "path": "analysis/financial_metrics_and_forecasts.csv",
+      "bytes": 1131,
+      "sha256": "17d67552e382e9f34f150ede9652f5e612484baede9d35d13681461fff70c551"
+    },
+    {
+      "path": "analysis/income_statement_raw_data.csv",
+      "bytes": 2597,
+      "sha256": "25b741dcf8f013328eb8b43695721c6c26b3d2f3decdbe6974f117d534f6faba"
+    },
+    {
+      "path": "analysis/investment_overview.txt",
+      "bytes": 1789,
+      "sha256": "162c102076d14172a8668f23f11e773009fb4bcf8a4e7042de30de789cdd006d"
+    },
+    {
+      "path": "analysis/key_metrics_raw_data.csv",
+      "bytes": 4832,
+      "sha256": "ffbed09aed496fc9cfcb82658bb579c8397f1a520e1db25019d18ef13f2995d1"
+    },
+    {
+      "path": "analysis/major_takeaways.txt",
+      "bytes": 402,
+      "sha256": "6830ed8e162ecad81fcf07658e15a43d51bc74c337e2c35984f932b8a91d0781"
+    },
+    {
+      "path": "analysis/news_summary.txt",
+      "bytes": 55,
+      "sha256": "8a19b14e2ff1ab10c62031bc953f5a140235eef5e62c8cedd0c6819ddac02cfb"
+    },
+    {
+      "path": "analysis/peer_ebitda_comparison.csv",
+      "bytes": 315,
+      "sha256": "626df0f7191771a85f122d545d960afe29d9cd2c4915427936208b14a9103406"
+    },
+    {
+      "path": "analysis/peer_ev_ebitda_comparison.csv",
+      "bytes": 326,
+      "sha256": "01d3f9396e0b94913a9644e552a7448b6702e3994ac9e967cd84099b985d90ac"
+    },
+    {
+      "path": "analysis/ratios_raw_data.csv",
+      "bytes": 7864,
+      "sha256": "e9a958a5bf07409f593f32bae4f19b69fbfb163769c2829cb5b14c0a85150d90"
+    },
+    {
+      "path": "analysis/retail_sentiment.json",
+      "bytes": 857,
+      "sha256": "b2658e43a7a2655d299ed884fdccfbb9514f91fa975e83045ffa6b31d87d98bf"
+    },
+    {
+      "path": "analysis/risks.txt",
+      "bytes": 1578,
+      "sha256": "505f3163f770160e4a658388527ee03c1f235f21953f86608ae646f7ccdce441"
+    },
+    {
+      "path": "analysis/sensitivity_analysis.json",
+      "bytes": 3403,
+      "sha256": "d76ea47dcd29d36c4590789b3c3f53ce1e58d69713ee804f6abe5ce7c7dae60b"
+    },
+    {
+      "path": "analysis/sensitivity_summary.md",
+      "bytes": 524,
+      "sha256": "6f8441df9396508e2ef230faa05a4d28c4e72149a4d280b7fafc94846b723dbb"
+    },
+    {
+      "path": "analysis/tagline.txt",
+      "bytes": 444,
+      "sha256": "d8c0e84ee601691906ab101fb3c73ec7b861f72ad9b8d396210b63488177f77f"
+    },
+    {
+      "path": "analysis/valuation_overview.txt",
+      "bytes": 1664,
+      "sha256": "a3a625054bfce1aebd6da9b22a30360a28de3817a5b4fb8e69ce38cc73da5ffa"
+    }
+  ],
+  "study": "same_input_stability",
+  "response_origin": "baseline_replay",
+  "replay_source": "/Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/NVDA_baseline_20261012_093437_937103Z/audit",
+  "fmp_network_calls": 0,
+  "fmp_replay_hits": 15,
+  "fmp_replay_misses": [],
+  "frozen_date_windows": []
+}

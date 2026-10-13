@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-10-12T18:13:32.877733+00:00",
+  "elapsed_seconds": 4.4957,
+  "http_status": 200,
+  "body": {
+    "id": "chatcmpl-EYEobal2ZbRAlrUDn2lYwYhiFR12X",
+    "object": "chat.completion",
+    "created": 1791828809,
+    "model": "gpt-4.1-2025-04-14",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Investment Update: Advanced Micro Devices, Inc. (AMD)\n\nRecent Financial Performance  \nAMD delivered $25.8 billion in revenue in 2024, up 13.7% year-over-year, after a modest dip in 2023. The company’s contribution margin improved to 49.4%, while EBITDA rose to $5.3 billion, reflecting a margin of 20.4%. EPS rebounded to $1.01, nearly doubling from 2023’s $0.53. Despite these improvements, AMD’s EBITDA margins remain below 2021-2022 levels and trail primary competitor Nvidia (NVDA), which posted a dramatic EBITDA surge to $35.6 billion in 2024. AMD’s 2024 EV/EBITDA multiple stands at 38.3x, higher than Intel (106.9x) but below Nvidia (43.5x).\n\nGrowth Drivers  \nAMD’s growth is propelled by ongoing strength in its data center business, driven by demand for AI and high-performance computing (HPC) chips. The company’s roadmap includes significant product launches (such as MI300 accelerators), positioning AMD as a credible alternative to Nvidia in AI workloads. The upcoming years show robust revenue growth forecasts: 34.3% in 2025 and mid-single-digit growth into 2026 and 2027. Margin improvements are expected, with contribution and EBITDA margins forecast to rise above 50% and 40%, respectively, by 2027.\n\nOutlook  \nAMD is well-placed to capture share in AI and HPC, supported by an accelerating product cycle and industry tailwinds. However, profitability lags behind Nvidia, and the stock trades at a premium EV/EBITDA multiple. Sustained execution in data center and AI, along with margin expansion, will be crucial for further upside. Overall, AMD offers high growth potential, but investors should monitor execution risk and competitive pressures from Nvidia and Intel. \n\nIn summary, AMD remains a compelling growth story in semiconductors, with improving fundamentals and significant exposure to secular AI trends, but faces margin and valuation challenges relative to peers.",
+          "refusal": null,
+          "annotations": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1439,
+      "completion_tokens": 429,
+      "total_tokens": 1868,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": "fp_99c6909298"
+  }
+}

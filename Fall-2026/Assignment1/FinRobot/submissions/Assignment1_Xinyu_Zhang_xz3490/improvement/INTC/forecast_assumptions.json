@@ -1,0 +1,26 @@
+{
+  "forecast_method": "historical_median",
+  "revenue_base_year": "2025A",
+  "revenue_growth_assumptions": {
+    "2026E": -0.02078262152393598,
+    "2027E": 0.014608689238032012,
+    "2028E": 0.032304344619016004
+  },
+  "lookback": 3,
+  "projection_years": 3,
+  "growth_floor": -0.25,
+  "growth_cap": 0.5,
+  "growth_anchor": 0.05,
+  "growth_decay": 0.5,
+  "historical_growth_median": -0.020782621523935976,
+  "gross_margin": 0.34766238434904356,
+  "sga_margin": 0.10370802809739929,
+  "ebitda_margin": 0.2073098768164048,
+  "margin_improvement": {
+    "Contribution Margin": 0.0,
+    "EBITDA Margin": 0.0
+  },
+  "sga_margin_change": 0.0,
+  "eps_assumption": "Latest net margin and share count remain constant.",
+  "pe_assumption": "Last actual fiscal-year implied price remains constant; losses have no P/E."
+}

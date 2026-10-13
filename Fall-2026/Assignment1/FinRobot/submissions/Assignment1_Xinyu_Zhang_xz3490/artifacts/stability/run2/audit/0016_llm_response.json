@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-10-12T19:25:24.546236+00:00",
+  "elapsed_seconds": 2.4425,
+  "http_status": 200,
+  "body": {
+    "id": "chatcmpl-EYFwBqwv9Sr5BfWwOmsv170siWR3u",
+    "object": "chat.completion",
+    "created": 1791833123,
+    "model": "gpt-4.1-2025-04-14",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "NVIDIA demonstrates exceptional financial strength, with industry-leading revenue and EBITDA growth, driven by robust margin expansion and accelerating AI demand. The company’s EBITDA and profitability significantly outpace peers, while SG&A leverage and operating efficiency continue to improve. Despite a premium valuation, NVIDIA's projected earnings growth and strong cash flow position it as the clear leader in the semiconductor sector.",
+          "refusal": null,
+          "annotations": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1445,
+      "completion_tokens": 72,
+      "total_tokens": 1517,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": "fp_04d28f6feb"
+  }
+}

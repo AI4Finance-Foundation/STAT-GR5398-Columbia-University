@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-10-12T19:25:59.978156+00:00",
+  "elapsed_seconds": 8.3794,
+  "http_status": 200,
+  "body": {
+    "id": "chatcmpl-EYFweE9RFCfecC49NN6Pc7VjKI6US",
+    "object": "chat.completion",
+    "created": 1791833152,
+    "model": "gpt-4.1-2025-04-14",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "NVIDIA Corporation (NVDA) is a global leader in accelerated computing, renowned for its pioneering role in graphics processing units (GPUs) and artificial intelligence (AI) hardware and software. The company’s business model centers on designing and selling high-performance semiconductors and related platforms, which are integral to gaming, data centers, professional visualization, and automotive markets. NVIDIA generates revenue primarily from selling GPUs and system-on-chip (SoC) products, complemented by software solutions and licensing.\n\nNVIDIA’s product and service portfolio is anchored by its GPU platforms, notably the GeForce series for gaming, the NVIDIA RTX and Quadro lines for professional graphics, and the A100 and H100 GPUs for data centers and AI workloads. Its CUDA programming model and associated software stack enable developers to leverage NVIDIA hardware for advanced computing applications, further embedding NVIDIA into the AI, machine learning, and high-performance computing ecosystems. The company also offers solutions for autonomous vehicles and edge computing, reflecting its ongoing diversification efforts.\n\nIn terms of market position, NVIDIA is widely regarded as the dominant player in AI accelerators and data center GPUs, with a substantial lead over competitors such as AMD and Intel. This leadership is reflected in financial performance: NVIDIA’s revenues soared from $26.9 billion in FY2023 to $60.9 billion in FY2024, marking a dramatic 125.9% year-over-year increase driven by explosive demand for AI and cloud computing infrastructure. The company’s EBITDA margin expanded significantly from 22.2% in FY2023 to 58.4% in FY2024, and is projected to exceed 70% in coming years—a level far surpassing peers. For comparison, AMD and Intel’s 2024 EBITDA figures are $5.3 billion and $1.2 billion, respectively, versus NVIDIA’s $35.6 billion.\n\nLooking ahead, NVIDIA’s financial outlook remains robust, with consensus estimates projecting revenues to more than quadruple from $26.9 billion in FY2023 to nearly $216 billion by FY2026, representing a CAGR of 68.3%. Margins are expected to remain strong, reflecting operational leverage and premium pricing power in AI and data center markets. The company’s valuation, as indicated by a forward PE ratio in the mid-30s and a declining EV/EBITDA multiple, suggests high investor confidence in its growth trajectory and profitability.\n\nIn summary, NVIDIA’s unique combination of technological leadership, expanding end markets, and stellar financial performance cements its position as a cornerstone of the global AI and computing ecosystem, with strong momentum for continued growth.",
+          "refusal": null,
+          "annotations": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1452,
+      "completion_tokens": 522,
+      "total_tokens": 1974,
+      "prompt_tokens_details": {
+        "cached_tokens": 1280,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": "fp_bee1fbc891"
+  }
+}

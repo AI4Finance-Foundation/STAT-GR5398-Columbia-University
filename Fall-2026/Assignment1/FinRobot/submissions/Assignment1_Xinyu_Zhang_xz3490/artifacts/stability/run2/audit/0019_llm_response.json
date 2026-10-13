@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-10-12T19:25:37.484842+00:00",
+  "elapsed_seconds": 4.119,
+  "http_status": 200,
+  "body": {
+    "id": "chatcmpl-EYFwLlcS1Q2nTpQffZkS0oasJDjpC",
+    "object": "chat.completion",
+    "created": 1791833133,
+    "model": "gpt-4.1-2025-04-14",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "NVIDIA (NVDA) has experienced unprecedented growth, with revenue rising from $26.9 billion in 2022 to an estimated $215.9 billion by 2026, reflecting a remarkable CAGR of 68.3%. The company’s EBITDA margin is projected to expand from 22.2% in 2023 to over 70% by 2027, indicating remarkable operating leverage and efficiency, largely driven by its dominant position in the AI and data center GPU markets.\n\nCurrently, NVIDIA trades at a 2024E P/E of 51.6x, dropping to 39.9x in 2025E and 37.8x in 2026E. Its EV/EBITDA multiple, while elevated at 81.0x in 2023, is expected to decline to 43.5x in 2024 and further to 31.4x in 2026, as EBITDA more than quadruples over this period. In comparison, AMD’s 2025E EV/EBITDA is 47.8x and Intel’s is 14.5x, positioning NVIDIA above Intel and roughly in line with AMD on a forward basis, while its superior growth and margins arguably justify some premium.\n\nNVIDIA’s exceptional growth, best-in-class margins, and clear technological leadership support its premium valuation. However, the current multiples already reflect high expectations and leave modest room for error, especially as growth normalizes (2025E-2027E revenue growth slows to single digits). Based on peer multiples and projected financials, fair value appears to be near current levels, as further multiple expansion is unlikely unless NVIDIA can sustain hypergrowth or further expand margins. Investors should monitor for any deceleration in AI demand or increased competition, which could pressure both growth rates and valuation multiples. Overall, NVIDIA remains a high-quality growth story, but its valuation is full and sensitive to execution.",
+          "refusal": null,
+          "annotations": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1450,
+      "completion_tokens": 390,
+      "total_tokens": 1840,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": "fp_5887eb9e0d"
+  }
+}

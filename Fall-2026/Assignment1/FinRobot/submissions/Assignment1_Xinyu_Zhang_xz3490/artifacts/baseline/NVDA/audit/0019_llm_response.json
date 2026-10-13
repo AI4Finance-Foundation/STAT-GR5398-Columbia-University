@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-10-12T09:34:55.007148+00:00",
+  "elapsed_seconds": 3.2879,
+  "http_status": 200,
+  "body": {
+    "id": "chatcmpl-EY6iibFGieFaKl4ccKevzwmOsgrKO",
+    "object": "chat.completion",
+    "created": 1791797692,
+    "model": "gpt-4.1-2025-04-14",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "NVIDIA Corporation (NVDA) is experiencing unprecedented growth, driven by surging demand for its AI and data center products. Revenue is projected to increase from $26.9 billion in FY2023 to $130.5 billion in FY2025 and $215.9 billion in FY2026, representing a remarkable 68% CAGR over the next three years. This explosive topline growth is translating into significant margin expansion, with EBITDA margin rising from 22.2% in FY2023 to an estimated 70.5% in FY2025 and 72% in FY2026. EPS is expected to grow from $0.18 in FY2023 to $5.23 in FY2025 and $5.60 in FY2026.\n\nCurrently, NVIDIA trades at a forward PE of 35.9x (2025E) and 34.1x (2026E), which is elevated versus the broader semiconductor sector but reasonable given its growth profile. On an EV/EBITDA basis, NVIDIA’s multiple compresses rapidly from 81.0x in 2023 to 43.5x in 2024 and 33.8x in 2025, moving closer to, but still above, peers Advanced Micro Devices (AMD) and Intel (INTC) whose 2025E EV/EBITDA are 47.8x and 14.5x, respectively. NVIDIA’s premium valuation is justified by its superior scale, margin profile, and growth outlook—its 2025E EBITDA is more than 10x that of AMD and over 6x Intel.\n\nWhile the current multiples appear rich on an absolute basis, NVIDIA’s dominant position in the AI hardware market and its ability to maintain high margins and outsized growth support a fair value at the upper end of the semiconductor peer group. As growth normalizes post-2026, further multiple compression is likely, but the stock’s valuation remains supported by fundamental outperformance and industry leadership. On balance, NVIDIA appears fairly valued at current levels relative to its growth and profitability, though the margin for error is narrowing as expectations rise.",
+          "refusal": null,
+          "annotations": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1450,
+      "completion_tokens": 434,
+      "total_tokens": 1884,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": "fp_136a75fece"
+  }
+}

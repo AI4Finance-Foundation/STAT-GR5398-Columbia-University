@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-10-12T18:39:24.661286+00:00",
+  "elapsed_seconds": 2.1473,
+  "http_status": 200,
+  "body": {
+    "id": "chatcmpl-EYFDet115KUFVB4OWbxmmjg5dJbUx",
+    "object": "chat.completion",
+    "created": 1791830362,
+    "model": "gpt-4.1-2025-04-14",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**Revenue Growth**  \nApple’s revenue growth has moderated, with a 3.3% CAGR from 2021 to 2027 and a notable -2.8% decline in 2023, but returns to mid-single-digit growth in the following years (4–6%). This indicates a mature business experiencing steady, though slowing, top-line expansion.\n\n**Gross Profit Margin**  \nGross profit margin, reflected by the contribution margin, has improved from 41.8% in 2021 to a projected 49.9% in 2027, highlighting Apple’s ability to enhance profitability through pricing power, product mix, or operational efficiencies.\n\n**SG&A Expense Margin**  \nSG&A expense margin has remained relatively stable at around 6–6.7% of revenue but is forecast to decrease to 5.1% by 2027, suggesting improved cost control and operating leverage as Apple scales.\n\n**EBITDA Margin**  \nEBITDA margin has been stable at around 33–34% historically, but is projected to expand significantly, reaching 44.8% by 2027, indicating strong operating efficiency and margin expansion relative to peers.",
+          "refusal": null,
+          "annotations": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1457,
+      "completion_tokens": 237,
+      "total_tokens": 1694,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": "fp_509b035dfb"
+  }
+}

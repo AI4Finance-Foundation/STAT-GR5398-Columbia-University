@@ -1,0 +1,57 @@
+{
+  "started_at_utc": "2026-10-12T19:25:19.895149+00:00",
+  "ticker": "NVDA",
+  "baseline_run": "/Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/NVDA_baseline_20261012_093437_937103Z",
+  "source_repo_origin": "https://github.com/Nancyxy/FinRobot.git",
+  "baseline_csv_sha256": {
+    "balance_sheet_raw_data.csv": "61bd3fc66b82f9fef2bf0db5ca2d9442eeb7487e2f350b1b1e3ff75f3a1099d1",
+    "cash_flow_raw_data.csv": "88d0fb55198bc9c92bcdddca429e577062b3d9f986449af2ecee545d94d0b8b9",
+    "financial_metrics_and_forecasts.csv": "17d67552e382e9f34f150ede9652f5e612484baede9d35d13681461fff70c551",
+    "income_statement_raw_data.csv": "25b741dcf8f013328eb8b43695721c6c26b3d2f3decdbe6974f117d534f6faba",
+    "key_metrics_raw_data.csv": "ffbed09aed496fc9cfcb82658bb579c8397f1a520e1db25019d18ef13f2995d1",
+    "peer_ebitda_comparison.csv": "626df0f7191771a85f122d545d960afe29d9cd2c4915427936208b14a9103406",
+    "peer_ev_ebitda_comparison.csv": "01d3f9396e0b94913a9644e552a7448b6702e3994ac9e967cd84099b985d90ac",
+    "ratios_raw_data.csv": "e9a958a5bf07409f593f32bae4f19b69fbfb163769c2829cb5b14c0a85150d90"
+  },
+  "baseline_llm_input_sha256": "57157c5ba772fca49d21f0e1ebda06de9f8ca5af03ec4fdd4bc78421bc6cf788",
+  "repeats": [
+    {
+      "repeat": 2,
+      "analysis_exit_code": 0,
+      "run_dir": "/Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/NVDA_baseline_20261012_192520_441274Z",
+      "csv_inputs_identical": true,
+      "model_requests_identical": true,
+      "live_llm_http_attempts": 7,
+      "successful_llm_responses": 7,
+      "actual_model_identical": true,
+      "analysis_fmp_replay_hits": 15,
+      "analysis_fmp_replay_misses": [],
+      "analysis_frozen_date_windows": [],
+      "render_exit_code": 0,
+      "render_fmp_replay_hits": 8,
+      "render_fmp_replay_misses": [],
+      "render_frozen_date_windows": []
+    },
+    {
+      "repeat": 3,
+      "analysis_exit_code": 0,
+      "run_dir": "/Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/NVDA_baseline_20261012_192549_200109Z",
+      "csv_inputs_identical": true,
+      "model_requests_identical": true,
+      "live_llm_http_attempts": 7,
+      "successful_llm_responses": 7,
+      "actual_model_identical": true,
+      "analysis_fmp_replay_hits": 15,
+      "analysis_fmp_replay_misses": [],
+      "analysis_frozen_date_windows": [],
+      "render_exit_code": 0,
+      "render_fmp_replay_hits": 8,
+      "render_fmp_replay_misses": [],
+      "render_frozen_date_windows": []
+    }
+  ],
+  "fmp_network_calls": 0,
+  "finished_at_utc": "2026-10-12T19:26:15.412365+00:00",
+  "exit_code": 0,
+  "additional_live_llm_http_attempts": 14
+}

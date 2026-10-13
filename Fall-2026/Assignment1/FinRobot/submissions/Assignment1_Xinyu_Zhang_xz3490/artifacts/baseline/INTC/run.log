@@ -1,0 +1,164 @@
+Output will be saved to: /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis
+Text outputs will be saved to: /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis
+Using OpenAI base URL: https://api.openai.com/v1
+Using model: gpt-4.1
+Starting FMP API-based financial analysis for Intel Corporation (INTC)
+Fetching financial data from FMP API...
+Fetching comprehensive financial data for INTC...
+Successfully fetched financial data from FMP API
+Retrieved 5 years of income statement data
+Available years: [2025, 2024, 2023, 2022, 2021]
+Processing historical financial metrics...
+
+Historical Metrics Extracted from API:
+                metrics          2025A          2024A          2023A          2022A          2021A
+0               Revenue  52853000000.0  53101000000.0  54228000000.0  63054000000.0  79024000000.0
+1    Cost of Operations  34478000000.0  35756000000.0  32517000000.0  36188000000.0  35209000000.0
+2                  SG&A   4624000000.0   5507000000.0   5634000000.0   7002000000.0   6543000000.0
+3   Contribution Profit  18375000000.0  17345000000.0  21711000000.0  26866000000.0  43815000000.0
+4   Contribution Margin          34.8%          32.7%          40.0%          42.6%          55.4%
+5                EBITDA  14354000000.0   1203000000.0  11242000000.0  21299000000.0  33874000000.0
+6         EBITDA Margin          27.2%           2.3%          20.7%          33.8%          42.9%
+7           SG&A Margin           8.7%          10.4%          10.4%          11.1%           8.3%
+8        Revenue Growth          -0.5%          -2.1%         -14.0%         -20.2%            N/A
+9                   EPS        -0.0589          -4.38            0.4           1.95           4.89
+10             PE Ratio    -614.601019      -4.634703        125.625      13.553846      10.492843
+Generating forecasts...
+Using 2025A as base year for forecasts
+Forecast assumptions:
+  Revenue Growth 2025E: 5.0%
+  Revenue Growth 2026E: 6.0%
+  Revenue Growth 2027E: 4.0%
+  Margin Improvement: 1.0% annually
+  SG&A Efficiency: -0.5% annually
+
+Final Metrics with Forecasts:
+                metrics          2021A          2022A          2023A          2024A          2025A          2025E          2026E               2027E   CAGR
+0               Revenue  79024000000.0  63054000000.0  54228000000.0  53101000000.0  52853000000.0  55495650000.0  58825389000.0       61178404560.0  -9.6%
+1    Cost of Operations  35209000000.0  36188000000.0  32517000000.0  35756000000.0  34478000000.0  35628207300.0  37177645848.0      38052967636.32    N/A
+2                  SG&A   6543000000.0   7002000000.0   5634000000.0   5507000000.0   4624000000.0   4550643300.0   4529554953.0       4404845128.32    N/A
+3   Contribution Profit  43815000000.0  26866000000.0  21711000000.0  17345000000.0  18375000000.0  19867442700.0  21647743152.0      23125436923.68    N/A
+4   Contribution Margin          55.4%          42.6%          40.0%          32.7%          34.8%          35.8%          36.8%               37.8%    N/A
+5                EBITDA  33874000000.0  21299000000.0  11242000000.0   1203000000.0  14354000000.0  15316799400.0  17118188199.0  18720591795.360001    N/A
+6         EBITDA Margin          42.9%          33.8%          20.7%           2.3%          27.2%          27.6%          29.1%               30.6%    N/A
+7           SG&A Margin           8.3%          11.1%          10.4%          10.4%           8.7%           8.2%           7.7%                7.2%    N/A
+8        Revenue Growth            N/A         -20.2%         -14.0%          -2.1%          -0.5%           5.0%           6.0%                4.0%    N/A
+9                   EPS           4.89           1.95            0.4          -4.38        -0.0589          -0.06          -0.07               -0.07    N/A
+10             PE Ratio      10.492843      13.553846        125.625      -4.634703    -614.601019         -583.9         -554.7              -526.9    N/A
+Successfully saved financial analysis to: /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/financial_metrics_and_forecasts.csv
+
+Fetching data for peer comparison: ['AMD', 'NVDA']
+Saved peer EBITDA comparison to: /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/peer_ebitda_comparison.csv
+Saved peer EV/EBITDA comparison to: /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/peer_ev_ebitda_comparison.csv
+
+Fetching company news for INTC...
+Fetching news for INTC from 2026-10-07 to 2026-10-12...
+Error fetching news for INTC: FMP news/stock (INTC): HTTP 402, non-JSON response.
+Warning: No news data could be retrieved
+
+Fetching retail sentiment insights for INTC...
+Warning: Failed to fetch retail sentiment for INTC from Reddit: 401 Client Error: Unauthorized for url: https://api.adanos.org/reddit/stocks/v1/compare?tickers=INTC&days=7
+Warning: Failed to fetch retail sentiment for INTC from X.com: 401 Client Error: Unauthorized for url: https://api.adanos.org/x/stocks/v1/compare?tickers=INTC&days=7
+Warning: Failed to fetch retail sentiment for INTC from Polymarket: 401 Client Error: Unauthorized for url: https://api.adanos.org/polymarket/stocks/v1/compare?tickers=INTC&days=7
+Saved retail sentiment insights to: /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/retail_sentiment.json
+
+Performing sensitivity analysis...
+INFO:modules.sensitivity_analyzer:Analyzing revenue growth sensitivity...
+INFO:modules.sensitivity_analyzer:✅ Revenue sensitivity analysis complete: 5 scenarios
+INFO:modules.sensitivity_analyzer:Analyzing margin sensitivity...
+INFO:modules.sensitivity_analyzer:✅ Margin sensitivity analysis complete: 5 scenarios
+INFO:modules.sensitivity_analyzer:Generating comprehensive sensitivity table...
+INFO:modules.sensitivity_analyzer:✅ Combined sensitivity table generated: 5x5 matrix
+INFO:modules.sensitivity_analyzer:Calculating 95.0% confidence interval for Revenue...
+INFO:modules.sensitivity_analyzer:✅ Revenue CI: [43191953619.36, 79164855500.64] at 95.0% confidence
+INFO:modules.sensitivity_analyzer:Calculating 95.0% confidence interval for EBITDA...
+INFO:modules.sensitivity_analyzer:✅ EBITDA CI: [13216737807.52, 24224445783.20] at 95.0% confidence
+Saved sensitivity analysis to: /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/sensitivity_analysis.json
+Saved sensitivity summary to: /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/sensitivity_summary.md
+
+Generating AI-powered text sections...
+Generating 'tagline' for Intel Corporation (INTC)...
+🤖 Generating 'tagline' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+✅ Successfully generated 'tagline' (504 chars)
+✅ Successfully generated and saved 'tagline' to /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/tagline.txt
+Generating 'company_overview' for Intel Corporation (INTC)...
+🤖 Generating 'company_overview' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+✅ Successfully generated 'company_overview' (2609 chars)
+✅ Successfully generated and saved 'company_overview' to /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/company_overview.txt
+Generating 'investment_overview' for Intel Corporation (INTC)...
+🤖 Generating 'investment_overview' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+✅ Successfully generated 'investment_overview' (2041 chars)
+✅ Successfully generated and saved 'investment_overview' to /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/investment_overview.txt
+Generating 'valuation_overview' for Intel Corporation (INTC)...
+🤖 Generating 'valuation_overview' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+✅ Successfully generated 'valuation_overview' (1819 chars)
+✅ Successfully generated and saved 'valuation_overview' to /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/valuation_overview.txt
+Generating 'risks' for Intel Corporation (INTC)...
+🤖 Generating 'risks' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+✅ Successfully generated 'risks' (1188 chars)
+✅ Successfully generated and saved 'risks' to /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/risks.txt
+Generating 'competitor_analysis' for Intel Corporation (INTC)...
+🤖 Generating 'competitor_analysis' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+✅ Successfully generated 'competitor_analysis' (1698 chars)
+✅ Successfully generated and saved 'competitor_analysis' to /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/competitor_analysis.txt
+Generating 'major_takeaways' for Intel Corporation (INTC)...
+🤖 Generating 'major_takeaways' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+✅ Successfully generated 'major_takeaways' (1177 chars)
+⚠️ Warning: Major takeaways missing required sections, using fallback.
+✅ Successfully generated and saved 'major_takeaways' to /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/major_takeaways.txt
+Skipping 'news_summary' - no news data available
+Created placeholder for 'news_summary' at /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/news_summary.txt
+
+Saving additional financial statement data...
+Saved income_statement to: /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/income_statement_raw_data.csv (5 rows)
+Saved balance_sheet to: /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/balance_sheet_raw_data.csv (5 rows)
+Saved cash_flow to: /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/cash_flow_raw_data.csv (5 rows)
+Saved ratios to: /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/ratios_raw_data.csv (5 rows)
+Saved key_metrics to: /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/key_metrics_raw_data.csv (5 rows)
+Saved analysis summary to: /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/analysis_summary.json
+
+============================================================
+✅ Financial analysis completed successfully!
+📁 All outputs saved to: /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis
+📊 Main analysis file: /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/financial_metrics_and_forecasts.csv
+📝 AI text sections generated and saved in: /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis
+
+🚀 Ready to create equity report using:
+python create_equity_report.py \
+  --company-ticker INTC \
+  --company-name "Intel Corporation" \
+  --analysis-csv /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/financial_metrics_and_forecasts.csv \
+  --ratios-csv /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/ratios_raw_data.csv \
+  --peer-ebitda-csv /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/peer_ebitda_comparison.csv \
+  --peer-ev-ebitda-csv /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/peer_ev_ebitda_comparison.csv \
+  --tagline-file /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/tagline.txt \
+  --company-overview-file /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/company_overview.txt \
+  --investment-overview-file /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/investment_overview.txt \
+  --valuation-overview-file /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/valuation_overview.txt \
+  --risks-file /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/risks.txt \
+  --competitor-analysis-file /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/competitor_analysis.txt \
+  --major-takeaways-file /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/major_takeaways.txt \
+  --news-summary-file /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/INTC_baseline_20261012_181349_328717Z/analysis/news_summary.txt
+
+🎯 All files ready for report generation!

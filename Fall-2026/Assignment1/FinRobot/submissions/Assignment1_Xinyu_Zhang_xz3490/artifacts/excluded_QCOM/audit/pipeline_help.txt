@@ -1,0 +1,73 @@
+usage: generate_financial_analysis.py [-h] --company-ticker COMPANY_TICKER
+                                      --company-name COMPANY_NAME
+                                      [--config-file CONFIG_FILE]
+                                      [--years-limit YEARS_LIMIT]
+                                      [--output-dir OUTPUT_DIR]
+                                      [--output-csv-name OUTPUT_CSV_NAME]
+                                      [--peer-tickers [PEER_TICKERS ...]]
+                                      [--generate-text-sections]
+                                      [--text-output-dir TEXT_OUTPUT_DIR]
+                                      [--news-days-back NEWS_DAYS_BACK]
+                                      [--news-limit NEWS_LIMIT]
+                                      [--retail-sentiment-days-back RETAIL_SENTIMENT_DAYS_BACK]
+                                      [--enable-sensitivity-analysis]
+                                      [--enable-catalyst-analysis]
+                                      [--enable-enhanced-news]
+                                      [--revenue-growth-2025 REVENUE_GROWTH_2025]
+                                      [--revenue-growth-2026 REVENUE_GROWTH_2026]
+                                      [--revenue-growth-2027 REVENUE_GROWTH_2027]
+                                      [--margin-improvement MARGIN_IMPROVEMENT]
+                                      [--sga-margin-improvement SGA_MARGIN_IMPROVEMENT]
+                                      [--period {annual,quarterly}]
+
+Generate financial analysis data using FMP API instead of PDF extraction.
+
+options:
+  -h, --help            show this help message and exit
+  --company-ticker COMPANY_TICKER
+                        Stock ticker (e.g., AAPL).
+  --company-name COMPANY_NAME
+                        Full company name (e.g., Apple Inc.).
+  --config-file CONFIG_FILE
+                        Path to the configuration file (e.g., config.ini).
+  --years-limit YEARS_LIMIT
+                        Number of years of historical data to fetch.
+  --output-dir OUTPUT_DIR
+                        Directory to save all outputs. Default:
+                        ./output/[TICKER]/analysis/
+  --output-csv-name OUTPUT_CSV_NAME
+                        Name for the output CSV file.
+  --peer-tickers [PEER_TICKERS ...]
+                        List of peer tickers for comparative analysis (e.g.,
+                        GOOG MSFT).
+  --generate-text-sections
+                        Enable generation of text sections using OpenAI.
+  --text-output-dir TEXT_OUTPUT_DIR
+                        Directory to save generated text files.
+  --news-days-back NEWS_DAYS_BACK
+                        Number of days to look back for company news (default:
+                        5)
+  --news-limit NEWS_LIMIT
+                        Maximum number of news articles to fetch (default: 50)
+  --retail-sentiment-days-back RETAIL_SENTIMENT_DAYS_BACK
+                        Number of days to look back for retail sentiment
+                        insights (default: 7)
+  --enable-sensitivity-analysis
+                        Enable sensitivity analysis for forecasts
+  --enable-catalyst-analysis
+                        Enable catalyst identification and analysis
+  --enable-enhanced-news
+                        Enable enhanced news integration with categorization
+  --revenue-growth-2025 REVENUE_GROWTH_2025
+                        Revenue growth assumption for 2025E (default: 5%)
+  --revenue-growth-2026 REVENUE_GROWTH_2026
+                        Revenue growth assumption for 2026E (default: 6%)
+  --revenue-growth-2027 REVENUE_GROWTH_2027
+                        Revenue growth assumption for 2027E (default: 4%)
+  --margin-improvement MARGIN_IMPROVEMENT
+                        Annual margin improvement assumption (default: 1%)
+  --sga-margin-improvement SGA_MARGIN_IMPROVEMENT
+                        SG&A margin change assumption (default: -0.5%
+                        efficiency gain)
+  --period {annual,quarterly}
+                        Data period (annual or quarterly)

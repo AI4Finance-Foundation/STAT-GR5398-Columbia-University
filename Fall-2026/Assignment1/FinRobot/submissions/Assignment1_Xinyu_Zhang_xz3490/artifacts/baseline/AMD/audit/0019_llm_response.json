@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-10-12T18:13:38.200385+00:00",
+  "elapsed_seconds": 5.3116,
+  "http_status": 200,
+  "body": {
+    "id": "chatcmpl-EYEoftBrn9Eg0o7yOq38pm7IczcSv",
+    "object": "chat.completion",
+    "created": 1791828813,
+    "model": "gpt-4.1-2025-04-14",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Valuation Overview: Advanced Micro Devices, Inc. (AMD)\n\nCurrent Valuation Metrics:\nAMD’s recent financials reflect impressive revenue growth, with a projected 20.5% CAGR through 2027. Revenue is expected to rise from $16.4B in 2021 to over $40B by 2027. Profitability is also on an uptrend, with contribution margins expanding from 44.9% (2022) to an estimated 52.5% by 2027, and EBITDA margins rising from 18.3% (2023) to 42.0% (2027). However, EPS has been volatile, dipping from $2.61 (2021) to $0.53 (2023) before recovering to an estimated $3.18 by 2027. The current P/E ratio remains elevated (123.9x 2024E, 80.5x 2025E), well above historical norms, reflecting high market expectations for future growth.\n\nPeer Comparison:\nAMD trades at a premium to Intel (INTC) and at a discount to Nvidia (NVDA) on some metrics. AMD’s EV/EBITDA for 2024E is 38.3x, higher than Intel’s 106.9x but lower than Nvidia’s 43.5x. In 2025E, AMD’s EV/EBITDA (47.8x) is above Intel’s (14.5x) and above Nvidia’s (33.8x), suggesting the market is pricing in faster growth than for Intel but not as aggressively as for Nvidia. AMD’s EBITDA is poised to outpace Intel’s in the medium term but still lags well behind Nvidia’s explosive growth.\n\nFair Value Assessment:\nAMD’s valuation reflects strong top-line growth potential, margin expansion, and an improving competitive position. The elevated P/E and EV/EBITDA multiples suggest the stock is priced for significant earnings acceleration; any shortfall in growth or profitability could prompt a re-rating. Relative to peers, AMD is not the most expensive, but its premium over Intel is justified by its superior growth trajectory and margin expansion. Compared to Nvidia, AMD is more reasonably valued, albeit without Nvidia’s scale or dominance in AI chips. Overall, while the valuation is rich, it is supported by robust growth prospects. The shares appear fairly valued for a growth investor but leave limited margin for error if execution or market conditions falter.",
+          "refusal": null,
+          "annotations": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1441,
+      "completion_tokens": 501,
+      "total_tokens": 1942,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": "fp_6d7f4b5803"
+  }
+}

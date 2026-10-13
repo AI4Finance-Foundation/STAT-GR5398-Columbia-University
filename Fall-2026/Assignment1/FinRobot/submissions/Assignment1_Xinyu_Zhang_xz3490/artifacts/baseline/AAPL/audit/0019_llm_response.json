@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-10-12T18:39:16.154114+00:00",
+  "elapsed_seconds": 5.563,
+  "http_status": 200,
+  "body": {
+    "id": "chatcmpl-EYFDSuvXC4lTSrFxzd9N9IFCat1Aj",
+    "object": "chat.completion",
+    "created": 1791830350,
+    "model": "gpt-4.1-2025-04-14",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Apple Inc. (AAPL) is currently trading at elevated valuation levels compared to both its historical averages and select peers. As of 2024, Apple’s PE ratio stands at 37.3x, with forward PE multiples declining to 34.1x (2025E), 32.4x (2026E), and 30.8x (2027E). These multiples are well above the S&P 500 average and higher than most large-cap tech peers, reflecting continued investor confidence in Apple’s brand strength and earnings durability. Apple’s EV/EBITDA ratio is 26.6x for 2024 and is projected to remain near 27x in 2025, again at a premium to Cisco (13.8x in 2024, 19.1x in 2025) and even above Nvidia’s fast-compressing but still elevated multiples (43.5x in 2024, 33.8x in 2025).\n\nFrom an operational perspective, Apple’s revenue growth has recently slowed, with a 2.8% decline in 2023 and only a 2.0% rebound in 2024. However, margin expansion is notable: contribution margin rises from 44.1% (2023) to 46.2% (2024E), and EBITDA margin climbs from 33.7% to 34.5% over the same period. EPS is expected to grow at a healthy pace, from $6.16 in 2023 to $7.94 in 2025 and $8.93 in 2027.\n\nPeer comparison highlights Apple’s scale and consistency, but also its valuation premium. While Nvidia features higher growth, Apple trades at only a modest discount to Nvidia’s EV/EBITDA (AAPL: 26.6x vs. NVDA: 43.5x in 2024) despite much lower growth expectations. Compared to Cisco, Apple commands more than a 2x premium on EV/EBITDA.\n\nIn fair value terms, Apple’s current multiples suggest the stock is priced for continued outperformance and margin expansion. However, with revenue growth moderating and multiples well above historic norms, there is limited upside unless Apple can reaccelerate top-line growth or introduce transformative products or services. The stock appears fully valued at current levels, with risk skewed to the downside if earnings expectations are not exceeded.",
+          "refusal": null,
+          "annotations": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1449,
+      "completion_tokens": 497,
+      "total_tokens": 1946,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": "fp_99c6909298"
+  }
+}

@@ -1,0 +1,17 @@
+Output will be saved to: /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/QCOM_baseline_20261012_181423_614833Z/analysis
+Text outputs will be saved to: /Users/nancy/Documents/FinRobot_A1/FinRobot/output/a1_runs/QCOM_baseline_20261012_181423_614833Z/analysis
+Using OpenAI base URL: https://api.openai.com/v1
+Using model: gpt-4.1
+Starting FMP API-based financial analysis for QUALCOMM Incorporated (QCOM)
+Fetching financial data from FMP API...
+Fetching comprehensive financial data for QCOM...
+Could not fetch/process income-statement for QCOM: FMP income-statement (QCOM): HTTP 402, non-JSON response.
+Could not fetch/process balance-sheet-statement for QCOM: FMP balance-sheet-statement (QCOM): HTTP 402, non-JSON response.
+Could not fetch/process cash-flow-statement for QCOM: FMP cash-flow-statement (QCOM): HTTP 402, non-JSON response.
+Could not fetch/process ratios for QCOM: FMP ratios (QCOM): HTTP 402, non-JSON response.
+Could not fetch/process key-metrics for QCOM: FMP key-metrics (QCOM): HTTP 402, non-JSON response.
+Error: Could not fetch income statement data from FMP API. Exiting.
+Please check:
+1. FMP API key is valid and has remaining quota
+2. Ticker symbol is correct
+3. Internet connection is working

@@ -1,0 +1,122 @@
+{
+  "started_at_utc": "2026-10-12T18:38:54.435622+00:00",
+  "sector": "Technology",
+  "checks": [
+    {
+      "ticker": "AAPL",
+      "endpoint": "profile",
+      "http_status": 200,
+      "passed": true,
+      "rows": 1,
+      "sector": "Technology"
+    },
+    {
+      "ticker": "AAPL",
+      "endpoint": "income-statement",
+      "http_status": 200,
+      "passed": true,
+      "rows": 5,
+      "sector": null
+    },
+    {
+      "ticker": "AAPL",
+      "endpoint": "balance-sheet-statement",
+      "http_status": 200,
+      "passed": true,
+      "rows": 5,
+      "sector": null
+    },
+    {
+      "ticker": "AAPL",
+      "endpoint": "cash-flow-statement",
+      "http_status": 200,
+      "passed": true,
+      "rows": 5,
+      "sector": null
+    },
+    {
+      "ticker": "AAPL",
+      "endpoint": "ratios",
+      "http_status": 200,
+      "passed": true,
+      "rows": 5,
+      "sector": null
+    },
+    {
+      "ticker": "AAPL",
+      "endpoint": "key-metrics",
+      "http_status": 200,
+      "passed": true,
+      "rows": 5,
+      "sector": null
+    },
+    {
+      "ticker": "AAPL",
+      "endpoint": "enterprise-values",
+      "http_status": 200,
+      "passed": true,
+      "rows": 5,
+      "sector": null
+    },
+    {
+      "ticker": "CSCO",
+      "endpoint": "profile",
+      "http_status": 200,
+      "passed": true,
+      "rows": 1,
+      "sector": "Technology"
+    },
+    {
+      "ticker": "CSCO",
+      "endpoint": "income-statement",
+      "http_status": 200,
+      "passed": true,
+      "rows": 5,
+      "sector": null
+    },
+    {
+      "ticker": "CSCO",
+      "endpoint": "balance-sheet-statement",
+      "http_status": 200,
+      "passed": true,
+      "rows": 5,
+      "sector": null
+    },
+    {
+      "ticker": "CSCO",
+      "endpoint": "cash-flow-statement",
+      "http_status": 200,
+      "passed": true,
+      "rows": 5,
+      "sector": null
+    },
+    {
+      "ticker": "CSCO",
+      "endpoint": "ratios",
+      "http_status": 200,
+      "passed": true,
+      "rows": 5,
+      "sector": null
+    },
+    {
+      "ticker": "CSCO",
+      "endpoint": "key-metrics",
+      "http_status": 200,
+      "passed": true,
+      "rows": 5,
+      "sector": null
+    },
+    {
+      "ticker": "CSCO",
+      "endpoint": "enterprise-values",
+      "http_status": 200,
+      "passed": true,
+      "rows": 5,
+      "sector": null
+    }
+  ],
+  "finished_at_utc": "2026-10-12T18:38:56.654003+00:00",
+  "exit_code": 0,
+  "captured_fmp_http_attempts": 14,
+  "captured_llm_http_attempts": 0
+}

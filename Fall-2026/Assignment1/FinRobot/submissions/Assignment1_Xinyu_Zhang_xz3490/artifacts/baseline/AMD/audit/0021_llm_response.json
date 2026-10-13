@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-10-12T18:13:44.036842+00:00",
+  "elapsed_seconds": 2.9559,
+  "http_status": 200,
+  "body": {
+    "id": "chatcmpl-EYEon2SOpSeENEK6gg1dKnl0zG3pJ",
+    "object": "chat.completion",
+    "created": 1791828821,
+    "model": "gpt-4.1-2025-04-14",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Advanced Micro Devices, Inc. (AMD) operates in the highly competitive semiconductor industry, with its primary peers being Intel (INTC) and NVIDIA (NVDA). \n\nFinancially, AMD has demonstrated robust revenue growth, with a 20.5% CAGR from 2021 to 2027E, outpacing Intel, which has faced stagnation and even contraction in recent years. AMD’s revenue growth is projected to remain solid, with a notable rebound expected in 2025 (34.3%) after a dip in 2023. In contrast, NVIDIA, driven by the AI and data center boom, has shown even more explosive growth in EBITDA and is projected to far outpace both AMD and Intel in profitability by 2027.\n\nAMD’s EBITDA margin has improved in forecasts, rising from 18.3% in 2023 to an estimated 42% in 2027. However, NVIDIA’s margins are structurally higher, and its 2027 EBITDA ($382B) dwarfs AMD ($8.6B) and Intel ($47.4B), highlighting NVIDIA’s dominant position in high-growth segments. Intel’s EBITDA, while recovering by 2027E, remains pressured by a challenging transition to advanced process nodes and aggressive capex requirements.\n\nOn valuation, AMD’s EV/EBITDA remains elevated compared to Intel and is closer to NVIDIA, suggesting the market assigns a premium for AMD’s growth prospects. However, AMD’s high PE ratio (69x in 2027E) versus Intel (lower, not provided) and NVIDIA (not shown, but typically high) reflects high expectations and potentially more risk if growth targets are missed.\n\nIn summary, AMD is positioned as a growth challenger between the mature, legacy Intel and the growth juggernaut NVIDIA. While AMD is gaining share and improving profitability, it remains significantly smaller than NVIDIA and trades at a premium valuation, reflecting both its achievements and the competitive risks it faces from larger peers.",
+          "refusal": null,
+          "annotations": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1435,
+      "completion_tokens": 398,
+      "total_tokens": 1833,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": "fp_c54acd6e1b"
+  }
+}

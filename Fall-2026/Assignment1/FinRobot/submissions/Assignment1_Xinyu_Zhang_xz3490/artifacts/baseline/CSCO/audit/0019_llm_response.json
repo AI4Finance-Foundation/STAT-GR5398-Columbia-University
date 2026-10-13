@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-10-12T18:39:42.676142+00:00",
+  "elapsed_seconds": 4.1876,
+  "http_status": 200,
+  "body": {
+    "id": "chatcmpl-EYFDu8fdszEyWzzGpQUye2feO3cZn",
+    "object": "chat.completion",
+    "created": 1791830378,
+    "model": "gpt-4.1-2025-04-14",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Valuation Analysis – Cisco Systems, Inc. (CSCO)\n\nCisco is currently trading at a 2024E P/E of 18.8x and an EV/EBITDA of 13.8x, both below larger technology peers like Apple (AAPL) and Nvidia (NVDA), whose 2024E EV/EBITDA multiples are 26.6x and 43.5x, respectively. Cisco’s EBITDA margin, while improving in the forecast period (rising from 29.3% in 2024A to 44.9% in 2026E), still lags the very high profitability of Apple and the explosive growth seen at Nvidia. Cisco’s revenue growth is expected to be moderate, with a 5.3% CAGR from 2024E to 2027E, and EPS growth is similarly steady, rising from $2.55 in 2024A to $4.01 in 2027E.\n\nRelative to peers, Cisco’s EBITDA in 2024 ($15.7B) is well below Apple ($134.9B) and Nvidia ($35.6B), and its multiples reflect this lower scale and slower growth profile. Cisco’s 2024E EV/EBITDA of 13.8x is roughly half of Apple’s and about a third of Nvidia’s, indicating the market’s more cautious view of Cisco’s future growth and competitive position.\n\nLooking forward, Cisco’s fair value appears reasonable at current multiples. Its valuation is supported by strong margins (contribution margin >64%), steady free cash flow, and a solid balance sheet, but limited by moderate growth and a mature market profile. Given its below-peer multiples, Cisco could be considered modestly undervalued if it can deliver on margin improvement and maintain stable growth. However, absent a catalyst for faster growth or a transformative shift in end markets, the stock is likely to remain a value play rather than a high-growth opportunity.",
+          "refusal": null,
+          "annotations": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1441,
+      "completion_tokens": 402,
+      "total_tokens": 1843,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": "fp_bee1fbc891"
+  }
+}

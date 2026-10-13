@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-10-12T19:26:12.058504+00:00",
+  "elapsed_seconds": 2.8488,
+  "http_status": 200,
+  "body": {
+    "id": "chatcmpl-EYFwvvCS444gXAGHN1qh94MpEJngD",
+    "object": "chat.completion",
+    "created": 1791833169,
+    "model": "gpt-4.1-2025-04-14",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "NVIDIA Corporation (NVDA) stands out as a clear leader among its primary peers, AMD and Intel (INTC), driven by explosive financial growth and superior margins. According to the latest data, NVIDIA’s revenue is set to skyrocket from $26.9 billion in 2022 to a projected $249.9 billion by 2027, representing a compound annual growth rate (CAGR) of 68.3%. This explosive top-line growth far exceeds AMD and Intel, who show much slower revenue and EBITDA expansion.\n\nOn profitability, NVIDIA’s EBITDA is projected to surge from $11.4 billion in 2022 to an extraordinary $382 billion by 2027. In comparison, AMD’s 2027 EBITDA is estimated at $8.6 billion and Intel’s at $47.4 billion, highlighting NVIDIA’s dominant operating scale. Margin-wise, NVIDIA’s EBITDA margin jumps from 22.2% in 2023 to an estimated 73.5% by 2027, which is significantly higher than its peers. This margin expansion is paired with a declining SG&A margin, indicating tight cost control and improved operating leverage.\n\nFrom a valuation perspective, NVIDIA’s EV/EBITDA multiple remains elevated compared to peers—81.0x in 2023, dropping to 31.4x by 2026, reflecting both investor confidence in future growth and some normalization as earnings scale. AMD and Intel trade at much lower multiples, reflecting slower growth and lower profitability.\n\nIn summary, NVIDIA commands a substantial lead in growth, profitability, and market valuation. Its dominant position in AI and data center acceleration, coupled with strong margin expansion, puts it far ahead of AMD and Intel, who face slower growth, lower margins, and less favorable market sentiment.",
+          "refusal": null,
+          "annotations": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1444,
+      "completion_tokens": 358,
+      "total_tokens": 1802,
+      "prompt_tokens_details": {
+        "cached_tokens": 1280,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": "fp_ef20b579b1"
+  }
+}

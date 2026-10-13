@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-10-12T18:13:54.331482+00:00",
+  "elapsed_seconds": 1.8575,
+  "http_status": 200,
+  "body": {
+    "id": "chatcmpl-EYEoy5TQTKq6iWoxMROFlLTeYCvlD",
+    "object": "chat.completion",
+    "created": 1791828832,
+    "model": "gpt-4.1-2025-04-14",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Intel Corporation is navigating a challenging turnaround, with revenues experiencing a -9.6% CAGR since 2021 and EBITDA margins recovering from a low of 2.3% in 2024 to a projected 30.6% by 2027. Despite near-term earnings volatility and negative EPS, operational efficiency is expected to improve, supporting margin expansion and moderate revenue growth from 2025 onward. While Intel remains less profitable than key peers, its valuation (EV/EBITDA) is forecasted to normalize as profitability rebounds.",
+          "refusal": null,
+          "annotations": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1434,
+      "completion_tokens": 108,
+      "total_tokens": 1542,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": "fp_848a8cd823"
+  }
+}

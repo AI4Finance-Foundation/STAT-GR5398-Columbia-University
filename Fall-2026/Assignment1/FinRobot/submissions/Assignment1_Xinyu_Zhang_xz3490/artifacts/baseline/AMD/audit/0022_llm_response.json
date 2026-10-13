@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-10-12T18:13:46.189862+00:00",
+  "elapsed_seconds": 2.1418,
+  "http_status": 200,
+  "body": {
+    "id": "chatcmpl-EYEoqN2xxKfQYkpSahwrqEbUK86NC",
+    "object": "chat.completion",
+    "created": 1791828824,
+    "model": "gpt-4.1-2025-04-14",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**Revenue Growth**  \nAMD’s revenue grew at a strong CAGR of 20.5% from 2021 to 2027, with significant acceleration expected in 2024 and 2025 (13.7% and 34.3% YoY, respectively). This reflects robust demand and potential market share gains, though growth is projected to moderate to single digits post-2025.\n\n**Gross Profit Margin**  \nContribution (gross) margin improved from 44.9% in 2022 to a projected 52.5% in 2027, indicating effective cost management and a favorable product mix, which should support future profitability.\n\n**SG&A Expense Margin**  \nSG&A margin increased from 8.8% in 2021 to a peak of 12.0% in 2025, before gradually declining to 10.5% by 2027, suggesting elevated investment in operating expenses to support growth but with expected scale efficiencies longer-term.\n\n**EBITDA Margin**  \nEBITDA margin declined from 25.3% in 2021 to 18.3% in 2023, reflecting interim profitability pressures; however, it is forecast to rebound sharply to 42.0% by 2027, driven by margin expansion and operational leverage as revenue grows.",
+          "refusal": null,
+          "annotations": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1449,
+      "completion_tokens": 265,
+      "total_tokens": 1714,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": "fp_9d0f693384"
+  }
+}

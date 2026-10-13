@@ -1,0 +1,150 @@
+usage: create_equity_report.py [-h] --company-ticker COMPANY_TICKER
+                               --company-name COMPANY_NAME --analysis-csv
+                               ANALYSIS_CSV --ratios-csv RATIOS_CSV
+                               --tagline-file TAGLINE_FILE
+                               --company-overview-file COMPANY_OVERVIEW_FILE
+                               --investment-overview-file
+                               INVESTMENT_OVERVIEW_FILE
+                               --valuation-overview-file
+                               VALUATION_OVERVIEW_FILE --risks-file RISKS_FILE
+                               --competitor-analysis-file
+                               COMPETITOR_ANALYSIS_FILE --major-takeaways-file
+                               MAJOR_TAKEAWAYS_FILE
+                               [--news-summary-file NEWS_SUMMARY_FILE]
+                               [--report-date REPORT_DATE]
+                               [--output-dir OUTPUT_DIR]
+                               [--html-report-prefix HTML_REPORT_PREFIX]
+                               [--analyst-names [ANALYST_NAMES ...]]
+                               [--analyst-emails [ANALYST_EMAILS ...]]
+                               [--research-source RESEARCH_SOURCE]
+                               [--data-source-text DATA_SOURCE_TEXT]
+                               [--disclaimer-text DISCLAIMER_TEXT]
+                               [--closing-price-date CLOSING_PRICE_DATE]
+                               [--share-price SHARE_PRICE]
+                               [--target-price TARGET_PRICE] [--rating RATING]
+                               [--market-cap MARKET_CAP] [--volume VOLUME]
+                               [--fwd-pe FWD_PE] [--pb-ratio PB_RATIO]
+                               [--dividend-yield DIVIDEND_YIELD]
+                               [--free-float FREE_FLOAT] [--roe ROE]
+                               [--net-debt-to-equity NET_DEBT_TO_EQUITY]
+                               [--sector SECTOR] [--config-file CONFIG_FILE]
+                               [--logo-image-path LOGO_IMAGE_PATH]
+                               [--revenue-chart-path REVENUE_CHART_PATH]
+                               [--ev-ebitda-chart-path EV_EBITDA_CHART_PATH]
+                               [--peer-ebitda-csv PEER_EBITDA_CSV]
+                               [--peer-ev-ebitda-csv PEER_EV_EBITDA_CSV]
+                               [--skip-auto-fetch]
+                               [--enable-text-regeneration]
+                               [--enable-enhanced-charts]
+                               [--enable-valuation-analysis]
+                               [--sensitivity-analysis-file SENSITIVITY_ANALYSIS_FILE]
+                               [--catalyst-analysis-file CATALYST_ANALYSIS_FILE]
+                               [--enhanced-news-file ENHANCED_NEWS_FILE]
+                               [--retail-sentiment-file RETAIL_SENTIMENT_FILE]
+
+Create an equity research report in HTML format with auto-fetched market data.
+
+options:
+  -h, --help            show this help message and exit
+  --company-ticker COMPANY_TICKER
+                        Stock ticker.
+  --company-name COMPANY_NAME
+                        Full company name.
+  --analysis-csv ANALYSIS_CSV
+                        Path to the financial_metrics_and_forecasts.csv file.
+  --ratios-csv RATIOS_CSV
+                        Path to the ratios_raw_data.csv file.
+  --tagline-file TAGLINE_FILE
+                        Path to a text file for the report tagline.
+  --company-overview-file COMPANY_OVERVIEW_FILE
+                        Path to a text file for the company overview.
+  --investment-overview-file INVESTMENT_OVERVIEW_FILE
+                        Path to a text file for the investment overview.
+  --valuation-overview-file VALUATION_OVERVIEW_FILE
+                        Path to a text file for the valuation section.
+  --risks-file RISKS_FILE
+                        Path to a text file for the risks section.
+  --competitor-analysis-file COMPETITOR_ANALYSIS_FILE
+                        Path to a text file for the competitor analysis
+                        section.
+  --major-takeaways-file MAJOR_TAKEAWAYS_FILE
+                        Path to a text file for the major takeaways section.
+  --news-summary-file NEWS_SUMMARY_FILE
+                        Path to a text file for the news summary section
+                        (optional).
+  --report-date REPORT_DATE
+                        Date for the report (Eastern Time).
+  --output-dir OUTPUT_DIR
+                        Directory to save HTML reports. Default:
+                        ./output/[TICKER]/report/
+  --html-report-prefix HTML_REPORT_PREFIX
+                        Prefix for output HTML filenames.
+  --analyst-names [ANALYST_NAMES ...]
+                        List of analyst names.
+  --analyst-emails [ANALYST_EMAILS ...]
+                        List of analyst emails.
+  --research-source RESEARCH_SOURCE
+                        Source of the research.
+  --data-source-text DATA_SOURCE_TEXT
+                        Text for data sources.
+  --disclaimer-text DISCLAIMER_TEXT
+                        Disclaimer text.
+  --closing-price-date CLOSING_PRICE_DATE
+                        Date of the share price (Eastern Time).
+  --share-price SHARE_PRICE
+                        Current share price (will be auto-fetched if not
+                        provided).
+  --target-price TARGET_PRICE
+                        12-month target price (will be auto-fetched if not
+                        provided).
+  --rating RATING       Analyst rating (will be auto-fetched if not provided).
+  --market-cap MARKET_CAP
+                        Market cap in billions (will be auto-fetched if not
+                        provided).
+  --volume VOLUME       Average daily volume in millions (will be auto-fetched
+                        if not provided).
+  --fwd-pe FWD_PE       Forward P/E ratio (will be auto-fetched if not
+                        provided).
+  --pb-ratio PB_RATIO   Price to Book ratio (will be auto-fetched if not
+                        provided).
+  --dividend-yield DIVIDEND_YIELD
+                        Dividend yield (will be auto-fetched if not provided).
+  --free-float FREE_FLOAT
+                        Free float percentage (will be auto-fetched if not
+                        provided).
+  --roe ROE             Return on Equity (will be auto-fetched if not
+                        provided).
+  --net-debt-to-equity NET_DEBT_TO_EQUITY
+                        Net Debt to Equity ratio (will be auto-fetched if not
+                        provided).
+  --sector SECTOR       Company sector (will be auto-fetched if not provided).
+  --config-file CONFIG_FILE
+                        Path to config.ini file.
+  --logo-image-path LOGO_IMAGE_PATH
+                        Path to the logo image.
+  --revenue-chart-path REVENUE_CHART_PATH
+                        Path to a pre-generated revenue/EBITDA chart.
+  --ev-ebitda-chart-path EV_EBITDA_CHART_PATH
+                        Path to a pre-generated EV/EBITDA peer comparison
+                        chart.
+  --peer-ebitda-csv PEER_EBITDA_CSV
+                        Path to peer_ebitda_comparison.csv.
+  --peer-ev-ebitda-csv PEER_EV_EBITDA_CSV
+                        Path to peer_ev_ebitda_comparison.csv.
+  --skip-auto-fetch     Skip automatic fetching of market data from FMP API.
+  --enable-text-regeneration
+                        Enable AI text regeneration if content quality is
+                        poor.
+  --enable-enhanced-charts
+                        Enable enhanced chart generation with 11 professional
+                        chart types.
+  --enable-valuation-analysis
+                        Enable multi-method valuation analysis.
+  --sensitivity-analysis-file SENSITIVITY_ANALYSIS_FILE
+                        Path to sensitivity analysis JSON file.
+  --catalyst-analysis-file CATALYST_ANALYSIS_FILE
+                        Path to catalyst analysis JSON file.
+  --enhanced-news-file ENHANCED_NEWS_FILE
+                        Path to enhanced news JSON file.
+  --retail-sentiment-file RETAIL_SENTIMENT_FILE
+                        Path to retail sentiment JSON file.

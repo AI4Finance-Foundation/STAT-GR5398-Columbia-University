@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-10-12T18:14:12.505350+00:00",
+  "elapsed_seconds": 3.3644,
+  "http_status": 200,
+  "body": {
+    "id": "chatcmpl-EYEpF7PuY1ngkMv9Jar8HcfasruZS",
+    "object": "chat.completion",
+    "created": 1791828849,
+    "model": "gpt-4.1-2025-04-14",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "- **Sustained Revenue Decline:** Intel's revenue has contracted at a -9.6% CAGR from 2021 to 2024, with continued declines forecast through 2025, raising concerns about long-term demand, competitive positioning, and market share loss.\n\n- **Profitability Pressure:** EBITDA margin has plummeted from 42.9% (2021) to a low of 2.3% (2024), with only a gradual recovery projected, highlighting risks around cost control, operational efficiency, and pricing power.\n\n- **Earnings Volatility and Negative EPS:** Earnings per share have dropped sharply, moving negative in 2024 (EPS: -$4.38) with continued losses expected through 2027, undermining investor confidence and dividend sustainability.\n\n- **Competitive Disadvantage:** Intel's EBITDA and EV/EBITDA metrics lag key peers (notably NVIDIA and, in several years, AMD), indicating weaker operating leverage and market position amid intensifying industry competition.\n\n- **Valuation Risk:** Extreme volatility in the PE ratio (e.g., -614.6 in 2025) and a spike in EV/EBITDA (106.9x in 2024) suggest the stock could be overvalued relative to deteriorating fundamentals, exposing investors to significant downside if expectations are not met.",
+          "refusal": null,
+          "annotations": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1424,
+      "completion_tokens": 273,
+      "total_tokens": 1697,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": "fp_99c6909298"
+  }
+}

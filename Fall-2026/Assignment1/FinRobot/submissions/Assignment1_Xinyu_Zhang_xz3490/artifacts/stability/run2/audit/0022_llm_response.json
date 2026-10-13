@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-10-12T19:25:47.175449+00:00",
+  "elapsed_seconds": 2.2409,
+  "http_status": 200,
+  "body": {
+    "id": "chatcmpl-EYFwXroicMwP1GGamVaafaKVYNfz4",
+    "object": "chat.completion",
+    "created": 1791833145,
+    "model": "gpt-4.1-2025-04-14",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**Revenue Growth**  \nNVIDIA is experiencing extraordinary revenue growth, with revenue increasing from $26.9B in 2022 to a projected $249.9B by 2027—a CAGR of 68.3%. The company’s year-over-year revenue growth peaked at 126% in 2024 and 114% in 2025, then moderates to single digits thereafter.\n\n**Gross Profit Margin**  \nGross profit margin (represented as Contribution Margin) has improved significantly, recovering from a dip to 56.9% in 2023 to above 70% from 2024 onward, reflecting strong pricing power and operational leverage as revenues scale.\n\n**SG&A Expense Margin**  \nSG&A expense as a percentage of revenue is declining rapidly, from 8-9% in 2022-2023 to below 1% by 2027E, indicating substantial operating leverage and disciplined cost control relative to revenue growth.\n\n**EBITDA Margin**  \nEBITDA margin has expanded dramatically from 22.2% in 2023 to an estimated 73.5% in 2027, far outpacing peers and signaling exceptional profitability and efficiency gains as NVIDIA’s business scales.",
+          "refusal": null,
+          "annotations": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1458,
+      "completion_tokens": 246,
+      "total_tokens": 1704,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": "fp_34f8e4113f"
+  }
+}

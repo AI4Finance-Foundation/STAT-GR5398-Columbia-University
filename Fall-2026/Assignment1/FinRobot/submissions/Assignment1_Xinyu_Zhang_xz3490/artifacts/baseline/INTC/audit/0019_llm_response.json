@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-10-12T18:14:09.126357+00:00",
+  "elapsed_seconds": 6.0279,
+  "http_status": 200,
+  "body": {
+    "id": "chatcmpl-EYEp9kBiLUF5fnzNsIQwDsI0h7uP0",
+    "object": "chat.completion",
+    "created": 1791828843,
+    "model": "gpt-4.1-2025-04-14",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Intel Corporation (INTC) has experienced significant revenue and profitability challenges in recent years. Revenue declined from $79 billion in 2021 to $54.2 billion in 2023, with a negative CAGR of -9.6%. Contribution and EBITDA margins compressed sharply over this period, with EBITDA margin dropping from 42.9% in 2021 to just 2.3% in 2024. Earnings per share (EPS) followed suit, turning negative in 2024 and projected to remain slightly negative through 2027, reflecting ongoing operational pressures and heavy investment.\n\nValuation metrics reflect these headwinds. Intel’s trailing PE ratio jumped to 125.6x in 2023 due to collapsing earnings, and forward PE ratios are not meaningful given negative earnings. On an EV/EBITDA basis, Intel traded at 7.1x in 2021 and 6.5x in 2022, but this escalated to 22.5x in 2023 and an extreme 106.9x in 2024 (driven by a trough in EBITDA). However, the metric normalizes to 14.5x by 2025, assuming management delivers on margin recovery.\n\nAgainst peers, Intel’s valuation currently sits above AMD (EV/EBITDA 2024E: 38.3x) and NVDA (43.5x), but this is distorted by Intel’s cyclical trough in profitability. By 2025, Intel’s 14.5x EV/EBITDA is at a discount to AMD (47.8x) and NVDA (33.8x), suggesting the market expects only a partial recovery and remains cautious on Intel’s competitive position.\n\nIn summary, while Intel trades at a premium on near-term metrics due to depressed EBITDA, its 2025 EV/EBITDA suggests a discount to peers. Given ongoing challenges in earnings growth, margin compression, and negative EPS outlook, the fair value hinges on successful business turnaround. Barring a major shift in fundamentals, Intel appears fairly valued to slightly undervalued relative to peers on normalized forward metrics, but its near-term risk profile remains elevated.",
+          "refusal": null,
+          "annotations": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1439,
+      "completion_tokens": 444,
+      "total_tokens": 1883,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": "fp_801d3b7b5c"
+  }
+}

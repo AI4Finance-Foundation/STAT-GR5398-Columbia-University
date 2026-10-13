@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-10-12T18:39:18.712938+00:00",
+  "elapsed_seconds": 2.5459,
+  "http_status": 200,
+  "body": {
+    "id": "chatcmpl-EYFDYWjlIPtDOcBjBFi2hYCws7W5w",
+    "object": "chat.completion",
+    "created": 1791830356,
+    "model": "gpt-4.1-2025-04-14",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Certainly. Based on the provided data, here are 5 key investment risks for Apple Inc. (AAPL):\n\n- **Slowing Revenue Growth:** Revenue growth has decelerated significantly, with only 2.0% growth in 2024 and a projected CAGR of just 3.3% through 2027, indicating potential challenges in expanding market share or launching successful new products.\n\n- **Margin Compression Risk:** While contribution and EBITDA margins are projected to improve, competitive pressures and increasing operational costs (e.g., rising SG&A in recent years) could threaten profitability if revenue growth stalls or cost control efforts falter.\n\n- **Elevated Valuation Levels:** Apple's current and projected PE (e.g., 34.1x in 2025E) and EV/EBITDA multiples (e.g., 26.97x in 2025) are high relative to peers (e.g., CSCO 19.1x EV/EBITDA), increasing the risk of multiple compression if growth expectations are not met.\n\n- **Stagnant EPS Growth:** EPS growth was essentially flat from 2022 to 2024, with only a meaningful increase forecasted from 2025 onward. If forecasted growth fails to materialize, investor sentiment and share price could be negatively impacted.\n\n- **Peer Competition:** Competitors such as NVIDIA are showing rapid EBITDA growth and may outpace Apple in key technology segments, which could erode Apple’s market position or force increased investment, impacting margins and growth prospects.",
+          "refusal": null,
+          "annotations": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1434,
+      "completion_tokens": 308,
+      "total_tokens": 1742,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": "fp_c93a1d0b84"
+  }
+}

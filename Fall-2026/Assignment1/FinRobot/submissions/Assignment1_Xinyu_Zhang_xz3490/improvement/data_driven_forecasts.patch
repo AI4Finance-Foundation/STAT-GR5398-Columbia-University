@@ -1,0 +1,146 @@
+--- a/finrobot_equity/core/src/modules/financial_data_processor.py
++++ b/finrobot_equity/core/src/modules/financial_data_processor.py
+@@ -295,8 +295,95 @@
+         
+     return df_combined
+ 
++def _historical_median_forecasts(df_historical: pd.DataFrame, forecast_config: dict) -> pd.DataFrame:
++    actual_years = sorted(col for col in df_historical.columns
++                          if isinstance(col, str) and col[:-1].isdigit() and col.endswith('A'))
++    years = [int(col[:-1]) for col in actual_years]
++    if len(years) < 3 or any(right - left != 1 for left, right in zip(years, years[1:])):
++        raise ValueError('Historical-median forecasts require at least three consecutive annual periods.')
++    df = df_historical[['metrics'] + actual_years].copy().astype('object')
++    if df['metrics'].duplicated().any():
++        raise ValueError('Financial metrics must have unique row names.')
++
++    def numbers(metric):
++        row = df.loc[df['metrics'] == metric, actual_years]
++        if row.empty:
++            raise ValueError('Missing financial metric: ' + metric)
++        return np.asarray([float(str(value).replace(',', '')) if pd.notna(value) else np.nan
++                           for value in row.iloc[0]], dtype=float)
++
++    revenue = numbers('Revenue')
++    if not np.isfinite(revenue).all() or (revenue <= 0).any():
++        raise ValueError('Historical revenue must be finite and positive.')
++    lookback = int(forecast_config.get('lookback', 3))
++    horizon = int(forecast_config.get('projection_years', 3))
++    floor = float(forecast_config.get('growth_floor', -0.25))
++    cap = float(forecast_config.get('growth_cap', 0.50))
++    anchor = float(forecast_config.get('growth_anchor', 0.05))
++    decay = float(forecast_config.get('growth_decay', 0.50))
++    if lookback < 1 or horizon < 1 or not (-1 < floor <= anchor <= cap) or not (0 <= decay <= 1):
++        raise ValueError('Invalid forecast settings.')
++    growth = np.diff(revenue) / revenue[:-1]
++    historical_growth = float(np.median(growth[-lookback:]))
++    first_growth = float(np.clip(historical_growth, floor, cap))
++    margins = {}
++    for metric in ['Contribution Profit', 'SG&A', 'EBITDA']:
++        values = numbers(metric)[-lookback:] / revenue[-lookback:]
++        if not np.isfinite(values).all():
++            raise ValueError('Missing historical values for ' + metric)
++        margins[metric] = float(np.median(values))
++    base_eps = numbers('EPS')[-1]
++    base_pe = numbers('PE Ratio')[-1]
++    implied_price = base_eps * base_pe
++    current_revenue = revenue[-1]
++    forecasts = {}
++    for offset in range(horizon):
++        year = f'{years[-1] + offset + 1}E'
++        rate = anchor + (first_growth - anchor) * decay ** offset
++        forecasts[year] = rate
++        current_revenue *= 1 + rate
++        eps = base_eps * current_revenue / revenue[-1]
++        values = {
++            'Revenue': round(current_revenue, 2),
++            'Cost of Operations': round(current_revenue * (1 - margins['Contribution Profit']), 2),
++            'SG&A': round(current_revenue * margins['SG&A'], 2),
++            'Contribution Profit': round(current_revenue * margins['Contribution Profit'], 2),
++            'Contribution Margin': f"{margins['Contribution Profit'] * 100:.1f}%",
++            'EBITDA': round(current_revenue * margins['EBITDA'], 2),
++            'EBITDA Margin': f"{margins['EBITDA'] * 100:.1f}%",
++            'SG&A Margin': f"{margins['SG&A'] * 100:.1f}%",
++            'Revenue Growth': f'{rate * 100:.1f}%',
++            'EPS': round(eps, 2) if np.isfinite(eps) else None,
++            'PE Ratio': round(implied_price / eps, 1)
++                        if np.isfinite(implied_price) and implied_price > 0 and eps > 0 else None,
++        }
++        df[year] = df['metrics'].map(values)
++    df['Historical CAGR'] = 'N/A'
++    cagr = (revenue[-1] / revenue[0]) ** (1 / (years[-1] - years[0])) - 1
++    df.loc[df['metrics'] == 'Revenue', 'Historical CAGR'] = f'{cagr * 100:.1f}%'
++    df.attrs['forecast_metadata'] = {
++        'forecast_method': 'historical_median', 'revenue_base_year': actual_years[-1],
++        'revenue_growth_assumptions': forecasts, 'lookback': lookback,
++        'projection_years': horizon, 'growth_floor': floor, 'growth_cap': cap,
++        'growth_anchor': anchor, 'growth_decay': decay,
++        'historical_growth_median': historical_growth,
++        'gross_margin': margins['Contribution Profit'], 'sga_margin': margins['SG&A'],
++        'ebitda_margin': margins['EBITDA'],
++        'margin_improvement': {'Contribution Margin': 0.0, 'EBITDA Margin': 0.0},
++        'sga_margin_change': 0.0,
++        'eps_assumption': 'Latest net margin and share count remain constant.',
++        'pe_assumption': 'Last actual fiscal-year implied price remains constant; losses have no P/E.',
++    }
++    return df
++
++
+ def calculate_growth_and_forecasts(df_historical: pd.DataFrame, forecast_config: dict) -> pd.DataFrame:
+     """Appends growth rates and forecasts to the historical metrics DataFrame."""
++    method = forecast_config.get('forecast_method', 'legacy')
++    if method == 'historical_median':
++        return _historical_median_forecasts(df_historical, forecast_config)
++    if method != 'legacy':
++        raise ValueError('Unknown forecast method: ' + str(method))
+     df_final = df_historical.copy().astype('object')  # Ensure object dtype for mixed types
+     actual_years = sorted([col for col in df_final.columns if isinstance(col, str) and col.endswith('A')])
+     forecast_years = sorted(forecast_config.get("revenue_growth_assumptions", {}).keys())
+--- a/finrobot_equity/core/src/generate_financial_analysis.py
++++ b/finrobot_equity/core/src/generate_financial_analysis.py
+@@ -55,6 +55,8 @@
+     parser.add_argument("--enable-enhanced-news", action="store_true", help="Enable enhanced news integration with categorization")
+ 
+     # Forecast Configuration
++    parser.add_argument("--forecast-method", choices=["legacy", "historical_median"], default="legacy",
++                        help="Use CLI growth constants or bounded historical growth and margin medians.")
+     parser.add_argument("--revenue-growth-2025", type=float, default=0.05, help="Revenue growth assumption for 2025E (default: 5%%)")
+     parser.add_argument("--revenue-growth-2026", type=float, default=0.06, help="Revenue growth assumption for 2026E (default: 6%%)")
+     parser.add_argument("--revenue-growth-2027", type=float, default=0.04, help="Revenue growth assumption for 2027E (default: 4%%)")
+@@ -65,6 +67,8 @@
+     parser.add_argument("--period", type=str, default="annual", choices=["annual", "quarterly"], help="Data period (annual or quarterly)")
+ 
+     args = parser.parse_args()
++    if args.forecast_method == "historical_median" and args.period != "annual":
++        parser.error("historical_median requires annual statements")
+ 
+     # Setup output directory
+     if args.output_dir:
+@@ -161,6 +165,7 @@
+     print(f"Using {latest_year} as base year for forecasts")
+     
+     forecast_config = {
++        "forecast_method": args.forecast_method,
+         "revenue_base_year": latest_year,
+         "revenue_growth_assumptions": {
+             "2025E": args.revenue_growth_2025, 
+@@ -175,7 +180,8 @@
+         "sga_margin_change": args.sga_margin_improvement
+     }
+     
+-    print(f"Forecast assumptions:")
++    print(f"Forecast method: {args.forecast_method}")
++    print(f"Legacy assumptions (used only in legacy mode):")
+     print(f"  Revenue Growth 2025E: {args.revenue_growth_2025*100:.1f}%")
+     print(f"  Revenue Growth 2026E: {args.revenue_growth_2026*100:.1f}%") 
+     print(f"  Revenue Growth 2027E: {args.revenue_growth_2027*100:.1f}%")
+@@ -183,6 +189,9 @@
+     print(f"  SG&A Efficiency: {args.sga_margin_improvement*100:.1f}% annually")
+     
+     final_data_df = calculate_growth_and_forecasts(historical_metrics_df, forecast_config)
++    if args.forecast_method == "historical_median":
++        forecast_config.update(final_data_df.attrs["forecast_metadata"])
++        print("Historical forecast assumptions:", json.dumps(final_data_df.attrs["forecast_metadata"], indent=2))
+     print("\nFinal Metrics with Forecasts:")
+     print(final_data_df.to_string())
+ 

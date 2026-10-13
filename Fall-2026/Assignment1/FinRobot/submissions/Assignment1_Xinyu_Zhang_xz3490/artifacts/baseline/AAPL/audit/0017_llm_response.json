@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-10-12T18:39:06.780572+00:00",
+  "elapsed_seconds": 3.8724,
+  "http_status": 200,
+  "body": {
+    "id": "chatcmpl-EYFDL4A4aGpzx0h6fm1pE0a7jGAjB",
+    "object": "chat.completion",
+    "created": 1791830343,
+    "model": "gpt-4.1-2025-04-14",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Apple Inc. (AAPL) is a global technology leader renowned for its innovative hardware, software, and services. The company’s business model hinges on a tightly integrated ecosystem that combines premium devices, proprietary operating systems, and a growing suite of digital services, fostering strong customer loyalty and recurring revenue streams.\n\nProducts and services: Apple’s core product lines include the iPhone, iPad, Mac computers, Apple Watch, and AirPods, all engineered to work seamlessly together. The company’s software platforms—iOS, macOS, watchOS, and iPadOS—underpin its hardware, enabling a unified user experience and ecosystem lock-in. Apple’s Services segment, comprising the App Store, iCloud, Apple Music, Apple TV+, and Apple Pay, has become a key growth driver, providing high-margin, subscription-based revenue. This services expansion reduces reliance on hardware upgrade cycles and capitalizes on Apple’s vast installed base.\n\nMarket position: Apple holds a dominant position in the premium smartphone and tablet markets and is a leading player in personal computing and wearables. Its brand is synonymous with quality, security, and innovation, allowing it to command premium pricing and industry-leading margins. With a global reach and a vast retail footprint, Apple continues to outpace most competitors in profitability and customer retention. Against peers like Cisco (CSCO) and Nvidia (NVDA), Apple’s EBITDA is substantially higher, reflecting its scale and operational efficiency, though Nvidia’s rapid growth in recent years is notable.\n\nRecent performance: Between 2021 and 2024, Apple maintained robust financial health, with revenue rising from $366 billion in 2021 to $391 billion in 2024 despite a modest dip in 2023. Contribution margin improved steadily, reaching 46.2% in 2024, while EBITDA climbed from $123 billion in 2021 to nearly $135 billion in 2024. The EBITDA margin remained strong at approximately 34-35%. Apple’s SG&A margin stayed low and efficient, declining further in future projections, indicating disciplined cost control. Earnings per share (EPS) grew from $5.67 in 2021 to $6.11 in 2024, with forecasts pointing to continued EPS expansion. Valuation, as reflected by the PE ratio, has increased, suggesting robust investor confidence and expectations of future growth.\n\nLooking ahead, Apple is projected to sustain moderate revenue growth (CAGR of 3.3% through 2027), with rising contribution and EBITDA margins, driven by continued expansion in services and potential new product categories. The company’s financial strength, brand equity, and ecosystem strategy position it for ongoing leadership in the global technology sector.",
+          "refusal": null,
+          "annotations": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1451,
+      "completion_tokens": 538,
+      "total_tokens": 1989,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": "fp_1c4e919184"
+  }
+}
