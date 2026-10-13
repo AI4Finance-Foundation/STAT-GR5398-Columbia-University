@@ -1,0 +1,230 @@
+FINAL SUBMISSION AUDIT - Assignment1_PatrickXiong_sx2434 (latest WRDS three-strategy package)
+Reviewer: Claude Opus 5.5 (model id claude-opus-5-5), October 12, 2026. Read-only on the package.
+Note: the session reports the model as Opus 5.5; I cannot read the reasoning-effort setting from inside the
+session, so "High" is taken from the request, not verified by me.
+Package: .../submission_2026-10-11/submission_final_wrds_three_strategies_20261012/Assignment1_PatrickXiong_sx2434
+First fields read: report.pdf p1 "Main result" paragraph and the section-2 table row
+"QQQ enhancement 204.45% / 22.82% / 22.39% / 1.033 / -33.05% / 164.09%"; results/three_strategy_comparison.csv
+header label,strategy,cumulative,cagr,volatility,sharpe_rf0,max_drawdown,annual_turnover, first row cumulative
+2.044465594232555.
+
+=====================================================================================================
+VERDICT: READY FOR AUTHOR APPROVAL
+=====================================================================================================
+No research blocker, no numerical discrepancy, no hidden look-ahead or survivor screen found in what I
+inspected and recomputed. Two text items must change at submission time (they depend on the Medium link),
+and three small items should be fixed before anything is pushed publicly. None requires retraining.
+
+This is not a certification of CRSP release vintages, of every raw record, or of future performance, and it
+is not a statement that the strategy has alpha. Models were not refitted.
+
+-----------------------------------------------------------------------------------------------------
+1. ITEMS BY SEVERITY
+-----------------------------------------------------------------------------------------------------
+RESEARCH BLOCKERS: none.
+
+REQUIRED AT SUBMISSION TIME (external-step dependent, not research defects)
+ R1. Medium link and status text.
+     - README.md:17 says "private review material ... not been published, pushed, or submitted" and has no
+       Medium URL. The handout (section 5, item 2) requires the Medium link in README.
+     - report.pdf p4, section 6, last paragraph ("privately prepared for review. Medium publication and course
+       submission remain pending user authorization"), generated from code/build_submission.py:66.
+     Fix after publishing: put the URL and final status in README.md and build_submission.py:66, run
+     python code/build_submission.py (needs reportlab), then refresh artifact_manifest.json and the zip.
+ R2. Claude wording, only if the PDFs are rebuilt anyway: report.pdf p3 "Claim boundary", Bias_Avoidance_
+     Evidence.pdf p2 "Limits", README.md:77, medium_draft.txt (second-to-last paragraph of "Robustness and
+     limits") say the latest fits have no new Claude sign-off. Leaving that text is acceptable and
+     conservative. If changed, use no more than: "A read-only Claude Opus 5.5 audit (Oct 12, 2026) rebuilt the
+     universe, labels, features, fit partitions and NAVs from the frozen inputs and re-ran the packaged
+     non-training scripts; it did not refit models or certify CRSP vintages."
+
+SHOULD FIX BEFORE PUBLIC PUSH (minutes each; not blockers)
+ S1. Private local paths committed: experiments/qqq/experiment_plan.json:17 and
+     experiments/absolute/experiment_plan.json:22 ("input_data": "<private>/CloudStorage/...").
+     This contradicts the package's own rule in data_access/WRDS_query_instructions.txt ("Do not commit ...
+     private input paths"). Fix: replace the value with "<private>/wrds_rebuild_20261012/data-source".
+ S2. data_access/WRDS_query_instructions.txt:7 opens with a superseded headline ("The frozen primary is 80%
+     SPY ... 159.39%") and :33 says Python 3.9-3.12 while README.md:21 says 3.9-3.11. README flags the file as
+     the prior SPY protocol, but a grader opening it sees a different primary. Fix: add a two-line banner at
+     the top ("Superseded headline; current primary is QQQ80_Best20, see README/report. Kept for WRDS query
+     details only.") and align the Python range.
+ S3. Replay scope is not stated in README "Full source-to-model replay". Add: "reproduce_all.py has not been
+     executed end-to-end from this packaged tree. The SPY pipeline was fully replayed once before packaging
+     (zero NAV difference). For QQQ and absolute targets the packaged trainers were run in
+     --validate-inputs-only mode (22 windows, inputs identical); fits were not repeated." report.pdf p4
+     ("Four frozen WRDS inputs ... reproduce the analysis") is acceptable with that README sentence.
+ Any edit under S1-S3 changes file hashes: regenerate artifact_manifest.json, the zip and
+ final_validation_receipt.json afterwards.
+
+OPTIONAL POLISH (explicitly not blockers)
+ O1. evidence/claude_review_scope.json:4 contains a private claude.ai conversation URL.
+ O2. "Local private only / no publication" strings in experiments/*/experiment_plan.json and
+     results_summary.txt become stale after submission.
+ O3. report.pdf p4 table: the absolute-target row is top 10% (that experiment's declared primary) while the
+     other pure columns are top 5%. Like-for-like absolute top 5% is 126.63% (experiments/absolute/results/
+     comparison.csv). Labelled correctly; could add the number.
+ O4. experiments/absolute/results shows WRDS_QQQ80_RELBest20 = 192.45% (QQQ core with SPY-relative picks,
+     about equal to QQQ 191.86%). So most of the 12.6pp edge over QQQ comes from the QQQ-relative retarget,
+     which was a development choice. Already disclosed in general terms; one sentence would make it concrete.
+ O5. Handout sections 1.1 and 4 ask what the point-in-time filter removed. The report gives the survivor-screen
+     counterfactual (205 IDs / 3,351 rows kept; SIVB, SBNY, FRC named), which meets the intent. If a literal
+     count is wanted, my computation on the frozen extract: 815 extracted stock PERMNOs with 27,643 quoted
+     stock-quarter candidates at the 41 decisions; point-in-time membership keeps 705 PERMNOs / 20,675 rows
+     and excludes 6,969 non-member stock-quarters; 110 extracted PERMNOs never enter.
+ O6. June 30, 2020 start (the handout's other stated window), from results/three_strategy_nav.csv: QQQ
+     enhancement 160.86%, pure validation 172.54%, SPY enhancement 134.80%, SPY 132.74%, QQQ 150.33%. Same
+     ordering versus benchmarks; not in the report.
+ O7. "28 executed archived cells, zero errors": the executed notebook I found locally
+     (FinRL-Trading/source_code/FinRL-Trading-Full-Workload_executed.ipynb, 0.33 MB) has 28 cells of which 21
+     are code (20 with execution counts) and no error outputs. More exact: "28-cell notebook (21 code cells)
+     ran with zero errors". The package carries only a JSON receipt; including that notebook would document
+     handout target 1 directly. I cannot confirm it is the same file the receipt hashes refer to.
+ O8. code/prove_bias_controls.py:25 (and both experiment copies) reads missing_quote_resume_audit.csv without
+     the EmptyDataError guard that run_models.py:74-75 has. Irrelevant for the frozen inputs (18 MP rows).
+ O9. results/stock_selected*.csv columns are decision_date,permno,ticker; the handout example uses
+     tic,predicted_return,trade_date. Not required for a custom strategy.
+ O10. SPY/QQQ NAV columns are CRSP-derived total-return series for two ETFs. These are results, not raw
+     exports; author's judgment under the WRDS terms.
+
+-----------------------------------------------------------------------------------------------------
+2. NUMERICAL CROSS-CHECK (PDF / README / medium_draft / CSV)
+-----------------------------------------------------------------------------------------------------
+Discrepancies found: none.
+Verified against CSVs and recomputed from the daily files (max difference 1e-13 on every metric):
+ - report.pdf p1 table, all 7 rows x 6 metrics: QQQ enhancement 204.45/22.82/22.39/1.033/-33.05/164.09;
+   pure validation 192.04/21.88/29.26/0.823/-31.20/676.02; SPY enhancement 159.39/19.24/18.85/1.031/-24.30/
+   157.32; pure RF 214.29/23.55/29.38/0.868/-32.59/670.17; QQQ RF-only 209.10/23.17/22.37/1.046/-33.17/
+   163.29; SPY 154.91/18.86/17.51/1.077/-24.50; QQQ 191.86/21.87/22.99/0.978/-35.12.
+ - p2: $3.0445 vs $2.9186; 12.59pp; 4.31% more terminal wealth; CAGR gap 0.95pp; stress lead 6.71pp; stress
+   rows 198.57/22.38/-33.09, 166.18/19.82/-31.20, 201.03/22.57/-31.20, 157.21/19.06/-24.30.
+ - Seeds: 11 paths, mean 202.00%, range 197.47%-209.08%, sample sd 3.21pp, all above QQQ.
+ - Feature importance 24.2 / 22.8 / 19.9 (file values 0.2421, 0.2283, 0.1992). My recomputation from the
+   saved estimators gives 24.0 / 22.9 / 19.7 using LightGBM split counts; the package uses LightGBM gain
+   (code/summarize_model_importance.py:14), which explains the 0.2pp difference (one LightGBM window).
+ - p4: 144.76 / 159.39; 192.04 / 204.45; 214.29 / 209.10; absolute top 10% 141.82.
+ - Baseline 27.16% / 4.54% / 0.371 / -19.56% / 15.02% / 816.33% equals evidence/original_notebook_baseline.json.
+ - Old 204.27% / 198.67% appear only as "superseded" references (report p4, README, medium, two
+   results_summary.txt, one experiment_plan.json). No stale primary value anywhere.
+ - README, medium_draft.txt and the executed notebook carry the same numbers. Headline ordering QQQ
+   enhancement > QQQ-target pure > SPY enhancement, with RF-only pure as a separate comparator, is
+   consistent everywhere.
+
+-----------------------------------------------------------------------------------------------------
+3. BIAS CONTROLS: WHAT I INSPECTED, RECOMPUTED, OR ONLY READ
+-----------------------------------------------------------------------------------------------------
+Code read in full: code/causal_policy.py, prepare_crsp.py, build_features.py, run_models.py, reproduce.py,
+reproduce_all.py, prepare_data.py; experiments/qqq/code/backtest_crsp.py, prove_bias_controls.py,
+independent_ledger_audit.py; diffs of every root/qqq/absolute counterpart. Skimmed: audit_source_cases.py,
+audit_failure_validation.py, summarize_*.py. Not read: fit_boundary_log.py internals, build_submission.py
+body, audit_model_inputs.py body.
+
+Independently recomputed with my own code from the frozen raw files (crsp_daily_raw.parquet, member, names
+and delisting files in wrds_rebuild_20261012/inputs):
+ - Universe: 754 membership spells, 41 decision dates -> 20,675 member-quarters, 705 PERMNOs; key set and
+   label ends identical to the trained panel. Final 2025-09-30 roster 503; a today-only screen would delete
+   205 IDs / 3,351 rows. 119 members have a terminal record by 2025-09-30 (1,650 rows). SIVB 20 / SBNY 5 /
+   FRC 17 cases, all with finite labels including the 2023-03-01 failure quarter (SIVB wealth multiple
+   0.0014).
+ - Labels: 20,071 reproduce exactly from raw dlyret; 96 more match "compound observed returns, nothing after
+   the last record"; the remaining 2 are the SIVB/SBNY PRCF reconstructions (delnextprc/deldtprc, recognised
+   2023-03-28). Total 20,169. QQQ-relative targets differ by at most 1.1e-15.
+ - Non-labelled rows: 503 right-censored (2025-09-02 decision), ABMD 2022-12-01, WBA 2025-06-02, INFO
+   2022-03-01 (only row without an entry quote). All 506 are present in predictions.csv (11,083 rows).
+ - Features: all six reproduce to 5e-15 on every row using sessions strictly before the decision; missing
+   patterns identical; "available" is before the decision on every row. Estimator inputs are the six
+   features and six missing flags only.
+ - Partitions: for all 22 windows my date-only rule (decision and label end before the cutoff, target
+   present) reproduces the logged train/validation/inference row-key hashes (264 checks). 858 log records,
+   zero breaches. First window: cutoff 2019-06-03, latest train label 2019-03-01, latest validation label
+   2020-03-02; last window 2024-09-03 / 2024-06-03 / 2025-06-02, matching Bias PDF p2.
+ - Saved estimators (286 for QQQ, loaded, not refitted): training medians equal my train-only medians;
+   predictions reproduce predictions.csv and the seed file within 1.2e-8; recomputed validation MSE gives
+   winners RF 15 / XGB 6 / LightGBM 1.
+ - NAV: my own ledger (returns and event handling rebuilt from raw dlyret and the delisting file, own
+   selection, own fee solver) reproduces 10 strategies including the primary, its stress, both pure QQQ
+   portfolios and the SPY hybrid: max daily NAV difference 1.7e-14, identical selections, 26 names per
+   rebalance, zero held unknown-proceeds events. SPY 154.91% and QQQ 191.86% from raw returns.
+ - The primary actually held SIVB and FRC through their failures (exit weights 1.1e-5 and 2.0e-5), so
+   terminal losses were realised, not avoided.
+
+Findings on the specific points raised:
+ - Membership / identity: built from effective spells by PERMNO, independent of quote presence. Ticker is
+   display and tie-break only (backtest_crsp.py:79).
+ - Clocks: features use calendar < decision day; labels run from decision close to label-end close; trades
+   at the decision close. No look-ahead found.
+ - Public-rights eligibility (causal_policy.py:8-15, backtest_crsp.py:63,76): applied only by announcement
+   date. The two-deal list is exactly the set of in-sample cases whose CRSP terminal value is unknown, so it
+   was identified with hindsight; the PDFs say "developed and nonexhaustive", which is accurate. Suggested
+   addition: "the two deals were identified because their terminal value is missing in CRSP".
+ - Missing eligible failure label guard (causal_policy.py:30-45): fails closed; no silent drops. On completed
+   horizons eligibility coincides exactly with "label present".
+ - Frozen holdings: logic is present, but no position was frozen at any rebalance in any shipped strategy
+   (all three frozen_rebalance_checks.csv are zero). That path is evidenced only by the synthetic check
+   (evidence/synthetic_frozen_event_check.json), which I read but did not rerun.
+ - "Erase future membership records: no change" (prove_bias_controls.py:55-59) re-applies the same interval
+   rule, so it holds by construction. Not wrong, but weak; my rebuild from the raw member file is the
+   stronger evidence.
+ - "Independent numerical reconstruction" is a separate code path by the same author under the same event
+   conventions; the wording in the PDF is acceptable.
+ - Source-vintage limits are stated correctly (one retrospective CRSP release; announcement dates not
+   reconstructed).
+ - Contradictions between code and claims: none found.
+
+Evidence I only read, not verified: evidence/replay_checks.json (earlier full SPY replay), the hypothetical
+label-floor and rights-removed sensitivities, bank-failure validation MSE, earlier Claude transcripts,
+"declared before the latest replay" timestamps in experiment_plan.json (files are mutable), the WRDS query
+IDs and the SEC/Walgreens source hashes in data_access/dated_rights_facts.json.
+
+-----------------------------------------------------------------------------------------------------
+4. CLEAN-CLONE REPRODUCTION
+-----------------------------------------------------------------------------------------------------
+Executed (packaged source, python -B, outputs to a scratch folder, nothing written to the package):
+ - code/prepare_crsp.py on the frozen inputs (about 2 minutes): regenerated model panel, returns, entry
+   flags, event table and features are equal to the archived ones (gzip bytes differ, content identical).
+ - All three packaged trainers with --validate-inputs-only on that fresh data: 22 windows each, max
+   feature/target difference 0, splits identical, no fits.
+ - All three packaged backtests fed the saved predictions: every comparison.csv metric and every NAV equals
+   the packaged results exactly (7, 23 and 18 series).
+ - Root audit_model_inputs, independent_ledger_audit, audit_source_cases, summarize_results,
+   audit_failure_validation, prove_bias_controls; QQQ and absolute audit_model_inputs, prove_bias_controls,
+   independent_ledger_audit: all exit 0 with the reported counts (858 records, 286 estimators, 21 QQQ
+   strategies, 3.24e-14).
+ - Static: all 48 .py files parse; every import resolves (reportlab is the only package missing from the
+   test venv); installed versions equal the requirements.txt pins for numpy, pandas, scikit-learn, xgboost,
+   lightgbm, joblib, pyarrow, matplotlib; argument wiring between reproduce_all.py and the experiment
+   reproduce.py scripts is consistent; only two files contain absolute paths (S1).
+ - Notebook: 7 code cells re-executed in memory, all assertions pass.
+ - Archive: zip sha256 36e586f6... matches final_validation_receipt.json; 307 files; zip contents equal the
+   folder; artifact_manifest.json matches all 306 files; the three comparison.csv snapshots match
+   source_snapshots.json. No parquet, joblib, pickle, gz, database or raw export in the package.
+
+Not executed: any model fit (858 fits); reproduce_all.py end to end; code/build_submission.py and
+code/review_results.py (both rewrite package files); prepare_data.py from the original CSV exports; a fresh
+pip install of requirements.txt (so the reportlab, nbformat, nbclient and ipykernel pins are unverified);
+Windows; a truly separate machine.
+
+Conclusion: the shipped source regenerates the archived inputs, partitions, portfolios and audits exactly
+when given the saved predictions and models. The untested part is the training step itself and the
+orchestrator. That supports the stated scope if README adds the sentence in S3.
+
+-----------------------------------------------------------------------------------------------------
+5. COURSE REQUIREMENTS (FinRL-Trading/README.md)
+-----------------------------------------------------------------------------------------------------
+Met in the package: beats the S&P 500 over the full window (all three headline strategies exceed SPY 154.91%,
+also under the 20bps + delay stress: 198.57 / 166.18 / 157.21); survivorship and look-ahead evidence with
+named failed firms; model win counts; feature importance; weighting, rebalancing and cost assumptions; all
+six performance metrics versus SPY and QQQ; what did not work; baseline reported (31.00% handout, 27.16%
+own reconstruction); 4-page PDF; README with commands including the prepare_data.py invocation; small result
+files; no dataset committed; WRDS queries documented.
+Accepted deviations, all disclosed: financial-ratio features replaced by six price features; candidates are
+historical S&P 500 members, not a Nasdaq-100 roster; licensed WRDS inputs instead of the default open data.
+
+Remaining external steps (not research blockers):
+ 1. Author approves and publishes medium_draft.txt on Medium.
+ 2. Add the Medium URL and final status to README.md (and the PDF, see R1).
+ 3. Apply S1-S3 if accepted; regenerate manifest, zip and receipt.
+ 4. Copy the folder to Fall-2026/Assignment1/FinRL-Trading/submissions/Assignment1_PatrickXiong_sx2434/ in a
+    fork of AI4Finance-Foundation/STAT-GR5398-Columbia-University (a folder, not a new branch) and open the
+    pull request. Do not include raw WRDS files, prepared panels or models.
+
+I did not publish, push, submit, edit or delete anything. Scratch outputs are outside the submission tree.

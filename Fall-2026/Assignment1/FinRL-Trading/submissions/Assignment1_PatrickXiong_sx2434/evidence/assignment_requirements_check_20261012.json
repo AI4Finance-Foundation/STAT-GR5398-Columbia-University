@@ -1,0 +1,24 @@
+{
+  "checked_against": "https://raw.githubusercontent.com/AI4Finance-Foundation/STAT-GR5398-Columbia-University/master/Fall-2026/Assignment1/FinRL-Trading/README.md",
+  "date": "2026-10-12",
+  "research": "Main research and report topics covered; literal PIT-filter removal counts added after the final Claude review and independently recomputed from frozen raw data",
+  "required_sp500_outperformance": true,
+  "qqq_outperformance_required_by_handout": false,
+  "performance_metrics": [
+    "cumulative_return",
+    "annualized_return",
+    "Sharpe",
+    "max_drawdown",
+    "volatility",
+    "turnover"
+  ],
+  "data_filter_counts_evidence": "pit_filter_removal_check.json",
+  "clean_clone_scope": "Code entry points and imports checked; packaged preparation, trainer input loading, saved-estimator verification, backtests and audits executed. Full reproduce_all.py training orchestration and fresh dependency installation have not been executed.",
+  "remaining_external_requirements": [
+    "Publish Medium article after explicit author approval",
+    "Add actual Medium URL and final publication status to README/report",
+    "Copy complete folder into course submissions/Assignment1_PatrickXiong_sx2434 and submit approved course PR"
+  ],
+  "publication_authorized_by_this_check": false,
+  "Claude_scope_note": "Claude approved the prior archive and follow-up. This later change adds verified filter counts and a checklist; no new Claude review is claimed for these additions."
+}

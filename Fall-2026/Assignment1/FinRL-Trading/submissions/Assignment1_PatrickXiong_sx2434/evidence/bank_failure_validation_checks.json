@@ -1,0 +1,22 @@
+{
+  "affected_windows": 3,
+  "selection_changes_if_failures_removed": 1,
+  "windows": [
+    {
+      "date": "2023-09-01",
+      "actual_winner": "xgb",
+      "without_failure_winner": "xgb"
+    },
+    {
+      "date": "2023-12-01",
+      "actual_winner": "xgb",
+      "without_failure_winner": "xgb"
+    },
+    {
+      "date": "2024-03-01",
+      "actual_winner": "xgb",
+      "without_failure_winner": "rf"
+    }
+  ],
+  "scope": "Saved-model validation sensitivity; the adopted protocol retains both failure outcomes and does not refit or drop them."
+}

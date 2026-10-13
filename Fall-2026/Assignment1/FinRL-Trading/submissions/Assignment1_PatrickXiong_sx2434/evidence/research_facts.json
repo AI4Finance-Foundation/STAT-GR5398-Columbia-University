@@ -1,0 +1,171 @@
+{
+  "metrics": [
+    {
+      "strategy": "SPY80_Best20_quarterly",
+      "cumulative": 1.593903992894485,
+      "cagr": 0.1924472087636559,
+      "volatility": 0.1885303214124319,
+      "sharpe_rf0": 1.0305762147100843,
+      "max_drawdown": -0.2430208843571525,
+      "annual_turnover": 1.5732091167721325
+    },
+    {
+      "strategy": "SPY80_Best20_quarterly_fee20bps_delay1",
+      "cumulative": 1.5721439581389838,
+      "cagr": 0.1905936811338326,
+      "volatility": 0.1883707811532613,
+      "sharpe_rf0": 1.0230013295539162,
+      "max_drawdown": -0.24304959538073,
+      "annual_turnover": 1.5727507791002988
+    },
+    {
+      "strategy": "Best_top5_quarterly",
+      "cumulative": 1.4475818655074462,
+      "cagr": 0.1797303335260833,
+      "volatility": 0.2873588208659969,
+      "sharpe_rf0": 0.71968887559395,
+      "max_drawdown": -0.2999322537889662,
+      "annual_turnover": 6.53102133667353
+    },
+    {
+      "strategy": "SPY80_RF20_quarterly",
+      "cumulative": 1.6231880030962604,
+      "cagr": 0.1949217228778508,
+      "volatility": 0.1906923459930337,
+      "sharpe_rf0": 1.0319639540546948,
+      "max_drawdown": -0.25515376099398,
+      "annual_turnover": 1.5523710514725737
+    },
+    {
+      "strategy": "RF_top5_quarterly",
+      "cumulative": 1.5825413939484818,
+      "cagr": 0.1914809269360029,
+      "volatility": 0.2974037673267731,
+      "sharpe_rf0": 0.7387496307267034,
+      "max_drawdown": -0.3225236506525986,
+      "annual_turnover": 6.420573036112149
+    },
+    {
+      "strategy": "SPY",
+      "cumulative": 1.5490807252398455,
+      "cagr": 0.1886151372435009,
+      "volatility": 0.175071152217006,
+      "sharpe_rf0": 1.0773855524617422,
+      "max_drawdown": -0.2449739834152196,
+      "annual_turnover": 0.0
+    },
+    {
+      "strategy": "QQQ",
+      "cumulative": 1.9185649781632472,
+      "cagr": 0.2186988917163403,
+      "volatility": 0.229932889274107,
+      "sharpe_rf0": 0.9776633598078314,
+      "max_drawdown": -0.3512251927153337,
+      "annual_turnover": 0.0
+    }
+  ],
+  "model_wins": {
+    "rf": 14,
+    "xgb": 8
+  },
+  "feature_importance": [
+    {
+      "feature": "momentum_21",
+      "gbm": 0.17895780900188224,
+      "rf": 0.21105001385885624,
+      "xgb": 0.14542202737801696
+    },
+    {
+      "feature": "momentum_63",
+      "gbm": 0.15529449283215124,
+      "rf": 0.12236768762707169,
+      "xgb": 0.19451212099714982
+    },
+    {
+      "feature": "momentum_126",
+      "gbm": 0.15160346740439565,
+      "rf": 0.11238843303611977,
+      "xgb": 0.1605212842265463
+    },
+    {
+      "feature": "momentum_252",
+      "gbm": 0.20866370065029402,
+      "rf": 0.24502116975406213,
+      "xgb": 0.21116824284963506
+    },
+    {
+      "feature": "volatility_63",
+      "gbm": 0.1775366646352593,
+      "rf": 0.17443600627587885,
+      "xgb": 0.1613567637096363
+    },
+    {
+      "feature": "drawdown_126",
+      "gbm": 0.12794386547601755,
+      "rf": 0.13473668944801132,
+      "xgb": 0.12701956083901556
+    }
+  ],
+  "primary_held_exits": [
+    {
+      "strategy": "SPY80_Best20_quarterly",
+      "date": "2020-10-05",
+      "permno": 61815,
+      "proceeds_weight": 0.007004474217825,
+      "liquidation_fee": 7.004474217825087e-06,
+      "recognition_date": "2020-10-05"
+    },
+    {
+      "strategy": "SPY80_Best20_quarterly",
+      "date": "2021-01-07",
+      "permno": 75100,
+      "proceeds_weight": 0.0073212265122989,
+      "liquidation_fee": 7.32122651229895e-06,
+      "recognition_date": "2021-01-07"
+    },
+    {
+      "strategy": "SPY80_Best20_quarterly",
+      "date": "2022-02-14",
+      "permno": 76201,
+      "proceeds_weight": 0.0070747851754935,
+      "liquidation_fee": 7.074785175493575e-06,
+      "recognition_date": "2022-02-14"
+    },
+    {
+      "strategy": "SPY80_Best20_quarterly",
+      "date": "2022-04-11",
+      "permno": 90805,
+      "proceeds_weight": 0.0066023840983305,
+      "liquidation_fee": 6.602384098330539e-06,
+      "recognition_date": "2022-04-11"
+    },
+    {
+      "strategy": "SPY80_Best20_quarterly",
+      "date": "2022-10-12",
+      "permno": 12542,
+      "proceeds_weight": 0.0085405646322381,
+      "liquidation_fee": 8.540564632238147e-06,
+      "recognition_date": "2022-10-12"
+    },
+    {
+      "strategy": "SPY80_Best20_quarterly",
+      "date": "2023-03-28",
+      "permno": 11786,
+      "proceeds_weight": 1.098941183228403e-05,
+      "liquidation_fee": 1.0989411832284033e-08,
+      "recognition_date": "2023-03-28"
+    }
+  ],
+  "selected_count_range": [
+    26,
+    26
+  ],
+  "primary_maximum_pending_exit_weight": 0.0011097977395356,
+  "primary_mean_cash_weight": 0.0008197028457408242,
+  "full_window": [
+    "2020-05-01",
+    "2025-09-30"
+  ],
+  "days": 1361,
+  "excess_cumulative_percentage_points": 4.48232676546394
+}

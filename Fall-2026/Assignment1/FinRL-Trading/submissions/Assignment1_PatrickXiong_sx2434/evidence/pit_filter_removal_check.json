@@ -1,0 +1,48 @@
+{
+  "source": "Frozen raw CRSP extract plus trained official-member panel",
+  "extracted_stock_permnos": 815,
+  "member_permnos": 705,
+  "extracted_permnos_never_members": 110,
+  "member_case_rows": 20675,
+  "decision_dates": 41,
+  "definitions": {
+    "quoted_close": {
+      "candidate_rows": 27643,
+      "retained_quoted_member_rows": 20674,
+      "nonmember_rows_removed": 6969,
+      "historical_member_cases_retained_without_candidate_quote": 1,
+      "missing_quote_cases": [
+        {
+          "permno": 14704,
+          "date": "2022-03-01"
+        }
+      ]
+    },
+    "quoted_price": {
+      "candidate_rows": 27734,
+      "retained_quoted_member_rows": 20674,
+      "nonmember_rows_removed": 7060,
+      "historical_member_cases_retained_without_candidate_quote": 1,
+      "missing_quote_cases": [
+        {
+          "permno": 14704,
+          "date": "2022-03-01"
+        }
+      ]
+    },
+    "raw_daily_records": {
+      "candidate_rows": 27791,
+      "retained_quoted_member_rows": 20674,
+      "nonmember_rows_removed": 7117,
+      "historical_member_cases_retained_without_candidate_quote": 1,
+      "missing_quote_cases": [
+        {
+          "permno": 14704,
+          "date": "2022-03-01"
+        }
+      ]
+    }
+  },
+  "quoted_close_active_status_verified": true,
+  "positive_close_candidates_excluded_for_nonactive_status": 0
+}

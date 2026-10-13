@@ -1,0 +1,151 @@
+{
+  "primary": "ABS_Best_top10_quarterly",
+  "window": [
+    "2020-05-01",
+    "2025-09-30"
+  ],
+  "primary_metrics": {
+    "cumulative": 1.4182361096824008,
+    "cagr": 0.1771055843217792,
+    "volatility": 0.2456810821893235,
+    "sharpe_rf0": 0.7884446518481415,
+    "max_drawdown": -0.2945981981408614,
+    "annual_turnover": 6.590057905896744
+  },
+  "stress_metrics": {
+    "cumulative": 1.280327429377416,
+    "cagr": 0.1644112995895938,
+    "volatility": 0.2448811931911806,
+    "sharpe_rf0": 0.7457945673282674,
+    "max_drawdown": -0.2971102708457134,
+    "annual_turnover": 6.58117419923632
+  },
+  "selected_stocks_per_quarter": {
+    "2020-06-01": 51,
+    "2020-09-01": 51,
+    "2020-12-01": 51,
+    "2021-03-01": 51,
+    "2021-06-01": 51,
+    "2021-09-01": 51,
+    "2021-12-01": 51,
+    "2022-03-01": 51,
+    "2022-06-01": 51,
+    "2022-09-01": 51,
+    "2022-12-01": 51,
+    "2023-03-01": 51,
+    "2023-06-01": 51,
+    "2023-09-01": 51,
+    "2023-12-01": 51,
+    "2024-03-01": 51,
+    "2024-06-03": 51,
+    "2024-09-03": 51,
+    "2024-12-02": 51,
+    "2025-03-03": 51,
+    "2025-06-02": 51,
+    "2025-09-02": 51
+  },
+  "winner_counts": {
+    "rf": 13,
+    "xgb": 6,
+    "gbm": 3
+  },
+  "strongest_exploratory_pure_variant": "ABS_Best_top10_quarterly",
+  "strongest_metrics": {
+    "strategy": "ABS_Best_top10_quarterly",
+    "cumulative": 1.4182361096824008,
+    "cagr": 0.1771055843217792,
+    "volatility": 0.2456810821893235,
+    "sharpe_rf0": 0.7884446518481415,
+    "max_drawdown": -0.2945981981408614,
+    "annual_turnover": 6.590057905896744
+  },
+  "beats_spy": false,
+  "beats_qqq": false,
+  "independent_audit": {
+    "independent_raw_CRSP_return_reconstruction": true,
+    "independent_dollar_ledger": true,
+    "production_backtest_functions_imported": false,
+    "independent_selection_from_raw_prior_quotes": true,
+    "maximum_prepared_return_difference": 0.0,
+    "independent_observed_label_cases": 20169,
+    "maximum_observed_label_difference": 0.0,
+    "strategies": 16,
+    "days": 1361,
+    "maximum_daily_nav_difference": 2.4424906541753444e-14
+  },
+  "fit_audit": {
+    "windows": 22,
+    "saved_estimators_checked": 286,
+    "inference_rows": 11083,
+    "no_financial_issuer_or_identifier_columns_in_models": true,
+    "all_training_medians_match": true,
+    "all_purge_and_price_availability_guards_pass": true,
+    "recorded_realized_clock_training_matrix_consistency": true,
+    "rf_average_max_difference": 5.551115123125783e-17,
+    "all_validation_selected_winners_match": true,
+    "no_refits": true
+  },
+  "bias_proof": {
+    "scope": "Finite proof of frozen-source historical-universe retention and decision/training causality; conditional on CRSP historical record semantics.",
+    "official_member_quarter_cases": 20675,
+    "unique_historical_stock_PERMNOs": 705,
+    "final_universe_PERMNOs": 503,
+    "final_universe_date": "2025-09-30",
+    "former_members_absent_from_final_universe": 205,
+    "retained_cases_that_today_only_filter_would_delete": 3351,
+    "later_terminal_historical_securities": 119,
+    "later_terminal_historical_cases": 1650,
+    "missing_official_members": 0,
+    "forecast_cases": 11083,
+    "missing_forecast_cases": 0,
+    "future_membership_erasure_differences": 0,
+    "executed_fit_score_predict_records_verified": 858,
+    "fit_records_binding_full_archived_panel_hash": 242,
+    "archived_model_panel_sha256": "cf0b8b6d1b1405d656f29a7cf29075920036785c65767797fafb04d921c6d87a",
+    "estimator_artifacts_verified": 286,
+    "finite_labels_using_a_source_observation_after_label_end": 0,
+    "source_label_clock_breaches": 0,
+    "future_covariate_and_unavailable_label_poisoning_training_changes": 0,
+    "poisoned_future_metadata_and_inference_targets_maximum_prediction_difference": 1.1102230246251565e-16,
+    "deliberate_global_median_leak_detected_in_all_286_cases": true,
+    "unknown_complete_proceeds_cases": 2,
+    "unknown_cases_already_ineligible_under_public_decision_rule": 2,
+    "eligible_failed_bank_missing_label_causes_error": true,
+    "causal_training_policy_matches_all_recorded_training_values": true,
+    "supervised_eligible_complete_horizon_cases": 20169,
+    "silent_missing_eligible_outcome_exclusions": 0,
+    "right_censored_cases": 503,
+    "residual_claim_limits": [
+      "The dated public-rights eligibility rule excludes two unknown consideration cases before the forecast horizon. This is a developed, nonexhaustive liquidity rule; representativeness for an unrestricted all-stock target is not claimed.",
+      "Historical original-vintage CRSP revisions and membership-announcement timestamps are not reconstructed.",
+      "Pure-active top5/10/20% variants and the developed rights list were researched on this history; no untouched holdout or absence of research-selection bias is proved."
+    ],
+    "claim": "Classical current-universe survivorship filtering and future-observation/label leakage are avoided in the audited pipeline. A blanket claim of all forms of bias eliminated is not supported."
+  },
+  "previous_SPY_primary_reproduced": true,
+  "all_pure_portfolios_have_zero_ETF_positions": true,
+  "prior_QQQ_reference_data_version_differs": true,
+  "publication_or_submission": false,
+  "existing_pure_WRDS_baselines": [
+    {
+      "strategy": "Best_top5_quarterly",
+      "cumulative": 1.4475818655074462,
+      "cagr": 0.1797303335260833,
+      "volatility": 0.2873588208659969,
+      "sharpe_rf0": 0.71968887559395,
+      "max_drawdown": -0.2999322537889662,
+      "annual_turnover": 6.53102133667353,
+      "provenance": "Previously audited WRDS pure-selection baselines, unchanged scores and source; not newly fitted in this experiment"
+    },
+    {
+      "strategy": "RF_top5_quarterly",
+      "cumulative": 1.5825413939484818,
+      "cagr": 0.1914809269360029,
+      "volatility": 0.2974037673267731,
+      "sharpe_rf0": 0.7387496307267034,
+      "max_drawdown": -0.3225236506525986,
+      "annual_turnover": 6.420573036112149,
+      "provenance": "Previously audited WRDS pure-selection baselines, unchanged scores and source; not newly fitted in this experiment"
+    }
+  ]
+}

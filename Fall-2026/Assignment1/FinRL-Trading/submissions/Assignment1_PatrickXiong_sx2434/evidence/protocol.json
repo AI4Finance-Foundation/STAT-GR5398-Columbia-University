@@ -1,0 +1,39 @@
+{
+  "created_at": "2026-10-12T12:57:44.537643-04:00",
+  "price_features": [
+    "momentum_21",
+    "momentum_63",
+    "momentum_126",
+    "momentum_252",
+    "volatility_63",
+    "drawdown_126"
+  ],
+  "seeds": [
+    42,
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "reason": "Index enhancement requires stock-relative-to-SPY forecasts. Subtract the contemporaneous SPY label from each observed stock label to remove market-wide quarter effects; unchanged six prior-price features and all11 seeds.",
+  "feature_rules": "Strictly preceding market-session adjusted-price ratios; each feature window requires one source and complete positive prices.",
+  "missing_policy": "Training-only feature medians plus missing flags; no row filter on issuer status or feature coverage.",
+  "rf": "200 trees per seed, depth6, minimum leaf20; arithmetic average of ALL11 validation and inference predictions.",
+  "comparison_estimators": "Fixed XGB200/depth3/lr0.05; LGBM200/leaves15/lr0.05; same as archived SEC7.",
+  "model_selection": "Lowest purged prior-four-quarter validation MSE; no test-period portfolio-return selection.",
+  "portfolio": "Primary:80%SPY+20%equal-weight top5% by validation-selected model; quarterly. RF ensemble is reported as a comparator.",
+  "window": "May1 2020 to Sep30 2025 with SPY fallback before June1; also report June30 descriptive slice.",
+  "costs": "10bps each traded dollar; stress20bps and one-session delay.",
+  "labels": "Observed log stock wealth minus observed log SPY wealth over the SAME endpoints, only used after purged realization dates. Original stock targets retained separately; unknown CVRs stay unknown.",
+  "holdout_claim": false,
+  "feature_sha256": "e883473d1c967c2573272b8379752335c056a73072916cbbbae1e8d7d32bd8c1",
+  "source_panel_sha256": "8da92cb7ccb962cf64e1d6193871affd14b53e0586043652458cf7eeaf495a8a",
+  "known_rights_policy": "Dated public nonmarket-right facts applied during trading; developed after unvalued exposure in earlier run; same fixed rule in this benchmark-relative replay.",
+  "adoption": "Final private review of a transparently developed strategy; independent numerical audit completed; no untouched-holdout claim."
+}

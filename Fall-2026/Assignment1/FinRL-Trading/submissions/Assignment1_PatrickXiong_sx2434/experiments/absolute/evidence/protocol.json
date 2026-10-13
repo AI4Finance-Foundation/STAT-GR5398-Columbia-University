@@ -1,0 +1,40 @@
+{
+  "created_at": "2026-10-12T16:25:46.106399-04:00",
+  "price_features": [
+    "momentum_21",
+    "momentum_63",
+    "momentum_126",
+    "momentum_252",
+    "volatility_63",
+    "drawdown_126"
+  ],
+  "seeds": [
+    42,
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "reason": "Pure active absolute stock log-total-return target. Unchanged six prior-price features, causal eligibility, purged validation and all11 seeds. SPY endpoint retained only as unused diagnostic.",
+  "feature_rules": "Strictly preceding market-session realized-total-return wealth ratios; each feature window requires one source and complete positive prices.",
+  "missing_policy": "Training-only feature medians plus missing flags; no row filter on issuer status or feature coverage. Supervised eligibility is dated public-rights policy plus initial quote; any other missing realized-horizon label is fatal, not silently dropped.",
+  "rf": "200 trees per seed, depth6, minimum leaf20; arithmetic average of ALL11 validation and inference predictions.",
+  "comparison_estimators": "Fixed XGB200/depth3/lr0.05; LGBM200/leaves15/lr0.05; same fixed candidate parameters as previous private experiment.",
+  "model_selection": "Lowest purged prior-four-quarter validation MSE; no test-period portfolio-return selection.",
+  "portfolio": "Primary:100% equal-weight top10% historical eligible S&P500 members by validation-selected model; quarterly; no ETF core, leverage or shorts. Top5%, top20%, RF-only and old relative-score comparators separately disclosed.",
+  "window": "May1 2020 to Sep30 2025; pure active stays zero-yield cash before first forecast June1. Also report aligned June1 start.",
+  "costs": "10bps each traded dollar; stress20bps and one-session delay; pure sleeve has no ETF allocation.",
+  "labels": "Observed log stock total-return wealth over decision/label endpoints, only used after purged realization dates. Original stock targets retained separately; main-run unknown CVRs stay unknown. The separate labelled stress explicitly replaces two unknown outcomes with the hypothetical log floor.",
+  "holdout_claim": false,
+  "hypothetical_label_floor_stress": false,
+  "feature_sha256": "84343502a39a349df460d6407e4cef31a360324ec128319e17468dc9e679146b",
+  "source_panel_sha256": "4c19e2dda2ecd722a16227f0c96c5f935f5839c4d58ee8b2c2c3dee698a2bb33",
+  "known_rights_policy": "Dated public nonmarket-right facts applied during trading; developed after unvalued exposure in earlier run; same fixed rule in this benchmark-relative replay.",
+  "adoption": "Final private review of a transparently developed strategy; numerical audit saved separately; no untouched-holdout claim."
+}

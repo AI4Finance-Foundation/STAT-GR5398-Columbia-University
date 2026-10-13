@@ -1,0 +1,18 @@
+{
+  "locked_at": "2026-10-12",
+  "data": "CRSP annual CIZ 2025 and daily historical S&P500 constituents, extracted 2026-10-12",
+  "features": "Unchanged six strictly prior price-ratio features derived from CRSP total returns",
+  "models": "Unchanged RF11 seeds and fixed XGB/LightGBM; prior realized validation MSE winner",
+  "selection": "Unchanged top5% equal-weight sleeve; primary80%SPY20%stocks; quarterly",
+  "window": "2020-05-01 to2025-09-30",
+  "costs": "10bps, stress20bps plusone-session delay",
+  "necessary_data_policy_changes": [
+    "Official CRSP historical PERMNO membership replaces original vendor-label universe",
+    "CIZ delisting return used once; delayed OTC quote/payout recognized no earlier than its documented observed date",
+    "Exiting securities liquidated into cash on recognition date; conservative fee on whole proceeds; successor exposure is not continued",
+    "Unquoted contingent proceeds remain unknown for training, and existing dated new-entry restriction retained"
+  ],
+  "publication": false,
+  "reuse_existing_final": false,
+  "known_limit": "Development specification; no untouched holdout or vendor-vintage universal certification"
+}

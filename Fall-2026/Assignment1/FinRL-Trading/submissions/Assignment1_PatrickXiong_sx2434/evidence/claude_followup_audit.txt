@@ -1,0 +1,83 @@
+Claude responded: Re-review of the updated scripts
+Ranking defects by severity before drafting the findings.
+
+Ranking defects by severity before drafting the findings.
+Re-review of the updated scripts
+
+I reviewed only the pasted code. I have not seen the raw records, the model-fitting script, the script that adds available to the panel, portfolio_math.metrics, or any numerical output. Your measured source checks (0 raw -100% records, 0 NT/MP terminal rows, and so on) are taken as stated.
+
+Verified as resolved
+Fee solver and frozen branch: I traced the rebalance algebra by hand. Frozen dollars stay fixed, the post-fee weights are consistent, and the fee identity holds.
+Production and ledger agree on frozen-name handling: the ledger’s closed-form fee reproduces the production logic.
+Smaller fixes: open-ended spells, the raw-before-imputation terminal read, execution_date keying, and the day>=days[0] guard all look correct.
+Unresolved defects, by priority
+
+1. Labels for decision dates on or after source_event (prep, code bug).
+
+The label only goes NaN when date < source_event <= end. A decision date equal to source_event with a row on that day has entry=True.
+If exit_day > date, the interval (date, end] then includes the deferred terminal return. That return was realized on or before the entry close, and the backtest correctly refuses the trade by freezing it.
+If exit_day == date, the label is 0.0 under “observed_CRSP_total_return” for a security that is already gone.
+Fix: assign NaN with a distinct status whenever date >= source_event.
+Query: count panel rows with decision_date >= crsp_return_date for event PERMNOs.
+
+2. tradingstatusflg may still carry ex-post information (prep, data check).
+
+Removing dlydelflg only helps if tradingstatusflg=='A' on a security’s last row is also known ex ante.
+I’m not certain of CIZ’s code set, so check whether the terminal row carries ‘D’ or another non-‘A’ code. If it does, the same look-ahead survives, and your no_filter_on_future… receipt is false in substance.
+Check: compare the entry flag on each last row against its value one session earlier.
+
+3. Unchanged headline numbers mean the new branch is unexercised or a no-op.
+
+Report max(pending_exit_weight), the row count of held_exit_events.csv, and the number of rebalances where frozen & (w>0).
+If all are zero, the sell-side logic has never run on real data. Add a synthetic test that forces a held name through a deferred event (source_event < exit_day) plus a rebalance inside the window, with hand-computed dollars.
+
+4. Sensitivity runs can overwrite headline outputs (backtest).
+
+FINRL_REMOVE_RIGHTS=1 writes to the same OUT directory, which holds nav.csv, comparison.csv and *_selected.csv.
+Unless FINRL_RUN_DIR differs, the ledger audit may compare against a mismatched run.
+Key the output directory on the sensitivity flag, and write the flag into the outputs.
+Audit-code weaknesses
+
+5. The “future row deletion” check in audit_model_inputs.py is tautological.
+
+tr and tr2 come from identical predicates on the same dataframe, so the assertion cannot fail. Likewise (tr.label_end<lower).all() just re-asserts the mask.
+The receipt future_label_row_deletion_leaves_training_matrices_identical=True therefore certifies nothing.
+Only your raw-source prefix rebuild can support that claim. Rebuild the panel from raw data truncated at each fit date, then compare tr and va.
+
+6. The “independent” ledger shares the production rules (independent_ledger_audit.py).
+
+It re-implements the same NT/MP fills, the same terminal overwrite and the same recognition rule, so a conceptual error would pass.
+It also takes production’s *_selected.csv as given. Eligibility, the prior-day quote, rights, available and the 5% count are therefore not audited.
+It confirms accounting arithmetic, which is still useful.
+Two direct checks add real value:
+For each event, the product of raw (1+dlyret) from source_event onward should equal the product of (1+r) from source_event onward.
+Compare the ledger’s rs against returns.parquet.
+Recompute selection independently from predictions.csv too.
+
+7. Delayed-recognition labels stay NaN permanently.
+
+terminal_quote_not_yet_observed_at_label_end is evaluated on full-sample data and never reinstated.
+Training at a later fit excludes delayed-OTC failures even after the quote is public.
+The proper fix is a per-row label_available_date = max(label_end, recognition) used in the purge. Your floor-refit sensitivity partly bounds this, but it is a design choice to disclose.
+Smaller items
+Pending names that are still quoted:
+A pending name with entry=True (decision day equal to source_event with exit_day later) has its target dropped pro rata across the other sleeves, in both production and ledger. Your stated rule is that it goes to cash.
+The effect is small, but the inconsistency is real.
+Self-certifying receipts:
+no_filter_on_future_survival_or_price_endpoint=bool(len(panel)==len(features)) is always true because both lists grow in the same loop.
+official_CRSP_index_membership and source_transitions_require_review remain literals.
+Ledger guard: the ledger lacks the decision>=times[0] guard that production now has. This matters only if pre-sample predictions exist.
+Final label horizon: final_end via BDay().rollforward can still land on a holiday.
+Floor loss: the floor is non-binding (0 cases). With MSE-based selection, a single −99% outcome (log ≈ −4.6) can dominate a validation window, so report per-window MSE with and without the SIVB and SBNY rows.
+Still outside what I could review
+
+How available is defined, the model fitting and seed handling, metrics, and whether predictions.csv rows match model_panel.csv.gz rows. These matter to look-ahead and need their own pass.
+
+
+Create a doc
+
+
+
+
+
+6 minutes ago

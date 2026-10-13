@@ -1,0 +1,31 @@
+{
+  "created_at": "2026-10-12T16:25:43.986097-04:00",
+  "primary": "ABS_Best_top10_quarterly",
+  "target": "absolute next-quarter stock log total return",
+  "universe": "Official historical S&P500 membership, permanent CRSP identifiers, exits included",
+  "features": "Same six audited prior-session price features",
+  "model_selection": "Purged past-only validation MSE; RF all11 seeds, fixed XGB and LGBM",
+  "portfolio": "100% equal-weight selected stocks, quarterly; no ETF core, no leverage, no shorts; cash before June1 first forecast and for unavailable execution allocations",
+  "sensitivity_top_fractions": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "costs": "10bps per traded dollar; paired20bps + one market session delay",
+  "comparators": [
+    "ABS_RF_top10",
+    "SPYREL_Best_top10",
+    "SPYREL_RF_top10"
+  ],
+  "primary_fixed_before_new_training_and_results": true,
+  "selection_disclosure": "Exploratory continuation on previously examined historical sample; all configurations retained; strongest result is not automatically promoted to primary",
+  "input_data": "<private>/wrds_rebuild_20261012/data-source",
+  "input_hashes": {
+    "price_features_candidate.csv.gz": "84343502a39a349df460d6407e4cef31a360324ec128319e17468dc9e679146b",
+    "feature_checks.json": "0e1283a6039aa847121fe3c714f9e2665f9d697c0378c5be619b86308bb2ff4c",
+    "predictions.csv": "97f9076a6599d8e05195a45ec2e0852fe2bd0c9203b61e841a13ef6d5c2b85ad"
+  },
+  "reference_qqq": "Earlier QQQ204.27% used private_final data-source, not the latest WRDS source; compare separately",
+  "privacy": "Local only; no publication/push/submission",
+  "final_publication_authorization": "Author approved public course submission of code and compact results on October12,2026; licensed inputs and weights excluded."
+}
