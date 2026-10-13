@@ -1,0 +1,29 @@
+{
+  "created_at": "2026-10-12T16:37:45.244850-04:00",
+  "primary": "QQQ80_Best20_quarterly",
+  "source": "Frozen licensed CRSP annual CIZ2025 WRDS export, official dated S&P500 membership and permanent identifiers",
+  "target": "Stock log total-return wealth minus QQQ log total-return wealth over identical endpoints",
+  "features": "Same six strictly prior-session realized wealth features; no financial features",
+  "model_selection": "Prior-only purged validation MSE; fixed RF200/depth6/leaf20 all11 seeds; XGB200/depth3/lr.05; LGBM200/leaves15/lr.05",
+  "portfolio": "80%QQQ +20%equal-weight top5% historical eligible S&P500 stocks, quarterly; QQQ fallback beforeJune1 first forecast",
+  "window": [
+    "2020-05-01",
+    "2025-09-30"
+  ],
+  "costs": "10bps per actual traded dollar including initial funding and economic event exits; stress20bps +1session delay",
+  "strategy_parameters_unchanged_from_old_QQQ_version": true,
+  "source_changes": "CRSP source returns, effective historical index membership, event recognition and complete known outcomes replace older vendor/free data preparation",
+  "unknown_CVR_values": "Remain unknown; dated public-rights eligibility rule retained; no fabricated complete consideration",
+  "input_data": "<private>/wrds_rebuild_20261012/data-source",
+  "input_hashes": {
+    "price_features_candidate.csv.gz": "84343502a39a349df460d6407e4cef31a360324ec128319e17468dc9e679146b",
+    "feature_checks.json": "0e1283a6039aa847121fe3c714f9e2665f9d697c0378c5be619b86308bb2ff4c",
+    "predictions.csv": "97f9076a6599d8e05195a45ec2e0852fe2bd0c9203b61e841a13ef6d5c2b85ad"
+  },
+  "prior_old_QQQ_plan_sha256": "d9e90663f9579ccee4f6373fa8fc88df95b2f2155e1c25e00b07d667cd5042d8",
+  "primary_fixed_before_retraining_and_results": true,
+  "privacy": "Local private only, no publication/push/submission",
+  "holdout": "Previously examined development sample, no untouched-holdout claim",
+  "seed_sensitivity": "All11 seeds substitute their own RF forecast only in ensemble-selected RF windows; XGB/GBM and ensemble-selected family schedule stay fixed; no winning seed is selected for primary.",
+  "final_publication_authorization": "Author approved public course submission of code and compact results on October12,2026; licensed inputs and weights excluded."
+}

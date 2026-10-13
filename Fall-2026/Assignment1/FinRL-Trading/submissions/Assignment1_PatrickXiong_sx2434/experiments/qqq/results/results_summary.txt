@@ -1,0 +1,46 @@
+QQQ ENHANCEMENT: WRDS REPLAY
+===========================
+Local private research result, Patrick Xiong, sx2434. No publication or submission.
+Fixed before rerun:80%QQQ +20%equal-weight top5% historical S&P500 stocks, quarterly; QQQ beforeJune1 first forecast.
+Target:next-quarter stock log total-return wealth minus QQQ log total-return wealth, identical endpoints.
+CRSP CIZ2025 total returns, official historical S&P500 membership and permanent identifiers, including failed banks and terminal losses. No financial features.
+Six strictly prior-session price features. Fixed RF200/depth6/leaf20 all11 seeds, XGB200/depth3/lr.05 and LGBM200/leaves15/lr.05; purged past-quarter validation MSE selects the family.
+2020-05-01 through2025-09-30,1361dates.10bps per actual traded dollar incl.initial funding and event exit. Stress20bps +one-session delay.
+
+ALL configurations retained:
+QQQ80_Best20_quarterly: cumulative 204.45%, CAGR 22.82%, maxDD -33.05%, vol 22.39%, Sharpe(rf0) 1.033, annual two-sided turnover 164.1%
+QQQ80_Best20_quarterly_fee20bps_delay1: cumulative 198.57%, CAGR 22.38%, maxDD -33.09%, vol 22.39%, Sharpe(rf0) 1.017, annual two-sided turnover 163.5%
+QQQ80_RF20_quarterly: cumulative 209.10%, CAGR 23.17%, maxDD -33.17%, vol 22.37%, Sharpe(rf0) 1.046, annual two-sided turnover 163.3%
+QQQ80_RF20_quarterly_fee20bps_delay1: cumulative 206.26%, CAGR 22.96%, maxDD -32.93%, vol 22.37%, Sharpe(rf0) 1.039, annual two-sided turnover 162.9%
+QQQtarget_Best_top5_quarterly: cumulative 192.04%, CAGR 21.88%, maxDD -31.20%, vol 29.26%, Sharpe(rf0) 0.823, annual two-sided turnover 676.0%
+QQQtarget_Best_top5_quarterly_fee20bps_delay1: cumulative 166.18%, CAGR 19.82%, maxDD -31.20%, vol 29.21%, Sharpe(rf0) 0.766, annual two-sided turnover 675.2%
+QQQtarget_RF_top5_quarterly: cumulative 214.29%, CAGR 23.55%, maxDD -32.59%, vol 29.38%, Sharpe(rf0) 0.868, annual two-sided turnover 670.2%
+QQQtarget_RF_top5_quarterly_fee20bps_delay1: cumulative 201.03%, CAGR 22.57%, maxDD -31.20%, vol 29.39%, Sharpe(rf0) 0.840, annual two-sided turnover 669.5%
+WRDS_SPY80_RELBest20_quarterly: cumulative 159.39%, CAGR 19.24%, maxDD -24.30%, vol 18.85%, Sharpe(rf0) 1.031, annual two-sided turnover 157.3%
+WRDS_SPY80_RELBest20_quarterly_fee20bps_delay1: cumulative 157.21%, CAGR 19.06%, maxDD -24.30%, vol 18.84%, Sharpe(rf0) 1.023, annual two-sided turnover 157.3%
+QQQ80_Best20_seed42_quarterly: cumulative 203.12%, CAGR 22.72%, maxDD -32.95%, vol 22.40%, Sharpe(rf0) 1.029, annual two-sided turnover 165.3%
+QQQ80_Best20_seed0_quarterly: cumulative 199.45%, CAGR 22.45%, maxDD -33.06%, vol 22.37%, Sharpe(rf0) 1.020, annual two-sided turnover 165.2%
+QQQ80_Best20_seed1_quarterly: cumulative 209.08%, CAGR 23.17%, maxDD -32.94%, vol 22.38%, Sharpe(rf0) 1.046, annual two-sided turnover 164.1%
+QQQ80_Best20_seed2_quarterly: cumulative 199.47%, CAGR 22.45%, maxDD -33.02%, vol 22.44%, Sharpe(rf0) 1.017, annual two-sided turnover 164.5%
+QQQ80_Best20_seed3_quarterly: cumulative 203.15%, CAGR 22.73%, maxDD -33.23%, vol 22.45%, Sharpe(rf0) 1.027, annual two-sided turnover 163.9%
+QQQ80_Best20_seed4_quarterly: cumulative 204.97%, CAGR 22.86%, maxDD -32.90%, vol 22.42%, Sharpe(rf0) 1.033, annual two-sided turnover 163.3%
+QQQ80_Best20_seed5_quarterly: cumulative 199.95%, CAGR 22.49%, maxDD -33.11%, vol 22.37%, Sharpe(rf0) 1.021, annual two-sided turnover 165.3%
+QQQ80_Best20_seed6_quarterly: cumulative 201.64%, CAGR 22.61%, maxDD -32.91%, vol 22.36%, Sharpe(rf0) 1.026, annual two-sided turnover 165.4%
+QQQ80_Best20_seed7_quarterly: cumulative 197.47%, CAGR 22.30%, maxDD -33.04%, vol 22.44%, Sharpe(rf0) 1.012, annual two-sided turnover 162.3%
+QQQ80_Best20_seed8_quarterly: cumulative 200.49%, CAGR 22.53%, maxDD -33.06%, vol 22.44%, Sharpe(rf0) 1.020, annual two-sided turnover 161.9%
+QQQ80_Best20_seed9_quarterly: cumulative 203.20%, CAGR 22.73%, maxDD -32.79%, vol 22.38%, Sharpe(rf0) 1.030, annual two-sided turnover 165.7%
+SPY: cumulative 154.91%, CAGR 18.86%, maxDD -24.50%, vol 17.51%, Sharpe(rf0) 1.077, annual two-sided turnover 0.0%
+QQQ: cumulative 191.86%, CAGR 21.87%, maxDD -35.12%, vol 22.99%, Sharpe(rf0) 0.978, annual two-sided turnover 0.0%
+
+Primary lead versus WRDS QQQ: 12.59 cumulative percentage points.
+Stress lead versus WRDS QQQ: 6.71 percentage points.
+Family winners: {'rf': 15, 'xgb': 6, 'gbm': 1}
+Seed sensitivity: 11/11 exceed QQQ; cumulative range 197.47%–209.08%. Ensemble-selected family schedule held fixed; no winning seed adopted.
+Old-data primary 204.27% and stress 198.67% are superseded by this WRDS replay for comparison with latest SPY and pure-active results.
+Independent raw-source returns and20169observed labels reconstructed; max NAV difference 3.24e-14 across21strategies/1361dates.
+All286saved estimators, seed forecast CSVs, training medians and past-validation winners checked. Historical membership and future-data poisoning controls rerun.
+Shared-source SPY80 enhancement and both benchmarks reproduce within1e-12.
+The dataset is historical development evidence, not an untouched holdout or statistically demonstrated alpha.
+Dated public-rights eligibility remains a developed rule; unknown complete CVR values are not fabricated. Original-vintage CRSP revisions and membership-announcement timestamps are not reconstructed.
+This rerun has not received a new Claude review. Raw licensed inputs remain outside this result directory.
+Replay code/reproduce.py with FINRL_INPUT_DIR,FINRL_DATA_DIR,FINRL_REFERENCE_RUN pointing to frozen local WRDS paths.

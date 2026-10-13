@@ -1,0 +1,108 @@
+Claude responded: Audit of the FinRL WRDS preparation and backtest scripts
+Compiling prioritized findings into a structured audit summary.
+
+Compiling prioritized findings into a structured audit summary.
+Audit of the FinRL WRDS preparation and backtest scripts
+
+I reviewed only the two scripts you pasted. I did not see calculate(), the prediction/model-selection step, portfolio_math.metrics, or any raw data. Findings are ordered by priority. Each is labelled as a code bug, a source assumption, or a data check that decides which it is.
+
+The primary edge over SPY is about 4.5 points of cumulative return (159.39% vs 154.91%). I estimate one top-5% name carries roughly 0.8% of NAV at entry (20% sleeve over about 24 names). A handful of mishandled terminal events is therefore enough to change the conclusion, so I weight anything touching terminal events heavily.
+
+Priority 1: code bugs that can change results
+
+1. The backtest never checks tradability on the sell side (backtest).
+
+Entry eligibility is checked only for targets, and only on the execution day. rebalance() sells any held name whose target is zero.
+Suppose a rebalance date falls inside [source_event, exit_day), or inside an MP/NT gap. The name’s return series is frozen at 0 and its quote is stale. The position is sold at the pre-event mark plus a normal fee. The later terminal return then lands on weight 0, and exit_map finds nothing because drift[j] is already zero.
+This also defeats your fail-closed guard (Held unvalued proceeds), because that guard only fires at recognition on a still-held position.
+The effect is a non-executable sale at a stale mark. For distressed delistings it inflates results. For cash mergers it forfeits the deal return, so the net sign depends on the event mix.
+Fix: carry non-tradable holdings as frozen. Rebalance trades should apply only to names with an observed quote and no pending event. Release them at recognition through the exit path.
+
+2. The recognition-date join is an exact equality on a raw date (prep to backtest).
+
+Prep writes recognition_date=observed, the raw max of the dated fields. The returns use exit_day, the next trading day on or after it.
+Backtest requires days[pos]==e.recognition_date. If observed is a weekend or holiday, the event is silently dropped. The position then sits in a dead PERMNO with zero returns until the next rebalance sells it, which charges the wrong fee at the wrong time and writes no held_exit_events row.
+Events whose recognition falls after 2025-09-30 are also never matched. Positions in them are marked at the pre-event value at sample end with no conversion or fee.
+Fix: export exit_day and key on it. Add an assert that every event with nonzero weight at source_event was either converted or explicitly reported pending, and haircut or convert pending positions at the final mark.
+
+3. Total-loss labels become -inf and are then flagged ineligible (prep).
+
+np.log(np.prod(1+interval)) equals -inf when a terminal return is -100%. label_status stays 'observed_CRSP_total_return', but np.isfinite(label) is False, so training_label_eligible is False.
+The worst realized outcomes therefore disappear from supervised fitting under an “observed” status. This is survivorship in the training set that the all-members-retained design does not prevent.
+Fix: use a bounded transform (floor the gross return at a small positive value) or fit on arithmetic returns. Count -inf rows by year.
+
+4. The terminal return is captured after the stale-fill steps and relocated on an unverified placement assumption (prep).
+
+terminal_return = r.get(source_event) is read after r.loc[nt]=0 and the MP zero-fill. If source_event is an NT or MP day, the return is 0.0 rather than NaN. The reconstruction and unknown-flag branches never fire, and the proceeds are lost as “observed 0%”.
+Everything else is deleted by overwrite: r[calendar>exit_day]=0 and the zeroing in [source_event, exit_day). If CIZ places any part of the delisting return on a row other than deldlydt, that part vanishes. This is a double-counting audit in reverse: it can undercount.
+Data check: for every event, confirm the raw dlyret has exactly one non-null value on or after source_event, and that it sits on source_event. Anything else is being deleted.
+Fix: read the terminal return before any imputation.
+
+5. The reconstruction path is inconsistent with the recognition clock (prep).
+
+Recognition waits for max(deldlydt, delnextdt, delamtdt). The fallback delnextprc/deldtprc − 1 omits delamt, so it waits for the payout date but never uses the payout.
+It also anchors on the delisting-date price, not the last pre-event price, which drops the final-day move whenever dlyret was the missing field.
+For events where the fallback fires, I’d treat the terminal return as incomplete: mark them unknown or add the amount. Count how many events use it.
+Priority 2: bias channels from protocol design
+
+6. Outcome-dependent label exclusion (prep).
+
+unknown_complete_delisting_proceeds, terminal_quote_not_yet_observed_at_label_end, and missing_observed_return all set the label to NaN. Those are the names with late OTC quotes, contingent proceeds, or gaps, which are disproportionately the failures.
+Inference retains them, but fitting never sees them. That is a legitimate protocol choice, but it needs a bounded sensitivity: refit with those labels set to a conservative floor (e.g. -100% or a stressed value) and report how the ranks and result move. Also report label-status counts by year and the share of top-5% picks later falling in each status.
+
+7. The hand-curated rights exclusion (backtest).
+
+rights={75107:…, 19502:…} was found by looking at outcomes, which you disclose. It excludes entry only after the announcement date. It does not stop holding, and it is not generalized by a rule.
+It is also asymmetric: failing names were found and removed, and nobody searched for favorable ones.
+Run with it removed and with a mechanical analogue (any delpaymenttype or delretmisstype pattern that signals unquoted consideration). If the announcement came after the close, a <=day test is a few hours of look-ahead.
+
+8. dlydelflg in entry is a future-dependent filter (prep, backtest).
+
+Whether a row is the last record is known only ex post. With delay=1 this filter silently moves a name to cash if its final record is the execution day, avoiding its terminal event.
+The frequency is low, but no_filter_on_future_survival_or_price_endpoint=True in your receipt is not strictly true. Count the affected rows.
+Priority 3: universe retention and receipts
+
+9. Membership construction (prep).
+
+mbrenddt.ge(date) drops any spell with a NaT or open end. The >=450 assertion only catches gross failures.
+Assert exact counts against the official series, and test entry and exit boundary days.
+In backtest, official_members=len(g) counts the prediction rows. Reconcile it against feature_checks.json member_counts to prove no NaN-feature rows were dropped upstream. I can’t see that step.
+
+10. Self-certifying receipts (prep).
+
+official_CRSP_index_membership, membership_constructed…, source_transitions_require_review and no_filter… are hard-coded literals, not computed.
+The truncation and 7.3× scale tests only validate calculate(). I traced the wealth construction by hand and found no feature look-ahead, because the event overwrites start at source_event and the MP NaNs are same-day. That conclusion rests on calculate() being truncation-correct, and the tests can’t prove it for upstream steps.
+The dup check omits dlyretmissflg, dlyprevprc, and dlyfacprc, which are used later.
+
+11. Minor items.
+
+A decision date before the sample start would overwrite schedule[0] through searchsorted.
+final_end from BDay().rollforward can land on a holiday, so the last label horizon is one session short.
+NT zero-fills are not verified the way MP gaps are, and MP verification compares against a possibly signed dlyprc.
+The MP, NT, NS, and rights special cases look like they were added after meeting data errors. They belong in the researcher-degrees-of-freedom accounting.
+Clearly bounded source assumptions (not code bugs)
+CIZ dlyret includes the delisting return, and it sits on the deldlydt row. The code obeys the first half. The second half needs the check in item 4.
+Recognition is the max of CRSP’s dated fields. This is conservative, but it may postdate public knowledge or earlier tradability.
+CRSP returns exclude unquoted CVRs and nontransferable rights, and MV is the only unknown flag. Unflagged contingent proceeds are understated for holders.
+Cash earns 0%. The fee is a flat 10 or 20 bps on all stock legs including liquidations. These are conservative simplifications.
+Bid/ask-average marks count as returns, but only dlyclose>0 counts as an entry quote.
+Model selection by purged prior-validation MSE and the available date are outside the code I saw.
+What I’d run in your dollar-ledger audit
+Event shape check. For each event, list the raw non-null dlyret dates on or after source_event, and whether source_event was NT or MP.
+Date-key check. Count events where observed is not in calendar, and where recognition exceeds 2025-09-30.
+Stale-sale check. For each strategy, find names with weight above 0 at source_event and weight 0 before exit_day. Do the same for held names with entry=False at a rebalance.
+Counterfactual run. Re-run with sells of non-tradable names blocked, and report the NAV delta.
+Target checks. Count -inf targets, and the rows hit by the reconstruction fallback, by year.
+Training sensitivity. Re-run with excluded labels floored, and with the rights list removed.
+Identity checks. Fee identity (fees equal fee × traded dollars) and NAV identity from the holdings and trades files.
+
+Items 1 and 3 are the most likely to move the headline numbers.
+
+
+Create a doc
+
+
+
+
+
+11 minutes ago

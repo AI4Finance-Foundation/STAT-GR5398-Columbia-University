@@ -1,0 +1,92 @@
+SUPERSEDED HEADLINE: current primary is QQQ80_Best20; see README.md and report.pdf.
+This prior SPY protocol is retained for WRDS query details only.
+
+# Assignment 1 - Patrick Xiong (sx2434)
+
+WRDS source/access protocol. Current publication and submission status is in README.md.
+
+## Measured result
+
+The frozen primary is 80% SPY plus 20% equal-weight top-5% stocks selected by purged prior-validation MSE. May 1, 2020-September 30, 2025: 159.39% cumulative net return, versus SPY 154.91% and QQQ 191.86%. The 20bps + one-session-delay check is 157.21%. RF-only is a comparator, not adopted because its full-period return is higher. The selected-model pure-stock portfolio returns 144.76%, below SPY.
+
+705 historical stock PERMNOs, 41 decision quarters, 20,675 member-quarter cases; 22 forecast windows, 286 fits and 11,083 predictions. All eligible historical members remain in inference, including failed and later delisted firms. Every decision uses six strictly prior price features; no financial statements or issuer-link status enter this variant.
+
+## Original workload and requirements
+
+The archived Full-Workload notebook completed 28 cells without errors. Its archived weights and intraday proxy formula were reconstructed separately: 27.16% cumulative, 4.54% CAGR, 15.02% volatility, Sharpe 0.371, -19.56% maximum drawdown, 816.33% annual two-sided turnover. That proxy omits overnight returns and zero-fills missing returns, so it is not an economically comparable total-return portfolio. Its input and weight hashes are in evidence/original_notebook_baseline.json.
+
+Current [course requirements](https://github.com/AI4Finance-Foundation/STAT-GR5398-Columbia-University/blob/master/Fall-2026/Assignment1/FinRL-Trading/README.md) require full-window S&P 500 outperformance, bias evidence, a brief PDF, runnable code, compact results and a Medium blog. QQQ is a comparison benchmark. The intended course folder is submissions/Assignment1_PatrickXiong_sx2434. The published Medium URL is in README.md; medium_draft.txt preserves the article source text.
+
+## WRDS extraction
+
+Use WRDS CRSP Annual Update, Stock Version 2 (CIZ), annual 2025 source, accessed October 12, 2026. Exact query IDs and scope:
+
+- Names: query 11777234; all securities, all effective name intervals. Official generated SQL is data_access/names_query.sql. Keep the 13 selected fields in that SQL; export plain CSV.
+- Official S&P 500 historical members: query 11777305, CRSP annual indexes / daily S&P 500 constituents (acizsp500cst, dictionary dsp500list_v2), January 1, 2015-September 30, 2025, all firms. Requested PERMNO, DlyCalDt, TradingStatusFlg, CUSIP, Ticker; WRDS returned 42 fields including MbrStartDt and MbrEndDt. Keep these effective intervals. Export CSV gzip. There are 1,362,186 security-day rows. Endpoint intervals extend to December 31, 2025; the daily rows stop at the requested cutoff.
+- Daily stocks: queries 11777295 (400 PERMNOs), 11777296 (374) and 11777363 (43 additional official members). January 1, 2014-September 30, 2025. Use data_access/permnos_batch1.txt, batch2.txt, batch3.txt as PERMNO filter text. Counts: 987,969; 979,320; 52,416. Broader extraction names never enter models unless they were historical index members.
+- Daily selected fields: permno, secinfostartdt, secinfoenddt, securitybegdt, securityenddt, cusip, tradingstatusflg, securitynm, delactiontype, delpaymenttype, ticker, permco, dlycaldt, dlydelflg, dlyprc, dlyprcflg, dlyprevprc, dlyret, dlyretx, dlyretmissflg, dlyfacprc, dlydistretflg, dlyvol, dlyclose, dlyopen, dlycumfacpr, dlycumfacshr. WRDS also returns hdrcusip. Export CSV gzip.
+- Delistings: query 11777310, January 1, 2014-September 30, 2025, all market securities and all available action classes GDR/GEX/GLI/LOS/MER. Official SQL, including all 22 fields and identifier join, is data_access/delisting_query.sql. Export plain CSV; 6,416 records.
+
+CIZ's terminal daily return is used once. Source placement was checked on 170 extracted security exits; no non-null return appears after the designated terminal row. Deferred quotes/payments use a distinct market-session execution date. SIVB/SBNY fallback is limited to PRCF subsequent-trade-price events, zero cash component, and a verified pre-event denominator. Unknown complete consideration remains unknown in the main protocol. See [CRSP daily delisting conventions](https://www.crsp.org/wp-content/uploads/appendix/FlagType_MU.html).
+
+WRDS Compustat Snapshot access was tested separately. Financial values were not used in this price-only experiment.
+
+## Reproduce from a clean clone
+
+Requires Python 3.9-3.11 and licensed WRDS CSV exports; no account credentials are stored or used by these scripts. Run from this assignment folder. All licensed inputs and generated panels/models stay outside the repository. Paths below are examples to replace with your private export directory.
+
+```sh
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python code/prepare_data.py --daily /private/wrds/daily_batch1.csv.gz /private/wrds/daily_batch2.csv.gz /private/wrds/daily_batch3.csv.gz --membership /private/wrds/members.csv.gz --names /private/wrds/names.csv --delisting /private/wrds/delisting.csv --output-dir /private/wrds/inputs
+python code/reproduce.py --input-dir /private/wrds/inputs --output-dir /private/wrds/replay
+FINRL_RUN_DIR=/private/wrds/replay/run python code/summarize_results.py
+FINRL_RUN_DIR=/private/wrds/replay/run python code/audit_failure_validation.py
+```
+
+Windows: activate .venv\Scripts\Activate.ps1; set `$env:FINRL_RUN_DIR` in PowerShell instead of the inline environment-variable prefix. `reproduce.py` passes its three data/run environment variables itself.
+
+For the exact local frozen input, use the separate wrds_rebuild_20261012/inputs directory. Its four hashes are in data_access/frozen_input_hashes.json. Newly exported mutable-vendor data may have different hashes and revised results; prepare_data.py freezes and hashes those new files explicitly. The recorded full replay has zero NAV difference and identical selected names. RF score differences are at most 1.11e-16 from parallel reductions; CSV byte identity is not promised.
+
+## Audits and sensitivities
+
+- Source-case audit rebuilds all 20,675 feature prefixes after deleting future raw rows before wealth construction. Maximum feature difference: 0. Every official member and every forecast is reconciled.
+- Saved-estimator audit checks the six features plus missing flags, training medians, purged realized clocks, all 11 RF seeds and validation-selected winners over 286 fitted estimators.
+- A separate dollar ledger reads raw CRSP data, independently recomputes rankings from prior quotes, compares all prepared returns and all 20,169 observed labels, and reproduces five NAV paths over 1,361 dates. Maximum NAV difference 1.33e-14. It validates arithmetic under stated event conventions, not the conventions' universal economic truth.
+- A hand-computed deferred-event example proves frozen positions cannot escape a subsequent 90% terminal loss by a stale-mark sale at an interim rebalance.
+- Two unknown contingent-proceeds labels hypothetically floored near -100% and refitted: primary 162.09%, stress 159.02%; disclosed sensitivity only. Run `python code/reproduce.py --input-dir /private/wrds/inputs --output-dir /private/wrds/floor_check --conservative-label-floor`. This extreme hypothetical is not a rights valuation or a lower bound on portfolio performance.
+- Rights-list removal first stops on a held ABMD unknown-rights exposure. A shadow run valuing unquoted rights at zero, keeping source-recorded proceeds, gives 159.33% primary / 157.13% stress. To reproduce, make a distinct new FINRL_RUN_DIR with a copy of the primary predictions.csv; set FINRL_DATA_DIR to replay/data-source, FINRL_REMOVE_RIGHTS=1 and FINRL_UNQUOTED_RIGHTS_ZERO=1, then run code/backtest_crsp.py. Do not use the primary output directory.
+- Bank-failure validation MSE: SIVB/SBNY failure-quarter outcomes affect three windows and change the family winner in one if removed. The adopted model retains both outcomes.
+- Claude Sonnet 5.5 High completed two code-review rounds. Full raw records, fit script and metrics routine were not reviewed by Claude; numerical tests are local exhaustive checks. Final local assertions were not sent back after Claude's web message allowance ran out. No final independent approval is claimed.
+
+## Limits and publication status
+
+This is a transparently developed historical strategy, without an untouched holdout or statistical alpha test. It uses a frozen retrospective CRSP release rather than all original vendor vintages. Unquoted contingent rights, a nonexhaustive dated rights list, stale interim marks and constant slippage remain bounded assumptions. Final-quarter labels are right-censored; no future answer is supplied for them. This refresh changes official membership, price/benchmark sources and exit-to-cash economics; do not attribute every difference from the free-data version to source corrections alone.
+
+Medium draft and course submission are ready for author review, not publicly published or submitted. Do not commit licensed raw extracts, prepared panels, fitted weights, private input paths or authentication material. The original public version was withdrawn earlier; this package creates no new public release.
+
+
+## Explicit bias-avoidance proof (updated private version)
+
+Read Bias_Avoidance_Evidence.pdf together with evidence/bias_proof/. The claim is classical historical-universe retention and decision-time causal information use, conditional on dated source records. It is not a certification of every vendor vintage or an untouched strategy design.
+
+- Every one of 20,675 official member-quarter cases and all 11,083 forecasts is retained. An incorrect end-period-only screen at September 30, 2025 would omit 205 historical PERMNOs and 3,351 cases. We retain 119 historical securities with terminal events and their 1,650 member-quarter records.
+- Deleting future membership starts and future exit dates changes none of the 41 dated universes. Deleting future raw price rows changes none of the 20,675 feature vectors.
+- New supervised eligibility uses initial executable quotes and already-public rights terms. It never checks eventual survival, final membership, realized return or whether the eventual answer is missing. All 20,169 eligible completed-horizon answers exist. A deliberately missing SIVB failure answer raises an error rather than deleting the stock.
+- ABMD December 2022 and WBA June 2025 were already ineligible under dated public-rights facts; INFO March 2022 has no executable starting quote. These cases stay in the historical and inference universe. Their qualification is independent of ultimate returns. Both CVR economic values remain unknown.
+- Source label availability includes delayed terminal quotes and missing-quote resumption evidence. There are no eligible finite labels requiring observations after their recorded horizon in this sample. The trainer now also enforces the explicit source-availability clock.
+- All 858 executed fit/score/predict row-key hashes match the causal eligibility and information-clock specification. Every admitted training feature/target array is identical to the recorded fit inputs across 286 estimators; the original fitted models and 159.39% performance are preserved.
+- Adversarial future-value changes leave admitted training arrays unchanged. Changing inference targets and future-status metadata leaves all estimator input matrices identical; prediction differences are only parallel floating-point reduction noise, below 1e-12. A deliberately leaky global-median calculation is detected in every estimator check.
+
+The hardened default rejects any missing eligible realized-horizon answer. The separate --conservative-label-floor experiment intentionally expands the supervised rights domain using hypothetical outcomes; it is a disclosed sensitivity, not the default or the proof of complete consideration. The public-rights list was developed on this historical research and is nonexhaustive. Full vendor-vintage and research-selection absence of bias are not claimed.
+
+Reproduce after preparing licensed inputs and running the normal replay:
+
+```sh
+FINRL_INPUT_DIR=/private/wrds/inputs FINRL_DATA_DIR=/private/wrds/replay/data-source FINRL_RUN_DIR=/private/wrds/replay/run python code/prove_bias_controls.py
+```
+
+The current reproduce.py invokes this proof for the default run automatically. The new proof and causal guards were checked locally; they have not been reviewed by Claude after the earlier web-message limit.
+
+The packaged trainer was also run in --validate-inputs-only mode against the archived data: all 22 splits and all feature/target values match exactly (maximum difference 0). The packaged proof script was re-executed with its self-contained support imports; only normal parallel floating-point prediction noise varies. See evidence/bias_proof/loader_input_validation.json and packaged_code_reexecution.json.

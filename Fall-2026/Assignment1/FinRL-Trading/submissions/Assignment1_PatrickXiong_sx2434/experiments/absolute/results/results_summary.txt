@@ -1,0 +1,44 @@
+PURE ACTIVE WRDS EXPERIMENT
+===========================
+Local private experiment, Patrick Xiong, sx2434. No publication or submission.
+Window: 2020-05-01 to 2025-09-30 (1361 market dates).
+Primary fixed before new training: ABS_Best_top10_quarterly.
+Absolute next-quarter stock log-total-return target, six prior-session price features, historical S&P500 members, quarter-by-quarter purged validation-MSE model selection.
+100% equal-weight top10% selected stocks; no ETF core, shorts or leverage. Zero-yield cash before June1 first forecast and for unexecutable allocations.
+RF arithmetic ensemble of all11 seeds plus fixed XGB and LGBM; model parameters inherited, not tuned to full-window portfolio returns.
+Normal cost10bps per traded dollar including funding and event exit. Paired stress20bps plus one-session delay.
+
+ALL configurations retained:
+ABS_Best_top5_quarterly: cumulative 126.63%, CAGR 16.31%, maxDD -32.19%, vol 29.35%, Sharpe(rf0) 0.662, annual two-sided turnover 650.6%
+ABS_Best_top5_quarterly_fee20bps_delay1: cumulative 117.51%, CAGR 15.43%, maxDD -32.22%, vol 29.32%, Sharpe(rf0) 0.637, annual two-sided turnover 649.7%
+ABS_Best_top10_quarterly: cumulative 141.82%, CAGR 17.71%, maxDD -29.46%, vol 24.57%, Sharpe(rf0) 0.788, annual two-sided turnover 659.0%
+ABS_Best_top10_quarterly_fee20bps_delay1: cumulative 128.03%, CAGR 16.44%, maxDD -29.71%, vol 24.49%, Sharpe(rf0) 0.746, annual two-sided turnover 658.1%
+ABS_Best_top20_quarterly: cumulative 118.81%, CAGR 15.56%, maxDD -26.03%, vol 20.88%, Sharpe(rf0) 0.799, annual two-sided turnover 614.2%
+ABS_Best_top20_quarterly_fee20bps_delay1: cumulative 106.40%, CAGR 14.32%, maxDD -26.25%, vol 20.79%, Sharpe(rf0) 0.750, annual two-sided turnover 613.5%
+ABS_RF_top10_quarterly: cumulative 136.00%, CAGR 17.18%, maxDD -31.98%, vol 24.91%, Sharpe(rf0) 0.763, annual two-sided turnover 633.6%
+ABS_RF_top10_quarterly_fee20bps_delay1: cumulative 122.49%, CAGR 15.91%, maxDD -32.05%, vol 24.84%, Sharpe(rf0) 0.720, annual two-sided turnover 632.8%
+SPYREL_Best_top10_quarterly: cumulative 115.74%, CAGR 15.26%, maxDD -28.45%, vol 24.24%, Sharpe(rf0) 0.708, annual two-sided turnover 637.7%
+SPYREL_Best_top10_quarterly_fee20bps_delay1: cumulative 102.66%, CAGR 13.93%, maxDD -29.20%, vol 24.17%, Sharpe(rf0) 0.662, annual two-sided turnover 636.9%
+SPYREL_RF_top10_quarterly: cumulative 108.57%, CAGR 14.54%, maxDD -31.60%, vol 25.04%, Sharpe(rf0) 0.669, annual two-sided turnover 617.0%
+SPYREL_RF_top10_quarterly_fee20bps_delay1: cumulative 94.20%, CAGR 13.04%, maxDD -32.12%, vol 24.97%, Sharpe(rf0) 0.617, annual two-sided turnover 616.2%
+WRDS_SPY80_RELBest20_quarterly: cumulative 159.39%, CAGR 19.24%, maxDD -24.30%, vol 18.85%, Sharpe(rf0) 1.031, annual two-sided turnover 157.3%
+WRDS_SPY80_RELBest20_quarterly_fee20bps_delay1: cumulative 157.21%, CAGR 19.06%, maxDD -24.30%, vol 18.84%, Sharpe(rf0) 1.023, annual two-sided turnover 157.3%
+WRDS_QQQ80_RELBest20_quarterly: cumulative 192.45%, CAGR 21.92%, maxDD -32.82%, vol 22.53%, Sharpe(rf0) 0.995, annual two-sided turnover 159.0%
+WRDS_QQQ80_RELBest20_quarterly_fee20bps_delay1: cumulative 189.75%, CAGR 21.71%, maxDD -32.85%, vol 22.52%, Sharpe(rf0) 0.987, annual two-sided turnover 158.6%
+SPY: cumulative 154.91%, CAGR 18.86%, maxDD -24.50%, vol 17.51%, Sharpe(rf0) 1.077, annual two-sided turnover 0.0%
+QQQ: cumulative 191.86%, CAGR 21.87%, maxDD -35.12%, vol 22.99%, Sharpe(rf0) 0.978, annual two-sided turnover 0.0%
+Previously audited WRDS baseline Best_top5_quarterly: cumulative 144.76%, CAGR 17.97%, maxDD -29.99%; not a newly trained variant.
+Previously audited WRDS baseline RF_top5_quarterly: cumulative 158.25%, CAGR 19.15%, maxDD -32.25%; not a newly trained variant.
+
+Primary winners: {'rf': 13, 'xgb': 6, 'gbm': 3}
+Selected stocks per quarter: 51 to 51
+Strongest pure variant in exploratory table: ABS_Best_top10_quarterly; not automatically promoted to the predeclared primary.
+Independent raw-return/label reconstruction and dollar-ledger audit: maximum NAV difference 2.44e-14; 16 strategies, 1361 dates.
+All286 saved estimators, training medians and past validation winners independently checked. Membership and future-data poisoning controls rerun against the new absolute-target model.
+Original WRDS SPY enhancement and both ETF benchmarks reproduced within1e-12.
+Previous QQQ enhancement204.27% was produced from older private_final data-source. The WRDS_QQQ80_RELBest20 comparator here uses SPY-relative forecasts, not a newly QQQ-target-trained model.
+The same historical interval has been used for research. A higher-return variant in this table is an exploratory finding; no untouched-holdout or significant-alpha claim.
+Bias proof retains original-vintage vendor and membership-announcement clock limitations; missing CVR outcomes remain unknown under the dated public eligibility rule.
+Latest changes and new experiment have not been independently reviewed by Claude.
+Replay: use the original four frozen WRDS input files; raw licensed files remain outside this result directory.
+See experiment_plan.json, strategy_specs.json, code, alldaily ledgers and selected-stock tables for exact choices.

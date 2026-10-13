@@ -1,0 +1,1075 @@
+{
+  "scope": "Actual causal_partition results matched to archived fit-manifest row hashes; no refitting",
+  "windows_per_target": 22,
+  "targets": [
+    "SPY",
+    "QQQ",
+    "absolute"
+  ],
+  "all_66_windows_have_three_validation_quarters": true,
+  "validation_row_range": [
+    1508,
+    1516
+  ],
+  "why_latest_quarter_excluded": "Its label endpoint equals forecast day; the code requires label_end and source-availability clock strictly before forecast day. Same-day close outcomes cannot be used for a prior-session forecast.",
+  "windows": [
+    {
+      "target": "SPY",
+      "forecast_date": "2020-06-01",
+      "nominal_validation_start": "2019-06-03",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1516,
+      "validation_decisions": [
+        "2019-06-03",
+        "2019-09-03",
+        "2019-12-02"
+      ],
+      "excluded_latest_decision": "2020-03-02",
+      "excluded_latest_label_end": "2020-06-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "SPY",
+      "forecast_date": "2020-09-01",
+      "nominal_validation_start": "2019-09-03",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1515,
+      "validation_decisions": [
+        "2019-09-03",
+        "2019-12-02",
+        "2020-03-02"
+      ],
+      "excluded_latest_decision": "2020-06-01",
+      "excluded_latest_label_end": "2020-09-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "SPY",
+      "forecast_date": "2020-12-01",
+      "nominal_validation_start": "2019-12-02",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1515,
+      "validation_decisions": [
+        "2019-12-02",
+        "2020-03-02",
+        "2020-06-01"
+      ],
+      "excluded_latest_decision": "2020-09-01",
+      "excluded_latest_label_end": "2020-12-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "SPY",
+      "forecast_date": "2021-03-01",
+      "nominal_validation_start": "2020-03-02",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1515,
+      "validation_decisions": [
+        "2020-03-02",
+        "2020-06-01",
+        "2020-09-01"
+      ],
+      "excluded_latest_decision": "2020-12-01",
+      "excluded_latest_label_end": "2021-03-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "SPY",
+      "forecast_date": "2021-06-01",
+      "nominal_validation_start": "2020-06-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1515,
+      "validation_decisions": [
+        "2020-06-01",
+        "2020-09-01",
+        "2020-12-01"
+      ],
+      "excluded_latest_decision": "2021-03-01",
+      "excluded_latest_label_end": "2021-06-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "SPY",
+      "forecast_date": "2021-09-01",
+      "nominal_validation_start": "2020-09-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1515,
+      "validation_decisions": [
+        "2020-09-01",
+        "2020-12-01",
+        "2021-03-01"
+      ],
+      "excluded_latest_decision": "2021-06-01",
+      "excluded_latest_label_end": "2021-09-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "SPY",
+      "forecast_date": "2021-12-01",
+      "nominal_validation_start": "2020-12-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1515,
+      "validation_decisions": [
+        "2020-12-01",
+        "2021-03-01",
+        "2021-06-01"
+      ],
+      "excluded_latest_decision": "2021-09-01",
+      "excluded_latest_label_end": "2021-12-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "SPY",
+      "forecast_date": "2022-03-01",
+      "nominal_validation_start": "2021-03-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1515,
+      "validation_decisions": [
+        "2021-03-01",
+        "2021-06-01",
+        "2021-09-01"
+      ],
+      "excluded_latest_decision": "2021-12-01",
+      "excluded_latest_label_end": "2022-03-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "SPY",
+      "forecast_date": "2022-06-01",
+      "nominal_validation_start": "2021-06-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1515,
+      "validation_decisions": [
+        "2021-06-01",
+        "2021-09-01",
+        "2021-12-01"
+      ],
+      "excluded_latest_decision": "2022-03-01",
+      "excluded_latest_label_end": "2022-06-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "SPY",
+      "forecast_date": "2022-09-01",
+      "nominal_validation_start": "2021-09-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1514,
+      "validation_decisions": [
+        "2021-09-01",
+        "2021-12-01",
+        "2022-03-01"
+      ],
+      "excluded_latest_decision": "2022-06-01",
+      "excluded_latest_label_end": "2022-09-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "SPY",
+      "forecast_date": "2022-12-01",
+      "nominal_validation_start": "2021-12-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1513,
+      "validation_decisions": [
+        "2021-12-01",
+        "2022-03-01",
+        "2022-06-01"
+      ],
+      "excluded_latest_decision": "2022-09-01",
+      "excluded_latest_label_end": "2022-12-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "SPY",
+      "forecast_date": "2023-03-01",
+      "nominal_validation_start": "2022-03-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1511,
+      "validation_decisions": [
+        "2022-03-01",
+        "2022-06-01",
+        "2022-09-01"
+      ],
+      "excluded_latest_decision": "2022-12-01",
+      "excluded_latest_label_end": "2023-03-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "SPY",
+      "forecast_date": "2023-06-01",
+      "nominal_validation_start": "2022-06-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1509,
+      "validation_decisions": [
+        "2022-06-01",
+        "2022-09-01",
+        "2022-12-01"
+      ],
+      "excluded_latest_decision": "2023-03-01",
+      "excluded_latest_label_end": "2023-06-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "SPY",
+      "forecast_date": "2023-09-01",
+      "nominal_validation_start": "2022-09-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1508,
+      "validation_decisions": [
+        "2022-09-01",
+        "2022-12-01",
+        "2023-03-01"
+      ],
+      "excluded_latest_decision": "2023-06-01",
+      "excluded_latest_label_end": "2023-09-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "SPY",
+      "forecast_date": "2023-12-01",
+      "nominal_validation_start": "2022-12-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1508,
+      "validation_decisions": [
+        "2022-12-01",
+        "2023-03-01",
+        "2023-06-01"
+      ],
+      "excluded_latest_decision": "2023-09-01",
+      "excluded_latest_label_end": "2023-12-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "SPY",
+      "forecast_date": "2024-03-01",
+      "nominal_validation_start": "2023-03-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1509,
+      "validation_decisions": [
+        "2023-03-01",
+        "2023-06-01",
+        "2023-09-01"
+      ],
+      "excluded_latest_decision": "2023-12-01",
+      "excluded_latest_label_end": "2024-03-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "SPY",
+      "forecast_date": "2024-06-03",
+      "nominal_validation_start": "2023-06-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1509,
+      "validation_decisions": [
+        "2023-06-01",
+        "2023-09-01",
+        "2023-12-01"
+      ],
+      "excluded_latest_decision": "2024-03-01",
+      "excluded_latest_label_end": "2024-06-03",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "SPY",
+      "forecast_date": "2024-09-03",
+      "nominal_validation_start": "2023-09-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1509,
+      "validation_decisions": [
+        "2023-09-01",
+        "2023-12-01",
+        "2024-03-01"
+      ],
+      "excluded_latest_decision": "2024-06-03",
+      "excluded_latest_label_end": "2024-09-03",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "SPY",
+      "forecast_date": "2024-12-02",
+      "nominal_validation_start": "2023-12-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1509,
+      "validation_decisions": [
+        "2023-12-01",
+        "2024-03-01",
+        "2024-06-03"
+      ],
+      "excluded_latest_decision": "2024-09-03",
+      "excluded_latest_label_end": "2024-12-02",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "SPY",
+      "forecast_date": "2025-03-03",
+      "nominal_validation_start": "2024-03-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1509,
+      "validation_decisions": [
+        "2024-03-01",
+        "2024-06-03",
+        "2024-09-03"
+      ],
+      "excluded_latest_decision": "2024-12-02",
+      "excluded_latest_label_end": "2025-03-03",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "SPY",
+      "forecast_date": "2025-06-02",
+      "nominal_validation_start": "2024-06-03",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1509,
+      "validation_decisions": [
+        "2024-06-03",
+        "2024-09-03",
+        "2024-12-02"
+      ],
+      "excluded_latest_decision": "2025-03-03",
+      "excluded_latest_label_end": "2025-06-02",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "SPY",
+      "forecast_date": "2025-09-02",
+      "nominal_validation_start": "2024-09-03",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1509,
+      "validation_decisions": [
+        "2024-09-03",
+        "2024-12-02",
+        "2025-03-03"
+      ],
+      "excluded_latest_decision": "2025-06-02",
+      "excluded_latest_label_end": "2025-09-02",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "QQQ",
+      "forecast_date": "2020-06-01",
+      "nominal_validation_start": "2019-06-03",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1516,
+      "validation_decisions": [
+        "2019-06-03",
+        "2019-09-03",
+        "2019-12-02"
+      ],
+      "excluded_latest_decision": "2020-03-02",
+      "excluded_latest_label_end": "2020-06-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "QQQ",
+      "forecast_date": "2020-09-01",
+      "nominal_validation_start": "2019-09-03",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1515,
+      "validation_decisions": [
+        "2019-09-03",
+        "2019-12-02",
+        "2020-03-02"
+      ],
+      "excluded_latest_decision": "2020-06-01",
+      "excluded_latest_label_end": "2020-09-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "QQQ",
+      "forecast_date": "2020-12-01",
+      "nominal_validation_start": "2019-12-02",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1515,
+      "validation_decisions": [
+        "2019-12-02",
+        "2020-03-02",
+        "2020-06-01"
+      ],
+      "excluded_latest_decision": "2020-09-01",
+      "excluded_latest_label_end": "2020-12-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "QQQ",
+      "forecast_date": "2021-03-01",
+      "nominal_validation_start": "2020-03-02",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1515,
+      "validation_decisions": [
+        "2020-03-02",
+        "2020-06-01",
+        "2020-09-01"
+      ],
+      "excluded_latest_decision": "2020-12-01",
+      "excluded_latest_label_end": "2021-03-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "QQQ",
+      "forecast_date": "2021-06-01",
+      "nominal_validation_start": "2020-06-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1515,
+      "validation_decisions": [
+        "2020-06-01",
+        "2020-09-01",
+        "2020-12-01"
+      ],
+      "excluded_latest_decision": "2021-03-01",
+      "excluded_latest_label_end": "2021-06-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "QQQ",
+      "forecast_date": "2021-09-01",
+      "nominal_validation_start": "2020-09-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1515,
+      "validation_decisions": [
+        "2020-09-01",
+        "2020-12-01",
+        "2021-03-01"
+      ],
+      "excluded_latest_decision": "2021-06-01",
+      "excluded_latest_label_end": "2021-09-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "QQQ",
+      "forecast_date": "2021-12-01",
+      "nominal_validation_start": "2020-12-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1515,
+      "validation_decisions": [
+        "2020-12-01",
+        "2021-03-01",
+        "2021-06-01"
+      ],
+      "excluded_latest_decision": "2021-09-01",
+      "excluded_latest_label_end": "2021-12-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "QQQ",
+      "forecast_date": "2022-03-01",
+      "nominal_validation_start": "2021-03-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1515,
+      "validation_decisions": [
+        "2021-03-01",
+        "2021-06-01",
+        "2021-09-01"
+      ],
+      "excluded_latest_decision": "2021-12-01",
+      "excluded_latest_label_end": "2022-03-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "QQQ",
+      "forecast_date": "2022-06-01",
+      "nominal_validation_start": "2021-06-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1515,
+      "validation_decisions": [
+        "2021-06-01",
+        "2021-09-01",
+        "2021-12-01"
+      ],
+      "excluded_latest_decision": "2022-03-01",
+      "excluded_latest_label_end": "2022-06-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "QQQ",
+      "forecast_date": "2022-09-01",
+      "nominal_validation_start": "2021-09-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1514,
+      "validation_decisions": [
+        "2021-09-01",
+        "2021-12-01",
+        "2022-03-01"
+      ],
+      "excluded_latest_decision": "2022-06-01",
+      "excluded_latest_label_end": "2022-09-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "QQQ",
+      "forecast_date": "2022-12-01",
+      "nominal_validation_start": "2021-12-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1513,
+      "validation_decisions": [
+        "2021-12-01",
+        "2022-03-01",
+        "2022-06-01"
+      ],
+      "excluded_latest_decision": "2022-09-01",
+      "excluded_latest_label_end": "2022-12-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "QQQ",
+      "forecast_date": "2023-03-01",
+      "nominal_validation_start": "2022-03-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1511,
+      "validation_decisions": [
+        "2022-03-01",
+        "2022-06-01",
+        "2022-09-01"
+      ],
+      "excluded_latest_decision": "2022-12-01",
+      "excluded_latest_label_end": "2023-03-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "QQQ",
+      "forecast_date": "2023-06-01",
+      "nominal_validation_start": "2022-06-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1509,
+      "validation_decisions": [
+        "2022-06-01",
+        "2022-09-01",
+        "2022-12-01"
+      ],
+      "excluded_latest_decision": "2023-03-01",
+      "excluded_latest_label_end": "2023-06-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "QQQ",
+      "forecast_date": "2023-09-01",
+      "nominal_validation_start": "2022-09-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1508,
+      "validation_decisions": [
+        "2022-09-01",
+        "2022-12-01",
+        "2023-03-01"
+      ],
+      "excluded_latest_decision": "2023-06-01",
+      "excluded_latest_label_end": "2023-09-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "QQQ",
+      "forecast_date": "2023-12-01",
+      "nominal_validation_start": "2022-12-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1508,
+      "validation_decisions": [
+        "2022-12-01",
+        "2023-03-01",
+        "2023-06-01"
+      ],
+      "excluded_latest_decision": "2023-09-01",
+      "excluded_latest_label_end": "2023-12-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "QQQ",
+      "forecast_date": "2024-03-01",
+      "nominal_validation_start": "2023-03-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1509,
+      "validation_decisions": [
+        "2023-03-01",
+        "2023-06-01",
+        "2023-09-01"
+      ],
+      "excluded_latest_decision": "2023-12-01",
+      "excluded_latest_label_end": "2024-03-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "QQQ",
+      "forecast_date": "2024-06-03",
+      "nominal_validation_start": "2023-06-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1509,
+      "validation_decisions": [
+        "2023-06-01",
+        "2023-09-01",
+        "2023-12-01"
+      ],
+      "excluded_latest_decision": "2024-03-01",
+      "excluded_latest_label_end": "2024-06-03",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "QQQ",
+      "forecast_date": "2024-09-03",
+      "nominal_validation_start": "2023-09-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1509,
+      "validation_decisions": [
+        "2023-09-01",
+        "2023-12-01",
+        "2024-03-01"
+      ],
+      "excluded_latest_decision": "2024-06-03",
+      "excluded_latest_label_end": "2024-09-03",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "QQQ",
+      "forecast_date": "2024-12-02",
+      "nominal_validation_start": "2023-12-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1509,
+      "validation_decisions": [
+        "2023-12-01",
+        "2024-03-01",
+        "2024-06-03"
+      ],
+      "excluded_latest_decision": "2024-09-03",
+      "excluded_latest_label_end": "2024-12-02",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "QQQ",
+      "forecast_date": "2025-03-03",
+      "nominal_validation_start": "2024-03-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1509,
+      "validation_decisions": [
+        "2024-03-01",
+        "2024-06-03",
+        "2024-09-03"
+      ],
+      "excluded_latest_decision": "2024-12-02",
+      "excluded_latest_label_end": "2025-03-03",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "QQQ",
+      "forecast_date": "2025-06-02",
+      "nominal_validation_start": "2024-06-03",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1509,
+      "validation_decisions": [
+        "2024-06-03",
+        "2024-09-03",
+        "2024-12-02"
+      ],
+      "excluded_latest_decision": "2025-03-03",
+      "excluded_latest_label_end": "2025-06-02",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "QQQ",
+      "forecast_date": "2025-09-02",
+      "nominal_validation_start": "2024-09-03",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1509,
+      "validation_decisions": [
+        "2024-09-03",
+        "2024-12-02",
+        "2025-03-03"
+      ],
+      "excluded_latest_decision": "2025-06-02",
+      "excluded_latest_label_end": "2025-09-02",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "absolute",
+      "forecast_date": "2020-06-01",
+      "nominal_validation_start": "2019-06-03",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1516,
+      "validation_decisions": [
+        "2019-06-03",
+        "2019-09-03",
+        "2019-12-02"
+      ],
+      "excluded_latest_decision": "2020-03-02",
+      "excluded_latest_label_end": "2020-06-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "absolute",
+      "forecast_date": "2020-09-01",
+      "nominal_validation_start": "2019-09-03",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1515,
+      "validation_decisions": [
+        "2019-09-03",
+        "2019-12-02",
+        "2020-03-02"
+      ],
+      "excluded_latest_decision": "2020-06-01",
+      "excluded_latest_label_end": "2020-09-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "absolute",
+      "forecast_date": "2020-12-01",
+      "nominal_validation_start": "2019-12-02",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1515,
+      "validation_decisions": [
+        "2019-12-02",
+        "2020-03-02",
+        "2020-06-01"
+      ],
+      "excluded_latest_decision": "2020-09-01",
+      "excluded_latest_label_end": "2020-12-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "absolute",
+      "forecast_date": "2021-03-01",
+      "nominal_validation_start": "2020-03-02",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1515,
+      "validation_decisions": [
+        "2020-03-02",
+        "2020-06-01",
+        "2020-09-01"
+      ],
+      "excluded_latest_decision": "2020-12-01",
+      "excluded_latest_label_end": "2021-03-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "absolute",
+      "forecast_date": "2021-06-01",
+      "nominal_validation_start": "2020-06-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1515,
+      "validation_decisions": [
+        "2020-06-01",
+        "2020-09-01",
+        "2020-12-01"
+      ],
+      "excluded_latest_decision": "2021-03-01",
+      "excluded_latest_label_end": "2021-06-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "absolute",
+      "forecast_date": "2021-09-01",
+      "nominal_validation_start": "2020-09-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1515,
+      "validation_decisions": [
+        "2020-09-01",
+        "2020-12-01",
+        "2021-03-01"
+      ],
+      "excluded_latest_decision": "2021-06-01",
+      "excluded_latest_label_end": "2021-09-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "absolute",
+      "forecast_date": "2021-12-01",
+      "nominal_validation_start": "2020-12-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1515,
+      "validation_decisions": [
+        "2020-12-01",
+        "2021-03-01",
+        "2021-06-01"
+      ],
+      "excluded_latest_decision": "2021-09-01",
+      "excluded_latest_label_end": "2021-12-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "absolute",
+      "forecast_date": "2022-03-01",
+      "nominal_validation_start": "2021-03-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1515,
+      "validation_decisions": [
+        "2021-03-01",
+        "2021-06-01",
+        "2021-09-01"
+      ],
+      "excluded_latest_decision": "2021-12-01",
+      "excluded_latest_label_end": "2022-03-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "absolute",
+      "forecast_date": "2022-06-01",
+      "nominal_validation_start": "2021-06-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1515,
+      "validation_decisions": [
+        "2021-06-01",
+        "2021-09-01",
+        "2021-12-01"
+      ],
+      "excluded_latest_decision": "2022-03-01",
+      "excluded_latest_label_end": "2022-06-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "absolute",
+      "forecast_date": "2022-09-01",
+      "nominal_validation_start": "2021-09-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1514,
+      "validation_decisions": [
+        "2021-09-01",
+        "2021-12-01",
+        "2022-03-01"
+      ],
+      "excluded_latest_decision": "2022-06-01",
+      "excluded_latest_label_end": "2022-09-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "absolute",
+      "forecast_date": "2022-12-01",
+      "nominal_validation_start": "2021-12-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1513,
+      "validation_decisions": [
+        "2021-12-01",
+        "2022-03-01",
+        "2022-06-01"
+      ],
+      "excluded_latest_decision": "2022-09-01",
+      "excluded_latest_label_end": "2022-12-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "absolute",
+      "forecast_date": "2023-03-01",
+      "nominal_validation_start": "2022-03-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1511,
+      "validation_decisions": [
+        "2022-03-01",
+        "2022-06-01",
+        "2022-09-01"
+      ],
+      "excluded_latest_decision": "2022-12-01",
+      "excluded_latest_label_end": "2023-03-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "absolute",
+      "forecast_date": "2023-06-01",
+      "nominal_validation_start": "2022-06-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1509,
+      "validation_decisions": [
+        "2022-06-01",
+        "2022-09-01",
+        "2022-12-01"
+      ],
+      "excluded_latest_decision": "2023-03-01",
+      "excluded_latest_label_end": "2023-06-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "absolute",
+      "forecast_date": "2023-09-01",
+      "nominal_validation_start": "2022-09-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1508,
+      "validation_decisions": [
+        "2022-09-01",
+        "2022-12-01",
+        "2023-03-01"
+      ],
+      "excluded_latest_decision": "2023-06-01",
+      "excluded_latest_label_end": "2023-09-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "absolute",
+      "forecast_date": "2023-12-01",
+      "nominal_validation_start": "2022-12-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1508,
+      "validation_decisions": [
+        "2022-12-01",
+        "2023-03-01",
+        "2023-06-01"
+      ],
+      "excluded_latest_decision": "2023-09-01",
+      "excluded_latest_label_end": "2023-12-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "absolute",
+      "forecast_date": "2024-03-01",
+      "nominal_validation_start": "2023-03-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1509,
+      "validation_decisions": [
+        "2023-03-01",
+        "2023-06-01",
+        "2023-09-01"
+      ],
+      "excluded_latest_decision": "2023-12-01",
+      "excluded_latest_label_end": "2024-03-01",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "absolute",
+      "forecast_date": "2024-06-03",
+      "nominal_validation_start": "2023-06-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1509,
+      "validation_decisions": [
+        "2023-06-01",
+        "2023-09-01",
+        "2023-12-01"
+      ],
+      "excluded_latest_decision": "2024-03-01",
+      "excluded_latest_label_end": "2024-06-03",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "absolute",
+      "forecast_date": "2024-09-03",
+      "nominal_validation_start": "2023-09-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1509,
+      "validation_decisions": [
+        "2023-09-01",
+        "2023-12-01",
+        "2024-03-01"
+      ],
+      "excluded_latest_decision": "2024-06-03",
+      "excluded_latest_label_end": "2024-09-03",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "absolute",
+      "forecast_date": "2024-12-02",
+      "nominal_validation_start": "2023-12-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1509,
+      "validation_decisions": [
+        "2023-12-01",
+        "2024-03-01",
+        "2024-06-03"
+      ],
+      "excluded_latest_decision": "2024-09-03",
+      "excluded_latest_label_end": "2024-12-02",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "absolute",
+      "forecast_date": "2025-03-03",
+      "nominal_validation_start": "2024-03-01",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1509,
+      "validation_decisions": [
+        "2024-03-01",
+        "2024-06-03",
+        "2024-09-03"
+      ],
+      "excluded_latest_decision": "2024-12-02",
+      "excluded_latest_label_end": "2025-03-03",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "absolute",
+      "forecast_date": "2025-06-02",
+      "nominal_validation_start": "2024-06-03",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1509,
+      "validation_decisions": [
+        "2024-06-03",
+        "2024-09-03",
+        "2024-12-02"
+      ],
+      "excluded_latest_decision": "2025-03-03",
+      "excluded_latest_label_end": "2025-06-02",
+      "recorded_validation_key_hash_matches": true
+    },
+    {
+      "target": "absolute",
+      "forecast_date": "2025-09-02",
+      "nominal_validation_start": "2024-09-03",
+      "nominal_decision_quarters": 4,
+      "realized_validation_quarters": 3,
+      "validation_rows": 1509,
+      "validation_decisions": [
+        "2024-09-03",
+        "2024-12-02",
+        "2025-03-03"
+      ],
+      "excluded_latest_decision": "2025-06-02",
+      "excluded_latest_label_end": "2025-09-02",
+      "recorded_validation_key_hash_matches": true
+    }
+  ],
+  "trainer_structure_unchanged_except_descriptive_strings": true,
+  "existing_result_CSVs_unchanged": 186
+}

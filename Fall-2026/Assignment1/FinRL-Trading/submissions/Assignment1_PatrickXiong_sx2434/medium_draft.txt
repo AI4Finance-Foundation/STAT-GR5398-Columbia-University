@@ -1,0 +1,50 @@
+FinRL stock selection: a WRDS replay of index enhancement and active portfolios
+Patrick Xiong (sx2434), Columbia STAT 5398 - October 12, 2026
+
+I ran the original FinRL Trading notebook workflow on prepared inputs and then examined whether its stock forecasts could improve a tradable historical portfolio. The course's original equal-weight result was far below the index. My follow-up changed both the signal and the data preparation. The final experiment uses six prior-price features and a common WRDS/CRSP dataset for SPY enhancement, QQQ enhancement and active stock selection.
+
+The main result
+
+From May 1, 2020 to September 30, 2025, the validation-selected 80% QQQ/20% stock portfolio returned 204.45% after trading costs, compared with QQQ 191.86% and SPY 154.91%. Its CAGR was 22.82%, volatility 22.39%, Sharpe 1.033 (zero risk-free rate) and maximum drawdown 33.05%. Annual two-sided turnover was 164.09%. With fees doubled to 20 bps per traded dollar and execution delayed one market session, cumulative return was 198.57%, still above QQQ.
+
+The selected stock sleeve uses historical S&P 500 members. It is not a historical Nasdaq 100 constituent strategy. The ETF core supplies QQQ exposure; the 20% active sleeve selects the top 5% of eligible S&P 500 stocks, 26 names per quarter, equally weighted. All portfolios have the same historical window. Hybrids hold the ETF before the first June 1 forecast; active portfolios hold cash until then.
+
+Same inputs, different questions
+
+The data contain 705 historical security PERMNOs and 20,675 stock-quarter cases across 41 decisions. Each target shares exactly the same sample keys, six feature vectors and learning partitions. Features are 21/63/126/252-session log momentum, 63-session volatility and 126-session drawdown, using only observations strictly before the decision. Missing features are retained using training-only medians and missing indicators. No financial values, ticker, security identifiers or future listing information enter a fitted model.
+
+The SPY target predicts next-quarter log stock wealth minus log SPY wealth. The QQQ target substitutes QQQ at identical endpoints. The absolute-target diagnostic predicts stock wealth alone. These are separate fits, not an ETF swap applied to identical predictions. RF averages eleven fixed seeds; XGBoost and LightGBM use fixed candidates. The nominal validation span contains four decision quarters; only three completed quarters enter validation. The latest quarter ends on the forecast date, so its closing outcome is excluded. Purged past-quarter validation MSE selects the model family. QQQ family winners were RF 15, XGBoost 6 and LightGBM 1 over 22 forecast windows, with 286 fitted estimators.
+
+What active selection showed
+
+Using the validation-selected QQQ forecasts with no ETF core returned 192.04%, slightly above QQQ, but volatility rose to 29.26% and Sharpe fell to 0.823. Its 20 bps/delay stress result was 166.18%. The SPY enhancement returned 159.39%, slightly above SPY; the corresponding SPY-target active sleeve returned 144.76%. Retraining an absolute-return model for a top 10% active portfolio returned 141.82% and did not improve the result.
+
+There is a stronger active-stock comparator: always use the RF ensemble trained on QQQ-relative returns. Its top 5% portfolio returned 214.29%, the highest cumulative return displayed, and 201.03% under the combined cost/delay stress. It also had 29.38% volatility, Sharpe 0.868 and 670.17% annual two-sided turnover. The validation-selected QQQ hybrid therefore has lower return than this comparator but substantially lower volatility and turnover and a higher Sharpe. Highest return and best risk-adjusted performance are different comparisons. The RF-only rule was a declared comparator; it is not relabeled as a past-validation-selected winner.
+
+Replacing mixed-source data with CRSP
+
+The earlier prototype combined Yahoo, Tiingo and archival prices with transaction documents and manual patches. Its QQQ enhancement return 204.27% is superseded by the 204.45% WRDS replay. CRSP provides permanent identifiers, effective historical index spells, total returns and terminal-event records under a consistent schema. Some old successor-share carry positions were replaced by event-to-cash accounting, so not every numerical change is a data-quality effect alone.
+
+Proving the implemented sample and clock controls
+
+An incorrect September 30, 2025-only index screen would delete 205 historical security IDs and 3,351 stock-quarter rows. Our dated sample retains them. It also retains 119 historical securities with terminal events and 1,650 of their member-quarter records. SIVB, SBNY and FRC have observed failure-quarter labels rather than disappearing from training. Every one of 11,083 forecast cases stays in each target, including missing-feature and censored cases.
+
+Deleting future membership records does not change any historical decision universe. Deleting future raw observations before feature construction leaves all 20,675 feature vectors unchanged. Actual fit/score/predict keys, label availability and train-only medians are checked. Poisoning future labels and status information does not change admitted learning values or inference matrices. A deliberately leaky global-median negative control is detected. If an eligible SIVB failure label is deliberately removed, the trainer stops instead of silently dropping the failed stock.
+
+There are 20,169 eligible observed outcomes. The other 506 cases comprise 503 right-censored last-quarter outcomes, two unknown complete CVR values (ABMD/WBA), and INFO without an executable starting quote. They remain forecasts. Eligibility is based on observed starting quotes and already-public rights terms; it does not inspect eventual survival. The developed rights rule is nonexhaustive, and unknown CVR values are never assigned an invented zero payoff.
+
+Corporate-action returns are counted once and recognized when the source quote/payment becomes observable. Frozen unquoted positions cannot be sold prematurely. Unknown held proceeds and unresolved held returns stop the replay. A separate dollar-position ledger reconstructed 21 QQQ experiment portfolios over 1,361 dates to within 3.24e-14, while 20,169 QQQ-relative labels reconstructed from raw stock/ETF returns to within 1.78e-15.
+
+Point-in-time preparation excludes 110 of 815 exported stock PERMNOs that never belong at the 41 decisions. Among 27,643 positive-close, active-status stock-quarter candidates, membership removes 6,969 non-member rows and keeps 20,674. INFO's one no-start-quote member case is retained separately, giving 20,675 total cases.
+
+Robustness and limits
+
+All 11 fixed-family seed variants exceed QQQ, with cumulative returns 197.47%-209.08%. Model family choices stay fixed during this diagnostic; no winning seed is chosen by final NAV. Selected-model tree importance was largest for 21-session momentum 24.2%, 252-session momentum 22.8% and 63-session volatility 19.9%. These describe fitted trees, not causal drivers.
+
+The finite checks support avoiding current-survivor filtering and future-observation/label leakage in the implemented pipeline, conditional on the dated source records. They do not reconstruct every original CRSP release vintage or every index-membership announcement timestamp. Strategy and target choices used an already-examined historical sample, so this is development evidence, not an untouched holdout or demonstrated statistical alpha. A read-only Claude Opus 5.5 audit (October 12, 2026) rebuilt the universe, labels, features, fit partitions and NAVs from the frozen inputs and re-ran the packaged non-training scripts. It did not refit models or certify CRSP release vintages.
+
+Reproduction
+
+The submission folder contains code, small result files, model/clock witnesses, an executed review notebook and the PDF report. Licensed raw WRDS data, prepared panels and fitted weights remain outside the source archive. Exact WRDS query fields, dates, identifier lists and hashes are documented. A clean-clone replay rebuilds common preparation and separately trains each target. The next evaluation should freeze the specification before a new period and test more realistic tradable fills.
+
+Sources: Fall-2026 STAT 5398 FinRL assignment; AI 4 Finance-Foundation/FinRL-Trading; WRDS CRSP annual CIZ 2025 daily-stock, names, delisting and historical S&P 500 exports; CRSP daily-delisting conventions; ABMD and WBA dated public-term evidence. Exact links and queries are in the accompanying README/data_access files.
