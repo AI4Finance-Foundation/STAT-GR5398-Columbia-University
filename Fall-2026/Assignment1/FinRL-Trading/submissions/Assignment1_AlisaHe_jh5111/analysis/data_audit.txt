@@ -1,0 +1,27 @@
+Constituents file last date: 2026-04-17
+Tickers in sample: 674, not in the index on the last date: 184
+Examples of tickers that left the index but stay in sample (last quarter in sample):
+tic
+BRCM   2015-06-30
+ARG    2015-09-30
+GMCR   2015-09-30
+CAM    2015-09-30
+CVC    2015-12-31
+CPGX   2015-12-31
+THC    2016-03-31
+HOT    2016-03-31
+STJ    2016-06-30
+LM     2016-09-30
+WFM    2016-09-30
+LLTC   2016-09-30
+OI     2016-09-30
+PBI    2016-12-31
+URBN   2016-12-31
+
+Filing lag (reportdate - quarter end): median 33d, min -90d, max 287d, share <=0: 0.1297
+Equal-weight universe, intraday : cumulative NAV 1.26
+Equal-weight universe, c2c      : cumulative NAV 2.78
+
+Tickers with predictions: 674; with price data: 501; without price data: 173
+Baseline weight on tickers without prices (return silently = 0): mean 10.88%, max 20.35%
+Examples: ['AAL', 'AAP', 'ABC', 'ABMD', 'ADS', 'AET', 'AGN', 'AIV', 'ALK', 'ALXN', 'AMG', 'AMTM', 'AN', 'ANSS', 'ANTM', 'ARG', 'ARNC', 'ATVI', 'AYI', 'BBBY']

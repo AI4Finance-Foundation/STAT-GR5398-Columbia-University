@@ -1,0 +1,29 @@
+Best-model wins per rolling window:
+ model_name  xgb  rf  gbm
+sector10     11   7    4
+sector15     11   3    7
+sector20     10   9    3
+sector25     12   2    8
+sector30      6   9    7
+sector35      8   8    6
+sector40      4  12    6
+sector45      8  11    3
+sector50     13   5    4
+sector55      4   8    7
+sector60      6  11    5
+TOTAL        93  85   60 
+
+course model (selected per window): matched 10731 predictions | quarterly rank IC mean 0.004, std 0.144, t-stat 0.13, positive in 59% of 22 quarters | top quartile minus universe 0.31%/quarter, positive in 68%
+signal used: mean of RF / XGB / LightGBM: matched 10731 predictions | quarterly rank IC mean 0.020, std 0.154, t-stat 0.62, positive in 59% of 22 quarters | top quartile minus universe 0.54%/quarter, positive in 68%
+
+Top-10 features by XGBoost gain (pooled, trained on quarters before 2020-06-30):
+inventory_turnover         2.5%
+pb                         2.4%
+debt_to_mktcap             2.3%
+st_ocf_coverage            2.3%
+pretax_margin              2.3%
+interest_debt_per_share    2.2%
+revenue_per_share          2.2%
+price_to_ocf               2.2%
+lt_debt_to_capital         2.2%
+ocf_to_sales               2.2%
