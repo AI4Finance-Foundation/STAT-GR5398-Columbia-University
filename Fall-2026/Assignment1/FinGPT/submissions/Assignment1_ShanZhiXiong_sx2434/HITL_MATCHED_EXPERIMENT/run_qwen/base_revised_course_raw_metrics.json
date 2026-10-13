@@ -1,0 +1,62 @@
+{
+  "samples": 6,
+  "course_reference_metrics": {
+    "valid_count": 5,
+    "bin_acc": 0.2,
+    "mse": 7.6,
+    "pros_rouge_scores": {
+      "rouge1": 0.390848942296192,
+      "rouge2": 0.14577992223983385,
+      "rougeL": 0.2546549043552884
+    },
+    "cons_rouge_scores": {
+      "rouge1": 0.342463026569854,
+      "rouge2": 0.08953958927871972,
+      "rougeL": 0.22400752406552513
+    },
+    "anal_rouge_scores": {
+      "rouge1": 0.39778402673135127,
+      "rouge2": 0.07611225825106116,
+      "rougeL": 0.18891522725177018
+    }
+  },
+  "course_valid_fraction": 0.8333333333333334,
+  "dataset_label_metrics": {
+    "valid_direction_count": 5,
+    "correct_count": 1,
+    "accuracy_all_invalid_as_wrong": 0.16666666666666666,
+    "accuracy_valid_only": 0.2,
+    "balanced_accuracy_all_invalid_as_wrong": 0.125,
+    "confusion": {
+      "1->1": 1,
+      "-1->1": 2,
+      "1->-1": 2,
+      "1->None": 1
+    }
+  },
+  "output_metrics": {
+    "complete_count": 5,
+    "complete_fraction": 0.8333333333333334,
+    "length_limit_count": 0
+  },
+  "output_diagnostics": {
+    "nonempty_count": 6,
+    "natural_eos_count": 6,
+    "length_limit_count": 0,
+    "normalized_structure_count": 6,
+    "normalized_complete_count": 6,
+    "normalized_valid_direction_count": 6,
+    "normalized_correct_count": 1,
+    "normalized_accuracy_all_invalid_as_wrong": 0.16666666666666666,
+    "normalized_accuracy_valid_only": 0.16666666666666666,
+    "note": "Supplemental heading normalization and final-prediction direction extraction; original course scores remain unchanged. Parsing success is not factual quality."
+  },
+  "inference": {
+    "mean_seconds": 38.65555502784749,
+    "median_seconds": 37.8110616649501,
+    "total_seconds": 231.93333016708493,
+    "total_generated_tokens": 2062,
+    "tokens_per_second_total": 8.890485893142369
+  },
+  "limitation": "Course scores compare parsable reference-answer pairs, including its original range parser; label scores compare dataset labels, not independently fetched returns. ROUGE does not establish factual quality."
+}

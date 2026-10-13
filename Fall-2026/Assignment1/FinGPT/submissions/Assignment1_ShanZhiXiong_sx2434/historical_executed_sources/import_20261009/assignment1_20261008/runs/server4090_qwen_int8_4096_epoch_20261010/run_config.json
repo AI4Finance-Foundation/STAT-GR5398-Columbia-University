@@ -1,0 +1,68 @@
+{
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "protocol": {
+    "models": [
+      "Qwen/Qwen2.5-7B-Instruct",
+      "meta-llama/Llama-3.1-8B",
+      "deepseek-ai/DeepSeek-R1-Distill-Llama-8B"
+    ],
+    "training": {
+      "context_tokens": 4096,
+      "microbatch": 1,
+      "gradient_accumulation": 4,
+      "learning_rate": 0.0002,
+      "lora_r": 8,
+      "lora_alpha": 16,
+      "lora_dropout": 0.05,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "quantization": "LLM.int8 8-bit base; higher-precision compute and LoRA adapters",
+      "epochs": 1,
+      "seed": 42,
+      "lr_scheduler": "cosine",
+      "warmup_ratio": 0.03
+    },
+    "checkpoint_selection": "lowest token-weighted teacher-forced validation cross-entropy over all 240 validation rows; evaluate at half and end of one epoch; ties choose earlier",
+    "training_targets": "full reference answer plus EOS; prompt labels masked; refuse silent answer truncation or sample dropping",
+    "generation": {
+      "validation_diagnostic_samples": 30,
+      "subset_policy": "one sample per company, selected by input-derived sample hash; no labels consulted",
+      "prompt_budget": 384,
+      "max_new_tokens": 640,
+      "do_sample": false
+    },
+    "metrics": [
+      "unmodified course calc_metrics with valid_count",
+      "direction accuracy against dataset label, invalid predictions incorrect",
+      "ROUGE-1/2/L for pros/cons/analysis",
+      "full-output rate",
+      "length-limit rate",
+      "seconds per sample",
+      "peak allocated/reserved VRAM",
+      "WDDM dedicated/shared memory"
+    ],
+    "baselines": "always-up and train-majority direction (selected using training labels only); no claim that either is a validated trading strategy",
+    "test_policy": "do not read/generate test during tuning; final test after all available model configurations freeze; report 300 overall, 20 exposed, 280 not individually inspected separately",
+    "manual_review": "only validation outputs during development; final test error analysis after final metrics, no subsequent tuning reported as held-out performance",
+    "publication": "prepare report/blog draft and submission package; publication/submission requires user identity and explicit destination authorization",
+    "parent_protocol_sha256": "ee0711217ef4fbcd0dc77a2bcccded821423854039e2105bc183ef1b9406e118",
+    "version": "server4090_int8_4096_20261010",
+    "preprocessing": "Retain full reference answer plus EOS; retain original prompt when it fits; otherwise compress news input with no fixed headline/summary token caps."
+  },
+  "fresh_base_no_old_adapter": true,
+  "purpose": "one epoch training with chronological validation; not complete Assignment 1",
+  "max_length": 4096,
+  "quantization_bits": 8,
+  "batch_size": 1,
+  "gradient_accumulation": 4,
+  "learning_rate": 0.0002,
+  "lora_r": 8,
+  "full_answers": true,
+  "test_used": false,
+  "train_sha256": "fb57bafc3f68f958755fd74fc49c5785b1a411fe905c6631b93e27261672c8eb",
+  "validation_sha256": "ef56fd8b567e887d33a5f6c969c9c234a71691d88edf315c52b9f069703227d6",
+  "script_sha256": "8cbf81699cb0535ef2e7ed7963e1ef4e39e196b218ed113352f11ef94103ee43",
+  "steps": 248
+}

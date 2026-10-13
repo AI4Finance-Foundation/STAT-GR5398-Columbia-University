@@ -1,0 +1,86 @@
+{
+  "model": "qwen",
+  "split": "validation",
+  "test_used": false,
+  "reviewed_cases": 4,
+  "selection": "First occurrence of each paired direction outcome in the frozen evaluation order. These are purposeful diagnostic cases, not a random sample or a prevalence estimate.",
+  "scope": "Checked claims against the supplied prompt, not independently sourced market data. No aggregate causal claim about fine-tuning quality.",
+  "source_sha256": {
+    "base": "dca753db187049c123a85b5a6fa3bca3c2e23ec4f1038455f0105b1527ecaaa3",
+    "adapter": "f7602b28f54b1fb7ae60f7a8c463b9a16702e0617b7f490d562a4adac3e54fb4"
+  },
+  "cases": [
+    {
+      "index": 0,
+      "sample_id": "25ef45586d23e6db586e9f86fc01b2cb5e91cdeef61ed821979bbb34396b6ed9",
+      "symbol": "AAPL",
+      "period": "2024-02-18 to 2024-02-25",
+      "label": "up by 0-1%",
+      "category": "both_wrong",
+      "prediction_fields": {
+        "base": "Down by 3-5%.",
+        "adapter": "Down by 0-1%"
+      },
+      "finding": "Both models predict down, whereas the dataset label is up 0-1%. The adapter describes the payout ratio as high, although the supplied value is 0.1495, and calls liquidity good without a benchmark despite cashRatio 0.30424. These interpretations need support; fluent three-part structure does not verify them.",
+      "prompt_sha256": "11a9802a206867422bd8b9fa55d9eb19a6908f95ac37f90996b736cd085156e0",
+      "output_sha256": {
+        "base": "a898045cbc9f3e6c0f466edd3e1f7c7e32799a3264694857453803a57710cc5e",
+        "adapter": "c677d909841d848bb3ca33e33e1805bb25872e17f1aeb2fd5c350af427ef9808"
+      }
+    },
+    {
+      "index": 1,
+      "sample_id": "111d91857d0c30f654f7d01fd188027e0626c5ca6d30d1bccecc790c447cc35b",
+      "symbol": "AMGN",
+      "period": "2024-01-28 to 2024-02-04",
+      "label": "up by 3-4%",
+      "category": "both_right",
+      "prediction_fields": {
+        "base": "Up by 1-3% by 2024-02-04.",
+        "adapter": "Up by 1-2%"
+      },
+      "finding": "Both models predict up, but neither matches the label range up 3-4% (base up 1-3%, adapter up 1-2%). The base associates healthcare partnerships with Amgen, while the supplied partnership headline concerns Nvidia. The adapter avoids that attribution, but its low-cash-ratio interpretation remains unsupported by a stated benchmark.",
+      "prompt_sha256": "6c50d6371cf71e32905637f7cbf833b404e407c5a1fe5b61f36415b0dd42319e",
+      "output_sha256": {
+        "base": "bfb6f1b9b94214c23b9df5bc1508468e2ce0a394832527e398badc342524696d",
+        "adapter": "ebe92b4491546c44ef52dd96edfc3efc726e375edb75ff3044f31e9fbb063f19"
+      }
+    },
+    {
+      "index": 2,
+      "sample_id": "01a6772728064253c5de175bcdacbcf8051e2793a63747446dc5f4ce6fcb2544",
+      "symbol": "AXP",
+      "period": "2024-01-21 to 2024-01-28",
+      "label": "up by more than 5%",
+      "category": "improved",
+      "prediction_fields": {
+        "base": "Down by 1-3%.",
+        "adapter": "Up by 0-1%"
+      },
+      "finding": "The adapter changes the base down prediction to up, matching direction. Its up 0-1% still misses the label up more than 5%. A direction match must not be described as an accurate return magnitude. The sale and Buffett portfolio references are present in the input.",
+      "prompt_sha256": "f681a2a2c133a8bba97a2646e7c133fd5b20f29c7a10cd47757deac1671b2745",
+      "output_sha256": {
+        "base": "a15c8df138740da97126bd67e98e5c9dcddaf48015b09a7885629db8c3aa3ab9",
+        "adapter": "b40d092fe6e892652637e8634ef9f55c3e4ba2cf54881ece4adedc3ab0778be5"
+      }
+    },
+    {
+      "index": 5,
+      "sample_id": "1a2ca384423c754ea665e09baf3b7a71a5bdbb53084cd15982da7c0c72b549f9",
+      "symbol": "CRM",
+      "period": "2023-12-31 to 2024-01-07",
+      "label": "down by 4-5%",
+      "category": "regressed",
+      "prediction_fields": {
+        "base": "Down by 1-2%.",
+        "adapter": "Up by 0-1%"
+      },
+      "finding": "The base down prediction matches direction; the adapter switches to up although the label is down 4-5%. The adapter says the AI app was upgraded by Morgan Stanley, whereas the supplied summary says Morgan Stanley upgraded the stock rating to overweight. Its high-debt claim uses longtermDebtTotalAsset 0.0926 without a stated benchmark; the new-product claim is supported by the input headline summary.",
+      "prompt_sha256": "3e08cd1f3e4a4b5c9fe9486138ec96a178338075f9e3080eac72c9603f1f8b32",
+      "output_sha256": {
+        "base": "f9dc2e8bed2ad750182edb5e4b0a7571a61b9e9c126e2c8467a774b9879291b8",
+        "adapter": "7792f01cba53ffec6f506164fa04c2e9e4dd48608bc0b195e6715ebda201b755"
+      }
+    }
+  ]
+}

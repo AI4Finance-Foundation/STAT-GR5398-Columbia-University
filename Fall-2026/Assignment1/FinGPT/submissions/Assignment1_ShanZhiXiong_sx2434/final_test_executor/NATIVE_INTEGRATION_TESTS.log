@@ -1,0 +1,21 @@
+test_hard_budget_aborts_before_all_children (test_worker_integration.Integration.test_hard_budget_aborts_before_all_children) ... ok
+test_mixed_length_partition_order (test_worker_integration.Integration.test_mixed_length_partition_order) ... ok
+test_optimized_interpreter_rejected_before_authorization (test_worker_integration.Integration.test_optimized_interpreter_rejected_before_authorization) ... ok
+test_over_envelope_uses_single_row_without_filtering (test_worker_integration.Integration.test_over_envelope_uses_single_row_without_filtering) ... ok
+test_parent_three_child_lifecycle_and_every_boundary_receipt (test_worker_integration.Integration.test_parent_three_child_lifecycle_and_every_boundary_receipt) ... ok
+test_preflight_failure_precedes_test_access_and_output_creation (test_worker_integration.Integration.test_preflight_failure_precedes_test_access_and_output_creation) ... ok
+test_bad_template_pin (test_authorization_gate.GateTests.test_bad_template_pin) ... ok
+test_changed_auth_bytes (test_authorization_gate.GateTests.test_changed_auth_bytes) ... ok
+test_changed_plan_bytes (test_authorization_gate.GateTests.test_changed_plan_bytes) ... ok
+test_existing_receipt (test_authorization_gate.GateTests.test_existing_receipt) ... ok
+test_exposure_failure_retains_actual_read_receipt (test_authorization_gate.GateTests.test_exposure_failure_retains_actual_read_receipt) ... ok
+test_hash_failure_retains_actual_read_receipt (test_authorization_gate.GateTests.test_hash_failure_retains_actual_read_receipt) ... ok
+test_mismatched_human_scope (test_authorization_gate.GateTests.test_mismatched_human_scope) ... ok
+test_missing_auth (test_authorization_gate.GateTests.test_missing_auth) ... ok
+test_missing_file (test_authorization_gate.GateTests.test_missing_file) ... ok
+test_valid_hydration_preserves_human_message_and_time (test_authorization_gate.GateTests.test_valid_hydration_preserves_human_message_and_time) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 2.100s
+
+OK

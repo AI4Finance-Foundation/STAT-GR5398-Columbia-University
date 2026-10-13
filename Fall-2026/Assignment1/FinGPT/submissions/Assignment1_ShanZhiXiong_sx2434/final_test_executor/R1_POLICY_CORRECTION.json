@@ -1,0 +1,9 @@
+{
+  "choice": "Option2 recommended in independent recheck: predeclare input-length-only batch1 fallback",
+  "rule": "Any over-envelope row makes every row in its original batch generated individually; same precomputed schedule for base and adapter. No filtering, clipping, output-dependent tuning or resume. Hard4224 prompt token limit still fails before any GPU loading.",
+  "normal_synthetic_tests": 16,
+  "new_GPU_work": false,
+  "actual_test_read": false,
+  "v3_unsent_failed_synthetic_attempt_preserved": true,
+  "v4_scheduler_naming_collision_corrected_and_tested": true
+}

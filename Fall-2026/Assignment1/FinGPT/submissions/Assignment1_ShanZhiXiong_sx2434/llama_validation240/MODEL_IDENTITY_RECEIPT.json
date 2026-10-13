@@ -1,0 +1,31 @@
+{
+  "weight_sha256": {
+    "model-00001-of-00004.safetensors": "f8b9704ab09cdeb097aa4a0a24bca96f906eec36bad63ab495bc21475058601b",
+    "model-00002-of-00004.safetensors": "c28b25e7541751056ee126627e007f8d4288319733285e9f7b17b9ff6eb313f0",
+    "model-00003-of-00004.safetensors": "d8e9504dd4e4a146d484c52a97584ec14dac92237c46b064934af67a85e7d383",
+    "model-00004-of-00004.safetensors": "e4486f35c040f683f7d790354f66c169c109eb9fa0954a4a35d7c458a108405d"
+  },
+  "tokenizer_binding": {
+    "model_id": "meta-llama/Llama-3.1-8B",
+    "revision": "d04e592bb4f6aa9cfee91e2e20afa771667e1d4b",
+    "file_sha256": {
+      "tokenizer.json": "76e48799b099d43365bd24ccd8ecc5aedac831718da780552f03b0a6eb4412aa",
+      "tokenizer_config.json": "8004530facf809ac432114de2a4dcc65fcb632da5ec16d666091aeb6a2ee444a"
+    },
+    "bos_token_id": 128000,
+    "eos_token_id": 128001
+  },
+  "selected_checkpoint": {
+    "step": 248,
+    "checkpoint": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/server4090_llama_base_int8_4096_epoch_retrospective_20261012/checkpoints/checkpoint-248",
+    "samples": 240,
+    "supervised_tokens": 91951,
+    "token_weighted_loss": 1.414805189732,
+    "sample_mean_loss": 1.4123329423367976,
+    "seconds": 62.095622579567134,
+    "selection_rule": "minimum full validation token-weighted cross-entropy; earlier checkpoint on tie",
+    "test_used": false
+  },
+  "adapter_sha256": "e4d88dc0562bb72370258cbd2ca80079348d9d645d612283b15a06c7fc373ab9",
+  "test_read": false
+}

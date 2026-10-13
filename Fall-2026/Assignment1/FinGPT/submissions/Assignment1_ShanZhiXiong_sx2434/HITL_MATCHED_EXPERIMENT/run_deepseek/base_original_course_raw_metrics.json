@@ -1,0 +1,43 @@
+{
+  "samples": 6,
+  "course_reference_metrics": {
+    "valid_count": 0
+  },
+  "course_valid_fraction": 0.0,
+  "dataset_label_metrics": {
+    "valid_direction_count": 0,
+    "correct_count": 0,
+    "accuracy_all_invalid_as_wrong": 0.0,
+    "accuracy_valid_only": null,
+    "balanced_accuracy_all_invalid_as_wrong": 0.0,
+    "confusion": {
+      "1->None": 4,
+      "-1->None": 2
+    }
+  },
+  "output_metrics": {
+    "complete_count": 0,
+    "complete_fraction": 0.0,
+    "length_limit_count": 1
+  },
+  "output_diagnostics": {
+    "nonempty_count": 6,
+    "natural_eos_count": 5,
+    "length_limit_count": 1,
+    "normalized_structure_count": 5,
+    "normalized_complete_count": 5,
+    "normalized_valid_direction_count": 5,
+    "normalized_correct_count": 2,
+    "normalized_accuracy_all_invalid_as_wrong": 0.3333333333333333,
+    "normalized_accuracy_valid_only": 0.4,
+    "note": "Supplemental heading normalization and final-prediction direction extraction; original course scores remain unchanged. Parsing success is not factual quality."
+  },
+  "inference": {
+    "mean_seconds": 46.48965986755987,
+    "median_seconds": 46.48965986755987,
+    "total_seconds": 278.9379592053592,
+    "total_generated_tokens": 7656,
+    "tokens_per_second_total": 27.446963553510166
+  },
+  "limitation": "Course scores compare parsable reference-answer pairs, including its original range parser; label scores compare dataset labels, not independently fetched returns. ROUGE does not establish factual quality."
+}

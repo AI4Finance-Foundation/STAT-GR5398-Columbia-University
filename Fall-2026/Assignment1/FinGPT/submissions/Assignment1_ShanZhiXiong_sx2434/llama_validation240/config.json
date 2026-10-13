@@ -1,0 +1,16 @@
+{
+  "model_id": "meta-llama/Llama-3.1-8B",
+  "revision": "d04e592bb4f6aa9cfee91e2e20afa771667e1d4b",
+  "samples": 240,
+  "batch_size": 8,
+  "prefill_chunk_tokens": 512,
+  "max_new_tokens": 1920,
+  "context_tokens": 6144,
+  "adapter_sha256": "e4d88dc0562bb72370258cbd2ca80079348d9d645d612283b15a06c7fc373ab9",
+  "target_policy": "full_reference_plus_eos",
+  "route": "retrospective",
+  "test_read": false,
+  "plan_sha256": "4409db129bd049e4cca3251182a270fb06895bf2bfa3fa4cf4c6dc656349b572",
+  "prompt_policy": "Native BASE: source SYSTEM + double newline + canonical full input + double newline, native BOS; identical training/inference prefix; no clipping",
+  "speed_comparison_claim": false
+}

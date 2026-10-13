@@ -1,0 +1,142 @@
+{
+  "config": {
+    "model_id": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+    "split": "validation",
+    "samples": 240,
+    "do_sample": false,
+    "max_new_tokens": 1920,
+    "canonical_evidence_sha256": "65068c0ce82785beeec2f9884d4d55559e89e72155f5f3b0e06b585a2e8ec29e",
+    "adapter_sha256": "27325b705bb7925706b8c23a00461fd36c746f768e33a157546ba36145f1ba4e",
+    "checkpoint": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/server4090_deepseek_int8_4096_epoch_20261010/checkpoints/checkpoint-248",
+    "prompt_policy": "full frozen240 input; left padding with attention mask; no truncation",
+    "quantization_bits": 8,
+    "max_length": 6144,
+    "test_used": false,
+    "prefill_chunk_tokens": 512,
+    "prefill_policy": "same16 batch; full prompt sequential512 chunks with KV cache, explicit masked position_ids; no truncation",
+    "generation_batch_size": 16,
+    "timing_semantics": "amortized batch seconds per answer; latency separately recorded",
+    "script_sha256": "82268570c4c01291d3537e93cdc8376dda33e851b2bde7d44b67a23d48340383"
+  },
+  "base": {
+    "samples": 240,
+    "course_reference_metrics": {
+      "valid_count": 0
+    },
+    "course_valid_fraction": 0.0,
+    "dataset_label_metrics": {
+      "valid_direction_count": 22,
+      "correct_count": 12,
+      "accuracy_all_invalid_as_wrong": 0.05,
+      "accuracy_valid_only": 0.5454545454545454,
+      "balanced_accuracy_all_invalid_as_wrong": 0.04500907441016334,
+      "confusion": {
+        "1->None": 133,
+        "1->1": 10,
+        "-1->None": 85,
+        "-1->-1": 2,
+        "1->-1": 2,
+        "-1->1": 8
+      }
+    },
+    "output_metrics": {
+      "complete_count": 22,
+      "complete_fraction": 0.09166666666666666,
+      "length_limit_count": 5
+    },
+    "output_diagnostics": {
+      "nonempty_count": 240,
+      "natural_eos_count": 235,
+      "length_limit_count": 5,
+      "normalized_structure_count": 204,
+      "normalized_complete_count": 203,
+      "normalized_valid_direction_count": 201,
+      "normalized_correct_count": 107,
+      "normalized_accuracy_all_invalid_as_wrong": 0.44583333333333336,
+      "normalized_accuracy_valid_only": 0.5323383084577115,
+      "note": "Supplemental heading normalization and final-prediction direction extraction; original course scores remain unchanged. Parsing success is not factual quality."
+    },
+    "inference": {
+      "mean_seconds": 19.460210070514584,
+      "median_seconds": 19.32424412749242,
+      "total_seconds": 4670.450416923501,
+      "total_generated_tokens": 244821,
+      "tokens_per_second_total": 52.41914122733958
+    },
+    "limitation": "Course scores compare parsable reference-answer pairs, including its original range parser; label scores compare dataset labels, not independently fetched returns. ROUGE does not establish factual quality."
+  },
+  "adapter": {
+    "samples": 240,
+    "course_reference_metrics": {
+      "valid_count": 240,
+      "bin_acc": 0.6041666666666666,
+      "mse": 7.508333333333334,
+      "pros_rouge_scores": {
+        "rouge1": 0.4584335070761478,
+        "rouge2": 0.1843966105323465,
+        "rougeL": 0.2892010434856162
+      },
+      "cons_rouge_scores": {
+        "rouge1": 0.41912101831212,
+        "rouge2": 0.15474400800319002,
+        "rougeL": 0.27163784398268276
+      },
+      "anal_rouge_scores": {
+        "rouge1": 0.4484131614777927,
+        "rouge2": 0.14089395995664006,
+        "rougeL": 0.23123510979742212
+      }
+    },
+    "course_valid_fraction": 1.0,
+    "dataset_label_metrics": {
+      "valid_direction_count": 240,
+      "correct_count": 145,
+      "accuracy_all_invalid_as_wrong": 0.6041666666666666,
+      "accuracy_valid_only": 0.6041666666666666,
+      "balanced_accuracy_all_invalid_as_wrong": 0.5453720508166969,
+      "confusion": {
+        "1->-1": 25,
+        "1->1": 120,
+        "-1->-1": 25,
+        "-1->1": 70
+      }
+    },
+    "output_metrics": {
+      "complete_count": 240,
+      "complete_fraction": 1.0,
+      "length_limit_count": 0
+    },
+    "output_diagnostics": {
+      "nonempty_count": 240,
+      "natural_eos_count": 240,
+      "length_limit_count": 0,
+      "normalized_structure_count": 240,
+      "normalized_complete_count": 240,
+      "normalized_valid_direction_count": 240,
+      "normalized_correct_count": 145,
+      "normalized_accuracy_all_invalid_as_wrong": 0.6041666666666666,
+      "normalized_accuracy_valid_only": 0.6041666666666666,
+      "note": "Supplemental heading normalization and final-prediction direction extraction; original course scores remain unchanged. Parsing success is not factual quality."
+    },
+    "inference": {
+      "mean_seconds": 5.303030213399325,
+      "median_seconds": 5.215605403704103,
+      "total_seconds": 1272.727251215838,
+      "total_generated_tokens": 87002,
+      "tokens_per_second_total": 68.35871544110248
+    },
+    "limitation": "Course scores compare parsable reference-answer pairs, including its original range parser; label scores compare dataset labels, not independently fetched returns. ROUGE does not establish factual quality."
+  },
+  "simple_baselines": {
+    "training_direction_counts": {
+      "-1": 448,
+      "0": 0,
+      "1": 542
+    },
+    "train_majority_direction": 1,
+    "always_up_accuracy": 0.6041666666666666,
+    "train_majority_accuracy": 0.6041666666666666
+  },
+  "analysis_quality_requires_manual_review": true,
+  "test_used_for_checkpoint_selection": false
+}

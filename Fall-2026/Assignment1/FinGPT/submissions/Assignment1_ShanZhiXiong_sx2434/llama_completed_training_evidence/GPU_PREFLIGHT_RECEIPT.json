@@ -1,0 +1,50 @@
+{
+  "verified_at_utc": "2026-10-12T07:36:53.231187+00:00",
+  "plan_sha256": "f8c9d2abe365865c0b57fcdcdbaa94336f5d1406aabc0310c580fb8a15475860",
+  "versions": {
+    "torch": "2.7.0a0+7c8ec84dab.nv25.3",
+    "transformers": "4.51.3",
+    "peft": "0.15.2",
+    "accelerate": "1.7.0",
+    "bitsandbytes": "0.47.0",
+    "datasets": "3.6.0"
+  },
+  "weight_sha256": {
+    "model-00001-of-00004.safetensors": "f8b9704ab09cdeb097aa4a0a24bca96f906eec36bad63ab495bc21475058601b",
+    "model-00002-of-00004.safetensors": "c28b25e7541751056ee126627e007f8d4288319733285e9f7b17b9ff6eb313f0",
+    "model-00003-of-00004.safetensors": "d8e9504dd4e4a146d484c52a97584ec14dac92237c46b064934af67a85e7d383",
+    "model-00004-of-00004.safetensors": "e4486f35c040f683f7d790354f66c169c109eb9fa0954a4a35d7c458a108405d"
+  },
+  "tokenizer_binding": {
+    "model_id": "meta-llama/Llama-3.1-8B",
+    "revision": "d04e592bb4f6aa9cfee91e2e20afa771667e1d4b",
+    "file_sha256": {
+      "tokenizer.json": "76e48799b099d43365bd24ccd8ecc5aedac831718da780552f03b0a6eb4412aa",
+      "tokenizer_config.json": "8004530facf809ac432114de2a4dcc65fcb632da5ec16d666091aeb6a2ee444a"
+    },
+    "bos_token_id": 128000,
+    "eos_token_id": 128001
+  },
+  "read_receipts": {
+    "train": {
+      "path": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/data/train_raw.json",
+      "sha256": "e674f87cca770ccb1fb8e7a0f163396133176c2bdcde5a30150d1bbc2aadf82d",
+      "samples": 990,
+      "split": "train",
+      "policy_sha256": "07f202ecc13dd9fbb4c9ecb43b1a0d71e2607f5e7f455e80017827ea1a7be260",
+      "read_at_utc": "2026-10-12T07:36:48.586926+00:00"
+    },
+    "validation": {
+      "path": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/data/validation_raw.json",
+      "sha256": "caf043ee17030629afc18badebcb208ad5bb402428276df8c0da09f65c66e70b",
+      "samples": 240,
+      "split": "validation",
+      "policy_sha256": "07f202ecc13dd9fbb4c9ecb43b1a0d71e2607f5e7f455e80017827ea1a7be260",
+      "read_at_utc": "2026-10-12T07:36:52.347425+00:00"
+    }
+  },
+  "all_full_targets_rechecked": 1230,
+  "test_read": false,
+  "lock_held": true,
+  "free_bytes": 2726297600
+}

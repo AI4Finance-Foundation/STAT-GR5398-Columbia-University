@@ -1,0 +1,158 @@
+{
+  "frozen_at_utc": "2026-10-12T16:26:24.782765+00:00",
+  "run_id": "final_test_retrospective_v4_20261012",
+  "model_keys": [
+    "qwen",
+    "deepseek",
+    "llama"
+  ],
+  "route": "retrospective_original_data",
+  "new_training": false,
+  "output_directory": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/final_test_retrospective_v4_20261012",
+  "test_source": {
+    "path": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/data/test_raw.json",
+    "sha256": "4c0ff02c87a89d3231ba52ffbc44c968991f43a8795c3ea765c9874578b9c5d4",
+    "samples": 300,
+    "previously_inspected_count": 20,
+    "allowed_periods": [
+      "2024-02-25 to 2024-03-03",
+      "2024-03-03 to 2024-03-10",
+      "2024-03-10 to 2024-03-17",
+      "2024-03-17 to 2024-03-24",
+      "2024-03-24 to 2024-03-31",
+      "2024-03-31 to 2024-04-07",
+      "2024-04-07 to 2024-04-14",
+      "2024-04-14 to 2024-04-21",
+      "2024-04-21 to 2024-04-28",
+      "2024-04-28 to 2024-05-05"
+    ],
+    "commitment_basis": "Existing metadata; no new test read. Real exposure flags checked only after separate approval."
+  },
+  "generation": {
+    "context_tokens": 6144,
+    "max_new_tokens": 1920,
+    "do_sample": false,
+    "prefill_chunk_tokens": 512,
+    "batch_sizes": {
+      "qwen": 16,
+      "deepseek": 16,
+      "llama": 8
+    }
+  },
+  "dependency_sha256": {
+    "authorization_gate.py": "7468900b1a68cd17614737d8243f37ff1ca0fd5c09accaec7e14cc53b9b7fc59",
+    "final_test_worker.py": "a8459ff22752d33ca1c4ba5dc9c340b3d505a3fd4a5d9f0eecccd9bfc3d7fab7",
+    "backend_server_chunked_prefill_evaluate.py": "de52239f0b833cef8606b28741f8c8a92d83217f28fde789bfa97f87468b302d",
+    "split_target_contract.py": "2520ea8f0550851de72f963c4029dbe208a97cf1b5b440b77db8b6a98f7a05b1",
+    "SOURCE_POLICY_REMOTE.json": "07f202ecc13dd9fbb4c9ecb43b1a0d71e2607f5e7f455e80017827ea1a7be260",
+    "MODEL_BINDINGS.json": "123495a55ff70c33d899fb2f8345dfaa08357308a16dc02779e05e2e025d8949",
+    "RUNTIME_CORE_BINDINGS.json": "98f8b601de79e3b201bfb2883f9a07b1b19da48f69dca8dc5e5545ed166e352b",
+    "RUNTIME_VERSIONS.json": "4aef0e83d82b174ad61bbe8bc58aaf0aaa23ee93ef6ab5b107094c924b2de943"
+  },
+  "runtime_core_sha256": {
+    "data_processing.py": "fe86f8232e19c2eff23e422ddbcdc89090e82425b58c87c4b0f4817758131f10",
+    "metrics.py": "f3a9833d8808c806085c40a100733416e35288a3d9060c77ff2abc1c318a4d0d",
+    "source_snapshot/course_utils.py": "a65e549300653a8637002dc30c0dd00805ef8e11dffbd25c92087544c3ec72ae"
+  },
+  "runtime_versions": {
+    "python": "3.12.3",
+    "packages": {
+      "torch": "2.7.0a0+7c8ec84dab.nv25.3",
+      "transformers": "4.51.3",
+      "peft": "0.15.2",
+      "bitsandbytes": "0.47.0",
+      "accelerate": "1.7.0",
+      "datasets": "3.6.0",
+      "rouge-score": "0.1.2",
+      "scikit-learn": "1.6.1"
+    }
+  },
+  "metrics": [
+    "Unmodified course raw MSE/bin_acc/9ROUGE+valid_count",
+    "Constant+.5 same-valid-subset baseline",
+    "Final_line_direction_common_v1 invalid as wrong+balanced accuracy",
+    "DeepSeek base exactly-one-closed-think extracted-final separate variant",
+    "EOS/caps/multiple Prediction lines/first-line sensitivity"
+  ],
+  "groups": [
+    "all300",
+    "previously_inspected20",
+    "other280_not_claimed_pristine"
+  ],
+  "training_majority_direction": "up, fixed542/990 train labels",
+  "prompt_policy": "Same native full-input prefix as original validation; no clipping; labels/reference excluded from model inputs",
+  "authorization": "Separate real human approval bound to plan SHA/source SHA/all models/run/time>=freeze; missing flags abort, never guess20 IDs",
+  "policy_hydration": "After approval, deterministic ID policy from committed bytes; truthful materialization time and initial-read receipt; no outcome-based configurations",
+  "execution": "One independent OS process per model; parent owns the same GPU lock across all children, passes the held lock descriptor, verifies each child GPU process exits; no resume or outcome-based tuning. Parent rechecks all model/source/runtime/tokenizer dependencies before first test access. Split canonical cohort into batches16/16/8. If any row in an original batch exceeds its model validation-derived prompt envelope, generate EVERY row in that batch separately at batch1; otherwise retain original batch. Same partition for base/adapter, input length only, no clipping/filtering or outcome-dependent tuning. Hard full-input budget remains4224+1920<=6144; exceed it =>abort before any GPU model load.",
+  "boundaries": "Original unclosed DeepSeek adapter supervision retained; not direct-final training or reasoning distillation",
+  "publish": false,
+  "submit": false,
+  "serving_validation": {
+    "actual_run": "serving_validation_probe_20261012_v2",
+    "qwen": {
+      "base": {
+        "samples": 16,
+        "batch_size": 16,
+        "batch_seconds": 80.75837297923863,
+        "peak_allocated_gib": 12.66029691696167,
+        "peak_reserved_gib": 22.416015625,
+        "eos": 16,
+        "caps": 0,
+        "not_a_predictive_quality_experiment": true,
+        "test_read": false
+      },
+      "adapter": {
+        "samples": 16,
+        "batch_size": 16,
+        "batch_seconds": 95.30715427640826,
+        "peak_allocated_gib": 12.66743803024292,
+        "peak_reserved_gib": 22.84765625,
+        "eos": 16,
+        "caps": 0,
+        "not_a_predictive_quality_experiment": true,
+        "test_read": false
+      }
+    },
+    "llama": {
+      "batch16": "OutOfMemoryError; no saved outputs",
+      "proposed_batch": 8,
+      "basis": "Completed original240 base+240 adapter validation at batch8"
+    },
+    "whole_probe_completed": false,
+    "new_accuracy_claim": false,
+    "test_read": false,
+    "preserved_failed_runs": [
+      "v1 metadata KeyError before GPU load",
+      "v2 Llama batch16 OOM; Qwen32 completed separately"
+    ],
+    "future_batch_sizes": {
+      "qwen": 16,
+      "deepseek": 16,
+      "llama": 8
+    }
+  },
+  "validated_prompt_max_tokens": {
+    "qwen": 3517,
+    "deepseek": 3276,
+    "llama": 3272
+  },
+  "serving_change_disclosure": {
+    "qwen_original_validation_batch": 1,
+    "proposed_test_batch": 16,
+    "reason": "Serving efficiency selected on validation before any test access",
+    "probe_text_identical_to_historical": {
+      "count": 0,
+      "total": 32
+    },
+    "probe_direction_same": {
+      "count": 31,
+      "total": 32,
+      "base": 15,
+      "adapter": 16
+    },
+    "accuracy_or_text_invariance_claimed": false,
+    "original_validation_outputs_and_metrics_unchanged": true,
+    "interpretation": "Test Qwen uses a different serving batch from its primary validation; disclose this alongside results. Not a same-serving cross-model speed comparison."
+  },
+  "length_only_serving_rule": "Split canonical cohort into batches16/16/8. If any row in an original batch exceeds its model validation-derived prompt envelope, generate EVERY row in that batch separately at batch1; otherwise retain original batch. Same partition for base/adapter, input length only, no clipping/filtering or outcome-dependent tuning. Hard full-input budget remains4224+1920<=6144; exceed it =>abort before any GPU model load."
+}

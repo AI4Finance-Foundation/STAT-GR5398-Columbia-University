@@ -1,0 +1,25 @@
+{
+  "plan_sha256": "2520bad987236f0b6b092f427f0786ffce190d028069b5faa4c6c3e3f97bd3c0",
+  "model_key": "deepseek",
+  "model_id": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+  "revision": "6a6f4aa4197940add57724a7707d069478df56b1",
+  "selected_checkpoint": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/server4090_deepseek_int8_4096_epoch_20261010/checkpoints/checkpoint-248",
+  "samples": 6,
+  "batch_size": 6,
+  "prefill_chunk_tokens": 512,
+  "max_new_tokens": 1920,
+  "context_cap": 6144,
+  "quantization_bits": 8,
+  "variant_scope": [
+    "base_original_prompt_matched_control",
+    "base_hitl_evidence_prompt",
+    "adapter_legacy_original_prompt_matched_control",
+    "adapter_legacy_hitl_evidence_prompt"
+  ],
+  "prompt_effect_only": true,
+  "new_training": false,
+  "test_read": false,
+  "data_availability_verified": false,
+  "legacy_target_confound_repaired": false,
+  "speed_comparison_claim": false
+}

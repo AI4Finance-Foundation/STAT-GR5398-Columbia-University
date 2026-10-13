@@ -1,0 +1,22 @@
+{
+  "model_id": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+  "revision": "6a6f4aa4197940add57724a7707d069478df56b1",
+  "weight_sha256": {
+    "model-00001-of-000002.safetensors": "7e6b24744354ef4ba547547cc758339090f46ba2da917845cfc69f7d4ded9edb",
+    "model-00002-of-000002.safetensors": "19fb83b79bd0d06d49b7cf6f86b83f5183cd292aa2c028d633ca4fceac1ae742"
+  },
+  "adapter_sha256": "27325b705bb7925706b8c23a00461fd36c746f768e33a157546ba36145f1ba4e",
+  "checkpoint": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/server4090_deepseek_int8_4096_epoch_20261010/checkpoints/checkpoint-248",
+  "tokenizer_binding": {
+    "model_id": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+    "revision": "6a6f4aa4197940add57724a7707d069478df56b1",
+    "file_sha256": {
+      "tokenizer.json": "b9c9eb63a8e03059914880f918cd28a880dec8b6e15e4461e1ff677e3743dbb8",
+      "tokenizer_config.json": "8ac8c85fb242563c2260baec0909debd69d718af6a0b3d90e6cab62b4d341cd5"
+    },
+    "bos_token_id": 128000,
+    "eos_token_id": 128001
+  },
+  "weights_downloaded": false,
+  "adapter_changed": false
+}

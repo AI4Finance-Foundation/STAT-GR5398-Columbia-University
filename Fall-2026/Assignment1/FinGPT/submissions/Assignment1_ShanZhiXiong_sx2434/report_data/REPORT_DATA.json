@@ -1,0 +1,1421 @@
+{
+  "validation_only": false,
+  "test_read": true,
+  "publish_authorized": false,
+  "submit_authorized": false,
+  "full_assignment_complete": false,
+  "validation_outputs": 1440,
+  "test_outputs": 1800,
+  "HITL_outputs_separate": 48,
+  "rows": [
+    {
+      "model": "qwen",
+      "family": "base",
+      "course_valid": 190,
+      "course_mse": 11.48421052631579,
+      "constant_plus_half_mse_same_valid_subset": 6.294736842105263,
+      "common_direction_correct": 117,
+      "common_direction_valid": 229,
+      "n": 240,
+      "common_balanced_accuracy": 0.4705989110707804,
+      "EOS": 240,
+      "caps": 0,
+      "amortized_seconds_mean": 34.78860902822343,
+      "batch_size": 1,
+      "peak_allocated_gib": 9.244160652160645
+    },
+    {
+      "model": "qwen",
+      "family": "adapter",
+      "course_valid": 240,
+      "course_mse": 7.429166666666666,
+      "constant_plus_half_mse_same_valid_subset": 6.345833333333333,
+      "common_direction_correct": 145,
+      "common_direction_valid": 240,
+      "n": 240,
+      "common_balanced_accuracy": 0.5272232304900182,
+      "EOS": 240,
+      "caps": 0,
+      "amortized_seconds_mean": 47.48669211776384,
+      "batch_size": 1,
+      "peak_allocated_gib": 9.247183799743652
+    },
+    {
+      "model": "deepseek",
+      "family": "base",
+      "course_valid": 0,
+      "course_mse": null,
+      "constant_plus_half_mse_same_valid_subset": null,
+      "common_direction_correct": 118,
+      "common_direction_valid": 216,
+      "n": 240,
+      "common_balanced_accuracy": 0.43411978221415604,
+      "EOS": 235,
+      "caps": 5,
+      "amortized_seconds_mean": 19.460210070514584,
+      "batch_size": 16,
+      "peak_allocated_gib": 19.753572463989258
+    },
+    {
+      "model": "deepseek",
+      "family": "adapter",
+      "course_valid": 240,
+      "course_mse": 7.508333333333334,
+      "constant_plus_half_mse_same_valid_subset": 6.345833333333333,
+      "common_direction_correct": 145,
+      "common_direction_valid": 240,
+      "n": 240,
+      "common_balanced_accuracy": 0.5453720508166969,
+      "EOS": 240,
+      "caps": 0,
+      "amortized_seconds_mean": 5.303030213399325,
+      "batch_size": 16,
+      "peak_allocated_gib": 16.67649555206299
+    },
+    {
+      "model": "llama",
+      "family": "base",
+      "course_valid": 190,
+      "course_mse": 7.402631578947369,
+      "constant_plus_half_mse_same_valid_subset": 6.5473684210526315,
+      "common_direction_correct": 2,
+      "common_direction_valid": 4,
+      "n": 240,
+      "common_balanced_accuracy": 0.006896551724137931,
+      "EOS": 120,
+      "caps": 120,
+      "amortized_seconds_mean": 36.59474664135293,
+      "batch_size": 8,
+      "peak_allocated_gib": 14.185090065002441
+    },
+    {
+      "model": "llama",
+      "family": "adapter",
+      "course_valid": 240,
+      "course_mse": 7.1375,
+      "constant_plus_half_mse_same_valid_subset": 6.345833333333333,
+      "common_direction_correct": 144,
+      "common_direction_valid": 240,
+      "n": 240,
+      "common_balanced_accuracy": 0.5509981851179673,
+      "EOS": 240,
+      "caps": 0,
+      "amortized_seconds_mean": 8.9211693060856,
+      "batch_size": 8,
+      "peak_allocated_gib": 12.51106882095337
+    }
+  ],
+  "test_summary": {
+    "verified_at_utc": "2026-10-13T01:54:53.714230+00:00",
+    "verified_outputs": 1800,
+    "plan_sha256": "f284b5fb9c06a970990d2557057d3ed0036bf4441c8811eb709479bb5d2c5339",
+    "authorization_sha256": "56296cabe16f4b21d93cd81a091399839fb6560fbe95aa081277b6723534d24a",
+    "completed_manifest_sha256": "445ddf90089e03a0e22e56be8de2b7e627d82c354973bb2aa732d5983da14a1d",
+    "all18_metric_groups_recomputed": true,
+    "all_generated_token_count_hash_and_boundary_receipts_verified": true,
+    "all900_native_prompts_reencoded": true,
+    "native_decode_recomputed_locally": true,
+    "native_decode_basis": "All1800 decoded with copied SHA-verified native tokenizer files; independent audit pending",
+    "new_training": false,
+    "publish": false,
+    "submit": false,
+    "schedule_resumed": false,
+    "independent_actual_results_audit_pending": true,
+    "rows": [
+      {
+        "model": "qwen",
+        "family": "base",
+        "evaluation_variant": "base_native",
+        "group": "all300",
+        "n": 300,
+        "course_valid": 208,
+        "course_mse": 11.235576923076923,
+        "constant_plus_half_mse_same_course_valid_subset": 7.1826923076923075,
+        "common_direction_correct": 161,
+        "common_direction_valid": 296,
+        "balanced_accuracy": 0.5351977072231427,
+        "always_up_correct": 137,
+        "EOS": 300,
+        "caps": 0,
+        "amortized_seconds_mean": 4.427040347947429,
+        "peak_allocated_gib": 12.10645055770874,
+        "actual_batch_sizes": [
+          12,
+          16
+        ],
+        "over_envelope_rows": 0,
+        "multiple_prediction_outputs": 0,
+        "first_last_disagreements": 0,
+        "closed_think_outputs": 0
+      },
+      {
+        "model": "qwen",
+        "family": "base",
+        "evaluation_variant": "base_native",
+        "group": "previously_inspected20",
+        "n": 20,
+        "course_valid": 11,
+        "course_mse": 9.909090909090908,
+        "constant_plus_half_mse_same_course_valid_subset": 7.181818181818182,
+        "common_direction_correct": 12,
+        "common_direction_valid": 20,
+        "balanced_accuracy": 0.606060606060606,
+        "always_up_correct": 11,
+        "EOS": 20,
+        "caps": 0,
+        "amortized_seconds_mean": 4.282546599619673,
+        "peak_allocated_gib": 12.10645055770874,
+        "actual_batch_sizes": [
+          16
+        ],
+        "over_envelope_rows": 0,
+        "multiple_prediction_outputs": 0,
+        "first_last_disagreements": 0,
+        "closed_think_outputs": 0
+      },
+      {
+        "model": "qwen",
+        "family": "base",
+        "evaluation_variant": "base_native",
+        "group": "other280_not_claimed_pristine",
+        "n": 280,
+        "course_valid": 197,
+        "course_mse": 11.309644670050762,
+        "constant_plus_half_mse_same_course_valid_subset": 7.182741116751269,
+        "common_direction_correct": 149,
+        "common_direction_valid": 276,
+        "balanced_accuracy": 0.5306637806637806,
+        "always_up_correct": 126,
+        "EOS": 280,
+        "caps": 0,
+        "amortized_seconds_mean": 4.43736132997084,
+        "peak_allocated_gib": 12.10645055770874,
+        "actual_batch_sizes": [
+          12,
+          16
+        ],
+        "over_envelope_rows": 0,
+        "multiple_prediction_outputs": 0,
+        "first_last_disagreements": 0,
+        "closed_think_outputs": 0
+      },
+      {
+        "model": "qwen",
+        "family": "adapter",
+        "evaluation_variant": "adapter_original_full_reference",
+        "group": "all300",
+        "n": 300,
+        "course_valid": 297,
+        "course_mse": 8.747474747474747,
+        "constant_plus_half_mse_same_course_valid_subset": 7.646464646464646,
+        "common_direction_correct": 142,
+        "common_direction_valid": 300,
+        "balanced_accuracy": 0.5007836639648918,
+        "always_up_correct": 137,
+        "EOS": 300,
+        "caps": 0,
+        "amortized_seconds_mean": 5.629217059696093,
+        "peak_allocated_gib": 12.107787132263184,
+        "actual_batch_sizes": [
+          12,
+          16
+        ],
+        "over_envelope_rows": 0,
+        "multiple_prediction_outputs": 0,
+        "first_last_disagreements": 0,
+        "closed_think_outputs": 0
+      },
+      {
+        "model": "qwen",
+        "family": "adapter",
+        "evaluation_variant": "adapter_original_full_reference",
+        "group": "previously_inspected20",
+        "n": 20,
+        "course_valid": 19,
+        "course_mse": 8.894736842105264,
+        "constant_plus_half_mse_same_course_valid_subset": 7.631578947368421,
+        "common_direction_correct": 12,
+        "common_direction_valid": 20,
+        "balanced_accuracy": 0.5757575757575758,
+        "always_up_correct": 11,
+        "EOS": 20,
+        "caps": 0,
+        "amortized_seconds_mean": 5.681023537283181,
+        "peak_allocated_gib": 12.107787132263184,
+        "actual_batch_sizes": [
+          16
+        ],
+        "over_envelope_rows": 0,
+        "multiple_prediction_outputs": 0,
+        "first_last_disagreements": 0,
+        "closed_think_outputs": 0
+      },
+      {
+        "model": "qwen",
+        "family": "adapter",
+        "evaluation_variant": "adapter_original_full_reference",
+        "group": "other280_not_claimed_pristine",
+        "n": 280,
+        "course_valid": 278,
+        "course_mse": 8.737410071942445,
+        "constant_plus_half_mse_same_course_valid_subset": 7.64748201438849,
+        "common_direction_correct": 130,
+        "common_direction_valid": 280,
+        "balanced_accuracy": 0.4963924963924964,
+        "always_up_correct": 126,
+        "EOS": 280,
+        "caps": 0,
+        "amortized_seconds_mean": 5.625516597011301,
+        "peak_allocated_gib": 12.107787132263184,
+        "actual_batch_sizes": [
+          12,
+          16
+        ],
+        "over_envelope_rows": 0,
+        "multiple_prediction_outputs": 0,
+        "first_last_disagreements": 0,
+        "closed_think_outputs": 0
+      },
+      {
+        "model": "deepseek",
+        "family": "base",
+        "evaluation_variant": "base_native_reasoning",
+        "group": "all300",
+        "n": 300,
+        "course_valid": 0,
+        "course_mse": null,
+        "constant_plus_half_mse_same_course_valid_subset": null,
+        "common_direction_correct": 130,
+        "common_direction_valid": 265,
+        "balanced_accuracy": 0.45407729165733735,
+        "always_up_correct": 137,
+        "EOS": 297,
+        "caps": 3,
+        "amortized_seconds_mean": 19.675190260689707,
+        "peak_allocated_gib": 17.766674041748047,
+        "actual_batch_sizes": [
+          12,
+          16
+        ],
+        "over_envelope_rows": 0,
+        "multiple_prediction_outputs": 0,
+        "first_last_disagreements": 0,
+        "closed_think_outputs": 299
+      },
+      {
+        "model": "deepseek",
+        "family": "base",
+        "evaluation_variant": "base_native_reasoning",
+        "group": "previously_inspected20",
+        "n": 20,
+        "course_valid": 0,
+        "course_mse": null,
+        "constant_plus_half_mse_same_course_valid_subset": null,
+        "common_direction_correct": 10,
+        "common_direction_valid": 17,
+        "balanced_accuracy": 0.47474747474747475,
+        "always_up_correct": 11,
+        "EOS": 20,
+        "caps": 0,
+        "amortized_seconds_mean": 19.48872699722415,
+        "peak_allocated_gib": 17.766674041748047,
+        "actual_batch_sizes": [
+          16
+        ],
+        "over_envelope_rows": 0,
+        "multiple_prediction_outputs": 0,
+        "first_last_disagreements": 0,
+        "closed_think_outputs": 20
+      },
+      {
+        "model": "deepseek",
+        "family": "base",
+        "evaluation_variant": "base_native_reasoning",
+        "group": "other280_not_claimed_pristine",
+        "n": 280,
+        "course_valid": 0,
+        "course_mse": null,
+        "constant_plus_half_mse_same_course_valid_subset": null,
+        "common_direction_correct": 120,
+        "common_direction_valid": 248,
+        "balanced_accuracy": 0.4523809523809524,
+        "always_up_correct": 126,
+        "EOS": 277,
+        "caps": 3,
+        "amortized_seconds_mean": 19.68850906522296,
+        "peak_allocated_gib": 17.766674041748047,
+        "actual_batch_sizes": [
+          12,
+          16
+        ],
+        "over_envelope_rows": 0,
+        "multiple_prediction_outputs": 0,
+        "first_last_disagreements": 0,
+        "closed_think_outputs": 279
+      },
+      {
+        "model": "deepseek",
+        "family": "adapter",
+        "evaluation_variant": "adapter_legacy_unclosed",
+        "group": "all300",
+        "n": 300,
+        "course_valid": 297,
+        "course_mse": 8.572390572390573,
+        "constant_plus_half_mse_same_course_valid_subset": 7.646464646464646,
+        "common_direction_correct": 148,
+        "common_direction_valid": 300,
+        "balanced_accuracy": 0.5133670682011553,
+        "always_up_correct": 137,
+        "EOS": 300,
+        "caps": 0,
+        "amortized_seconds_mean": 6.283342608747383,
+        "peak_allocated_gib": 15.371087551116943,
+        "actual_batch_sizes": [
+          12,
+          16
+        ],
+        "over_envelope_rows": 0,
+        "multiple_prediction_outputs": 0,
+        "first_last_disagreements": 0,
+        "closed_think_outputs": 0
+      },
+      {
+        "model": "deepseek",
+        "family": "adapter",
+        "evaluation_variant": "adapter_legacy_unclosed",
+        "group": "previously_inspected20",
+        "n": 20,
+        "course_valid": 19,
+        "course_mse": 10.263157894736842,
+        "constant_plus_half_mse_same_course_valid_subset": 7.631578947368421,
+        "common_direction_correct": 8,
+        "common_direction_valid": 20,
+        "balanced_accuracy": 0.3838383838383838,
+        "always_up_correct": 11,
+        "EOS": 20,
+        "caps": 0,
+        "amortized_seconds_mean": 6.156288751066313,
+        "peak_allocated_gib": 15.371087551116943,
+        "actual_batch_sizes": [
+          16
+        ],
+        "over_envelope_rows": 0,
+        "multiple_prediction_outputs": 0,
+        "first_last_disagreements": 0,
+        "closed_think_outputs": 0
+      },
+      {
+        "model": "deepseek",
+        "family": "adapter",
+        "evaluation_variant": "adapter_legacy_unclosed",
+        "group": "other280_not_claimed_pristine",
+        "n": 280,
+        "course_valid": 278,
+        "course_mse": 8.456834532374101,
+        "constant_plus_half_mse_same_course_valid_subset": 7.64748201438849,
+        "common_direction_correct": 140,
+        "common_direction_valid": 280,
+        "balanced_accuracy": 0.5238095238095237,
+        "always_up_correct": 126,
+        "EOS": 280,
+        "caps": 0,
+        "amortized_seconds_mean": 6.2924178842960306,
+        "peak_allocated_gib": 15.371087551116943,
+        "actual_batch_sizes": [
+          12,
+          16
+        ],
+        "over_envelope_rows": 0,
+        "multiple_prediction_outputs": 0,
+        "first_last_disagreements": 0,
+        "closed_think_outputs": 0
+      },
+      {
+        "model": "llama",
+        "family": "base",
+        "evaluation_variant": "base_native",
+        "group": "all300",
+        "n": 300,
+        "course_valid": 220,
+        "course_mse": 9.372727272727273,
+        "constant_plus_half_mse_same_course_valid_subset": 8.3,
+        "common_direction_correct": 2,
+        "common_direction_valid": 4,
+        "balanced_accuracy": 0.0072992700729927005,
+        "always_up_correct": 137,
+        "EOS": 164,
+        "caps": 136,
+        "amortized_seconds_mean": 37.90163084160537,
+        "peak_allocated_gib": 13.499448299407959,
+        "actual_batch_sizes": [
+          4,
+          8
+        ],
+        "over_envelope_rows": 0,
+        "multiple_prediction_outputs": 61,
+        "first_last_disagreements": 1,
+        "closed_think_outputs": 0
+      },
+      {
+        "model": "llama",
+        "family": "base",
+        "evaluation_variant": "base_native",
+        "group": "previously_inspected20",
+        "n": 20,
+        "course_valid": 12,
+        "course_mse": 6.416666666666667,
+        "constant_plus_half_mse_same_course_valid_subset": 6.916666666666667,
+        "common_direction_correct": 0,
+        "common_direction_valid": 0,
+        "balanced_accuracy": 0.0,
+        "always_up_correct": 11,
+        "EOS": 12,
+        "caps": 8,
+        "amortized_seconds_mean": 37.641947612026705,
+        "peak_allocated_gib": 13.499448299407959,
+        "actual_batch_sizes": [
+          8
+        ],
+        "over_envelope_rows": 0,
+        "multiple_prediction_outputs": 2,
+        "first_last_disagreements": 0,
+        "closed_think_outputs": 0
+      },
+      {
+        "model": "llama",
+        "family": "base",
+        "evaluation_variant": "base_native",
+        "group": "other280_not_claimed_pristine",
+        "n": 280,
+        "course_valid": 208,
+        "course_mse": 9.54326923076923,
+        "constant_plus_half_mse_same_course_valid_subset": 8.379807692307692,
+        "common_direction_correct": 2,
+        "common_direction_valid": 4,
+        "balanced_accuracy": 0.007936507936507936,
+        "always_up_correct": 126,
+        "EOS": 152,
+        "caps": 128,
+        "amortized_seconds_mean": 37.92017964371813,
+        "peak_allocated_gib": 13.499448299407959,
+        "actual_batch_sizes": [
+          4,
+          8
+        ],
+        "over_envelope_rows": 0,
+        "multiple_prediction_outputs": 59,
+        "first_last_disagreements": 1,
+        "closed_think_outputs": 0
+      },
+      {
+        "model": "llama",
+        "family": "adapter",
+        "evaluation_variant": "adapter_original_full_reference",
+        "group": "all300",
+        "n": 300,
+        "course_valid": 297,
+        "course_mse": 8.515151515151516,
+        "constant_plus_half_mse_same_course_valid_subset": 7.646464646464646,
+        "common_direction_correct": 150,
+        "common_direction_valid": 300,
+        "balanced_accuracy": 0.5165912856567104,
+        "always_up_correct": 137,
+        "EOS": 300,
+        "caps": 0,
+        "amortized_seconds_mean": 9.206156909018755,
+        "peak_allocated_gib": 12.036615371704102,
+        "actual_batch_sizes": [
+          4,
+          8
+        ],
+        "over_envelope_rows": 0,
+        "multiple_prediction_outputs": 0,
+        "first_last_disagreements": 0,
+        "closed_think_outputs": 0
+      },
+      {
+        "model": "llama",
+        "family": "adapter",
+        "evaluation_variant": "adapter_original_full_reference",
+        "group": "previously_inspected20",
+        "n": 20,
+        "course_valid": 19,
+        "course_mse": 10.421052631578947,
+        "constant_plus_half_mse_same_course_valid_subset": 7.631578947368421,
+        "common_direction_correct": 7,
+        "common_direction_valid": 20,
+        "balanced_accuracy": 0.3282828282828283,
+        "always_up_correct": 11,
+        "EOS": 20,
+        "caps": 0,
+        "amortized_seconds_mean": 9.525188644212903,
+        "peak_allocated_gib": 12.036615371704102,
+        "actual_batch_sizes": [
+          8
+        ],
+        "over_envelope_rows": 0,
+        "multiple_prediction_outputs": 0,
+        "first_last_disagreements": 0,
+        "closed_think_outputs": 0
+      },
+      {
+        "model": "llama",
+        "family": "adapter",
+        "evaluation_variant": "adapter_original_full_reference",
+        "group": "other280_not_claimed_pristine",
+        "n": 280,
+        "course_valid": 278,
+        "course_mse": 8.384892086330936,
+        "constant_plus_half_mse_same_course_valid_subset": 7.64748201438849,
+        "common_direction_correct": 143,
+        "common_direction_valid": 280,
+        "balanced_accuracy": 0.5299422799422799,
+        "always_up_correct": 126,
+        "EOS": 280,
+        "caps": 0,
+        "amortized_seconds_mean": 9.183368927933458,
+        "peak_allocated_gib": 12.036615371704102,
+        "actual_batch_sizes": [
+          4,
+          8
+        ],
+        "over_envelope_rows": 0,
+        "multiple_prediction_outputs": 0,
+        "first_last_disagreements": 0,
+        "closed_think_outputs": 0
+      }
+    ],
+    "metric_reproductions": {
+      "qwen_base": {
+        "all300": {
+          "samples": 300,
+          "course_raw": {
+            "valid_count": 208,
+            "bin_acc": 0.5288461538461539,
+            "mse": 11.235576923076923,
+            "pros_rouge_scores": {
+              "rouge1": 0.3993416657208772,
+              "rouge2": 0.12547340802556334,
+              "rougeL": 0.25611073017106667
+            },
+            "cons_rouge_scores": {
+              "rouge1": 0.3506117102614933,
+              "rouge2": 0.0955970240121023,
+              "rougeL": 0.22134248772370674
+            },
+            "anal_rouge_scores": {
+              "rouge1": 0.3998053728356238,
+              "rouge2": 0.09633459297692235,
+              "rougeL": 0.20046856386512418
+            }
+          },
+          "constant_plus_half_mse_same_course_valid_subset": 7.1826923076923075,
+          "common_final_line": {
+            "variant": "final_line_direction_common_v1",
+            "valid": 296,
+            "correct": 161,
+            "invalid_as_wrong": true,
+            "balanced_accuracy": 0.5351977072231427,
+            "class_counts": {
+              "up": 137,
+              "down": 163
+            },
+            "multiple_prediction_outputs": 0,
+            "first_line_correct": 161,
+            "first_last_disagreements": 0
+          },
+          "always_up_correct": 137,
+          "train_majority_up_correct": 137,
+          "EOS": 300,
+          "caps": 0,
+          "limitation": "Dataset labels and encoded references, not independently verified returns; ROUGE is not factual grounding."
+        },
+        "previously_inspected20": {
+          "samples": 20,
+          "course_raw": {
+            "valid_count": 11,
+            "bin_acc": 0.6363636363636364,
+            "mse": 9.909090909090908,
+            "pros_rouge_scores": {
+              "rouge1": 0.3921166400062925,
+              "rouge2": 0.13161789582377217,
+              "rougeL": 0.2596378602668181
+            },
+            "cons_rouge_scores": {
+              "rouge1": 0.35359903850367885,
+              "rouge2": 0.0872835042297473,
+              "rougeL": 0.22620566262977826
+            },
+            "anal_rouge_scores": {
+              "rouge1": 0.40260575513586505,
+              "rouge2": 0.08800625542113487,
+              "rougeL": 0.19080731222704933
+            }
+          },
+          "constant_plus_half_mse_same_course_valid_subset": 7.181818181818182,
+          "common_final_line": {
+            "variant": "final_line_direction_common_v1",
+            "valid": 20,
+            "correct": 12,
+            "invalid_as_wrong": true,
+            "balanced_accuracy": 0.606060606060606,
+            "class_counts": {
+              "up": 11,
+              "down": 9
+            },
+            "multiple_prediction_outputs": 0,
+            "first_line_correct": 12,
+            "first_last_disagreements": 0
+          },
+          "always_up_correct": 11,
+          "train_majority_up_correct": 11,
+          "EOS": 20,
+          "caps": 0,
+          "limitation": "Dataset labels and encoded references, not independently verified returns; ROUGE is not factual grounding."
+        },
+        "other280_not_claimed_pristine": {
+          "samples": 280,
+          "course_raw": {
+            "valid_count": 197,
+            "bin_acc": 0.5228426395939086,
+            "mse": 11.309644670050762,
+            "pros_rouge_scores": {
+              "rouge1": 0.3997450935526559,
+              "rouge2": 0.12513031479825218,
+              "rougeL": 0.25591378382054253
+            },
+            "cons_rouge_scores": {
+              "rouge1": 0.3504449051312192,
+              "rouge2": 0.09606123070045713,
+              "rougeL": 0.2210709398863119
+            },
+            "anal_rouge_scores": {
+              "rouge1": 0.3996490063112447,
+              "rouge2": 0.09679962705364145,
+              "rougeL": 0.20100802461648865
+            }
+          },
+          "constant_plus_half_mse_same_course_valid_subset": 7.182741116751269,
+          "common_final_line": {
+            "variant": "final_line_direction_common_v1",
+            "valid": 276,
+            "correct": 149,
+            "invalid_as_wrong": true,
+            "balanced_accuracy": 0.5306637806637806,
+            "class_counts": {
+              "up": 126,
+              "down": 154
+            },
+            "multiple_prediction_outputs": 0,
+            "first_line_correct": 149,
+            "first_last_disagreements": 0
+          },
+          "always_up_correct": 126,
+          "train_majority_up_correct": 126,
+          "EOS": 280,
+          "caps": 0,
+          "limitation": "Dataset labels and encoded references, not independently verified returns; ROUGE is not factual grounding."
+        }
+      },
+      "qwen_adapter": {
+        "all300": {
+          "samples": 300,
+          "course_raw": {
+            "valid_count": 297,
+            "bin_acc": 0.47474747474747475,
+            "mse": 8.747474747474747,
+            "pros_rouge_scores": {
+              "rouge1": 0.45279329641165567,
+              "rouge2": 0.17846759314559282,
+              "rougeL": 0.28409250335326647
+            },
+            "cons_rouge_scores": {
+              "rouge1": 0.4296266313060077,
+              "rouge2": 0.15822231043037066,
+              "rougeL": 0.2758239774857185
+            },
+            "anal_rouge_scores": {
+              "rouge1": 0.4433142109232855,
+              "rouge2": 0.13330516990795271,
+              "rougeL": 0.2295843275212031
+            }
+          },
+          "constant_plus_half_mse_same_course_valid_subset": 7.646464646464646,
+          "common_final_line": {
+            "variant": "final_line_direction_common_v1",
+            "valid": 300,
+            "correct": 142,
+            "invalid_as_wrong": true,
+            "balanced_accuracy": 0.5007836639648918,
+            "class_counts": {
+              "up": 137,
+              "down": 163
+            },
+            "multiple_prediction_outputs": 0,
+            "first_line_correct": 142,
+            "first_last_disagreements": 0
+          },
+          "always_up_correct": 137,
+          "train_majority_up_correct": 137,
+          "EOS": 300,
+          "caps": 0,
+          "limitation": "Dataset labels and encoded references, not independently verified returns; ROUGE is not factual grounding."
+        },
+        "previously_inspected20": {
+          "samples": 20,
+          "course_raw": {
+            "valid_count": 19,
+            "bin_acc": 0.5789473684210527,
+            "mse": 8.894736842105264,
+            "pros_rouge_scores": {
+              "rouge1": 0.43962719427951724,
+              "rouge2": 0.1606293347117579,
+              "rougeL": 0.27910627352738043
+            },
+            "cons_rouge_scores": {
+              "rouge1": 0.428044086322325,
+              "rouge2": 0.16061679971568243,
+              "rougeL": 0.28641422603423666
+            },
+            "anal_rouge_scores": {
+              "rouge1": 0.4411167525299608,
+              "rouge2": 0.13079141900633423,
+              "rougeL": 0.2317265097894644
+            }
+          },
+          "constant_plus_half_mse_same_course_valid_subset": 7.631578947368421,
+          "common_final_line": {
+            "variant": "final_line_direction_common_v1",
+            "valid": 20,
+            "correct": 12,
+            "invalid_as_wrong": true,
+            "balanced_accuracy": 0.5757575757575758,
+            "class_counts": {
+              "up": 11,
+              "down": 9
+            },
+            "multiple_prediction_outputs": 0,
+            "first_line_correct": 12,
+            "first_last_disagreements": 0
+          },
+          "always_up_correct": 11,
+          "train_majority_up_correct": 11,
+          "EOS": 20,
+          "caps": 0,
+          "limitation": "Dataset labels and encoded references, not independently verified returns; ROUGE is not factual grounding."
+        },
+        "other280_not_claimed_pristine": {
+          "samples": 280,
+          "course_raw": {
+            "valid_count": 278,
+            "bin_acc": 0.4676258992805755,
+            "mse": 8.737410071942445,
+            "pros_rouge_scores": {
+              "rouge1": 0.45369313792428395,
+              "rouge2": 0.17968675469322903,
+              "rougeL": 0.28443328884496366
+            },
+            "cons_rouge_scores": {
+              "rouge1": 0.42973479085525235,
+              "rouge2": 0.15805865828497162,
+              "rougeL": 0.27510018352017246
+            },
+            "anal_rouge_scores": {
+              "rouge1": 0.4434643969285848,
+              "rouge2": 0.13347697302712808,
+              "rougeL": 0.2294379193805665
+            }
+          },
+          "constant_plus_half_mse_same_course_valid_subset": 7.64748201438849,
+          "common_final_line": {
+            "variant": "final_line_direction_common_v1",
+            "valid": 280,
+            "correct": 130,
+            "invalid_as_wrong": true,
+            "balanced_accuracy": 0.4963924963924964,
+            "class_counts": {
+              "up": 126,
+              "down": 154
+            },
+            "multiple_prediction_outputs": 0,
+            "first_line_correct": 130,
+            "first_last_disagreements": 0
+          },
+          "always_up_correct": 126,
+          "train_majority_up_correct": 126,
+          "EOS": 280,
+          "caps": 0,
+          "limitation": "Dataset labels and encoded references, not independently verified returns; ROUGE is not factual grounding."
+        }
+      },
+      "deepseek_base": {
+        "all300": {
+          "samples": 300,
+          "course_raw": {
+            "valid_count": 0
+          },
+          "constant_plus_half_mse_same_course_valid_subset": null,
+          "common_final_line": {
+            "variant": "final_line_direction_common_v1",
+            "valid": 265,
+            "correct": 130,
+            "invalid_as_wrong": true,
+            "balanced_accuracy": 0.45407729165733735,
+            "class_counts": {
+              "up": 137,
+              "down": 163
+            },
+            "multiple_prediction_outputs": 0,
+            "first_line_correct": 130,
+            "first_last_disagreements": 0
+          },
+          "always_up_correct": 137,
+          "train_majority_up_correct": 137,
+          "EOS": 297,
+          "caps": 3,
+          "limitation": "Dataset labels and encoded references, not independently verified returns; ROUGE is not factual grounding.",
+          "deepseek_final_extracted_separate_variant": {
+            "valid_count": 20,
+            "bin_acc": 0.3,
+            "mse": 8.05,
+            "pros_rouge_scores": {
+              "rouge1": 0.434288635600259,
+              "rouge2": 0.11763322404111135,
+              "rougeL": 0.25292546528407805
+            },
+            "cons_rouge_scores": {
+              "rouge1": 0.3777312305420507,
+              "rouge2": 0.0950215981094032,
+              "rougeL": 0.2210543634129143
+            },
+            "anal_rouge_scores": {
+              "rouge1": 0.2744072353953248,
+              "rouge2": 0.05639342081176997,
+              "rougeL": 0.15610771106603363
+            }
+          },
+          "deepseek_final_extracted_constant_plus_half_same_valid_subset": 5.85
+        },
+        "previously_inspected20": {
+          "samples": 20,
+          "course_raw": {
+            "valid_count": 0
+          },
+          "constant_plus_half_mse_same_course_valid_subset": null,
+          "common_final_line": {
+            "variant": "final_line_direction_common_v1",
+            "valid": 17,
+            "correct": 10,
+            "invalid_as_wrong": true,
+            "balanced_accuracy": 0.47474747474747475,
+            "class_counts": {
+              "up": 11,
+              "down": 9
+            },
+            "multiple_prediction_outputs": 0,
+            "first_line_correct": 10,
+            "first_last_disagreements": 0
+          },
+          "always_up_correct": 11,
+          "train_majority_up_correct": 11,
+          "EOS": 20,
+          "caps": 0,
+          "limitation": "Dataset labels and encoded references, not independently verified returns; ROUGE is not factual grounding.",
+          "deepseek_final_extracted_separate_variant": {
+            "valid_count": 0
+          },
+          "deepseek_final_extracted_constant_plus_half_same_valid_subset": null
+        },
+        "other280_not_claimed_pristine": {
+          "samples": 280,
+          "course_raw": {
+            "valid_count": 0
+          },
+          "constant_plus_half_mse_same_course_valid_subset": null,
+          "common_final_line": {
+            "variant": "final_line_direction_common_v1",
+            "valid": 248,
+            "correct": 120,
+            "invalid_as_wrong": true,
+            "balanced_accuracy": 0.4523809523809524,
+            "class_counts": {
+              "up": 126,
+              "down": 154
+            },
+            "multiple_prediction_outputs": 0,
+            "first_line_correct": 120,
+            "first_last_disagreements": 0
+          },
+          "always_up_correct": 126,
+          "train_majority_up_correct": 126,
+          "EOS": 277,
+          "caps": 3,
+          "limitation": "Dataset labels and encoded references, not independently verified returns; ROUGE is not factual grounding.",
+          "deepseek_final_extracted_separate_variant": {
+            "valid_count": 20,
+            "bin_acc": 0.3,
+            "mse": 8.05,
+            "pros_rouge_scores": {
+              "rouge1": 0.434288635600259,
+              "rouge2": 0.11763322404111135,
+              "rougeL": 0.25292546528407805
+            },
+            "cons_rouge_scores": {
+              "rouge1": 0.3777312305420507,
+              "rouge2": 0.0950215981094032,
+              "rougeL": 0.2210543634129143
+            },
+            "anal_rouge_scores": {
+              "rouge1": 0.2744072353953248,
+              "rouge2": 0.05639342081176997,
+              "rougeL": 0.15610771106603363
+            }
+          },
+          "deepseek_final_extracted_constant_plus_half_same_valid_subset": 5.85
+        }
+      },
+      "deepseek_adapter": {
+        "all300": {
+          "samples": 300,
+          "course_raw": {
+            "valid_count": 297,
+            "bin_acc": 0.4983164983164983,
+            "mse": 8.572390572390573,
+            "pros_rouge_scores": {
+              "rouge1": 0.45292901066044866,
+              "rouge2": 0.17834370551215434,
+              "rougeL": 0.2847545315382191
+            },
+            "cons_rouge_scores": {
+              "rouge1": 0.42496886801286277,
+              "rouge2": 0.15562542028003776,
+              "rougeL": 0.27265066222613266
+            },
+            "anal_rouge_scores": {
+              "rouge1": 0.44446940230244314,
+              "rouge2": 0.1398221394446104,
+              "rougeL": 0.2306958718022684
+            }
+          },
+          "constant_plus_half_mse_same_course_valid_subset": 7.646464646464646,
+          "common_final_line": {
+            "variant": "final_line_direction_common_v1",
+            "valid": 300,
+            "correct": 148,
+            "invalid_as_wrong": true,
+            "balanced_accuracy": 0.5133670682011553,
+            "class_counts": {
+              "up": 137,
+              "down": 163
+            },
+            "multiple_prediction_outputs": 0,
+            "first_line_correct": 148,
+            "first_last_disagreements": 0
+          },
+          "always_up_correct": 137,
+          "train_majority_up_correct": 137,
+          "EOS": 300,
+          "caps": 0,
+          "limitation": "Dataset labels and encoded references, not independently verified returns; ROUGE is not factual grounding."
+        },
+        "previously_inspected20": {
+          "samples": 20,
+          "course_raw": {
+            "valid_count": 19,
+            "bin_acc": 0.42105263157894735,
+            "mse": 10.263157894736842,
+            "pros_rouge_scores": {
+              "rouge1": 0.4347295324116106,
+              "rouge2": 0.15531468967751516,
+              "rougeL": 0.2896238357217596
+            },
+            "cons_rouge_scores": {
+              "rouge1": 0.423038725683969,
+              "rouge2": 0.15859748687247682,
+              "rougeL": 0.2857483242398547
+            },
+            "anal_rouge_scores": {
+              "rouge1": 0.446248796890123,
+              "rouge2": 0.1252191885450562,
+              "rougeL": 0.22355338007740166
+            }
+          },
+          "constant_plus_half_mse_same_course_valid_subset": 7.631578947368421,
+          "common_final_line": {
+            "variant": "final_line_direction_common_v1",
+            "valid": 20,
+            "correct": 8,
+            "invalid_as_wrong": true,
+            "balanced_accuracy": 0.3838383838383838,
+            "class_counts": {
+              "up": 11,
+              "down": 9
+            },
+            "multiple_prediction_outputs": 0,
+            "first_line_correct": 8,
+            "first_last_disagreements": 0
+          },
+          "always_up_correct": 11,
+          "train_majority_up_correct": 11,
+          "EOS": 20,
+          "caps": 0,
+          "limitation": "Dataset labels and encoded references, not independently verified returns; ROUGE is not factual grounding."
+        },
+        "other280_not_claimed_pristine": {
+          "samples": 280,
+          "course_raw": {
+            "valid_count": 278,
+            "bin_acc": 0.5035971223021583,
+            "mse": 8.456834532374101,
+            "pros_rouge_scores": {
+              "rouge1": 0.4541728598932831,
+              "rouge2": 0.17991763105480948,
+              "rougeL": 0.28442173736740173
+            },
+            "cons_rouge_scores": {
+              "rouge1": 0.4251007842151973,
+              "rouge2": 0.15542229342659764,
+              "rougeL": 0.27175549827555445
+            },
+            "anal_rouge_scores": {
+              "rouge1": 0.44434778900328514,
+              "rouge2": 0.14082018285141445,
+              "rougeL": 0.23118402771152183
+            }
+          },
+          "constant_plus_half_mse_same_course_valid_subset": 7.64748201438849,
+          "common_final_line": {
+            "variant": "final_line_direction_common_v1",
+            "valid": 280,
+            "correct": 140,
+            "invalid_as_wrong": true,
+            "balanced_accuracy": 0.5238095238095237,
+            "class_counts": {
+              "up": 126,
+              "down": 154
+            },
+            "multiple_prediction_outputs": 0,
+            "first_line_correct": 140,
+            "first_last_disagreements": 0
+          },
+          "always_up_correct": 126,
+          "train_majority_up_correct": 126,
+          "EOS": 280,
+          "caps": 0,
+          "limitation": "Dataset labels and encoded references, not independently verified returns; ROUGE is not factual grounding."
+        }
+      },
+      "llama_base": {
+        "all300": {
+          "samples": 300,
+          "course_raw": {
+            "valid_count": 220,
+            "bin_acc": 0.4818181818181818,
+            "mse": 9.372727272727273,
+            "pros_rouge_scores": {
+              "rouge1": 0.04305608559022916,
+              "rouge2": 0.012734436689266467,
+              "rougeL": 0.02812063313982044
+            },
+            "cons_rouge_scores": {
+              "rouge1": 0.020133531904650892,
+              "rouge2": 0.005411445328812456,
+              "rougeL": 0.013605547141410605
+            },
+            "anal_rouge_scores": {
+              "rouge1": 0.0650353850154284,
+              "rouge2": 0.011129460594494734,
+              "rougeL": 0.040183444477240836
+            }
+          },
+          "constant_plus_half_mse_same_course_valid_subset": 8.3,
+          "common_final_line": {
+            "variant": "final_line_direction_common_v1",
+            "valid": 4,
+            "correct": 2,
+            "invalid_as_wrong": true,
+            "balanced_accuracy": 0.0072992700729927005,
+            "class_counts": {
+              "up": 137,
+              "down": 163
+            },
+            "multiple_prediction_outputs": 61,
+            "first_line_correct": 2,
+            "first_last_disagreements": 1
+          },
+          "always_up_correct": 137,
+          "train_majority_up_correct": 137,
+          "EOS": 164,
+          "caps": 136,
+          "limitation": "Dataset labels and encoded references, not independently verified returns; ROUGE is not factual grounding."
+        },
+        "previously_inspected20": {
+          "samples": 20,
+          "course_raw": {
+            "valid_count": 12,
+            "bin_acc": 0.5,
+            "mse": 6.416666666666667,
+            "pros_rouge_scores": {
+              "rouge1": 0.04884065311647872,
+              "rouge2": 0.01808932911216923,
+              "rougeL": 0.035270175886913856
+            },
+            "cons_rouge_scores": {
+              "rouge1": 0.014887886784831812,
+              "rouge2": 0.003250591016548464,
+              "rougeL": 0.008998605277175747
+            },
+            "anal_rouge_scores": {
+              "rouge1": 0.03578222470335424,
+              "rouge2": 0.00273979778930274,
+              "rougeL": 0.02788442132476701
+            }
+          },
+          "constant_plus_half_mse_same_course_valid_subset": 6.916666666666667,
+          "common_final_line": {
+            "variant": "final_line_direction_common_v1",
+            "valid": 0,
+            "correct": 0,
+            "invalid_as_wrong": true,
+            "balanced_accuracy": 0.0,
+            "class_counts": {
+              "up": 11,
+              "down": 9
+            },
+            "multiple_prediction_outputs": 2,
+            "first_line_correct": 0,
+            "first_last_disagreements": 0
+          },
+          "always_up_correct": 11,
+          "train_majority_up_correct": 11,
+          "EOS": 12,
+          "caps": 8,
+          "limitation": "Dataset labels and encoded references, not independently verified returns; ROUGE is not factual grounding."
+        },
+        "other280_not_claimed_pristine": {
+          "samples": 280,
+          "course_raw": {
+            "valid_count": 208,
+            "bin_acc": 0.4807692307692308,
+            "mse": 9.54326923076923,
+            "pros_rouge_scores": {
+              "rouge1": 0.04272236054063784,
+              "rouge2": 0.012425500587945155,
+              "rougeL": 0.027708159519795814
+            },
+            "cons_rouge_scores": {
+              "rouge1": 0.020436165276948144,
+              "rouge2": 0.0055361100006738415,
+              "rougeL": 0.013871332248962613
+            },
+            "anal_rouge_scores": {
+              "rouge1": 0.06672306734112497,
+              "rouge2": 0.01161347960248658,
+              "rougeL": 0.04089300350526817
+            }
+          },
+          "constant_plus_half_mse_same_course_valid_subset": 8.379807692307692,
+          "common_final_line": {
+            "variant": "final_line_direction_common_v1",
+            "valid": 4,
+            "correct": 2,
+            "invalid_as_wrong": true,
+            "balanced_accuracy": 0.007936507936507936,
+            "class_counts": {
+              "up": 126,
+              "down": 154
+            },
+            "multiple_prediction_outputs": 59,
+            "first_line_correct": 2,
+            "first_last_disagreements": 1
+          },
+          "always_up_correct": 126,
+          "train_majority_up_correct": 126,
+          "EOS": 152,
+          "caps": 128,
+          "limitation": "Dataset labels and encoded references, not independently verified returns; ROUGE is not factual grounding."
+        }
+      },
+      "llama_adapter": {
+        "all300": {
+          "samples": 300,
+          "course_raw": {
+            "valid_count": 297,
+            "bin_acc": 0.5050505050505051,
+            "mse": 8.515151515151516,
+            "pros_rouge_scores": {
+              "rouge1": 0.4614924447437007,
+              "rouge2": 0.18289471229663423,
+              "rougeL": 0.28689351440806343
+            },
+            "cons_rouge_scores": {
+              "rouge1": 0.4370272969437081,
+              "rouge2": 0.16379534272242277,
+              "rougeL": 0.2810935409990581
+            },
+            "anal_rouge_scores": {
+              "rouge1": 0.4405897870746385,
+              "rouge2": 0.13605140970451385,
+              "rougeL": 0.22576125819960777
+            }
+          },
+          "constant_plus_half_mse_same_course_valid_subset": 7.646464646464646,
+          "common_final_line": {
+            "variant": "final_line_direction_common_v1",
+            "valid": 300,
+            "correct": 150,
+            "invalid_as_wrong": true,
+            "balanced_accuracy": 0.5165912856567104,
+            "class_counts": {
+              "up": 137,
+              "down": 163
+            },
+            "multiple_prediction_outputs": 0,
+            "first_line_correct": 150,
+            "first_last_disagreements": 0
+          },
+          "always_up_correct": 137,
+          "train_majority_up_correct": 137,
+          "EOS": 300,
+          "caps": 0,
+          "limitation": "Dataset labels and encoded references, not independently verified returns; ROUGE is not factual grounding."
+        },
+        "previously_inspected20": {
+          "samples": 20,
+          "course_raw": {
+            "valid_count": 19,
+            "bin_acc": 0.3684210526315789,
+            "mse": 10.421052631578947,
+            "pros_rouge_scores": {
+              "rouge1": 0.4160165639355561,
+              "rouge2": 0.15166169524906695,
+              "rougeL": 0.2701738936708144
+            },
+            "cons_rouge_scores": {
+              "rouge1": 0.4577259016467739,
+              "rouge2": 0.17838623757387473,
+              "rougeL": 0.3128855783923535
+            },
+            "anal_rouge_scores": {
+              "rouge1": 0.4294648449000029,
+              "rouge2": 0.1305546236875735,
+              "rougeL": 0.21674065065511403
+            }
+          },
+          "constant_plus_half_mse_same_course_valid_subset": 7.631578947368421,
+          "common_final_line": {
+            "variant": "final_line_direction_common_v1",
+            "valid": 20,
+            "correct": 7,
+            "invalid_as_wrong": true,
+            "balanced_accuracy": 0.3282828282828283,
+            "class_counts": {
+              "up": 11,
+              "down": 9
+            },
+            "multiple_prediction_outputs": 0,
+            "first_line_correct": 7,
+            "first_last_disagreements": 0
+          },
+          "always_up_correct": 11,
+          "train_majority_up_correct": 11,
+          "EOS": 20,
+          "caps": 0,
+          "limitation": "Dataset labels and encoded references, not independently verified returns; ROUGE is not factual grounding."
+        },
+        "other280_not_claimed_pristine": {
+          "samples": 280,
+          "course_raw": {
+            "valid_count": 278,
+            "bin_acc": 0.5143884892086331,
+            "mse": 8.384892086330936,
+            "pros_rouge_scores": {
+              "rouge1": 0.46460050853994095,
+              "rouge2": 0.18502934295815865,
+              "rougeL": 0.28803622230017745
+            },
+            "cons_rouge_scores": {
+              "rouge1": 0.43561264410429,
+              "rouge2": 0.16279812329012922,
+              "rougeL": 0.2789207039110271
+            },
+            "anal_rouge_scores": {
+              "rouge1": 0.4413501248491638,
+              "rouge2": 0.13642708932437664,
+              "rougeL": 0.22637777454257668
+            }
+          },
+          "constant_plus_half_mse_same_course_valid_subset": 7.64748201438849,
+          "common_final_line": {
+            "variant": "final_line_direction_common_v1",
+            "valid": 280,
+            "correct": 143,
+            "invalid_as_wrong": true,
+            "balanced_accuracy": 0.5299422799422799,
+            "class_counts": {
+              "up": 126,
+              "down": 154
+            },
+            "multiple_prediction_outputs": 0,
+            "first_line_correct": 143,
+            "first_last_disagreements": 0
+          },
+          "always_up_correct": 126,
+          "train_majority_up_correct": 126,
+          "EOS": 280,
+          "caps": 0,
+          "limitation": "Dataset labels and encoded references, not independently verified returns; ROUGE is not factual grounding."
+        }
+      }
+    },
+    "verification_kind": "Codex mechanical CPU checks, not independent Claude review"
+  },
+  "initial_authorized_test_read": {
+    "path": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/data/test_raw.json",
+    "actual_sha256": "4c0ff02c87a89d3231ba52ffbc44c968991f43a8795c3ea765c9874578b9c5d4",
+    "expected_sha256": "4c0ff02c87a89d3231ba52ffbc44c968991f43a8795c3ea765c9874578b9c5d4",
+    "plan_sha256": "f284b5fb9c06a970990d2557057d3ed0036bf4441c8811eb709479bb5d2c5339",
+    "authorization_sha256": "56296cabe16f4b21d93cd81a091399839fb6560fbe95aa081277b6723534d24a",
+    "read_at_utc": "2026-10-12T18:50:38.117965+00:00",
+    "purpose": "authorized deterministic policy hydration",
+    "source_user_message": "\u8d76\u7d27\u6536\u5c3e\u5b8c\u5de5\u4e86",
+    "test_read": true
+  },
+  "common_direction_variant": "final_line_direction_common_v1",
+  "always_up_correct_all240": 145,
+  "constant_plus_half_mse_all240": 6.345833333333333,
+  "llama_base_parser_diagnostics": {
+    "up_down_placeholder_outputs": 196,
+    "course_valid": 190,
+    "course_up_direction_outputs": 190,
+    "zero_course_margin_outputs": 178
+  },
+  "source_sha256": {
+    "D:\\AI4FinRuntime\\assignment1_three_model_submission_work\\llama_validation_results\\server4090_llama_base_int8_validation240_gen1920_retrospective_20261012\\config.json": "5eb15ce4b83dc814fc0b2bba45c306b604524e4f7df5681008c5c4172b815898",
+    "D:\\AI4FinRuntime\\assignment1_two_model_delivery\\delivery_ready_20261011\\training_code_adapters\\import_20261009\\assignment1_20261008\\source_snapshot\\course_utils.py": "a65e549300653a8637002dc30c0dd00805ef8e11dffbd25c92087544c3ec72ae",
+    "D:\\AI4FinRuntime\\assignment1_two_model_delivery\\delivery_ready_20261011\\qwen_validation240\\comparison.json": "611e5b1218e43c4b0fac6e34886603356f6bea5cb09e0e565c64dbc3fb51dc6e",
+    "D:\\AI4FinRuntime\\assignment1_two_model_delivery\\delivery_ready_20261011\\qwen_validation240\\base_outputs.jsonl": "dca753db187049c123a85b5a6fa3bca3c2e23ec4f1038455f0105b1527ecaaa3",
+    "D:\\AI4FinRuntime\\assignment1_two_model_delivery\\delivery_ready_20261011\\qwen_validation240\\adapter_outputs.jsonl": "f7602b28f54b1fb7ae60f7a8c463b9a16702e0617b7f490d562a4adac3e54fb4",
+    "D:\\AI4FinRuntime\\assignment1_two_model_delivery\\delivery_ready_20261011\\deepseek_validation240\\comparison.json": "c3698a3e22934542dcd790f30ce5a1869e22cd65214b541bd40d92822c3c5260",
+    "D:\\AI4FinRuntime\\assignment1_two_model_delivery\\delivery_ready_20261011\\deepseek_validation240\\base_outputs.jsonl": "b76bcb99ab946d2cceb3f9be3f2c227b3c0030fb15fee13e086702d5749d34b1",
+    "D:\\AI4FinRuntime\\assignment1_two_model_delivery\\delivery_ready_20261011\\deepseek_validation240\\adapter_outputs.jsonl": "55fda50f9fa7df8de0c384e782676eeb19818f6a7c68e2607b8e14e8b1274f5c",
+    "D:\\AI4FinRuntime\\assignment1_three_model_submission_work\\llama_validation_results\\server4090_llama_base_int8_validation240_gen1920_retrospective_20261012\\comparison.json": "5e1f2e29a4da6bf008eca0e8f65e8f884d300d8e436656adef91738bfb13e81a",
+    "D:\\AI4FinRuntime\\assignment1_three_model_submission_work\\llama_validation_results\\server4090_llama_base_int8_validation240_gen1920_retrospective_20261012\\base_outputs.jsonl": "ff46bb5d324769705762ac65d817992b4609fe9dada8a8617a0d2c2ddc7c1f0f",
+    "D:\\AI4FinRuntime\\assignment1_three_model_submission_work\\llama_validation_results\\server4090_llama_base_int8_validation240_gen1920_retrospective_20261012\\adapter_outputs.jsonl": "73dee36e143fe4ef6f0d29dce8a31f0c7fd64214370420d00a4259f1c881250e",
+    "D:\\AI4FinRuntime\\assignment1_three_model_submission_work\\hitl_effect_review_corrected_v4_20261012\\AI_MATCHED_HITL_EFFECT_REVIEW_CORRECTED_V4.json": "01a9e9446499d91bc1e59bdaecedcb26dd3c6a67c31fcd000fe8ba1fbb8564a1",
+    "D:\\AI4FinRuntime\\assignment1_three_model_submission_work\\llama_qualitative_review_20261012\\AI_SOURCE_BOUNDED_REVIEW.json": "193871c76de1f03f238b01e22732bbc79eb6bdebc95e0ba410cd58de1580b7b3",
+    "D:\\AI4FinRuntime\\assignment1_two_model_delivery\\delivery_ready_20261011\\training_code_adapters\\import_20261009\\assignment1_20261008\\runs\\server4090_qwen_int8_4096_epoch_20261010\\validation_loss.json": "e246714e73acfbdb8848d2e7899aa3b1fdb7ae5a2057ecca60c0a8914abdb260",
+    "D:\\AI4FinRuntime\\assignment1_two_model_delivery\\delivery_ready_20261011\\training_code_adapters\\import_20261009\\assignment1_20261008\\runs\\server4090_deepseek_int8_4096_epoch_20261010\\validation_loss.json": "e754af814adf3f8c70cdfd94cbb1824b58253a73d08b17efdb93d6dc0cbf52fd",
+    "D:\\AI4FinRuntime\\assignment1_three_model_submission_work\\llama_base_preparation\\server4090_llama_base_int8_4096_epoch_retrospective_20261012\\validation_loss.json": "6e12c26996558dab169d299f3aeb5b757e7cde43a7e3cd8474bb88b034734731",
+    "D:\\AI4FinRuntime\\assignment1_three_model_submission_work\\final_test_execution_20261012\\collected\\final_test_retrospective_v4_20261012\\LOCAL_VERIFICATION.json": "6f80097280043a4a62f4e3bd9c1b2012c9aaa434c9b272895981207027544ea3",
+    "D:\\AI4FinRuntime\\assignment1_three_model_submission_work\\final_test_execution_20261012\\collected\\final_test_retrospective_v4_20261012\\COMPLETED_FILES_SHA256.json": "445ddf90089e03a0e22e56be8de2b7e627d82c354973bb2aa732d5983da14a1d"
+  },
+  "actual_human_fresh_output_ratings": 0,
+  "feedback_loop_completed": false,
+  "independent_actual_run_review_completed": true,
+  "required_text_corrections_applied": true,
+  "independent_reaudit_of_corrected_document_performed": false,
+  "independent_reaudit_required_by_auditor": false,
+  "final_human_acceptance_pending": true,
+  "actual_independent_report_sha256": "d603a7851bd7ed851dfe9144685cebd64b190c47d604f775097a9b4d47dda8d3"
+}

@@ -1,0 +1,47 @@
+{
+  "samples": 240,
+  "course_reference_metrics": {
+    "valid_count": 0
+  },
+  "course_valid_fraction": 0.0,
+  "dataset_label_metrics": {
+    "valid_direction_count": 22,
+    "correct_count": 12,
+    "accuracy_all_invalid_as_wrong": 0.05,
+    "accuracy_valid_only": 0.5454545454545454,
+    "balanced_accuracy_all_invalid_as_wrong": 0.04500907441016334,
+    "confusion": {
+      "1->None": 133,
+      "1->1": 10,
+      "-1->None": 85,
+      "-1->-1": 2,
+      "1->-1": 2,
+      "-1->1": 8
+    }
+  },
+  "output_metrics": {
+    "complete_count": 22,
+    "complete_fraction": 0.09166666666666666,
+    "length_limit_count": 5
+  },
+  "output_diagnostics": {
+    "nonempty_count": 240,
+    "natural_eos_count": 235,
+    "length_limit_count": 5,
+    "normalized_structure_count": 204,
+    "normalized_complete_count": 203,
+    "normalized_valid_direction_count": 201,
+    "normalized_correct_count": 107,
+    "normalized_accuracy_all_invalid_as_wrong": 0.44583333333333336,
+    "normalized_accuracy_valid_only": 0.5323383084577115,
+    "note": "Supplemental heading normalization and final-prediction direction extraction; original course scores remain unchanged. Parsing success is not factual quality."
+  },
+  "inference": {
+    "mean_seconds": 19.460210070514584,
+    "median_seconds": 19.32424412749242,
+    "total_seconds": 4670.450416923501,
+    "total_generated_tokens": 244821,
+    "tokens_per_second_total": 52.41914122733958
+  },
+  "limitation": "Course scores compare parsable reference-answer pairs, including its original range parser; label scores compare dataset labels, not independently fetched returns. ROUGE does not establish factual quality."
+}

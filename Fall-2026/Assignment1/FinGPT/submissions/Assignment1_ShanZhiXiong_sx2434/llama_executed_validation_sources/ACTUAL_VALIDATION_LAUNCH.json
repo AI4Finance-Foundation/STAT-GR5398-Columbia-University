@@ -1,0 +1,14 @@
+{
+  "pid": 681559,
+  "plan_sha256": "4409db129bd049e4cca3251182a270fb06895bf2bfa3fa4cf4c6dc656349b572",
+  "selected_step": 248,
+  "adapter_sha256": "e4d88dc0562bb72370258cbd2ca80079348d9d645d612283b15a06c7fc373ab9",
+  "launched_at_utc": "2026-10-12T08:02:23.585547+00:00",
+  "command": [
+    "/root/shared-nvme/AI4FinRuntime/venvs/fingpt/bin/python3.12",
+    "/root/shared-nvme/AI4FinRuntime/setup/llama_retrospective_validation_v1_20261012/llama_validation_worker.py",
+    "--plan-sha",
+    "4409db129bd049e4cca3251182a270fb06895bf2bfa3fa4cf4c6dc656349b572"
+  ],
+  "test_read": false
+}

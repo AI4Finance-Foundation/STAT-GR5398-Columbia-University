@@ -1,0 +1,20 @@
+{
+  "source": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/server4090_qwen_int8_4096_validation30_gen1920_20261010",
+  "reused_per_kind": 30,
+  "additional_per_kind": 210,
+  "input_ids_and_reference_equal": true,
+  "old_total_context_cap": 4096,
+  "new_total_context_cap": 6144,
+  "max_new_tokens": 1920,
+  "reason": "Previously generated answers ended at EOS under the identical actual rendered prompt, model, adapter and generation settings; increasing an unused context safety ceiling does not alter these answers. Legacy prepared input_ids were stale and were not used by the old evaluator; actual tokenization is rechecked here.",
+  "reference_normalization": "Remove only surrounding whitespace to match canonical240; reference content and generated text unchanged",
+  "sha256": {
+    "base": "fd2a58e1513f5dfb785c70a09bbbdf1dfbca42d6706e7516df5ce65d3156ad40",
+    "adapter": "0b1b64f36976043d1d4011ec5807380ecd4decb282c29282b290e09f07abb5e3"
+  },
+  "seed_sha256": {
+    "base": "28f7456eb24a6af7e3cfb4897702b2d9bc8ba3c9998bf5527f6cd52c2b6c1a1b",
+    "adapter": "8e5e853e4019943e0a81ccf448937e42674933ec7a131c71aa8dd77bb5cc863f"
+  },
+  "test_used": false
+}

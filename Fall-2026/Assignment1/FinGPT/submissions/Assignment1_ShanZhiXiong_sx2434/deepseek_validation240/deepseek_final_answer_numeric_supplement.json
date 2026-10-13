@@ -1,0 +1,110 @@
+{
+  "created_at_utc": "2026-10-11T03:56:49.926756+00:00",
+  "validation_only": true,
+  "test_used": false,
+  "original_course_metrics_preserved": true,
+  "variants": {
+    "base": {
+      "numeric_valid_count": 199,
+      "missing_numeric_count": 41,
+      "rules": {
+        "lower_plus_half": {
+          "mse": 33.969849246231156,
+          "constant_plus_half_mse_same_subset": 6.376884422110553,
+          "constant_zero_mse_same_subset": 6.400753768844221
+        },
+        "midpoint": {
+          "mse": 56.39478643216081,
+          "constant_plus_half_mse_same_subset": 6.376884422110553,
+          "constant_zero_mse_same_subset": 6.400753768844221
+        }
+      },
+      "missing_numeric_sample_ids": [
+        "22912509ea2cc2845a8db759bcff9a8cbf191fab8100dad67dabd78d3f30a0c4",
+        "168aa273f3791137bf9e2afeb2c7bf3abcd62d6485ab69b1ce8ad5a26ab4039b",
+        "3b309c4707a1676e35c7105d65c4a059a64d5c742eb9c846763e44f8e1c8db80",
+        "05752113be726b1be1352afc592f90ff7d79a997eb1c805e50c2fc6832243c48",
+        "1639cd6c6619564553bbcd688dde0fb0346d1322df1630198f08143482117709",
+        "5d83dea6f2a60c4a8fa35aeab532a56aeb8d24f9b3e7a524ea455069751a55d5",
+        "bfc6c95099bec16a0465619e83fc5dc578ba0016cef76407106e1c3af6c283ba",
+        "c86e057967d5f3500cd4658fa71f839230c34dca2c849bbee4eade5ea2e1e669",
+        "46097f27f77c647a21c35dc23eba7ef64f884bdbb14da4df53e714f88cb1287c",
+        "9b0a6a4cc657d9a9e4ff88404b4aef47d7f52192d8e47778ddb54f3a286f930c",
+        "2aca992d0463cf1f2f245ebfcdfb14a57e33db96718a8be3c6696e47ea7dd8fb",
+        "9623f2e8903b3381d5d096f5b3f824c664aa337f9561c9c6d5f53c7d3c6d7215",
+        "c8e7a24c2720c44f39e0cff321f81bcd4326f889b772c4bea60fa7db3827165a",
+        "b38ed8fac74ad8979dba2fe9f2fd1b1c04360ee0ce432938bc306e090663e4b5",
+        "245260f8eb6cc8e70e0338ed39e6bae148557ed8a63acf1f0dd003523a2cf6a1",
+        "e470d3471b59c953b05e756514255196e13a7d6138deff623b62ef822aec8d89",
+        "218746268af99cd99da86af7a57aea59add513793f024f7c16026767211aa4c8",
+        "aed9d7e1d4ecdaf3cd1636111b25cae23e9804716ac8db52f9a14277b0ce4705",
+        "ec669b133425f7fdfcf32bc2701ebb03c59901b15c8aeac169664746f8b4266d",
+        "e4d5bc85af9a8d09c11fd47133156d49afaf694921f963449ef6340052bc530c",
+        "ea4ccb81f81b8d1afb8e1f4ad443fb393ac78014d84466c03b2c50b477897ff8",
+        "c4ccad5c5b5ca1741c37805adaf5a60e3dea1e8303bdde75c10306ae32dbeb46",
+        "d6ad082c95799504a746753ecb876510bfb90bf22d481f4cb523b699f0b2567d",
+        "b82f3df1d98cfae42ed121bac46baab8be86e44c029e9aec5100fdf099d38e8f",
+        "c05b16150498a5dc399a8b45915310a881ee5f2b5d074085483d49c83aa6f18b",
+        "9702b9de5714af5f513c0df08b978af5b5d468e94b5876f93d6e441aa0100b8e",
+        "07e9313e693ec0b44a21d62d7304d60fe400245431131316d2342d23ec2de87e",
+        "f11e3fdf4b1a288caf66f8925fa49577f76a7c0cf50ebf9b596d84da966e8bb1",
+        "9133470193787b0333fbf929102d2f4448e0cf48349d7b14451d9d35f44246c2",
+        "33bc7b3c5d2240f947b3e4c96b5716f17abec869c0be182b003935d9ca2ef738",
+        "b650265f1703864774970325f48d426b48fa47d29d5a0619bc4a99f3441fec8f",
+        "9a4e32ffd5a594c40d57bf4596b1318eb596abbe126d0b97c18eca3288ebdd94",
+        "a272b76b15630c15c73a3e5c8a2418cf47b2ed5c27df35ebe1b6e2741ed5157c",
+        "ba0b188974756a302c499c06fbe48c8fa235b82a8a6d85ad719a519ef0b9ed0c",
+        "8b92caf4a03904a24f3ca2f56ffc76214fe8e89a8be1144a8c1542534e749a94",
+        "dced5b17a0e5a6999d0c83f3e9b6c93f8c5f5d590e87fd79529425c2283893e7",
+        "a34ece291856bac1b795c4fc297823e430bdffdaa5cb9b6645e4a79d6f84a880",
+        "ea19184d1d981d3c31af6dbdc8e2043f929ae7354a8f01ed66c7f2e45ea8bd12",
+        "75a4d5465813592a6856fa07b85aacb77668b63f778e1d905099ecc83bfb3eeb",
+        "4028c8999ba44dbace402208c5da38338c34d2e32cc5d6f4904cc19b45c5660a",
+        "ab04fa56b5bf157af0ab3de8c8814d4ecdaa6cda4590787d2c6d862ade92f5fe"
+      ]
+    },
+    "adapter": {
+      "numeric_valid_count": 240,
+      "missing_numeric_count": 0,
+      "rules": {
+        "lower_plus_half": {
+          "mse": 7.508333333333334,
+          "constant_plus_half_mse_same_subset": 6.345833333333333,
+          "constant_zero_mse_same_subset": 6.491666666666666
+        },
+        "midpoint": {
+          "mse": 7.508333333333334,
+          "constant_plus_half_mse_same_subset": 6.345833333333333,
+          "constant_zero_mse_same_subset": 6.491666666666666
+        }
+      },
+      "missing_numeric_sample_ids": []
+    }
+  },
+  "common_parseable_subset": {
+    "n": 199,
+    "rules": {
+      "lower_plus_half": {
+        "base": 33.969849246231156,
+        "adapter": 7.658291457286432
+      },
+      "midpoint": {
+        "base": 56.39478643216081,
+        "adapter": 7.658291457286432
+      }
+    },
+    "constant_plus_half_mse": 6.376884422110553
+  },
+  "fixed_baselines_all240": {
+    "plus_half_mse": 6.345833333333333,
+    "zero_mse": 6.491666666666666
+  },
+  "definition": "Final-answer parser strips closed think blocks, normalizes headings, then explicit percent range endpoints. lower_plus_half=sign*(lower+0.5); midpoint=sign*(lower+upper)/2. Literal single-percent point predictions use that exact number without adding0.5. For open greater-than bins both use lower+0.5 solely as a surrogate. Reference magnitudes use lower+0.5 quantized labels. Neither measures observed continuous returns. Missing/ambiguous numbers are excluded from MSE with exact counts and IDs; not imputed as zero. These are supplemental metrics, not replacement course scores or factual quality.",
+  "source_sha256": {
+    "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/metrics.py": "f3a9833d8808c806085c40a100733416e35288a3d9060c77ff2abc1c318a4d0d",
+    "/root/shared-nvme/AI4FinRuntime/setup/audit_improvements_20261011/build_audit_supplement.py": "44ef314fdbd8022b60215d9bfd4d7c2b8fcdc6c78fb212b912b88feba0fabffc",
+    "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/server4090_deepseek_int8_validation240_gen1920_batch16_chunkprefill512_20261011/config.json": "6873e93594d75daf9e9352ec848c037d504894fa72e2e824d0828939d3a9ffc1",
+    "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/server4090_deepseek_int8_validation240_gen1920_batch16_chunkprefill512_20261011/base_outputs.jsonl": "b76bcb99ab946d2cceb3f9be3f2c227b3c0030fb15fee13e086702d5749d34b1",
+    "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/server4090_deepseek_int8_validation240_gen1920_batch16_chunkprefill512_20261011/adapter_outputs.jsonl": "55fda50f9fa7df8de0c384e782676eeb19818f6a7c68e2607b8e14e8b1274f5c"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "E1": "Parent verifies all source/runtime/registry/prepared-data/checkpoint/weight/tokenizer metadata and loads CPU tokenizers before output creation or test hydration. Each child repeats only its model preflight before GPU load.",
+  "E2": "Independent OS process per model, shared parent-held/inherited lock FD, PPID+inode check; child exit checked; input-length envelopes declared from validation before test access and checked for ALL models before ANY child/model launch; both reserved/allocated guards. No real GPU rehearsal claimed.",
+  "E3": "Keep Qwen16 for serving efficiency chosen from validation; explicitly disclose original validation1 vs proposed test16 and0/32 identical texts,31/32 same directions in PLAN and report protocol addendum. Original1440 metrics unchanged.",
+  "E4": "Reject actual optimized Python at main entry before authorization/any test access.",
+  "E5": "DeepSeek adapter uses adapter_legacy_unclosed; every record has model/revision/tokenizer SHAs/BOS/EOS/input ID SHA/exposure/variant/closure/EOS/cap boundary receipt.",
+  "synthetic_only_tests": 14,
+  "real_test_read": false,
+  "new_GPU_work": false,
+  "primary_report_minor_corrections_independently_accepted": true
+}

@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "D:\AI4FinRuntime\assignment1_three_model_submission_work\llama_retrospective_validation_v1_20261012\collect_current_validation_once.py", line 43, in <module>
+    try:main()
+        ^^^^^^
+  File "D:\AI4FinRuntime\assignment1_three_model_submission_work\llama_retrospective_validation_v1_20261012\collect_current_validation_once.py", line 19, in main
+    r=subprocess.run(['ssh.exe','-o','BatchMode=yes','-o','ConnectTimeout=15','paratera-4090',cmd],capture_output=True,text=True,timeout=25)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91157\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91157\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91157\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1628, in _communicate
+    raise TimeoutExpired(self.args, orig_timeout)
+subprocess.TimeoutExpired: Command '['ssh.exe', '-o', 'BatchMode=yes', '-o', 'ConnectTimeout=15', 'paratera-4090', 'python3 -c "import pathlib; p=pathlib.Path(\'/root/shared-nvme/AI4FinRuntime/setup/llama_retrospective_validation_v1_20261012/FINALIZATION_RECEIPT.json\'); print(p.read_text() if p.exists() else \'{}\')"']' timed out after 25 seconds

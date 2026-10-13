@@ -1,0 +1,51 @@
+{
+  "models": [
+    "Qwen/Qwen2.5-7B-Instruct",
+    "meta-llama/Llama-3.1-8B",
+    "deepseek-ai/DeepSeek-R1-Distill-Llama-8B"
+  ],
+  "training": {
+    "context_tokens": 4096,
+    "microbatch": 1,
+    "gradient_accumulation": 4,
+    "learning_rate": 0.0002,
+    "lora_r": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ],
+    "quantization": "LLM.int8 8-bit base; higher-precision compute and LoRA adapters",
+    "epochs": 1,
+    "seed": 42,
+    "lr_scheduler": "cosine",
+    "warmup_ratio": 0.03
+  },
+  "checkpoint_selection": "lowest token-weighted teacher-forced validation cross-entropy over all 240 validation rows; evaluate at half and end of one epoch; ties choose earlier",
+  "training_targets": "full reference answer plus EOS; prompt labels masked; refuse silent answer truncation or sample dropping",
+  "generation": {
+    "validation_diagnostic_samples": 30,
+    "subset_policy": "one sample per company, selected by input-derived sample hash; no labels consulted",
+    "prompt_budget": 384,
+    "max_new_tokens": 640,
+    "do_sample": false
+  },
+  "metrics": [
+    "unmodified course calc_metrics with valid_count",
+    "direction accuracy against dataset label, invalid predictions incorrect",
+    "ROUGE-1/2/L for pros/cons/analysis",
+    "full-output rate",
+    "length-limit rate",
+    "seconds per sample",
+    "peak allocated/reserved VRAM",
+    "WDDM dedicated/shared memory"
+  ],
+  "baselines": "always-up and train-majority direction (selected using training labels only); no claim that either is a validated trading strategy",
+  "test_policy": "do not read/generate test during tuning; final test after all available model configurations freeze; report 300 overall, 20 exposed, 280 not individually inspected separately",
+  "manual_review": "only validation outputs during development; final test error analysis after final metrics, no subsequent tuning reported as held-out performance",
+  "publication": "prepare report/blog draft and submission package; publication/submission requires user identity and explicit destination authorization",
+  "parent_protocol_sha256": "ee0711217ef4fbcd0dc77a2bcccded821423854039e2105bc183ef1b9406e118",
+  "version": "server4090_deepseek_int8_4096_20261010",
+  "preprocessing": "Retain full reference answer plus EOS; retain original prompt when it fits; otherwise compress news input with no fixed headline/summary token caps."
+}

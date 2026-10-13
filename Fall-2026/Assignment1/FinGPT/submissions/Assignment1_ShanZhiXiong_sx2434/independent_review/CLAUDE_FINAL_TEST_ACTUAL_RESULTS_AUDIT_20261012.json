@@ -1,0 +1,182 @@
+{
+  "audit": {
+    "title": "Independent audit of the completed authorized final-test run and the new review package",
+    "reviewer": "Claude (Anthropic), independent of the implementing agent (Codex)",
+    "actual_model_id": "claude-opus-5-5",
+    "actual_effort": "high",
+    "fast_mode": "off",
+    "model_effort_source": "Claude desktop app session metadata; same session as the earlier rounds",
+    "language": "zh",
+    "date": "2026-10-12",
+    "request_file": "FINAL_TEST_ACTUAL_RESULTS_AUDIT_REQUEST_20261012.md",
+    "inputs": {
+      "directory": "D:/AI4FinRuntime/R3_FINAL_REVIEW_20261012_v1",
+      "manifest_sha256": "363ef533d946b583a5b714d2ca6ac4e78870294d18016241e83580cb255924ea",
+      "manifest_matches_request": true,
+      "listed_files": 380,
+      "mismatches": 0,
+      "files_on_disk": 381,
+      "unlisted_on_disk": ["MANIFEST.json"],
+      "plan_sha256": "f284b5fb9c06a970990d2557057d3ed0036bf4441c8811eb709479bb5d2c5339",
+      "authorization_sha256": "56296cabe16f4b21d93cd81a091399839fb6560fbe95aa081277b6723534d24a",
+      "executor_files_identical_to_accepted_fallback_packet": "9/9"
+    },
+    "constraints_observed": {
+      "local_d_drive_cpu_only": true, "offline": true, "ssh": false, "gpu_used": false, "installed_or_downloaded": false, "credentials_read": false, "training": false,
+      "new_test_generation": false, "published_or_submitted": false, "old_reports_or_frozen_evidence_modified": false, "files_created_inside_reviewed_packet": 0,
+      "test_data_and_outputs_read": true, "test_read_basis": "express authorization in the request for this actual-results audit",
+      "tokenizers_loaded": "only the three non-weight copies inside the packet", "codex_builder_or_verifier_executed": false
+    },
+    "files_written": ["CLAUDE_FINAL_TEST_ACTUAL_RESULTS_AUDIT_20261012.md", "CLAUDE_FINAL_TEST_ACTUAL_RESULTS_AUDIT_20261012.json"],
+    "probe_directory": "claude_probes_final_test_20261012",
+    "probes": ["y01_final_test_outputs", "y02_logs_materials_carryover", "y03_final_integrity"]
+  },
+  "overall": {
+    "actual_run_evidence_accepted": true,
+    "actual_run_evidence_defects": 0,
+    "numbers_in_pdf_and_readme_match_recomputation": true,
+    "review_material_text_defects": 2,
+    "review_material_recommended_additions": 1,
+    "any_number_or_evidence_change_required": false,
+    "new_audit_round_required": false,
+    "new_audit_round_note": "The three text changes use only numbers listed and verified in this report; they can be checked by string comparison.",
+    "certifies_complete_assignment": false, "certifies_clean_data": false, "certifies_predictive_ability": false, "certifies_completed_hitl": false,
+    "outstanding": ["public Medium publication", "formal course submission", "user final acceptance", "Name / UNI"],
+    "summary": "All 1800 real outputs, 900 prompts, token receipts, schedules, 18 metric groups and the sequential child-process record reproduce on local CPU. The Medium draft contains a sentence that is now false, and none of the three review texts states the test label balance, so the only reported direction baseline (always-up 137) is the minority class and adapter scores above it can be misread as skill."
+  },
+  "chronology_utc": [
+    ["2026-10-12T16:26:24", "plan frozen"],
+    ["2026-10-12T18:49:17.73", "authorization transcribed"],
+    ["2026-10-12T18:49:17.74", "launch, parent pid 851430"],
+    ["2026-10-12T18:50:38", "first test read, then three V3 loader reads"],
+    ["2026-10-12T18:51:10 to 19:41:57", "qwen child, pid 852004"],
+    ["2026-10-12T19:00:31", "extra audit-copy read outside the worker, with receipt"],
+    ["2026-10-12T19:42:44 to 21:53:04", "deepseek child, pid 867184"],
+    ["2026-10-12T21:53:48 to 2026-10-13T01:49:55", "llama child, pid 905576"],
+    ["2026-10-13T01:50:09", "COMPLETED.json, 1800 outputs"]
+  ],
+  "chronology_checks": {
+    "required_order_holds": true, "authorization_after_freeze": "2:22:52", "run_length": "7:00:51", "children_overlap": false, "gaps_between_children_seconds": [82, 71],
+    "one_pid_per_child": true, "traceback_or_oom_in_logs": false, "failed_json_present": false,
+    "wall_time_vs_sum_of_generation_seconds": {"qwen": [3020, 3017], "deepseek": [7785, 7788], "llama": [14140, 14132]},
+    "authorization_publish_submit": [false, false]
+  },
+  "test_source": {
+    "sha_equals_plan_authorization_first_read_receipt_and_earlier_split_manifest": true,
+    "rows": 300, "distinct_ids": 300, "schema_checks": "300/300", "periods": 10, "symbols_per_period": 30,
+    "overlap_with_train_or_validation": {"ids": 0, "symbol_period_pairs": 0},
+    "hydrated_policy_ids_equal_file_order": true,
+    "labels": {"all300": {"up": 137, "down": 163}, "previously_inspected20": {"up": 11, "down": 9}, "other280": {"up": 126, "down": 154}},
+    "references_rejected_by_course_parser": ["UNH 2024-03-17", "KO 2024-03-31", "GS 2024-04-14 (in the inspected 20)"],
+    "rows_with_financial_header_after_forecast_start": 2
+  },
+  "prompts": {
+    "reencoded_equal_to_prepared_input_ids": {"qwen": "300/300", "deepseek": "300/300", "llama": "300/300"},
+    "tokenizer_copies_equal_bindings": true,
+    "max_prompt_tokens": {"qwen": 2930, "deepseek": 2657, "llama": 2653},
+    "envelope": {"qwen": 3517, "deepseek": 3276, "llama": 3272},
+    "fallback_rows": 0, "reference_text_in_prompts": false
+  },
+  "outputs": {
+    "total": 1800, "per_record_checks": 22, "all_checks_pass_in_all_six_files": true,
+    "groups": {"qwen": "18x16 + 1x12", "deepseek": "18x16 + 1x12", "llama": "37x8 + 1x4"},
+    "base_and_adapter_schedules_identical": true, "rows_filtered_or_clipped": 0, "output_receipt_sha_ok": true,
+    "per_variant": {
+      "qwen_base": {"eos": 300, "caps": 0, "closes_think": 0, "peak_allocated_gib": 12.11, "peak_reserved_gib": 19.72},
+      "qwen_adapter": {"eos": 300, "caps": 0, "closes_think": 0, "peak_allocated_gib": 12.11, "peak_reserved_gib": 22.61},
+      "deepseek_base": {"eos": 297, "caps": 3, "closes_think": 299, "peak_allocated_gib": 17.77, "peak_reserved_gib": 23.03},
+      "deepseek_adapter": {"eos": 300, "caps": 0, "closes_think": 0, "peak_allocated_gib": 15.37, "peak_reserved_gib": 21.49},
+      "llama_base": {"eos": 164, "caps": 136, "closes_think": 0, "peak_allocated_gib": 13.50, "peak_reserved_gib": 23.00},
+      "llama_adapter": {"eos": 300, "caps": 0, "closes_think": 0, "peak_allocated_gib": 12.04, "peak_reserved_gib": 17.47}
+    }
+  },
+  "metrics": {
+    "groups_equal_to_recomputation": "18/18",
+    "compared_fields": ["course valid", "bin_acc", "MSE", "same-subset +0.5 MSE", "9 ROUGE values", "common direction correct and valid", "balanced accuracy", "multiple Prediction outputs", "first-line correct", "first/last disagreements", "always-up", "EOS and caps", "DeepSeek base extracted separate variant and its same-subset baseline"],
+    "method": "own transcription of the course parser, own ROUGE implementation, own common final-line rule; metrics JSON and CSV both compared",
+    "always_up": {"all300": 137, "previously_inspected20": 11, "other280": 126},
+    "all300": {
+      "qwen_base": {"course_valid": 208, "bin_acc": 0.5288, "mse": 11.2356, "plus_half_mse_same_subset": 7.1827, "direction_correct": 161, "direction_valid": 296, "balanced_accuracy": 0.5352},
+      "qwen_adapter": {"course_valid": 297, "bin_acc": 0.4747, "mse": 8.7475, "plus_half_mse_same_subset": 7.6465, "direction_correct": 142, "direction_valid": 300, "balanced_accuracy": 0.5008},
+      "deepseek_base": {"course_valid": 0, "bin_acc": null, "mse": null, "plus_half_mse_same_subset": null, "direction_correct": 130, "direction_valid": 265, "balanced_accuracy": 0.4541},
+      "deepseek_adapter": {"course_valid": 297, "bin_acc": 0.4983, "mse": 8.5724, "plus_half_mse_same_subset": 7.6465, "direction_correct": 148, "direction_valid": 300, "balanced_accuracy": 0.5134},
+      "llama_base": {"course_valid": 220, "bin_acc": 0.4818, "mse": 9.3727, "plus_half_mse_same_subset": 8.3000, "direction_correct": 2, "direction_valid": 4, "balanced_accuracy": 0.0073},
+      "llama_adapter": {"course_valid": 297, "bin_acc": 0.5051, "mse": 8.5152, "plus_half_mse_same_subset": 7.6465, "direction_correct": 150, "direction_valid": 300, "balanced_accuracy": 0.5166}
+    },
+    "previously_inspected20": {
+      "qwen_base": {"direction": "12/20", "balanced_accuracy": 0.6061}, "qwen_adapter": {"direction": "12/20", "balanced_accuracy": 0.5758},
+      "deepseek_base": {"direction": "10/17", "balanced_accuracy": 0.4747}, "deepseek_adapter": {"direction": "8/20", "balanced_accuracy": 0.3838},
+      "llama_base": {"direction": "0/0", "balanced_accuracy": 0.0}, "llama_adapter": {"direction": "7/20", "balanced_accuracy": 0.3283}
+    },
+    "other280_not_claimed_pristine": {
+      "qwen_base": {"direction": "149/276", "balanced_accuracy": 0.5307}, "qwen_adapter": {"direction": "130/280", "balanced_accuracy": 0.4964},
+      "deepseek_base": {"direction": "120/248", "balanced_accuracy": 0.4524}, "deepseek_adapter": {"direction": "140/280", "balanced_accuracy": 0.5238},
+      "llama_base": {"direction": "2/4", "balanced_accuracy": 0.0079}, "llama_adapter": {"direction": "143/280", "balanced_accuracy": 0.5299}
+    }
+  },
+  "interpretation_facts": {
+    "always_down_correct_all300": 163,
+    "always_down_status": "a fact about the label distribution counted from the test file, not a pre-declared baseline",
+    "best_variant": {"name": "qwen base", "direction_correct": 161},
+    "any_variant_above_test_majority_class": false,
+    "adapters_predicted_up_of_300": {"qwen": 245, "deepseek": 219, "llama": 207},
+    "training_majority": "up, 542/990",
+    "qwen_adapter_below_its_base": [142, 161],
+    "every_adapter_course_mse_worse_than_same_subset_constant": true,
+    "sd_of_correct_count_under_independence_rows": 8.7,
+    "llama_base_test_template_echo": {"outputs_with_up_down_placeholder": 234, "course_valid": 220, "course_valid_parsed_up": 220, "zero_margin": 208}
+  },
+  "review_materials": {
+    "pdf": {"pages": 8, "numeric_and_key_strings_checked": 88, "all_present": true, "page_images_viewed_by_auditor": 8, "clipping_or_overlap": false, "rendered_by_auditor": false, "text_extracted_by_auditor_from_pdf": true},
+    "readme": {"table_rows_checked": 18, "all_match": true},
+    "medium_draft": {"final_test_statements_checked": 12, "all_match": true},
+    "boundaries_stated": ["1440 validation and 48 HITL outputs separate", "AI judgments not presented as human; no new human rating; human acceptance pending", "20 / 280 separate, 280 not claimed pristine, no clean benchmark or independent-return claim", "Qwen test batch 16 vs validation batch 1 disclosed (PDF and README)", "DeepSeek unclosed supervision disclosed", "publication, submission and final acceptance outstanding"],
+    "frozen_time_pending_markers": "consistent with the request; packet not changed",
+    "scope_prior_validation_manifest_sha_refers_to": "validation_stage_history/MANIFEST.json",
+    "carried_over_directories_identical_to_reviewed_r3_package": true,
+    "independent_audits_copies_identical": "16/16"
+  },
+  "findings": [
+    {
+      "id": "D1", "class": "verified factual error", "location": "MEDIUM_DRAFT.md line 3",
+      "text": "This is a local draft about a retrospective validation experiment. It has not been published, and no final-test result is included.",
+      "problem": "The same draft reports the final-test results of all six variants and always-up 137 in its second-to-last paragraph.",
+      "fix": "Remove the clause and describe the draft as covering validation and the final test."
+    },
+    {
+      "id": "D2", "class": "omission that changes how the main test result is read", "location": "PDF section 4; MEDIUM_DRAFT.md final-test paragraph and title; README partly",
+      "problem": "No review text states that test labels are 137 up / 163 down or that a constant-down prediction scores 163/300. The only direction baseline shown is always-up 137, the minority class; adapters at 142/148/150 and Qwen base at 161 read as beating the baseline. The PDF all-300 table has no balanced accuracy (README has it). The Medium title says the adapters did not beat a simple baseline while its only test baseline is below all three adapters.",
+      "required_facts": ["test labels 137 up / 163 down", "constant-down 163/300, above all six variants, stated as a label-distribution fact and not as a pre-declared baseline", "all-300 balanced accuracy 0.5352 / 0.5008 / 0.4541 / 0.5134 / 0.0073 / 0.5166", "adapters predicted up on 245 / 219 / 207 rows", "exceeding always-up is not evidence of skill; Qwen adapter 142 is below its base 161"]
+    },
+    {
+      "id": "D3", "class": "recommended addition", "location": "PDF sections 4-5",
+      "problem": "The validation section explains that Llama base course-valid outputs are template echoes; the test tables show 220 course-valid, MSE 9.3727 and bin_acc 0.4818 for Llama base without the corresponding note.",
+      "required_facts": ["234/300 outputs contain Up/Down placeholders", "all 220 course-valid outputs parse as up", "208 have zero margin"]
+    }
+  ],
+  "optional_not_required": ["Medium draft could mention that Qwen test batch 16 differs from validation batch 1; PDF and README already disclose it"],
+  "scope_limits_not_defects": [
+    "the authorization is one short reply recorded verbatim with an interpretation note; the timestamp is transcription time and is labelled as such; only the user can confirm the intent",
+    "one test read outside the gate (audit copy, 19:00:31Z) during the Qwen child; receipt present; prepared prompts were already pinned",
+    "GPU-side facts are Codex-supplied; internal consistency of the records was verified, not that the stated weights produced them",
+    "absence of any other test access on the server cannot be proven",
+    "three test references are rejected by the course parser, so course-valid has a ceiling of 297, which all three adapters reach",
+    "two test rows have a financial header date after the forecast start",
+    "peak reserved memory 23.03 and 23.00 GiB against a 23.42 guard",
+    "the packet now contains the full test data and outputs"
+  ],
+  "not_performed": [
+    "any GPU rerun or anything on Linux",
+    "executing verify_completed_test.py or the report builder; LOCAL_VERIFICATION.json and the Codex visual QA were treated as Codex statements",
+    "rendering the PDF; page appearance was judged from the packet's PNGs, text from the PDF itself",
+    "content-level fact-checking of the 1800 test outputs",
+    "re-auditing the 1440 validation outputs, 48 HITL outputs or human ratings beyond byte identity with the reviewed R3 package",
+    "sentence-by-sentence re-verification of PDF pages 1-4 and 7-8, which differ from the previously reviewed report only in footer, titles and the final-test and audit-boundary paragraphs",
+    "comparing labels or references with realized market returns",
+    "checking the course rubric item by item"
+  ],
+  "final_integrity": {
+    "probe": "y03_final_integrity", "final_packet_mismatches": 0, "workspace_packages_verified": 15, "workspace_mismatching_files": 0,
+    "earlier_claude_report_files_checked": 24, "earlier_claude_reports_unchanged": true, "human_18_claim_export_unchanged": true, "residue": "none"
+  }
+}

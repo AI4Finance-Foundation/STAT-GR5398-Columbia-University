@@ -1,0 +1,18 @@
+{
+  "models": {
+    "qwen": {
+      "evaluation_data": "/root/shared-nvme/AI4FinRuntime/setup/three_model_validation240_20261010/qwen_validation_generation240_full.json",
+      "evaluation_sha256": "908a6e746cd895c5554e55975c4bdf2dec1f8a54175f18c1b6e897b135ab675d",
+      "training_run": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/server4090_qwen_int8_4096_epoch_20261010"
+    },
+    "deepseek": {
+      "evaluation_data": "/root/shared-nvme/AI4FinRuntime/setup/three_model_validation240_20261010/deepseek_validation_generation240_full.json",
+      "evaluation_sha256": "65068c0ce82785beeec2f9884d4d55559e89e72155f5f3b0e06b585a2e8ec29e",
+      "training_run": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/server4090_deepseek_int8_4096_epoch_20261010"
+    }
+  },
+  "core_sources": {
+    "data_processing.py": "fe86f8232e19c2eff23e422ddbcdc89090e82425b58c87c4b0f4817758131f10",
+    "metrics.py": "f3a9833d8808c806085c40a100733416e35288a3d9060c77ff2abc1c318a4d0d"
+  }
+}

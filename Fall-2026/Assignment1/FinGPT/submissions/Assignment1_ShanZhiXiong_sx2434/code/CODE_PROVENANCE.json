@@ -1,0 +1,19 @@
+{
+  "wrapper_used_for_reported_runs": false,
+  "source_wrappers_preserved": "D:\\AI4FinRuntime\\assignment1_three_model_submission_work\\course_entrypoints_v2",
+  "historically_executed_implementations": {
+    "qwen": "setup/server_full_int8_train.py",
+    "deepseek": "setup/server_deepseek_int8_train.py",
+    "llama": "setup/llama_retrospective_training_v2_20261012/llama_full_int8_train.py"
+  },
+  "usage": "python train_lora.py --model qwen|deepseek|llama --out /root/shared-nvme/AI4FinRuntime/runs/FRESH_DIR; default only prints a CPU plan. Optional --execute starts a deliberate future reproduction on Linux after prerequisites are available. No fresh reproduction was started while preparing this component.",
+  "llama_reproduction": "Derive new frozen plan and isolated bundle from the actual executed plan; preserve original plan/run. Actual preflight holds GPU lock, verifies weights/environment/full targets, saves data-access receipts before loading GPU.",
+  "qwen_deepseek_reproduction": "Preserved backend and legacy dispatch; reproduces original methodology issues. This new wrapper does not repair data or old DeepSeek target.",
+  "utils": "Original starter helper bodies retained. utils.tokenize clips data and is not used by actual backend preprocessing; split_target_contract is separate. Architecture q/v entries are supplemental.",
+  "test_access": false,
+  "environment": "Original Linux data volume /root/shared-nvme/AI4FinRuntime with existing pinned sources/prepared data/HF cache/venv. Source paths in config must exist; no automatic installer/downloader.",
+  "quantization": "8-bit single GPU, not a DeepSpeed configuration.",
+  "independent_review_pending": true,
+  "reproduction_guarantee_asymmetry": "Qwen/DeepSeek legacy dispatch checks backend/dependency/prepared-data hashes and GPU serialization, but does not rehash base weights or enforce installed library versions. Llama preflight additionally enforces weight hashes, exact expected library versions and all1230 target re-encodings. These are asymmetric guarantees; neither new dispatch path was GPU-executed for this packaging.",
+  "contract_version": "V3 exact executed contract; superseded V2 file removed from this derived bundle"
+}

@@ -1,0 +1,1238 @@
+{
+  "checks": [
+    {
+      "entry": 1,
+      "claim": "earnings core on both sides",
+      "phrase": "Q4",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 1,
+      "claim": "expansion amount on both sides",
+      "phrase": "84 million",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 2,
+      "claim": "positive sentiment on both sides",
+      "phrase": "positive sentiment",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 2,
+      "claim": "dividend-cut claim on both sides",
+      "phrase": "dividend cut",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 3,
+      "claim": "EPS retained",
+      "phrase": "7.01",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 3,
+      "claim": "award retained",
+      "phrase": "Business Leader Award",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 3,
+      "claim": "debt discussion introduced",
+      "phrase": "debt",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 4,
+      "claim": "Vita Coco named on both sides",
+      "phrase": "Vita Coco",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 4,
+      "claim": "original adaptation wording",
+      "phrase": "Coca-Cola is adapting",
+      "expected": [
+        true,
+        false
+      ],
+      "observed": [
+        true,
+        false
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 4,
+      "claim": "revised analogy wording",
+      "phrase": "can also innovate",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 5,
+      "claim": "Boeing Buy argument on both sides",
+      "phrase": "Boeing",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 5,
+      "claim": "indirectly qualifier introduced",
+      "phrase": "indirectly",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 6,
+      "claim": "unnamed long-term list on both sides",
+      "phrase": "Long-Term Growth Portfolios",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 6,
+      "claim": "ClearBridge attribution on both sides",
+      "phrase": "ClearBridge",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 7,
+      "claim": "positive attention on both sides",
+      "phrase": "positive attention",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 7,
+      "claim": "robotics claim on both sides",
+      "phrase": "robotics",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 7,
+      "claim": "conference discussion omitted",
+      "phrase": "investor conferences",
+      "expected": [
+        true,
+        false
+      ],
+      "observed": [
+        true,
+        false
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 7,
+      "claim": "debt discussion on both sides",
+      "phrase": "debt",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 8,
+      "claim": "3.1% attribution on both sides",
+      "phrase": "3.1%",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 8,
+      "claim": "obligation-difficulty wording introduced",
+      "phrase": "difficulty meeting its short-term obligations",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 8,
+      "claim": "cash-ratio discussion on both sides",
+      "phrase": "cash ratio",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 9,
+      "claim": "EPS retained",
+      "phrase": "7.01",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 9,
+      "claim": "award retained",
+      "phrase": "Business Leader Award",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 9,
+      "claim": "cash-ratio concern introduced",
+      "phrase": "cash ratio",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 9,
+      "claim": "debt discussion on both sides",
+      "phrase": "debt",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 10,
+      "claim": "portfolio claim omitted",
+      "phrase": "diversified portfolio",
+      "expected": [
+        true,
+        false
+      ],
+      "observed": [
+        true,
+        false
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 10,
+      "claim": "low EPS introduced",
+      "phrase": "EPS (Earnings Per Share) of 0.4557 is relatively low",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 10,
+      "claim": "heavy leverage classification introduced",
+      "phrase": "heavily leveraged",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 11,
+      "claim": "acquisition wording omitted",
+      "phrase": "acquisition",
+      "expected": [
+        true,
+        false
+      ],
+      "observed": [
+        true,
+        false
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 11,
+      "claim": "FCF-expense claim omitted",
+      "phrase": "cover its operating expenses",
+      "expected": [
+        true,
+        false
+      ],
+      "observed": [
+        true,
+        false
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 11,
+      "claim": "top-dividend-list attribution introduced",
+      "phrase": "top 5 dividend stocks",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 11,
+      "claim": "bank leverage value on both sides",
+      "phrase": "9.151",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 12,
+      "claim": "unnamed list on both sides",
+      "phrase": "top stocks to buy for the long haul",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 12,
+      "claim": "original high-debt wording",
+      "phrase": "0.0955, which is relatively high",
+      "expected": [
+        true,
+        false
+      ],
+      "observed": [
+        true,
+        false
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 12,
+      "claim": "revised low-debt wording",
+      "phrase": "relatively low at 0.0955",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 12,
+      "claim": "peer margin claim introduced",
+      "phrase": "net margin is 0.3526",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 13,
+      "claim": "earnings on both sides",
+      "phrase": "Q4",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 13,
+      "claim": "expansion amount on both sides",
+      "phrase": "84 million",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 13,
+      "claim": "Uber competitor attribution introduced",
+      "phrase": "Uber",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 13,
+      "claim": "Lululemon competitor attribution introduced",
+      "phrase": "Lululemon",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 14,
+      "claim": "dividend attribution on both sides",
+      "phrase": "dividend",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 14,
+      "claim": "original staples-lag narrative omitted",
+      "phrase": "Lagging behind the market and other consumer staples",
+      "expected": [
+        true,
+        false
+      ],
+      "observed": [
+        true,
+        false
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 14,
+      "claim": "KDP news tag introduced",
+      "phrase": "N12",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 14,
+      "claim": "potential dividend cuts introduced",
+      "phrase": "potential dividend cuts",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 14,
+      "claim": "incorrect financial tag group introduced",
+      "phrase": "F3, F7, F11",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 15,
+      "claim": "EPS retained",
+      "phrase": "7.01",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 15,
+      "claim": "award retained",
+      "phrase": "Business Leader Award",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 15,
+      "claim": "EV interpretation omitted",
+      "phrase": "enterprise value",
+      "expected": [
+        true,
+        false
+      ],
+      "observed": [
+        true,
+        false
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 15,
+      "claim": "P/E interpretation introduced",
+      "phrase": "P/E ratio",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 16,
+      "claim": "original incomplete final wording",
+      "phrase": "with FCF margin at",
+      "expected": [
+        true,
+        false
+      ],
+      "observed": [
+        true,
+        false
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 16,
+      "claim": "innovation-history assertion introduced",
+      "phrase": "history of innovation",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 16,
+      "claim": "new lower-profitability classification",
+      "phrase": "lower profitability metrics",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 17,
+      "claim": "Boeing capability argument on both sides",
+      "phrase": "Boeing",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 17,
+      "claim": "dividend-list attribution on both sides",
+      "phrase": "dividend stocks",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 17,
+      "claim": "fundraising amount on both sides",
+      "phrase": "650 million",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 17,
+      "claim": "numeric FCF evidence introduced",
+      "phrase": "F8: -46.0856",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 18,
+      "claim": "unnamed-list confidence claim omitted",
+      "phrase": "lists of top long-term stocks",
+      "expected": [
+        true,
+        false
+      ],
+      "observed": [
+        true,
+        false
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 18,
+      "claim": "healthy-liquidity assertion introduced",
+      "phrase": "cash ratio and current ratio remain healthy",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 19,
+      "claim": "attention absent on both sides",
+      "phrase": "attention",
+      "expected": [
+        false,
+        false
+      ],
+      "observed": [
+        false,
+        false
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 19,
+      "claim": "peer comparison introduced",
+      "phrase": "compared to its peers",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 19,
+      "claim": "conference mention introduced",
+      "phrase": "investor conferences",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 20,
+      "claim": "old recent-decrease narrative omitted",
+      "phrase": "stock price has been decreasing",
+      "expected": [
+        true,
+        false
+      ],
+      "observed": [
+        true,
+        false
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 20,
+      "claim": "correct weekly increase introduced",
+      "phrase": "58.90 to 60.06",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 20,
+      "claim": "top-dividend-stock attribution introduced",
+      "phrase": "top dividend stock",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 20,
+      "claim": "debt ratio on both sides",
+      "phrase": "1.6215",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 21,
+      "claim": "EPS retained",
+      "phrase": "7.01",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 21,
+      "claim": "recognition organization mentioned on both sides",
+      "phrase": "Connecticut Democracy Center",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 21,
+      "claim": "award title explicitly named only in revised",
+      "phrase": "Business Leader Award",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 21,
+      "claim": "debt value on both sides",
+      "phrase": "0.3223",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 21,
+      "claim": "cash discussion introduced",
+      "phrase": "cash ratio",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 21,
+      "claim": "high cash classification introduced",
+      "phrase": "cash ratio is relatively high at 0.1929",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 21,
+      "claim": "payout claim introduced",
+      "phrase": "payout ratio",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 22,
+      "claim": "diversified portfolio on both sides",
+      "phrase": "diversified portfolio",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 22,
+      "claim": "liquidity wording on both sides",
+      "phrase": "healthy cash",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 22,
+      "claim": "Vita Coco competitor mention omitted",
+      "phrase": "Vita Coco",
+      "expected": [
+        true,
+        false
+      ],
+      "observed": [
+        true,
+        false
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 22,
+      "claim": "57.29 percentage supplied only in revised",
+      "phrase": "57.29%",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 23,
+      "claim": "FCF expense-noncoverage claim omitted",
+      "phrase": "not generating enough cash to cover its expenses",
+      "expected": [
+        true,
+        false
+      ],
+      "observed": [
+        true,
+        false
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 23,
+      "claim": "dividend list on both sides",
+      "phrase": "top dividend stocks for 2024",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 23,
+      "claim": "debt ratio on both sides",
+      "phrase": "9.151",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 24,
+      "claim": "unnamed long-term list on both sides",
+      "phrase": "top stocks to buy for the long haul",
+      "expected": [
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 24,
+      "claim": "growth/debt list attribution introduced",
+      "phrase": "high growth and low debt",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    },
+    {
+      "entry": 24,
+      "claim": "healthy-liquidity assertion introduced",
+      "phrase": "good liquidity",
+      "expected": [
+        false,
+        true
+      ],
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true,
+      "comparison_scope": "fresh final answers only"
+    }
+  ],
+  "pairs": 24,
+  "all_passed": true,
+  "coverage_limit": "Statement-specific lexical guards for the explicitly catalogued temporal claims; not an exhaustive semantic or sentence-level factual assessment",
+  "history_or_raw_reasoning_used": false
+}

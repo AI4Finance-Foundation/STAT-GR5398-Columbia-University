@@ -1,0 +1,155 @@
+{
+  "model": "deepseek",
+  "split": "validation",
+  "validation_only": true,
+  "test_used": false,
+  "full_denominator": 240,
+  "generation_max_new_tokens": 1920,
+  "inference_context_tokens": 6144,
+  "training_context_tokens": 4096,
+  "matched_structure_count": 204,
+  "label_counts": {
+    "1": 145,
+    "-1": 95
+  },
+  "always_up_accuracy": 0.6041666666666666,
+  "always_down_accuracy": 0.3958333333333333,
+  "reused_per_variant": 0,
+  "new_per_variant": 240,
+  "generation_batch_size": 16,
+  "timing_semantics": "amortized batch seconds per answer; latency separately recorded",
+  "policy": "Original course metrics are preserved in comparison.json. Normalized final-answer headings are evaluated over all240 with missing sections scoring zero; matched-structure ROUGE uses the same intersection for base/adapter. Validation was used for checkpoint selection, so these are development results.",
+  "base": {
+    "samples": 240,
+    "direction_correct": 107,
+    "direction_accuracy_all240": 0.44583333333333336,
+    "direction_counts": {
+      "-1": 38,
+      "1": 163,
+      "None": 39
+    },
+    "direction_unparsed": 39,
+    "structure_complete": 204,
+    "structure_complete_rate": 0.85,
+    "nonempty_outputs": 240,
+    "eos_count": 235,
+    "length_limit_count": 5,
+    "recall_counts": {
+      "-1": {
+        "correct": 14,
+        "total": 95
+      },
+      "1": {
+        "correct": 93,
+        "total": 145
+      }
+    },
+    "balanced_accuracy": 0.39437386569872956,
+    "peak_allocated_gib": 19.753572463989258,
+    "peak_reserved_gib": 22.203125,
+    "seconds_sum_all240": 4670.450416923501,
+    "seconds_mean_all240": 19.460210070514584,
+    "seconds_median_all240": 19.32424412749242,
+    "seconds_sum_new_only": 4670.450416923501,
+    "seconds_mean_new_only": 19.460210070514584,
+    "pros_rouge_all240": {
+      "rouge1": 0.3341906817361303,
+      "rouge2": 0.08868856943689939,
+      "rougeL": 0.19227510874704992
+    },
+    "pros_rouge_matched": {
+      "rouge1": 0.3931655079248592,
+      "rouge2": 0.10433949345517575,
+      "rougeL": 0.22620601029064696
+    },
+    "cons_rouge_all240": {
+      "rouge1": 0.2912535653262621,
+      "rouge2": 0.05813623862258746,
+      "rougeL": 0.16678545217625776
+    },
+    "cons_rouge_matched": {
+      "rouge1": 0.3426512533250142,
+      "rouge2": 0.06839557485010289,
+      "rougeL": 0.19621817903089148
+    },
+    "analysis_rouge_all240": {
+      "rouge1": 0.2176025249537095,
+      "rouge2": 0.03946752753352009,
+      "rougeL": 0.12299392972698081
+    },
+    "analysis_rouge_matched": {
+      "rouge1": 0.25600297053377585,
+      "rouge2": 0.046432385333553046,
+      "rougeL": 0.14469874085527154
+    }
+  },
+  "adapter": {
+    "samples": 240,
+    "direction_correct": 145,
+    "direction_accuracy_all240": 0.6041666666666666,
+    "direction_counts": {
+      "-1": 50,
+      "1": 190
+    },
+    "direction_unparsed": 0,
+    "structure_complete": 240,
+    "structure_complete_rate": 1.0,
+    "nonempty_outputs": 240,
+    "eos_count": 240,
+    "length_limit_count": 0,
+    "recall_counts": {
+      "-1": {
+        "correct": 25,
+        "total": 95
+      },
+      "1": {
+        "correct": 120,
+        "total": 145
+      }
+    },
+    "balanced_accuracy": 0.5453720508166969,
+    "peak_allocated_gib": 16.67649555206299,
+    "peak_reserved_gib": 22.21875,
+    "seconds_sum_all240": 1272.727251215838,
+    "seconds_mean_all240": 5.303030213399325,
+    "seconds_median_all240": 5.215605403704103,
+    "seconds_sum_new_only": 1272.727251215838,
+    "seconds_mean_new_only": 5.303030213399325,
+    "pros_rouge_all240": {
+      "rouge1": 0.4584335070761478,
+      "rouge2": 0.1843966105323465,
+      "rougeL": 0.2892010434856162
+    },
+    "pros_rouge_matched": {
+      "rouge1": 0.46164940158559953,
+      "rouge2": 0.1874757775414297,
+      "rougeL": 0.2925927728704161
+    },
+    "cons_rouge_all240": {
+      "rouge1": 0.41912101831212,
+      "rouge2": 0.15474400800319002,
+      "rougeL": 0.27163784398268276
+    },
+    "cons_rouge_matched": {
+      "rouge1": 0.4196272002722893,
+      "rouge2": 0.15609291346606388,
+      "rougeL": 0.2729167586693918
+    },
+    "analysis_rouge_all240": {
+      "rouge1": 0.4484131614777927,
+      "rouge2": 0.14089395995664006,
+      "rougeL": 0.23123510979742212
+    },
+    "analysis_rouge_matched": {
+      "rouge1": 0.4482823786300046,
+      "rouge2": 0.1410703056779995,
+      "rougeL": 0.2323650789045092
+    }
+  },
+  "paired_direction_change_counts": {
+    "False->False": 80,
+    "False->True": 53,
+    "True->False": 15,
+    "True->True": 92
+  }
+}

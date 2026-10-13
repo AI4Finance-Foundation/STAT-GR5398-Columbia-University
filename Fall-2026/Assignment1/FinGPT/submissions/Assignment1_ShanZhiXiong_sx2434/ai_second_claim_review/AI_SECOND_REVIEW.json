@@ -1,0 +1,468 @@
+{
+  "created_at_utc": "2026-10-12T04:45:42.269279+00:00",
+  "reviewer": "Codex assistant in current chat",
+  "review_type": "AI-assisted second review, not additional human ratings or Claude audit",
+  "source_sha256": "263b19bca482cb91e7faf2ef9ceac6743e8b45eb97d0ec18d282675f77274567",
+  "human_export_sha256": "c085950561d7ed81c5690ad03933dde3bdc8f4392d15e3956b6cb9415ba3f26d",
+  "scope": "18 selected legacy adapter claims; full historical inputs reviewed; no external articles or test data",
+  "rubric": {
+    "supported": "Core factual claims directly supported; reasonable qualified inference distinguished from observation.",
+    "partly_supported": "Some factual content supported, but attribution, benchmark or stronger interpretation lacks evidence. Does not label entire claim false.",
+    "uncertain": "Key factual attribution or degree cannot be resolved from available input.",
+    "confidence": "Confidence in evidence sufficiency, not forecast confidence or probability of factual truth."
+  },
+  "counts": {
+    "支持": 6,
+    "部分支持": 11,
+    "不确定": 1
+  },
+  "disagreements": 8,
+  "additional_evidence_cases": 1,
+  "human_original_ratings_modified": false,
+  "feedback_loop_completed": false,
+  "no_new_model_generation": true,
+  "population_error_rate_estimated": false,
+  "reviews": [
+    {
+      "sample_id": "ff62993fbd5bd028a2bfa8b6b3dca0ebcd2776100d539a1eee6820f2178baea3",
+      "symbol": "HON",
+      "period": "2024-02-18 to 2024-02-25",
+      "model": "qwen",
+      "variant": "adapter_legacy",
+      "claim_original": "1. Honeywell International Inc. has announced a significant investment of $84 million to expand its Olathe manufacturing facility in Kansas, which is expected to generate substantial economic benefits.",
+      "claim_sha256": "689836bb1815b6fedd59619e244fdc668219c4568d8f47fa983605a59923bd05",
+      "human_verdict_original": "支持",
+      "ai_verdict": "支持",
+      "confidence_in_evidence_judgment": "high",
+      "reason": "The investment and economic-benefit expectation 都有 direct evidence；the benefits 是 project forecasts，尚非 realized outcomes。",
+      "input_evidence_references": [
+        {
+          "quote": "will invest $84 million to expand its Olathe manufacturing facility in Kansas.",
+          "start_character": 1881,
+          "end_character": 1959
+        },
+        {
+          "quote": "generate nearly $47 million in total gross domestic product (GDP) and contribute $18.3 million",
+          "start_character": 1994,
+          "end_character": 2088
+        }
+      ],
+      "differs_from_human": false,
+      "requires_additional_evidence": false
+    },
+    {
+      "sample_id": "ff62993fbd5bd028a2bfa8b6b3dca0ebcd2776100d539a1eee6820f2178baea3",
+      "symbol": "HON",
+      "period": "2024-02-18 to 2024-02-25",
+      "model": "qwen",
+      "variant": "adapter_legacy",
+      "claim_original": "3. Honeywell has been recognized as a key player in the robotics industry, which is expected to experience substantial growth in the coming years.",
+      "claim_sha256": "73ccc00d1f7058c8dcd37230c4914f8642e98a7468ca21ea20378cdc0138bc6c",
+      "human_verdict_original": "不确定",
+      "ai_verdict": "部分支持",
+      "confidence_in_evidence_judgment": "high",
+      "reason": "The industry growth 有 evidence；however，the input 未明确 HON 是该名单成员或 robotics key player。Company-specific attribution 缺少支持。",
+      "input_evidence_references": [
+        {
+          "quote": "In 2023, the global robotics market was valued at $46.0 billion. IMARC Group anticipates substantial growth",
+          "start_character": 4767,
+          "end_character": 4874
+        }
+      ],
+      "differs_from_human": true,
+      "requires_additional_evidence": false
+    },
+    {
+      "sample_id": "ff62993fbd5bd028a2bfa8b6b3dca0ebcd2776100d539a1eee6820f2178baea3",
+      "symbol": "HON",
+      "period": "2024-02-18 to 2024-02-25",
+      "model": "qwen",
+      "variant": "adapter_legacy",
+      "claim_original": "3. Honeywell's total debt to equity ratio is relatively high, which could be a concern for potential investors.",
+      "claim_sha256": "c22e09954633b5c8002b3caf36148ad9cea525eff048a7dac90200a92ecc2617",
+      "human_verdict_original": "支持",
+      "ai_verdict": "部分支持",
+      "confidence_in_evidence_judgment": "medium",
+      "reason": "The ratio 有 evidence；however，relatively high 缺少 historical/sector benchmark。The potential concern 可以是 qualified inference，不能当作已验证 risk ranking。",
+      "input_evidence_references": [
+        {
+          "quote": "totalDebtToEquity: 1.2893",
+          "start_character": 6574,
+          "end_character": 6599
+        }
+      ],
+      "differs_from_human": true,
+      "requires_additional_evidence": false
+    },
+    {
+      "sample_id": "ff62993fbd5bd028a2bfa8b6b3dca0ebcd2776100d539a1eee6820f2178baea3",
+      "symbol": "HON",
+      "period": "2024-02-18 to 2024-02-25",
+      "model": "deepseek",
+      "variant": "adapter_legacy",
+      "claim_original": "1. Honeywell announced a significant investment in the expansion of its Kansas aerospace manufacturing facility, which is expected to generate substantial GDP and contribute to state and local taxes. This indicates a strong commitment to growth and innovation.",
+      "claim_sha256": "016d138a15e75c5f23435a7c2520e3243bba4bf7a7360eada82da9f24a787a7c",
+      "human_verdict_original": "支持",
+      "ai_verdict": "支持",
+      "confidence_in_evidence_judgment": "high",
+      "reason": "The GDP/tax expectations 有 direct evidence；growth and innovation 是由 expansion 推出的 interpretation，不能证明未来 profitability。",
+      "input_evidence_references": [
+        {
+          "quote": "generate nearly $47 million in total gross domestic product (GDP) and contribute $18.3 million to state and local taxes in the first six years",
+          "start_character": 1994,
+          "end_character": 2136
+        },
+        {
+          "quote": "supports the company's alignment with the compelling megatrend of the future of aviation.",
+          "start_character": 2138,
+          "end_character": 2227
+        }
+      ],
+      "differs_from_human": false,
+      "requires_additional_evidence": false
+    },
+    {
+      "sample_id": "ff62993fbd5bd028a2bfa8b6b3dca0ebcd2776100d539a1eee6820f2178baea3",
+      "symbol": "HON",
+      "period": "2024-02-18 to 2024-02-25",
+      "model": "deepseek",
+      "variant": "adapter_legacy",
+      "claim_original": "2. The company has been recognized for its sustainable building technology efforts, as evidenced by its partnership with the Atlanta Hawks and the State Farm Arena. This could potentially attract environmentally conscious investors and improve its brand image.",
+      "claim_sha256": "1b2c21f473ad84100725cbc606fd0abc908249ee69a6ccb710b736b50c6075c5",
+      "human_verdict_original": "支持",
+      "ai_verdict": "部分支持",
+      "confidence_in_evidence_judgment": "high",
+      "reason": "The partnership 和 sustainability purpose 有 evidence；however，recognition、brand improvement 和 investor attraction 未被直接验证。Could 正确标记 possibility；这不是已证实的 investor effect。",
+      "input_evidence_references": [
+        {
+          "quote": "Official Sustainable Building Technology Partner for the Atlanta Hawks",
+          "start_character": 3070,
+          "end_character": 3140
+        },
+        {
+          "quote": "help decrease energy consumption and emissions",
+          "start_character": 3323,
+          "end_character": 3369
+        }
+      ],
+      "differs_from_human": true,
+      "requires_additional_evidence": false
+    },
+    {
+      "sample_id": "ff62993fbd5bd028a2bfa8b6b3dca0ebcd2776100d539a1eee6820f2178baea3",
+      "symbol": "HON",
+      "period": "2024-02-18 to 2024-02-25",
+      "model": "deepseek",
+      "variant": "adapter_legacy",
+      "claim_original": "3. The company's total debt to equity ratio is relatively high, indicating a higher level of financial risk compared to its peers.",
+      "claim_sha256": "c9d07285b1a2b0b6589ad760c84477e597ff1158f85708abcd94918d6211b709",
+      "human_verdict_original": "部分支持",
+      "ai_verdict": "部分支持",
+      "confidence_in_evidence_judgment": "high",
+      "reason": "The debt ratio 有 evidence；however，the input 没有 peer ratios，不能支持 higher financial risk compared to peers。",
+      "input_evidence_references": [
+        {
+          "quote": "totalDebtToEquity: 1.2893",
+          "start_character": 6574,
+          "end_character": 6599
+        }
+      ],
+      "differs_from_human": false,
+      "requires_additional_evidence": false
+    },
+    {
+      "sample_id": "eb1173b9f26a78ec095515962ddabae407fe6335a7a0a2fe072d5a8a52b35e16",
+      "symbol": "KO",
+      "period": "2024-02-04 to 2024-02-11",
+      "model": "qwen",
+      "variant": "adapter_legacy",
+      "claim_original": "1. Coca-Cola has received attention from Zacks.com users, indicating potential interest from investors.",
+      "claim_sha256": "82e124ff2e2fab423d2f182feb8fa521b282f6c16ae9c3d2c988cf03f036d030",
+      "human_verdict_original": "不确定",
+      "ai_verdict": "支持",
+      "confidence_in_evidence_judgment": "high",
+      "reason": "The attention 有 direct evidence；potential investor interest 是谨慎且相关的 inference。This claim 没有把 attention 写成 positive sentiment。",
+      "input_evidence_references": [
+        {
+          "quote": "Coke (KO) has received quite a bit of attention from Zacks.com users lately.",
+          "start_character": 2956,
+          "end_character": 3032
+        }
+      ],
+      "differs_from_human": true,
+      "requires_additional_evidence": false
+    },
+    {
+      "sample_id": "eb1173b9f26a78ec095515962ddabae407fe6335a7a0a2fe072d5a8a52b35e16",
+      "symbol": "KO",
+      "period": "2024-02-04 to 2024-02-11",
+      "model": "qwen",
+      "variant": "adapter_legacy",
+      "claim_original": "2. The company's financials show a healthy gross margin of 0.5729, indicating efficient use of resources.",
+      "claim_sha256": "a368411ae8ad5b0eb5ca1d1995a157b1987c77d6a6afa3db0f7dcbd7ebc159b1",
+      "human_verdict_original": "支持",
+      "ai_verdict": "部分支持",
+      "confidence_in_evidence_judgment": "high",
+      "reason": "The gross margin 数值正确；however，healthy 缺少 benchmark，且 gross margin 单独不能验证整体 resource efficiency。",
+      "input_evidence_references": [
+        {
+          "quote": "grossMargin: 0.5729",
+          "start_character": 4661,
+          "end_character": 4680
+        }
+      ],
+      "differs_from_human": true,
+      "requires_additional_evidence": false
+    },
+    {
+      "sample_id": "eb1173b9f26a78ec095515962ddabae407fe6335a7a0a2fe072d5a8a52b35e16",
+      "symbol": "KO",
+      "period": "2024-02-04 to 2024-02-11",
+      "model": "qwen",
+      "variant": "adapter_legacy",
+      "claim_original": "4. The company's cash ratio is 0.3973, which is relatively low and could indicate a lack of liquidity.",
+      "claim_sha256": "cafbb03c6dcd7b436d75428029f36a16384769f14b4a421afa3c5c641bd6ed39",
+      "human_verdict_original": "不确定",
+      "ai_verdict": "部分支持",
+      "confidence_in_evidence_judgment": "high",
+      "reason": "The rounded cash ratio 正确；however，relatively low 缺少 benchmark。Liquidity concern 是 qualified inference，不能由 cash ratio 单独认定 liquidity shortage。",
+      "input_evidence_references": [
+        {
+          "quote": "cashRatio: 0.39735267913962075",
+          "start_character": 4522,
+          "end_character": 4552
+        },
+        {
+          "quote": "currentRatio: 1.1341",
+          "start_character": 4553,
+          "end_character": 4573
+        },
+        {
+          "quote": "quickRatio: 0.7243",
+          "start_character": 5019,
+          "end_character": 5037
+        }
+      ],
+      "differs_from_human": true,
+      "requires_additional_evidence": false
+    },
+    {
+      "sample_id": "eb1173b9f26a78ec095515962ddabae407fe6335a7a0a2fe072d5a8a52b35e16",
+      "symbol": "KO",
+      "period": "2024-02-04 to 2024-02-11",
+      "model": "deepseek",
+      "variant": "adapter_legacy",
+      "claim_original": "1. Coca-Cola's stock has been highlighted in the Zacks Analyst Blog, indicating potential investor interest and positive sentiment.",
+      "claim_sha256": "bdd6a3e5dfba781ccd1af1f527cd689efc3d33bb9ea7c1b8305f40fa673c4e9b",
+      "human_verdict_original": "不确定",
+      "ai_verdict": "部分支持",
+      "confidence_in_evidence_judgment": "high",
+      "reason": "The blog mention 和 attention 有 evidence；however，positive sentiment 未被建立。Neutral attention 不足以支持 positive polarity。",
+      "input_evidence_references": [
+        {
+          "quote": "Apple, Boeing, Coca-Cola, Procter & Gamble and Travelers are included in this Analyst Blog.",
+          "start_character": 1476,
+          "end_character": 1567
+        },
+        {
+          "quote": "Coke (KO) has received quite a bit of attention from Zacks.com users lately.",
+          "start_character": 2956,
+          "end_character": 3032
+        }
+      ],
+      "differs_from_human": true,
+      "requires_additional_evidence": false
+    },
+    {
+      "sample_id": "eb1173b9f26a78ec095515962ddabae407fe6335a7a0a2fe072d5a8a52b35e16",
+      "symbol": "KO",
+      "period": "2024-02-04 to 2024-02-11",
+      "model": "deepseek",
+      "variant": "adapter_legacy",
+      "claim_original": "3. Coca-Cola is a key part of Berkshire Hathaway's portfolio, which is a strong indicator of its financial health and reliability.",
+      "claim_sha256": "9706d2aefd029f0941290b2ae6b28883d14ddf3b032e81825902315b662b56a0",
+      "human_verdict_original": "部分支持",
+      "ai_verdict": "不确定",
+      "confidence_in_evidence_judgment": "low",
+      "reason": "The input 提及 Coke/Berkshire relationship；however，它没有明确列出 three brands、KO weight 或 financial-health basis。Key part 的程度无法可靠判断；ownership 本身也不能证明 financial reliability。",
+      "input_evidence_references": [
+        {
+          "quote": "61% of Warren Buffett-Led Berkshire Hathaway's $360 Billion Portfolio Is Invested in These 3 Top Consumer Brands",
+          "start_character": 1139,
+          "end_character": 1251
+        },
+        {
+          "quote": "These stocks are pillars of Berkshire's portfolio, and they could be excellent for yours as well.",
+          "start_character": 1263,
+          "end_character": 1360
+        },
+        {
+          "quote": "Despite all impressions, how Coke makes money and how well it's done for Berkshire may not be what you expect.",
+          "start_character": 3316,
+          "end_character": 3426
+        }
+      ],
+      "differs_from_human": true,
+      "requires_additional_evidence": true
+    },
+    {
+      "sample_id": "eb1173b9f26a78ec095515962ddabae407fe6335a7a0a2fe072d5a8a52b35e16",
+      "symbol": "KO",
+      "period": "2024-02-04 to 2024-02-11",
+      "model": "deepseek",
+      "variant": "adapter_legacy",
+      "claim_original": "3. The company's payout ratio is high, which could indicate a lack of retained earnings for reinvesting into the company.",
+      "claim_sha256": "7d88ae6915f65691ab4a820c627913a837a70386bebe0e0425ba0a774d7cab76",
+      "human_verdict_original": "部分支持",
+      "ai_verdict": "部分支持",
+      "confidence_in_evidence_judgment": "high",
+      "reason": "The ratio 表明 payout 为 earnings 的 74.22%。However，high 需要 comparison basis；remaining earnings 是否不足以 reinvest，还需要 cash-flow 和 investment needs。",
+      "input_evidence_references": [
+        {
+          "quote": "payoutRatioTTM: 0.7422",
+          "start_character": 4906,
+          "end_character": 4928
+        }
+      ],
+      "differs_from_human": false,
+      "requires_additional_evidence": false
+    },
+    {
+      "sample_id": "4b94d38d30a35052115c37617d93e4c858f10dc6447f274315e246417b3d9dcd",
+      "symbol": "TRV",
+      "period": "2024-02-04 to 2024-02-11",
+      "model": "qwen",
+      "variant": "adapter_legacy",
+      "claim_original": "1. The company's Q4 2023 earnings call transcript revealed that the company beat earnings expectations, with reported EPS of $7.01, exceeding the expectations of $5.04.",
+      "claim_sha256": "7192bb25464ba934cb9c631d65f2603399de8f4be6509fda116ef97bf374fb4b",
+      "human_verdict_original": "支持",
+      "ai_verdict": "支持",
+      "confidence_in_evidence_judgment": "high",
+      "reason": "The EPS 和 expectations 被直接报告，且 7.01 > 5.04。",
+      "input_evidence_references": [
+        {
+          "quote": "Reported EPS is $7.01, expectations were $5.04.",
+          "start_character": 1314,
+          "end_character": 1361
+        }
+      ],
+      "differs_from_human": false,
+      "requires_additional_evidence": false
+    },
+    {
+      "sample_id": "4b94d38d30a35052115c37617d93e4c858f10dc6447f274315e246417b3d9dcd",
+      "symbol": "TRV",
+      "period": "2024-02-04 to 2024-02-11",
+      "model": "qwen",
+      "variant": "adapter_legacy",
+      "claim_original": "2. The company's long-term debt to total asset ratio is relatively high at 0.063, which could be a concern for investors.",
+      "claim_sha256": "780bf49f634a741298bccc5bed9967db799364ed1ac86e5b17d5552f21d2c39c",
+      "human_verdict_original": "部分支持",
+      "ai_verdict": "部分支持",
+      "confidence_in_evidence_judgment": "high",
+      "reason": "The ratio 0.063 正确；however，relatively high 没有 comparison basis。6.3% 不能单独验证高 debt risk，也不能据此宣称所有情况下都低。",
+      "input_evidence_references": [
+        {
+          "quote": "longtermDebtTotalAsset: 0.063",
+          "start_character": 3845,
+          "end_character": 3874
+        }
+      ],
+      "differs_from_human": false,
+      "requires_additional_evidence": false
+    },
+    {
+      "sample_id": "4b94d38d30a35052115c37617d93e4c858f10dc6447f274315e246417b3d9dcd",
+      "symbol": "TRV",
+      "period": "2024-02-04 to 2024-02-11",
+      "model": "qwen",
+      "variant": "adapter_legacy",
+      "claim_original": "3. The company received the Connecticut Democracy Center’s inaugural Business Leader Award, which is a recognition of the company's commitment to fostering democracy through acts of citizenship and service.",
+      "claim_sha256": "f74faa061a0fd4956a2a4bac5f2b06d2d073051a4d6b0f477152efdee35d6eb7",
+      "human_verdict_original": "支持",
+      "ai_verdict": "支持",
+      "confidence_in_evidence_judgment": "high",
+      "reason": "The award 和 purpose 有 direct evidence。For precision，recipient 是 Citizen Travelers initiative；原 claim 将其简写为 company，属于 minor attribution simplification。",
+      "input_evidence_references": [
+        {
+          "quote": "Citizen Travelers, its nonpartisan civic engagement employee initiative, has received the Connecticut Democracy Center’s (CTDC) inaugural Business Leader Award.",
+          "start_character": 3098,
+          "end_character": 3258
+        },
+        {
+          "quote": "committed to fostering democracy through acts of citizenship and service.",
+          "start_character": 3328,
+          "end_character": 3401
+        }
+      ],
+      "differs_from_human": false,
+      "requires_additional_evidence": false
+    },
+    {
+      "sample_id": "4b94d38d30a35052115c37617d93e4c858f10dc6447f274315e246417b3d9dcd",
+      "symbol": "TRV",
+      "period": "2024-02-04 to 2024-02-11",
+      "model": "deepseek",
+      "variant": "adapter_legacy",
+      "claim_original": "2. The company's Q4 2023 earnings call transcript showed that the company beat earnings expectations, with reported EPS of $7.01, which was higher than the expected $5.04.",
+      "claim_sha256": "67ad77690a4871a426e2f9b8b66884fee285be9d73aed508701605a8886563ed",
+      "human_verdict_original": "支持",
+      "ai_verdict": "支持",
+      "confidence_in_evidence_judgment": "high",
+      "reason": "The EPS comparison 有 direct evidence。",
+      "input_evidence_references": [
+        {
+          "quote": "Reported EPS is $7.01, expectations were $5.04.",
+          "start_character": 1314,
+          "end_character": 1361
+        }
+      ],
+      "differs_from_human": false,
+      "requires_additional_evidence": false
+    },
+    {
+      "sample_id": "4b94d38d30a35052115c37617d93e4c858f10dc6447f274315e246417b3d9dcd",
+      "symbol": "TRV",
+      "period": "2024-02-04 to 2024-02-11",
+      "model": "deepseek",
+      "variant": "adapter_legacy",
+      "claim_original": "3. The company received the Connecticut Democracy Center’s Business Leader Award, which could enhance its reputation and potentially attract more investors.",
+      "claim_sha256": "8b93e0ff09f0d91c8be9b1428d1d969160de82b538c79858ba40d5437e972a92",
+      "human_verdict_original": "部分支持",
+      "ai_verdict": "部分支持",
+      "confidence_in_evidence_judgment": "high",
+      "reason": "The award 有 evidence；however，reputation 和 investor attraction 是未验证的 implications。Could 正确标记 possibility，可以保留为 inference，但不能当作 observed investor response。",
+      "input_evidence_references": [
+        {
+          "quote": "Citizen Travelers, its nonpartisan civic engagement employee initiative, has received the Connecticut Democracy Center’s (CTDC) inaugural Business Leader Award.",
+          "start_character": 3098,
+          "end_character": 3258
+        }
+      ],
+      "differs_from_human": false,
+      "requires_additional_evidence": false
+    },
+    {
+      "sample_id": "4b94d38d30a35052115c37617d93e4c858f10dc6447f274315e246417b3d9dcd",
+      "symbol": "TRV",
+      "period": "2024-02-04 to 2024-02-11",
+      "model": "deepseek",
+      "variant": "adapter_legacy",
+      "claim_original": "3. The company's payout ratio TTM is 0.225, which is relatively high, indicating that the company is distributing a significant portion of its earnings to its shareholders, which could limit its ability to reinvest in the company for future growth.",
+      "claim_sha256": "09566659de4244859e16aef324da245c91add309738f2bd3d5b661df1d42c434",
+      "human_verdict_original": "部分支持",
+      "ai_verdict": "部分支持",
+      "confidence_in_evidence_judgment": "high",
+      "reason": "The numeric payout 正确，为 earnings 的 22.5%；however，relatively high 缺少 benchmark，且 the ratio 本身不能证明 limited reinvestment capacity。",
+      "input_evidence_references": [
+        {
+          "quote": "payoutRatioTTM: 0.225",
+          "start_character": 3998,
+          "end_character": 4019
+        }
+      ],
+      "differs_from_human": false,
+      "requires_additional_evidence": false
+    }
+  ]
+}

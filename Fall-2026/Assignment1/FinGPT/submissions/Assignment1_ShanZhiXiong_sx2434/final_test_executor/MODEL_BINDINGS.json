@@ -1,0 +1,172 @@
+{
+  "qwen": {
+    "registry": {
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "cache": "/root/shared-nvme/AI4FinRuntime/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28",
+      "training_run": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/server4090_qwen_int8_4096_epoch_20261010",
+      "evaluation_data": "/root/shared-nvme/AI4FinRuntime/setup/three_model_validation240_20261010/qwen_validation_generation240_full.json"
+    },
+    "evaluation_data_sha256": "908a6e746cd895c5554e55975c4bdf2dec1f8a54175f18c1b6e897b135ab675d",
+    "selected_checkpoint": {
+      "step": 248,
+      "checkpoint": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/server4090_qwen_int8_4096_epoch_20261010/checkpoints/checkpoint-248",
+      "samples": 240,
+      "supervised_tokens": 93709,
+      "token_weighted_loss": 1.421502566928868,
+      "sample_mean_loss": 1.420880048473676,
+      "seconds": 71.15574361477047,
+      "selection_rule": "minimum full validation token-weighted cross-entropy; earlier checkpoint on tie",
+      "test_used": false
+    },
+    "adapter_sha256": "31df542a315939525a49a32f280079bc4bac61e0771e0adc0c20f7fcf3045205",
+    "sample_ids": [
+      "2ccc2b3ff3823637ef7a419266bd3108da0de9a18e2089dbec836f82a511ad59",
+      "b775879ece7a5c1a1111c906109b4ac7584cf0d26a76f2611b1f5d9655dd7e1c",
+      "275a319b6c9a0d0252fbee91dd753294cd6a5c1aa940858f0f113924d2fdb30b",
+      "cbbfa698bb9a51936a691f708fdeda3fd63aad51341b62b6a413c42e8db19e35",
+      "5d83dea6f2a60c4a8fa35aeab532a56aeb8d24f9b3e7a524ea455069751a55d5",
+      "71fa98a4e65734471fcffd51913b548a8f0dc2978bfe510ec5b4ab933e25c56b",
+      "e32c25771706e9bb5e95c1772685dca42e1fa78ba92abc0820511fd17798c34d",
+      "bfc6c95099bec16a0465619e83fc5dc578ba0016cef76407106e1c3af6c283ba",
+      "6fd75d70ec379717523cc4b0c42ffd3ad5bb39be18f9dc386ce0e33b470f27f0",
+      "ff62993fbd5bd028a2bfa8b6b3dca0ebcd2776100d539a1eee6820f2178baea3",
+      "0902d7f6eeffd57941964e13e3bc2eb712fd75be65c5c62aeee4ce56dda0ff47",
+      "0b4abeab9e62be688419b8f45e7fad68ea7b7191bc6960bb414fa1b6b22ceca3",
+      "3c83286b5ef70362d658fda500b3a2d9bfc1090c8fe7cb6454c2965e7433535a",
+      "c86e057967d5f3500cd4658fa71f839230c34dca2c849bbee4eade5ea2e1e669",
+      "70776188aea735419af80578e161a3019508642c7598da6919bc4711a9cff776",
+      "5dff6174b124fb03dbc16c1502a1c1dca624767bd131d90f871b9025c492929a"
+    ],
+    "prompt_token_lengths": [
+      3517,
+      3153,
+      2805,
+      2661,
+      2351,
+      2215,
+      2215,
+      2193,
+      2155,
+      2155,
+      2132,
+      2132,
+      2128,
+      2127,
+      2125,
+      2120
+    ],
+    "cache_files_sha256": {
+      "config.json": "7463bb0ea78315365e6c6b74de4e73bbcc8359dfb0c5a737584e077d42c0b03c",
+      "generation_config.json": "3a8f9087e486054c8a4a08dae2e5a3ba62e23da212b5b8c08bc42cb983c3459f",
+      "model-00001-of-00004.safetensors": "a1333e6293854747c481288ea83b348226af178dd565c49b6f9495ba1966aba7",
+      "model-00002-of-00004.safetensors": "f5d25a2772cb825164a2a2c0fb6d51a87e282abf21e4dd75bc5cfb3cd0ea6185",
+      "model-00003-of-00004.safetensors": "8efdec4c1bc12317ae1a38dc42b595ce777738a64deea3fcb8a0a91381bcdfd5",
+      "model-00004-of-00004.safetensors": "1a72d403cdf0c1ec3cb7f289f17b394a01e64394c2e9b3c0f94dbce3faf879bd",
+      "model.safetensors.index.json": "624bf7c47cd12468fdc16e38a47cf4f19e0415b859a223ba3c027eed2f0e1028",
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+    }
+  },
+  "llama": {
+    "registry": {
+      "model_id": "meta-llama/Llama-3.1-8B",
+      "cache": "/root/shared-nvme/AI4FinRuntime/huggingface/hub/models--meta-llama--Llama-3.1-8B/snapshots/d04e592bb4f6aa9cfee91e2e20afa771667e1d4b",
+      "training_run": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/server4090_llama_base_int8_4096_epoch_retrospective_20261012",
+      "evaluation_data": "/root/shared-nvme/AI4FinRuntime/setup/llama_retrospective_full_4096_20261012/llama_validation_generation240_full.json",
+      "evaluation_run": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/server4090_llama_base_int8_validation240_gen1920_retrospective_20261012",
+      "generation_batch_size": 8
+    },
+    "evaluation_data_sha256": "1627246e01ffd8e86371ca29cc2e31744fd75e6eb1f71de7f9cfea8ea7c5d2b5",
+    "selected_checkpoint": {
+      "step": 248,
+      "checkpoint": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/server4090_llama_base_int8_4096_epoch_retrospective_20261012/checkpoints/checkpoint-248",
+      "samples": 240,
+      "supervised_tokens": 91951,
+      "token_weighted_loss": 1.414805189732,
+      "sample_mean_loss": 1.4123329423367976,
+      "seconds": 62.095622579567134,
+      "selection_rule": "minimum full validation token-weighted cross-entropy; earlier checkpoint on tie",
+      "test_used": false
+    },
+    "adapter_sha256": "e4d88dc0562bb72370258cbd2ca80079348d9d645d612283b15a06c7fc373ab9",
+    "sample_ids": [
+      "2ccc2b3ff3823637ef7a419266bd3108da0de9a18e2089dbec836f82a511ad59",
+      "b775879ece7a5c1a1111c906109b4ac7584cf0d26a76f2611b1f5d9655dd7e1c",
+      "275a319b6c9a0d0252fbee91dd753294cd6a5c1aa940858f0f113924d2fdb30b",
+      "cbbfa698bb9a51936a691f708fdeda3fd63aad51341b62b6a413c42e8db19e35",
+      "5d83dea6f2a60c4a8fa35aeab532a56aeb8d24f9b3e7a524ea455069751a55d5",
+      "e32c25771706e9bb5e95c1772685dca42e1fa78ba92abc0820511fd17798c34d",
+      "71fa98a4e65734471fcffd51913b548a8f0dc2978bfe510ec5b4ab933e25c56b",
+      "bfc6c95099bec16a0465619e83fc5dc578ba0016cef76407106e1c3af6c283ba",
+      "6fd75d70ec379717523cc4b0c42ffd3ad5bb39be18f9dc386ce0e33b470f27f0",
+      "3c83286b5ef70362d658fda500b3a2d9bfc1090c8fe7cb6454c2965e7433535a",
+      "ff62993fbd5bd028a2bfa8b6b3dca0ebcd2776100d539a1eee6820f2178baea3",
+      "0b4abeab9e62be688419b8f45e7fad68ea7b7191bc6960bb414fa1b6b22ceca3",
+      "70776188aea735419af80578e161a3019508642c7598da6919bc4711a9cff776",
+      "c86e057967d5f3500cd4658fa71f839230c34dca2c849bbee4eade5ea2e1e669",
+      "0902d7f6eeffd57941964e13e3bc2eb712fd75be65c5c62aeee4ce56dda0ff47",
+      "155a7d5a4da416d214248f7476d1074374eabdd0061ff9185bc78e6eb8c1f1a3"
+    ],
+    "prompt_token_lengths": [
+      3272,
+      2906,
+      2572,
+      2460,
+      2142,
+      2009,
+      2004,
+      1973,
+      1950,
+      1944,
+      1940,
+      1928,
+      1925,
+      1920,
+      1912,
+      1911
+    ],
+    "cache_files_sha256": {
+      "config.json": "54acfad3cffe057640904ca8a1e83525e6551c70c7a04c641f5a9eda0bbf64bd",
+      "generation_config.json": "e645194d2dd27c86ed34a5a23f306c1a0fd79a42123c26551b7251c700a3379d",
+      "model-00001-of-00004.safetensors": "f8b9704ab09cdeb097aa4a0a24bca96f906eec36bad63ab495bc21475058601b",
+      "model-00002-of-00004.safetensors": "c28b25e7541751056ee126627e007f8d4288319733285e9f7b17b9ff6eb313f0",
+      "model-00003-of-00004.safetensors": "d8e9504dd4e4a146d484c52a97584ec14dac92237c46b064934af67a85e7d383",
+      "model-00004-of-00004.safetensors": "e4486f35c040f683f7d790354f66c169c109eb9fa0954a4a35d7c458a108405d",
+      "model.safetensors.index.json": "146776fce3f6db1103aa6f249e65ee5544c5923ce6f971b092eee79aa6e5d37b",
+      "tokenizer.json": "76e48799b099d43365bd24ccd8ecc5aedac831718da780552f03b0a6eb4412aa",
+      "tokenizer_config.json": "8004530facf809ac432114de2a4dcc65fcb632da5ec16d666091aeb6a2ee444a"
+    }
+  },
+  "deepseek": {
+    "registry": {
+      "model_id": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+      "cache": "/root/shared-nvme/AI4FinRuntime/huggingface/hub/models--deepseek-ai--DeepSeek-R1-Distill-Llama-8B/snapshots/6a6f4aa4197940add57724a7707d069478df56b1",
+      "training_run": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/server4090_deepseek_int8_4096_epoch_20261010",
+      "evaluation_data": "/root/shared-nvme/AI4FinRuntime/setup/three_model_validation240_20261010/deepseek_validation_generation240_full.json",
+      "evaluation_run": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/server4090_deepseek_int8_validation240_gen1920_batch16_chunkprefill512_20261011",
+      "generation_batch_size": 16
+    },
+    "selected_checkpoint": {
+      "step": 248,
+      "checkpoint": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/server4090_deepseek_int8_4096_epoch_20261010/checkpoints/checkpoint-248",
+      "samples": 240,
+      "supervised_tokens": 91951,
+      "token_weighted_loss": 1.4956955528535678,
+      "sample_mean_loss": 1.4930962262054284,
+      "seconds": 62.83779367431998,
+      "selection_rule": "minimum full validation token-weighted cross-entropy; earlier checkpoint on tie",
+      "test_used": false
+    },
+    "adapter_sha256": "27325b705bb7925706b8c23a00461fd36c746f768e33a157546ba36145f1ba4e",
+    "evaluation_data_sha256": "65068c0ce82785beeec2f9884d4d55559e89e72155f5f3b0e06b585a2e8ec29e",
+    "cache_files_sha256": {
+      "config.json": "54acfad3cffe057640904ca8a1e83525e6551c70c7a04c641f5a9eda0bbf64bd",
+      "generation_config.json": "cd5194726d1e8f7361a8c8425fc11d33ade5e69de1fd7615eb23fae5601af68b",
+      "tokenizer.json": "b9c9eb63a8e03059914880f918cd28a880dec8b6e15e4461e1ff677e3743dbb8",
+      "tokenizer_config.json": "8ac8c85fb242563c2260baec0909debd69d718af6a0b3d90e6cab62b4d341cd5",
+      "model.safetensors.index.json": "83bdf4be4bb1a054ff315cd804554c48a88036226fdfbc65bee84ff562fea32a",
+      "model-00001-of-000002.safetensors": "7e6b24744354ef4ba547547cc758339090f46ba2da917845cfc69f7d4ded9edb",
+      "model-00002-of-000002.safetensors": "19fb83b79bd0d06d49b7cf6f86b83f5183cd292aa2c028d633ca4fceac1ae742"
+    }
+  }
+}

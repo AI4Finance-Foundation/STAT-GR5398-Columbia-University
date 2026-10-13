@@ -1,0 +1,42 @@
+{
+  "metric_variant": "source_checked_final_direction_markdown_tolerant_v1",
+  "total_outputs": 6,
+  "valid_direction_outputs": 4,
+  "correct_direction_count": 1,
+  "accuracy_over_all_outputs": 0.16666666666666666,
+  "accuracy_over_valid_outputs": 0.25,
+  "native_deepseek_base_requires_generated_think_closure": true,
+  "raw_output_modified": false,
+  "rows": [
+    {
+      "sample_id": "ff62993fbd5bd028a2bfa8b6b3dca0ebcd2776100d539a1eee6820f2178baea3",
+      "predicted": "up",
+      "expected": "up"
+    },
+    {
+      "sample_id": "eb1173b9f26a78ec095515962ddabae407fe6335a7a0a2fe072d5a8a52b35e16",
+      "predicted": "up",
+      "expected": "down"
+    },
+    {
+      "sample_id": "4b94d38d30a35052115c37617d93e4c858f10dc6447f274315e246417b3d9dcd",
+      "predicted": null,
+      "expected": "down"
+    },
+    {
+      "sample_id": "7bada7aab42bbdce59bc25b6ed360c24e5c8c95520de8aa96e88e7641bdf6fff",
+      "predicted": "down",
+      "expected": "up"
+    },
+    {
+      "sample_id": "0167fefc73d700570f7c4fd32a90acf28fa86a092957e1249a629b072849abc8",
+      "predicted": "down",
+      "expected": "up"
+    },
+    {
+      "sample_id": "e35887929d372e443284a96fa6fcca9b054c53f65cc6fe1ce2f5b0fcd6826bde",
+      "predicted": null,
+      "expected": "up"
+    }
+  ]
+}

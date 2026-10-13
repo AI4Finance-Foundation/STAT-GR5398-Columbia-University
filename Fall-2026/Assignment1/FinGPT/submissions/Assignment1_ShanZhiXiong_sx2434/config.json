@@ -1,0 +1,71 @@
+{
+  "version": 3,
+  "purpose": "Fresh three-model retrospective reproduction dispatch. Not used to produce reported runs; CPU plan-only verification so far.",
+  "methodology_status": "Historic data/DeepSeek target issues remain. No repaired dataset or adapter is claimed.",
+  "server_root": "/root/shared-nvme/AI4FinRuntime",
+  "python_relative": "venvs/fingpt/bin/python",
+  "gpu_lock_relative": "setup/gpu_training.lock",
+  "test_access_allowed": false,
+  "training": {
+    "quantization_bits": 8,
+    "batch_size": 1,
+    "gradient_accumulation": 4,
+    "peak_learning_rate": 0.0002,
+    "scheduler": "cosine",
+    "lora_r": 8,
+    "context_tokens": 4096
+  },
+  "models": {
+    "qwen": {
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "backend_script": "setup/server_full_int8_train.py",
+      "backend_script_sha256": "8cbf81699cb0535ef2e7ed7963e1ef4e39e196b218ed113352f11ef94103ee43",
+      "prepared_sources": {
+        "train": {
+          "path": "setup/full_int8_4096_20261010/qwen_train_4096.json",
+          "sha256": "fb57bafc3f68f958755fd74fc49c5785b1a411fe905c6631b93e27261672c8eb",
+          "samples": 990
+        },
+        "validation": {
+          "path": "setup/full_int8_4096_20261010/qwen_validation_4096.json",
+          "sha256": "ef56fd8b567e887d33a5f6c969c9c234a71691d88edf315c52b9f069703227d6",
+          "samples": 240
+        }
+      },
+      "dependency_sources": {
+        "import_20261009/assignment1_20261008/training_core.py": "5b54bdda90b5a5b96fc60968396cc4578f9b354c082dbbf66a7d3f8df5a4779f",
+        "setup/full_int8_4096_20261010/protocol.json": "161a5fe6971748cbd791f35fda0d042201d52c3de9aaca1b715fe34a15348de7"
+      }
+    },
+    "deepseek": {
+      "model_id": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+      "backend_script": "setup/server_deepseek_int8_train.py",
+      "backend_script_sha256": "5ef89c51f32ddfaa1ceec7f7fa0a6d6878aa453761022ed642c66ccb55beaabd",
+      "prepared_sources": {
+        "train": {
+          "path": "setup/deepseek_full_int8_4096_20261010/deepseek_train_4096.json",
+          "sha256": "73f1b33a2945767fefd65650c5b9641dfd32274b5f975a480d5bbc4fbfde64c9",
+          "samples": 990
+        },
+        "validation": {
+          "path": "setup/deepseek_full_int8_4096_20261010/deepseek_validation_4096.json",
+          "sha256": "d8faa0b420ea6dff8460b75d78733b8ea7327751bf59c2f148eeda71eef4e093",
+          "samples": 240
+        }
+      },
+      "dependency_sources": {
+        "import_20261009/assignment1_20261008/training_core.py": "5b54bdda90b5a5b96fc60968396cc4578f9b354c082dbbf66a7d3f8df5a4779f",
+        "setup/deepseek_full_int8_4096_20261010/protocol.json": "8c3a6f5d940da379e09fe216f8176f2bcaa3f8e8f539dec7f23e114d3e3f21f7"
+      }
+    },
+    "llama": {
+      "model_id": "meta-llama/Llama-3.1-8B",
+      "ready": true,
+      "source_bundle": "setup/llama_retrospective_training_v2_20261012",
+      "source_plan_sha256": "f8c9d2abe365865c0b57fcdcdbaa94336f5d1406aabc0310c580fb8a15475860",
+      "selected_historical_step": 248,
+      "selected_historical_adapter_sha256": "e4d88dc0562bb72370258cbd2ca80079348d9d645d612283b15a06c7fc373ab9"
+    }
+  },
+  "legacy_dispatch_sha256": "7f3ed780b9bee4738bb60a4cfb4bd4082ce21d332c5e9d9de5e1885a7e152db7"
+}

@@ -1,0 +1,154 @@
+{
+  "config": {
+    "model_id": "meta-llama/Llama-3.1-8B",
+    "revision": "d04e592bb4f6aa9cfee91e2e20afa771667e1d4b",
+    "samples": 240,
+    "batch_size": 8,
+    "prefill_chunk_tokens": 512,
+    "max_new_tokens": 1920,
+    "context_tokens": 6144,
+    "adapter_sha256": "e4d88dc0562bb72370258cbd2ca80079348d9d645d612283b15a06c7fc373ab9",
+    "target_policy": "full_reference_plus_eos",
+    "route": "retrospective",
+    "test_read": false,
+    "plan_sha256": "4409db129bd049e4cca3251182a270fb06895bf2bfa3fa4cf4c6dc656349b572",
+    "prompt_policy": "Native BASE: source SYSTEM + double newline + canonical full input + double newline, native BOS; identical training/inference prefix; no clipping",
+    "speed_comparison_claim": false
+  },
+  "base": {
+    "samples": 240,
+    "course_reference_metrics": {
+      "valid_count": 190,
+      "bin_acc": 0.5947368421052631,
+      "mse": 7.402631578947369,
+      "pros_rouge_scores": {
+        "rouge1": 0.04966231669763017,
+        "rouge2": 0.01193223626469347,
+        "rougeL": 0.032895504799267755
+      },
+      "cons_rouge_scores": {
+        "rouge1": 0.02634830061070259,
+        "rouge2": 0.0050936744747321246,
+        "rougeL": 0.017296046396444425
+      },
+      "anal_rouge_scores": {
+        "rouge1": 0.07541270352210466,
+        "rouge2": 0.013351053223407235,
+        "rougeL": 0.04525448712351734
+      }
+    },
+    "course_valid_fraction": 0.7916666666666666,
+    "dataset_label_metrics": {
+      "valid_direction_count": 10,
+      "correct_count": 5,
+      "accuracy_all_invalid_as_wrong": 0.020833333333333332,
+      "accuracy_valid_only": 0.5,
+      "balanced_accuracy_all_invalid_as_wrong": 0.017241379310344827,
+      "confusion": {
+        "1->None": 140,
+        "-1->None": 90,
+        "-1->1": 5,
+        "1->1": 5
+      }
+    },
+    "output_metrics": {
+      "complete_count": 29,
+      "complete_fraction": 0.12083333333333333,
+      "length_limit_count": 120
+    },
+    "output_diagnostics": {
+      "nonempty_count": 240,
+      "natural_eos_count": 120,
+      "length_limit_count": 120,
+      "normalized_structure_count": 44,
+      "normalized_complete_count": 29,
+      "normalized_valid_direction_count": 10,
+      "normalized_correct_count": 5,
+      "normalized_accuracy_all_invalid_as_wrong": 0.020833333333333332,
+      "normalized_accuracy_valid_only": 0.5,
+      "note": "Supplemental heading normalization and final-prediction direction extraction; original course scores remain unchanged. Parsing success is not factual quality."
+    },
+    "inference": {
+      "mean_seconds": 36.59474664135293,
+      "median_seconds": 36.42893064243253,
+      "total_seconds": 8782.739193924703,
+      "total_generated_tokens": 247441,
+      "tokens_per_second_total": 28.1735566246989
+    },
+    "limitation": "Course scores compare parsable reference-answer pairs, including its original range parser; label scores compare dataset labels, not independently fetched returns. ROUGE does not establish factual quality."
+  },
+  "adapter": {
+    "samples": 240,
+    "course_reference_metrics": {
+      "valid_count": 240,
+      "bin_acc": 0.6,
+      "mse": 7.1375,
+      "pros_rouge_scores": {
+        "rouge1": 0.4740816362894463,
+        "rouge2": 0.19605089350756186,
+        "rougeL": 0.29950672304714593
+      },
+      "cons_rouge_scores": {
+        "rouge1": 0.42520883621740857,
+        "rouge2": 0.15829266319376098,
+        "rougeL": 0.2738854330505475
+      },
+      "anal_rouge_scores": {
+        "rouge1": 0.438929647357729,
+        "rouge2": 0.1343676134792731,
+        "rougeL": 0.22450786133110648
+      }
+    },
+    "course_valid_fraction": 1.0,
+    "dataset_label_metrics": {
+      "valid_direction_count": 240,
+      "correct_count": 144,
+      "accuracy_all_invalid_as_wrong": 0.6,
+      "accuracy_valid_only": 0.6,
+      "balanced_accuracy_all_invalid_as_wrong": 0.5509981851179673,
+      "confusion": {
+        "1->1": 114,
+        "-1->-1": 30,
+        "1->-1": 31,
+        "-1->1": 65
+      }
+    },
+    "output_metrics": {
+      "complete_count": 240,
+      "complete_fraction": 1.0,
+      "length_limit_count": 0
+    },
+    "output_diagnostics": {
+      "nonempty_count": 240,
+      "natural_eos_count": 240,
+      "length_limit_count": 0,
+      "normalized_structure_count": 240,
+      "normalized_complete_count": 240,
+      "normalized_valid_direction_count": 240,
+      "normalized_correct_count": 144,
+      "normalized_accuracy_all_invalid_as_wrong": 0.6,
+      "normalized_accuracy_valid_only": 0.6,
+      "note": "Supplemental heading normalization and final-prediction direction extraction; original course scores remain unchanged. Parsing success is not factual quality."
+    },
+    "inference": {
+      "mean_seconds": 8.9211693060856,
+      "median_seconds": 8.737524297554046,
+      "total_seconds": 2141.080633460544,
+      "total_generated_tokens": 85191,
+      "tokens_per_second_total": 39.788786404699366
+    },
+    "limitation": "Course scores compare parsable reference-answer pairs, including its original range parser; label scores compare dataset labels, not independently fetched returns. ROUGE does not establish factual quality."
+  },
+  "simple_baselines": {
+    "training_direction_counts": {
+      "-1": 448,
+      "0": 0,
+      "1": 542
+    },
+    "train_majority_direction": 1,
+    "always_up_accuracy": 0.6041666666666666,
+    "train_majority_accuracy": 0.6041666666666666
+  },
+  "predictive_advantage_claimed": false,
+  "test_used_for_checkpoint_selection": false
+}

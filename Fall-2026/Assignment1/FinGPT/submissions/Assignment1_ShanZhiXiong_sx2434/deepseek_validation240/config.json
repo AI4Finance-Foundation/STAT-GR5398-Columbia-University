@@ -1,0 +1,19 @@
+{
+  "model_id": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+  "split": "validation",
+  "samples": 240,
+  "do_sample": false,
+  "max_new_tokens": 1920,
+  "canonical_evidence_sha256": "65068c0ce82785beeec2f9884d4d55559e89e72155f5f3b0e06b585a2e8ec29e",
+  "adapter_sha256": "27325b705bb7925706b8c23a00461fd36c746f768e33a157546ba36145f1ba4e",
+  "checkpoint": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/server4090_deepseek_int8_4096_epoch_20261010/checkpoints/checkpoint-248",
+  "prompt_policy": "full frozen240 input; left padding with attention mask; no truncation",
+  "quantization_bits": 8,
+  "max_length": 6144,
+  "test_used": false,
+  "prefill_chunk_tokens": 512,
+  "prefill_policy": "same16 batch; full prompt sequential512 chunks with KV cache, explicit masked position_ids; no truncation",
+  "generation_batch_size": 16,
+  "timing_semantics": "amortized batch seconds per answer; latency separately recorded",
+  "script_sha256": "82268570c4c01291d3537e93cdc8376dda33e851b2bde7d44b67a23d48340383"
+}

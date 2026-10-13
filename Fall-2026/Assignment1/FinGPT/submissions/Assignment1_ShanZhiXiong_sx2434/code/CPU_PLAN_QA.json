@@ -1,0 +1,85 @@
+{
+  "checks": [
+    {
+      "model": "qwen",
+      "plan": {
+        "model_id": "Qwen/Qwen2.5-7B-Instruct",
+        "command": [
+          "/root/shared-nvme/AI4FinRuntime/venvs/fingpt/bin/python",
+          "-u",
+          "/root/shared-nvme/AI4FinRuntime/setup/server_full_int8_train.py",
+          "--model",
+          "qwen",
+          "--out",
+          "/root/shared-nvme/AI4FinRuntime/runs/FRESH_QWEN"
+        ],
+        "fresh_bundle": null,
+        "data_policy": "Historic data/DeepSeek target issues remain. No repaired dataset or adapter is claimed.",
+        "test_read": false,
+        "execute_requested": false,
+        "new_wrapper_not_historic_execution": true,
+        "original_outputs_preserved": true
+      }
+    },
+    {
+      "model": "deepseek",
+      "plan": {
+        "model_id": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+        "command": [
+          "/root/shared-nvme/AI4FinRuntime/venvs/fingpt/bin/python",
+          "-u",
+          "/root/shared-nvme/AI4FinRuntime/setup/server_deepseek_int8_train.py",
+          "--model",
+          "deepseek",
+          "--out",
+          "/root/shared-nvme/AI4FinRuntime/runs/FRESH_DEEPSEEK"
+        ],
+        "fresh_bundle": null,
+        "data_policy": "Historic data/DeepSeek target issues remain. No repaired dataset or adapter is claimed.",
+        "test_read": false,
+        "execute_requested": false,
+        "new_wrapper_not_historic_execution": true,
+        "original_outputs_preserved": true
+      }
+    },
+    {
+      "model": "llama",
+      "plan": {
+        "model_id": "meta-llama/Llama-3.1-8B",
+        "command": [
+          "/root/shared-nvme/AI4FinRuntime/venvs/fingpt/bin/python",
+          "-u",
+          "/root/shared-nvme/AI4FinRuntime/setup/course_reproduction_FRESH_LLAMA/llama_full_int8_train.py",
+          "--model",
+          "llama",
+          "--out",
+          "/root/shared-nvme/AI4FinRuntime/runs/FRESH_LLAMA"
+        ],
+        "fresh_bundle": "/root/shared-nvme/AI4FinRuntime/setup/course_reproduction_FRESH_LLAMA",
+        "data_policy": "Historic data/DeepSeek target issues remain. No repaired dataset or adapter is claimed.",
+        "test_read": false,
+        "execute_requested": false,
+        "new_wrapper_not_historic_execution": true,
+        "original_outputs_preserved": true
+      }
+    },
+    {
+      "invalid_output_refused_under_optimized_python": "/tmp/invalid"
+    },
+    {
+      "invalid_output_refused_under_optimized_python": "/root/shared-nvme/AI4FinRuntime/../escape"
+    }
+  ],
+  "gpu_execution_performed": false,
+  "source_hashes": {
+    "CODE_PROVENANCE.json": "de6ea2af7a5bb6ea9c1e29d11a6e894be81156bad966afb1b749d64b9826d4bc",
+    "config.json": "b8468b3f111ae62106244a3faa374316dea413d5b090adc4aab7d5bfcaf19443",
+    "course_utils_original.py": "a65e549300653a8637002dc30c0dd00805ef8e11dffbd25c92087544c3ec72ae",
+    "legacy_training_dispatch.py": "7f3ed780b9bee4738bb60a4cfb4bd4082ce21d332c5e9d9de5e1885a7e152db7",
+    "split_target_contract.py": "2520ea8f0550851de72f963c4029dbe208a97cf1b5b440b77db8b6a98f7a05b1",
+    "train.sh": "59f94ec7ad173a4b8d02d3b096e5aac60b8300cf29912e16caac8e59a18bfe47",
+    "train_lora.py": "8327e64d07a9d2b4a7a96e4f640632401f784df3d96e01e919db9c9f48b95d2b",
+    "utils.py": "2d13bbb624dc078a6df32e68ce89ea7e0efd62eb70a009db6bd1f23b2206b97d"
+  },
+  "source_qa": "Inherited three CPU plans/refusals from V3; updated V3 contract/source pins; no GPU execution"
+}

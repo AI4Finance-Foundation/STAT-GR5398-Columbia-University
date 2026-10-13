@@ -1,0 +1,140 @@
+{
+  "run_id": "hitl_retrospective_evidence_prompt_v2_20261012",
+  "frozen_at_utc": "2026-10-12T06:11:25.725871+00:00",
+  "route": "retrospective",
+  "remote_directory": "/root/shared-nvme/AI4FinRuntime/setup/hitl_retrospective_evidence_prompt_v2_20261012",
+  "source_policy_sha256": "07f202ecc13dd9fbb4c9ecb43b1a0d71e2607f5e7f455e80017827ea1a7be260",
+  "model_keys": [
+    "qwen",
+    "deepseek"
+  ],
+  "sample_ids": [
+    "ff62993fbd5bd028a2bfa8b6b3dca0ebcd2776100d539a1eee6820f2178baea3",
+    "eb1173b9f26a78ec095515962ddabae407fe6335a7a0a2fe072d5a8a52b35e16",
+    "4b94d38d30a35052115c37617d93e4c858f10dc6447f274315e246417b3d9dcd",
+    "7bada7aab42bbdce59bc25b6ed360c24e5c8c95520de8aa96e88e7641bdf6fff",
+    "0167fefc73d700570f7c4fd32a90acf28fa86a092957e1249a629b072849abc8",
+    "e35887929d372e443284a96fa6fcca9b054c53f65cc6fe1ce2f5b0fcd6826bde"
+  ],
+  "case_selection": "3 prior diagnostic cases + 3 seeded random additions; all are inspected validation data.",
+  "prompt_effect_control": "Fresh matched original/revised prompt outputs for both base and legacy adapter under the same per-model batch/prefill configuration; old 240-run outputs are historical context only.",
+  "models": {
+    "qwen": {
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "tokenizer_binding": {
+        "model_id": "Qwen/Qwen2.5-7B-Instruct",
+        "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+        "eos_token_id": 151645,
+        "bos_token_id": null,
+        "file_sha256": {
+          "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+          "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+        },
+        "source_frozen_stage_manifest_sha256": "788d4fc644d9a8a2bada7485a27be9833f23a29556f5ae1f7430d1b464cc7b44",
+        "source_frozen_stage_directory": "D:\\AI4FinRuntime\\assignment1_two_model_delivery\\delivery_ready_20261011",
+        "source_manifest_copy": "frozen_stage_manifest_208.json"
+      },
+      "weight_files": {
+        "model-00001-of-00004.safetensors": {
+          "sha256": "a1333e6293854747c481288ea83b348226af178dd565c49b6f9495ba1966aba7",
+          "bytes": 3945441440
+        },
+        "model-00002-of-00004.safetensors": {
+          "sha256": "f5d25a2772cb825164a2a2c0fb6d51a87e282abf21e4dd75bc5cfb3cd0ea6185",
+          "bytes": 3864726352
+        },
+        "model-00003-of-00004.safetensors": {
+          "sha256": "8efdec4c1bc12317ae1a38dc42b595ce777738a64deea3fcb8a0a91381bcdfd5",
+          "bytes": 3864726424
+        },
+        "model-00004-of-00004.safetensors": {
+          "sha256": "1a72d403cdf0c1ec3cb7f289f17b394a01e64394c2e9b3c0f94dbce3faf879bd",
+          "bytes": 3556377672
+        }
+      },
+      "adapter_sha256": "31df542a315939525a49a32f280079bc4bac61e0771e0adc0c20f7fcf3045205",
+      "data_file": "qwen_hitl_validation6.json",
+      "data_sha256": "7e6fa96bae86c70cee5464af576fa9997c3e4cae0c00ebe670144bd373f0429a",
+      "original_data_file": "qwen_matched_original_validation6.json",
+      "original_data_sha256": "d38da0ce5ec10be8144e88b34c3ec98987a17fb9a0969b2eb2b0c127d7520219",
+      "batch_size": 1,
+      "prefill_chunk_tokens": null,
+      "max_prompt_tokens": 2506
+    },
+    "deepseek": {
+      "model_id": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+      "revision": "6a6f4aa4197940add57724a7707d069478df56b1",
+      "tokenizer_binding": {
+        "model_id": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+        "revision": "6a6f4aa4197940add57724a7707d069478df56b1",
+        "eos_token_id": 128001,
+        "bos_token_id": 128000,
+        "file_sha256": {
+          "tokenizer.json": "b9c9eb63a8e03059914880f918cd28a880dec8b6e15e4461e1ff677e3743dbb8",
+          "tokenizer_config.json": "8ac8c85fb242563c2260baec0909debd69d718af6a0b3d90e6cab62b4d341cd5"
+        },
+        "source_frozen_stage_manifest_sha256": "788d4fc644d9a8a2bada7485a27be9833f23a29556f5ae1f7430d1b464cc7b44",
+        "source_frozen_stage_directory": "D:\\AI4FinRuntime\\assignment1_two_model_delivery\\delivery_ready_20261011",
+        "source_manifest_copy": "frozen_stage_manifest_208.json"
+      },
+      "weight_files": {
+        "model-00001-of-000002.safetensors": {
+          "sha256": "7e6b24744354ef4ba547547cc758339090f46ba2da917845cfc69f7d4ded9edb",
+          "bytes": 8667826246
+        },
+        "model-00002-of-000002.safetensors": {
+          "sha256": "19fb83b79bd0d06d49b7cf6f86b83f5183cd292aa2c028d633ca4fceac1ae742",
+          "bytes": 7392730108
+        }
+      },
+      "adapter_sha256": "27325b705bb7925706b8c23a00461fd36c746f768e33a157546ba36145f1ba4e",
+      "data_file": "deepseek_hitl_validation6.json",
+      "data_sha256": "a012c4060565e9ba47c6200f4413ea3cefc1c22c20ebcc9add2169b6d659b0e8",
+      "original_data_file": "deepseek_matched_original_validation6.json",
+      "original_data_sha256": "105e13b532c745543650f71597faf542e051388c0851142e6c1c5d4c594aaa24",
+      "batch_size": 6,
+      "prefill_chunk_tokens": 512,
+      "max_prompt_tokens": 2260
+    }
+  },
+  "max_new_tokens": 1920,
+  "max_context_tokens": 6144,
+  "do_sample": false,
+  "system_sha256": "5b900e01c16d3d5daae9b42d11b175108de7816087e010d84e41565e86f3add6",
+  "quantization_bits": 8,
+  "new_training": false,
+  "data_repaired": false,
+  "legacy_deepseek_target_confound_repaired": false,
+  "variants": [
+    "base_original_prompt_matched_control",
+    "base_hitl_evidence_prompt",
+    "adapter_legacy_original_prompt_matched_control",
+    "adapter_legacy_hitl_evidence_prompt"
+  ],
+  "metrics": [
+    "unmodified course raw parser and counts",
+    "full-denominator direction metrics",
+    "source-checked qualitative grounding review; raw reasoning versus final answer separated"
+  ],
+  "no_speed_comparison_claim": true,
+  "test_authorized": false,
+  "test_read": false,
+  "publish_authorized": false,
+  "submit_authorized": false,
+  "dependency_sha256": {
+    "backend_server_batched_evaluate.py": "a5a7a844641724ab902b7b1decff300a17e077076231e9f3440f539a81a4bac2",
+    "backend_server_chunked_prefill_evaluate.py": "de52239f0b833cef8606b28741f8c8a92d83217f28fde789bfa97f87468b302d",
+    "deepseek_hitl_validation6.json": "a012c4060565e9ba47c6200f4413ea3cefc1c22c20ebcc9add2169b6d659b0e8",
+    "deepseek_matched_original_validation6.json": "105e13b532c745543650f71597faf542e051388c0851142e6c1c5d4c594aaa24",
+    "LOCAL_VALIDATION_READ_RECEIPT.json": "bdab80a6996f5e6a2a0db7e77b39b2b7aa43e5739a50b502aa3159aa26c7730c",
+    "ORIGINAL_PROMPT_BASELINES.json": "ba0e42309e3235807912a8221720775dda9ff1ab682617c005191ad9eaa53bdf",
+    "qwen_hitl_validation6.json": "7e6fa96bae86c70cee5464af576fa9997c3e4cae0c00ebe670144bd373f0429a",
+    "qwen_matched_original_validation6.json": "d38da0ce5ec10be8144e88b34c3ec98987a17fb9a0969b2eb2b0c127d7520219",
+    "SOURCE_POLICY_LOCAL.json": "0b8fcb702ad076f2d66ff766d3267a2ecf33e118217069562396deb3da2c0026",
+    "SOURCE_POLICY_REMOTE.json": "07f202ecc13dd9fbb4c9ecb43b1a0d71e2607f5e7f455e80017827ea1a7be260",
+    "split_target_contract.py": "2520ea8f0550851de72f963c4029dbe208a97cf1b5b440b77db8b6a98f7a05b1",
+    "tokenizer_bindings.json": "25d93109d62aa099e40789271c2e2605c64f4b5c30086d5a80b2a7bafc1b330e"
+  },
+  "new_gpu_generation_started": false
+}

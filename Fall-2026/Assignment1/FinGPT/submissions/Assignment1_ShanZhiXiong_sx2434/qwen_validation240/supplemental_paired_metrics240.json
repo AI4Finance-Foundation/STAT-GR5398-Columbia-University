@@ -1,0 +1,152 @@
+{
+  "model": "qwen",
+  "split": "validation",
+  "validation_only": true,
+  "test_used": false,
+  "full_denominator": 240,
+  "generation_max_new_tokens": 1920,
+  "inference_context_tokens": 6144,
+  "training_context_tokens": 4096,
+  "matched_structure_count": 240,
+  "label_counts": {
+    "1": 145,
+    "-1": 95
+  },
+  "always_up_accuracy": 0.6041666666666666,
+  "always_down_accuracy": 0.3958333333333333,
+  "reused_per_variant": 30,
+  "new_per_variant": 210,
+  "policy": "Original course metrics are preserved in comparison.json. Normalized final-answer headings are evaluated over all240 with missing sections scoring zero; matched-structure ROUGE uses the same intersection for base/adapter. Validation was used for checkpoint selection, so these are development results.",
+  "base": {
+    "samples": 240,
+    "direction_correct": 125,
+    "direction_accuracy_all240": 0.5208333333333334,
+    "direction_counts": {
+      "-1": 102,
+      "1": 138
+    },
+    "direction_unparsed": 0,
+    "structure_complete": 240,
+    "structure_complete_rate": 1.0,
+    "nonempty_outputs": 240,
+    "eos_count": 240,
+    "length_limit_count": 0,
+    "recall_counts": {
+      "-1": {
+        "correct": 41,
+        "total": 95
+      },
+      "1": {
+        "correct": 84,
+        "total": 145
+      }
+    },
+    "balanced_accuracy": 0.5054446460980037,
+    "peak_allocated_gib": 9.244160652160645,
+    "peak_reserved_gib": 9.919921875,
+    "seconds_sum_all240": 8349.266166773625,
+    "seconds_mean_all240": 34.78860902822343,
+    "seconds_median_all240": 33.7669577524066,
+    "seconds_sum_new_only": 7280.040455459617,
+    "seconds_mean_new_only": 34.666859311712464,
+    "pros_rouge_all240": {
+      "rouge1": 0.3917896917530133,
+      "rouge2": 0.12149102638079429,
+      "rougeL": 0.24933240191967043
+    },
+    "pros_rouge_matched": {
+      "rouge1": 0.3917896917530133,
+      "rouge2": 0.12149102638079429,
+      "rougeL": 0.24933240191967043
+    },
+    "cons_rouge_all240": {
+      "rouge1": 0.34450579504614987,
+      "rouge2": 0.09127489006246176,
+      "rougeL": 0.2203087480659028
+    },
+    "cons_rouge_matched": {
+      "rouge1": 0.34450579504614987,
+      "rouge2": 0.09127489006246176,
+      "rougeL": 0.2203087480659028
+    },
+    "analysis_rouge_all240": {
+      "rouge1": 0.39586596317191247,
+      "rouge2": 0.0934666672502856,
+      "rougeL": 0.19440257200315322
+    },
+    "analysis_rouge_matched": {
+      "rouge1": 0.39586596317191247,
+      "rouge2": 0.0934666672502856,
+      "rougeL": 0.19440257200315322
+    }
+  },
+  "adapter": {
+    "samples": 240,
+    "direction_correct": 145,
+    "direction_accuracy_all240": 0.6041666666666666,
+    "direction_counts": {
+      "-1": 30,
+      "1": 210
+    },
+    "direction_unparsed": 0,
+    "structure_complete": 240,
+    "structure_complete_rate": 1.0,
+    "nonempty_outputs": 240,
+    "eos_count": 240,
+    "length_limit_count": 0,
+    "recall_counts": {
+      "-1": {
+        "correct": 15,
+        "total": 95
+      },
+      "1": {
+        "correct": 130,
+        "total": 145
+      }
+    },
+    "balanced_accuracy": 0.5272232304900182,
+    "peak_allocated_gib": 9.247183799743652,
+    "peak_reserved_gib": 10.029296875,
+    "seconds_sum_all240": 11396.806108263321,
+    "seconds_mean_all240": 47.48669211776384,
+    "seconds_median_all240": 47.62747484166175,
+    "seconds_sum_new_only": 9970.438937703148,
+    "seconds_mean_new_only": 47.47828065572927,
+    "pros_rouge_all240": {
+      "rouge1": 0.4617429527934411,
+      "rouge2": 0.18613411835202678,
+      "rougeL": 0.2919960755625599
+    },
+    "pros_rouge_matched": {
+      "rouge1": 0.4617429527934411,
+      "rouge2": 0.18613411835202678,
+      "rougeL": 0.2919960755625599
+    },
+    "cons_rouge_all240": {
+      "rouge1": 0.4253243670859994,
+      "rouge2": 0.16042946671661162,
+      "rougeL": 0.2749698926385424
+    },
+    "cons_rouge_matched": {
+      "rouge1": 0.4253243670859994,
+      "rouge2": 0.16042946671661162,
+      "rougeL": 0.2749698926385424
+    },
+    "analysis_rouge_all240": {
+      "rouge1": 0.43821254472583265,
+      "rouge2": 0.13350577191157395,
+      "rougeL": 0.22717635837633485
+    },
+    "analysis_rouge_matched": {
+      "rouge1": 0.43821254472583265,
+      "rouge2": 0.13350577191157395,
+      "rougeL": 0.22717635837633485
+    }
+  },
+  "paired_direction_change_counts": {
+    "False->False": 65,
+    "False->True": 50,
+    "True->False": 30,
+    "True->True": 95
+  }
+}

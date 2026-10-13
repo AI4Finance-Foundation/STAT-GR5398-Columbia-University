@@ -1,0 +1,23 @@
+{
+  "repair_reason": "Full16 prefill exceeds physical GPU memory even after expandable allocator",
+  "old_run": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/server4090_deepseek_int8_validation240_gen1920_batch16_20261011",
+  "old_run_sha256": {
+    "base_outputs.jsonl": "0da4277d488e010fbf770a9e17fc43cbdb5af050af5aeecbeddc6d8dc09fb11e",
+    "config.json": "a21ac0977e2c51fafe3d7f26d151232a805ad95d6f9ffb023a276f5cac9fcbb4",
+    "status.json": "d4c31a9843e22e07f60511c1a30cdb6f8c0deb8e432b03ff95ba84dc990016b0"
+  },
+  "old_base_saved": 16,
+  "new_run": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/server4090_deepseek_int8_validation240_gen1920_batch16_chunkprefill512_20261011",
+  "batch_size": 16,
+  "prefill_chunk_tokens": 512,
+  "full_input_retained": true,
+  "generation_budget": 1920,
+  "max_context": 6144,
+  "quantization_bits": 8,
+  "new_outputs_generated_fresh": true,
+  "allocator": "expandable_segments:True",
+  "script_sha256": "82268570c4c01291d3537e93cdc8376dda33e851b2bde7d44b67a23d48340383",
+  "test_used": false,
+  "started_at_utc": "2026-10-11T02:16:28.165394+00:00",
+  "queue_pid": 227205
+}

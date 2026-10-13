@@ -1,0 +1,649 @@
+{
+  "models": {
+    "qwen": {
+      "run": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/server4090_qwen_int8_validation240_gen1920_20261010",
+      "comparison": {
+        "config": {
+          "model_id": "Qwen/Qwen2.5-7B-Instruct",
+          "split": "validation",
+          "samples": 240,
+          "do_sample": false,
+          "max_new_tokens": 1920,
+          "canonical_evidence_sha256": "908a6e746cd895c5554e55975c4bdf2dec1f8a54175f18c1b6e897b135ab675d",
+          "adapter_sha256": "31df542a315939525a49a32f280079bc4bac61e0771e0adc0c20f7fcf3045205",
+          "checkpoint": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/server4090_qwen_int8_4096_epoch_20261010/checkpoints/checkpoint-248",
+          "prompt_policy": "same full original validation input for base and adapter; all frozen 240 validation IDs; complete original evidence; model-specific template; 6144 inference cap",
+          "quantization_bits": 8,
+          "max_length": 6144,
+          "test_used": false,
+          "reference_comparison": "unmodified course parser; supplemental full-denominator label metrics"
+        },
+        "base": {
+          "samples": 240,
+          "course_reference_metrics": {
+            "valid_count": 190,
+            "bin_acc": 0.48947368421052634,
+            "mse": 11.48421052631579,
+            "pros_rouge_scores": {
+              "rouge1": 0.387205283950899,
+              "rouge2": 0.12018818897786981,
+              "rougeL": 0.2488108006776787
+            },
+            "cons_rouge_scores": {
+              "rouge1": 0.34130934214262926,
+              "rouge2": 0.08763019206504337,
+              "rougeL": 0.21521997480882027
+            },
+            "anal_rouge_scores": {
+              "rouge1": 0.39781723722583595,
+              "rouge2": 0.09306586711425867,
+              "rougeL": 0.19537654702334176
+            }
+          },
+          "course_valid_fraction": 0.7916666666666666,
+          "dataset_label_metrics": {
+            "valid_direction_count": 189,
+            "correct_count": 92,
+            "accuracy_all_invalid_as_wrong": 0.38333333333333336,
+            "accuracy_valid_only": 0.48677248677248675,
+            "balanced_accuracy_all_invalid_as_wrong": 0.37713248638838476,
+            "confusion": {
+              "1->-1": 55,
+              "1->1": 59,
+              "-1->-1": 33,
+              "1->None": 31,
+              "-1->None": 20,
+              "-1->1": 42
+            }
+          },
+          "output_metrics": {
+            "complete_count": 190,
+            "complete_fraction": 0.7916666666666666,
+            "length_limit_count": 0
+          },
+          "output_diagnostics": {
+            "nonempty_count": 240,
+            "natural_eos_count": 240,
+            "length_limit_count": 0,
+            "normalized_structure_count": 240,
+            "normalized_complete_count": 240,
+            "normalized_valid_direction_count": 240,
+            "normalized_correct_count": 125,
+            "normalized_accuracy_all_invalid_as_wrong": 0.5208333333333334,
+            "normalized_accuracy_valid_only": 0.5208333333333334,
+            "note": "Supplemental heading normalization and final-prediction direction extraction; original course scores remain unchanged. Parsing success is not factual quality."
+          },
+          "inference": {
+            "mean_seconds": 34.78860902822343,
+            "median_seconds": 33.7669577524066,
+            "total_seconds": 8349.266166773625,
+            "total_generated_tokens": 73249,
+            "tokens_per_second_total": 8.773106346938432
+          },
+          "limitation": "Course scores compare parsable reference-answer pairs, including its original range parser; label scores compare dataset labels, not independently fetched returns. ROUGE does not establish factual quality."
+        },
+        "adapter": {
+          "samples": 240,
+          "course_reference_metrics": {
+            "valid_count": 240,
+            "bin_acc": 0.6041666666666666,
+            "mse": 7.429166666666666,
+            "pros_rouge_scores": {
+              "rouge1": 0.4617429527934411,
+              "rouge2": 0.18613411835202678,
+              "rougeL": 0.2919960755625599
+            },
+            "cons_rouge_scores": {
+              "rouge1": 0.4253243670859994,
+              "rouge2": 0.16042946671661162,
+              "rougeL": 0.2749698926385424
+            },
+            "anal_rouge_scores": {
+              "rouge1": 0.43821254472583265,
+              "rouge2": 0.13350577191157395,
+              "rougeL": 0.22717635837633485
+            }
+          },
+          "course_valid_fraction": 1.0,
+          "dataset_label_metrics": {
+            "valid_direction_count": 240,
+            "correct_count": 145,
+            "accuracy_all_invalid_as_wrong": 0.6041666666666666,
+            "accuracy_valid_only": 0.6041666666666666,
+            "balanced_accuracy_all_invalid_as_wrong": 0.5272232304900182,
+            "confusion": {
+              "1->-1": 15,
+              "1->1": 130,
+              "-1->-1": 15,
+              "-1->1": 80
+            }
+          },
+          "output_metrics": {
+            "complete_count": 240,
+            "complete_fraction": 1.0,
+            "length_limit_count": 0
+          },
+          "output_diagnostics": {
+            "nonempty_count": 240,
+            "natural_eos_count": 240,
+            "length_limit_count": 0,
+            "normalized_structure_count": 240,
+            "normalized_complete_count": 240,
+            "normalized_valid_direction_count": 240,
+            "normalized_correct_count": 145,
+            "normalized_accuracy_all_invalid_as_wrong": 0.6041666666666666,
+            "normalized_accuracy_valid_only": 0.6041666666666666,
+            "note": "Supplemental heading normalization and final-prediction direction extraction; original course scores remain unchanged. Parsing success is not factual quality."
+          },
+          "inference": {
+            "mean_seconds": 47.48669211776384,
+            "median_seconds": 47.62747484166175,
+            "total_seconds": 11396.806108263321,
+            "total_generated_tokens": 93637,
+            "tokens_per_second_total": 8.216073793877035
+          },
+          "limitation": "Course scores compare parsable reference-answer pairs, including its original range parser; label scores compare dataset labels, not independently fetched returns. ROUGE does not establish factual quality."
+        },
+        "simple_baselines": {
+          "training_direction_counts": {
+            "-1": 448,
+            "0": 0,
+            "1": 542
+          },
+          "train_majority_direction": 1,
+          "always_up_accuracy": 0.6041666666666666,
+          "train_majority_accuracy": 0.6041666666666666
+        },
+        "analysis_quality_requires_manual_review": true,
+        "test_used_for_checkpoint_selection": false
+      },
+      "supplemental": {
+        "model": "qwen",
+        "split": "validation",
+        "validation_only": true,
+        "test_used": false,
+        "full_denominator": 240,
+        "generation_max_new_tokens": 1920,
+        "inference_context_tokens": 6144,
+        "training_context_tokens": 4096,
+        "matched_structure_count": 240,
+        "label_counts": {
+          "1": 145,
+          "-1": 95
+        },
+        "always_up_accuracy": 0.6041666666666666,
+        "always_down_accuracy": 0.3958333333333333,
+        "reused_per_variant": 30,
+        "new_per_variant": 210,
+        "policy": "Original course metrics are preserved in comparison.json. Normalized final-answer headings are evaluated over all240 with missing sections scoring zero; matched-structure ROUGE uses the same intersection for base/adapter. Validation was used for checkpoint selection, so these are development results.",
+        "base": {
+          "samples": 240,
+          "direction_correct": 125,
+          "direction_accuracy_all240": 0.5208333333333334,
+          "direction_counts": {
+            "-1": 102,
+            "1": 138
+          },
+          "direction_unparsed": 0,
+          "structure_complete": 240,
+          "structure_complete_rate": 1.0,
+          "nonempty_outputs": 240,
+          "eos_count": 240,
+          "length_limit_count": 0,
+          "recall_counts": {
+            "-1": {
+              "correct": 41,
+              "total": 95
+            },
+            "1": {
+              "correct": 84,
+              "total": 145
+            }
+          },
+          "balanced_accuracy": 0.5054446460980037,
+          "peak_allocated_gib": 9.244160652160645,
+          "peak_reserved_gib": 9.919921875,
+          "seconds_sum_all240": 8349.266166773625,
+          "seconds_mean_all240": 34.78860902822343,
+          "seconds_median_all240": 33.7669577524066,
+          "seconds_sum_new_only": 7280.040455459617,
+          "seconds_mean_new_only": 34.666859311712464,
+          "pros_rouge_all240": {
+            "rouge1": 0.3917896917530133,
+            "rouge2": 0.12149102638079429,
+            "rougeL": 0.24933240191967043
+          },
+          "pros_rouge_matched": {
+            "rouge1": 0.3917896917530133,
+            "rouge2": 0.12149102638079429,
+            "rougeL": 0.24933240191967043
+          },
+          "cons_rouge_all240": {
+            "rouge1": 0.34450579504614987,
+            "rouge2": 0.09127489006246176,
+            "rougeL": 0.2203087480659028
+          },
+          "cons_rouge_matched": {
+            "rouge1": 0.34450579504614987,
+            "rouge2": 0.09127489006246176,
+            "rougeL": 0.2203087480659028
+          },
+          "analysis_rouge_all240": {
+            "rouge1": 0.39586596317191247,
+            "rouge2": 0.0934666672502856,
+            "rougeL": 0.19440257200315322
+          },
+          "analysis_rouge_matched": {
+            "rouge1": 0.39586596317191247,
+            "rouge2": 0.0934666672502856,
+            "rougeL": 0.19440257200315322
+          }
+        },
+        "adapter": {
+          "samples": 240,
+          "direction_correct": 145,
+          "direction_accuracy_all240": 0.6041666666666666,
+          "direction_counts": {
+            "-1": 30,
+            "1": 210
+          },
+          "direction_unparsed": 0,
+          "structure_complete": 240,
+          "structure_complete_rate": 1.0,
+          "nonempty_outputs": 240,
+          "eos_count": 240,
+          "length_limit_count": 0,
+          "recall_counts": {
+            "-1": {
+              "correct": 15,
+              "total": 95
+            },
+            "1": {
+              "correct": 130,
+              "total": 145
+            }
+          },
+          "balanced_accuracy": 0.5272232304900182,
+          "peak_allocated_gib": 9.247183799743652,
+          "peak_reserved_gib": 10.029296875,
+          "seconds_sum_all240": 11396.806108263321,
+          "seconds_mean_all240": 47.48669211776384,
+          "seconds_median_all240": 47.62747484166175,
+          "seconds_sum_new_only": 9970.438937703148,
+          "seconds_mean_new_only": 47.47828065572927,
+          "pros_rouge_all240": {
+            "rouge1": 0.4617429527934411,
+            "rouge2": 0.18613411835202678,
+            "rougeL": 0.2919960755625599
+          },
+          "pros_rouge_matched": {
+            "rouge1": 0.4617429527934411,
+            "rouge2": 0.18613411835202678,
+            "rougeL": 0.2919960755625599
+          },
+          "cons_rouge_all240": {
+            "rouge1": 0.4253243670859994,
+            "rouge2": 0.16042946671661162,
+            "rougeL": 0.2749698926385424
+          },
+          "cons_rouge_matched": {
+            "rouge1": 0.4253243670859994,
+            "rouge2": 0.16042946671661162,
+            "rougeL": 0.2749698926385424
+          },
+          "analysis_rouge_all240": {
+            "rouge1": 0.43821254472583265,
+            "rouge2": 0.13350577191157395,
+            "rougeL": 0.22717635837633485
+          },
+          "analysis_rouge_matched": {
+            "rouge1": 0.43821254472583265,
+            "rouge2": 0.13350577191157395,
+            "rougeL": 0.22717635837633485
+          }
+        },
+        "paired_direction_change_counts": {
+          "False->False": 65,
+          "False->True": 50,
+          "True->False": 30,
+          "True->True": 95
+        }
+      },
+      "verification": {
+        "same_240_ids_references_labels": true,
+        "prepared_inputs_match_actual_lengths": true,
+        "reused_outputs_verified": true,
+        "input_evidence_sha256": "908a6e746cd895c5554e55975c4bdf2dec1f8a54175f18c1b6e897b135ab675d",
+        "sha256": {
+          "config.json": "62a3a33b6605787b0ffb0e39b0b537014cf562d82b3264f0757c1719326336d0",
+          "comparison.json": "611e5b1218e43c4b0fac6e34886603356f6bea5cb09e0e565c64dbc3fb51dc6e",
+          "base_outputs.jsonl": "dca753db187049c123a85b5a6fa3bca3c2e23ec4f1038455f0105b1527ecaaa3",
+          "adapter_outputs.jsonl": "f7602b28f54b1fb7ae60f7a8c463b9a16702e0617b7f490d562a4adac3e54fb4",
+          "supplemental_paired_metrics240.json": "e38f59d17b30e1bcd02e98f13348fa379dcf79dee0091d52cb31768979b47372"
+        },
+        "test_used": false,
+        "manual_quality_review_pending": true
+      }
+    },
+    "deepseek": {
+      "run": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/server4090_deepseek_int8_validation240_gen1920_batch16_chunkprefill512_20261011",
+      "comparison": {
+        "config": {
+          "model_id": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+          "split": "validation",
+          "samples": 240,
+          "do_sample": false,
+          "max_new_tokens": 1920,
+          "canonical_evidence_sha256": "65068c0ce82785beeec2f9884d4d55559e89e72155f5f3b0e06b585a2e8ec29e",
+          "adapter_sha256": "27325b705bb7925706b8c23a00461fd36c746f768e33a157546ba36145f1ba4e",
+          "checkpoint": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/server4090_deepseek_int8_4096_epoch_20261010/checkpoints/checkpoint-248",
+          "prompt_policy": "full frozen240 input; left padding with attention mask; no truncation",
+          "quantization_bits": 8,
+          "max_length": 6144,
+          "test_used": false,
+          "prefill_chunk_tokens": 512,
+          "prefill_policy": "same16 batch; full prompt sequential512 chunks with KV cache, explicit masked position_ids; no truncation",
+          "generation_batch_size": 16,
+          "timing_semantics": "amortized batch seconds per answer; latency separately recorded",
+          "script_sha256": "82268570c4c01291d3537e93cdc8376dda33e851b2bde7d44b67a23d48340383"
+        },
+        "base": {
+          "samples": 240,
+          "course_reference_metrics": {
+            "valid_count": 0
+          },
+          "course_valid_fraction": 0.0,
+          "dataset_label_metrics": {
+            "valid_direction_count": 22,
+            "correct_count": 12,
+            "accuracy_all_invalid_as_wrong": 0.05,
+            "accuracy_valid_only": 0.5454545454545454,
+            "balanced_accuracy_all_invalid_as_wrong": 0.04500907441016334,
+            "confusion": {
+              "1->None": 133,
+              "1->1": 10,
+              "-1->None": 85,
+              "-1->-1": 2,
+              "1->-1": 2,
+              "-1->1": 8
+            }
+          },
+          "output_metrics": {
+            "complete_count": 22,
+            "complete_fraction": 0.09166666666666666,
+            "length_limit_count": 5
+          },
+          "output_diagnostics": {
+            "nonempty_count": 240,
+            "natural_eos_count": 235,
+            "length_limit_count": 5,
+            "normalized_structure_count": 204,
+            "normalized_complete_count": 203,
+            "normalized_valid_direction_count": 201,
+            "normalized_correct_count": 107,
+            "normalized_accuracy_all_invalid_as_wrong": 0.44583333333333336,
+            "normalized_accuracy_valid_only": 0.5323383084577115,
+            "note": "Supplemental heading normalization and final-prediction direction extraction; original course scores remain unchanged. Parsing success is not factual quality."
+          },
+          "inference": {
+            "mean_seconds": 19.460210070514584,
+            "median_seconds": 19.32424412749242,
+            "total_seconds": 4670.450416923501,
+            "total_generated_tokens": 244821,
+            "tokens_per_second_total": 52.41914122733958
+          },
+          "limitation": "Course scores compare parsable reference-answer pairs, including its original range parser; label scores compare dataset labels, not independently fetched returns. ROUGE does not establish factual quality."
+        },
+        "adapter": {
+          "samples": 240,
+          "course_reference_metrics": {
+            "valid_count": 240,
+            "bin_acc": 0.6041666666666666,
+            "mse": 7.508333333333334,
+            "pros_rouge_scores": {
+              "rouge1": 0.4584335070761478,
+              "rouge2": 0.1843966105323465,
+              "rougeL": 0.2892010434856162
+            },
+            "cons_rouge_scores": {
+              "rouge1": 0.41912101831212,
+              "rouge2": 0.15474400800319002,
+              "rougeL": 0.27163784398268276
+            },
+            "anal_rouge_scores": {
+              "rouge1": 0.4484131614777927,
+              "rouge2": 0.14089395995664006,
+              "rougeL": 0.23123510979742212
+            }
+          },
+          "course_valid_fraction": 1.0,
+          "dataset_label_metrics": {
+            "valid_direction_count": 240,
+            "correct_count": 145,
+            "accuracy_all_invalid_as_wrong": 0.6041666666666666,
+            "accuracy_valid_only": 0.6041666666666666,
+            "balanced_accuracy_all_invalid_as_wrong": 0.5453720508166969,
+            "confusion": {
+              "1->-1": 25,
+              "1->1": 120,
+              "-1->-1": 25,
+              "-1->1": 70
+            }
+          },
+          "output_metrics": {
+            "complete_count": 240,
+            "complete_fraction": 1.0,
+            "length_limit_count": 0
+          },
+          "output_diagnostics": {
+            "nonempty_count": 240,
+            "natural_eos_count": 240,
+            "length_limit_count": 0,
+            "normalized_structure_count": 240,
+            "normalized_complete_count": 240,
+            "normalized_valid_direction_count": 240,
+            "normalized_correct_count": 145,
+            "normalized_accuracy_all_invalid_as_wrong": 0.6041666666666666,
+            "normalized_accuracy_valid_only": 0.6041666666666666,
+            "note": "Supplemental heading normalization and final-prediction direction extraction; original course scores remain unchanged. Parsing success is not factual quality."
+          },
+          "inference": {
+            "mean_seconds": 5.303030213399325,
+            "median_seconds": 5.215605403704103,
+            "total_seconds": 1272.727251215838,
+            "total_generated_tokens": 87002,
+            "tokens_per_second_total": 68.35871544110248
+          },
+          "limitation": "Course scores compare parsable reference-answer pairs, including its original range parser; label scores compare dataset labels, not independently fetched returns. ROUGE does not establish factual quality."
+        },
+        "simple_baselines": {
+          "training_direction_counts": {
+            "-1": 448,
+            "0": 0,
+            "1": 542
+          },
+          "train_majority_direction": 1,
+          "always_up_accuracy": 0.6041666666666666,
+          "train_majority_accuracy": 0.6041666666666666
+        },
+        "analysis_quality_requires_manual_review": true,
+        "test_used_for_checkpoint_selection": false
+      },
+      "supplemental": {
+        "model": "deepseek",
+        "split": "validation",
+        "validation_only": true,
+        "test_used": false,
+        "full_denominator": 240,
+        "generation_max_new_tokens": 1920,
+        "inference_context_tokens": 6144,
+        "training_context_tokens": 4096,
+        "matched_structure_count": 204,
+        "label_counts": {
+          "1": 145,
+          "-1": 95
+        },
+        "always_up_accuracy": 0.6041666666666666,
+        "always_down_accuracy": 0.3958333333333333,
+        "reused_per_variant": 0,
+        "new_per_variant": 240,
+        "generation_batch_size": 16,
+        "timing_semantics": "amortized batch seconds per answer; latency separately recorded",
+        "policy": "Original course metrics are preserved in comparison.json. Normalized final-answer headings are evaluated over all240 with missing sections scoring zero; matched-structure ROUGE uses the same intersection for base/adapter. Validation was used for checkpoint selection, so these are development results.",
+        "base": {
+          "samples": 240,
+          "direction_correct": 107,
+          "direction_accuracy_all240": 0.44583333333333336,
+          "direction_counts": {
+            "-1": 38,
+            "1": 163,
+            "None": 39
+          },
+          "direction_unparsed": 39,
+          "structure_complete": 204,
+          "structure_complete_rate": 0.85,
+          "nonempty_outputs": 240,
+          "eos_count": 235,
+          "length_limit_count": 5,
+          "recall_counts": {
+            "-1": {
+              "correct": 14,
+              "total": 95
+            },
+            "1": {
+              "correct": 93,
+              "total": 145
+            }
+          },
+          "balanced_accuracy": 0.39437386569872956,
+          "peak_allocated_gib": 19.753572463989258,
+          "peak_reserved_gib": 22.203125,
+          "seconds_sum_all240": 4670.450416923501,
+          "seconds_mean_all240": 19.460210070514584,
+          "seconds_median_all240": 19.32424412749242,
+          "seconds_sum_new_only": 4670.450416923501,
+          "seconds_mean_new_only": 19.460210070514584,
+          "pros_rouge_all240": {
+            "rouge1": 0.3341906817361303,
+            "rouge2": 0.08868856943689939,
+            "rougeL": 0.19227510874704992
+          },
+          "pros_rouge_matched": {
+            "rouge1": 0.3931655079248592,
+            "rouge2": 0.10433949345517575,
+            "rougeL": 0.22620601029064696
+          },
+          "cons_rouge_all240": {
+            "rouge1": 0.2912535653262621,
+            "rouge2": 0.05813623862258746,
+            "rougeL": 0.16678545217625776
+          },
+          "cons_rouge_matched": {
+            "rouge1": 0.3426512533250142,
+            "rouge2": 0.06839557485010289,
+            "rougeL": 0.19621817903089148
+          },
+          "analysis_rouge_all240": {
+            "rouge1": 0.2176025249537095,
+            "rouge2": 0.03946752753352009,
+            "rougeL": 0.12299392972698081
+          },
+          "analysis_rouge_matched": {
+            "rouge1": 0.25600297053377585,
+            "rouge2": 0.046432385333553046,
+            "rougeL": 0.14469874085527154
+          }
+        },
+        "adapter": {
+          "samples": 240,
+          "direction_correct": 145,
+          "direction_accuracy_all240": 0.6041666666666666,
+          "direction_counts": {
+            "-1": 50,
+            "1": 190
+          },
+          "direction_unparsed": 0,
+          "structure_complete": 240,
+          "structure_complete_rate": 1.0,
+          "nonempty_outputs": 240,
+          "eos_count": 240,
+          "length_limit_count": 0,
+          "recall_counts": {
+            "-1": {
+              "correct": 25,
+              "total": 95
+            },
+            "1": {
+              "correct": 120,
+              "total": 145
+            }
+          },
+          "balanced_accuracy": 0.5453720508166969,
+          "peak_allocated_gib": 16.67649555206299,
+          "peak_reserved_gib": 22.21875,
+          "seconds_sum_all240": 1272.727251215838,
+          "seconds_mean_all240": 5.303030213399325,
+          "seconds_median_all240": 5.215605403704103,
+          "seconds_sum_new_only": 1272.727251215838,
+          "seconds_mean_new_only": 5.303030213399325,
+          "pros_rouge_all240": {
+            "rouge1": 0.4584335070761478,
+            "rouge2": 0.1843966105323465,
+            "rougeL": 0.2892010434856162
+          },
+          "pros_rouge_matched": {
+            "rouge1": 0.46164940158559953,
+            "rouge2": 0.1874757775414297,
+            "rougeL": 0.2925927728704161
+          },
+          "cons_rouge_all240": {
+            "rouge1": 0.41912101831212,
+            "rouge2": 0.15474400800319002,
+            "rougeL": 0.27163784398268276
+          },
+          "cons_rouge_matched": {
+            "rouge1": 0.4196272002722893,
+            "rouge2": 0.15609291346606388,
+            "rougeL": 0.2729167586693918
+          },
+          "analysis_rouge_all240": {
+            "rouge1": 0.4484131614777927,
+            "rouge2": 0.14089395995664006,
+            "rougeL": 0.23123510979742212
+          },
+          "analysis_rouge_matched": {
+            "rouge1": 0.4482823786300046,
+            "rouge2": 0.1410703056779995,
+            "rougeL": 0.2323650789045092
+          }
+        },
+        "paired_direction_change_counts": {
+          "False->False": 80,
+          "False->True": 53,
+          "True->False": 15,
+          "True->True": 92
+        }
+      },
+      "verification": {
+        "same_240_ids_references_labels": true,
+        "prepared_inputs_match_actual_lengths": true,
+        "reused_outputs_verified": false,
+        "input_evidence_sha256": "65068c0ce82785beeec2f9884d4d55559e89e72155f5f3b0e06b585a2e8ec29e",
+        "sha256": {
+          "config.json": "6873e93594d75daf9e9352ec848c037d504894fa72e2e824d0828939d3a9ffc1",
+          "comparison.json": "c3698a3e22934542dcd790f30ce5a1869e22cd65214b541bd40d92822c3c5260",
+          "base_outputs.jsonl": "b76bcb99ab946d2cceb3f9be3f2c227b3c0030fb15fee13e086702d5749d34b1",
+          "adapter_outputs.jsonl": "55fda50f9fa7df8de0c384e782676eeb19818f6a7c68e2607b8e14e8b1274f5c",
+          "supplemental_paired_metrics240.json": "4f8c5f292869948144452ed02f837034e37d3b6947f40b804eb2e32bc5c6c92c"
+        },
+        "test_used": false,
+        "manual_quality_review_pending": true
+      }
+    }
+  },
+  "validation_only": true,
+  "test_used": false,
+  "llama_deferred_by_user": true,
+  "report_pending": true,
+  "full_assignment_complete": false
+}

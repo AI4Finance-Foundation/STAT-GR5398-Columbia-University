@@ -1,0 +1,126 @@
+{
+  "all300": {
+    "samples": 300,
+    "course_raw": {
+      "valid_count": 0
+    },
+    "constant_plus_half_mse_same_course_valid_subset": null,
+    "common_final_line": {
+      "variant": "final_line_direction_common_v1",
+      "valid": 265,
+      "correct": 130,
+      "invalid_as_wrong": true,
+      "balanced_accuracy": 0.45407729165733735,
+      "class_counts": {
+        "up": 137,
+        "down": 163
+      },
+      "multiple_prediction_outputs": 0,
+      "first_line_correct": 130,
+      "first_last_disagreements": 0
+    },
+    "always_up_correct": 137,
+    "train_majority_up_correct": 137,
+    "EOS": 297,
+    "caps": 3,
+    "limitation": "Dataset labels and encoded references, not independently verified returns; ROUGE is not factual grounding.",
+    "deepseek_final_extracted_separate_variant": {
+      "valid_count": 20,
+      "bin_acc": 0.3,
+      "mse": 8.05,
+      "pros_rouge_scores": {
+        "rouge1": 0.4342886356002588,
+        "rouge2": 0.11763322404111132,
+        "rougeL": 0.2529254652840781
+      },
+      "cons_rouge_scores": {
+        "rouge1": 0.37773123054205077,
+        "rouge2": 0.09502159810940321,
+        "rougeL": 0.22105436341291435
+      },
+      "anal_rouge_scores": {
+        "rouge1": 0.2744072353953248,
+        "rouge2": 0.05639342081176998,
+        "rougeL": 0.15610771106603366
+      }
+    },
+    "deepseek_final_extracted_constant_plus_half_same_valid_subset": 5.85
+  },
+  "previously_inspected20": {
+    "samples": 20,
+    "course_raw": {
+      "valid_count": 0
+    },
+    "constant_plus_half_mse_same_course_valid_subset": null,
+    "common_final_line": {
+      "variant": "final_line_direction_common_v1",
+      "valid": 17,
+      "correct": 10,
+      "invalid_as_wrong": true,
+      "balanced_accuracy": 0.47474747474747475,
+      "class_counts": {
+        "up": 11,
+        "down": 9
+      },
+      "multiple_prediction_outputs": 0,
+      "first_line_correct": 10,
+      "first_last_disagreements": 0
+    },
+    "always_up_correct": 11,
+    "train_majority_up_correct": 11,
+    "EOS": 20,
+    "caps": 0,
+    "limitation": "Dataset labels and encoded references, not independently verified returns; ROUGE is not factual grounding.",
+    "deepseek_final_extracted_separate_variant": {
+      "valid_count": 0
+    },
+    "deepseek_final_extracted_constant_plus_half_same_valid_subset": null
+  },
+  "other280_not_claimed_pristine": {
+    "samples": 280,
+    "course_raw": {
+      "valid_count": 0
+    },
+    "constant_plus_half_mse_same_course_valid_subset": null,
+    "common_final_line": {
+      "variant": "final_line_direction_common_v1",
+      "valid": 248,
+      "correct": 120,
+      "invalid_as_wrong": true,
+      "balanced_accuracy": 0.4523809523809524,
+      "class_counts": {
+        "up": 126,
+        "down": 154
+      },
+      "multiple_prediction_outputs": 0,
+      "first_line_correct": 120,
+      "first_last_disagreements": 0
+    },
+    "always_up_correct": 126,
+    "train_majority_up_correct": 126,
+    "EOS": 277,
+    "caps": 3,
+    "limitation": "Dataset labels and encoded references, not independently verified returns; ROUGE is not factual grounding.",
+    "deepseek_final_extracted_separate_variant": {
+      "valid_count": 20,
+      "bin_acc": 0.3,
+      "mse": 8.05,
+      "pros_rouge_scores": {
+        "rouge1": 0.4342886356002588,
+        "rouge2": 0.11763322404111132,
+        "rougeL": 0.2529254652840781
+      },
+      "cons_rouge_scores": {
+        "rouge1": 0.37773123054205077,
+        "rouge2": 0.09502159810940321,
+        "rougeL": 0.22105436341291435
+      },
+      "anal_rouge_scores": {
+        "rouge1": 0.2744072353953248,
+        "rouge2": 0.05639342081176998,
+        "rougeL": 0.15610771106603366
+      }
+    },
+    "deepseek_final_extracted_constant_plus_half_same_valid_subset": 5.85
+  }
+}

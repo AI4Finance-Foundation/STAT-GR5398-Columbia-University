@@ -1,0 +1,64 @@
+{
+  "samples": 240,
+  "course_reference_metrics": {
+    "valid_count": 190,
+    "bin_acc": 0.48947368421052634,
+    "mse": 11.48421052631579,
+    "pros_rouge_scores": {
+      "rouge1": 0.387205283950899,
+      "rouge2": 0.12018818897786981,
+      "rougeL": 0.2488108006776787
+    },
+    "cons_rouge_scores": {
+      "rouge1": 0.34130934214262926,
+      "rouge2": 0.08763019206504337,
+      "rougeL": 0.21521997480882027
+    },
+    "anal_rouge_scores": {
+      "rouge1": 0.39781723722583595,
+      "rouge2": 0.09306586711425867,
+      "rougeL": 0.19537654702334176
+    }
+  },
+  "course_valid_fraction": 0.7916666666666666,
+  "dataset_label_metrics": {
+    "valid_direction_count": 189,
+    "correct_count": 92,
+    "accuracy_all_invalid_as_wrong": 0.38333333333333336,
+    "accuracy_valid_only": 0.48677248677248675,
+    "balanced_accuracy_all_invalid_as_wrong": 0.37713248638838476,
+    "confusion": {
+      "1->-1": 55,
+      "1->1": 59,
+      "-1->-1": 33,
+      "1->None": 31,
+      "-1->None": 20,
+      "-1->1": 42
+    }
+  },
+  "output_metrics": {
+    "complete_count": 190,
+    "complete_fraction": 0.7916666666666666,
+    "length_limit_count": 0
+  },
+  "output_diagnostics": {
+    "nonempty_count": 240,
+    "natural_eos_count": 240,
+    "length_limit_count": 0,
+    "normalized_structure_count": 240,
+    "normalized_complete_count": 240,
+    "normalized_valid_direction_count": 240,
+    "normalized_correct_count": 125,
+    "normalized_accuracy_all_invalid_as_wrong": 0.5208333333333334,
+    "normalized_accuracy_valid_only": 0.5208333333333334,
+    "note": "Supplemental heading normalization and final-prediction direction extraction; original course scores remain unchanged. Parsing success is not factual quality."
+  },
+  "inference": {
+    "mean_seconds": 34.78860902822343,
+    "median_seconds": 33.7669577524066,
+    "total_seconds": 8349.266166773625,
+    "total_generated_tokens": 73249,
+    "tokens_per_second_total": 8.773106346938432
+  },
+  "limitation": "Course scores compare parsable reference-answer pairs, including its original range parser; label scores compare dataset labels, not independently fetched returns. ROUGE does not establish factual quality."
+}

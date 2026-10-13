@@ -1,0 +1,21 @@
+{
+  "qwen": {
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "cache": "/root/shared-nvme/AI4FinRuntime/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28",
+    "training_run": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/server4090_qwen_int8_4096_epoch_20261010",
+    "evaluation_data": "/root/shared-nvme/AI4FinRuntime/setup/three_model_validation240_20261010/qwen_validation_generation240_full.json"
+  },
+  "deepseek": {
+    "model_id": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+    "cache": "/root/shared-nvme/AI4FinRuntime/huggingface/hub/models--deepseek-ai--DeepSeek-R1-Distill-Llama-8B/snapshots/6a6f4aa4197940add57724a7707d069478df56b1",
+    "training_run": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/server4090_deepseek_int8_4096_epoch_20261010",
+    "evaluation_data": "/root/shared-nvme/AI4FinRuntime/setup/three_model_validation240_20261010/deepseek_validation_generation240_full.json",
+    "evaluation_run": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/server4090_deepseek_int8_validation240_gen1920_batch16_chunkprefill512_20261011",
+    "generation_batch_size": 16
+  },
+  "llama": {
+    "model_id": "meta-llama/Llama-3.1-8B",
+    "cache": null,
+    "training_run": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/server4090_llama_int8_4096_epoch_20261010"
+  }
+}

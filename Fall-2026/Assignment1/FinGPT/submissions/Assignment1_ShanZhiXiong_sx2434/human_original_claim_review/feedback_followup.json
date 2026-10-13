@@ -1,0 +1,32 @@
+{
+  "source": "Codex interpretation, separate from unchanged user ratings",
+  "findings": [
+    {
+      "theme": "Uncertain evidence attribution",
+      "examples": [
+        "HON/Qwen robotics",
+        "KO/Qwen attention",
+        "KO/DeepSeek positive sentiment"
+      ],
+      "user_judgment": "uncertain"
+    },
+    {
+      "theme": "Facts partly supported, interpretation needs additional evidence",
+      "examples": [
+        "HON/DeepSeek peer comparison",
+        "KO/DeepSeek Berkshire and payout",
+        "TRV/Qwen debt ratio",
+        "TRV/DeepSeek award and payout"
+      ],
+      "user_judgment": "partly supported"
+    }
+  ],
+  "proposed_improvement": "Require factual evidence references; label financial and investor implications as inferences; require a stated benchmark for high/low and peer comparisons.",
+  "implementation_status": "proposed; no new generation, retraining or validation of effect",
+  "limitations": [
+    "Diagnostic selected claims; no representative error-rate estimate",
+    "Uncertain is preserved as uncertain, not relabeled as an error",
+    "No full-answer coherence or comparative preference rating supplied by this quick form"
+  ],
+  "next_step": "Prepare a concrete evidence-grounding revision and evaluate its effect on validation after the experiment route is agreed."
+}

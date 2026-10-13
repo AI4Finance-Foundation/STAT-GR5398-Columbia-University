@@ -1,0 +1,158 @@
+{
+  "reviewer": "Current Codex assistant, AI source-bounded assessment",
+  "selection": "same six previously frozen HITL validation inputs (3 diagnostic + 3 seeded additions)",
+  "full_adapter_outputs_read": 6,
+  "base_review_scope": "beginning/end excerpts and completion/structure observations; not an exhaustive factual review of all continued generated text",
+  "human_ratings_created_or_changed": false,
+  "human_approval_claimed": false,
+  "not_a_representative_error_rate": true,
+  "summary": "Training markedly improves answer structure/readability over native BASE continuations in the selected cases, while company attribution, ratio benchmarks and speculative price causality remain weak. It does not establish predictive superiority.",
+  "uncertain_cases_requiring_human_guess": 0,
+  "note": "An absent source benchmark is an evidence gap, not proof that the financial interpretation is economically false. Human guesses cannot fill missing portfolio weights or sector thresholds.",
+  "cases": [
+    {
+      "sample_id": "ff62993fbd5bd028a2bfa8b6b3dca0ebcd2776100d539a1eee6820f2178baea3",
+      "symbol": "HON",
+      "period": "2024-02-18 to 2024-02-25",
+      "adapter_assessment": "Clearer organized analysis after training; supported earnings/expansion/partnership details, with unbenchmarked financial-risk claims and hedged causal speculation.",
+      "selected_claims": [
+        {
+          "assessment": "supported",
+          "adapter_quote": "The company announced a $84 million investment",
+          "source_quote": "invest $84 million to expand its Olathe manufacturing facility",
+          "quote_presence_checked": true
+        },
+        {
+          "assessment": "unbenchmarked interpretation",
+          "adapter_quote": "total debt to equity ratio is high at 1.2893",
+          "source_quote": "totalDebtToEquity: 1.2893",
+          "quote_presence_checked": true
+        }
+      ],
+      "base_structure_assessment": "BASE begins with empty sections/Up-Down placeholders, then generates future-period news and a 197.00 price absent from the input. This is an unsupported generated continuation, not proof of memorized future data.",
+      "base_eos": false,
+      "base_cap": true,
+      "source_input_sha256": "0e466a82186c57c66748b86df3dd5375a9bc50f56573155e64393e5fec02b53f"
+    },
+    {
+      "sample_id": "eb1173b9f26a78ec095515962ddabae407fe6335a7a0a2fe072d5a8a52b35e16",
+      "symbol": "KO",
+      "period": "2024-02-04 to 2024-02-11",
+      "adapter_assessment": "Attention is explicitly present in the source, so it should not be called invented. The adapter oversimplifies mixed recent price moves and gives healthy-liquidity/high-debt judgments without benchmarks.",
+      "selected_claims": [
+        {
+          "assessment": "supported attention mention",
+          "adapter_quote": "stock has been attracting investor attention",
+          "source_quote": "received quite a bit of attention from Zacks.com users",
+          "quote_presence_checked": true
+        },
+        {
+          "assessment": "unbenchmarked interpretation",
+          "adapter_quote": "healthy cash ratio and current ratio",
+          "source_quote": "currentRatio: 1.1341",
+          "quote_presence_checked": true
+        }
+      ],
+      "base_structure_assessment": "BASE supplies repeated headings and an Up/Down placeholder; EOS alone is not a completed directional prediction.",
+      "base_eos": true,
+      "base_cap": false,
+      "source_input_sha256": "243cf06d0af1b9845c24aab05d482e428da37b016808274dd0c435f256f6ef24"
+    },
+    {
+      "sample_id": "4b94d38d30a35052115c37617d93e4c858f10dc6447f274315e246417b3d9dcd",
+      "symbol": "TRV",
+      "period": "2024-02-04 to 2024-02-11",
+      "adapter_assessment": "EPS and award are grounded; debt-heavy and liquidity-risk interpretations lack supplied sector thresholds. Fluent analysis still contains speculative links from recognition to investor demand.",
+      "selected_claims": [
+        {
+          "assessment": "supported",
+          "adapter_quote": "reported EPS of $7.01",
+          "source_quote": "Reported EPS is $7.01, expectations were $5.04",
+          "quote_presence_checked": true
+        },
+        {
+          "assessment": "unbenchmarked interpretation",
+          "adapter_quote": "heavily reliant on debt financing",
+          "source_quote": "totalDebtToEquity: 0.3223",
+          "quote_presence_checked": true
+        }
+      ],
+      "base_structure_assessment": "BASE repeatedly generates empty answer templates and reaches the token cap.",
+      "base_eos": false,
+      "base_cap": true,
+      "source_input_sha256": "5f8e3df166c31f0c7d8d390b6d39f5a342c9af0b93fceda3a492a5f9c9467f45"
+    },
+    {
+      "sample_id": "7bada7aab42bbdce59bc25b6ed360c24e5c8c95520de8aa96e88e7641bdf6fff",
+      "symbol": "KO",
+      "period": "2024-01-28 to 2024-02-04",
+      "adapter_assessment": "The adapter treats a competitor narrative as a positive development for KO and adds Vita Coco growth not demonstrated in the summary. Debt classification remains unbenchmarked.",
+      "selected_claims": [
+        {
+          "assessment": "attribution/logic gap",
+          "adapter_quote": "Vita Coco, a competitor of Coca-Cola, has managed to survive and grow",
+          "source_quote": "After weathering a downturn in coconut water and competition from Coca-Cola and PepsiCo",
+          "quote_presence_checked": true
+        },
+        {
+          "assessment": "unbenchmarked interpretation",
+          "adapter_quote": "long-term debt to total asset ratio is high at 0.3638",
+          "source_quote": "longtermDebtTotalAsset: 0.3638",
+          "quote_presence_checked": true
+        }
+      ],
+      "base_structure_assessment": "BASE emits placeholders, including a bracketed Up/Down prediction, without a useful directional answer.",
+      "base_eos": true,
+      "base_cap": false,
+      "source_input_sha256": "d34f5d97657d7190c9dad8a5c1e11462450630e6e4d6c1ab631c98fca5cfdd74"
+    },
+    {
+      "sample_id": "0167fefc73d700570f7c4fd32a90acf28fa86a092957e1249a629b072849abc8",
+      "symbol": "GS",
+      "period": "2024-01-14 to 2024-01-21",
+      "adapter_assessment": "Fundraising is grounded. The top-dividend-list membership is not established by an unnamed summary; mutual-fund demand does not directly establish demand for the listed company shares. Valuation and debt judgments need financial-sector benchmarks.",
+      "selected_claims": [
+        {
+          "assessment": "supported fundraising fact",
+          "adapter_quote": "has raised $650 million for a life sciences fund",
+          "source_quote": "Goldman Sachs Asset Management raises $650 million for life sciences fund",
+          "quote_presence_checked": true
+        },
+        {
+          "assessment": "unsupported list attribution",
+          "adapter_quote": "company's stock has been included in the top 5 dividend stocks for 2024",
+          "source_quote": "The Top 5 Dividend Stocks For 2024",
+          "quote_presence_checked": true
+        }
+      ],
+      "base_structure_assessment": "BASE provides empty template sections and the Up/Down instruction placeholder.",
+      "base_eos": true,
+      "base_cap": false,
+      "source_input_sha256": "08d12de45969d4f53e2c4585273749e5de27a96b856e0ac7dedab7520703cf97"
+    },
+    {
+      "sample_id": "e35887929d372e443284a96fa6fcca9b054c53f65cc6fe1ce2f5b0fcd6826bde",
+      "symbol": "MSFT",
+      "period": "2024-01-07 to 2024-01-14",
+      "adapter_assessment": "Free cash flow and margin numbers are present. An unnamed long-haul list does not establish MSFT membership; relatively high net-debt and payout classifications lack an explicit benchmark.",
+      "selected_claims": [
+        {
+          "assessment": "supported number",
+          "adapter_quote": "free cash flow per share TTM is 9.0749",
+          "source_quote": "fcfPerShareTTM: 9.0749",
+          "quote_presence_checked": true
+        },
+        {
+          "assessment": "unsupported list attribution",
+          "adapter_quote": "Microsoft is listed as one of the top stocks to buy for the long haul",
+          "source_quote": "3 Top Stocks to Buy for the Long Haul",
+          "quote_presence_checked": true
+        }
+      ],
+      "base_structure_assessment": "BASE repeatedly generates empty templates and reaches the token cap.",
+      "base_eos": false,
+      "base_cap": true,
+      "source_input_sha256": "eeb143af33f71e0e08780e0867647377accc1066b298f59d507b8e6d00c081c8"
+    }
+  ]
+}

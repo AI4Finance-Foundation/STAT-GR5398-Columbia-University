@@ -1,0 +1,28 @@
+{
+  "qwen": {
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "eos_token_id": 151645,
+    "bos_token_id": null,
+    "file_sha256": {
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+    },
+    "source_frozen_stage_manifest_sha256": "788d4fc644d9a8a2bada7485a27be9833f23a29556f5ae1f7430d1b464cc7b44",
+    "source_frozen_stage_directory": "D:\\AI4FinRuntime\\assignment1_two_model_delivery\\delivery_ready_20261011",
+    "source_manifest_copy": "frozen_stage_manifest_208.json"
+  },
+  "deepseek": {
+    "model_id": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+    "revision": "6a6f4aa4197940add57724a7707d069478df56b1",
+    "eos_token_id": 128001,
+    "bos_token_id": 128000,
+    "file_sha256": {
+      "tokenizer.json": "b9c9eb63a8e03059914880f918cd28a880dec8b6e15e4461e1ff677e3743dbb8",
+      "tokenizer_config.json": "8ac8c85fb242563c2260baec0909debd69d718af6a0b3d90e6cab62b4d341cd5"
+    },
+    "source_frozen_stage_manifest_sha256": "788d4fc644d9a8a2bada7485a27be9833f23a29556f5ae1f7430d1b464cc7b44",
+    "source_frozen_stage_directory": "D:\\AI4FinRuntime\\assignment1_two_model_delivery\\delivery_ready_20261011",
+    "source_manifest_copy": "frozen_stage_manifest_208.json"
+  }
+}

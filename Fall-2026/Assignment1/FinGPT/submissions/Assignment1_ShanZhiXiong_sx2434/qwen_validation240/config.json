@@ -1,0 +1,15 @@
+{
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "split": "validation",
+  "samples": 240,
+  "do_sample": false,
+  "max_new_tokens": 1920,
+  "canonical_evidence_sha256": "908a6e746cd895c5554e55975c4bdf2dec1f8a54175f18c1b6e897b135ab675d",
+  "adapter_sha256": "31df542a315939525a49a32f280079bc4bac61e0771e0adc0c20f7fcf3045205",
+  "checkpoint": "/root/shared-nvme/AI4FinRuntime/import_20261009/assignment1_20261008/runs/server4090_qwen_int8_4096_epoch_20261010/checkpoints/checkpoint-248",
+  "prompt_policy": "same full original validation input for base and adapter; all frozen 240 validation IDs; complete original evidence; model-specific template; 6144 inference cap",
+  "quantization_bits": 8,
+  "max_length": 6144,
+  "test_used": false,
+  "reference_comparison": "unmodified course parser; supplemental full-denominator label metrics"
+}

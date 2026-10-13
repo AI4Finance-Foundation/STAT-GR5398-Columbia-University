@@ -1,0 +1,61 @@
+{
+  "samples": 6,
+  "course_reference_metrics": {
+    "valid_count": 6,
+    "bin_acc": 0.5,
+    "mse": 4.5,
+    "pros_rouge_scores": {
+      "rouge1": 0.45178657021052143,
+      "rouge2": 0.19186044408524683,
+      "rougeL": 0.2714201123237112
+    },
+    "cons_rouge_scores": {
+      "rouge1": 0.39626630522116413,
+      "rouge2": 0.16711467319849252,
+      "rougeL": 0.30040205827491573
+    },
+    "anal_rouge_scores": {
+      "rouge1": 0.43790746869056124,
+      "rouge2": 0.11232723194303701,
+      "rougeL": 0.20773555189181128
+    }
+  },
+  "course_valid_fraction": 1.0,
+  "dataset_label_metrics": {
+    "valid_direction_count": 6,
+    "correct_count": 3,
+    "accuracy_all_invalid_as_wrong": 0.5,
+    "accuracy_valid_only": 0.5,
+    "balanced_accuracy_all_invalid_as_wrong": 0.375,
+    "confusion": {
+      "1->1": 3,
+      "-1->1": 2,
+      "1->-1": 1
+    }
+  },
+  "output_metrics": {
+    "complete_count": 6,
+    "complete_fraction": 1.0,
+    "length_limit_count": 0
+  },
+  "output_diagnostics": {
+    "nonempty_count": 6,
+    "natural_eos_count": 6,
+    "length_limit_count": 0,
+    "normalized_structure_count": 6,
+    "normalized_complete_count": 6,
+    "normalized_valid_direction_count": 6,
+    "normalized_correct_count": 3,
+    "normalized_accuracy_all_invalid_as_wrong": 0.5,
+    "normalized_accuracy_valid_only": 0.5,
+    "note": "Supplemental heading normalization and final-prediction direction extraction; original course scores remain unchanged. Parsing success is not factual quality."
+  },
+  "inference": {
+    "mean_seconds": 10.011716235429049,
+    "median_seconds": 10.011716235429049,
+    "total_seconds": 60.07029741257429,
+    "total_generated_tokens": 2168,
+    "tokens_per_second_total": 36.091048211560555
+  },
+  "limitation": "Course scores compare parsable reference-answer pairs, including its original range parser; label scores compare dataset labels, not independently fetched returns. ROUGE does not establish factual quality."
+}
