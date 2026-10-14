@@ -1,0 +1,11 @@
+Run,Rating,Target price,Market-data status,Top-3 risks,Notes
+Run1,Overweight,339.17,Available,Revenue Growth Deceleration | High Industry Competition | Geographic and Supply Chain Exposure,Baseline run; market endpoints succeeded.
+Run2,N/A,0.0,Unavailable (HTTP 429),Revenue Growth Deceleration | High Industry Competition | Geographic and Supply Chain Exposure,"Nominally identical command; FMP live market endpoints rate-limited, causing 0/N/A sentinels."
+Run3,N/A,0.0,Unavailable (HTTP 429),Revenue Growth Deceleration | High Industry Competition | Geographic and Supply Chain Exposure,Same failure mode as Run2; narrative top risks remained identical.
+
+Metric,Value
+Raw target-price population variance (includes 0 sentinels),25563.61975555556
+Valid target-price variance,Not estimable: only Run1 had a valid live target
+Rating availability,1/3
+Top-3-risk exact-match rate,3/3 (100%)
+Interpretation,"The LLM risk output was stable, but live external market-data fetching made the overall report non-reproducible under API rate limiting."

@@ -1,0 +1,16 @@
+Output will be saved to: ./output/NVDA/analysis
+Text outputs will be saved to: ./output/NVDA/analysis
+Using OpenAI base URL: https://api.openai.com/v1
+Using model: gpt-4.1
+Starting FMP API-based financial analysis for NVIDIA Corporation (NVDA)
+Fetching financial data from FMP API...
+Fetching comprehensive financial data for NVDA...
+Error fetching FMP income statement for NVDA: 429 Client Error: Too Many Requests for url: https://financialmodelingprep.com/stable/income-statement?symbol=NVDA&period=annual&limit=5&apikey=XXXXX
+Error fetching FMP balance sheet for NVDA: 429 Client Error: Too Many Requests for url: https://financialmodelingprep.com/stable/balance-sheet-statement?symbol=NVDA&period=annual&limit=5&apikey=XXXXX
+Error fetching FMP cash flow for NVDA: 429 Client Error: Too Many Requests for url: https://financialmodelingprep.com/stable/cash-flow-statement?symbol=NVDA&period=annual&limit=5&apikey=XXXXX
+Error fetching FMP ratios/key metrics for NVDA: 429 Client Error: Too Many Requests for url: https://financialmodelingprep.com/stable/ratios?symbol=NVDA&period=annual&limit=5&apikey=XXXXX
+Error: Could not fetch income statement data from FMP API. Exiting.
+Please check:
+1. FMP API key is valid and has remaining quota
+2. Ticker symbol is correct
+3. Internet connection is working

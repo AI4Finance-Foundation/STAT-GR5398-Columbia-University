@@ -1,0 +1,182 @@
+{
+  "catalysts": [
+    {
+      "event_type": "earnings",
+      "description": "JPMorgan Chase & Co. Forecasts Strong Price Appreciation for Apple (NASDAQ:AAPL) Stock - MarketBeat",
+      "expected_date": "2026-10-12",
+      "impact_level": "high",
+      "heuristic_weight": 0.95,
+      "sentiment": "positive",
+      "source": "MarketBeat"
+    },
+    {
+      "event_type": "earnings",
+      "description": "NVDA, AAPL Stocks In Focus After Foxconn Revenue Hits Record High On AI Pull-In - Stocktwits",
+      "expected_date": "2026-10-12",
+      "impact_level": "high",
+      "heuristic_weight": 0.95,
+      "sentiment": "positive",
+      "source": "Stocktwits"
+    },
+    {
+      "event_type": "product_launch",
+      "description": "Apple WWDC 2026: AAPL Stock Slips As Lack Of Launch Deadline For Siri AI Spooks Retail Investors - Stocktwits",
+      "expected_date": "2026-10-12",
+      "impact_level": "medium",
+      "heuristic_weight": 0.7,
+      "sentiment": "neutral",
+      "source": "Stocktwits"
+    },
+    {
+      "event_type": "product_launch",
+      "description": "Apple (NASDAQ: AAPL) stock price forecast: new launches and iPhone demand risks - Beinsure",
+      "expected_date": "2026-10-11",
+      "impact_level": "medium",
+      "heuristic_weight": 0.7,
+      "sentiment": "negative",
+      "source": "Beinsure"
+    },
+    {
+      "event_type": "market",
+      "description": "AAPL Stock Heads For Worst Single-Day Fall In Over A Year \u2014 Wall Street Warns Apple\u2019s AI Supply Chain Headwinds Are Far From Over - Stocktwits",
+      "expected_date": "2026-10-09",
+      "impact_level": "low",
+      "heuristic_weight": 0.5,
+      "sentiment": "positive",
+      "source": "Stocktwits"
+    },
+    {
+      "event_type": "regulatory",
+      "description": "AAPL Stock In Focus \u2014 Apple, DOJ Discuss Antitrust Settlement As iPhone Maker Seeks To Resolve 2024 Lawsuit - Stocktwits",
+      "expected_date": "2026-10-10",
+      "impact_level": "high",
+      "heuristic_weight": 0.5,
+      "sentiment": "neutral",
+      "source": "Stocktwits"
+    },
+    {
+      "event_type": "earnings",
+      "description": "Apple Stock Price Forecast. Should You Buy AAPL? - StockInvest.us",
+      "expected_date": "2026-10-09",
+      "impact_level": "high",
+      "heuristic_weight": 0.95,
+      "sentiment": "neutral",
+      "source": "StockInvest.us"
+    },
+    {
+      "event_type": "regulatory",
+      "description": "AAPL Stock Slips \u2014 OpenAI Says It Sees No \u2018Evidence\u2019 That Apple Lawsuit Has Merit - Stocktwits",
+      "expected_date": "2026-10-09",
+      "impact_level": "high",
+      "heuristic_weight": 0.5,
+      "sentiment": "neutral",
+      "source": "Stocktwits"
+    },
+    {
+      "event_type": "earnings",
+      "description": "AAPL Upcoming Quarterly Earnings",
+      "expected_date": "TBD",
+      "impact_level": "high",
+      "heuristic_weight": 0.95,
+      "sentiment": "neutral",
+      "source": "Unverified Calendar"
+    }
+  ],
+  "categorized": {
+    "positive": [
+      {
+        "description": "JPMorgan Chase & Co. Forecasts Strong Price Appreciation for Apple (NASDAQ:AAPL) Stock - MarketBeat",
+        "impact": "high"
+      },
+      {
+        "description": "NVDA, AAPL Stocks In Focus After Foxconn Revenue Hits Record High On AI Pull-In - Stocktwits",
+        "impact": "high"
+      },
+      {
+        "description": "AAPL Stock Heads For Worst Single-Day Fall In Over A Year \u2014 Wall Street Warns Apple\u2019s AI Supply Chain Headwinds Are Far From Over - Stocktwits",
+        "impact": "low"
+      }
+    ],
+    "negative": [
+      {
+        "description": "Apple (NASDAQ: AAPL) stock price forecast: new launches and iPhone demand risks - Beinsure",
+        "impact": "medium"
+      }
+    ],
+    "neutral": [
+      {
+        "description": "Apple WWDC 2026: AAPL Stock Slips As Lack Of Launch Deadline For Siri AI Spooks Retail Investors - Stocktwits",
+        "impact": "medium"
+      },
+      {
+        "description": "AAPL Stock In Focus \u2014 Apple, DOJ Discuss Antitrust Settlement As iPhone Maker Seeks To Resolve 2024 Lawsuit - Stocktwits",
+        "impact": "high"
+      },
+      {
+        "description": "Apple Stock Price Forecast. Should You Buy AAPL? - StockInvest.us",
+        "impact": "high"
+      },
+      {
+        "description": "AAPL Stock Slips \u2014 OpenAI Says It Sees No \u2018Evidence\u2019 That Apple Lawsuit Has Merit - Stocktwits",
+        "impact": "high"
+      },
+      {
+        "description": "AAPL Upcoming Quarterly Earnings",
+        "impact": "high"
+      }
+    ]
+  },
+  "top_catalysts": [
+    {
+      "catalyst": "JPMorgan Chase & Co. Forecasts Strong Price Appreciation for Apple (NASDAQ:AAPL) Stock - MarketBeat",
+      "type": "earnings",
+      "impact_score": 3,
+      "heuristic_weight": 0.95,
+      "sentiment": "positive",
+      "weighted_impact": 2.8499999999999996,
+      "expected_date": "2026-10-12",
+      "source": "MarketBeat"
+    },
+    {
+      "catalyst": "NVDA, AAPL Stocks In Focus After Foxconn Revenue Hits Record High On AI Pull-In - Stocktwits",
+      "type": "earnings",
+      "impact_score": 3,
+      "heuristic_weight": 0.95,
+      "sentiment": "positive",
+      "weighted_impact": 2.8499999999999996,
+      "expected_date": "2026-10-12",
+      "source": "Stocktwits"
+    },
+    {
+      "catalyst": "Apple (NASDAQ: AAPL) stock price forecast: new launches and iPhone demand risks - Beinsure",
+      "type": "product_launch",
+      "impact_score": 2,
+      "heuristic_weight": 0.7,
+      "sentiment": "negative",
+      "weighted_impact": -1.4,
+      "expected_date": "2026-10-11",
+      "source": "Beinsure"
+    },
+    {
+      "catalyst": "AAPL Stock Heads For Worst Single-Day Fall In Over A Year \u2014 Wall Street Warns Apple\u2019s AI Supply Chain Headwinds Are Far From Over - Stocktwits",
+      "type": "market",
+      "impact_score": 1,
+      "heuristic_weight": 0.5,
+      "sentiment": "positive",
+      "weighted_impact": 0.5,
+      "expected_date": "2026-10-09",
+      "source": "Stocktwits"
+    },
+    {
+      "catalyst": "Apple WWDC 2026: AAPL Stock Slips As Lack Of Launch Deadline For Siri AI Spooks Retail Investors - Stocktwits",
+      "type": "product_launch",
+      "impact_score": 2,
+      "heuristic_weight": 0.7,
+      "sentiment": "neutral",
+      "weighted_impact": 0.0,
+      "expected_date": "2026-10-12",
+      "source": "Stocktwits"
+    }
+  ],
+  "summary": "## Catalyst Analysis for AAPL\n\n### Positive Catalysts (Upside Potential)\n- **Earnings** (2026-10-12): JPMorgan Chase & Co. Forecasts Strong Price Appreciation for Apple (NASDAQ:AAPL) Stock - MarketBeat\n  - Impact: HIGH\n  - Source: MarketBeat\n  - Source: MarketBeat\n- **Earnings** (2026-10-12): NVDA, AAPL Stocks In Focus After Foxconn Revenue Hits Record High On AI Pull-In - Stocktwits\n  - Impact: HIGH\n  - Source: Stocktwits\n  - Source: Stocktwits\n- **Market** (2026-10-09): AAPL Stock Heads For Worst Single-Day Fall In Over A Year \u2014 Wall Street Warns Apple\u2019s AI Supply Chain Headwinds Are Far From Over - Stocktwits\n  - Impact: LOW\n  - Source: Stocktwits\n  - Source: Stocktwits\n\n### Risk Factors (Downside Risks)\n- **Product Launch** (2026-10-11): Apple (NASDAQ: AAPL) stock price forecast: new launches and iPhone demand risks - Beinsure\n  - Impact: MEDIUM\n  - Source: Beinsure\n\n### Events to Monitor\n- Apple WWDC 2026: AAPL Stock Slips As Lack Of Launch Deadline For Siri AI Spooks Retail Investors - Stocktwits (2026-10-12)\n  - Source: Stocktwits\n- AAPL Stock In Focus \u2014 Apple, DOJ Discuss Antitrust Settlement As iPhone Maker Seeks To Resolve 2024 Lawsuit - Stocktwits (2026-10-10)\n  - Source: Stocktwits\n- Apple Stock Price Forecast. Should You Buy AAPL? - StockInvest.us (2026-10-09)\n  - Source: StockInvest.us"
+}
