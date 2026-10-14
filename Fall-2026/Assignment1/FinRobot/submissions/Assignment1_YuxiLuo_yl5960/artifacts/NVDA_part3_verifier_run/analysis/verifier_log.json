@@ -1,0 +1,355 @@
+[
+  {
+    "section": "tagline",
+    "model": "gpt-4.1-mini",
+    "corrections": [],
+    "not_applied": [],
+    "unverified": [
+      "NVIDIA reported extraordinary financial performance through FY2026, achieving a 68.3% revenue CAGR and record EBITDA margin of 66.9%, driven by robust top-line growth and expanding profitability.",
+      "The company maintains industry-leading earnings and valuation metrics, underscoring its strong competitive and financial position."
+    ],
+    "usage": {
+      "input_tokens": 2395,
+      "output_tokens": 71
+    }
+  },
+  {
+    "section": "company_overview",
+    "model": "gpt-4.1-mini",
+    "corrections": [
+      {
+        "original": "Compared to peers such as AMD and Intel, NVIDIA has outpaced them in EBITDA growth and profitability, as seen in peer comparison data.",
+        "problem": "invented_source",
+        "explanation": "The sentence claims NVIDIA has outpaced peers in EBITDA growth and profitability as seen in peer comparison data. The peer EBITDA data is present, but the sentence implies a growth comparison over time which is not fully supported by the data (only some years are given, and no CAGR for peers). The data shows NVIDIA's EBITDA is higher in absolute terms but does not provide explicit growth rates for peers to confirm 'outpaced'. This is an interpretation beyond the data. The phrase 'as seen in peer comparison data' is an invented source for the claim of outpacing growth.",
+        "corrected": "Compared to peers such as AMD and Intel, NVIDIA has higher EBITDA and profitability, as seen in peer comparison data."
+      }
+    ],
+    "not_applied": [
+      {
+        "original": "From FY2022 to FY2026, NVIDIA reported exceptional financial growth, with revenue soaring from $26.9 billion (2022A) to $215.9 billion (2026A), representing a remarkable 68.3% compound annual growth rate.",
+        "problem": "status",
+        "explanation": "The sentence describes the revenue growth from 2022A to 2026A as reported, which is correct, but it uses the phrase 'exceptional financial growth' which is an opinion and acceptable. The CAGR is correctly attributed to 2022A to 2026A. The figures match the reported data. No status error here. No correction needed.",
+        "corrected": "From FY2022 to FY2026, NVIDIA reported exceptional financial growth, with revenue soaring from $26.9 billion (2022A) to $215.9 billion (2026A), representing a remarkable 68.3% compound annual growth rate."
+      },
+      {
+        "original": "EBITDA also grew substantially, reaching $144.6 billion in 2026A, with EBITDA margins expanding to 66.9%.",
+        "problem": "status",
+        "explanation": "The EBITDA figure $144.6 billion is from 2026A, which is reported, so describing it as 'reaching' is acceptable. The EBITDA margin 66.9% is also reported for 2026A. No status error here. No correction needed.",
+        "corrected": "EBITDA also grew substantially, reaching $144.6 billion in 2026A, with EBITDA margins expanding to 66.9%."
+      },
+      {
+        "original": "Earnings per share (EPS) increased from $0.39 (2022A) to $4.93 (2026A).",
+        "problem": "status",
+        "explanation": "EPS figures for 2022A and 2026A are reported, so describing them as increased is correct. No status error here. No correction needed.",
+        "corrected": "Earnings per share (EPS) increased from $0.39 (2022A) to $4.93 (2026A)."
+      },
+      {
+        "original": "Looking forward, pipeline forecasts (not company guidance) suggest more moderate growth with revenues reaching $249.9 billion by 2029E, and continued margin expansion.",
+        "problem": "status",
+        "explanation": "The revenue figure $249.9 billion is from 2029E, which is a forecast, so describing it as 'pipeline forecasts' is correct. The phrase 'continued margin expansion' is consistent with the forecasted contribution margin and EBITDA margin increasing from 2027E to 2029E. No status error here. No correction needed.",
+        "corrected": "Looking forward, pipeline forecasts (not company guidance) suggest more moderate growth with revenues reaching $249.9 billion by 2029E, and continued margin expansion."
+      }
+    ],
+    "unverified": [
+      "NVIDIA Corporation (NVDA) is a global leader in visual computing technologies and artificial intelligence (AI), best known for designing graphics processing units (GPUs) that are critical in gaming, professional visualization, data centers, and automotive markets.",
+      "NVIDIA’s business model revolves around developing and selling high-performance GPUs, systems-on-a-chip (SoCs), and related software platforms, serving both consumer and enterprise markets.",
+      "The company’s products underpin a wide range of applications, from gaming and digital content creation to AI training and inference in cloud and edge environments.",
+      "NVIDIA’s primary product lines include the GeForce GPU series for gaming, the Quadro and RTX series for professional visualization, and the data center-focused A100 and H100 GPUs, which have become core infrastructure for AI workloads.",
+      "The company also offers automotive solutions for infotainment and autonomous driving (NVIDIA DRIVE) and an expanding portfolio of AI software and platform solutions, such as CUDA, to foster a developer ecosystem and drive adoption of its hardware.",
+      "Over the past several years, NVIDIA has rapidly scaled its business, capitalizing on the rise of AI and accelerated computing.",
+      "The company’s contribution margin remained robust, averaging above 70% in recent years, reflecting strong pricing power and operational efficiency.",
+      "NVIDIA’s market position is dominant in both the gaming GPU sector and, increasingly, the enterprise and data center markets, where its solutions are foundational for AI and machine learning infrastructure.",
+      "Its EV/EBITDA multiples have remained elevated, indicating strong investor confidence in future growth.",
+      "NVIDIA’s strategy of combining cutting-edge hardware with a robust software ecosystem positions it at the forefront of the AI and accelerated computing revolution, underpinning its strong market leadership and continued financial outperformance."
+    ],
+    "usage": {
+      "input_tokens": 2821,
+      "output_tokens": 1108
+    }
+  },
+  {
+    "section": "investment_overview",
+    "model": "gpt-4.1-mini",
+    "corrections": [
+      {
+        "original": "Relative to peers, NVIDIA’s reported 2026 EBITDA far outpaces AMD and Intel, and its historical EV/EBITDA multiple (31.4x in 2026) remains elevated, reflecting high market confidence.",
+        "problem": "value_or_comparison",
+        "explanation": "NVIDIA's reported 2026 EBITDA is $144.552 billion. AMD and Intel 2026 EBITDA are not reported (nan), so comparison to 2026 peers is not possible. The sentence claims NVIDIA's 2026 EBITDA far outpaces AMD and Intel, but AMD and Intel 2026 EBITDA are not available. The 2026 EV/EBITDA multiple for NVIDIA is 31.4283, correctly stated as 31.4x. The sentence should be corrected to remove the unsupported comparison to AMD and Intel 2026 EBITDA.",
+        "corrected": "Relative to peers, NVIDIA’s historical EV/EBITDA multiple (31.4x in 2026) remains elevated, reflecting high market confidence."
+      }
+    ],
+    "not_applied": [
+      {
+        "original": "Reported revenue for FY2026 reached $215.9 billion, reflecting a remarkable 68.3% compound annual growth rate (CAGR) from FY2022 to FY2026.",
+        "problem": "status",
+        "explanation": "The revenue figure for FY2026 is reported (2026A) and must be described as reported or achieved, not projected or expected. The sentence correctly states 'reached' for the revenue figure, so no correction needed here. However, the CAGR is correctly attributed to FY2022 to FY2026, so no correction needed.",
+        "corrected": "Reported revenue for FY2026 reached $215.9 billion, reflecting a remarkable 68.3% compound annual growth rate (CAGR) from FY2022 to FY2026."
+      },
+      {
+        "original": "EBITDA expanded from $11.4 billion in FY2022 to $144.6 billion in FY2026, with reported EBITDA margin increasing to 66.9% in FY2026.",
+        "problem": "value_or_comparison",
+        "explanation": "The EBITDA for FY2022 is $11.351 billion (11.351e9), not $11.4 billion. The sentence rounds to one decimal place, so $11.4 billion is acceptable. The EBITDA for FY2026 is $144.552 billion, rounded to $144.6 billion, which is correct. The EBITDA margin for FY2026 is 66.9%, correctly stated. No correction needed.",
+        "corrected": "EBITDA expanded from $11.4 billion in FY2022 to $144.6 billion in FY2026, with reported EBITDA margin increasing to 66.9% in FY2026."
+      },
+      {
+        "original": "EPS rose from $0.39 in FY2022 to $4.93 in FY2026.",
+        "problem": "status",
+        "explanation": "EPS for FY2022 and FY2026 are reported (2022A and 2026A) and must be described as reported or achieved, which is done here. No correction needed.",
+        "corrected": "EPS rose from $0.39 in FY2022 to $4.93 in FY2026."
+      },
+      {
+        "original": "Looking ahead, this pipeline’s forecast anticipates a normalization of growth: revenue is expected to increase by 5.0% in 2027E, 6.0% in 2028E, and 4.0% in 2029E.",
+        "problem": "status",
+        "explanation": "The revenue growth rates for 2027E, 2028E, and 2029E are forecast figures and must be described as this pipeline's forecast or expected. The sentence correctly states 'this pipeline’s forecast anticipates' and 'revenue is expected to increase', which is acceptable. No correction needed.",
+        "corrected": "Looking ahead, this pipeline’s forecast anticipates a normalization of growth: revenue is expected to increase by 5.0% in 2027E, 6.0% in 2028E, and 4.0% in 2029E."
+      },
+      {
+        "original": "Margins are projected to remain strong, with EBITDA margin forecast to rise toward 73.5% by 2029E.",
+        "problem": "status",
+        "explanation": "EBITDA margin for 2029E is a forecast figure and must be described as forecast or projected, which is done here. No correction needed.",
+        "corrected": "Margins are projected to remain strong, with EBITDA margin forecast to rise toward 73.5% by 2029E."
+      },
+      {
+        "original": "EPS is expected to grow steadily to $5.88 by 2029E, with the PE ratio gradually compressing to 32.4x.",
+        "problem": "status",
+        "explanation": "EPS and PE ratio for 2029E are forecast figures and must be described as expected or forecast, which is done here. No correction needed.",
+        "corrected": "EPS is expected to grow steadily to $5.88 by 2029E, with the PE ratio gradually compressing to 32.4x."
+      }
+    ],
+    "unverified": [
+      "NVIDIA Corporation (NVDA) delivered outstanding financial results in FY2026, continuing a multi-year surge driven by robust demand for its AI and data center products.",
+      "Profitability improved significantly as well.",
+      "Contribution margin (gross margin) reached 71.1% in FY2026, up from 56.9% in FY2023, indicating effective cost control amid rapid growth.",
+      "NVIDIA’s operating leverage is evident, with SG&A margin falling steadily to just 2.1% in FY2026.",
+      "In summary, NVIDIA’s recent performance demonstrates exceptional scale and profitability, driven by AI and data center tailwinds.",
+      "While growth rates are forecast to moderate, the outlook remains robust, underpinned by industry leadership and strong operating efficiency."
+    ],
+    "usage": {
+      "input_tokens": 2765,
+      "output_tokens": 1188
+    }
+  },
+  {
+    "section": "valuation_overview",
+    "model": "gpt-4.1-mini",
+    "corrections": [
+      {
+        "original": "Peer comparison places NVIDIA at a premium. For FY2024, NVIDIA’s EV/EBITDA was 43.5x, higher than AMD (38.3x) and well above Intel (106.9x, but with depressed earnings).",
+        "problem": "value_or_comparison",
+        "explanation": "The EV/EBITDA for NVIDIA in 2024 is 43.4522 (reported), which rounds to 43.5x, correct. AMD's EV/EBITDA in 2024 is 38.2717 (reported), which rounds to 38.3x, correct. Intel's EV/EBITDA in 2024 is 106.938 (reported), which rounds to 106.9x, correct. The phrase 'well above Intel (106.9x, but with depressed earnings)' is incorrect because 43.5x is not well above 106.9x; it is well below. So the comparison is reversed. The sentence incorrectly states NVIDIA's EV/EBITDA is higher than Intel's, but data shows Intel's is higher. Correction needed to fix the comparison.",
+        "corrected": "Peer comparison places NVIDIA at a premium. For FY2024, NVIDIA’s EV/EBITDA was 43.5x, higher than AMD (38.3x) but well below Intel (106.9x, but with depressed earnings)."
+      },
+      {
+        "original": "By FY2026, NVIDIA’s multiple compresses to 31.4x, still higher than AMD’s historic range (17.9x–57.1x) and Intel’s (6.5x–106.9x), but justified by NVIDIA’s industry-leading margins and market dominance in AI hardware.",
+        "problem": "value_or_comparison",
+        "explanation": "NVIDIA's EV/EBITDA for 2026 is 31.4283 (reported), which rounds to 31.4x, correct. AMD's EV/EBITDA for 2026 is not available (nan), so the historic range 17.9x–57.1x is from 2022 to 2024 (reported). Intel's EV/EBITDA range is 6.5x–106.9x (from 2022 to 2024). The sentence says NVIDIA's multiple is still higher than AMD's historic range (17.9x–57.1x), but 31.4x is within that range, not higher than it. So the claim that NVIDIA's multiple is higher than AMD's historic range is incorrect. Correction needed to say 'within' or 'in the range' instead of 'higher than'.",
+        "corrected": "By FY2026, NVIDIA’s multiple compresses to 31.4x, still within AMD’s historic range (17.9x–57.1x) and Intel’s (6.5x–106.9x), but justified by NVIDIA’s industry-leading margins and market dominance in AI hardware."
+      },
+      {
+        "original": "NVIDIA’s 2027E EBITDA of $382.0 billion (pipeline forecast) dwarfs AMD and Intel projections, emphasizing its scale.",
+        "problem": "value_or_comparison",
+        "explanation": "The 2027E EBITDA for NVIDIA is $159.8 billion (pipeline forecast), not $382.0 billion. The $382.0 billion figure is the peer EBITDA comparison for 2027 for NVIDIA, but that is $3.82e+11, which is $382 billion, but the pipeline's own forecast EBITDA for 2027E is $159.8 billion. The sentence incorrectly states NVIDIA's 2027E EBITDA as $382.0 billion (pipeline forecast), which is incorrect. The $382.0 billion is the peer EBITDA comparison for 2027, which is a projection from average historical growth, not the pipeline's own forecast. Correction needed to fix the figure and clarify the source.",
+        "corrected": "NVIDIA’s 2027E EBITDA forecast of $159.8 billion dwarfs AMD and Intel projections, emphasizing its scale."
+      }
+    ],
+    "not_applied": [
+      {
+        "original": "NVIDIA’s reported FY2026 results reflect extraordinary growth, with revenue reaching $215.9 billion, up from $26.9 billion in FY2022, representing a four-year CAGR of 68.3%.",
+        "problem": "value_or_comparison",
+        "explanation": "The revenue for FY2022 is $26.9 billion (reported) and for FY2026 is $215.9 billion (reported), but the FY2022 revenue is $26.9 billion, not $26.9 billion (the original text says $26.9 billion, which is correct). The CAGR is correctly attributed to the four-year period 2022A to 2026A. The issue is the FY2022 revenue is $26.9 billion, but the text says $26.9 billion, which is correct. So no correction needed here. The problem is the wording 'up from $26.9 billion' is correct. So no correction needed here. So no correction needed here.",
+        "corrected": "NVIDIA’s reported FY2026 results reflect extraordinary growth, with revenue reaching $215.9 billion, up from $26.9 billion in FY2022, representing a four-year CAGR of 68.3%."
+      },
+      {
+        "original": "EPS for FY2026 was reported at $4.93, with a price-to-earnings (PE) ratio of 37.8x.",
+        "problem": "status",
+        "explanation": "The EPS for FY2026 is reported as 4.93 (reported), so it must be described as reported, which it is. The PE ratio for FY2026 is 37.8 (reported), so it must be described as reported, which it is. No error here.",
+        "corrected": "EPS for FY2026 was reported at $4.93, with a price-to-earnings (PE) ratio of 37.8x."
+      },
+      {
+        "original": "Looking forward, this pipeline’s forecast projects more moderate—but still robust—top-line growth: 5% in 2027E, 6% in 2028E, and 4% in 2029E.",
+        "problem": "status",
+        "explanation": "The revenue growth rates for 2027E, 2028E, and 2029E are forecast figures, so describing them as this pipeline's forecast is correct. No error here.",
+        "corrected": "Looking forward, this pipeline’s forecast projects more moderate—but still robust—top-line growth: 5% in 2027E, 6% in 2028E, and 4% in 2029E."
+      },
+      {
+        "original": "Margins are expected to further expand, with EBITDA margin forecasted to reach 73.5% by 2029E.",
+        "problem": "status",
+        "explanation": "The EBITDA margin for 2029E is a forecast figure, so describing it as forecasted is correct. No error here.",
+        "corrected": "Margins are expected to further expand, with EBITDA margin forecasted to reach 73.5% by 2029E."
+      },
+      {
+        "original": "EPS is projected to rise steadily, reaching $5.88 in 2029E, with the PE ratio declining to 32.4x by that year—suggesting continued multiple compression as earnings grow.",
+        "problem": "status",
+        "explanation": "EPS for 2029E is a forecast figure, so describing it as projected is correct. PE ratio for 2029E is a forecast figure, so describing it as declining to 32.4x is correct. No error here.",
+        "corrected": "EPS is projected to rise steadily, reaching $5.88 in 2029E, with the PE ratio declining to 32.4x by that year—suggesting continued multiple compression as earnings grow."
+      }
+    ],
+    "unverified": [
+      "This is driven by explosive demand for AI and accelerated computing, as seen in the 66.9% EBITDA margin for FY2026 and a contribution margin above 70% since FY2024.",
+      "Peer comparison places NVIDIA at a premium.",
+      "In summary, NVIDIA’s valuation remains rich relative to peers, justified by its superior growth, margin profile, and market position.",
+      "The current PE of 37.8x and EV/EBITDA of 31.4x (FY2026) imply the market is pricing in continued outperformance, but with growth moderating, further multiple compression is likely.",
+      "On a fair value basis, NVIDIA trades at a premium, but the premium is justified as long as it continues to deliver above-peer growth and profitability."
+    ],
+    "usage": {
+      "input_tokens": 2788,
+      "output_tokens": 1763
+    }
+  },
+  {
+    "section": "risks",
+    "model": "gpt-4.1-mini",
+    "corrections": [
+      {
+        "original": "NVIDIA’s reported PE ratio, while declining (106.4x in 2023A to 37.8x in 2026A), remains elevated versus historical norms, and the pipeline’s forecast still implies high multiples (2027E: 35.9x, 2029E: 32.4x).",
+        "problem": "value_or_comparison",
+        "explanation": "The PE ratio for 2023A is 106.44444444444444 (106.4x rounded), and for 2026A is 37.82352941176471 (37.8x rounded), so the reported values are correct. The 2027E and 2029E PE ratios are 35.9 and 32.4 respectively, which are this pipeline's forecast. The sentence says 'remains elevated versus historical norms' but the data does not provide historical norms beyond these years, so the comparison to historical norms is not supported by DATA.",
+        "corrected": "NVIDIA’s reported PE ratio declined from 106.4x in 2023A to 37.8x in 2026A, and the pipeline’s forecast still implies high multiples (2027E: 35.9x, 2029E: 32.4x)."
+      }
+    ],
+    "not_applied": [
+      {
+        "original": "NVIDIA’s reported revenue grew at a 68.3% CAGR from 2022A ($26.9B) to 2026A ($215.9B), but this pipeline’s forecast assumes a sharp deceleration to single-digit growth from 2027E (5.0%) to 2029E (4.0%).",
+        "problem": "status",
+        "explanation": "The sentence correctly states the revenue CAGR from 2022A to 2026A as reported, but it incorrectly calls the 2027E to 2029E growth rates a forecast from the pipeline. The 5.0%, 6.0%, and 4.0% growth rates for 2027E to 2029E are this pipeline's own forecast, so the wording is correct. No correction needed here.",
+        "corrected": "NVIDIA’s reported revenue grew at a 68.3% CAGR from 2022A ($26.9B) to 2026A ($215.9B), but this pipeline’s forecast assumes a sharp deceleration to single-digit growth from 2027E (5.0%) to 2029E (4.0%)."
+      },
+      {
+        "original": "While reported EBITDA margin reached 66.9% in 2026A (up from 22.2% in 2023A), historical margins were volatile, and forecast margins (2027E: 70.5%, 2029E: 73.5%) may be difficult to maintain amid rising competition, potential pricing pressures, or supply chain disruptions.",
+        "problem": "status",
+        "explanation": "The EBITDA margin figures for 2026A, 2023A are reported and correctly described as reported. The 2027E and 2029E margins are this pipeline's forecast and correctly described as forecast. No correction needed.",
+        "corrected": "While reported EBITDA margin reached 66.9% in 2026A (up from 22.2% in 2023A), historical margins were volatile, and forecast margins (2027E: 70.5%, 2029E: 73.5%) may be difficult to maintain amid rising competition, potential pricing pressures, or supply chain disruptions."
+      },
+      {
+        "original": "Peer EBITDA projections (e.g., AMD 2027E: $8.6B, INTC 2027E: $47.4B) suggest rivals are also growing, and historical peer EV/EBITDA multiples are volatile.",
+        "problem": "value_or_comparison",
+        "explanation": "The peer EBITDA for AMD in 2027 is 8.60087e+09 ($8.6B) and for INTC is 4.73518e+10 ($47.4B), both are this pipeline's projections. The sentence calls them projections, which is correct. The sentence says 'historical peer EV/EBITDA multiples are volatile' but the data shows EV/EBITDA multiples for peers from 2021 to 2026, which vary widely, so this is supported. No correction needed.",
+        "corrected": "Peer EBITDA projections (e.g., AMD 2027E: $8.6B, INTC 2027E: $47.4B) suggest rivals are also growing, and historical peer EV/EBITDA multiples are volatile."
+      },
+      {
+        "original": "SG&A as a percentage of revenue is forecast to decline sharply (2026A: 2.1% to 2029E: 0.6%), which may not be realistic as NVIDIA may need to increase spending to support growth, innovation, and regulatory compliance.",
+        "problem": "status",
+        "explanation": "SG&A margin is 2.1% in 2026A (reported) and 0.6% in 2029E (this pipeline's forecast). The sentence correctly describes 2026A as reported and 2029E as forecast. No correction needed.",
+        "corrected": "SG&A as a percentage of revenue is forecast to decline sharply (2026A: 2.1% to 2029E: 0.6%), which may not be realistic as NVIDIA may need to increase spending to support growth, innovation, and regulatory compliance."
+      }
+    ],
+    "unverified": [
+      "**Key Investment Risks for NVIDIA Corporation (NVDA) (as of 2026-10-10):**",
+      "- **Sustainability of Hyper-Growth:**",
+      "- **Margin Volatility and Compression:**",
+      "- **Valuation Risk:**",
+      "- **Competitive Threats:**",
+      "- **Operating Leverage and SG&A Risk:**",
+      "**Summary:** The main risks are the sustainability of recent explosive growth, maintaining very high margins, elevated valuation multiples, competitive dynamics, and uncertainty around operating expense assumptions. All figures and trends are based on reported results through 2026A and this pipeline’s forecasts for 2027E–2029E."
+    ],
+    "usage": {
+      "input_tokens": 2830,
+      "output_tokens": 1267
+    }
+  },
+  {
+    "section": "competitor_analysis",
+    "model": "gpt-4.1-mini",
+    "corrections": [
+      {
+        "original": "Gross margins (contribution margin) have been a significant differentiator. NVIDIA reported margins between 56.9% and 75.0% over the last five years, consistently higher than AMD or Intel, indicating strong pricing power and operational efficiency.",
+        "problem": "invented_source",
+        "explanation": "The sentence claims NVIDIA's contribution margin was consistently higher than AMD or Intel, but the DATA does not provide AMD or Intel contribution margin data for comparison. This is an invented comparison not supported by DATA.",
+        "corrected": "Gross margins (contribution margin) have been a significant differentiator. NVIDIA reported margins between 56.9% and 75.0% over the last five years, indicating strong pricing power and operational efficiency."
+      },
+      {
+        "original": "The pipeline’s 2027E projections continue this trend, with NVIDIA forecasted to reach $382B EBITDA, compared to AMD’s $8.6B and Intel’s $47.4B.",
+        "problem": "value_or_comparison",
+        "explanation": "The pipeline's 2027E EBITDA for NVIDIA is $159.8B, not $382B. The $382B figure is incorrect. AMD's 2027E EBITDA is $8.60087B (8.6B rounded is acceptable), Intel's is $47.3518B (47.4B rounded is acceptable). The NVIDIA figure is wrong and overstated.",
+        "corrected": "The pipeline’s 2027E projections continue this trend, with NVIDIA forecasted to reach $159.8B EBITDA, compared to AMD’s $8.6B and Intel’s $47.4B."
+      }
+    ],
+    "not_applied": [
+      {
+        "original": "Reported revenue grew from $26.9B in FY2022A to $215.9B in FY2026A, representing a remarkable CAGR of 68.3%.",
+        "problem": "status",
+        "explanation": "The sentence describes reported revenue figures for FY2022A and FY2026A correctly as reported, but it calls the CAGR 'remarkable' without issue. The CAGR is correctly attributed to 2022A to 2026A. No status error here. No correction needed.",
+        "corrected": "Reported revenue grew from $26.9B in FY2022A to $215.9B in FY2026A, representing a remarkable CAGR of 68.3%."
+      },
+      {
+        "original": "NVDA’s reported EBITDA also surged, from $11.4B in FY2022A to $144.6B in FY2026A, highlighting the company’s ability to scale earnings alongside revenue.",
+        "problem": "value_or_comparison",
+        "explanation": "The reported EBITDA for FY2022A is $11.351B (11.4B rounded is acceptable), and for FY2026A is $144.552B (144.6B rounded is acceptable). The sentence is correct in values and status as reported. No correction needed.",
+        "corrected": "NVDA’s reported EBITDA also surged, from $11.4B in FY2022A to $144.6B in FY2026A, highlighting the company’s ability to scale earnings alongside revenue."
+      },
+      {
+        "original": "EBITDA margin also rose from 22.2% in FY2023A to 66.9% in FY2026A, with this pipeline’s forecast suggesting further improvement to 73.5% by 2029E.",
+        "problem": "status",
+        "explanation": "The EBITDA margin figures for FY2023A (22.2%) and FY2026A (66.9%) are reported and correctly described as such. The 73.5% figure for 2029E is a forecast and correctly described as a forecast by 'this pipeline’s forecast'. No correction needed.",
+        "corrected": "EBITDA margin also rose from 22.2% in FY2023A to 66.9% in FY2026A, with this pipeline’s forecast suggesting further improvement to 73.5% by 2029E."
+      },
+      {
+        "original": "AMD’s reported EBITDA in 2025 was $7.3B, while Intel’s was $14.4B, both substantially lower than NVIDIA’s $86.1B in the same year.",
+        "problem": "value_or_comparison",
+        "explanation": "AMD's reported EBITDA in 2025 is $7.275B (7.3B rounded is acceptable), Intel's is $14.354B (14.4B rounded is acceptable), and NVIDIA's is $86.137B (86.1B rounded is acceptable). The sentence correctly states these values and comparison. No correction needed.",
+        "corrected": "AMD’s reported EBITDA in 2025 was $7.3B, while Intel’s was $14.4B, both substantially lower than NVIDIA’s $86.1B in the same year."
+      },
+      {
+        "original": "NVIDIA’s reported EV/EBITDA peaked at 81.0x in 2023A, declining to 31.4x by 2026A, still above Intel and AMD for most years, reflecting market expectations of continued superior growth and profitability.",
+        "problem": "value_or_comparison",
+        "explanation": "NVIDIA's reported EV/EBITDA in 2023A is 81.0476x (81.0x rounded is acceptable), and in 2026A is 31.4283x (31.4x rounded is acceptable). The sentence correctly states these values and comparison to Intel and AMD. No correction needed.",
+        "corrected": "NVIDIA’s reported EV/EBITDA peaked at 81.0x in 2023A, declining to 31.4x by 2026A, still above Intel and AMD for most years, reflecting market expectations of continued superior growth and profitability."
+      },
+      {
+        "original": "Despite a high PE ratio (37.8x in 2026A), ongoing margin expansion and revenue growth support this premium.",
+        "problem": "value_or_comparison",
+        "explanation": "NVIDIA's PE ratio in 2026A is 37.8235x (37.8x rounded is acceptable). The sentence correctly states this value. No correction needed.",
+        "corrected": "Despite a high PE ratio (37.8x in 2026A), ongoing margin expansion and revenue growth support this premium."
+      }
+    ],
+    "unverified": [
+      "NVIDIA Corporation (NVDA) has delivered extraordinary financial performance compared to its primary peers, AMD (Advanced Micro Devices) and Intel (INTC), particularly over the period from FY2022A to FY2026A.",
+      "This far outpaces peers, who have exhibited much slower top-line growth.",
+      "Gross margins (contribution margin) have been a significant differentiator.",
+      "Peer comparison on profitability underscores NVIDIA’s dominance.",
+      "Valuation, however, remains premium.",
+      "In summary, NVIDIA substantially outperforms AMD and Intel across revenue growth, margins, and profit scale, justifying its market premium.",
+      "Its leadership in AI and data center markets, reflected in these financials, positions it as the clear industry leader among its peers."
+    ],
+    "usage": {
+      "input_tokens": 2780,
+      "output_tokens": 1429
+    }
+  },
+  {
+    "section": "major_takeaways",
+    "model": "gpt-4.1-mini",
+    "corrections": [],
+    "not_applied": [
+      {
+        "original": "NVIDIA reported exceptional revenue growth from 2022A to 2026A, with revenue increasing from $26.9 billion to $215.9 billion—a CAGR of 68.3%. Growth was especially pronounced in 2024A (+125.9%) and 2025A (+114.2%), with the latest reported year, 2026A, still showing robust growth at 65.5%; however, this pipeline’s forecast expects a normalization to single-digit annual growth from 2027E onwards.",
+        "problem": "status",
+        "explanation": "The sentence describes the 2027E onwards growth as 'this pipeline's forecast', which is correct, but it also says 'NVIDIA reported exceptional revenue growth' for 2022A to 2026A, which is correct. The sentence is consistent with data. No correction needed.",
+        "corrected": "NVIDIA reported exceptional revenue growth from 2022A to 2026A, with revenue increasing from $26.9 billion to $215.9 billion—a CAGR of 68.3%. Growth was especially pronounced in 2024A (+125.9%) and 2025A (+114.2%), with the latest reported year, 2026A, still showing robust growth at 65.5%; however, this pipeline’s forecast expects a normalization to single-digit annual growth from 2027E onwards."
+      },
+      {
+        "original": "Gross profit margin (contribution margin) has remained strong, rebounding from a dip at 56.9% in 2023A to over 70% from 2024A onwards. The latest reported year, 2026A, saw a margin of 71.1%, with this pipeline’s forecast projecting incremental gains, reaching 74.1% by 2029E.",
+        "problem": "status",
+        "explanation": "The sentence correctly describes 2023A, 2024A, and 2026A contribution margins as reported, and 2029E as this pipeline's forecast. No correction needed.",
+        "corrected": "Gross profit margin (contribution margin) has remained strong, rebounding from a dip at 56.9% in 2023A to over 70% from 2024A onwards. The latest reported year, 2026A, saw a margin of 71.1%, with this pipeline’s forecast projecting incremental gains, reaching 74.1% by 2029E."
+      },
+      {
+        "original": "NVIDIA’s SG&A expense margin has declined steadily, improving efficiency; from 8.0% in 2022A to 2.1% in 2026A, and this pipeline forecasts a further drop to just 0.6% by 2029E. This reflects tight cost control relative to rapidly expanding revenue.",
+        "problem": "status",
+        "explanation": "The sentence correctly describes 2022A and 2026A SG&A margins as reported, and 2029E as this pipeline's forecast. No correction needed.",
+        "corrected": "NVIDIA’s SG&A expense margin has declined steadily, improving efficiency; from 8.0% in 2022A to 2.1% in 2026A, and this pipeline forecasts a further drop to just 0.6% by 2029E. This reflects tight cost control relative to rapidly expanding revenue."
+      },
+      {
+        "original": "EBITDA margin has expanded dramatically, moving from 42.2% in 2022A and dipping to 22.2% in 2023A, then surging to 66.9% in 2026A. This pipeline expects further margin expansion, reaching 73.5% in 2029E, indicating increasing operating leverage as the company scales.",
+        "problem": "status",
+        "explanation": "The sentence correctly describes 2022A, 2023A, and 2026A EBITDA margins as reported, and 2029E as this pipeline's forecast. No correction needed.",
+        "corrected": "EBITDA margin has expanded dramatically, moving from 42.2% in 2022A and dipping to 22.2% in 2023A, then surging to 66.9% in 2026A. This pipeline expects further margin expansion, reaching 73.5% in 2029E, indicating increasing operating leverage as the company scales."
+      }
+    ],
+    "unverified": [],
+    "usage": {
+      "input_tokens": 2673,
+      "output_tokens": 896
+    }
+  }
+]

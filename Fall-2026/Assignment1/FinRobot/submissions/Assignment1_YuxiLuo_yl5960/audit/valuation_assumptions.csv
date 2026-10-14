@@ -1,0 +1,17 @@
+assumption,value / rule,code,shown in report?
+EBITDA input,"'2027E' column = FY+3 forecast, $183.7bn, built as gross profit - SG&A (R&D excluded)",valuation_engine.py:58-60; financial_data_processor.py:414-416,"Number printed, year and definition not"
+EV/EBITDA target multiple,12.0x (default: key_metrics is never passed to the engine),valuation_engine.py:88-98; create_equity_report.py:755-760,"Printed, but labelled 'Historical Avg Multiple'"
+EV/EBITDA range,target multiple +/- 3.0x,"valuation_engine.py:95, 110-111",No
+Net debt,"10% of enterprise value, in both methods (balance sheet ignored)","valuation_engine.py:104, 256",No
+Shares outstanding,24.22bn from FMP /shares-float,create_equity_report.py:758,No
+Free cash flow,60% of the EBITDA input (no FCF is passed),valuation_engine.py:228-231,No
+FCF growth,"10% in years 1-5, 5% in years 6-10",valuation_engine.py:217-218,Yes
+Discount rate (WACC),"10%, same for every company",valuation_engine.py:220,No (not in the assumptions column)
+Terminal growth,2.5%,valuation_engine.py:219,Yes
+Projection horizon,10 years,valuation_engine.py:221,No
+DCF timing,the FY+3 forecast is treated as the year-0 cash flow and grown/discounted from today,valuation_engine.py:228-245,No
+DCF range,WACC +/- 1% applied to discounting the terminal value only (terminal value itself unchanged),valuation_engine.py:263-266,No
+Method weights,"'confidence' 0.7 (EV/EBITDA), 0.5 (DCF), 0.6 (peers), normalised","valuation_engine.py:125, 276, 195, 327-333",Printed as 70% / 50% (sums to 120%)
+Peer comparison,always dropped: peer data passed in the wrong shape,create_equity_report.py:764-766; valuation_engine.py:153-165,No
+Target range,lowest method low to highest method high,valuation_engine.py:335-340,Yes
+Page-1 rating,"from FMP's analyst consensus target vs price (>=15% upside = Buy), not from this valuation",html_template_professional.py:961-990,No

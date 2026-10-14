@@ -1,0 +1,166 @@
+INFO:modules.news_integrator:Fetching enhanced news for MRNA...
+ERROR:modules.news_integrator:Error fetching enhanced news: FMP /stable/news/stock returned 402: Restricted Endpoint: This endpoint is not available under your current subscription please visit our subscription page to upgrade your plan at https://financialmodelingprep.com/
+INFO:modules.sensitivity_analyzer:Analyzing revenue growth sensitivity...
+INFO:modules.sensitivity_analyzer:✅ Revenue sensitivity analysis complete: 5 scenarios
+INFO:modules.sensitivity_analyzer:Analyzing margin sensitivity...
+INFO:modules.sensitivity_analyzer:✅ Margin sensitivity analysis complete: 5 scenarios
+INFO:modules.sensitivity_analyzer:Generating comprehensive sensitivity table...
+INFO:modules.sensitivity_analyzer:✅ Combined sensitivity table generated: 5x5 matrix
+INFO:modules.sensitivity_analyzer:Calculating 95.0% confidence interval for Revenue...
+INFO:modules.sensitivity_analyzer:✅ Revenue CI: [1588654529.28, 2911783230.72] at 95.0% confidence
+INFO:modules.sensitivity_analyzer:Calculating 95.0% confidence interval for EBITDA...
+INFO:modules.sensitivity_analyzer:✅ EBITDA CI: [117560435.17, 215471959.07] at 95.0% confidence
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Output will be saved to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis
+Text outputs will be saved to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis
+Using OpenAI base URL: https://api.openai.com/v1
+Using model: gpt-4.1
+Starting FMP API-based financial analysis for Moderna, Inc. (MRNA)
+Fetching financial data from FMP API...
+Fetching comprehensive financial data for MRNA...
+Successfully fetched financial data from FMP API
+Retrieved 5 years of income statement data
+Available years: [2025, 2024, 2023, 2022, 2021]
+Processing historical financial metrics...
+
+Historical Metrics Extracted from API:
+                metrics         2025A         2024A         2023A          2022A          2021A
+0               Revenue  1944000000.0  3199000000.0  6848000000.0  18875000000.0  17736000000.0
+1    Cost of Operations   868000000.0  1464000000.0  4693000000.0   5416000000.0   2617000000.0
+2                  SG&A  1018000000.0  1174000000.0  1549000000.0   1132000000.0    567000000.0
+3   Contribution Profit  1076000000.0  1735000000.0  2155000000.0  13459000000.0  15119000000.0
+4   Contribution Margin         55.3%         54.2%         31.5%          71.3%          85.2%
+5                EBITDA -2553000000.0 -3394000000.0 -3283000000.0   9952000000.0  13535000000.0
+6         EBITDA Margin       -131.3%       -106.1%        -47.9%          52.7%          76.3%
+7           SG&A Margin         52.4%         36.7%         22.6%           6.0%           3.2%
+8        Revenue Growth        -39.2%        -53.3%        -63.7%           6.4%            N/A
+9                   EPS         -7.26         -9.27        -12.34          21.26          30.31
+10             PE Ratio     -4.061983     -4.485437     -8.059157        8.44873       8.379413
+Generating forecasts...
+Using 2025A as base year for forecasts
+Forecast assumptions:
+  Revenue Growth 2025E: 5.0%
+  Revenue Growth 2026E: 6.0%
+  Revenue Growth 2027E: 4.0%
+  Margin Improvement: 1.0% annually
+  SG&A Efficiency: -0.5% annually
+
+Final Metrics with Forecasts:
+                metrics          2021A          2022A         2023A         2024A         2025A         2025E         2026E          2027E    CAGR
+0               Revenue  17736000000.0  18875000000.0  6848000000.0  3199000000.0  1944000000.0  2041200000.0  2163672000.0   2250218880.0  -42.5%
+1    Cost of Operations   2617000000.0   5416000000.0  4693000000.0  1464000000.0   868000000.0   892004400.0   923887944.0   938341272.96     N/A
+2                  SG&A    567000000.0   1132000000.0  1549000000.0  1174000000.0  1018000000.0  1059382800.0  1112127408.0  1145361409.92     N/A
+3   Contribution Profit  15119000000.0  13459000000.0  2155000000.0  1735000000.0  1076000000.0  1149195600.0  1239784056.0  1311877607.04     N/A
+4   Contribution Margin          85.2%          71.3%         31.5%         54.2%         55.3%         56.3%         57.3%          58.3%     N/A
+5                EBITDA  13535000000.0   9952000000.0 -3283000000.0 -3394000000.0 -2553000000.0    89812800.0   127656648.0   166516197.12     N/A
+6         EBITDA Margin          76.3%          52.7%        -47.9%       -106.1%       -131.3%          4.4%          5.9%           7.4%     N/A
+7           SG&A Margin           3.2%           6.0%         22.6%         36.7%         52.4%         51.9%         51.4%          50.9%     N/A
+8        Revenue Growth            N/A           6.4%        -63.7%        -53.3%        -39.2%          5.0%          6.0%           4.0%     N/A
+9                   EPS          30.31          21.26        -12.34         -9.27         -7.26          -7.7         -8.24          -8.66     N/A
+10             PE Ratio       8.379413        8.44873     -8.059157     -4.485437     -4.061983          -3.9          -3.7           -3.5     N/A
+Successfully saved financial analysis to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\financial_metrics_and_forecasts.csv
+
+Fetching data for peer comparison: ['PFE', 'JNJ']
+Saved peer EBITDA comparison to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\peer_ebitda_comparison.csv
+Saved peer EV/EBITDA comparison to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\peer_ev_ebitda_comparison.csv
+
+Fetching company news for MRNA...
+Saved enhanced news data to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\enhanced_news.json
+Saved news summary to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\news_summary.md
+Warning: No news data could be retrieved
+
+Fetching retail sentiment insights for MRNA...
+Warning: Failed to fetch retail sentiment for MRNA from Reddit: 401 Client Error: Unauthorized for url: https://api.adanos.org/reddit/stocks/v1/compare?tickers=MRNA&days=7
+Warning: Failed to fetch retail sentiment for MRNA from X.com: 401 Client Error: Unauthorized for url: https://api.adanos.org/x/stocks/v1/compare?tickers=MRNA&days=7
+Warning: Failed to fetch retail sentiment for MRNA from Polymarket: 401 Client Error: Unauthorized for url: https://api.adanos.org/polymarket/stocks/v1/compare?tickers=MRNA&days=7
+Saved retail sentiment insights to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\retail_sentiment.json
+
+Performing sensitivity analysis...
+Saved sensitivity analysis to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\sensitivity_analysis.json
+Saved sensitivity summary to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\sensitivity_summary.md
+
+Generating AI-powered text sections...
+Generating 'tagline' for Moderna, Inc. (MRNA)...
+🤖 Generating 'tagline' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+✅ Successfully generated 'tagline' (488 chars)
+✅ Successfully generated and saved 'tagline' to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\tagline.txt
+Generating 'company_overview' for Moderna, Inc. (MRNA)...
+🤖 Generating 'company_overview' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+✅ Successfully generated 'company_overview' (2630 chars)
+✅ Successfully generated and saved 'company_overview' to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\company_overview.txt
+Generating 'investment_overview' for Moderna, Inc. (MRNA)...
+🤖 Generating 'investment_overview' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+✅ Successfully generated 'investment_overview' (1971 chars)
+✅ Successfully generated and saved 'investment_overview' to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\investment_overview.txt
+Generating 'valuation_overview' for Moderna, Inc. (MRNA)...
+🤖 Generating 'valuation_overview' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+✅ Successfully generated 'valuation_overview' (1715 chars)
+✅ Successfully generated and saved 'valuation_overview' to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\valuation_overview.txt
+Generating 'risks' for Moderna, Inc. (MRNA)...
+🤖 Generating 'risks' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+✅ Successfully generated 'risks' (1358 chars)
+✅ Successfully generated and saved 'risks' to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\risks.txt
+Generating 'competitor_analysis' for Moderna, Inc. (MRNA)...
+🤖 Generating 'competitor_analysis' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+✅ Successfully generated 'competitor_analysis' (1767 chars)
+✅ Successfully generated and saved 'competitor_analysis' to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\competitor_analysis.txt
+Generating 'major_takeaways' for Moderna, Inc. (MRNA)...INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+🤖 Generating 'major_takeaways' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+✅ Successfully generated 'major_takeaways' (1233 chars)
+⚠️ Warning: Major takeaways missing required sections, using fallback.
+✅ Successfully generated and saved 'major_takeaways' to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\major_takeaways.txt
+Skipping 'news_summary' - no news data available
+Created placeholder for 'news_summary' at D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\news_summary.txt
+
+Saving additional financial statement data...
+Saved income_statement to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\income_statement_raw_data.csv (5 rows)
+Saved balance_sheet to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\balance_sheet_raw_data.csv (5 rows)
+Saved cash_flow to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\cash_flow_raw_data.csv (5 rows)
+Saved ratios to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\ratios_raw_data.csv (5 rows)
+Saved key_metrics to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\key_metrics_raw_data.csv (5 rows)
+Saved analysis summary to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\analysis_summary.json
+
+============================================================
+✅ Financial analysis completed successfully!
+📁 All outputs saved to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis
+📊 Main analysis file: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\financial_metrics_and_forecasts.csv
+📝 AI text sections generated and saved in: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis
+
+🚀 Ready to create equity report using:
+python create_equity_report.py \
+  --company-ticker MRNA \
+  --company-name "Moderna, Inc." \
+  --analysis-csv D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\financial_metrics_and_forecasts.csv \
+  --ratios-csv D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\ratios_raw_data.csv \
+  --peer-ebitda-csv D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\peer_ebitda_comparison.csv \
+  --peer-ev-ebitda-csv D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\peer_ev_ebitda_comparison.csv \
+  --tagline-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\tagline.txt \
+  --company-overview-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\company_overview.txt \
+  --investment-overview-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\investment_overview.txt \
+  --valuation-overview-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\valuation_overview.txt \
+  --risks-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\risks.txt \
+  --competitor-analysis-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\competitor_analysis.txt \
+  --major-takeaways-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\major_takeaways.txt \
+  --news-summary-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\MRNA\analysis\news_summary.txt
+
+🎯 All files ready for report generation!

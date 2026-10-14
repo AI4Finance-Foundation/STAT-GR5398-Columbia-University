@@ -1,0 +1,110 @@
+2026-10-10 19:05:51,117 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 19:05:54,701 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 19:05:55,760 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\report\JNJ_eps_pe.png
+2026-10-10 19:05:56,299 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\report\JNJ_eps_pe.pdf
+2026-10-10 19:05:56,305 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:05:56,305 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:05:56,312 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:05:56,313 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:05:56,679 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\report\JNJ_revenue_yoy.png
+2026-10-10 19:05:56,797 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\report\JNJ_revenue_yoy.pdf
+2026-10-10 19:05:56,801 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:05:56,801 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:05:56,806 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:05:56,808 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:05:57,237 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\report\JNJ_ebitda_margin.png
+2026-10-10 19:05:57,365 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\report\JNJ_ebitda_margin.pdf
+2026-10-10 19:05:57,529 - INFO - Calculating EV/EBITDA valuation...
+2026-10-10 19:05:57,529 - INFO - ✅ EV/EBITDA valuation: $231.12
+2026-10-10 19:05:57,529 - INFO - Calculating DCF valuation...
+2026-10-10 19:05:57,529 - INFO - ✅ DCF valuation: $233.30
+2026-10-10 19:05:57,529 - INFO - Calculating peer comparison valuation...
+2026-10-10 19:05:57,529 - INFO - Synthesizing valuation results...
+2026-10-10 19:05:57,529 - INFO - ✅ Synthesized target price: $232.03 (Range: $166.92 - $295.32)
+HTML reports will be saved to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\report
+✅ OpenAI API key loaded for text regeneration
+Auto-fetching market data for JNJ...
+Fetching comprehensive company metrics for JNJ...
+Successfully fetched metrics for JNJ
+✅ Successfully auto-fetched market data
+
+📊 Market Data Summary for JNJ:
+  Share Price: $261.44 (auto-fetched)
+  Target Price: $286.53 (auto-fetched)
+  Rating: Buy (auto-fetched)
+  Market Cap: $630.04B (auto-fetched)
+  Sector: Healthcare (auto-fetched)
+📖 Loading and processing text content...
+📝 Processing tagline...
+✅ tagline validation passed (410 chars)
+📝 Processing company_overview...
+✅ company_overview validation passed (3012 chars)
+📝 Processing investment_overview...
+✅ investment_overview validation passed (1779 chars)
+📝 Processing valuation_overview...
+✅ valuation_overview validation passed (1528 chars)
+📝 Processing risks...
+✅ risks validation passed (1523 chars)
+📝 Processing competitor_analysis...
+🤖 Regenerating 'competitor_analysis' using AI...
+🤖 Generating 'competitor_analysis' text section...
+🤖 Using model: gpt-4o-mini
+✅ Successfully generated 'competitor_analysis' (1733 chars)
+✅ Successfully regenerated 'competitor_analysis' using AI
+📝 Processing major_takeaways...
+🤖 Regenerating 'major_takeaways' using AI...
+🤖 Generating 'major_takeaways' text section...
+🤖 Using model: gpt-4o-mini
+✅ Successfully generated 'major_takeaways' (1380 chars)
+✅ Successfully regenerated 'major_takeaways' using AI
+📝 Processing news_summary...
+✅ news_summary validation passed (53 chars)
+✅ All text content processed
+✅ Computed technical indicators for JNJ: Bearish
+Handling charts...
+✅ Revenue/EBITDA chart saved to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\report\JNJ_revenue_ebitda_chart.png
+✅ EPS × PE chart saved to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\report\JNJ_eps_pe_chart.png
+✅ EV/EBITDA peer chart saved to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\report\JNJ_peer_ev_ebitda_chart.png
+Generating enhanced charts...
+✅ Loaded income statement data from D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\income_statement_raw_data.csv
+✅ Generated EPS × PE chart
+✅ Generated Revenue YoY chart
+✅ Generated EBITDA Margin chart
+Generating advanced charts...
+✅ Financial radar chart saved to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\report\JNJ_financial_radar.png
+✅ Generated Financial Radar chart
+✅ Generated 4 enhanced charts total
+Performing valuation analysis...
+✅ Valuation analysis completed with 2 methods
+  Synthesized target: $232.03 (range $166.92-$295.32, upside -11.3%)
+Loading sensitivity analysis from D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\sensitivity_analysis.json...
+✅ Sensitivity analysis loaded
+Loading retail sentiment insights from D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\retail_sentiment.json...
+✅ Retail sentiment insights loaded
+Formatting tables for HTML...
+Loading Credit & Cashflow metrics from CSV...
+✅ Successfully loaded and formatted Credit & Cashflow metrics from CSV
+Processing peer EBITDA data with shape: (6, 4)
+Peer EBITDA columns: ['year', 'ABBV', 'JNJ', 'PFE']
+Peer EBITDA index: [2021, 2022, 2023, 2024, 2025, 2026]
+✅ Successfully formatted peer EBITDA table
+Processing peer EV/EBITDA data with shape: (5, 3)
+Peer EV/EBITDA columns: ['ABBV', 'JNJ', 'PFE']
+Peer EV/EBITDA index: [2021, 2022, 2023, 2024, 2025]
+✅ Successfully formatted peer EV/EBITDA table
+Generating professional HTML report (matching PDF structure)...
+✅ Generated Professional HTML Report: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\report\Professional_Equity_Report_JNJ.html
+Generating combined HTML report (all sections in one file)...
+✅ Generated Combined HTML Report: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\report\Combined_Equity_Report_JNJ.html
+Rendering legacy HTML pages...
+✅ Sensitivity/Catalyst content detected, adding Page 4
+✅ News/Charts content detected, adding Page 5
+Generated Page 1: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\report\Equity_Report_Page1_JNJ.html
+Generated Page 2: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\report\Equity_Report_Page2_JNJ.html
+Generated Page 3: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\report\Equity_Report_Page3_JNJ.html
+Generated Page 4: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\report\Equity_Report_Page4_JNJ.html
+Generated Page 5: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\report\Equity_Report_Page5_JNJ.html
+
+✅ Equity report generation complete!
+📁 Reports saved to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\report
+🤖 Market data automatically fetched from FMP API

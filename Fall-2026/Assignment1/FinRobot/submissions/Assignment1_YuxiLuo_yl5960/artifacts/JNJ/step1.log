@@ -1,0 +1,166 @@
+INFO:modules.news_integrator:Fetching enhanced news for JNJ...
+ERROR:modules.news_integrator:Error fetching enhanced news: FMP /stable/news/stock returned 402: Restricted Endpoint: This endpoint is not available under your current subscription please visit our subscription page to upgrade your plan at https://financialmodelingprep.com/
+INFO:modules.sensitivity_analyzer:Analyzing revenue growth sensitivity...
+INFO:modules.sensitivity_analyzer:✅ Revenue sensitivity analysis complete: 5 scenarios
+INFO:modules.sensitivity_analyzer:Analyzing margin sensitivity...
+INFO:modules.sensitivity_analyzer:✅ Margin sensitivity analysis complete: 5 scenarios
+INFO:modules.sensitivity_analyzer:Generating comprehensive sensitivity table...
+INFO:modules.sensitivity_analyzer:✅ Combined sensitivity table generated: 5x5 matrix
+INFO:modules.sensitivity_analyzer:Calculating 95.0% confidence interval for Revenue...
+INFO:modules.sensitivity_analyzer:✅ Revenue CI: [76975378640.16, 141085184079.84] at 95.0% confidence
+INFO:modules.sensitivity_analyzer:Calculating 95.0% confidence interval for EBITDA...
+INFO:modules.sensitivity_analyzer:✅ EBITDA CI: [36409354096.80, 66733292069.76] at 95.0% confidence
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Output will be saved to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis
+Text outputs will be saved to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis
+Using OpenAI base URL: https://api.openai.com/v1
+Using model: gpt-4.1
+Starting FMP API-based financial analysis for Johnson & Johnson (JNJ)
+Fetching financial data from FMP API...
+Fetching comprehensive financial data for JNJ...
+Successfully fetched financial data from FMP API
+Retrieved 5 years of income statement data
+Available years: [2025, 2024, 2023, 2023, 2022]
+Processing historical financial metrics...
+
+Historical Metrics Extracted from API:
+                metrics          2025A          2024A          2023A          2022A
+0               Revenue  94193000000.0  88821000000.0  79990000000.0  78740000000.0
+1    Cost of Operations  30256000000.0  27471000000.0  24596000000.0  23402000000.0
+2                  SG&A  23676000000.0  21969000000.0  20246000000.0  20118000000.0
+3   Contribution Profit  63937000000.0  61350000000.0  55394000000.0  55338000000.0
+4   Contribution Margin          67.9%          69.1%          69.3%          70.3%
+5                EBITDA  41055000000.0  24781000000.0  26605000000.0  26751000000.0
+6         EBITDA Margin          43.6%          27.9%          33.3%          34.0%
+7           SG&A Margin          25.1%          24.7%          25.3%          25.5%
+8        Revenue Growth           6.0%          11.0%           0.0%            N/A
+9                   EPS          11.03           5.84           6.83           7.93
+10             PE Ratio       18.81777      24.544521      11.292507      21.631778
+Generating forecasts...
+Using 2025A as base year for forecasts
+Forecast assumptions:
+  Revenue Growth 2025E: 5.0%
+  Revenue Growth 2026E: 6.0%
+  Revenue Growth 2027E: 4.0%
+  Margin Improvement: 1.0% annually
+  SG&A Efficiency: -0.5% annually
+
+Final Metrics with Forecasts:
+                metrics          2022A          2023A          2024A          2025A          2025E           2026E               2027E  CAGR
+0               Revenue  78740000000.0  79990000000.0  88821000000.0  94193000000.0  98902650000.0  104836809000.0      109030281360.0  6.2%
+1    Cost of Operations  23402000000.0  24596000000.0  27471000000.0  30256000000.0  30758724150.0   31555879509.0  31727811875.759998   N/A
+2                  SG&A  20118000000.0  20246000000.0  21969000000.0  23676000000.0  24330051900.0   25265670969.0  25731146400.959999   N/A
+3   Contribution Profit  55338000000.0  55394000000.0  61350000000.0  63937000000.0  68143925850.0   73280929491.0  77302469484.240005   N/A
+4   Contribution Margin          70.3%          69.3%          69.1%          67.9%          68.9%           69.9%               70.9%   N/A
+5                EBITDA  26751000000.0  26605000000.0  24781000000.0  41055000000.0  43813873950.0   48015258522.0  51571323083.279999   N/A
+6         EBITDA Margin          34.0%          33.3%          27.9%          43.6%          44.3%           45.8%               47.3%   N/A
+7           SG&A Margin          25.5%          25.3%          24.7%          25.1%          24.6%           24.1%               23.6%   N/A
+8        Revenue Growth            N/A           1.6%          11.0%           6.0%           5.0%            6.0%                4.0%   N/A
+9                   EPS           7.93           6.83           5.84          11.03           11.7           12.52               13.15   N/A
+10             PE Ratio      21.631778      11.292507      24.544521       18.81777           17.9            17.0                16.1   N/A
+Successfully saved financial analysis to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\financial_metrics_and_forecasts.csv
+
+Fetching data for peer comparison: ['PFE', 'ABBV']
+Saved peer EBITDA comparison to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\peer_ebitda_comparison.csv
+Saved peer EV/EBITDA comparison to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\peer_ev_ebitda_comparison.csv
+
+Fetching company news for JNJ...
+Saved enhanced news data to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\enhanced_news.json
+Saved news summary to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\news_summary.md
+Warning: No news data could be retrieved
+
+Fetching retail sentiment insights for JNJ...
+Warning: Failed to fetch retail sentiment for JNJ from Reddit: 401 Client Error: Unauthorized for url: https://api.adanos.org/reddit/stocks/v1/compare?tickers=JNJ&days=7
+Warning: Failed to fetch retail sentiment for JNJ from X.com: 401 Client Error: Unauthorized for url: https://api.adanos.org/x/stocks/v1/compare?tickers=JNJ&days=7
+Warning: Failed to fetch retail sentiment for JNJ from Polymarket: 401 Client Error: Unauthorized for url: https://api.adanos.org/polymarket/stocks/v1/compare?tickers=JNJ&days=7
+Saved retail sentiment insights to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\retail_sentiment.json
+
+Performing sensitivity analysis...
+Saved sensitivity analysis to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\sensitivity_analysis.json
+Saved sensitivity summary to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\sensitivity_summary.md
+
+Generating AI-powered text sections...
+Generating 'tagline' for Johnson & Johnson (JNJ)...
+🤖 Generating 'tagline' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+✅ Successfully generated 'tagline' (410 chars)
+✅ Successfully generated and saved 'tagline' to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\tagline.txt
+Generating 'company_overview' for Johnson & Johnson (JNJ)...
+🤖 Generating 'company_overview' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+✅ Successfully generated 'company_overview' (3012 chars)
+✅ Successfully generated and saved 'company_overview' to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\company_overview.txt
+Generating 'investment_overview' for Johnson & Johnson (JNJ)...
+🤖 Generating 'investment_overview' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+✅ Successfully generated 'investment_overview' (1779 chars)
+✅ Successfully generated and saved 'investment_overview' to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\investment_overview.txt
+Generating 'valuation_overview' for Johnson & Johnson (JNJ)...
+🤖 Generating 'valuation_overview' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+✅ Successfully generated 'valuation_overview' (1528 chars)
+✅ Successfully generated and saved 'valuation_overview' to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\valuation_overview.txt
+Generating 'risks' for Johnson & Johnson (JNJ)...
+🤖 Generating 'risks' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+✅ Successfully generated 'risks' (1523 chars)
+✅ Successfully generated and saved 'risks' to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\risks.txt
+Generating 'competitor_analysis' for Johnson & Johnson (JNJ)...
+🤖 Generating 'competitor_analysis' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+✅ Successfully generated 'competitor_analysis' (1797 chars)
+✅ Successfully generated and saved 'competitor_analysis' to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\competitor_analysis.txt
+Generating 'major_takeaways' for Johnson & Johnson (JNJ)...
+🤖 Generating 'major_takeaways' text section...
+📡 Using API base URL: https://api.openai.com/v1
+🤖 Using model: gpt-4.1
+✅ Successfully generated 'major_takeaways' (880 chars)
+⚠️ Warning: Major takeaways missing required sections, using fallback.
+✅ Successfully generated and saved 'major_takeaways' to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\major_takeaways.txt
+Skipping 'news_summary' - no news data available
+Created placeholder for 'news_summary' at D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\news_summary.txt
+
+Saving additional financial statement data...
+Saved income_statement to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\income_statement_raw_data.csv (5 rows)
+Saved balance_sheet to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\balance_sheet_raw_data.csv (5 rows)
+Saved cash_flow to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\cash_flow_raw_data.csv (5 rows)
+Saved ratios to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\ratios_raw_data.csv (5 rows)
+Saved key_metrics to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\key_metrics_raw_data.csv (5 rows)
+Saved analysis summary to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\analysis_summary.json
+
+============================================================
+✅ Financial analysis completed successfully!
+📁 All outputs saved to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis
+📊 Main analysis file: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\financial_metrics_and_forecasts.csv
+📝 AI text sections generated and saved in: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis
+
+🚀 Ready to create equity report using:
+python create_equity_report.py \
+  --company-ticker JNJ \
+  --company-name "Johnson & Johnson" \
+  --analysis-csv D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\financial_metrics_and_forecasts.csv \
+  --ratios-csv D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\ratios_raw_data.csv \
+  --peer-ebitda-csv D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\peer_ebitda_comparison.csv \
+  --peer-ev-ebitda-csv D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\peer_ev_ebitda_comparison.csv \
+  --tagline-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\tagline.txt \
+  --company-overview-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\company_overview.txt \
+  --investment-overview-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\investment_overview.txt \
+  --valuation-overview-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\valuation_overview.txt \
+  --risks-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\risks.txt \
+  --competitor-analysis-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\competitor_analysis.txt \
+  --major-takeaways-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\major_takeaways.txt \
+  --news-summary-file D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\JNJ\analysis\news_summary.txt
+
+🎯 All files ready for report generation!

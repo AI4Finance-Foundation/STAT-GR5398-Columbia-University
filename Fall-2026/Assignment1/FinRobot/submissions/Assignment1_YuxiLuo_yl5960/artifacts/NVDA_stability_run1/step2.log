@@ -1,0 +1,111 @@
+2026-10-10 19:07:59,440 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 19:08:02,311 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 19:08:03,754 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\NVDA\stab1\report\NVDA_eps_pe.png
+2026-10-10 19:08:04,327 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\NVDA\stab1\report\NVDA_eps_pe.pdf
+2026-10-10 19:08:04,331 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:08:04,336 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:08:04,341 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:08:04,341 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:08:04,678 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\NVDA\stab1\report\NVDA_revenue_yoy.png
+2026-10-10 19:08:04,786 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\NVDA\stab1\report\NVDA_revenue_yoy.pdf
+2026-10-10 19:08:04,794 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:08:04,794 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:08:04,798 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:08:04,802 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:08:05,202 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\NVDA\stab1\report\NVDA_ebitda_margin.png
+2026-10-10 19:08:05,317 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\NVDA\stab1\report\NVDA_ebitda_margin.pdf
+2026-10-10 19:08:05,490 - INFO - Calculating EV/EBITDA valuation...
+2026-10-10 19:08:05,490 - INFO - ✅ EV/EBITDA valuation: $81.92
+2026-10-10 19:08:05,490 - INFO - Calculating DCF valuation...
+2026-10-10 19:08:05,494 - INFO - ✅ DCF valuation: $82.69
+2026-10-10 19:08:05,494 - INFO - Calculating peer comparison valuation...
+2026-10-10 19:08:05,494 - INFO - Synthesizing valuation results...
+2026-10-10 19:08:05,494 - INFO - ✅ Synthesized target price: $82.24 (Range: $59.16 - $104.67)
+HTML reports will be saved to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\NVDA\stab1\report
+✅ OpenAI API key loaded for text regeneration
+Auto-fetching market data for NVDA...
+Fetching comprehensive company metrics for NVDA...
+Successfully fetched metrics for NVDA
+✅ Successfully auto-fetched market data
+
+📊 Market Data Summary for NVDA:
+  Share Price: $229.28 (auto-fetched)
+  Target Price: $339.17 (auto-fetched)
+  Rating: Overweight (auto-fetched)
+  Market Cap: $5,553.39B (auto-fetched)
+  Sector: Technology (auto-fetched)
+📖 Loading and processing text content...
+📝 Processing tagline...
+✅ tagline validation passed (468 chars)
+📝 Processing company_overview...
+✅ company_overview validation passed (2539 chars)
+📝 Processing investment_overview...
+✅ investment_overview validation passed (1861 chars)
+📝 Processing valuation_overview...
+✅ valuation_overview validation passed (1628 chars)
+📝 Processing risks...
+✅ risks validation passed (1368 chars)
+📝 Processing competitor_analysis...
+⚠️ Detected CSV data in competitor_analysis, forcing AI regeneration...
+🤖 Regenerating 'competitor_analysis' using AI...
+🤖 Generating 'competitor_analysis' text section...
+🤖 Using model: gpt-4o-mini
+✅ Successfully generated 'competitor_analysis' (1827 chars)
+✅ Successfully regenerated 'competitor_analysis' using AI
+📝 Processing major_takeaways...
+🤖 Regenerating 'major_takeaways' using AI...
+🤖 Generating 'major_takeaways' text section...
+🤖 Using model: gpt-4o-mini
+✅ Successfully generated 'major_takeaways' (1411 chars)
+✅ Successfully regenerated 'major_takeaways' using AI
+📝 Processing news_summary...
+✅ news_summary validation passed (55 chars)
+✅ All text content processed
+✅ Computed technical indicators for NVDA: Bullish
+Handling charts...
+✅ Revenue/EBITDA chart saved to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\NVDA\stab1\report\NVDA_revenue_ebitda_chart.png
+✅ EPS × PE chart saved to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\NVDA\stab1\report\NVDA_eps_pe_chart.png
+✅ EV/EBITDA peer chart saved to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\NVDA\stab1\report\NVDA_peer_ev_ebitda_chart.png
+Generating enhanced charts...
+✅ Loaded income statement data from D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\NVDA\stab1\analysis\income_statement_raw_data.csv
+✅ Generated EPS × PE chart
+✅ Generated Revenue YoY chart
+✅ Generated EBITDA Margin chart
+Generating advanced charts...
+✅ Financial radar chart saved to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\NVDA\stab1\report\NVDA_financial_radar.png
+✅ Generated Financial Radar chart
+✅ Generated 4 enhanced charts total
+Performing valuation analysis...
+✅ Valuation analysis completed with 2 methods
+  Synthesized target: $82.24 (range $59.16-$104.67, upside -64.1%)
+Loading sensitivity analysis from D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\NVDA\stab1\analysis\sensitivity_analysis.json...
+✅ Sensitivity analysis loaded
+Loading retail sentiment insights from D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\NVDA\stab1\analysis\retail_sentiment.json...
+✅ Retail sentiment insights loaded
+Formatting tables for HTML...
+Loading Credit & Cashflow metrics from CSV...
+✅ Successfully loaded and formatted Credit & Cashflow metrics from CSV
+Processing peer EBITDA data with shape: (7, 4)
+Peer EBITDA columns: ['year', 'AMD', 'INTC', 'NVDA']
+Peer EBITDA index: [2021, 2022, 2023, 2024, 2025, 2026, 2027]
+✅ Successfully formatted peer EBITDA table
+Processing peer EV/EBITDA data with shape: (6, 3)
+Peer EV/EBITDA columns: ['AMD', 'INTC', 'NVDA']
+Peer EV/EBITDA index: [2021, 2022, 2023, 2024, 2025, 2026]
+✅ Successfully formatted peer EV/EBITDA table
+Generating professional HTML report (matching PDF structure)...
+✅ Generated Professional HTML Report: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\NVDA\stab1\report\Professional_Equity_Report_NVDA.html
+Generating combined HTML report (all sections in one file)...
+✅ Generated Combined HTML Report: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\NVDA\stab1\report\Combined_Equity_Report_NVDA.html
+Rendering legacy HTML pages...
+✅ Sensitivity/Catalyst content detected, adding Page 4
+✅ News/Charts content detected, adding Page 5
+Generated Page 1: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\NVDA\stab1\report\Equity_Report_Page1_NVDA.html
+Generated Page 2: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\NVDA\stab1\report\Equity_Report_Page2_NVDA.html
+Generated Page 3: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\NVDA\stab1\report\Equity_Report_Page3_NVDA.html
+Generated Page 4: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\NVDA\stab1\report\Equity_Report_Page4_NVDA.html
+Generated Page 5: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\NVDA\stab1\report\Equity_Report_Page5_NVDA.html
+
+✅ Equity report generation complete!
+📁 Reports saved to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\NVDA\stab1\report
+🤖 Market data automatically fetched from FMP API

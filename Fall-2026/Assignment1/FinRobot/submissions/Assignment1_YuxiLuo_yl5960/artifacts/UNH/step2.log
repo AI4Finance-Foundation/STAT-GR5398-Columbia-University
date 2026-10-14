@@ -1,0 +1,108 @@
+2026-10-10 19:06:35,166 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 19:06:37,536 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 19:06:38,672 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\report\UNH_eps_pe.png
+2026-10-10 19:06:39,256 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\report\UNH_eps_pe.pdf
+2026-10-10 19:06:39,262 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:06:39,264 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:06:39,268 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:06:39,268 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:06:39,616 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\report\UNH_revenue_yoy.png
+2026-10-10 19:06:39,723 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\report\UNH_revenue_yoy.pdf
+2026-10-10 19:06:39,728 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:06:39,729 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:06:39,734 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:06:39,734 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-10 19:06:40,152 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\report\UNH_ebitda_margin.png
+2026-10-10 19:06:40,273 - INFO - ✅ Chart saved: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\report\UNH_ebitda_margin.pdf
+2026-10-10 19:06:40,445 - INFO - Calculating EV/EBITDA valuation...
+2026-10-10 19:06:40,445 - INFO - ✅ EV/EBITDA valuation: $nan
+2026-10-10 19:06:40,445 - INFO - Calculating DCF valuation...
+2026-10-10 19:06:40,445 - INFO - ✅ DCF valuation: $nan
+2026-10-10 19:06:40,445 - INFO - Calculating peer comparison valuation...
+2026-10-10 19:06:40,445 - INFO - Synthesizing valuation results...
+HTML reports will be saved to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\report
+✅ OpenAI API key loaded for text regeneration
+Auto-fetching market data for UNH...
+Fetching comprehensive company metrics for UNH...
+Successfully fetched metrics for UNH
+✅ Successfully auto-fetched market data
+
+📊 Market Data Summary for UNH:
+  Share Price: $379.30 (auto-fetched)
+  Target Price: $470.11 (auto-fetched)
+  Rating: Hold (auto-fetched)
+  Market Cap: $344.46B (auto-fetched)
+  Sector: Healthcare (auto-fetched)
+📖 Loading and processing text content...
+📝 Processing tagline...
+✅ tagline validation passed (395 chars)
+📝 Processing company_overview...
+✅ company_overview validation passed (2634 chars)
+📝 Processing investment_overview...
+✅ investment_overview validation passed (1861 chars)
+📝 Processing valuation_overview...
+✅ valuation_overview validation passed (1610 chars)
+📝 Processing risks...
+✅ risks validation passed (1145 chars)
+📝 Processing competitor_analysis...
+🤖 Regenerating 'competitor_analysis' using AI...
+🤖 Generating 'competitor_analysis' text section...
+🤖 Using model: gpt-4o-mini
+✅ Successfully generated 'competitor_analysis' (1686 chars)
+✅ Successfully regenerated 'competitor_analysis' using AI
+📝 Processing major_takeaways...
+🤖 Regenerating 'major_takeaways' using AI...
+🤖 Generating 'major_takeaways' text section...
+🤖 Using model: gpt-4o-mini
+✅ Successfully generated 'major_takeaways' (1291 chars)
+✅ Successfully regenerated 'major_takeaways' using AI
+📝 Processing news_summary...
+✅ news_summary validation passed (67 chars)
+✅ All text content processed
+✅ Computed technical indicators for UNH: Bullish
+Handling charts...
+✅ Revenue/EBITDA chart saved to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\report\UNH_revenue_ebitda_chart.png
+✅ EPS × PE chart saved to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\report\UNH_eps_pe_chart.png
+✅ EV/EBITDA peer chart saved to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\report\UNH_peer_ev_ebitda_chart.png
+Generating enhanced charts...
+✅ Loaded income statement data from D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\income_statement_raw_data.csv
+✅ Generated EPS × PE chart
+✅ Generated Revenue YoY chart
+✅ Generated EBITDA Margin chart
+Generating advanced charts...
+✅ Financial radar chart saved to D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\report\UNH_financial_radar.png
+✅ Generated Financial Radar chart
+✅ Generated 4 enhanced charts total
+Performing valuation analysis...
+✅ Valuation analysis completed with 0 methods
+Loading sensitivity analysis from D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\sensitivity_analysis.json...
+✅ Sensitivity analysis loaded
+Loading retail sentiment insights from D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\analysis\retail_sentiment.json...
+✅ Retail sentiment insights loaded
+Formatting tables for HTML...
+Loading Credit & Cashflow metrics from CSV...
+✅ Successfully loaded and formatted Credit & Cashflow metrics from CSV
+Processing peer EBITDA data with shape: (6, 4)
+Peer EBITDA columns: ['year', 'JNJ', 'PFE', 'UNH']
+Peer EBITDA index: [2021, 2022, 2023, 2024, 2025, 2026]
+✅ Successfully formatted peer EBITDA table
+Processing peer EV/EBITDA data with shape: (5, 3)
+Peer EV/EBITDA columns: ['JNJ', 'PFE', 'UNH']
+Peer EV/EBITDA index: [2021, 2022, 2023, 2024, 2025]
+✅ Successfully formatted peer EV/EBITDA table
+Generating professional HTML report (matching PDF structure)...
+✅ Generated Professional HTML Report: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\report\Professional_Equity_Report_UNH.html
+Generating combined HTML report (all sections in one file)...
+✅ Generated Combined HTML Report: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\report\Combined_Equity_Report_UNH.html
+Rendering legacy HTML pages...
+✅ Sensitivity/Catalyst content detected, adding Page 4
+✅ News/Charts content detected, adding Page 5
+Generated Page 1: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\report\Equity_Report_Page1_UNH.html
+Generated Page 2: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\report\Equity_Report_Page2_UNH.html
+Generated Page 3: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\report\Equity_Report_Page3_UNH.html
+Generated Page 4: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\report\Equity_Report_Page4_UNH.html
+Generated Page 5: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\report\Equity_Report_Page5_UNH.html
+
+✅ Equity report generation complete!
+📁 Reports saved to: D:\Columbia University\2026 Fall\Bruce Yang MR\FinRobot\output\UNH\report
+🤖 Market data automatically fetched from FMP API
