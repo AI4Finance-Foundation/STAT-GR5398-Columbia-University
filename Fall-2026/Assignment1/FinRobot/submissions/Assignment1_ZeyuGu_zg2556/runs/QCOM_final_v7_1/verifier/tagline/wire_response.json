@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EXxGH2tX0wdyIY3ivgaciczh5qdMw",
+  "object": "chat.completion",
+  "created": 1791761333,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"units\":[{\"source_id\":0,\"claims\":[{\"original_quote\":\"QUALCOMM Incorporated demonstrates robust financial fundamentals characterized by consistent revenue growth and expanding contribution margins.\",\"claim\":\"QUALCOMM Incorporated demonstrates robust financial fundamentals.\",\"classification\":\"Unsupported\",\"evidence\":[],\"reason\":\"No direct evidence defines 'robust financial fundamentals' as a specific metric or provides a summary statement of overall financial health.\",\"action\":\"withhold\",\"revised_claim\":\"\",\"number_bindings\":[]},{\"original_quote\":\"QUALCOMM Incorporated demonstrates robust financial fundamentals characterized by consistent revenue growth and expanding contribution margins.\",\"claim\":\"QUALCOMM Incorporated has consistent revenue growth.\",\"classification\":\"Supported\",\"evidence\":[{\"line_number\":6},{\"line_number\":8}],\"reason\":\"The financial table shows revenue increasing each year from 2023A to 2028E, and the Revenue Growth row provides annual growth rates for each year.\",\"action\":\"keep\",\"revised_claim\":\"QUALCOMM Incorporated has consistent revenue growth from 2023A to 2028E.\",\"number_bindings\":[{\"claim_number\":\"2023\",\"evidence_line\":4,\"evidence_number\":\"2023A\",\"transform\":\"identity\"},{\"claim_number\":\"2024\",\"evidence_line\":4,\"evidence_number\":\"2024A\",\"transform\":\"identity\"},{\"claim_number\":\"2025\",\"evidence_line\":4,\"evidence_number\":\"2025A\",\"transform\":\"identity\"},{\"claim_number\":\"2026\",\"evidence_line\":4,\"evidence_number\":\"2026E\",\"transform\":\"identity\"},{\"claim_number\":\"2027\",\"evidence_line\":4,\"evidence_number\":\"2027E\",\"transform\":\"identity\"},{\"claim_number\":\"2028\",\"evidence_line\":4,\"evidence_number\":\"2028E\",\"transform\":\"identity\"}]},{\"original_quote\":\"QUALCOMM Incorporated demonstrates robust financial fundamentals characterized by consistent revenue growth and expanding contribution margins.\",\"claim\":\"QUALCOMM Incorporated has expanding contribution margins.\",\"classification\":\"Supported\",\"evidence\":[{\"line_number\":10}],\"reason\":\"The Contribution Margin row shows an increase from 55.7% in 2023A to 58.4% in 2028E.\",\"action\":\"keep\",\"revised_claim\":\"QUALCOMM Incorporated has expanding contribution margins from 2023A to 2028E.\",\"number_bindings\":[{\"claim_number\":\"2023\",\"evidence_line\":4,\"evidence_number\":\"2023A\",\"transform\":\"identity\"},{\"claim_number\":\"2028\",\"evidence_line\":4,\"evidence_number\":\"2028E\",\"transform\":\"identity\"}]},{\"original_quote\":\"The company maintains strong operational efficiency with improving EBITDA margins and disciplined SG&A expense management.\",\"claim\":\"The company maintains strong operational efficiency.\",\"classification\":\"Unsupported\",\"evidence\":[],\"reason\":\"No direct evidence defines or summarizes 'strong operational efficiency' as a specific metric or provides a summary statement of operational efficiency.\",\"action\":\"withhold\",\"revised_claim\":\"\" ,\"number_bindings\":[]},{\"original_quote\":\"The company maintains strong operational efficiency with improving EBITDA margins and disciplined SG&A expense management.\",\"claim\":\"QUALCOMM Incorporated has improving EBITDA margins.\",\"classification\":\"Supported\",\"evidence\":[{\"line_number\":12}],\"reason\":\"The EBITDA Margin row shows an increase from 26.8% in 2023A to 52.9% in 2028E.\",\"action\":\"keep\",\"revised_claim\":\"QUALCOMM Incorporated has improving EBITDA margins from 2023A to 2028E.\",\"number_bindings\":[{\"claim_number\":\"2023\",\"evidence_line\":4,\"evidence_number\":\"2023A\",\"transform\":\"identity\"},{\"claim_number\":\"2028\",\"evidence_line\":4,\"evidence_number\":\"2028E\",\"transform\":\"identity\"}]},{\"original_quote\":\"The company maintains strong operational efficiency with improving EBITDA margins and disciplined SG&A expense management.\",\"claim\":\"QUALCOMM Incorporated has disciplined SG&A expense management.\",\"classification\":\"Unsupported\",\"evidence\":[],\"reason\":\"No direct evidence defines or summarizes 'disciplined SG&A expense management' or provides a qualitative assessment of SG&A management.\",\"action\":\"withhold\",\"revised_claim\":\"\",\"number_bindings\":[]},{\"original_quote\":\"Its valuation reflects solid profitability and a resilient business model within its industry.\",\"claim\":\"QUALCOMM Incorporated's valuation reflects solid profitability.\",\"classification\":\"Unsupported\",\"evidence\":[],\"reason\":\"No direct evidence is provided for valuation or profitability metrics, and the PE Ratio and EV/EBITDA rows for QCOM are 'nan' for all years.\",\"action\":\"withhold\",\"revised_claim\":\"\",\"number_bindings\":[]},{\"original_quote\":\"Its valuation reflects solid profitability and a resilient business model within its industry.\",\"claim\":\"QUALCOMM Incorporated has a resilient business model within its industry.\",\"classification\":\"Unsupported\",\"evidence\":[],\"reason\":\"No direct evidence is provided regarding the resilience of QCOM's business model or its industry context.\",\"action\":\"withhold\",\"revised_claim\":\"\",\"number_bindings\":[]}],\"nonfactual_reason\":\"\"}]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3782,
+    "completion_tokens": 994,
+    "total_tokens": 4776,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_d3fa955e2a"
+}

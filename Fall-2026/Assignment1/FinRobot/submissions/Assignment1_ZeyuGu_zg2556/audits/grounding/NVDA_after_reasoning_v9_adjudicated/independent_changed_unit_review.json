@@ -1,0 +1,466 @@
+[
+  {
+    "source_unit_id": 3,
+    "source_text": "The supplied Revenue CAGR cell is 68.3%; the 2022A to 2026A actual endpoints imply 68.30% CAGR. ",
+    "calculation": {
+      "start": "2022A",
+      "end": "2026A",
+      "start_value": "26914000000.0",
+      "end_value": "215938000000.0",
+      "elapsed_years": 4,
+      "percent": "68.3013914802826775585786003439648293085996613174414837896030",
+      "precision": 60,
+      "formula": "100 * (exp((ln(end_value) - ln(start_value)) / elapsed_years) - 1)",
+      "start_role": "actual",
+      "end_role": "actual"
+    },
+    "header_line": 4,
+    "revenue_line": 6,
+    "atoms": [
+      {
+        "claim": "NVDA's supplied Revenue row displays a CAGR cell of 68.3%.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Literal original Revenue CAGR cell is 68.3%. This statement concerns the supplied cell, not an inferred statistical period.",
+        "fact_key": "nvda|revenue_cagr_display_cell|generic|68.3|percent"
+      },
+      {
+        "claim": "NVDA Revenue CAGR from 2022A to 2026A is 68.30%, using actual endpoints.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Independent Decimal ln/exp calculation: Revenue(2026A)=215938000000.0, Revenue(2022A)=26914000000.0; elapsed fiscal-year intervals=4; 100*(exp((ln(end)-ln(start))/n)-1)=68.3013914802826775585786003439648293085996613174414837896030%. At the sentence's displayed precision the arithmetic agrees=True; asserted endpoint role/scope agrees=True. This is prompt-conditional arithmetic, not external verification of the financial inputs.",
+        "fact_key": "nvda|revenue_cagr|2022a:2026a|68.30|percent"
+      }
+    ],
+    "section": "risks",
+    "evidence_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4"
+  },
+  {
+    "source_unit_id": 4,
+    "source_text": "Across the table's 2022A to 2029E endpoints, the implied Revenue CAGR is 37.49%; 2029E is a model forecast.",
+    "calculation": {
+      "start": "2022A",
+      "end": "2029E",
+      "start_value": "26914000000.0",
+      "end_value": "249952553760.0",
+      "elapsed_years": 7,
+      "percent": "37.4891654218146338990062288281236912746447506742183103184380",
+      "precision": 60,
+      "formula": "100 * (exp((ln(end_value) - ln(start_value)) / elapsed_years) - 1)",
+      "start_role": "actual",
+      "end_role": "forecast"
+    },
+    "header_line": 4,
+    "revenue_line": 6,
+    "atoms": [
+      {
+        "claim": "NVDA Revenue CAGR from 2022A to 2029E is 37.49%, using the full table's endpoints, including the forecast endpoint.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Independent Decimal ln/exp calculation: Revenue(2029E)=249952553760.0, Revenue(2022A)=26914000000.0; elapsed fiscal-year intervals=7; 100*(exp((ln(end)-ln(start))/n)-1)=37.4891654218146338990062288281236912746447506742183103184380%. At the sentence's displayed precision the arithmetic agrees=True; asserted endpoint role/scope agrees=True. This is prompt-conditional arithmetic, not external verification of the financial inputs.",
+        "fact_key": "nvda|revenue_cagr|2022a:2029e|37.49|percent"
+      },
+      {
+        "claim": "NVDA's 2029E Revenue endpoint is a model forecast.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "The original table is explicitly headed Financial Metrics and Forecasts; 2029E has the E estimate label, not an A actual label. This supports model/table forecast status only, not management guidance or realization.",
+        "fact_key": "nvda|revenue_period_role|2029e|forecast|categorical"
+      }
+    ],
+    "section": "risks",
+    "evidence_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4"
+  },
+  {
+    "source_unit_id": 55,
+    "source_text": "The supplied Revenue CAGR cell is 68.3%; the 2022A to 2026A actual endpoints imply 68.30% CAGR. ",
+    "calculation": {
+      "start": "2022A",
+      "end": "2026A",
+      "start_value": "26914000000.0",
+      "end_value": "215938000000.0",
+      "elapsed_years": 4,
+      "percent": "68.3013914802826775585786003439648293085996613174414837896030",
+      "precision": 60,
+      "formula": "100 * (exp((ln(end_value) - ln(start_value)) / elapsed_years) - 1)",
+      "start_role": "actual",
+      "end_role": "actual"
+    },
+    "header_line": 4,
+    "revenue_line": 6,
+    "atoms": [
+      {
+        "claim": "NVDA's supplied Revenue row displays a CAGR cell of 68.3%.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Literal original Revenue CAGR cell is 68.3%. This statement concerns the supplied cell, not an inferred statistical period.",
+        "fact_key": "nvda|revenue_cagr_display_cell|generic|68.3|percent"
+      },
+      {
+        "claim": "NVDA Revenue CAGR from 2022A to 2026A is 68.30%, using actual endpoints.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Independent Decimal ln/exp calculation: Revenue(2026A)=215938000000.0, Revenue(2022A)=26914000000.0; elapsed fiscal-year intervals=4; 100*(exp((ln(end)-ln(start))/n)-1)=68.3013914802826775585786003439648293085996613174414837896030%. At the sentence's displayed precision the arithmetic agrees=True; asserted endpoint role/scope agrees=True. This is prompt-conditional arithmetic, not external verification of the financial inputs.",
+        "fact_key": "nvda|revenue_cagr|2022a:2026a|68.30|percent"
+      }
+    ],
+    "section": "competitor_analysis",
+    "evidence_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4"
+  },
+  {
+    "source_unit_id": 56,
+    "source_text": "Across the table's 2022A to 2029E endpoints, the implied Revenue CAGR is 37.49%; 2029E is a model forecast.",
+    "calculation": {
+      "start": "2022A",
+      "end": "2029E",
+      "start_value": "26914000000.0",
+      "end_value": "249952553760.0",
+      "elapsed_years": 7,
+      "percent": "37.4891654218146338990062288281236912746447506742183103184380",
+      "precision": 60,
+      "formula": "100 * (exp((ln(end_value) - ln(start_value)) / elapsed_years) - 1)",
+      "start_role": "actual",
+      "end_role": "forecast"
+    },
+    "header_line": 4,
+    "revenue_line": 6,
+    "atoms": [
+      {
+        "claim": "NVDA Revenue CAGR from 2022A to 2029E is 37.49%, using the full table's endpoints, including the forecast endpoint.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Independent Decimal ln/exp calculation: Revenue(2029E)=249952553760.0, Revenue(2022A)=26914000000.0; elapsed fiscal-year intervals=7; 100*(exp((ln(end)-ln(start))/n)-1)=37.4891654218146338990062288281236912746447506742183103184380%. At the sentence's displayed precision the arithmetic agrees=True; asserted endpoint role/scope agrees=True. This is prompt-conditional arithmetic, not external verification of the financial inputs.",
+        "fact_key": "nvda|revenue_cagr|2022a:2029e|37.49|percent"
+      },
+      {
+        "claim": "NVDA's 2029E Revenue endpoint is a model forecast.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "The original table is explicitly headed Financial Metrics and Forecasts; 2029E has the E estimate label, not an A actual label. This supports model/table forecast status only, not management guidance or realization.",
+        "fact_key": "nvda|revenue_period_role|2029e|forecast|categorical"
+      }
+    ],
+    "section": "competitor_analysis",
+    "evidence_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4"
+  },
+  {
+    "source_unit_id": 1,
+    "source_text": "The supplied Revenue CAGR cell is 68.3%; the 2022A to 2026A actual endpoints imply 68.30% CAGR. ",
+    "calculation": {
+      "start": "2022A",
+      "end": "2026A",
+      "start_value": "26914000000.0",
+      "end_value": "215938000000.0",
+      "elapsed_years": 4,
+      "percent": "68.3013914802826775585786003439648293085996613174414837896030",
+      "precision": 60,
+      "formula": "100 * (exp((ln(end_value) - ln(start_value)) / elapsed_years) - 1)",
+      "start_role": "actual",
+      "end_role": "actual"
+    },
+    "header_line": 4,
+    "revenue_line": 6,
+    "atoms": [
+      {
+        "claim": "NVDA's supplied Revenue row displays a CAGR cell of 68.3%.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Literal original Revenue CAGR cell is 68.3%. This statement concerns the supplied cell, not an inferred statistical period.",
+        "fact_key": "nvda|revenue_cagr_display_cell|generic|68.3|percent"
+      },
+      {
+        "claim": "NVDA Revenue CAGR from 2022A to 2026A is 68.30%, using actual endpoints.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Independent Decimal ln/exp calculation: Revenue(2026A)=215938000000.0, Revenue(2022A)=26914000000.0; elapsed fiscal-year intervals=4; 100*(exp((ln(end)-ln(start))/n)-1)=68.3013914802826775585786003439648293085996613174414837896030%. At the sentence's displayed precision the arithmetic agrees=True; asserted endpoint role/scope agrees=True. This is prompt-conditional arithmetic, not external verification of the financial inputs.",
+        "fact_key": "nvda|revenue_cagr|2022a:2026a|68.30|percent"
+      }
+    ],
+    "section": "major_takeaways",
+    "evidence_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4"
+  },
+  {
+    "source_unit_id": 2,
+    "source_text": "Across the table's 2022A to 2029E endpoints, the implied Revenue CAGR is 37.49%; 2029E is a model forecast.",
+    "calculation": {
+      "start": "2022A",
+      "end": "2029E",
+      "start_value": "26914000000.0",
+      "end_value": "249952553760.0",
+      "elapsed_years": 7,
+      "percent": "37.4891654218146338990062288281236912746447506742183103184380",
+      "precision": 60,
+      "formula": "100 * (exp((ln(end_value) - ln(start_value)) / elapsed_years) - 1)",
+      "start_role": "actual",
+      "end_role": "forecast"
+    },
+    "header_line": 4,
+    "revenue_line": 6,
+    "atoms": [
+      {
+        "claim": "NVDA Revenue CAGR from 2022A to 2029E is 37.49%, using the full table's endpoints, including the forecast endpoint.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Independent Decimal ln/exp calculation: Revenue(2029E)=249952553760.0, Revenue(2022A)=26914000000.0; elapsed fiscal-year intervals=7; 100*(exp((ln(end)-ln(start))/n)-1)=37.4891654218146338990062288281236912746447506742183103184380%. At the sentence's displayed precision the arithmetic agrees=True; asserted endpoint role/scope agrees=True. This is prompt-conditional arithmetic, not external verification of the financial inputs.",
+        "fact_key": "nvda|revenue_cagr|2022a:2029e|37.49|percent"
+      },
+      {
+        "claim": "NVDA's 2029E Revenue endpoint is a model forecast.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "The original table is explicitly headed Financial Metrics and Forecasts; 2029E has the E estimate label, not an A actual label. This supports model/table forecast status only, not management guidance or realization.",
+        "fact_key": "nvda|revenue_period_role|2029e|forecast|categorical"
+      }
+    ],
+    "section": "major_takeaways",
+    "evidence_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4"
+  },
+  {
+    "source_unit_id": 19,
+    "source_text": "The supplied Revenue CAGR cell is 68.3%; the 2022A to 2026A actual endpoints imply 68.30% CAGR. ",
+    "calculation": {
+      "start": "2022A",
+      "end": "2026A",
+      "start_value": "26914000000.0",
+      "end_value": "215938000000.0",
+      "elapsed_years": 4,
+      "percent": "68.3013914802826775585786003439648293085996613174414837896030",
+      "precision": 60,
+      "formula": "100 * (exp((ln(end_value) - ln(start_value)) / elapsed_years) - 1)",
+      "start_role": "actual",
+      "end_role": "actual"
+    },
+    "header_line": 4,
+    "revenue_line": 6,
+    "atoms": [
+      {
+        "claim": "NVDA's supplied Revenue row displays a CAGR cell of 68.3%.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Literal original Revenue CAGR cell is 68.3%. This statement concerns the supplied cell, not an inferred statistical period.",
+        "fact_key": "nvda|revenue_cagr_display_cell|generic|68.3|percent"
+      },
+      {
+        "claim": "NVDA Revenue CAGR from 2022A to 2026A is 68.30%, using actual endpoints.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Independent Decimal ln/exp calculation: Revenue(2026A)=215938000000.0, Revenue(2022A)=26914000000.0; elapsed fiscal-year intervals=4; 100*(exp((ln(end)-ln(start))/n)-1)=68.3013914802826775585786003439648293085996613174414837896030%. At the sentence's displayed precision the arithmetic agrees=True; asserted endpoint role/scope agrees=True. This is prompt-conditional arithmetic, not external verification of the financial inputs.",
+        "fact_key": "nvda|revenue_cagr|2022a:2026a|68.30|percent"
+      }
+    ],
+    "section": "news_summary",
+    "evidence_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4"
+  },
+  {
+    "source_unit_id": 20,
+    "source_text": "Across the table's 2022A to 2029E endpoints, the implied Revenue CAGR is 37.49%; 2029E is a model forecast.",
+    "calculation": {
+      "start": "2022A",
+      "end": "2029E",
+      "start_value": "26914000000.0",
+      "end_value": "249952553760.0",
+      "elapsed_years": 7,
+      "percent": "37.4891654218146338990062288281236912746447506742183103184380",
+      "precision": 60,
+      "formula": "100 * (exp((ln(end_value) - ln(start_value)) / elapsed_years) - 1)",
+      "start_role": "actual",
+      "end_role": "forecast"
+    },
+    "header_line": 4,
+    "revenue_line": 6,
+    "atoms": [
+      {
+        "claim": "NVDA Revenue CAGR from 2022A to 2029E is 37.49%, using the full table's endpoints, including the forecast endpoint.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Independent Decimal ln/exp calculation: Revenue(2029E)=249952553760.0, Revenue(2022A)=26914000000.0; elapsed fiscal-year intervals=7; 100*(exp((ln(end)-ln(start))/n)-1)=37.4891654218146338990062288281236912746447506742183103184380%. At the sentence's displayed precision the arithmetic agrees=True; asserted endpoint role/scope agrees=True. This is prompt-conditional arithmetic, not external verification of the financial inputs.",
+        "fact_key": "nvda|revenue_cagr|2022a:2029e|37.49|percent"
+      },
+      {
+        "claim": "NVDA's 2029E Revenue endpoint is a model forecast.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "The original table is explicitly headed Financial Metrics and Forecasts; 2029E has the E estimate label, not an A actual label. This supports model/table forecast status only, not management guidance or realization.",
+        "fact_key": "nvda|revenue_period_role|2029e|forecast|categorical"
+      }
+    ],
+    "section": "news_summary",
+    "evidence_prompt_sha256": "ac4b6c19d6c8a28d06d884f68c09094b649dc9766ad80b83cc2325edb4785ab4"
+  }
+]

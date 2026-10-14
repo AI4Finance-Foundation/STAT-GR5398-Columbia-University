@@ -1,0 +1,298 @@
+{
+  "call_id": "AMD_v7_1_changed_audit_blind/news_summary/1",
+  "structured_output": {
+    "units": [
+      {
+        "unit_id": 1,
+        "claims": [
+          {
+            "claim": "AMD's second quarter 2026 results reflect robust revenue growth and solid margin expansion.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence provides the Q2 2026 revenue and margin figures, but does not provide a comparison to prior periods or quantify 'robust' growth or 'solid' expansion. No historical Q2 data is given for direct comparison.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|revenue_growth_and_margin_expansion|q2_2026|robust_and_solid"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 3,
+        "claims": [
+          {
+            "claim": "AMD announced its second quarter 2026 financial results, reporting $11.5 billion in revenue.",
+            "claim_type": "quantitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 44,
+                "line_end": 44
+              }
+            ],
+            "reason": "Line 44 of the evidence states 'Second quarter revenue was $11.5 billion,' which matches the claim for Q2 2026.",
+            "numeric_status": "correct",
+            "fact_key": "amd|revenue|q2_2026|11500000000"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 5,
+        "claims": [
+          {
+            "claim": "Operating income stood at $2.0 billion for the second quarter of 2026.",
+            "claim_type": "quantitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 44,
+                "line_end": 44
+              }
+            ],
+            "reason": "Line 44 states 'operating income was $2.0 billion' for Q2 2026, matching the claim.",
+            "numeric_status": "correct",
+            "fact_key": "amd|operating_income|q2_2026|2000000000"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 6,
+        "claims": [
+          {
+            "claim": "Net income was $2.3 billion for the second quarter of 2026.",
+            "claim_type": "quantitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 44,
+                "line_end": 44
+              }
+            ],
+            "reason": "Line 44 states 'net income was $2.3 billion' for Q2 2026, matching the claim.",
+            "numeric_status": "correct",
+            "fact_key": "amd|net_income|q2_2026|2300000000"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 7,
+        "claims": [
+          {
+            "claim": "Diluted earnings per share was $1.38 for the second quarter of 2026.",
+            "claim_type": "quantitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 44,
+                "line_end": 44
+              }
+            ],
+            "reason": "Line 44 states 'diluted earnings per share was $1.38' for Q2 2026, matching the claim.",
+            "numeric_status": "correct",
+            "fact_key": "amd|diluted_eps|q2_2026|1.38"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 10,
+        "claims": [
+          {
+            "claim": "The financial metrics reveal a projected compound annual growth rate (CAGR) in revenue of 20.5% between 2021 and 2028.",
+            "claim_type": "quantitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 4,
+                "line_end": 6
+              }
+            ],
+            "reason": "The table header and row 0 show a CAGR of 20.5% for revenue from 2021A to 2028E. The periods and values align with the claim.",
+            "numeric_status": "correct",
+            "fact_key": "amd|revenue_cagr|2021-2028|20.5%"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 11,
+        "claims": [
+          {
+            "claim": "Earnings per share are estimated to increase from $1.01 in 2024 to $3.18 in 2028.",
+            "claim_type": "quantitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 4,
+                "line_end": 15
+              }
+            ],
+            "reason": "The table row for EPS shows $1.01 for 2024A and $3.18 for 2028E, matching the claim. These are estimates for 2028.",
+            "numeric_status": "correct",
+            "fact_key": "amd|eps_increase|2024-2028|1.01_to_3.18"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 12,
+        "claims": [
+          {
+            "claim": "The increase in earnings per share supports a strong long-term investment case for AMD.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence provides the EPS increase but does not establish that this supports a 'strong long-term investment case.' This is an interpretation, not a directly evidenced fact.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|eps_increase_supports_investment_case|future|yes"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 13,
+        "claims": [
+          {
+            "claim": "When compared to peers Intel and Nvidia, AMD's EBITDA growth is solid.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence provides EBITDA values for AMD, Intel, and Nvidia, but does not define 'solid' or provide a direct comparison or benchmark for this qualitative assessment.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|ebitda_growth_vs_peers|multi-year|solid"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 14,
+        "claims": [
+          {
+            "claim": "AMD's EBITDA growth is smaller in absolute terms relative to Nvidia's larger scale.",
+            "claim_type": "qualitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 18,
+                "line_end": 27
+              }
+            ],
+            "reason": "The peer EBITDA table shows Nvidia's EBITDA is much larger than AMD's in absolute terms for all years where both are present, supporting the claim.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|ebitda_growth_vs_nvidia|multi-year|smaller_absolute"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 16,
+        "claims": [
+          {
+            "claim": "AMD's high EV/EBITDA multiples reflect market optimism and elevated valuation levels.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence provides high EV/EBITDA multiples for AMD, but does not establish that these reflect market optimism or elevated valuation levels. The causal link is not evidenced.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|high_ev_ebitda_reflects_optimism|multi-year|yes"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 18,
+        "claims": [
+          {
+            "claim": "Overall market sentiment from the recent earnings release is predominantly positive.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is provided regarding market sentiment or its positivity; the evidence only provides financial results, not sentiment analysis.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|market_sentiment|post_earnings|positive"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 19,
+        "claims": [
+          {
+            "claim": "AMD is demonstrating resilience and execution strength in a competitive semiconductor landscape.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is provided for 'resilience' or 'execution strength'; these are qualitative judgments not directly supported by the financial data or news.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|resilience_and_execution|current|yes"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 20,
+        "claims": [
+          {
+            "claim": "Improvements in non-GAAP profitability metrics and revenue growth reinforce confidence in AMD's strategic initiatives and product portfolio.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence provides non-GAAP profitability and revenue growth figures, but does not establish that these reinforce confidence in strategy or product portfolio. The causal link is not evidenced.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|non_gaap_improvements_reinforce_confidence|current|yes"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 22,
+        "claims": [
+          {
+            "claim": "The near-term stock performance is likely to benefit from these solid financial results.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is provided regarding stock performance or its likely benefit from financial results. This is a forward-looking opinion, not a supported fact.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|stock_performance_benefit_from_results|near_term|likely"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 23,
+        "claims": [
+          {
+            "claim": "Valuation multiples warrant cautious consideration given market expectations.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is provided regarding the need for caution or the nature of market expectations. This is an opinion, not a supported fact.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|valuation_multiples_warrant_caution|current|yes"
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "usage": {
+    "requests": 1,
+    "input_tokens": 3611,
+    "input_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "output_tokens": 1810,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 5421
+  },
+  "runtime_seconds": 7.883375100002013,
+  "cost_usd": 0.021702,
+  "completed_at_utc": "2026-10-11T23:38:39.554451+00:00",
+  "attempts": 1
+}

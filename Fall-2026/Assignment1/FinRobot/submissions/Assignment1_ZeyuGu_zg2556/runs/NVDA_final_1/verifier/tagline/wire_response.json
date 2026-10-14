@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EXvP4qWsHdnznUJZZzNgu3RmLKIlG",
+  "object": "chat.completion",
+  "created": 1791754190,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"units\":[{\"source_id\":0,\"claims\":[{\"original_quote\":\"NVIDIA Corporation demonstrates robust financial fundamentals with a strong contribution margin consistently above 70% and a growing EBITDA margin reaching over 70% by 2029.\",\"claim\":\"NVIDIA Corporation has a contribution margin consistently above 70% from 2024 to 2029 and an EBITDA margin that grows to over 70% by 2029.\",\"classification\":\"Supported\",\"evidence\":[{\"line_number\":10,\"quote\":\"Contribution Margin | 64.9% | 56.9% | 72.7% | 75.0% | 71.1% | 72.1% | 73.1% | 74.1%\"} ,{\"line_number\":12,\"quote\":\"EBITDA Margin | 42.2% | 22.2% | 58.4% | 66.0% | 66.9% | 70.5% | 72.0% | 73.5%\"}],\"reason\":\"The data shows contribution margin above 70% from 2024A to 2029E and EBITDA margin reaching 73.5% in 2029E.\",\"action\":\"keep\",\"revised_claim\":\"NVIDIA Corporation has a contribution margin consistently above 70% from 2024 to 2029 and an EBITDA margin that grows to over 70% by 2029.\",\"number_bindings\":[{\"claim_number\":\"70%\",\"evidence_line\":10,\"evidence_number\":\"72.7%\",\"transform\":\"identity\"},{\"claim_number\":\"70%\",\"evidence_line\":12,\"evidence_number\":\"73.5%\",\"transform\":\"identity\"}]},{\"original_quote\":\"The company maintains impressive revenue growth, achieving a CAGR of 68.3%, supported by disciplined cost management and improving SG&A efficiency.\",\"claim\":\"NVIDIA Corporation achieves a revenue CAGR of 68.3% and demonstrates disciplined cost management and improving SG&A efficiency as shown by decreasing SG&A margins.\",\"classification\":\"Supported\",\"evidence\":[{\"line_number\":6,\"quote\":\"Revenue | ... | CAGR | 68.3%\"},{\"line_number\":7,\"quote\":\"Cost of Operations | 9439000000.0 | 11618000000.0 | 16621000000.0 | 32639000000.0 | 62475000000.0 | 63259037100.0 | 64651189386.0 | 64737711423.84\"},{\"line_number\":8,\"quote\":\"SG&A | 2166000000.0 | 2440000000.0 | 2654000000.0 | 3491000000.0 | 4579000000.0 | 3627758400.0 | 2643728934.0 | 1499715322.56\"},{\"line_number\":13,\"quote\":\"SG&A Margin | 8.0% | 9.0% | 4.4% | 2.7% | 2.1% | 1.6% | 1.1% | 0.6%\"}],\"reason\":\"Revenue CAGR is explicitly stated as 68.3%. Cost of operations and SG&A margins decrease over time, indicating disciplined cost management and improving SG&A efficiency.\",\"action\":\"keep\",\"revised_claim\":\"NVIDIA Corporation achieves a revenue CAGR of 68.3% and demonstrates disciplined cost management and improving SG&A efficiency as shown by decreasing SG&A margins.\",\"number_bindings\":[{\"claim_number\":\"68.3%\",\"evidence_line\":6,\"evidence_number\":\"68.3%\",\"transform\":\"identity\"}]},{\"original_quote\":\"Valuation metrics indicate a premium yet justified positioning, reflecting NVIDIA's leadership in high-growth markets and solid profitability.\",\"claim\":\"\",\"classification\":\"Unsupported\",\"evidence\":[],\"reason\":\"The evidence provides valuation metrics but does not explicitly state that the premium is justified or that it reflects leadership and solid profitability.\",\"action\":\"withhold\",\"revised_claim\":\"\",\"number_bindings\":[]}],\"nonfactual_reason\":\"\"}]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3741,
+    "completion_tokens": 841,
+    "total_tokens": 4582,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_c68ca17d1b"
+}

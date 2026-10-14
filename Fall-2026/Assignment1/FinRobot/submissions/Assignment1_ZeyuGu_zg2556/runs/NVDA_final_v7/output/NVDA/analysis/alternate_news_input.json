@@ -1,0 +1,35 @@
+[
+  {
+    "title": "NVIDIA Announces Financial Results for Second Quarter Fiscal 2027",
+    "text": "Revenue of $96.2 billion, up 106% from a year ago\nData Center revenue of $89.0 billion, up 117% from a year ago\nSANTA CLARA, Calif., Aug.  26, 2026  (GLOBE NEWSWIRE) -- NVIDIA (NASDAQ: NVDA) today reported revenue for the second quarter ended July 26, 2026, of $96.2 billion, up 18% from the previous quarter and up 106% from a year ago. For the quarter, GAAP and non-GAAP gross margins were both 75.0%. GAAP and non-GAAP earnings per diluted share were $2.46 and $2.22, respectively.\n“AI has reached its inflection point. It’s doing useful work. Its tokens are productive and profitable. Now, compute is revenue,” said Jensen Huang, founder and CEO of NVIDIA. “And demand is accelerating. This time last year, one lab alone was driving the buildout; today, we have a golden age of new AI labs and startups, multiple frontier labs scaling in parallel, a thriving open-model ecosystem and physical AI coming online — with strong momentum across the U.S. and around the world. The AI infrastructure buildout is at full steam. Vera Rubin, now in full production, was built to power exactly this moment.”\nDuring the second quarter of fiscal 2027, NVIDIA returned approximately $26.0 billion to shareholders in the form of shares repurchased and cash dividends. As of the end of the second quarter, the company had approximately $99.0 billion remaining under its share repurchase authorization.\nNVIDIA will pay its next quarterly cash dividend of $0.25 per share on October 1, 2026, to all shareholders of record on September 10, 2026.\n",
+    "publishedDate": "2026-08-26T00:00:00-04:00",
+    "site": "NVIDIA Investor Relations",
+    "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+    "symbol": "NVDA",
+    "source_type": "official_issuer_earnings_press_release",
+    "source_body_path": "evidence/issuer_news/NVDA/source_01.html",
+    "extracted_text_path": "evidence/issuer_news/NVDA/extracted_text.txt",
+    "source_body_sha256": "2392078678d50baabdac251fb4f9ea531116336bb401b3902e2340c6236fece4",
+    "extracted_text_sha256": "d6b6f5bfcd9ccb780b2848f6f90f8b5c77c44f8353bd9b6746e7a9d1c32fc976",
+    "excerpt_start": 0,
+    "excerpt_end": 1531,
+    "excerpt_sha256": "feec71d99888ddb7e0345348909b4ee4876573cdeb08c739fbd6a9255208b67f",
+    "offset_basis": "Unicode code points in extracted_text.txt; start inclusive and end exclusive",
+    "extractor": {
+      "name": "BeautifulSoup.get_text",
+      "version": "4.15.0",
+      "separator": "\\n",
+      "strip": true
+    },
+    "extraction_selector": ".module_body",
+    "fetched_at_utc": "2026-10-11T21:16:59.345539+00:00",
+    "published_date_precision": "date_only",
+    "published_date_evidence": "August 26, 2026",
+    "published_date_locator": ".module_date-text",
+    "publication_timezone_assumption": "Source exposes a date only; America/New_York midnight is used for window filtering, not claimed as actual release time.",
+    "window_as_of_utc": "2026-10-11T21:10:00+00:00",
+    "window_days_back": 90,
+    "selection_rule": "One official quarterly earnings press release within the common trailing-90-day window; opening narrative before financial tables.",
+    "limitations": "Corporate issuer disclosure; not independent media, a comprehensive news feed, or a retrospective SEC audit fact inserted as news. Forward-looking management assertions remain attributed statements."
+  }
+]

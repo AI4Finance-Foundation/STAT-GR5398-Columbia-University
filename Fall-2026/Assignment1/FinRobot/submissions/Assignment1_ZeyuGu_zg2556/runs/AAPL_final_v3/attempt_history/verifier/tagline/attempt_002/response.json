@@ -1,0 +1,187 @@
+{
+  "call_id": "AAPL_final_v3/verifier/tagline/attempt_002",
+  "structured_output": {
+    "units": [
+      {
+        "source_id": 0,
+        "claims": [
+          {
+            "original_quote": "Apple Inc. demonstrates robust financial health with a consistent revenue CAGR of 3.3%",
+            "claim": "Apple Inc. has a consistent revenue CAGR of 3.3%.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 4
+              },
+              {
+                "line_number": 6
+              }
+            ],
+            "reason": "The table header and the Revenue row show a CAGR of 3.3%.",
+            "action": "keep",
+            "revised_claim": "Apple Inc. has a consistent revenue CAGR of 3.3%.",
+            "number_bindings": [
+              {
+                "claim_number": "3.3%",
+                "evidence_line": 6,
+                "evidence_number": "3.3%",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "improving contribution margins reaching nearly 50% by 2028",
+            "claim": "Apple Inc.'s contribution margin reaches nearly 50% by 2028.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 4
+              },
+              {
+                "line_number": 10
+              }
+            ],
+            "reason": "The Contribution Margin row shows 49.9% for 2028E, which is nearly 50%.",
+            "action": "correct",
+            "revised_claim": "Apple Inc.'s contribution margin is 49.9% in 2028E.",
+            "number_bindings": [
+              {
+                "claim_number": "49.9%",
+                "evidence_line": 10,
+                "evidence_number": "49.9%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2028",
+                "evidence_line": 4,
+                "evidence_number": "2028E",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "The company maintains strong profitability, reflected in expanding EBITDA margins rising to 44.8%",
+            "claim": "Apple Inc.'s EBITDA margin rises to 44.8%.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 4
+              },
+              {
+                "line_number": 12
+              }
+            ],
+            "reason": "The EBITDA Margin row shows 44.8% for 2028E.",
+            "action": "correct",
+            "revised_claim": "Apple Inc.'s EBITDA margin is 44.8% in 2028E.",
+            "number_bindings": [
+              {
+                "claim_number": "44.8%",
+                "evidence_line": 12,
+                "evidence_number": "44.8%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2028",
+                "evidence_line": 4,
+                "evidence_number": "2028E",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "and solid EPS growth.",
+            "claim": "Apple Inc. has solid EPS growth.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No explicit evidence or quantitative statement about the magnitude or consistency of EPS growth is provided in the evidence.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Valuation metrics indicate a premium positioning with a PE ratio stabilizing around 30, underscoring confidence in its sustainable earnings power and operational efficiency.",
+            "claim": "Apple Inc.'s PE ratio stabilizes around 30.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 4
+              },
+              {
+                "line_number": 16
+              }
+            ],
+            "reason": "The PE Ratio row shows values of 32.4, 30.8, and 29.2 for 2026E, 2027E, and 2028E, which is around 30.",
+            "action": "correct",
+            "revised_claim": "Apple Inc.'s PE ratio is around 30 from 2026E to 2028E.",
+            "number_bindings": [
+              {
+                "claim_number": "2026",
+                "evidence_line": 4,
+                "evidence_number": "2026E",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "32.4",
+                "evidence_line": 16,
+                "evidence_number": "32.4",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2027",
+                "evidence_line": 4,
+                "evidence_number": "2027E",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "30.8",
+                "evidence_line": 16,
+                "evidence_number": "30.8",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2028",
+                "evidence_line": 4,
+                "evidence_number": "2028E",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "29.2",
+                "evidence_line": 16,
+                "evidence_number": "29.2",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Valuation metrics indicate a premium positioning with a PE ratio stabilizing around 30, underscoring confidence in its sustainable earnings power and operational efficiency.",
+            "claim": "Apple Inc.'s PE ratio indicates confidence in its sustainable earnings power and operational efficiency.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence links the PE ratio to confidence in sustainable earnings power or operational efficiency.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "usage": {
+    "requests": 1,
+    "input_tokens": 4215,
+    "input_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "output_tokens": 929,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 5144
+  },
+  "runtime_seconds": 3.5899639000017487,
+  "cost_usd": 0.015862,
+  "completed_at_utc": "2026-10-11T21:48:03.856202+00:00",
+  "attempts": 1
+}

@@ -1,0 +1,93 @@
+{
+  "call_id": "INTC_v7_1_changed_audit_blind/competitor_analysis/1",
+  "structured_output": {
+    "units": [
+      {
+        "unit_id": 18,
+        "claims": [
+          {
+            "claim": "Intel's contribution margin and EBITDA margins have contracted.",
+            "claim_type": "factual",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 4,
+                "line_end": 13
+              }
+            ],
+            "reason": "The table in lines 4-13 shows Intel's contribution margin dropping from 55.4% (2021A) to 40.0% (2023A) and EBITDA margin from 42.9% (2021A) to 20.7% (2023A), confirming contraction for both metrics over the actual periods. Entity: Intel, metrics: Contribution Margin and EBITDA Margin, periods: 2021A-2023A, basis: actual, unit: percent.",
+            "numeric_status": "correct",
+            "fact_key": "intel|contribution_margin|2021A-2023A|contraction|percent"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 19,
+        "claims": [
+          {
+            "claim": "Intel’s EPS has become negative in recent years.",
+            "claim_type": "factual",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 4,
+                "line_end": 15
+              }
+            ],
+            "reason": "The table shows Intel's EPS as positive in 2021A (4.89), 2022A (1.95), and 2023A (0.4), but negative in 2024A (-4.38) and 2025A (-0.0589). The phrase 'recent years' is supported by the negative values in the most recent actual and forecast years. Entity: Intel, metric: EPS, periods: 2024A-2025A, basis: actual/forecast, unit: USD per share.",
+            "numeric_status": "correct",
+            "fact_key": "intel|eps|2024A-2025A|negative|usd_per_share"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 21,
+        "claims": [
+          {
+            "claim": "Intel’s moat is narrowing due to delays in manufacturing process advancements, competitor innovations, and shifting market dynamics toward specialized and heterogeneous computing solutions where Intel is less dominant.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence in the supplied data directly addresses Intel's manufacturing delays, competitor innovations, or market dynamics, nor does it establish causality for a narrowing moat. The tables provide financial metrics but not qualitative or causal analysis.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|moat_narrowing|recent|causal_factors|qualitative"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 25,
+        "claims": [
+          {
+            "claim": "Intel's moat is narrowing but has potential to stabilize if Intel can leverage its scale, innovate effectively, and restore confidence in its manufacturing capabilities.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence in the supplied data discusses the potential for Intel's moat to stabilize or the conditions required for this. The tables and news do not address these qualitative or forward-looking causal factors.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|moat_stabilization_potential|future|conditional|qualitative"
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "usage": {
+    "requests": 1,
+    "input_tokens": 3001,
+    "input_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "output_tokens": 643,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 3644
+  },
+  "runtime_seconds": 3.280519700001605,
+  "cost_usd": 0.011146,
+  "completed_at_utc": "2026-10-11T23:39:07.559129+00:00",
+  "attempts": 1
+}

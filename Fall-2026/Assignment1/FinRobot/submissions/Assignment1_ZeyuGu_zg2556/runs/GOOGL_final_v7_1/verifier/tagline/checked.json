@@ -1,0 +1,341 @@
+{
+  "original_text": "Alphabet Inc. demonstrates robust financial health with a strong revenue CAGR of 11.8% and improving contribution margins reaching 62.7% by 2028. The company maintains solid EBITDA growth and margin expansion, reflecting efficient cost management and operational leverage. Trading at a reasonable EV/EBITDA multiple relative to its growth, Alphabet offers attractive valuation supported by resilient fundamentals.",
+  "revised_text": "[UNVERIFIED - evidence not supplied] Alphabet Inc. demonstrates robust financial health.\n\n[UNVERIFIED - deterministic evidence/number check failed] with a strong revenue CAGR of 11.8%\n\n[UNVERIFIED - deterministic evidence/number check failed] improving contribution margins reaching 62.7% by 2028\n\n[UNVERIFIED - evidence not supplied] Alphabet Inc. maintains solid EBITDA growth and margin expansion, reflecting efficient cost management and operational leverage.\n\n[UNVERIFIED - evidence not supplied] Alphabet Inc. trades at a reasonable EV/EBITDA multiple relative to its growth and offers attractive valuation supported by resilient fundamentals.",
+  "claims": [
+    {
+      "claim_id": "u0c0",
+      "source_id": 0,
+      "source_start": 0,
+      "source_end": 50,
+      "source_quote_occurrences": 1,
+      "original_quote": "Alphabet Inc. demonstrates robust financial health",
+      "claim": "Alphabet Inc. demonstrates robust financial health.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence or definition of 'robust financial health' is provided in the supplied data.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Alphabet Inc. demonstrates robust financial health.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u0c1",
+      "source_id": 0,
+      "source_start": 51,
+      "source_end": 86,
+      "source_quote_occurrences": 1,
+      "original_quote": "with a strong revenue CAGR of 11.8%",
+      "claim": "Alphabet Inc. has a revenue CAGR of 11.8%.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A              | 2022A             | 2023A              | 2024A             | 2025A              | 2026E          | 2027E          | 2028E           | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 6,
+          "quote": "|  0 | Revenue             | 257637000000.0     | 282836000000.0    | 307394000000.0     | 350018000000.0    | 402836000000.0     | 422977800000.0 | 448356468000.0 | 466290726720.0  | 11.8%  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The table explicitly lists a revenue CAGR of 11.8%.",
+      "action": "keep",
+      "revised_claim": "Alphabet Inc. has a revenue CAGR of 11.8%.",
+      "number_bindings": [
+        {
+          "claim_number": "11.8%",
+          "evidence_line": 4,
+          "evidence_number": "11.8%",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "11.8%",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "numeric_check_failed:11.8%:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] with a strong revenue CAGR of 11.8%",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u0c2",
+      "source_id": 0,
+      "source_start": 91,
+      "source_end": 144,
+      "source_quote_occurrences": 1,
+      "original_quote": "improving contribution margins reaching 62.7% by 2028",
+      "claim": "Alphabet Inc.'s contribution margin is forecast to reach 62.7% in 2028E.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A              | 2022A             | 2023A              | 2024A             | 2025A              | 2026E          | 2027E          | 2028E           | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 10,
+          "quote": "|  4 | Contribution Margin | 56.9%              | 55.4%             | 56.6%              | 58.2%             | 59.7%              | 60.7%          | 61.7%          | 62.7%           | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The table shows a contribution margin of 62.7% for 2028E.",
+      "action": "keep",
+      "revised_claim": "Alphabet Inc.'s contribution margin is forecast to reach 62.7% in 2028E.",
+      "number_bindings": [
+        {
+          "claim_number": "62.7%",
+          "evidence_line": 4,
+          "evidence_number": "62.7%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "62.7%",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "numeric_check_failed:62.7%:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] improving contribution margins reaching 62.7% by 2028",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u0c3",
+      "source_id": 0,
+      "source_start": 146,
+      "source_end": 272,
+      "source_quote_occurrences": 1,
+      "original_quote": "The company maintains solid EBITDA growth and margin expansion, reflecting efficient cost management and operational leverage.",
+      "claim": "Alphabet Inc. maintains solid EBITDA growth and margin expansion, reflecting efficient cost management and operational leverage.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "While EBITDA and margin numbers are provided, the qualitative assessment of 'solid growth', 'margin expansion', and the causal explanation regarding cost management and operational leverage are not directly supported by the evidence.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Alphabet Inc. maintains solid EBITDA growth and margin expansion, reflecting efficient cost management and operational leverage.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u0c4",
+      "source_id": 0,
+      "source_start": 273,
+      "source_end": 413,
+      "source_quote_occurrences": 1,
+      "original_quote": "Trading at a reasonable EV/EBITDA multiple relative to its growth, Alphabet offers attractive valuation supported by resilient fundamentals.",
+      "claim": "Alphabet Inc. trades at a reasonable EV/EBITDA multiple relative to its growth and offers attractive valuation supported by resilient fundamentals.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence or peer comparison is provided to support the claim that the EV/EBITDA multiple is 'reasonable' relative to growth, nor is there evidence for 'attractive valuation' or 'resilient fundamentals'.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Alphabet Inc. trades at a reasonable EV/EBITDA multiple relative to its growth and offers attractive valuation supported by resilient fundamentals.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    }
+  ],
+  "units": [
+    {
+      "source_id": 0,
+      "claims": [
+        {
+          "original_quote": "Alphabet Inc. demonstrates robust financial health",
+          "claim": "Alphabet Inc. demonstrates robust financial health.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence or definition of 'robust financial health' is provided in the supplied data.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "with a strong revenue CAGR of 11.8%",
+          "claim": "Alphabet Inc. has a revenue CAGR of 11.8%.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 6
+            }
+          ],
+          "reason": "The table explicitly lists a revenue CAGR of 11.8%.",
+          "action": "keep",
+          "revised_claim": "Alphabet Inc. has a revenue CAGR of 11.8%.",
+          "number_bindings": [
+            {
+              "claim_number": "11.8%",
+              "evidence_line": 4,
+              "evidence_number": "11.8%",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "improving contribution margins reaching 62.7% by 2028",
+          "claim": "Alphabet Inc.'s contribution margin is forecast to reach 62.7% in 2028E.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 10
+            }
+          ],
+          "reason": "The table shows a contribution margin of 62.7% for 2028E.",
+          "action": "keep",
+          "revised_claim": "Alphabet Inc.'s contribution margin is forecast to reach 62.7% in 2028E.",
+          "number_bindings": [
+            {
+              "claim_number": "62.7%",
+              "evidence_line": 4,
+              "evidence_number": "62.7%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "The company maintains solid EBITDA growth and margin expansion, reflecting efficient cost management and operational leverage.",
+          "claim": "Alphabet Inc. maintains solid EBITDA growth and margin expansion, reflecting efficient cost management and operational leverage.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "While EBITDA and margin numbers are provided, the qualitative assessment of 'solid growth', 'margin expansion', and the causal explanation regarding cost management and operational leverage are not directly supported by the evidence.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Trading at a reasonable EV/EBITDA multiple relative to its growth, Alphabet offers attractive valuation supported by resilient fundamentals.",
+          "claim": "Alphabet Inc. trades at a reasonable EV/EBITDA multiple relative to its growth and offers attractive valuation supported by resilient fundamentals.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence or peer comparison is provided to support the claim that the EV/EBITDA multiple is 'reasonable' relative to growth, nor is there evidence for 'attractive valuation' or 'resilient fundamentals'.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    }
+  ],
+  "verifier_version": "7.1-semantic-review-neutral-connector-repair",
+  "release_deduplication": "Identical complete released strings appear once per section; all original claim rows and mappings remain. This is not semantic paraphrase deduplication.",
+  "unquoted_nonfactual_connectors": [
+    {
+      "source_id": 0,
+      "start": 86,
+      "end": 91,
+      "text": " and ",
+      "nonfactual_connector": true
+    }
+  ],
+  "deterministic_validation_failures": [
+    {
+      "claim_id": "u0c1",
+      "errors": [
+        "numeric_check_failed:11.8%:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "11.8%",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u0c2",
+      "errors": [
+        "numeric_check_failed:62.7%:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "62.7%",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    }
+  ],
+  "deterministic_failure_count": 2,
+  "verified_claim_count": 0,
+  "unverified_annotation_count": 5,
+  "withheld_claim_count": 0,
+  "claim_retention_rate": 1.0,
+  "supported_valid_retention_count": 0,
+  "automatic_year_binding_count": 0,
+  "limitations": "UNVERIFIED annotations preserve unsupported or deterministically rejected assertions for review and must not be counted as grounded facts. A claim's original machine classification is preserved even when deterministic checks reject it; retained_as_verified is then false. Rejected contradicted corrections remain in the audit but are withheld from the narrative. Semantic judgments are machine-assisted, not human-validated. Lexical quote coverage does not prove exhaustive semantic atomization. Exact numeric/year matches do not establish entity/period alignment or dimensional validity of conversions. Repeated source quotes may have ambiguous first-occurrence offsets."
+}

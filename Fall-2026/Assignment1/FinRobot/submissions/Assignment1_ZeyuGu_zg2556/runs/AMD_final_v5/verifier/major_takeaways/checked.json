@@ -1,0 +1,1249 @@
+{
+  "original_text": "Revenue Growth: AMD's revenue trajectory, highlighted by a 20.5% CAGR from 2021 to 2028, is fueled primarily by strong demand in high-performance computing and graphics segments, reflecting the company's successful product innovation and market expansion strategies. The notable rebound in 2024 and the sharp 34.3% growth in 2025 underscore AMD’s capacity to capture market share, likely from competitors and emerging end markets. This robust growth suggests a sustainable competitive advantage bolstered by diversified revenue streams, enhancing AMD's market positioning in a highly competitive semiconductor landscape.\n\nGross Profit Margin: The improvement in contribution margin from 44.9% in 2022 to a projected 52.5% in 2028 indicates enhanced pricing power and operational efficiencies. This margin expansion is driven by product mix optimization toward higher-margin offerings and cost management initiatives. The sustained increase beyond 50% contribution margin signals a durable competitive moat, reflecting AMD's ability to command premium pricing and leverage scale economies, which strengthens business quality and resilience against pricing pressures.\n\nSG&A Expense Margin: The rising SG&A margin reaching a peak of 12.0% in 2025 followed by a gradual decline to 10.5% by 2028 illustrates effective operating leverage as AMD scales. The initial increase reflects strategic investments in marketing, R&D, and sales to fuel growth, while the subsequent margin reduction evidences improved efficiency and scalability in management execution. This trend reveals a maturing cost structure and disciplined expense management, indicating sustainable operating leverage that supports profitability without compromising growth initiatives.\n\nEBITDA Margin Stability: AMD's EBITDA margin displays volatility, dropping from 25.3% in 2021 to 18.3% in 2023, then rebounding to a robust 42.0% by 2028. Compared to peers like Intel and Nvidia, AMD operates at a higher EBITDA margin by the forecast horizon, reflecting superior profitability quality. This margin expansion enhances valuation appeal, as evidenced by historically high EV/EBITDA multiples. The trajectory suggests that AMD's operational improvements and market differentiation translate into attractive investment characteristics, positioning it favorably for long-term shareholder value creation.",
+  "revised_text": "[UNVERIFIED - deterministic evidence/number check failed] Revenue Growth: AMD's revenue trajectory, highlighted by a 20.5% CAGR from 2021 to 2028, is fueled primarily by strong demand in high-performance computing and graphics segments, reflecting the company's successful product innovation and market expansion strategies.\n\n[UNVERIFIED - deterministic evidence/number check failed] The notable rebound in 2024 and the sharp 34.3% growth in 2025 underscore AMD’s capacity to capture market share, likely from competitors and emerging end markets.\n\n[UNVERIFIED - evidence not supplied] AMD's revenue growth from 2021 to 2028 is primarily driven by strong demand in high-performance computing and graphics segments, reflecting successful product innovation and market expansion strategies.\n\n[UNVERIFIED - evidence not supplied] AMD's revenue rebound in 2024 and 34.3% growth in 2025 indicate its capacity to capture market share, likely from competitors and emerging end markets.\n\n[UNVERIFIED - evidence not supplied] AMD's robust revenue growth suggests a sustainable competitive advantage bolstered by diversified revenue streams, enhancing its market positioning in the semiconductor industry.\n\n[UNVERIFIED - deterministic evidence/number check failed] The improvement in contribution margin from 44.9% in 2022 to a projected 52.5% in 2028 indicates enhanced pricing power and operational efficiencies.\n\n[UNVERIFIED - evidence not supplied] The margin expansion is driven by product mix optimization toward higher-margin offerings and cost management initiatives.\n\n[UNVERIFIED - evidence not supplied] A sustained contribution margin above 50% signals a durable competitive moat, reflecting AMD's ability to command premium pricing and leverage scale economies, strengthening business quality and resilience against pricing pressures.\n\n[UNVERIFIED - deterministic evidence/number check failed] The rising SG&A margin reaching a peak of 12.0% in 2025 followed by a gradual decline to 10.5% by 2028 illustrates effective operating leverage as AMD scales.\n\n[UNVERIFIED - evidence not supplied] The initial increase in SG&A margin reflects strategic investments in marketing, R&D, and sales to fuel growth, while the subsequent margin reduction evidences improved efficiency and scalability in management execution.\n\n[UNVERIFIED - evidence not supplied] The SG&A margin trend reveals a maturing cost structure and disciplined expense management, indicating sustainable operating leverage that supports profitability without compromising growth initiatives.\n\n[UNVERIFIED - deterministic evidence/number check failed] AMD's EBITDA margin displays volatility, dropping from 25.3% in 2021 to 18.3% in 2023, then rebounding to a robust 42.0% by 2028.\n\n[UNVERIFIED - evidence not supplied] By the forecast horizon, AMD operates at a higher EBITDA margin than Intel and Nvidia.\n\n[UNVERIFIED - evidence not supplied] AMD's margin expansion enhances valuation appeal, as evidenced by historically high EV/EBITDA multiples.\n\n[UNVERIFIED - evidence not supplied] AMD's operational improvements and market differentiation translate into attractive investment characteristics, positioning it favorably for long-term shareholder value creation.",
+  "claims": [
+    {
+      "claim_id": "u0c0",
+      "source_id": 0,
+      "source_start": 0,
+      "source_end": 266,
+      "source_quote_occurrences": 1,
+      "original_quote": "Revenue Growth: AMD's revenue trajectory, highlighted by a 20.5% CAGR from 2021 to 2028, is fueled primarily by strong demand in high-performance computing and graphics segments, reflecting the company's successful product innovation and market expansion strategies.",
+      "claim": "AMD's revenue CAGR from 2021 to 2028 is 20.5%.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 6,
+          "quote": "|  0 | Revenue             | 16434000000.0     | 23601000000.0 | 22680000000.0     | 25785000000.0      | 34639000000.0     | 36370950000.0 | 38553207000.0 | 40095335280.0 | 20.5%  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The table header and the Revenue row explicitly state a 20.5% CAGR from 2021A to 2028E.",
+      "action": "keep",
+      "revised_claim": "AMD's revenue CAGR from 2021 to 2028 is 20.5%.",
+      "number_bindings": [
+        {
+          "claim_number": "2021",
+          "evidence_line": 4,
+          "evidence_number": "2021A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "20.5%",
+          "evidence_line": 6,
+          "evidence_number": "20.5%",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2021",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "20.5%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2021:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Revenue Growth: AMD's revenue trajectory, highlighted by a 20.5% CAGR from 2021 to 2028, is fueled primarily by strong demand in high-performance computing and graphics segments, reflecting the company's successful product innovation and market expansion strategies.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u0c1",
+      "source_id": 0,
+      "source_start": 267,
+      "source_end": 430,
+      "source_quote_occurrences": 1,
+      "original_quote": "The notable rebound in 2024 and the sharp 34.3% growth in 2025 underscore AMD’s capacity to capture market share, likely from competitors and emerging end markets.",
+      "claim": "AMD's revenue growth is 13.7% in 2024 and 34.3% in 2025.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 14,
+          "quote": "|  8 | Revenue Growth      | nan               | 43.6%         | -3.9%             | 13.7%              | 34.3%             | 5.0%          | 6.0%          | 4.0%          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The Revenue Growth row in the table shows 13.7% for 2024A and 34.3% for 2025A.",
+      "action": "correct",
+      "revised_claim": "AMD's revenue growth is 13.7% in 2024 and 34.3% in 2025.",
+      "number_bindings": [
+        {
+          "claim_number": "2024",
+          "evidence_line": 4,
+          "evidence_number": "2024A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2025",
+          "evidence_line": 4,
+          "evidence_number": "2025A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "13.7%",
+          "evidence_line": 14,
+          "evidence_number": "13.7%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "34.3%",
+          "evidence_line": 14,
+          "evidence_number": "34.3%",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "13.7%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2024",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "34.3%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2025",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2024:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2025:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] The notable rebound in 2024 and the sharp 34.3% growth in 2025 underscore AMD’s capacity to capture market share, likely from competitors and emerging end markets.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u0c2",
+      "source_id": 0,
+      "source_start": 0,
+      "source_end": 266,
+      "source_quote_occurrences": 1,
+      "original_quote": "Revenue Growth: AMD's revenue trajectory, highlighted by a 20.5% CAGR from 2021 to 2028, is fueled primarily by strong demand in high-performance computing and graphics segments, reflecting the company's successful product innovation and market expansion strategies.",
+      "claim": "AMD's revenue growth from 2021 to 2028 is primarily driven by strong demand in high-performance computing and graphics segments, reflecting successful product innovation and market expansion strategies.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The evidence provides revenue growth figures but does not attribute the growth to specific segments or strategies.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] AMD's revenue growth from 2021 to 2028 is primarily driven by strong demand in high-performance computing and graphics segments, reflecting successful product innovation and market expansion strategies.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u0c3",
+      "source_id": 0,
+      "source_start": 267,
+      "source_end": 430,
+      "source_quote_occurrences": 1,
+      "original_quote": "The notable rebound in 2024 and the sharp 34.3% growth in 2025 underscore AMD’s capacity to capture market share, likely from competitors and emerging end markets.",
+      "claim": "AMD's revenue rebound in 2024 and 34.3% growth in 2025 indicate its capacity to capture market share, likely from competitors and emerging end markets.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The evidence provides revenue growth rates but does not establish causality regarding market share capture or sources.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] AMD's revenue rebound in 2024 and 34.3% growth in 2025 indicate its capacity to capture market share, likely from competitors and emerging end markets.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u0c4",
+      "source_id": 0,
+      "source_start": 431,
+      "source_end": 620,
+      "source_quote_occurrences": 1,
+      "original_quote": "This robust growth suggests a sustainable competitive advantage bolstered by diversified revenue streams, enhancing AMD's market positioning in a highly competitive semiconductor landscape.",
+      "claim": "AMD's robust revenue growth suggests a sustainable competitive advantage bolstered by diversified revenue streams, enhancing its market positioning in the semiconductor industry.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The evidence does not provide information about competitive advantage, revenue stream diversification, or market positioning.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] AMD's robust revenue growth suggests a sustainable competitive advantage bolstered by diversified revenue streams, enhancing its market positioning in the semiconductor industry.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u1c0",
+      "source_id": 1,
+      "source_start": 643,
+      "source_end": 792,
+      "source_quote_occurrences": 1,
+      "original_quote": "The improvement in contribution margin from 44.9% in 2022 to a projected 52.5% in 2028 indicates enhanced pricing power and operational efficiencies.",
+      "claim": "AMD's contribution margin improves from 44.9% in 2022 to a projected 52.5% in 2028.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 10,
+          "quote": "|  4 | Contribution Margin | 48.2%             | 44.9%         | 46.1%             | 49.4%              | 49.5%             | 50.5%         | 51.5%         | 52.5%         | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The Contribution Margin row shows 44.9% for 2022A and 52.5% for 2028E.",
+      "action": "keep",
+      "revised_claim": "AMD's contribution margin improves from 44.9% in 2022 to a projected 52.5% in 2028.",
+      "number_bindings": [
+        {
+          "claim_number": "2022",
+          "evidence_line": 4,
+          "evidence_number": "2022A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "52.5%",
+          "evidence_line": 10,
+          "evidence_number": "52.5%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "44.9%",
+          "evidence_line": 10,
+          "evidence_number": "44.9%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "44.9%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2022",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "52.5%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2022:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] The improvement in contribution margin from 44.9% in 2022 to a projected 52.5% in 2028 indicates enhanced pricing power and operational efficiencies.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u1c1",
+      "source_id": 1,
+      "source_start": 643,
+      "source_end": 916,
+      "source_quote_occurrences": 1,
+      "original_quote": "The improvement in contribution margin from 44.9% in 2022 to a projected 52.5% in 2028 indicates enhanced pricing power and operational efficiencies. This margin expansion is driven by product mix optimization toward higher-margin offerings and cost management initiatives.",
+      "claim": "The margin expansion is driven by product mix optimization toward higher-margin offerings and cost management initiatives.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The evidence does not provide causal attribution for margin expansion.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] The margin expansion is driven by product mix optimization toward higher-margin offerings and cost management initiatives.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u1c2",
+      "source_id": 1,
+      "source_start": 917,
+      "source_end": 1165,
+      "source_quote_occurrences": 1,
+      "original_quote": "The sustained increase beyond 50% contribution margin signals a durable competitive moat, reflecting AMD's ability to command premium pricing and leverage scale economies, which strengthens business quality and resilience against pricing pressures.",
+      "claim": "A sustained contribution margin above 50% signals a durable competitive moat, reflecting AMD's ability to command premium pricing and leverage scale economies, strengthening business quality and resilience against pricing pressures.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The evidence does not discuss competitive moats, pricing power, or scale economies.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] A sustained contribution margin above 50% signals a durable competitive moat, reflecting AMD's ability to command premium pricing and leverage scale economies, strengthening business quality and resilience against pricing pressures.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u2c0",
+      "source_id": 2,
+      "source_start": 1188,
+      "source_end": 1346,
+      "source_quote_occurrences": 1,
+      "original_quote": "The rising SG&A margin reaching a peak of 12.0% in 2025 followed by a gradual decline to 10.5% by 2028 illustrates effective operating leverage as AMD scales.",
+      "claim": "AMD's SG&A margin peaks at 12.0% in 2025 and declines to 10.5% by 2028.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 13,
+          "quote": "|  7 | SG&A Margin         | 8.8%              | 9.9%          | 10.4%             | 10.8%              | 12.0%             | 11.5%         | 11.0%         | 10.5%         | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The SG&A Margin row shows 12.0% for 2025A and 10.5% for 2028E.",
+      "action": "keep",
+      "revised_claim": "AMD's SG&A margin peaks at 12.0% in 2025 and declines to 10.5% by 2028.",
+      "number_bindings": [
+        {
+          "claim_number": "2025",
+          "evidence_line": 4,
+          "evidence_number": "2025A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "12.0%",
+          "evidence_line": 13,
+          "evidence_number": "12.0%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "10.5%",
+          "evidence_line": 13,
+          "evidence_number": "10.5%",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "12.0%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2025",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "10.5%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2025:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] The rising SG&A margin reaching a peak of 12.0% in 2025 followed by a gradual decline to 10.5% by 2028 illustrates effective operating leverage as AMD scales.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u2c1",
+      "source_id": 2,
+      "source_start": 1347,
+      "source_end": 1552,
+      "source_quote_occurrences": 1,
+      "original_quote": "The initial increase reflects strategic investments in marketing, R&D, and sales to fuel growth, while the subsequent margin reduction evidences improved efficiency and scalability in management execution.",
+      "claim": "The initial increase in SG&A margin reflects strategic investments in marketing, R&D, and sales to fuel growth, while the subsequent margin reduction evidences improved efficiency and scalability in management execution.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The evidence does not provide causal explanations for the SG&A margin trend.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] The initial increase in SG&A margin reflects strategic investments in marketing, R&D, and sales to fuel growth, while the subsequent margin reduction evidences improved efficiency and scalability in management execution.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u2c2",
+      "source_id": 2,
+      "source_start": 1553,
+      "source_end": 1744,
+      "source_quote_occurrences": 1,
+      "original_quote": "This trend reveals a maturing cost structure and disciplined expense management, indicating sustainable operating leverage that supports profitability without compromising growth initiatives.",
+      "claim": "The SG&A margin trend reveals a maturing cost structure and disciplined expense management, indicating sustainable operating leverage that supports profitability without compromising growth initiatives.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The evidence does not discuss cost structure maturity, expense management, or operating leverage.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] The SG&A margin trend reveals a maturing cost structure and disciplined expense management, indicating sustainable operating leverage that supports profitability without compromising growth initiatives.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u3c0",
+      "source_id": 3,
+      "source_start": 1771,
+      "source_end": 1900,
+      "source_quote_occurrences": 1,
+      "original_quote": "AMD's EBITDA margin displays volatility, dropping from 25.3% in 2021 to 18.3% in 2023, then rebounding to a robust 42.0% by 2028.",
+      "claim": "AMD's EBITDA margin drops from 25.3% in 2021 to 18.3% in 2023, then rebounds to 42.0% by 2028.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A             | 2022A         | 2023A             | 2024A              | 2025A             | 2026E         | 2027E         | 2028E         | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 12,
+          "quote": "|  6 | EBITDA Margin       | 25.3%             | 23.4%         | 18.3%             | 20.4%              | 21.0%             | 39.0%         | 40.5%         | 42.0%         | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The EBITDA Margin row shows 25.3% for 2021A, 18.3% for 2023A, and 42.0% for 2028E.",
+      "action": "keep",
+      "revised_claim": "AMD's EBITDA margin drops from 25.3% in 2021 to 18.3% in 2023, then rebounds to 42.0% by 2028.",
+      "number_bindings": [
+        {
+          "claim_number": "2021",
+          "evidence_line": 4,
+          "evidence_number": "2021A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "25.3%",
+          "evidence_line": 12,
+          "evidence_number": "25.3%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2023",
+          "evidence_line": 4,
+          "evidence_number": "2023A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "18.3%",
+          "evidence_line": 12,
+          "evidence_number": "18.3%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "42.0%",
+          "evidence_line": 12,
+          "evidence_number": "42.0%",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "25.3%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2021",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "18.3%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2023,",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "42.0%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2021:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2023,:missing_binding",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] AMD's EBITDA margin displays volatility, dropping from 25.3% in 2021 to 18.3% in 2023, then rebounding to a robust 42.0% by 2028.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u3c1",
+      "source_id": 3,
+      "source_start": 1901,
+      "source_end": 2048,
+      "source_quote_occurrences": 1,
+      "original_quote": "Compared to peers like Intel and Nvidia, AMD operates at a higher EBITDA margin by the forecast horizon, reflecting superior profitability quality.",
+      "claim": "By the forecast horizon, AMD operates at a higher EBITDA margin than Intel and Nvidia.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The evidence provides EBITDA values for peers but does not provide EBITDA margin comparisons for the forecast horizon.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] By the forecast horizon, AMD operates at a higher EBITDA margin than Intel and Nvidia.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u3c2",
+      "source_id": 3,
+      "source_start": 2049,
+      "source_end": 2152,
+      "source_quote_occurrences": 1,
+      "original_quote": "This margin expansion enhances valuation appeal, as evidenced by historically high EV/EBITDA multiples.",
+      "claim": "AMD's margin expansion enhances valuation appeal, as evidenced by historically high EV/EBITDA multiples.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The evidence provides EV/EBITDA multiples but does not establish a causal link to margin expansion.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] AMD's margin expansion enhances valuation appeal, as evidenced by historically high EV/EBITDA multiples.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    },
+    {
+      "claim_id": "u3c3",
+      "source_id": 3,
+      "source_start": 2153,
+      "source_end": 2360,
+      "source_quote_occurrences": 1,
+      "original_quote": "The trajectory suggests that AMD's operational improvements and market differentiation translate into attractive investment characteristics, positioning it favorably for long-term shareholder value creation.",
+      "claim": "AMD's operational improvements and market differentiation translate into attractive investment characteristics, positioning it favorably for long-term shareholder value creation.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The evidence does not discuss operational improvements, market differentiation, or investment characteristics.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] AMD's operational improvements and market differentiation translate into attractive investment characteristics, positioning it favorably for long-term shareholder value creation.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+    }
+  ],
+  "units": [
+    {
+      "source_id": 0,
+      "claims": [
+        {
+          "original_quote": "Revenue Growth: AMD's revenue trajectory, highlighted by a 20.5% CAGR from 2021 to 2028, is fueled primarily by strong demand in high-performance computing and graphics segments, reflecting the company's successful product innovation and market expansion strategies.",
+          "claim": "AMD's revenue CAGR from 2021 to 2028 is 20.5%.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 6
+            }
+          ],
+          "reason": "The table header and the Revenue row explicitly state a 20.5% CAGR from 2021A to 2028E.",
+          "action": "keep",
+          "revised_claim": "AMD's revenue CAGR from 2021 to 2028 is 20.5%.",
+          "number_bindings": [
+            {
+              "claim_number": "2021",
+              "evidence_line": 4,
+              "evidence_number": "2021A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "20.5%",
+              "evidence_line": 6,
+              "evidence_number": "20.5%",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "The notable rebound in 2024 and the sharp 34.3% growth in 2025 underscore AMD’s capacity to capture market share, likely from competitors and emerging end markets.",
+          "claim": "AMD's revenue growth is 13.7% in 2024 and 34.3% in 2025.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 14
+            }
+          ],
+          "reason": "The Revenue Growth row in the table shows 13.7% for 2024A and 34.3% for 2025A.",
+          "action": "correct",
+          "revised_claim": "AMD's revenue growth is 13.7% in 2024 and 34.3% in 2025.",
+          "number_bindings": [
+            {
+              "claim_number": "2024",
+              "evidence_line": 4,
+              "evidence_number": "2024A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2025",
+              "evidence_line": 4,
+              "evidence_number": "2025A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "13.7%",
+              "evidence_line": 14,
+              "evidence_number": "13.7%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "34.3%",
+              "evidence_line": 14,
+              "evidence_number": "34.3%",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "Revenue Growth: AMD's revenue trajectory, highlighted by a 20.5% CAGR from 2021 to 2028, is fueled primarily by strong demand in high-performance computing and graphics segments, reflecting the company's successful product innovation and market expansion strategies.",
+          "claim": "AMD's revenue growth from 2021 to 2028 is primarily driven by strong demand in high-performance computing and graphics segments, reflecting successful product innovation and market expansion strategies.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The evidence provides revenue growth figures but does not attribute the growth to specific segments or strategies.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The notable rebound in 2024 and the sharp 34.3% growth in 2025 underscore AMD’s capacity to capture market share, likely from competitors and emerging end markets.",
+          "claim": "AMD's revenue rebound in 2024 and 34.3% growth in 2025 indicate its capacity to capture market share, likely from competitors and emerging end markets.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The evidence provides revenue growth rates but does not establish causality regarding market share capture or sources.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "This robust growth suggests a sustainable competitive advantage bolstered by diversified revenue streams, enhancing AMD's market positioning in a highly competitive semiconductor landscape.",
+          "claim": "AMD's robust revenue growth suggests a sustainable competitive advantage bolstered by diversified revenue streams, enhancing its market positioning in the semiconductor industry.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The evidence does not provide information about competitive advantage, revenue stream diversification, or market positioning.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 1,
+      "claims": [
+        {
+          "original_quote": "The improvement in contribution margin from 44.9% in 2022 to a projected 52.5% in 2028 indicates enhanced pricing power and operational efficiencies.",
+          "claim": "AMD's contribution margin improves from 44.9% in 2022 to a projected 52.5% in 2028.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 10
+            }
+          ],
+          "reason": "The Contribution Margin row shows 44.9% for 2022A and 52.5% for 2028E.",
+          "action": "keep",
+          "revised_claim": "AMD's contribution margin improves from 44.9% in 2022 to a projected 52.5% in 2028.",
+          "number_bindings": [
+            {
+              "claim_number": "2022",
+              "evidence_line": 4,
+              "evidence_number": "2022A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "52.5%",
+              "evidence_line": 10,
+              "evidence_number": "52.5%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "44.9%",
+              "evidence_line": 10,
+              "evidence_number": "44.9%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "The improvement in contribution margin from 44.9% in 2022 to a projected 52.5% in 2028 indicates enhanced pricing power and operational efficiencies. This margin expansion is driven by product mix optimization toward higher-margin offerings and cost management initiatives.",
+          "claim": "The margin expansion is driven by product mix optimization toward higher-margin offerings and cost management initiatives.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The evidence does not provide causal attribution for margin expansion.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The sustained increase beyond 50% contribution margin signals a durable competitive moat, reflecting AMD's ability to command premium pricing and leverage scale economies, which strengthens business quality and resilience against pricing pressures.",
+          "claim": "A sustained contribution margin above 50% signals a durable competitive moat, reflecting AMD's ability to command premium pricing and leverage scale economies, strengthening business quality and resilience against pricing pressures.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The evidence does not discuss competitive moats, pricing power, or scale economies.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 2,
+      "claims": [
+        {
+          "original_quote": "The rising SG&A margin reaching a peak of 12.0% in 2025 followed by a gradual decline to 10.5% by 2028 illustrates effective operating leverage as AMD scales.",
+          "claim": "AMD's SG&A margin peaks at 12.0% in 2025 and declines to 10.5% by 2028.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 13
+            }
+          ],
+          "reason": "The SG&A Margin row shows 12.0% for 2025A and 10.5% for 2028E.",
+          "action": "keep",
+          "revised_claim": "AMD's SG&A margin peaks at 12.0% in 2025 and declines to 10.5% by 2028.",
+          "number_bindings": [
+            {
+              "claim_number": "2025",
+              "evidence_line": 4,
+              "evidence_number": "2025A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "12.0%",
+              "evidence_line": 13,
+              "evidence_number": "12.0%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "10.5%",
+              "evidence_line": 13,
+              "evidence_number": "10.5%",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "The initial increase reflects strategic investments in marketing, R&D, and sales to fuel growth, while the subsequent margin reduction evidences improved efficiency and scalability in management execution.",
+          "claim": "The initial increase in SG&A margin reflects strategic investments in marketing, R&D, and sales to fuel growth, while the subsequent margin reduction evidences improved efficiency and scalability in management execution.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The evidence does not provide causal explanations for the SG&A margin trend.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "This trend reveals a maturing cost structure and disciplined expense management, indicating sustainable operating leverage that supports profitability without compromising growth initiatives.",
+          "claim": "The SG&A margin trend reveals a maturing cost structure and disciplined expense management, indicating sustainable operating leverage that supports profitability without compromising growth initiatives.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The evidence does not discuss cost structure maturity, expense management, or operating leverage.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 3,
+      "claims": [
+        {
+          "original_quote": "AMD's EBITDA margin displays volatility, dropping from 25.3% in 2021 to 18.3% in 2023, then rebounding to a robust 42.0% by 2028.",
+          "claim": "AMD's EBITDA margin drops from 25.3% in 2021 to 18.3% in 2023, then rebounds to 42.0% by 2028.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 12
+            }
+          ],
+          "reason": "The EBITDA Margin row shows 25.3% for 2021A, 18.3% for 2023A, and 42.0% for 2028E.",
+          "action": "keep",
+          "revised_claim": "AMD's EBITDA margin drops from 25.3% in 2021 to 18.3% in 2023, then rebounds to 42.0% by 2028.",
+          "number_bindings": [
+            {
+              "claim_number": "2021",
+              "evidence_line": 4,
+              "evidence_number": "2021A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "25.3%",
+              "evidence_line": 12,
+              "evidence_number": "25.3%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2023",
+              "evidence_line": 4,
+              "evidence_number": "2023A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "18.3%",
+              "evidence_line": 12,
+              "evidence_number": "18.3%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "42.0%",
+              "evidence_line": 12,
+              "evidence_number": "42.0%",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "Compared to peers like Intel and Nvidia, AMD operates at a higher EBITDA margin by the forecast horizon, reflecting superior profitability quality.",
+          "claim": "By the forecast horizon, AMD operates at a higher EBITDA margin than Intel and Nvidia.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The evidence provides EBITDA values for peers but does not provide EBITDA margin comparisons for the forecast horizon.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "This margin expansion enhances valuation appeal, as evidenced by historically high EV/EBITDA multiples.",
+          "claim": "AMD's margin expansion enhances valuation appeal, as evidenced by historically high EV/EBITDA multiples.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The evidence provides EV/EBITDA multiples but does not establish a causal link to margin expansion.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The trajectory suggests that AMD's operational improvements and market differentiation translate into attractive investment characteristics, positioning it favorably for long-term shareholder value creation.",
+          "claim": "AMD's operational improvements and market differentiation translate into attractive investment characteristics, positioning it favorably for long-term shareholder value creation.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The evidence does not discuss operational improvements, market differentiation, or investment characteristics.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    }
+  ],
+  "verifier_version": "5-retain-supported-corrections-and-fail-closed-withhold",
+  "unquoted_nonfactual_connectors": [
+    {
+      "source_id": 1,
+      "start": 0,
+      "end": 21,
+      "text": "Gross Profit Margin: ",
+      "nonfactual_connector": true
+    },
+    {
+      "source_id": 2,
+      "start": 0,
+      "end": 21,
+      "text": "SG&A Expense Margin: ",
+      "nonfactual_connector": true
+    },
+    {
+      "source_id": 3,
+      "start": 0,
+      "end": 25,
+      "text": "EBITDA Margin Stability: ",
+      "nonfactual_connector": true
+    }
+  ],
+  "deterministic_validation_failures": [
+    {
+      "claim_id": "u0c0",
+      "errors": [
+        "numeric_check_failed:2021:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "2021",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "20.5%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u0c1",
+      "errors": [
+        "numeric_check_failed:2024:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2025:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "13.7%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2024",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "34.3%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2025",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u1c0",
+      "errors": [
+        "numeric_check_failed:2022:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "44.9%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2022",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "52.5%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u2c0",
+      "errors": [
+        "numeric_check_failed:2025:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "12.0%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2025",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "10.5%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u3c0",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2021:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2023,:missing_binding",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "25.3%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2021",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "18.3%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2023,",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "42.0%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    }
+  ],
+  "deterministic_failure_count": 5,
+  "verified_claim_count": 0,
+  "unverified_annotation_count": 15,
+  "withheld_claim_count": 0,
+  "claim_retention_rate": 1.0,
+  "supported_valid_retention_count": 0,
+  "automatic_year_binding_count": 0,
+  "limitations": "UNVERIFIED annotations preserve unsupported or deterministically rejected assertions for review and must not be counted as grounded facts. A claim's original machine classification is preserved even when deterministic checks reject it; retained_as_verified is then false. Rejected contradicted corrections remain in the audit but are withheld from the narrative. Semantic judgments are machine-assisted, not human-validated. Lexical quote coverage does not prove exhaustive semantic atomization. Exact numeric/year matches do not establish entity/period alignment or dimensional validity of conversions. Repeated source quotes may have ambiguous first-occurrence offsets."
+}

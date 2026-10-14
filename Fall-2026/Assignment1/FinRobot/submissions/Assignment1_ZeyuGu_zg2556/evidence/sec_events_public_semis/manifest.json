@@ -1,0 +1,29 @@
+{
+  "created_at_utc": "2026-10-11T22:29:19.538865+00:00",
+  "as_of": "2026-10-11T21:10:00+00:00",
+  "window_start": "2026-07-13T21:10:00+00:00",
+  "days": 90,
+  "max_filings": 2,
+  "excerpt_max_characters": 10000,
+  "companies": [
+    {
+      "ticker": "AVGO",
+      "eligible_8k_count": 1,
+      "selected_filings": 1,
+      "article_count": 0,
+      "source": "SEC event-disclosure substitute, not FMP news",
+      "selection": "latest accepted 8-K filings, at most one primary/exhibit excerpt per filing"
+    },
+    {
+      "ticker": "QCOM",
+      "eligible_8k_count": 3,
+      "selected_filings": 2,
+      "article_count": 0,
+      "source": "SEC event-disclosure substitute, not FMP news",
+      "selection": "latest accepted 8-K filings, at most one primary/exhibit excerpt per filing"
+    }
+  ],
+  "reason": "FMP news endpoint returned HTTP 402 under configured account; no service purchase performed",
+  "fmp_news_access": false,
+  "not_a_complete_news_feed": true
+}

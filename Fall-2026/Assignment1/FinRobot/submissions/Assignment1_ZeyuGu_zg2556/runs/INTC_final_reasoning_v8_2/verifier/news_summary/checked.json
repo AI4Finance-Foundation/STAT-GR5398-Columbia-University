@@ -1,0 +1,2643 @@
+{
+  "original_text": "Intel Corporation's most recent financial report for the second quarter of 2026 showed a significant year-over-year revenue increase of 25%, reaching $16.1 billion. Despite this revenue growth, the company reported a GAAP loss per share of $2.16 but a positive non-GAAP EPS of $0.42, indicating ongoing operational challenges. The company provided guidance for the third quarter of 2026 with expected revenue between $15.8 billion and $16.8 billion and a non-GAAP EPS forecast of $0.38, signaling cautious optimism about near-term performance.\n\nKey developments for investors to monitor include Intel's strong revenue rebound in Q2 2026 amidst a multi-year declining revenue trend, the continued negative GAAP earnings despite positive non-GAAP results, and the forward-looking guidance that suggests stabilization in financial performance. The company's EBITDA has shown volatility, with a notably low margin in 2024 but projected improvements through 2028. Comparisons to peers such as AMD and NVIDIA highlight Intel's ongoing competitive pressures, especially given NVIDIA's much higher EBITDA and valuation multiples, reflecting a challenging competitive landscape.\n\nMarket sentiment surrounding Intel appears cautiously optimistic due to the revenue growth and positive non-GAAP earnings, but tempered by sustained GAAP losses and the need for continued strategic execution to restore profitability and growth. This mixed sentiment may lead to moderate near-term stock volatility as investors weigh improvements against ongoing risks and competitive headwinds.",
+  "revised_text": "[UNVERIFIED - evidence not supplied] Intel Corporation's most recent financial report was for the second quarter of 2026.\n\n[UNVERIFIED - deterministic evidence/number check failed] showed a significant year-over-year revenue increase of 25%, reaching $16.1 billion.\n\n[UNVERIFIED - deterministic evidence/number check failed] Despite this revenue growth,\n\n[UNVERIFIED - deterministic evidence/number check failed] the company reported a GAAP loss per share of $2.16\n\n[UNVERIFIED - deterministic evidence/number check failed] but a positive non-GAAP EPS of $0.42,\n\n[UNVERIFIED - evidence not supplied] Intel's GAAP loss and non-GAAP profit indicated ongoing operational challenges.\n\nIntel provided third-quarter 2026 guidance.\n\nIntel forecast third-quarter 2026 revenue of $15.8 billion to $16.8 billion.\n\nIntel forecast third-quarter 2026 non-GAAP EPS attributable to Intel of $0.38.\n\n[UNVERIFIED - evidence not supplied] Intel's guidance signaled cautious optimism about near-term performance.\n\n[UNVERIFIED - evidence not supplied] There are key developments for investors to monitor.\n\n[UNVERIFIED - deterministic evidence/number check failed] Intel's strong revenue rebound in Q2 2026\n\nIntel revenue declined each year from 2021A through 2025A.\n\n[UNVERIFIED - evidence not supplied] Intel had continued negative GAAP earnings.\n\n[UNVERIFIED - deterministic evidence/number check failed] despite positive non-GAAP results,\n\nIntel provided forward-looking third-quarter 2026 guidance.\n\nIntel EBITDA fell from 33.874 billion in 2021A to 1.203 billion in 2024A, then rose to 14.354 billion in 2025A.\n\nIntel EBITDA margin was 2.3% in 2024A.\n\nIntel forecast EBITDA margin of 27.6% in 2026E, 29.1% in 2027E, and 30.6% in 2028E.\n\n[UNVERIFIED - evidence not supplied] Peer comparisons with AMD and NVIDIA highlight Intel's ongoing competitive pressures.\n\n[UNVERIFIED - evidence not supplied] The peer metrics reflect a challenging competitive landscape for Intel.\n\n[UNVERIFIED - evidence not supplied] Market sentiment surrounding Intel appears cautiously optimistic.\n\n[UNVERIFIED - deterministic evidence/number check failed] due to the revenue growth\n\n[UNVERIFIED - deterministic evidence/number check failed] and positive non-GAAP earnings,\n\n[UNVERIFIED - evidence not supplied] Intel had sustained GAAP losses.\n\n[UNVERIFIED - evidence not supplied] Intel needed continued strategic execution to restore profitability and growth.\n\n[UNVERIFIED - evidence not supplied] Mixed sentiment may lead to moderate near-term stock volatility in Intel shares.\n\n[UNVERIFIED - evidence not supplied] Investors are weighing improvements against ongoing risks and competitive headwinds.",
+  "claims": [
+    {
+      "claim_id": "u0c0",
+      "source_id": 0,
+      "source_start": 0,
+      "source_end": 79,
+      "source_quote_occurrences": 1,
+      "original_quote": "Intel Corporation's most recent financial report for the second quarter of 2026",
+      "claim": "Intel Corporation's most recent financial report was for the second quarter of 2026.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The supplied evidence includes one dated news article about second-quarter 2026 results, but it does not establish that this was Intel's most recent financial report.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Intel Corporation's most recent financial report was for the second quarter of 2026.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u0c1",
+      "source_id": 0,
+      "source_start": 80,
+      "source_end": 164,
+      "source_quote_occurrences": 1,
+      "original_quote": "showed a significant year-over-year revenue increase of 25%, reaching $16.1 billion.",
+      "claim": "Intel's second-quarter 2026 revenue increased 25% year over year to $16.1 billion.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 45,
+          "quote": "Second-quarter revenue was $16.1 billion, up 25% year-over-year (YoY).",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The news summary explicitly states second-quarter revenue was $16.1 billion, up 25% year over year. The adjective 'significant' is subjective and is omitted in the verified revision.",
+      "action": "keep",
+      "revised_claim": "Intel reported second-quarter 2026 revenue of $16.1 billion, up 25% year over year.",
+      "number_bindings": [
+        {
+          "claim_number": "2026",
+          "evidence_line": 43,
+          "evidence_number": "2026",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "16.1",
+          "evidence_line": 45,
+          "evidence_number": "16.1",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "25%",
+          "evidence_line": 45,
+          "evidence_number": "25%",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "16.1",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "25%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2026:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] showed a significant year-over-year revenue increase of 25%, reaching $16.1 billion.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u0c2",
+      "source_id": 0,
+      "source_start": 165,
+      "source_end": 193,
+      "source_quote_occurrences": 1,
+      "original_quote": "Despite this revenue growth,",
+      "claim": "Intel had revenue growth in the reported quarter.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 45,
+          "quote": "Second-quarter revenue was $16.1 billion, up 25% year-over-year (YoY).",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The article states second-quarter revenue was up 25% year over year.",
+      "action": "keep",
+      "revised_claim": "Intel's second-quarter 2026 revenue was up 25% year over year.",
+      "number_bindings": [
+        {
+          "claim_number": "2026",
+          "evidence_line": 43,
+          "evidence_number": "2026",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "25%",
+          "evidence_line": 45,
+          "evidence_number": "25%",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "25%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2026:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Despite this revenue growth,",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u0c3",
+      "source_id": 0,
+      "source_start": 194,
+      "source_end": 245,
+      "source_quote_occurrences": 1,
+      "original_quote": "the company reported a GAAP loss per share of $2.16",
+      "claim": "Intel reported a GAAP loss per share of $2.16.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 46,
+          "quote": "Second-quarter earnings (loss) per share (EPS) attributable to Intel was $(2.16); non-GAAP EPS attributable to Intel was $0.42.",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The article says second-quarter earnings (loss) per share attributable to Intel was $(2.16).",
+      "action": "keep",
+      "revised_claim": "Intel reported second-quarter 2026 EPS attributable to Intel of $(2.16).",
+      "number_bindings": [
+        {
+          "claim_number": "2026",
+          "evidence_line": 43,
+          "evidence_number": "2026",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2.16",
+          "evidence_line": 46,
+          "evidence_number": "2.16",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2.16",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2026:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] the company reported a GAAP loss per share of $2.16",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u0c4",
+      "source_id": 0,
+      "source_start": 246,
+      "source_end": 283,
+      "source_quote_occurrences": 1,
+      "original_quote": "but a positive non-GAAP EPS of $0.42,",
+      "claim": "Intel reported non-GAAP EPS of $0.42.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 46,
+          "quote": "Second-quarter earnings (loss) per share (EPS) attributable to Intel was $(2.16); non-GAAP EPS attributable to Intel was $0.42.",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The article explicitly states non-GAAP EPS attributable to Intel was $0.42.",
+      "action": "keep",
+      "revised_claim": "Intel reported second-quarter 2026 non-GAAP EPS attributable to Intel of $0.42.",
+      "number_bindings": [
+        {
+          "claim_number": "2026",
+          "evidence_line": 43,
+          "evidence_number": "2026",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "0.42",
+          "evidence_line": 46,
+          "evidence_number": "0.42",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "0.42",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2026:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] but a positive non-GAAP EPS of $0.42,",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u0c5",
+      "source_id": 0,
+      "source_start": 284,
+      "source_end": 326,
+      "source_quote_occurrences": 1,
+      "original_quote": "indicating ongoing operational challenges.",
+      "claim": "Intel's GAAP loss and non-GAAP profit indicated ongoing operational challenges.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The supplied evidence gives the reported EPS figures but does not directly establish this qualitative interpretation or causal implication.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Intel's GAAP loss and non-GAAP profit indicated ongoing operational challenges.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u0c6",
+      "source_id": 0,
+      "source_start": 327,
+      "source_end": 386,
+      "source_quote_occurrences": 1,
+      "original_quote": "The company provided guidance for the third quarter of 2026",
+      "claim": "Intel provided guidance for the third quarter of 2026.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 47,
+          "quote": "Forecasting third-quarter 2026 revenue of $15.8 billion to $16.8 billion; expecting third-quarter EPS attributable to Intel of $0.31 and non-GAAP EPS attributable to Intel of $0.38.",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The article explicitly provides third-quarter 2026 revenue and EPS expectations.",
+      "action": "keep",
+      "revised_claim": "Intel provided third-quarter 2026 guidance.",
+      "number_bindings": [
+        {
+          "claim_number": "2026",
+          "evidence_line": 47,
+          "evidence_number": "2026",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2026",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "Intel provided third-quarter 2026 guidance.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u0c7",
+      "source_id": 0,
+      "source_start": 387,
+      "source_end": 448,
+      "source_quote_occurrences": 1,
+      "original_quote": "with expected revenue between $15.8 billion and $16.8 billion",
+      "claim": "Intel expected third-quarter 2026 revenue between $15.8 billion and $16.8 billion.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 47,
+          "quote": "Forecasting third-quarter 2026 revenue of $15.8 billion to $16.8 billion; expecting third-quarter EPS attributable to Intel of $0.31 and non-GAAP EPS attributable to Intel of $0.38.",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The article states forecast third-quarter 2026 revenue of $15.8 billion to $16.8 billion.",
+      "action": "keep",
+      "revised_claim": "Intel forecast third-quarter 2026 revenue of $15.8 billion to $16.8 billion.",
+      "number_bindings": [
+        {
+          "claim_number": "2026",
+          "evidence_line": 47,
+          "evidence_number": "2026",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "15.8",
+          "evidence_line": 47,
+          "evidence_number": "15.8",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "16.8",
+          "evidence_line": 47,
+          "evidence_number": "16.8",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2026",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "15.8",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "16.8",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "Intel forecast third-quarter 2026 revenue of $15.8 billion to $16.8 billion.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u0c8",
+      "source_id": 0,
+      "source_start": 449,
+      "source_end": 486,
+      "source_quote_occurrences": 1,
+      "original_quote": "and a non-GAAP EPS forecast of $0.38,",
+      "claim": "Intel forecast third-quarter 2026 non-GAAP EPS of $0.38.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 47,
+          "quote": "Forecasting third-quarter 2026 revenue of $15.8 billion to $16.8 billion; expecting third-quarter EPS attributable to Intel of $0.31 and non-GAAP EPS attributable to Intel of $0.38.",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The article explicitly states expected third-quarter non-GAAP EPS attributable to Intel of $0.38.",
+      "action": "keep",
+      "revised_claim": "Intel forecast third-quarter 2026 non-GAAP EPS attributable to Intel of $0.38.",
+      "number_bindings": [
+        {
+          "claim_number": "2026",
+          "evidence_line": 47,
+          "evidence_number": "2026",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "0.38",
+          "evidence_line": 47,
+          "evidence_number": "0.38",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2026",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "0.38",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "Intel forecast third-quarter 2026 non-GAAP EPS attributable to Intel of $0.38.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u0c9",
+      "source_id": 0,
+      "source_start": 487,
+      "source_end": 543,
+      "source_quote_occurrences": 1,
+      "original_quote": "signaling cautious optimism about near-term performance.",
+      "claim": "Intel's guidance signaled cautious optimism about near-term performance.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The evidence provides the guidance figures but does not directly establish this sentiment interpretation.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Intel's guidance signaled cautious optimism about near-term performance.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u1c0",
+      "source_id": 1,
+      "source_start": 545,
+      "source_end": 594,
+      "source_quote_occurrences": 1,
+      "original_quote": "Key developments for investors to monitor include",
+      "claim": "There are key developments for investors to monitor.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "This is advisory framing, not a directly evidenced factual assertion.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] There are key developments for investors to monitor.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u1c1",
+      "source_id": 1,
+      "source_start": 595,
+      "source_end": 636,
+      "source_quote_occurrences": 1,
+      "original_quote": "Intel's strong revenue rebound in Q2 2026",
+      "claim": "Intel had a strong revenue rebound in Q2 2026.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 45,
+          "quote": "Second-quarter revenue was $16.1 billion, up 25% year-over-year (YoY).",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The article states second-quarter revenue was up 25% year over year. The subjective descriptor 'strong' is not independently evidenced and is omitted from the revision.",
+      "action": "keep",
+      "revised_claim": "Intel reported second-quarter 2026 revenue up 25% year over year.",
+      "number_bindings": [
+        {
+          "claim_number": "2026",
+          "evidence_line": 43,
+          "evidence_number": "2026",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "25%",
+          "evidence_line": 45,
+          "evidence_number": "25%",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "25%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2026:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Intel's strong revenue rebound in Q2 2026",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u1c2",
+      "source_id": 1,
+      "source_start": 637,
+      "source_end": 681,
+      "source_quote_occurrences": 1,
+      "original_quote": "amidst a multi-year declining revenue trend,",
+      "claim": "Intel was in a multi-year declining revenue trend before the reported quarter.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 6,
+          "quote": "|  0 | Revenue             | 79024000000.0      | 63054000000.0      | 54228000000.0 | 53101000000.0      | 52853000000.0      | 55495650000.0 | 58825389000.0 | 61178404560.0  | -9.6%  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The annual revenue row declines each year from 2021A through 2025A.",
+      "action": "keep",
+      "revised_claim": "Intel revenue declined each year from 2021A through 2025A.",
+      "number_bindings": [
+        {
+          "claim_number": "2021",
+          "evidence_line": 4,
+          "evidence_number": "2021A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2025",
+          "evidence_line": 4,
+          "evidence_number": "2025A",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2021",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2025",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [
+        {
+          "original_binding": {
+            "claim_number": "2021",
+            "evidence_line": 4,
+            "evidence_number": "2021A",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2021",
+            "evidence_line": 4,
+            "evidence_number": "2021",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |"
+        },
+        {
+          "original_binding": {
+            "claim_number": "2025",
+            "evidence_line": 4,
+            "evidence_number": "2025A",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2025",
+            "evidence_line": 4,
+            "evidence_number": "2025",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |"
+        }
+      ],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "Intel revenue declined each year from 2021A through 2025A.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u1c3",
+      "source_id": 1,
+      "source_start": 682,
+      "source_end": 718,
+      "source_quote_occurrences": 1,
+      "original_quote": "the continued negative GAAP earnings",
+      "claim": "Intel had continued negative GAAP earnings.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The supplied evidence supports a negative second-quarter 2026 EPS figure, but it does not establish that negative GAAP earnings were continued over multiple periods.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Intel had continued negative GAAP earnings.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u1c4",
+      "source_id": 1,
+      "source_start": 719,
+      "source_end": 753,
+      "source_quote_occurrences": 1,
+      "original_quote": "despite positive non-GAAP results,",
+      "claim": "Intel reported positive non-GAAP results in the reported quarter.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 46,
+          "quote": "Second-quarter earnings (loss) per share (EPS) attributable to Intel was $(2.16); non-GAAP EPS attributable to Intel was $0.42.",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The article states non-GAAP EPS attributable to Intel was $0.42.",
+      "action": "keep",
+      "revised_claim": "Intel reported second-quarter 2026 non-GAAP EPS attributable to Intel of $0.42.",
+      "number_bindings": [
+        {
+          "claim_number": "2026",
+          "evidence_line": 43,
+          "evidence_number": "2026",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "0.42",
+          "evidence_line": 46,
+          "evidence_number": "0.42",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "0.42",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2026:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] despite positive non-GAAP results,",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u1c5",
+      "source_id": 1,
+      "source_start": 754,
+      "source_end": 840,
+      "source_quote_occurrences": 1,
+      "original_quote": "and the forward-looking guidance that suggests stabilization in financial performance.",
+      "claim": "Intel provided forward-looking guidance that suggests stabilization in financial performance.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 47,
+          "quote": "Forecasting third-quarter 2026 revenue of $15.8 billion to $16.8 billion; expecting third-quarter EPS attributable to Intel of $0.31 and non-GAAP EPS attributable to Intel of $0.38.",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The evidence supports that Intel provided forward-looking third-quarter 2026 guidance, but it does not directly support the interpretation that this suggests stabilization. The revision retains only the directly evidenced guidance fact.",
+      "action": "keep",
+      "revised_claim": "Intel provided forward-looking third-quarter 2026 guidance.",
+      "number_bindings": [
+        {
+          "claim_number": "2026",
+          "evidence_line": 47,
+          "evidence_number": "2026",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2026",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "Intel provided forward-looking third-quarter 2026 guidance.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u1c6",
+      "source_id": 1,
+      "source_start": 841,
+      "source_end": 883,
+      "source_quote_occurrences": 1,
+      "original_quote": "The company's EBITDA has shown volatility,",
+      "claim": "Intel's EBITDA has shown volatility.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 11,
+          "quote": "|  5 | EBITDA              | 33874000000.0      | 21299000000.0      | 11242000000.0 | 1203000000.0       | 14354000000.0      | 15316799400.0 | 17118188199.0 | 18720591795.36 | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The EBITDA row shows large changes across years; the revision states the directly evidenced annual values and direction changes rather than the interpretive label alone.",
+      "action": "keep",
+      "revised_claim": "Intel EBITDA fell from 33.874 billion in 2021A to 1.203 billion in 2024A, then rose to 14.354 billion in 2025A.",
+      "number_bindings": [
+        {
+          "claim_number": "33.874",
+          "evidence_line": 11,
+          "evidence_number": "33874000000.0",
+          "transform": "divide_billion"
+        },
+        {
+          "claim_number": "2021",
+          "evidence_line": 4,
+          "evidence_number": "2021A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "1.203",
+          "evidence_line": 11,
+          "evidence_number": "1203000000.0",
+          "transform": "divide_billion"
+        },
+        {
+          "claim_number": "2024",
+          "evidence_line": 4,
+          "evidence_number": "2024A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "14.354",
+          "evidence_line": 11,
+          "evidence_number": "14354000000.0",
+          "transform": "divide_billion"
+        },
+        {
+          "claim_number": "2025",
+          "evidence_line": 4,
+          "evidence_number": "2025A",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "33.874",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2021",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "1.203",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2024",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "14.354",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2025",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [
+        {
+          "original_binding": {
+            "claim_number": "2021",
+            "evidence_line": 4,
+            "evidence_number": "2021A",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2021",
+            "evidence_line": 4,
+            "evidence_number": "2021",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |"
+        },
+        {
+          "original_binding": {
+            "claim_number": "2024",
+            "evidence_line": 4,
+            "evidence_number": "2024A",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2024",
+            "evidence_line": 4,
+            "evidence_number": "2024",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |"
+        },
+        {
+          "original_binding": {
+            "claim_number": "2025",
+            "evidence_line": 4,
+            "evidence_number": "2025A",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2025",
+            "evidence_line": 4,
+            "evidence_number": "2025",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |"
+        }
+      ],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "Intel EBITDA fell from 33.874 billion in 2021A to 1.203 billion in 2024A, then rose to 14.354 billion in 2025A.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u1c7",
+      "source_id": 1,
+      "source_start": 884,
+      "source_end": 917,
+      "source_quote_occurrences": 1,
+      "original_quote": "with a notably low margin in 2024",
+      "claim": "Intel had a notably low EBITDA margin in 2024.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 12,
+          "quote": "|  6 | EBITDA Margin       | 42.9%              | 33.8%              | 20.7%         | 2.3%               | 27.2%              | 27.6%         | 29.1%         | 30.6%          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The EBITDA margin row shows 2.3% in 2024A. The subjective phrase 'notably low' is tightened to the directly evidenced value.",
+      "action": "keep",
+      "revised_claim": "Intel EBITDA margin was 2.3% in 2024A.",
+      "number_bindings": [
+        {
+          "claim_number": "2.3%",
+          "evidence_line": 12,
+          "evidence_number": "2.3%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2024",
+          "evidence_line": 4,
+          "evidence_number": "2024A",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2.3%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2024",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [
+        {
+          "original_binding": {
+            "claim_number": "2024",
+            "evidence_line": 4,
+            "evidence_number": "2024A",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2024",
+            "evidence_line": 4,
+            "evidence_number": "2024",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |"
+        }
+      ],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "Intel EBITDA margin was 2.3% in 2024A.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u1c8",
+      "source_id": 1,
+      "source_start": 918,
+      "source_end": 958,
+      "source_quote_occurrences": 1,
+      "original_quote": "but projected improvements through 2028.",
+      "claim": "Intel's EBITDA margin was projected to improve through 2028.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 12,
+          "quote": "|  6 | EBITDA Margin       | 42.9%              | 33.8%              | 20.7%         | 2.3%               | 27.2%              | 27.6%         | 29.1%         | 30.6%          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The EBITDA margin row rises from 27.6% in 2026E to 29.1% in 2027E and 30.6% in 2028E.",
+      "action": "keep",
+      "revised_claim": "Intel forecast EBITDA margin of 27.6% in 2026E, 29.1% in 2027E, and 30.6% in 2028E.",
+      "number_bindings": [
+        {
+          "claim_number": "27.6%",
+          "evidence_line": 12,
+          "evidence_number": "27.6%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2026",
+          "evidence_line": 4,
+          "evidence_number": "2026E",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "29.1%",
+          "evidence_line": 12,
+          "evidence_number": "29.1%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2027",
+          "evidence_line": 4,
+          "evidence_number": "2027E",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "30.6%",
+          "evidence_line": 12,
+          "evidence_number": "30.6%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "27.6%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2026",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "29.1%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2027",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "30.6%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [
+        {
+          "original_binding": {
+            "claim_number": "2026",
+            "evidence_line": 4,
+            "evidence_number": "2026E",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2026",
+            "evidence_line": 4,
+            "evidence_number": "2026",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |"
+        },
+        {
+          "original_binding": {
+            "claim_number": "2027",
+            "evidence_line": 4,
+            "evidence_number": "2027E",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2027",
+            "evidence_line": 4,
+            "evidence_number": "2027",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |"
+        },
+        {
+          "original_binding": {
+            "claim_number": "2028",
+            "evidence_line": 4,
+            "evidence_number": "2028E",
+            "transform": "identity"
+          },
+          "normalized_binding": {
+            "claim_number": "2028",
+            "evidence_line": 4,
+            "evidence_number": "2028",
+            "transform": "identity"
+          },
+          "rule": "exact_actual_forecast_period_wrapper",
+          "evidence_quote": "|    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |"
+        }
+      ],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "Intel forecast EBITDA margin of 27.6% in 2026E, 29.1% in 2027E, and 30.6% in 2028E.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u1c9",
+      "source_id": 1,
+      "source_start": 959,
+      "source_end": 1051,
+      "source_quote_occurrences": 1,
+      "original_quote": "Comparisons to peers such as AMD and NVIDIA highlight Intel's ongoing competitive pressures,",
+      "claim": "Peer comparisons with AMD and NVIDIA highlight Intel's ongoing competitive pressures.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The tables provide peer EBITDA and EV/EBITDA figures, but they do not directly establish competitive pressure as a causal or strategic conclusion.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Peer comparisons with AMD and NVIDIA highlight Intel's ongoing competitive pressures.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u1c10",
+      "source_id": 1,
+      "source_start": 1052,
+      "source_end": 1096,
+      "source_quote_occurrences": 1,
+      "original_quote": "especially given NVIDIA's much higher EBITDA",
+      "claim": "NVIDIA had much higher EBITDA than Intel.",
+      "classification": "Contradicted",
+      "evidence": [
+        {
+          "line_number": 23,
+          "quote": "|   2023 |   4.149e+09   |   1.1242e+10  |   5.986e+09   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 24,
+          "quote": "|   2024 |   5.258e+09   |   1.203e+09   |   3.5583e+10  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 25,
+          "quote": "|   2025 |   7.275e+09   |   1.4354e+10  |   8.6137e+10  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The peer EBITDA table shows NVIDIA EBITDA was lower than Intel in 2023, but higher in 2024 and 2025. The unqualified comparative is therefore contradicted.",
+      "action": "correct",
+      "revised_claim": "NVIDIA EBITDA was lower than Intel's in 2023, but higher in 2024 and 2025.",
+      "number_bindings": [
+        {
+          "claim_number": "2023",
+          "evidence_line": 19,
+          "evidence_number": "2023",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2024",
+          "evidence_line": 19,
+          "evidence_number": "2024",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2025",
+          "evidence_line": 19,
+          "evidence_number": "2025",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2024",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2025",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2023:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2024:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2025:number_not_in_cited_evidence_line"
+      ],
+      "retained": false,
+      "retained_as_verified": false,
+      "released_text": "",
+      "release_text_source": "none",
+      "verification_status": "contradicted_correction_rejected",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u1c11",
+      "source_id": 1,
+      "source_start": 1097,
+      "source_end": 1121,
+      "source_quote_occurrences": 1,
+      "original_quote": "and valuation multiples,",
+      "claim": "NVIDIA had higher valuation multiples than Intel.",
+      "classification": "Contradicted",
+      "evidence": [
+        {
+          "line_number": 33,
+          "quote": "|   2022 |  17.9136 |   6.54873 |  54.7187 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 34,
+          "quote": "|   2023 |  57.1197 |  22.4823  |  81.0476 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 35,
+          "quote": "|   2024 |  38.2717 | 106.938   |  43.4522 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 36,
+          "quote": "|   2025 |  47.8456 |  14.4982  |  33.7774 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "In the peer EV/EBITDA table, NVIDIA's EV/EBITDA is higher than Intel's in 2022, 2023, and 2025, but lower in 2024, so the unqualified claim is contradicted.",
+      "action": "correct",
+      "revised_claim": "NVIDIA EV/EBITDA was higher than Intel's in 2022, 2023, and 2025, but lower in 2024.",
+      "number_bindings": [
+        {
+          "claim_number": "2022",
+          "evidence_line": 30,
+          "evidence_number": "2022",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2023",
+          "evidence_line": 30,
+          "evidence_number": "2023",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2025",
+          "evidence_line": 30,
+          "evidence_number": "2025",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2024",
+          "evidence_line": 30,
+          "evidence_number": "2024",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2022",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2025",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2024",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2022:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2023:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2025:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2024:number_not_in_cited_evidence_line"
+      ],
+      "retained": false,
+      "retained_as_verified": false,
+      "released_text": "",
+      "release_text_source": "none",
+      "verification_status": "contradicted_correction_rejected",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u1c12",
+      "source_id": 1,
+      "source_start": 1122,
+      "source_end": 1169,
+      "source_quote_occurrences": 1,
+      "original_quote": "reflecting a challenging competitive landscape.",
+      "claim": "The peer metrics reflect a challenging competitive landscape for Intel.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The supplied evidence does not directly establish this qualitative market interpretation.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] The peer metrics reflect a challenging competitive landscape for Intel.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u2c0",
+      "source_id": 2,
+      "source_start": 1171,
+      "source_end": 1235,
+      "source_quote_occurrences": 1,
+      "original_quote": "Market sentiment surrounding Intel appears cautiously optimistic",
+      "claim": "Market sentiment surrounding Intel appears cautiously optimistic.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The supplied evidence does not provide direct evidence of market sentiment.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Market sentiment surrounding Intel appears cautiously optimistic.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u2c1",
+      "source_id": 2,
+      "source_start": 1236,
+      "source_end": 1261,
+      "source_quote_occurrences": 1,
+      "original_quote": "due to the revenue growth",
+      "claim": "Intel reported revenue growth in the reported quarter.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 45,
+          "quote": "Second-quarter revenue was $16.1 billion, up 25% year-over-year (YoY).",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The article states second-quarter revenue was up 25% year over year.",
+      "action": "keep",
+      "revised_claim": "Intel reported second-quarter 2026 revenue up 25% year over year.",
+      "number_bindings": [
+        {
+          "claim_number": "2026",
+          "evidence_line": 43,
+          "evidence_number": "2026",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "25%",
+          "evidence_line": 45,
+          "evidence_number": "25%",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "25%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2026:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] due to the revenue growth",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u2c2",
+      "source_id": 2,
+      "source_start": 1262,
+      "source_end": 1293,
+      "source_quote_occurrences": 1,
+      "original_quote": "and positive non-GAAP earnings,",
+      "claim": "Intel reported positive non-GAAP earnings in the reported quarter.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 46,
+          "quote": "Second-quarter earnings (loss) per share (EPS) attributable to Intel was $(2.16); non-GAAP EPS attributable to Intel was $0.42.",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The article states non-GAAP EPS attributable to Intel was $0.42.",
+      "action": "keep",
+      "revised_claim": "Intel reported second-quarter 2026 non-GAAP EPS attributable to Intel of $0.42.",
+      "number_bindings": [
+        {
+          "claim_number": "2026",
+          "evidence_line": 43,
+          "evidence_number": "2026",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "0.42",
+          "evidence_line": 46,
+          "evidence_number": "0.42",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "0.42",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2026:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] and positive non-GAAP earnings,",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u2c3",
+      "source_id": 2,
+      "source_start": 1294,
+      "source_end": 1331,
+      "source_quote_occurrences": 1,
+      "original_quote": "but tempered by sustained GAAP losses",
+      "claim": "Intel had sustained GAAP losses.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The evidence supports a negative second-quarter 2026 EPS figure, but it does not establish sustained GAAP losses across multiple periods.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Intel had sustained GAAP losses.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u2c4",
+      "source_id": 2,
+      "source_start": 1332,
+      "source_end": 1415,
+      "source_quote_occurrences": 1,
+      "original_quote": "and the need for continued strategic execution to restore profitability and growth.",
+      "claim": "Intel needed continued strategic execution to restore profitability and growth.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "This strategic judgment is not directly established by the supplied evidence.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Intel needed continued strategic execution to restore profitability and growth.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u2c5",
+      "source_id": 2,
+      "source_start": 1416,
+      "source_end": 1484,
+      "source_quote_occurrences": 1,
+      "original_quote": "This mixed sentiment may lead to moderate near-term stock volatility",
+      "claim": "Mixed sentiment may lead to moderate near-term stock volatility in Intel shares.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The supplied evidence does not provide direct support for this forward-looking market-impact claim.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Mixed sentiment may lead to moderate near-term stock volatility in Intel shares.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    },
+    {
+      "claim_id": "u2c6",
+      "source_id": 2,
+      "source_start": 1485,
+      "source_end": 1565,
+      "source_quote_occurrences": 1,
+      "original_quote": "as investors weigh improvements against ongoing risks and competitive headwinds.",
+      "claim": "Investors are weighing improvements against ongoing risks and competitive headwinds.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "The supplied evidence does not directly establish investor behavior or these qualitative headwinds.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Investors are weighing improvements against ongoing risks and competitive headwinds.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef"
+    }
+  ],
+  "units": [
+    {
+      "source_id": 0,
+      "claims": [
+        {
+          "original_quote": "Intel Corporation's most recent financial report for the second quarter of 2026",
+          "claim": "Intel Corporation's most recent financial report was for the second quarter of 2026.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The supplied evidence includes one dated news article about second-quarter 2026 results, but it does not establish that this was Intel's most recent financial report.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "showed a significant year-over-year revenue increase of 25%, reaching $16.1 billion.",
+          "claim": "Intel's second-quarter 2026 revenue increased 25% year over year to $16.1 billion.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 45
+            }
+          ],
+          "reason": "The news summary explicitly states second-quarter revenue was $16.1 billion, up 25% year over year. The adjective 'significant' is subjective and is omitted in the verified revision.",
+          "action": "keep",
+          "revised_claim": "Intel reported second-quarter 2026 revenue of $16.1 billion, up 25% year over year.",
+          "number_bindings": [
+            {
+              "claim_number": "2026",
+              "evidence_line": 43,
+              "evidence_number": "2026",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "16.1",
+              "evidence_line": 45,
+              "evidence_number": "16.1",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "25%",
+              "evidence_line": 45,
+              "evidence_number": "25%",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "Despite this revenue growth,",
+          "claim": "Intel had revenue growth in the reported quarter.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 45
+            }
+          ],
+          "reason": "The article states second-quarter revenue was up 25% year over year.",
+          "action": "keep",
+          "revised_claim": "Intel's second-quarter 2026 revenue was up 25% year over year.",
+          "number_bindings": [
+            {
+              "claim_number": "2026",
+              "evidence_line": 43,
+              "evidence_number": "2026",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "25%",
+              "evidence_line": 45,
+              "evidence_number": "25%",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "the company reported a GAAP loss per share of $2.16",
+          "claim": "Intel reported a GAAP loss per share of $2.16.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 46
+            }
+          ],
+          "reason": "The article says second-quarter earnings (loss) per share attributable to Intel was $(2.16).",
+          "action": "keep",
+          "revised_claim": "Intel reported second-quarter 2026 EPS attributable to Intel of $(2.16).",
+          "number_bindings": [
+            {
+              "claim_number": "2026",
+              "evidence_line": 43,
+              "evidence_number": "2026",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2.16",
+              "evidence_line": 46,
+              "evidence_number": "2.16",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "but a positive non-GAAP EPS of $0.42,",
+          "claim": "Intel reported non-GAAP EPS of $0.42.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 46
+            }
+          ],
+          "reason": "The article explicitly states non-GAAP EPS attributable to Intel was $0.42.",
+          "action": "keep",
+          "revised_claim": "Intel reported second-quarter 2026 non-GAAP EPS attributable to Intel of $0.42.",
+          "number_bindings": [
+            {
+              "claim_number": "2026",
+              "evidence_line": 43,
+              "evidence_number": "2026",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "0.42",
+              "evidence_line": 46,
+              "evidence_number": "0.42",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "indicating ongoing operational challenges.",
+          "claim": "Intel's GAAP loss and non-GAAP profit indicated ongoing operational challenges.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The supplied evidence gives the reported EPS figures but does not directly establish this qualitative interpretation or causal implication.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The company provided guidance for the third quarter of 2026",
+          "claim": "Intel provided guidance for the third quarter of 2026.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 47
+            }
+          ],
+          "reason": "The article explicitly provides third-quarter 2026 revenue and EPS expectations.",
+          "action": "keep",
+          "revised_claim": "Intel provided third-quarter 2026 guidance.",
+          "number_bindings": [
+            {
+              "claim_number": "2026",
+              "evidence_line": 47,
+              "evidence_number": "2026",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "with expected revenue between $15.8 billion and $16.8 billion",
+          "claim": "Intel expected third-quarter 2026 revenue between $15.8 billion and $16.8 billion.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 47
+            }
+          ],
+          "reason": "The article states forecast third-quarter 2026 revenue of $15.8 billion to $16.8 billion.",
+          "action": "keep",
+          "revised_claim": "Intel forecast third-quarter 2026 revenue of $15.8 billion to $16.8 billion.",
+          "number_bindings": [
+            {
+              "claim_number": "2026",
+              "evidence_line": 47,
+              "evidence_number": "2026",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "15.8",
+              "evidence_line": 47,
+              "evidence_number": "15.8",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "16.8",
+              "evidence_line": 47,
+              "evidence_number": "16.8",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "and a non-GAAP EPS forecast of $0.38,",
+          "claim": "Intel forecast third-quarter 2026 non-GAAP EPS of $0.38.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 47
+            }
+          ],
+          "reason": "The article explicitly states expected third-quarter non-GAAP EPS attributable to Intel of $0.38.",
+          "action": "keep",
+          "revised_claim": "Intel forecast third-quarter 2026 non-GAAP EPS attributable to Intel of $0.38.",
+          "number_bindings": [
+            {
+              "claim_number": "2026",
+              "evidence_line": 47,
+              "evidence_number": "2026",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "0.38",
+              "evidence_line": 47,
+              "evidence_number": "0.38",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "signaling cautious optimism about near-term performance.",
+          "claim": "Intel's guidance signaled cautious optimism about near-term performance.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The evidence provides the guidance figures but does not directly establish this sentiment interpretation.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 1,
+      "claims": [
+        {
+          "original_quote": "Key developments for investors to monitor include",
+          "claim": "There are key developments for investors to monitor.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "This is advisory framing, not a directly evidenced factual assertion.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Intel's strong revenue rebound in Q2 2026",
+          "claim": "Intel had a strong revenue rebound in Q2 2026.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 45
+            }
+          ],
+          "reason": "The article states second-quarter revenue was up 25% year over year. The subjective descriptor 'strong' is not independently evidenced and is omitted from the revision.",
+          "action": "keep",
+          "revised_claim": "Intel reported second-quarter 2026 revenue up 25% year over year.",
+          "number_bindings": [
+            {
+              "claim_number": "2026",
+              "evidence_line": 43,
+              "evidence_number": "2026",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "25%",
+              "evidence_line": 45,
+              "evidence_number": "25%",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "amidst a multi-year declining revenue trend,",
+          "claim": "Intel was in a multi-year declining revenue trend before the reported quarter.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 6
+            }
+          ],
+          "reason": "The annual revenue row declines each year from 2021A through 2025A.",
+          "action": "keep",
+          "revised_claim": "Intel revenue declined each year from 2021A through 2025A.",
+          "number_bindings": [
+            {
+              "claim_number": "2021",
+              "evidence_line": 4,
+              "evidence_number": "2021A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2025",
+              "evidence_line": 4,
+              "evidence_number": "2025A",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "the continued negative GAAP earnings",
+          "claim": "Intel had continued negative GAAP earnings.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The supplied evidence supports a negative second-quarter 2026 EPS figure, but it does not establish that negative GAAP earnings were continued over multiple periods.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "despite positive non-GAAP results,",
+          "claim": "Intel reported positive non-GAAP results in the reported quarter.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 46
+            }
+          ],
+          "reason": "The article states non-GAAP EPS attributable to Intel was $0.42.",
+          "action": "keep",
+          "revised_claim": "Intel reported second-quarter 2026 non-GAAP EPS attributable to Intel of $0.42.",
+          "number_bindings": [
+            {
+              "claim_number": "2026",
+              "evidence_line": 43,
+              "evidence_number": "2026",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "0.42",
+              "evidence_line": 46,
+              "evidence_number": "0.42",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "and the forward-looking guidance that suggests stabilization in financial performance.",
+          "claim": "Intel provided forward-looking guidance that suggests stabilization in financial performance.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 47
+            }
+          ],
+          "reason": "The evidence supports that Intel provided forward-looking third-quarter 2026 guidance, but it does not directly support the interpretation that this suggests stabilization. The revision retains only the directly evidenced guidance fact.",
+          "action": "keep",
+          "revised_claim": "Intel provided forward-looking third-quarter 2026 guidance.",
+          "number_bindings": [
+            {
+              "claim_number": "2026",
+              "evidence_line": 47,
+              "evidence_number": "2026",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "The company's EBITDA has shown volatility,",
+          "claim": "Intel's EBITDA has shown volatility.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 11
+            }
+          ],
+          "reason": "The EBITDA row shows large changes across years; the revision states the directly evidenced annual values and direction changes rather than the interpretive label alone.",
+          "action": "keep",
+          "revised_claim": "Intel EBITDA fell from 33.874 billion in 2021A to 1.203 billion in 2024A, then rose to 14.354 billion in 2025A.",
+          "number_bindings": [
+            {
+              "claim_number": "33.874",
+              "evidence_line": 11,
+              "evidence_number": "33874000000.0",
+              "transform": "divide_billion"
+            },
+            {
+              "claim_number": "2021",
+              "evidence_line": 4,
+              "evidence_number": "2021A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "1.203",
+              "evidence_line": 11,
+              "evidence_number": "1203000000.0",
+              "transform": "divide_billion"
+            },
+            {
+              "claim_number": "2024",
+              "evidence_line": 4,
+              "evidence_number": "2024A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "14.354",
+              "evidence_line": 11,
+              "evidence_number": "14354000000.0",
+              "transform": "divide_billion"
+            },
+            {
+              "claim_number": "2025",
+              "evidence_line": 4,
+              "evidence_number": "2025A",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "with a notably low margin in 2024",
+          "claim": "Intel had a notably low EBITDA margin in 2024.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 12
+            }
+          ],
+          "reason": "The EBITDA margin row shows 2.3% in 2024A. The subjective phrase 'notably low' is tightened to the directly evidenced value.",
+          "action": "keep",
+          "revised_claim": "Intel EBITDA margin was 2.3% in 2024A.",
+          "number_bindings": [
+            {
+              "claim_number": "2.3%",
+              "evidence_line": 12,
+              "evidence_number": "2.3%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2024",
+              "evidence_line": 4,
+              "evidence_number": "2024A",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "but projected improvements through 2028.",
+          "claim": "Intel's EBITDA margin was projected to improve through 2028.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 12
+            }
+          ],
+          "reason": "The EBITDA margin row rises from 27.6% in 2026E to 29.1% in 2027E and 30.6% in 2028E.",
+          "action": "keep",
+          "revised_claim": "Intel forecast EBITDA margin of 27.6% in 2026E, 29.1% in 2027E, and 30.6% in 2028E.",
+          "number_bindings": [
+            {
+              "claim_number": "27.6%",
+              "evidence_line": 12,
+              "evidence_number": "27.6%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2026",
+              "evidence_line": 4,
+              "evidence_number": "2026E",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "29.1%",
+              "evidence_line": 12,
+              "evidence_number": "29.1%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2027",
+              "evidence_line": 4,
+              "evidence_number": "2027E",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "30.6%",
+              "evidence_line": 12,
+              "evidence_number": "30.6%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "Comparisons to peers such as AMD and NVIDIA highlight Intel's ongoing competitive pressures,",
+          "claim": "Peer comparisons with AMD and NVIDIA highlight Intel's ongoing competitive pressures.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The tables provide peer EBITDA and EV/EBITDA figures, but they do not directly establish competitive pressure as a causal or strategic conclusion.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "especially given NVIDIA's much higher EBITDA",
+          "claim": "NVIDIA had much higher EBITDA than Intel.",
+          "classification": "Contradicted",
+          "evidence": [
+            {
+              "line_number": 23
+            },
+            {
+              "line_number": 24
+            },
+            {
+              "line_number": 25
+            }
+          ],
+          "reason": "The peer EBITDA table shows NVIDIA EBITDA was lower than Intel in 2023, but higher in 2024 and 2025. The unqualified comparative is therefore contradicted.",
+          "action": "correct",
+          "revised_claim": "NVIDIA EBITDA was lower than Intel's in 2023, but higher in 2024 and 2025.",
+          "number_bindings": [
+            {
+              "claim_number": "2023",
+              "evidence_line": 19,
+              "evidence_number": "2023",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2024",
+              "evidence_line": 19,
+              "evidence_number": "2024",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2025",
+              "evidence_line": 19,
+              "evidence_number": "2025",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "and valuation multiples,",
+          "claim": "NVIDIA had higher valuation multiples than Intel.",
+          "classification": "Contradicted",
+          "evidence": [
+            {
+              "line_number": 33
+            },
+            {
+              "line_number": 34
+            },
+            {
+              "line_number": 35
+            },
+            {
+              "line_number": 36
+            }
+          ],
+          "reason": "In the peer EV/EBITDA table, NVIDIA's EV/EBITDA is higher than Intel's in 2022, 2023, and 2025, but lower in 2024, so the unqualified claim is contradicted.",
+          "action": "correct",
+          "revised_claim": "NVIDIA EV/EBITDA was higher than Intel's in 2022, 2023, and 2025, but lower in 2024.",
+          "number_bindings": [
+            {
+              "claim_number": "2022",
+              "evidence_line": 30,
+              "evidence_number": "2022",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2023",
+              "evidence_line": 30,
+              "evidence_number": "2023",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2025",
+              "evidence_line": 30,
+              "evidence_number": "2025",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2024",
+              "evidence_line": 30,
+              "evidence_number": "2024",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "reflecting a challenging competitive landscape.",
+          "claim": "The peer metrics reflect a challenging competitive landscape for Intel.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The supplied evidence does not directly establish this qualitative market interpretation.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 2,
+      "claims": [
+        {
+          "original_quote": "Market sentiment surrounding Intel appears cautiously optimistic",
+          "claim": "Market sentiment surrounding Intel appears cautiously optimistic.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The supplied evidence does not provide direct evidence of market sentiment.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "due to the revenue growth",
+          "claim": "Intel reported revenue growth in the reported quarter.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 45
+            }
+          ],
+          "reason": "The article states second-quarter revenue was up 25% year over year.",
+          "action": "keep",
+          "revised_claim": "Intel reported second-quarter 2026 revenue up 25% year over year.",
+          "number_bindings": [
+            {
+              "claim_number": "2026",
+              "evidence_line": 43,
+              "evidence_number": "2026",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "25%",
+              "evidence_line": 45,
+              "evidence_number": "25%",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "and positive non-GAAP earnings,",
+          "claim": "Intel reported positive non-GAAP earnings in the reported quarter.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 46
+            }
+          ],
+          "reason": "The article states non-GAAP EPS attributable to Intel was $0.42.",
+          "action": "keep",
+          "revised_claim": "Intel reported second-quarter 2026 non-GAAP EPS attributable to Intel of $0.42.",
+          "number_bindings": [
+            {
+              "claim_number": "2026",
+              "evidence_line": 43,
+              "evidence_number": "2026",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "0.42",
+              "evidence_line": 46,
+              "evidence_number": "0.42",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "but tempered by sustained GAAP losses",
+          "claim": "Intel had sustained GAAP losses.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The evidence supports a negative second-quarter 2026 EPS figure, but it does not establish sustained GAAP losses across multiple periods.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "and the need for continued strategic execution to restore profitability and growth.",
+          "claim": "Intel needed continued strategic execution to restore profitability and growth.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "This strategic judgment is not directly established by the supplied evidence.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "This mixed sentiment may lead to moderate near-term stock volatility",
+          "claim": "Mixed sentiment may lead to moderate near-term stock volatility in Intel shares.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The supplied evidence does not provide direct support for this forward-looking market-impact claim.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "as investors weigh improvements against ongoing risks and competitive headwinds.",
+          "claim": "Investors are weighing improvements against ongoing risks and competitive headwinds.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "The supplied evidence does not directly establish investor behavior or these qualitative headwinds.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    }
+  ],
+  "verifier_version": "8.2-exact-display-wrapper-binding",
+  "release_deduplication": "Identical complete released strings appear once per section; all original claim rows and mappings remain. This is not semantic paraphrase deduplication.",
+  "unquoted_nonfactual_connectors": [],
+  "deterministic_validation_failures": [
+    {
+      "claim_id": "u0c1",
+      "errors": [
+        "numeric_check_failed:2026:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "16.1",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "25%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u0c2",
+      "errors": [
+        "numeric_check_failed:2026:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "25%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u0c3",
+      "errors": [
+        "numeric_check_failed:2026:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2.16",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u0c4",
+      "errors": [
+        "numeric_check_failed:2026:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "0.42",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u1c1",
+      "errors": [
+        "numeric_check_failed:2026:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "25%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u1c4",
+      "errors": [
+        "numeric_check_failed:2026:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "0.42",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u1c10",
+      "errors": [
+        "numeric_check_failed:2023:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2024:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2025:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2024",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2025",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u1c11",
+      "errors": [
+        "numeric_check_failed:2022:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2023:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2025:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2024:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "2022",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2025",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2024",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u2c1",
+      "errors": [
+        "numeric_check_failed:2026:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "25%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u2c2",
+      "errors": [
+        "numeric_check_failed:2026:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "0.42",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ]
+    }
+  ],
+  "deterministic_failure_count": 10,
+  "verified_claim_count": 8,
+  "unverified_annotation_count": 20,
+  "withheld_claim_count": 2,
+  "claim_retention_rate": 0.9333333333333333,
+  "supported_valid_retention_count": 8,
+  "automatic_year_binding_count": 0,
+  "limitations": "UNVERIFIED annotations preserve unsupported or deterministically rejected assertions for review and must not be counted as grounded facts. A claim's original machine classification is preserved even when deterministic checks reject it; retained_as_verified is then false. Rejected contradicted corrections remain in the audit but are withheld from the narrative. Semantic judgments are machine-assisted, not human-validated. Lexical quote coverage does not prove exhaustive semantic atomization. Exact numeric/year matches do not establish entity/period alignment or dimensional validity of conversions. Repeated source quotes may have ambiguous first-occurrence offsets."
+}

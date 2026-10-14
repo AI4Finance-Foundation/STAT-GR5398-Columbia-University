@@ -1,0 +1,422 @@
+{
+  "call_id": "NVDA_before_v2/independent_audit/company_overview/attempt_001",
+  "structured_output": {
+    "units": [
+      {
+        "unit_id": 0,
+        "claims": [
+          {
+            "claim": "NVIDIA Corporation is a leading technology company specializing in designing and manufacturing graphics processing units (GPUs) and advanced computing technologies.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The original writer evidence does not explicitly state NVIDIA's specialization or leadership in GPUs and advanced computing technologies.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia corporation|specialization|all_time|graphics processing units and advanced computing technologies|description"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 1,
+        "claims": [
+          {
+            "claim": "NVIDIA operates primarily in the semiconductor industry, serving diverse markets including gaming, professional visualization, data centers, and automotive sectors.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The original writer evidence does not explicitly state the industry or the specific markets served by NVIDIA.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia corporation|industry and markets served|all_time|semiconductor industry and gaming, professional visualization, data centers, automotive sectors|description"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 2,
+        "claims": [
+          {
+            "claim": "NVIDIA reported revenues surging from approximately $27 billion in 2023 to projections exceeding $130 billion in 2025, reflecting rapid growth driven by demand for AI and data center related products.",
+            "claim_type": "quantitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 4,
+                "line_end": 6
+              },
+              {
+                "line_start": 8,
+                "line_end": 8
+              }
+            ],
+            "reason": "The financial table shows revenue of $26.974 billion in 2023A and $130.497 billion in 2025A, consistent with the claim. The text also mentions growth driven by AI and data center demand, supported by the news summary in line 11.",
+            "numeric_status": "correct",
+            "fact_key": "nvidia corporation|revenue|2023-2025|27 billion to 130 billion|usd"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 3,
+        "claims": [
+          {
+            "claim": "NVIDIA's business model centers on the design and sale of high-performance GPUs and related software platforms, primarily targeting segments such as gaming, professional visualization, and increasingly, data centers and artificial intelligence applications.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The original writer evidence does not explicitly describe NVIDIA's business model or target segments in this detail.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia corporation|business model and target segments|all_time|design and sale of GPUs and software platforms for gaming, professional visualization, data centers, AI|description"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 4,
+        "claims": [
+          {
+            "claim": "The company’s strategic objectives emphasize leadership in AI computing, expanding its data center footprint, and driving innovation in autonomous vehicles and edge computing.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No explicit statement of strategic objectives is present in the original writer evidence.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia corporation|strategic objectives|all_time|leadership in AI computing, data center expansion, autonomous vehicles, edge computing|description"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 5,
+        "claims": [
+          {
+            "claim": "NVIDIA creates value by offering cutting-edge hardware and scalable AI software solutions that meet the evolving demands of developers, enterprises, and consumers worldwide.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No explicit statement about value creation or product offerings is present in the original writer evidence.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia corporation|value creation|all_time|cutting-edge hardware and scalable AI software solutions|description"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 6,
+        "claims": [
+          {
+            "claim": "Its primary customer segments include gamers, creative professionals, large-scale data center operators, and automotive companies, with a geographic presence spanning North America, Asia-Pacific, and Europe.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No explicit mention of customer segments or geographic presence is found in the original writer evidence.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia corporation|customer segments and geography|all_time|gamers, creative professionals, data center operators, automotive companies; North America, Asia-Pacific, Europe|description"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 7,
+        "claims": [
+          {
+            "claim": "The company’s revenue streams are predominantly driven by GPU sales for gaming and data center applications.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No explicit statement about revenue streams or their drivers is present in the original writer evidence.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia corporation|revenue streams|all_time|driven by GPU sales for gaming and data center applications|description"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 8,
+        "claims": [
+          {
+            "claim": "In 2023, total revenue was approximately $27 billion, with a dramatic increase to $60.9 billion in 2024 and an estimated $130.5 billion in 2025, reflecting a compound annual growth rate exceeding 68% over this period.",
+            "claim_type": "quantitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 4,
+                "line_end": 6
+              },
+              {
+                "line_start": 8,
+                "line_end": 8
+              }
+            ],
+            "reason": "The financial table shows revenue of $26.974 billion in 2023A, $60.922 billion in 2024A, and $130.497 billion in 2025A, consistent with the claim. The CAGR of 68.3% is also shown in the table.",
+            "numeric_status": "correct",
+            "fact_key": "nvidia corporation|revenue|2023-2025|27 billion to 130.5 billion|usd"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 9,
+        "claims": [
+          {
+            "claim": "Contribution margins have expanded significantly, reaching over 70% in recent years, supported by operational efficiencies and scaling.",
+            "claim_type": "quantitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 4,
+                "line_end": 4
+              },
+              {
+                "line_start": 9,
+                "line_end": 9
+              }
+            ],
+            "reason": "The table shows contribution margin of 56.9% in 2023A, 72.7% in 2024A, and 75.0% in 2025A, supporting the claim of margins over 70% in recent years. The explanation about operational efficiencies is not explicitly supported but the margin data is.",
+            "numeric_status": "correct",
+            "fact_key": "nvidia corporation|contribution margin|2023-2025|over 70%|percent"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 10,
+        "claims": [
+          {
+            "claim": "NVIDIA’s EBITDA margin improved from 22.2% in 2023 to an expected 66% in 2025, underscoring robust profitability.",
+            "claim_type": "quantitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 4,
+                "line_end": 4
+              },
+              {
+                "line_start": 11,
+                "line_end": 11
+              }
+            ],
+            "reason": "The table shows EBITDA margin of 22.2% in 2023A and 66.0% in 2025A, consistent with the claim.",
+            "numeric_status": "correct",
+            "fact_key": "nvidia corporation|ebitda margin|2023-2025|22.2% to 66%|percent"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 11,
+        "claims": [
+          {
+            "claim": "The data center segment has shown exceptional growth, highlighted by a recent quarterly report indicating $89 billion in revenue for this division alone, driven by AI and cloud computing demand.",
+            "claim_type": "quantitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 11,
+                "line_end": 11
+              },
+              {
+                "line_start": 44,
+                "line_end": 46
+              }
+            ],
+            "reason": "The news summary in line 11 and the recent news in lines 44-46 mention data center revenue of $89 billion, supporting the claim of exceptional growth and the amount.",
+            "numeric_status": "correct",
+            "fact_key": "nvidia corporation|data center revenue|2026 Q2|89 billion|usd"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 12,
+        "claims": [
+          {
+            "claim": "NVIDIA continues to invest in R&D, with ongoing development of new GPU architectures and AI platforms that promise to sustain its competitive edge.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No explicit mention of R&D investment or development of new GPU architectures and AI platforms is present in the original writer evidence.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia corporation|r&d investment and development|all_time|ongoing development of GPU architectures and AI platforms|description"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 13,
+        "claims": [
+          {
+            "claim": "Founded in 1993, NVIDIA has evolved from a niche graphics card manufacturer to a dominant player in the semiconductor and AI computing space.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No founding date or historical evolution details are present in the original writer evidence.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia corporation|founding and evolution|all_time|founded 1993, evolved to dominant semiconductor and AI player|description"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 14,
+        "claims": [
+          {
+            "claim": "Key milestones include the launch of its first GPU in 1999, expansion into mobile and professional visualization markets, and a strategic pivot toward AI and data center solutions in the 2010s.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No historical milestones or timeline details are present in the original writer evidence.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia corporation|key milestones|all_time|first GPU 1999, expansion into mobile and professional visualization, pivot to AI and data center|description"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 15,
+        "claims": [
+          {
+            "claim": "Leadership under CEO Jensen Huang, who co-founded the company and has led it since inception, has been instrumental in driving the company’s transformation and growth.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No mention of CEO Jensen Huang or leadership details is present in the original writer evidence.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia corporation|leadership|all_time|ceo jensen huang co-founder and leader|description"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 16,
+        "claims": [
+          {
+            "claim": "Huang's vision has fostered innovation and positioned NVIDIA as a pioneer in AI hardware and software integration.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No mention of Huang's vision or pioneering status is present in the original writer evidence.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia corporation|leadership vision|all_time|innovation and pioneering AI hardware and software integration|description"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 17,
+        "claims": [
+          {
+            "claim": "The executive team includes experienced leaders in finance and operations who support NVIDIA’s aggressive growth strategy and global expansion.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No mention of executive team composition or support for growth strategy is present in the original writer evidence.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia corporation|executive team|all_time|experienced leaders supporting growth and expansion|description"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 18,
+        "claims": [
+          {
+            "claim": "Financially, NVIDIA is robust with a market capitalization well into the hundreds of billions.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No market capitalization data is present in the original writer evidence.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia corporation|market capitalization|all_time|hundreds of billions|usd"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 19,
+        "claims": [
+          {
+            "claim": "The stock shows strong growth potential, with earnings per share improving from $0.18 in 2023 to projected $2.97 in 2025 and further beyond.",
+            "claim_type": "quantitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 4,
+                "line_end": 4
+              },
+              {
+                "line_start": 19,
+                "line_end": 19
+              }
+            ],
+            "reason": "The financial table shows EPS of 0.18 in 2023A and 2.97 in 2025A, consistent with the claim.",
+            "numeric_status": "correct",
+            "fact_key": "nvidia corporation|earnings per share|2023-2025|0.18 to 2.97|usd"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 20,
+        "claims": [
+          {
+            "claim": "Despite high valuation multiples reflecting market confidence in NVIDIA’s growth trajectory, the company remains highly competitive with peers such as AMD and Intel, often leading in EBITDA and market performance metrics.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No explicit comparison or valuation multiples data is present in the original writer evidence to support this claim.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia corporation|valuation and competitiveness|all_time|high valuation multiples and competitiveness with AMD and Intel|description"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 21,
+        "claims": [
+          {
+            "claim": "NVIDIA operates in a highly dynamic semiconductor industry characterized by rapid technological advancement and intense competition but maintains a leading market share, particularly in GPUs for AI and gaming.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No explicit statement about industry dynamics or market share leadership is present in the original writer evidence.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia corporation|industry dynamics and market share|all_time|dynamic semiconductor industry and leading market share in GPUs for AI and gaming|description"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 22,
+        "claims": [
+          {
+            "claim": "Its ability to innovate and scale rapidly underpins its dominant market position and financial success.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No explicit statement about innovation and scaling as drivers of market position and financial success is present in the original writer evidence.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia corporation|innovation and scaling|all_time|underpin dominant market position and financial success|description"
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "usage": {
+    "requests": 1,
+    "input_tokens": 4241,
+    "input_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "output_tokens": 2952,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 7193
+  },
+  "runtime_seconds": 18.016622199998892,
+  "cost_usd": 0.0064196,
+  "completed_at_utc": "2026-10-11T21:32:17.633789+00:00",
+  "attempts": 1
+}

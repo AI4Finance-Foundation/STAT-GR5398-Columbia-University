@@ -1,0 +1,1251 @@
+{
+  "call_id": "AMD_final_reasoning_v8_1/verifier/competitor_analysis",
+  "structured_output": {
+    "units": [
+      {
+        "source_id": 0,
+        "claims": [
+          {
+            "original_quote": "Advanced Micro Devices, Inc. (AMD) operates in the highly competitive semiconductor industry,",
+            "claim": "Advanced Micro Devices, Inc. operates in the semiconductor industry.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence identifies AMD and provides financial tables and one news excerpt, but it does not supply evidence about AMD's industry classification.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Advanced Micro Devices, Inc. (AMD) operates in the highly competitive semiconductor industry,",
+            "claim": "The semiconductor industry is highly competitive.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence states that the semiconductor industry is highly competitive.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "primarily focusing on the design and manufacturing of microprocessors, graphics processors, and related technologies for computing and visualization.",
+            "claim": "AMD primarily focuses on the design of microprocessors.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not describe AMD's business lines or products.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "primarily focusing on the design and manufacturing of microprocessors, graphics processors, and related technologies for computing and visualization.",
+            "claim": "AMD primarily focuses on the manufacturing of microprocessors.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not describe AMD's manufacturing activities.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "primarily focusing on the design and manufacturing of microprocessors, graphics processors, and related technologies for computing and visualization.",
+            "claim": "AMD primarily focuses on graphics processors.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not describe AMD's product focus.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "primarily focusing on the design and manufacturing of microprocessors, graphics processors, and related technologies for computing and visualization.",
+            "claim": "AMD primarily focuses on related technologies for computing.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not describe AMD's business activities in computing technologies.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "primarily focusing on the design and manufacturing of microprocessors, graphics processors, and related technologies for computing and visualization.",
+            "claim": "AMD primarily focuses on related technologies for visualization.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not describe AMD's business activities in visualization technologies.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The company's competitive landscape is dominated by several key players,",
+            "claim": "AMD's competitive landscape is dominated by several key players.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence characterizes AMD's competitive landscape.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "with the most notable being Intel Corporation, NVIDIA Corporation,",
+            "claim": "Intel Corporation is one of the most notable players in AMD's competitive landscape.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence includes peer tables naming Intel, but name-only peer inclusion does not establish competitive prominence.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "with the most notable being Intel Corporation, NVIDIA Corporation,",
+            "claim": "NVIDIA Corporation is one of the most notable players in AMD's competitive landscape.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence includes peer tables naming NVIDIA, but name-only peer inclusion does not establish competitive prominence.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "and to a lesser extent, emerging players like ARM-based chip developers that are gaining traction in specific market segments.",
+            "claim": "ARM-based chip developers are emerging players in AMD's competitive landscape.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss ARM-based competitors.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "and to a lesser extent, emerging players like ARM-based chip developers that are gaining traction in specific market segments.",
+            "claim": "ARM-based chip developers are gaining traction in specific market segments.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence addresses traction by ARM-based chip developers.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 1,
+        "claims": [
+          {
+            "original_quote": "Intel Corporation is AMD's most direct and longstanding competitor,",
+            "claim": "Intel Corporation is AMD's most direct competitor.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not rank AMD's competitors by directness.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Intel Corporation is AMD's most direct and longstanding competitor,",
+            "claim": "Intel Corporation is a longstanding competitor of AMD.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not provide AMD's competitive history with Intel.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "known for its strong presence in the CPU market for personal computers, servers, and data centers.",
+            "claim": "Intel has a strong presence in the CPU market for personal computers.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not describe Intel's market position in PC CPUs.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "known for its strong presence in the CPU market for personal computers, servers, and data centers.",
+            "claim": "Intel has a strong presence in the CPU market for servers.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not describe Intel's market position in server CPUs.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "known for its strong presence in the CPU market for personal computers, servers, and data centers.",
+            "claim": "Intel has a strong presence in the CPU market for data centers.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not describe Intel's market position in data center CPUs.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Intel's strategic advantages include its extensive manufacturing capabilities, significant scale, and deep relationships with OEMs and enterprise customers.",
+            "claim": "Intel has extensive manufacturing capabilities.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not describe Intel's manufacturing capabilities.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Intel's strategic advantages include its extensive manufacturing capabilities, significant scale, and deep relationships with OEMs and enterprise customers.",
+            "claim": "Intel has significant scale.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not characterize Intel's scale.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Intel's strategic advantages include its extensive manufacturing capabilities, significant scale, and deep relationships with OEMs and enterprise customers.",
+            "claim": "Intel has deep relationships with OEMs.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss Intel's OEM relationships.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Intel's strategic advantages include its extensive manufacturing capabilities, significant scale, and deep relationships with OEMs and enterprise customers.",
+            "claim": "Intel has deep relationships with enterprise customers.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss Intel's enterprise customer relationships.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Intel's integrated device manufacturing model contrasts with AMD's fabless approach,",
+            "claim": "Intel has an integrated device manufacturing model.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not describe Intel's manufacturing model.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Intel's integrated device manufacturing model contrasts with AMD's fabless approach,",
+            "claim": "AMD has a fabless approach.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not describe AMD's manufacturing model.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "giving Intel control over its supply chain but also exposing it to high capital expenditures.",
+            "claim": "Intel's integrated device manufacturing model gives Intel control over its supply chain.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence supports this causal business-model assertion.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "giving Intel control over its supply chain but also exposing it to high capital expenditures.",
+            "claim": "Intel's integrated device manufacturing model exposes Intel to high capital expenditures.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence supports this causal business-model assertion.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Intel continues to invest heavily in process technology and product innovation",
+            "claim": "Intel continues to invest heavily in process technology.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss Intel's investments.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Intel continues to invest heavily in process technology and product innovation",
+            "claim": "Intel continues to invest heavily in product innovation.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss Intel's investments.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "to regain leadership in performance and efficiency.",
+            "claim": "Intel is seeking to regain leadership in performance.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss Intel's strategic objectives or leadership status.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "to regain leadership in performance and efficiency.",
+            "claim": "Intel is seeking to regain leadership in efficiency.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss Intel's strategic objectives or leadership status.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 2,
+        "claims": [
+          {
+            "original_quote": "NVIDIA Corporation is another primary competitor,",
+            "claim": "NVIDIA Corporation is a primary competitor of AMD.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not explicitly identify NVIDIA as a primary competitor.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "especially in the graphics processing unit (GPU) market",
+            "claim": "NVIDIA is a competitor of AMD in the GPU market.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not describe the companies' product-market overlap.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "and increasingly in data center and AI computing segments.",
+            "claim": "NVIDIA is increasingly a competitor of AMD in data center computing segments.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss competitive dynamics in data center computing.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "and increasingly in data center and AI computing segments.",
+            "claim": "NVIDIA is increasingly a competitor of AMD in AI computing segments.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss competitive dynamics in AI computing.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "NVIDIA's strategic strengths lie in its leadership in GPU technology, strong brand, and its expanding ecosystem around AI, deep learning, and autonomous vehicles.",
+            "claim": "NVIDIA has leadership in GPU technology.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not describe NVIDIA's technological leadership.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "NVIDIA's strategic strengths lie in its leadership in GPU technology, strong brand, and its expanding ecosystem around AI, deep learning, and autonomous vehicles.",
+            "claim": "NVIDIA has a strong brand.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss NVIDIA's brand strength.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "NVIDIA's strategic strengths lie in its leadership in GPU technology, strong brand, and its expanding ecosystem around AI, deep learning, and autonomous vehicles.",
+            "claim": "NVIDIA has an expanding ecosystem around AI.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss NVIDIA's ecosystem.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "NVIDIA's strategic strengths lie in its leadership in GPU technology, strong brand, and its expanding ecosystem around AI, deep learning, and autonomous vehicles.",
+            "claim": "NVIDIA has an expanding ecosystem around deep learning.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss NVIDIA's ecosystem.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "NVIDIA's strategic strengths lie in its leadership in GPU technology, strong brand, and its expanding ecosystem around AI, deep learning, and autonomous vehicles.",
+            "claim": "NVIDIA has an expanding ecosystem around autonomous vehicles.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss NVIDIA's ecosystem.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "NVIDIA's ability to innovate in high-performance computing",
+            "claim": "NVIDIA has an ability to innovate in high-performance computing.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss NVIDIA's innovation capabilities.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "and its acquisitions (such as Mellanox) bolster its competitive positioning.",
+            "claim": "NVIDIA has made acquisitions such as Mellanox.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss NVIDIA's acquisitions.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "and its acquisitions (such as Mellanox) bolster its competitive positioning.",
+            "claim": "NVIDIA's acquisitions such as Mellanox bolster its competitive positioning.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not provide this causal assessment of NVIDIA's competitive position.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Although NVIDIA and AMD compete directly in GPUs,",
+            "claim": "NVIDIA and AMD compete directly in GPUs.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not explicitly describe direct GPU competition.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "NVIDIA's broader focus on AI and data center solutions presents a different competitive dynamic.",
+            "claim": "NVIDIA has a broader focus on AI solutions than AMD.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not compare the companies' strategic focus.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "NVIDIA's broader focus on AI and data center solutions presents a different competitive dynamic.",
+            "claim": "NVIDIA has a broader focus on data center solutions than AMD.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not compare the companies' strategic focus.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "NVIDIA's broader focus on AI and data center solutions presents a different competitive dynamic.",
+            "claim": "NVIDIA's broader focus on AI and data center solutions presents a different competitive dynamic for AMD.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not characterize the competitive dynamic.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 3,
+        "claims": [
+          {
+            "original_quote": "Emerging threats include companies leveraging ARM architecture,",
+            "claim": "Emerging threats to AMD include companies leveraging ARM architecture.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss ARM-based competitive threats to AMD.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "such as Apple with its M1 and M2 chips,",
+            "claim": "Apple is a company leveraging ARM architecture.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss Apple or ARM architecture.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "such as Apple with its M1 and M2 chips,",
+            "claim": "Apple has M1 chips.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not mention Apple's products.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "such as Apple with its M1 and M2 chips,",
+            "claim": "Apple has M2 chips.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not mention Apple's products.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "and other semiconductor startups targeting niche segments with specialized chips.",
+            "claim": "Other semiconductor startups are targeting niche segments with specialized chips.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss semiconductor startups or niche targeting.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "These players challenge traditional x86 architectures",
+            "claim": "These ARM-based players challenge traditional x86 architectures.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss architectural competition.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "where AMD has its core competency,",
+            "claim": "AMD has its core competency in traditional x86 architectures.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss AMD's core competencies.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "particularly in mobile and edge computing markets.",
+            "claim": "The challenge from these players is particularly in mobile computing markets.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss competitive pressure in mobile computing.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "particularly in mobile and edge computing markets.",
+            "claim": "The challenge from these players is particularly in edge computing markets.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss competitive pressure in edge computing.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 4,
+        "claims": [
+          {
+            "original_quote": "Regarding AMD's competitive moat, the company benefits from several factors that contribute to a durable advantage.",
+            "claim": "AMD has a competitive moat.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not establish that AMD has a competitive moat.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Regarding AMD's competitive moat, the company benefits from several factors that contribute to a durable advantage.",
+            "claim": "AMD benefits from several factors that contribute to a durable advantage.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not identify durable-advantage factors for AMD.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Firstly, AMD has established a strong portfolio of intellectual property and design expertise,",
+            "claim": "AMD has established a strong portfolio of intellectual property.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss AMD's intellectual property portfolio.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Firstly, AMD has established a strong portfolio of intellectual property and design expertise,",
+            "claim": "AMD has established design expertise.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss AMD's design expertise.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "particularly in high-performance CPUs and GPUs,",
+            "claim": "AMD's intellectual property and design expertise are particularly in high-performance CPUs.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss AMD's product expertise.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "particularly in high-performance CPUs and GPUs,",
+            "claim": "AMD's intellectual property and design expertise are particularly in GPUs.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss AMD's product expertise.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "which is an intangible asset moat.",
+            "claim": "AMD's intellectual property and design expertise constitute an intangible asset moat.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not support this moat characterization.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Its recent successes with Ryzen CPUs and Radeon GPUs have improved brand perception and market share,",
+            "claim": "AMD has had recent successes with Ryzen CPUs.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not mention Ryzen.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Its recent successes with Ryzen CPUs and Radeon GPUs have improved brand perception and market share,",
+            "claim": "AMD has had recent successes with Radeon GPUs.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not mention Radeon.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Its recent successes with Ryzen CPUs and Radeon GPUs have improved brand perception and market share,",
+            "claim": "AMD's recent successes with Ryzen CPUs and Radeon GPUs have improved brand perception.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss brand perception.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Its recent successes with Ryzen CPUs and Radeon GPUs have improved brand perception and market share,",
+            "claim": "AMD's recent successes with Ryzen CPUs and Radeon GPUs have improved market share.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not provide AMD market-share data or attribution.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "creating increased customer loyalty and switching costs.",
+            "claim": "AMD's recent successes with Ryzen CPUs and Radeon GPUs have created increased customer loyalty.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss customer loyalty.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "creating increased customer loyalty and switching costs.",
+            "claim": "AMD's recent successes with Ryzen CPUs and Radeon GPUs have created switching costs.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss switching costs.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Secondly, AMD's fabless model allows it to remain flexible and capital-efficient,",
+            "claim": "AMD has a fabless model.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not describe AMD's manufacturing model.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Secondly, AMD's fabless model allows it to remain flexible and capital-efficient,",
+            "claim": "AMD's fabless model allows AMD to remain flexible.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not support this causal assertion about AMD's operating model.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Secondly, AMD's fabless model allows it to remain flexible and capital-efficient,",
+            "claim": "AMD's fabless model allows AMD to remain capital-efficient.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not support this causal assertion about AMD's operating model.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "contracting manufacturing to leading foundries like TSMC,",
+            "claim": "AMD contracts manufacturing to foundries like TSMC.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not mention TSMC or AMD's manufacturing arrangements.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "which enables access to advanced process technologies without the heavy investment burden.",
+            "claim": "Contracting manufacturing to foundries like TSMC enables AMD to access advanced process technologies.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not support this causal assertion.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "which enables access to advanced process technologies without the heavy investment burden.",
+            "claim": "Contracting manufacturing to foundries like TSMC enables AMD to avoid a heavy investment burden.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not support this causal assertion.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 5,
+        "claims": [
+          {
+            "original_quote": "The company also benefits from network effects in its ecosystem of software developers and OEM partnerships,",
+            "claim": "AMD benefits from network effects in its ecosystem of software developers.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss AMD's software developer ecosystem.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The company also benefits from network effects in its ecosystem of software developers and OEM partnerships,",
+            "claim": "AMD benefits from network effects in its OEM partnerships.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss AMD's OEM partnerships.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "which help optimize performance and compatibility on AMD platforms.",
+            "claim": "AMD's ecosystem of software developers and OEM partnerships helps optimize performance on AMD platforms.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not support this causal claim.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "which help optimize performance and compatibility on AMD platforms.",
+            "claim": "AMD's ecosystem of software developers and OEM partnerships helps optimize compatibility on AMD platforms.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not support this causal claim.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "This ecosystem strength fosters a positive feedback loop that can enhance market adoption.",
+            "claim": "AMD has ecosystem strength.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss AMD's ecosystem strength.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "This ecosystem strength fosters a positive feedback loop that can enhance market adoption.",
+            "claim": "AMD's ecosystem strength fosters a positive feedback loop.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not support this causal claim.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "This ecosystem strength fosters a positive feedback loop that can enhance market adoption.",
+            "claim": "AMD's ecosystem strength can enhance market adoption.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss market adoption effects from AMD's ecosystem.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 6,
+        "claims": [
+          {
+            "original_quote": "AMD's moat appears to be stable and potentially widening.",
+            "claim": "AMD's moat appears to be stable.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not establish that AMD has a moat or that it is stable.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "AMD's moat appears to be stable and potentially widening.",
+            "claim": "AMD's moat appears to be potentially widening.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not establish that AMD has a moat or that it is widening.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The company's revenue growth, projected at a compound annual growth rate (CAGR) of 20.5% from 2021 to 2028,",
+            "claim": "AMD revenue CAGR is projected at 20.5% from 2021A to 2028E.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 4
+              },
+              {
+                "line_number": 6
+              }
+            ],
+            "reason": "The revenue row shows a CAGR of 20.5% across the table spanning 2021A through 2028E.",
+            "action": "keep",
+            "revised_claim": "AMD revenue CAGR is projected at 20.5% from 2021A to 2028E.",
+            "number_bindings": [
+              {
+                "claim_number": "20.5%",
+                "evidence_line": 6,
+                "evidence_number": "20.5%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2021A",
+                "evidence_line": 4,
+                "evidence_number": "2021A",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2028E",
+                "evidence_line": 4,
+                "evidence_number": "2028E",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "alongside improving contribution margins and EBITDA margins,",
+            "claim": "AMD contribution margin improves from 48.2% in 2021A to 52.5% in 2028E.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 4
+              },
+              {
+                "line_number": 10
+              }
+            ],
+            "reason": "The contribution margin row shows 48.2% for 2021A and 52.5% for 2028E.",
+            "action": "keep",
+            "revised_claim": "AMD contribution margin improves from 48.2% in 2021A to 52.5% in 2028E.",
+            "number_bindings": [
+              {
+                "claim_number": "48.2%",
+                "evidence_line": 10,
+                "evidence_number": "48.2%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2021A",
+                "evidence_line": 4,
+                "evidence_number": "2021A",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "52.5%",
+                "evidence_line": 10,
+                "evidence_number": "52.5%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2028E",
+                "evidence_line": 4,
+                "evidence_number": "2028E",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "alongside improving contribution margins and EBITDA margins,",
+            "claim": "AMD EBITDA margin improves from 25.3% in 2021A to 42.0% in 2028E.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 4
+              },
+              {
+                "line_number": 12
+              }
+            ],
+            "reason": "The EBITDA margin row shows 25.3% for 2021A and 42.0% for 2028E.",
+            "action": "keep",
+            "revised_claim": "AMD EBITDA margin improves from 25.3% in 2021A to 42.0% in 2028E.",
+            "number_bindings": [
+              {
+                "claim_number": "25.3%",
+                "evidence_line": 12,
+                "evidence_number": "25.3%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2021A",
+                "evidence_line": 4,
+                "evidence_number": "2021A",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "42.0%",
+                "evidence_line": 12,
+                "evidence_number": "42.0%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2028E",
+                "evidence_line": 4,
+                "evidence_number": "2028E",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "signals strengthening operational leverage and competitive positioning.",
+            "claim": "AMD's projected revenue growth and margin changes signal strengthening operational leverage.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence provides financial figures but does not itself state this interpretive causal conclusion.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "signals strengthening operational leverage and competitive positioning.",
+            "claim": "AMD's projected revenue growth and margin changes signal strengthening competitive positioning.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence provides financial figures but does not itself state this interpretive competitive conclusion.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "AMD's ability to innovate and capture market share from Intel,",
+            "claim": "AMD has an ability to innovate.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss AMD's innovation capability.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "AMD's ability to innovate and capture market share from Intel,",
+            "claim": "AMD is capturing market share from Intel.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not provide market-share data or attribution relative to Intel.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "coupled with its growing presence in GPUs against NVIDIA,",
+            "claim": "AMD has a growing presence in GPUs against NVIDIA.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not provide GPU market-presence evidence.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "indicates an expanding competitive advantage.",
+            "claim": "AMD's innovation, market-share capture from Intel, and growing GPU presence against NVIDIA indicate an expanding competitive advantage.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not establish the underlying premises or this conclusion.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "However, the highly dynamic nature of semiconductor technology",
+            "claim": "Semiconductor technology is highly dynamic.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not characterize semiconductor technology as highly dynamic.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "and aggressive competition from well-capitalized rivals like Intel and NVIDIA",
+            "claim": "Intel is an aggressive competitor to AMD.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not characterize Intel's competitive posture.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "and aggressive competition from well-capitalized rivals like Intel and NVIDIA",
+            "claim": "NVIDIA is an aggressive competitor to AMD.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not characterize NVIDIA's competitive posture.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "and aggressive competition from well-capitalized rivals like Intel and NVIDIA",
+            "claim": "Intel is well-capitalized.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss Intel's capitalization.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "and aggressive competition from well-capitalized rivals like Intel and NVIDIA",
+            "claim": "NVIDIA is well-capitalized.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss NVIDIA's capitalization.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "require AMD to maintain continuous innovation and execution excellence to sustain and widen its moat.",
+            "claim": "Aggressive competition from Intel and NVIDIA requires AMD to maintain continuous innovation to sustain and widen its moat.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not support this strategic requirement or moat characterization.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "require AMD to maintain continuous innovation and execution excellence to sustain and widen its moat.",
+            "claim": "Aggressive competition from Intel and NVIDIA requires AMD to maintain execution excellence to sustain and widen its moat.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not support this strategic requirement or moat characterization.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 7,
+        "claims": [
+          {
+            "original_quote": "In summary, AMD competes primarily with Intel and NVIDIA,",
+            "claim": "AMD competes primarily with Intel.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not explicitly identify Intel as a primary competitor of AMD.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "In summary, AMD competes primarily with Intel and NVIDIA,",
+            "claim": "AMD competes primarily with NVIDIA.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not explicitly identify NVIDIA as a primary competitor of AMD.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "both of which have distinct strategic advantages.",
+            "claim": "Intel has distinct strategic advantages relative to AMD.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss Intel's strategic advantages.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "both of which have distinct strategic advantages.",
+            "claim": "NVIDIA has distinct strategic advantages relative to AMD.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not discuss NVIDIA's strategic advantages.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "AMD's competitive moat is built on its intellectual property, design leadership, operational flexibility through its fabless model, and a growing ecosystem.",
+            "claim": "AMD's competitive moat is built on its intellectual property.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not establish a moat or its basis.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "AMD's competitive moat is built on its intellectual property, design leadership, operational flexibility through its fabless model, and a growing ecosystem.",
+            "claim": "AMD's competitive moat is built on its design leadership.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not establish a moat or AMD design leadership.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "AMD's competitive moat is built on its intellectual property, design leadership, operational flexibility through its fabless model, and a growing ecosystem.",
+            "claim": "AMD's competitive moat is built on operational flexibility through its fabless model.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not establish a moat or AMD's fabless model.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "AMD's competitive moat is built on its intellectual property, design leadership, operational flexibility through its fabless model, and a growing ecosystem.",
+            "claim": "AMD's competitive moat is built on a growing ecosystem.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not establish a moat or a growing ecosystem.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "This moat is currently stable and shows signs of strengthening,",
+            "claim": "AMD's moat is currently stable.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not establish that AMD has a moat or that it is stable.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "This moat is currently stable and shows signs of strengthening,",
+            "claim": "AMD's moat shows signs of strengthening.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not establish that AMD has a moat or that it is strengthening.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "positioning AMD well within the competitive semiconductor industry landscape.",
+            "claim": "AMD is well positioned within the competitive semiconductor industry landscape.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence does not provide this overall competitive-position judgment.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "usage": {
+    "requests": 1,
+    "input_tokens": 4442,
+    "input_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "output_tokens": 8485,
+    "output_tokens_details": {
+      "reasoning_tokens": 505
+    },
+    "total_tokens": 12927
+  },
+  "runtime_seconds": 79.36455120000028,
+  "cost_usd": 0.13838,
+  "completed_at_utc": "2026-10-12T05:26:44.912057+00:00",
+  "attempts": 1
+}

@@ -1,0 +1,72 @@
+{
+  "at_utc": "2026-10-12T05:46:34.500210+00:00",
+  "changes": [
+    {
+      "section": "valuation_overview",
+      "unit_id": 12,
+      "before": {
+        "unit_id": 12,
+        "atoms": [
+          {
+            "claim": "AMD and NVIDIA show broadly comparable EV/EBITDA magnitudes in recent common years.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 34,
+                "line_end": 36
+              }
+            ],
+            "reason": "2023:57.12vs81.05;2024:38.27vs43.45;2025:47.85vs33.78; broad comparability is supported.",
+            "numeric_status": "not_numeric",
+            "claim_type": "factual"
+          },
+          {
+            "claim": "NVIDIA EV/EBITDA is currently higher than AMD.",
+            "classification": "Contradicted",
+            "evidence": [
+              {
+                "line_start": 36,
+                "line_end": 36
+              }
+            ],
+            "reason": "Latest common2025 AMD47.8456>NVIDIA33.7774; unqualified higher NVIDIA multiple conflicts.",
+            "numeric_status": "not_numeric",
+            "claim_type": "factual"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      "after": {
+        "unit_id": 12,
+        "atoms": [
+          {
+            "claim": "AMD and NVIDIA show broadly comparable EV/EBITDA magnitudes in recent common years.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 34,
+                "line_end": 36
+              }
+            ],
+            "reason": "2023:57.12vs81.05;2024:38.27vs43.45;2025:47.85vs33.78; broad comparability is supported.",
+            "numeric_status": "not_numeric",
+            "claim_type": "factual"
+          },
+          {
+            "claim": "NVIDIA has higher EV/EBITDA multiples relative to an unspecified comparison benchmark.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The original writer tables and supplied short news excerpt do not establish this specific business, comparative or causal assertion.",
+            "numeric_status": "not_numeric",
+            "claim_type": "factual"
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    }
+  ],
+  "old_spec_sha256": "b2cbbc5060535031ba64196b9af7968aae1a2b89dc2d3d6494f7d2d731896294",
+  "new_spec_sha256": "f66d7cb2e4191275aadf0f2cc5436abc67d4d71524b0dc83429be1a89e7adf0a",
+  "reason": "Do not invent a current NVIDIA-over-AMD comparator absent from the ambiguous phrase higher multiples. Preserve broad comparability; classify unspecified relative benchmark Unsupported, not Contradicted. Original report/evidence unchanged; original audit preserved.",
+  "human_review_performed": false
+}

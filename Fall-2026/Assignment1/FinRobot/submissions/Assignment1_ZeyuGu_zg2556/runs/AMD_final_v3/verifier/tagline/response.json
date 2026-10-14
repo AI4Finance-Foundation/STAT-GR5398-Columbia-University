@@ -1,0 +1,159 @@
+{
+  "call_id": "AMD_final_v3/verifier/tagline",
+  "structured_output": {
+    "units": [
+      {
+        "source_id": 0,
+        "claims": [
+          {
+            "original_quote": "Advanced Micro Devices, Inc. demonstrates robust revenue growth with a compound annual growth rate exceeding 20%",
+            "claim": "Advanced Micro Devices, Inc. demonstrates robust revenue growth with a compound annual growth rate exceeding 20%.",
+            "classification": "Contradicted",
+            "evidence": [
+              {
+                "line_number": 6
+              }
+            ],
+            "reason": "The CAGR for revenue is explicitly stated as 20.5%, not 'exceeding 20%'. The claim should be corrected to match the evidenced value.",
+            "action": "correct",
+            "revised_claim": "Advanced Micro Devices, Inc. demonstrates robust revenue growth with a compound annual growth rate of 20.5%.",
+            "number_bindings": [
+              {
+                "claim_number": "20.5%",
+                "evidence_line": 4,
+                "evidence_number": "2028E",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "20.5%",
+                "evidence_line": 6,
+                "evidence_number": "20.5%",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "supported by expanding contribution margins reaching over 50%",
+            "claim": "AMD's contribution margins are expanding and are projected to reach over 50%.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 10
+              }
+            ],
+            "reason": "The contribution margin is forecast to reach 52.5% in 2028E, which supports the claim of 'reaching over 50%'.",
+            "action": "keep",
+            "revised_claim": "AMD's contribution margins are projected to reach 52.5% in 2028E.",
+            "number_bindings": [
+              {
+                "claim_number": "2028E",
+                "evidence_line": 4,
+                "evidence_number": "2028E",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "52.5%",
+                "evidence_line": 10,
+                "evidence_number": "52.5%",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "The company maintains strong EBITDA margins, projected to rise to over 40%, reflecting efficient operational management despite increasing SG&A expenses.",
+            "claim": "The company maintains strong EBITDA margins, projected to rise to over 40%.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 12
+              }
+            ],
+            "reason": "EBITDA margin is forecast to reach 42.0% in 2028E, supporting the claim that it is projected to rise to over 40%.",
+            "action": "keep",
+            "revised_claim": "AMD's EBITDA margin is projected to rise to 42.0% in 2028E.",
+            "number_bindings": [
+              {
+                "claim_number": "2028E",
+                "evidence_line": 4,
+                "evidence_number": "2028E",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "42.0%",
+                "evidence_line": 12,
+                "evidence_number": "42.0%",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "reflecting efficient operational management despite increasing SG&A expenses.",
+            "claim": "The rise in EBITDA margin reflects efficient operational management despite increasing SG&A expenses.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for the causal relationship between EBITDA margin rise, operational management, and SG&A expenses.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Valuation metrics indicate a premium positioning, underscoring confidence in AMD's solid financial fundamentals and market presence.",
+            "claim": "Valuation metrics indicate a premium positioning for AMD.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 16
+              },
+              {
+                "line_number": 32
+              },
+              {
+                "line_number": 33
+              },
+              {
+                "line_number": 34
+              },
+              {
+                "line_number": 35
+              },
+              {
+                "line_number": 36
+              }
+            ],
+            "reason": "AMD's PE and EV/EBITDA ratios are consistently higher than peers, supporting the claim of premium positioning.",
+            "action": "keep",
+            "revised_claim": "Valuation metrics indicate a premium positioning for AMD.",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "underscoring confidence in AMD's solid financial fundamentals and market presence.",
+            "claim": "Valuation metrics underscore confidence in AMD's solid financial fundamentals and market presence.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for the causal link between valuation metrics and confidence in financial fundamentals or market presence.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "usage": {
+    "requests": 1,
+    "input_tokens": 3049,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 843,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 3892
+  },
+  "runtime_seconds": 3.6080473999991227,
+  "cost_usd": 0.012842,
+  "completed_at_utc": "2026-10-11T21:46:22.219817+00:00",
+  "attempts": 1
+}

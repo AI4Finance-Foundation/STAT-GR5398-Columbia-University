@@ -1,0 +1,71 @@
+{
+  "extractor_version": "independent-stability-extractor-v2-source-units",
+  "ratings": [],
+  "targets": [],
+  "all_risks": [
+    {
+      "source_unit_id": 3,
+      "taxonomy": "demand_cyclicality",
+      "section": "risks",
+      "source_start": 456,
+      "source_end": 582,
+      "source_quote": "Any macroeconomic downturn, global recession, or abrupt slowdown in technology spending could sharply reduce customer demand. ",
+      "source_sha256": "ffcf831b9d2476c9e821c30f1b2a1ee93bf687b501e756c34cc23d8bdf1602c4"
+    },
+    {
+      "source_unit_id": 5,
+      "taxonomy": "export_controls_geopolitics",
+      "section": "risks",
+      "source_start": 785,
+      "source_end": 934,
+      "source_quote": "Furthermore, geopolitical tensions and trade restrictions, especially involving China, could dampen international sales and complicate supply chains.",
+      "source_sha256": "ffcf831b9d2476c9e821c30f1b2a1ee93bf687b501e756c34cc23d8bdf1602c4"
+    },
+    {
+      "source_unit_id": 6,
+      "taxonomy": "competition",
+      "section": "risks",
+      "source_start": 936,
+      "source_end": 1099,
+      "source_quote": "In terms of competitive risks, NVIDIA operates in a highly dynamic semiconductor industry with fierce competition from well-capitalized rivals like AMD and Intel. ",
+      "source_sha256": "ffcf831b9d2476c9e821c30f1b2a1ee93bf687b501e756c34cc23d8bdf1602c4"
+    }
+  ],
+  "top_three_risks": [
+    {
+      "source_unit_id": 3,
+      "taxonomy": "demand_cyclicality",
+      "section": "risks",
+      "source_start": 456,
+      "source_end": 582,
+      "source_quote": "Any macroeconomic downturn, global recession, or abrupt slowdown in technology spending could sharply reduce customer demand. ",
+      "source_sha256": "ffcf831b9d2476c9e821c30f1b2a1ee93bf687b501e756c34cc23d8bdf1602c4",
+      "rank": 1
+    },
+    {
+      "source_unit_id": 5,
+      "taxonomy": "export_controls_geopolitics",
+      "section": "risks",
+      "source_start": 785,
+      "source_end": 934,
+      "source_quote": "Furthermore, geopolitical tensions and trade restrictions, especially involving China, could dampen international sales and complicate supply chains.",
+      "source_sha256": "ffcf831b9d2476c9e821c30f1b2a1ee93bf687b501e756c34cc23d8bdf1602c4",
+      "rank": 2
+    },
+    {
+      "source_unit_id": 6,
+      "taxonomy": "competition",
+      "section": "risks",
+      "source_start": 936,
+      "source_end": 1099,
+      "source_quote": "In terms of competitive risks, NVIDIA operates in a highly dynamic semiconductor industry with fierce competition from well-capitalized rivals like AMD and Intel. ",
+      "source_sha256": "ffcf831b9d2476c9e821c30f1b2a1ee93bf687b501e756c34cc23d8bdf1602c4",
+      "rank": 3
+    }
+  ],
+  "writer_rating": null,
+  "writer_rating_status": "not_stated",
+  "writer_target": null,
+  "writer_target_status": "not_stated",
+  "risk_selection_method": "earliest source unit for first three distinct taxonomy categories; within-unit ties resolved by fixed taxonomy order; not importance ranking"
+}

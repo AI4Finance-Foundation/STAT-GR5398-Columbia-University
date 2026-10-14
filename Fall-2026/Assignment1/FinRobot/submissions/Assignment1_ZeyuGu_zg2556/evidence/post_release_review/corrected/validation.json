@@ -1,0 +1,185 @@
+{
+  "validation_version": 1,
+  "independent_validation": true,
+  "human_review_performed": false,
+  "new_paid_api_calls": 0,
+  "checks": [
+    {
+      "test": "deterministic AMD split and preserved unrelated rows",
+      "passed": true
+    },
+    {
+      "test": "CAGR modifier cannot silently become a new interval",
+      "passed": true,
+      "expected_rejection": "CAGR scope must retain original wording"
+    },
+    {
+      "test": "coverage omission rejected",
+      "passed": true,
+      "expected_rejection": "Incomplete eight-section textual coverage"
+    },
+    {
+      "test": "invalid evidence quote rejected",
+      "passed": true,
+      "expected_rejection": "Claim evidence altered"
+    },
+    {
+      "test": "network disabled",
+      "passed": true,
+      "expected_rejection": "Post-release errata are strictly offline"
+    },
+    {
+      "test": "all original audit and source/prompt bytes unchanged",
+      "passed": true,
+      "files": 120
+    },
+    {
+      "test": "CLI refuses existing version without changing it",
+      "passed": true,
+      "expected_rejection": "Refusing to overwrite a destination; select an unused --suffix"
+    },
+    {
+      "test": "five CAGR scope corrections retain literal table wording and Unsupported status",
+      "passed": true
+    },
+    {
+      "test": "baseline warning labels independently calculated",
+      "passed": true,
+      "baseline_warned_claims": 0
+    }
+  ],
+  "counts": [
+    {
+      "ticker": "NVDA",
+      "stage": "before",
+      "total": 486,
+      "class_counts": {
+        "Contradicted": 12,
+        "Supported": 82,
+        "Unsupported": 392
+      },
+      "old_total": 486,
+      "old_class_counts": {
+        "Contradicted": 17,
+        "Supported": 82,
+        "Unsupported": 387
+      },
+      "delta": {
+        "Supported": 0,
+        "Unsupported": 5,
+        "Contradicted": -5
+      }
+    },
+    {
+      "ticker": "NVDA",
+      "stage": "after",
+      "total": 670,
+      "class_counts": {
+        "Unsupported": 493,
+        "Supported": 175,
+        "Contradicted": 2
+      },
+      "old_total": 670,
+      "old_class_counts": {
+        "Unsupported": 488,
+        "Supported": 176,
+        "Contradicted": 6
+      },
+      "delta": {
+        "Supported": -1,
+        "Unsupported": 5,
+        "Contradicted": -4
+      }
+    },
+    {
+      "ticker": "AMD",
+      "stage": "before",
+      "total": 554,
+      "class_counts": {
+        "Supported": 91,
+        "Unsupported": 455,
+        "Contradicted": 8
+      },
+      "old_total": 553,
+      "old_class_counts": {
+        "Supported": 96,
+        "Unsupported": 447,
+        "Contradicted": 10
+      },
+      "delta": {
+        "Supported": -5,
+        "Unsupported": 8,
+        "Contradicted": -2
+      }
+    },
+    {
+      "ticker": "AMD",
+      "stage": "after",
+      "total": 645,
+      "class_counts": {
+        "Supported": 141,
+        "Unsupported": 500,
+        "Contradicted": 4
+      },
+      "old_total": 645,
+      "old_class_counts": {
+        "Supported": 142,
+        "Contradicted": 7,
+        "Unsupported": 496
+      },
+      "delta": {
+        "Supported": -1,
+        "Unsupported": 4,
+        "Contradicted": -3
+      }
+    },
+    {
+      "ticker": "INTC",
+      "stage": "before",
+      "total": 439,
+      "class_counts": {
+        "Supported": 113,
+        "Unsupported": 315,
+        "Contradicted": 11
+      },
+      "old_total": 439,
+      "old_class_counts": {
+        "Supported": 114,
+        "Unsupported": 312,
+        "Contradicted": 13
+      },
+      "delta": {
+        "Supported": -1,
+        "Unsupported": 3,
+        "Contradicted": -2
+      }
+    },
+    {
+      "ticker": "INTC",
+      "stage": "after",
+      "total": 643,
+      "class_counts": {
+        "Supported": 214,
+        "Unsupported": 427,
+        "Contradicted": 2
+      },
+      "old_total": 643,
+      "old_class_counts": {
+        "Supported": 216,
+        "Unsupported": 424,
+        "Contradicted": 3
+      },
+      "delta": {
+        "Supported": -2,
+        "Unsupported": 3,
+        "Contradicted": -1
+      }
+    }
+  ],
+  "before_warned_claims": 0,
+  "remaining_after_contradictions": 8,
+  "remaining_after_explicit_CAGR_contradictions": 7,
+  "original_input_files_unchanged": 120,
+  "script_sha256": "4cf8a118ba55e3fec7f13e2dc3f5623fe3ce5336982b210cf1a7362f79c8d934",
+  "measurement_only_correction": true
+}

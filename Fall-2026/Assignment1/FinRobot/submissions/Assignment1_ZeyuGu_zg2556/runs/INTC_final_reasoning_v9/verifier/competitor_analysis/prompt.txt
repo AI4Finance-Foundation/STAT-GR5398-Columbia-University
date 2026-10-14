@@ -1,0 +1,54 @@
+ORIGINAL EVIDENCE PROMPT (line numbers added only for locating evidence):
+1: Financial data for Intel Corporation (INTC):
+2: 
+3: ## Intel Corporation Financial Metrics and Forecasts
+4: |    | metrics             | 2021A              | 2022A              | 2023A         | 2024A              | 2025A              | 2026E         | 2027E         | 2028E          | CAGR   |
+5: |---:|:--------------------|:-------------------|:-------------------|:--------------|:-------------------|:-------------------|:--------------|:--------------|:---------------|:-------|
+6: |  0 | Revenue             | 79024000000.0      | 63054000000.0      | 54228000000.0 | 53101000000.0      | 52853000000.0      | 55495650000.0 | 58825389000.0 | 61178404560.0  | -9.6%  |
+7: |  1 | Cost of Operations  | 35209000000.0      | 36188000000.0      | 32517000000.0 | 35756000000.0      | 34478000000.0      | 35628207300.0 | 37177645848.0 | 38052967636.32 | nan    |
+8: |  2 | SG&A                | 6543000000.0       | 7002000000.0       | 5634000000.0  | 5507000000.0       | 4624000000.0       | 4550643300.0  | 4529554953.0  | 4404845128.32  | nan    |
+9: |  3 | Contribution Profit | 43815000000.0      | 26866000000.0      | 21711000000.0 | 17345000000.0      | 18375000000.0      | 19867442700.0 | 21647743152.0 | 23125436923.68 | nan    |
+10: |  4 | Contribution Margin | 55.4%              | 42.6%              | 40.0%         | 32.7%              | 34.8%              | 35.8%         | 36.8%         | 37.8%          | nan    |
+11: |  5 | EBITDA              | 33874000000.0      | 21299000000.0      | 11242000000.0 | 1203000000.0       | 14354000000.0      | 15316799400.0 | 17118188199.0 | 18720591795.36 | nan    |
+12: |  6 | EBITDA Margin       | 42.9%              | 33.8%              | 20.7%         | 2.3%               | 27.2%              | 27.6%         | 29.1%         | 30.6%          | nan    |
+13: |  7 | SG&A Margin         | 8.3%               | 11.1%              | 10.4%         | 10.4%              | 8.7%               | 8.2%          | 7.7%          | 7.2%           | nan    |
+14: |  8 | Revenue Growth      | nan                | -20.2%             | -14.0%        | -2.1%              | -0.5%              | 5.0%          | 6.0%          | 4.0%           | nan    |
+15: |  9 | EPS                 | 4.89               | 1.95               | 0.4           | -4.38              | -0.0589            | -0.06         | -0.07         | -0.07          | nan    |
+16: | 10 | PE Ratio            | 10.492842535787322 | 13.553846153846154 | 125.625       | -4.634703196347032 | -614.6010186757215 | -583.9        | -554.7        | -526.9         | nan    |
+17: 
+18: ## Peer EBITDA Comparison
+19: |   year |           AMD |          INTC |          NVDA |
+20: |-------:|--------------:|--------------:|--------------:|
+21: |   2021 |   4.166e+09   |   3.3874e+10  | nan           |
+22: |   2022 |   5.534e+09   |   2.1299e+10  |   1.1351e+10  |
+23: |   2023 |   4.149e+09   |   1.1242e+10  |   5.986e+09   |
+24: |   2024 |   5.258e+09   |   1.203e+09   |   3.5583e+10  |
+25: |   2025 |   7.275e+09   |   1.4354e+10  |   8.6137e+10  |
+26: |   2026 | nan           | nan           |   1.44552e+11 |
+27: |   2027 |   8.60087e+09 |   4.73518e+10 |   3.82001e+11 |
+28: 
+29: ## Peer EV/EBITDA Comparison
+30: |   year |      AMD |      INTC |     NVDA |
+31: |-------:|---------:|----------:|---------:|
+32: |   2021 |  42.1013 |   7.13058 | nan      |
+33: |   2022 |  17.9136 |   6.54873 |  54.7187 |
+34: |   2023 |  57.1197 |  22.4823  |  81.0476 |
+35: |   2024 |  38.2717 | 106.938   |  43.4522 |
+36: |   2025 |  47.8456 |  14.4982  |  33.7774 |
+37: |   2026 | nan      | nan       |  31.4283 |
+38: 
+39: ## Recent News for Intel Corporation (INTC)
+40: 
+41: ### Article 1
+42: **Title:** Intel Reports Second-Quarter 2026 Financial Results
+43: **Date:** 2026-07-23T16:01:00-04:00
+44: **Summary:** News Summary
+45: Second-quarter revenue was $16.1 billion, up 25% year-over-year (YoY).
+46: Second-quarter earnings (loss) per share (EPS) attributable to Intel was $(2.16); non-GAAP EPS attributable to Intel was $0.42.
+47: Forecasting third-quarter 2026 revenue of $15.8 billion to $16.8 billion; expecting third-quarter EPS attributable to Intel of $0.31 and non-GAAP EPS attributable to Intel of $0.38.
+48: SANTA CLARA, Calif.--(BUSINESS WIRE)--
+49: Intel Corporation today reported second-quarter 2026 financial resu
+50: 
+
+DRAFT SOURCE UNITS (cover every unit and every atomic claim):
+[{"source_id": 0, "start": 0, "end": 466, "text": "Intel Corporation operates in the highly competitive semiconductor industry, which is characterized by rapid innovation, significant capital investment, and intense rivalry among a few dominant players. The primary competitors to Intel include Advanced Micro Devices (AMD), NVIDIA Corporation, and emerging companies like Taiwan Semiconductor Manufacturing Company (TSMC) which, although primarily a foundry, poses a strategic threat given its manufacturing prowess."}, {"source_id": 1, "start": 468, "end": 1003, "text": "AMD is one of Intel's most notable competitors, especially in the CPU market segment. AMD has gained market share through its innovative Ryzen and EPYC processors, which have been well-received for their performance and efficiency. AMD’s strategic advantage lies in its advanced chip architectures and a strong product portfolio that challenges Intel’s dominance in both consumer and enterprise segments. Additionally, AMD leverages partnerships with major OEMs and has capitalized on the growing demand for high-performance computing."}, {"source_id": 2, "start": 1005, "end": 1585, "text": "NVIDIA Corporation, while primarily known for its graphics processing units (GPUs), is increasingly competing with Intel, particularly as Intel pushes into discrete GPU markets and AI accelerators. NVIDIA’s strengths are its dominant position in GPUs, leadership in AI and deep learning technologies, and a robust ecosystem with software and hardware integration. NVIDIA's advantage is compounded by its ability to innovate rapidly and expand into adjacent markets such as data centers and autonomous vehicles, posing significant competitive pressure on Intel's expansion efforts."}, {"source_id": 3, "start": 1587, "end": 2181, "text": "TSMC, while not a direct competitor in terms of branding or product sales, represents a significant emerging threat through its advanced semiconductor manufacturing capabilities. TSMC manufactures chips for many companies, including AMD and NVIDIA, and continuously pushes the boundaries of process technology. Intel’s recent challenges in manufacturing and delayed node transitions have allowed TSMC to gain a critical edge, reinforcing the competitive pressure from the foundry side. Intel’s own efforts to expand foundry services aim to counterbalance this threat but face steep competition."}, {"source_id": 4, "start": 2183, "end": 2610, "text": "Intel’s competitive moat historically has been its integrated device manufacturing model, technological leadership in CPU design, and a vast ecosystem of customers and suppliers. The company benefits from intangible assets such as brand recognition, proprietary technology, and a broad patent portfolio. Additionally, Intel’s significant investments in R&D and fabrication facilities create high entry barriers for competitors."}, {"source_id": 5, "start": 2612, "end": 3097, "text": "However, this moat is currently under pressure. Intel’s revenue has declined significantly from $79 billion in 2021 to an estimated $53 billion in 2025, reflecting market share losses and competitive challenges. Its contribution margin and EBITDA margins have contracted, indicating margin pressure. The company’s EPS has also become negative in recent years, signaling profitability challenges. Meanwhile, AMD and NVIDIA have improved their operational metrics and market positioning."}, {"source_id": 6, "start": 3099, "end": 3692, "text": "Intel’s moat is narrowing due to several factors: delays in manufacturing process advancements have eroded its cost and technology leadership, competitor innovations have gained ground, and market dynamics are shifting toward specialized and heterogeneous computing solutions where Intel is less dominant. Nonetheless, Intel’s massive scale, ongoing investments in next-generation process technologies, and strategic initiatives to expand foundry services and diversify product lines provide a stable foundation that could help stabilize and eventually widen its moat if successfully executed."}, {"source_id": 7, "start": 3694, "end": 4130, "text": "In summary, Intel faces fierce competition from AMD and NVIDIA, with TSMC as a significant strategic threat in manufacturing. Its competitive advantages are substantial but currently under strain due to execution challenges and aggressive competitor advances. The company's moat is narrowing but with potential to stabilize if Intel can leverage its scale, innovate effectively, and restore confidence in its manufacturing capabilities."}]

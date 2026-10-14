@@ -1,0 +1,63 @@
+{
+  "ticker": "INTC",
+  "run_id": "INTC-20261011T211000Z-snapshot-derived-e8bf7838",
+  "current_price": 104.7,
+  "shares_outstanding": 5043999747,
+  "currency": "USD",
+  "peer_data": {
+    "NVDA": {
+      "ev_ebitda": 31.428342257457523,
+      "period_end_year": "2026"
+    },
+    "AMD": {
+      "ev_ebitda": 47.845602749140895,
+      "period_end_year": "2025"
+    }
+  },
+  "source_metadata": {
+    "shares_outstanding": {
+      "sources": [
+        {
+          "source_url": "https://financialmodelingprep.com/stable/shares-float?symbol=INTC",
+          "fetched_at_utc": "2026-10-11T21:21:04.682019+00:00",
+          "status_code": 200,
+          "content_type": "application/json; charset=utf-8",
+          "body_sha256": "5a6f067cfb77bf6fe2dc7b613fc03ca57faa8a84151a8bc4bda8bab10db64105",
+          "secret_echo_redacted": false,
+          "runtime_seconds": 0.08138700000017707,
+          "response_key": "b1324846a7f03173fb3d3411f373b1d2b7ed8374952cb265ec6ff70fc43c68dc"
+        }
+      ],
+      "json_location": "[0].outstandingShares",
+      "unit": "shares"
+    },
+    "current_price": {
+      "sources": [
+        {
+          "source_url": "https://financialmodelingprep.com/stable/quote-short?symbol=INTC",
+          "fetched_at_utc": "2026-10-11T21:21:03.976069+00:00",
+          "status_code": 200,
+          "content_type": "application/json; charset=utf-8",
+          "body_sha256": "fdaf79e4e85e073d5248ac439e2201f770695f61a86b45ad61ce844f66d98531",
+          "secret_echo_redacted": false,
+          "runtime_seconds": 0.08514810000087891,
+          "response_key": "7c72e5636cf21e5dc428274cab2b22ca5fba336ee2d80fc68c057af61a91244d"
+        }
+      ],
+      "unit": "USD/share",
+      "as_of_utc": "2026-10-11T21:10:00+00:00"
+    },
+    "peer_data": {
+      "path": "analysis/peer_ev_ebitda_comparison.csv",
+      "selection": "latest nonmissing annual period per peer; may differ across companies"
+    },
+    "free_cash_flow": {
+      "path": "analysis/cash_flow_raw_data.csv",
+      "row_selector": "latest date",
+      "field": "freeCashFlow",
+      "unit": "USD"
+    }
+  },
+  "free_cash_flow": -4949000000.0,
+  "free_cash_flow_period": "2025-12-27 00:00:00"
+}

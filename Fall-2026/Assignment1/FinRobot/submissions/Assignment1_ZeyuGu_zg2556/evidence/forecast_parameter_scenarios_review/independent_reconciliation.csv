@@ -1,0 +1,671 @@
+category,ticker,scenario,period,field,expected,actual,difference,tolerance,passed
+default raw bytes,NVDA,default_replay,entire CSV,sha256,df8090cc55e257bc6c123576ed63fdd5394f564216c39968518aeddf09932e7f,df8090cc55e257bc6c123576ed63fdd5394f564216c39968518aeddf09932e7f,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2022A,Revenue,26914000000.0,26914000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2023A,Revenue,26974000000.0,26974000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2024A,Revenue,60922000000.0,60922000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2025A,Revenue,130497000000.0,130497000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2026A,Revenue,215938000000.0,215938000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,CAGR,Revenue,68.3%,68.3%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2022A,Cost of Operations,9439000000.0,9439000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2023A,Cost of Operations,11618000000.0,11618000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2024A,Cost of Operations,16621000000.0,16621000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2025A,Cost of Operations,32639000000.0,32639000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2026A,Cost of Operations,62475000000.0,62475000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,CAGR,Cost of Operations,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2022A,SG&A,2166000000.0,2166000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2023A,SG&A,2440000000.0,2440000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2024A,SG&A,2654000000.0,2654000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2025A,SG&A,3491000000.0,3491000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2026A,SG&A,4579000000.0,4579000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,CAGR,SG&A,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2022A,Contribution Profit,17475000000.0,17475000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2023A,Contribution Profit,15356000000.0,15356000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2024A,Contribution Profit,44301000000.0,44301000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2025A,Contribution Profit,97858000000.0,97858000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2026A,Contribution Profit,153463000000.0,153463000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,CAGR,Contribution Profit,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2022A,Contribution Margin,64.9%,64.9%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2023A,Contribution Margin,56.9%,56.9%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2024A,Contribution Margin,72.7%,72.7%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2025A,Contribution Margin,75.0%,75.0%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2026A,Contribution Margin,71.1%,71.1%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,CAGR,Contribution Margin,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2022A,EBITDA,11351000000.0,11351000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2023A,EBITDA,5986000000.0,5986000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2024A,EBITDA,35583000000.0,35583000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2025A,EBITDA,86137000000.0,86137000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2026A,EBITDA,144552000000.0,144552000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,CAGR,EBITDA,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2022A,EBITDA Margin,42.2%,42.2%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2023A,EBITDA Margin,22.2%,22.2%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2024A,EBITDA Margin,58.4%,58.4%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2025A,EBITDA Margin,66.0%,66.0%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2026A,EBITDA Margin,66.9%,66.9%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,CAGR,EBITDA Margin,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2022A,SG&A Margin,8.0%,8.0%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2023A,SG&A Margin,9.0%,9.0%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2024A,SG&A Margin,4.4%,4.4%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2025A,SG&A Margin,2.7%,2.7%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2026A,SG&A Margin,2.1%,2.1%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,CAGR,SG&A Margin,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2022A,Revenue Growth,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2023A,Revenue Growth,0.2%,0.2%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2024A,Revenue Growth,125.9%,125.9%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2025A,Revenue Growth,114.2%,114.2%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2026A,Revenue Growth,65.5%,65.5%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,CAGR,Revenue Growth,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2022A,EPS,0.39,0.39,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2023A,EPS,0.18,0.18,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2024A,EPS,1.21,1.21,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2025A,EPS,2.97,2.97,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2026A,EPS,4.93,4.93,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,CAGR,EPS,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2022A,PE Ratio,62.79487179487179,62.79487179487179,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2023A,PE Ratio,106.44444444444444,106.44444444444444,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2024A,PE Ratio,51.62809917355372,51.62809917355372,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2025A,PE Ratio,39.87205387205387,39.87205387205387,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,2026A,PE Ratio,37.82352941176471,37.82352941176471,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,default_replay,CAGR,PE Ratio,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2022A,Revenue,26914000000.0,26914000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2023A,Revenue,26974000000.0,26974000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2024A,Revenue,60922000000.0,60922000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2025A,Revenue,130497000000.0,130497000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2026A,Revenue,215938000000.0,215938000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,CAGR,Revenue,68.3%,68.3%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2022A,Cost of Operations,9439000000.0,9439000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2023A,Cost of Operations,11618000000.0,11618000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2024A,Cost of Operations,16621000000.0,16621000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2025A,Cost of Operations,32639000000.0,32639000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2026A,Cost of Operations,62475000000.0,62475000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,CAGR,Cost of Operations,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2022A,SG&A,2166000000.0,2166000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2023A,SG&A,2440000000.0,2440000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2024A,SG&A,2654000000.0,2654000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2025A,SG&A,3491000000.0,3491000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2026A,SG&A,4579000000.0,4579000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,CAGR,SG&A,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2022A,Contribution Profit,17475000000.0,17475000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2023A,Contribution Profit,15356000000.0,15356000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2024A,Contribution Profit,44301000000.0,44301000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2025A,Contribution Profit,97858000000.0,97858000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2026A,Contribution Profit,153463000000.0,153463000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,CAGR,Contribution Profit,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2022A,Contribution Margin,64.9%,64.9%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2023A,Contribution Margin,56.9%,56.9%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2024A,Contribution Margin,72.7%,72.7%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2025A,Contribution Margin,75.0%,75.0%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2026A,Contribution Margin,71.1%,71.1%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,CAGR,Contribution Margin,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2022A,EBITDA,11351000000.0,11351000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2023A,EBITDA,5986000000.0,5986000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2024A,EBITDA,35583000000.0,35583000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2025A,EBITDA,86137000000.0,86137000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2026A,EBITDA,144552000000.0,144552000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,CAGR,EBITDA,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2022A,EBITDA Margin,42.2%,42.2%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2023A,EBITDA Margin,22.2%,22.2%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2024A,EBITDA Margin,58.4%,58.4%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2025A,EBITDA Margin,66.0%,66.0%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2026A,EBITDA Margin,66.9%,66.9%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,CAGR,EBITDA Margin,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2022A,SG&A Margin,8.0%,8.0%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2023A,SG&A Margin,9.0%,9.0%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2024A,SG&A Margin,4.4%,4.4%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2025A,SG&A Margin,2.7%,2.7%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2026A,SG&A Margin,2.1%,2.1%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,CAGR,SG&A Margin,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2022A,Revenue Growth,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2023A,Revenue Growth,0.2%,0.2%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2024A,Revenue Growth,125.9%,125.9%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2025A,Revenue Growth,114.2%,114.2%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2026A,Revenue Growth,65.5%,65.5%,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,CAGR,Revenue Growth,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2022A,EPS,0.39,0.39,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2023A,EPS,0.18,0.18,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2024A,EPS,1.21,1.21,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2025A,EPS,2.97,2.97,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2026A,EPS,4.93,4.93,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,CAGR,EPS,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2022A,PE Ratio,62.79487179487179,62.79487179487179,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2023A,PE Ratio,106.44444444444444,106.44444444444444,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2024A,PE Ratio,51.62809917355372,51.62809917355372,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2025A,PE Ratio,39.87205387205387,39.87205387205387,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,2026A,PE Ratio,37.82352941176471,37.82352941176471,N/A,exact text,True
+actuals and historical CAGR preserved,NVDA,analyst_deceleration,CAGR,PE Ratio,N/A,N/A,N/A,exact text,True
+default raw bytes,AMD,default_replay,entire CSV,sha256,d7756b4b6a8907583c2fa281bf420873e71bb5a0f03be53b02cd092fca3737a4,d7756b4b6a8907583c2fa281bf420873e71bb5a0f03be53b02cd092fca3737a4,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2021A,Revenue,16434000000.0,16434000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2022A,Revenue,23601000000.0,23601000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2023A,Revenue,22680000000.0,22680000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2024A,Revenue,25785000000.0,25785000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2025A,Revenue,34639000000.0,34639000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,CAGR,Revenue,20.5%,20.5%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2021A,Cost of Operations,8505000000.0,8505000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2022A,Cost of Operations,12998000000.0,12998000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2023A,Cost of Operations,12220000000.0,12220000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2024A,Cost of Operations,13060000000.0,13060000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2025A,Cost of Operations,17487000000.0,17487000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,CAGR,Cost of Operations,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2021A,SG&A,1448000000.0,1448000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2022A,SG&A,2336000000.0,2336000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2023A,SG&A,2352000000.0,2352000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2024A,SG&A,2783000000.0,2783000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2025A,SG&A,4144000000.0,4144000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,CAGR,SG&A,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2021A,Contribution Profit,7929000000.0,7929000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2022A,Contribution Profit,10603000000.0,10603000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2023A,Contribution Profit,10460000000.0,10460000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2024A,Contribution Profit,12725000000.0,12725000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2025A,Contribution Profit,17152000000.0,17152000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,CAGR,Contribution Profit,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2021A,Contribution Margin,48.2%,48.2%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2022A,Contribution Margin,44.9%,44.9%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2023A,Contribution Margin,46.1%,46.1%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2024A,Contribution Margin,49.4%,49.4%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2025A,Contribution Margin,49.5%,49.5%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,CAGR,Contribution Margin,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2021A,EBITDA,4166000000.0,4166000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2022A,EBITDA,5534000000.0,5534000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2023A,EBITDA,4149000000.0,4149000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2024A,EBITDA,5258000000.0,5258000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2025A,EBITDA,7275000000.0,7275000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,CAGR,EBITDA,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2021A,EBITDA Margin,25.3%,25.3%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2022A,EBITDA Margin,23.4%,23.4%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2023A,EBITDA Margin,18.3%,18.3%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2024A,EBITDA Margin,20.4%,20.4%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2025A,EBITDA Margin,21.0%,21.0%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,CAGR,EBITDA Margin,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2021A,SG&A Margin,8.8%,8.8%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2022A,SG&A Margin,9.9%,9.9%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2023A,SG&A Margin,10.4%,10.4%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2024A,SG&A Margin,10.8%,10.8%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2025A,SG&A Margin,12.0%,12.0%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,CAGR,SG&A Margin,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2021A,Revenue Growth,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2022A,Revenue Growth,43.6%,43.6%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2023A,Revenue Growth,-3.9%,-3.9%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2024A,Revenue Growth,13.7%,13.7%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2025A,Revenue Growth,34.3%,34.3%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,CAGR,Revenue Growth,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2021A,EPS,2.61,2.61,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2022A,EPS,0.85,0.85,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2023A,EPS,0.53,0.53,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2024A,EPS,1.01,1.01,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2025A,EPS,2.67,2.67,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,CAGR,EPS,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2021A,PE Ratio,55.99233716475096,55.99233716475096,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2022A,PE Ratio,76.2,76.2,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2023A,PE Ratio,278.1320754716981,278.1320754716981,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2024A,PE Ratio,123.95049504950495,123.95049504950495,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,2025A,PE Ratio,80.52059925093633,80.52059925093633,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,default_replay,CAGR,PE Ratio,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2021A,Revenue,16434000000.0,16434000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2022A,Revenue,23601000000.0,23601000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2023A,Revenue,22680000000.0,22680000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2024A,Revenue,25785000000.0,25785000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2025A,Revenue,34639000000.0,34639000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,CAGR,Revenue,20.5%,20.5%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2021A,Cost of Operations,8505000000.0,8505000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2022A,Cost of Operations,12998000000.0,12998000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2023A,Cost of Operations,12220000000.0,12220000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2024A,Cost of Operations,13060000000.0,13060000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2025A,Cost of Operations,17487000000.0,17487000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,CAGR,Cost of Operations,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2021A,SG&A,1448000000.0,1448000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2022A,SG&A,2336000000.0,2336000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2023A,SG&A,2352000000.0,2352000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2024A,SG&A,2783000000.0,2783000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2025A,SG&A,4144000000.0,4144000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,CAGR,SG&A,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2021A,Contribution Profit,7929000000.0,7929000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2022A,Contribution Profit,10603000000.0,10603000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2023A,Contribution Profit,10460000000.0,10460000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2024A,Contribution Profit,12725000000.0,12725000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2025A,Contribution Profit,17152000000.0,17152000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,CAGR,Contribution Profit,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2021A,Contribution Margin,48.2%,48.2%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2022A,Contribution Margin,44.9%,44.9%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2023A,Contribution Margin,46.1%,46.1%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2024A,Contribution Margin,49.4%,49.4%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2025A,Contribution Margin,49.5%,49.5%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,CAGR,Contribution Margin,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2021A,EBITDA,4166000000.0,4166000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2022A,EBITDA,5534000000.0,5534000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2023A,EBITDA,4149000000.0,4149000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2024A,EBITDA,5258000000.0,5258000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2025A,EBITDA,7275000000.0,7275000000.0,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,CAGR,EBITDA,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2021A,EBITDA Margin,25.3%,25.3%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2022A,EBITDA Margin,23.4%,23.4%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2023A,EBITDA Margin,18.3%,18.3%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2024A,EBITDA Margin,20.4%,20.4%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2025A,EBITDA Margin,21.0%,21.0%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,CAGR,EBITDA Margin,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2021A,SG&A Margin,8.8%,8.8%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2022A,SG&A Margin,9.9%,9.9%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2023A,SG&A Margin,10.4%,10.4%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2024A,SG&A Margin,10.8%,10.8%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2025A,SG&A Margin,12.0%,12.0%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,CAGR,SG&A Margin,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2021A,Revenue Growth,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2022A,Revenue Growth,43.6%,43.6%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2023A,Revenue Growth,-3.9%,-3.9%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2024A,Revenue Growth,13.7%,13.7%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2025A,Revenue Growth,34.3%,34.3%,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,CAGR,Revenue Growth,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2021A,EPS,2.61,2.61,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2022A,EPS,0.85,0.85,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2023A,EPS,0.53,0.53,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2024A,EPS,1.01,1.01,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2025A,EPS,2.67,2.67,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,CAGR,EPS,N/A,N/A,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2021A,PE Ratio,55.99233716475096,55.99233716475096,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2022A,PE Ratio,76.2,76.2,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2023A,PE Ratio,278.1320754716981,278.1320754716981,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2024A,PE Ratio,123.95049504950495,123.95049504950495,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,2025A,PE Ratio,80.52059925093633,80.52059925093633,N/A,exact text,True
+actuals and historical CAGR preserved,AMD,analyst_deceleration,CAGR,PE Ratio,N/A,N/A,N/A,exact text,True
+independent forecast,NVDA,default_replay,2027E,Revenue,226734900000.00,226734900000.0,0.00,0.005,True
+independent forecast,NVDA,default_replay,2027E,Cost of Operations,63259037100.00,63259037100.0,0.00,0.005,True
+independent forecast,NVDA,default_replay,2027E,SG&A,3627758400.00,3627758400.0,0.00,0.005,True
+independent forecast,NVDA,default_replay,2027E,Contribution Profit,163475862900.00,163475862900.0,0.00,0.005,True
+independent forecast,NVDA,default_replay,2027E,Contribution Margin,72.100,72.1,0.000,0,True
+independent forecast,NVDA,default_replay,2027E,EBITDA,159848104500.00,159848104500.0,0.00,0.005,True
+independent forecast,NVDA,default_replay,2027E,EBITDA Margin,70.5,70.5,0.0,0,True
+independent forecast,NVDA,default_replay,2027E,SG&A Margin,1.6,1.6,0.0,0,True
+independent forecast,NVDA,default_replay,2027E,Revenue Growth,5.0,5.0,0.0,0,True
+independent forecast,NVDA,default_replay,2027E,EPS,5.23,5.23,0.00,0.005,True
+independent forecast,NVDA,default_replay,2027E,PE Ratio,35.9,35.9,0.0,0,True
+independent forecast,NVDA,default_replay,2028E,Revenue,240338994000.00,240338994000.0,0.00,0.005,True
+independent forecast,NVDA,default_replay,2028E,Cost of Operations,64651189386.00,64651189386.0,0.00,0.005,True
+independent forecast,NVDA,default_replay,2028E,SG&A,2643728934.00,2643728934.0,0.00,0.005,True
+independent forecast,NVDA,default_replay,2028E,Contribution Profit,175687804614.00,175687804614.0,0.00,0.005,True
+independent forecast,NVDA,default_replay,2028E,Contribution Margin,73.100,73.1,0.000,0,True
+independent forecast,NVDA,default_replay,2028E,EBITDA,173044075680.00,173044075680.0,0.00,0.005,True
+independent forecast,NVDA,default_replay,2028E,EBITDA Margin,72.0,72.0,0.0,0,True
+independent forecast,NVDA,default_replay,2028E,SG&A Margin,1.1,1.1,0.0,0,True
+independent forecast,NVDA,default_replay,2028E,Revenue Growth,6.0,6.0,0.0,0,True
+independent forecast,NVDA,default_replay,2028E,EPS,5.60,5.6,0.00,0.005,True
+independent forecast,NVDA,default_replay,2028E,PE Ratio,34.1,34.1,0.0,0,True
+independent forecast,NVDA,default_replay,2029E,Revenue,249952553760.00,249952553760.0,0.00,0.005,True
+independent forecast,NVDA,default_replay,2029E,Cost of Operations,64737711423.84,64737711423.84,0.00,0.005,True
+independent forecast,NVDA,default_replay,2029E,SG&A,1499715322.56,1499715322.56,0.00,0.005,True
+independent forecast,NVDA,default_replay,2029E,Contribution Profit,185214842336.16,185214842336.16,0.00,0.005,True
+independent forecast,NVDA,default_replay,2029E,Contribution Margin,74.100,74.1,0.000,0,True
+independent forecast,NVDA,default_replay,2029E,EBITDA,183715127013.60,183715127013.6,0.00,0.005,True
+independent forecast,NVDA,default_replay,2029E,EBITDA Margin,73.5,73.5,0.0,0,True
+independent forecast,NVDA,default_replay,2029E,SG&A Margin,0.6,0.6,0.0,0,True
+independent forecast,NVDA,default_replay,2029E,Revenue Growth,4.0,4.0,0.0,0,True
+independent forecast,NVDA,default_replay,2029E,EPS,5.88,5.88,0.00,0.005,True
+independent forecast,NVDA,default_replay,2029E,PE Ratio,32.4,32.4,0.0,0,True
+independent forecast,NVDA,analyst_deceleration,2027E,Revenue,280719400000.00,280719400000.0,0.00,0.005,True
+independent forecast,NVDA,analyst_deceleration,2027E,Cost of Operations,81127906600.00,81127906600.0,0.00,0.005,True
+independent forecast,NVDA,analyst_deceleration,2027E,SG&A,5895107400.00,5895107400.0,0.00,0.005,True
+independent forecast,NVDA,analyst_deceleration,2027E,Contribution Profit,199591493400.00,199591493400.0,0.00,0.005,True
+independent forecast,NVDA,analyst_deceleration,2027E,Contribution Margin,71.100,71.1,0.000,0,True
+independent forecast,NVDA,analyst_deceleration,2027E,EBITDA,193696386000.00,193696386000.0,0.00,0.005,True
+independent forecast,NVDA,analyst_deceleration,2027E,EBITDA Margin,69.0,69.0,0.0,0,True
+independent forecast,NVDA,analyst_deceleration,2027E,SG&A Margin,2.1,2.1,0.0,0,True
+independent forecast,NVDA,analyst_deceleration,2027E,Revenue Growth,30.0,30.0,0.0,0,True
+independent forecast,NVDA,analyst_deceleration,2027E,EPS,6.41,6.41,0.00,0.005,True
+independent forecast,NVDA,analyst_deceleration,2027E,PE Ratio,35.9,35.9,0.0,0,True
+independent forecast,NVDA,analyst_deceleration,2028E,Revenue,336863280000.00,336863280000.0,0.00,0.005,True
+independent forecast,NVDA,analyst_deceleration,2028E,Cost of Operations,97353487920.00,97353487920.0,0.00,0.005,True
+independent forecast,NVDA,analyst_deceleration,2028E,SG&A,7074128880.00,7074128880.0,0.00,0.005,True
+independent forecast,NVDA,analyst_deceleration,2028E,Contribution Profit,239509792080.00,239509792080.0,0.00,0.005,True
+independent forecast,NVDA,analyst_deceleration,2028E,Contribution Margin,71.100,71.1,0.000,0,True
+independent forecast,NVDA,analyst_deceleration,2028E,EBITDA,232435663200.00,232435663200.0,0.00,0.005,True
+independent forecast,NVDA,analyst_deceleration,2028E,EBITDA Margin,69.0,69.0,0.0,0,True
+independent forecast,NVDA,analyst_deceleration,2028E,SG&A Margin,2.1,2.1,0.0,0,True
+independent forecast,NVDA,analyst_deceleration,2028E,Revenue Growth,20.0,20.0,0.0,0,True
+independent forecast,NVDA,analyst_deceleration,2028E,EPS,7.69,7.69,0.00,0.005,True
+independent forecast,NVDA,analyst_deceleration,2028E,PE Ratio,34.1,34.1,0.0,0,True
+independent forecast,NVDA,analyst_deceleration,2029E,Revenue,370549608000.00,370549608000.0,0.00,0.005,True
+independent forecast,NVDA,analyst_deceleration,2029E,Cost of Operations,107088836712.00,107088836712.0,0.00,0.005,True
+independent forecast,NVDA,analyst_deceleration,2029E,SG&A,7781541768.00,7781541768.0,0.00,0.005,True
+independent forecast,NVDA,analyst_deceleration,2029E,Contribution Profit,263460771288.00,263460771288.0,0.00,0.005,True
+independent forecast,NVDA,analyst_deceleration,2029E,Contribution Margin,71.100,71.1,0.000,0,True
+independent forecast,NVDA,analyst_deceleration,2029E,EBITDA,255679229520.00,255679229520.0,0.00,0.005,True
+independent forecast,NVDA,analyst_deceleration,2029E,EBITDA Margin,69.0,69.0,0.0,0,True
+independent forecast,NVDA,analyst_deceleration,2029E,SG&A Margin,2.1,2.1,0.0,0,True
+independent forecast,NVDA,analyst_deceleration,2029E,Revenue Growth,10.0,10.0,0.0,0,True
+independent forecast,NVDA,analyst_deceleration,2029E,EPS,8.46,8.46,0.00,0.005,True
+independent forecast,NVDA,analyst_deceleration,2029E,PE Ratio,32.4,32.4,0.0,0,True
+independent forecast,AMD,default_replay,2026E,Revenue,36370950000.00,36370950000.0,0.00,0.005,True
+independent forecast,AMD,default_replay,2026E,Cost of Operations,18003620250.00,18003620250.0,0.00,0.005,True
+independent forecast,AMD,default_replay,2026E,SG&A,4182659250.00,4182659250.0,0.00,0.005,True
+independent forecast,AMD,default_replay,2026E,Contribution Profit,18367329750.00,18367329750.0,0.00,0.005,True
+independent forecast,AMD,default_replay,2026E,Contribution Margin,50.500,50.5,0.000,0,True
+independent forecast,AMD,default_replay,2026E,EBITDA,14184670500.00,14184670500.0,0.00,0.005,True
+independent forecast,AMD,default_replay,2026E,EBITDA Margin,39.0,39.0,0.0,0,True
+independent forecast,AMD,default_replay,2026E,SG&A Margin,11.5,11.5,0.0,0,True
+independent forecast,AMD,default_replay,2026E,Revenue Growth,5.0,5.0,0.0,0,True
+independent forecast,AMD,default_replay,2026E,EPS,2.83,2.83,0.00,0.005,True
+independent forecast,AMD,default_replay,2026E,PE Ratio,76.5,76.5,0.0,0,True
+independent forecast,AMD,default_replay,2027E,Revenue,38553207000.00,38553207000.0,0.00,0.005,True
+independent forecast,AMD,default_replay,2027E,Cost of Operations,18698305395.00,18698305395.0,0.00,0.005,True
+independent forecast,AMD,default_replay,2027E,SG&A,4240852770.00,4240852770.0,0.00,0.005,True
+independent forecast,AMD,default_replay,2027E,Contribution Profit,19854901605.00,19854901605.0,0.00,0.005,True
+independent forecast,AMD,default_replay,2027E,Contribution Margin,51.500,51.5,0.000,0,True
+independent forecast,AMD,default_replay,2027E,EBITDA,15614048835.00,15614048835.0,0.00,0.005,True
+independent forecast,AMD,default_replay,2027E,EBITDA Margin,40.5,40.5,0.0,0,True
+independent forecast,AMD,default_replay,2027E,SG&A Margin,11.0,11.0,0.0,0,True
+independent forecast,AMD,default_replay,2027E,Revenue Growth,6.0,6.0,0.0,0,True
+independent forecast,AMD,default_replay,2027E,EPS,3.03,3.03,0.00,0.005,True
+independent forecast,AMD,default_replay,2027E,PE Ratio,72.7,72.7,0.0,0,True
+independent forecast,AMD,default_replay,2028E,Revenue,40095335280.00,40095335280.0,0.00,0.005,True
+independent forecast,AMD,default_replay,2028E,Cost of Operations,19045284258.00,19045284258.0,0.00,0.005,True
+independent forecast,AMD,default_replay,2028E,SG&A,4210010204.40,4210010204.4,0.00,0.005,True
+independent forecast,AMD,default_replay,2028E,Contribution Profit,21050051022.00,21050051022.0,0.00,0.005,True
+independent forecast,AMD,default_replay,2028E,Contribution Margin,52.500,52.5,0.000,0,True
+independent forecast,AMD,default_replay,2028E,EBITDA,16840040817.60,16840040817.6,0.00,0.005,True
+independent forecast,AMD,default_replay,2028E,EBITDA Margin,42.0,42.0,0.0,0,True
+independent forecast,AMD,default_replay,2028E,SG&A Margin,10.5,10.5,0.0,0,True
+independent forecast,AMD,default_replay,2028E,Revenue Growth,4.0,4.0,0.0,0,True
+independent forecast,AMD,default_replay,2028E,EPS,3.18,3.18,0.00,0.005,True
+independent forecast,AMD,default_replay,2028E,PE Ratio,69.0,69.0,0.0,0,True
+independent forecast,AMD,analyst_deceleration,2026E,Revenue,39834850000.00,39834850000.0,0.00,0.005,True
+independent forecast,AMD,analyst_deceleration,2026E,Cost of Operations,20116599250.00,20116599250.0,0.00,0.005,True
+independent forecast,AMD,analyst_deceleration,2026E,SG&A,4780182000.00,4780182000.0,0.00,0.005,True
+independent forecast,AMD,analyst_deceleration,2026E,Contribution Profit,19718250750.00,19718250750.0,0.00,0.005,True
+independent forecast,AMD,analyst_deceleration,2026E,Contribution Margin,49.500,49.5,0.000,0,True
+independent forecast,AMD,analyst_deceleration,2026E,EBITDA,14938068750.00,14938068750.0,0.00,0.005,True
+independent forecast,AMD,analyst_deceleration,2026E,EBITDA Margin,37.5,37.5,0.0,0,True
+independent forecast,AMD,analyst_deceleration,2026E,SG&A Margin,12.0,12.0,0.0,0,True
+independent forecast,AMD,analyst_deceleration,2026E,Revenue Growth,15.0,15.0,0.0,0,True
+independent forecast,AMD,analyst_deceleration,2026E,EPS,3.07,3.07,0.00,0.005,True
+independent forecast,AMD,analyst_deceleration,2026E,PE Ratio,76.5,76.5,0.0,0,True
+independent forecast,AMD,analyst_deceleration,2027E,Revenue,43818335000.00,43818335000.0,0.00,0.005,True
+independent forecast,AMD,analyst_deceleration,2027E,Cost of Operations,22128259175.00,22128259175.0,0.00,0.005,True
+independent forecast,AMD,analyst_deceleration,2027E,SG&A,5258200200.00,5258200200.0,0.00,0.005,True
+independent forecast,AMD,analyst_deceleration,2027E,Contribution Profit,21690075825.00,21690075825.0,0.00,0.005,True
+independent forecast,AMD,analyst_deceleration,2027E,Contribution Margin,49.500,49.5,0.000,0,True
+independent forecast,AMD,analyst_deceleration,2027E,EBITDA,16431875625.00,16431875625.0,0.00,0.005,True
+independent forecast,AMD,analyst_deceleration,2027E,EBITDA Margin,37.5,37.5,0.0,0,True
+independent forecast,AMD,analyst_deceleration,2027E,SG&A Margin,12.0,12.0,0.0,0,True
+independent forecast,AMD,analyst_deceleration,2027E,Revenue Growth,10.0,10.0,0.0,0,True
+independent forecast,AMD,analyst_deceleration,2027E,EPS,3.38,3.38,0.00,0.005,True
+independent forecast,AMD,analyst_deceleration,2027E,PE Ratio,72.7,72.7,0.0,0,True
+independent forecast,AMD,analyst_deceleration,2028E,Revenue,47323801800.00,47323801800.0,0.00,0.005,True
+independent forecast,AMD,analyst_deceleration,2028E,Cost of Operations,23898519909.00,23898519909.0,0.00,0.005,True
+independent forecast,AMD,analyst_deceleration,2028E,SG&A,5678856216.00,5678856216.0,0.00,0.005,True
+independent forecast,AMD,analyst_deceleration,2028E,Contribution Profit,23425281891.00,23425281891.0,0.00,0.005,True
+independent forecast,AMD,analyst_deceleration,2028E,Contribution Margin,49.500,49.5,0.000,0,True
+independent forecast,AMD,analyst_deceleration,2028E,EBITDA,17746425675.00,17746425675.0,0.00,0.005,True
+independent forecast,AMD,analyst_deceleration,2028E,EBITDA Margin,37.5,37.5,0.0,0,True
+independent forecast,AMD,analyst_deceleration,2028E,SG&A Margin,12.0,12.0,0.0,0,True
+independent forecast,AMD,analyst_deceleration,2028E,Revenue Growth,8.0,8.0,0.0,0,True
+independent forecast,AMD,analyst_deceleration,2028E,EPS,3.65,3.65,0.00,0.005,True
+independent forecast,AMD,analyst_deceleration,2028E,PE Ratio,69.0,69.0,0.0,0,True
+independent valuation,NVDA,default_replay,2029E,terminal_ebitda,183715127013.60,183715127013.6,0.00,0.0018371512701360,True
+independent valuation,NVDA,default_replay,2029E,multiple,48.8848516268782786,48.88485162687828,1.4E-15,1E-10,True
+independent valuation,NVDA,default_replay,2029E,multiple_sample_sd,20.192552452395002813460295468259439116826538446968,20.192552452395002,-8.13460295468259439116826538446968E-16,1E-10,True
+independent valuation,NVDA,default_replay,2029E,shares,24221000000,24221000000,0,0.00024221000000,True
+independent valuation,NVDA,default_replay,2029E,ev,8980886725672.933548665926788960,8980886725672.934,0.000451334073211040,0.08980886725672933548665926788960,True
+independent valuation,NVDA,default_replay,2029E,assumed_net_debt,898088672567.2933548665926788960,898088672567.2935,0.0001451334073211040,0.008980886725672933548665926788960,True
+independent valuation,NVDA,default_replay,2029E,target_price,333.71033620022460649020825358424507658643326039387,333.7103362002246,-6.49020825358424507658643326039387E-15,1E-10,True
+independent valuation,NVDA,default_replay,2029E,low_price,180.55079123839280312152869742752704906218225012411,180.55079123839283,2.687847130257247295093781774987589E-14,1E-10,True
+independent valuation,NVDA,default_replay,2029E,high_price,486.86988116205640985888780974096310411068427066364,486.8698811620564,-9.85888780974096310411068427066364E-15,1E-10,True
+valuation scope,NVDA,default_replay,2029E,selected EBITDA period,2029E,2029E,N/A,exact text,True
+independent valuation,NVDA,analyst_deceleration,2029E,terminal_ebitda,255679229520.00,255679229520.0,0.00,0.0025567922952000,True
+independent valuation,NVDA,analyst_deceleration,2029E,multiple,48.8848516268782786,48.88485162687828,1.4E-15,1E-10,True
+independent valuation,NVDA,analyst_deceleration,2029E,multiple_sample_sd,20.192552452395002813460295468259439116826538446968,20.192552452395002,-8.13460295468259439116826538446968E-16,1E-10,True
+independent valuation,NVDA,analyst_deceleration,2029E,shares,24221000000,24221000000,0,0.00024221000000,True
+independent valuation,NVDA,analyst_deceleration,2029E,ev,12498841199159.756795271904272000,12498841199159.758,0.001204728095728000,0.12498841199159756795271904272000,True
+independent valuation,NVDA,analyst_deceleration,2029E,assumed_net_debt,1249884119915.9756795271904272000,1249884119915.9758,0.0001204728095728000,0.012498841199159756795271904272000,True
+independent valuation,NVDA,analyst_deceleration,2029E,target_price,464.42991946012885990440996840758019900086701622559,464.4299194601289,4.009559003159241980099913298377441E-14,1E-10,True
+independent valuation,NVDA,analyst_deceleration,2029E,low_price,251.27537369114571312914219951132814463244462996534,251.27537369114575,3.687085780048867185536755537003466E-14,1E-10,True
+independent valuation,NVDA,analyst_deceleration,2029E,high_price,677.58446522911200667967773730383225336928940248582,677.584465229112,-6.67967773730383225336928940248582E-15,1E-10,True
+valuation scope,NVDA,analyst_deceleration,2029E,selected EBITDA period,2029E,2029E,N/A,exact text,True
+independent valuation,AMD,default_replay,2028E,terminal_ebitda,16840040817.60,16840040817.6,0.00,0.0001684004081760,True
+independent valuation,AMD,default_replay,2028E,multiple,40.650387746319075,40.650387746319076,1E-15,1E-10,True
+independent valuation,AMD,default_replay,2028E,multiple_sample_sd,14.557934368145629046499456340200497982594917940778,14.557934368145627,-2.046499456340200497982594917940778E-15,1E-10,True
+independent valuation,AMD,default_replay,2028E,shares,1630600000,1630600000,0,0.00001630600000,True
+independent valuation,AMD,default_replay,2028E,ev,684554188899.28009715347572000,684554188899.2802,0.00010284652428000,0.0068455418889928009715347572000,True
+independent valuation,AMD,default_replay,2028E,assumed_net_debt,68455418889.928009715347572000,68455418889.92802,0.000010284652428000,0.00068455418889928009715347572000,True
+independent valuation,AMD,default_replay,2028E,target_price,377.83562492907646721337430884337053845210352017662,377.8356249290765,3.278662569115662946154789647982338E-14,1E-10,True
+independent valuation,AMD,default_replay,2028E,low_price,227.48838527525930888878273938109561033070963296393,227.4883852752593,-8.88878273938109561033070963296393E-15,1E-10,True
+independent valuation,AMD,default_replay,2028E,high_price,528.18286458289362553796587830564546657349740738932,528.1828645828937,7.446203412169435453342650259261068E-14,1E-10,True
+valuation scope,AMD,default_replay,2028E,selected EBITDA period,2028E,2028E,N/A,exact text,True
+independent valuation,AMD,analyst_deceleration,2028E,terminal_ebitda,17746425675.00,17746425675.0,0.00,0.0001774642567500,True
+independent valuation,AMD,analyst_deceleration,2028E,multiple,40.650387746319075,40.650387746319076,1E-15,1E-10,True
+independent valuation,AMD,analyst_deceleration,2028E,multiple_sample_sd,14.557934368145629046499456340200497982594917940778,14.557934368145627,-2.046499456340200497982594917940778E-15,1E-10,True
+independent valuation,AMD,analyst_deceleration,2028E,shares,1630600000,1630600000,0,0.00001630600000,True
+independent valuation,AMD,analyst_deceleration,2028E,ev,721399084799.98221932225062500,721399084799.9823,0.00008067774937500,0.0072139908479998221932225062500,True
+independent valuation,AMD,analyst_deceleration,2028E,assumed_net_debt,72139908479.998221932225062500,72139908479.99823,0.000008067774937500,0.00072139908479998221932225062500,True
+independent valuation,AMD,analyst_deceleration,2028E,target_price,398.17194671898932748069763430639028578437385011652,398.17194671898943,1.0251930236569360971421562614988348E-13,1E-10,True
+independent valuation,AMD,analyst_deceleration,2028E,low_price,239.73253776165798107457490594304203848515383609178,239.732537761658,1.892542509405695796151484616390822E-14,1E-10,True
+independent valuation,AMD,analyst_deceleration,2028E,high_price,556.61135567632067388682036266973853308359386414126,556.6113556763207,2.611317963733026146691640613585874E-14,1E-10,True
+valuation scope,AMD,analyst_deceleration,2028E,selected EBITDA period,2028E,2028E,N/A,exact text,True
+summary forecast deltas,NVDA,comparison,2027E,revenue_default,226734900000.00,226734900000.0,0.00,0.0022673490000000,True
+summary forecast deltas,NVDA,comparison,2027E,revenue_adjusted,280719400000.00,280719400000.0,0.00,0.0028071940000000,True
+summary forecast deltas,NVDA,comparison,2027E,revenue_delta_usd,53984500000.00,53984500000.0,0.00,0.0005398450000000,True
+summary forecast deltas,NVDA,comparison,2027E,revenue_delta_pct,23.809523809523809523809523809523809523809523809520,23.809523809523814,4.476190476190476190476190476190480E-15,0.00001,True
+summary forecast deltas,NVDA,comparison,2027E,contribution_profit_default,163475862900.00,163475862900.0,0.00,0.0016347586290000,True
+summary forecast deltas,NVDA,comparison,2027E,contribution_profit_adjusted,199591493400.00,199591493400.0,0.00,0.0019959149340000,True
+summary forecast deltas,NVDA,comparison,2027E,contribution_profit_delta_usd,36115630500.00,36115630500.0,0.00,0.0003611563050000,True
+summary forecast deltas,NVDA,comparison,2027E,contribution_profit_delta_pct,22.092332078462452942341985337824450168416881315630,22.092332078462462,9.057658014662175549831583118684370E-15,0.00001,True
+summary forecast deltas,NVDA,comparison,2027E,contribution_margin_default,72.100,72.1,0.000,0.00001,True
+summary forecast deltas,NVDA,comparison,2027E,contribution_margin_adjusted,71.100,71.1,0.000,0.00001,True
+summary forecast deltas,NVDA,comparison,2027E,contribution_margin_delta_pp,-1.000,-1.0,0.000,0.00001,True
+summary forecast deltas,NVDA,comparison,2027E,sga_default,3627758400.00,3627758400.0,0.00,0.0000362775840000,True
+summary forecast deltas,NVDA,comparison,2027E,sga_adjusted,5895107400.00,5895107400.0,0.00,0.0000589510740000,True
+summary forecast deltas,NVDA,comparison,2027E,sga_delta_usd,2267349000.00,2267349000.0,0.00,0.0000226734900000,True
+summary forecast deltas,NVDA,comparison,2027E,sga_delta_pct,62.500,62.5,0.000,0.00001,True
+summary forecast deltas,NVDA,comparison,2027E,sga_margin_default,1.6,1.6,0.0,0.00001,True
+summary forecast deltas,NVDA,comparison,2027E,sga_margin_adjusted,2.1,2.1,0.0,0.00001,True
+summary forecast deltas,NVDA,comparison,2027E,sga_margin_delta_pp,0.5,0.5,0.0,0.00001,True
+summary forecast deltas,NVDA,comparison,2027E,ebitda_default,159848104500.00,159848104500.0,0.00,0.0015984810450000,True
+summary forecast deltas,NVDA,comparison,2027E,ebitda_adjusted,193696386000.00,193696386000.0,0.00,0.0019369638600000,True
+summary forecast deltas,NVDA,comparison,2027E,ebitda_delta_usd,33848281500.00,33848281500.0,0.00,0.0003384828150000,True
+summary forecast deltas,NVDA,comparison,2027E,ebitda_delta_pct,21.175278622087132725430597771023302938196555217830,21.175278622087124,-8.725430597771023302938196555217830E-15,0.00001,True
+summary forecast deltas,NVDA,comparison,2027E,ebitda_margin_default,70.5,70.5,0.0,0.00001,True
+summary forecast deltas,NVDA,comparison,2027E,ebitda_margin_adjusted,69.0,69.0,0.0,0.00001,True
+summary forecast deltas,NVDA,comparison,2027E,ebitda_margin_delta_pp,-1.5,-1.5,0.0,0.00001,True
+summary forecast deltas,NVDA,comparison,2028E,revenue_default,240338994000.00,240338994000.0,0.00,0.0024033899400000,True
+summary forecast deltas,NVDA,comparison,2028E,revenue_adjusted,336863280000.00,336863280000.0,0.00,0.0033686328000000,True
+summary forecast deltas,NVDA,comparison,2028E,revenue_delta_usd,96524286000.00,96524286000.0,0.00,0.0009652428600000,True
+summary forecast deltas,NVDA,comparison,2028E,revenue_delta_pct,40.161725067385444743935309973045822102425876010780,40.16172506738545,5.256064690026954177897574123989220E-15,0.00001,True
+summary forecast deltas,NVDA,comparison,2028E,contribution_profit_default,175687804614.00,175687804614.0,0.00,0.0017568780461400,True
+summary forecast deltas,NVDA,comparison,2028E,contribution_profit_adjusted,239509792080.00,239509792080.0,0.00,0.0023950979208000,True
+summary forecast deltas,NVDA,comparison,2028E,contribution_profit_delta_usd,63821987466.00,63821987466.0,0.00,0.0006382198746600,True
+summary forecast deltas,NVDA,comparison,2028E,contribution_profit_delta_pct,36.326930947894734901419980014822954192646782275880,36.326930947894745,1.0098580019985177045807353217724120E-14,0.00001,True
+summary forecast deltas,NVDA,comparison,2028E,contribution_margin_default,73.100,73.1,0.000,0.00001,True
+summary forecast deltas,NVDA,comparison,2028E,contribution_margin_adjusted,71.100,71.1,0.000,0.00001,True
+summary forecast deltas,NVDA,comparison,2028E,contribution_margin_delta_pp,-2.000,-2.0,0.000,0.00001,True
+summary forecast deltas,NVDA,comparison,2028E,sga_default,2643728934.00,2643728934.0,0.00,0.0000264372893400,True
+summary forecast deltas,NVDA,comparison,2028E,sga_adjusted,7074128880.00,7074128880.0,0.00,0.0000707412888000,True
+summary forecast deltas,NVDA,comparison,2028E,sga_delta_usd,4430399946.00,4430399946.0,0.00,0.0000443039994600,True
+summary forecast deltas,NVDA,comparison,2028E,sga_delta_pct,167.58147512864493996569468267581475128644939965695,167.58147512864494,3.430531732418524871355060034305E-17,0.00001,True
+summary forecast deltas,NVDA,comparison,2028E,sga_margin_default,1.1,1.1,0.0,0.00001,True
+summary forecast deltas,NVDA,comparison,2028E,sga_margin_adjusted,2.1,2.1,0.0,0.00001,True
+summary forecast deltas,NVDA,comparison,2028E,sga_margin_delta_pp,1.0,1.0,0.0,0.00001,True
+summary forecast deltas,NVDA,comparison,2028E,ebitda_default,173044075680.00,173044075680.0,0.00,0.0017304407568000,True
+summary forecast deltas,NVDA,comparison,2028E,ebitda_adjusted,232435663200.00,232435663200.0,0.00,0.0023243566320000,True
+summary forecast deltas,NVDA,comparison,2028E,ebitda_delta_usd,59391587520.00,59391587520.0,0.00,0.0005939158752000,True
+summary forecast deltas,NVDA,comparison,2028E,ebitda_delta_pct,34.321653189577717879604672057502246181491464510330,34.32165318957772,2.120395327942497753818508535489670E-15,0.00001,True
+summary forecast deltas,NVDA,comparison,2028E,ebitda_margin_default,72.0,72.0,0.0,0.00001,True
+summary forecast deltas,NVDA,comparison,2028E,ebitda_margin_adjusted,69.0,69.0,0.0,0.00001,True
+summary forecast deltas,NVDA,comparison,2028E,ebitda_margin_delta_pp,-3.0,-3.0,0.0,0.00001,True
+summary forecast deltas,NVDA,comparison,2029E,revenue_default,249952553760.00,249952553760.0,0.00,0.0024995255376000,True
+summary forecast deltas,NVDA,comparison,2029E,revenue_adjusted,370549608000.00,370549608000.0,0.00,0.0037054960800000,True
+summary forecast deltas,NVDA,comparison,2029E,revenue_delta_usd,120597054240.00,120597054240.0,0.00,0.0012059705424000,True
+summary forecast deltas,NVDA,comparison,2029E,revenue_delta_pct,48.247978436657681940700808625336927223719676549870,48.24797843665769,8.059299191374663072776280323450130E-15,0.00001,True
+summary forecast deltas,NVDA,comparison,2029E,contribution_profit_default,185214842336.16,185214842336.16,0.00,0.0018521484233616,True
+summary forecast deltas,NVDA,comparison,2029E,contribution_profit_adjusted,263460771288.00,263460771288.0,0.00,0.0026346077128800,True
+summary forecast deltas,NVDA,comparison,2029E,contribution_profit_delta_usd,78245928951.84,78245928951.84,0.00,0.0007824592895184,True
+summary forecast deltas,NVDA,comparison,2029E,contribution_profit_delta_pct,42.246035989829435708283771838886039481868677499260,42.24603598982944,4.291716228161113960518131322500740E-15,0.00001,True
+summary forecast deltas,NVDA,comparison,2029E,contribution_margin_default,74.100,74.1,0.000,0.00001,True
+summary forecast deltas,NVDA,comparison,2029E,contribution_margin_adjusted,71.100,71.1,0.000,0.00001,True
+summary forecast deltas,NVDA,comparison,2029E,contribution_margin_delta_pp,-3.000,-3.0,0.000,0.00001,True
+summary forecast deltas,NVDA,comparison,2029E,sga_default,1499715322.56,1499715322.56,0.00,0.0000149971532256,True
+summary forecast deltas,NVDA,comparison,2029E,sga_adjusted,7781541768.00,7781541768.0,0.00,0.0000778154176800,True
+summary forecast deltas,NVDA,comparison,2029E,sga_delta_usd,6281826445.44,6281826445.440001,0.000001,0.0000628182644544,True
+summary forecast deltas,NVDA,comparison,2029E,sga_delta_pct,418.86792452830188679245283018867924528301886792453,418.86792452830196,7.320754716981132075471698113207547E-14,0.00001,True
+summary forecast deltas,NVDA,comparison,2029E,sga_margin_default,0.6,0.6,0.0,0.00001,True
+summary forecast deltas,NVDA,comparison,2029E,sga_margin_adjusted,2.1,2.1,0.0,0.00001,True
+summary forecast deltas,NVDA,comparison,2029E,sga_margin_delta_pp,1.5,1.5,0.0,0.00001,True
+summary forecast deltas,NVDA,comparison,2029E,ebitda_default,183715127013.60,183715127013.6,0.00,0.0018371512701360,True
+summary forecast deltas,NVDA,comparison,2029E,ebitda_adjusted,255679229520.00,255679229520.0,0.00,0.0025567922952000,True
+summary forecast deltas,NVDA,comparison,2029E,ebitda_delta_usd,71964102506.40,71964102506.4,0.00,0.0007196410250640,True
+summary forecast deltas,NVDA,comparison,2029E,ebitda_delta_pct,39.171571593597007536168106056438748005940920842730,39.17157159359701,2.463831893943561251994059079157270E-15,0.00001,True
+summary forecast deltas,NVDA,comparison,2029E,ebitda_margin_default,73.5,73.5,0.0,0.00001,True
+summary forecast deltas,NVDA,comparison,2029E,ebitda_margin_adjusted,69.0,69.0,0.0,0.00001,True
+summary forecast deltas,NVDA,comparison,2029E,ebitda_margin_delta_pp,-4.5,-4.5,0.0,0.00001,True
+summary forecast deltas,AMD,comparison,2026E,revenue_default,36370950000.00,36370950000.0,0.00,0.0003637095000000,True
+summary forecast deltas,AMD,comparison,2026E,revenue_adjusted,39834850000.00,39834850000.0,0.00,0.0003983485000000,True
+summary forecast deltas,AMD,comparison,2026E,revenue_delta_usd,3463900000.00,3463900000.0,0.00,0.0000346390000000,True
+summary forecast deltas,AMD,comparison,2026E,revenue_delta_pct,9.5238095238095238095238095238095238095238095238100,9.523809523809534,1.01904761904761904761904761904761900E-14,0.00001,True
+summary forecast deltas,AMD,comparison,2026E,contribution_profit_default,18367329750.00,18367329750.0,0.00,0.0001836732975000,True
+summary forecast deltas,AMD,comparison,2026E,contribution_profit_adjusted,19718250750.00,19718250750.0,0.00,0.0001971825075000,True
+summary forecast deltas,AMD,comparison,2026E,contribution_profit_delta_usd,1350921000.00,1350921000.0,0.00,0.0000135092100000,True
+summary forecast deltas,AMD,comparison,2026E,contribution_profit_delta_pct,7.3550212164073550212164073550212164073550212164100,7.355021216407365,9.9787835926449787835926449787835900E-15,0.00001,True
+summary forecast deltas,AMD,comparison,2026E,contribution_margin_default,50.500,50.5,0.000,0.00001,True
+summary forecast deltas,AMD,comparison,2026E,contribution_margin_adjusted,49.500,49.5,0.000,0.00001,True
+summary forecast deltas,AMD,comparison,2026E,contribution_margin_delta_pp,-1.000,-1.0,0.000,0.00001,True
+summary forecast deltas,AMD,comparison,2026E,sga_default,4182659250.00,4182659250.0,0.00,0.0000418265925000,True
+summary forecast deltas,AMD,comparison,2026E,sga_adjusted,4780182000.00,4780182000.0,0.00,0.0000478018200000,True
+summary forecast deltas,AMD,comparison,2026E,sga_delta_usd,597522750.00,597522750.0,0.00,0.00001,True
+summary forecast deltas,AMD,comparison,2026E,sga_delta_pct,14.285714285714285714285714285714285714285714285710,14.28571428571428,-5.714285714285714285714285714285710E-15,0.00001,True
+summary forecast deltas,AMD,comparison,2026E,sga_margin_default,11.5,11.5,0.0,0.00001,True
+summary forecast deltas,AMD,comparison,2026E,sga_margin_adjusted,12.0,12.0,0.0,0.00001,True
+summary forecast deltas,AMD,comparison,2026E,sga_margin_delta_pp,0.5,0.5,0.0,0.00001,True
+summary forecast deltas,AMD,comparison,2026E,ebitda_default,14184670500.00,14184670500.0,0.00,0.0001418467050000,True
+summary forecast deltas,AMD,comparison,2026E,ebitda_adjusted,14938068750.00,14938068750.0,0.00,0.0001493806875000,True
+summary forecast deltas,AMD,comparison,2026E,ebitda_delta_usd,753398250.00,753398250.0,0.00,0.00001,True
+summary forecast deltas,AMD,comparison,2026E,ebitda_delta_pct,5.3113553113553113553113553113553113553113553113600,5.311355311355315,3.6446886446886446886446886446886400E-15,0.00001,True
+summary forecast deltas,AMD,comparison,2026E,ebitda_margin_default,39.0,39.0,0.0,0.00001,True
+summary forecast deltas,AMD,comparison,2026E,ebitda_margin_adjusted,37.5,37.5,0.0,0.00001,True
+summary forecast deltas,AMD,comparison,2026E,ebitda_margin_delta_pp,-1.5,-1.5,0.0,0.00001,True
+summary forecast deltas,AMD,comparison,2027E,revenue_default,38553207000.00,38553207000.0,0.00,0.0003855320700000,True
+summary forecast deltas,AMD,comparison,2027E,revenue_adjusted,43818335000.00,43818335000.0,0.00,0.0004381833500000,True
+summary forecast deltas,AMD,comparison,2027E,revenue_delta_usd,5265128000.00,5265128000.0,0.00,0.0000526512800000,True
+summary forecast deltas,AMD,comparison,2027E,revenue_delta_pct,13.656783468104222821203953279424977538185085354900,13.656783468104216,-6.821203953279424977538185085354900E-15,0.00001,True
+summary forecast deltas,AMD,comparison,2027E,contribution_profit_default,19854901605.00,19854901605.0,0.00,0.0001985490160500,True
+summary forecast deltas,AMD,comparison,2027E,contribution_profit_adjusted,21690075825.00,21690075825.0,0.00,0.0002169007582500,True
+summary forecast deltas,AMD,comparison,2027E,contribution_profit_delta_usd,1835174220.00,1835174220.0,0.00,0.0000183517422000,True
+summary forecast deltas,AMD,comparison,2027E,contribution_profit_delta_pct,9.2429277994399811582445764530395415172846936906300,9.242927799439983,1.8417554235469604584827153063093700E-15,0.00001,True
+summary forecast deltas,AMD,comparison,2027E,contribution_margin_default,51.500,51.5,0.000,0.00001,True
+summary forecast deltas,AMD,comparison,2027E,contribution_margin_adjusted,49.500,49.5,0.000,0.00001,True
+summary forecast deltas,AMD,comparison,2027E,contribution_margin_delta_pp,-2.000,-2.0,0.000,0.00001,True
+summary forecast deltas,AMD,comparison,2027E,sga_default,4240852770.00,4240852770.0,0.00,0.0000424085277000,True
+summary forecast deltas,AMD,comparison,2027E,sga_adjusted,5258200200.00,5258200200.0,0.00,0.0000525820020000,True
+summary forecast deltas,AMD,comparison,2027E,sga_delta_usd,1017347430.00,1017347430.0,0.00,0.0000101734743000,True
+summary forecast deltas,AMD,comparison,2027E,sga_delta_pct,23.989218328840970350404312668463611859838274932610,23.989218328840977,6.649595687331536388140161725067390E-15,0.00001,True
+summary forecast deltas,AMD,comparison,2027E,sga_margin_default,11.0,11.0,0.0,0.00001,True
+summary forecast deltas,AMD,comparison,2027E,sga_margin_adjusted,12.0,12.0,0.0,0.00001,True
+summary forecast deltas,AMD,comparison,2027E,sga_margin_delta_pp,1.0,1.0,0.0,0.00001,True
+summary forecast deltas,AMD,comparison,2027E,ebitda_default,15614048835.00,15614048835.0,0.00,0.0001561404883500,True
+summary forecast deltas,AMD,comparison,2027E,ebitda_adjusted,16431875625.00,16431875625.0,0.00,0.0001643187562500,True
+summary forecast deltas,AMD,comparison,2027E,ebitda_delta_usd,817826790.00,817826790.0,0.00,0.00001,True
+summary forecast deltas,AMD,comparison,2027E,ebitda_delta_pct,5.2377624704668729825962530365046088316528568100900,5.237762470466878,5.0174037469634953911683471431899100E-15,0.00001,True
+summary forecast deltas,AMD,comparison,2027E,ebitda_margin_default,40.5,40.5,0.0,0.00001,True
+summary forecast deltas,AMD,comparison,2027E,ebitda_margin_adjusted,37.5,37.5,0.0,0.00001,True
+summary forecast deltas,AMD,comparison,2027E,ebitda_margin_delta_pp,-3.0,-3.0,0.0,0.00001,True
+summary forecast deltas,AMD,comparison,2028E,revenue_default,40095335280.00,40095335280.0,0.00,0.0004009533528000,True
+summary forecast deltas,AMD,comparison,2028E,revenue_adjusted,47323801800.00,47323801800.0,0.00,0.0004732380180000,True
+summary forecast deltas,AMD,comparison,2028E,revenue_delta_usd,7228466520.00,7228466520.0,0.00,0.0000722846652000,True
+summary forecast deltas,AMD,comparison,2028E,revenue_delta_pct,18.028198216877462160481028405556707443499896330090,18.028198216877467,4.839518971594443292556500103669910E-15,0.00001,True
+summary forecast deltas,AMD,comparison,2028E,contribution_profit_default,21050051022.00,21050051022.0,0.00,0.0002105005102200,True
+summary forecast deltas,AMD,comparison,2028E,contribution_profit_adjusted,23425281891.00,23425281891.0,0.00,0.0002342528189100,True
+summary forecast deltas,AMD,comparison,2028E,contribution_profit_delta_usd,2375230869.00,2375230869.0,0.00,0.0000237523086900,True
+summary forecast deltas,AMD,comparison,2028E,contribution_profit_delta_pct,11.283729747341607179882112496667752732442759396940,11.283729747341598,-9.179882112496667752732442759396940E-15,0.00001,True
+summary forecast deltas,AMD,comparison,2028E,contribution_margin_default,52.500,52.5,0.000,0.00001,True
+summary forecast deltas,AMD,comparison,2028E,contribution_margin_adjusted,49.500,49.5,0.000,0.00001,True
+summary forecast deltas,AMD,comparison,2028E,contribution_margin_delta_pp,-3.000,-3.0,0.000,0.00001,True
+summary forecast deltas,AMD,comparison,2028E,sga_default,4210010204.40,4210010204.4,0.00,0.0000421001020440,True
+summary forecast deltas,AMD,comparison,2028E,sga_adjusted,5678856216.00,5678856216.0,0.00,0.0000567885621600,True
+summary forecast deltas,AMD,comparison,2028E,sga_delta_usd,1468846011.60,1468846011.6,0.00,0.0000146884601160,True
+summary forecast deltas,AMD,comparison,2028E,sga_delta_pct,34.889369390717099611978318177779094221142738662950,34.88936939071709,-9.611978318177779094221142738662950E-15,0.00001,True
+summary forecast deltas,AMD,comparison,2028E,sga_margin_default,10.5,10.5,0.0,0.00001,True
+summary forecast deltas,AMD,comparison,2028E,sga_margin_adjusted,12.0,12.0,0.0,0.00001,True
+summary forecast deltas,AMD,comparison,2028E,sga_margin_delta_pp,1.5,1.5,0.0,0.00001,True
+summary forecast deltas,AMD,comparison,2028E,ebitda_default,16840040817.60,16840040817.6,0.00,0.0001684004081760,True
+summary forecast deltas,AMD,comparison,2028E,ebitda_adjusted,17746425675.00,17746425675.0,0.00,0.0001774642567500,True
+summary forecast deltas,AMD,comparison,2028E,ebitda_delta_usd,906384857.40,906384857.3999996,-4E-7,0.00001,True
+summary forecast deltas,AMD,comparison,2028E,ebitda_delta_pct,5.3823198364977340718580610763899173602677645804300,5.382319836497729,-5.0718580610763899173602677645804300E-15,0.00001,True
+summary forecast deltas,AMD,comparison,2028E,ebitda_margin_default,42.0,42.0,0.0,0.00001,True
+summary forecast deltas,AMD,comparison,2028E,ebitda_margin_adjusted,37.5,37.5,0.0,0.00001,True
+summary forecast deltas,AMD,comparison,2028E,ebitda_margin_delta_pp,-4.5,-4.5,0.0,0.00001,True
+summary valuation deltas,NVDA,comparison,2029E,default_target_usd,333.71033620022460649020825358424507658643326039387,333.7103362002246,-6.49020825358424507658643326039387E-15,1E-9,True
+summary valuation deltas,NVDA,comparison,2029E,adjusted_target_usd,464.42991946012885990440996840758019900086701622559,464.4299194601289,4.009559003159241980099913298377441E-14,1E-9,True
+summary valuation deltas,NVDA,comparison,2029E,target_delta_usd,130.71958325990425341420171482333512241443375583172,130.71958325990425,-3.41420171482333512241443375583172E-15,1E-9,True
+summary valuation deltas,NVDA,comparison,2029E,target_delta_pct,39.171571593597007536168106056438748005940920842730,39.17157159359701,2.463831893943561251994059079157270E-15,1E-9,True
+summary valuation deltas,NVDA,comparison,2029E,fixed_target_multiple,48.8848516268782786,48.88485162687828,1.4E-15,1E-9,True
+summary valuation deltas,NVDA,comparison,2029E,fixed_shares,24221000000,24221000000,0,0.00024221000000,True
+summary valuation deltas,NVDA,comparison,2029E,default_ebitda_usd,183715127013.60,183715127013.6,0.00,0.0018371512701360,True
+summary valuation deltas,NVDA,comparison,2029E,adjusted_ebitda_usd,255679229520.00,255679229520.0,0.00,0.0025567922952000,True
+summary valuation deltas,NVDA,comparison,2029E,default_assumed_debt_usd,898088672567.2933548665926788960,898088672567.2935,0.0001451334073211040,0.008980886725672933548665926788960,True
+summary valuation deltas,NVDA,comparison,2029E,adjusted_assumed_debt_usd,1249884119915.9756795271904272000,1249884119915.9758,0.0001204728095728000,0.012498841199159756795271904272000,True
+summary valuation deltas,NVDA,comparison,2029E,terminal_revenue_ratio,1.4824797843665768194070080862533692722371967654987,1.482479784366577,1.805929919137466307277628032345013E-16,1E-9,True
+summary valuation deltas,NVDA,comparison,2029E,terminal_ebitda_margin_ratio,0.93877551020408163265306122448979591836734693877551,0.9387755102040816,-3.265306122448979591836734693877551E-17,1E-9,True
+summary valuation deltas,NVDA,comparison,2029E,target_ratio,1.3917157159359700753616810605643874800594092084273,1.39171571593597,-7.53616810605643874800594092084273E-17,1E-9,True
+summary valuation deltas,NVDA,comparison,2029E,revenue_times_margin_ratio,1.3917157159359700753616810605643874800594092084274,1.39171571593597,-7.53616810605643874800594092084274E-17,1E-9,True
+summary valuation deltas,AMD,comparison,2028E,default_target_usd,377.83562492907646721337430884337053845210352017662,377.8356249290765,3.278662569115662946154789647982338E-14,1E-9,True
+summary valuation deltas,AMD,comparison,2028E,adjusted_target_usd,398.17194671898932748069763430639028578437385011652,398.17194671898943,1.0251930236569360971421562614988348E-13,1E-9,True
+summary valuation deltas,AMD,comparison,2028E,target_delta_usd,20.33632178991286026732332546301974733227032993990,20.336321789912915,5.473267667453698025266772967006010E-14,1E-9,True
+summary valuation deltas,AMD,comparison,2028E,target_delta_pct,5.3823198364977340718580610763899173602677645804300,5.382319836497751,1.69281419389236100826397322354195700E-14,1E-9,True
+summary valuation deltas,AMD,comparison,2028E,fixed_target_multiple,40.650387746319075,40.650387746319076,1E-15,1E-9,True
+summary valuation deltas,AMD,comparison,2028E,fixed_shares,1630600000,1630600000,0,0.00001630600000,True
+summary valuation deltas,AMD,comparison,2028E,default_ebitda_usd,16840040817.60,16840040817.6,0.00,0.0001684004081760,True
+summary valuation deltas,AMD,comparison,2028E,adjusted_ebitda_usd,17746425675.00,17746425675.0,0.00,0.0001774642567500,True
+summary valuation deltas,AMD,comparison,2028E,default_assumed_debt_usd,68455418889.928009715347572000,68455418889.92802,0.000010284652428000,0.00068455418889928009715347572000,True
+summary valuation deltas,AMD,comparison,2028E,adjusted_assumed_debt_usd,72139908479.998221932225062500,72139908479.99823,0.000008067774937500,0.00072139908479998221932225062500,True
+summary valuation deltas,AMD,comparison,2028E,terminal_revenue_ratio,1.1802819821687746216048102840555670744349989633009,1.1802819821687747,7.83951897159444329255650010366991E-17,1E-9,True
+summary valuation deltas,AMD,comparison,2028E,terminal_ebitda_margin_ratio,0.89285714285714285714285714285714285714285714285714,0.8928571428571429,4.285714285714285714285714285714286E-17,1E-9,True
+summary valuation deltas,AMD,comparison,2028E,target_ratio,1.0538231983649773407185806107638991736026776458043,1.0538231983649775,1.592814193892361008263973223541957E-16,1E-9,True
+summary valuation deltas,AMD,comparison,2028E,revenue_times_margin_ratio,1.0538231983649773407185806107638991736026776458044,1.0538231983649775,1.592814193892361008263973223541956E-16,1E-9,True
+output hash bindings,all,manifest,N/A,AMD/analyst_deceleration/engine_ev_ebitda.json,8cdfe012934937187d8bfc2ed78df8b5c84afbf5d1f87b24187a54f2f9dcbe78,8cdfe012934937187d8bfc2ed78df8b5c84afbf5d1f87b24187a54f2f9dcbe78,N/A,exact text,True
+output hash bindings,all,manifest,N/A,AMD/analyst_deceleration/financial_metrics_and_forecasts.csv,61e4f2041cf4e92019ef55634f3e993864a9f139842b6541303d5b84baa3a704,61e4f2041cf4e92019ef55634f3e993864a9f139842b6541303d5b84baa3a704,N/A,exact text,True
+output hash bindings,all,manifest,N/A,AMD/analyst_deceleration/forecast_config.json,b79f7a8723002b37282281a618f9db2240fb4d8376298f3330c6555a5eac7492,b79f7a8723002b37282281a618f9db2240fb4d8376298f3330c6555a5eac7492,N/A,exact text,True
+output hash bindings,all,manifest,N/A,AMD/analyst_deceleration/historical_metrics.csv,51ae475ac5c61c205b355f8e1aa6c4a4a0e23eed784ea2a4444ed4b6d31c1c1c,51ae475ac5c61c205b355f8e1aa6c4a4a0e23eed784ea2a4444ed4b6d31c1c1c,N/A,exact text,True
+output hash bindings,all,manifest,N/A,AMD/analyst_deceleration/independent_ev_ebitda.json,6f0d95928e5c0afa29355bf83bfbb3dce90d359f3452d69a1489d33569c59e2a,6f0d95928e5c0afa29355bf83bfbb3dce90d359f3452d69a1489d33569c59e2a,N/A,exact text,True
+output hash bindings,all,manifest,N/A,AMD/analyst_deceleration/independent_forecast_check.csv,7ab2a200e2fbbc515885f54cf9802cafb15f6a90d81a8a5e388cdb5f8214b7a3,7ab2a200e2fbbc515885f54cf9802cafb15f6a90d81a8a5e388cdb5f8214b7a3,N/A,exact text,True
+output hash bindings,all,manifest,N/A,AMD/default_replay/engine_ev_ebitda.json,7ba706fc3d6764e57090475760d22d910b8bef0b9875784088001403776b3e04,7ba706fc3d6764e57090475760d22d910b8bef0b9875784088001403776b3e04,N/A,exact text,True
+output hash bindings,all,manifest,N/A,AMD/default_replay/financial_metrics_and_forecasts.csv,d7756b4b6a8907583c2fa281bf420873e71bb5a0f03be53b02cd092fca3737a4,d7756b4b6a8907583c2fa281bf420873e71bb5a0f03be53b02cd092fca3737a4,N/A,exact text,True
+output hash bindings,all,manifest,N/A,AMD/default_replay/forecast_config.json,178a25f419f46199f65b51a4a47c6248dd8061760f7c94be763088068cf80145,178a25f419f46199f65b51a4a47c6248dd8061760f7c94be763088068cf80145,N/A,exact text,True
+output hash bindings,all,manifest,N/A,AMD/default_replay/historical_metrics.csv,51ae475ac5c61c205b355f8e1aa6c4a4a0e23eed784ea2a4444ed4b6d31c1c1c,51ae475ac5c61c205b355f8e1aa6c4a4a0e23eed784ea2a4444ed4b6d31c1c1c,N/A,exact text,True
+output hash bindings,all,manifest,N/A,AMD/default_replay/independent_ev_ebitda.json,fe5fa5b36f80c3f8d44271448d8a958e7590035a1e1b16f9e6d4617074d98ca5,fe5fa5b36f80c3f8d44271448d8a958e7590035a1e1b16f9e6d4617074d98ca5,N/A,exact text,True
+output hash bindings,all,manifest,N/A,AMD/default_replay/independent_forecast_check.csv,ced41daf707a7d3118d1129885ef6849a6b6abffda45b660d559ae04eafa5975,ced41daf707a7d3118d1129885ef6849a6b6abffda45b660d559ae04eafa5975,N/A,exact text,True
+output hash bindings,all,manifest,N/A,baseline_cell_reconciliation.csv,da3cbe4356819f0fe87ff6b66edf649273d60e944925304f4578fa4952340599,da3cbe4356819f0fe87ff6b66edf649273d60e944925304f4578fa4952340599,N/A,exact text,True
+output hash bindings,all,manifest,N/A,definition_caveats.csv,74c3fe6240945b4e0a8e431b8b06fa3fc70452c0f957e963cc3858b74337687a,74c3fe6240945b4e0a8e431b8b06fa3fc70452c0f957e963cc3858b74337687a,N/A,exact text,True
+output hash bindings,all,manifest,N/A,execution.log,9fdaefc8f6ac2ef741398178ce00c06b7be7a8a9700bd91d606048f74a9a59c9,9fdaefc8f6ac2ef741398178ce00c06b7be7a8a9700bd91d606048f74a9a59c9,N/A,exact text,True
+output hash bindings,all,manifest,N/A,forecast_comparison.csv,7e00176d2e66b80b441d45125db4d2d94cfff43e77701ba104786140af785508,7e00176d2e66b80b441d45125db4d2d94cfff43e77701ba104786140af785508,N/A,exact text,True
+output hash bindings,all,manifest,N/A,independent_arithmetic_reconciliation.csv,9a9a817d33e47f22927b4a8051a362a35b0da600701cb34ebb5b37eead80607f,9a9a817d33e47f22927b4a8051a362a35b0da600701cb34ebb5b37eead80607f,N/A,exact text,True
+output hash bindings,all,manifest,N/A,input_hashes.json,d6974e9309f363895028033f08879017fabc45b3ffcf44221726701f64b5a1ba,d6974e9309f363895028033f08879017fabc45b3ffcf44221726701f64b5a1ba,N/A,exact text,True
+output hash bindings,all,manifest,N/A,network_guard.json,c802106d86c0fc42c284a9b4314432f144685a2af3d7c7763785941204c48e75,c802106d86c0fc42c284a9b4314432f144685a2af3d7c7763785941204c48e75,N/A,exact text,True
+output hash bindings,all,manifest,N/A,NVDA/analyst_deceleration/engine_ev_ebitda.json,5b5049290993a150aa2e7a01d2d5ec0eb0ec1c5f765fec0091aac90509b9f5de,5b5049290993a150aa2e7a01d2d5ec0eb0ec1c5f765fec0091aac90509b9f5de,N/A,exact text,True
+output hash bindings,all,manifest,N/A,NVDA/analyst_deceleration/financial_metrics_and_forecasts.csv,3721d4a5db3bb3e7cdbd5b978955b0fa5aa8e7334be0aed871e838bea66100ad,3721d4a5db3bb3e7cdbd5b978955b0fa5aa8e7334be0aed871e838bea66100ad,N/A,exact text,True
+output hash bindings,all,manifest,N/A,NVDA/analyst_deceleration/forecast_config.json,68d02ff876a6883970ed0fa6fa20c7403143d6d2be2de83758326ae54b4b7be6,68d02ff876a6883970ed0fa6fa20c7403143d6d2be2de83758326ae54b4b7be6,N/A,exact text,True
+output hash bindings,all,manifest,N/A,NVDA/analyst_deceleration/historical_metrics.csv,d4e39a2483a3becae767b5147e68d51cd949fa0295d4a3113a3397345f305ba4,d4e39a2483a3becae767b5147e68d51cd949fa0295d4a3113a3397345f305ba4,N/A,exact text,True
+output hash bindings,all,manifest,N/A,NVDA/analyst_deceleration/independent_ev_ebitda.json,ba5bf9be1dc21ada5cbfa812705e0fc3bbbb2389bed4b47ca185f094ba0af6d4,ba5bf9be1dc21ada5cbfa812705e0fc3bbbb2389bed4b47ca185f094ba0af6d4,N/A,exact text,True
+output hash bindings,all,manifest,N/A,NVDA/analyst_deceleration/independent_forecast_check.csv,50953707e96105b107c0df5b1c81f0d6b763f82a73c0d13cac1cecb00fd1ba0f,50953707e96105b107c0df5b1c81f0d6b763f82a73c0d13cac1cecb00fd1ba0f,N/A,exact text,True
+output hash bindings,all,manifest,N/A,NVDA/default_replay/engine_ev_ebitda.json,d4b56a2b6b8adbb728eb6d1a9a311ccd8e13344eb1d1ebddc25b005d1d03bf7b,d4b56a2b6b8adbb728eb6d1a9a311ccd8e13344eb1d1ebddc25b005d1d03bf7b,N/A,exact text,True
+output hash bindings,all,manifest,N/A,NVDA/default_replay/financial_metrics_and_forecasts.csv,df8090cc55e257bc6c123576ed63fdd5394f564216c39968518aeddf09932e7f,df8090cc55e257bc6c123576ed63fdd5394f564216c39968518aeddf09932e7f,N/A,exact text,True
+output hash bindings,all,manifest,N/A,NVDA/default_replay/forecast_config.json,8337d3a7ca05e4e6c92f74e54560c66dc28301161ea56bc110fc1bcec8579d87,8337d3a7ca05e4e6c92f74e54560c66dc28301161ea56bc110fc1bcec8579d87,N/A,exact text,True
+output hash bindings,all,manifest,N/A,NVDA/default_replay/historical_metrics.csv,d4e39a2483a3becae767b5147e68d51cd949fa0295d4a3113a3397345f305ba4,d4e39a2483a3becae767b5147e68d51cd949fa0295d4a3113a3397345f305ba4,N/A,exact text,True
+output hash bindings,all,manifest,N/A,NVDA/default_replay/independent_ev_ebitda.json,9024921d70e355a9a7aa7ed8fc706b50998a1b43588e69bbe1e0c4ce881d8d67,9024921d70e355a9a7aa7ed8fc706b50998a1b43588e69bbe1e0c4ce881d8d67,N/A,exact text,True
+output hash bindings,all,manifest,N/A,NVDA/default_replay/independent_forecast_check.csv,6b31fe0884d98535459835d890a14fa0fe513c3d376bfbfac22b480d06706ab4,6b31fe0884d98535459835d890a14fa0fe513c3d376bfbfac22b480d06706ab4,N/A,exact text,True
+output hash bindings,all,manifest,N/A,preserved_experiment_hashes.json,488a1faac09ebb2e25bb3bc94b7e542eafb90ed6c84c02a6d9f93595eb05214c,488a1faac09ebb2e25bb3bc94b7e542eafb90ed6c84c02a6d9f93595eb05214c,N/A,exact text,True
+output hash bindings,all,manifest,N/A,runtime_cost.csv,f4c21018c91cf08bfcf70d056ccab51185f4a6e106ae1c2ca1122ae9a911f379,f4c21018c91cf08bfcf70d056ccab51185f4a6e106ae1c2ca1122ae9a911f379,N/A,exact text,True
+output hash bindings,all,manifest,N/A,target_price_comparison.csv,877f8c0db9194a6745cde0c2297ff19e49e2423d1024b831fc5a0e0e12822436,877f8c0db9194a6745cde0c2297ff19e49e2423d1024b831fc5a0e0e12822436,N/A,exact text,True
+input hash bindings,all,manifest,N/A,snapshots/NVDA/manifest.json,975b4a48b3f430d5a1d90650e202eea5e15e30963e975e56f7fcc8e42ac6e9c0,975b4a48b3f430d5a1d90650e202eea5e15e30963e975e56f7fcc8e42ac6e9c0,N/A,exact text,True
+input hash bindings,all,manifest,N/A,snapshots/NVDA/valuation_inputs.json,99ed437b529f9448faf18bb3157978ac554645e7d389f4bc07b209240536cad5,99ed437b529f9448faf18bb3157978ac554645e7d389f4bc07b209240536cad5,N/A,exact text,True
+input hash bindings,all,manifest,N/A,snapshots/NVDA/valuation/engine_valuation.json,6d50978ece6fcd0100a563ab26d722cce453295eb109b8407e97cf93c104e203,6d50978ece6fcd0100a563ab26d722cce453295eb109b8407e97cf93c104e203,N/A,exact text,True
+input hash bindings,all,manifest,N/A,snapshots/NVDA/analysis/forecast_config.json,5ae29d854288ef6838062f8c3ab39d94772c6fffbe73cc6d00fc19297d30c9ff,5ae29d854288ef6838062f8c3ab39d94772c6fffbe73cc6d00fc19297d30c9ff,N/A,exact text,True
+input hash bindings,all,manifest,N/A,snapshots/NVDA/analysis/financial_metrics_and_forecasts.csv,df8090cc55e257bc6c123576ed63fdd5394f564216c39968518aeddf09932e7f,df8090cc55e257bc6c123576ed63fdd5394f564216c39968518aeddf09932e7f,N/A,exact text,True
+input hash bindings,all,manifest,N/A,snapshots/NVDA/analysis/income_statement_raw_data.csv,2cbc792659a799cf97858d033687a8ef7094d5cf07fbbeb0debc7d0d31dfc2d8,2cbc792659a799cf97858d033687a8ef7094d5cf07fbbeb0debc7d0d31dfc2d8,N/A,exact text,True
+input hash bindings,all,manifest,N/A,snapshots/NVDA/analysis/balance_sheet_raw_data.csv,5e19dbee25456dd17c9a59c49a9ef53e26856b35e847bedc388db6eb62137234,5e19dbee25456dd17c9a59c49a9ef53e26856b35e847bedc388db6eb62137234,N/A,exact text,True
+input hash bindings,all,manifest,N/A,snapshots/NVDA/analysis/cash_flow_raw_data.csv,a5477a1073d2de90231edabcfb3878eceac470bf0ec723dee9d9658cff0bd721,a5477a1073d2de90231edabcfb3878eceac470bf0ec723dee9d9658cff0bd721,N/A,exact text,True
+input hash bindings,all,manifest,N/A,snapshots/NVDA/analysis/ratios_raw_data.csv,354f23b0c6f600b1f0bb74e049e26a431f61c48d9261e19c4ae3b1ccc0ef245b,354f23b0c6f600b1f0bb74e049e26a431f61c48d9261e19c4ae3b1ccc0ef245b,N/A,exact text,True
+input hash bindings,all,manifest,N/A,snapshots/NVDA/analysis/key_metrics_raw_data.csv,5a220a30cedfa2462f4fea566e3bd00bad29c8a3ab7b7f5266ef348a9590f401,5a220a30cedfa2462f4fea566e3bd00bad29c8a3ab7b7f5266ef348a9590f401,N/A,exact text,True
+input hash bindings,all,manifest,N/A,snapshots/AMD/manifest.json,137c72f756f85541688624f60ef9086df3131fd8b3edbcf5cf15c46ab42fc398,137c72f756f85541688624f60ef9086df3131fd8b3edbcf5cf15c46ab42fc398,N/A,exact text,True
+input hash bindings,all,manifest,N/A,snapshots/AMD/valuation_inputs.json,23b8ecdbc795d75ebae8321f1e1af416b58bae7b7872c1beede4922c80ecda11,23b8ecdbc795d75ebae8321f1e1af416b58bae7b7872c1beede4922c80ecda11,N/A,exact text,True
+input hash bindings,all,manifest,N/A,snapshots/AMD/valuation/engine_valuation.json,3088a2b65a65d813f1c8d24412c5452d4ae52cb07fbfee1206cb353a40ea381b,3088a2b65a65d813f1c8d24412c5452d4ae52cb07fbfee1206cb353a40ea381b,N/A,exact text,True
+input hash bindings,all,manifest,N/A,snapshots/AMD/analysis/forecast_config.json,3a6c983190057a09d3592eab7cf4963ef73a0e2338ba7ffb764e50767db1b133,3a6c983190057a09d3592eab7cf4963ef73a0e2338ba7ffb764e50767db1b133,N/A,exact text,True
+input hash bindings,all,manifest,N/A,snapshots/AMD/analysis/financial_metrics_and_forecasts.csv,d7756b4b6a8907583c2fa281bf420873e71bb5a0f03be53b02cd092fca3737a4,d7756b4b6a8907583c2fa281bf420873e71bb5a0f03be53b02cd092fca3737a4,N/A,exact text,True
+input hash bindings,all,manifest,N/A,snapshots/AMD/analysis/income_statement_raw_data.csv,a33e1cd8a653dba627852e50345fdef29c17f24c7ebf84c0e17c0d0a2a35bf2f,a33e1cd8a653dba627852e50345fdef29c17f24c7ebf84c0e17c0d0a2a35bf2f,N/A,exact text,True
+input hash bindings,all,manifest,N/A,snapshots/AMD/analysis/balance_sheet_raw_data.csv,d684ec03f1ee46c66f06680b23251e9ff9112fab35a8d00d4ac10db472ac2784,d684ec03f1ee46c66f06680b23251e9ff9112fab35a8d00d4ac10db472ac2784,N/A,exact text,True
+input hash bindings,all,manifest,N/A,snapshots/AMD/analysis/cash_flow_raw_data.csv,6de07bafdb2025998069fa405aec4cf5d05cd9eb63fea2ce8d7551e1e949ce52,6de07bafdb2025998069fa405aec4cf5d05cd9eb63fea2ce8d7551e1e949ce52,N/A,exact text,True
+input hash bindings,all,manifest,N/A,snapshots/AMD/analysis/ratios_raw_data.csv,dc900560c1c1c53865aaf6e1cedbb3d6654c193ab6c935f92320c478d5814485,dc900560c1c1c53865aaf6e1cedbb3d6654c193ab6c935f92320c478d5814485,N/A,exact text,True
+input hash bindings,all,manifest,N/A,snapshots/AMD/analysis/key_metrics_raw_data.csv,24eecc49d470a514f72337e5ca967149512bdf69746e1acaf21d0a93e8e5e823,24eecc49d470a514f72337e5ca967149512bdf69746e1acaf21d0a93e8e5e823,N/A,exact text,True

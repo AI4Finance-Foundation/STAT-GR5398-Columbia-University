@@ -1,0 +1,39 @@
+{
+  "ticker": "AMD",
+  "run_id": "AMD-20261011T211000Z-snapshot",
+  "as_of_utc": "2026-10-11T21:10:00+00:00",
+  "metrics": {
+    "share_price": 608.1,
+    "target_price": 607.59,
+    "market_cap": 991.56786,
+    "volume": 25.348346,
+    "fwd_pe": 80.52059925093633,
+    "pb_ratio": 5.542052413530374,
+    "dividend_yield": null,
+    "free_float": 99.47603900404759,
+    "roe": 6.881061604152447,
+    "net_debt_to_equity": 0.07098525373418625,
+    "rating": "Buy",
+    "beta": 2.454,
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "exchange": "NASDAQ",
+    "52w_range": "$188.22 - $658.52",
+    "shares_outstanding": 1630600000,
+    "target_price_source": "FMP stable/price-target-consensus: targetConsensus (changed from legacy latest analyst target)",
+    "rating_source": "FMP stable/grades: latest newGrade or action",
+    "shares_source": "FMP stable/shares-float: outstandingShares"
+  },
+  "classification_observed": {
+    "sector": "Technology",
+    "industry": "Semiconductors"
+  },
+  "provenance_notes": {
+    "free_float": "stable/shares-float observation replaces legacy hard-coded 95%; unavailable if endpoint fails",
+    "fwd_pe": "historical ratios/key-metrics PE mislabeled as forward PE upstream; not analyst forecast EPS multiple",
+    "net_debt_to_equity": "historical debtEquityRatio, not independently derived net-debt/equity",
+    "target_price": "stable price-target-consensus targetConsensus, a disclosed semantic change from legacy single-analyst target; not engine target",
+    "rating": "latest single newGrade or action, not LLM recommendation",
+    "dividend_yield": "lastDiv/current price; upstream assumes lastDiv is annual"
+  }
+}

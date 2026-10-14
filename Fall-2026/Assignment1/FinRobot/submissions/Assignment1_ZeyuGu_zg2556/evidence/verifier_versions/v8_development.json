@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-10-12T00:10:22.230068+00:00",
+  "parent_source_sha256": "9e4b0da4dc5d259c4ffea48f1c1b4371df5862cdb24f9110643163f0b521b40a",
+  "source_sha256": "a6a3dbd6766eaf979e2f24ce1a2c526c1dad464aa94f0f14e107500b2fceb8d7",
+  "observed_trigger": "Real low-reasoning pilot emitted exact 2023A/2025A bindings; old numeric tokenizer stripped suffix and automatic repair then left duplicate token identities. Trailing sentence commas were also included in numeric tokens.",
+  "change": "Normalize only identity bindings with identical A/E or currency wrappers present exactly in both revised text and stated evidence line; preserve raw bindings and mappings. Numeric regex accepts grouping commas only before exactly three digits.",
+  "not_changed": "No labels, new evidence, output wording, model instructions or correction policy supplied by this repair. Wrong suffix, currency or uncited evidence still fails.",
+  "limitations": "Format compatibility does not establish entity/year column alignment or semantic correctness. All candidates still require independent evaluation."
+}

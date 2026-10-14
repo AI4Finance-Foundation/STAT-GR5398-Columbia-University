@@ -1,0 +1,1 @@
+No recent news found for AAPL in the analysis period.

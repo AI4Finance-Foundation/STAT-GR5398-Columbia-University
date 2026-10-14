@@ -1,0 +1,21 @@
+{
+  "validated_utc": "2026-10-11T21:25:40.503360+00:00",
+  "offline_network_forbidden_replay": "PASS",
+  "derived_csv_deterministic": "PASS",
+  "derived_sha256": {
+    "classification.csv": "0447f90ffaa47b521e51a0e083dad25f21d6aad4d188538f5885fe1603686fa0",
+    "filings.csv": "d74032710aa6a8354fa2c061ba3fb911b202ee19611a7defdff91359d87d5cec",
+    "sec_metric_references.csv": "30d0d459caa7944a542dab4e00f88bc4ed1129044570784780ae89924bf44714",
+    "sec_metric_ingredients.csv": "504a5be4b4dcac768b9fba448043def0492e0b0bd2fc3a6b27d2bbf76d9bcfaf",
+    "sec_ebitda_definition_bridge.csv": "75ff16d9ee119808757d7caedf20c40f6024f149d7b1539f6baea3bbb0a105fa"
+  },
+  "companyfacts_json_pointer_checks": 28,
+  "original_filing_ixbrl_match_checks": 28,
+  "populated_filing_reference_rows": 20,
+  "completed_pipeline_audit_rows": 0,
+  "coverage_companies": 5,
+  "minimum_peers": 2,
+  "raw_responses": 21,
+  "billable_api_calls": 0,
+  "completed_audit_location": "See audits/data/data_audit.csv for 20 genuine pipeline comparisons; SEC-only table intentionally remains reference-only."
+}

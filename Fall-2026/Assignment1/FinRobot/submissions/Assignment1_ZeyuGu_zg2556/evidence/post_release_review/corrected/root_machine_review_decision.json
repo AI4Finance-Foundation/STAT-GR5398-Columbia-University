@@ -1,0 +1,26 @@
+{
+  "decision_version": "post-release-errata-v1",
+  "decision_maker": "Root Codex task agent /root; machine review, not human annotation",
+  "human_review_performed": false,
+  "decision_basis": "Root agent individually reviewed and accepted the 26 comparison proposals and five ambiguous after-CAGR scope proposals.",
+  "accepted_comparison_proposals": 26,
+  "accepted_ambiguous_cagr_proposals": 5,
+  "exception": {
+    "ticker": "AMD",
+    "stage": "before",
+    "claim_id": "adjudicated.valuation_overview.p0.u1.c2",
+    "decision": "Split the original compound atom into Supported PE decline after2023 and Unsupported remaining-elevated judgment. Preserve the supported decline; do not discard it with the missing benchmark.",
+    "supported_claim": "AMD PE declined after 2023.",
+    "supported_evidence": "2023A278.1320754716981 > 2024A123.95049504950495 > 2025A80.52059925093633; original prompt lines4 and16.",
+    "unsupported_claim": "AMD PE remained elevated."
+  },
+  "cagr_instruction": "Keep each original table-scope wording. Do not invent a start/end statistical interval, promote ambiguous scope to Supported, or remove separately supported literal table-cell atoms.",
+  "preservation_instruction": "Keep true AMD numerical-range contradictions and all other canonical judgments. New versioned output only; original text, labels, evidence and experiments remain immutable.",
+  "measurement_warning": "All changes are corrections to measurement/atomization, not verifier improvements. No new model run or successful correction is inferred.",
+  "proposal_hashes": {
+    "comparison_proposals.json": "f10f8990e3012c16e24130db6f85f5a9699dceade41a5f47ca462d55ee5590b9",
+    "cagr_proposals.json": "95409fbb3f79fce1c55e13c402633f81e77e774e23b21f368af894d9af0c2cbb"
+  },
+  "parent_pair_sha256": "0cfc3fdc956f5a0e0cde3b49dc182aaaa1b7730eaeb86f84b2ab692ea7038807",
+  "output_suffix": "corrected"
+}

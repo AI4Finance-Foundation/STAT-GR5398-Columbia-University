@@ -1,0 +1,63 @@
+{
+  "ticker": "NVDA",
+  "run_id": "NVDA-20261011T211000Z-snapshot",
+  "current_price": 229.28,
+  "shares_outstanding": 24221000000,
+  "currency": "USD",
+  "peer_data": {
+    "AMD": {
+      "ev_ebitda": 47.845602749140895,
+      "period_end_year": "2025"
+    },
+    "INTC": {
+      "ev_ebitda": 14.498202591612094,
+      "period_end_year": "2025"
+    }
+  },
+  "source_metadata": {
+    "shares_outstanding": {
+      "sources": [
+        {
+          "source_url": "https://financialmodelingprep.com/stable/shares-float?symbol=NVDA",
+          "fetched_at_utc": "2026-10-11T21:20:36.891980+00:00",
+          "status_code": 200,
+          "content_type": "application/json; charset=utf-8",
+          "body_sha256": "69b2d480abbb7b787178eb802ad0805713f96d9edc8f7843230d38edfc5677d0",
+          "secret_echo_redacted": false,
+          "runtime_seconds": 0.08154900000045018,
+          "response_key": "ee0691233db13c9cfb9b443cbb05d82cc7283b6f42e1839f31916433404cc8cb"
+        }
+      ],
+      "json_location": "[0].outstandingShares",
+      "unit": "shares"
+    },
+    "current_price": {
+      "sources": [
+        {
+          "source_url": "https://financialmodelingprep.com/stable/quote-short?symbol=NVDA",
+          "fetched_at_utc": "2026-10-11T21:20:36.173451+00:00",
+          "status_code": 200,
+          "content_type": "application/json; charset=utf-8",
+          "body_sha256": "7d9418124aa2d8db563c05521ec9321370bfabd3ab3da56d09b5689f803011b5",
+          "secret_echo_redacted": false,
+          "runtime_seconds": 0.07685679999849526,
+          "response_key": "f93a71bbee2232057d8da71978c552b4398095d50444791d5fcf69900e010bbb"
+        }
+      ],
+      "unit": "USD/share",
+      "as_of_utc": "2026-10-11T21:10:00+00:00"
+    },
+    "peer_data": {
+      "path": "analysis/peer_ev_ebitda_comparison.csv",
+      "selection": "latest nonmissing annual period per peer; may differ across companies"
+    },
+    "free_cash_flow": {
+      "path": "analysis/cash_flow_raw_data.csv",
+      "row_selector": "latest date",
+      "field": "freeCashFlow",
+      "unit": "USD"
+    }
+  },
+  "free_cash_flow": 96676000000.0,
+  "free_cash_flow_period": "2026-01-25 00:00:00"
+}

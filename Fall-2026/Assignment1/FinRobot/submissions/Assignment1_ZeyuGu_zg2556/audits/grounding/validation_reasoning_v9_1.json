@@ -1,0 +1,42 @@
+{
+  "created_at_utc": "2026-10-12T06:39:23.444318+00:00",
+  "human_review_performed": false,
+  "new_direct_paid_api_calls": 0,
+  "checks": [
+    {
+      "ticker": "NVDA",
+      "source_units": 523,
+      "claims": 678,
+      "all_exact_offsets_and_citations": true,
+      "source_and_evidence_hashes_match": true,
+      "source_script_snapshots_match": true,
+      "old_v9_audit_intact": true
+    },
+    {
+      "ticker": "AMD",
+      "source_units": 466,
+      "claims": 660,
+      "all_exact_offsets_and_citations": true,
+      "source_and_evidence_hashes_match": true,
+      "source_script_snapshots_match": true,
+      "old_v9_audit_intact": true
+    },
+    {
+      "ticker": "INTC",
+      "source_units": 491,
+      "claims": 647,
+      "all_exact_offsets_and_citations": true,
+      "source_and_evidence_hashes_match": true,
+      "source_script_snapshots_match": true,
+      "old_v9_audit_intact": true
+    }
+  ],
+  "tests": {
+    "command": "python -m unittest discover -s tests -p test_audit_reasoning_v9*.py -v",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "test_actual_endpoints_and_full_table_are_distinct (test_audit_reasoning_v9.IndependentCAGRTests.test_actual_endpoints_and_full_table_are_distinct) ... ok\ntest_forecast_as_actual_is_contradiction (test_audit_reasoning_v9.IndependentCAGRTests.test_forecast_as_actual_is_contradiction) ... ok\ntest_rounding_is_display_precision_not_broad_tolerance (test_audit_reasoning_v9.IndependentCAGRTests.test_rounding_is_display_precision_not_broad_tolerance) ... ok\ntest_unknown_changed_prose_aborts (test_audit_reasoning_v9.IndependentCAGRTests.test_unknown_changed_prose_aborts) ... ok\ntest_wrong_arithmetic_is_not_supported (test_audit_reasoning_v9.IndependentCAGRTests.test_wrong_arithmetic_is_not_supported) ... ok\ntest_zero_negative_missing_endpoints_decline (test_audit_reasoning_v9.IndependentCAGRTests.test_zero_negative_missing_endpoints_decline) ... ok\ntest_correct_value_wrong_year_not_grounded (test_audit_reasoning_v9_1.RangeTests.test_correct_value_wrong_year_not_grounded) ... ok\ntest_forecast_and_peer_outlier_not_subject_extreme (test_audit_reasoning_v9_1.RangeTests.test_forecast_and_peer_outlier_not_subject_extreme) ... ok\ntest_nonfinite_actual_cannot_be_ignored (test_audit_reasoning_v9_1.RangeTests.test_nonfinite_actual_cannot_be_ignored) ... ok\ntest_real_prompt_all_five_actual_observations (test_audit_reasoning_v9_1.RangeTests.test_real_prompt_all_five_actual_observations) ... ok\ntest_ties_allow_any_tied_year (test_audit_reasoning_v9_1.RangeTests.test_ties_allow_any_tied_year) ... ok\ntest_unknown_prose_and_wrong_subject_abort (test_audit_reasoning_v9_1.RangeTests.test_unknown_prose_and_wrong_subject_abort) ... ok\ntest_wrong_minimum_not_grounded (test_audit_reasoning_v9_1.RangeTests.test_wrong_minimum_not_grounded) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 0.004s\n\nOK\n",
+    "python": "3.11.15 (main, Mar 10 2026, 18:12:25) [MSC v.1944 64 bit (AMD64)]"
+  },
+  "limitations": "Mechanical completeness and exact evidence identity do not prove semantic correctness. Same-cohort machine adjudication, not human validation."
+}

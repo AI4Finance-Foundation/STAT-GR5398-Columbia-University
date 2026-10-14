@@ -1,0 +1,19 @@
+ticker,run_id,assumption,value,source,interpretation
+AAPL,AAPL-20261011T211000Z-snapshot-derived-e8bf7838,EBITDA,215808176962.56,financial_metrics_and_forecasts.csv:EBITDA/2028E,"terminal forecast, not latest historical EBITDA"
+AAPL,AAPL-20261011T211000Z-snapshot-derived-e8bf7838,EBITDA period,2028E,last A/E column in analysis CSV,preserves baseline selector
+AAPL,AAPL-20261011T211000Z-snapshot-derived-e8bf7838,Shares,14594180000.0,"{""sources"": [{""source_url"": ""https://financialmodelingprep.com/stable/shares-float?symbol=AAPL"", ""fetched_at_utc"": ""2026-10-11T21:21:08.597677+00:00"", ""status_code"": 200, ""content_type"": ""application/json; charset=utf-8"", ""body_sha256"": ""1f3d96c6d0d9d46543e0ec2dc0df1387e11026e057c136e3a0c6b45ac500a7a9"", ""secret_echo_redacted"": false, ""runtime_seconds"": 0.07615879999866593, ""response_key"": ""f7148bc95d200378f04c24589d2ad2e5054af6a557638257b5c171c0c1a92f21""}], ""json_location"": ""[0].outstandingShares"", ""unit"": ""shares""}",actual share count must match valuation units
+AAPL,AAPL-20261011T211000Z-snapshot-derived-e8bf7838,Historical mean EV/EBITDA,23.003680802880627,observed sample mean,unweighted sample mean; fiscal/calendar labels require source audit
+AAPL,AAPL-20261011T211000Z-snapshot-derived-e8bf7838,Historical sample standard deviation,3.5495902229471628,"sample standard deviation, denominator n-1",observations=5
+AAPL,AAPL-20261011T211000Z-snapshot-derived-e8bf7838,Target multiple,23.003680802880627,observed sample mean,same multiple across sensitivity cases
+AAPL,AAPL-20261011T211000Z-snapshot-derived-e8bf7838,Net debt rule,0.1,hard-coded baseline,10% of each modeled enterprise value; NOT balance-sheet debt; low/high multiples hold central debt fixed
+AAPL,AAPL-20261011T211000Z-snapshot-derived-e8bf7838,Price floor,0,hard-coded baseline,negative equity valuations clipped to zero
+AAPL,AAPL-20261011T211000Z-snapshot-derived-e8bf7838,EV/EBITDA discount rate,N/A,no discounting in baseline multiple method,terminal forecast is not discounted back to observation date
+AAPL,AAPL-20261011T211000Z-snapshot-derived-e8bf7838,EV/EBITDA terminal growth,N/A,multiple method,not a DCF assumption
+AAPL,AAPL-20261011T211000Z-snapshot-derived-e8bf7838,Base FCF,98767000000.0,caller free_cash_flow,period=2025-09-27 00:00:00; caller FCF definition must be disclosed
+AAPL,AAPL-20261011T211000Z-snapshot-derived-e8bf7838,DCF low/high range,+/-1pp terminal discount denominator only,hard-coded baseline,"not a full WACC sensitivity: explicit PV, terminal-value denominator and net debt remain fixed"
+AAPL,AAPL-20261011T211000Z-snapshot-derived-e8bf7838,Confidence weights,EV/EBITDA 0.7; peers 0.6; DCF 0.5,hard-coded baseline,"heuristic weights, not statistical confidence"
+AAPL,AAPL-20261011T211000Z-snapshot-derived-e8bf7838,growth_rate_1_5,0.1,caller/default DCF assumption,ten-year horizon growth defaults 10% then 5%; terminal default 2.5%; WACC default 10%
+AAPL,AAPL-20261011T211000Z-snapshot-derived-e8bf7838,growth_rate_6_10,0.05,caller/default DCF assumption,ten-year horizon growth defaults 10% then 5%; terminal default 2.5%; WACC default 10%
+AAPL,AAPL-20261011T211000Z-snapshot-derived-e8bf7838,terminal_growth,0.025,caller/default DCF assumption,ten-year horizon growth defaults 10% then 5%; terminal default 2.5%; WACC default 10%
+AAPL,AAPL-20261011T211000Z-snapshot-derived-e8bf7838,wacc,0.1,caller/default DCF assumption,ten-year horizon growth defaults 10% then 5%; terminal default 2.5%; WACC default 10%
+AAPL,AAPL-20261011T211000Z-snapshot-derived-e8bf7838,projection_years,10,caller/default DCF assumption,ten-year horizon growth defaults 10% then 5%; terminal default 2.5%; WACC default 10%

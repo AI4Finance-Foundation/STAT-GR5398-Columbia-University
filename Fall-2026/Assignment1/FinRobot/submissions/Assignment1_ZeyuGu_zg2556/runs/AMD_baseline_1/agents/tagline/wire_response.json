@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EXvIAr82UioJz5ao5VWcmg1eVYbpx",
+  "object": "chat.completion",
+  "created": 1791753762,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"tagline\":\"Advanced Micro Devices, Inc. demonstrates robust revenue growth with a compound annual growth rate exceeding 20%, supported by expanding contribution margins reaching over 50%. The company maintains strong EBITDA margins, projected to rise to over 40%, reflecting efficient operational management despite increasing SG&A expenses. Valuation metrics indicate a premium positioning, underscoring confidence in AMD's solid financial fundamentals and market presence.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1704,
+    "completion_tokens": 82,
+    "total_tokens": 1786,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_74a1151774"
+}

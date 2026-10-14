@@ -1,0 +1,55 @@
+{
+  "company_ticker": "NVDA",
+  "company_name": "NVIDIA Corporation",
+  "run_id": "NVDA-20261011T211000Z-snapshot",
+  "analysis_date": "2026-10-11T21:10:00+00:00",
+  "data_source": "Financial Modeling Prep API frozen snapshot",
+  "data_period": "annual",
+  "years_analyzed": 5,
+  "available_years": [
+    "2022A",
+    "2023A",
+    "2024A",
+    "2025A",
+    "2026A"
+  ],
+  "latest_year": "2026A",
+  "forecast_years": [
+    "2027E",
+    "2028E",
+    "2029E"
+  ],
+  "forecast_config": {
+    "revenue_base_year": "2026A",
+    "revenue_growth_assumptions": {
+      "2027E": 0.05,
+      "2028E": 0.06,
+      "2029E": 0.04
+    },
+    "ebitda_growth_factor": 1.05,
+    "margin_improvement": {
+      "Contribution Margin": 0.01,
+      "EBITDA Margin": 0.01
+    },
+    "sga_margin_change": -0.005,
+    "forecast_label_mapping": {
+      "2025E": "2027E",
+      "2026E": "2028E",
+      "2027E": "2029E"
+    },
+    "forecast_origin": "2026A",
+    "forecast_basis": "annual periods after latest observed actual; not calendar-year projections"
+  },
+  "peer_tickers": [
+    "AMD",
+    "INTC"
+  ],
+  "news_days_back": 90,
+  "news_articles_fetched": 1,
+  "news_articles_in_evidence": 1,
+  "enhanced_news_enabled": true,
+  "sensitivity_analysis_enabled": true,
+  "catalyst_analysis_enabled": true,
+  "text_sections": [],
+  "text_generation_status": "not run by this deterministic capture stage"
+}

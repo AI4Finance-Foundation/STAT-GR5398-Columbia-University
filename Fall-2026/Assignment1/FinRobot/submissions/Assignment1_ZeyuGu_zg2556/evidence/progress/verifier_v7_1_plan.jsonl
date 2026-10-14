@@ -1,0 +1,21 @@
+{"time": "2026-10-11T23:34:10.156965+00:00", "step": "NVDA_final_v7_1", "event": "start", "argv_without_credentials": ["scripts/experiment.py", "--upstream", "{upstream}", "verify", "--run", "runs/NVDA_baseline_1", "--final-run", "runs/NVDA_final_v7_1", "--budget", "config/budget.evaluation.json", "--ledger", "evidence/costs.jsonl", "--max-tokens", "26000", "--reuse-review-run", "runs/NVDA_final_v7"]}
+{"time": "2026-10-11T23:34:11.749866+00:00", "step": "NVDA_final_v7_1", "event": "exit", "exit_code": 0}
+{"time": "2026-10-11T23:34:11.750365+00:00", "step": "AMD_final_v7_1", "event": "start", "argv_without_credentials": ["scripts/experiment.py", "--upstream", "{upstream}", "verify", "--run", "runs/AMD_baseline_1", "--final-run", "runs/AMD_final_v7_1", "--budget", "config/budget.evaluation.json", "--ledger", "evidence/costs.jsonl", "--max-tokens", "26000", "--reuse-review-run", "runs/AMD_final_v7"]}
+{"time": "2026-10-11T23:34:13.375853+00:00", "step": "AMD_final_v7_1", "event": "exit", "exit_code": 0}
+{"time": "2026-10-11T23:34:13.376353+00:00", "step": "INTC_final_v7_1", "event": "start", "argv_without_credentials": ["scripts/experiment.py", "--upstream", "{upstream}", "verify", "--run", "runs/INTC_baseline_1", "--final-run", "runs/INTC_final_v7_1", "--budget", "config/budget.evaluation.json", "--ledger", "evidence/costs.jsonl", "--max-tokens", "26000", "--reuse-review-run", "runs/INTC_final_v7"]}
+{"time": "2026-10-11T23:34:35.894871+00:00", "step": "INTC_final_v7_1", "event": "exit", "exit_code": 0}
+{"time": "2026-10-11T23:34:35.895375+00:00", "step": "AVGO_final_v7_1", "event": "start", "argv_without_credentials": ["scripts/experiment.py", "--upstream", "{upstream}", "verify", "--run", "runs/AVGO_baseline_1", "--final-run", "runs/AVGO_final_v7_1", "--budget", "config/budget.evaluation.json", "--ledger", "evidence/costs.jsonl", "--max-tokens", "26000", "--reuse-review-run", "runs/AVGO_final_v7"]}
+{"time": "2026-10-11T23:34:37.528034+00:00", "step": "AVGO_final_v7_1", "event": "exit", "exit_code": 0}
+{"time": "2026-10-11T23:34:37.528534+00:00", "step": "QCOM_final_v7_1", "event": "start", "argv_without_credentials": ["scripts/experiment.py", "--upstream", "{upstream}", "verify", "--run", "runs/QCOM_baseline_1", "--final-run", "runs/QCOM_final_v7_1", "--budget", "config/budget.evaluation.json", "--ledger", "evidence/costs.jsonl", "--max-tokens", "26000", "--reuse-review-run", "runs/QCOM_final_v7"]}
+{"time": "2026-10-11T23:34:39.201338+00:00", "step": "QCOM_final_v7_1", "event": "exit", "exit_code": 0}
+{"time": "2026-10-11T23:34:39.201838+00:00", "step": "AAPL_final_v7_1", "event": "start", "argv_without_credentials": ["scripts/experiment.py", "--upstream", "{upstream}", "verify", "--run", "runs/AAPL_baseline_1", "--final-run", "runs/AAPL_final_v7_1", "--budget", "config/budget.evaluation.json", "--ledger", "evidence/costs.jsonl", "--max-tokens", "26000", "--reuse-review-run", "runs/AAPL_final_v7"]}
+{"time": "2026-10-11T23:34:41.040882+00:00", "step": "AAPL_final_v7_1", "event": "exit", "exit_code": 0}
+{"time": "2026-10-11T23:34:41.041382+00:00", "step": "GOOGL_final_v7_1", "event": "start", "argv_without_credentials": ["scripts/experiment.py", "--upstream", "{upstream}", "verify", "--run", "runs/GOOGL_baseline_1", "--final-run", "runs/GOOGL_final_v7_1", "--budget", "config/budget.evaluation.json", "--ledger", "evidence/costs.jsonl", "--max-tokens", "26000", "--reuse-review-run", "runs/GOOGL_final_v7"]}
+{"time": "2026-10-11T23:34:42.822906+00:00", "step": "GOOGL_final_v7_1", "event": "exit", "exit_code": 0}
+{"time": "2026-10-11T23:35:14.083753+00:00", "step": "NVDA_final_v7_1", "event": "reuse_completed_step"}
+{"time": "2026-10-11T23:35:14.084253+00:00", "step": "AMD_final_v7_1", "event": "reuse_completed_step"}
+{"time": "2026-10-11T23:35:14.084253+00:00", "step": "INTC_final_v7_1", "event": "reuse_completed_step"}
+{"time": "2026-10-11T23:35:14.089265+00:00", "step": "AVGO_final_v7_1", "event": "reuse_completed_step"}
+{"time": "2026-10-11T23:35:14.092764+00:00", "step": "QCOM_final_v7_1", "event": "reuse_completed_step"}
+{"time": "2026-10-11T23:35:14.096271+00:00", "step": "AAPL_final_v7_1", "event": "reuse_completed_step"}
+{"time": "2026-10-11T23:35:14.100773+00:00", "step": "GOOGL_final_v7_1", "event": "reuse_completed_step"}

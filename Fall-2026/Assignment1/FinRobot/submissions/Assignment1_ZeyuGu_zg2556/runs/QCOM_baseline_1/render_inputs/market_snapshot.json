@@ -1,0 +1,32 @@
+{
+  "ticker": "QCOM",
+  "as_of_utc": "2026-10-11T21:10:00+00:00",
+  "metrics": {
+    "share_price": 175.5,
+    "shares_outstanding": 1050000000,
+    "target_price": null,
+    "rating": null,
+    "market_cap": null,
+    "volume": null,
+    "fwd_pe": null,
+    "sector": null
+  },
+  "provenance_notes": "Subject annual data: public SEC 10-K FY2023-2025 comparative statements, as filed in FY2025 10-K; not a historical backtest. Price: Yahoo Finance Oct 9, 2026 raw daily close (USD); shares: latest SEC cover-page count dated 2026-07-27. Historical subject PE and EV/EBITDA, analyst grade/target, float, and forward PE are unavailable. Engine EV/EBITDA uses explicit DEFAULT 12x +/-3x, not observed multiples. Engine net debt=10% of modeled EV; FCF=GAAP OCF-capex, not established unlevered FCF; WACC=10%, growth=10% then5%, terminal=2.5%. Historic subject EBITDA=GAAP operating income+cash-flow D&A (AVGO includes ROU amortization); peer EBITDA is FMP-defined and not identical. Forecast EBITDA=gross profit-SG&A excludes R&D. Peer projection uses upstream one-step growth at global last-year+1; periods differ. News consists of one literal SEC 10-Q table, not comprehensive press coverage. Catalyst dates/probabilities and native sensitivity bands are upstream heuristics, not observations.",
+  "price_bar": {
+    "date": "2026-10-09",
+    "timestamp_utc": "2026-10-09T13:30:00+00:00",
+    "close": 175.5,
+    "volume": 7565100
+  },
+  "shares_observation": {
+    "end": "2026-07-27",
+    "val": 1050000000,
+    "accn": "0000804328-26-000086",
+    "fy": 2026,
+    "fp": "Q3",
+    "form": "10-Q",
+    "filed": "2026-07-29",
+    "frame": "CY2026Q2I",
+    "json_pointer": "/facts/dei/EntityCommonStockSharesOutstanding/units/shares/69"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "version": "7-semantic-period-peer-horizon-review",
+  "source_sha256": "5c55074f203697118b263abf0663b88697c73df6743704d1a36d375e88aba16f",
+  "development_cohort": [
+    "NVDA",
+    "AMD",
+    "INTC"
+  ],
+  "uses_audit_feedback_for_prompt_design": true,
+  "held_out_efficacy_claim": false,
+  "design": "Generic period, entity, metric, trend, CAGR horizon and flattened-news column instructions; deterministic exact release-string deduplication. Original writer evidence is unchanged.",
+  "input_to_verifier": "Original writer prompt and original draft only. No independent audit labels or later sources.",
+  "comparison_warning": "Adaptive development on the evaluated cohort. V6 results and failures remain immutable; V7 is not a held-out confirmation.",
+  "cost_policy": "New independent verifier draws, same cumulative USD 20 ledger; no cached response reuse."
+}

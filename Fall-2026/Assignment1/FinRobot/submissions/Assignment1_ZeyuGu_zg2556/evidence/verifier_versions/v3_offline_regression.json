@@ -1,0 +1,30 @@
+{
+  "scope": "Offline regression of preserved real V2 model responses under V3 local release checks. Not a new V3 generation or final report. Original artifacts unchanged.",
+  "api_calls": 0,
+  "results": [
+    {
+      "legacy_run": "NVDA_final_v2",
+      "section": "tagline",
+      "response_sha256": "ed2dbf8e8cd66b63ccbd02a828371adc53b6a8082f9e2a83fe83b2209320d5a9",
+      "verified_claim_count": 0,
+      "deterministic_failure_count": 3,
+      "unverified_annotation_count": 3,
+      "withheld_claim_count": 0,
+      "claim_retention_rate": 1.0,
+      "automatic_year_binding_count": 0,
+      "status": "v3_local_validation_succeeded"
+    },
+    {
+      "legacy_run": "NVDA_final_gpt41",
+      "section": "tagline",
+      "response_sha256": "9cf89e424d54dd5d2bae5a74668cb8b1a5cb71de65a2f3eac7a2005211868338",
+      "verified_claim_count": 1,
+      "deterministic_failure_count": 2,
+      "unverified_annotation_count": 3,
+      "withheld_claim_count": 1,
+      "claim_retention_rate": 0.8,
+      "automatic_year_binding_count": 0,
+      "status": "v3_local_validation_succeeded"
+    }
+  ]
+}

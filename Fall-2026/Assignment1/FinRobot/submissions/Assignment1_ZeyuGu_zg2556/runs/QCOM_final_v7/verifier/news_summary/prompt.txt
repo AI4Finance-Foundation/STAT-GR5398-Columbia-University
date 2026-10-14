@@ -1,0 +1,109 @@
+ORIGINAL EVIDENCE PROMPT (line numbers added only for locating evidence):
+1: Financial data for QUALCOMM Incorporated (QCOM):
+2: 
+3: ## QUALCOMM Incorporated Financial Metrics and Forecasts
+4: |    | metrics             | 2023A         | 2024A         | 2025A         | 2026E         | 2027E         | 2028E          | CAGR   |
+5: |---:|:--------------------|:--------------|:--------------|:--------------|:--------------|:--------------|:---------------|:-------|
+6: |  0 | Revenue             | 35820000000.0 | 38962000000.0 | 44284000000.0 | 46498200000.0 | 49288092000.0 | 51259615680.0  | 11.2%  |
+7: |  1 | Cost of Operations  | 15869000000.0 | 17060000000.0 | 19738000000.0 | 20273215200.0 | 20996727192.0 | 21324000122.88 | nan    |
+8: |  2 | SG&A                | 2483000000.0  | 2759000000.0  | 3110000000.0  | 3022383000.0  | 2957285520.0  | 2819278862.4   | nan    |
+9: |  3 | Contribution Profit | 19951000000.0 | 21902000000.0 | 24546000000.0 | 26224984800.0 | 28291364808.0 | 29935615557.12 | nan    |
+10: |  4 | Contribution Margin | 55.7%         | 56.2%         | 55.4%         | 56.4%         | 57.4%         | 58.4%          | nan    |
+11: |  5 | EBITDA              | 9597000000.0  | 11777000000.0 | 13957000000.0 | 23202601800.0 | 25334079288.0 | 27116336694.72 | nan    |
+12: |  6 | EBITDA Margin       | 26.8%         | 30.2%         | 31.5%         | 49.9%         | 51.4%         | 52.9%          | nan    |
+13: |  7 | SG&A Margin         | 6.9%          | 7.1%          | 7.0%          | 6.5%          | 6.0%          | 5.5%           | nan    |
+14: |  8 | Revenue Growth      | nan           | 8.8%          | 13.7%         | 5.0%          | 6.0%          | 4.0%           | nan    |
+15: |  9 | EPS                 | 6.47          | 9.09          | 5.05          | 5.36          | 5.73          | 6.02           | nan    |
+16: | 10 | PE Ratio            | nan           | nan           | nan           | nan           | nan           | nan            | nan    |
+17: 
+18: ## Peer EBITDA Comparison
+19: |   year |         AMD |        INTC |         QCOM |
+20: |-------:|------------:|------------:|-------------:|
+21: |   2021 | 4.166e+09   | 3.3874e+10  | nan          |
+22: |   2022 | 5.534e+09   | 2.1299e+10  | nan          |
+23: |   2023 | 4.149e+09   | 1.1242e+10  |   9.597e+09  |
+24: |   2024 | 5.258e+09   | 1.203e+09   |   1.1777e+10 |
+25: |   2025 | 7.275e+09   | 1.4354e+10  |   1.3957e+10 |
+26: |   2026 | 8.60087e+09 | 4.73518e+10 |   1.6834e+10 |
+27: 
+28: ## Peer EV/EBITDA Comparison
+29: |   year |     AMD |      INTC |   QCOM |
+30: |-------:|--------:|----------:|-------:|
+31: |   2021 | 42.1013 |   7.13058 |    nan |
+32: |   2022 | 17.9136 |   6.54873 |    nan |
+33: |   2023 | 57.1197 |  22.4823  |    nan |
+34: |   2024 | 38.2717 | 106.938   |    nan |
+35: |   2025 | 47.8456 |  14.4982  |    nan |
+36: 
+37: ## Recent News for QUALCOMM Incorporated (QCOM)
+38: 
+39: ### Article 1
+40: **Title:** QUALCOMM Incorporated Form 10-Q financial disclosure for period ended 2026-06-28
+41: **Date:** 2026-07-29T20:02:50+00:00
+42: **Summary:** Three Months Ended
+43: Nine Months Ended
+44: June 28,
+45: 2026
+46: June 29,
+47: 2025
+48: June 28,
+49: 2026
+50: June 29,
+51: 2025
+52: Revenues:
+53: Equipment and services
+54: $
+55: 8,475
+56: $
+57: 8,893
+58: $
+59: 28,002
+60: $
+61: 28,193
+62: Licensing
+63: 1,472
+64: 1,472
+65: 4,796
+66: 4,820
+67: Total revenues
+68: 9,947
+69: 10,365
+70: 32,798
+71: 33,013
+72: Costs and expenses:
+73: Cost of revenues
+74: 4,670
+75: 4,606
+76: 15,138
+77: 14,704
+78: Research and development
+79: 2,607
+80: 2,226
+81: 7,523
+82: 6,672
+83: Selling, general and administrative
+84: 976
+85: 771
+86: 2,738
+87: 2,200
+88: Other
+89: 68
+90: —
+91: 97
+92: —
+93: Total costs and expenses
+94: 8,321
+95: 7,603
+96: 25,496
+97: 23,576
+98: Operating income
+99: 1,626
+100: 2,762
+101: 
+102: 
+103: 
+104: ## Explicit input provenance and limitations (not news)
+105: Subject annual data: public SEC 10-K FY2023-2025 comparative statements, as filed in FY2025 10-K; not a historical backtest. Price: Yahoo Finance Oct 9, 2026 raw daily close (USD); shares: latest SEC cover-page count dated 2026-07-27. Historical subject PE and EV/EBITDA, analyst grade/target, float, and forward PE are unavailable. Engine EV/EBITDA uses explicit DEFAULT 12x +/-3x, not observed multiples. Engine net debt=10% of modeled EV; FCF=GAAP OCF-capex, not established unlevered FCF; WACC=10%, growth=10% then5%, terminal=2.5%. Historic subject EBITDA=GAAP operating income+cash-flow D&A (AVGO includes ROU amortization); peer EBITDA is FMP-defined and not identical. Forecast EBITDA=gross profit-SG&A excludes R&D. Peer projection uses upstream one-step growth at global last-year+1; periods differ. News consists of one literal SEC 10-Q table, not comprehensive press coverage. Catalyst dates/probabilities and native sensitivity bands are upstream heuristics, not observations.
+
+DRAFT SOURCE UNITS (cover every unit and every atomic claim):
+[{"source_id": 0, "start": 0, "end": 535, "text": "Recent financial disclosures from QUALCOMM Incorporated for the quarter ended June 28, 2026, reveal a slight decline in total revenues compared to the prior year period, with total revenues of $9.947 billion down from $10.365 billion. Operating income also decreased notably to $1.626 billion from $2.762 billion in the previous year’s quarter. These results contrast with earlier projections of steady revenue growth and margin expansion through 2028, highlighting near-term operational pressures despite a positive long-term outlook."}, {"source_id": 1, "start": 537, "end": 987, "text": "Key developments include QUALCOMM’s latest 10-Q filing showing sequential revenue and operating income declines, which may indicate challenges in equipment and services segments. Despite this, the company’s long-term revenue CAGR of 11.2% and improving contribution margins suggest ongoing strength in licensing and efficiency gains. The quarterly results, however, signal potential short-term headwinds that could temper near-term stock performance."}, {"source_id": 2, "start": 989, "end": 1369, "text": "Investors should closely monitor the company’s ability to stabilize revenues and margins in upcoming quarters, as well as any strategic responses to competitive pressures. The contrast between recent quarterly results and the optimistic longer-term financial forecast underscores the importance of evaluating both immediate operational execution and the broader growth trajectory."}, {"source_id": 3, "start": 1371, "end": 1774, "text": "Overall, the news tone is cautiously neutral to slightly negative in the short term due to declining quarterly revenues and earnings, but remains positive over the longer term given robust financial metrics and growth projections. This mixed sentiment may lead to increased volatility in the stock price as the market digests the latest operational data alongside the favorable outlook for future years."}]

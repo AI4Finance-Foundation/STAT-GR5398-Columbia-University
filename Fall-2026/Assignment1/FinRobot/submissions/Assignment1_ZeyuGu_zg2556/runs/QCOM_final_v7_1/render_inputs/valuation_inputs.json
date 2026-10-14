@@ -1,0 +1,42 @@
+{
+  "ticker": "QCOM",
+  "run_id": "QCOM_public_v1",
+  "current_price": 175.5,
+  "shares_outstanding": 1050000000,
+  "currency": "USD",
+  "free_cash_flow": 12820000000,
+  "free_cash_flow_period": "2025-09-28",
+  "peer_data": {
+    "AMD": {
+      "ev_ebitda": 47.845602749140895
+    },
+    "INTC": {
+      "ev_ebitda": 14.498202591612094
+    }
+  },
+  "source_metadata": {
+    "shares": {
+      "end": "2026-07-27",
+      "val": 1050000000,
+      "accn": "0000804328-26-000086",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-07-29",
+      "frame": "CY2026Q2I",
+      "json_pointer": "/facts/dei/EntityCommonStockSharesOutstanding/units/shares/69"
+    },
+    "price": {
+      "path": "evidence/public_market/yahoo_2026-10-11/QCOM.json",
+      "json_pointer": "/chart/result/0/indicators/quote/0/close",
+      "bar": {
+        "date": "2026-10-09",
+        "timestamp_utc": "2026-10-09T13:30:00+00:00",
+        "close": 175.5,
+        "volume": 7565100
+      }
+    },
+    "free_cash_flow": "analysis/cash_flow_raw_data.csv: latest operatingCashFlow-capitalExpenditure",
+    "limitations": "Subject annual data: public SEC 10-K FY2023-2025 comparative statements, as filed in FY2025 10-K; not a historical backtest. Price: Yahoo Finance Oct 9, 2026 raw daily close (USD); shares: latest SEC cover-page count dated 2026-07-27. Historical subject PE and EV/EBITDA, analyst grade/target, float, and forward PE are unavailable. Engine EV/EBITDA uses explicit DEFAULT 12x +/-3x, not observed multiples. Engine net debt=10% of modeled EV; FCF=GAAP OCF-capex, not established unlevered FCF; WACC=10%, growth=10% then5%, terminal=2.5%. Historic subject EBITDA=GAAP operating income+cash-flow D&A (AVGO includes ROU amortization); peer EBITDA is FMP-defined and not identical. Forecast EBITDA=gross profit-SG&A excludes R&D. Peer projection uses upstream one-step growth at global last-year+1; periods differ. News consists of one literal SEC 10-Q table, not comprehensive press coverage. Catalyst dates/probabilities and native sensitivity bands are upstream heuristics, not observations."
+  }
+}

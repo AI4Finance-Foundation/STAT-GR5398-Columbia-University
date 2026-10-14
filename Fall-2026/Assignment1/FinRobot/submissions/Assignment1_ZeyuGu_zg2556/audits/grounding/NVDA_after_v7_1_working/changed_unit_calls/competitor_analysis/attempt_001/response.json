@@ -1,0 +1,137 @@
+{
+  "call_id": "NVDA_v7_1_changed_audit/competitor_analysis/1",
+  "structured_output": {
+    "units": [
+      {
+        "unit_id": 0,
+        "claims": [],
+        "nonfactual_reason": "Purely connective/heading or contains only unverified annotation; no factual premise to audit."
+      },
+      {
+        "unit_id": 1,
+        "claims": [],
+        "nonfactual_reason": "Purely connective/heading or contains only unverified annotation; no factual premise to audit."
+      },
+      {
+        "unit_id": 2,
+        "claims": [
+          {
+            "claim": "NVIDIA has experienced rapid revenue growth.",
+            "claim_type": "qualitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 6,
+                "line_end": 6
+              },
+              {
+                "line_start": 14,
+                "line_end": 14
+              }
+            ],
+            "reason": "The financial table shows NVIDIA's revenue increasing from $26.9B in 2022A and 2023A to $60.9B in 2024A, $130.5B in 2025A, and $215.9B in 2026A, with revenue growth rates of 125.9% (2024A), 114.2% (2025A), and 65.5% (2026A). This supports the claim of rapid revenue growth.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia|revenue_growth|unspecified|rapid|qualitative"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 5,
+        "claims": [],
+        "nonfactual_reason": "Purely connective/heading or contains only unverified annotation; no factual premise to audit."
+      },
+      {
+        "unit_id": 10,
+        "claims": [],
+        "nonfactual_reason": "Purely connective/heading or contains only unverified annotation; no factual premise to audit."
+      },
+      {
+        "unit_id": 11,
+        "claims": [],
+        "nonfactual_reason": "Purely connective/heading or contains only unverified annotation; no factual premise to audit."
+      },
+      {
+        "unit_id": 13,
+        "claims": [],
+        "nonfactual_reason": "Purely connective/heading or contains only unverified annotation; no factual premise to audit."
+      },
+      {
+        "unit_id": 14,
+        "claims": [],
+        "nonfactual_reason": "Purely connective/heading or contains only unverified annotation; no factual premise to audit."
+      },
+      {
+        "unit_id": 15,
+        "claims": [],
+        "nonfactual_reason": "Purely connective/heading or contains only unverified annotation; no factual premise to audit."
+      },
+      {
+        "unit_id": 16,
+        "claims": [],
+        "nonfactual_reason": "Purely connective/heading or contains only unverified annotation; no factual premise to audit."
+      },
+      {
+        "unit_id": 17,
+        "claims": [],
+        "nonfactual_reason": "Purely connective/heading or contains only unverified annotation; no factual premise to audit."
+      },
+      {
+        "unit_id": 18,
+        "claims": [],
+        "nonfactual_reason": "Purely connective/heading or contains only unverified annotation; no factual premise to audit."
+      },
+      {
+        "unit_id": 19,
+        "claims": [],
+        "nonfactual_reason": "Purely connective/heading or contains only unverified annotation; no factual premise to audit."
+      },
+      {
+        "unit_id": 23,
+        "claims": [],
+        "nonfactual_reason": "Purely connective/heading or contains only unverified annotation; no factual premise to audit."
+      },
+      {
+        "unit_id": 25,
+        "claims": [],
+        "nonfactual_reason": "Purely connective/heading or contains only unverified annotation; no factual premise to audit."
+      },
+      {
+        "unit_id": 26,
+        "claims": [],
+        "nonfactual_reason": "Purely connective/heading or contains only unverified annotation; no factual premise to audit."
+      },
+      {
+        "unit_id": 27,
+        "claims": [],
+        "nonfactual_reason": "Purely connective/heading or contains only unverified annotation; no factual premise to audit."
+      },
+      {
+        "unit_id": 28,
+        "claims": [],
+        "nonfactual_reason": "Purely connective/heading or contains only unverified annotation; no factual premise to audit."
+      },
+      {
+        "unit_id": 32,
+        "claims": [],
+        "nonfactual_reason": "Purely connective/heading or contains only unverified annotation; no factual premise to audit."
+      }
+    ]
+  },
+  "usage": {
+    "requests": 1,
+    "input_tokens": 3950,
+    "input_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "output_tokens": 772,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 4722
+  },
+  "runtime_seconds": 3.802496799999062,
+  "cost_usd": 0.014076,
+  "completed_at_utc": "2026-10-11T23:35:34.786596+00:00",
+  "attempts": 1
+}

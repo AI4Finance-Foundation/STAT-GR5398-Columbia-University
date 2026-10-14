@@ -1,0 +1,33 @@
+HTML reports will be saved to: C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\runs\QCOM_baseline_1\output\QCOM\report
+Loaded frozen market snapshot
+
+📊 Market Data Summary for QCOM:
+  Share Price: $175.50 (auto-fetched)
+  Target Price: N/A (auto-fetched)
+  Rating: N/A (auto-fetched)
+  Market Cap: N/A (auto-fetched)
+  Sector: N/A (auto-fetched)
+📖 Loading and processing text content...
+Handling charts...
+✅ Revenue/EBITDA chart saved to C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\runs\QCOM_baseline_1\output\QCOM\report\QCOM_revenue_ebitda_chart.png
+Warning: EPS or PE data is non-numeric.
+✅ EV/EBITDA peer chart saved to C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\runs\QCOM_baseline_1\output\QCOM\report\QCOM_peer_ev_ebitda_chart.png
+Loading sensitivity analysis from C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\runs\QCOM_baseline_1\output\QCOM\analysis\sensitivity_analysis.json...
+✅ Sensitivity analysis loaded
+Loading catalyst analysis from C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\runs\QCOM_baseline_1\output\QCOM\analysis\catalyst_analysis.json...
+✅ Catalyst analysis loaded (sentiments re-validated)
+Loading enhanced news from C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\runs\QCOM_baseline_1\output\QCOM\analysis\enhanced_news.json...
+✅ Enhanced news loaded
+Formatting tables for HTML...
+Loading Credit & Cashflow metrics from CSV...
+Warning: The ratios CSV file is missing required columns (e.g., 'calendarYear' or ratio columns).
+❌ Failed to load Credit & Cashflow metrics from CSV
+Processing peer EBITDA data with shape: (6, 4)
+Peer EBITDA columns: ['year', 'AMD', 'INTC', 'QCOM']
+Peer EBITDA index: [2021, 2022, 2023, 2024, 2025, 2026]
+✅ Successfully formatted peer EBITDA table
+Processing peer EV/EBITDA data with shape: (5, 3)
+Peer EV/EBITDA columns: ['AMD', 'INTC', 'QCOM']
+Peer EV/EBITDA index: [2021, 2022, 2023, 2024, 2025]
+✅ Successfully formatted peer EV/EBITDA table
+Generated exact-text audited HTML report: C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\runs\QCOM_baseline_1\output\QCOM\report\Audited_Equity_Report_QCOM.html

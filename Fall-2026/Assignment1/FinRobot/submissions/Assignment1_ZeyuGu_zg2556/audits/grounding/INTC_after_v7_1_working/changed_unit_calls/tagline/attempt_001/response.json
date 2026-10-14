@@ -1,0 +1,67 @@
+{
+  "call_id": "INTC_v7_1_changed_audit/tagline/1",
+  "structured_output": {
+    "units": [
+      {
+        "unit_id": 0,
+        "claims": [
+          {
+            "claim": "Intel Corporation demonstrates robust contribution margins.",
+            "claim_type": "qualitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 10,
+                "line_end": 10
+              }
+            ],
+            "reason": "The table in line 10 shows Intel's contribution margin for 2021A-2028E, with actuals of 55.4% (2021A), 42.6% (2022A), and 40.0% (2023A). These are relatively high margins, supporting the qualitative claim of 'robust' contribution margins.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel corporation|contribution margin|2021A-2023A|robust"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 1,
+        "claims": [
+          {
+            "claim": "Intel Corporation maintains a significant EBITDA presence despite recent revenue declines.",
+            "claim_type": "causal",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 6,
+                "line_end": 6
+              },
+              {
+                "line_start": 11,
+                "line_end": 11
+              }
+            ],
+            "reason": "The revenue row (line 6) shows a decline from $79.0B (2021A) to $54.2B (2023A). The EBITDA row (line 11) shows Intel's EBITDA remains substantial: $33.9B (2021A), $21.3B (2022A), $11.2B (2023A). This supports the claim that Intel maintains a significant EBITDA presence despite revenue declines.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel corporation|ebitda presence despite revenue declines|2021A-2023A|significant"
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "usage": {
+    "requests": 1,
+    "input_tokens": 2870,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 349,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 3219
+  },
+  "runtime_seconds": 1.9720496000009007,
+  "cost_usd": 0.008532,
+  "completed_at_utc": "2026-10-11T23:36:22.929792+00:00",
+  "attempts": 1
+}

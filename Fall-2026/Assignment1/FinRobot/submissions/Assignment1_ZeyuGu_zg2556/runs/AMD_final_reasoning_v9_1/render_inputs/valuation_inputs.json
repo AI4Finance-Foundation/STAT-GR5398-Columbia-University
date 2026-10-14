@@ -1,0 +1,63 @@
+{
+  "ticker": "AMD",
+  "run_id": "AMD-20261011T211000Z-snapshot",
+  "current_price": 608.1,
+  "shares_outstanding": 1630600000,
+  "currency": "USD",
+  "peer_data": {
+    "NVDA": {
+      "ev_ebitda": 31.428342257457523,
+      "period_end_year": "2026"
+    },
+    "INTC": {
+      "ev_ebitda": 14.498202591612094,
+      "period_end_year": "2025"
+    }
+  },
+  "source_metadata": {
+    "shares_outstanding": {
+      "sources": [
+        {
+          "source_url": "https://financialmodelingprep.com/stable/shares-float?symbol=AMD",
+          "fetched_at_utc": "2026-10-11T21:21:00.866437+00:00",
+          "status_code": 200,
+          "content_type": "application/json; charset=utf-8",
+          "body_sha256": "513a76ba186dba7a01e6e08467038eebb36220a76fa7fef9222861e39a346fe1",
+          "secret_echo_redacted": false,
+          "runtime_seconds": 0.10299919999852136,
+          "response_key": "5cfbe6ca70f9f901c89771953a2833d8974ac5ce3f889cadf10396d0988a2ce1"
+        }
+      ],
+      "json_location": "[0].outstandingShares",
+      "unit": "shares"
+    },
+    "current_price": {
+      "sources": [
+        {
+          "source_url": "https://financialmodelingprep.com/stable/quote-short?symbol=AMD",
+          "fetched_at_utc": "2026-10-11T21:21:00.094572+00:00",
+          "status_code": 200,
+          "content_type": "application/json; charset=utf-8",
+          "body_sha256": "316517748b7d1fb5f7c730cd0ccd5d7c6831b3a559f263e1ae90e8c72ea5d7d6",
+          "secret_echo_redacted": false,
+          "runtime_seconds": 0.08732899999995425,
+          "response_key": "e6f7c296f62caf2d8ce7d12d0964240c5a6642049e6ed7554d26aec6375b5e67"
+        }
+      ],
+      "unit": "USD/share",
+      "as_of_utc": "2026-10-11T21:10:00+00:00"
+    },
+    "peer_data": {
+      "path": "analysis/peer_ev_ebitda_comparison.csv",
+      "selection": "latest nonmissing annual period per peer; may differ across companies"
+    },
+    "free_cash_flow": {
+      "path": "analysis/cash_flow_raw_data.csv",
+      "row_selector": "latest date",
+      "field": "freeCashFlow",
+      "unit": "USD"
+    }
+  },
+  "free_cash_flow": 6735000000.0,
+  "free_cash_flow_period": "2025-12-27 00:00:00"
+}

@@ -1,0 +1,99 @@
+ORIGINAL EVIDENCE PROMPT (line numbers added only for locating evidence):
+1: Financial data for Broadcom Inc. (AVGO):
+2: 
+3: ## Broadcom Inc. Financial Metrics and Forecasts
+4: |    | metrics             | 2023A         | 2024A         | 2025A         | 2026E         | 2027E         | 2028E          | CAGR   |
+5: |---:|:--------------------|:--------------|:--------------|:--------------|:--------------|:--------------|:---------------|:-------|
+6: |  0 | Revenue             | 35819000000.0 | 51574000000.0 | 63887000000.0 | 67081350000.0 | 71106231000.0 | 73950480240.0  | 33.6%  |
+7: |  1 | Cost of Operations  | 11129000000.0 | 19065000000.0 | 20593000000.0 | 20929381200.0 | 21474081762.0 | 21593540230.08 | nan    |
+8: |  2 | SG&A                | 1592000000.0  | 4959000000.0  | 4211000000.0  | 4091962350.0  | 3981948936.0  | 3771474492.24  | nan    |
+9: |  3 | Contribution Profit | 24690000000.0 | 32509000000.0 | 43294000000.0 | 46151968800.0 | 49632149238.0 | 52356940009.92 | nan    |
+10: |  4 | Contribution Margin | 68.9%         | 63.0%         | 67.8%         | 68.8%         | 69.8%         | 70.8%          | nan    |
+11: |  5 | EBITDA              | 20042000000.0 | 23473000000.0 | 34259000000.0 | 42060006450.0 | 45650200302.0 | 48585465517.68 | nan    |
+12: |  6 | EBITDA Margin       | 56.0%         | 45.5%         | 53.6%         | 62.7%         | 64.2%         | 65.7%          | nan    |
+13: |  7 | SG&A Margin         | 4.4%          | 9.6%          | 6.6%          | 6.1%          | 5.6%          | 5.1%           | nan    |
+14: |  8 | Revenue Growth      | nan           | 44.0%         | 23.9%         | 5.0%          | 6.0%          | 4.0%           | nan    |
+15: |  9 | EPS                 | 3.39          | 1.27          | 4.91          | 5.21          | 5.57          | 5.86           | nan    |
+16: | 10 | PE Ratio            | nan           | nan           | nan           | nan           | nan           | nan            | nan    |
+17: 
+18: ## Peer EBITDA Comparison
+19: |   year |          NVDA |           AMD |          AVGO |
+20: |-------:|--------------:|--------------:|--------------:|
+21: |   2021 | nan           |   4.166e+09   | nan           |
+22: |   2022 |   1.1351e+10  |   5.534e+09   | nan           |
+23: |   2023 |   5.986e+09   |   4.149e+09   |   2.0042e+10  |
+24: |   2024 |   3.5583e+10  |   5.258e+09   |   2.3473e+10  |
+25: |   2025 |   8.6137e+10  |   7.275e+09   |   3.4259e+10  |
+26: |   2026 |   1.44552e+11 | nan           | nan           |
+27: |   2027 |   3.82001e+11 |   8.60087e+09 |   4.50625e+10 |
+28: 
+29: ## Peer EV/EBITDA Comparison
+30: |   year |     NVDA |      AMD |   AVGO |
+31: |-------:|---------:|---------:|-------:|
+32: |   2021 | nan      |  42.1013 |    nan |
+33: |   2022 |  54.7187 |  17.9136 |    nan |
+34: |   2023 |  81.0476 |  57.1197 |    nan |
+35: |   2024 |  43.4522 |  38.2717 |    nan |
+36: |   2025 |  33.7774 |  47.8456 |    nan |
+37: |   2026 |  31.4283 | nan      |    nan |
+38: 
+39: ## Recent News for Broadcom Inc. (AVGO)
+40: 
+41: ### Article 1
+42: **Title:** Broadcom Inc. Form 10-Q financial disclosure for period ended 2026-08-02
+43: **Date:** 2026-09-09T21:56:42+00:00
+44: **Summary:** Fiscal Quarter Ended
+45: Three Fiscal Quarters Ended
+46: August 2,
+47: 2026
+48: August 3,
+49: 2025
+50: August 2,
+51: 2026
+52: August 3,
+53: 2025
+54: (In millions, except per share data)
+55: Net revenue:
+56: Products
+57: $
+58: 24,279
+59: $
+60: 11,173
+61: $
+62: 55,301
+63: $
+64: 31,625
+65: Subscriptions and services
+66: 5,312
+67: 4,779
+68: 15,788
+69: 14,247
+70: Total net revenue
+71: 29,591
+72: 15,952
+73: 71,089
+74: 45,872
+75: Cost of revenue:
+76: Cost of products sold
+77: 6,983
+78: 3,098
+79: 15,689
+80: 8,515
+81: Cost of subscriptions and services
+82: 641
+83: 606
+84: 1,915
+85: 1,758
+86: Amortization of acquisition-related intangible assets
+87: 1,499
+88: 1,519
+89: 4,422
+90: 4,486
+91: 
+92: 
+93: 
+94: ## Explicit input provenance and limitations (not news)
+95: Subject annual data: public SEC 10-K FY2023-2025 comparative statements, as filed in FY2025 10-K; not a historical backtest. Price: Yahoo Finance Oct 9, 2026 raw daily close (USD); shares: latest SEC cover-page count dated 2026-08-28. Historical subject PE and EV/EBITDA, analyst grade/target, float, and forward PE are unavailable. Engine EV/EBITDA uses explicit DEFAULT 12x +/-3x, not observed multiples. Engine net debt=10% of modeled EV; FCF=GAAP OCF-capex, not established unlevered FCF; WACC=10%, growth=10% then5%, terminal=2.5%. Historic subject EBITDA=GAAP operating income+cash-flow D&A (AVGO includes ROU amortization); peer EBITDA is FMP-defined and not identical. Forecast EBITDA=gross profit-SG&A excludes R&D. Peer projection uses upstream one-step growth at global last-year+1; periods differ. News consists of one literal SEC 10-Q table, not comprehensive press coverage. Catalyst dates/probabilities and native sensitivity bands are upstream heuristics, not observations.
+
+DRAFT SOURCE UNITS (cover every unit and every atomic claim):
+[{"source_id": 0, "start": 0, "end": 674, "text": "Broadcom Inc. (ticker: AVGO) is a leading global technology company primarily engaged in the design, development, and supply of semiconductor and infrastructure software solutions. With a diverse product portfolio serving data center, networking, broadband, wireless, and storage markets, Broadcom operates in a highly competitive semiconductor industry. The company has demonstrated substantial revenue growth over recent years, supported by strategic acquisitions and an expanding product base. As of the latest fiscal year 2025, Broadcom reported revenues exceeding $63 billion, positioning it among the top-tier players in its sector with a significant global footprint."}, {"source_id": 1, "start": 676, "end": 1358, "text": "Broadcom's business model centers on creating value through integrated semiconductor solutions and infrastructure software that address the complex needs of enterprise, cloud, and telecommunications customers. The company generates revenue through product sales—primarily semiconductors—and subscription-based software services, with its strategy focused on innovation, operational efficiency, and targeted acquisitions to broaden technology offerings and market reach. Its customer base includes major original equipment manufacturers (OEMs), cloud service providers, and communication network operators worldwide, with key markets spanning North America, Asia-Pacific, and Europe."}, {"source_id": 2, "start": 1360, "end": 2059, "text": "In terms of revenue and segment analysis, Broadcom's revenue in 2025 was approximately $63.9 billion, marking a compound annual growth rate of around 33.6% from 2023. The majority of revenue derives from semiconductor products, which accounted for roughly $55.3 billion in the first three quarters of 2026, complemented by subscription and service revenues of around $15.8 billion over the same period. This dual revenue stream highlights Broadcom's hybrid business model, combining hardware sales with recurring software and service income. The company continues to invest in new technologies and product lines, maintaining a strong pipeline in semiconductor innovation and infrastructure software."}, {"source_id": 3, "start": 2061, "end": 2615, "text": "Broadcom was founded in 1961 and has since evolved through key acquisitions and strategic shifts, including a significant focus on infrastructure software alongside its semiconductor business. Its leadership team is spearheaded by CEO Hock E. Tan, who has been at the helm since 2005 and is well-regarded for his role in transforming Broadcom into a diversified technology powerhouse. The executive team includes seasoned professionals with extensive experience in technology and finance, guiding the company through rapid growth and industry challenges."}, {"source_id": 4, "start": 2617, "end": 3140, "text": "Financially, Broadcom reported total revenues of $63.9 billion and a net income reflecting solid profitability for fiscal year 2025. The company’s EBITDA stood at approximately $34.3 billion, with margins improving as operational efficiencies are realized. Market capitalization as of October 2026 is substantial, reflecting investor confidence in its growth trajectory. The stock price has exhibited volatility consistent with the semiconductor sector’s cyclical nature but remains strong given Broadcom’s market position."}, {"source_id": 5, "start": 3142, "end": 3840, "text": "Within the broader industry context, Broadcom operates in the semiconductor and infrastructure software sectors, which are characterized by rapid technological change and intense competition from peers such as Nvidia and AMD. The company ranks among the top semiconductor firms globally, with a significant share of various end markets including data centers, networking, and wireless communications. Its competitive advantage lies in its broad product portfolio, integrated solutions approach, and strategic acquisitions that enhance scale and technological capabilities. Overall, Broadcom is well positioned to capitalize on growth trends in cloud computing, 5G, and enterprise IT infrastructure."}]

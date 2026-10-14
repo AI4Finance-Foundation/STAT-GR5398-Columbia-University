@@ -1,0 +1,353 @@
+{
+  "call_id": "QCOM_final_v6/verifier/valuation_overview",
+  "structured_output": {
+    "units": [
+      {
+        "source_id": 0,
+        "claims": [
+          {
+            "original_quote": "QUALCOMM Incorporated's current valuation, assessed primarily through its PE and EV/EBITDA multiples, appears to reflect a balance between industry positioning and company-specific fundamentals.",
+            "claim": "QUALCOMM Incorporated's current valuation, assessed primarily through its PE and EV/EBITDA multiples, appears to reflect a balance between industry positioning and company-specific fundamentals.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No explicit PE or EV/EBITDA multiples for QCOM are provided in the evidence, nor is there direct evidence of how these relate to industry positioning or fundamentals.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Although explicit PE figures are unavailable for recent years, the company's EBITDA and revenue growth trends provide a strong basis for valuation analysis.",
+            "claim": "Explicit PE figures are unavailable for recent years for QUALCOMM.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 16
+              }
+            ],
+            "reason": "The table shows 'nan' for PE Ratio for all years, confirming unavailability.",
+            "action": "keep",
+            "revised_claim": "Explicit PE figures are unavailable for recent years for QUALCOMM.",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "the company's EBITDA and revenue growth trends provide a strong basis for valuation analysis.",
+            "claim": "QUALCOMM's EBITDA and revenue growth trends provide a strong basis for valuation analysis.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided that these trends are used as a basis for valuation analysis.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "QUALCOMM has demonstrated robust revenue growth, with a compound annual growth rate exceeding 11% over the 2023 to 2028 period, supported by expanding contribution margins and improving EBITDA margins that reach over 50% by 2028.",
+            "claim": "QUALCOMM has demonstrated robust revenue growth, with a compound annual growth rate exceeding 11% over the 2023 to 2028 period.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 4
+              },
+              {
+                "line_number": 6
+              }
+            ],
+            "reason": "The CAGR for revenue from 2023A to 2028E is listed as 11.2%.",
+            "action": "keep",
+            "revised_claim": "QUALCOMM has demonstrated robust revenue growth, with a compound annual growth rate of 11.2% over the 2023A to 2028E period.",
+            "number_bindings": [
+              {
+                "claim_number": "11.2%",
+                "evidence_line": 6,
+                "evidence_number": "11.2%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2023",
+                "evidence_line": 4,
+                "evidence_number": "2023A",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2028",
+                "evidence_line": 4,
+                "evidence_number": "2028E",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "supported by expanding contribution margins and improving EBITDA margins that reach over 50% by 2028.",
+            "claim": "QUALCOMM's EBITDA margin reaches over 50% by 2028.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 4
+              },
+              {
+                "line_number": 12
+              }
+            ],
+            "reason": "The EBITDA margin for 2028E is 52.9%.",
+            "action": "keep",
+            "revised_claim": "QUALCOMM's EBITDA margin is 52.9% in 2028E.",
+            "number_bindings": [
+              {
+                "claim_number": "52.9%",
+                "evidence_line": 12,
+                "evidence_number": "52.9%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2028",
+                "evidence_line": 4,
+                "evidence_number": "2028E",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "This operational strength underpins a premium valuation stance compared to typical semiconductor peers.",
+            "claim": "QUALCOMM's operational strength underpins a premium valuation stance compared to typical semiconductor peers.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for a premium valuation stance or comparison to peers.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 1,
+        "claims": [
+          {
+            "original_quote": "When positioned relative to peers such as AMD and Intel, QUALCOMM's EBITDA figures are competitive, with a forecasted EBITDA of approximately $16.8 billion in 2026, surpassing AMD but trailing Intel's substantial scale.",
+            "claim": "QUALCOMM's forecasted EBITDA in 2026 is approximately $16.8 billion.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 4
+              },
+              {
+                "line_number": 11
+              }
+            ],
+            "reason": "The 2026E EBITDA for QCOM is $23,202,601,800 in the main table, but the peer comparison table lists $16,834,000,000 for QCOM in 2026. The claim matches the peer table value.",
+            "action": "keep",
+            "revised_claim": "QUALCOMM's forecasted EBITDA in 2026 is $16.834 billion.",
+            "number_bindings": [
+              {
+                "claim_number": "16.834",
+                "evidence_line": 26,
+                "evidence_number": "1.6834e+10",
+                "transform": "divide_billion"
+              },
+              {
+                "claim_number": "2026",
+                "evidence_line": 26,
+                "evidence_number": "2026",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "surpassing AMD but trailing Intel's substantial scale.",
+            "claim": "QUALCOMM's forecasted 2026 EBITDA surpasses AMD's but trails Intel's.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 26
+              }
+            ],
+            "reason": "In 2026, QCOM's EBITDA is $16.834B, AMD's is $8.60087B, and Intel's is $47.3518B.",
+            "action": "keep",
+            "revised_claim": "In 2026, QUALCOMM's forecasted EBITDA surpasses AMD's ($8.60087 billion) but trails Intel's ($47.3518 billion).",
+            "number_bindings": [
+              {
+                "claim_number": "2026",
+                "evidence_line": 26,
+                "evidence_number": "2026",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "8.60087",
+                "evidence_line": 26,
+                "evidence_number": "8.60087e+09",
+                "transform": "divide_billion"
+              },
+              {
+                "claim_number": "47.3518",
+                "evidence_line": 26,
+                "evidence_number": "4.73518e+10",
+                "transform": "divide_billion"
+              }
+            ]
+          },
+          {
+            "original_quote": "However, Intel's EV/EBITDA multiple showed significant volatility, reaching an extremely high level in 2024, indicative of market uncertainty or company-specific challenges.",
+            "claim": "Intel's EV/EBITDA multiple reached an extremely high level in 2024.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 34
+              }
+            ],
+            "reason": "Intel's EV/EBITDA in 2024 is 106.938, which is much higher than other years.",
+            "action": "keep",
+            "revised_claim": "Intel's EV/EBITDA multiple reached 106.938 in 2024.",
+            "number_bindings": [
+              {
+                "claim_number": "106.938",
+                "evidence_line": 34,
+                "evidence_number": "106.938",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2024",
+                "evidence_line": 34,
+                "evidence_number": "2024",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "In contrast, QUALCOMM’s implied valuation multiples, though not directly available, are likely more stable given its consistent profitability and growth profile.",
+            "claim": "QUALCOMM’s implied valuation multiples are likely more stable than Intel's, given its consistent profitability and growth profile.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for the stability of QCOM's implied valuation multiples or a comparison to Intel's.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 2,
+        "claims": [
+          {
+            "original_quote": "Historically, QUALCOMM's margin expansion and steady revenue growth have justified a valuation premium within the semiconductor industry, where growth and innovation prospects command higher multiples.",
+            "claim": "Historically, QUALCOMM's margin expansion and steady revenue growth have justified a valuation premium within the semiconductor industry.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for a valuation premium or its justification by margin expansion and revenue growth.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The company’s licensing revenues add a scarcity and competitive moat element, contributing to stable cash flows.",
+            "claim": "QUALCOMM’s licensing revenues contribute to stable cash flows and add a competitive moat.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for the impact of licensing revenues on cash flows or competitive moat.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "This factor supports a valuation premium over peers focused solely on manufacturing or product sales.",
+            "claim": "QUALCOMM's licensing revenues support a valuation premium over peers focused solely on manufacturing or product sales.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for a valuation premium due to licensing revenues compared to manufacturing/product sales peers.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 3,
+        "claims": [
+          {
+            "original_quote": "Market expectations embedded in QUALCOMM's valuation reflect confidence in sustained revenue growth driven by expanding 5G adoption and increasing demand for advanced semiconductor solutions.",
+            "claim": "Market expectations embedded in QUALCOMM's valuation reflect confidence in sustained revenue growth driven by expanding 5G adoption and increasing demand for advanced semiconductor solutions.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for market expectations or the drivers of revenue growth.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The elevated EBITDA margins suggest operational efficiency improvements and effective cost management, enhancing profitability forecasts.",
+            "claim": "Elevated EBITDA margins suggest operational efficiency improvements and effective cost management, enhancing profitability forecasts for QUALCOMM.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for the causal link between EBITDA margins and operational efficiency or cost management.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "However, risks include potential competitive pressures in the semiconductor space, technology cycle fluctuations, and macroeconomic factors impacting global demand.",
+            "claim": "Risks to QUALCOMM include potential competitive pressures in the semiconductor space, technology cycle fluctuations, and macroeconomic factors impacting global demand.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for these specific risks.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 4,
+        "claims": [
+          {
+            "original_quote": "In summary, QUALCOMM’s current valuation level is reasonable within the industry context, grounded in solid fundamentals and growth prospects.",
+            "claim": "QUALCOMM’s current valuation level is reasonable within the industry context, grounded in solid fundamentals and growth prospects.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for the reasonableness of the valuation or its grounding in fundamentals and growth prospects.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The premium valuation reflects market expectations of continued earnings growth and the company's unique licensing business model rather than speculative bubbles.",
+            "claim": "The premium valuation reflects market expectations of continued earnings growth and the company's unique licensing business model rather than speculative bubbles.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for the reasons behind the premium valuation or the absence of speculative bubbles.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Investors should remain mindful of sector cyclicality and competitive dynamics, but the valuation incorporates a margin of safety supported by QUALCOMM’s robust earnings and strategic positioning.",
+            "claim": "The valuation incorporates a margin of safety supported by QUALCOMM’s robust earnings and strategic positioning.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for a margin of safety or its support by earnings and positioning.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "usage": {
+    "requests": 1,
+    "input_tokens": 3679,
+    "input_tokens_details": {
+      "cached_tokens": 2944
+    },
+    "output_tokens": 2437,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 6116
+  },
+  "runtime_seconds": 9.191543099997944,
+  "cost_usd": 0.026854,
+  "completed_at_utc": "2026-10-11T22:42:59.371986+00:00",
+  "attempts": 1
+}

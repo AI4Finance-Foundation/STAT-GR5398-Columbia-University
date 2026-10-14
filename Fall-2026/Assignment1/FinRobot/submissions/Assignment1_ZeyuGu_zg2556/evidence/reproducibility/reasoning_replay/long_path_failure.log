@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\scripts\revalidate_reasoning_offline.py", line 73, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\scripts\revalidate_reasoning_offline.py", line 59, in main
+    e.render(SimpleNamespace(run=target,upstream=upstream),src)
+  File "C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\scripts\experiment.py", line 645, in render
+    raise RuntimeError("Render failed; see render.log")
+RuntimeError: Render failed; see render.log

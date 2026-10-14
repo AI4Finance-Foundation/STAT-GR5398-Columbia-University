@@ -1,0 +1,53 @@
+{
+  "call_id": "AMD_v7_1_changed_audit/company_overview/1",
+  "structured_output": {
+    "units": [
+      {
+        "unit_id": 11,
+        "claims": [
+          {
+            "claim": "The improvement in AMD's contribution margin is supported by robust product demand and operational efficiency.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is supplied in the original writer evidence to support the causal attribution that robust product demand and operational efficiency are responsible for the improvement in AMD's contribution margin. The table shows contribution margin values, but does not attribute the cause of any changes.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|contribution_margin|trend|causal_attribution"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 19,
+        "claims": [
+          {
+            "claim": "AMD’s market capitalization has grown considerably, with its stock price showing significant appreciation though accompanied by volatility typical of the semiconductor sector.",
+            "claim_type": "qualitative",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is supplied in the original writer evidence regarding AMD's market capitalization, stock price appreciation, or volatility. The provided tables and news do not mention market capitalization or stock price.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd|market_cap|trend|considerable_growth"
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "usage": {
+    "requests": 1,
+    "input_tokens": 2929,
+    "input_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "output_tokens": 242,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 3171
+  },
+  "runtime_seconds": 1.4660210000001825,
+  "cost_usd": 0.007794,
+  "completed_at_utc": "2026-10-11T23:35:50.597414+00:00",
+  "attempts": 1
+}

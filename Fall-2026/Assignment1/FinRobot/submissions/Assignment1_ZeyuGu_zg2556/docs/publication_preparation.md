@@ -1,0 +1,11 @@
+# Publication and course PR handoff
+
+The author published [the complete Medium analysis](https://medium.com/@zeyu.gu0302/i-ran-finrobot-then-audited-what-its-reports-actually-knew-fda7a2d6f1e4). Read-only signed-out verification is saved in `evidence/medium_publication/verification.json`; the canonical manuscript in `blog/medium_article.md` mirrors the public body, with title and subtitle at the top. The three former tables are now ten list rows; every value is retained. The explicit 51-unverifiable-numeric-claim disclosure is included. No assistant Medium write action was used.
+
+The course PR has not been created. The author will transfer the newly exported `course_submission.patch` and its SHA-256 companion to the Mac, apply it in a fresh course clone, and open a PR from their own fork against `AI4Finance-Foundation/STAT-GR5398-Columbia-University:master`. Keep the patch outside the clone; apply it with `git apply --check --index --binary` before `git apply --index --binary`. Never stage the whole existing course checkout.
+
+The PR title and body are in `blog/medium_metadata.json` and `docs/course_pr_body.md`. Only `Fall-2026/Assignment1/FinRobot/submissions/Assignment1_ZeyuGu_zg2556/` belongs in this PR. The name is platform-independent; no Windows-to-Mac rename is needed. The selected 16-page PDF is included unchanged. Research-report LaTeX/Markdown sources and older report editions remain local and excluded according to `config/research_report_submission_policy.json`.
+
+Before transfer, run secret scanning, delivery validation and `scripts/prepare_course_diff.py` with a new external output directory. `scripts/verify_course_patch_on_base.py` must test the resulting actual patch against a freshly observed course master. The full proof stays beside the external export; compact metadata is in `evidence/course_submission_diff.json`. A later change to any submission file requires a new export.
+
+Historical study, PDF-selection and preparation records retain the publication state at their own creation time. Current state comes from `config/publication_status.json`, not those historical notes. No further paid experiment is needed. The remaining research limits are unchanged: machine-assisted labels, development-cohort evaluation, unsupported narratives, and 51 unverifiable numeric assertions.

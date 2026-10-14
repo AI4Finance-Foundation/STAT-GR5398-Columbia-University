@@ -1,0 +1,398 @@
+{
+  "call_id": "AAPL_final_v4/verifier/investment_overview",
+  "structured_output": {
+    "units": [
+      {
+        "source_id": 0,
+        "claims": [],
+        "nonfactual_reason": "The unit contains only the phrase 'Thesis Confirmed' and does not contain any factual, causal, comparative, historical, or numeric assertions."
+      },
+      {
+        "source_id": 1,
+        "claims": [],
+        "nonfactual_reason": "The unit contains only the heading 'Key Takeaways:' and does not contain any factual, causal, comparative, historical, or numeric assertions."
+      },
+      {
+        "source_id": 2,
+        "claims": [
+          {
+            "original_quote": "Apple reported strong Q3 fiscal 2026 results with revenue of $109.4 billion, up 16% year over year, significantly beating prior year growth.",
+            "claim": "Apple reported Q3 fiscal 2026 revenue of $109.4 billion, which was up 16% year over year.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 45
+              }
+            ],
+            "reason": "The claim is directly supported by the news summary stating the revenue and year-over-year growth.",
+            "action": "keep",
+            "revised_claim": "Apple reported Q3 fiscal 2026 revenue of $109.4 billion, which was up 16% year over year.",
+            "number_bindings": [
+              {
+                "claim_number": "2026",
+                "evidence_line": 45,
+                "evidence_number": "2026",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "$109.4 billion",
+                "evidence_line": 45,
+                "evidence_number": "$109.4 billion",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "16%",
+                "evidence_line": 45,
+                "evidence_number": "16 percent",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Apple reported strong Q3 fiscal 2026 results with revenue of $109.4 billion, up 16% year over year, significantly beating prior year growth.",
+            "claim": "Apple's Q3 fiscal 2026 revenue growth of 16% year over year significantly beat prior year growth.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 45
+              },
+              {
+                "line_number": 8
+              }
+            ],
+            "reason": "The claim is supported by the news summary and the performance analysis, which both state the 16% growth and note it as a notable acceleration compared to prior years.",
+            "action": "keep",
+            "revised_claim": "Apple's Q3 fiscal 2026 revenue growth of 16% year over year significantly beat prior year growth.",
+            "number_bindings": [
+              {
+                "claim_number": "2026",
+                "evidence_line": 45,
+                "evidence_number": "2026",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "16%",
+                "evidence_line": 45,
+                "evidence_number": "16 percent",
+                "transform": "identity"
+              }
+            ]
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 3,
+        "claims": [
+          {
+            "original_quote": "Gross margin improved to 50.1%, aided by tariff refunds contributing approximately 2 percentage points.",
+            "claim": "Gross margin improved to 50.1%, aided by tariff refunds contributing approximately 2 percentage points.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 45
+              }
+            ],
+            "reason": "The news summary explicitly states the gross margin and the impact of tariff refunds.",
+            "action": "keep",
+            "revised_claim": "Gross margin improved to 50.1%, aided by tariff refunds contributing approximately 2 percentage points.",
+            "number_bindings": [
+              {
+                "claim_number": "50.1%",
+                "evidence_line": 45,
+                "evidence_number": "50.1 percent",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2",
+                "evidence_line": 45,
+                "evidence_number": "2",
+                "transform": "identity"
+              }
+            ]
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 4,
+        "claims": [
+          {
+            "original_quote": "Diluted EPS rose 29% year over year to $2.02, including a favorable $0.11 impact from tariff refunds.",
+            "claim": "Diluted EPS rose 29% year over year to $2.02, including a favorable $0.11 impact from tariff refunds.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 45
+              }
+            ],
+            "reason": "The news summary provides the EPS, year-over-year growth, and the impact from tariff refunds.",
+            "action": "keep",
+            "revised_claim": "Diluted EPS rose 29% year over year to $2.02, including a favorable $0.11 impact from tariff refunds.",
+            "number_bindings": [
+              {
+                "claim_number": "29%",
+                "evidence_line": 45,
+                "evidence_number": "29 percent",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "$2.02",
+                "evidence_line": 45,
+                "evidence_number": "$2.02",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "$0.11",
+                "evidence_line": 45,
+                "evidence_number": "$0.11",
+                "transform": "identity"
+              }
+            ]
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 5,
+        "claims": [
+          {
+            "original_quote": "Management remains confident in growth drivers, particularly from services and wearables, and highlighted operational efficiencies.",
+            "claim": "Management remains confident in growth drivers, particularly from services and wearables, and highlighted operational efficiencies.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "There is no direct evidence in the supplied news or tables about management's confidence or specific statements regarding services, wearables, or operational efficiencies.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 6,
+        "claims": [
+          {
+            "original_quote": "The company’s EV/EBITDA multiple remains attractive relative to peers, supporting continued valuation upside.",
+            "claim": "The company’s EV/EBITDA multiple remains attractive relative to peers, supporting continued valuation upside.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided regarding the attractiveness of Apple's EV/EBITDA multiple relative to peers or its implication for valuation upside.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 7,
+        "claims": [],
+        "nonfactual_reason": "The unit contains only the heading 'Performance Analysis:' and does not contain any factual, causal, comparative, historical, or numeric assertions."
+      },
+      {
+        "source_id": 8,
+        "claims": [
+          {
+            "original_quote": "Apple's fiscal Q3 2026 performance surpassed expectations with revenue increasing 16% year over year to $109.4 billion, a notable acceleration compared to the moderate revenue growth trends seen in prior years.",
+            "claim": "Apple's fiscal Q3 2026 revenue increased 16% year over year to $109.4 billion, which was a notable acceleration compared to moderate revenue growth trends in prior years.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 45
+              },
+              {
+                "line_number": 8
+              }
+            ],
+            "reason": "The news summary and performance analysis both state the revenue, growth rate, and that this was an acceleration compared to prior years.",
+            "action": "keep",
+            "revised_claim": "Apple's fiscal Q3 2026 revenue increased 16% year over year to $109.4 billion, which was a notable acceleration compared to moderate revenue growth trends in prior years.",
+            "number_bindings": [
+              {
+                "claim_number": "2026",
+                "evidence_line": 45,
+                "evidence_number": "2026",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "16%",
+                "evidence_line": 45,
+                "evidence_number": "16 percent",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "$109.4 billion",
+                "evidence_line": 45,
+                "evidence_number": "$109.4 billion",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "The gross margin expanded to 50.1%, driven not only by operational improvements but also a favorable tariff refund impact of about 2 percentage points.",
+            "claim": "The gross margin expanded to 50.1%, driven in part by a favorable tariff refund impact of about 2 percentage points.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 45
+              }
+            ],
+            "reason": "The news summary states the gross margin and the impact of tariff refunds.",
+            "action": "keep",
+            "revised_claim": "The gross margin expanded to 50.1%, driven in part by a favorable tariff refund impact of about 2 percentage points.",
+            "number_bindings": [
+              {
+                "claim_number": "50.1%",
+                "evidence_line": 45,
+                "evidence_number": "50.1 percent",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2",
+                "evidence_line": 45,
+                "evidence_number": "2",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Earnings per share rose 29% to $2.02, reflecting both top-line strength and margin expansion.",
+            "claim": "Earnings per share rose 29% to $2.02.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 45
+              }
+            ],
+            "reason": "The news summary provides the EPS and year-over-year growth.",
+            "action": "keep",
+            "revised_claim": "Earnings per share rose 29% to $2.02.",
+            "number_bindings": [
+              {
+                "claim_number": "29%",
+                "evidence_line": 45,
+                "evidence_number": "29 percent",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "$2.02",
+                "evidence_line": 45,
+                "evidence_number": "$2.02",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "This represents a clear beat versus market consensus and historical trends, underpinned by robust demand for Apple's services segment and wearables, offsetting competitive pressures in hardware.",
+            "claim": "Apple's Q3 2026 results represent a clear beat versus market consensus and historical trends, underpinned by robust demand for Apple's services segment and wearables, offsetting competitive pressures in hardware.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "There is no direct evidence provided for market consensus, historical trends, or the specific drivers of the beat (services, wearables, hardware pressures).",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The company’s operational discipline and favorable macro developments contributed to this solid quarter.",
+            "claim": "The company’s operational discipline and favorable macro developments contributed to this solid quarter.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for operational discipline or macro developments as contributors.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 9,
+        "claims": [],
+        "nonfactual_reason": "The unit contains only the heading 'Thesis Impact:' and does not contain any factual, causal, comparative, historical, or numeric assertions."
+      },
+      {
+        "source_id": 10,
+        "claims": [
+          {
+            "original_quote": "The recent quarterly results reinforce the core investment thesis centered on Apple's ability to sustain strong revenue growth through diversification into high-margin services and expanding its ecosystem.",
+            "claim": "The recent quarterly results reinforce the core investment thesis centered on Apple's ability to sustain strong revenue growth through diversification into high-margin services and expanding its ecosystem.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for the investment thesis, diversification, or ecosystem expansion.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The margin expansion and EPS growth validate management's focus on operational efficiencies and tariff-related cost benefits, which support improved profitability.",
+            "claim": "The margin expansion and EPS growth validate management's focus on operational efficiencies and tariff-related cost benefits, which support improved profitability.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for management's focus or the causal link to profitability.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The positive momentum in services and wearables segments further strengthens the thesis that Apple can drive recurring revenue streams less susceptible to hardware cycle fluctuations.",
+            "claim": "The positive momentum in services and wearables segments further strengthens the thesis that Apple can drive recurring revenue streams less susceptible to hardware cycle fluctuations.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for positive momentum in services and wearables or the thesis about recurring revenue streams.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Despite modest revenue growth in previous years, the acceleration witnessed this quarter confirms the company’s resilience and innovation-led growth strategy.",
+            "claim": "Despite modest revenue growth in previous years, the acceleration witnessed this quarter confirms the company’s resilience and innovation-led growth strategy.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for resilience or innovation-led growth strategy.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The valuation remains reasonable relative to peers like AMD and NVIDIA, supporting a favorable risk/reward profile.",
+            "claim": "The valuation remains reasonable relative to peers like AMD and NVIDIA, supporting a favorable risk/reward profile.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for the reasonableness of valuation relative to peers or risk/reward profile.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "In summary, these developments affirm confidence in Apple's long-term growth trajectory and justify maintaining or incrementally increasing exposure to the stock.",
+            "claim": "These developments affirm confidence in Apple's long-term growth trajectory and justify maintaining or incrementally increasing exposure to the stock.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for confidence in long-term growth trajectory or investment recommendation.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "usage": {
+    "requests": 1,
+    "input_tokens": 3609,
+    "input_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "output_tokens": 2629,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 6238
+  },
+  "runtime_seconds": 10.976554799999576,
+  "cost_usd": 0.02825,
+  "completed_at_utc": "2026-10-11T22:10:06.488652+00:00",
+  "attempts": 1
+}

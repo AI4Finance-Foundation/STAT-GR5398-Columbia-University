@@ -1,0 +1,1311 @@
+{
+  "call_id": "AMD_final_reasoning_v8_1/verifier/investment_overview",
+  "structured_output": {
+    "units": [
+      {
+        "source_id": 0,
+        "claims": [],
+        "nonfactual_reason": "This unit is only a heading and contains no factual claims."
+      },
+      {
+        "source_id": 1,
+        "claims": [],
+        "nonfactual_reason": "This unit is only a section label and contains no factual claims."
+      },
+      {
+        "source_id": 2,
+        "claims": [
+          {
+            "original_quote": "- AMD delivered strong Q2 2026 financial results, with revenue of $11.5 billion and non-GAAP diluted EPS of $1.66, beating market expectations.",
+            "claim": "AMD delivered strong Q2 2026 financial results.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied evidence gives reported Q2 2026 results and figures, but \"strong\" is an unsupported evaluation.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "- AMD delivered strong Q2 2026 financial results, with revenue of $11.5 billion and non-GAAP diluted EPS of $1.66, beating market expectations.",
+            "claim": "AMD reported revenue of $11.5 billion for the second quarter of 2026.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 44
+              }
+            ],
+            "reason": "The news summary explicitly states second quarter revenue was $11.5 billion.",
+            "action": "keep",
+            "revised_claim": "AMD reported revenue of $11.5 billion for the second quarter of 2026.",
+            "number_bindings": [
+              {
+                "claim_number": "11.5",
+                "evidence_line": 44,
+                "evidence_number": "11.5",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2026",
+                "evidence_line": 44,
+                "evidence_number": "2026",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "- AMD delivered strong Q2 2026 financial results, with revenue of $11.5 billion and non-GAAP diluted EPS of $1.66, beating market expectations.",
+            "claim": "AMD reported non-GAAP diluted EPS of $1.66 for the second quarter of 2026.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 47
+              }
+            ],
+            "reason": "The news summary explicitly states non-GAAP diluted earnings per share was $1.66.",
+            "action": "keep",
+            "revised_claim": "AMD reported non-GAAP diluted EPS of $1.66 for the second quarter of 2026.",
+            "number_bindings": [
+              {
+                "claim_number": "1.66",
+                "evidence_line": 47,
+                "evidence_number": "1.66",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2026",
+                "evidence_line": 47,
+                "evidence_number": "2026",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "- AMD delivered strong Q2 2026 financial results, with revenue of $11.5 billion and non-GAAP diluted EPS of $1.66, beating market expectations.",
+            "claim": "AMD beat market expectations.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence about analyst or market expectations is supplied.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 3,
+        "claims": [
+          {
+            "original_quote": "- Gross margin improved to 56% on a non-GAAP basis, reflecting effective cost management and product mix optimization.",
+            "claim": "AMD's non-GAAP gross margin improved to 56%.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The supplied news states a non-GAAP gross margin of 56% for Q2 2026, but it does not establish an improvement versus a prior period.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "- Gross margin improved to 56% on a non-GAAP basis, reflecting effective cost management and product mix optimization.",
+            "claim": "AMD reported a non-GAAP gross margin of 56% for the second quarter of 2026.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 47
+              }
+            ],
+            "reason": "The news summary explicitly states non-GAAP gross margin was 56%.",
+            "action": "keep",
+            "revised_claim": "AMD reported a non-GAAP gross margin of 56% for the second quarter of 2026.",
+            "number_bindings": [
+              {
+                "claim_number": "56%",
+                "evidence_line": 47,
+                "evidence_number": "56%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2026",
+                "evidence_line": 47,
+                "evidence_number": "2026",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "- Gross margin improved to 56% on a non-GAAP basis, reflecting effective cost management and product mix optimization.",
+            "claim": "The non-GAAP gross margin reflected effective cost management.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence attributes the margin to cost management.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "- Gross margin improved to 56% on a non-GAAP basis, reflecting effective cost management and product mix optimization.",
+            "claim": "The non-GAAP gross margin reflected product mix optimization.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence attributes the margin to product mix optimization.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 4,
+        "claims": [
+          {
+            "original_quote": "- Management reaffirmed growth guidance for 2026, with confidence in expanding market share in high-performance computing and data center segments.",
+            "claim": "Management reaffirmed growth guidance for 2026.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence mentions reaffirmed guidance.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "- Management reaffirmed growth guidance for 2026, with confidence in expanding market share in high-performance computing and data center segments.",
+            "claim": "Management expressed confidence in expanding market share.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence mentions management confidence about market share expansion.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "- Management reaffirmed growth guidance for 2026, with confidence in expanding market share in high-performance computing and data center segments.",
+            "claim": "The referenced market share expansion was in high-performance computing segments.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence identifies high-performance computing segments in this context.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "- Management reaffirmed growth guidance for 2026, with confidence in expanding market share in high-performance computing and data center segments.",
+            "claim": "The referenced market share expansion was in data center segments.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence identifies data center segments in this context.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 5,
+        "claims": [
+          {
+            "original_quote": "- The company's EBITDA margin is projected to improve significantly in the coming years, supporting margin expansion thesis.",
+            "claim": "AMD's EBITDA margin is projected to improve significantly in the coming years.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 4
+              },
+              {
+                "line_number": 12
+              }
+            ],
+            "reason": "The EBITDA margin row shows forecast increases from 21.0% in 2025A to 39.0% in 2026E, 40.5% in 2027E, and 42.0% in 2028E.",
+            "action": "keep",
+            "revised_claim": "AMD's EBITDA margin is forecast at 39.0% in 2026E, 40.5% in 2027E, and 42.0% in 2028E, versus 21.0% in 2025A.",
+            "number_bindings": [
+              {
+                "claim_number": "39.0%",
+                "evidence_line": 12,
+                "evidence_number": "39.0%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2026",
+                "evidence_line": 4,
+                "evidence_number": "2026E",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "40.5%",
+                "evidence_line": 12,
+                "evidence_number": "40.5%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2027",
+                "evidence_line": 4,
+                "evidence_number": "2027E",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "42.0%",
+                "evidence_line": 12,
+                "evidence_number": "42.0%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2028",
+                "evidence_line": 4,
+                "evidence_number": "2028E",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "21.0%",
+                "evidence_line": 12,
+                "evidence_number": "21.0%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2025",
+                "evidence_line": 4,
+                "evidence_number": "2025A",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "- The company's EBITDA margin is projected to improve significantly in the coming years, supporting margin expansion thesis.",
+            "claim": "The projected EBITDA margin supports the margin expansion thesis.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "Whether the forecasts support an investment thesis is an unsupported evaluative conclusion.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 6,
+        "claims": [
+          {
+            "original_quote": "- Valuation remains elevated compared to Intel but justified by AMD's superior growth trajectory and improving profitability metrics.",
+            "claim": "AMD's valuation remains elevated compared to Intel's valuation.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 36
+              }
+            ],
+            "reason": "In the peer EV/EBITDA table for 2025, AMD's multiple is higher than Intel's.",
+            "action": "keep",
+            "revised_claim": "AMD's EV/EBITDA is 47.8456 in 2025, compared with 14.4982 for Intel in 2025.",
+            "number_bindings": [
+              {
+                "claim_number": "47.8456",
+                "evidence_line": 36,
+                "evidence_number": "47.8456",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2025",
+                "evidence_line": 36,
+                "evidence_number": "2025",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "14.4982",
+                "evidence_line": 36,
+                "evidence_number": "14.4982",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "- Valuation remains elevated compared to Intel but justified by AMD's superior growth trajectory and improving profitability metrics.",
+            "claim": "AMD's valuation is justified by its superior growth trajectory.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence supports this causal valuation judgment or establishes a superior growth trajectory versus Intel.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "- Valuation remains elevated compared to Intel but justified by AMD's superior growth trajectory and improving profitability metrics.",
+            "claim": "AMD's valuation is justified by its improving profitability metrics.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence supports the causal claim that valuation is justified by profitability metrics.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 7,
+        "claims": [],
+        "nonfactual_reason": "This unit is only a section label and contains no factual claims."
+      },
+      {
+        "source_id": 8,
+        "claims": [
+          {
+            "original_quote": "AMD’s second quarter 2026 results demonstrated robust financial performance with $11.5 billion in revenue, representing solid sequential growth and exceeding analyst consensus.",
+            "claim": "AMD reported second quarter 2026 revenue of $11.5 billion.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 44
+              }
+            ],
+            "reason": "The news summary explicitly states second quarter revenue was $11.5 billion.",
+            "action": "keep",
+            "revised_claim": "AMD reported revenue of $11.5 billion for the second quarter of 2026.",
+            "number_bindings": [
+              {
+                "claim_number": "11.5",
+                "evidence_line": 44,
+                "evidence_number": "11.5",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2026",
+                "evidence_line": 44,
+                "evidence_number": "2026",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "AMD’s second quarter 2026 results demonstrated robust financial performance with $11.5 billion in revenue, representing solid sequential growth and exceeding analyst consensus.",
+            "claim": "AMD's second quarter 2026 results demonstrated robust financial performance.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "\"Robust financial performance\" is an unsupported evaluation.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "AMD’s second quarter 2026 results demonstrated robust financial performance with $11.5 billion in revenue, representing solid sequential growth and exceeding analyst consensus.",
+            "claim": "AMD's $11.5 billion of second quarter 2026 revenue represented solid sequential growth.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No sequential comparison is supplied.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "AMD’s second quarter 2026 results demonstrated robust financial performance with $11.5 billion in revenue, representing solid sequential growth and exceeding analyst consensus.",
+            "claim": "AMD's second quarter 2026 revenue exceeded analyst consensus.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No analyst consensus evidence is supplied.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The non-GAAP gross margin of 56% marked an improvement over prior periods, driven by favorable product mix and operational efficiencies.",
+            "claim": "AMD reported a non-GAAP gross margin of 56% for the second quarter of 2026.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 47
+              }
+            ],
+            "reason": "The news summary explicitly states non-GAAP gross margin was 56%.",
+            "action": "keep",
+            "revised_claim": "AMD reported a non-GAAP gross margin of 56% for the second quarter of 2026.",
+            "number_bindings": [
+              {
+                "claim_number": "56%",
+                "evidence_line": 47,
+                "evidence_number": "56%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2026",
+                "evidence_line": 47,
+                "evidence_number": "2026",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "The non-GAAP gross margin of 56% marked an improvement over prior periods, driven by favorable product mix and operational efficiencies.",
+            "claim": "The non-GAAP gross margin of 56% marked an improvement over prior periods.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No prior-period gross margin comparison is supplied.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The non-GAAP gross margin of 56% marked an improvement over prior periods, driven by favorable product mix and operational efficiencies.",
+            "claim": "The non-GAAP gross margin was driven by favorable product mix.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence gives product mix as a cause.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The non-GAAP gross margin of 56% marked an improvement over prior periods, driven by favorable product mix and operational efficiencies.",
+            "claim": "The non-GAAP gross margin was driven by operational efficiencies.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence gives operational efficiencies as a cause.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Operating income of $3.1 billion and net income of $2.8 billion translated to a non-GAAP diluted EPS of $1.66, surpassing market expectations.",
+            "claim": "AMD reported non-GAAP operating income of $3.1 billion for the second quarter of 2026.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 47
+              }
+            ],
+            "reason": "The news summary explicitly states non-GAAP operating income was $3.1 billion.",
+            "action": "keep",
+            "revised_claim": "AMD reported non-GAAP operating income of $3.1 billion for the second quarter of 2026.",
+            "number_bindings": [
+              {
+                "claim_number": "3.1",
+                "evidence_line": 47,
+                "evidence_number": "3.1",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2026",
+                "evidence_line": 47,
+                "evidence_number": "2026",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Operating income of $3.1 billion and net income of $2.8 billion translated to a non-GAAP diluted EPS of $1.66, surpassing market expectations.",
+            "claim": "AMD reported non-GAAP net income of $2.8 billion for the second quarter of 2026.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 47
+              }
+            ],
+            "reason": "The news summary explicitly states non-GAAP net income was $2.8 billion.",
+            "action": "keep",
+            "revised_claim": "AMD reported non-GAAP net income of $2.8 billion for the second quarter of 2026.",
+            "number_bindings": [
+              {
+                "claim_number": "2.8",
+                "evidence_line": 47,
+                "evidence_number": "2.8",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2026",
+                "evidence_line": 47,
+                "evidence_number": "2026",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Operating income of $3.1 billion and net income of $2.8 billion translated to a non-GAAP diluted EPS of $1.66, surpassing market expectations.",
+            "claim": "AMD reported non-GAAP diluted EPS of $1.66 for the second quarter of 2026.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 47
+              }
+            ],
+            "reason": "The news summary explicitly states non-GAAP diluted earnings per share was $1.66.",
+            "action": "keep",
+            "revised_claim": "AMD reported non-GAAP diluted EPS of $1.66 for the second quarter of 2026.",
+            "number_bindings": [
+              {
+                "claim_number": "1.66",
+                "evidence_line": 47,
+                "evidence_number": "1.66",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2026",
+                "evidence_line": 47,
+                "evidence_number": "2026",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Operating income of $3.1 billion and net income of $2.8 billion translated to a non-GAAP diluted EPS of $1.66, surpassing market expectations.",
+            "claim": "AMD's non-GAAP diluted EPS of $1.66 surpassed market expectations.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence about market expectations is supplied.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "These results underscore AMD’s ability to capitalize on demand in both consumer and enterprise computing markets despite macroeconomic uncertainties.",
+            "claim": "AMD capitalized on demand in consumer computing markets.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence identifies consumer computing demand or AMD's response to it.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "These results underscore AMD’s ability to capitalize on demand in both consumer and enterprise computing markets despite macroeconomic uncertainties.",
+            "claim": "AMD capitalized on demand in enterprise computing markets.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence identifies enterprise computing demand or AMD's response to it.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "These results underscore AMD’s ability to capitalize on demand in both consumer and enterprise computing markets despite macroeconomic uncertainties.",
+            "claim": "Macroeconomic uncertainties existed in the period discussed.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence mentions macroeconomic uncertainties.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Cost of operations and SG&A expenses remained well-managed, contributing to improved contribution and EBITDA margins.",
+            "claim": "AMD's cost of operations remained well-managed.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "\"Well-managed\" is an unsupported qualitative judgment.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Cost of operations and SG&A expenses remained well-managed, contributing to improved contribution and EBITDA margins.",
+            "claim": "AMD's SG&A expenses remained well-managed.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "\"Well-managed\" is an unsupported qualitative judgment.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Cost of operations and SG&A expenses remained well-managed, contributing to improved contribution and EBITDA margins.",
+            "claim": "AMD's cost of operations contributed to improved contribution margins.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence establishes this causal relationship.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Cost of operations and SG&A expenses remained well-managed, contributing to improved contribution and EBITDA margins.",
+            "claim": "AMD's SG&A expenses contributed to improved EBITDA margins.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence establishes this causal relationship.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Compared to peers, AMD’s EBITDA remains lower than Nvidia’s but is growing at a faster pace, reinforcing AMD’s competitive positioning.",
+            "claim": "AMD's EBITDA remains lower than Nvidia's EBITDA.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 25
+              },
+              {
+                "line_number": 27
+              }
+            ],
+            "reason": "In comparable peer EBITDA rows, AMD is below Nvidia in 2025 and 2027.",
+            "action": "keep",
+            "revised_claim": "AMD EBITDA is lower than Nvidia EBITDA in 2025, with 7.275e+09 for AMD versus 8.6137e+10 for Nvidia.",
+            "number_bindings": [
+              {
+                "claim_number": "2025",
+                "evidence_line": 25,
+                "evidence_number": "2025",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "7.275e+09",
+                "evidence_line": 25,
+                "evidence_number": "7.275e+09",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "8.6137e+10",
+                "evidence_line": 25,
+                "evidence_number": "8.6137e+10",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Compared to peers, AMD’s EBITDA remains lower than Nvidia’s but is growing at a faster pace, reinforcing AMD’s competitive positioning.",
+            "claim": "AMD's EBITDA is growing at a faster pace than Nvidia's EBITDA.",
+            "classification": "Contradicted",
+            "evidence": [
+              {
+                "line_number": 24
+              },
+              {
+                "line_number": 25
+              }
+            ],
+            "reason": "From 2024 to 2025, AMD EBITDA rises from 5.258e+09 to 7.275e+09, while Nvidia EBITDA rises from 3.5583e+10 to 8.6137e+10, so Nvidia grows faster over that comparable interval.",
+            "action": "correct",
+            "revised_claim": "From 2024 to 2025, AMD EBITDA increased from 5.258e+09 to 7.275e+09, while Nvidia EBITDA increased from 3.5583e+10 to 8.6137e+10.",
+            "number_bindings": [
+              {
+                "claim_number": "2024",
+                "evidence_line": 24,
+                "evidence_number": "2024",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2025",
+                "evidence_line": 25,
+                "evidence_number": "2025",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "5.258e+09",
+                "evidence_line": 24,
+                "evidence_number": "5.258e+09",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "7.275e+09",
+                "evidence_line": 25,
+                "evidence_number": "7.275e+09",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "3.5583e+10",
+                "evidence_line": 24,
+                "evidence_number": "3.5583e+10",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "8.6137e+10",
+                "evidence_line": 25,
+                "evidence_number": "8.6137e+10",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Compared to peers, AMD’s EBITDA remains lower than Nvidia’s but is growing at a faster pace, reinforcing AMD’s competitive positioning.",
+            "claim": "AMD's EBITDA growth reinforces AMD's competitive positioning.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence supports this strategic conclusion.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 9,
+        "claims": [],
+        "nonfactual_reason": "This unit is only a section label and contains no factual claims."
+      },
+      {
+        "source_id": 10,
+        "claims": [
+          {
+            "original_quote": "The recent quarterly results validate the core investment thesis centered on AMD's accelerating revenue growth, margin expansion, and successful penetration into high-growth segments such as data centers and gaming.",
+            "claim": "AMD reported recent quarterly results.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 42
+              },
+              {
+                "line_number": 44
+              }
+            ],
+            "reason": "The supplied news article is titled as AMD's second quarter 2026 financial results and provides quarterly figures.",
+            "action": "keep",
+            "revised_claim": "AMD reported second quarter 2026 financial results.",
+            "number_bindings": [
+              {
+                "claim_number": "2026",
+                "evidence_line": 42,
+                "evidence_number": "2026",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "The recent quarterly results validate the core investment thesis centered on AMD's accelerating revenue growth, margin expansion, and successful penetration into high-growth segments such as data centers and gaming.",
+            "claim": "The recent quarterly results validate the core investment thesis.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "Whether results validate an investment thesis is an unsupported evaluative conclusion.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The recent quarterly results validate the core investment thesis centered on AMD's accelerating revenue growth, margin expansion, and successful penetration into high-growth segments such as data centers and gaming.",
+            "claim": "AMD has accelerating revenue growth.",
+            "classification": "Contradicted",
+            "evidence": [
+              {
+                "line_number": 14
+              }
+            ],
+            "reason": "The revenue growth row does not show acceleration throughout the supplied periods; it moves from 34.3% in 2025A to 5.0% in 2026E to 6.0% in 2027E to 4.0% in 2028E.",
+            "action": "correct",
+            "revised_claim": "AMD revenue growth is 34.3% in 2025A, 5.0% in 2026E, 6.0% in 2027E, and 4.0% in 2028E.",
+            "number_bindings": [
+              {
+                "claim_number": "34.3%",
+                "evidence_line": 14,
+                "evidence_number": "34.3%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2025",
+                "evidence_line": 4,
+                "evidence_number": "2025A",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "5.0%",
+                "evidence_line": 14,
+                "evidence_number": "5.0%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2026",
+                "evidence_line": 4,
+                "evidence_number": "2026E",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "6.0%",
+                "evidence_line": 14,
+                "evidence_number": "6.0%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2027",
+                "evidence_line": 4,
+                "evidence_number": "2027E",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "4.0%",
+                "evidence_line": 14,
+                "evidence_number": "4.0%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2028",
+                "evidence_line": 4,
+                "evidence_number": "2028E",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "The recent quarterly results validate the core investment thesis centered on AMD's accelerating revenue growth, margin expansion, and successful penetration into high-growth segments such as data centers and gaming.",
+            "claim": "AMD has margin expansion.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 4
+              },
+              {
+                "line_number": 12
+              }
+            ],
+            "reason": "The EBITDA margin row shows forecast expansion versus 2025A.",
+            "action": "keep",
+            "revised_claim": "AMD's EBITDA margin is forecast at 39.0% in 2026E, 40.5% in 2027E, and 42.0% in 2028E, versus 21.0% in 2025A.",
+            "number_bindings": [
+              {
+                "claim_number": "39.0%",
+                "evidence_line": 12,
+                "evidence_number": "39.0%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2026",
+                "evidence_line": 4,
+                "evidence_number": "2026E",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "40.5%",
+                "evidence_line": 12,
+                "evidence_number": "40.5%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2027",
+                "evidence_line": 4,
+                "evidence_number": "2027E",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "42.0%",
+                "evidence_line": 12,
+                "evidence_number": "42.0%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2028",
+                "evidence_line": 4,
+                "evidence_number": "2028E",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "21.0%",
+                "evidence_line": 12,
+                "evidence_number": "21.0%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2025",
+                "evidence_line": 4,
+                "evidence_number": "2025A",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "The recent quarterly results validate the core investment thesis centered on AMD's accelerating revenue growth, margin expansion, and successful penetration into high-growth segments such as data centers and gaming.",
+            "claim": "AMD achieved successful penetration into data centers.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence establishes penetration into data centers.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The recent quarterly results validate the core investment thesis centered on AMD's accelerating revenue growth, margin expansion, and successful penetration into high-growth segments such as data centers and gaming.",
+            "claim": "AMD achieved successful penetration into gaming.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence establishes penetration into gaming.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The improved gross margin and earnings beat affirm management’s execution capabilities and operational leverage.",
+            "claim": "AMD reported a non-GAAP gross margin of 56% for the second quarter of 2026.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 47
+              }
+            ],
+            "reason": "The news summary explicitly states non-GAAP gross margin was 56%.",
+            "action": "keep",
+            "revised_claim": "AMD reported a non-GAAP gross margin of 56% for the second quarter of 2026.",
+            "number_bindings": [
+              {
+                "claim_number": "56%",
+                "evidence_line": 47,
+                "evidence_number": "56%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2026",
+                "evidence_line": 47,
+                "evidence_number": "2026",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "The improved gross margin and earnings beat affirm management’s execution capabilities and operational leverage.",
+            "claim": "AMD's gross margin improved.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No prior-period gross margin comparison is supplied.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The improved gross margin and earnings beat affirm management’s execution capabilities and operational leverage.",
+            "claim": "AMD delivered an earnings beat.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No earnings expectation benchmark is supplied.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The improved gross margin and earnings beat affirm management’s execution capabilities and operational leverage.",
+            "claim": "AMD's results affirm management's execution capabilities.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence supports this evaluative conclusion about management.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The improved gross margin and earnings beat affirm management’s execution capabilities and operational leverage.",
+            "claim": "AMD's results affirm operational leverage.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence supports this causal-operational conclusion.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The reaffirmed guidance and positive management commentary bolster confidence in AMD’s long-term growth prospects and margin improvement potential.",
+            "claim": "AMD reaffirmed guidance.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence mentions reaffirmed guidance.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The reaffirmed guidance and positive management commentary bolster confidence in AMD’s long-term growth prospects and margin improvement potential.",
+            "claim": "AMD gave positive management commentary.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence supports this characterization.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The reaffirmed guidance and positive management commentary bolster confidence in AMD’s long-term growth prospects and margin improvement potential.",
+            "claim": "AMD has long-term growth prospects.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "This forward-looking qualitative conclusion is not directly established by supplied evidence.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The reaffirmed guidance and positive management commentary bolster confidence in AMD’s long-term growth prospects and margin improvement potential.",
+            "claim": "AMD has margin improvement potential.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 4
+              },
+              {
+                "line_number": 12
+              }
+            ],
+            "reason": "The EBITDA margin row shows higher forecast margins than 2025A.",
+            "action": "keep",
+            "revised_claim": "AMD's EBITDA margin is forecast at 39.0% in 2026E, 40.5% in 2027E, and 42.0% in 2028E, versus 21.0% in 2025A.",
+            "number_bindings": [
+              {
+                "claim_number": "39.0%",
+                "evidence_line": 12,
+                "evidence_number": "39.0%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2026",
+                "evidence_line": 4,
+                "evidence_number": "2026E",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "40.5%",
+                "evidence_line": 12,
+                "evidence_number": "40.5%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2027",
+                "evidence_line": 4,
+                "evidence_number": "2027E",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "42.0%",
+                "evidence_line": 12,
+                "evidence_number": "42.0%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2028",
+                "evidence_line": 4,
+                "evidence_number": "2028E",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "21.0%",
+                "evidence_line": 12,
+                "evidence_number": "21.0%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2025",
+                "evidence_line": 4,
+                "evidence_number": "2025A",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "The company’s strategic focus on advanced semiconductor technologies and diversified end markets continues to support its competitive moat.",
+            "claim": "AMD has a strategic focus on advanced semiconductor technologies.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence describes AMD's strategic focus or technologies.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The company’s strategic focus on advanced semiconductor technologies and diversified end markets continues to support its competitive moat.",
+            "claim": "AMD has diversified end markets.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence establishes diversified end markets.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The company’s strategic focus on advanced semiconductor technologies and diversified end markets continues to support its competitive moat.",
+            "claim": "AMD has a competitive moat supported by its strategic focus and end markets.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence establishes a competitive moat or the stated reasons for it.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Although valuation multiples remain elevated, they are justified by the sustained revenue CAGR exceeding 20% and improving profitability.",
+            "claim": "AMD's valuation multiples remain elevated.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 36
+              }
+            ],
+            "reason": "The peer EV/EBITDA table shows AMD above Intel in 2025.",
+            "action": "keep",
+            "revised_claim": "AMD's EV/EBITDA is 47.8456 in 2025, compared with 14.4982 for Intel in 2025.",
+            "number_bindings": [
+              {
+                "claim_number": "47.8456",
+                "evidence_line": 36,
+                "evidence_number": "47.8456",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2025",
+                "evidence_line": 36,
+                "evidence_number": "2025",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "14.4982",
+                "evidence_line": 36,
+                "evidence_number": "14.4982",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Although valuation multiples remain elevated, they are justified by the sustained revenue CAGR exceeding 20% and improving profitability.",
+            "claim": "AMD's valuation multiples are justified by revenue CAGR exceeding 20%.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence supports this causal valuation judgment.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Although valuation multiples remain elevated, they are justified by the sustained revenue CAGR exceeding 20% and improving profitability.",
+            "claim": "AMD's valuation multiples are justified by improving profitability.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No supplied evidence supports this causal valuation judgment.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Although valuation multiples remain elevated, they are justified by the sustained revenue CAGR exceeding 20% and improving profitability.",
+            "claim": "AMD's revenue CAGR exceeds 20%.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 4
+              },
+              {
+                "line_number": 6
+              }
+            ],
+            "reason": "The revenue row shows a CAGR value of 20.5% across the table horizon.",
+            "action": "keep",
+            "revised_claim": "AMD's revenue CAGR is 20.5% in the table spanning 2021A through 2028E.",
+            "number_bindings": [
+              {
+                "claim_number": "20.5%",
+                "evidence_line": 6,
+                "evidence_number": "20.5%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2021",
+                "evidence_line": 4,
+                "evidence_number": "2021A",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2028",
+                "evidence_line": 4,
+                "evidence_number": "2028E",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Although valuation multiples remain elevated, they are justified by the sustained revenue CAGR exceeding 20% and improving profitability.",
+            "claim": "AMD has improving profitability.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 4
+              },
+              {
+                "line_number": 12
+              }
+            ],
+            "reason": "The EBITDA margin row shows higher forecast margins than 2025A.",
+            "action": "keep",
+            "revised_claim": "AMD's EBITDA margin is forecast at 39.0% in 2026E, 40.5% in 2027E, and 42.0% in 2028E, versus 21.0% in 2025A.",
+            "number_bindings": [
+              {
+                "claim_number": "39.0%",
+                "evidence_line": 12,
+                "evidence_number": "39.0%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2026",
+                "evidence_line": 4,
+                "evidence_number": "2026E",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "40.5%",
+                "evidence_line": 12,
+                "evidence_number": "40.5%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2027",
+                "evidence_line": 4,
+                "evidence_number": "2027E",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "42.0%",
+                "evidence_line": 12,
+                "evidence_number": "42.0%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2028",
+                "evidence_line": 4,
+                "evidence_number": "2028E",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "21.0%",
+                "evidence_line": 12,
+                "evidence_number": "21.0%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2025",
+                "evidence_line": 4,
+                "evidence_number": "2025A",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Overall, the fundamental drivers of the thesis remain intact and are strengthened by the latest financial and operational performance.",
+            "claim": "The fundamental drivers of the thesis remain intact.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "This is an unsupported evaluative conclusion about a thesis.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Overall, the fundamental drivers of the thesis remain intact and are strengthened by the latest financial and operational performance.",
+            "claim": "The fundamental drivers of the thesis are strengthened by the latest financial and operational performance.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "This is an unsupported evaluative causal conclusion about a thesis.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "usage": {
+    "requests": 1,
+    "input_tokens": 4245,
+    "input_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "output_tokens": 10129,
+    "output_tokens_details": {
+      "reasoning_tokens": 1952
+    },
+    "total_tokens": 14374
+  },
+  "runtime_seconds": 110.02640760000213,
+  "cost_usd": 0.1625475,
+  "completed_at_utc": "2026-10-12T05:22:34.028905+00:00",
+  "attempts": 1
+}

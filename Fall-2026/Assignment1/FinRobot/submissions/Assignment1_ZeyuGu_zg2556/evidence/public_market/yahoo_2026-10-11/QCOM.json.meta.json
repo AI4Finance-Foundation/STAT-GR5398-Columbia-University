@@ -1,0 +1,29 @@
+{
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/QCOM?range=1y&interval=1d",
+  "final_url": "https://query1.finance.yahoo.com/v8/finance/chart/QCOM?range=1y&interval=1d",
+  "started_utc": "2026-10-11T22:29:05.236155+00:00",
+  "retrieved_utc": "2026-10-11T22:29:05.461945+00:00",
+  "status": 200,
+  "response_headers": {
+    "content-type": "application/json;charset=utf-8",
+    "y-rid": "4418rkplco3dh",
+    "cache-control": "public, max-age=10, stale-while-revalidate=20",
+    "vary": "Origin,Accept-Encoding",
+    "x-envoy-upstream-service-time": "27",
+    "date": "Sun, 11 Oct 2026 22:29:05 GMT",
+    "server": "ATS",
+    "x-envoy-decorator-operation": "finance-chart-api--mtls-production-use1.finance-k8s:4080/*",
+    "Age": "0",
+    "Strict-Transport-Security": "max-age=31536000",
+    "Referrer-Policy": "no-referrer-when-downgrade",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close"
+  },
+  "bytes": 28497,
+  "sha256": "e20a56da64fdc9368f3054b4681b2b6625df49efb339d523631b619b6e653c6e",
+  "error": null,
+  "attempts": 1
+}

@@ -1,0 +1,37 @@
+{
+  "at_utc": "2026-10-12T05:36:28.112778+00:00",
+  "original_spec_sha256": "6185068052abb349a1b75c51ee4f74c41a11c5e2dc92eb62547234c0f360eae9",
+  "changes": [
+    {
+      "section": "company_overview",
+      "unit_id": 1,
+      "before": {
+        "claim": "NVIDIA serves data-center markets.",
+        "claim_type": "factual",
+        "classification": "Unsupported",
+        "numeric_status": "not_numeric",
+        "evidence": [],
+        "reason": "The company-name header and financial table contain no industry classification or end-market description."
+      },
+      "after": {
+        "claim": "NVIDIA serves data-center markets.",
+        "claim_type": "factual",
+        "classification": "Supported",
+        "numeric_status": "not_numeric",
+        "evidence": [
+          {
+            "line_start": 45,
+            "line_end": 45
+          }
+        ],
+        "reason": "Original writer news already reports Data Center revenue of$89bn. This establishes the narrow service-to-market assertion, but not leadership, primary strategic focus or a specific product catalog. Corrected evaluator omission; no later evidence added."
+      }
+    }
+  ],
+  "baseline_generation_unchanged": true,
+  "original_evidence_unchanged": true,
+  "no_new_external_evidence": true,
+  "reason": "Maintain identical interpretation of original supplied Data Center sales before/after; correcting this baseline label narrows, not inflates, apparent improvement.",
+  "human_review_performed": false,
+  "earlier_audits_preserved": true
+}

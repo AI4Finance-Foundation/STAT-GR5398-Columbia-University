@@ -1,0 +1,900 @@
+diff --git a/finrobot_equity/core/src/create_equity_report.py b/finrobot_equity/core/src/create_equity_report.py
+index 2acd947..e7131f1 100644
+--- a/finrobot_equity/core/src/create_equity_report.py
++++ b/finrobot_equity/core/src/create_equity_report.py
+@@ -3,6 +3,8 @@
+ 
+ import argparse
+ import os
++import hashlib
++import json
+ import pandas as pd
+ from datetime import datetime
+ import pytz
+@@ -11,7 +13,7 @@ EASTERN_TZ = pytz.timezone('America/New_York')
+ 
+ from modules.common_utils import load_config, get_api_key
+ from modules.report_data_loader import load_analysis_csv, load_text_from_file
+-from modules.html_renderer import render_html_report, render_combined_html_report, HTML_TEMPLATE_PAGE_1, HTML_TEMPLATE_PAGE_2_FINANCIAL_SUMMARY, HTML_TEMPLATE_PAGE_3_PEER_COMPARISON, HTML_TEMPLATE_PAGE_4_SENSITIVITY_CATALYST, HTML_TEMPLATE_PAGE_5_NEWS_CHARTS, HTML_TEMPLATE_COMBINED, format_dataframe_to_html_table
++from modules.html_renderer import render_html_report, render_combined_html_report, render_audited_html_report, HTML_TEMPLATE_PAGE_1, HTML_TEMPLATE_PAGE_2_FINANCIAL_SUMMARY, HTML_TEMPLATE_PAGE_3_PEER_COMPARISON, HTML_TEMPLATE_PAGE_4_SENSITIVITY_CATALYST, HTML_TEMPLATE_PAGE_5_NEWS_CHARTS, HTML_TEMPLATE_COMBINED, format_dataframe_to_html_table
+ from modules.html_template_professional import render_professional_html_report
+ from modules.chart_generator import (
+     generate_revenue_ebitda_chart, 
+@@ -247,6 +249,15 @@ def process_text_content(args, analysis_df, peer_ebitda_df, peer_ev_ebitda_df, o
+         "major_takeaways": load_text_from_file(args.major_takeaways_file),
+         "news_summary": load_text_from_file(args.news_summary_file) if args.news_summary_file else ""
+     }
++
++    if getattr(args, 'audited_render', False):
++        missing = [name for name, content in raw_texts.items()
++                   if not isinstance(content, str) or not content.strip()]
++        if missing:
++            raise ValueError(f"Audited rendering requires all eight nonempty section files: {missing}")
++        # No validation heuristic, regeneration, date rewrite, or fallback may alter
++        # the exact strings against which the claim audit was performed.
++        return raw_texts
+     
+     # Process text content
+     processed_texts = {}
+@@ -359,6 +370,9 @@ def main():
+ 
+     # Auto-fetch control
+     parser.add_argument("--skip-auto-fetch", action="store_true", help="Skip automatic fetching of market data from FMP API.")
++    parser.add_argument("--audited-render", action="store_true", help="Render exact eight supplied sections offline, expose missing fields, and save text hashes. No LLM or live data calls.")
++    parser.add_argument("--market-snapshot", type=str, default=None, help="JSON object of frozen comprehensive market metrics; no API request is made for these fields.")
++    parser.add_argument("--frozen-valuation", type=str, default=None, help="Saved explicit valuation engine JSON; render without recomputing or fetching.")
+     
+     # Text regeneration option
+     parser.add_argument("--enable-text-regeneration", action="store_true", help="Enable AI text regeneration if content quality is poor.")
+@@ -372,6 +386,10 @@ def main():
+     parser.add_argument("--retail-sentiment-file", type=str, default=None, help="Path to retail sentiment JSON file.")
+ 
+     args = parser.parse_args()
++    if args.audited_render and args.enable_text_regeneration:
++        parser.error("--audited-render cannot be combined with --enable-text-regeneration")
++    if args.audited_render:
++        args.skip_auto_fetch = True
+ 
+     # --- Setup directories ---
+     output_dir = args.output_dir or os.path.join(".", "output", args.company_ticker, "report")
+@@ -381,8 +399,12 @@ def main():
+     # --- Load configuration and API key ---
+     openai_api_key = None
+     try:
+-        config = load_config(args.config_file)
+-        fmp_api_key = get_api_key(config, "API_KEYS", "fmp_api_key")
++        if args.audited_render:
++            # Rendering already-frozen inputs must not require credentials.
++            config, fmp_api_key = None, None
++        else:
++            config = load_config(args.config_file)
++            fmp_api_key = get_api_key(config, "API_KEYS", "fmp_api_key")
+         if args.enable_text_regeneration:
+             try:
+                 openai_api_key = get_api_key(config, "API_KEYS", "openai_api_key")
+@@ -396,7 +418,18 @@ def main():
+ 
+     # --- Auto-fetch market data if not provided and API key available ---
+     auto_fetched_metrics = {}
+-    if not args.skip_auto_fetch and fmp_api_key:
++    if args.market_snapshot:
++        with open(args.market_snapshot, 'r', encoding='utf-8') as snapshot_file:
++            auto_fetched_metrics = json.load(snapshot_file)
++        if not isinstance(auto_fetched_metrics, dict):
++            raise ValueError("--market-snapshot must contain a JSON object of market metrics")
++        if 'metrics' in auto_fetched_metrics:
++            report_data_snapshot = auto_fetched_metrics
++            auto_fetched_metrics = report_data_snapshot['metrics']
++            if not isinstance(auto_fetched_metrics, dict):
++                raise ValueError('Frozen snapshot metrics must be an object')
++        print("Loaded frozen market snapshot")
++    elif not args.skip_auto_fetch and fmp_api_key:
+         print(f"Auto-fetching market data for {args.company_ticker}...")
+         try:
+             auto_fetched_metrics = get_comprehensive_company_metrics(args.company_ticker, fmp_api_key)
+@@ -430,7 +463,7 @@ def main():
+             value = auto_fetched_metrics[auto_key]
+             return format_func(value) if format_func else value
+         else:
+-            return default_value
++            return "N/A" if args.audited_render else default_value
+ 
+     # Apply the logic for each metric
+     share_price = get_value(args.share_price, 'share_price', 0.0, lambda x: f"${x:.2f}")
+@@ -443,7 +476,7 @@ def main():
+     dividend_yield = get_value(args.dividend_yield, 'dividend_yield', "N/A", lambda x: f"{x:.2f}%" if isinstance(x, (int, float)) else str(x))
+     free_float = get_value(args.free_float, 'free_float', "N/A", lambda x: f"{x:.1f}%" if isinstance(x, (int, float)) else str(x))
+     roe = get_value(args.roe, 'roe', "N/A", lambda x: f"{x:.1f}%" if isinstance(x, (int, float)) else str(x))
+-    net_debt_to_equity = get_value(args.net_debt_to_equity, 'net_debt_to_equity', "N/A", lambda x: f"{x:.2f}%" if isinstance(x, (int, float)) else str(x))
++    net_debt_to_equity = get_value(args.net_debt_to_equity, 'net_debt_to_equity', "N/A", lambda x: (f"{x:.2f}x" if args.audited_render else f"{x:.2f}%") if isinstance(x, (int, float)) else str(x))
+     sector = get_value(args.sector, 'sector', "Industrials")
+     week_52_range = get_value(None, '52w_range', 'N/A')
+ 
+@@ -474,6 +507,8 @@ def main():
+         r'(January|February|March|April|May|June|July|August|September|October|November|December)\s+20\d{2}')
+     def _fix_stale_dates(text: str) -> str:
+         """Replace old month-year dates in title lines with current report date."""
++        if args.audited_render:
++            return text
+         if not text:
+             return text
+         lines = text.split('\n')
+@@ -495,7 +530,7 @@ def main():
+ 
+     # --- Compute technical indicators ---
+     technical_indicators = {}
+-    if fmp_api_key:
++    if fmp_api_key and not args.skip_auto_fetch:
+         try:
+             technical_indicators = get_technical_indicators(args.company_ticker, fmp_api_key)
+         except Exception as e:
+@@ -537,6 +572,7 @@ def main():
+         "closing_price_date": args.closing_price_date,
+         "technical_indicators": technical_indicators,
+         "retail_sentiment": {},
++        "audited_render": args.audited_render,
+     }
+ 
+     # --- Generate or load charts ---
+@@ -546,12 +582,12 @@ def main():
+     else:
+         chart_path = os.path.join(output_dir, f"{args.company_ticker}_revenue_ebitda_chart.png")
+         chart_result = generate_revenue_ebitda_chart(analysis_df, chart_path, args.company_ticker)
+-        report_data['revenue_chart_path'] = chart_result or ""
++        report_data['revenue_chart_path'] = (chart_path if args.audited_render else chart_result) if chart_result else ""
+ 
+     # Generate EPS × PE chart
+     eps_pe_chart_path = os.path.join(output_dir, f"{args.company_ticker}_eps_pe_chart.png")
+     eps_pe_chart_result = generate_eps_pe_chart(analysis_df, eps_pe_chart_path, args.company_ticker)
+-    report_data['eps_pe_chart_path'] = eps_pe_chart_result or ""
++    report_data['eps_pe_chart_path'] = (eps_pe_chart_path if args.audited_render else eps_pe_chart_result) if eps_pe_chart_result else ""
+ 
+     if args.ev_ebitda_chart_path and os.path.exists(args.ev_ebitda_chart_path):
+         report_data['ev_ebitda_chart_path'] = args.ev_ebitda_chart_path
+@@ -560,7 +596,7 @@ def main():
+             peer_ev_ebitda_df.set_index('year', inplace=True)
+         chart_path = os.path.join(output_dir, f"{args.company_ticker}_peer_ev_ebitda_chart.png")
+         chart_result = generate_ev_ebitda_peer_chart(peer_ev_ebitda_df, chart_path, args.company_ticker)
+-        report_data['ev_ebitda_chart_path'] = chart_result or ""
++        report_data['ev_ebitda_chart_path'] = (chart_path if args.audited_render else chart_result) if chart_result else ""
+     else:
+         report_data['ev_ebitda_chart_path'] = ""
+ 
+@@ -750,7 +786,12 @@ def main():
+             report_data['enhanced_charts'] = {}
+ 
+     # --- Valuation Analysis ---
+-    if args.enable_valuation_analysis:
++    if args.frozen_valuation:
++        if args.enable_valuation_analysis:
++            raise ValueError('Cannot combine frozen valuation with recalculation')
++        with open(args.frozen_valuation, 'r', encoding='utf-8') as valuation_file:
++            report_data['valuation_analysis'] = json.load(valuation_file)
++    elif args.enable_valuation_analysis:
+         print("Performing valuation analysis...")
+         try:
+             # Prepare financial data for valuation engine
+@@ -805,7 +846,6 @@ def main():
+             report_data['valuation_analysis'] = {}
+ 
+     # --- Load Enhanced Analysis Files ---
+-    import json
+     
+     # Load sensitivity analysis
+     if args.sensitivity_analysis_file and os.path.exists(args.sensitivity_analysis_file):
+@@ -829,6 +869,8 @@ def main():
+                              'starts coverage', 'begins coverage', 'upgrades to', 'builds position',
+                              'overweight', 'buy rating', 'outperform', 'top pick', 'new position']
+             def _fix_sentiment(desc):
++                if args.audited_render:
++                    return None
+                 dl = desc.lower()
+                 for p in _pos_patterns:
+                     if p in dl:
+@@ -963,6 +1005,33 @@ def main():
+         report_data["peer_ev_ebitda_table_html"] = "<p>Peer EV/EBITDA data not available.</p>"
+         print("❌ No peer EV/EBITDA data provided")
+ 
++    if args.audited_render:
++        # Include all actual and forecast columns in the offline audited report.
++        # Save raw strings separately so HTML escaping cannot invalidate claim spans.
++        report_data['full_analysis_table_html'] = analysis_df.set_index('metrics').to_html(escape=True)
++        section_records = {
++            name: {"text": content, "sha256": hashlib.sha256(content.encode('utf-8')).hexdigest()}
++            for name, content in processed_texts.items()
++        }
++        manifest = {
++            "schema_version": 1,
++            "ticker": args.company_ticker,
++            "report_date": args.report_date,
++            "network_mode": "offline",
++            "regenerated": False,
++            "date_rewritten": False,
++            "sections": section_records,
++        }
++        audited_html_path = os.path.join(output_dir, f"Audited_Equity_Report_{args.company_ticker}.html")
++        audited_html = render_audited_html_report(report_data, output_dir)
++        with open(audited_html_path, 'w', encoding='utf-8', newline='') as report_file:
++            report_file.write(audited_html)
++        manifest['html_sha256'] = hashlib.sha256(audited_html.encode('utf-8')).hexdigest()
++        with open(os.path.join(output_dir, 'rendered_section_texts.json'), 'w', encoding='utf-8') as manifest_file:
++            json.dump(manifest, manifest_file, indent=2, ensure_ascii=False)
++        print(f"Generated exact-text audited HTML report: {audited_html_path}")
++        return
++
+     # --- Generate Professional HTML Report (matching PDF structure) ---
+     print("Generating professional HTML report (matching PDF structure)...")
+     
+diff --git a/finrobot_equity/core/src/generate_financial_analysis.py b/finrobot_equity/core/src/generate_financial_analysis.py
+index 009fa9a..001d42b 100644
+--- a/finrobot_equity/core/src/generate_financial_analysis.py
++++ b/finrobot_equity/core/src/generate_financial_analysis.py
+@@ -7,7 +7,7 @@ import pandas as pd
+ import json 
+ 
+ from modules.common_utils import load_config, get_api_key
+-from modules.financial_data_processor import calculate_growth_and_forecasts, extract_historical_metrics_from_api_data
++from modules.financial_data_processor import calculate_growth_and_forecasts, extract_historical_metrics_from_api_data, normalize_forecast_config
+ from modules.market_data_api import (
+     get_comprehensive_financial_data,
+     combine_peer_financial_data,
+@@ -55,9 +55,9 @@ def main():
+     parser.add_argument("--enable-enhanced-news", action="store_true", help="Enable enhanced news integration with categorization")
+ 
+     # Forecast Configuration
+-    parser.add_argument("--revenue-growth-2025", type=float, default=0.05, help="Revenue growth assumption for 2025E (default: 5%)")
+-    parser.add_argument("--revenue-growth-2026", type=float, default=0.06, help="Revenue growth assumption for 2026E (default: 6%)")
+-    parser.add_argument("--revenue-growth-2027", type=float, default=0.04, help="Revenue growth assumption for 2027E (default: 4%)")
++    parser.add_argument("--revenue-growth-2025", type=float, default=0.05, help="Revenue growth for first future annual period; legacy flag name (default: 5%)")
++    parser.add_argument("--revenue-growth-2026", type=float, default=0.06, help="Revenue growth for second future annual period; legacy flag name (default: 6%)")
++    parser.add_argument("--revenue-growth-2027", type=float, default=0.04, help="Revenue growth for third future annual period; legacy flag name (default: 4%)")
+     parser.add_argument("--margin-improvement", type=float, default=0.01, help="Annual margin improvement assumption (default: 1%)")
+     parser.add_argument("--sga-margin-improvement", type=float, default=-0.005, help="SG&A margin change assumption (default: -0.5% efficiency gain)")
+ 
+@@ -174,13 +174,13 @@ def main():
+         },
+         "sga_margin_change": args.sga_margin_improvement
+     }
++    forecast_config = normalize_forecast_config(historical_metrics_df, forecast_config)
+     
+     print(f"Forecast assumptions:")
+-    print(f"  Revenue Growth 2025E: {args.revenue_growth_2025*100:.1f}%")
+-    print(f"  Revenue Growth 2026E: {args.revenue_growth_2026*100:.1f}%") 
+-    print(f"  Revenue Growth 2027E: {args.revenue_growth_2027*100:.1f}%")
+-    print(f"  Margin Improvement: {args.margin_improvement*100:.1f}% annually")
+-    print(f"  SG&A Efficiency: {args.sga_margin_improvement*100:.1f}% annually")
++    for forecast_year, growth in forecast_config["revenue_growth_assumptions"].items():
++        print(f"  Revenue Growth {forecast_year}: {growth*100:.1f}%")
++    print(f"  Margin Improvement: {args.margin_improvement*100:.1f} percentage points annually")
++    print(f"  SG&A Efficiency: {args.sga_margin_improvement*100:.1f} percentage points annually")
+     
+     final_data_df = calculate_growth_and_forecasts(historical_metrics_df, forecast_config)
+     print("\nFinal Metrics with Forecasts:")
+diff --git a/finrobot_equity/core/src/modules/equity_agents/agent_manager.py b/finrobot_equity/core/src/modules/equity_agents/agent_manager.py
+index 8bb4173..80ed74f 100644
+--- a/finrobot_equity/core/src/modules/equity_agents/agent_manager.py
++++ b/finrobot_equity/core/src/modules/equity_agents/agent_manager.py
+@@ -80,7 +80,7 @@ class EquityResearchAgentManager:
+         # Run the agent with optional custom model
+         if custom_model:
+             run_config = RunConfig(
+-                model_settings=ModelSettings(model=custom_model)
++                model=custom_model
+             )
+             result = await Runner.run(agent, financial_prompt, run_config=run_config)
+         else:
+diff --git a/finrobot_equity/core/src/modules/financial_data_processor.py b/finrobot_equity/core/src/modules/financial_data_processor.py
+index 288328c..c7a0324 100644
+--- a/finrobot_equity/core/src/modules/financial_data_processor.py
++++ b/finrobot_equity/core/src/modules/financial_data_processor.py
+@@ -3,6 +3,43 @@
+ 
+ import pandas as pd
+ import numpy as np
++from copy import deepcopy
++import re
++
++
++def normalize_forecast_config(df_historical: pd.DataFrame, forecast_config: dict) -> dict:
++    """Map the legacy CLI growth slots to years strictly after the last actual.
++
++    The 2025/2026/2027 CLI names are horizon slots, not valid date labels once
++    newer actuals arrive. Preserve their ordered values and all financial
++    formulas; record the mapping so the compatibility change is auditable.
++    Historical backtests must first truncate the input to the information set
++    at the forecast origin. An older base with newer actuals is rejected.
++    """
++    actual_years = sorted(
++        int(col[:-1]) for col in df_historical.columns
++        if isinstance(col, str) and re.fullmatch(r"\d{4}A", col)
++    )
++    if not actual_years:
++        raise ValueError("Forecasting requires at least one annual actual column (YYYYA).")
++    latest = f"{actual_years[-1]}A"
++    if forecast_config.get("revenue_base_year", latest) != latest:
++        raise ValueError("Forecast base must be the latest actual; truncate later actuals for backtests.")
++    config = deepcopy(forecast_config)
++    original = config.get("revenue_growth_assumptions", {})
++    if not original:
++        raise ValueError("At least one explicit revenue growth assumption is required.")
++    if any(not re.fullmatch(r"\d{4}E", str(label)) for label in original):
++        raise ValueError("Revenue growth labels must have the form YYYYE.")
++    ordered = sorted(original.items(), key=lambda item: int(item[0][:-1]))
++    mapping = {old: f"{actual_years[-1] + index}E"
++               for index, (old, _) in enumerate(ordered, 1)}
++    config["revenue_base_year"] = latest
++    config["revenue_growth_assumptions"] = {mapping[old]: value for old, value in ordered}
++    config.setdefault("forecast_label_mapping", mapping)
++    config["forecast_origin"] = latest
++    config["forecast_basis"] = "annual periods after latest observed actual; not calendar-year projections"
++    return config
+ 
+ def clean_financial_number(x):
+     """Cleans a string representing a financial number into a float."""
+@@ -40,6 +77,8 @@ def extract_historical_metrics_from_api_data(financial_data: dict) -> pd.DataFra
+ 
+     # Sort by date (most recent first) and extract years
+     income_df = income_df.sort_values('date', ascending=False).reset_index(drop=True)
++    if income_df['year'].duplicated().any():
++        raise ValueError("Multiple income periods share one year. Annual forecasting cannot silently collapse quarterly data.")
+     
+     # Create year labels (e.g., 2024A, 2023A, etc.)
+     years = []
+@@ -297,6 +336,7 @@ def extract_historical_metrics_from_pdf_data(dataframes, table_config):
+ 
+ def calculate_growth_and_forecasts(df_historical: pd.DataFrame, forecast_config: dict) -> pd.DataFrame:
+     """Appends growth rates and forecasts to the historical metrics DataFrame."""
++    forecast_config = normalize_forecast_config(df_historical, forecast_config)
+     df_final = df_historical.copy().astype('object')  # Ensure object dtype for mixed types
+     actual_years = sorted([col for col in df_final.columns if isinstance(col, str) and col.endswith('A')])
+     forecast_years = sorted(forecast_config.get("revenue_growth_assumptions", {}).keys())
+@@ -510,4 +550,4 @@ if __name__ == "__main__":
+     else:
+         print("Failed to extract historical metrics")
+     
+-    print("\nAPI-based financial_data_processor.py tests complete.")
+\ No newline at end of file
++    print("\nAPI-based financial_data_processor.py tests complete.")
+diff --git a/finrobot_equity/core/src/modules/html_renderer.py b/finrobot_equity/core/src/modules/html_renderer.py
+index 7fcc98f..c643e70 100644
+--- a/finrobot_equity/core/src/modules/html_renderer.py
++++ b/finrobot_equity/core/src/modules/html_renderer.py
+@@ -6,6 +6,115 @@ import re as _re
+ import pandas as pd
+ 
+ 
++def render_audited_html_report(data: dict, output_dir: str) -> str:
++    """Render frozen evidence without changing prose or introducing remote assets.
++
++    This compatibility path is intentionally separate from the legacy renderer's
++    prose formatting/fallbacks. Text content inside each ``data-agent-section``
++    element is the exact input string after HTML entity decoding.
++    """
++    import hashlib
++    import json
++    import shutil
++    from html import escape
++    from pathlib import Path
++
++    sections = (
++        ('tagline', 'Investment thesis'),
++        ('company_overview', 'Company overview'),
++        ('investment_overview', 'Investment update'),
++        ('valuation_overview', 'Valuation interpretation'),
++        ('risks', 'Risks'),
++        ('competitor_analysis', 'Competitive landscape'),
++        ('major_takeaways', 'Major takeaways'),
++        ('news_summary', 'News summary'),
++    )
++    title = escape(str(data.get('company_name_ticker', 'Equity research')))
++    body = [f'<header><p class="eyebrow">FinRobot · frozen-input research</p><h1>{title}</h1>',
++            f'<p>Report date: {escape(str(data.get("report_date", "N/A")))}</p></header>']
++    body.append('<section><h2>Research audit status</h2><p>This is an experimental report, not a validated investment recommendation. '
++                'Baseline prose and verifier-treated prose can contain unsupported or contradicted assertions, including unflagged errors. '
++                'UNVERIFIED labels retain the original assertion for audit; they do not establish truth. '
++                'Use the accompanying independent claim audit and research report before relying on any narrative or valuation.</p></section>')
++    if data.get('data_source_text') and data['data_source_text'] != 'Company Filings, FMP, Yahoo Finance, AI4Finance Estimates':
++        body.append('<section><h2>Data sources and explicit limitations</h2><p>'
++                    + escape(str(data['data_source_text'])) + '</p></section>')
++    market_labels = (
++        ('share_price', 'Observed share price (USD)'),
++        ('target_price', 'FMP consensus target (USD; not engine value)'),
++        ('rating', 'FMP analyst grade (not LLM rating)'),
++        ('market_cap', 'Market capitalization (USD billions)'),
++        ('volume', 'Average daily volume (million shares)'),
++        ('fwd_pe', 'P/E (source ratio; not verified forward P/E)'),
++        ('pb_ratio', 'Price/book'),
++        ('dividend_yield', 'Dividend yield (%; lastDiv annualization unverified)'),
++        ('free_float', 'Free float (%; provider observation)'),
++        ('roe', 'Return on equity (%)'),
++        ('net_debt_to_equity', 'Debt/equity (source ratio; not verified net debt)'),
++        ('sector', 'Sector'),
++    )
++    body.append('<section><h2>Frozen market fields</h2><p>Missing data are shown as N/A. '
++                'Source assumptions and field definitions must be checked in the audit.</p><dl class="metrics">')
++    for key, label in market_labels:
++        value = data.get(key)
++        body.append(f'<div><dt>{escape(label)}</dt><dd>{escape(str(value if value is not None else "N/A"))}</dd></div>')
++    body.append('</dl></section>')
++    for key, label in sections:
++        raw = data.get(key)
++        if not isinstance(raw, str) or not raw.strip():
++            raise ValueError(f'Missing audited section: {key}')
++        digest = hashlib.sha256(raw.encode('utf-8')).hexdigest()
++        body.append(f'<section id="{key}"><h2>{escape(label)}</h2>'
++                    f'<div class="agent-text" data-agent-section="{key}" data-sha256="{digest}">{escape(raw)}</div></section>')
++
++    for key, label in (
++        ('full_analysis_table_html', 'Historical actuals and explicit forecasts'),
++        ('peer_ebitda_table_html', 'Peer EBITDA'),
++        ('peer_ev_ebitda_table_html', 'Peer EV/EBITDA'),
++        ('credit_cashflow_table_html', 'Credit and cash flow ratios'),
++    ):
++        table_html = _re.sub(r'(?<=>)\s*NaN\s*(?=</t[dh]>)', 'N/A', str(data.get(key, '<p>N/A</p>')))
++        body.append(f'<section><h2>{label}</h2><p class="missing">N/A denotes missing or inapplicable data, never zero.</p><div class="table-wrap">{table_html}</div></section>')
++    asset_dir = Path(output_dir) / 'assets'
++    asset_dir.mkdir(parents=True, exist_ok=True)
++    for key, label in (
++        ('revenue_chart_path', 'Revenue and EBITDA'),
++        ('eps_pe_chart_path', 'EPS and P/E'),
++        ('ev_ebitda_chart_path', 'Peer EV/EBITDA'),
++    ):
++        source = Path(data[key]) if data.get(key) else None
++        if source is not None and source.is_file():
++            # Content-based names prevent collisions and make the report portable.
++            digest = hashlib.sha256(source.read_bytes()).hexdigest()[:16]
++            destination = asset_dir / f'{key}_{digest}{source.suffix}'
++            if source.resolve() != destination.resolve():
++                shutil.copyfile(source, destination)
++            body.append(f'<figure><img src="assets/{escape(destination.name)}" alt="{label}"><figcaption>{label}</figcaption></figure>')
++        else:
++            body.append(f'<p class="missing">Optional chart unavailable: {label}.</p>')
++    for key, label in (
++        ('valuation_analysis', 'Valuation engine output'),
++        ('sensitivity_analysis', 'Native sensitivity output (not a target-price sensitivity)'),
++        ('catalyst_analysis', 'Catalyst analysis'),
++        ('enhanced_news', 'Enhanced news'),
++    ):
++        if data.get(key):
++            payload = escape(json.dumps(data[key], indent=2, ensure_ascii=False, default=str))
++            body.append(f'<section><h2>{label}</h2><pre class="evidence">{payload}</pre></section>')
++    body.append('<footer>Generated from frozen inputs. Narrative verification status and quantitative limitations '
++                'are recorded in the accompanying research audit.</footer>')
++    css = '''body{font-family:Arial,sans-serif;color:#142237;background:#fff;max-width:1080px;margin:40px auto;padding:0 28px;line-height:1.6}
++    h1{font-size:34px;line-height:1.2}h2{font-size:21px;color:#18496b;margin-top:0}header{border-bottom:3px solid #18496b;padding-bottom:20px}
++    .eyebrow{letter-spacing:.08em;text-transform:uppercase;color:#49667b}section{padding:24px 0;border-bottom:1px solid #dce4e9}
++    .agent-text{white-space:pre-wrap;overflow-wrap:anywhere}.metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
++    dt{font-size:12px;color:#526574}dd{margin:4px 0;font-weight:bold}.table-wrap{overflow-x:auto}table{border-collapse:collapse;font-size:12px;width:100%}
++    th,td{padding:6px 9px;border:1px solid #cbd5de;text-align:right}th{background:#eef3f7}figure{margin:26px 0}img{max-width:100%;height:auto}
++    figcaption,.missing,footer{font-size:12px;color:#526574}.evidence{white-space:pre-wrap;overflow-wrap:anywhere;font-size:11px}
++    @media(max-width:640px){.metrics{grid-template-columns:1fr}body{padding:0 16px}}@media print{body{margin:0;max-width:none;font-size:10pt}h2{break-after:avoid}figure{break-inside:avoid}.table-wrap{overflow:visible}table{font-size:8pt}@page{size:A4;margin:16mm}}'''
++    return ('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">'
++            f'<title>{title}</title><style>{css}</style></head><body>' + ''.join(body) + '</body></html>')
++
++
+ def _auto_bold_key_data(text: str) -> str:
+     """自动加粗关键金融数据。"""
+     if not text or '<strong>' in text:
+diff --git a/finrobot_equity/core/src/modules/market_data_api.py b/finrobot_equity/core/src/modules/market_data_api.py
+index ed92713..b82ca3e 100644
+--- a/finrobot_equity/core/src/modules/market_data_api.py
++++ b/finrobot_equity/core/src/modules/market_data_api.py
+@@ -56,22 +56,28 @@ def get_fmp_ratios_and_key_metrics(ticker: str, api_key: str, period: str = "ann
+     ratios_df, key_metrics_df = None, None
+     try:
+         # Ratios
+-        ratios_url = f"https://financialmodelingprep.com/api/v3/ratios/{ticker}?period={period}&limit={limit}&apikey={api_key}"
++        ratios_url = f"https://financialmodelingprep.com/stable/ratios?symbol={ticker}&period={period}&limit={limit}&apikey={api_key}"
+         response_ratios = requests.get(ratios_url)
+         response_ratios.raise_for_status()
+         ratios_data = response_ratios.json()
+         if ratios_data:
+             ratios_df = pd.DataFrame(ratios_data)
++            # Preserve stable fields and add legacy aliases consumed downstream.
++            for stable, legacy in {'priceToEarningsRatio': 'priceEarningsRatio', 'debtToEquityRatio': 'debtEquityRatio'}.items():
++                if stable in ratios_df and legacy not in ratios_df:
++                    ratios_df[legacy] = ratios_df[stable]
+             ratios_df["date"] = pd.to_datetime(ratios_df["date"])
+             ratios_df["year"] = ratios_df["date"].dt.year
+ 
+         # Key Metrics
+-        key_metrics_url = f"https://financialmodelingprep.com/api/v3/key-metrics/{ticker}?period={period}&limit={limit}&apikey={api_key}"
++        key_metrics_url = f"https://financialmodelingprep.com/stable/key-metrics?symbol={ticker}&period={period}&limit={limit}&apikey={api_key}"
+         response_key_metrics = requests.get(key_metrics_url)
+         response_key_metrics.raise_for_status()
+         key_metrics_data = response_key_metrics.json()
+         if key_metrics_data:
+             key_metrics_df = pd.DataFrame(key_metrics_data)
++            if 'evToEBITDA' in key_metrics_df:
++                key_metrics_df['enterpriseValueOverEBITDA'] = key_metrics_df['evToEBITDA']
+             key_metrics_df["date"] = pd.to_datetime(key_metrics_df["date"])
+             key_metrics_df["year"] = key_metrics_df["date"].dt.year
+ 
+@@ -85,7 +91,7 @@ def get_fmp_ratios_and_key_metrics(ticker: str, api_key: str, period: str = "ann
+ def get_fmp_income_statement(ticker: str, api_key: str, period: str = "annual", limit: int = 5) -> pd.DataFrame | None:
+     """Fetches income statement data from FMP API."""
+     try:
+-        url = f"https://financialmodelingprep.com/api/v3/income-statement/{ticker}?period={period}&limit={limit}&apikey={api_key}"
++        url = f"https://financialmodelingprep.com/stable/income-statement?symbol={ticker}&period={period}&limit={limit}&apikey={api_key}"
+         response = requests.get(url)
+         response.raise_for_status()
+         data = response.json()
+@@ -106,7 +112,7 @@ def get_fmp_income_statement(ticker: str, api_key: str, period: str = "annual",
+ def get_fmp_balance_sheet(ticker: str, api_key: str, period: str = "annual", limit: int = 5) -> pd.DataFrame | None:
+     """Fetches balance sheet data from FMP API."""
+     try:
+-        url = f"https://financialmodelingprep.com/api/v3/balance-sheet-statement/{ticker}?period={period}&limit={limit}&apikey={api_key}"
++        url = f"https://financialmodelingprep.com/stable/balance-sheet-statement?symbol={ticker}&period={period}&limit={limit}&apikey={api_key}"
+         response = requests.get(url)
+         response.raise_for_status()
+         data = response.json()
+@@ -127,7 +133,7 @@ def get_fmp_balance_sheet(ticker: str, api_key: str, period: str = "annual", lim
+ def get_fmp_cash_flow_statement(ticker: str, api_key: str, period: str = "annual", limit: int = 5) -> pd.DataFrame | None:
+     """Fetches cash flow statement data from FMP API."""
+     try:
+-        url = f"https://financialmodelingprep.com/api/v3/cash-flow-statement/{ticker}?period={period}&limit={limit}&apikey={api_key}"
++        url = f"https://financialmodelingprep.com/stable/cash-flow-statement?symbol={ticker}&period={period}&limit={limit}&apikey={api_key}"
+         response = requests.get(url)
+         response.raise_for_status()
+         data = response.json()
+@@ -239,7 +245,7 @@ def project_ebitda_for_peers(df_ebitda_historical: pd.DataFrame, num_projection_
+ 
+ def get_fmp_current_price(ticker: str, api_key: str) -> float | None:
+     """Fetches the latest stock price from Financial Modeling Prep API."""
+-    url = f"https://financialmodelingprep.com/api/v3/quote-short/{ticker}?apikey={api_key}"
++    url = f"https://financialmodelingprep.com/stable/quote-short?symbol={ticker}&apikey={api_key}"
+     try:
+         response = requests.get(url)
+         response.raise_for_status()
+@@ -249,7 +255,7 @@ def get_fmp_current_price(ticker: str, api_key: str) -> float | None:
+             if "price" in quote_data and quote_data["price"] is not None:
+                 return float(quote_data["price"])
+             else:
+-                url_full_quote = f"https://financialmodelingprep.com/api/v3/quote/{ticker}?apikey={api_key}"
++                url_full_quote = f"https://financialmodelingprep.com/stable/quote?symbol={ticker}&apikey={api_key}"
+                 response_full = requests.get(url_full_quote)
+                 response_full.raise_for_status()
+                 data_full = response_full.json()
+@@ -305,36 +311,16 @@ def get_analyst_insights(ticker: str, api_key: str = None) -> tuple[str | None,
+     return rating, target_price
+ 
+ def get_fmp_target_price(ticker: str, api_key: str) -> float | None:
+-    """Fetches the latest analyst target price from Financial Modeling Prep API v4."""
+-    url = f"https://financialmodelingprep.com/api/v4/price-target?symbol={ticker}&apikey={api_key}"
++    """Stable endpoint consensus target (NOT the legacy latest single-analyst target)."""
++    url = f"https://financialmodelingprep.com/stable/price-target-consensus?symbol={ticker}&apikey={api_key}"
+     try:
+         response = requests.get(url)
+         response.raise_for_status()
+         data = response.json()
+-        if data and isinstance(data, list) and len(data) > 0:
+-            for item in data:
+-                try:
+-                    item['parsedDate'] = pd.to_datetime(item.get('publishedDate'))
+-                except Exception as e:
+-                    print(f"Warning: Could not parse publishedDate '{item.get('publishedDate')}' for {ticker}: {e}")
+-                    item['parsedDate'] = None
+-            
+-            valid_data = [item for item in data if item['parsedDate'] is not None]
+-            
+-            if not valid_data:
+-                print(f"No valid published dates found in FMP target price data for {ticker}.")
+-                return None
+-
+-            latest_target_info = sorted(valid_data, key=lambda x: x['parsedDate'], reverse=True)[0]
+-            
+-            if "priceTarget" in latest_target_info and latest_target_info["priceTarget"] is not None:
+-                return float(latest_target_info["priceTarget"])
+-            else:
+-                print(f"Price target not found in the latest FMP data for {ticker}. Data: {latest_target_info}")
+-                return None
+-        else:
+-            print(f"No target price data or unexpected format returned from FMP for {ticker}. Response: {data}")
+-            return None
++        if data and isinstance(data, list) and data[0].get('targetConsensus') is not None:
++            return float(data[0]['targetConsensus'])
++        # Do not reinterpret a missing consensus field as a different statistic.
++        return None
+     except requests.exceptions.RequestException as e:
+         print(f"Error fetching FMP target price for {ticker}: {e}")
+         return None
+@@ -343,8 +329,8 @@ def get_fmp_target_price(ticker: str, api_key: str) -> float | None:
+         return None
+ 
+ def get_fmp_analyst_rating(ticker: str, api_key: str) -> str | None:
+-    """Fetches the latest analyst rating (e.g., Buy, Hold, Sell) from Financial Modeling Prep API v4."""
+-    url = f"https://financialmodelingprep.com/api/v4/upgrades-downgrades?symbol={ticker}&apikey={api_key}"
++    """Fetch latest analyst grade from stable/grades; not a financial-health score."""
++    url = f"https://financialmodelingprep.com/stable/grades?symbol={ticker}&apikey={api_key}"
+     try:
+         response = requests.get(url)
+         response.raise_for_status()
+@@ -352,7 +338,7 @@ def get_fmp_analyst_rating(ticker: str, api_key: str) -> str | None:
+         if data and isinstance(data, list) and len(data) > 0:
+             for item in data:
+                 try:
+-                    item['parsedDate'] = pd.to_datetime(item.get('publishedDate'))
++                    item['parsedDate'] = pd.to_datetime(item.get('publishedDate', item.get('date')))
+                 except Exception as e:
+                     print(f"Warning: Could not parse publishedDate '{item.get('publishedDate')}' for {ticker}: {e}")
+                     item['parsedDate'] = None
+@@ -385,13 +371,17 @@ def get_fmp_analyst_rating(ticker: str, api_key: str) -> str | None:
+ 
+ def get_fmp_company_profile(ticker: str, api_key: str) -> dict | None:
+     """Fetches comprehensive company profile data from FMP API."""
+-    url = f"https://financialmodelingprep.com/api/v3/profile/{ticker}?apikey={api_key}"
++    url = f"https://financialmodelingprep.com/stable/profile?symbol={ticker}&apikey={api_key}"
+     try:
+         response = requests.get(url)
+         response.raise_for_status()
+         data = response.json()
+         if data and isinstance(data, list) and len(data) > 0:
+-            return data[0]  # Profile returns a list with one item
++            profile = dict(data[0])
++            for stable, legacy in {'marketCap': 'mktCap', 'averageVolume': 'volAvg', 'lastDividend': 'lastDiv', 'exchange': 'exchangeShortName'}.items():
++                if stable in profile and legacy not in profile:
++                    profile[legacy] = profile[stable]
++            return profile
+         else:
+             print(f"No profile data returned for {ticker}")
+             return None
+@@ -404,7 +394,7 @@ def get_fmp_company_profile(ticker: str, api_key: str) -> dict | None:
+ 
+ def get_fmp_market_cap(ticker: str, api_key: str) -> float | None:
+     """Fetches current market capitalization from FMP API."""
+-    url = f"https://financialmodelingprep.com/api/v3/market-capitalization/{ticker}?apikey={api_key}"
++    url = f"https://financialmodelingprep.com/stable/market-capitalization?symbol={ticker}&apikey={api_key}"
+     try:
+         response = requests.get(url)
+         response.raise_for_status()
+@@ -472,7 +462,7 @@ def get_comprehensive_company_metrics(ticker: str, api_key: str) -> dict:
+     
+     # 4. Get detailed quote data (volume, 52w range, shares outstanding)
+     try:
+-        quote_url = f"https://financialmodelingprep.com/api/v3/quote/{ticker}?apikey={api_key}"
++        quote_url = f"https://financialmodelingprep.com/stable/quote?symbol={ticker}&apikey={api_key}"
+         response = requests.get(quote_url)
+         response.raise_for_status()
+         quote_data = response.json()
+@@ -516,6 +506,8 @@ def get_comprehensive_company_metrics(ticker: str, api_key: str) -> dict:
+                 metrics['fwd_pe'] = latest_key_metrics['peRatio']
+             if latest_key_metrics.get('pbRatio'):
+                 metrics['pb_ratio'] = latest_key_metrics['pbRatio']
++            if pd.notna(latest_key_metrics.get('returnOnEquity')):
++                metrics['roe'] = latest_key_metrics['returnOnEquity'] * 100
+     except Exception as e:
+         print(f"Warning: Could not fetch financial ratios: {e}")
+     
+@@ -526,21 +518,25 @@ def get_comprehensive_company_metrics(ticker: str, api_key: str) -> dict:
+             annual_dividend = profile['lastDiv']  # Assuming this is annual
+             metrics['dividend_yield'] = (annual_dividend / current_price) * 100
+     
+-    # 7. Get shares outstanding for free float calculation (approximate)
++    # Stable quote omits shares. Fetch observed shares and free float explicitly.
+     try:
+-        if profile and profile.get('sharesOutstanding'):
+-            # Most companies have high free float, use a reasonable estimate
+-            metrics['free_float'] = 95.0  # Default assumption for large companies
++        response = requests.get(f"https://financialmodelingprep.com/stable/shares-float?symbol={ticker}&apikey={api_key}")
++        response.raise_for_status()
++        share_data = response.json()
++        if isinstance(share_data, list) and share_data:
++            metrics['shares_outstanding'] = share_data[0].get('outstandingShares')
++            metrics['free_float'] = share_data[0].get('freeFloat')
+     except Exception as e:
+-        print(f"Warning: Could not calculate free float: {e}")
++        print(f"Warning: Observed share float unavailable: {e}")
+     
+     # Fill in any remaining None values with sensible defaults
+-    if metrics['free_float'] is None:
+-        metrics['free_float'] = 95.0
+-    if metrics['sector'] is None:
+-        metrics['sector'] = 'Technology'  # Default for many stocks
++    # Missing float/sector remains unavailable; the legacy 95%/Technology
++    # assumptions are documented in the compatibility audit, not observations.
+     if metrics['rating'] is None:
+         metrics['rating'] = 'N/A'
++    metrics['target_price_source'] = 'FMP stable/price-target-consensus: targetConsensus (changed from legacy latest analyst target)'
++    metrics['rating_source'] = 'FMP stable/grades: latest newGrade or action'
++    metrics['shares_source'] = 'FMP stable/shares-float: outstandingShares'
+     
+     print(f"Successfully fetched metrics for {ticker}")
+     return metrics
+@@ -686,9 +682,9 @@ def get_company_news(ticker: str, api_key: str, days_back: int = 5, limit: int =
+         to_date = end_date.strftime('%Y-%m-%d')
+         
+         # FMP Stock News API endpoint
+-        url = f"https://financialmodelingprep.com/api/v3/stock_news"
++        url = "https://financialmodelingprep.com/stable/news/stock"
+         params = {
+-            'tickers': ticker,
++            'symbols': ticker,
+             'from': from_date,
+             'to': to_date,
+             'limit': limit,
+@@ -761,4 +757,4 @@ if __name__ == "__main__":
+     else:
+         print("\nSkipping live FMP API tests. Please provide a valid API key in config.ini.")
+ 
+-    print("\nmarket_data_api.py tests complete.")
+\ No newline at end of file
++    print("\nmarket_data_api.py tests complete.")
+diff --git a/finrobot_equity/core/src/modules/news_integrator.py b/finrobot_equity/core/src/modules/news_integrator.py
+index c89e9af..9dce80c 100644
+--- a/finrobot_equity/core/src/modules/news_integrator.py
++++ b/finrobot_equity/core/src/modules/news_integrator.py
+@@ -456,9 +456,9 @@ def get_enhanced_company_news(ticker: str, api_key: str, days_back: int = 5,
+         to_date = end_date.strftime('%Y-%m-%d')
+         
+         # 获取新闻
+-        url = "https://financialmodelingprep.com/api/v3/stock_news"
++        url = "https://financialmodelingprep.com/stable/news/stock"
+         params = {
+-            'tickers': ticker,
++            'symbols': ticker,
+             'from': from_date,
+             'to': to_date,
+             'limit': limit,
+diff --git a/finrobot_equity/core/src/modules/sensitivity_analyzer.py b/finrobot_equity/core/src/modules/sensitivity_analyzer.py
+index f5c1868..227eb6f 100644
+--- a/finrobot_equity/core/src/modules/sensitivity_analyzer.py
++++ b/finrobot_equity/core/src/modules/sensitivity_analyzer.py
+@@ -39,6 +39,7 @@ class SensitivityAnalyzer:
+         self.base_forecast = base_forecast.copy()
+         self.sensitivity_results = {}
+         self.confidence_intervals = {}
++        self.analysis_parameters = {}
+     
+     def _get_metric_value(self, metric: str, year: str) -> Optional[float]:
+         """获取指定指标和年份的值"""
+@@ -71,6 +72,7 @@ class SensitivityAnalyzer:
+             敏感性分析表格
+         """
+         logger.info("Analyzing revenue growth sensitivity...")
++        self.analysis_parameters['revenue'] = {'range': growth_range, 'steps': steps, 'unit': 'relative change in forecast revenue LEVEL, not growth-rate percentage points'}
+         
+         forecast_years = self._get_forecast_years()
+         if not forecast_years:
+@@ -118,6 +120,7 @@ class SensitivityAnalyzer:
+             敏感性分析表格
+         """
+         logger.info("Analyzing margin sensitivity...")
++        self.analysis_parameters['margin'] = {'range': margin_range, 'steps': steps, 'unit': 'absolute margin fraction change; multiply by 100 for percentage points'}
+         
+         forecast_years = self._get_forecast_years()
+         if not forecast_years:
+@@ -172,6 +175,7 @@ class SensitivityAnalyzer:
+             二维敏感性矩阵
+         """
+         logger.info("Generating comprehensive sensitivity table...")
++        self.analysis_parameters['combined'] = {'revenue_range': revenue_range, 'margin_range': margin_range, 'steps': steps, 'output': 'EBITDA in billions; not target price'}
+         
+         forecast_years = self._get_forecast_years()
+         if not forecast_years:
+@@ -249,7 +253,10 @@ class SensitivityAnalyzer:
+             'base': base_value,
+             'lower': lower,
+             'upper': upper,
+-            'confidence': confidence
++            'confidence': confidence,
++            'assumed_std_ratio': std_ratio,
++            'z_score': z_score,
++            'interpretation': 'Assumed normal scenario band; not an empirically calibrated confidence interval'
+         }
+         
+         logger.info(f"✅ {metric} CI: [{lower:.2f}, {upper:.2f}] at {confidence*100}% confidence")
+@@ -298,19 +305,21 @@ class SensitivityAnalyzer:
+         
+         # 置信区间
+         if self.confidence_intervals:
+-            summary_parts.append("### Confidence Intervals:")
++            summary_parts.append("### Assumed Scenario Bands (not calibrated confidence intervals):")
+             for metric, ci in self.confidence_intervals.items():
+                 summary_parts.append(
+                     f"- {metric}: ${ci['lower']/1e9:.1f}B - ${ci['upper']/1e9:.1f}B "
+-                    f"({ci['confidence']*100:.0f}% confidence)"
++                    f"(normal-theory {ci['confidence']*100:.0f}% label; fixed 15% assumed standard deviation)"
+                 )
+             summary_parts.append("")
+         
+         # 敏感性说明
+         summary_parts.append("### Sensitivity Notes:")
+-        summary_parts.append("- Revenue growth sensitivity: ±5% change in growth rate")
+-        summary_parts.append("- Margin sensitivity: ±2% change in EBITDA margin")
+-        summary_parts.append("- Combined effects shown in sensitivity matrix")
++        for name, parameters in self.analysis_parameters.items():
++            summary_parts.append(f"- {name}: {parameters}")
++        summary_parts.append("- Revenue shocks multiply each forecast revenue level; they do not compound an annual growth-rate shock.")
++        summary_parts.append("- A margin input of 0.02 is +2 percentage points, not a relative 2% margin change.")
++        summary_parts.append("- The native combined matrix is rounded EBITDA, not a target-price sensitivity or valuation confidence range.")
+         
+         return "\n".join(summary_parts)
+ 
+diff --git a/finrobot_equity/core/src/modules/valuation_engine.py b/finrobot_equity/core/src/modules/valuation_engine.py
+index 532de76..6233278 100644
+--- a/finrobot_equity/core/src/modules/valuation_engine.py
++++ b/finrobot_equity/core/src/modules/valuation_engine.py
+@@ -43,6 +43,25 @@ class ValuationEngine:
+         self.valuation_results: List[ValuationResult] = []
+         self.current_price = financial_data.get('current_price', 0)
+         self.shares_outstanding = financial_data.get('shares_outstanding', 1)
++
++    def _ebitda_period(self) -> Optional[str]:
++        """Expose the exact column chosen by the unchanged baseline selector."""
++        df = self.financial_data.get('analysis')
++        if df is not None:
++            years = [c for c in df.columns if isinstance(c, str) and (c.endswith('A') or c.endswith('E'))]
++            if years and self._get_metric('EBITDA'):
++                return years[-1]
++        return None
++
++    def _common_audit_assumptions(self) -> Dict:
++        return {
++            'Shares Outstanding': self.shares_outstanding,
++            'Shares Source': 'caller input' if 'shares_outstanding' in self.financial_data else 'FALLBACK: one share',
++            'Net Debt Source': 'ASSUMPTION: 10% of model enterprise value; not observed balance-sheet debt',
++            'Net Debt Fraction': 0.1,
++            'Price Floor': 0,
++            'Current Price': self.current_price,
++        }
+     
+     def _get_metric(self, metric: str, year: str = None) -> Optional[float]:
+         """获取财务指标"""
+@@ -119,8 +138,19 @@ class ValuationEngine:
+             high_estimate=max(high_price, 0),
+             assumptions={
+                 'EBITDA': ebitda,
++                'EBITDA Period': self._ebitda_period(),
++                'EBITDA Source': 'analysis last A/E column' if self._ebitda_period() else 'caller ebitda fallback (zero if missing)',
+                 'Target Multiple': target_multiple,
+-                'Historical Avg Multiple': avg_multiple
++                'Historical Avg Multiple': avg_multiple,
++                'Historical Multiple Sample Std': std_multiple,
++                'Multiple Source': 'key_metrics.enterpriseValueOverEBITDA sample mean' if not key_metrics.empty and 'enterpriseValueOverEBITDA' in key_metrics else 'FALLBACK: mean 12, standard deviation 3',
++                'Enterprise Value': ev,
++                'Net Debt': net_debt,
++                'Equity Value': equity_value,
++                'Range Debt Treatment': 'hold base-case assumed net debt fixed across low/high multiples',
++                'Discount Rate': None,
++                'Terminal Growth': None,
++                **self._common_audit_assumptions(),
+             },
+             confidence=0.7,
+             description=f"Based on {target_multiple:.1f}x EV/EBITDA multiple"
+@@ -190,7 +220,13 @@ class ValuationEngine:
+             assumptions={
+                 'Peer Avg Multiple': avg_multiple,
+                 'Peer Range': f"{min_multiple:.1f}x - {max_multiple:.1f}x",
+-                'Number of Peers': len(peer_multiples)
++                'Number of Peers': len(peer_multiples),
++                'EBITDA': ebitda,
++                'EBITDA Period': self._ebitda_period(),
++                'Net Debt': net_debt,
++                'Peer Multiples': peer_multiples,
++                'Range Debt Treatment': 'hold base-case assumed net debt fixed across peer multiples',
++                **self._common_audit_assumptions(),
+             },
+             confidence=0.6,
+             description=f"Based on {len(peer_multiples)} peer companies"
+@@ -272,7 +308,20 @@ class ValuationEngine:
+             target_price=max(target_price, 0),
+             low_estimate=max(low_price, 0),
+             high_estimate=max(high_price, 0),
+-            assumptions=default_assumptions,
++            assumptions={
++                **default_assumptions,
++                'Base FCF': fcf,
++                'FCF Source': 'caller free_cash_flow' if self.financial_data.get('free_cash_flow', 0) else 'FALLBACK: 60% of terminal forecast EBITDA',
++                'FCF Period': self.financial_data.get('free_cash_flow_period') if self.financial_data.get('free_cash_flow', 0) else self._ebitda_period(),
++                'PV Explicit FCF': pv_fcf,
++                'Terminal Value': terminal_value,
++                'PV Terminal Value': pv_terminal,
++                'Enterprise Value': enterprise_value,
++                'Net Debt': net_debt,
++                'Equity Value': equity_value,
++                'Range Calculation': 'only terminal discount denominator varies by WACC +/-1pp; explicit PV, terminal value and debt remain fixed',
++                **self._common_audit_assumptions(),
++            },
+             confidence=0.5,
+             description=f"Based on {default_assumptions['wacc']*100:.1f}% WACC"
+         )

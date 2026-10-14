@@ -1,0 +1,1660 @@
+{
+  "original_text": "Apple Inc. reported strong financial results for its fiscal third quarter of 2026, with revenue and earnings per share significantly exceeding prior year levels, supported by tariff refunds. The company continues to demonstrate solid revenue growth and margin expansion, reflecting operational efficiency and favorable market conditions. Investors should closely watch the company's ongoing strategic initiatives and product developments amid a competitive landscape that includes peers like AMD and NVIDIA.\n\nKey developments include Apple's fiscal Q3 2026 earnings report, which highlighted a 16% year-over-year revenue increase to $109.4 billion and a 29% rise in diluted EPS to $2.02, boosted by tariff refunds that improved gross margins by about 2 percentage points. This strong financial performance positively supports Apple's investment thesis and is likely to have an immediate to medium-term beneficial effect on the stock price.\n\nAnother important point is Apple’s continued revenue growth trajectory with a compound annual growth rate (CAGR) of approximately 3.3% projected through 2028, alongside expanding contribution and EBITDA margins. This suggests sustained profitability and operational leverage, supporting a long-term positive outlook.\n\nComparative analysis with peers shows Apple maintaining a robust EBITDA profile, significantly larger than AMD and competitive with NVIDIA, though valuation multiples such as EV/EBITDA have increased somewhat, reflecting investor confidence but also potential premium pricing.\n\nOverall, the tone of recent news and financial disclosures is predominantly positive, driven by strong earnings growth, margin improvement, and strategic positioning. While valuation multiples are elevated, the solid financial metrics and growth prospects suggest that Apple’s near-term stock performance could remain resilient, supported by continued innovation and market demand. Investors should monitor tariff policy developments and competitive dynamics for any changes that might impact Apple's outlook.",
+  "revised_text": "[UNVERIFIED - deterministic evidence/number check failed] Apple Inc. reported strong financial results for its fiscal third quarter of 2026, with revenue and earnings per share significantly exceeding prior year levels, supported by tariff refunds.\n\nApple continues to demonstrate solid revenue growth and margin expansion.\n\n[UNVERIFIED - evidence not supplied] Apple's revenue growth and margin expansion reflect operational efficiency and favorable market conditions.\n\n[UNVERIFIED - deterministic evidence/number check failed] Investors should closely watch the company's ongoing strategic initiatives and product developments amid a competitive landscape that includes peers like AMD and NVIDIA.\n\n[UNVERIFIED - deterministic evidence/number check failed] Key developments include Apple's fiscal Q3 2026 earnings report, which highlighted a 16% year-over-year revenue increase to $109.4 billion and a 29% rise in diluted EPS to $2.02, boosted by tariff refunds that improved gross margins by about 2 percentage points.\n\n[UNVERIFIED - evidence not supplied] Apple's strong financial performance is likely to have an immediate to medium-term beneficial effect on the stock price.\n\n[UNVERIFIED - deterministic evidence/number check failed] Another important point is Apple’s continued revenue growth trajectory with a compound annual growth rate (CAGR) of approximately 3.3% projected through 2028, alongside expanding contribution and EBITDA margins.\n\nApple's contribution and EBITDA margins are expanding through 2028.\n\n[UNVERIFIED - evidence not supplied] Apple's expanding margins and revenue growth suggest sustained profitability and operational leverage.\n\n[UNVERIFIED - evidence not supplied] Apple's expanding margins and revenue growth support a long-term positive outlook.\n\nApple maintains a robust EBITDA profile compared to peers.\n\nApple's EBITDA is significantly larger than AMD's.\n\nApple's EBITDA is competitive with NVIDIA's.\n\nApple's valuation multiples such as EV/EBITDA have increased somewhat.\n\n[UNVERIFIED - evidence not supplied] Apple's increased valuation multiples reflect investor confidence and potential premium pricing.\n\nThe tone of recent news and financial disclosures about Apple is predominantly positive.\n\n[UNVERIFIED - evidence not supplied] Apple's positive news tone is driven by strong earnings growth, margin improvement, and strategic positioning.\n\nApple's valuation multiples are elevated.\n\n[UNVERIFIED - evidence not supplied] Apple's solid financial metrics and growth prospects suggest its near-term stock performance could remain resilient, supported by continued innovation and market demand.\n\n[UNVERIFIED - evidence not supplied] Investors should monitor tariff policy developments and competitive dynamics for any changes that might impact Apple's outlook.",
+  "claims": [
+    {
+      "claim_id": "u0c0",
+      "source_id": 0,
+      "source_start": 0,
+      "source_end": 190,
+      "source_quote_occurrences": 1,
+      "original_quote": "Apple Inc. reported strong financial results for its fiscal third quarter of 2026, with revenue and earnings per share significantly exceeding prior year levels, supported by tariff refunds.",
+      "claim": "Apple Inc. reported strong financial results for its fiscal third quarter of 2026.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 45,
+          "quote": "Apple today announced financial results for its fiscal 2026 third quarter ended June 27, 2026. The Company posted quarterly revenue of $109.4 billion, up 16 percent year over year. Company gross margin was 50.1 percent, including a favorable impact of approximately 2 percentage points from tariff refunds. Diluted earnings per share was $2.02, up 29 percent year over year, and included a favorable impact of $0.11 from tariff refunds.",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The news summary states Apple announced financial results for its fiscal 2026 third quarter and describes them as strong.",
+      "action": "keep",
+      "revised_claim": "Apple Inc. reported strong financial results for its fiscal third quarter of 2026.",
+      "number_bindings": [],
+      "numeric_results": [
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2026:missing_binding"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Apple Inc. reported strong financial results for its fiscal third quarter of 2026, with revenue and earnings per share significantly exceeding prior year levels, supported by tariff refunds.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u0c1",
+      "source_id": 0,
+      "source_start": 0,
+      "source_end": 190,
+      "source_quote_occurrences": 1,
+      "original_quote": "Apple Inc. reported strong financial results for its fiscal third quarter of 2026, with revenue and earnings per share significantly exceeding prior year levels, supported by tariff refunds.",
+      "claim": "Apple Inc.'s revenue and earnings per share for fiscal Q3 2026 significantly exceeded prior year levels, supported by tariff refunds.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 45,
+          "quote": "Apple today announced financial results for its fiscal 2026 third quarter ended June 27, 2026. The Company posted quarterly revenue of $109.4 billion, up 16 percent year over year. Company gross margin was 50.1 percent, including a favorable impact of approximately 2 percentage points from tariff refunds. Diluted earnings per share was $2.02, up 29 percent year over year, and included a favorable impact of $0.11 from tariff refunds.",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The news summary provides the revenue and EPS for Q3 2026 and states both were up year over year, with tariff refunds contributing.",
+      "action": "keep",
+      "revised_claim": "Apple Inc.'s revenue and earnings per share for fiscal Q3 2026 significantly exceeded prior year levels, supported by tariff refunds.",
+      "number_bindings": [],
+      "numeric_results": [
+        {
+          "token": "3",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:3:missing_binding",
+        "numeric_check_failed:2026:missing_binding"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Apple Inc. reported strong financial results for its fiscal third quarter of 2026, with revenue and earnings per share significantly exceeding prior year levels, supported by tariff refunds.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u0c2",
+      "source_id": 0,
+      "source_start": 191,
+      "source_end": 337,
+      "source_quote_occurrences": 1,
+      "original_quote": "The company continues to demonstrate solid revenue growth and margin expansion, reflecting operational efficiency and favorable market conditions.",
+      "claim": "Apple continues to demonstrate solid revenue growth and margin expansion.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 45,
+          "quote": "Apple today announced financial results for its fiscal 2026 third quarter ended June 27, 2026. The Company posted quarterly revenue of $109.4 billion, up 16 percent year over year. Company gross margin was 50.1 percent, including a favorable impact of approximately 2 percentage points from tariff refunds. Diluted earnings per share was $2.02, up 29 percent year over year, and included a favorable impact of $0.11 from tariff refunds.",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The news summary states revenue and gross margin increased year over year for Q3 2026.",
+      "action": "keep",
+      "revised_claim": "Apple continues to demonstrate solid revenue growth and margin expansion.",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "Apple continues to demonstrate solid revenue growth and margin expansion.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u0c3",
+      "source_id": 0,
+      "source_start": 191,
+      "source_end": 337,
+      "source_quote_occurrences": 1,
+      "original_quote": "The company continues to demonstrate solid revenue growth and margin expansion, reflecting operational efficiency and favorable market conditions.",
+      "claim": "Apple's revenue growth and margin expansion reflect operational efficiency and favorable market conditions.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for the causal explanation linking operational efficiency and market conditions to the financial results.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Apple's revenue growth and margin expansion reflect operational efficiency and favorable market conditions.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u0c4",
+      "source_id": 0,
+      "source_start": 338,
+      "source_end": 507,
+      "source_quote_occurrences": 1,
+      "original_quote": "Investors should closely watch the company's ongoing strategic initiatives and product developments amid a competitive landscape that includes peers like AMD and NVIDIA.",
+      "claim": "Apple's competitive landscape includes peers like AMD and NVIDIA.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 18,
+          "quote": "## Peer EBITDA Comparison",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "Peer comparison tables include AMD and NVIDIA alongside Apple.",
+      "action": "keep",
+      "revised_claim": "Apple's competitive landscape includes peers like AMD and NVIDIA.",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "structural_citation_only_does_not_establish_claim"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Investors should closely watch the company's ongoing strategic initiatives and product developments amid a competitive landscape that includes peers like AMD and NVIDIA.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u1c0",
+      "source_id": 1,
+      "source_start": 509,
+      "source_end": 771,
+      "source_quote_occurrences": 1,
+      "original_quote": "Key developments include Apple's fiscal Q3 2026 earnings report, which highlighted a 16% year-over-year revenue increase to $109.4 billion and a 29% rise in diluted EPS to $2.02, boosted by tariff refunds that improved gross margins by about 2 percentage points.",
+      "claim": "Apple's fiscal Q3 2026 earnings report highlighted a 16% year-over-year revenue increase to $109.4 billion.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 45,
+          "quote": "Apple today announced financial results for its fiscal 2026 third quarter ended June 27, 2026. The Company posted quarterly revenue of $109.4 billion, up 16 percent year over year. Company gross margin was 50.1 percent, including a favorable impact of approximately 2 percentage points from tariff refunds. Diluted earnings per share was $2.02, up 29 percent year over year, and included a favorable impact of $0.11 from tariff refunds.",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The news summary states quarterly revenue of $109.4 billion, up 16 percent year over year.",
+      "action": "keep",
+      "revised_claim": "Apple's fiscal Q3 2026 earnings report highlighted a 16% year-over-year revenue increase to $109.4 billion.",
+      "number_bindings": [
+        {
+          "claim_number": "2026",
+          "evidence_line": 45,
+          "evidence_number": "2026",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "16",
+          "evidence_line": 45,
+          "evidence_number": "16",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "109.4",
+          "evidence_line": 45,
+          "evidence_number": "109.4",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "3",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2026",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "16%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "109.4",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:3:missing_binding",
+        "numeric_check_failed:16%:missing_binding"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Key developments include Apple's fiscal Q3 2026 earnings report, which highlighted a 16% year-over-year revenue increase to $109.4 billion and a 29% rise in diluted EPS to $2.02, boosted by tariff refunds that improved gross margins by about 2 percentage points.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u1c1",
+      "source_id": 1,
+      "source_start": 509,
+      "source_end": 771,
+      "source_quote_occurrences": 1,
+      "original_quote": "Key developments include Apple's fiscal Q3 2026 earnings report, which highlighted a 16% year-over-year revenue increase to $109.4 billion and a 29% rise in diluted EPS to $2.02, boosted by tariff refunds that improved gross margins by about 2 percentage points.",
+      "claim": "Apple's fiscal Q3 2026 earnings report highlighted a 29% rise in diluted EPS to $2.02.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 45,
+          "quote": "Apple today announced financial results for its fiscal 2026 third quarter ended June 27, 2026. The Company posted quarterly revenue of $109.4 billion, up 16 percent year over year. Company gross margin was 50.1 percent, including a favorable impact of approximately 2 percentage points from tariff refunds. Diluted earnings per share was $2.02, up 29 percent year over year, and included a favorable impact of $0.11 from tariff refunds.",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The news summary states diluted earnings per share was $2.02, up 29 percent year over year.",
+      "action": "keep",
+      "revised_claim": "Apple's fiscal Q3 2026 earnings report highlighted a 29% rise in diluted EPS to $2.02.",
+      "number_bindings": [
+        {
+          "claim_number": "29",
+          "evidence_line": 45,
+          "evidence_number": "29",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2.02",
+          "evidence_line": 45,
+          "evidence_number": "2.02",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "3",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "29%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2.02",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:3:missing_binding",
+        "numeric_check_failed:2026:missing_binding",
+        "numeric_check_failed:29%:missing_binding"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Key developments include Apple's fiscal Q3 2026 earnings report, which highlighted a 16% year-over-year revenue increase to $109.4 billion and a 29% rise in diluted EPS to $2.02, boosted by tariff refunds that improved gross margins by about 2 percentage points.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u1c2",
+      "source_id": 1,
+      "source_start": 509,
+      "source_end": 771,
+      "source_quote_occurrences": 1,
+      "original_quote": "Key developments include Apple's fiscal Q3 2026 earnings report, which highlighted a 16% year-over-year revenue increase to $109.4 billion and a 29% rise in diluted EPS to $2.02, boosted by tariff refunds that improved gross margins by about 2 percentage points.",
+      "claim": "Tariff refunds improved Apple's gross margins by about 2 percentage points in fiscal Q3 2026.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 45,
+          "quote": "Apple today announced financial results for its fiscal 2026 third quarter ended June 27, 2026. The Company posted quarterly revenue of $109.4 billion, up 16 percent year over year. Company gross margin was 50.1 percent, including a favorable impact of approximately 2 percentage points from tariff refunds. Diluted earnings per share was $2.02, up 29 percent year over year, and included a favorable impact of $0.11 from tariff refunds.",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The news summary states gross margin was 50.1 percent, including a favorable impact of approximately 2 percentage points from tariff refunds.",
+      "action": "keep",
+      "revised_claim": "Tariff refunds improved Apple's gross margins by about 2 percentage points in fiscal Q3 2026.",
+      "number_bindings": [
+        {
+          "claim_number": "2",
+          "evidence_line": 45,
+          "evidence_number": "2",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "3",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:3:missing_binding",
+        "numeric_check_failed:2026:missing_binding"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Key developments include Apple's fiscal Q3 2026 earnings report, which highlighted a 16% year-over-year revenue increase to $109.4 billion and a 29% rise in diluted EPS to $2.02, boosted by tariff refunds that improved gross margins by about 2 percentage points.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u1c3",
+      "source_id": 1,
+      "source_start": 772,
+      "source_end": 939,
+      "source_quote_occurrences": 1,
+      "original_quote": "This strong financial performance positively supports Apple's investment thesis and is likely to have an immediate to medium-term beneficial effect on the stock price.",
+      "claim": "Apple's strong financial performance is likely to have an immediate to medium-term beneficial effect on the stock price.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for the effect of financial performance on the stock price.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Apple's strong financial performance is likely to have an immediate to medium-term beneficial effect on the stock price.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u2c0",
+      "source_id": 2,
+      "source_start": 941,
+      "source_end": 1152,
+      "source_quote_occurrences": 1,
+      "original_quote": "Another important point is Apple’s continued revenue growth trajectory with a compound annual growth rate (CAGR) of approximately 3.3% projected through 2028, alongside expanding contribution and EBITDA margins.",
+      "claim": "Apple's compound annual revenue growth rate is projected to be approximately 3.3% through 2028.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A              | 2022A              | 2023A             | 2024A             | 2025A            | 2026E          | 2027E          | 2028E           | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 6,
+          "quote": "|  0 | Revenue             | 365817000000.0     | 394328000000.0     | 383285000000.0    | 391035000000.0    | 416161000000.0   | 436969050000.0 | 463187193000.0 | 481714680720.0  | 3.3%   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The financial table shows a CAGR of 3.3% for revenue through 2028E.",
+      "action": "keep",
+      "revised_claim": "Apple's compound annual revenue growth rate is projected to be approximately 3.3% through 2028.",
+      "number_bindings": [
+        {
+          "claim_number": "3.3",
+          "evidence_line": 6,
+          "evidence_number": "3.3",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "3.3%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:3.3%:missing_binding"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Another important point is Apple’s continued revenue growth trajectory with a compound annual growth rate (CAGR) of approximately 3.3% projected through 2028, alongside expanding contribution and EBITDA margins.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u2c1",
+      "source_id": 2,
+      "source_start": 941,
+      "source_end": 1152,
+      "source_quote_occurrences": 1,
+      "original_quote": "Another important point is Apple’s continued revenue growth trajectory with a compound annual growth rate (CAGR) of approximately 3.3% projected through 2028, alongside expanding contribution and EBITDA margins.",
+      "claim": "Apple's contribution and EBITDA margins are expanding through 2028.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2021A              | 2022A              | 2023A             | 2024A             | 2025A            | 2026E          | 2027E          | 2028E           | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 10,
+          "quote": "|  4 | Contribution Margin | 41.8%              | 43.3%              | 44.1%             | 46.2%             | 46.9%            | 47.9%          | 48.9%          | 49.9%           | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 12,
+          "quote": "|  6 | EBITDA Margin       | 33.7%              | 33.8%              | 33.7%             | 34.5%             | 34.7%            | 41.8%          | 43.3%          | 44.8%           | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The financial table shows contribution margin and EBITDA margin increasing from 2023A to 2028E.",
+      "action": "keep",
+      "revised_claim": "Apple's contribution and EBITDA margins are expanding through 2028.",
+      "number_bindings": [
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2028",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "Apple's contribution and EBITDA margins are expanding through 2028.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u2c2",
+      "source_id": 2,
+      "source_start": 1153,
+      "source_end": 1257,
+      "source_quote_occurrences": 1,
+      "original_quote": "This suggests sustained profitability and operational leverage, supporting a long-term positive outlook.",
+      "claim": "Apple's expanding margins and revenue growth suggest sustained profitability and operational leverage.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for the causal link between margin/revenue growth and sustained profitability/operational leverage.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Apple's expanding margins and revenue growth suggest sustained profitability and operational leverage.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u2c3",
+      "source_id": 2,
+      "source_start": 1153,
+      "source_end": 1257,
+      "source_quote_occurrences": 1,
+      "original_quote": "This suggests sustained profitability and operational leverage, supporting a long-term positive outlook.",
+      "claim": "Apple's expanding margins and revenue growth support a long-term positive outlook.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for the causal link to a long-term positive outlook.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Apple's expanding margins and revenue growth support a long-term positive outlook.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u3c0",
+      "source_id": 3,
+      "source_start": 1259,
+      "source_end": 1535,
+      "source_quote_occurrences": 1,
+      "original_quote": "Comparative analysis with peers shows Apple maintaining a robust EBITDA profile, significantly larger than AMD and competitive with NVIDIA, though valuation multiples such as EV/EBITDA have increased somewhat, reflecting investor confidence but also potential premium pricing.",
+      "claim": "Apple maintains a robust EBITDA profile compared to peers.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 18,
+          "quote": "## Peer EBITDA Comparison",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 21,
+          "quote": "|   2021 |   1.23136e+11 |   4.166e+09   | nan           |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 22,
+          "quote": "|   2022 |   1.33138e+11 |   5.534e+09   |   1.1351e+10  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 23,
+          "quote": "|   2023 |   1.29188e+11 |   4.149e+09   |   5.986e+09   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 24,
+          "quote": "|   2024 |   1.3493e+11  |   5.258e+09   |   3.5583e+10  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 25,
+          "quote": "|   2025 |   1.44427e+11 |   7.275e+09   |   8.6137e+10  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 27,
+          "quote": "|   2027 |   1.50435e+11 |   8.60087e+09 |   3.82001e+11 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "Peer EBITDA table shows Apple has higher EBITDA than AMD and is competitive with NVIDIA in some years.",
+      "action": "keep",
+      "revised_claim": "Apple maintains a robust EBITDA profile compared to peers.",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "Apple maintains a robust EBITDA profile compared to peers.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u3c1",
+      "source_id": 3,
+      "source_start": 1259,
+      "source_end": 1535,
+      "source_quote_occurrences": 1,
+      "original_quote": "Comparative analysis with peers shows Apple maintaining a robust EBITDA profile, significantly larger than AMD and competitive with NVIDIA, though valuation multiples such as EV/EBITDA have increased somewhat, reflecting investor confidence but also potential premium pricing.",
+      "claim": "Apple's EBITDA is significantly larger than AMD's.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 18,
+          "quote": "## Peer EBITDA Comparison",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 21,
+          "quote": "|   2021 |   1.23136e+11 |   4.166e+09   | nan           |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 22,
+          "quote": "|   2022 |   1.33138e+11 |   5.534e+09   |   1.1351e+10  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 23,
+          "quote": "|   2023 |   1.29188e+11 |   4.149e+09   |   5.986e+09   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 24,
+          "quote": "|   2024 |   1.3493e+11  |   5.258e+09   |   3.5583e+10  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 25,
+          "quote": "|   2025 |   1.44427e+11 |   7.275e+09   |   8.6137e+10  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 27,
+          "quote": "|   2027 |   1.50435e+11 |   8.60087e+09 |   3.82001e+11 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "Peer EBITDA table shows Apple's EBITDA is much higher than AMD's in all years shown.",
+      "action": "keep",
+      "revised_claim": "Apple's EBITDA is significantly larger than AMD's.",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "Apple's EBITDA is significantly larger than AMD's.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u3c2",
+      "source_id": 3,
+      "source_start": 1259,
+      "source_end": 1535,
+      "source_quote_occurrences": 1,
+      "original_quote": "Comparative analysis with peers shows Apple maintaining a robust EBITDA profile, significantly larger than AMD and competitive with NVIDIA, though valuation multiples such as EV/EBITDA have increased somewhat, reflecting investor confidence but also potential premium pricing.",
+      "claim": "Apple's EBITDA is competitive with NVIDIA's.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 18,
+          "quote": "## Peer EBITDA Comparison",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 22,
+          "quote": "|   2022 |   1.33138e+11 |   5.534e+09   |   1.1351e+10  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 23,
+          "quote": "|   2023 |   1.29188e+11 |   4.149e+09   |   5.986e+09   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 24,
+          "quote": "|   2024 |   1.3493e+11  |   5.258e+09   |   3.5583e+10  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 25,
+          "quote": "|   2025 |   1.44427e+11 |   7.275e+09   |   8.6137e+10  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 27,
+          "quote": "|   2027 |   1.50435e+11 |   8.60087e+09 |   3.82001e+11 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "Peer EBITDA table shows Apple's EBITDA is similar to or exceeds NVIDIA's in some years.",
+      "action": "keep",
+      "revised_claim": "Apple's EBITDA is competitive with NVIDIA's.",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "Apple's EBITDA is competitive with NVIDIA's.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u3c3",
+      "source_id": 3,
+      "source_start": 1259,
+      "source_end": 1535,
+      "source_quote_occurrences": 1,
+      "original_quote": "Comparative analysis with peers shows Apple maintaining a robust EBITDA profile, significantly larger than AMD and competitive with NVIDIA, though valuation multiples such as EV/EBITDA have increased somewhat, reflecting investor confidence but also potential premium pricing.",
+      "claim": "Apple's valuation multiples such as EV/EBITDA have increased somewhat.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 29,
+          "quote": "## Peer EV/EBITDA Comparison",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 32,
+          "quote": "|   2021 |  20.7521 |  42.1013 | nan      |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 33,
+          "quote": "|   2022 |  19.1395 |  17.9136 |  54.7187 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 34,
+          "quote": "|   2023 |  21.5928 |  57.1197 |  81.0476 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 35,
+          "quote": "|   2024 |  26.564  |  38.2717 |  43.4522 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 36,
+          "quote": "|   2025 |  26.9699 |  47.8456 |  33.7774 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "Peer EV/EBITDA table shows Apple's EV/EBITDA rising from 19.1 in 2022 to 26.6 in 2024 and 27.0 in 2025.",
+      "action": "keep",
+      "revised_claim": "Apple's valuation multiples such as EV/EBITDA have increased somewhat.",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "Apple's valuation multiples such as EV/EBITDA have increased somewhat.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u3c4",
+      "source_id": 3,
+      "source_start": 1259,
+      "source_end": 1535,
+      "source_quote_occurrences": 1,
+      "original_quote": "Comparative analysis with peers shows Apple maintaining a robust EBITDA profile, significantly larger than AMD and competitive with NVIDIA, though valuation multiples such as EV/EBITDA have increased somewhat, reflecting investor confidence but also potential premium pricing.",
+      "claim": "Apple's increased valuation multiples reflect investor confidence and potential premium pricing.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for the causal explanation linking increased multiples to investor confidence or premium pricing.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Apple's increased valuation multiples reflect investor confidence and potential premium pricing.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u4c0",
+      "source_id": 4,
+      "source_start": 1537,
+      "source_end": 1703,
+      "source_quote_occurrences": 1,
+      "original_quote": "Overall, the tone of recent news and financial disclosures is predominantly positive, driven by strong earnings growth, margin improvement, and strategic positioning.",
+      "claim": "The tone of recent news and financial disclosures about Apple is predominantly positive.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 45,
+          "quote": "Apple today announced financial results for its fiscal 2026 third quarter ended June 27, 2026. The Company posted quarterly revenue of $109.4 billion, up 16 percent year over year. Company gross margin was 50.1 percent, including a favorable impact of approximately 2 percentage points from tariff refunds. Diluted earnings per share was $2.02, up 29 percent year over year, and included a favorable impact of $0.11 from tariff refunds.",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The news summary and financial results are described as strong and positive.",
+      "action": "keep",
+      "revised_claim": "The tone of recent news and financial disclosures about Apple is predominantly positive.",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "The tone of recent news and financial disclosures about Apple is predominantly positive.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u4c1",
+      "source_id": 4,
+      "source_start": 1537,
+      "source_end": 1703,
+      "source_quote_occurrences": 1,
+      "original_quote": "Overall, the tone of recent news and financial disclosures is predominantly positive, driven by strong earnings growth, margin improvement, and strategic positioning.",
+      "claim": "Apple's positive news tone is driven by strong earnings growth, margin improvement, and strategic positioning.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for the causal explanation linking these factors to the positive tone.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Apple's positive news tone is driven by strong earnings growth, margin improvement, and strategic positioning.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u4c2",
+      "source_id": 4,
+      "source_start": 1704,
+      "source_end": 1918,
+      "source_quote_occurrences": 1,
+      "original_quote": "While valuation multiples are elevated, the solid financial metrics and growth prospects suggest that Apple’s near-term stock performance could remain resilient, supported by continued innovation and market demand.",
+      "claim": "Apple's valuation multiples are elevated.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 29,
+          "quote": "## Peer EV/EBITDA Comparison",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 32,
+          "quote": "|   2021 |  20.7521 |  42.1013 | nan      |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 33,
+          "quote": "|   2022 |  19.1395 |  17.9136 |  54.7187 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 34,
+          "quote": "|   2023 |  21.5928 |  57.1197 |  81.0476 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 35,
+          "quote": "|   2024 |  26.564  |  38.2717 |  43.4522 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 36,
+          "quote": "|   2025 |  26.9699 |  47.8456 |  33.7774 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "Peer EV/EBITDA table shows Apple's EV/EBITDA is relatively high in recent years.",
+      "action": "keep",
+      "revised_claim": "Apple's valuation multiples are elevated.",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "Apple's valuation multiples are elevated.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u4c3",
+      "source_id": 4,
+      "source_start": 1704,
+      "source_end": 1918,
+      "source_quote_occurrences": 1,
+      "original_quote": "While valuation multiples are elevated, the solid financial metrics and growth prospects suggest that Apple’s near-term stock performance could remain resilient, supported by continued innovation and market demand.",
+      "claim": "Apple's solid financial metrics and growth prospects suggest its near-term stock performance could remain resilient, supported by continued innovation and market demand.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for the causal link between financial metrics/growth and stock performance or for the support from innovation and market demand.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Apple's solid financial metrics and growth prospects suggest its near-term stock performance could remain resilient, supported by continued innovation and market demand.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    },
+    {
+      "claim_id": "u4c4",
+      "source_id": 4,
+      "source_start": 1919,
+      "source_end": 2046,
+      "source_quote_occurrences": 1,
+      "original_quote": "Investors should monitor tariff policy developments and competitive dynamics for any changes that might impact Apple's outlook.",
+      "claim": "Investors should monitor tariff policy developments and competitive dynamics for any changes that might impact Apple's outlook.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "This is a forward-looking recommendation without direct evidence.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Investors should monitor tariff policy developments and competitive dynamics for any changes that might impact Apple's outlook.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "49b23ad631447601311277f5f222fb854f76382f136807df4a52e1fe94dfa679"
+    }
+  ],
+  "units": [
+    {
+      "source_id": 0,
+      "claims": [
+        {
+          "original_quote": "Apple Inc. reported strong financial results for its fiscal third quarter of 2026, with revenue and earnings per share significantly exceeding prior year levels, supported by tariff refunds.",
+          "claim": "Apple Inc. reported strong financial results for its fiscal third quarter of 2026.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 45
+            }
+          ],
+          "reason": "The news summary states Apple announced financial results for its fiscal 2026 third quarter and describes them as strong.",
+          "action": "keep",
+          "revised_claim": "Apple Inc. reported strong financial results for its fiscal third quarter of 2026.",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Apple Inc. reported strong financial results for its fiscal third quarter of 2026, with revenue and earnings per share significantly exceeding prior year levels, supported by tariff refunds.",
+          "claim": "Apple Inc.'s revenue and earnings per share for fiscal Q3 2026 significantly exceeded prior year levels, supported by tariff refunds.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 45
+            }
+          ],
+          "reason": "The news summary provides the revenue and EPS for Q3 2026 and states both were up year over year, with tariff refunds contributing.",
+          "action": "keep",
+          "revised_claim": "Apple Inc.'s revenue and earnings per share for fiscal Q3 2026 significantly exceeded prior year levels, supported by tariff refunds.",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The company continues to demonstrate solid revenue growth and margin expansion, reflecting operational efficiency and favorable market conditions.",
+          "claim": "Apple continues to demonstrate solid revenue growth and margin expansion.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 45
+            }
+          ],
+          "reason": "The news summary states revenue and gross margin increased year over year for Q3 2026.",
+          "action": "keep",
+          "revised_claim": "Apple continues to demonstrate solid revenue growth and margin expansion.",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The company continues to demonstrate solid revenue growth and margin expansion, reflecting operational efficiency and favorable market conditions.",
+          "claim": "Apple's revenue growth and margin expansion reflect operational efficiency and favorable market conditions.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for the causal explanation linking operational efficiency and market conditions to the financial results.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Investors should closely watch the company's ongoing strategic initiatives and product developments amid a competitive landscape that includes peers like AMD and NVIDIA.",
+          "claim": "Apple's competitive landscape includes peers like AMD and NVIDIA.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 18
+            }
+          ],
+          "reason": "Peer comparison tables include AMD and NVIDIA alongside Apple.",
+          "action": "keep",
+          "revised_claim": "Apple's competitive landscape includes peers like AMD and NVIDIA.",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 1,
+      "claims": [
+        {
+          "original_quote": "Key developments include Apple's fiscal Q3 2026 earnings report, which highlighted a 16% year-over-year revenue increase to $109.4 billion and a 29% rise in diluted EPS to $2.02, boosted by tariff refunds that improved gross margins by about 2 percentage points.",
+          "claim": "Apple's fiscal Q3 2026 earnings report highlighted a 16% year-over-year revenue increase to $109.4 billion.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 45
+            }
+          ],
+          "reason": "The news summary states quarterly revenue of $109.4 billion, up 16 percent year over year.",
+          "action": "keep",
+          "revised_claim": "Apple's fiscal Q3 2026 earnings report highlighted a 16% year-over-year revenue increase to $109.4 billion.",
+          "number_bindings": [
+            {
+              "claim_number": "2026",
+              "evidence_line": 45,
+              "evidence_number": "2026",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "16",
+              "evidence_line": 45,
+              "evidence_number": "16",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "109.4",
+              "evidence_line": 45,
+              "evidence_number": "109.4",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "Key developments include Apple's fiscal Q3 2026 earnings report, which highlighted a 16% year-over-year revenue increase to $109.4 billion and a 29% rise in diluted EPS to $2.02, boosted by tariff refunds that improved gross margins by about 2 percentage points.",
+          "claim": "Apple's fiscal Q3 2026 earnings report highlighted a 29% rise in diluted EPS to $2.02.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 45
+            }
+          ],
+          "reason": "The news summary states diluted earnings per share was $2.02, up 29 percent year over year.",
+          "action": "keep",
+          "revised_claim": "Apple's fiscal Q3 2026 earnings report highlighted a 29% rise in diluted EPS to $2.02.",
+          "number_bindings": [
+            {
+              "claim_number": "29",
+              "evidence_line": 45,
+              "evidence_number": "29",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2.02",
+              "evidence_line": 45,
+              "evidence_number": "2.02",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "Key developments include Apple's fiscal Q3 2026 earnings report, which highlighted a 16% year-over-year revenue increase to $109.4 billion and a 29% rise in diluted EPS to $2.02, boosted by tariff refunds that improved gross margins by about 2 percentage points.",
+          "claim": "Tariff refunds improved Apple's gross margins by about 2 percentage points in fiscal Q3 2026.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 45
+            }
+          ],
+          "reason": "The news summary states gross margin was 50.1 percent, including a favorable impact of approximately 2 percentage points from tariff refunds.",
+          "action": "keep",
+          "revised_claim": "Tariff refunds improved Apple's gross margins by about 2 percentage points in fiscal Q3 2026.",
+          "number_bindings": [
+            {
+              "claim_number": "2",
+              "evidence_line": 45,
+              "evidence_number": "2",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "This strong financial performance positively supports Apple's investment thesis and is likely to have an immediate to medium-term beneficial effect on the stock price.",
+          "claim": "Apple's strong financial performance is likely to have an immediate to medium-term beneficial effect on the stock price.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for the effect of financial performance on the stock price.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 2,
+      "claims": [
+        {
+          "original_quote": "Another important point is Apple’s continued revenue growth trajectory with a compound annual growth rate (CAGR) of approximately 3.3% projected through 2028, alongside expanding contribution and EBITDA margins.",
+          "claim": "Apple's compound annual revenue growth rate is projected to be approximately 3.3% through 2028.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 6
+            }
+          ],
+          "reason": "The financial table shows a CAGR of 3.3% for revenue through 2028E.",
+          "action": "keep",
+          "revised_claim": "Apple's compound annual revenue growth rate is projected to be approximately 3.3% through 2028.",
+          "number_bindings": [
+            {
+              "claim_number": "3.3",
+              "evidence_line": 6,
+              "evidence_number": "3.3",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "Another important point is Apple’s continued revenue growth trajectory with a compound annual growth rate (CAGR) of approximately 3.3% projected through 2028, alongside expanding contribution and EBITDA margins.",
+          "claim": "Apple's contribution and EBITDA margins are expanding through 2028.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 10
+            },
+            {
+              "line_number": 12
+            }
+          ],
+          "reason": "The financial table shows contribution margin and EBITDA margin increasing from 2023A to 2028E.",
+          "action": "keep",
+          "revised_claim": "Apple's contribution and EBITDA margins are expanding through 2028.",
+          "number_bindings": [
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "This suggests sustained profitability and operational leverage, supporting a long-term positive outlook.",
+          "claim": "Apple's expanding margins and revenue growth suggest sustained profitability and operational leverage.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for the causal link between margin/revenue growth and sustained profitability/operational leverage.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "This suggests sustained profitability and operational leverage, supporting a long-term positive outlook.",
+          "claim": "Apple's expanding margins and revenue growth support a long-term positive outlook.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for the causal link to a long-term positive outlook.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 3,
+      "claims": [
+        {
+          "original_quote": "Comparative analysis with peers shows Apple maintaining a robust EBITDA profile, significantly larger than AMD and competitive with NVIDIA, though valuation multiples such as EV/EBITDA have increased somewhat, reflecting investor confidence but also potential premium pricing.",
+          "claim": "Apple maintains a robust EBITDA profile compared to peers.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 18
+            },
+            {
+              "line_number": 21
+            },
+            {
+              "line_number": 22
+            },
+            {
+              "line_number": 23
+            },
+            {
+              "line_number": 24
+            },
+            {
+              "line_number": 25
+            },
+            {
+              "line_number": 27
+            }
+          ],
+          "reason": "Peer EBITDA table shows Apple has higher EBITDA than AMD and is competitive with NVIDIA in some years.",
+          "action": "keep",
+          "revised_claim": "Apple maintains a robust EBITDA profile compared to peers.",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Comparative analysis with peers shows Apple maintaining a robust EBITDA profile, significantly larger than AMD and competitive with NVIDIA, though valuation multiples such as EV/EBITDA have increased somewhat, reflecting investor confidence but also potential premium pricing.",
+          "claim": "Apple's EBITDA is significantly larger than AMD's.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 18
+            },
+            {
+              "line_number": 21
+            },
+            {
+              "line_number": 22
+            },
+            {
+              "line_number": 23
+            },
+            {
+              "line_number": 24
+            },
+            {
+              "line_number": 25
+            },
+            {
+              "line_number": 27
+            }
+          ],
+          "reason": "Peer EBITDA table shows Apple's EBITDA is much higher than AMD's in all years shown.",
+          "action": "keep",
+          "revised_claim": "Apple's EBITDA is significantly larger than AMD's.",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Comparative analysis with peers shows Apple maintaining a robust EBITDA profile, significantly larger than AMD and competitive with NVIDIA, though valuation multiples such as EV/EBITDA have increased somewhat, reflecting investor confidence but also potential premium pricing.",
+          "claim": "Apple's EBITDA is competitive with NVIDIA's.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 18
+            },
+            {
+              "line_number": 22
+            },
+            {
+              "line_number": 23
+            },
+            {
+              "line_number": 24
+            },
+            {
+              "line_number": 25
+            },
+            {
+              "line_number": 27
+            }
+          ],
+          "reason": "Peer EBITDA table shows Apple's EBITDA is similar to or exceeds NVIDIA's in some years.",
+          "action": "keep",
+          "revised_claim": "Apple's EBITDA is competitive with NVIDIA's.",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Comparative analysis with peers shows Apple maintaining a robust EBITDA profile, significantly larger than AMD and competitive with NVIDIA, though valuation multiples such as EV/EBITDA have increased somewhat, reflecting investor confidence but also potential premium pricing.",
+          "claim": "Apple's valuation multiples such as EV/EBITDA have increased somewhat.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 29
+            },
+            {
+              "line_number": 32
+            },
+            {
+              "line_number": 33
+            },
+            {
+              "line_number": 34
+            },
+            {
+              "line_number": 35
+            },
+            {
+              "line_number": 36
+            }
+          ],
+          "reason": "Peer EV/EBITDA table shows Apple's EV/EBITDA rising from 19.1 in 2022 to 26.6 in 2024 and 27.0 in 2025.",
+          "action": "keep",
+          "revised_claim": "Apple's valuation multiples such as EV/EBITDA have increased somewhat.",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Comparative analysis with peers shows Apple maintaining a robust EBITDA profile, significantly larger than AMD and competitive with NVIDIA, though valuation multiples such as EV/EBITDA have increased somewhat, reflecting investor confidence but also potential premium pricing.",
+          "claim": "Apple's increased valuation multiples reflect investor confidence and potential premium pricing.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for the causal explanation linking increased multiples to investor confidence or premium pricing.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 4,
+      "claims": [
+        {
+          "original_quote": "Overall, the tone of recent news and financial disclosures is predominantly positive, driven by strong earnings growth, margin improvement, and strategic positioning.",
+          "claim": "The tone of recent news and financial disclosures about Apple is predominantly positive.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 45
+            }
+          ],
+          "reason": "The news summary and financial results are described as strong and positive.",
+          "action": "keep",
+          "revised_claim": "The tone of recent news and financial disclosures about Apple is predominantly positive.",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Overall, the tone of recent news and financial disclosures is predominantly positive, driven by strong earnings growth, margin improvement, and strategic positioning.",
+          "claim": "Apple's positive news tone is driven by strong earnings growth, margin improvement, and strategic positioning.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for the causal explanation linking these factors to the positive tone.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "While valuation multiples are elevated, the solid financial metrics and growth prospects suggest that Apple’s near-term stock performance could remain resilient, supported by continued innovation and market demand.",
+          "claim": "Apple's valuation multiples are elevated.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 29
+            },
+            {
+              "line_number": 32
+            },
+            {
+              "line_number": 33
+            },
+            {
+              "line_number": 34
+            },
+            {
+              "line_number": 35
+            },
+            {
+              "line_number": 36
+            }
+          ],
+          "reason": "Peer EV/EBITDA table shows Apple's EV/EBITDA is relatively high in recent years.",
+          "action": "keep",
+          "revised_claim": "Apple's valuation multiples are elevated.",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "While valuation multiples are elevated, the solid financial metrics and growth prospects suggest that Apple’s near-term stock performance could remain resilient, supported by continued innovation and market demand.",
+          "claim": "Apple's solid financial metrics and growth prospects suggest its near-term stock performance could remain resilient, supported by continued innovation and market demand.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for the causal link between financial metrics/growth and stock performance or for the support from innovation and market demand.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Investors should monitor tariff policy developments and competitive dynamics for any changes that might impact Apple's outlook.",
+          "claim": "Investors should monitor tariff policy developments and competitive dynamics for any changes that might impact Apple's outlook.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "This is a forward-looking recommendation without direct evidence.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    }
+  ],
+  "verifier_version": "8.1-exact-display-wrapper-binding",
+  "release_deduplication": "Identical complete released strings appear once per section; all original claim rows and mappings remain. This is not semantic paraphrase deduplication.",
+  "unquoted_nonfactual_connectors": [],
+  "deterministic_validation_failures": [
+    {
+      "claim_id": "u0c0",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2026:missing_binding"
+      ],
+      "numeric_results": [
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u0c1",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:3:missing_binding",
+        "numeric_check_failed:2026:missing_binding"
+      ],
+      "numeric_results": [
+        {
+          "token": "3",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u0c4",
+      "errors": [
+        "structural_citation_only_does_not_establish_claim"
+      ],
+      "numeric_results": []
+    },
+    {
+      "claim_id": "u1c0",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:3:missing_binding",
+        "numeric_check_failed:16%:missing_binding"
+      ],
+      "numeric_results": [
+        {
+          "token": "3",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2026",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "16%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "109.4",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u1c1",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:3:missing_binding",
+        "numeric_check_failed:2026:missing_binding",
+        "numeric_check_failed:29%:missing_binding"
+      ],
+      "numeric_results": [
+        {
+          "token": "3",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "29%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2.02",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u1c2",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:3:missing_binding",
+        "numeric_check_failed:2026:missing_binding"
+      ],
+      "numeric_results": [
+        {
+          "token": "2",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "3",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2026",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u2c0",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:3.3%:missing_binding"
+      ],
+      "numeric_results": [
+        {
+          "token": "3.3%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ]
+    }
+  ],
+  "deterministic_failure_count": 7,
+  "verified_claim_count": 8,
+  "unverified_annotation_count": 15,
+  "withheld_claim_count": 0,
+  "claim_retention_rate": 1.0,
+  "supported_valid_retention_count": 8,
+  "automatic_year_binding_count": 0,
+  "limitations": "UNVERIFIED annotations preserve unsupported or deterministically rejected assertions for review and must not be counted as grounded facts. A claim's original machine classification is preserved even when deterministic checks reject it; retained_as_verified is then false. Rejected contradicted corrections remain in the audit but are withheld from the narrative. Semantic judgments are machine-assisted, not human-validated. Lexical quote coverage does not prove exhaustive semantic atomization. Exact numeric/year matches do not establish entity/period alignment or dimensional validity of conversions. Repeated source quotes may have ambiguous first-occurrence offsets."
+}

@@ -1,0 +1,136 @@
+{
+  "call_id": "INTC_v7_1_changed_audit_blind/risks/1",
+  "structured_output": {
+    "units": [
+      {
+        "unit_id": 2,
+        "claims": [
+          {
+            "claim": "From a market perspective, Intel is grappling with declining revenues evidenced by a compound annual growth rate of -9.6% from 2021 to 2028.",
+            "claim_type": "factual",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 4,
+                "line_end": 6
+              }
+            ],
+            "reason": "The table header and row 0 show 'Revenue' for Intel from 2021A to 2028E, with a CAGR of -9.6% in the last column. The periods (2021 to 2028) and the value (-9.6%) match the claim. The claim is about actual and forecast data, and the CAGR is explicitly stated in the evidence.",
+            "numeric_status": "correct",
+            "fact_key": "intel|revenue_cagr|2021-2028|-9.6%|percent"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 6,
+        "claims": [
+          {
+            "claim": "AMD and NVIDIA have shown stronger EBITDA growth and superior EV/EBITDA multiples than Intel in recent years.",
+            "claim_type": "qualitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 18,
+                "line_end": 38
+              }
+            ],
+            "reason": "The Peer EBITDA Comparison and Peer EV/EBITDA Comparison tables show AMD and NVIDIA with higher EBITDA growth and higher EV/EBITDA multiples than Intel for the years 2021-2025. For example, NVIDIA's EBITDA grows from $11.351B in 2022 to $144.552B in 2026, while Intel's EBITDA is much lower and even negative in some years. EV/EBITDA multiples for AMD and NVIDIA are consistently higher than Intel's in the same periods. The claim is qualitative but supported by the comparative data.",
+            "numeric_status": "not_numeric",
+            "fact_key": "amd_nvidia_vs_intel|ebitda_ev_ebitda_comparison|recent_years|stronger_and_superior|qualitative"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 13,
+        "claims": [
+          {
+            "claim": "Intel’s profitability is under pressure.",
+            "claim_type": "qualitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 11,
+                "line_end": 12
+              },
+              {
+                "line_start": 14,
+                "line_end": 15
+              }
+            ],
+            "reason": "EBITDA and EBITDA margin for Intel have declined sharply from 2021 to 2024 (e.g., EBITDA from $33.874B in 2021 to $1.203B in 2024, margin from 42.9% to 2.3%). This supports the qualitative claim that profitability is under pressure.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|profitability|recent_years|under_pressure|qualitative"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 14,
+        "claims": [
+          {
+            "claim": "Intel's EBITDA margin dropped from 42.9% in 2021 to a forecast of 2.3% in 2024.",
+            "claim_type": "quantitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 12,
+                "line_end": 12
+              }
+            ],
+            "reason": "The 'EBITDA Margin' row shows 42.9% for 2021A and 2.3% for 2024A, matching the claim. The 2024 value is a forecast, as indicated by the column label.",
+            "numeric_status": "correct",
+            "fact_key": "intel|ebitda_margin|2021|42.9%|percent"
+          },
+          {
+            "claim": "Intel's EBITDA margin dropped from 42.9% in 2021 to a forecast of 2.3% in 2024.",
+            "claim_type": "qualitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 12,
+                "line_end": 12
+              }
+            ],
+            "reason": "The quantitative drop is shown in the table, supporting the qualitative assertion of a drop.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|ebitda_margin_trend|2021-2024|drop|qualitative"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 21,
+        "claims": [
+          {
+            "claim": "Steep decline and volatility in revenue and profitability are critical risks for Intel that threaten valuation and investor confidence.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "While the tables show a decline and volatility in revenue and profitability, there is no evidence in the supplied data directly linking these to threats to valuation and investor confidence. The causal link is asserted but not evidenced.",
+            "numeric_status": "unverifiable",
+            "fact_key": "intel|revenue_profitability_decline_volatility|recent_years|threaten_valuation_investor_confidence|causal"
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "usage": {
+    "requests": 1,
+    "input_tokens": 3065,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 957,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 4022
+  },
+  "runtime_seconds": 4.759358499999507,
+  "cost_usd": 0.013786,
+  "completed_at_utc": "2026-10-11T23:39:04.240014+00:00",
+  "attempts": 1
+}

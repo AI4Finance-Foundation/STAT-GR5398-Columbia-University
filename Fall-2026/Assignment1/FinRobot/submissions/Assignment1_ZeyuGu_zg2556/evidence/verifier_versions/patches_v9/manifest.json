@@ -1,0 +1,38 @@
+{
+  "upstream_url": "https://github.com/AI4Finance-Foundation/FinRobot.git",
+  "upstream_sha": "2717499b8e30f242640af08c4ad9afd1113c2d45",
+  "exported_at_utc": "2026-10-12T06:18:03.474417+00:00",
+  "changed_paths": [
+    "finrobot_equity/core/src/create_equity_report.py",
+    "finrobot_equity/core/src/generate_financial_analysis.py",
+    "finrobot_equity/core/src/modules/equity_agents/agent_manager.py",
+    "finrobot_equity/core/src/modules/equity_agents/verifier_agent.py",
+    "finrobot_equity/core/src/modules/financial_data_processor.py",
+    "finrobot_equity/core/src/modules/html_renderer.py",
+    "finrobot_equity/core/src/modules/market_data_api.py",
+    "finrobot_equity/core/src/modules/news_integrator.py",
+    "finrobot_equity/core/src/modules/sensitivity_analyzer.py",
+    "finrobot_equity/core/src/modules/valuation_engine.py"
+  ],
+  "patch_sha256": {
+    "compatibility.patch": "28f0538f1f4775d0bdf7ce220d0d90e458d1b31920771d8372dd862dbba3cf32",
+    "option_a_verifier.patch": "7398ca1a332bf0c0b96023d6976f0ee06ed6eb664f8dfed7d30bafc019a9b573"
+  },
+  "source_sha256": {
+    "finrobot_equity/core/src/create_equity_report.py": "63f73c43bc7d2a9ad7fe2ab5a73c895df4b336b9dc0c0da1cc8c88d7366b9b70",
+    "finrobot_equity/core/src/generate_financial_analysis.py": "e42d449486bbe9c3887f8d11efe6b98a4e44f2ae6245a2661698aa2414bdc16f",
+    "finrobot_equity/core/src/modules/equity_agents/agent_manager.py": "edaafd61e6b6bb34b33538a78fd36d2c2e5dd2cce452effabde7acf310ea6c4b",
+    "finrobot_equity/core/src/modules/equity_agents/verifier_agent.py": "ff9c5553330db88ae262bb69e6a799b7ed75c71ae8c76331526ea0d510c4691b",
+    "finrobot_equity/core/src/modules/financial_data_processor.py": "be237216f95c028827c0ad745c5ae32f5743fd1658c02abca28d571a882141bd",
+    "finrobot_equity/core/src/modules/html_renderer.py": "61535e856835c7fd57f19bd13c1015c6b7923c9bbf67f140a472b5bf24bbfa12",
+    "finrobot_equity/core/src/modules/market_data_api.py": "5fc0d5404c7d0628f2077c5eab1d4028b4fa4ebf054c4e42052fb39b6c282c1a",
+    "finrobot_equity/core/src/modules/news_integrator.py": "e1f0e42a1ad036913d3488729cc6b1b395717f494d3194254792a665f2fc42ef",
+    "finrobot_equity/core/src/modules/sensitivity_analyzer.py": "c0d06db8bc83807ecf274f9ec1cf6b3b0c042f5de16f71c6e15b078650150459",
+    "finrobot_equity/core/src/modules/valuation_engine.py": "decce50ea666b7b1b2236efe737e0e3c4814b876764ebe8407dea4cf7100745c"
+  },
+  "clean_apply": "failed_tests",
+  "clean_checkout": "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\clean-verify-v9",
+  "offline_test_returncode": 1,
+  "line_ending_only_differences": [],
+  "verification_scope": "Patch applies to clean pinned checkout; source content identical after CRLF/LF normalization; offline regression tests only, not a replacement for live financial experiments."
+}

@@ -1,0 +1,373 @@
+{
+  "checked_utc": "2026-10-12T20:17:50.757705+00:00",
+  "url": "https://medium.com/@zeyu.gu0302/i-ran-finrobot-then-audited-what-its-reports-actually-knew-fda7a2d6f1e4",
+  "status": "published_by_user_verified_public",
+  "author": "Zeyu Gu",
+  "profile": "@zeyu.gu0302",
+  "title": "I ran FinRobot, then audited what its reports actually knew",
+  "subtitle": "Frozen evidence, five semiconductor companies, and what an independently audited verifier can — and cannot — fix",
+  "published_at": null,
+  "published_time_observation": "Medium displayed Just now; exact timestamp not obtained.",
+  "signed_out_public_read_verified": true,
+  "full_body_accessible": true,
+  "observed_topics": [
+    "Large Language Models",
+    "Artificial Intelligence",
+    "Finance"
+  ],
+  "read_method": "Read-only Codex in-app browser DOM and accessibility state; no login or website mutation.",
+  "body_blocks": 65,
+  "body_paragraphs": 46,
+  "headings": [
+    "First, make the experiment real",
+    "Reproducing a number is different from trusting its meaning",
+    "Exact valuation arithmetic can expose weak economics",
+    "Original V6 evaluation: audit what was in the prompt",
+    "Original V6 result: warnings improved more than correction",
+    "Repetition reveals another source of uncertainty",
+    "What I would give a portfolio manager",
+    "What happened when I strengthened the reviewer",
+    "I also had to audit the auditor"
+  ],
+  "list_rows": 10,
+  "formatting_copy_blocks_match": [
+    {
+      "block": 1,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 2,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 3,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 4,
+      "tag": "h2",
+      "match": true
+    },
+    {
+      "block": 5,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 6,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 7,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 8,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 9,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 10,
+      "tag": "h2",
+      "match": true
+    },
+    {
+      "block": 11,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 12,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 13,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 14,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 15,
+      "tag": "li",
+      "match": true
+    },
+    {
+      "block": 16,
+      "tag": "li",
+      "match": true
+    },
+    {
+      "block": 17,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 18,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 19,
+      "tag": "h2",
+      "match": true
+    },
+    {
+      "block": 20,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 21,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 22,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 23,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 24,
+      "tag": "h2",
+      "match": true
+    },
+    {
+      "block": 25,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 26,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 27,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 28,
+      "tag": "li",
+      "match": true
+    },
+    {
+      "block": 29,
+      "tag": "li",
+      "match": true
+    },
+    {
+      "block": 30,
+      "tag": "li",
+      "match": true
+    },
+    {
+      "block": 31,
+      "tag": "li",
+      "match": true
+    },
+    {
+      "block": 32,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 33,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 34,
+      "tag": "h2",
+      "match": true
+    },
+    {
+      "block": 35,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 36,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 37,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 38,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 39,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 40,
+      "tag": "h2",
+      "match": true
+    },
+    {
+      "block": 41,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 42,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 43,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 44,
+      "tag": "h2",
+      "match": true
+    },
+    {
+      "block": 45,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 46,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 47,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 48,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 49,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 50,
+      "tag": "h2",
+      "match": true
+    },
+    {
+      "block": 51,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 52,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 53,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 54,
+      "tag": "h2",
+      "match": true
+    },
+    {
+      "block": 55,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 56,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 57,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 58,
+      "tag": "li",
+      "match": true
+    },
+    {
+      "block": 59,
+      "tag": "li",
+      "match": true
+    },
+    {
+      "block": 60,
+      "tag": "li",
+      "match": true
+    },
+    {
+      "block": 61,
+      "tag": "li",
+      "match": true
+    },
+    {
+      "block": 62,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 63,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 64,
+      "tag": "p",
+      "match": true
+    },
+    {
+      "block": 65,
+      "tag": "p",
+      "match": true
+    }
+  ],
+  "normalization": "NFKC, smart quotes/dashes and whitespace; presentation only. The unpublished author/course line was omitted online; the live page has the Zeyu Gu byline. Title/subtitle are separate Medium fields. Subscription/navigation UI excluded.",
+  "article_source": "blog/medium_article.md",
+  "article_source_sha256": "8e7b603e4fc1ac5abf7364e56ade8ed621ce816bcc144035c064199be1ef6c93",
+  "capture_sha256": {
+    "public_page_ax.txt": "00326f7aa8f6e0f74a1803de5a8c29886147f31ac34bbc4db44423a55ddd9137",
+    "public_article_dom.json": "a78d42f06c5f2d39a9deedc00f142454bf33cd820ee2236d19cf6afea5bc20ba",
+    "published_body.txt": "fd8efc9793c0c3f37ade6a4542c147ae2c038cb2c37620aae1430219a7c50aac"
+  },
+  "critical_disclosure": "0/461 verifiable numeric errors; 51 other numeric claims remain unverifiable.",
+  "external_write_performed_by_assistant": false,
+  "course_pull_request_url": null,
+  "new_api_calls": 0,
+  "new_api_cost_usd": 0
+}

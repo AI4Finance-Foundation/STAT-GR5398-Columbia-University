@@ -1,0 +1,698 @@
+[
+  {
+    "source_unit_id": 0,
+    "source_text": "The supplied Revenue CAGR cell is 20.5%; the 2021A to 2025A actual endpoints imply 20.49% CAGR. ",
+    "calculation": {
+      "start": "2021A",
+      "end": "2025A",
+      "start_value": "16434000000.0",
+      "end_value": "34639000000.0",
+      "elapsed_years": 4,
+      "percent": "20.4912516451710281425241385541148272527103583626705739968450",
+      "precision": 60,
+      "formula": "100 * (exp((ln(end_value) - ln(start_value)) / elapsed_years) - 1)",
+      "start_role": "actual",
+      "end_role": "actual"
+    },
+    "header_line": 4,
+    "revenue_line": 6,
+    "atoms": [
+      {
+        "claim": "AMD's supplied Revenue row displays a CAGR cell of 20.5%.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Literal original Revenue CAGR cell is 20.5%. This statement concerns the supplied cell, not an inferred statistical period.",
+        "fact_key": "amd|revenue_cagr_display_cell|generic|20.5|percent"
+      },
+      {
+        "claim": "AMD Revenue CAGR from 2021A to 2025A is 20.49%, using actual endpoints.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Independent Decimal ln/exp calculation: Revenue(2025A)=34639000000.0, Revenue(2021A)=16434000000.0; elapsed fiscal-year intervals=4; 100*(exp((ln(end)-ln(start))/n)-1)=20.4912516451710281425241385541148272527103583626705739968450%. At the sentence's displayed precision the arithmetic agrees=True; asserted endpoint role/scope agrees=True. This is prompt-conditional arithmetic, not external verification of the financial inputs.",
+        "fact_key": "amd|revenue_cagr|2021a:2025a|20.49|percent"
+      }
+    ],
+    "section": "tagline",
+    "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+  },
+  {
+    "source_unit_id": 1,
+    "source_text": "Across the table's 2021A to 2028E endpoints, the implied Revenue CAGR is 13.59%; 2028E is a model forecast.",
+    "calculation": {
+      "start": "2021A",
+      "end": "2028E",
+      "start_value": "16434000000.0",
+      "end_value": "40095335280.0",
+      "elapsed_years": 7,
+      "percent": "13.5888742161967996235759731398560312246826407591066301846670",
+      "precision": 60,
+      "formula": "100 * (exp((ln(end_value) - ln(start_value)) / elapsed_years) - 1)",
+      "start_role": "actual",
+      "end_role": "forecast"
+    },
+    "header_line": 4,
+    "revenue_line": 6,
+    "atoms": [
+      {
+        "claim": "AMD Revenue CAGR from 2021A to 2028E is 13.59%, using the full table's endpoints, including the forecast endpoint.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Independent Decimal ln/exp calculation: Revenue(2028E)=40095335280.0, Revenue(2021A)=16434000000.0; elapsed fiscal-year intervals=7; 100*(exp((ln(end)-ln(start))/n)-1)=13.5888742161967996235759731398560312246826407591066301846670%. At the sentence's displayed precision the arithmetic agrees=True; asserted endpoint role/scope agrees=True. This is prompt-conditional arithmetic, not external verification of the financial inputs.",
+        "fact_key": "amd|revenue_cagr|2021a:2028e|13.59|percent"
+      },
+      {
+        "claim": "AMD's 2028E Revenue endpoint is a model forecast.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "The original table is explicitly headed Financial Metrics and Forecasts; 2028E has the E estimate label, not an A actual label. This supports model/table forecast status only, not management guidance or realization.",
+        "fact_key": "amd|revenue_period_role|2028e|forecast|categorical"
+      }
+    ],
+    "section": "tagline",
+    "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+  },
+  {
+    "source_unit_id": 19,
+    "source_text": "The supplied Revenue CAGR cell is 20.5%; the 2021A to 2025A actual endpoints imply 20.49% CAGR. ",
+    "calculation": {
+      "start": "2021A",
+      "end": "2025A",
+      "start_value": "16434000000.0",
+      "end_value": "34639000000.0",
+      "elapsed_years": 4,
+      "percent": "20.4912516451710281425241385541148272527103583626705739968450",
+      "precision": 60,
+      "formula": "100 * (exp((ln(end_value) - ln(start_value)) / elapsed_years) - 1)",
+      "start_role": "actual",
+      "end_role": "actual"
+    },
+    "header_line": 4,
+    "revenue_line": 6,
+    "atoms": [
+      {
+        "claim": "AMD's supplied Revenue row displays a CAGR cell of 20.5%.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Literal original Revenue CAGR cell is 20.5%. This statement concerns the supplied cell, not an inferred statistical period.",
+        "fact_key": "amd|revenue_cagr_display_cell|generic|20.5|percent"
+      },
+      {
+        "claim": "AMD Revenue CAGR from 2021A to 2025A is 20.49%, using actual endpoints.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Independent Decimal ln/exp calculation: Revenue(2025A)=34639000000.0, Revenue(2021A)=16434000000.0; elapsed fiscal-year intervals=4; 100*(exp((ln(end)-ln(start))/n)-1)=20.4912516451710281425241385541148272527103583626705739968450%. At the sentence's displayed precision the arithmetic agrees=True; asserted endpoint role/scope agrees=True. This is prompt-conditional arithmetic, not external verification of the financial inputs.",
+        "fact_key": "amd|revenue_cagr|2021a:2025a|20.49|percent"
+      }
+    ],
+    "section": "company_overview",
+    "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+  },
+  {
+    "source_unit_id": 20,
+    "source_text": "Across the table's 2021A to 2028E endpoints, the implied Revenue CAGR is 13.59%; 2028E is a model forecast.",
+    "calculation": {
+      "start": "2021A",
+      "end": "2028E",
+      "start_value": "16434000000.0",
+      "end_value": "40095335280.0",
+      "elapsed_years": 7,
+      "percent": "13.5888742161967996235759731398560312246826407591066301846670",
+      "precision": 60,
+      "formula": "100 * (exp((ln(end_value) - ln(start_value)) / elapsed_years) - 1)",
+      "start_role": "actual",
+      "end_role": "forecast"
+    },
+    "header_line": 4,
+    "revenue_line": 6,
+    "atoms": [
+      {
+        "claim": "AMD Revenue CAGR from 2021A to 2028E is 13.59%, using the full table's endpoints, including the forecast endpoint.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Independent Decimal ln/exp calculation: Revenue(2028E)=40095335280.0, Revenue(2021A)=16434000000.0; elapsed fiscal-year intervals=7; 100*(exp((ln(end)-ln(start))/n)-1)=13.5888742161967996235759731398560312246826407591066301846670%. At the sentence's displayed precision the arithmetic agrees=True; asserted endpoint role/scope agrees=True. This is prompt-conditional arithmetic, not external verification of the financial inputs.",
+        "fact_key": "amd|revenue_cagr|2021a:2028e|13.59|percent"
+      },
+      {
+        "claim": "AMD's 2028E Revenue endpoint is a model forecast.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "The original table is explicitly headed Financial Metrics and Forecasts; 2028E has the E estimate label, not an A actual label. This supports model/table forecast status only, not management guidance or realization.",
+        "fact_key": "amd|revenue_period_role|2028e|forecast|categorical"
+      }
+    ],
+    "section": "company_overview",
+    "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+  },
+  {
+    "source_unit_id": 57,
+    "source_text": "The supplied Revenue CAGR cell is 20.5%; the 2021A to 2025A actual endpoints imply 20.49% CAGR. ",
+    "calculation": {
+      "start": "2021A",
+      "end": "2025A",
+      "start_value": "16434000000.0",
+      "end_value": "34639000000.0",
+      "elapsed_years": 4,
+      "percent": "20.4912516451710281425241385541148272527103583626705739968450",
+      "precision": 60,
+      "formula": "100 * (exp((ln(end_value) - ln(start_value)) / elapsed_years) - 1)",
+      "start_role": "actual",
+      "end_role": "actual"
+    },
+    "header_line": 4,
+    "revenue_line": 6,
+    "atoms": [
+      {
+        "claim": "AMD's supplied Revenue row displays a CAGR cell of 20.5%.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Literal original Revenue CAGR cell is 20.5%. This statement concerns the supplied cell, not an inferred statistical period.",
+        "fact_key": "amd|revenue_cagr_display_cell|generic|20.5|percent"
+      },
+      {
+        "claim": "AMD Revenue CAGR from 2021A to 2025A is 20.49%, using actual endpoints.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Independent Decimal ln/exp calculation: Revenue(2025A)=34639000000.0, Revenue(2021A)=16434000000.0; elapsed fiscal-year intervals=4; 100*(exp((ln(end)-ln(start))/n)-1)=20.4912516451710281425241385541148272527103583626705739968450%. At the sentence's displayed precision the arithmetic agrees=True; asserted endpoint role/scope agrees=True. This is prompt-conditional arithmetic, not external verification of the financial inputs.",
+        "fact_key": "amd|revenue_cagr|2021a:2025a|20.49|percent"
+      }
+    ],
+    "section": "investment_overview",
+    "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+  },
+  {
+    "source_unit_id": 58,
+    "source_text": "Across the table's 2021A to 2028E endpoints, the implied Revenue CAGR is 13.59%; 2028E is a model forecast.",
+    "calculation": {
+      "start": "2021A",
+      "end": "2028E",
+      "start_value": "16434000000.0",
+      "end_value": "40095335280.0",
+      "elapsed_years": 7,
+      "percent": "13.5888742161967996235759731398560312246826407591066301846670",
+      "precision": 60,
+      "formula": "100 * (exp((ln(end_value) - ln(start_value)) / elapsed_years) - 1)",
+      "start_role": "actual",
+      "end_role": "forecast"
+    },
+    "header_line": 4,
+    "revenue_line": 6,
+    "atoms": [
+      {
+        "claim": "AMD Revenue CAGR from 2021A to 2028E is 13.59%, using the full table's endpoints, including the forecast endpoint.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Independent Decimal ln/exp calculation: Revenue(2028E)=40095335280.0, Revenue(2021A)=16434000000.0; elapsed fiscal-year intervals=7; 100*(exp((ln(end)-ln(start))/n)-1)=13.5888742161967996235759731398560312246826407591066301846670%. At the sentence's displayed precision the arithmetic agrees=True; asserted endpoint role/scope agrees=True. This is prompt-conditional arithmetic, not external verification of the financial inputs.",
+        "fact_key": "amd|revenue_cagr|2021a:2028e|13.59|percent"
+      },
+      {
+        "claim": "AMD's 2028E Revenue endpoint is a model forecast.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "The original table is explicitly headed Financial Metrics and Forecasts; 2028E has the E estimate label, not an A actual label. This supports model/table forecast status only, not management guidance or realization.",
+        "fact_key": "amd|revenue_period_role|2028e|forecast|categorical"
+      }
+    ],
+    "section": "investment_overview",
+    "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+  },
+  {
+    "source_unit_id": 82,
+    "source_text": "The supplied Revenue CAGR cell is 20.5%; the 2021A to 2025A actual endpoints imply 20.49% CAGR. ",
+    "calculation": {
+      "start": "2021A",
+      "end": "2025A",
+      "start_value": "16434000000.0",
+      "end_value": "34639000000.0",
+      "elapsed_years": 4,
+      "percent": "20.4912516451710281425241385541148272527103583626705739968450",
+      "precision": 60,
+      "formula": "100 * (exp((ln(end_value) - ln(start_value)) / elapsed_years) - 1)",
+      "start_role": "actual",
+      "end_role": "actual"
+    },
+    "header_line": 4,
+    "revenue_line": 6,
+    "atoms": [
+      {
+        "claim": "AMD's supplied Revenue row displays a CAGR cell of 20.5%.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Literal original Revenue CAGR cell is 20.5%. This statement concerns the supplied cell, not an inferred statistical period.",
+        "fact_key": "amd|revenue_cagr_display_cell|generic|20.5|percent"
+      },
+      {
+        "claim": "AMD Revenue CAGR from 2021A to 2025A is 20.49%, using actual endpoints.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Independent Decimal ln/exp calculation: Revenue(2025A)=34639000000.0, Revenue(2021A)=16434000000.0; elapsed fiscal-year intervals=4; 100*(exp((ln(end)-ln(start))/n)-1)=20.4912516451710281425241385541148272527103583626705739968450%. At the sentence's displayed precision the arithmetic agrees=True; asserted endpoint role/scope agrees=True. This is prompt-conditional arithmetic, not external verification of the financial inputs.",
+        "fact_key": "amd|revenue_cagr|2021a:2025a|20.49|percent"
+      }
+    ],
+    "section": "competitor_analysis",
+    "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+  },
+  {
+    "source_unit_id": 83,
+    "source_text": "Across the table's 2021A to 2028E endpoints, the implied Revenue CAGR is 13.59%; 2028E is a model forecast.",
+    "calculation": {
+      "start": "2021A",
+      "end": "2028E",
+      "start_value": "16434000000.0",
+      "end_value": "40095335280.0",
+      "elapsed_years": 7,
+      "percent": "13.5888742161967996235759731398560312246826407591066301846670",
+      "precision": 60,
+      "formula": "100 * (exp((ln(end_value) - ln(start_value)) / elapsed_years) - 1)",
+      "start_role": "actual",
+      "end_role": "forecast"
+    },
+    "header_line": 4,
+    "revenue_line": 6,
+    "atoms": [
+      {
+        "claim": "AMD Revenue CAGR from 2021A to 2028E is 13.59%, using the full table's endpoints, including the forecast endpoint.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Independent Decimal ln/exp calculation: Revenue(2028E)=40095335280.0, Revenue(2021A)=16434000000.0; elapsed fiscal-year intervals=7; 100*(exp((ln(end)-ln(start))/n)-1)=13.5888742161967996235759731398560312246826407591066301846670%. At the sentence's displayed precision the arithmetic agrees=True; asserted endpoint role/scope agrees=True. This is prompt-conditional arithmetic, not external verification of the financial inputs.",
+        "fact_key": "amd|revenue_cagr|2021a:2028e|13.59|percent"
+      },
+      {
+        "claim": "AMD's 2028E Revenue endpoint is a model forecast.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "The original table is explicitly headed Financial Metrics and Forecasts; 2028E has the E estimate label, not an A actual label. This supports model/table forecast status only, not management guidance or realization.",
+        "fact_key": "amd|revenue_period_role|2028e|forecast|categorical"
+      }
+    ],
+    "section": "competitor_analysis",
+    "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+  },
+  {
+    "source_unit_id": 0,
+    "source_text": "The supplied Revenue CAGR cell is 20.5%; the 2021A to 2025A actual endpoints imply 20.49% CAGR. ",
+    "calculation": {
+      "start": "2021A",
+      "end": "2025A",
+      "start_value": "16434000000.0",
+      "end_value": "34639000000.0",
+      "elapsed_years": 4,
+      "percent": "20.4912516451710281425241385541148272527103583626705739968450",
+      "precision": 60,
+      "formula": "100 * (exp((ln(end_value) - ln(start_value)) / elapsed_years) - 1)",
+      "start_role": "actual",
+      "end_role": "actual"
+    },
+    "header_line": 4,
+    "revenue_line": 6,
+    "atoms": [
+      {
+        "claim": "AMD's supplied Revenue row displays a CAGR cell of 20.5%.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Literal original Revenue CAGR cell is 20.5%. This statement concerns the supplied cell, not an inferred statistical period.",
+        "fact_key": "amd|revenue_cagr_display_cell|generic|20.5|percent"
+      },
+      {
+        "claim": "AMD Revenue CAGR from 2021A to 2025A is 20.49%, using actual endpoints.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Independent Decimal ln/exp calculation: Revenue(2025A)=34639000000.0, Revenue(2021A)=16434000000.0; elapsed fiscal-year intervals=4; 100*(exp((ln(end)-ln(start))/n)-1)=20.4912516451710281425241385541148272527103583626705739968450%. At the sentence's displayed precision the arithmetic agrees=True; asserted endpoint role/scope agrees=True. This is prompt-conditional arithmetic, not external verification of the financial inputs.",
+        "fact_key": "amd|revenue_cagr|2021a:2025a|20.49|percent"
+      }
+    ],
+    "section": "major_takeaways",
+    "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+  },
+  {
+    "source_unit_id": 1,
+    "source_text": "Across the table's 2021A to 2028E endpoints, the implied Revenue CAGR is 13.59%; 2028E is a model forecast.",
+    "calculation": {
+      "start": "2021A",
+      "end": "2028E",
+      "start_value": "16434000000.0",
+      "end_value": "40095335280.0",
+      "elapsed_years": 7,
+      "percent": "13.5888742161967996235759731398560312246826407591066301846670",
+      "precision": 60,
+      "formula": "100 * (exp((ln(end_value) - ln(start_value)) / elapsed_years) - 1)",
+      "start_role": "actual",
+      "end_role": "forecast"
+    },
+    "header_line": 4,
+    "revenue_line": 6,
+    "atoms": [
+      {
+        "claim": "AMD Revenue CAGR from 2021A to 2028E is 13.59%, using the full table's endpoints, including the forecast endpoint.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Independent Decimal ln/exp calculation: Revenue(2028E)=40095335280.0, Revenue(2021A)=16434000000.0; elapsed fiscal-year intervals=7; 100*(exp((ln(end)-ln(start))/n)-1)=13.5888742161967996235759731398560312246826407591066301846670%. At the sentence's displayed precision the arithmetic agrees=True; asserted endpoint role/scope agrees=True. This is prompt-conditional arithmetic, not external verification of the financial inputs.",
+        "fact_key": "amd|revenue_cagr|2021a:2028e|13.59|percent"
+      },
+      {
+        "claim": "AMD's 2028E Revenue endpoint is a model forecast.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "The original table is explicitly headed Financial Metrics and Forecasts; 2028E has the E estimate label, not an A actual label. This supports model/table forecast status only, not management guidance or realization.",
+        "fact_key": "amd|revenue_period_role|2028e|forecast|categorical"
+      }
+    ],
+    "section": "major_takeaways",
+    "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+  },
+  {
+    "source_unit_id": 16,
+    "source_text": "The supplied Revenue CAGR cell is 20.5%; the 2021A to 2025A actual endpoints imply 20.49% CAGR. ",
+    "calculation": {
+      "start": "2021A",
+      "end": "2025A",
+      "start_value": "16434000000.0",
+      "end_value": "34639000000.0",
+      "elapsed_years": 4,
+      "percent": "20.4912516451710281425241385541148272527103583626705739968450",
+      "precision": 60,
+      "formula": "100 * (exp((ln(end_value) - ln(start_value)) / elapsed_years) - 1)",
+      "start_role": "actual",
+      "end_role": "actual"
+    },
+    "header_line": 4,
+    "revenue_line": 6,
+    "atoms": [
+      {
+        "claim": "AMD's supplied Revenue row displays a CAGR cell of 20.5%.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Literal original Revenue CAGR cell is 20.5%. This statement concerns the supplied cell, not an inferred statistical period.",
+        "fact_key": "amd|revenue_cagr_display_cell|generic|20.5|percent"
+      },
+      {
+        "claim": "AMD Revenue CAGR from 2021A to 2025A is 20.49%, using actual endpoints.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Independent Decimal ln/exp calculation: Revenue(2025A)=34639000000.0, Revenue(2021A)=16434000000.0; elapsed fiscal-year intervals=4; 100*(exp((ln(end)-ln(start))/n)-1)=20.4912516451710281425241385541148272527103583626705739968450%. At the sentence's displayed precision the arithmetic agrees=True; asserted endpoint role/scope agrees=True. This is prompt-conditional arithmetic, not external verification of the financial inputs.",
+        "fact_key": "amd|revenue_cagr|2021a:2025a|20.49|percent"
+      }
+    ],
+    "section": "news_summary",
+    "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+  },
+  {
+    "source_unit_id": 17,
+    "source_text": "Across the table's 2021A to 2028E endpoints, the implied Revenue CAGR is 13.59%; 2028E is a model forecast.",
+    "calculation": {
+      "start": "2021A",
+      "end": "2028E",
+      "start_value": "16434000000.0",
+      "end_value": "40095335280.0",
+      "elapsed_years": 7,
+      "percent": "13.5888742161967996235759731398560312246826407591066301846670",
+      "precision": 60,
+      "formula": "100 * (exp((ln(end_value) - ln(start_value)) / elapsed_years) - 1)",
+      "start_role": "actual",
+      "end_role": "forecast"
+    },
+    "header_line": 4,
+    "revenue_line": 6,
+    "atoms": [
+      {
+        "claim": "AMD Revenue CAGR from 2021A to 2028E is 13.59%, using the full table's endpoints, including the forecast endpoint.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "Independent Decimal ln/exp calculation: Revenue(2028E)=40095335280.0, Revenue(2021A)=16434000000.0; elapsed fiscal-year intervals=7; 100*(exp((ln(end)-ln(start))/n)-1)=13.5888742161967996235759731398560312246826407591066301846670%. At the sentence's displayed precision the arithmetic agrees=True; asserted endpoint role/scope agrees=True. This is prompt-conditional arithmetic, not external verification of the financial inputs.",
+        "fact_key": "amd|revenue_cagr|2021a:2028e|13.59|percent"
+      },
+      {
+        "claim": "AMD's 2028E Revenue endpoint is a model forecast.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 6,
+            "line_end": 6
+          }
+        ],
+        "reason": "The original table is explicitly headed Financial Metrics and Forecasts; 2028E has the E estimate label, not an A actual label. This supports model/table forecast status only, not management guidance or realization.",
+        "fact_key": "amd|revenue_period_role|2028e|forecast|categorical"
+      }
+    ],
+    "section": "news_summary",
+    "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+  }
+]

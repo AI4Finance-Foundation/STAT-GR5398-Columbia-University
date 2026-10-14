@@ -1,0 +1,42 @@
+{
+  "ticker": "GOOGL",
+  "run_id": "GOOGL-20261011T211000Z-snapshot",
+  "valuation_method": "EV/EBITDA",
+  "ebitda_period": "2028E",
+  "base_target_price": 319.75336479813745,
+  "minimum_target_price": 292.0146057822836,
+  "maximum_target_price": 348.72908073777535,
+  "maximum_native_margin_rounding_price_gap": 0.0,
+  "local_revenue_elasticity": 1.0,
+  "local_price_pct_change_per_plus_1pp_margin": 1.9342359767891681,
+  "elasticity_formula": "d log(price) / d log(revenue) = 1, and percent price change for +1pp margin = 1/base_margin_fraction, before zero clipping",
+  "scenario_count": 25,
+  "input_sources": {
+    "analysis": {
+      "path": "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\snapshots\\GOOGL\\analysis\\financial_metrics_and_forecasts.csv",
+      "sha256": "73108a419722113bc54480bff01d89d73c6583a838e275e4376ef78f9f9d310c"
+    },
+    "valuation_inputs": {
+      "path": "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\snapshots\\GOOGL\\valuation_inputs.json",
+      "sha256": "28d0c6d9d904b968d25bef8ad5386a9cf18cfa4ca6f16b678bac7fbb606a9b49"
+    },
+    "key_metrics": {
+      "path": "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\snapshots\\GOOGL\\analysis\\key_metrics_raw_data.csv",
+      "sha256": "352a8a6fc7e5f955137cd62bb58b6fb9aeb32ed88fc9ef1287dcc51244c8814d"
+    }
+  },
+  "frozen_assumptions": {
+    "target_multiple": 17.835547045130713,
+    "shares": 12102111286.0,
+    "net_debt_rule": "10% of scenario enterprise value, exactly as baseline method"
+  },
+  "interpretation": [
+    "Revenue shock is a relative change in forecast LEVEL, not a change in annual growth rate.",
+    "Margin shock is an absolute percentage-point change; 0.02 means 2pp.",
+    "The exact grid starts from EBITDA/revenue to preserve the baseline zero-shock valuation.",
+    "The native rounded-margin counterpart uses the displayed one-decimal margin and is saved in each CSV row.",
+    "All scenario EBITDA values are propagated without the native matrix's $0.1bn rounding.",
+    "This is a deterministic scenario range, not a probability interval, investment recommendation, or calibrated fair value.",
+    "The range omits uncertainty in the target multiple, shares, observed debt, forecast model structure, and timing."
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "at_utc": "2026-10-12T06:24:45.524413+00:00",
+  "runtime_seconds": 1.9712758000023314,
+  "new_model_calls": 0,
+  "new_model_cost_usd": 0,
+  "source_run_id": "AMD_final_reasoning_v8_1",
+  "records": [
+    {
+      "section": "tagline",
+      "source_paid_call_id": "AMD_final_reasoning_v8_1/verifier/tagline",
+      "text_changed": true,
+      "before_verified": 5,
+      "after_verified": 5,
+      "before_failures": 0,
+      "after_failures": 0
+    },
+    {
+      "section": "company_overview",
+      "source_paid_call_id": "AMD_final_reasoning_v8_1/verifier/company_overview",
+      "text_changed": true,
+      "before_verified": 2,
+      "after_verified": 10,
+      "before_failures": 8,
+      "after_failures": 0
+    },
+    {
+      "section": "investment_overview",
+      "source_paid_call_id": "AMD_final_reasoning_v8_1/verifier/investment_overview",
+      "text_changed": true,
+      "before_verified": 7,
+      "after_verified": 12,
+      "before_failures": 13,
+      "after_failures": 8
+    },
+    {
+      "section": "valuation_overview",
+      "source_paid_call_id": "AMD_final_reasoning_v8_1/verifier/valuation_overview",
+      "text_changed": false,
+      "before_verified": 9,
+      "after_verified": 9,
+      "before_failures": 0,
+      "after_failures": 0
+    },
+    {
+      "section": "risks",
+      "source_paid_call_id": "AMD_final_reasoning_v8_1/verifier/risks",
+      "text_changed": false,
+      "before_verified": 1,
+      "after_verified": 1,
+      "before_failures": 0,
+      "after_failures": 0
+    },
+    {
+      "section": "competitor_analysis",
+      "source_paid_call_id": "AMD_final_reasoning_v8_1/verifier/competitor_analysis",
+      "text_changed": true,
+      "before_verified": 3,
+      "after_verified": 3,
+      "before_failures": 0,
+      "after_failures": 0
+    },
+    {
+      "section": "major_takeaways",
+      "source_paid_call_id": "AMD_final_reasoning_v8_1/verifier/major_takeaways",
+      "text_changed": true,
+      "before_verified": 6,
+      "after_verified": 6,
+      "before_failures": 0,
+      "after_failures": 0
+    },
+    {
+      "section": "news_summary",
+      "source_paid_call_id": "AMD_final_reasoning_v8_1/verifier/news_summary",
+      "text_changed": true,
+      "before_verified": 7,
+      "after_verified": 11,
+      "before_failures": 5,
+      "after_failures": 1
+    }
+  ],
+  "network_disabled_during_verification_and_render": true,
+  "output_root": "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\runs",
+  "replay_script_sha256": "89b68603dff5ef1386163a7f8035859b3295cf19a0f66fcb6fb952934714b044",
+  "billing_control": "ReadOnlyLedger has no reserve/settle capability; call_agent replaced with unconditional failure. Actual captured provider bytes and original settlement records validated.",
+  "not_independent_generation": true,
+  "independent_semantic_audit": "Required before any efficacy claim."
+}

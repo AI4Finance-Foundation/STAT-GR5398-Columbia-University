@@ -1,0 +1,44 @@
+{
+  "call_id": "NVDA_v2/stability_v2/NVDA_baseline_2/attempt_001",
+  "structured_output": {
+    "ratings": [
+      {
+        "section": "investment_overview",
+        "source_unit_id": 23,
+        "label": "hold or increase in position depending on portfolio strategy",
+        "source_kind": "writer_recommendation"
+      }
+    ],
+    "targets": [],
+    "risks": [
+      {
+        "source_unit_id": 1,
+        "taxonomy": "customer_concentration"
+      },
+      {
+        "source_unit_id": 2,
+        "taxonomy": "macro_currency"
+      },
+      {
+        "source_unit_id": 3,
+        "taxonomy": "technology_execution"
+      }
+    ]
+  },
+  "usage": {
+    "requests": 1,
+    "input_tokens": 9474,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 79,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 9553
+  },
+  "runtime_seconds": 1.6076571000012336,
+  "cost_usd": 0.01958,
+  "completed_at_utc": "2026-10-11T21:47:55.176653+00:00",
+  "attempts": 1
+}

@@ -1,0 +1,254 @@
+[
+  {
+    "source_unit_id": 10,
+    "source_text": "Across the supplied EV/EBITDA rows aligned with AMD's 2021A through 2025A actual columns, the minimum is 17.9136x (2022A) and the maximum is 57.1197x (2023A). ",
+    "original_actual_years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "independent_observations": [
+      {
+        "year": 2021,
+        "value": "42.1013",
+        "line": 32
+      },
+      {
+        "year": 2022,
+        "value": "17.9136",
+        "line": 33
+      },
+      {
+        "year": 2023,
+        "value": "57.1197",
+        "line": 34
+      },
+      {
+        "year": 2024,
+        "value": "38.2717",
+        "line": 35
+      },
+      {
+        "year": 2025,
+        "value": "47.8456",
+        "line": 36
+      }
+    ],
+    "independent_minimum": "17.9136",
+    "independent_maximum": "57.1197",
+    "minimum_years": [
+      2022
+    ],
+    "maximum_years": [
+      2023
+    ],
+    "atoms": [
+      {
+        "claim": "The supplied AMD EV/EBITDA range uses rows aligned with its 2021A through 2025A actual columns.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 29,
+            "line_end": 30
+          },
+          {
+            "line_start": 32,
+            "line_end": 32
+          },
+          {
+            "line_start": 33,
+            "line_end": 33
+          },
+          {
+            "line_start": 34,
+            "line_end": 34
+          },
+          {
+            "line_start": 35,
+            "line_end": 35
+          },
+          {
+            "line_start": 36,
+            "line_end": 36
+          }
+        ],
+        "reason": "The subject financial header lists actual columns [2021, 2022, 2023, 2024, 2025]; its last actual is 2025A. The original Peer EV/EBITDA table provides the same-year subject observations. Alignment is a table convention, not an external market-timing claim.",
+        "fact_key": "amd|ev_ebitda_scope|2021a:2025a|subject_actual_columns|annual"
+      },
+      {
+        "claim": "Across the supplied AMD 2021A-2025A EV/EBITDA rows, the minimum is 17.9136x in 2022A.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 29,
+            "line_end": 30
+          },
+          {
+            "line_start": 32,
+            "line_end": 32
+          },
+          {
+            "line_start": 33,
+            "line_end": 33
+          },
+          {
+            "line_start": 34,
+            "line_end": 34
+          },
+          {
+            "line_start": 35,
+            "line_end": 35
+          },
+          {
+            "line_start": 36,
+            "line_end": 36
+          }
+        ],
+        "reason": "Independent Decimal comparisons over all selected original rows: 2021=42.1013x; 2022=17.9136x; 2023=57.1197x; 2024=38.2717x; 2025=47.8456x. The minimum is 17.9136x, attained in [2022]. The final prose's value/year and explicit actual-year scope agree=True. No intra-year/all-time price range is asserted or inferred.",
+        "fact_key": "amd|ev_ebitda_minimum|2021a:2025a|17.9136@2022a|multiple"
+      },
+      {
+        "claim": "Across the supplied AMD 2021A-2025A EV/EBITDA rows, the maximum is 57.1197x in 2023A.",
+        "claim_type": "quantitative",
+        "classification": "Supported",
+        "numeric_status": "correct",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 29,
+            "line_end": 30
+          },
+          {
+            "line_start": 32,
+            "line_end": 32
+          },
+          {
+            "line_start": 33,
+            "line_end": 33
+          },
+          {
+            "line_start": 34,
+            "line_end": 34
+          },
+          {
+            "line_start": 35,
+            "line_end": 35
+          },
+          {
+            "line_start": 36,
+            "line_end": 36
+          }
+        ],
+        "reason": "Independent Decimal comparisons over all selected original rows: 2021=42.1013x; 2022=17.9136x; 2023=57.1197x; 2024=38.2717x; 2025=47.8456x. The maximum is 57.1197x, attained in [2023]. The final prose's value/year and explicit actual-year scope agree=True. No intra-year/all-time price range is asserted or inferred.",
+        "fact_key": "amd|ev_ebitda_maximum|2021a:2025a|57.1197@2023a|multiple"
+      }
+    ],
+    "section": "valuation_overview",
+    "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+  },
+  {
+    "source_unit_id": 11,
+    "source_text": "This scope uses the supplied annual rows through AMD's last actual column.",
+    "original_actual_years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "independent_observations": [
+      {
+        "year": 2021,
+        "value": "42.1013",
+        "line": 32
+      },
+      {
+        "year": 2022,
+        "value": "17.9136",
+        "line": 33
+      },
+      {
+        "year": 2023,
+        "value": "57.1197",
+        "line": 34
+      },
+      {
+        "year": 2024,
+        "value": "38.2717",
+        "line": 35
+      },
+      {
+        "year": 2025,
+        "value": "47.8456",
+        "line": 36
+      }
+    ],
+    "independent_minimum": "17.9136",
+    "independent_maximum": "57.1197",
+    "minimum_years": [
+      2022
+    ],
+    "maximum_years": [
+      2023
+    ],
+    "atoms": [
+      {
+        "claim": "The stated AMD EV/EBITDA range scope uses supplied annual rows through its last actual column.",
+        "claim_type": "factual",
+        "classification": "Supported",
+        "numeric_status": "not_numeric",
+        "evidence": [
+          {
+            "line_start": 4,
+            "line_end": 4
+          },
+          {
+            "line_start": 29,
+            "line_end": 30
+          },
+          {
+            "line_start": 32,
+            "line_end": 32
+          },
+          {
+            "line_start": 33,
+            "line_end": 33
+          },
+          {
+            "line_start": 34,
+            "line_end": 34
+          },
+          {
+            "line_start": 35,
+            "line_end": 35
+          },
+          {
+            "line_start": 36,
+            "line_end": 36
+          }
+        ],
+        "reason": "The subject actual labels end at 2025A and every selected EV/EBITDA row is aligned with those actual labels. The immediately preceding reviewed range explicitly ends at this same last actual column; future/other-company rows are excluded.",
+        "fact_key": "amd|ev_ebitda_range_scope|last_subject_actual|supplied_annual_rows|categorical"
+      }
+    ],
+    "section": "valuation_overview",
+    "evidence_prompt_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a"
+  }
+]

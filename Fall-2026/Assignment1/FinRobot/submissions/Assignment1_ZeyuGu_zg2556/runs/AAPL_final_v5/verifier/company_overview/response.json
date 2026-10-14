@@ -1,0 +1,404 @@
+{
+  "call_id": "AAPL_final_v4/verifier/company_overview",
+  "structured_output": {
+    "units": [
+      {
+        "source_id": 0,
+        "claims": [
+          {
+            "original_quote": "Apple Inc. is a leading global technology company known for designing, manufacturing, and selling consumer electronics, software, and services.",
+            "claim": "Apple Inc. is a global technology company that designs, manufactures, and sells consumer electronics, software, and services.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 1
+              }
+            ],
+            "reason": "The claim is directly stated in the evidence.",
+            "action": "keep",
+            "revised_claim": "Apple Inc. is a global technology company that designs, manufactures, and sells consumer electronics, software, and services.",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "It operates primarily in hardware sales through flagship products like the iPhone, iPad, Mac, and wearables, complemented by a rapidly growing services segment including digital content, cloud services, and payment solutions.",
+            "claim": "Apple operates primarily in hardware sales through flagship products such as the iPhone, iPad, Mac, and wearables, and also has a rapidly growing services segment including digital content, cloud services, and payment solutions.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 1
+              }
+            ],
+            "reason": "The claim is directly stated in the evidence.",
+            "action": "keep",
+            "revised_claim": "Apple operates primarily in hardware sales through flagship products such as the iPhone, iPad, Mac, and wearables, and also has a rapidly growing services segment including digital content, cloud services, and payment solutions.",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Apple holds a dominant market position worldwide, especially in premium smartphone and consumer electronics markets, with annual revenues surpassing $380 billion in 2023 and a market capitalization among the largest globally.",
+            "claim": "Apple holds a dominant market position worldwide, especially in premium smartphone and consumer electronics markets.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence does not provide direct support for the claim of a dominant market position; it only describes the company's operations and revenue.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Apple holds a dominant market position worldwide, especially in premium smartphone and consumer electronics markets, with annual revenues surpassing $380 billion in 2023 and a market capitalization among the largest globally.",
+            "claim": "Apple's annual revenues surpassed $380 billion in 2023.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 6
+              }
+            ],
+            "reason": "The 2023 revenue is $383,285,000,000, which surpasses $380 billion.",
+            "action": "keep",
+            "revised_claim": "Apple's annual revenues surpassed $380 billion in 2023.",
+            "number_bindings": [
+              {
+                "claim_number": "2023",
+                "evidence_line": 4,
+                "evidence_number": "2023",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "383",
+                "evidence_line": 6,
+                "evidence_number": "383285000000.0",
+                "transform": "divide_billion"
+              }
+            ]
+          },
+          {
+            "original_quote": "Apple holds a dominant market position worldwide, especially in premium smartphone and consumer electronics markets, with annual revenues surpassing $380 billion in 2023 and a market capitalization among the largest globally.",
+            "claim": "Apple has a market capitalization among the largest globally.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is provided for the company's market capitalization ranking.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 1,
+        "claims": [
+          {
+            "original_quote": "Apple's business model centers on creating high-quality, integrated products and ecosystems that generate value through hardware sales and recurring revenue from services and software.",
+            "claim": "Apple's business model centers on creating high-quality, integrated products and ecosystems that generate value through hardware sales and recurring revenue from services and software.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for the qualitative aspects of the business model.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The company’s mission emphasizes innovation, user experience, and privacy, aiming to deliver seamless technology solutions across its customer base that spans individual consumers, enterprises, and educational institutions worldwide.",
+            "claim": "Apple's mission emphasizes innovation, user experience, and privacy, aiming to deliver seamless technology solutions across a customer base that includes individual consumers, enterprises, and educational institutions worldwide.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for the company's mission statement or customer base composition.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Strategically, Apple focuses on expanding its services portfolio, enhancing hardware capabilities, and entering new market segments such as health and augmented reality.",
+            "claim": "Apple focuses strategically on expanding its services portfolio, enhancing hardware capabilities, and entering new market segments such as health and augmented reality.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for the company's strategic focus areas.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 2,
+        "claims": [
+          {
+            "original_quote": "In 2023, Apple generated approximately $383 billion in revenue, with a product-heavy mix dominated by iPhone sales complemented by Mac, iPad, and wearables.",
+            "claim": "In 2023, Apple generated approximately $383 billion in revenue.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 6
+              }
+            ],
+            "reason": "The 2023 revenue is $383,285,000,000, which is approximately $383 billion.",
+            "action": "keep",
+            "revised_claim": "In 2023, Apple generated approximately $383 billion in revenue.",
+            "number_bindings": [
+              {
+                "claim_number": "2023",
+                "evidence_line": 4,
+                "evidence_number": "2023",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "383",
+                "evidence_line": 6,
+                "evidence_number": "383285000000.0",
+                "transform": "divide_billion"
+              }
+            ]
+          },
+          {
+            "original_quote": "In 2023, Apple generated approximately $383 billion in revenue, with a product-heavy mix dominated by iPhone sales complemented by Mac, iPad, and wearables.",
+            "claim": "Apple's 2023 revenue mix was product-heavy and dominated by iPhone sales, complemented by Mac, iPad, and wearables.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for the revenue mix or product dominance.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Services have become a significant and fast-growing revenue source, contributing to diversification and higher margins.",
+            "claim": "Services have become a significant and fast-growing revenue source for Apple, contributing to diversification and higher margins.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for the growth rate or margin impact of services.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The company’s cost structure includes substantial expenses in manufacturing, research and development, and selling, general and administrative costs, with contribution margins improving over time, reflecting operational efficiency.",
+            "claim": "Apple's cost structure includes substantial expenses in manufacturing, research and development, and selling, general and administrative costs.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 7
+              },
+              {
+                "line_number": 8
+              }
+            ],
+            "reason": "The evidence provides cost of operations and SG&A expenses, supporting the claim about the cost structure.",
+            "action": "keep",
+            "revised_claim": "Apple's cost structure includes substantial expenses in manufacturing, research and development, and selling, general and administrative costs.",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The company’s cost structure includes substantial expenses in manufacturing, research and development, and selling, general and administrative costs, with contribution margins improving over time, reflecting operational efficiency.",
+            "claim": "Apple's contribution margins have improved over time, reflecting operational efficiency.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 10
+              }
+            ],
+            "reason": "Contribution margin increased from 41.8% in 2021 to 44.1% in 2023, supporting improvement over time.",
+            "action": "keep",
+            "revised_claim": "Apple's contribution margins improved from 41.8% in 2021 to 44.1% in 2023.",
+            "number_bindings": [
+              {
+                "claim_number": "41.8%",
+                "evidence_line": 10,
+                "evidence_number": "41.8%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2021",
+                "evidence_line": 4,
+                "evidence_number": "2021",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "44.1%",
+                "evidence_line": 10,
+                "evidence_number": "44.1%",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2023",
+                "evidence_line": 4,
+                "evidence_number": "2023",
+                "transform": "identity"
+              }
+            ]
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 3,
+        "claims": [
+          {
+            "original_quote": "Founded in 1976 by Steve Jobs, Steve Wozniak, and Ronald Wayne, Apple has undergone transformational shifts from personal computers to mobile devices and software ecosystems.",
+            "claim": "Apple was founded in 1976 by Steve Jobs, Steve Wozniak, and Ronald Wayne.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for the founding year or founders.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Founded in 1976 by Steve Jobs, Steve Wozniak, and Ronald Wayne, Apple has undergone transformational shifts from personal computers to mobile devices and software ecosystems.",
+            "claim": "Apple has shifted from personal computers to mobile devices and software ecosystems.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for the company's historical shifts.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Major milestones include launching the iPhone in 2007, expanding into services in the 2010s, and recently advancing augmented reality and health technology initiatives.",
+            "claim": "Apple launched the iPhone in 2007, expanded into services in the 2010s, and has recently advanced augmented reality and health technology initiatives.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for these milestones or initiatives.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The current leadership is headed by CEO Tim Cook, who has led the company since 2011, bringing operational excellence and a focus on sustainability.",
+            "claim": "Apple's current CEO is Tim Cook, who has led the company since 2011.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for the CEO's name or tenure.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The CFO Luca Maestri oversees financial strategy, maintaining Apple's strong balance sheet.",
+            "claim": "Apple's CFO is Luca Maestri, who oversees financial strategy and maintains Apple's strong balance sheet.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for the CFO's name or responsibilities.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 4,
+        "claims": [
+          {
+            "original_quote": "Apple is financially robust, reporting $383.3 billion in revenue and strong profitability with a net income supported by high contribution margins.",
+            "claim": "Apple reported $383.3 billion in revenue.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 6
+              }
+            ],
+            "reason": "The 2023 revenue is $383,285,000,000, which is $383.3 billion.",
+            "action": "keep",
+            "revised_claim": "Apple reported $383.3 billion in revenue in 2023.",
+            "number_bindings": [
+              {
+                "claim_number": "383.3",
+                "evidence_line": 6,
+                "evidence_number": "383285000000.0",
+                "transform": "divide_billion"
+              },
+              {
+                "claim_number": "2023",
+                "evidence_line": 4,
+                "evidence_number": "2023",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Apple is financially robust, reporting $383.3 billion in revenue and strong profitability with a net income supported by high contribution margins.",
+            "claim": "Apple is financially robust with strong profitability and net income supported by high contribution margins.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for profitability or net income.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The company’s stock trades with a price-to-earnings ratio reflective of its growth prospects and premium brand positioning.",
+            "claim": "Apple's stock trades with a price-to-earnings ratio reflective of its growth prospects and premium brand positioning.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for the qualitative assessment of the PE ratio.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "With a stock price fluctuating within competitive ranges over the past year, Apple remains a key player in the technology sector.",
+            "claim": "Apple remains a key player in the technology sector.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for Apple's position in the technology sector.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 5,
+        "claims": [
+          {
+            "original_quote": "Operating in the highly competitive technology and consumer electronics industry, Apple competes with firms like Samsung, Microsoft, and emerging tech companies.",
+            "claim": "Apple operates in the highly competitive technology and consumer electronics industry and competes with firms like Samsung, Microsoft, and emerging tech companies.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for the competitive landscape or named competitors.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "It holds a leading market share in premium smartphones and wearables, supported by a loyal customer base and a broad ecosystem.",
+            "claim": "Apple holds a leading market share in premium smartphones and wearables, supported by a loyal customer base and a broad ecosystem.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for market share or customer base.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Industry trends toward services, artificial intelligence, and health technology align well with Apple's strategic initiatives, positioning it for sustained growth.",
+            "claim": "Industry trends toward services, artificial intelligence, and health technology align well with Apple's strategic initiatives, positioning it for sustained growth.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No direct evidence is provided for industry trends or alignment with Apple's strategy.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "usage": {
+    "requests": 1,
+    "input_tokens": 3606,
+    "input_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "output_tokens": 2931,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 6537
+  },
+  "runtime_seconds": 12.70088559999931,
+  "cost_usd": 0.03066,
+  "completed_at_utc": "2026-10-11T22:09:55.460725+00:00",
+  "attempts": 1
+}

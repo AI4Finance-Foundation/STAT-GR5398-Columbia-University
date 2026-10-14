@@ -1,0 +1,153 @@
+[
+  {
+    "label": "NVDA_data",
+    "argv": [
+      "scripts/snapshot_pipeline.py",
+      "--upstream",
+      "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\clean-verify-7",
+      "--ticker",
+      "NVDA",
+      "--company-name",
+      "NVIDIA Corporation",
+      "--peers",
+      "AMD",
+      "INTC",
+      "--snapshot",
+      "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\snapshots\\NVDA",
+      "--mode",
+      "replay",
+      "--replay-output",
+      "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\reproduction\\clean7\\snapshots\\NVDA",
+      "--as-of",
+      "2026-10-11T21:10:00+00:00",
+      "--years-limit",
+      "5",
+      "--news-days-back",
+      "90",
+      "--news-limit",
+      "50",
+      "--news-snapshot",
+      "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\evidence\\issuer_news\\NVDA\\articles.json"
+    ],
+    "exit_code": 0,
+    "runtime_seconds": 1.0437974999986182
+  },
+  {
+    "label": "NVDA_baseline_1_render",
+    "argv": [
+      "scripts/experiment.py",
+      "--upstream",
+      "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\clean-verify-7",
+      "render",
+      "--run",
+      "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\reproduction\\clean7\\runs\\NVDA_baseline_1"
+    ],
+    "exit_code": 0,
+    "runtime_seconds": 1.7997193000010157
+  },
+  {
+    "label": "NVDA_final_v6_render",
+    "argv": [
+      "scripts/experiment.py",
+      "--upstream",
+      "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\clean-verify-7",
+      "render",
+      "--run",
+      "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\reproduction\\clean7\\runs\\NVDA_final_v6"
+    ],
+    "exit_code": 0,
+    "runtime_seconds": 1.6952610999978788
+  },
+  {
+    "label": "AMD_data",
+    "argv": [
+      "scripts/snapshot_pipeline.py",
+      "--upstream",
+      "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\clean-verify-7",
+      "--ticker",
+      "AMD",
+      "--company-name",
+      "Advanced Micro Devices, Inc.",
+      "--peers",
+      "NVDA",
+      "INTC",
+      "--snapshot",
+      "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\snapshots\\AMD",
+      "--mode",
+      "replay",
+      "--replay-output",
+      "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\reproduction\\clean7\\snapshots\\AMD",
+      "--as-of",
+      "2026-10-11T21:10:00+00:00",
+      "--years-limit",
+      "5",
+      "--news-days-back",
+      "90",
+      "--news-limit",
+      "50",
+      "--news-snapshot",
+      "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\evidence\\issuer_news\\AMD\\articles.json"
+    ],
+    "exit_code": 0,
+    "runtime_seconds": 0.9257195000027423
+  },
+  {
+    "label": "AMD_baseline_1_render",
+    "argv": [
+      "scripts/experiment.py",
+      "--upstream",
+      "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\clean-verify-7",
+      "render",
+      "--run",
+      "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\reproduction\\clean7\\runs\\AMD_baseline_1"
+    ],
+    "exit_code": 0,
+    "runtime_seconds": 1.7321413999998185
+  },
+  {
+    "label": "AMD_final_v6_render",
+    "argv": [
+      "scripts/experiment.py",
+      "--upstream",
+      "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\clean-verify-7",
+      "render",
+      "--run",
+      "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\reproduction\\clean7\\runs\\AMD_final_v6"
+    ],
+    "exit_code": 0,
+    "runtime_seconds": 1.7123095999995712
+  },
+  {
+    "label": "INTC_data",
+    "argv": [
+      "scripts/snapshot_pipeline.py",
+      "--upstream",
+      "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\clean-verify-7",
+      "--ticker",
+      "INTC",
+      "--company-name",
+      "Intel Corporation",
+      "--peers",
+      "NVDA",
+      "AMD",
+      "--snapshot",
+      "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\snapshots\\INTC_news_v2",
+      "--mode",
+      "replay",
+      "--replay-output",
+      "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\reproduction\\clean7\\snapshots\\INTC_news_v2",
+      "--as-of",
+      "2026-10-11T21:10:00+00:00",
+      "--years-limit",
+      "5",
+      "--news-days-back",
+      "90",
+      "--news-limit",
+      "50",
+      "--news-snapshot",
+      "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\evidence\\issuer_news\\INTC\\articles.json"
+    ],
+    "exit_code": 1,
+    "runtime_seconds": 0.6804974000006041
+  }
+]

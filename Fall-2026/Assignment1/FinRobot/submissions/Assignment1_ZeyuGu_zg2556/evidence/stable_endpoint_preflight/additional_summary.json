@@ -1,0 +1,25 @@
+[
+  {
+    "endpoint": "news/stock-latest",
+    "status": 402,
+    "count": null,
+    "fields": []
+  },
+  {
+    "endpoint": "historical-price-eod/full",
+    "status": 200,
+    "count": 251,
+    "fields": [
+      "symbol",
+      "date",
+      "open",
+      "high",
+      "low",
+      "close",
+      "volume",
+      "change",
+      "changePercent",
+      "vwap"
+    ]
+  }
+]

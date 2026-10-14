@@ -1,0 +1,83 @@
+{
+  "generated_at_utc": "2026-10-12T05:46:40.095712+00:00",
+  "scorecard": {
+    "ticker": "ALL",
+    "section": "ALL",
+    "before_run_id": "ALL",
+    "after_run_id": "ALL",
+    "before_total_claims": "1478",
+    "before_supported": "292",
+    "before_unsupported": "1146",
+    "before_contradicted": "40",
+    "before_grounding_rate": "0.1975642760487145",
+    "before_contradiction_rate": "0.02706359945872801",
+    "before_numeric_claims": "205",
+    "before_numeric_correct": "146",
+    "before_numeric_incorrect": "25",
+    "before_numeric_unverifiable": "34",
+    "before_numeric_error_rate": "0.12195121951219512",
+    "before_numeric_error_rate_verifiable": "0.14619883040935672",
+    "after_total_claims": "1958",
+    "after_supported": "534",
+    "after_unsupported": "1408",
+    "after_contradicted": "16",
+    "after_grounding_rate": "0.2727272727272727",
+    "after_contradiction_rate": "0.008171603677221655",
+    "after_numeric_claims": "486",
+    "after_numeric_correct": "422",
+    "after_numeric_incorrect": "13",
+    "after_numeric_unverifiable": "51",
+    "after_numeric_error_rate": "0.026748971193415638",
+    "after_numeric_error_rate_verifiable": "0.029885057471264367",
+    "claim_count_ratio": "1.3247631935047361",
+    "independent_supported_fact_retention": "0.09473684210526316",
+    "supported_evidence_span_retention": "0.8181818181818182",
+    "verifier_reported_claim_retention_all_sections": "0.9926372155287818",
+    "verifier_reported_verified_retention_all_sections": "0.12583668005354753",
+    "verifier_unresolved_billing_attempts_all_sections": "0",
+    "verifier_billed_attempts_all_sections": "24",
+    "verifier_incremental_cost_usd_this_run": "0",
+    "verifier_incremental_tokens_this_run": "0",
+    "verifier_extra_tokens_all_sections": "287867",
+    "verifier_extra_cost_usd_all_sections": "3.0613925",
+    "verifier_extra_runtime_seconds_all_sections": "2062.0978904000367"
+  },
+  "warnings": {
+    "ticker": "ALL",
+    "section": "ALL",
+    "claims": "1958",
+    "warned_claims": "1575",
+    "unsupported_or_contradicted": "1424",
+    "warned_unsupported_or_contradicted": "1412",
+    "warning_recall": "0.9915730337078652",
+    "warning_precision": "0.8965079365079365",
+    "unflagged_unsupported_or_contradicted": "12",
+    "contradicted": "16",
+    "warned_contradicted": "4",
+    "unflagged_contradicted": "12",
+    "unique_lexical_fact_keys": "1744",
+    "duplicate_lexical_claim_instances": "214"
+  },
+  "independent_review": {
+    "NVDA": {
+      "carried_units": 59,
+      "explicitly_reviewed_changed_units": 460
+    },
+    "AMD": {
+      "carried_units": 42,
+      "explicitly_reviewed_changed_units": 417
+    },
+    "INTC": {
+      "carried_units": 31,
+      "explicitly_reviewed_changed_units": 458
+    }
+  },
+  "study_scope_complete": true,
+  "human_review_performed": false,
+  "publication_authorized": false,
+  "input_hashes": {
+    "audits\\grounding\\comparison_reasoning_v8_2\\before_after_scorecard.csv": "74cc0ce1052fd1f067207e69a3f83a38727ecc077899d14caf2d1cae96f644ca",
+    "audits\\grounding\\annotation_reasoning_v8_2\\annotation_scorecard.csv": "557b7c90b1f152dee476cecba69f808552cd5a9fc607ca8c88203449bf50c54b"
+  },
+  "study_sha256": "34279d8c3c6480d2ca8481bc01b146e7df875ec1be8b2ba317663c690daedcbc"
+}

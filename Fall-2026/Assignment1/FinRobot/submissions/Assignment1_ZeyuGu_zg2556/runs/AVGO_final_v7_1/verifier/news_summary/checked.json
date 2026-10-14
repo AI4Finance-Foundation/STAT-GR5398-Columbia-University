@@ -1,0 +1,1266 @@
+{
+  "original_text": "Recent financial disclosures from Broadcom Inc. for the fiscal quarter ended August 2, 2026, reveal significant revenue growth driven by both product sales and subscription services. This growth supports the company's strong revenue trajectory projected through 2028, alongside improving contribution and EBITDA margins. These results reinforce Broadcom's strategic positioning and growth outlook in the semiconductor industry.\n\nKey developments include a substantial increase in quarterly total net revenue to $29.6 billion, nearly doubling the same period last year, with product revenue surging to $24.3 billion and subscription revenue also up modestly. Cost of revenue rose but remains well-controlled relative to sales, maintaining healthy contribution margins. The amortization of acquisition-related intangible assets remains significant but stable, reflecting ongoing integration of previous acquisitions.\n\nBroadcom's financial metrics show a robust compound annual growth rate (CAGR) of 33.6% in revenue from 2023 to 2028, with EBITDA margins expected to rise to 65.7% by 2028, demonstrating improved operational efficiency. Earnings per share are forecasted to grow steadily, supporting a positive investment thesis centered on strong profitability and cash flow generation.\n\nThe company maintains a leading position relative to peers such as NVIDIA and AMD in EBITDA generation, although valuation multiples such as EV/EBITDA are not explicitly reported for Broadcom. The recent quarterly results suggest continued execution on strategic initiatives, including subscription service expansion, which may provide longer-term revenue stability.\n\nOverall, the sentiment from the latest financial disclosures is positive, underscoring Broadcom's growth momentum and improving profitability. Investors should monitor quarterly revenue trends, margin improvements, and the impact of amortization costs, as these factors will influence near-term stock performance and validate the long-term growth outlook.",
+  "revised_text": "[UNVERIFIED - deterministic evidence/number check failed] Recent financial disclosures from Broadcom Inc. for the fiscal quarter ended August 2, 2026, reveal significant revenue growth driven by both product sales and subscription services.\n\n[UNVERIFIED - deterministic evidence/number check failed] This growth supports the company's strong revenue trajectory projected through 2028, alongside improving contribution and EBITDA margins.\n\n[UNVERIFIED - evidence not supplied] These results reinforce Broadcom's strategic positioning and growth outlook in the semiconductor industry.\n\n[UNVERIFIED - deterministic evidence/number check failed] Key developments include a substantial increase in quarterly total net revenue to $29.6 billion, nearly doubling the same period last year, with product revenue surging to $24.3 billion and subscription revenue also up modestly.\n\nCost of revenue increased, but contribution margins remain healthy.\n\n[UNVERIFIED - deterministic evidence/number check failed] The amortization of acquisition-related intangible assets remains significant but stable, reflecting ongoing integration of previous acquisitions.\n\n[UNVERIFIED - deterministic evidence/number check failed] Broadcom's financial metrics show a robust compound annual growth rate (CAGR) of 33.6% in revenue from 2023 to 2028, with EBITDA margins expected to rise to 65.7% by 2028, demonstrating improved operational efficiency.\n\n[UNVERIFIED - deterministic evidence/number check failed] Earnings per share are forecasted to grow steadily, supporting a positive investment thesis centered on strong profitability and cash flow generation.\n\nBroadcom's EBITDA is lower than NVIDIA's in 2024E, 2025E, and 2027E, but higher than AMD's in those years.\n\n[UNVERIFIED - evidence not supplied] The recent quarterly results suggest continued execution on strategic initiatives, including subscription service expansion, which may provide longer-term revenue stability.\n\n[UNVERIFIED - evidence not supplied] Overall, the sentiment from the latest financial disclosures is positive, underscoring Broadcom's growth momentum and improving profitability.\n\n[UNVERIFIED - evidence not supplied] Investors should monitor quarterly revenue trends, margin improvements, and the impact of amortization costs, as these factors will influence near-term stock performance and validate the long-term growth outlook.",
+  "claims": [
+    {
+      "claim_id": "u0c0",
+      "source_id": 0,
+      "source_start": 0,
+      "source_end": 182,
+      "source_quote_occurrences": 1,
+      "original_quote": "Recent financial disclosures from Broadcom Inc. for the fiscal quarter ended August 2, 2026, reveal significant revenue growth driven by both product sales and subscription services.",
+      "claim": "Recent financial disclosures from Broadcom Inc. for the fiscal quarter ended August 2, 2026, reveal significant revenue growth driven by both product sales and subscription services.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 42,
+          "quote": "**Title:** Broadcom Inc. Form 10-Q financial disclosure for period ended 2026-08-02",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 47,
+          "quote": "2026",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 71,
+          "quote": "29,591",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 58,
+          "quote": "24,279",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 66,
+          "quote": "5,312",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The 10-Q table shows total net revenue for the quarter ended August 2, 2026, at $29.6 billion, with product revenue at $24.3 billion and subscription revenue at $5.3 billion, both higher than the prior year period, supporting the claim of significant revenue growth from both sources.",
+      "action": "keep",
+      "revised_claim": "Recent financial disclosures from Broadcom Inc. for the fiscal quarter ended August 2, 2026, reveal significant revenue growth driven by both product sales and subscription services.",
+      "number_bindings": [
+        {
+          "claim_number": "2026",
+          "evidence_line": 47,
+          "evidence_number": "2026",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "29.6",
+          "evidence_line": 71,
+          "evidence_number": "29,591",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "24.3",
+          "evidence_line": 58,
+          "evidence_number": "24,279",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "5.3",
+          "evidence_line": 66,
+          "evidence_number": "5,312",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2,",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2026,",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2,:missing_binding",
+        "numeric_check_failed:2026,:missing_binding"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Recent financial disclosures from Broadcom Inc. for the fiscal quarter ended August 2, 2026, reveal significant revenue growth driven by both product sales and subscription services.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u0c1",
+      "source_id": 0,
+      "source_start": 183,
+      "source_end": 320,
+      "source_quote_occurrences": 1,
+      "original_quote": "This growth supports the company's strong revenue trajectory projected through 2028, alongside improving contribution and EBITDA margins.",
+      "claim": "This growth supports the company's strong revenue trajectory projected through 2028, alongside improving contribution and EBITDA margins.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 6,
+          "quote": "|  0 | Revenue             | 35819000000.0 | 51574000000.0 | 63887000000.0 | 67081350000.0 | 71106231000.0 | 73950480240.0  | 33.6%  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 10,
+          "quote": "|  4 | Contribution Margin | 68.9%         | 63.0%         | 67.8%         | 68.8%         | 69.8%         | 70.8%          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 12,
+          "quote": "|  6 | EBITDA Margin       | 56.0%         | 45.5%         | 53.6%         | 62.7%         | 64.2%         | 65.7%          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The financial metrics table shows revenue increasing through 2028E, with contribution and EBITDA margins also rising, supporting the claim of a strong revenue trajectory and improving margins.",
+      "action": "keep",
+      "revised_claim": "Broadcom's revenue is projected to increase through 2028E, with contribution and EBITDA margins also improving over this period.",
+      "number_bindings": [
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] This growth supports the company's strong revenue trajectory projected through 2028, alongside improving contribution and EBITDA margins.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u0c2",
+      "source_id": 0,
+      "source_start": 321,
+      "source_end": 427,
+      "source_quote_occurrences": 1,
+      "original_quote": "These results reinforce Broadcom's strategic positioning and growth outlook in the semiconductor industry.",
+      "claim": "These results reinforce Broadcom's strategic positioning and growth outlook in the semiconductor industry.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "There is no direct evidence in the supplied data regarding Broadcom's strategic positioning or its outlook relative to the broader semiconductor industry.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] These results reinforce Broadcom's strategic positioning and growth outlook in the semiconductor industry.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u1c0",
+      "source_id": 1,
+      "source_start": 429,
+      "source_end": 657,
+      "source_quote_occurrences": 1,
+      "original_quote": "Key developments include a substantial increase in quarterly total net revenue to $29.6 billion, nearly doubling the same period last year, with product revenue surging to $24.3 billion and subscription revenue also up modestly.",
+      "claim": "Key developments include a substantial increase in quarterly total net revenue to $29.6 billion, nearly doubling the same period last year, with product revenue surging to $24.3 billion and subscription revenue also up modestly.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 71,
+          "quote": "29,591",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 72,
+          "quote": "15,952",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 58,
+          "quote": "24,279",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 66,
+          "quote": "5,312",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The 10-Q table shows total net revenue for the quarter ended August 2, 2026, at $29.6 billion, compared to $16.0 billion in the prior year, with product revenue at $24.3 billion (up from $11.2 billion) and subscription revenue at $5.3 billion (up from $4.8 billion), supporting the claim.",
+      "action": "keep",
+      "revised_claim": "Quarterly total net revenue increased to $29.6 billion for the quarter ended August 2, 2026, nearly doubling from $16.0 billion in the same period last year, with product revenue rising to $24.3 billion and subscription revenue also increasing.",
+      "number_bindings": [
+        {
+          "claim_number": "29.6",
+          "evidence_line": 71,
+          "evidence_number": "29,591",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "16.0",
+          "evidence_line": 72,
+          "evidence_number": "15,952",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "24.3",
+          "evidence_line": 58,
+          "evidence_number": "24,279",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "5.3",
+          "evidence_line": 66,
+          "evidence_number": "5,312",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "29.6",
+          "passed": false,
+          "reason": "numeric_mismatch",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2,",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2026,",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "16.0",
+          "passed": false,
+          "reason": "numeric_mismatch",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "24.3",
+          "passed": false,
+          "reason": "numeric_mismatch",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:29.6:numeric_mismatch",
+        "numeric_check_failed:2,:missing_binding",
+        "numeric_check_failed:2026,:missing_binding",
+        "numeric_check_failed:16.0:numeric_mismatch",
+        "numeric_check_failed:24.3:numeric_mismatch"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Key developments include a substantial increase in quarterly total net revenue to $29.6 billion, nearly doubling the same period last year, with product revenue surging to $24.3 billion and subscription revenue also up modestly.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u1c1",
+      "source_id": 1,
+      "source_start": 658,
+      "source_end": 767,
+      "source_quote_occurrences": 1,
+      "original_quote": "Cost of revenue rose but remains well-controlled relative to sales, maintaining healthy contribution margins.",
+      "claim": "Cost of revenue rose but remains well-controlled relative to sales, maintaining healthy contribution margins.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 77,
+          "quote": "6,983",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 78,
+          "quote": "3,098",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 81,
+          "quote": "Cost of subscriptions and services",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 82,
+          "quote": "641",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 10,
+          "quote": "|  4 | Contribution Margin | 68.9%         | 63.0%         | 67.8%         | 68.8%         | 69.8%         | 70.8%          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The cost of products sold and cost of subscriptions/services both increased year-over-year, but contribution margin remains high (68.8% in 2026E per the financial metrics table), supporting the claim that margins are healthy.",
+      "action": "keep",
+      "revised_claim": "Cost of revenue increased, but contribution margins remain healthy.",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "Cost of revenue increased, but contribution margins remain healthy.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u1c2",
+      "source_id": 1,
+      "source_start": 768,
+      "source_end": 914,
+      "source_quote_occurrences": 1,
+      "original_quote": "The amortization of acquisition-related intangible assets remains significant but stable, reflecting ongoing integration of previous acquisitions.",
+      "claim": "The amortization of acquisition-related intangible assets remains significant but stable, reflecting ongoing integration of previous acquisitions.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 87,
+          "quote": "1,499",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 88,
+          "quote": "1,519",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 89,
+          "quote": "4,422",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 90,
+          "quote": "4,486",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "Amortization of acquisition-related intangible assets is reported as $1,499 million for the quarter ended August 2, 2026, and $1,519 million for the same period last year, as well as $4,422 million and $4,486 million for the nine-month periods, indicating stability and significance.",
+      "action": "keep",
+      "revised_claim": "The amortization of acquisition-related intangible assets remains significant and stable year-over-year.",
+      "number_bindings": [
+        {
+          "claim_number": "1,499",
+          "evidence_line": 87,
+          "evidence_number": "1,499",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "1,519",
+          "evidence_line": 88,
+          "evidence_number": "1,519",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "4,422",
+          "evidence_line": 89,
+          "evidence_number": "4,422",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "4,486",
+          "evidence_line": 90,
+          "evidence_number": "4,486",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] The amortization of acquisition-related intangible assets remains significant but stable, reflecting ongoing integration of previous acquisitions.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u2c0",
+      "source_id": 2,
+      "source_start": 916,
+      "source_end": 1134,
+      "source_quote_occurrences": 1,
+      "original_quote": "Broadcom's financial metrics show a robust compound annual growth rate (CAGR) of 33.6% in revenue from 2023 to 2028, with EBITDA margins expected to rise to 65.7% by 2028, demonstrating improved operational efficiency.",
+      "claim": "Broadcom's financial metrics show a robust compound annual growth rate (CAGR) of 33.6% in revenue from 2023 to 2028, with EBITDA margins expected to rise to 65.7% by 2028, demonstrating improved operational efficiency.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 6,
+          "quote": "|  0 | Revenue             | 35819000000.0 | 51574000000.0 | 63887000000.0 | 67081350000.0 | 71106231000.0 | 73950480240.0  | 33.6%  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 12,
+          "quote": "|  6 | EBITDA Margin       | 56.0%         | 45.5%         | 53.6%         | 62.7%         | 64.2%         | 65.7%          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The financial metrics table shows a CAGR of 33.6% for revenue from 2023A to 2028E and an EBITDA margin of 65.7% in 2028E, supporting the claim.",
+      "action": "keep",
+      "revised_claim": "Broadcom's revenue CAGR from 2023A to 2028E is 33.6%, and its EBITDA margin is expected to reach 65.7% by 2028E.",
+      "number_bindings": [
+        {
+          "claim_number": "33.6",
+          "evidence_line": 6,
+          "evidence_number": "33.6%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2023",
+          "evidence_line": 4,
+          "evidence_number": "2023A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "65.7",
+          "evidence_line": 12,
+          "evidence_number": "65.7%",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "33.6%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "65.7%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2023:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line",
+        "numeric_check_failed:33.6%:missing_binding",
+        "numeric_check_failed:65.7%:missing_binding",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Broadcom's financial metrics show a robust compound annual growth rate (CAGR) of 33.6% in revenue from 2023 to 2028, with EBITDA margins expected to rise to 65.7% by 2028, demonstrating improved operational efficiency.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u2c1",
+      "source_id": 2,
+      "source_start": 1135,
+      "source_end": 1285,
+      "source_quote_occurrences": 1,
+      "original_quote": "Earnings per share are forecasted to grow steadily, supporting a positive investment thesis centered on strong profitability and cash flow generation.",
+      "claim": "Earnings per share are forecasted to grow steadily, supporting a positive investment thesis centered on strong profitability and cash flow generation.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 15,
+          "quote": "|  9 | EPS                 | 3.39          | 1.27          | 4.91          | 5.21          | 5.57          | 5.86           | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The EPS row in the financial metrics table shows a steady increase from 2025A through 2028E, supporting the claim that EPS is forecasted to grow steadily.",
+      "action": "keep",
+      "revised_claim": "Earnings per share for Broadcom are forecasted to grow steadily from 2025A through 2028E.",
+      "number_bindings": [
+        {
+          "claim_number": "2025",
+          "evidence_line": 4,
+          "evidence_number": "2025A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2025",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2025:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Earnings per share are forecasted to grow steadily, supporting a positive investment thesis centered on strong profitability and cash flow generation.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u3c0",
+      "source_id": 3,
+      "source_start": 1287,
+      "source_end": 1479,
+      "source_quote_occurrences": 1,
+      "original_quote": "The company maintains a leading position relative to peers such as NVIDIA and AMD in EBITDA generation, although valuation multiples such as EV/EBITDA are not explicitly reported for Broadcom.",
+      "claim": "The company maintains a leading position relative to peers such as NVIDIA and AMD in EBITDA generation, although valuation multiples such as EV/EBITDA are not explicitly reported for Broadcom.",
+      "classification": "Contradicted",
+      "evidence": [
+        {
+          "line_number": 23,
+          "quote": "|   2023 |   5.986e+09   |   4.149e+09   |   2.0042e+10  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 24,
+          "quote": "|   2024 |   3.5583e+10  |   5.258e+09   |   2.3473e+10  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 25,
+          "quote": "|   2025 |   8.6137e+10  |   7.275e+09   |   3.4259e+10  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 27,
+          "quote": "|   2027 |   3.82001e+11 |   8.60087e+09 |   4.50625e+10 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The peer EBITDA comparison table shows that NVIDIA's EBITDA is higher than Broadcom's in 2024E, 2025E, and 2027E, contradicting the claim that Broadcom maintains a leading position in EBITDA generation relative to NVIDIA.",
+      "action": "correct",
+      "revised_claim": "Broadcom's EBITDA is lower than NVIDIA's in 2024E, 2025E, and 2027E, but higher than AMD's in those years.",
+      "number_bindings": [
+        {
+          "claim_number": "2024",
+          "evidence_line": 24,
+          "evidence_number": "2024",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2025",
+          "evidence_line": 25,
+          "evidence_number": "2025",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2027",
+          "evidence_line": 27,
+          "evidence_number": "2027",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2024",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2025",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2027",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "Broadcom's EBITDA is lower than NVIDIA's in 2024E, 2025E, and 2027E, but higher than AMD's in those years.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u3c1",
+      "source_id": 3,
+      "source_start": 1480,
+      "source_end": 1653,
+      "source_quote_occurrences": 1,
+      "original_quote": "The recent quarterly results suggest continued execution on strategic initiatives, including subscription service expansion, which may provide longer-term revenue stability.",
+      "claim": "The recent quarterly results suggest continued execution on strategic initiatives, including subscription service expansion, which may provide longer-term revenue stability.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "There is no direct evidence in the supplied data regarding strategic initiatives or the intent to provide longer-term revenue stability through subscription service expansion.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] The recent quarterly results suggest continued execution on strategic initiatives, including subscription service expansion, which may provide longer-term revenue stability.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u4c0",
+      "source_id": 4,
+      "source_start": 1655,
+      "source_end": 1797,
+      "source_quote_occurrences": 1,
+      "original_quote": "Overall, the sentiment from the latest financial disclosures is positive, underscoring Broadcom's growth momentum and improving profitability.",
+      "claim": "Overall, the sentiment from the latest financial disclosures is positive, underscoring Broadcom's growth momentum and improving profitability.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "This is a qualitative summary and sentiment statement not directly supported by the supplied evidence.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Overall, the sentiment from the latest financial disclosures is positive, underscoring Broadcom's growth momentum and improving profitability.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u4c1",
+      "source_id": 4,
+      "source_start": 1798,
+      "source_end": 2010,
+      "source_quote_occurrences": 1,
+      "original_quote": "Investors should monitor quarterly revenue trends, margin improvements, and the impact of amortization costs, as these factors will influence near-term stock performance and validate the long-term growth outlook.",
+      "claim": "Investors should monitor quarterly revenue trends, margin improvements, and the impact of amortization costs, as these factors will influence near-term stock performance and validate the long-term growth outlook.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "This is a forward-looking recommendation and opinion, not a factual claim supported by the supplied evidence.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Investors should monitor quarterly revenue trends, margin improvements, and the impact of amortization costs, as these factors will influence near-term stock performance and validate the long-term growth outlook.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    }
+  ],
+  "units": [
+    {
+      "source_id": 0,
+      "claims": [
+        {
+          "original_quote": "Recent financial disclosures from Broadcom Inc. for the fiscal quarter ended August 2, 2026, reveal significant revenue growth driven by both product sales and subscription services.",
+          "claim": "Recent financial disclosures from Broadcom Inc. for the fiscal quarter ended August 2, 2026, reveal significant revenue growth driven by both product sales and subscription services.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 42
+            },
+            {
+              "line_number": 47
+            },
+            {
+              "line_number": 71
+            },
+            {
+              "line_number": 58
+            },
+            {
+              "line_number": 66
+            }
+          ],
+          "reason": "The 10-Q table shows total net revenue for the quarter ended August 2, 2026, at $29.6 billion, with product revenue at $24.3 billion and subscription revenue at $5.3 billion, both higher than the prior year period, supporting the claim of significant revenue growth from both sources.",
+          "action": "keep",
+          "revised_claim": "Recent financial disclosures from Broadcom Inc. for the fiscal quarter ended August 2, 2026, reveal significant revenue growth driven by both product sales and subscription services.",
+          "number_bindings": [
+            {
+              "claim_number": "2026",
+              "evidence_line": 47,
+              "evidence_number": "2026",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "29.6",
+              "evidence_line": 71,
+              "evidence_number": "29,591",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "24.3",
+              "evidence_line": 58,
+              "evidence_number": "24,279",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "5.3",
+              "evidence_line": 66,
+              "evidence_number": "5,312",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "This growth supports the company's strong revenue trajectory projected through 2028, alongside improving contribution and EBITDA margins.",
+          "claim": "This growth supports the company's strong revenue trajectory projected through 2028, alongside improving contribution and EBITDA margins.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 6
+            },
+            {
+              "line_number": 10
+            },
+            {
+              "line_number": 12
+            }
+          ],
+          "reason": "The financial metrics table shows revenue increasing through 2028E, with contribution and EBITDA margins also rising, supporting the claim of a strong revenue trajectory and improving margins.",
+          "action": "keep",
+          "revised_claim": "Broadcom's revenue is projected to increase through 2028E, with contribution and EBITDA margins also improving over this period.",
+          "number_bindings": [
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "These results reinforce Broadcom's strategic positioning and growth outlook in the semiconductor industry.",
+          "claim": "These results reinforce Broadcom's strategic positioning and growth outlook in the semiconductor industry.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "There is no direct evidence in the supplied data regarding Broadcom's strategic positioning or its outlook relative to the broader semiconductor industry.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 1,
+      "claims": [
+        {
+          "original_quote": "Key developments include a substantial increase in quarterly total net revenue to $29.6 billion, nearly doubling the same period last year, with product revenue surging to $24.3 billion and subscription revenue also up modestly.",
+          "claim": "Key developments include a substantial increase in quarterly total net revenue to $29.6 billion, nearly doubling the same period last year, with product revenue surging to $24.3 billion and subscription revenue also up modestly.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 71
+            },
+            {
+              "line_number": 72
+            },
+            {
+              "line_number": 58
+            },
+            {
+              "line_number": 66
+            }
+          ],
+          "reason": "The 10-Q table shows total net revenue for the quarter ended August 2, 2026, at $29.6 billion, compared to $16.0 billion in the prior year, with product revenue at $24.3 billion (up from $11.2 billion) and subscription revenue at $5.3 billion (up from $4.8 billion), supporting the claim.",
+          "action": "keep",
+          "revised_claim": "Quarterly total net revenue increased to $29.6 billion for the quarter ended August 2, 2026, nearly doubling from $16.0 billion in the same period last year, with product revenue rising to $24.3 billion and subscription revenue also increasing.",
+          "number_bindings": [
+            {
+              "claim_number": "29.6",
+              "evidence_line": 71,
+              "evidence_number": "29,591",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "16.0",
+              "evidence_line": 72,
+              "evidence_number": "15,952",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "24.3",
+              "evidence_line": 58,
+              "evidence_number": "24,279",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "5.3",
+              "evidence_line": 66,
+              "evidence_number": "5,312",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "Cost of revenue rose but remains well-controlled relative to sales, maintaining healthy contribution margins.",
+          "claim": "Cost of revenue rose but remains well-controlled relative to sales, maintaining healthy contribution margins.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 77
+            },
+            {
+              "line_number": 78
+            },
+            {
+              "line_number": 81
+            },
+            {
+              "line_number": 82
+            },
+            {
+              "line_number": 10
+            }
+          ],
+          "reason": "The cost of products sold and cost of subscriptions/services both increased year-over-year, but contribution margin remains high (68.8% in 2026E per the financial metrics table), supporting the claim that margins are healthy.",
+          "action": "keep",
+          "revised_claim": "Cost of revenue increased, but contribution margins remain healthy.",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The amortization of acquisition-related intangible assets remains significant but stable, reflecting ongoing integration of previous acquisitions.",
+          "claim": "The amortization of acquisition-related intangible assets remains significant but stable, reflecting ongoing integration of previous acquisitions.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 87
+            },
+            {
+              "line_number": 88
+            },
+            {
+              "line_number": 89
+            },
+            {
+              "line_number": 90
+            }
+          ],
+          "reason": "Amortization of acquisition-related intangible assets is reported as $1,499 million for the quarter ended August 2, 2026, and $1,519 million for the same period last year, as well as $4,422 million and $4,486 million for the nine-month periods, indicating stability and significance.",
+          "action": "keep",
+          "revised_claim": "The amortization of acquisition-related intangible assets remains significant and stable year-over-year.",
+          "number_bindings": [
+            {
+              "claim_number": "1,499",
+              "evidence_line": 87,
+              "evidence_number": "1,499",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "1,519",
+              "evidence_line": 88,
+              "evidence_number": "1,519",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "4,422",
+              "evidence_line": 89,
+              "evidence_number": "4,422",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "4,486",
+              "evidence_line": 90,
+              "evidence_number": "4,486",
+              "transform": "identity"
+            }
+          ]
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 2,
+      "claims": [
+        {
+          "original_quote": "Broadcom's financial metrics show a robust compound annual growth rate (CAGR) of 33.6% in revenue from 2023 to 2028, with EBITDA margins expected to rise to 65.7% by 2028, demonstrating improved operational efficiency.",
+          "claim": "Broadcom's financial metrics show a robust compound annual growth rate (CAGR) of 33.6% in revenue from 2023 to 2028, with EBITDA margins expected to rise to 65.7% by 2028, demonstrating improved operational efficiency.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 6
+            },
+            {
+              "line_number": 12
+            }
+          ],
+          "reason": "The financial metrics table shows a CAGR of 33.6% for revenue from 2023A to 2028E and an EBITDA margin of 65.7% in 2028E, supporting the claim.",
+          "action": "keep",
+          "revised_claim": "Broadcom's revenue CAGR from 2023A to 2028E is 33.6%, and its EBITDA margin is expected to reach 65.7% by 2028E.",
+          "number_bindings": [
+            {
+              "claim_number": "33.6",
+              "evidence_line": 6,
+              "evidence_number": "33.6%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2023",
+              "evidence_line": 4,
+              "evidence_number": "2023A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "65.7",
+              "evidence_line": 12,
+              "evidence_number": "65.7%",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "Earnings per share are forecasted to grow steadily, supporting a positive investment thesis centered on strong profitability and cash flow generation.",
+          "claim": "Earnings per share are forecasted to grow steadily, supporting a positive investment thesis centered on strong profitability and cash flow generation.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 15
+            }
+          ],
+          "reason": "The EPS row in the financial metrics table shows a steady increase from 2025A through 2028E, supporting the claim that EPS is forecasted to grow steadily.",
+          "action": "keep",
+          "revised_claim": "Earnings per share for Broadcom are forecasted to grow steadily from 2025A through 2028E.",
+          "number_bindings": [
+            {
+              "claim_number": "2025",
+              "evidence_line": 4,
+              "evidence_number": "2025A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            }
+          ]
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 3,
+      "claims": [
+        {
+          "original_quote": "The company maintains a leading position relative to peers such as NVIDIA and AMD in EBITDA generation, although valuation multiples such as EV/EBITDA are not explicitly reported for Broadcom.",
+          "claim": "The company maintains a leading position relative to peers such as NVIDIA and AMD in EBITDA generation, although valuation multiples such as EV/EBITDA are not explicitly reported for Broadcom.",
+          "classification": "Contradicted",
+          "evidence": [
+            {
+              "line_number": 23
+            },
+            {
+              "line_number": 24
+            },
+            {
+              "line_number": 25
+            },
+            {
+              "line_number": 27
+            }
+          ],
+          "reason": "The peer EBITDA comparison table shows that NVIDIA's EBITDA is higher than Broadcom's in 2024E, 2025E, and 2027E, contradicting the claim that Broadcom maintains a leading position in EBITDA generation relative to NVIDIA.",
+          "action": "correct",
+          "revised_claim": "Broadcom's EBITDA is lower than NVIDIA's in 2024E, 2025E, and 2027E, but higher than AMD's in those years.",
+          "number_bindings": [
+            {
+              "claim_number": "2024",
+              "evidence_line": 24,
+              "evidence_number": "2024",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2025",
+              "evidence_line": 25,
+              "evidence_number": "2025",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2027",
+              "evidence_line": 27,
+              "evidence_number": "2027",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "The recent quarterly results suggest continued execution on strategic initiatives, including subscription service expansion, which may provide longer-term revenue stability.",
+          "claim": "The recent quarterly results suggest continued execution on strategic initiatives, including subscription service expansion, which may provide longer-term revenue stability.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "There is no direct evidence in the supplied data regarding strategic initiatives or the intent to provide longer-term revenue stability through subscription service expansion.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 4,
+      "claims": [
+        {
+          "original_quote": "Overall, the sentiment from the latest financial disclosures is positive, underscoring Broadcom's growth momentum and improving profitability.",
+          "claim": "Overall, the sentiment from the latest financial disclosures is positive, underscoring Broadcom's growth momentum and improving profitability.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "This is a qualitative summary and sentiment statement not directly supported by the supplied evidence.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Investors should monitor quarterly revenue trends, margin improvements, and the impact of amortization costs, as these factors will influence near-term stock performance and validate the long-term growth outlook.",
+          "claim": "Investors should monitor quarterly revenue trends, margin improvements, and the impact of amortization costs, as these factors will influence near-term stock performance and validate the long-term growth outlook.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "This is a forward-looking recommendation and opinion, not a factual claim supported by the supplied evidence.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    }
+  ],
+  "verifier_version": "7.1-semantic-review-neutral-connector-repair",
+  "release_deduplication": "Identical complete released strings appear once per section; all original claim rows and mappings remain. This is not semantic paraphrase deduplication.",
+  "unquoted_nonfactual_connectors": [],
+  "deterministic_validation_failures": [
+    {
+      "claim_id": "u0c0",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2,:missing_binding",
+        "numeric_check_failed:2026,:missing_binding"
+      ],
+      "numeric_results": [
+        {
+          "token": "2,",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2026,",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u0c1",
+      "errors": [
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u1c0",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:29.6:numeric_mismatch",
+        "numeric_check_failed:2,:missing_binding",
+        "numeric_check_failed:2026,:missing_binding",
+        "numeric_check_failed:16.0:numeric_mismatch",
+        "numeric_check_failed:24.3:numeric_mismatch"
+      ],
+      "numeric_results": [
+        {
+          "token": "29.6",
+          "passed": false,
+          "reason": "numeric_mismatch",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2,",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2026,",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "16.0",
+          "passed": false,
+          "reason": "numeric_mismatch",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "24.3",
+          "passed": false,
+          "reason": "numeric_mismatch",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u1c2",
+      "errors": [
+        "number_binding_set_mismatch"
+      ],
+      "numeric_results": []
+    },
+    {
+      "claim_id": "u2c0",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2023:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line",
+        "numeric_check_failed:33.6%:missing_binding",
+        "numeric_check_failed:65.7%:missing_binding",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "33.6%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "65.7%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u2c1",
+      "errors": [
+        "numeric_check_failed:2025:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "2025",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    }
+  ],
+  "deterministic_failure_count": 6,
+  "verified_claim_count": 2,
+  "unverified_annotation_count": 10,
+  "withheld_claim_count": 0,
+  "claim_retention_rate": 1.0,
+  "supported_valid_retention_count": 1,
+  "automatic_year_binding_count": 0,
+  "limitations": "UNVERIFIED annotations preserve unsupported or deterministically rejected assertions for review and must not be counted as grounded facts. A claim's original machine classification is preserved even when deterministic checks reject it; retained_as_verified is then false. Rejected contradicted corrections remain in the audit but are withheld from the narrative. Semantic judgments are machine-assisted, not human-validated. Lexical quote coverage does not prove exhaustive semantic atomization. Exact numeric/year matches do not establish entity/period alignment or dimensional validity of conversions. Repeated source quotes may have ambiguous first-occurrence offsets."
+}

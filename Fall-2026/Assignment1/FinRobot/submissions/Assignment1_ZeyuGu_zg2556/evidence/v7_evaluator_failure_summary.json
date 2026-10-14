@@ -1,0 +1,53 @@
+{
+  "recorded_utc": "2026-10-11T23:50:25.670136+00:00",
+  "results": [
+    {
+      "ticker": "NVDA",
+      "warning_blinded": false,
+      "changed_units": 63,
+      "zero_claim_units": 18,
+      "proposed_claims": 46
+    },
+    {
+      "ticker": "NVDA",
+      "warning_blinded": true,
+      "changed_units": 63,
+      "zero_claim_units": 0,
+      "proposed_claims": 64
+    },
+    {
+      "ticker": "AMD",
+      "warning_blinded": false,
+      "changed_units": 57,
+      "zero_claim_units": 0,
+      "proposed_claims": 57
+    },
+    {
+      "ticker": "AMD",
+      "warning_blinded": true,
+      "changed_units": 57,
+      "zero_claim_units": 0,
+      "proposed_claims": 60
+    },
+    {
+      "ticker": "INTC",
+      "warning_blinded": false,
+      "changed_units": 53,
+      "zero_claim_units": 0,
+      "proposed_claims": 58
+    },
+    {
+      "ticker": "INTC",
+      "warning_blinded": true,
+      "changed_units": 53,
+      "zero_claim_units": 0,
+      "proposed_claims": 54
+    }
+  ],
+  "canonical_policy": "Neither unblinded nor blinded API proposals are canonical. All173 changed units were explicitly decomposed/adjudicated by the task agent;360 exact unchanged units reuse prior independent labels. No human validation.",
+  "examples": [
+    "Unblinded NVDA competitor units were incorrectly called zero-claim solely because they were annotated UNVERIFIED.",
+    "Blinded NVDA company overview proposal incorrectly marked the reported89bn Data Center amount unsupported despite original line45.",
+    "Blinded proposals still combined business clauses instead of complete atomization."
+  ]
+}

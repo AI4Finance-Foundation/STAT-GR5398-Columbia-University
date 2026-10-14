@@ -1,0 +1,1345 @@
+{
+  "original_text": "Alphabet Inc. currently trades at a PE ratio of approximately 24.1 based on 2023 actual earnings, which is slightly below its forecasted PE range for 2024 to 2028, fluctuating mostly between 23 and 28. Compared to its key peers like Apple and Nvidia, Alphabet's valuation is moderate. For example, its EV/EBITDA multiple is around 17.3 in 2024, lower than Apple's 26.6 and significantly below Nvidia's very high multiples reflecting its growth profile. Historically, Alphabet's PE ratio has ranged from a low near 19 in 2022 to above 28 in 2025, indicating some volatility aligned with earnings growth and market sentiment.\n\nThe historical valuation trend shows that Alphabet's PE ratio dipped in 2022 during a broader market correction and concerns over tech sector growth but rebounded as earnings recovered and growth prospects improved. This aligns with Alphabet's strong revenue growth, consistently above 10% CAGR over recent years, and improving profitability metrics such as EBITDA margin expanding from 30% in 2022 to over 50% projected by 2028. The company’s robust earnings growth, driven by diversified revenue streams and cost efficiencies, supports a relatively stable mid-20s PE multiple.\n\nWithin the industry context, Alphabet's valuation is reasonable considering its dominant market position, consistent double-digit revenue growth, and strong contribution margins. While its PE is lower than some high-growth tech peers like Nvidia, it reflects a balance between growth potential and the mature scale of Alphabet’s business. The valuation does not appear excessively high to suggest a bubble but rather reflects expectations for continued solid growth and profitability improvements. Given Alphabet’s competitive moat in search, advertising, cloud, and AI investments, the market is pricing in sustained earnings expansion rather than speculative exuberance.\n\nPotential risks embedded in the valuation include regulatory challenges, intensifying competition in key segments, and the need to maintain innovation momentum. However, Alphabet’s diversified business model and strong cash flow generation provide a margin of safety. The moderate valuation relative to peers, combined with above-industry-average growth and profitability, suggests the current price reasonably captures both growth opportunities and risks.\n\nIn summary, Alphabet's current valuation level is justified by its robust fundamentals and growth outlook within the technology sector. The moderate PE and EV/EBITDA multiples relative to peers reflect balanced market expectations without extreme optimism or pessimism. Investors benefit from a margin of safety supported by Alphabet’s competitive advantages and consistent earnings growth, making the valuation reasonable and aligned with industry norms and company fundamentals.",
+  "revised_text": "[UNVERIFIED - deterministic evidence/number check failed] Alphabet Inc. currently trades at a PE ratio of approximately 24.1 based on 2023 actual earnings\n\n[UNVERIFIED - deterministic evidence/number check failed] which is slightly below its forecasted PE range for 2024 to 2028, fluctuating mostly between 23 and 28.\n\n[UNVERIFIED - evidence not supplied] Compared to its key peers like Apple and Nvidia, Alphabet's valuation is moderate.\n\n[UNVERIFIED - deterministic evidence/number check failed] For example, its EV/EBITDA multiple is around 17.3 in 2024, lower than Apple's 26.6 and significantly below Nvidia's very high multiples reflecting its growth profile.\n\n[UNVERIFIED - deterministic evidence/number check failed] Historically, Alphabet's PE ratio has ranged from a low near 19 in 2022 to above 28 in 2025, indicating some volatility aligned with earnings growth and market sentiment.\n\n[UNVERIFIED - deterministic evidence/number check failed] The historical valuation trend shows that Alphabet's PE ratio dipped in 2022 during a broader market correction and concerns over tech sector growth but rebounded as earnings recovered and growth prospects improved.\n\n[UNVERIFIED - deterministic evidence/number check failed] This aligns with Alphabet's strong revenue growth, consistently above 10% CAGR over recent years, and improving profitability metrics such as EBITDA margin expanding from 30% in 2022 to over 50% projected by 2028.\n\n[UNVERIFIED - evidence not supplied] Alphabet's robust earnings growth supports a relatively stable mid-20s PE multiple.\n\n[UNVERIFIED - evidence not supplied] Alphabet's valuation is reasonable considering its dominant market position, consistent double-digit revenue growth, and strong contribution margins.\n\n[UNVERIFIED - evidence not supplied] Alphabet's PE is lower than some high-growth tech peers like Nvidia.\n\n[UNVERIFIED - evidence not supplied] Alphabet's valuation does not appear excessively high to suggest a bubble and reflects expectations for continued solid growth and profitability improvements.\n\n[UNVERIFIED - evidence not supplied] Alphabet has a competitive moat in search, advertising, cloud, and AI investments, and the market is pricing in sustained earnings expansion rather than speculative exuberance.\n\n[UNVERIFIED - evidence not supplied] Potential risks embedded in Alphabet's valuation include regulatory challenges, intensifying competition in key segments, and the need to maintain innovation momentum.\n\n[UNVERIFIED - evidence not supplied] Alphabet’s diversified business model and strong cash flow generation provide a margin of safety.\n\n[UNVERIFIED - evidence not supplied] Alphabet's moderate valuation relative to peers, combined with above-industry-average growth and profitability, suggests the current price reasonably captures both growth opportunities and risks.\n\n[UNVERIFIED - evidence not supplied] Alphabet's current valuation level is justified by its robust fundamentals and growth outlook within the technology sector.\n\n[UNVERIFIED - evidence not supplied] Alphabet's moderate PE and EV/EBITDA multiples relative to peers reflect balanced market expectations without extreme optimism or pessimism.\n\n[UNVERIFIED - evidence not supplied] Investors benefit from a margin of safety supported by Alphabet’s competitive advantages and consistent earnings growth, making the valuation reasonable and aligned with industry norms and company fundamentals.",
+  "claims": [
+    {
+      "claim_id": "u0c0",
+      "source_id": 0,
+      "source_start": 0,
+      "source_end": 96,
+      "source_quote_occurrences": 1,
+      "original_quote": "Alphabet Inc. currently trades at a PE ratio of approximately 24.1 based on 2023 actual earnings",
+      "claim": "Alphabet Inc. currently trades at a PE ratio of approximately 24.1 based on 2023 actual earnings.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 16,
+          "quote": "| 10 | PE Ratio            | 25.427065026362037 | 19.33115468409586 | 24.131849315068497 | 23.42435424354243 | 28.762603116406968 | 27.3           | 26.0           | 24.7            | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The 2023A PE Ratio for GOOGL is 24.131849315068497 in the table.",
+      "action": "keep",
+      "revised_claim": "Alphabet Inc. currently trades at a PE ratio of approximately 24.1 based on 2023 actual earnings.",
+      "number_bindings": [
+        {
+          "claim_number": "24.1",
+          "evidence_line": 16,
+          "evidence_number": "24.131849315068497",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2023",
+          "evidence_line": 4,
+          "evidence_number": "2023A",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "24.1",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2023:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Alphabet Inc. currently trades at a PE ratio of approximately 24.1 based on 2023 actual earnings",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u0c1",
+      "source_id": 0,
+      "source_start": 98,
+      "source_end": 201,
+      "source_quote_occurrences": 1,
+      "original_quote": "which is slightly below its forecasted PE range for 2024 to 2028, fluctuating mostly between 23 and 28.",
+      "claim": "Alphabet's forecasted PE range for 2024 to 2028 fluctuates mostly between 23 and 28, and the 2023 actual PE is slightly below this range.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 16,
+          "quote": "| 10 | PE Ratio            | 25.427065026362037 | 19.33115468409586 | 24.131849315068497 | 23.42435424354243 | 28.762603116406968 | 27.3           | 26.0           | 24.7            | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The PE ratios for 2024-2028E are 23.42435424354243, 28.762603116406968, 27.3, 26.0, and 24.7, which are mostly between 23 and 28. The 2023A value is 24.131849315068497, which is slightly below the 2025E peak.",
+      "action": "keep",
+      "revised_claim": "Alphabet's forecasted PE range for 2024 to 2028 fluctuates mostly between 23 and 28, and the 2023 actual PE is slightly below this range.",
+      "number_bindings": [
+        {
+          "claim_number": "2024",
+          "evidence_line": 4,
+          "evidence_number": "2024A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "23",
+          "evidence_line": 16,
+          "evidence_number": "23.42435424354243",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "28",
+          "evidence_line": 16,
+          "evidence_number": "28.762603116406968",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2024",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "23",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "28",
+          "passed": false,
+          "reason": "numeric_mismatch",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2024:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line",
+        "numeric_check_failed:28:numeric_mismatch",
+        "numeric_check_failed:2023:missing_binding"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] which is slightly below its forecasted PE range for 2024 to 2028, fluctuating mostly between 23 and 28.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u0c2",
+      "source_id": 0,
+      "source_start": 202,
+      "source_end": 284,
+      "source_quote_occurrences": 1,
+      "original_quote": "Compared to its key peers like Apple and Nvidia, Alphabet's valuation is moderate.",
+      "claim": "Compared to its key peers like Apple and Nvidia, Alphabet's valuation is moderate.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence defines 'moderate' or provides a comparative summary of overall valuation.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Compared to its key peers like Apple and Nvidia, Alphabet's valuation is moderate.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u0c3",
+      "source_id": 0,
+      "source_start": 285,
+      "source_end": 452,
+      "source_quote_occurrences": 1,
+      "original_quote": "For example, its EV/EBITDA multiple is around 17.3 in 2024, lower than Apple's 26.6 and significantly below Nvidia's very high multiples reflecting its growth profile.",
+      "claim": "Alphabet's EV/EBITDA multiple is around 17.3 in 2024, lower than Apple's 26.6 and significantly below Nvidia's much higher multiples.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 35,
+          "quote": "|   2024 |  26.564  |  17.3422 |  43.4522 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The 2024 EV/EBITDA multiples are 17.3422 for GOOGL, 26.564 for AAPL, and 43.4522 for NVDA.",
+      "action": "keep",
+      "revised_claim": "Alphabet's EV/EBITDA multiple is around 17.3 in 2024, lower than Apple's 26.6 and significantly below Nvidia's much higher multiples.",
+      "number_bindings": [
+        {
+          "claim_number": "17.3",
+          "evidence_line": 35,
+          "evidence_number": "17.3422",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2024",
+          "evidence_line": 31,
+          "evidence_number": "2024",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "26.6",
+          "evidence_line": 35,
+          "evidence_number": "26.564",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "17.3",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2024",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "26.6",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2024:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] For example, its EV/EBITDA multiple is around 17.3 in 2024, lower than Apple's 26.6 and significantly below Nvidia's very high multiples reflecting its growth profile.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u0c4",
+      "source_id": 0,
+      "source_start": 453,
+      "source_end": 623,
+      "source_quote_occurrences": 1,
+      "original_quote": "Historically, Alphabet's PE ratio has ranged from a low near 19 in 2022 to above 28 in 2025, indicating some volatility aligned with earnings growth and market sentiment.",
+      "claim": "Historically, Alphabet's PE ratio has ranged from a low near 19 in 2022 to above 28 in 2025.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 16,
+          "quote": "| 10 | PE Ratio            | 25.427065026362037 | 19.33115468409586 | 24.131849315068497 | 23.42435424354243 | 28.762603116406968 | 27.3           | 26.0           | 24.7            | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The PE ratio is 19.33115468409586 in 2022 and 28.762603116406968 in 2025.",
+      "action": "keep",
+      "revised_claim": "Historically, Alphabet's PE ratio has ranged from a low near 19 in 2022 to above 28 in 2025.",
+      "number_bindings": [
+        {
+          "claim_number": "19",
+          "evidence_line": 16,
+          "evidence_number": "19.33115468409586",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2022",
+          "evidence_line": 4,
+          "evidence_number": "2022A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "28",
+          "evidence_line": 16,
+          "evidence_number": "28.762603116406968",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2025",
+          "evidence_line": 4,
+          "evidence_number": "2025A",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "19",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2022",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "28",
+          "passed": false,
+          "reason": "numeric_mismatch",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2025",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2022:number_not_in_cited_evidence_line",
+        "numeric_check_failed:28:numeric_mismatch",
+        "numeric_check_failed:2025:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Historically, Alphabet's PE ratio has ranged from a low near 19 in 2022 to above 28 in 2025, indicating some volatility aligned with earnings growth and market sentiment.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u1c0",
+      "source_id": 1,
+      "source_start": 625,
+      "source_end": 840,
+      "source_quote_occurrences": 1,
+      "original_quote": "The historical valuation trend shows that Alphabet's PE ratio dipped in 2022 during a broader market correction and concerns over tech sector growth but rebounded as earnings recovered and growth prospects improved.",
+      "claim": "Alphabet's PE ratio dipped in 2022 and rebounded in subsequent years.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 16,
+          "quote": "| 10 | PE Ratio            | 25.427065026362037 | 19.33115468409586 | 24.131849315068497 | 23.42435424354243 | 28.762603116406968 | 27.3           | 26.0           | 24.7            | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The PE ratio is 25.43 in 2021, drops to 19.33 in 2022, then rises to 24.13 in 2023 and higher in later years.",
+      "action": "keep",
+      "revised_claim": "Alphabet's PE ratio dipped in 2022 and rebounded in subsequent years.",
+      "number_bindings": [
+        {
+          "claim_number": "2022",
+          "evidence_line": 4,
+          "evidence_number": "2022A",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2022",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2022:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] The historical valuation trend shows that Alphabet's PE ratio dipped in 2022 during a broader market correction and concerns over tech sector growth but rebounded as earnings recovered and growth prospects improved.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u1c1",
+      "source_id": 1,
+      "source_start": 841,
+      "source_end": 1054,
+      "source_quote_occurrences": 1,
+      "original_quote": "This aligns with Alphabet's strong revenue growth, consistently above 10% CAGR over recent years, and improving profitability metrics such as EBITDA margin expanding from 30% in 2022 to over 50% projected by 2028.",
+      "claim": "Alphabet's revenue CAGR is above 10% over recent years, and its EBITDA margin expands from 30% in 2022 to over 50% projected by 2028.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 6,
+          "quote": "|  0 | Revenue             | 257637000000.0     | 282836000000.0    | 307394000000.0     | 350018000000.0    | 402836000000.0     | 422977800000.0 | 448356468000.0 | 466290726720.0  | 11.8%  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 12,
+          "quote": "|  6 | EBITDA Margin       | 40.2%              | 30.1%             | 31.9%              | 38.7%             | 44.9%              | 48.7%          | 50.2%          | 51.7%           | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The revenue CAGR is 11.8% and EBITDA margin is 30.1% in 2022, projected to 51.7% in 2028E.",
+      "action": "keep",
+      "revised_claim": "Alphabet's revenue CAGR is 11.8% from 2021A to 2028E, and its EBITDA margin expands from 30.1% in 2022A to 51.7% projected by 2028E.",
+      "number_bindings": [
+        {
+          "claim_number": "11.8",
+          "evidence_line": 6,
+          "evidence_number": "11.8%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2022",
+          "evidence_line": 4,
+          "evidence_number": "2022A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "30.1",
+          "evidence_line": 12,
+          "evidence_number": "30.1%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "51.7",
+          "evidence_line": 12,
+          "evidence_number": "51.7%",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "11.8%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2021",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "30.1%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2022",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "51.7%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:11.8%:missing_binding",
+        "numeric_check_failed:2021:missing_binding",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line",
+        "numeric_check_failed:30.1%:missing_binding",
+        "numeric_check_failed:2022:number_not_in_cited_evidence_line",
+        "numeric_check_failed:51.7%:missing_binding",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] This aligns with Alphabet's strong revenue growth, consistently above 10% CAGR over recent years, and improving profitability metrics such as EBITDA margin expanding from 30% in 2022 to over 50% projected by 2028.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u1c2",
+      "source_id": 1,
+      "source_start": 1055,
+      "source_end": 1203,
+      "source_quote_occurrences": 1,
+      "original_quote": "The company’s robust earnings growth, driven by diversified revenue streams and cost efficiencies, supports a relatively stable mid-20s PE multiple.",
+      "claim": "Alphabet's robust earnings growth supports a relatively stable mid-20s PE multiple.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence links earnings growth to PE stability or defines 'mid-20s' as stable.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Alphabet's robust earnings growth supports a relatively stable mid-20s PE multiple.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u2c0",
+      "source_id": 2,
+      "source_start": 1205,
+      "source_end": 1383,
+      "source_quote_occurrences": 1,
+      "original_quote": "Within the industry context, Alphabet's valuation is reasonable considering its dominant market position, consistent double-digit revenue growth, and strong contribution margins.",
+      "claim": "Alphabet's valuation is reasonable considering its dominant market position, consistent double-digit revenue growth, and strong contribution margins.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for market position, reasonableness, or contribution margin strength.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Alphabet's valuation is reasonable considering its dominant market position, consistent double-digit revenue growth, and strong contribution margins.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u2c1",
+      "source_id": 2,
+      "source_start": 1384,
+      "source_end": 1543,
+      "source_quote_occurrences": 1,
+      "original_quote": "While its PE is lower than some high-growth tech peers like Nvidia, it reflects a balance between growth potential and the mature scale of Alphabet’s business.",
+      "claim": "Alphabet's PE is lower than some high-growth tech peers like Nvidia.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct PE comparison between Alphabet and Nvidia is provided in the evidence.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Alphabet's PE is lower than some high-growth tech peers like Nvidia.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u2c2",
+      "source_id": 2,
+      "source_start": 1544,
+      "source_end": 1702,
+      "source_quote_occurrences": 1,
+      "original_quote": "The valuation does not appear excessively high to suggest a bubble but rather reflects expectations for continued solid growth and profitability improvements.",
+      "claim": "Alphabet's valuation does not appear excessively high to suggest a bubble and reflects expectations for continued solid growth and profitability improvements.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for the absence of a bubble or market expectations.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Alphabet's valuation does not appear excessively high to suggest a bubble and reflects expectations for continued solid growth and profitability improvements.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u2c3",
+      "source_id": 2,
+      "source_start": 1703,
+      "source_end": 1877,
+      "source_quote_occurrences": 1,
+      "original_quote": "Given Alphabet’s competitive moat in search, advertising, cloud, and AI investments, the market is pricing in sustained earnings expansion rather than speculative exuberance.",
+      "claim": "Alphabet has a competitive moat in search, advertising, cloud, and AI investments, and the market is pricing in sustained earnings expansion rather than speculative exuberance.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for Alphabet's business lines, moat, or market pricing rationale.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Alphabet has a competitive moat in search, advertising, cloud, and AI investments, and the market is pricing in sustained earnings expansion rather than speculative exuberance.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u3c0",
+      "source_id": 3,
+      "source_start": 1879,
+      "source_end": 2039,
+      "source_quote_occurrences": 1,
+      "original_quote": "Potential risks embedded in the valuation include regulatory challenges, intensifying competition in key segments, and the need to maintain innovation momentum.",
+      "claim": "Potential risks embedded in Alphabet's valuation include regulatory challenges, intensifying competition in key segments, and the need to maintain innovation momentum.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for these specific risks.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Potential risks embedded in Alphabet's valuation include regulatory challenges, intensifying competition in key segments, and the need to maintain innovation momentum.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u3c1",
+      "source_id": 3,
+      "source_start": 2040,
+      "source_end": 2146,
+      "source_quote_occurrences": 1,
+      "original_quote": "However, Alphabet’s diversified business model and strong cash flow generation provide a margin of safety.",
+      "claim": "Alphabet’s diversified business model and strong cash flow generation provide a margin of safety.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for business model diversification, cash flow, or margin of safety.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Alphabet’s diversified business model and strong cash flow generation provide a margin of safety.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u3c2",
+      "source_id": 3,
+      "source_start": 2147,
+      "source_end": 2335,
+      "source_quote_occurrences": 1,
+      "original_quote": "The moderate valuation relative to peers, combined with above-industry-average growth and profitability, suggests the current price reasonably captures both growth opportunities and risks.",
+      "claim": "Alphabet's moderate valuation relative to peers, combined with above-industry-average growth and profitability, suggests the current price reasonably captures both growth opportunities and risks.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for peer comparison, industry-average growth, or price reasonableness.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Alphabet's moderate valuation relative to peers, combined with above-industry-average growth and profitability, suggests the current price reasonably captures both growth opportunities and risks.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u4c0",
+      "source_id": 4,
+      "source_start": 2337,
+      "source_end": 2472,
+      "source_quote_occurrences": 1,
+      "original_quote": "In summary, Alphabet's current valuation level is justified by its robust fundamentals and growth outlook within the technology sector.",
+      "claim": "Alphabet's current valuation level is justified by its robust fundamentals and growth outlook within the technology sector.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for fundamentals, growth outlook, or justification of valuation.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Alphabet's current valuation level is justified by its robust fundamentals and growth outlook within the technology sector.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u4c1",
+      "source_id": 4,
+      "source_start": 2473,
+      "source_end": 2606,
+      "source_quote_occurrences": 1,
+      "original_quote": "The moderate PE and EV/EBITDA multiples relative to peers reflect balanced market expectations without extreme optimism or pessimism.",
+      "claim": "Alphabet's moderate PE and EV/EBITDA multiples relative to peers reflect balanced market expectations without extreme optimism or pessimism.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for market expectations or the absence of optimism/pessimism.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Alphabet's moderate PE and EV/EBITDA multiples relative to peers reflect balanced market expectations without extreme optimism or pessimism.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    },
+    {
+      "claim_id": "u4c2",
+      "source_id": 4,
+      "source_start": 2607,
+      "source_end": 2817,
+      "source_quote_occurrences": 1,
+      "original_quote": "Investors benefit from a margin of safety supported by Alphabet’s competitive advantages and consistent earnings growth, making the valuation reasonable and aligned with industry norms and company fundamentals.",
+      "claim": "Investors benefit from a margin of safety supported by Alphabet’s competitive advantages and consistent earnings growth, making the valuation reasonable and aligned with industry norms and company fundamentals.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for margin of safety, competitive advantages, or industry alignment.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Investors benefit from a margin of safety supported by Alphabet’s competitive advantages and consistent earnings growth, making the valuation reasonable and aligned with industry norms and company fundamentals.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "faaafd3a414ed87247df4116ebdfe23156dff83bfb9549f09a88a73ae3d75eb9"
+    }
+  ],
+  "units": [
+    {
+      "source_id": 0,
+      "claims": [
+        {
+          "original_quote": "Alphabet Inc. currently trades at a PE ratio of approximately 24.1 based on 2023 actual earnings",
+          "claim": "Alphabet Inc. currently trades at a PE ratio of approximately 24.1 based on 2023 actual earnings.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 16
+            }
+          ],
+          "reason": "The 2023A PE Ratio for GOOGL is 24.131849315068497 in the table.",
+          "action": "keep",
+          "revised_claim": "Alphabet Inc. currently trades at a PE ratio of approximately 24.1 based on 2023 actual earnings.",
+          "number_bindings": [
+            {
+              "claim_number": "24.1",
+              "evidence_line": 16,
+              "evidence_number": "24.131849315068497",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2023",
+              "evidence_line": 4,
+              "evidence_number": "2023A",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "which is slightly below its forecasted PE range for 2024 to 2028, fluctuating mostly between 23 and 28.",
+          "claim": "Alphabet's forecasted PE range for 2024 to 2028 fluctuates mostly between 23 and 28, and the 2023 actual PE is slightly below this range.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 16
+            }
+          ],
+          "reason": "The PE ratios for 2024-2028E are 23.42435424354243, 28.762603116406968, 27.3, 26.0, and 24.7, which are mostly between 23 and 28. The 2023A value is 24.131849315068497, which is slightly below the 2025E peak.",
+          "action": "keep",
+          "revised_claim": "Alphabet's forecasted PE range for 2024 to 2028 fluctuates mostly between 23 and 28, and the 2023 actual PE is slightly below this range.",
+          "number_bindings": [
+            {
+              "claim_number": "2024",
+              "evidence_line": 4,
+              "evidence_number": "2024A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "23",
+              "evidence_line": 16,
+              "evidence_number": "23.42435424354243",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "28",
+              "evidence_line": 16,
+              "evidence_number": "28.762603116406968",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "Compared to its key peers like Apple and Nvidia, Alphabet's valuation is moderate.",
+          "claim": "Compared to its key peers like Apple and Nvidia, Alphabet's valuation is moderate.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence defines 'moderate' or provides a comparative summary of overall valuation.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "For example, its EV/EBITDA multiple is around 17.3 in 2024, lower than Apple's 26.6 and significantly below Nvidia's very high multiples reflecting its growth profile.",
+          "claim": "Alphabet's EV/EBITDA multiple is around 17.3 in 2024, lower than Apple's 26.6 and significantly below Nvidia's much higher multiples.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 35
+            }
+          ],
+          "reason": "The 2024 EV/EBITDA multiples are 17.3422 for GOOGL, 26.564 for AAPL, and 43.4522 for NVDA.",
+          "action": "keep",
+          "revised_claim": "Alphabet's EV/EBITDA multiple is around 17.3 in 2024, lower than Apple's 26.6 and significantly below Nvidia's much higher multiples.",
+          "number_bindings": [
+            {
+              "claim_number": "17.3",
+              "evidence_line": 35,
+              "evidence_number": "17.3422",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2024",
+              "evidence_line": 31,
+              "evidence_number": "2024",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "26.6",
+              "evidence_line": 35,
+              "evidence_number": "26.564",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "Historically, Alphabet's PE ratio has ranged from a low near 19 in 2022 to above 28 in 2025, indicating some volatility aligned with earnings growth and market sentiment.",
+          "claim": "Historically, Alphabet's PE ratio has ranged from a low near 19 in 2022 to above 28 in 2025.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 16
+            }
+          ],
+          "reason": "The PE ratio is 19.33115468409586 in 2022 and 28.762603116406968 in 2025.",
+          "action": "keep",
+          "revised_claim": "Historically, Alphabet's PE ratio has ranged from a low near 19 in 2022 to above 28 in 2025.",
+          "number_bindings": [
+            {
+              "claim_number": "19",
+              "evidence_line": 16,
+              "evidence_number": "19.33115468409586",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2022",
+              "evidence_line": 4,
+              "evidence_number": "2022A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "28",
+              "evidence_line": 16,
+              "evidence_number": "28.762603116406968",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2025",
+              "evidence_line": 4,
+              "evidence_number": "2025A",
+              "transform": "identity"
+            }
+          ]
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 1,
+      "claims": [
+        {
+          "original_quote": "The historical valuation trend shows that Alphabet's PE ratio dipped in 2022 during a broader market correction and concerns over tech sector growth but rebounded as earnings recovered and growth prospects improved.",
+          "claim": "Alphabet's PE ratio dipped in 2022 and rebounded in subsequent years.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 16
+            }
+          ],
+          "reason": "The PE ratio is 25.43 in 2021, drops to 19.33 in 2022, then rises to 24.13 in 2023 and higher in later years.",
+          "action": "keep",
+          "revised_claim": "Alphabet's PE ratio dipped in 2022 and rebounded in subsequent years.",
+          "number_bindings": [
+            {
+              "claim_number": "2022",
+              "evidence_line": 4,
+              "evidence_number": "2022A",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "This aligns with Alphabet's strong revenue growth, consistently above 10% CAGR over recent years, and improving profitability metrics such as EBITDA margin expanding from 30% in 2022 to over 50% projected by 2028.",
+          "claim": "Alphabet's revenue CAGR is above 10% over recent years, and its EBITDA margin expands from 30% in 2022 to over 50% projected by 2028.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 6
+            },
+            {
+              "line_number": 12
+            }
+          ],
+          "reason": "The revenue CAGR is 11.8% and EBITDA margin is 30.1% in 2022, projected to 51.7% in 2028E.",
+          "action": "keep",
+          "revised_claim": "Alphabet's revenue CAGR is 11.8% from 2021A to 2028E, and its EBITDA margin expands from 30.1% in 2022A to 51.7% projected by 2028E.",
+          "number_bindings": [
+            {
+              "claim_number": "11.8",
+              "evidence_line": 6,
+              "evidence_number": "11.8%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2022",
+              "evidence_line": 4,
+              "evidence_number": "2022A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "30.1",
+              "evidence_line": 12,
+              "evidence_number": "30.1%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "51.7",
+              "evidence_line": 12,
+              "evidence_number": "51.7%",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "The company’s robust earnings growth, driven by diversified revenue streams and cost efficiencies, supports a relatively stable mid-20s PE multiple.",
+          "claim": "Alphabet's robust earnings growth supports a relatively stable mid-20s PE multiple.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence links earnings growth to PE stability or defines 'mid-20s' as stable.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 2,
+      "claims": [
+        {
+          "original_quote": "Within the industry context, Alphabet's valuation is reasonable considering its dominant market position, consistent double-digit revenue growth, and strong contribution margins.",
+          "claim": "Alphabet's valuation is reasonable considering its dominant market position, consistent double-digit revenue growth, and strong contribution margins.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for market position, reasonableness, or contribution margin strength.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "While its PE is lower than some high-growth tech peers like Nvidia, it reflects a balance between growth potential and the mature scale of Alphabet’s business.",
+          "claim": "Alphabet's PE is lower than some high-growth tech peers like Nvidia.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct PE comparison between Alphabet and Nvidia is provided in the evidence.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The valuation does not appear excessively high to suggest a bubble but rather reflects expectations for continued solid growth and profitability improvements.",
+          "claim": "Alphabet's valuation does not appear excessively high to suggest a bubble and reflects expectations for continued solid growth and profitability improvements.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for the absence of a bubble or market expectations.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Given Alphabet’s competitive moat in search, advertising, cloud, and AI investments, the market is pricing in sustained earnings expansion rather than speculative exuberance.",
+          "claim": "Alphabet has a competitive moat in search, advertising, cloud, and AI investments, and the market is pricing in sustained earnings expansion rather than speculative exuberance.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for Alphabet's business lines, moat, or market pricing rationale.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 3,
+      "claims": [
+        {
+          "original_quote": "Potential risks embedded in the valuation include regulatory challenges, intensifying competition in key segments, and the need to maintain innovation momentum.",
+          "claim": "Potential risks embedded in Alphabet's valuation include regulatory challenges, intensifying competition in key segments, and the need to maintain innovation momentum.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for these specific risks.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "However, Alphabet’s diversified business model and strong cash flow generation provide a margin of safety.",
+          "claim": "Alphabet’s diversified business model and strong cash flow generation provide a margin of safety.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for business model diversification, cash flow, or margin of safety.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The moderate valuation relative to peers, combined with above-industry-average growth and profitability, suggests the current price reasonably captures both growth opportunities and risks.",
+          "claim": "Alphabet's moderate valuation relative to peers, combined with above-industry-average growth and profitability, suggests the current price reasonably captures both growth opportunities and risks.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for peer comparison, industry-average growth, or price reasonableness.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    },
+    {
+      "source_id": 4,
+      "claims": [
+        {
+          "original_quote": "In summary, Alphabet's current valuation level is justified by its robust fundamentals and growth outlook within the technology sector.",
+          "claim": "Alphabet's current valuation level is justified by its robust fundamentals and growth outlook within the technology sector.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for fundamentals, growth outlook, or justification of valuation.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The moderate PE and EV/EBITDA multiples relative to peers reflect balanced market expectations without extreme optimism or pessimism.",
+          "claim": "Alphabet's moderate PE and EV/EBITDA multiples relative to peers reflect balanced market expectations without extreme optimism or pessimism.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for market expectations or the absence of optimism/pessimism.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Investors benefit from a margin of safety supported by Alphabet’s competitive advantages and consistent earnings growth, making the valuation reasonable and aligned with industry norms and company fundamentals.",
+          "claim": "Investors benefit from a margin of safety supported by Alphabet’s competitive advantages and consistent earnings growth, making the valuation reasonable and aligned with industry norms and company fundamentals.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for margin of safety, competitive advantages, or industry alignment.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    }
+  ],
+  "verifier_version": "8.1-exact-display-wrapper-binding",
+  "release_deduplication": "Identical complete released strings appear once per section; all original claim rows and mappings remain. This is not semantic paraphrase deduplication.",
+  "unquoted_nonfactual_connectors": [],
+  "deterministic_validation_failures": [
+    {
+      "claim_id": "u0c0",
+      "errors": [
+        "numeric_check_failed:2023:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "24.1",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u0c1",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2024:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line",
+        "numeric_check_failed:28:numeric_mismatch",
+        "numeric_check_failed:2023:missing_binding"
+      ],
+      "numeric_results": [
+        {
+          "token": "2024",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "23",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "28",
+          "passed": false,
+          "reason": "numeric_mismatch",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u0c3",
+      "errors": [
+        "numeric_check_failed:2024:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "17.3",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2024",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "26.6",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u0c4",
+      "errors": [
+        "numeric_check_failed:2022:number_not_in_cited_evidence_line",
+        "numeric_check_failed:28:numeric_mismatch",
+        "numeric_check_failed:2025:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "19",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2022",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "28",
+          "passed": false,
+          "reason": "numeric_mismatch",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2025",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u1c0",
+      "errors": [
+        "numeric_check_failed:2022:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "2022",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u1c1",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:11.8%:missing_binding",
+        "numeric_check_failed:2021:missing_binding",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line",
+        "numeric_check_failed:30.1%:missing_binding",
+        "numeric_check_failed:2022:number_not_in_cited_evidence_line",
+        "numeric_check_failed:51.7%:missing_binding",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "11.8%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2021",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "30.1%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2022",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "51.7%",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    }
+  ],
+  "deterministic_failure_count": 6,
+  "verified_claim_count": 0,
+  "unverified_annotation_count": 18,
+  "withheld_claim_count": 0,
+  "claim_retention_rate": 1.0,
+  "supported_valid_retention_count": 0,
+  "automatic_year_binding_count": 0,
+  "limitations": "UNVERIFIED annotations preserve unsupported or deterministically rejected assertions for review and must not be counted as grounded facts. A claim's original machine classification is preserved even when deterministic checks reject it; retained_as_verified is then false. Rejected contradicted corrections remain in the audit but are withheld from the narrative. Semantic judgments are machine-assisted, not human-validated. Lexical quote coverage does not prove exhaustive semantic atomization. Exact numeric/year matches do not establish entity/period alignment or dimensional validity of conversions. Repeated source quotes may have ambiguous first-occurrence offsets."
+}

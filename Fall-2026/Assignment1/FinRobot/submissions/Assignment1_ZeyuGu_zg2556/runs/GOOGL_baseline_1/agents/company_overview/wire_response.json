@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EXvJW22g1kFN9eG6vEmcu0rNsO8BC",
+  "object": "chat.completion",
+  "created": 1791753846,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"overview\":\"Alphabet Inc. is a global technology conglomerate primarily known for its dominant position in internet search, digital advertising, cloud computing, and various other technology services and products. It operates through multiple business segments, including Google Services, Google Cloud, and Other Bets, serving billions of users worldwide and generating hundreds of billions in annual revenue. Alphabet holds a leading market position in digital advertising and cloud infrastructure, making it one of the largest and most influential companies in the technology sector.\\n\\nAlphabet's business model centers on creating value through its vast ecosystem of digital products and services, which attract a broad user base and advertisers. Its primary revenue streams are advertising services, cloud solutions, and hardware sales. The company pursues strategic objectives to expand its cloud infrastructure, diversify revenue beyond advertising, invest in artificial intelligence and other emerging technologies, and maintain strong user engagement across its platforms. Its core customers include consumers, advertisers, enterprises, and developers, with a global geographic footprint.\\n\\nRevenue in 2023 reached approximately $307 billion, with Google Services comprising the largest share, followed by Google Cloud and Other Bets. The company continues to innovate with new products and AI-driven enhancements to its services. Alphabet's leadership team, led by CEO Sundar Pichai, boasts deep experience in technology and management. Founded in 1998 as Google, the company evolved into Alphabet Inc. in 2015 to better manage its expanding portfolio of businesses and investments.\\n\\nFinancially, Alphabet reported strong growth with a 2023 net income and a market capitalization reflecting its status as a tech giant. The stock trades with a price-to-earnings ratio consistent with high-growth technology firms. The company faces competition from peers such as Apple and Nvidia but maintains a competitive advantage through scale, innovation, and ecosystem integration. Looking forward, Alphabet's strategy emphasizes sustained revenue growth, margin expansion, and investment in future technologies to secure its industry leadership.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2190,
+    "completion_tokens": 388,
+    "total_tokens": 2578,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_8be246ba69"
+}

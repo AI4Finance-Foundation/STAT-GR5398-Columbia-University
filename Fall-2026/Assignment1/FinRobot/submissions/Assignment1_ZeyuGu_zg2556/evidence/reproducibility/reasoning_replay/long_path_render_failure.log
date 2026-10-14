@@ -1,0 +1,44 @@
+HTML reports will be saved to: C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\reproduction\reasoning_release_check\runs\NVDA_final_reasoning_v8_2\output\NVDA\report
+Loaded frozen market snapshot
+
+📊 Market Data Summary for NVDA:
+  Share Price: $229.28 (auto-fetched)
+  Target Price: $339.17 (auto-fetched)
+  Rating: Overweight (auto-fetched)
+  Market Cap: $5,553.39B (auto-fetched)
+  Sector: Technology (auto-fetched)
+📖 Loading and processing text content...
+Handling charts...
+✅ Revenue/EBITDA chart saved to C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\reproduction\reasoning_release_check\runs\NVDA_final_reasoning_v8_2\output\NVDA\report\NVDA_revenue_ebitda_chart.png
+✅ EPS × PE chart saved to C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\reproduction\reasoning_release_check\runs\NVDA_final_reasoning_v8_2\output\NVDA\report\NVDA_eps_pe_chart.png
+✅ EV/EBITDA peer chart saved to C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\reproduction\reasoning_release_check\runs\NVDA_final_reasoning_v8_2\output\NVDA\report\NVDA_peer_ev_ebitda_chart.png
+Loading sensitivity analysis from C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\reproduction\reasoning_release_check\runs\NVDA_final_reasoning_v8_2\output\NVDA\analysis\sensitivity_analysis.json...
+✅ Sensitivity analysis loaded
+Loading catalyst analysis from C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\reproduction\reasoning_release_check\runs\NVDA_final_reasoning_v8_2\output\NVDA\analysis\catalyst_analysis.json...
+✅ Catalyst analysis loaded (sentiments re-validated)
+Loading enhanced news from C:\Users\zeyug\PycharmProjects\STAT-GR5398-Columbia-University\Fall-2026\Assignment1\FinRobot\submissions\Assignment1_ZeyuGu_zg2556\reproduction\reasoning_release_check\runs\NVDA_final_reasoning_v8_2\output\NVDA\analysis\enhanced_news.json...
+✅ Enhanced news loaded
+Formatting tables for HTML...
+Loading Credit & Cashflow metrics from CSV...
+Warning: The ratios CSV file is missing required columns (e.g., 'calendarYear' or ratio columns).
+❌ Failed to load Credit & Cashflow metrics from CSV
+Processing peer EBITDA data with shape: (7, 4)
+Peer EBITDA columns: ['year', 'AMD', 'INTC', 'NVDA']
+Peer EBITDA index: [2021, 2022, 2023, 2024, 2025, 2026, 2027]
+✅ Successfully formatted peer EBITDA table
+Processing peer EV/EBITDA data with shape: (6, 3)
+Peer EV/EBITDA columns: ['AMD', 'INTC', 'NVDA']
+Peer EV/EBITDA index: [2021, 2022, 2023, 2024, 2025, 2026]
+✅ Successfully formatted peer EV/EBITDA table
+Traceback (most recent call last):
+  File "C:\Users\zeyug\.cache\finrobot-zg2556\clean-verify-v8-2\finrobot_equity\core\src\create_equity_report.py", line 1117, in <module>
+    main()
+  File "C:\Users\zeyug\.cache\finrobot-zg2556\clean-verify-v8-2\finrobot_equity\core\src\create_equity_report.py", line 1026, in main
+    audited_html = render_audited_html_report(report_data, output_dir)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\zeyug\.cache\finrobot-zg2556\clean-verify-v8-2\finrobot_equity\core\src\modules\html_renderer.py", line 91, in render_audited_html_report
+    shutil.copyfile(source, destination)
+  File "C:\Users\zeyug\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\shutil.py", line 258, in copyfile
+    with open(dst, 'wb') as fdst:
+         ^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\reproduction\\reasoning_release_check\\runs\\NVDA_final_reasoning_v8_2\\output\\NVDA\\report\\assets\\revenue_chart_path_0edf46b61b739d10.png'

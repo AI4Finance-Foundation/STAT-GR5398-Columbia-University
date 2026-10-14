@@ -1,0 +1,87 @@
+{
+  "call_id": "INTC_final_v3/verifier/tagline",
+  "structured_output": {
+    "units": [
+      {
+        "source_id": 0,
+        "claims": [
+          {
+            "original_quote": "Intel Corporation demonstrates robust contribution margins",
+            "claim": "Intel Corporation demonstrates robust contribution margins.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 10
+              }
+            ],
+            "reason": "Contribution margin values are provided for multiple years, and while they have declined, they remain substantial, supporting the claim of robust margins.",
+            "action": "keep",
+            "revised_claim": "Intel Corporation demonstrates robust contribution margins.",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "maintains a significant EBITDA presence despite recent revenue declines",
+            "claim": "Intel Corporation maintains a significant EBITDA presence despite recent revenue declines.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 6
+              },
+              {
+                "line_number": 11
+              }
+            ],
+            "reason": "EBITDA values remain substantial even as revenue has declined, supporting the claim.",
+            "action": "keep",
+            "revised_claim": "Intel Corporation maintains a significant EBITDA presence despite recent revenue declines.",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience.",
+            "claim": "The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 8
+              },
+              {
+                "line_number": 13
+              }
+            ],
+            "reason": "SG&A and SG&A margin data show a decline over time, indicating improving efficiency and cost management.",
+            "action": "keep",
+            "revised_claim": "The company exhibits disciplined cost management with improving SG&A efficiency.",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Valuation metrics suggest an attractive entry point relative to historical levels, underscoring strong fundamentals amid market fluctuations.",
+            "claim": "Valuation metrics suggest an attractive entry point relative to historical levels, underscoring strong fundamentals amid market fluctuations.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is provided to support the claim that valuation metrics suggest an attractive entry point or that fundamentals are strong relative to market fluctuations.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "usage": {
+    "requests": 1,
+    "input_tokens": 3012,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 398,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 3410
+  },
+  "runtime_seconds": 2.6399745999988227,
+  "cost_usd": 0.009208,
+  "completed_at_utc": "2026-10-11T21:47:46.947362+00:00",
+  "attempts": 1
+}

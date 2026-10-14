@@ -1,0 +1,576 @@
+{
+  "original_text": "QUALCOMM Incorporated demonstrates robust financial fundamentals characterized by consistent revenue growth and expanding contribution margins. The company maintains strong operational efficiency with improving EBITDA margins and disciplined SG&A expense management. Its valuation reflects solid profitability and a resilient business model within its industry.",
+  "revised_text": "[UNVERIFIED - evidence not supplied] QUALCOMM Incorporated demonstrates robust financial fundamentals.\n\n[UNVERIFIED - deterministic evidence/number check failed] QUALCOMM Incorporated demonstrates robust financial fundamentals characterized by consistent revenue growth and expanding contribution margins.\n\n[UNVERIFIED - evidence not supplied] The company maintains strong operational efficiency.\n\n[UNVERIFIED - deterministic evidence/number check failed] The company maintains strong operational efficiency with improving EBITDA margins and disciplined SG&A expense management.\n\n[UNVERIFIED - evidence not supplied] QUALCOMM Incorporated has disciplined SG&A expense management.\n\n[UNVERIFIED - evidence not supplied] QUALCOMM Incorporated's valuation reflects solid profitability.\n\n[UNVERIFIED - evidence not supplied] QUALCOMM Incorporated has a resilient business model within its industry.",
+  "claims": [
+    {
+      "claim_id": "u0c0",
+      "source_id": 0,
+      "source_start": 0,
+      "source_end": 143,
+      "source_quote_occurrences": 1,
+      "original_quote": "QUALCOMM Incorporated demonstrates robust financial fundamentals characterized by consistent revenue growth and expanding contribution margins.",
+      "claim": "QUALCOMM Incorporated demonstrates robust financial fundamentals.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence defines 'robust financial fundamentals' as a specific metric or provides a summary statement of overall financial health.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] QUALCOMM Incorporated demonstrates robust financial fundamentals.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "fd460a0f3d15e11255a01b8a5484582b2838815031a95ffa48aa21df673e1f4d"
+    },
+    {
+      "claim_id": "u0c1",
+      "source_id": 0,
+      "source_start": 0,
+      "source_end": 143,
+      "source_quote_occurrences": 1,
+      "original_quote": "QUALCOMM Incorporated demonstrates robust financial fundamentals characterized by consistent revenue growth and expanding contribution margins.",
+      "claim": "QUALCOMM Incorporated has consistent revenue growth.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 6,
+          "quote": "|  0 | Revenue             | 35820000000.0 | 38962000000.0 | 44284000000.0 | 46498200000.0 | 49288092000.0 | 51259615680.0  | 11.2%  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 8,
+          "quote": "|  2 | SG&A                | 2483000000.0  | 2759000000.0  | 3110000000.0  | 3022383000.0  | 2957285520.0  | 2819278862.4   | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The financial table shows revenue increasing each year from 2023A to 2028E, and the Revenue Growth row provides annual growth rates for each year.",
+      "action": "keep",
+      "revised_claim": "QUALCOMM Incorporated has consistent revenue growth from 2023A to 2028E.",
+      "number_bindings": [
+        {
+          "claim_number": "2023",
+          "evidence_line": 4,
+          "evidence_number": "2023A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2024",
+          "evidence_line": 4,
+          "evidence_number": "2024A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2025",
+          "evidence_line": 4,
+          "evidence_number": "2025A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2026",
+          "evidence_line": 4,
+          "evidence_number": "2026E",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2027",
+          "evidence_line": 4,
+          "evidence_number": "2027E",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2023:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] QUALCOMM Incorporated demonstrates robust financial fundamentals characterized by consistent revenue growth and expanding contribution margins.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "fd460a0f3d15e11255a01b8a5484582b2838815031a95ffa48aa21df673e1f4d"
+    },
+    {
+      "claim_id": "u0c2",
+      "source_id": 0,
+      "source_start": 0,
+      "source_end": 143,
+      "source_quote_occurrences": 1,
+      "original_quote": "QUALCOMM Incorporated demonstrates robust financial fundamentals characterized by consistent revenue growth and expanding contribution margins.",
+      "claim": "QUALCOMM Incorporated has expanding contribution margins.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 10,
+          "quote": "|  4 | Contribution Margin | 55.7%         | 56.2%         | 55.4%         | 56.4%         | 57.4%         | 58.4%          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The Contribution Margin row shows an increase from 55.7% in 2023A to 58.4% in 2028E.",
+      "action": "keep",
+      "revised_claim": "QUALCOMM Incorporated has expanding contribution margins from 2023A to 2028E.",
+      "number_bindings": [
+        {
+          "claim_number": "2023",
+          "evidence_line": 4,
+          "evidence_number": "2023A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2023:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] QUALCOMM Incorporated demonstrates robust financial fundamentals characterized by consistent revenue growth and expanding contribution margins.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "fd460a0f3d15e11255a01b8a5484582b2838815031a95ffa48aa21df673e1f4d"
+    },
+    {
+      "claim_id": "u0c3",
+      "source_id": 0,
+      "source_start": 144,
+      "source_end": 266,
+      "source_quote_occurrences": 1,
+      "original_quote": "The company maintains strong operational efficiency with improving EBITDA margins and disciplined SG&A expense management.",
+      "claim": "The company maintains strong operational efficiency.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence defines or summarizes 'strong operational efficiency' as a specific metric or provides a summary statement of operational efficiency.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] The company maintains strong operational efficiency.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "fd460a0f3d15e11255a01b8a5484582b2838815031a95ffa48aa21df673e1f4d"
+    },
+    {
+      "claim_id": "u0c4",
+      "source_id": 0,
+      "source_start": 144,
+      "source_end": 266,
+      "source_quote_occurrences": 1,
+      "original_quote": "The company maintains strong operational efficiency with improving EBITDA margins and disciplined SG&A expense management.",
+      "claim": "QUALCOMM Incorporated has improving EBITDA margins.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 12,
+          "quote": "|  6 | EBITDA Margin       | 26.8%         | 30.2%         | 31.5%         | 49.9%         | 51.4%         | 52.9%          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The EBITDA Margin row shows an increase from 26.8% in 2023A to 52.9% in 2028E.",
+      "action": "keep",
+      "revised_claim": "QUALCOMM Incorporated has improving EBITDA margins from 2023A to 2028E.",
+      "number_bindings": [
+        {
+          "claim_number": "2023",
+          "evidence_line": 4,
+          "evidence_number": "2023A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2023:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] The company maintains strong operational efficiency with improving EBITDA margins and disciplined SG&A expense management.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "fd460a0f3d15e11255a01b8a5484582b2838815031a95ffa48aa21df673e1f4d"
+    },
+    {
+      "claim_id": "u0c5",
+      "source_id": 0,
+      "source_start": 144,
+      "source_end": 266,
+      "source_quote_occurrences": 1,
+      "original_quote": "The company maintains strong operational efficiency with improving EBITDA margins and disciplined SG&A expense management.",
+      "claim": "QUALCOMM Incorporated has disciplined SG&A expense management.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence defines or summarizes 'disciplined SG&A expense management' or provides a qualitative assessment of SG&A management.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] QUALCOMM Incorporated has disciplined SG&A expense management.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "fd460a0f3d15e11255a01b8a5484582b2838815031a95ffa48aa21df673e1f4d"
+    },
+    {
+      "claim_id": "u0c6",
+      "source_id": 0,
+      "source_start": 267,
+      "source_end": 361,
+      "source_quote_occurrences": 1,
+      "original_quote": "Its valuation reflects solid profitability and a resilient business model within its industry.",
+      "claim": "QUALCOMM Incorporated's valuation reflects solid profitability.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for valuation or profitability metrics, and the PE Ratio and EV/EBITDA rows for QCOM are 'nan' for all years.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] QUALCOMM Incorporated's valuation reflects solid profitability.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "fd460a0f3d15e11255a01b8a5484582b2838815031a95ffa48aa21df673e1f4d"
+    },
+    {
+      "claim_id": "u0c7",
+      "source_id": 0,
+      "source_start": 267,
+      "source_end": 361,
+      "source_quote_occurrences": 1,
+      "original_quote": "Its valuation reflects solid profitability and a resilient business model within its industry.",
+      "claim": "QUALCOMM Incorporated has a resilient business model within its industry.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided regarding the resilience of QCOM's business model or its industry context.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] QUALCOMM Incorporated has a resilient business model within its industry.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "fd460a0f3d15e11255a01b8a5484582b2838815031a95ffa48aa21df673e1f4d"
+    }
+  ],
+  "units": [
+    {
+      "source_id": 0,
+      "claims": [
+        {
+          "original_quote": "QUALCOMM Incorporated demonstrates robust financial fundamentals characterized by consistent revenue growth and expanding contribution margins.",
+          "claim": "QUALCOMM Incorporated demonstrates robust financial fundamentals.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence defines 'robust financial fundamentals' as a specific metric or provides a summary statement of overall financial health.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "QUALCOMM Incorporated demonstrates robust financial fundamentals characterized by consistent revenue growth and expanding contribution margins.",
+          "claim": "QUALCOMM Incorporated has consistent revenue growth.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 6
+            },
+            {
+              "line_number": 8
+            }
+          ],
+          "reason": "The financial table shows revenue increasing each year from 2023A to 2028E, and the Revenue Growth row provides annual growth rates for each year.",
+          "action": "keep",
+          "revised_claim": "QUALCOMM Incorporated has consistent revenue growth from 2023A to 2028E.",
+          "number_bindings": [
+            {
+              "claim_number": "2023",
+              "evidence_line": 4,
+              "evidence_number": "2023A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2024",
+              "evidence_line": 4,
+              "evidence_number": "2024A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2025",
+              "evidence_line": 4,
+              "evidence_number": "2025A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2026",
+              "evidence_line": 4,
+              "evidence_number": "2026E",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2027",
+              "evidence_line": 4,
+              "evidence_number": "2027E",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "QUALCOMM Incorporated demonstrates robust financial fundamentals characterized by consistent revenue growth and expanding contribution margins.",
+          "claim": "QUALCOMM Incorporated has expanding contribution margins.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 10
+            }
+          ],
+          "reason": "The Contribution Margin row shows an increase from 55.7% in 2023A to 58.4% in 2028E.",
+          "action": "keep",
+          "revised_claim": "QUALCOMM Incorporated has expanding contribution margins from 2023A to 2028E.",
+          "number_bindings": [
+            {
+              "claim_number": "2023",
+              "evidence_line": 4,
+              "evidence_number": "2023A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "The company maintains strong operational efficiency with improving EBITDA margins and disciplined SG&A expense management.",
+          "claim": "The company maintains strong operational efficiency.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence defines or summarizes 'strong operational efficiency' as a specific metric or provides a summary statement of operational efficiency.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The company maintains strong operational efficiency with improving EBITDA margins and disciplined SG&A expense management.",
+          "claim": "QUALCOMM Incorporated has improving EBITDA margins.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 12
+            }
+          ],
+          "reason": "The EBITDA Margin row shows an increase from 26.8% in 2023A to 52.9% in 2028E.",
+          "action": "keep",
+          "revised_claim": "QUALCOMM Incorporated has improving EBITDA margins from 2023A to 2028E.",
+          "number_bindings": [
+            {
+              "claim_number": "2023",
+              "evidence_line": 4,
+              "evidence_number": "2023A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "The company maintains strong operational efficiency with improving EBITDA margins and disciplined SG&A expense management.",
+          "claim": "QUALCOMM Incorporated has disciplined SG&A expense management.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence defines or summarizes 'disciplined SG&A expense management' or provides a qualitative assessment of SG&A management.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Its valuation reflects solid profitability and a resilient business model within its industry.",
+          "claim": "QUALCOMM Incorporated's valuation reflects solid profitability.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for valuation or profitability metrics, and the PE Ratio and EV/EBITDA rows for QCOM are 'nan' for all years.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Its valuation reflects solid profitability and a resilient business model within its industry.",
+          "claim": "QUALCOMM Incorporated has a resilient business model within its industry.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided regarding the resilience of QCOM's business model or its industry context.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    }
+  ],
+  "verifier_version": "7.1-semantic-review-neutral-connector-repair",
+  "release_deduplication": "Identical complete released strings appear once per section; all original claim rows and mappings remain. This is not semantic paraphrase deduplication.",
+  "unquoted_nonfactual_connectors": [],
+  "deterministic_validation_failures": [
+    {
+      "claim_id": "u0c1",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:2023:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u0c2",
+      "errors": [
+        "numeric_check_failed:2023:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u0c4",
+      "errors": [
+        "numeric_check_failed:2023:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    }
+  ],
+  "deterministic_failure_count": 3,
+  "verified_claim_count": 0,
+  "unverified_annotation_count": 8,
+  "withheld_claim_count": 0,
+  "claim_retention_rate": 1.0,
+  "supported_valid_retention_count": 0,
+  "automatic_year_binding_count": 0,
+  "limitations": "UNVERIFIED annotations preserve unsupported or deterministically rejected assertions for review and must not be counted as grounded facts. A claim's original machine classification is preserved even when deterministic checks reject it; retained_as_verified is then false. Rejected contradicted corrections remain in the audit but are withheld from the narrative. Semantic judgments are machine-assisted, not human-validated. Lexical quote coverage does not prove exhaustive semantic atomization. Exact numeric/year matches do not establish entity/period alignment or dimensional validity of conversions. Repeated source quotes may have ambiguous first-occurrence offsets."
+}

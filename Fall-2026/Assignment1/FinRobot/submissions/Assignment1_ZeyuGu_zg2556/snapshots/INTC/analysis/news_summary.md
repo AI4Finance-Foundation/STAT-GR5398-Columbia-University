@@ -1,0 +1,1 @@
+No recent news found for INTC in the analysis period.

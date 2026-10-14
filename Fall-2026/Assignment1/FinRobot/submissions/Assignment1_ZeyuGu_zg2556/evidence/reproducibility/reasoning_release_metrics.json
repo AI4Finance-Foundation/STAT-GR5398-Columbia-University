@@ -1,0 +1,48 @@
+{
+  "checked_utc": "2026-10-12T06:02:35.107064+00:00",
+  "network_or_model_calls": 0,
+  "checks": [
+    {
+      "file": "audits/grounding/comparison_reasoning_v8_2/before_after_scorecard.csv",
+      "sha256": "74cc0ce1052fd1f067207e69a3f83a38727ecc077899d14caf2d1cae96f644ca",
+      "byte_identical": true
+    },
+    {
+      "file": "audits/grounding/comparison_reasoning_v8_2/claim_retention_mapping.csv",
+      "sha256": "b9e5a189a96138e215fc4e62d9828e42f539a48b337390482c51157bd1eefcc4",
+      "byte_identical": true
+    },
+    {
+      "file": "audits/grounding/comparison_reasoning_v8_2/remaining_errors.csv",
+      "sha256": "075a173891c614d413d005be4d3190930d2039a0a88bb1afc2c2ffec62c2de9b",
+      "byte_identical": true
+    },
+    {
+      "file": "audits/grounding/comparison_reasoning_v8_2/verifier_attempt_costs.csv",
+      "sha256": "60870ef9707f500b4983ee5c49d21806b0ed68c4ca1060f7fd4f726ecdc85c31",
+      "byte_identical": true
+    },
+    {
+      "file": "audits/grounding/annotation_reasoning_v8_2/annotated_claim_inventory.csv",
+      "sha256": "cadff6d8cd3e6d842600d5ebc9225360c1232b293af5f1c1034ccd8b5502c2b8",
+      "byte_identical": true
+    },
+    {
+      "file": "audits/grounding/annotation_reasoning_v8_2/annotation_scorecard.csv",
+      "sha256": "557b7c90b1f152dee476cecba69f808552cd5a9fc607ca8c88203449bf50c54b",
+      "byte_identical": true
+    },
+    {
+      "file": "audits/grounding/annotation_reasoning_v8_2/lexical_retention_and_error_recurrence.csv",
+      "sha256": "2683fc63aa8ebba760b775eaea60ae9e1487fd8290ad5f9eedb92fbda782e4c6",
+      "byte_identical": true
+    },
+    {
+      "file": "audits/grounding/annotation_reasoning_v8_2/unflagged_errors.csv",
+      "sha256": "60f118207eb15fb552d2052e0ad3145f1ac582ee1a4a27b4c4a5f09bf1411884",
+      "byte_identical": true
+    }
+  ],
+  "passed": true,
+  "scope": "All saved comparison and warning-analysis CSVs recomputed from selected complete audit pairs; exact byte comparison. This reproduces metrics from labels, not independent proof of semantic labels."
+}

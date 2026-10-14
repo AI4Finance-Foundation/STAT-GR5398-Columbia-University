@@ -1,0 +1,78 @@
+{
+  "call_id": "NVDA_v7_1_changed_audit_blind/valuation_overview/1",
+  "structured_output": {
+    "units": [
+      {
+        "unit_id": 4,
+        "claims": [
+          {
+            "claim": "The company's EBITDA margins and contribution margins have also expanded substantially.",
+            "claim_type": "qualitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 10,
+                "line_end": 12
+              }
+            ],
+            "reason": "The table in lines 10-12 shows both EBITDA Margin and Contribution Margin for NVIDIA from 2022A to 2029E. EBITDA Margin increases from 42.2% (2022A) to 73.5% (2029E), and Contribution Margin from 64.9% (2022A) to 74.1% (2029E). This demonstrates substantial expansion over the period. All visible actuals (2022A-2026A) show an upward trend, supporting the claim of substantial expansion.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia|ebitda_and_contribution_margin|2022A-2029E|expanded_substantially"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 8,
+        "claims": [
+          {
+            "claim": "NVIDIA is distinguished from peers exposed to slower growth dynamics.",
+            "claim_type": "qualitative",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 18,
+                "line_end": 27
+              }
+            ],
+            "reason": "Peer EBITDA and EV/EBITDA tables (lines 18-27, 29-37) show NVIDIA's EBITDA and valuation metrics growing much faster than AMD and INTC, especially from 2023 onward. This supports the claim that NVIDIA is distinguished from peers with slower growth dynamics.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia|distinguished_from_peers|2022A-2027E|slower_growth_dynamics"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 14,
+        "claims": [
+          {
+            "claim": "The high valuation also implies that any significant slowdown in AI-related demand or competitive disruptions could pose downside risks.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence in the supplied data directly links high valuation to downside risks from AI demand slowdown or competition. The tables provide valuation metrics but do not establish this causal relationship.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia|high_valuation_downside_risk|unspecified|ai_demand_or_competition"
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "usage": {
+    "requests": 1,
+    "input_tokens": 2964,
+    "input_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "output_tokens": 473,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 3437
+  },
+  "runtime_seconds": 2.7152053999998316,
+  "cost_usd": 0.009712,
+  "completed_at_utc": "2026-10-11T23:37:44.073520+00:00",
+  "attempts": 1
+}

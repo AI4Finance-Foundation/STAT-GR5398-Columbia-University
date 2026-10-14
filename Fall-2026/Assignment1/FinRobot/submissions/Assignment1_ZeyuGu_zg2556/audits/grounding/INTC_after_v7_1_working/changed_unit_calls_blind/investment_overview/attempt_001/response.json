@@ -1,0 +1,73 @@
+{
+  "call_id": "INTC_v7_1_changed_audit_blind/investment_overview/1",
+  "structured_output": {
+    "units": [
+      {
+        "unit_id": 14,
+        "claims": [
+          {
+            "claim": "The non-GAAP EPS of $0.42 in Q2 2026 suggests underlying operations are improving.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence table provides a non-GAAP EPS of $0.42 for Q2 2026 (line 46), but there is no direct evidence or data trend in the tables to support the assertion that underlying operations are improving. The causal link is not established by the evidence.",
+            "numeric_status": "correct",
+            "fact_key": "intel|non-gaap eps|q2 2026|0.42|usd"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 19,
+        "claims": [
+          {
+            "claim": "Intel's recent quarter’s revenue growth is a positive development.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence (line 45) states that Q2 2026 revenue was $16.1 billion, up 25% YoY, which supports the revenue growth, but the assertion that this is a 'positive development' is a qualitative/causal interpretation not directly supported by the evidence. The factual premise of revenue growth is supported, but the positive evaluation is not evidenced.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|recent quarter revenue growth|2026q2|positive development|qualitative"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 23,
+        "claims": [
+          {
+            "claim": "Persistent GAAP losses and a historically negative EPS outlook through 2028 temper enthusiasm.",
+            "claim_type": "factual",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 15,
+                "line_end": 15
+              }
+            ],
+            "reason": "The table (line 15) shows negative EPS for 2024A, 2025A, 2026E, 2027E, and 2028E, supporting the claim of a historically negative EPS outlook through 2028. The phrase 'temper enthusiasm' is qualitative, but the factual premise of persistent GAAP losses and negative EPS is supported.",
+            "numeric_status": "not_numeric",
+            "fact_key": "intel|eps outlook|2024a-2028e|negative|usd"
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "usage": {
+    "requests": 1,
+    "input_tokens": 2939,
+    "input_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "output_tokens": 458,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 3397
+  },
+  "runtime_seconds": 2.410089799999696,
+  "cost_usd": 0.009542,
+  "completed_at_utc": "2026-10-11T23:38:51.566066+00:00",
+  "attempts": 1
+}

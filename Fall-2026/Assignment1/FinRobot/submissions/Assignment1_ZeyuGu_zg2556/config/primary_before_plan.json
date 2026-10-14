@@ -1,0 +1,20 @@
+[
+  {
+    "id": "AMD_before_gpt41",
+    "completion_manifest": "audits/grounding/AMD_before_gpt41/manifest.json",
+    "completed_states": ["complete"],
+    "argv": ["scripts/grounding_audit.py", "run", "--run", "runs/AMD_baseline_1", "--output", "audits/grounding/AMD_before_gpt41", "--budget", "config/budget.evaluation.json", "--ledger", "evidence/costs.jsonl", "--max-tokens", "26000"]
+  },
+  {
+    "id": "INTC_before_gpt41",
+    "completion_manifest": "audits/grounding/INTC_before_gpt41/manifest.json",
+    "completed_states": ["complete"],
+    "argv": ["scripts/grounding_audit.py", "run", "--run", "runs/INTC_baseline_1", "--output", "audits/grounding/INTC_before_gpt41", "--budget", "config/budget.evaluation.json", "--ledger", "evidence/costs.jsonl", "--max-tokens", "26000"]
+  },
+  {
+    "id": "NVDA_stability_v2",
+    "completion_manifest": "audits/stability/NVDA_v2/manifest.json",
+    "completed_states": ["complete"],
+    "argv": ["scripts/stability_audit_v2.py", "--runs", "runs/NVDA_baseline_1", "runs/NVDA_baseline_2", "runs/NVDA_baseline_3", "--output", "audits/stability/NVDA_v2", "--budget", "config/budget.evaluation.json", "--ledger", "evidence/costs.jsonl"]
+  }
+]

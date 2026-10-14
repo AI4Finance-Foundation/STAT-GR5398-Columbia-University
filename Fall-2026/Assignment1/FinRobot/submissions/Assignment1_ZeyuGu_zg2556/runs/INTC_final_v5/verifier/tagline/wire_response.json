@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EXw0AAGS8lD9kWDUHpgW4TkNhDNLw",
+  "object": "chat.completion",
+  "created": 1791756490,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"units\":[{\"source_id\":0,\"claims\":[{\"original_quote\":\"Intel Corporation demonstrates robust contribution margins\",\"claim\":\"Intel Corporation demonstrates robust contribution margins.\",\"classification\":\"Supported\",\"evidence\":[{\"line_number\":10}],\"reason\":\"Contribution margin values are provided for multiple years, and while they have declined, they remain substantial, supporting the claim of robust margins.\",\"action\":\"keep\",\"revised_claim\":\"Intel Corporation demonstrates robust contribution margins.\",\"number_bindings\":[{\"claim_number\":\"55.4%\",\"evidence_line\":10,\"evidence_number\":\"55.4%\",\"transform\":\"identity\"},{\"claim_number\":\"42.6%\",\"evidence_line\":10,\"evidence_number\":\"42.6%\",\"transform\":\"identity\"},{\"claim_number\":\"40.0%\",\"evidence_line\":10,\"evidence_number\":\"40.0%\",\"transform\":\"identity\"},{\"claim_number\":\"32.7%\",\"evidence_line\":10,\"evidence_number\":\"32.7%\",\"transform\":\"identity\"},{\"claim_number\":\"34.8%\",\"evidence_line\":10,\"evidence_number\":\"34.8%\",\"transform\":\"identity\"},{\"claim_number\":\"35.8%\",\"evidence_line\":10,\"evidence_number\":\"35.8%\",\"transform\":\"identity\"},{\"claim_number\":\"36.8%\",\"evidence_line\":10,\"evidence_number\":\"36.8%\",\"transform\":\"identity\"},{\"claim_number\":\"37.8%\",\"evidence_line\":10,\"evidence_number\":\"37.8%\",\"transform\":\"identity\"}]},{\"original_quote\":\"maintains a significant EBITDA presence despite recent revenue declines\",\"claim\":\"Intel Corporation maintains a significant EBITDA presence despite recent revenue declines.\",\"classification\":\"Supported\",\"evidence\":[{\"line_number\":6},{\"line_number\":11}],\"reason\":\"EBITDA values remain substantial even as revenue has declined, supporting the claim.\",\"action\":\"keep\",\"revised_claim\":\"Intel Corporation maintains a significant EBITDA presence despite recent revenue declines.\",\"number_bindings\":[{\"claim_number\":\"33874000000.0\",\"evidence_line\":11,\"evidence_number\":\"33874000000.0\",\"transform\":\"identity\"},{\"claim_number\":\"21299000000.0\",\"evidence_line\":11,\"evidence_number\":\"21299000000.0\",\"transform\":\"identity\"},{\"claim_number\":\"11242000000.0\",\"evidence_line\":11,\"evidence_number\":\"11242000000.0\",\"transform\":\"identity\"},{\"claim_number\":\"1203000000.0\",\"evidence_line\":11,\"evidence_number\":\"1203000000.0\",\"transform\":\"identity\"},{\"claim_number\":\"14354000000.0\",\"evidence_line\":11,\"evidence_number\":\"14354000000.0\",\"transform\":\"identity\"},{\"claim_number\":\"79024000000.0\",\"evidence_line\":6,\"evidence_number\":\"79024000000.0\",\"transform\":\"identity\"},{\"claim_number\":\"63054000000.0\",\"evidence_line\":6,\"evidence_number\":\"63054000000.0\",\"transform\":\"identity\"},{\"claim_number\":\"54228000000.0\",\"evidence_line\":6,\"evidence_number\":\"54228000000.0\",\"transform\":\"identity\"},{\"claim_number\":\"53101000000.0\",\"evidence_line\":6,\"evidence_number\":\"53101000000.0\",\"transform\":\"identity\"}]},{\"original_quote\":\"The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience.\",\"claim\":\"The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience.\",\"classification\":\"Supported\",\"evidence\":[{\"line_number\":8},{\"line_number\":13}],\"reason\":\"SG&A and SG&A margin figures show a decline, indicating improving efficiency and cost management.\",\"action\":\"keep\",\"revised_claim\":\"The company exhibits disciplined cost management with improving SG&A efficiency, supporting its operational resilience.\",\"number_bindings\":[{\"claim_number\":\"6543000000.0\",\"evidence_line\":8,\"evidence_number\":\"6543000000.0\",\"transform\":\"identity\"},{\"claim_number\":\"7002000000.0\",\"evidence_line\":8,\"evidence_number\":\"7002000000.0\",\"transform\":\"identity\"},{\"claim_number\":\"5634000000.0\",\"evidence_line\":8,\"evidence_number\":\"5634000000.0\",\"transform\":\"identity\"},{\"claim_number\":\"5507000000.0\",\"evidence_line\":8,\"evidence_number\":\"5507000000.0\",\"transform\":\"identity\"},{\"claim_number\":\"4624000000.0\",\"evidence_line\":8,\"evidence_number\":\"4624000000.0\",\"transform\":\"identity\"},{\"claim_number\":\"8.3%\",\"evidence_line\":13,\"evidence_number\":\"8.3%\",\"transform\":\"identity\"},{\"claim_number\":\"11.1%\",\"evidence_line\":13,\"evidence_number\":\"11.1%\",\"transform\":\"identity\"},{\"claim_number\":\"10.4%\",\"evidence_line\":13,\"evidence_number\":\"10.4%\",\"transform\":\"identity\"},{\"claim_number\":\"10.4%\",\"evidence_line\":13,\"evidence_number\":\"10.4%\",\"transform\":\"identity\"},{\"claim_number\":\"8.7%\",\"evidence_line\":13,\"evidence_number\":\"8.7%\",\"transform\":\"identity\"}]},{\"original_quote\":\"Valuation metrics suggest an attractive entry point relative to historical levels, underscoring strong fundamentals amid market fluctuations.\",\"claim\":\"Valuation metrics suggest an attractive entry point relative to historical levels, underscoring strong fundamentals amid market fluctuations.\",\"classification\":\"Unsupported\",\"evidence\":[],\"reason\":\"No direct evidence is provided comparing current valuation metrics to historical levels or supporting the claim of an attractive entry point or strong fundamentals.\",\"action\":\"withhold\",\"revised_claim\":\"\",\"number_bindings\":[]}],\"nonfactual_reason\":\"\"}]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3012,
+    "completion_tokens": 1191,
+    "total_tokens": 4203,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_d3fa955e2a"
+}

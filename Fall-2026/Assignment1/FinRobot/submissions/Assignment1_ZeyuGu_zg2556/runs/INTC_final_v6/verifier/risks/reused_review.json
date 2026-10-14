@@ -1,0 +1,33 @@
+{
+  "derived_at_utc": "2026-10-11T22:40:34.639858+00:00",
+  "source_run": "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\runs\\INTC_final_v5",
+  "source_directory": "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\runs\\INTC_final_v5\\verifier\\risks",
+  "source_call_id": "INTC_final_v5/verifier/risks/attempt_003",
+  "original_sha256": "d38fe71d3e35801e94884b67a6fe63af55a4becdcc95006748e3e367c28b822a",
+  "evidence_sha256": "292b08f442cd8f8be0cf7f42ce1e817505f4fd8dabe499e6b614f2651016e5ef",
+  "copied_file_hashes": {
+    "request.json": "0b77f8d5450109f1698ee3fa737143b39fe7141f8ca85ea7cc494bae65fff1f6",
+    "response.json": "c484b43ce40333f9bdc0019fd311b2153e04e695755cd3c0bc15bb47f58f1246",
+    "wire_request.json": "51e9aa71d5900c9bec5f4c7aadaacd045a59fa7bcd4056b2864ade2f2d45cca6",
+    "wire_response.json": "229255667a4534a65d09b49ad91ff43f4d3633422b0cdfbf9827ab74dc234fcd",
+    "http_response.json": "48b3e647fd3db0a074c682c1b542a04d2d7d59555e19aee946412e5a3e57e4b5",
+    "prompt.txt": "b465c941302141eddebddaac8f0dd0e725500f0d36fcca8b3e4506c89aee96a3",
+    "instructions.txt": "80f071350c9c6e67bddc99fd61e0c1db5fe39ddd865f21e5d92ff8f1d416709e"
+  },
+  "preceding_candidates": [
+    {
+      "directory": "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\runs\\INTC_final_v5\\attempt_history\\verifier\\risks\\attempt_001",
+      "new_validator_error": "Verifier omitted text within source unit 1: ['From a market perspective, ']",
+      "response_sha256": "e88632e8172a954a5d5fb9ff140e859705824da1d64355322820b6891a738c13"
+    },
+    {
+      "directory": "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\runs\\INTC_final_v5\\attempt_history\\verifier\\risks\\attempt_002",
+      "new_validator_error": "Verifier omitted text within source unit 4: ['Financial risks are prominent, with Intel’s profitability under pressure. ']",
+      "response_sha256": "a16dd516bbf7db00943b3bf2768d19564eaf6b3b987d793eba33c1174f98774c"
+    }
+  ],
+  "selection_rule": "Earliest saved wire-confirmed review passing new deterministic validator.",
+  "new_model_generation": false,
+  "incremental_model_cost_usd": 0,
+  "cost_note": "The historical call is billed once in global ledger; copied response retains actual source usage/cost, not a second charge."
+}

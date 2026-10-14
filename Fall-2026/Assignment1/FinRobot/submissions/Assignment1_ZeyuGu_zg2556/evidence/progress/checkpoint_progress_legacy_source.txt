@@ -1,0 +1,74 @@
+"""Refresh conservative, evidence-backed progress without claiming full completion."""
+import csv
+import json
+from pathlib import Path
+from audit_io import sha256,utc_now,write_json
+
+ROOT=Path(__file__).resolve().parents[1]
+
+def main():
+    updates={}
+    def set_status(ids,status,evidence,next_action='Retain evidence; repeat only if inputs or implementation change.'):
+        for key in ids.split():updates[key]=(status,evidence,next_action)
+    set_status('U02a U02b C02','verified','Pinned SHA; requirements-lock.txt; dedicated Python 3.11.15; actual source inspection and bootstrap; no upstream clone inside submission.')
+    set_status('U02c','verified','patches/manifest.json: compatibility and Option A patches applied in clean-verify-4; 96 tests plus 6 subtests passed using both clean-upstream path variables.')
+    set_status('U04a','verified','evidence/preflight_configured, stable_endpoint_preflight, model_preflight; shared USD20 cap; credentials remain outside submission.')
+    set_status('U06a','verified','Seven real eight-agent baseline runs across all five onboarding tickers; evidence/render_qa/summary.json verifies exact text and local assets.')
+    set_status('U06b U08a','partial','Three semiconductor runs complete (NVDA AMD INTC); AVGO/QCOM stable FMP HTTP402. Apple/Alphabet are onboarding only.','Finish WRDS local setup, verify datasets, then acquire and run two additional same-industry companies.')
+    set_status('U07','partial','coverage_universe.csv records planned/actual peers, classifications, rationale and common-window observed returns.','Complete AVGO/QCOM actual data and price evidence; preserve observed all-positive sample without inventing losers.')
+    set_status('U08b','partial','Seven baseline HTML reports and assets passed browser checks; final verifier reports are not all complete.','Render and inspect complete verifier revisions and two missing formal-company reports.')
+    set_status('U09a U09b U09c','verified','Frozen snapshot HTTP payloads, timestamps, original prompts/instructions/schema/wire responses and run manifests; authoritative evidence/costs.jsonl and audits/resources totals.')
+    set_status('U10a U10c U10d U10e','verified','Rolling actual+3 fiscal labels and original-label configuration; docs/field_lineage.csv; explicit saved engine and independent valuation; native plus target-price sensitivity outputs.')
+    set_status('U10b','partial','Baseline render hashes and frozen market/valuation supplements prevent Step2 data/text replacement.','Repeat text-identity QA for every final verified report.')
+    set_status('U11a U11b','verified','audits/data/data_audit.csv: 20 substantive rows across NVDA/AMD; SEC accessions, exact XBRL contexts and EBITDA component bridges; 16 matches and 4 explained definition differences.')
+    set_status('U11c','verified','The 20 SEC rows are accounting quantities/ratios, not falsely attributed market multiples. Dated quotes and market-field lineage are separate in frozen snapshots/valuation assumptions.')
+    set_status('U12a U12b U13a U13b U14a U14b','verified','Forecast assumptions/recommendations, explicit fiscal labels, five-company independent reconciliation, seven relocated network-blocked notebook executions and 25-case target-price sensitivities; arithmetic not economic endorsement.')
+    set_status('U15a U15b U15c U15d U15e','partial','NVDA baseline: 148 units/486 explicitly adjudicated atoms; INTC:146 units/439 atoms; all eight sections each, original-prompt-only exact citations. Raw API proposals retained separately.','Complete AMD exhaustive baseline and all three final-text audits under identical protocol; aggregate only complete scope. Machine review is not human validation.')
+    set_status('U16a U16b U16c','verified','audits/stability/NVDA_adjudicated validates 24 distinct provider calls for three identical-input writer runs; source-unit risk inventory, conditional rating handling, N/A writer targets, fixed FMP fields and actual costs/runtime.')
+    set_status('U17 U18','partial','Verifier code, deterministic numeric/citation checks, original/revised claim maps and preserved failed V1-V4 pilots; V4 separates exact rhetorical gaps from omitted facts.','Finish all eight verifier sections, render checked text, and measure independently before claiming improvement.')
+    set_status('U19a U19b','missing','Baseline adjudications exist for two companies; a full matched three-company before/after scorecard does not yet exist.','Complete same-input after audits and retention/numeric/grounding metrics; include failed-attempt overhead.')
+    set_status('U19c','partial','Raw failed calls, bounded repair attempts and model/version history are preserved; machine evaluation limitations are explicit.','Add complete paired residual-error casebook.')
+    set_status('U20','partial','V4 patches clean-apply with 96 tests/6 subtests; clean-verify-3 earlier frozen NVDA pipeline replay passed.','Execute saved frozen pipeline with clean-verify-4 and validate V4 final report path.')
+    set_status('U21a U21b U22a U22b U22c','partial','Real snapshots, baselines, SEC audit, valuation notebooks and sensitivity plots; eleven-page English research PDF and analytical Medium draft exist, clearly marked incomplete.','Insert final experimental measurements, regenerate/inspect PDF, complete inventory and publication package.')
+    set_status('U23a','partial','20 SEC rows, three actual independent writer runs, two eight-section explicit baseline claim inventories and independent valuation are evidenced.','Five formal companies, three full paired claim audits and final verifier scorecard remain mandatory.')
+    set_status('U23b','partial','Seven baseline browser checks passed; first 11-page research PDF visually inspected. Financial correctness is a separate audit, not certified by rendering.','Repeat all final HTML/PDF quality checks after results are finalized.')
+    set_status('U23c','partial','Earlier byte-level secret scan passed; network-blocked valuation portability and frozen replay saved.','Rerun secret scan after remaining artifacts and patch edits; distinguish replay from new online capture.')
+    set_status('U24','partial','README contains pinned SHA, environment, configurations, budget and commands; no Medium URL is invented.','Replace remaining provisional commands/results and add actual Medium publication URL after authorization.')
+    set_status('U03 U05 C01','partial','Only FinRobot-owned content and external cached upstream/runtime changed; real English artifacts, Chinese progress, source/field lineage and immutable failed experiments preserved.','Final scoped diff and complete evidence inventory still required.')
+    set_status('U26','partial','Progress checkpoint explicitly separates completed measurements from missing requirements. No claim of full assignment completion.','Retain incomplete status until every mandatory item and authorized publication has real evidence.')
+    path=ROOT/'docs/acceptance.csv';raw=path.read_bytes()
+    archive=ROOT/'evidence/progress'/('acceptance_before_'+sha256(raw)[:12]+'.csv')
+    if not archive.exists():archive.write_bytes(raw)
+    with path.open(encoding='utf-8-sig',newline='') as f:reader=csv.DictReader(f);fields=reader.fieldnames;rows=list(reader)
+    for row in rows:
+        if row['id'] in updates:
+            row['status'],row['verified_evidence'],row['blocker_or_next_action']=updates[row['id']]
+    with path.open('w',encoding='utf-8',newline='') as f:
+        writer=csv.DictWriter(f,fieldnames=fields);writer.writeheader();writer.writerows(rows)
+    run_states={p.parent.name:json.loads(p.read_text())['state'] for p in (ROOT/'runs').glob('*/manifest.json')}
+    settled=[json.loads(x) for x in (ROOT/'evidence/costs.jsonl').read_text().splitlines() if x.strip()]
+    completed={r['call_id'] for r in settled if r['event']=='settle'}
+    unsettled={r['call_id']:r['reserved_usd'] for r in settled if r['event']=='reserve' and r['call_id'] not in completed}
+    checkpoint={'as_of_utc':utc_now(),'assignment_complete':False,'run_states':run_states,
+      'settled_api_cost_usd':sum(r['cost_usd'] for r in settled if r['event']=='settle'),
+      'unsettled_reservations':unsettled,'approved_cap_usd':20,
+      'live_driver_session_id':64376,'live_driver_note':'Last known V4 serial driver. Revalidate handle/process before restart; terminal state may have changed after checkpoint.',
+      'parallel_agent_status':'All three Codex subagents errored on account usage limit. Their completed filesystem work was preserved; no purchased credits.',
+      'wrds_status':'Awaiting local setup result; user requested and received exact setup_wrds.ps1 command again.',
+      'grounding_complete_baseline_tickers':['NVDA','INTC'],'grounding_complete_paired_tickers':[],
+      'stability_directory':'audits/stability/NVDA_adjudicated',
+      'next_actions':['Confirm live driver state and cost ledger; never duplicate calls.',
+        'V4 NVDA/AMD encountered Supported action=correct rejection; inspect real failures before designing narrow policy repair. Preserve V4 code/hash and responses.',
+        'Complete AMD baseline and all three final-text independent exhaustive claim adjudications; no three-company aggregate exists yet.',
+        'Use only successful verifier runs for final render; baseline/final text identity is mandatory.',
+        'Await WRDS setup, inspect dataset permissions, then acquire/run AVGO and QCOM or justified peers.',
+        'Refresh research PDF, Medium draft, README, acceptance and secrets/inventory after experiments.',
+        'Prepare concrete course-folder diff and request only final Medium/PR authorization when materials are ready.'],
+      'safe_resume_commands':{'v4_serial_driver':'python scripts/run_experiment_plan.py --plan config/verifier_v4_plan.json --upstream <external-pinned-upstream> --config <private-config-path> --log evidence/progress/verifier_v4_plan.jsonl',
+        'accounting':'python scripts/summarize_runs.py',
+        'wrds_setup':'powershell -NoProfile -ExecutionPolicy Bypass -File scripts/setup_wrds.ps1'},
+      'resume_warning':'Set OPENAI_MODEL=gpt-4.1 for paid evaluation, share evidence/costs.jsonl, and do not restart exhausted failed repair chains under changed validator hashes.'}
+    write_json(ROOT/'evidence/progress/checkpoint.json',checkpoint)
+    print(json.dumps({'settled_cost':checkpoint['settled_api_cost_usd'],'unsettled':unsettled,'assignment_complete':False}))
+
+if __name__=='__main__':main()

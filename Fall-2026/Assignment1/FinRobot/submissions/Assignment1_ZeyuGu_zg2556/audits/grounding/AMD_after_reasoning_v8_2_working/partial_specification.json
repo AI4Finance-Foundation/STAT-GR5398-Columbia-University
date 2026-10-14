@@ -1,0 +1,877 @@
+{
+  "protocol_version": "machine-adjudication-v1",
+  "run_id": "AMD_final_reasoning_v8_2",
+  "evidence_run_id": "AMD_baseline_1",
+  "raw_judge_audit": null,
+  "sections": {
+    "tagline": {
+      "source_sha256": "27259039b25fa9d37820715c218d6ab71622e00936f04d9e6e1d5a8c1c72afc3",
+      "evidence_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "units": []
+    },
+    "company_overview": {
+      "source_sha256": "836c5b96e7251e5b6af10f371d32292699f3cb4497029a960a463bb4d7365348",
+      "evidence_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "units": [
+        {
+          "unit_id": 7,
+          "atoms": [
+            {
+              "claim": "AMD expanded its market presence.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 9,
+          "atoms": [
+            {
+              "claim": "AMD designs high-performance computing solutions.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            },
+            {
+              "claim": "AMD develops high-performance computing solutions.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            },
+            {
+              "claim": "AMD sells high-performance computing solutions.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            },
+            {
+              "claim": "AMD designs graphics solutions.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            },
+            {
+              "claim": "AMD develops graphics solutions.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            },
+            {
+              "claim": "AMD sells graphics solutions.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 25,
+          "atoms": [
+            {
+              "claim": "AMD was founded in 1969.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "unverifiable",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 31,
+          "atoms": [
+            {
+              "claim": "Lisa Su has led AMD since 2014.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "unverifiable",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 52,
+          "atoms": [
+            {
+              "claim": "AMD has a clear strategic focus.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        }
+      ]
+    },
+    "investment_overview": {
+      "source_sha256": "3ff3b814a1aa30c4c3e969f23713e2dd0ec298f38c399a7cc2a0da24625b9de2",
+      "evidence_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "units": [
+        {
+          "unit_id": 0,
+          "atoms": [],
+          "nonfactual_reason": "Section heading or purely normative investment instruction, with no factual premise in this unit."
+        },
+        {
+          "unit_id": 1,
+          "atoms": [],
+          "nonfactual_reason": "Section heading or purely normative investment instruction, with no factual premise in this unit."
+        },
+        {
+          "unit_id": 4,
+          "atoms": [
+            {
+              "claim": "AMD Q2 2026 revenue was $11.5 billion.",
+              "classification": "Supported",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 47
+                }
+              ],
+              "reason": "Exact issuer-release number.",
+              "numeric_status": "correct",
+              "claim_type": "factual"
+            },
+            {
+              "claim": "AMD Q2 2026 non-GAAP diluted EPS was $1.66.",
+              "classification": "Supported",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 47
+                }
+              ],
+              "reason": "Exact non-GAAP line 47.",
+              "numeric_status": "correct",
+              "claim_type": "factual"
+            },
+            {
+              "claim": "AMD Q2 2026 results beat market expectations.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "unverifiable",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 7,
+          "atoms": [
+            {
+              "claim": "AMD reported non-GAAP gross margin of 56%.",
+              "classification": "Supported",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 47
+                }
+              ],
+              "reason": "Release explicitly reports 56% non-GAAP.",
+              "numeric_status": "correct",
+              "claim_type": "factual"
+            },
+            {
+              "claim": "AMD non-GAAP gross margin improved over the prior period.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "causal"
+            },
+            {
+              "claim": "Effective cost management caused AMD gross margin improvement.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "causal"
+            },
+            {
+              "claim": "Product mix optimization caused AMD gross margin improvement.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "causal"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 10,
+          "atoms": [
+            {
+              "claim": "AMD management reaffirmed 2026 growth guidance.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "unverifiable",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 19,
+          "atoms": [],
+          "nonfactual_reason": "Section heading or purely normative investment instruction, with no factual premise in this unit."
+        },
+        {
+          "unit_id": 22,
+          "atoms": [
+            {
+              "claim": "AMD Q2 2026 revenue exceeded analyst consensus.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "unverifiable",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 23,
+          "atoms": [
+            {
+              "claim": "AMD non-GAAP gross margin was 56%.",
+              "classification": "Supported",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 47
+                }
+              ],
+              "reason": "Exact release figure.",
+              "numeric_status": "correct",
+              "claim_type": "factual"
+            },
+            {
+              "claim": "AMD non-GAAP gross margin improved over prior periods.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "causal"
+            },
+            {
+              "claim": "Favorable product mix drove AMD margin improvement.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "causal"
+            },
+            {
+              "claim": "Operational efficiencies drove AMD margin improvement.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "causal"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 24,
+          "atoms": [
+            {
+              "claim": "AMD non-GAAP gross margin was 56%.",
+              "classification": "Supported",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 47
+                }
+              ],
+              "reason": "Exact release figure.",
+              "numeric_status": "correct",
+              "claim_type": "factual"
+            },
+            {
+              "claim": "AMD non-GAAP gross margin improved over prior periods.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "causal"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 27,
+          "atoms": [
+            {
+              "claim": "AMD Q2 2026 non-GAAP operating income was $3.1 billion.",
+              "classification": "Supported",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 47
+                }
+              ],
+              "reason": "Adjacent non-GAAP EPS context identifies the release non-GAAP series.",
+              "numeric_status": "correct",
+              "claim_type": "factual"
+            },
+            {
+              "claim": "AMD Q2 2026 non-GAAP net income was $2.8 billion.",
+              "classification": "Supported",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 47
+                }
+              ],
+              "reason": "Exact non-GAAP net income.",
+              "numeric_status": "correct",
+              "claim_type": "factual"
+            },
+            {
+              "claim": "AMD Q2 2026 non-GAAP diluted EPS was $1.66.",
+              "classification": "Supported",
+              "evidence": [
+                {
+                  "line_start": 42,
+                  "line_end": 47
+                }
+              ],
+              "reason": "Exact figure.",
+              "numeric_status": "correct",
+              "claim_type": "factual"
+            },
+            {
+              "claim": "AMD Q2 2026 earnings surpassed market expectations.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "unverifiable",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 39,
+          "atoms": [],
+          "nonfactual_reason": "Section heading or purely normative investment instruction, with no factual premise in this unit."
+        },
+        {
+          "unit_id": 44,
+          "atoms": [
+            {
+              "claim": "AMD quarterly gross margin improved.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "causal"
+            },
+            {
+              "claim": "AMD earnings beat expectations.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "causal"
+            },
+            {
+              "claim": "The margin improvement demonstrates management execution.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "causal"
+            },
+            {
+              "claim": "The earnings beat demonstrates operational leverage.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "causal"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 53,
+          "atoms": [
+            {
+              "claim": "AMD has diversified end markets.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "causal"
+            }
+          ],
+          "nonfactual_reason": ""
+        }
+      ]
+    },
+    "valuation_overview": {
+      "source_sha256": "1e73df859d44670a862b12afd108e24943add8148a77c2b9d31f2e2b6999173c",
+      "evidence_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "units": [
+        {
+          "unit_id": 29,
+          "atoms": [
+            {
+              "claim": "AMD recent financial margins improved.",
+              "classification": "Supported",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 4
+                },
+                {
+                  "line_start": 10,
+                  "line_end": 10
+                },
+                {
+                  "line_start": 4,
+                  "line_end": 4
+                },
+                {
+                  "line_start": 12,
+                  "line_end": 12
+                }
+              ],
+              "reason": "2023A–2025A margins recover.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            },
+            {
+              "claim": "AMD possesses competitive strengths.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "causal"
+            },
+            {
+              "claim": "AMD peers have weaker growth profiles.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "causal"
+            },
+            {
+              "claim": "AMD peers have weaker profitability profiles.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "causal"
+            },
+            {
+              "claim": "AMD fundamentals provide relative margin of safety.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "causal"
+            }
+          ],
+          "nonfactual_reason": ""
+        }
+      ]
+    },
+    "risks": {
+      "source_sha256": "f37c04ba0a06ca1e8de464b83cc1c7f8dac38f289fe210adcf059cedc13c9534",
+      "evidence_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "units": [
+        {
+          "unit_id": 1,
+          "atoms": [
+            {
+              "claim": "The semiconductor industry is highly competitive.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original writer tables and supplied short news excerpt do not establish this specific business, comparative or causal assertion.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 13,
+          "atoms": [
+            {
+              "claim": "Semiconductors are cyclical.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 39,
+          "atoms": [
+            {
+              "claim": "AMD relies heavily on complex global supply chains.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 52,
+          "atoms": [
+            {
+              "claim": "Semiconductor design requires specialized expertise.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 53,
+          "atoms": [
+            {
+              "claim": "Semiconductor manufacturing requires specialized expertise.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 55,
+          "atoms": [
+            {
+              "claim": "AMD has strong annual revenue growth over the full actual horizon.",
+              "classification": "Supported",
+              "evidence": [
+                {
+                  "line_start": 4,
+                  "line_end": 4
+                },
+                {
+                  "line_start": 6,
+                  "line_end": 6
+                }
+              ],
+              "reason": "2021A–2025A more than doubles.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 61,
+          "atoms": [
+            {
+              "claim": "AMD operates in a capital-intensive sector.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 105,
+          "atoms": [
+            {
+              "claim": "AMD has strategic partnerships.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        }
+      ]
+    },
+    "competitor_analysis": {
+      "source_sha256": "5228e5db477799aad5db306643972f3943f83b1bba0ecbe5fd864dd349e31144",
+      "evidence_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "units": [
+        {
+          "unit_id": 11,
+          "atoms": [
+            {
+              "claim": "ARM-based chip developers are gaining traction in specific market segments.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original writer tables and supplied short news excerpt do not establish this specific business, comparative or causal assertion.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 41,
+          "atoms": [
+            {
+              "claim": "NVIDIA and AMD compete directly in GPUs.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original writer tables and supplied short news excerpt do not establish this specific business, comparative or causal assertion.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 42,
+          "atoms": [
+            {
+              "claim": "NVIDIA has a broader focus on AI solutions than AMD.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original writer tables and supplied short news excerpt do not establish this specific business, comparative or causal assertion.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 47,
+          "atoms": [
+            {
+              "claim": "Apple has M1 chips.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "unverifiable",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 48,
+          "atoms": [
+            {
+              "claim": "Apple has M2 chips.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "unverifiable",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 61,
+          "atoms": [
+            {
+              "claim": "AMD has had recent successes with Ryzen CPUs.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original writer tables and supplied short news excerpt do not establish this specific business, comparative or causal assertion.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 62,
+          "atoms": [
+            {
+              "claim": "AMD has had recent successes with Radeon GPUs.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original writer tables and supplied short news excerpt do not establish this specific business, comparative or causal assertion.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 77,
+          "atoms": [
+            {
+              "claim": "AMD has ecosystem strength.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original writer tables and supplied short news excerpt do not establish this specific business, comparative or causal assertion.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 91,
+          "atoms": [
+            {
+              "claim": "Semiconductor technology is highly dynamic.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 94,
+          "atoms": [
+            {
+              "claim": "Intel is well-capitalized.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 95,
+          "atoms": [
+            {
+              "claim": "NVIDIA is well-capitalized.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        }
+      ]
+    },
+    "major_takeaways": {
+      "source_sha256": "3e2d82f008a543e7d9da5ea91cb632fac2095f0ad265ac4597fb4be8c1d0a8e1",
+      "evidence_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "units": [
+        {
+          "unit_id": 16,
+          "atoms": [
+            {
+              "claim": "AMD can command premium pricing.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original prompt supplies annual/peer financial tables and one short quarterly earnings excerpt, but no evidence for this specific business, causal, risk or market proposition.",
+              "numeric_status": "not_numeric",
+              "claim_type": "causal"
+            }
+          ],
+          "nonfactual_reason": ""
+        }
+      ]
+    },
+    "news_summary": {
+      "source_sha256": "90821426e58453f65132bb430635dbfe478c197915e347a7376634d4f7712448",
+      "evidence_sha256": "3a657c7ee7e62acdc1aeca54fd2308ab038cc01d2985b9d31a3b9535d111b40a",
+      "units": [
+        {
+          "unit_id": 26,
+          "atoms": [
+            {
+              "claim": "AMD latest EV/EBITDA is high relative to the displayed peers.",
+              "classification": "Supported",
+              "evidence": [
+                {
+                  "line_start": 30,
+                  "line_end": 37
+                }
+              ],
+              "reason": "2025 comparison.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 31,
+          "atoms": [
+            {
+              "claim": "AMD demonstrates business resilience.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original writer tables and supplied short news excerpt do not establish this specific business, comparative or causal assertion.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            },
+            {
+              "claim": "AMD demonstrates execution strength.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original writer tables and supplied short news excerpt do not establish this specific business, comparative or causal assertion.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            },
+            {
+              "claim": "AMD faces a competitive semiconductor landscape.",
+              "classification": "Unsupported",
+              "evidence": [],
+              "reason": "The original writer tables and supplied short news excerpt do not establish this specific business, comparative or causal assertion.",
+              "numeric_status": "not_numeric",
+              "claim_type": "factual"
+            }
+          ],
+          "nonfactual_reason": ""
+        },
+        {
+          "unit_id": 35,
+          "atoms": [],
+          "nonfactual_reason": "Recommendation to monitor future results and competitive developments; no new factual premise."
+        }
+      ]
+    }
+  }
+}

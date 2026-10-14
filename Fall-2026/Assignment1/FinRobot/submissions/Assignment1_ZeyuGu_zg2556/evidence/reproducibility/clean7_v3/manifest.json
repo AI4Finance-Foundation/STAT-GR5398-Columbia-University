@@ -1,0 +1,386 @@
+{
+  "status": "PASS",
+  "completed_utc": "2026-10-11T22:56:22.335637+00:00",
+  "upstream": "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\clean-verify-7",
+  "network_disabled": true,
+  "new_model_calls": 0,
+  "snapshots_checked": 7,
+  "rendered_saved_text_reports": 14,
+  "records": [
+    {
+      "label": "NVDA_data",
+      "argv": [
+        "scripts/snapshot_pipeline.py",
+        "--upstream",
+        "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\clean-verify-7",
+        "--ticker",
+        "NVDA",
+        "--company-name",
+        "NVIDIA Corporation",
+        "--peers",
+        "AMD",
+        "INTC",
+        "--snapshot",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\snapshots\\NVDA",
+        "--mode",
+        "replay",
+        "--replay-output",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\reproduction\\clean7_v3\\snapshots\\NVDA",
+        "--as-of",
+        "2026-10-11T21:10:00+00:00",
+        "--years-limit",
+        "5",
+        "--news-days-back",
+        "90",
+        "--news-limit",
+        "50",
+        "--news-snapshot",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\evidence\\issuer_news\\NVDA\\articles.json"
+      ],
+      "exit_code": 0,
+      "runtime_seconds": 0.902768300002208
+    },
+    {
+      "label": "NVDA_baseline_1_render",
+      "argv": [
+        "scripts/experiment.py",
+        "--upstream",
+        "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\clean-verify-7",
+        "render",
+        "--run",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\reproduction\\clean7_v3\\runs\\NVDA_baseline_1"
+      ],
+      "exit_code": 0,
+      "runtime_seconds": 1.689440599999216
+    },
+    {
+      "label": "NVDA_final_v6_render",
+      "argv": [
+        "scripts/experiment.py",
+        "--upstream",
+        "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\clean-verify-7",
+        "render",
+        "--run",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\reproduction\\clean7_v3\\runs\\NVDA_final_v6"
+      ],
+      "exit_code": 0,
+      "runtime_seconds": 1.684005300001445
+    },
+    {
+      "label": "AMD_data",
+      "argv": [
+        "scripts/snapshot_pipeline.py",
+        "--upstream",
+        "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\clean-verify-7",
+        "--ticker",
+        "AMD",
+        "--company-name",
+        "Advanced Micro Devices, Inc.",
+        "--peers",
+        "NVDA",
+        "INTC",
+        "--snapshot",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\snapshots\\AMD",
+        "--mode",
+        "replay",
+        "--replay-output",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\reproduction\\clean7_v3\\snapshots\\AMD",
+        "--as-of",
+        "2026-10-11T21:10:00+00:00",
+        "--years-limit",
+        "5",
+        "--news-days-back",
+        "90",
+        "--news-limit",
+        "50",
+        "--news-snapshot",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\evidence\\issuer_news\\AMD\\articles.json"
+      ],
+      "exit_code": 0,
+      "runtime_seconds": 0.876404900001944
+    },
+    {
+      "label": "AMD_baseline_1_render",
+      "argv": [
+        "scripts/experiment.py",
+        "--upstream",
+        "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\clean-verify-7",
+        "render",
+        "--run",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\reproduction\\clean7_v3\\runs\\AMD_baseline_1"
+      ],
+      "exit_code": 0,
+      "runtime_seconds": 1.651528899998084
+    },
+    {
+      "label": "AMD_final_v6_render",
+      "argv": [
+        "scripts/experiment.py",
+        "--upstream",
+        "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\clean-verify-7",
+        "render",
+        "--run",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\reproduction\\clean7_v3\\runs\\AMD_final_v6"
+      ],
+      "exit_code": 0,
+      "runtime_seconds": 1.640261399999872
+    },
+    {
+      "label": "INTC_data",
+      "argv": [
+        "scripts/snapshot_pipeline.py",
+        "--upstream",
+        "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\clean-verify-7",
+        "--ticker",
+        "INTC",
+        "--company-name",
+        "Intel Corporation",
+        "--peers",
+        "NVDA",
+        "AMD",
+        "--snapshot",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\snapshots\\INTC_news_v2",
+        "--mode",
+        "replay",
+        "--replay-output",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\reproduction\\clean7_v3\\snapshots\\INTC_news_v2",
+        "--as-of",
+        "2026-10-11T21:10:00+00:00",
+        "--years-limit",
+        "5",
+        "--news-days-back",
+        "90",
+        "--news-limit",
+        "50",
+        "--news-snapshot",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\evidence\\issuer_news\\INTC\\articles.json"
+      ],
+      "exit_code": 0,
+      "runtime_seconds": 0.8891782999999123
+    },
+    {
+      "label": "INTC_baseline_1_render",
+      "argv": [
+        "scripts/experiment.py",
+        "--upstream",
+        "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\clean-verify-7",
+        "render",
+        "--run",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\reproduction\\clean7_v3\\runs\\INTC_baseline_1"
+      ],
+      "exit_code": 0,
+      "runtime_seconds": 1.66599320000023
+    },
+    {
+      "label": "INTC_final_v6_render",
+      "argv": [
+        "scripts/experiment.py",
+        "--upstream",
+        "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\clean-verify-7",
+        "render",
+        "--run",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\reproduction\\clean7_v3\\runs\\INTC_final_v6"
+      ],
+      "exit_code": 0,
+      "runtime_seconds": 1.6806756000005407
+    },
+    {
+      "label": "AAPL_data",
+      "argv": [
+        "scripts/snapshot_pipeline.py",
+        "--upstream",
+        "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\clean-verify-7",
+        "--ticker",
+        "AAPL",
+        "--company-name",
+        "Apple Inc.",
+        "--peers",
+        "NVDA",
+        "AMD",
+        "--snapshot",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\snapshots\\AAPL_news_v2",
+        "--mode",
+        "replay",
+        "--replay-output",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\reproduction\\clean7_v3\\snapshots\\AAPL_news_v2",
+        "--as-of",
+        "2026-10-11T21:10:00+00:00",
+        "--years-limit",
+        "5",
+        "--news-days-back",
+        "90",
+        "--news-limit",
+        "50",
+        "--news-snapshot",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\evidence\\issuer_news\\AAPL\\articles.json"
+      ],
+      "exit_code": 0,
+      "runtime_seconds": 0.9906351000026916
+    },
+    {
+      "label": "AAPL_baseline_1_render",
+      "argv": [
+        "scripts/experiment.py",
+        "--upstream",
+        "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\clean-verify-7",
+        "render",
+        "--run",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\reproduction\\clean7_v3\\runs\\AAPL_baseline_1"
+      ],
+      "exit_code": 0,
+      "runtime_seconds": 1.8591572000004817
+    },
+    {
+      "label": "AAPL_final_v6_render",
+      "argv": [
+        "scripts/experiment.py",
+        "--upstream",
+        "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\clean-verify-7",
+        "render",
+        "--run",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\reproduction\\clean7_v3\\runs\\AAPL_final_v6"
+      ],
+      "exit_code": 0,
+      "runtime_seconds": 1.675670500000706
+    },
+    {
+      "label": "GOOGL_data",
+      "argv": [
+        "scripts/snapshot_pipeline.py",
+        "--upstream",
+        "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\clean-verify-7",
+        "--ticker",
+        "GOOGL",
+        "--company-name",
+        "Alphabet Inc.",
+        "--peers",
+        "AAPL",
+        "NVDA",
+        "--snapshot",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\snapshots\\GOOGL",
+        "--mode",
+        "replay",
+        "--replay-output",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\reproduction\\clean7_v3\\snapshots\\GOOGL",
+        "--as-of",
+        "2026-10-11T21:10:00+00:00",
+        "--years-limit",
+        "5",
+        "--news-days-back",
+        "90",
+        "--news-limit",
+        "50",
+        "--news-snapshot",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\evidence\\issuer_news\\GOOGL\\articles.json"
+      ],
+      "exit_code": 0,
+      "runtime_seconds": 0.9281926000003295
+    },
+    {
+      "label": "GOOGL_baseline_1_render",
+      "argv": [
+        "scripts/experiment.py",
+        "--upstream",
+        "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\clean-verify-7",
+        "render",
+        "--run",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\reproduction\\clean7_v3\\runs\\GOOGL_baseline_1"
+      ],
+      "exit_code": 0,
+      "runtime_seconds": 1.757926199999929
+    },
+    {
+      "label": "GOOGL_final_v6_render",
+      "argv": [
+        "scripts/experiment.py",
+        "--upstream",
+        "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\clean-verify-7",
+        "render",
+        "--run",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\reproduction\\clean7_v3\\runs\\GOOGL_final_v6"
+      ],
+      "exit_code": 0,
+      "runtime_seconds": 1.7667369000009785
+    },
+    {
+      "label": "AVGO_data",
+      "argv": [
+        "scripts/public_semiconductor_pipeline.py",
+        "--upstream",
+        "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\clean-verify-7",
+        "--ticker",
+        "AVGO",
+        "--output",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\reproduction\\clean7_v3\\snapshots\\AVGO_public_v1"
+      ],
+      "exit_code": 0,
+      "runtime_seconds": 1.0770768000002136
+    },
+    {
+      "label": "AVGO_baseline_1_render",
+      "argv": [
+        "scripts/experiment.py",
+        "--upstream",
+        "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\clean-verify-7",
+        "render",
+        "--run",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\reproduction\\clean7_v3\\runs\\AVGO_baseline_1"
+      ],
+      "exit_code": 0,
+      "runtime_seconds": 1.5607151000003796
+    },
+    {
+      "label": "AVGO_final_v6_render",
+      "argv": [
+        "scripts/experiment.py",
+        "--upstream",
+        "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\clean-verify-7",
+        "render",
+        "--run",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\reproduction\\clean7_v3\\runs\\AVGO_final_v6"
+      ],
+      "exit_code": 0,
+      "runtime_seconds": 1.5634986000004574
+    },
+    {
+      "label": "QCOM_data",
+      "argv": [
+        "scripts/public_semiconductor_pipeline.py",
+        "--upstream",
+        "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\clean-verify-7",
+        "--ticker",
+        "QCOM",
+        "--output",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\reproduction\\clean7_v3\\snapshots\\QCOM_public_v1"
+      ],
+      "exit_code": 0,
+      "runtime_seconds": 1.0223025999985111
+    },
+    {
+      "label": "QCOM_baseline_1_render",
+      "argv": [
+        "scripts/experiment.py",
+        "--upstream",
+        "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\clean-verify-7",
+        "render",
+        "--run",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\reproduction\\clean7_v3\\runs\\QCOM_baseline_1"
+      ],
+      "exit_code": 0,
+      "runtime_seconds": 1.5471068000006198
+    },
+    {
+      "label": "QCOM_final_v6_render",
+      "argv": [
+        "scripts/experiment.py",
+        "--upstream",
+        "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\clean-verify-7",
+        "render",
+        "--run",
+        "C:\\Users\\zeyug\\PycharmProjects\\STAT-GR5398-Columbia-University\\Fall-2026\\Assignment1\\FinRobot\\submissions\\Assignment1_ZeyuGu_zg2556\\reproduction\\clean7_v3\\runs\\QCOM_final_v6"
+      ],
+      "exit_code": 0,
+      "runtime_seconds": 1.5957620999979554
+    }
+  ]
+}

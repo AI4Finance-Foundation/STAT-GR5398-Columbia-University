@@ -1,0 +1,147 @@
+{
+  "call_id": "NVDA_v7_1_changed_audit/news_summary/1",
+  "structured_output": {
+    "units": [
+      {
+        "unit_id": 3,
+        "claims": [
+          {
+            "claim": "The long-term outlook projects sustained high revenue growth and expanding profitability for NVIDIA.",
+            "claim_type": "factual",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 4,
+                "line_end": 14
+              }
+            ],
+            "reason": "The financial table shows revenue growing from $26.9B in 2022A to $249.95B in 2029E, with high annual growth rates (CAGR 68.3%) and increasing EBITDA and contribution profit, supporting the claim of sustained high revenue growth and expanding profitability. All years from 2022A to 2029E are visible, and the trend is consistently upward for both revenue and profitability metrics.",
+            "numeric_status": "correct",
+            "fact_key": "nvidia|revenue_growth_and_profitability|long_term_outlook|sustained_high_and_expanding|trend"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 11,
+        "claims": [
+          {
+            "claim": "The forecasted EPS growth and relatively stable price-to-earnings ratios suggest sustained profitability and a strong valuation framework.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence table provides forecasted EPS and PE ratios, but the causal link ('suggest sustained profitability and a strong valuation framework') is not established by the data alone. The claim is also marked as unverified. The factual premises about EPS growth and PE stability are addressed below.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia|eps_growth_and_pe_stability|forecast|suggests_sustained_profitability_and_strong_valuation|causal"
+          },
+          {
+            "claim": "The forecasted EPS growth and relatively stable price-to-earnings ratios",
+            "claim_type": "factual",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_start": 15,
+                "line_end": 16
+              }
+            ],
+            "reason": "EPS increases from 1.21 (2024A) to 5.88 (2029E), and PE ratios decrease from 51.63 (2024A) to 32.4 (2029E), showing growth in EPS and relative stability (gradual decrease) in PE ratios over the forecast period.",
+            "numeric_status": "correct",
+            "fact_key": "nvidia|eps_growth_and_pe_stability|2024A-2029E|growth_and_stability|trend"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 12,
+        "claims": [
+          {
+            "claim": "The forecasted EPS growth and relatively stable price-to-earnings ratios support a bullish long-term investment stance.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "While the table shows forecasted EPS growth and relatively stable PE ratios, the assertion that these 'support a bullish long-term investment stance' is a causal interpretation not directly evidenced by the data. The claim is also marked as unverified.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia|eps_growth_and_pe_stability|forecast|supports_bullish_long_term_investment|causal"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 16,
+        "claims": [
+          {
+            "claim": "NVIDIA's premium market valuation is justified by growth prospects and technological leadership.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence provides data on valuation (PE ratios, EV/EBITDA) and growth, but does not establish that the premium valuation is justified by growth prospects and technological leadership. The justification is an interpretation, not a directly evidenced fact. The claim is also marked as unverified.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia|premium_valuation|2022A-2029E|justified_by_growth_and_technology|causal"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 18,
+        "claims": [
+          {
+            "claim": "Market sentiment is predominantly positive, driven by NVIDIA’s leadership in AI and data center solutions, exceptional financial performance, and promising growth trajectory.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is provided regarding market sentiment or its drivers. The claim is also marked as unverified. The financial data does show strong performance, but sentiment and its causes are not directly evidenced.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia|market_sentiment|current|predominantly_positive_and_driven_by_leadership_and_performance|causal"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 19,
+        "claims": [
+          {
+            "claim": "This positive sentiment is likely to support near-term stock price appreciation.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is provided regarding sentiment or its effect on stock price. The claim is also marked as unverified.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia|positive_sentiment|current|likely_supports_near_term_stock_appreciation|causal"
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "unit_id": 20,
+        "claims": [
+          {
+            "claim": "This positive sentiment underpins a favorable outlook for long-term investors focused on transformative technology trends and robust financial health.",
+            "claim_type": "causal",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is provided regarding sentiment, investor outlook, or the connection to technology trends and financial health. The claim is also marked as unverified.",
+            "numeric_status": "not_numeric",
+            "fact_key": "nvidia|positive_sentiment|current|underpins_favorable_long_term_outlook|causal"
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "usage": {
+    "requests": 1,
+    "input_tokens": 3235,
+    "input_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "output_tokens": 1108,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 4343
+  },
+  "runtime_seconds": 5.2400253000014345,
+  "cost_usd": 0.015334,
+  "completed_at_utc": "2026-10-11T23:35:46.851964+00:00",
+  "attempts": 1
+}

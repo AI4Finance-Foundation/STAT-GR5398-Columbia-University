@@ -1,0 +1,5 @@
+# Saved evidence, prompts, responses and patches are identified by raw SHA-256.
+# Preserve their original bytes on every platform, regardless of core.autocrlf.
+* -text
+# System PDF textconv drivers must not replace PDFs in an exported patch.
+*.pdf -diff

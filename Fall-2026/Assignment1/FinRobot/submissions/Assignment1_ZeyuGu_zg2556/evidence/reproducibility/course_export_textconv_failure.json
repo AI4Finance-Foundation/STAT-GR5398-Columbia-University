@@ -1,0 +1,26 @@
+{
+  "recorded_utc": "2026-10-12T06:58:38.240247+00:00",
+  "accepted": false,
+  "failed_export_directory": "C:\\Users\\zeyug\\.cache\\finrobot-zg2556\\course-review-local-20261012-v9-1-byteexact",
+  "patch_sha256": "329fc27666e000df4140ffa62aaae211247c7637e1d598faf54786dbc6fe4a8d",
+  "first_detected_path": "evidence/document_history/pre_semantic_v9_1/output/pdf/research_report.pdf",
+  "comparison": {
+    "original": {
+      "blob_sha1": "76331a6e8ede2951ba939fdee367a0c339e78386",
+      "sha256": "73a18129b202db0d5652da60185643678eea510111f16be23a09316ddf650db2",
+      "bytes": 506124,
+      "starts_with_pdf_signature": true
+    },
+    "actually_applied": {
+      "blob_sha1": "b6773ccb837c0b9ea930e549f71ab407a27573df",
+      "sha256": "d75a2512aef12778a5724c38da567a6e4f170e0a79c7a557378f66fe9ab26f6f",
+      "bytes": 52019,
+      "starts_with_pdf_signature": false
+    }
+  },
+  "cause": "System diff.astextplain.textconv driver converted PDFs into extracted text during git diff, despite --binary. Actual applied-index blob comparison rejected the export.",
+  "repair": "Disable external diff and textconv in patch export and explicitly unset PDF diff attribute within the submission. A fresh actual-apply exact-byte check must succeed before export acceptance.",
+  "original_report_modified": false,
+  "experiment_rerun": false,
+  "paid_calls": 0
+}

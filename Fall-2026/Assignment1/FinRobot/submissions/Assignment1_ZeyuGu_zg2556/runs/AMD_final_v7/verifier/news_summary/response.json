@@ -1,0 +1,618 @@
+{
+  "call_id": "AMD_final_v7/verifier/news_summary",
+  "structured_output": {
+    "units": [
+      {
+        "source_id": 0,
+        "claims": [
+          {
+            "original_quote": "Recent news for Advanced Micro Devices, Inc. (AMD) highlights strong financial performance in the second quarter of 2026, reflecting robust revenue growth and solid margin expansion.",
+            "claim": "Recent news for Advanced Micro Devices, Inc. (AMD) highlights strong financial performance in the second quarter of 2026.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 44
+              }
+            ],
+            "reason": "The news summary directly states AMD announced strong financial results for Q2 2026.",
+            "action": "keep",
+            "revised_claim": "Recent news for Advanced Micro Devices, Inc. (AMD) highlights strong financial performance in the second quarter of 2026.",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Recent news for Advanced Micro Devices, Inc. (AMD) highlights strong financial performance in the second quarter of 2026, reflecting robust revenue growth and solid margin expansion.",
+            "claim": "AMD's second quarter 2026 results reflect robust revenue growth and solid margin expansion.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "The evidence provides Q2 2026 revenue and margin figures but does not supply a comparative prior period or explicit growth/expansion data for Q2 2026.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "These results reinforce AMD's competitive positioning in the semiconductor industry amid ongoing market dynamics and peer competition.",
+            "claim": "These results reinforce AMD's competitive positioning in the semiconductor industry amid ongoing market dynamics and peer competition.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is provided regarding AMD's competitive positioning or the effect of these results on it.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 1,
+        "claims": [
+          {
+            "original_quote": "Key developments include AMD's announcement of its second quarter 2026 financial results, reporting $11.5 billion in revenue with a gross margin of 54% and non-GAAP gross margin of 56%.",
+            "claim": "AMD announced its second quarter 2026 financial results, reporting $11.5 billion in revenue.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 44
+              }
+            ],
+            "reason": "The news summary explicitly states Q2 2026 revenue was $11.5 billion.",
+            "action": "keep",
+            "revised_claim": "AMD announced its second quarter 2026 financial results, reporting $11.5 billion in revenue.",
+            "number_bindings": [
+              {
+                "claim_number": "2026",
+                "evidence_line": 44,
+                "evidence_number": "2026",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "11.5",
+                "evidence_line": 44,
+                "evidence_number": "11.5",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Key developments include AMD's announcement of its second quarter 2026 financial results, reporting $11.5 billion in revenue with a gross margin of 54% and non-GAAP gross margin of 56%.",
+            "claim": "AMD reported a gross margin of 54% and a non-GAAP gross margin of 56% for the second quarter of 2026.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 44
+              },
+              {
+                "line_number": 47
+              }
+            ],
+            "reason": "The news summary provides both gross margin and non-GAAP gross margin for Q2 2026.",
+            "action": "keep",
+            "revised_claim": "AMD reported a gross margin of 54% and a non-GAAP gross margin of 56% for the second quarter of 2026.",
+            "number_bindings": [
+              {
+                "claim_number": "54",
+                "evidence_line": 44,
+                "evidence_number": "54",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "56",
+                "evidence_line": 47,
+                "evidence_number": "56",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2026",
+                "evidence_line": 44,
+                "evidence_number": "2026",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Operating income stood at $2.0 billion, with net income of $2.3 billion and diluted earnings per share of $1.38.",
+            "claim": "Operating income stood at $2.0 billion for the second quarter of 2026.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 44
+              }
+            ],
+            "reason": "The news summary states operating income was $2.0 billion for Q2 2026.",
+            "action": "keep",
+            "revised_claim": "Operating income stood at $2.0 billion for the second quarter of 2026.",
+            "number_bindings": [
+              {
+                "claim_number": "2.0",
+                "evidence_line": 44,
+                "evidence_number": "2.0",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2026",
+                "evidence_line": 44,
+                "evidence_number": "2026",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Operating income stood at $2.0 billion, with net income of $2.3 billion and diluted earnings per share of $1.38.",
+            "claim": "Net income was $2.3 billion for the second quarter of 2026.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 44
+              }
+            ],
+            "reason": "The news summary states net income was $2.3 billion for Q2 2026.",
+            "action": "keep",
+            "revised_claim": "Net income was $2.3 billion for the second quarter of 2026.",
+            "number_bindings": [
+              {
+                "claim_number": "2.3",
+                "evidence_line": 44,
+                "evidence_number": "2.3",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2026",
+                "evidence_line": 44,
+                "evidence_number": "2026",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Operating income stood at $2.0 billion, with net income of $2.3 billion and diluted earnings per share of $1.38.",
+            "claim": "Diluted earnings per share was $1.38 for the second quarter of 2026.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 44
+              }
+            ],
+            "reason": "The news summary states diluted EPS was $1.38 for Q2 2026.",
+            "action": "keep",
+            "revised_claim": "Diluted earnings per share was $1.38 for the second quarter of 2026.",
+            "number_bindings": [
+              {
+                "claim_number": "1.38",
+                "evidence_line": 44,
+                "evidence_number": "1.38",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2026",
+                "evidence_line": 44,
+                "evidence_number": "2026",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "On a non-GAAP basis, operating income increased to $3.1 billion, net income to $2.8 billion, and diluted EPS to $1.66.",
+            "claim": "On a non-GAAP basis, operating income was $3.1 billion for the second quarter of 2026.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 47
+              }
+            ],
+            "reason": "The news summary states non-GAAP operating income was $3.1 billion for Q2 2026.",
+            "action": "keep",
+            "revised_claim": "On a non-GAAP basis, operating income was $3.1 billion for the second quarter of 2026.",
+            "number_bindings": [
+              {
+                "claim_number": "3.1",
+                "evidence_line": 47,
+                "evidence_number": "3.1",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2026",
+                "evidence_line": 44,
+                "evidence_number": "2026",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "On a non-GAAP basis, operating income increased to $3.1 billion, net income to $2.8 billion, and diluted EPS to $1.66.",
+            "claim": "On a non-GAAP basis, net income was $2.8 billion for the second quarter of 2026.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 47
+              }
+            ],
+            "reason": "The news summary states non-GAAP net income was $2.8 billion for Q2 2026.",
+            "action": "keep",
+            "revised_claim": "On a non-GAAP basis, net income was $2.8 billion for the second quarter of 2026.",
+            "number_bindings": [
+              {
+                "claim_number": "2.8",
+                "evidence_line": 47,
+                "evidence_number": "2.8",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2026",
+                "evidence_line": 44,
+                "evidence_number": "2026",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "On a non-GAAP basis, operating income increased to $3.1 billion, net income to $2.8 billion, and diluted EPS to $1.66.",
+            "claim": "On a non-GAAP basis, diluted earnings per share was $1.66 for the second quarter of 2026.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 47
+              }
+            ],
+            "reason": "The news summary states non-GAAP diluted EPS was $1.66 for Q2 2026.",
+            "action": "keep",
+            "revised_claim": "On a non-GAAP basis, diluted earnings per share was $1.66 for the second quarter of 2026.",
+            "number_bindings": [
+              {
+                "claim_number": "1.66",
+                "evidence_line": 47,
+                "evidence_number": "1.66",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2026",
+                "evidence_line": 44,
+                "evidence_number": "2026",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "This strong quarterly performance underscores AMD's operational efficiency and revenue growth trajectory.",
+            "claim": "This strong quarterly performance underscores AMD's operational efficiency and revenue growth trajectory.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is provided regarding operational efficiency or the trajectory of revenue growth beyond the single quarter's results.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 2,
+        "claims": [
+          {
+            "original_quote": "The financial metrics reveal a projected compound annual growth rate (CAGR) in revenue of 20.5% between 2021 and 2028,",
+            "claim": "The financial metrics reveal a projected compound annual growth rate (CAGR) in revenue of 20.5% between 2021 and 2028.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 4
+              },
+              {
+                "line_number": 6
+              }
+            ],
+            "reason": "The table header and revenue CAGR row show a 20.5% CAGR for revenue from 2021 to 2028.",
+            "action": "keep",
+            "revised_claim": "The financial metrics reveal a projected compound annual growth rate (CAGR) in revenue of 20.5% between 2021 and 2028.",
+            "number_bindings": [
+              {
+                "claim_number": "2021",
+                "evidence_line": 4,
+                "evidence_number": "2021",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2028",
+                "evidence_line": 4,
+                "evidence_number": "2028",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "20.5",
+                "evidence_line": 6,
+                "evidence_number": "20.5",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "with EBITDA margins improving significantly in the forecast period, reaching over 40% by 2028.",
+            "claim": "EBITDA margins are forecast to reach over 40% by 2028.",
+            "classification": "Contradicted",
+            "evidence": [
+              {
+                "line_number": 12
+              },
+              {
+                "line_number": 4
+              }
+            ],
+            "reason": "The EBITDA margin for 2028E is 42.0%, but the claim 'over 40%' is not directly supported as a threshold; the evidence only supports the specific value, not the threshold phrasing. Correction is required to state the actual forecast value.",
+            "action": "correct",
+            "revised_claim": "EBITDA margin is forecast to be 42.0% in 2028E.",
+            "number_bindings": [
+              {
+                "claim_number": "42.0",
+                "evidence_line": 12,
+                "evidence_number": "42.0",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2028",
+                "evidence_line": 4,
+                "evidence_number": "2028",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Notably, AMD's EBITDA is expected to rise from $5.26 billion in 2024 to approximately $16.8 billion by 2028, signaling substantial profitability enhancement.",
+            "claim": "AMD's EBITDA is expected to rise from $5.26 billion in 2024 to approximately $16.8 billion by 2028.",
+            "classification": "Contradicted",
+            "evidence": [
+              {
+                "line_number": 11
+              },
+              {
+                "line_number": 4
+              }
+            ],
+            "reason": "The 2024A EBITDA is $5.258 billion and 2028E EBITDA is $16.8400408176 billion. The claim's 2024 value is rounded down and the 2028 value is rounded to one decimal, but the evidence supports the more precise values. Correction is required to match the evidence exactly.",
+            "action": "correct",
+            "revised_claim": "AMD's EBITDA is expected to rise from $5.258 billion in 2024A to $16.8400408176 billion in 2028E.",
+            "number_bindings": [
+              {
+                "claim_number": "5.258",
+                "evidence_line": 11,
+                "evidence_number": "5.258",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2024",
+                "evidence_line": 4,
+                "evidence_number": "2024",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "16.8400408176",
+                "evidence_line": 11,
+                "evidence_number": "16840040817.6",
+                "transform": "divide_billion"
+              },
+              {
+                "claim_number": "2028",
+                "evidence_line": 4,
+                "evidence_number": "2028",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Earnings per share also show a positive trend, increasing from $1.01 in 2024 to an estimated $3.18 in 2028, which supports a strong long-term investment case.",
+            "claim": "Earnings per share are estimated to increase from $1.01 in 2024 to $3.18 in 2028.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 15
+              },
+              {
+                "line_number": 4
+              }
+            ],
+            "reason": "The EPS row shows $1.01 for 2024A and $3.18 for 2028E.",
+            "action": "keep",
+            "revised_claim": "Earnings per share are estimated to increase from $1.01 in 2024 to $3.18 in 2028.",
+            "number_bindings": [
+              {
+                "claim_number": "1.01",
+                "evidence_line": 15,
+                "evidence_number": "1.01",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2024",
+                "evidence_line": 4,
+                "evidence_number": "2024",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "3.18",
+                "evidence_line": 15,
+                "evidence_number": "3.18",
+                "transform": "identity"
+              },
+              {
+                "claim_number": "2028",
+                "evidence_line": 4,
+                "evidence_number": "2028",
+                "transform": "identity"
+              }
+            ]
+          },
+          {
+            "original_quote": "Earnings per share also show a positive trend, increasing from $1.01 in 2024 to an estimated $3.18 in 2028, which supports a strong long-term investment case.",
+            "claim": "The increase in earnings per share supports a strong long-term investment case for AMD.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is provided regarding the investment case or its strength.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 3,
+        "claims": [
+          {
+            "original_quote": "When compared to peers Intel and Nvidia, AMD's EBITDA growth is solid, though smaller in absolute terms relative to Nvidia's larger scale.",
+            "claim": "When compared to peers Intel and Nvidia, AMD's EBITDA growth is solid.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No explicit evidence is provided regarding the qualitative assessment of AMD's EBITDA growth as 'solid' compared to peers.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "When compared to peers Intel and Nvidia, AMD's EBITDA growth is solid, though smaller in absolute terms relative to Nvidia's larger scale.",
+            "claim": "AMD's EBITDA growth is smaller in absolute terms relative to Nvidia's larger scale.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 24
+              },
+              {
+                "line_number": 25
+              },
+              {
+                "line_number": 27
+              }
+            ],
+            "reason": "The peer EBITDA table shows Nvidia's EBITDA is much larger than AMD's in the forecast years, supporting the claim about absolute scale.",
+            "action": "keep",
+            "revised_claim": "AMD's EBITDA growth is smaller in absolute terms relative to Nvidia's larger scale.",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "AMD's EV/EBITDA multiples remain high, reflecting market optimism but also elevated valuation levels.",
+            "claim": "AMD's EV/EBITDA multiples remain high.",
+            "classification": "Supported",
+            "evidence": [
+              {
+                "line_number": 32
+              },
+              {
+                "line_number": 33
+              },
+              {
+                "line_number": 34
+              },
+              {
+                "line_number": 35
+              },
+              {
+                "line_number": 36
+              }
+            ],
+            "reason": "The EV/EBITDA table shows AMD's multiples are high across several years.",
+            "action": "keep",
+            "revised_claim": "AMD's EV/EBITDA multiples remain high.",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "AMD's EV/EBITDA multiples remain high, reflecting market optimism but also elevated valuation levels.",
+            "claim": "AMD's high EV/EBITDA multiples reflect market optimism and elevated valuation levels.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is provided regarding the reasons for high multiples (market optimism or valuation levels).",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The company's ability to sustain growth and margin expansion amidst intense competition from industry leaders remains a critical factor for investors.",
+            "claim": "The company's ability to sustain growth and margin expansion amidst intense competition from industry leaders remains a critical factor for investors.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is provided regarding the criticality of this factor for investors or the company's ability to sustain growth and margin expansion.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      },
+      {
+        "source_id": 4,
+        "claims": [
+          {
+            "original_quote": "Overall market sentiment from the recent earnings release is predominantly positive, with AMD demonstrating resilience and execution strength in a competitive semiconductor landscape.",
+            "claim": "Overall market sentiment from the recent earnings release is predominantly positive.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is provided regarding overall market sentiment.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Overall market sentiment from the recent earnings release is predominantly positive, with AMD demonstrating resilience and execution strength in a competitive semiconductor landscape.",
+            "claim": "AMD is demonstrating resilience and execution strength in a competitive semiconductor landscape.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is provided regarding AMD's resilience or execution strength.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The improvements in non-GAAP profitability metrics and revenue growth reinforce confidence in AMD's strategic initiatives and product portfolio.",
+            "claim": "Improvements in non-GAAP profitability metrics and revenue growth reinforce confidence in AMD's strategic initiatives and product portfolio.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is provided regarding confidence in AMD's strategic initiatives or product portfolio.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "Investors should monitor upcoming quarterly results and competitive developments to gauge sustainability of this positive momentum.",
+            "claim": "Investors should monitor upcoming quarterly results and competitive developments to gauge sustainability of this positive momentum.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "This is a recommendation and not a factual claim supported by evidence.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The near-term stock performance is likely to benefit from these solid financial results, though valuation multiples warrant cautious consideration given market expectations.",
+            "claim": "The near-term stock performance is likely to benefit from these solid financial results.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is provided regarding the likely impact of financial results on near-term stock performance.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          },
+          {
+            "original_quote": "The near-term stock performance is likely to benefit from these solid financial results, though valuation multiples warrant cautious consideration given market expectations.",
+            "claim": "Valuation multiples warrant cautious consideration given market expectations.",
+            "classification": "Unsupported",
+            "evidence": [],
+            "reason": "No evidence is provided regarding the need for caution with valuation multiples or market expectations.",
+            "action": "withhold",
+            "revised_claim": "",
+            "number_bindings": []
+          }
+        ],
+        "nonfactual_reason": ""
+      }
+    ]
+  },
+  "usage": {
+    "requests": 1,
+    "input_tokens": 4132,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 4089,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 8221
+  },
+  "runtime_seconds": 14.89853149999908,
+  "cost_usd": 0.040976,
+  "completed_at_utc": "2026-10-11T23:25:37.730293+00:00",
+  "attempts": 1
+}

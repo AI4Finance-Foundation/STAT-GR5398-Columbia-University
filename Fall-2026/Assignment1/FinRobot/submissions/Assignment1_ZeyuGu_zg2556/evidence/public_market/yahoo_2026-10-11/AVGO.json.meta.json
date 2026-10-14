@@ -1,0 +1,29 @@
+{
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/AVGO?range=1y&interval=1d",
+  "final_url": "https://query1.finance.yahoo.com/v8/finance/chart/AVGO?range=1y&interval=1d",
+  "started_utc": "2026-10-11T22:29:04.768046+00:00",
+  "retrieved_utc": "2026-10-11T22:29:04.935255+00:00",
+  "status": 200,
+  "response_headers": {
+    "content-type": "application/json;charset=utf-8",
+    "y-rid": "173mjp9lco3dh",
+    "cache-control": "public, max-age=10, stale-while-revalidate=20",
+    "vary": "Origin,Accept-Encoding",
+    "x-envoy-upstream-service-time": "16",
+    "date": "Sun, 11 Oct 2026 22:29:05 GMT",
+    "server": "ATS",
+    "x-envoy-decorator-operation": "finance-chart-api--mtls-production-use1.finance-k8s:4080/*",
+    "Age": "0",
+    "Strict-Transport-Security": "max-age=31536000",
+    "Referrer-Policy": "no-referrer-when-downgrade",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close"
+  },
+  "bytes": 27935,
+  "sha256": "e92aedfa713c46c17852e50e43d128d5904545f4a6e15a63ed5c555ea651d905",
+  "error": null,
+  "attempts": 1
+}

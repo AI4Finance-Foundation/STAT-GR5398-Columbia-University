@@ -1,0 +1,109 @@
+ORIGINAL EVIDENCE PROMPT (line numbers added only for locating evidence):
+1: Financial data for QUALCOMM Incorporated (QCOM):
+2: 
+3: ## QUALCOMM Incorporated Financial Metrics and Forecasts
+4: |    | metrics             | 2023A         | 2024A         | 2025A         | 2026E         | 2027E         | 2028E          | CAGR   |
+5: |---:|:--------------------|:--------------|:--------------|:--------------|:--------------|:--------------|:---------------|:-------|
+6: |  0 | Revenue             | 35820000000.0 | 38962000000.0 | 44284000000.0 | 46498200000.0 | 49288092000.0 | 51259615680.0  | 11.2%  |
+7: |  1 | Cost of Operations  | 15869000000.0 | 17060000000.0 | 19738000000.0 | 20273215200.0 | 20996727192.0 | 21324000122.88 | nan    |
+8: |  2 | SG&A                | 2483000000.0  | 2759000000.0  | 3110000000.0  | 3022383000.0  | 2957285520.0  | 2819278862.4   | nan    |
+9: |  3 | Contribution Profit | 19951000000.0 | 21902000000.0 | 24546000000.0 | 26224984800.0 | 28291364808.0 | 29935615557.12 | nan    |
+10: |  4 | Contribution Margin | 55.7%         | 56.2%         | 55.4%         | 56.4%         | 57.4%         | 58.4%          | nan    |
+11: |  5 | EBITDA              | 9597000000.0  | 11777000000.0 | 13957000000.0 | 23202601800.0 | 25334079288.0 | 27116336694.72 | nan    |
+12: |  6 | EBITDA Margin       | 26.8%         | 30.2%         | 31.5%         | 49.9%         | 51.4%         | 52.9%          | nan    |
+13: |  7 | SG&A Margin         | 6.9%          | 7.1%          | 7.0%          | 6.5%          | 6.0%          | 5.5%           | nan    |
+14: |  8 | Revenue Growth      | nan           | 8.8%          | 13.7%         | 5.0%          | 6.0%          | 4.0%           | nan    |
+15: |  9 | EPS                 | 6.47          | 9.09          | 5.05          | 5.36          | 5.73          | 6.02           | nan    |
+16: | 10 | PE Ratio            | nan           | nan           | nan           | nan           | nan           | nan            | nan    |
+17: 
+18: ## Peer EBITDA Comparison
+19: |   year |         AMD |        INTC |         QCOM |
+20: |-------:|------------:|------------:|-------------:|
+21: |   2021 | 4.166e+09   | 3.3874e+10  | nan          |
+22: |   2022 | 5.534e+09   | 2.1299e+10  | nan          |
+23: |   2023 | 4.149e+09   | 1.1242e+10  |   9.597e+09  |
+24: |   2024 | 5.258e+09   | 1.203e+09   |   1.1777e+10 |
+25: |   2025 | 7.275e+09   | 1.4354e+10  |   1.3957e+10 |
+26: |   2026 | 8.60087e+09 | 4.73518e+10 |   1.6834e+10 |
+27: 
+28: ## Peer EV/EBITDA Comparison
+29: |   year |     AMD |      INTC |   QCOM |
+30: |-------:|--------:|----------:|-------:|
+31: |   2021 | 42.1013 |   7.13058 |    nan |
+32: |   2022 | 17.9136 |   6.54873 |    nan |
+33: |   2023 | 57.1197 |  22.4823  |    nan |
+34: |   2024 | 38.2717 | 106.938   |    nan |
+35: |   2025 | 47.8456 |  14.4982  |    nan |
+36: 
+37: ## Recent News for QUALCOMM Incorporated (QCOM)
+38: 
+39: ### Article 1
+40: **Title:** QUALCOMM Incorporated Form 10-Q financial disclosure for period ended 2026-06-28
+41: **Date:** 2026-07-29T20:02:50+00:00
+42: **Summary:** Three Months Ended
+43: Nine Months Ended
+44: June 28,
+45: 2026
+46: June 29,
+47: 2025
+48: June 28,
+49: 2026
+50: June 29,
+51: 2025
+52: Revenues:
+53: Equipment and services
+54: $
+55: 8,475
+56: $
+57: 8,893
+58: $
+59: 28,002
+60: $
+61: 28,193
+62: Licensing
+63: 1,472
+64: 1,472
+65: 4,796
+66: 4,820
+67: Total revenues
+68: 9,947
+69: 10,365
+70: 32,798
+71: 33,013
+72: Costs and expenses:
+73: Cost of revenues
+74: 4,670
+75: 4,606
+76: 15,138
+77: 14,704
+78: Research and development
+79: 2,607
+80: 2,226
+81: 7,523
+82: 6,672
+83: Selling, general and administrative
+84: 976
+85: 771
+86: 2,738
+87: 2,200
+88: Other
+89: 68
+90: —
+91: 97
+92: —
+93: Total costs and expenses
+94: 8,321
+95: 7,603
+96: 25,496
+97: 23,576
+98: Operating income
+99: 1,626
+100: 2,762
+101: 
+102: 
+103: 
+104: ## Explicit input provenance and limitations (not news)
+105: Subject annual data: public SEC 10-K FY2023-2025 comparative statements, as filed in FY2025 10-K; not a historical backtest. Price: Yahoo Finance Oct 9, 2026 raw daily close (USD); shares: latest SEC cover-page count dated 2026-07-27. Historical subject PE and EV/EBITDA, analyst grade/target, float, and forward PE are unavailable. Engine EV/EBITDA uses explicit DEFAULT 12x +/-3x, not observed multiples. Engine net debt=10% of modeled EV; FCF=GAAP OCF-capex, not established unlevered FCF; WACC=10%, growth=10% then5%, terminal=2.5%. Historic subject EBITDA=GAAP operating income+cash-flow D&A (AVGO includes ROU amortization); peer EBITDA is FMP-defined and not identical. Forecast EBITDA=gross profit-SG&A excludes R&D. Peer projection uses upstream one-step growth at global last-year+1; periods differ. News consists of one literal SEC 10-Q table, not comprehensive press coverage. Catalyst dates/probabilities and native sensitivity bands are upstream heuristics, not observations.
+
+DRAFT SOURCE UNITS (cover every unit and every atomic claim):
+[{"source_id": 0, "start": 0, "end": 787, "text": "Revenue Growth: Qualcomm's revenue has exhibited robust growth, with a CAGR of 11.2% from 2023 to 2028, driven primarily by a strong rebound in 2024 and 2025 with growth rates of 8.8% and 13.7%, respectively. This growth is fueled by both its equipment and services segment as well as licensing revenues, reflecting the company's diversified business model capitalizing on expanding 5G adoption and semiconductor demand. The moderation in growth rates post-2025 suggests a maturing market presence but continued market leadership supported by sustained innovation and patent licensing. This trajectory underscores Qualcomm's solid competitive positioning in the semiconductor ecosystem, enabling it to capture incremental market share and revenue streams amid evolving technology cycles."}, {"source_id": 1, "start": 789, "end": 1476, "text": "Gross Profit Margin: Contribution margins have steadily improved from 55.7% in 2023 to an estimated 58.4% in 2028, indicating effective cost management and operational leverage. This margin expansion is likely driven by enhanced pricing power in licensing and efficiencies in cost of operations despite rising raw material costs. The ability to maintain and grow contribution margin in a capital-intensive industry highlights Qualcomm’s competitive moat rooted in its intellectual property portfolio and scale advantages. This margin resilience signals strong business quality, enabling Qualcomm to generate substantial cash flows and reinvest in R&D to sustain technological leadership."}, {"source_id": 2, "start": 1478, "end": 2108, "text": "SG&A Expense Margin: Qualcomm's SG&A margin displays a decline from a peak of 7.1% in 2024 to 5.5% in 2028, evidencing improved operating leverage and efficiency gains. The reduction in SG&A relative to revenue despite absolute SG&A growth reflects scalable management execution and cost discipline. Such efficiency gains support margin expansion and demonstrate Qualcomm’s ability to control discretionary spending while investing strategically in growth initiatives. This trend enhances investor confidence in Qualcomm’s operational scalability and disciplined capital allocation, which bodes well for sustainable profitability."}, {"source_id": 3, "start": 2110, "end": 2871, "text": "EBITDA Margin Stability: The EBITDA margin shows a marked improvement from 26.8% in 2023 to an estimated 52.9% in 2028, indicating significant profitability enhancement. This margin expansion outpaces many peers, with Qualcomm’s 2026 EBITDA at $16.83 billion surpassing AMD and Intel’s 2026 EBITDA figures, highlighting superior profitability and operational efficiency. The robust EBITDA margin underpins Qualcomm's strong cash-generating capacity and competitive positioning, which supports a premium valuation multiple relative to peers. For investors, this margin stability combined with scalable growth and cost control translates into attractive risk-adjusted returns and underlines Qualcomm’s quality as a high-margin, technology-driven growth franchise."}]

@@ -1,0 +1,1539 @@
+{
+  "original_text": "Broadcom Inc. (AVGO) exhibits strong revenue growth and profitability metrics, with a compound annual growth rate (CAGR) of 33.6% in revenue from 2023 to 2028, alongside improving contribution and EBITDA margins, which reflect operational efficiency and robust earnings quality. The company’s EBITDA margin is forecasted to rise from 56.0% in 2023 to 65.7% in 2028, signaling strengthening profitability. This solid fundamental performance supports a premium valuation stance relative to peers. However, explicit current PE and EV/EBITDA ratios for Broadcom are not provided, complicating direct valuation comparison. Historical peer data shows Nvidia and AMD having high EV/EBITDA multiples ranging from mid-30s to above 80, indicative of the semiconductor sector’s growth orientation and market confidence in future earnings. Broadcom’s EBITDA levels are substantial and growing but appear slightly lower in scale compared to Nvidia’s explosive growth trajectory, which justifies some valuation premium for Nvidia. Without precise current multiples for Broadcom, one must infer valuation reasonableness through its operational metrics and peer context. Broadcom’s revenue and EBITDA growth rates outpace many traditional semiconductor companies and align with mid-to-high growth peers, suggesting that a moderate premium valuation is justified by expected earnings expansion and margin improvement. The recent SEC 10-Q disclosures confirm sustained revenue growth in both product and subscription segments, with manageable cost increases and steady amortization charges, underscoring durable cash flow generation. The market likely prices Broadcom’s shares with expectations of continued strong growth and margin expansion, consistent with its strategic positioning in high-value semiconductor niches. Potential risks embedded in the valuation include the sustainability of high growth rates amid cyclical semiconductor demand fluctuations and the impact of global supply chain dynamics. Nonetheless, Broadcom’s diversified revenue streams, improving profitability, and scale provide a margin of safety compared to smaller or less diversified peers. In summary, Broadcom’s valuation appears reasonable within the semiconductor industry context, reflecting justified growth expectations rather than exuberant speculation. The company’s solid fundamentals and improving margins support a valuation premium, while its scale and diversified business model mitigate downside valuation risks, offering a balanced investment profile with a constructive margin of safety.",
+  "revised_text": "[UNVERIFIED - deterministic evidence/number check failed] Broadcom Inc. (AVGO) exhibits strong revenue growth and profitability metrics, with a compound annual growth rate (CAGR) of 33.6% in revenue from 2023 to 2028, alongside improving contribution and EBITDA margins, which reflect operational efficiency and robust earnings quality.\n\n[UNVERIFIED - deterministic evidence/number check failed] The company’s EBITDA margin is forecasted to rise from 56.0% in 2023 to 65.7% in 2028, signaling strengthening profitability.\n\n[UNVERIFIED - evidence not supplied] Broadcom's solid fundamental performance supports a premium valuation stance relative to peers.\n\nExplicit current PE and EV/EBITDA ratios for Broadcom are not provided, complicating direct valuation comparison.\n\n[UNVERIFIED - deterministic evidence/number check failed] Historical peer data shows Nvidia and AMD having high EV/EBITDA multiples ranging from mid-30s to above 80, indicative of the semiconductor sector’s growth orientation and market confidence in future earnings.\n\nBroadcom’s EBITDA levels are substantial and growing but appear slightly lower in scale compared to Nvidia’s growth trajectory.\n\nWithout precise current multiples for Broadcom, one must infer valuation reasonableness through its operational metrics and peer context.\n\n[UNVERIFIED - evidence not supplied] Broadcom’s revenue and EBITDA growth rates outpace many traditional semiconductor companies and align with mid-to-high growth peers.\n\n[UNVERIFIED - deterministic evidence/number check failed] The recent SEC 10-Q disclosures confirm sustained revenue growth in both product and subscription segments, with manageable cost increases and steady amortization charges, underscoring durable cash flow generation.\n\n[UNVERIFIED - evidence not supplied] The market likely prices Broadcom’s shares with expectations of continued strong growth and margin expansion, consistent with its strategic positioning in high-value semiconductor niches.\n\n[UNVERIFIED - evidence not supplied] Potential risks embedded in the valuation include the sustainability of high growth rates amid cyclical semiconductor demand fluctuations and the impact of global supply chain dynamics.\n\n[UNVERIFIED - evidence not supplied] Broadcom’s diversified revenue streams, improving profitability, and scale provide a margin of safety compared to smaller or less diversified peers.\n\n[UNVERIFIED - evidence not supplied] Broadcom’s valuation appears reasonable within the semiconductor industry context, reflecting justified growth expectations rather than exuberant speculation.\n\n[UNVERIFIED - evidence not supplied] The company’s solid fundamentals and improving margins support a valuation premium, while its scale and diversified business model mitigate downside valuation risks, offering a balanced investment profile with a constructive margin of safety.",
+  "claims": [
+    {
+      "claim_id": "u0c0",
+      "source_id": 0,
+      "source_start": 0,
+      "source_end": 278,
+      "source_quote_occurrences": 1,
+      "original_quote": "Broadcom Inc. (AVGO) exhibits strong revenue growth and profitability metrics, with a compound annual growth rate (CAGR) of 33.6% in revenue from 2023 to 2028, alongside improving contribution and EBITDA margins, which reflect operational efficiency and robust earnings quality.",
+      "claim": "Broadcom Inc. (AVGO) has a compound annual growth rate (CAGR) of 33.6% in revenue from 2023 to 2028.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2023A         | 2024A         | 2025A         | 2026E         | 2027E         | 2028E          | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 6,
+          "quote": "|  0 | Revenue             | 35819000000.0 | 51574000000.0 | 63887000000.0 | 67081350000.0 | 71106231000.0 | 73950480240.0  | 33.6%  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The table explicitly lists a CAGR of 33.6% for revenue from 2023A to 2028E.",
+      "action": "keep",
+      "revised_claim": "Broadcom Inc. (AVGO) has a compound annual growth rate (CAGR) of 33.6% in revenue from 2023A to 2028E.",
+      "number_bindings": [
+        {
+          "claim_number": "33.6%",
+          "evidence_line": 6,
+          "evidence_number": "33.6%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2023",
+          "evidence_line": 4,
+          "evidence_number": "2023A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "33.6%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2023:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Broadcom Inc. (AVGO) exhibits strong revenue growth and profitability metrics, with a compound annual growth rate (CAGR) of 33.6% in revenue from 2023 to 2028, alongside improving contribution and EBITDA margins, which reflect operational efficiency and robust earnings quality.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u0c1",
+      "source_id": 0,
+      "source_start": 279,
+      "source_end": 404,
+      "source_quote_occurrences": 1,
+      "original_quote": "The company’s EBITDA margin is forecasted to rise from 56.0% in 2023 to 65.7% in 2028, signaling strengthening profitability.",
+      "claim": "The company’s EBITDA margin is forecasted to rise from 56.0% in 2023 to 65.7% in 2028.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 4,
+          "quote": "|    | metrics             | 2023A         | 2024A         | 2025A         | 2026E         | 2027E         | 2028E          | CAGR   |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 12,
+          "quote": "|  6 | EBITDA Margin       | 56.0%         | 45.5%         | 53.6%         | 62.7%         | 64.2%         | 65.7%          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The table shows EBITDA margin at 56.0% in 2023A and 65.7% in 2028E.",
+      "action": "keep",
+      "revised_claim": "Broadcom Inc.'s EBITDA margin is forecasted to rise from 56.0% in 2023A to 65.7% in 2028E.",
+      "number_bindings": [
+        {
+          "claim_number": "56.0%",
+          "evidence_line": 12,
+          "evidence_number": "56.0%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2023",
+          "evidence_line": 4,
+          "evidence_number": "2023A",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "65.7%",
+          "evidence_line": 12,
+          "evidence_number": "65.7%",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "2028",
+          "evidence_line": 4,
+          "evidence_number": "2028E",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "56.0%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "65.7%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "numeric_check_failed:2023:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] The company’s EBITDA margin is forecasted to rise from 56.0% in 2023 to 65.7% in 2028, signaling strengthening profitability.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u0c2",
+      "source_id": 0,
+      "source_start": 405,
+      "source_end": 494,
+      "source_quote_occurrences": 1,
+      "original_quote": "This solid fundamental performance supports a premium valuation stance relative to peers.",
+      "claim": "Broadcom's solid fundamental performance supports a premium valuation stance relative to peers.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for the causal link between performance and premium valuation stance.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Broadcom's solid fundamental performance supports a premium valuation stance relative to peers.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u0c3",
+      "source_id": 0,
+      "source_start": 495,
+      "source_end": 617,
+      "source_quote_occurrences": 1,
+      "original_quote": "However, explicit current PE and EV/EBITDA ratios for Broadcom are not provided, complicating direct valuation comparison.",
+      "claim": "Explicit current PE and EV/EBITDA ratios for Broadcom are not provided, complicating direct valuation comparison.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 10,
+          "quote": "|  4 | Contribution Margin | 68.9%         | 63.0%         | 67.8%         | 68.8%         | 69.8%         | 70.8%          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 29,
+          "quote": "## Peer EV/EBITDA Comparison",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 31,
+          "quote": "|-------:|---------:|---------:|-------:|",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 32,
+          "quote": "|   2021 | nan      |  42.1013 |    nan |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 33,
+          "quote": "|   2022 |  54.7187 |  17.9136 |    nan |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 34,
+          "quote": "|   2023 |  81.0476 |  57.1197 |    nan |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 35,
+          "quote": "|   2024 |  43.4522 |  38.2717 |    nan |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 36,
+          "quote": "|   2025 |  33.7774 |  47.8456 |    nan |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 37,
+          "quote": "|   2026 |  31.4283 | nan      |    nan |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The tables for PE and EV/EBITDA show 'nan' for Broadcom, indicating these ratios are not provided.",
+      "action": "keep",
+      "revised_claim": "Explicit current PE and EV/EBITDA ratios for Broadcom are not provided, complicating direct valuation comparison.",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "Explicit current PE and EV/EBITDA ratios for Broadcom are not provided, complicating direct valuation comparison.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u0c4",
+      "source_id": 0,
+      "source_start": 618,
+      "source_end": 827,
+      "source_quote_occurrences": 1,
+      "original_quote": "Historical peer data shows Nvidia and AMD having high EV/EBITDA multiples ranging from mid-30s to above 80, indicative of the semiconductor sector’s growth orientation and market confidence in future earnings.",
+      "claim": "Historical peer data shows Nvidia and AMD having high EV/EBITDA multiples ranging from mid-30s to above 80.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 29,
+          "quote": "## Peer EV/EBITDA Comparison",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 31,
+          "quote": "|-------:|---------:|---------:|-------:|",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 32,
+          "quote": "|   2021 | nan      |  42.1013 |    nan |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 33,
+          "quote": "|   2022 |  54.7187 |  17.9136 |    nan |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 34,
+          "quote": "|   2023 |  81.0476 |  57.1197 |    nan |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 35,
+          "quote": "|   2024 |  43.4522 |  38.2717 |    nan |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 36,
+          "quote": "|   2025 |  33.7774 |  47.8456 |    nan |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 37,
+          "quote": "|   2026 |  31.4283 | nan      |    nan |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The EV/EBITDA table shows Nvidia and AMD with multiples in the mid-30s to above 80 in various years.",
+      "action": "keep",
+      "revised_claim": "Historical peer data shows Nvidia and AMD having high EV/EBITDA multiples ranging from mid-30s to above 80.",
+      "number_bindings": [
+        {
+          "claim_number": "30",
+          "evidence_line": 34,
+          "evidence_number": "38.2717",
+          "transform": "identity"
+        },
+        {
+          "claim_number": "80",
+          "evidence_line": 34,
+          "evidence_number": "81.0476",
+          "transform": "identity"
+        }
+      ],
+      "numeric_results": [
+        {
+          "token": "-30",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "80",
+          "passed": false,
+          "reason": "numeric_mismatch",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:-30:missing_binding",
+        "numeric_check_failed:80:numeric_mismatch"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] Historical peer data shows Nvidia and AMD having high EV/EBITDA multiples ranging from mid-30s to above 80, indicative of the semiconductor sector’s growth orientation and market confidence in future earnings.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u0c5",
+      "source_id": 0,
+      "source_start": 828,
+      "source_end": 1016,
+      "source_quote_occurrences": 1,
+      "original_quote": "Broadcom’s EBITDA levels are substantial and growing but appear slightly lower in scale compared to Nvidia’s explosive growth trajectory, which justifies some valuation premium for Nvidia.",
+      "claim": "Broadcom’s EBITDA levels are substantial and growing but appear slightly lower in scale compared to Nvidia’s explosive growth trajectory.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 18,
+          "quote": "## Peer EBITDA Comparison",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 19,
+          "quote": "|   year |          NVDA |           AMD |          AVGO |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 20,
+          "quote": "|-------:|--------------:|--------------:|--------------:|",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 21,
+          "quote": "|   2021 | nan           |   4.166e+09   | nan           |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 22,
+          "quote": "|   2022 |   1.1351e+10  |   5.534e+09   | nan           |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 23,
+          "quote": "|   2023 |   5.986e+09   |   4.149e+09   |   2.0042e+10  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 24,
+          "quote": "|   2024 |   3.5583e+10  |   5.258e+09   |   2.3473e+10  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 25,
+          "quote": "|   2025 |   8.6137e+10  |   7.275e+09   |   3.4259e+10  |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 26,
+          "quote": "|   2026 |   1.44552e+11 | nan           | nan           |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 27,
+          "quote": "|   2027 |   3.82001e+11 |   8.60087e+09 |   4.50625e+10 |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The peer EBITDA table shows Nvidia's EBITDA growing much faster and to higher levels than Broadcom's, supporting the claim.",
+      "action": "keep",
+      "revised_claim": "Broadcom’s EBITDA levels are substantial and growing but appear slightly lower in scale compared to Nvidia’s growth trajectory.",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "Broadcom’s EBITDA levels are substantial and growing but appear slightly lower in scale compared to Nvidia’s growth trajectory.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u0c6",
+      "source_id": 0,
+      "source_start": 1017,
+      "source_end": 1154,
+      "source_quote_occurrences": 1,
+      "original_quote": "Without precise current multiples for Broadcom, one must infer valuation reasonableness through its operational metrics and peer context.",
+      "claim": "Without precise current multiples for Broadcom, one must infer valuation reasonableness through its operational metrics and peer context.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 10,
+          "quote": "|  4 | Contribution Margin | 68.9%         | 63.0%         | 67.8%         | 68.8%         | 69.8%         | 70.8%          | nan    |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 29,
+          "quote": "## Peer EV/EBITDA Comparison",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 31,
+          "quote": "|-------:|---------:|---------:|-------:|",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 32,
+          "quote": "|   2021 | nan      |  42.1013 |    nan |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 33,
+          "quote": "|   2022 |  54.7187 |  17.9136 |    nan |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 34,
+          "quote": "|   2023 |  81.0476 |  57.1197 |    nan |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 35,
+          "quote": "|   2024 |  43.4522 |  38.2717 |    nan |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 36,
+          "quote": "|   2025 |  33.7774 |  47.8456 |    nan |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 37,
+          "quote": "|   2026 |  31.4283 | nan      |    nan |",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The absence of current multiples for Broadcom is established, supporting the need to infer valuation from other metrics.",
+      "action": "keep",
+      "revised_claim": "Without precise current multiples for Broadcom, one must infer valuation reasonableness through its operational metrics and peer context.",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": true,
+      "released_text": "Without precise current multiples for Broadcom, one must infer valuation reasonableness through its operational metrics and peer context.",
+      "release_text_source": "revised_claim",
+      "verification_status": "machine_checked",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u0c7",
+      "source_id": 0,
+      "source_start": 1155,
+      "source_end": 1400,
+      "source_quote_occurrences": 1,
+      "original_quote": "Broadcom’s revenue and EBITDA growth rates outpace many traditional semiconductor companies and align with mid-to-high growth peers, suggesting that a moderate premium valuation is justified by expected earnings expansion and margin improvement.",
+      "claim": "Broadcom’s revenue and EBITDA growth rates outpace many traditional semiconductor companies and align with mid-to-high growth peers.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for the comparison to traditional semiconductor companies or mid-to-high growth peers.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Broadcom’s revenue and EBITDA growth rates outpace many traditional semiconductor companies and align with mid-to-high growth peers.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u0c8",
+      "source_id": 0,
+      "source_start": 1401,
+      "source_end": 1615,
+      "source_quote_occurrences": 1,
+      "original_quote": "The recent SEC 10-Q disclosures confirm sustained revenue growth in both product and subscription segments, with manageable cost increases and steady amortization charges, underscoring durable cash flow generation.",
+      "claim": "The recent SEC 10-Q disclosures confirm sustained revenue growth in both product and subscription segments, with manageable cost increases and steady amortization charges.",
+      "classification": "Supported",
+      "evidence": [
+        {
+          "line_number": 41,
+          "quote": "### Article 1",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 42,
+          "quote": "**Title:** Broadcom Inc. Form 10-Q financial disclosure for period ended 2026-08-02",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 43,
+          "quote": "**Date:** 2026-09-09T21:56:42+00:00",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 44,
+          "quote": "**Summary:** Fiscal Quarter Ended",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 45,
+          "quote": "Three Fiscal Quarters Ended",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 46,
+          "quote": "August 2,",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 47,
+          "quote": "2026",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 48,
+          "quote": "August 3,",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 49,
+          "quote": "2025",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 50,
+          "quote": "August 2,",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 51,
+          "quote": "2026",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 52,
+          "quote": "August 3,",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 53,
+          "quote": "2025",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 54,
+          "quote": "(In millions, except per share data)",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 55,
+          "quote": "Net revenue:",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 56,
+          "quote": "Products",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 57,
+          "quote": "$",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 58,
+          "quote": "24,279",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 59,
+          "quote": "$",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 60,
+          "quote": "11,173",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 61,
+          "quote": "$",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 62,
+          "quote": "55,301",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 63,
+          "quote": "$",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 64,
+          "quote": "31,625",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 65,
+          "quote": "Subscriptions and services",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 66,
+          "quote": "5,312",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 67,
+          "quote": "4,779",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 68,
+          "quote": "15,788",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 69,
+          "quote": "14,247",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 70,
+          "quote": "Total net revenue",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 71,
+          "quote": "29,591",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 72,
+          "quote": "15,952",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 73,
+          "quote": "71,089",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 74,
+          "quote": "45,872",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 75,
+          "quote": "Cost of revenue:",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 76,
+          "quote": "Cost of products sold",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 77,
+          "quote": "6,983",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 78,
+          "quote": "3,098",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 79,
+          "quote": "15,689",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 80,
+          "quote": "8,515",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 81,
+          "quote": "Cost of subscriptions and services",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 82,
+          "quote": "641",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 83,
+          "quote": "606",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 84,
+          "quote": "1,915",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 85,
+          "quote": "1,758",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 86,
+          "quote": "Amortization of acquisition-related intangible assets",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 87,
+          "quote": "1,499",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 88,
+          "quote": "1,519",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 89,
+          "quote": "4,422",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        },
+        {
+          "line_number": 90,
+          "quote": "4,486",
+          "quote_source": "deterministically_resolved_original_prompt_line"
+        }
+      ],
+      "reason": "The SEC 10-Q table provides revenue and cost data for both product and subscription segments, showing growth and steady amortization charges.",
+      "action": "keep",
+      "revised_claim": "The recent SEC 10-Q disclosures confirm sustained revenue growth in both product and subscription segments, with manageable cost increases and steady amortization charges.",
+      "number_bindings": [],
+      "numeric_results": [
+        {
+          "token": "10",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:10:missing_binding"
+      ],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - deterministic evidence/number check failed] The recent SEC 10-Q disclosures confirm sustained revenue growth in both product and subscription segments, with manageable cost increases and steady amortization charges, underscoring durable cash flow generation.",
+      "release_text_source": "original_quote",
+      "verification_status": "unverified_deterministic_failure",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u0c9",
+      "source_id": 0,
+      "source_start": 1616,
+      "source_end": 1803,
+      "source_quote_occurrences": 1,
+      "original_quote": "The market likely prices Broadcom’s shares with expectations of continued strong growth and margin expansion, consistent with its strategic positioning in high-value semiconductor niches.",
+      "claim": "The market likely prices Broadcom’s shares with expectations of continued strong growth and margin expansion, consistent with its strategic positioning in high-value semiconductor niches.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for market expectations or strategic positioning in high-value semiconductor niches.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] The market likely prices Broadcom’s shares with expectations of continued strong growth and margin expansion, consistent with its strategic positioning in high-value semiconductor niches.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u0c10",
+      "source_id": 0,
+      "source_start": 1804,
+      "source_end": 1989,
+      "source_quote_occurrences": 1,
+      "original_quote": "Potential risks embedded in the valuation include the sustainability of high growth rates amid cyclical semiconductor demand fluctuations and the impact of global supply chain dynamics.",
+      "claim": "Potential risks embedded in the valuation include the sustainability of high growth rates amid cyclical semiconductor demand fluctuations and the impact of global supply chain dynamics.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for these specific risks or their impact on valuation.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Potential risks embedded in the valuation include the sustainability of high growth rates amid cyclical semiconductor demand fluctuations and the impact of global supply chain dynamics.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u0c11",
+      "source_id": 0,
+      "source_start": 1990,
+      "source_end": 2151,
+      "source_quote_occurrences": 1,
+      "original_quote": "Nonetheless, Broadcom’s diversified revenue streams, improving profitability, and scale provide a margin of safety compared to smaller or less diversified peers.",
+      "claim": "Broadcom’s diversified revenue streams, improving profitability, and scale provide a margin of safety compared to smaller or less diversified peers.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for Broadcom's diversification, profitability improvement, scale, or comparison to peers.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Broadcom’s diversified revenue streams, improving profitability, and scale provide a margin of safety compared to smaller or less diversified peers.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u0c12",
+      "source_id": 0,
+      "source_start": 2152,
+      "source_end": 2322,
+      "source_quote_occurrences": 1,
+      "original_quote": "In summary, Broadcom’s valuation appears reasonable within the semiconductor industry context, reflecting justified growth expectations rather than exuberant speculation.",
+      "claim": "Broadcom’s valuation appears reasonable within the semiconductor industry context, reflecting justified growth expectations rather than exuberant speculation.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No direct evidence is provided for the reasonableness of Broadcom's valuation or the nature of growth expectations.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] Broadcom’s valuation appears reasonable within the semiconductor industry context, reflecting justified growth expectations rather than exuberant speculation.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    },
+    {
+      "claim_id": "u0c13",
+      "source_id": 0,
+      "source_start": 2323,
+      "source_end": 2565,
+      "source_quote_occurrences": 1,
+      "original_quote": "The company’s solid fundamentals and improving margins support a valuation premium, while its scale and diversified business model mitigate downside valuation risks, offering a balanced investment profile with a constructive margin of safety.",
+      "claim": "The company’s solid fundamentals and improving margins support a valuation premium, while its scale and diversified business model mitigate downside valuation risks, offering a balanced investment profile with a constructive margin of safety.",
+      "classification": "Unsupported",
+      "evidence": [],
+      "reason": "No evidence is provided for the causal links between fundamentals, margins, scale, diversification, and valuation or risk mitigation.",
+      "action": "withhold",
+      "revised_claim": "",
+      "number_bindings": [],
+      "numeric_results": [],
+      "automatic_number_bindings": [],
+      "numeric_binding_aliases": [],
+      "deterministic_errors": [],
+      "retained": true,
+      "retained_as_verified": false,
+      "released_text": "[UNVERIFIED - evidence not supplied] The company’s solid fundamentals and improving margins support a valuation premium, while its scale and diversified business model mitigate downside valuation risks, offering a balanced investment profile with a constructive margin of safety.",
+      "release_text_source": "atomic_claim",
+      "verification_status": "unverified_annotation",
+      "evidence_prompt_sha256": "4182c43c65e80bff8743522e4059408e9e5f05421a142cc4c96011bdfa97a517"
+    }
+  ],
+  "units": [
+    {
+      "source_id": 0,
+      "claims": [
+        {
+          "original_quote": "Broadcom Inc. (AVGO) exhibits strong revenue growth and profitability metrics, with a compound annual growth rate (CAGR) of 33.6% in revenue from 2023 to 2028, alongside improving contribution and EBITDA margins, which reflect operational efficiency and robust earnings quality.",
+          "claim": "Broadcom Inc. (AVGO) has a compound annual growth rate (CAGR) of 33.6% in revenue from 2023 to 2028.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 6
+            }
+          ],
+          "reason": "The table explicitly lists a CAGR of 33.6% for revenue from 2023A to 2028E.",
+          "action": "keep",
+          "revised_claim": "Broadcom Inc. (AVGO) has a compound annual growth rate (CAGR) of 33.6% in revenue from 2023A to 2028E.",
+          "number_bindings": [
+            {
+              "claim_number": "33.6%",
+              "evidence_line": 6,
+              "evidence_number": "33.6%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2023",
+              "evidence_line": 4,
+              "evidence_number": "2023A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "The company’s EBITDA margin is forecasted to rise from 56.0% in 2023 to 65.7% in 2028, signaling strengthening profitability.",
+          "claim": "The company’s EBITDA margin is forecasted to rise from 56.0% in 2023 to 65.7% in 2028.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 4
+            },
+            {
+              "line_number": 12
+            }
+          ],
+          "reason": "The table shows EBITDA margin at 56.0% in 2023A and 65.7% in 2028E.",
+          "action": "keep",
+          "revised_claim": "Broadcom Inc.'s EBITDA margin is forecasted to rise from 56.0% in 2023A to 65.7% in 2028E.",
+          "number_bindings": [
+            {
+              "claim_number": "56.0%",
+              "evidence_line": 12,
+              "evidence_number": "56.0%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2023",
+              "evidence_line": 4,
+              "evidence_number": "2023A",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "65.7%",
+              "evidence_line": 12,
+              "evidence_number": "65.7%",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "2028",
+              "evidence_line": 4,
+              "evidence_number": "2028E",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "This solid fundamental performance supports a premium valuation stance relative to peers.",
+          "claim": "Broadcom's solid fundamental performance supports a premium valuation stance relative to peers.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for the causal link between performance and premium valuation stance.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "However, explicit current PE and EV/EBITDA ratios for Broadcom are not provided, complicating direct valuation comparison.",
+          "claim": "Explicit current PE and EV/EBITDA ratios for Broadcom are not provided, complicating direct valuation comparison.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 10
+            },
+            {
+              "line_number": 29
+            },
+            {
+              "line_number": 31
+            },
+            {
+              "line_number": 32
+            },
+            {
+              "line_number": 33
+            },
+            {
+              "line_number": 34
+            },
+            {
+              "line_number": 35
+            },
+            {
+              "line_number": 36
+            },
+            {
+              "line_number": 37
+            }
+          ],
+          "reason": "The tables for PE and EV/EBITDA show 'nan' for Broadcom, indicating these ratios are not provided.",
+          "action": "keep",
+          "revised_claim": "Explicit current PE and EV/EBITDA ratios for Broadcom are not provided, complicating direct valuation comparison.",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Historical peer data shows Nvidia and AMD having high EV/EBITDA multiples ranging from mid-30s to above 80, indicative of the semiconductor sector’s growth orientation and market confidence in future earnings.",
+          "claim": "Historical peer data shows Nvidia and AMD having high EV/EBITDA multiples ranging from mid-30s to above 80.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 29
+            },
+            {
+              "line_number": 31
+            },
+            {
+              "line_number": 32
+            },
+            {
+              "line_number": 33
+            },
+            {
+              "line_number": 34
+            },
+            {
+              "line_number": 35
+            },
+            {
+              "line_number": 36
+            },
+            {
+              "line_number": 37
+            }
+          ],
+          "reason": "The EV/EBITDA table shows Nvidia and AMD with multiples in the mid-30s to above 80 in various years.",
+          "action": "keep",
+          "revised_claim": "Historical peer data shows Nvidia and AMD having high EV/EBITDA multiples ranging from mid-30s to above 80.",
+          "number_bindings": [
+            {
+              "claim_number": "30",
+              "evidence_line": 34,
+              "evidence_number": "38.2717",
+              "transform": "identity"
+            },
+            {
+              "claim_number": "80",
+              "evidence_line": 34,
+              "evidence_number": "81.0476",
+              "transform": "identity"
+            }
+          ]
+        },
+        {
+          "original_quote": "Broadcom’s EBITDA levels are substantial and growing but appear slightly lower in scale compared to Nvidia’s explosive growth trajectory, which justifies some valuation premium for Nvidia.",
+          "claim": "Broadcom’s EBITDA levels are substantial and growing but appear slightly lower in scale compared to Nvidia’s explosive growth trajectory.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 18
+            },
+            {
+              "line_number": 19
+            },
+            {
+              "line_number": 20
+            },
+            {
+              "line_number": 21
+            },
+            {
+              "line_number": 22
+            },
+            {
+              "line_number": 23
+            },
+            {
+              "line_number": 24
+            },
+            {
+              "line_number": 25
+            },
+            {
+              "line_number": 26
+            },
+            {
+              "line_number": 27
+            }
+          ],
+          "reason": "The peer EBITDA table shows Nvidia's EBITDA growing much faster and to higher levels than Broadcom's, supporting the claim.",
+          "action": "keep",
+          "revised_claim": "Broadcom’s EBITDA levels are substantial and growing but appear slightly lower in scale compared to Nvidia’s growth trajectory.",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Without precise current multiples for Broadcom, one must infer valuation reasonableness through its operational metrics and peer context.",
+          "claim": "Without precise current multiples for Broadcom, one must infer valuation reasonableness through its operational metrics and peer context.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 10
+            },
+            {
+              "line_number": 29
+            },
+            {
+              "line_number": 31
+            },
+            {
+              "line_number": 32
+            },
+            {
+              "line_number": 33
+            },
+            {
+              "line_number": 34
+            },
+            {
+              "line_number": 35
+            },
+            {
+              "line_number": 36
+            },
+            {
+              "line_number": 37
+            }
+          ],
+          "reason": "The absence of current multiples for Broadcom is established, supporting the need to infer valuation from other metrics.",
+          "action": "keep",
+          "revised_claim": "Without precise current multiples for Broadcom, one must infer valuation reasonableness through its operational metrics and peer context.",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Broadcom’s revenue and EBITDA growth rates outpace many traditional semiconductor companies and align with mid-to-high growth peers, suggesting that a moderate premium valuation is justified by expected earnings expansion and margin improvement.",
+          "claim": "Broadcom’s revenue and EBITDA growth rates outpace many traditional semiconductor companies and align with mid-to-high growth peers.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for the comparison to traditional semiconductor companies or mid-to-high growth peers.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The recent SEC 10-Q disclosures confirm sustained revenue growth in both product and subscription segments, with manageable cost increases and steady amortization charges, underscoring durable cash flow generation.",
+          "claim": "The recent SEC 10-Q disclosures confirm sustained revenue growth in both product and subscription segments, with manageable cost increases and steady amortization charges.",
+          "classification": "Supported",
+          "evidence": [
+            {
+              "line_number": 41
+            },
+            {
+              "line_number": 42
+            },
+            {
+              "line_number": 43
+            },
+            {
+              "line_number": 44
+            },
+            {
+              "line_number": 45
+            },
+            {
+              "line_number": 46
+            },
+            {
+              "line_number": 47
+            },
+            {
+              "line_number": 48
+            },
+            {
+              "line_number": 49
+            },
+            {
+              "line_number": 50
+            },
+            {
+              "line_number": 51
+            },
+            {
+              "line_number": 52
+            },
+            {
+              "line_number": 53
+            },
+            {
+              "line_number": 54
+            },
+            {
+              "line_number": 55
+            },
+            {
+              "line_number": 56
+            },
+            {
+              "line_number": 57
+            },
+            {
+              "line_number": 58
+            },
+            {
+              "line_number": 59
+            },
+            {
+              "line_number": 60
+            },
+            {
+              "line_number": 61
+            },
+            {
+              "line_number": 62
+            },
+            {
+              "line_number": 63
+            },
+            {
+              "line_number": 64
+            },
+            {
+              "line_number": 65
+            },
+            {
+              "line_number": 66
+            },
+            {
+              "line_number": 67
+            },
+            {
+              "line_number": 68
+            },
+            {
+              "line_number": 69
+            },
+            {
+              "line_number": 70
+            },
+            {
+              "line_number": 71
+            },
+            {
+              "line_number": 72
+            },
+            {
+              "line_number": 73
+            },
+            {
+              "line_number": 74
+            },
+            {
+              "line_number": 75
+            },
+            {
+              "line_number": 76
+            },
+            {
+              "line_number": 77
+            },
+            {
+              "line_number": 78
+            },
+            {
+              "line_number": 79
+            },
+            {
+              "line_number": 80
+            },
+            {
+              "line_number": 81
+            },
+            {
+              "line_number": 82
+            },
+            {
+              "line_number": 83
+            },
+            {
+              "line_number": 84
+            },
+            {
+              "line_number": 85
+            },
+            {
+              "line_number": 86
+            },
+            {
+              "line_number": 87
+            },
+            {
+              "line_number": 88
+            },
+            {
+              "line_number": 89
+            },
+            {
+              "line_number": 90
+            }
+          ],
+          "reason": "The SEC 10-Q table provides revenue and cost data for both product and subscription segments, showing growth and steady amortization charges.",
+          "action": "keep",
+          "revised_claim": "The recent SEC 10-Q disclosures confirm sustained revenue growth in both product and subscription segments, with manageable cost increases and steady amortization charges.",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The market likely prices Broadcom’s shares with expectations of continued strong growth and margin expansion, consistent with its strategic positioning in high-value semiconductor niches.",
+          "claim": "The market likely prices Broadcom’s shares with expectations of continued strong growth and margin expansion, consistent with its strategic positioning in high-value semiconductor niches.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for market expectations or strategic positioning in high-value semiconductor niches.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Potential risks embedded in the valuation include the sustainability of high growth rates amid cyclical semiconductor demand fluctuations and the impact of global supply chain dynamics.",
+          "claim": "Potential risks embedded in the valuation include the sustainability of high growth rates amid cyclical semiconductor demand fluctuations and the impact of global supply chain dynamics.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for these specific risks or their impact on valuation.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "Nonetheless, Broadcom’s diversified revenue streams, improving profitability, and scale provide a margin of safety compared to smaller or less diversified peers.",
+          "claim": "Broadcom’s diversified revenue streams, improving profitability, and scale provide a margin of safety compared to smaller or less diversified peers.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for Broadcom's diversification, profitability improvement, scale, or comparison to peers.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "In summary, Broadcom’s valuation appears reasonable within the semiconductor industry context, reflecting justified growth expectations rather than exuberant speculation.",
+          "claim": "Broadcom’s valuation appears reasonable within the semiconductor industry context, reflecting justified growth expectations rather than exuberant speculation.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No direct evidence is provided for the reasonableness of Broadcom's valuation or the nature of growth expectations.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        },
+        {
+          "original_quote": "The company’s solid fundamentals and improving margins support a valuation premium, while its scale and diversified business model mitigate downside valuation risks, offering a balanced investment profile with a constructive margin of safety.",
+          "claim": "The company’s solid fundamentals and improving margins support a valuation premium, while its scale and diversified business model mitigate downside valuation risks, offering a balanced investment profile with a constructive margin of safety.",
+          "classification": "Unsupported",
+          "evidence": [],
+          "reason": "No evidence is provided for the causal links between fundamentals, margins, scale, diversification, and valuation or risk mitigation.",
+          "action": "withhold",
+          "revised_claim": "",
+          "number_bindings": []
+        }
+      ],
+      "nonfactual_reason": ""
+    }
+  ],
+  "verifier_version": "8.1-exact-display-wrapper-binding",
+  "release_deduplication": "Identical complete released strings appear once per section; all original claim rows and mappings remain. This is not semantic paraphrase deduplication.",
+  "unquoted_nonfactual_connectors": [],
+  "deterministic_validation_failures": [
+    {
+      "claim_id": "u0c0",
+      "errors": [
+        "numeric_check_failed:2023:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "33.6%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u0c1",
+      "errors": [
+        "numeric_check_failed:2023:number_not_in_cited_evidence_line",
+        "numeric_check_failed:2028:number_not_in_cited_evidence_line"
+      ],
+      "numeric_results": [
+        {
+          "token": "56.0%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2023",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "65.7%",
+          "passed": true,
+          "reason": "matched_at_display_precision",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "2028",
+          "passed": false,
+          "reason": "number_not_in_cited_evidence_line",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u0c4",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:-30:missing_binding",
+        "numeric_check_failed:80:numeric_mismatch"
+      ],
+      "numeric_results": [
+        {
+          "token": "-30",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        },
+        {
+          "token": "80",
+          "passed": false,
+          "reason": "numeric_mismatch",
+          "binding_source": "model_supplied"
+        }
+      ]
+    },
+    {
+      "claim_id": "u0c8",
+      "errors": [
+        "number_binding_set_mismatch",
+        "numeric_check_failed:10:missing_binding"
+      ],
+      "numeric_results": [
+        {
+          "token": "10",
+          "passed": false,
+          "reason": "missing_binding",
+          "binding_source": "model_supplied"
+        }
+      ]
+    }
+  ],
+  "deterministic_failure_count": 4,
+  "verified_claim_count": 3,
+  "unverified_annotation_count": 11,
+  "withheld_claim_count": 0,
+  "claim_retention_rate": 1.0,
+  "supported_valid_retention_count": 3,
+  "automatic_year_binding_count": 0,
+  "limitations": "UNVERIFIED annotations preserve unsupported or deterministically rejected assertions for review and must not be counted as grounded facts. A claim's original machine classification is preserved even when deterministic checks reject it; retained_as_verified is then false. Rejected contradicted corrections remain in the audit but are withheld from the narrative. Semantic judgments are machine-assisted, not human-validated. Lexical quote coverage does not prove exhaustive semantic atomization. Exact numeric/year matches do not establish entity/period alignment or dimensional validity of conversions. Repeated source quotes may have ambiguous first-occurrence offsets."
+}

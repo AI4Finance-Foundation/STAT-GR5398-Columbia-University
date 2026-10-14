@@ -1,0 +1,86 @@
+[
+  {
+    "id": "NVDA_final_reasoning_v8_1",
+    "completion_manifest": "runs/NVDA_final_reasoning_v8_1/manifest.json",
+    "completed_states": [
+      "generated",
+      "rendered"
+    ],
+    "resume_if_incomplete": true,
+    "continue_on_error": false,
+    "argv": [
+      "scripts/experiment.py",
+      "--upstream",
+      "{upstream}",
+      "verify",
+      "--run",
+      "runs/NVDA_baseline_1",
+      "--final-run",
+      "runs/NVDA_final_reasoning_v8_1",
+      "--budget",
+      "config/budget.reasoning_followup.json",
+      "--ledger",
+      "evidence/costs.jsonl",
+      "--max-tokens",
+      "20000",
+      "--reasoning-effort",
+      "low"
+    ]
+  },
+  {
+    "id": "AMD_final_reasoning_v8_1",
+    "completion_manifest": "runs/AMD_final_reasoning_v8_1/manifest.json",
+    "completed_states": [
+      "generated",
+      "rendered"
+    ],
+    "resume_if_incomplete": true,
+    "continue_on_error": false,
+    "argv": [
+      "scripts/experiment.py",
+      "--upstream",
+      "{upstream}",
+      "verify",
+      "--run",
+      "runs/AMD_baseline_1",
+      "--final-run",
+      "runs/AMD_final_reasoning_v8_1",
+      "--budget",
+      "config/budget.reasoning_followup.json",
+      "--ledger",
+      "evidence/costs.jsonl",
+      "--max-tokens",
+      "20000",
+      "--reasoning-effort",
+      "low"
+    ]
+  },
+  {
+    "id": "INTC_final_reasoning_v8_1",
+    "completion_manifest": "runs/INTC_final_reasoning_v8_1/manifest.json",
+    "completed_states": [
+      "generated",
+      "rendered"
+    ],
+    "resume_if_incomplete": true,
+    "continue_on_error": false,
+    "argv": [
+      "scripts/experiment.py",
+      "--upstream",
+      "{upstream}",
+      "verify",
+      "--run",
+      "runs/INTC_baseline_1",
+      "--final-run",
+      "runs/INTC_final_reasoning_v8_1",
+      "--budget",
+      "config/budget.reasoning_followup.json",
+      "--ledger",
+      "evidence/costs.jsonl",
+      "--max-tokens",
+      "20000",
+      "--reasoning-effort",
+      "low"
+    ]
+  }
+]
