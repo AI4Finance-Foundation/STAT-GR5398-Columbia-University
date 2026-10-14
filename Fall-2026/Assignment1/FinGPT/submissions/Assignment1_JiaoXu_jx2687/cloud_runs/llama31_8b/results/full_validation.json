@@ -1,0 +1,29 @@
+{
+  "run": "llama31_8b",
+  "adapter_tensor_count": 448,
+  "trainable_adapter_elements": 20971520,
+  "adapter_values_finite": true,
+  "adapter_sha256": "6287049cdfb37f278e36fff99a7e55d7d756fa5fad259457e587987ee5d72445",
+  "frozen_hash_check": "first4096-element sample only; requires_grad audited during training",
+  "test_checks": {
+    "base": {
+      "n": 300,
+      "complete": true,
+      "reference_identity_verified": true,
+      "metrics_recomputed": true,
+      "valid_count": 206
+    },
+    "lora": {
+      "n": 300,
+      "complete": true,
+      "reference_identity_verified": true,
+      "metrics_recomputed": true,
+      "valid_count": 250
+    }
+  },
+  "comparable_latency": {
+    "matched_case_count": 0,
+    "interpretation": "batch wall time divided by batch size is amortized throughput cost, not single-request latency"
+  },
+  "complete": true
+}
