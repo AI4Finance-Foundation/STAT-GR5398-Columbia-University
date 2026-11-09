@@ -1,0 +1,8 @@
+# Python 3.11 or newer (valuation/finrobot uses enum.StrEnum)
+pandas>=2.0
+numpy>=1.24
+pyarrow>=14
+scikit-learn>=1.3
+xgboost>=2.0        # optional: skipped automatically if missing
+lightgbm>=4.0       # optional: skipped automatically if missing
+pydantic>=2.5       # valuation/finrobot

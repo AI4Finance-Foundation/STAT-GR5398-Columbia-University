@@ -6,7 +6,7 @@ tracks (FinRL-Trading, FinGPT, FinRobot).
 | Assignment | Status | Due |
 | --- | --- | --- |
 | [Assignment 1](./Assignment1) | Released | Oct 12, 2026 |
-| Assignment 2 | TBA | TBA |
+| [Assignment 2](./Assignment2) | Released | Nov 25, 2026 |
 | Assignment 3 | TBA | TBA |
 
 > [!IMPORTANT]
