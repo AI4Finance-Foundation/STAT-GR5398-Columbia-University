@@ -30,6 +30,10 @@ and "timing group" below mean everyone building that module, not your team.
 
 ## 1. How the pieces fit
 
+![Assignment 2 architecture: five data sources feed Selection, Valuation and Timing; the combiner and backtester turn them into NAV, the A-D ablation and automatic checks](./architecture.png)
+
+The same flow in code, with the function each module implements:
+
 ```
 data/ (course bundle)
   fundamentals.db · daily prices · VIX & sector ETFs · FRED macro · monthly selection scores
