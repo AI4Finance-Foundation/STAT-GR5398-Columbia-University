@@ -1,0 +1,59 @@
+--- v2/selection/selector.py
++++ v3/selection/selector.py
+@@ -161,8 +161,20 @@
+     4. Predict on inference set
+     5. Compute inverse-MSE weighted ensemble
+     """
+-    # --- Split ---
+-    all_dates = sorted(bdf[bdf["y_return"].notna()]["datadate"].unique())
++    # --- Target and split ---
++    # The portfolio consumes a cross-sectional ordering, not a calibrated
++    # forecast of the market's absolute return.  Convert each matured forward
++    # return into its percentile within the same date and bucket.  Every row in
++    # a date stays in one temporal partition, so this uses no validation or
++    # inference observation to define a training date's target.
++    bdf = bdf.copy()
++    matured = bdf["y_return"].notna()
++    bdf.loc[matured, "y_target"] = (
++        bdf.loc[matured].groupby("datadate")["y_return"]
++        .rank(method="average", pct=True)
++    )
++    assert bdf.loc[matured, "y_target"].between(0.0, 1.0).all()
++    all_dates = sorted(bdf[bdf["y_target"].notna()]["datadate"].unique())
+     val_end_idx = None
+     for i, d in enumerate(all_dates):
+         if str(d) <= val_cutoff:
+@@ -176,11 +188,11 @@
+     train_b = bdf[
+         (~bdf["datadate"].isin(val_dates))
+         & (bdf["datadate"] <= val_cutoff)
+-        & (bdf["y_return"].notna())
++        & (bdf["y_target"].notna())
+     ]
+     val_b = bdf[
+         (bdf["datadate"].isin(val_dates))
+-        & (bdf["y_return"].notna())
++        & (bdf["y_target"].notna())
+     ]
+     infer_dates = sorted(bdf[bdf["datadate"] > val_cutoff]["datadate"].unique())
+     infer_b = bdf[bdf["datadate"].isin(infer_dates)] if infer_dates else pd.DataFrame()
+@@ -196,8 +208,8 @@
+ 
+     X_train, X_val, X_infer = _fit_partition_features(
+         train_b, [train_b, val_b, infer_b], feature_cols)
+-    y_train = train_b["y_return"].values
+-    y_val = val_b["y_return"].values
++    y_train = train_b["y_target"].values
++    y_val = val_b["y_target"].values
+ 
+     scaler = StandardScaler()
+     X_train_s = scaler.fit_transform(X_train)
+@@ -255,7 +267,7 @@
+     # --- Retrain on train+val ---
+     full_train = pd.concat([train_b, val_b], ignore_index=True)
+     X_full, X_infer = _fit_partition_features(full_train, [full_train, infer_b], feature_cols)
+-    y_full = full_train["y_return"].values
++    y_full = full_train["y_target"].values
+     scaler_full = StandardScaler()
+     X_full_s = scaler_full.fit_transform(X_full)
+     X_infer_s = scaler_full.transform(X_infer)

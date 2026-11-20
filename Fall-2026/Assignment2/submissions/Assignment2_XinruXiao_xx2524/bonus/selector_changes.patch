@@ -1,0 +1,84 @@
+--- baseline/selection/selector.py
++++ improved/selection/selector.py
+@@ -135,6 +135,17 @@
+     return models
+ 
+ 
++def _fit_partition_features(reference, frames, feature_cols):
++    """Fit clipping and missing-value parameters on reference only."""
++    ref = reference[feature_cols].astype(float).replace([np.inf, -np.inf], np.nan)
++    med = ref.median().fillna(0.0)
++    clean = ref.fillna(med)
++    lo, hi = clean.quantile(.01), clean.quantile(.99)
++    return [frame[feature_cols].astype(float).replace([np.inf, -np.inf], np.nan)
++            .fillna(med).clip(lower=lo, upper=hi, axis=1).to_numpy(dtype=float)
++            for frame in frames]
++
++
+ def _run_bucket(
+     bucket: str,
+     bdf: pd.DataFrame,
+@@ -184,9 +195,10 @@
+         logger.warning(f"Bucket {bucket}: insufficient data, skipping")
+         return pd.DataFrame(), [], []
+ 
+-    X_train, y_train = train_b[feature_cols].values, train_b["y_return"].values
+-    X_val, y_val = val_b[feature_cols].values, val_b["y_return"].values
+-    X_infer = infer_b[feature_cols].values
++    X_train, X_val, X_infer = _fit_partition_features(
++        train_b, [train_b, val_b, infer_b], feature_cols)
++    y_train = train_b["y_return"].values
++    y_val = val_b["y_return"].values
+ 
+     scaler = StandardScaler()
+     X_train_s = scaler.fit_transform(X_train)
+@@ -243,7 +255,8 @@
+ 
+     # --- Retrain on train+val ---
+     full_train = pd.concat([train_b, val_b], ignore_index=True)
+-    X_full, y_full = full_train[feature_cols].values, full_train["y_return"].values
++    X_full, X_infer = _fit_partition_features(full_train, [full_train, infer_b], feature_cols)
++    y_full = full_train["y_return"].values
+     scaler_full = StandardScaler()
+     X_full_s = scaler_full.fit_transform(X_full)
+     X_infer_s = scaler_full.transform(X_infer)
+@@ -526,6 +539,12 @@
+         # tradedate is still ahead of as-of carries a later close in history.
+         if self._price_as_of is not None:
+             df = self._clip_trade_prices_to_as_of(df, as_of_date, self._price_as_of)
++
++        # A stored forward-return label is not available merely because its
++        # financial row was published. Use the course's quarter trading-date
++        # convention plus one quarter as a conservative maturity gate.
++        label_end = pd.to_datetime(df["datadate"].map(datadate_to_tradedate), errors="coerce") + pd.DateOffset(months=3)
++        df.loc[label_end.isna() | (label_end > pd.Timestamp(as_of_date)), "y_return"] = np.nan
+ 
+         # --- Feature engineering ---
+         df = self._engineer_features(df)
+@@ -1288,23 +1307,12 @@
+             df[src] = pd.to_numeric(df[src], errors="coerce")
+             df[dst] = df.groupby("tic")[src].diff()
+ 
+-        # Fill and clean
++        # Leave feature values raw here: no quantiles or imputation fitted
++        # on rows that will later become validation or inference observations.
+         pre_accel = [c for c in FEATURE_COLS + MOMENTUM_COLS if c != "ret_accel"]
+         for c in pre_accel:
+-            df[c] = pd.to_numeric(df[c], errors="coerce")
+-        global_medians = df[pre_accel].median()
+-        df[pre_accel] = df[pre_accel].fillna(global_medians).replace([np.inf, -np.inf], np.nan).fillna(0)
+-
+-        # Winsorize at 1st/99th percentile
+-        for c in pre_accel:
+-            p01, p99 = df[c].quantile(0.01), df[c].quantile(0.99)
+-            df[c] = df[c].clip(lower=p01, upper=p99)
+-
+-        # Compute ret_accel from winsorized data
++            df[c] = pd.to_numeric(df[c], errors="coerce").replace([np.inf, -np.inf], np.nan)
+         df["ret_accel"] = df["ret_1q"] - df["ret_4q"] / 4
+-        df["ret_accel"] = df["ret_accel"].fillna(0)
+-        p01, p99 = df["ret_accel"].quantile(0.01), df["ret_accel"].quantile(0.99)
+-        df["ret_accel"] = df["ret_accel"].clip(lower=p01, upper=p99)
+ 
+         return df
+ 

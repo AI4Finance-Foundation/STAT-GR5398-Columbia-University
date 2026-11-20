@@ -1,0 +1,80 @@
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+PERIOD RESUMED retrained_improved dev
+PERIOD RESUMED retrained_improved val
+PERIOD retrained_improved test
+*** Test-period run #1 (logged in output/test_runs.jsonl). Report this number. ***
+running A_selection  2024-01-02 -> 2026-10-09
+running B_valuation  2024-01-02 -> 2026-10-09
+running C_timing_full  2024-01-02 -> 2026-10-09
+running D_both_full  2024-01-02 -> 2026-10-09
+run                  test_improved_scores_A_selection test_improved_scores_B_valuation test_improved_scores_C_timing_full test_improved_scores_D_both_full
+start                                      2024-01-02                       2024-01-02                         2024-01-02                       2024-01-02
+end                                        2026-10-09                       2026-10-09                         2026-10-09                       2026-10-09
+total_return_pct                               158.79                           157.54                             158.79                           157.54
+cagr_pct                                        41.17                            40.92                              41.17                            40.92
+volatility_pct                                  34.62                            34.19                              34.62                            34.19
+sharpe                                          1.169                            1.175                              1.169                            1.175
+max_drawdown_pct                               -30.75                           -30.72                             -30.75                           -30.72
+calmar                                          1.339                            1.332                              1.339                            1.332
+trades                                            631                              704                                631                              704
+turnover_per_year                               11.05                            12.12                              11.05                            12.12
+SPY_total_return_pct                            70.12                            70.12                              70.12                            70.12
+SPY_sharpe                                       1.32                             1.32                               1.32                             1.32
+QQQ_total_return_pct                            89.31                            89.31                              89.31                            89.31
+QQQ_sharpe                                      1.218                            1.218                              1.218                            1.218
+avg_removed_per_week                              NaN                              6.0                                NaN                              6.0
+avg_exposure                                      NaN                              NaN                                1.0                              1.0
+*** Test-period run #2 (logged in output/test_runs.jsonl). Report this number. ***
+
+Valuation, 2024-01-02 -> 2026-10-09, top 20 growth_tech candidates each month
+valued 533 of 680 candidate-months (78%)
+rank IC  63 sessions: mean +0.065   t +1.36   months 32
+rank IC 126 sessions: mean +0.160   t +3.63   months 29
+rank IC 252 sessions: mean +0.059   t +1.60   months 23
+price 252 sessions later inside [low, high]: 74% of 364
+median mispricing -30.6%   median method_spread 2.41
+*** Test-period run #3 (logged in output/test_runs.jsonl). Report this number. ***
+
+Valuation, 2024-01-02 -> 2026-10-09, top 10000 growth_tech candidates each month
+valued 3296 of 3827 candidate-months (86%)
+rank IC  63 sessions: mean -0.012   t -0.31   months 32
+rank IC 126 sessions: mean -0.013   t -0.42   months 29
+rank IC 252 sessions: mean +0.019   t +0.72   months 23
+price 252 sessions later inside [low, high]: 73% of 2185
+median mispricing -5.5%   median method_spread 2.24
+PERIOD COMPLETE retrained_improved test
+PERIOD retrained_improved forward
+running A_selection  2026-10-12 -> 2026-11-06
+running B_valuation  2026-10-12 -> 2026-11-06
+running C_timing_full  2026-10-12 -> 2026-11-06
+running D_both_full  2026-10-12 -> 2026-11-06
+run                  forward_improved_scores_A_selection forward_improved_scores_B_valuation forward_improved_scores_C_timing_full forward_improved_scores_D_both_full
+start                                         2026-10-12                          2026-10-12                            2026-10-12                          2026-10-12
+end                                           2026-11-06                          2026-11-06                            2026-11-06                          2026-11-06
+total_return_pct                                  -19.31                              -19.31                                -19.31                              -19.31
+cagr_pct                                          -94.19                              -94.19                                -94.19                              -94.19
+volatility_pct                                     39.59                               39.59                                 39.59                               39.59
+sharpe                                            -6.955                              -6.955                                -6.955                              -6.955
+max_drawdown_pct                                  -19.53                              -19.53                                -19.53                              -19.53
+calmar                                            -4.822                              -4.822                                -4.822                              -4.822
+trades                                                23                                  23                                    23                                  23
+turnover_per_year                                  19.61                               19.61                                 19.61                               19.61
+SPY_total_return_pct                                -5.5                                -5.5                                  -5.5                                -5.5
+SPY_sharpe                                        -3.563                              -3.563                                -3.563                              -3.563
+QQQ_total_return_pct                              -12.06                              -12.06                                -12.06                              -12.06
+QQQ_sharpe                                        -4.999                              -4.999                                -4.999                              -4.999
+avg_removed_per_week                                 NaN                                 4.5                                   NaN                                 4.5
+avg_exposure                                         NaN                                 NaN                                   1.0                                 1.0
+
+Valuation, 2026-10-12 -> 2026-11-06, top 20 growth_tech candidates each month
+valued 38 of 40 candidate-months (95%)
+median mispricing -18.0%   median method_spread 2.00
+
+Valuation, 2026-10-12 -> 2026-11-06, top 10000 growth_tech candidates each month
+valued 213 of 231 candidate-months (92%)
+median mispricing -1.4%   median method_spread 1.93
+PERIOD COMPLETE retrained_improved forward
+EVALUATION COMPLETE retrained_improved

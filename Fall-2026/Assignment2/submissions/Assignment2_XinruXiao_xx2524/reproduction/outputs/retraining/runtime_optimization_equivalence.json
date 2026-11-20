@@ -1,0 +1,9 @@
+{
+  "check_month": "2019-06",
+  "rows": 504,
+  "assert_frame_equal": "PASS (all columns, values, order and dtypes)",
+  "change": "Only when every unified blending alpha is zero, skip fitting the unused unified model; retain all bucket models and original bucket percentile score. Same driver applied to baseline and improved. Completed checkpoints from original driver remain valid. No financial assumptions or model hyperparameters changed.",
+  "limitation": "One-month empirical equality plus inspection of zero-weight algebra; this does not prove identical auxiliary unused-model diagnostics. Training labels and feature vintages retain separately disclosed limitations.",
+  "train_one_month_original_driver.py_sha256": "dfcc7e9e171d51edcf0deff4c51951dc5d1a1de75c62632d7699989b69989edb",
+  "train_one_month.py_sha256": "d0be7876cb300cfa3df23a4bf296b9e181dd9903037b33f32ed264e3e55defa6"
+}

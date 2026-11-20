@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "months": [
+    "2017-01",
+    "2026-11"
+  ],
+  "month_count": 119,
+  "rows": 60326,
+  "duplicate_score_keys": 0,
+  "nonfinite_scores": 0,
+  "all_cutoffs_before_score_month": true,
+  "candidate_keys_exactly_match_same_environment_unchanged_retrain": true,
+  "bucket_month_coverage": {
+    "cyclical": 119,
+    "defensive": 119,
+    "growth_tech": 119,
+    "real_assets": 110
+  },
+  "course_scores_unchanged": true,
+  "course_scores_sha256": "f32b737d5a6bc4178fd272d99e4ee291f0e2f671ca3eb4e2e6572d908d8edc32",
+  "scores_v3_sha256": "43f5e847c9608a6d0af61da4069c12e56d8736ff0dfe6d74627a548319478b44",
+  "selector_sha256": "159dca6950e66c6218670b57cab3f7635d2bde6b1c91fdf638886912746fe6da",
+  "config_sha256": "d163aac8ab19eaa4bad5aa9ded238fe0f635e7be968ee8ae0437ccc7cca9afb8",
+  "protocol_sha256": "a514e3ca8f4a7271208b67a076330ab6b344706fb34dc7184d7b951e8f8f508b",
+  "growth_tech_mean_monthly_spearman_v3_vs_v2": 0.740495,
+  "growth_tech_mean_top10_overlap_v3_vs_v2": 5.454,
+  "admitted_to_test": false,
+  "v3_test_invocations": 0,
+  "reason": "Failed pre-registered development return floor; v2 retained."
+}

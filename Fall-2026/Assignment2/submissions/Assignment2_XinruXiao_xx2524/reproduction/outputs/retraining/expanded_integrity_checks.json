@@ -1,0 +1,59 @@
+{
+  "score_integrity": {
+    "baseline": {
+      "months": 119,
+      "rows": 60326,
+      "bucket_months": 467,
+      "min_names_per_bucket_month": 72,
+      "max_names_per_bucket_month": 212,
+      "sha256": "fa51062ad89bd35cc58e1bbcf6bbf5414aac4276793283570af0aedd6e69e756",
+      "duplicate_keys": 0,
+      "nonfinite_scores": 0,
+      "cutoff_before_month": true
+    },
+    "improved": {
+      "months": 119,
+      "rows": 60326,
+      "bucket_months": 467,
+      "min_names_per_bucket_month": 72,
+      "max_names_per_bucket_month": 212,
+      "sha256": "2d4c3d1da959f2a802201601c66ae1be35109a074b87ec708fa774daed1f5e51",
+      "duplicate_keys": 0,
+      "nonfinite_scores": 0,
+      "cutoff_before_month": true
+    }
+  },
+  "evaluation_integrity": {
+    "course": {
+      "periods": [
+        "dev",
+        "val",
+        "test",
+        "forward"
+      ],
+      "four_groups_each": true,
+      "A_equals_C_and_B_equals_D": true
+    },
+    "retrained_baseline": {
+      "periods": [
+        "dev",
+        "val",
+        "test",
+        "forward"
+      ],
+      "four_groups_each": true,
+      "A_equals_C_and_B_equals_D": true
+    },
+    "retrained_improved": {
+      "periods": [
+        "dev",
+        "val",
+        "test",
+        "forward"
+      ],
+      "four_groups_each": true,
+      "A_equals_C_and_B_equals_D": true
+    }
+  },
+  "status": "PASS"
+}
