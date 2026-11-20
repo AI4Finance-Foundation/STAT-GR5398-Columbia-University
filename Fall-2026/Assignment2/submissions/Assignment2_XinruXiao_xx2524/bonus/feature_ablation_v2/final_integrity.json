@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "months": [
+    "2017-01",
+    "2026-11"
+  ],
+  "month_count": 119,
+  "rows": 60326,
+  "duplicate_score_keys": 0,
+  "nonfinite_scores": 0,
+  "all_cutoffs_before_score_month": true,
+  "candidate_keys_exactly_match_same_environment_unchanged_retrain": true,
+  "bucket_month_coverage": {
+    "cyclical": 119,
+    "defensive": 119,
+    "growth_tech": 119,
+    "real_assets": 110
+  },
+  "course_scores_sha256": "f32b737d5a6bc4178fd272d99e4ee291f0e2f671ca3eb4e2e6572d908d8edc32",
+  "course_scores_unchanged": true,
+  "scores_v2_sha256": "32224e1a657317b2ae4fc2ea83381d4a5c8edfdbfd4d93698413a8467c4c4c8a",
+  "frozen_config_sha256": "219d06dcdc318ccc8443c373188cda771aa34d10a39a4f3e73936b4848965b5b",
+  "frozen_selector_sha256": "46ca0e6254fd2ba15ac3c4701f8d5b102b62e290f308282ad6fa2abd48901fec",
+  "test_invocations_for_isolated_v2_experiment": 1,
+  "full_timing_equivalence": {
+    "test": {
+      "A_equals_C": true,
+      "B_equals_D": true
+    },
+    "forward": {
+      "A_equals_C": true,
+      "B_equals_D": true
+    }
+  }
+}

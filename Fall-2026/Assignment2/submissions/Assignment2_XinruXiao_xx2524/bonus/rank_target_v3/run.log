@@ -1,0 +1,139 @@
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+2019-05 502
+2019-06 504
+PILOT PASSED; continuing to full 119 months
+2017-03 414
+2017-02 415
+2017-01 416
+2017-04 412
+2017-06 413
+2017-05 411
+2017-07 411
+2017-08 409
+2017-09 417
+2017-10 492
+2017-11 495
+2017-12 495
+2018-01 494
+2018-02 496
+2018-03 498
+2018-04 495
+2018-05 494
+2018-06 498
+2018-07 494
+2018-08 497
+2018-09 502
+2018-10 502
+2018-11 502
+2018-12 503
+2019-01 501
+2019-02 501
+2019-03 503
+2019-04 503
+2019-07 504
+2019-08 505
+2019-09 505
+2019-10 505
+2019-11 506
+2019-12 508
+2020-01 505
+2020-02 505
+2020-03 511
+2020-04 511
+2020-05 511
+2020-06 515
+2020-07 514
+2020-08 516
+2020-09 518
+2020-10 515
+2020-11 519
+2020-12 521
+2021-01 519
+2021-02 521
+2021-03 522
+2021-04 519
+2021-05 520
+2021-06 525
+2021-07 524
+2021-08 523
+2021-09 525
+2021-10 522
+2021-11 523
+2021-12 524
+2022-01 521
+2022-02 521
+2022-03 526
+2022-04 528
+2022-05 528
+2022-06 528
+2022-07 526
+2022-08 527
+2022-09 527
+2022-10 526
+2022-11 525
+2022-12 526
+2023-01 521
+2023-02 520
+2023-04 520
+2023-03 523
+2023-05 522
+2023-06 524
+2023-07 522
+2023-08 522
+2023-09 523
+2023-10 521
+2023-11 519
+2023-12 521
+2024-01 515
+2024-02 517
+2024-03 520
+2024-04 518
+2024-05 518
+2024-06 521
+2024-07 518
+2024-08 518
+2024-09 522
+2024-10 520
+2024-11 520
+2024-12 522
+2025-01 519
+2025-02 518
+2025-03 521
+2025-04 518
+2025-05 519
+2025-06 520
+2025-07 520
+2025-08 517
+2025-09 519
+2025-10 516
+2025-11 516
+2025-12 516
+2026-01 513
+2026-02 512
+2026-03 518
+2026-04 514
+2026-05 514
+2026-06 516
+2026-07 511
+2026-08 512
+2026-09 519
+2026-10 516
+2026-11 516
+TRAINING COMPLETE: 119 months, 60326 rows
+BACKTEST COMPLETE: dev A
+BACKTEST COMPLETE: dev B
+BACKTEST COMPLETE: val A
+BACKTEST COMPLETE: val B
+{
+  "admit_to_one_final_test": false,
+  "checks": {
+    "val_A_return_at_least_v2_11_85": true,
+    "val_A_sharpe_at_least_v2_0_342": true,
+    "dev_A_return_at_least_177_92": false,
+    "dev_A_turnover_no_more_than_125pct_v2": true,
+    "val_A_turnover_no_more_than_125pct_v2": true
+  }
+}

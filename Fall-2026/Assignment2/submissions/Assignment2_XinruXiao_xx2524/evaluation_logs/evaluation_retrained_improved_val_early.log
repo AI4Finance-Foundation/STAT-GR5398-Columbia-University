@@ -1,0 +1,44 @@
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+PERIOD retrained_improved val
+running A_selection  2022-01-03 -> 2023-12-29
+running B_valuation  2022-01-03 -> 2023-12-29
+running C_timing_full  2022-01-03 -> 2023-12-29
+running D_both_full  2022-01-03 -> 2023-12-29
+run                  val_improved_scores_A_selection val_improved_scores_B_valuation val_improved_scores_C_timing_full val_improved_scores_D_both_full
+start                                     2022-01-03                      2022-01-03                        2022-01-03                      2022-01-03
+end                                       2023-12-29                      2023-12-29                        2023-12-29                      2023-12-29
+total_return_pct                                7.73                            6.39                              7.73                            6.39
+cagr_pct                                        3.83                            3.17                              3.83                            3.17
+volatility_pct                                 29.12                           28.91                             29.12                           28.91
+sharpe                                         0.274                           0.252                             0.274                           0.252
+max_drawdown_pct                              -36.66                          -36.46                            -36.66                          -36.46
+calmar                                         0.104                           0.087                             0.104                           0.087
+trades                                           320                             335                               320                             335
+turnover_per_year                               9.76                           10.06                              9.76                           10.06
+SPY_total_return_pct                            2.65                            2.65                              2.65                            2.65
+SPY_sharpe                                     0.165                           0.165                             0.165                           0.165
+QQQ_total_return_pct                            3.42                            3.42                              3.42                            3.42
+QQQ_sharpe                                     0.195                           0.195                             0.195                           0.195
+avg_removed_per_week                             NaN                             1.9                               NaN                             1.9
+avg_exposure                                     NaN                             NaN                               1.0                             1.0
+
+Valuation, 2022-01-03 -> 2023-12-29, top 20 growth_tech candidates each month
+valued 345 of 480 candidate-months (72%)
+rank IC  63 sessions: mean -0.094   t -1.45   months 24
+rank IC 126 sessions: mean -0.130   t -2.13   months 24
+rank IC 252 sessions: mean -0.148   t -2.22   months 24
+price 252 sessions later inside [low, high]: 79% of 345
+median mispricing +3.2%   median method_spread 2.61
+
+Valuation, 2022-01-03 -> 2023-12-29, top 10000 growth_tech candidates each month
+valued 2004 of 2577 candidate-months (78%)
+rank IC  63 sessions: mean -0.051   t -1.19   months 24
+rank IC 126 sessions: mean -0.128   t -4.54   months 24
+rank IC 252 sessions: mean -0.141   t -6.52   months 24
+price 252 sessions later inside [low, high]: 77% of 2004
+median mispricing +17.9%   median method_spread 2.93
+PERIOD COMPLETE retrained_improved val
+REQUESTED PERIODS COMPLETE; remaining periods pending retrained_improved

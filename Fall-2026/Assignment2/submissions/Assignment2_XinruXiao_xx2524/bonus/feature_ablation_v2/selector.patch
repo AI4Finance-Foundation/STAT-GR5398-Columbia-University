@@ -1,0 +1,12 @@
+--- improved/selection/selector.py
++++ feature_ablation/selection/selector.py
+@@ -62,8 +62,7 @@
+ }
+ 
+ FEATURE_COLS = [
+-    # Valuation (5)
+-    "pe", "ps", "pb", "peg", "ev_multiple",
++    # Stored valuation multiples excluded: exact availability dates are unverified.
+     # Profitability (4)
+     "EPS", "roe", "gross_margin", "operating_margin",
+     # Cash Flow (5)

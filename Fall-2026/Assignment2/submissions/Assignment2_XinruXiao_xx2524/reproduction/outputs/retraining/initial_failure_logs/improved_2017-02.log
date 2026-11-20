@@ -1,0 +1,66 @@
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+Traceback (most recent call last):
+  File "/Users/xxrlulamoon/Documents/Codex/2026-10-14/referenced-chatgpt-conversation-this-is-an-2/outputs/retraining/train_one_month.py", line 21, in <module>
+    result=_run_month(a.month)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/xxrlulamoon/Documents/Codex/2026-10-14/referenced-chatgpt-conversation-this-is-an-2/work/retraining/improved/selection/build_scores.py", line 49, in _run_month
+    rows = predictions.get(day)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xxrlulamoon/Documents/Codex/2026-10-14/referenced-chatgpt-conversation-this-is-an-2/work/retraining/improved/selection/strategy.py", line 98, in get
+    frame = selector.run_monthly(cutoff)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xxrlulamoon/Documents/Codex/2026-10-14/referenced-chatgpt-conversation-this-is-an-2/work/retraining/improved/selection/selector.py", line 648, in run_monthly
+    preds, results, feat_imp = _run_bucket(
+                               ^^^^^^^^^^^^
+  File "/Users/xxrlulamoon/Documents/Codex/2026-10-14/referenced-chatgpt-conversation-this-is-an-2/work/retraining/improved/selection/selector.py", line 198, in _run_bucket
+    X_train, X_val, X_infer = _fit_partition_features(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xxrlulamoon/Documents/Codex/2026-10-14/referenced-chatgpt-conversation-this-is-an-2/work/retraining/improved/selection/selector.py", line 143, in _fit_partition_features
+    lo, hi = clean.quantile(.01), clean.quantile(.99)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/xxrlulamoon/Documents/Codex/2026-10-14/referenced-chatgpt-conversation-this-is-an/FinRobot/finrobot_desktop/.venv/lib/python3.11/site-packages/pandas/core/frame.py", line 16120, in quantile
+    res_df = self.quantile(
+             ^^^^^^^^^^^^^^
+  File "/Users/xxrlulamoon/Documents/Codex/2026-10-14/referenced-chatgpt-conversation-this-is-an/FinRobot/finrobot_desktop/.venv/lib/python3.11/site-packages/pandas/core/frame.py", line 16165, in quantile
+    res = data._mgr.quantile(qs=q, interpolation=interpolation)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xxrlulamoon/Documents/Codex/2026-10-14/referenced-chatgpt-conversation-this-is-an/FinRobot/finrobot_desktop/.venv/lib/python3.11/site-packages/pandas/core/internals/managers.py", line 1719, in quantile
+    blocks = [
+             ^
+  File "/Users/xxrlulamoon/Documents/Codex/2026-10-14/referenced-chatgpt-conversation-this-is-an/FinRobot/finrobot_desktop/.venv/lib/python3.11/site-packages/pandas/core/internals/managers.py", line 1720, in <listcomp>
+    blk.quantile(qs=qs, interpolation=interpolation) for blk in self.blocks
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xxrlulamoon/Documents/Codex/2026-10-14/referenced-chatgpt-conversation-this-is-an/FinRobot/finrobot_desktop/.venv/lib/python3.11/site-packages/pandas/core/internals/blocks.py", line 1495, in quantile
+    result = quantile_compat(self.values, np.asarray(qs._values), interpolation)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xxrlulamoon/Documents/Codex/2026-10-14/referenced-chatgpt-conversation-this-is-an/FinRobot/finrobot_desktop/.venv/lib/python3.11/site-packages/pandas/core/array_algos/quantile.py", line 39, in quantile_compat
+    return quantile_with_mask(values, mask, fill_value, qs, interpolation)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xxrlulamoon/Documents/Codex/2026-10-14/referenced-chatgpt-conversation-this-is-an/FinRobot/finrobot_desktop/.venv/lib/python3.11/site-packages/pandas/core/array_algos/quantile.py", line 97, in quantile_with_mask
+    result = _nanquantile(
+             ^^^^^^^^^^^^^
+  File "/Users/xxrlulamoon/Documents/Codex/2026-10-14/referenced-chatgpt-conversation-this-is-an/FinRobot/finrobot_desktop/.venv/lib/python3.11/site-packages/pandas/core/array_algos/quantile.py", line 218, in _nanquantile
+    return np.quantile(
+           ^^^^^^^^^^^^
+  File "/Users/xxrlulamoon/Documents/Codex/2026-10-14/referenced-chatgpt-conversation-this-is-an-2/work/a2-deps/numpy/lib/_function_base_impl.py", line 4496, in quantile
+    return _quantile_unchecked(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xxrlulamoon/Documents/Codex/2026-10-14/referenced-chatgpt-conversation-this-is-an-2/work/a2-deps/numpy/lib/_function_base_impl.py", line 4510, in _quantile_unchecked
+    return _ureduce(a,
+           ^^^^^^^^^^^
+  File "/Users/xxrlulamoon/Documents/Codex/2026-10-14/referenced-chatgpt-conversation-this-is-an-2/work/a2-deps/numpy/lib/_function_base_impl.py", line 3880, in _ureduce
+    r = func(a, **kwargs)
+        ^^^^^^^^^^^^^^^^^
+  File "/Users/xxrlulamoon/Documents/Codex/2026-10-14/referenced-chatgpt-conversation-this-is-an-2/work/a2-deps/numpy/lib/_function_base_impl.py", line 4669, in _quantile_ureduce_func
+    result = _quantile(arr,
+             ^^^^^^^^^^^^^^
+  File "/Users/xxrlulamoon/Documents/Codex/2026-10-14/referenced-chatgpt-conversation-this-is-an-2/work/a2-deps/numpy/lib/_function_base_impl.py", line 4807, in _quantile
+    result = _lerp(previous,
+             ^^^^^^^^^^^^^^^
+  File "/Users/xxrlulamoon/Documents/Codex/2026-10-14/referenced-chatgpt-conversation-this-is-an-2/work/a2-deps/numpy/lib/_function_base_impl.py", line 4596, in _lerp
+    diff_b_a = b - a
+               ~~^~~
+TypeError: numpy boolean subtract, the `-` operator, is not supported, use the bitwise_xor, the `^` operator, or the logical_xor function instead.

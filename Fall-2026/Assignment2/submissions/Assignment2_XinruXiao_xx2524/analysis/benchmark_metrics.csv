@@ -1,0 +1,9 @@
+period,benchmark,start,end,total_return_pct,cagr_pct,volatility_pct,sharpe,max_drawdown_pct,calmar,turnover_per_year,cost_basis
+dev,SPY,2017-01-03,2021-12-31,130.39,18.2,18.86,0.982,-33.72,0.54,,"passive adjusted-price reference, no simulated transaction costs; turnover not defined by course"
+dev,QQQ,2017-01-03,2021-12-31,245.56,28.2,22.34,1.225,-28.56,0.987,,"passive adjusted-price reference, no simulated transaction costs; turnover not defined by course"
+val,SPY,2022-01-03,2023-12-29,2.65,1.33,19.53,0.165,-24.5,0.054,,"passive adjusted-price reference, no simulated transaction costs; turnover not defined by course"
+val,QQQ,2022-01-03,2023-12-29,3.42,1.71,26.14,0.195,-34.83,0.049,,"passive adjusted-price reference, no simulated transaction costs; turnover not defined by course"
+test,SPY,2024-01-02,2026-10-09,70.12,21.25,15.5,1.32,-18.76,1.133,,"passive adjusted-price reference, no simulated transaction costs; turnover not defined by course"
+test,QQQ,2024-01-02,2026-10-09,89.31,26.04,20.78,1.218,-22.77,1.144,,"passive adjusted-price reference, no simulated transaction costs; turnover not defined by course"
+forward,SPY,2026-10-12,2026-11-06,-5.5,-52.79,20.47,-3.563,-5.8,-9.108,,"passive adjusted-price reference, no simulated transaction costs; turnover not defined by course"
+forward,QQQ,2026-10-12,2026-11-06,-12.06,-81.8,32.92,-4.999,-13.27,-6.165,,"passive adjusted-price reference, no simulated transaction costs; turnover not defined by course"
