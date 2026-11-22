@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "models": {
+    "RF": "sklearn.ensemble._forest.RandomForestRegressor",
+    "HistGBM": "sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingRegressor",
+    "ExtraTrees": "sklearn.ensemble._forest.ExtraTreesRegressor",
+    "Ridge": "sklearn.linear_model._ridge.Ridge",
+    "XGB": "xgboost.sklearn.XGBRegressor",
+    "LGBM": "lightgbm.sklearn.LGBMRegressor"
+  },
+  "model_construction_identical_in_both_selectors": true,
+  "note": "Constructor/import check in the same unchanged dependency/runtime environment used by all monthly workers; does not fit an additional test-period model."
+}

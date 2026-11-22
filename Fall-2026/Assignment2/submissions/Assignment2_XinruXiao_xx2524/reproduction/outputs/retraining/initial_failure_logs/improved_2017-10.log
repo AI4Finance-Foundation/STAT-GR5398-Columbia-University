@@ -1,0 +1,29 @@
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+Traceback (most recent call last):
+  File "/Users/xxrlulamoon/Documents/Codex/2026-10-14/referenced-chatgpt-conversation-this-is-an-2/outputs/retraining/train_one_month.py", line 20, in <module>
+    _init(a.config,str(parts))
+  File "/Users/xxrlulamoon/Documents/Codex/2026-10-14/referenced-chatgpt-conversation-this-is-an-2/work/retraining/improved/selection/build_scores.py", line 40, in _init
+    _, _, _, prices, predictions, _ = load(config)
+                                      ^^^^^^^^^^^^
+  File "/Users/xxrlulamoon/Documents/Codex/2026-10-14/referenced-chatgpt-conversation-this-is-an-2/work/retraining/improved/selection/config.py", line 27, in load
+    prices = PriceStore(DATA / "prices" / "daily_adjusted.parquet")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xxrlulamoon/Documents/Codex/2026-10-14/referenced-chatgpt-conversation-this-is-an-2/work/retraining/improved/shared/prices.py", line 23, in __init__
+    df = pd.read_parquet(path)
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xxrlulamoon/Documents/Codex/2026-10-14/referenced-chatgpt-conversation-this-is-an/FinRobot/finrobot_desktop/.venv/lib/python3.11/site-packages/pandas/io/parquet.py", line 671, in read_parquet
+    return impl.read(
+           ^^^^^^^^^^
+  File "/Users/xxrlulamoon/Documents/Codex/2026-10-14/referenced-chatgpt-conversation-this-is-an/FinRobot/finrobot_desktop/.venv/lib/python3.11/site-packages/pandas/io/parquet.py", line 260, in read
+    pa_table = self.api.parquet.read_table(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xxrlulamoon/Documents/Codex/2026-10-14/referenced-chatgpt-conversation-this-is-an/FinRobot/finrobot_desktop/.venv/lib/python3.11/site-packages/pyarrow/parquet/core.py", line 1959, in read_table
+    return dataset.read(columns=columns, use_threads=use_threads,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xxrlulamoon/Documents/Codex/2026-10-14/referenced-chatgpt-conversation-this-is-an/FinRobot/finrobot_desktop/.venv/lib/python3.11/site-packages/pyarrow/parquet/core.py", line 1585, in read
+    table = self._dataset.to_table(
+            ^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

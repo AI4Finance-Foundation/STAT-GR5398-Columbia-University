@@ -1,0 +1,681 @@
+as_of,ticker,price,dcf_valid,history_valid,peer_valid,aggregate_valid,reasons,fair_value,low,high
+2023-12-29,AMD,147.41,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2023-12-29,ANET,58.88,True,True,True,True,{},52.31015721639568,32.61047736474014,94.76162521013835
+2023-12-29,APH,23.98,True,True,True,True,{},30.027839913276164,19.877713334777006,99.04118247769298
+2023-12-29,AVGO,108.56,True,True,True,True,{},99.36299460645637,61.43739430723151,213.94478907850538
+2023-12-29,CRWD,63.83,False,False,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-2.81); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2023-12-29,DDOG,121.38,False,True,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-0.707); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2023-12-29,INTC,49.59,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2023-12-29,JNPR,28.43,True,True,True,True,{},35.02987560002215,23.908739662768195,69.47555541212984
+2023-12-29,LRCX,76.61,True,True,True,True,{},54.157988503933225,24.57354659218315,180.35277056123107
+2023-12-29,MCHP,84.05,True,True,True,True,{},142.1046519853063,86.6445889153467,281.8394143346695
+2023-12-29,MRVL,59.81,True,True,False,True,"{""peer"": ""nonpositive/missing EPS or too few peers""}",29.506320738600202,5.270568686251111,109.2442608175081
+2023-12-29,MU,84.64,False,True,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-3.91); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2023-12-29,NFLX,48.69,True,True,True,True,{},43.424970557872555,12.747704180064309,132.4554225776203
+2023-12-29,NOW,141.3,True,True,True,True,{},46.15188645004363,18.348442573263675,228.74942086572133
+2023-12-29,NTAP,83.52,True,True,True,True,{},115.52847521850364,57.79269555436353,342.97594672830724
+2023-12-29,PANW,147.44,True,True,True,True,{},54.270510467112274,15.201236476043274,1374.8977418785605
+2023-12-29,QRVO,112.61,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2023-12-29,SPLK,152.35,False,False,False,False,"{""dcf"": ""nonpositive median EBITDA margin"", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2023-12-29,WDC,39.38,False,False,False,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2023-12-29,ZS,221.56,False,False,False,False,"{""dcf"": ""nonpositive median EBITDA margin"", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-01-31,ADSK,253.81,True,True,True,True,{},145.92877397369625,89.06544240400669,436.5773180389052
+2024-01-31,ANET,64.67,True,True,True,True,{},52.88109775787173,32.25500834724541,91.91717289719624
+2024-01-31,APH,24.46,True,True,True,True,{},29.353713888594648,20.03562965342278,96.06827102803737
+2024-01-31,ASML,849.5,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2024-01-31,AVGO,114.76,True,True,True,True,{},106.34767687434001,62.36748369196951,201.0317523364486
+2024-01-31,DDOG,124.44,False,True,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-0.707); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-01-31,FIS,57.91,True,True,False,True,"{""peer"": ""nonpositive/missing EPS or too few peers""}",27.92322858162136,4.427833160387905,61.592414316624115
+2024-01-31,HPQ,25.59,True,True,True,True,{},52.61002139459184,11.863271180004837,195.6946261682243
+2024-01-31,INTU,615.72,True,True,True,True,{},288.9268743400211,109.44262214779361,629.8335133092622
+2024-01-31,JNPR,35.65,True,True,True,True,{},36.139462564102566,23.648123539232056,67.39011308411214
+2024-01-31,LRCX,80.7,True,True,True,True,{},49.29378073113216,21.538496313889276,154.18364485981309
+2024-01-31,MCHP,79.39,True,True,True,True,{},146.60588034188032,84.39122824623908,273.37946261682237
+2024-01-31,MRVL,67.21,True,True,False,True,"{""peer"": ""nonpositive/missing EPS or too few peers""}",21.36929720932254,0.2739603960044441,84.50449375640287
+2024-01-31,MU,85.04,False,True,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-3.45); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-01-31,NOW,153.08,True,True,True,True,{},53.20520943329813,22.914341542266506,254.82652652318959
+2024-01-31,QCOM,140.26,True,True,True,True,{},95.8236887363134,62.22949312345201,412.7377570093458
+2024-01-31,QRVO,99.74,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2024-01-31,WDAY,291.07,True,True,True,True,{},44.56366505470542,5.039657864018156,543.6930800328741
+2024-01-31,WDC,43.05,False,False,False,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-01-31,ZS,235.67,False,False,False,False,"{""dcf"": ""nonpositive median EBITDA margin"", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-02-29,ADSK,258.17,True,True,True,True,{},137.84208813018105,92.10609195402299,415.5537488765272
+2024-02-29,ANET,69.39,True,True,True,True,{},57.573778189244955,36.36899425287356,98.04640625
+2024-02-29,CPAY,279.27,True,True,True,True,{},438.56140625000006,267.31445585595264,1210.940672781581
+2024-02-29,DDOG,131.46,True,True,True,True,{},9.392479637170197,3.0593422660959733,847.9269782682306
+2024-02-29,FTNT,69.11,True,True,True,True,{},92.93784397294615,31.84977011494253,171.94199028459434
+2024-02-29,GLW,30.84,True,True,True,True,{},18.020423434873436,1.8611388888525298,39.624671875000004
+2024-02-29,JNPR,35.93,True,True,True,True,{},28.297225821056255,20.797039080459772,56.06630000000001
+2024-02-29,LRCX,91.76,True,True,True,True,{},49.29378073113216,21.000851828193813,150.84062500000002
+2024-02-29,MCHP,78.85,True,True,True,True,{},112.66111199060822,78.70999094307312,251.20765625000004
+2024-02-29,MRVL,71.14,True,True,False,True,"{""peer"": ""nonpositive/missing EPS or too few peers""}",24.723663205908178,0.18615156015916412,84.50449375640287
+2024-02-29,MU,89.86,False,True,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-3.45); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-02-29,NFLX,60.29,True,True,True,True,{},45.638617075112414,14.211595502070393,143.983484778757
+2024-02-29,NOW,154.27,True,True,True,True,{},54.42575824175825,22.186462784863046,250.05023316502206
+2024-02-29,QCOM,149.78,True,True,True,True,{},95.8236887363134,60.19470599060286,403.7887500000001
+2024-02-29,QRVO,114.55,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2024-02-29,TRMB,61.19,False,False,True,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""insufficient historical multiple snapshots""}",,,
+2024-02-29,TTWO,146.93,True,True,False,True,"{""peer"": ""nonpositive/missing EPS or too few peers""}",31.16828978584369,20.568704083209784,84.72396724937641
+2024-02-29,VRSN,191.82,True,True,True,True,{},258.823125,170.4393103448276,571.035964267017
+2024-02-29,WDC,44.72,False,False,False,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-02-29,ZS,241.97,False,False,False,False,"{""dcf"": ""nonpositive median EBITDA margin"", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-03-28,ADSK,260.42,True,True,True,True,{},141.47213559322037,97.63669654935231,396.2608796260042
+2024-03-28,ANET,72.5,True,True,True,True,{},57.59339974215648,38.552807749627426,109.49612915497157
+2024-03-28,APH,27.96,True,True,True,True,{},26.08327101973994,19.77156655206652,104.96078652725085
+2024-03-28,CPAY,308.54,True,True,True,True,{},451.86826161790026,266.1960293330383,1236.550754463361
+2024-03-28,FTNT,68.31,True,True,True,True,{},93.35557119406722,33.762222171271354,176.19901604166245
+2024-03-28,HPQ,27.18,True,True,True,True,{},49.55098775508681,11.78787436140788,213.80900959254805
+2024-03-28,INTU,633.93,True,True,True,True,{},304.4295254237288,106.28548883106198,644.5117681540073
+2024-03-28,JNPR,35.96,True,True,True,True,{},28.5495249250912,22.045818585349082,62.61364450613286
+2024-03-28,KLAC,68.55,True,True,True,True,{},384.8047752907786,32.155344896566675,1282.2061514656139
+2024-03-28,MCHP,84.07,True,True,True,True,{},114.00420820737214,78.65186719921697,280.54333682901
+2024-03-28,MRVL,70.36,True,True,False,True,"{""peer"": ""nonpositive/missing EPS or too few peers""}",21.64468024720654,0.20461703729749736,84.17241335561417
+2024-03-28,MU,117.03,False,True,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-3.45); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-03-28,NOW,152.48,True,True,True,True,{},56.059986440677974,22.271985588716817,244.2215789856476
+2024-03-28,PANW,142.07,True,True,True,True,{},70.97856978561067,22.698250716496624,1743.6697994622095
+2024-03-28,QCOM,160.71,True,True,True,True,{},94.54616273856173,60.445014315135104,450.9426384133741
+2024-03-28,QRVO,114.83,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2024-03-28,TTWO,148.49,True,True,False,True,"{""peer"": ""nonpositive/missing EPS or too few peers""}",30.669583293002553,20.693901284793913,84.96620407367365
+2024-03-28,WDAY,272.75,True,True,True,True,{},43.40852536350047,5.507855290611029,516.3220689491883
+2024-03-28,WDC,51.31,False,False,False,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-03-28,ZS,192.63,False,False,False,False,"{""dcf"": ""nonpositive median EBITDA margin"", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-04-30,ADSK,212.85,True,True,True,True,{},138.2918968990757,94.99598743602652,356.4135536904569
+2024-04-30,ANET,64.14,True,True,True,True,{},58.324741336792485,37.5100978427301,96.53534388138138
+2024-04-30,ANSS,324.88,True,True,True,True,{},186.11245937819533,105.08913137148474,407.2302249332088
+2024-04-30,DDOG,125.5,True,True,True,True,{},9.061996577802429,3.1673346637721287,847.9269782682306
+2024-04-30,FTNT,63.18,True,True,True,True,{},87.82439274505755,32.84907976759796,141.29948453510667
+2024-04-30,GFS,48.69,False,False,True,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""insufficient historical multiple snapshots""}",,,
+2024-04-30,HPE,16.05,True,True,True,True,{},16.750892018686415,9.197043485197405,84.53982777777777
+2024-04-30,HPQ,25.27,True,True,True,True,{},47.773271815932816,11.715143268738291,197.64040818318318
+2024-04-30,LRCX,87.66,True,True,True,True,{},51.381818205331456,20.90161543383133,156.51292439939942
+2024-04-30,MCHP,86.2,True,True,True,True,{},104.93556644957258,78.70999094307312,247.33611775525526
+2024-04-30,MRVL,65.49,True,True,False,True,"{""peer"": ""nonpositive/missing EPS or too few peers""}",22.94294141761358,0.09022460940480137,78.50618394268734
+2024-04-30,MSI,330.36,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2024-04-30,MU,112.14,False,True,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-2.31); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-04-30,NFLX,55.06,True,True,True,True,{},48.94527816260953,15.22395016864761,158.90118190285114
+2024-04-30,NOW,138.67,True,True,True,True,{},54.79977970580197,20.98829558122781,241.7529007517995
+2024-04-30,PSKY,11.78,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2024-04-30,QCOM,157.43,True,True,True,True,{},95.8236887363134,56.86545927521653,397.56567657657666
+2024-04-30,QRVO,116.84,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2024-04-30,TTWO,142.81,True,True,False,True,"{""peer"": ""nonpositive/missing EPS or too few peers""}",29.37250070696902,18.356371266754397,89.22575045448298
+2024-04-30,WDC,53.26,False,False,False,False,"{""dcf"": ""nonpositive median EBITDA margin"", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-05-31,AAPL,190.43,False,True,True,True,"{""dcf"": ""gap in eight-quarter growth input""}",196.41092062820317,154.80326164874555,339.3391487009398
+2024-05-31,ADSK,201.6,True,True,True,True,{},138.3818549747049,100.33656635090188,340.2276411409587
+2024-05-31,AMAT,211.26,True,True,True,True,{},157.42057918734585,100.20418118486619,445.51274737423995
+2024-05-31,ANET,74.41,True,True,True,True,{},59.49126475548061,43.6868100358423,95.76442233278055
+2024-05-31,BR,191.73,True,True,True,True,{},197.78930656934307,140.79499103942652,394.77922313438785
+2024-05-31,CDW,215.54,True,True,True,True,{},203.2726148394429,93.6274280547687,422.6125594250967
+2024-05-31,GLW,35.91,True,True,True,True,{},18.446621443472733,4.16446100596815,37.629172470978446
+2024-05-31,GRMN,157.34,False,True,True,True,"{""dcf"": ""gap in eight-quarter growth input""}",166.06532403561232,93.9488439528435,355.99383084577113
+2024-05-31,JNPR,34.61,True,True,True,True,{},19.51252600241382,10.74918814490785,36.63509613045883
+2024-05-31,LRCX,91.39,True,True,True,True,{},51.381818205331456,21.28761773053181,142.60571586511887
+2024-05-31,MCHP,91.55,True,True,True,True,{},70.64818044408281,32.97437589904854,183.20150359314542
+2024-05-31,MRVL,68.37,True,True,False,True,"{""peer"": ""nonpositive/missing EPS or too few peers""}",22.977614554055698,0.1545868816094096,72.74679904606661
+2024-05-31,MU,124.09,False,True,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-2.31); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-05-31,NFLX,64.16,True,True,True,True,{},48.94527816260953,14.769872073763253,166.18872248196737
+2024-05-31,PSKY,11.47,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2024-05-31,QCOM,194.48,True,True,True,True,{},99.43982231825169,63.9048902140123,390.8645715865119
+2024-05-31,QRVO,98.39,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2024-05-31,ROP,523.0,True,True,True,True,{},584.9980048690002,325.269669265233,822.8548064267686
+2024-05-31,TER,139.88,False,False,True,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""insufficient historical multiple snapshots""}",,,
+2024-05-31,WDC,56.61,False,False,False,False,"{""dcf"": ""nonpositive median EBITDA margin"", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-06-28,AAPL,208.63,False,True,True,True,"{""dcf"": ""gap in eight-quarter growth input""}",204.98914042527053,152.14659870284777,372.27273549253994
+2024-06-28,ANET,87.62,True,True,True,True,{},61.820229982696254,42.93707693454599,105.05856339053274
+2024-06-28,APH,32.71,True,True,True,True,{},29.030310381282003,21.094536858354715,97.63594749881031
+2024-06-28,BR,188.9,True,True,True,True,{},214.8522490643655,138.37873164231397,418.69515883461986
+2024-06-28,CDW,215.75,True,True,True,True,{},204.69685724341247,96.56218598510222,463.62800800604657
+2024-06-28,FOX,31.31,True,True,True,True,{},80.36725329172428,34.085655080213904,142.40453787372658
+2024-06-28,GEN,23.97,True,True,True,True,{},34.41983753982247,15.847432275342578,168.5134088182247
+2024-06-28,GLW,37.44,True,True,True,True,{},18.073064332015427,4.37356038413381,41.28116376704086
+2024-06-28,GRMN,157.19,False,True,True,True,"{""dcf"": ""gap in eight-quarter growth input""}",175.70614658764433,93.94274397467653,390.54378999524124
+2024-06-28,JNPR,35.59,True,True,True,True,{},19.450960899714428,11.003125933724803,40.19061020141087
+2024-06-28,LRCX,104.57,True,True,True,True,{},51.07401684126884,21.546867040313472,156.44590417938028
+2024-06-28,MCHP,86.15,True,True,True,True,{},70.10218156516463,33.761048232435655,200.98159952971483
+2024-06-28,MU,130.57,False,True,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-2.31); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-06-28,NFLX,67.49,True,True,True,True,{},48.720788696767656,14.654062500000002,173.38227457955531
+2024-06-28,PSKY,9.83,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2024-06-28,QRVO,116.04,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2024-06-28,STX,99.56,False,True,False,False,"{""dcf"": ""Equity value is non-positive (-5.56): net debt (23.6) exceeds the enterprise value (18). A negative per-share fair value is not meaningful — DCF is not applicable; use relative valuation or distressed/credit analysis instead."", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-06-28,TER,147.18,False,False,True,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""insufficient historical multiple snapshots""}",,,
+2024-06-28,VRSK,264.88,True,True,True,True,{},225.05247179102713,125.58593811489725,1305.6062012779846
+2024-06-28,WDC,56.97,False,False,False,False,"{""dcf"": ""nonpositive median EBITDA margin"", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-07-31,AAPL,219.98,False,True,True,True,"{""dcf"": ""gap in eight-quarter growth input""}",200.62881274395176,150.83925758547412,347.8370806732443
+2024-07-31,ADBE,551.65,True,True,True,True,{},409.03792002605627,259.11038112842175,597.511549622751
+2024-07-31,ADSK,247.52,True,True,True,True,{},163.02486060875324,107.80842643378978,356.4624263897594
+2024-07-31,ANET,86.64,True,True,True,True,{},67.3178291467944,45.57566525205276,105.09801363900173
+2024-07-31,BR,205.2,True,True,True,True,{},202.89864713572,137.18969286531618,469.13009374964696
+2024-07-31,CSCO,46.02,True,True,True,True,{},79.4573303831482,36.69892466086212,159.51424405107372
+2024-07-31,GEN,24.94,True,True,True,True,{},32.91545420909201,15.909685029021817,149.06687199863708
+2024-07-31,GLW,38.56,True,True,True,True,{},19.305671668277217,4.843155255656605,38.453590334878534
+2024-07-31,JNPR,36.79,True,True,True,True,{},17.95497101011181,7.475071338953921,38.8115761027278
+2024-07-31,LRCX,90.46,True,True,True,True,{},51.381818205331456,22.062502778943898,146.17693267556587
+2024-07-31,MCHP,83.59,True,True,True,True,{},70.64818044408281,35.31222268724649,187.78934416715032
+2024-07-31,NFLX,62.84,True,True,True,True,{},51.920183424739186,19.14904067571143,240.15570783503387
+2024-07-31,NVDA,116.7,True,True,True,True,{},70.98040409731308,40.023299942158005,171.75112064487803
+2024-07-31,ON,78.25,True,True,True,True,{},72.64879398710637,37.480193747645366,240.60509721416133
+2024-07-31,PANW,162.37,True,True,True,True,{},131.5602244746997,49.92740798065207,1251.543012489508
+2024-07-31,PSKY,10.81,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2024-07-31,QRVO,119.8,False,False,False,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-07-31,STX,98.5,False,True,False,False,"{""dcf"": ""Equity value is non-positive (-4.36): net debt (23.6) exceeds the enterprise value (19.3). A negative per-share fair value is not meaningful — DCF is not applicable; use relative valuation or distressed/credit analysis instead."", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-07-31,WDC,50.41,False,False,False,False,"{""dcf"": ""nonpositive median EBITDA margin"", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-07-31,ZS,179.35,False,False,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-4.27); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-08-30,ADBE,574.41,True,True,True,True,{},421.15453568269487,249.8785810624157,607.6899602904015
+2024-08-30,AMD,148.56,False,True,True,True,"{""dcf"": ""need eight consecutive quarters""}",45.416702388426515,14.836666095484162,106.36312047959062
+2024-08-30,ANET,88.35,True,True,True,True,{},68.3237972508591,43.951857561871336,106.88832337250811
+2024-08-30,ANSS,321.42,True,True,True,True,{},197.341323024055,99.34813742107012,356.36664574859793
+2024-08-30,FIS,77.45,True,True,True,True,{},53.47850964576611,29.08631304741709,109.88574464801745
+2024-08-30,FTNT,76.71,True,True,True,True,{},74.50619075435351,38.15110478720811,139.95674388674857
+2024-08-30,INTC,22.04,False,True,True,True,"{""dcf"": ""need eight consecutive quarters""}",12.876725532917936,7.070859861025119,29.92185329313891
+2024-08-30,JNPR,38.17,True,True,True,True,{},17.896867554059295,7.7493743333613665,39.472718402791706
+2024-08-30,MRVL,75.81,True,True,False,True,"{""peer"": ""nonpositive/missing EPS or too few peers""}",20.806205680974713,0.19950581445111837,68.80419074724394
+2024-08-30,NOW,171.0,True,True,True,True,{},38.70525773195876,24.89861575586214,276.83164932808353
+2024-08-30,NVDA,119.04,True,True,True,True,{},72.16797418220084,38.597316539105286,173.0761844980596
+2024-08-30,ORCL,137.74,True,True,True,True,{},132.13891752577317,85.00333873641105,240.81230127211197
+2024-08-30,PANW,181.36,True,True,True,True,{},133.52620274914088,51.19418574359472,608.7178814838503
+2024-08-30,PSKY,10.1,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2024-08-30,PTC,179.09,True,True,True,True,{},86.01168384879723,55.33025723524919,172.87547995913738
+2024-08-30,QRVO,115.89,False,False,False,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-08-30,TER,135.71,False,False,True,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""insufficient historical multiple snapshots""}",,,
+2024-08-30,TTWO,161.71,False,False,False,False,"{""dcf"": ""Equity value is non-positive (-4.93): net debt (15.9) exceeds the enterprise value (11). A negative per-share fair value is not meaningful — DCF is not applicable; use relative valuation or distressed/credit analysis instead."", ""history"": ""nonpositive TTM EBITDA"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-08-30,VRSK,268.09,True,True,True,True,{},260.0760087847128,137.91926069281052,1167.8978140755682
+2024-08-30,ZS,199.98,False,False,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-4.27); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-09-30,ADSK,275.48,True,True,True,True,{},176.62337733902552,109.78248727237165,354.8632612182471
+2024-09-30,AMD,164.08,False,True,True,True,"{""dcf"": ""need eight consecutive quarters""}",45.9653287208749,14.764537951419445,126.42408870814121
+2024-09-30,ANET,95.96,True,True,True,True,{},65.67888544978643,43.86845840295582,103.12045906208664
+2024-09-30,CSCO,50.55,True,True,True,True,{},54.00043859719053,33.61227181819003,134.00425137002122
+2024-09-30,DDOG,115.06,True,True,True,True,{},22.69887811885892,10.904105804495805,866.0694802230795
+2024-09-30,FIS,79.01,True,True,True,True,{},54.62224710737763,29.031121431438326,113.97948795928751
+2024-09-30,FTNT,77.55,True,True,True,True,{},76.70434241422892,38.07871262388551,134.9900172080072
+2024-09-30,HPQ,32.79,True,True,True,True,{},98.4072891639575,12.553390350296803,150.75478279127387
+2024-09-30,JNPR,38.27,True,True,True,True,{},17.95497101011181,7.959116651207271,37.08808915808629
+2024-09-30,KLAC,76.28,True,True,True,True,{},400.4818269369123,36.9421589853486,1068.3698322117707
+2024-09-30,MDB,270.35,False,False,False,False,"{""dcf"": ""nonpositive median EBITDA margin"", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-09-30,MSI,440.1,False,False,True,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""insufficient historical multiple snapshots""}",,,
+2024-09-30,NOW,178.88,True,True,True,True,{},37.20692190962521,24.851370344009492,273.4939972102077
+2024-09-30,ORCL,166.12,True,True,True,True,{},132.69135233002538,88.6276469257686,248.4475284590148
+2024-09-30,PANW,170.9,True,True,True,True,{},133.02474768763852,35.351797641636566,538.4375772765978
+2024-09-30,QRVO,103.3,False,False,False,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-09-30,TER,133.05,False,False,True,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""insufficient historical multiple snapshots""}",,,
+2024-09-30,TTWO,153.71,False,False,False,False,"{""dcf"": ""Equity value is non-positive (-4.59): net debt (15.9) exceeds the enterprise value (11.3). A negative per-share fair value is not meaningful — DCF is not applicable; use relative valuation or distressed/credit analysis instead."", ""history"": ""nonpositive TTM EBITDA"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-09-30,TYL,583.72,True,True,True,True,{},185.70121419051293,124.0341691900832,553.1334673712247
+2024-09-30,ZS,170.94,False,False,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-4.27); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-10-31,ADSK,283.8,True,True,True,True,{},162.04589975349217,104.52539047619048,333.97770624144243
+2024-10-31,ANET,96.61,True,True,True,True,{},64.75262119967131,41.76775238095239,103.03581466395111
+2024-10-31,CDNS,276.12,True,True,True,True,{},126.21830731306491,81.4153142857143,315.8915601492132
+2024-10-31,CSCO,52.42,True,True,True,True,{},48.32279777263373,33.61227181819003,133.8942566191446
+2024-10-31,DAY,70.95,True,True,True,True,{},20.361950407134493,7.148268548084242,548.8763687965603
+2024-10-31,DDOG,125.44,True,True,True,True,{},21.386947220838586,10.395357855874146,825.4853055458412
+2024-10-31,FIS,84.65,True,True,True,True,{},54.62224710737763,27.640923238095244,99.26062197918124
+2024-10-31,FTNT,78.66,True,True,True,True,{},68.39697974278614,36.25525714285715,129.2826130994228
+2024-10-31,IBM,195.96,True,True,True,True,{},230.28147444682827,121.29129739034423,398.531052163276
+2024-10-31,JNPR,38.19,True,True,True,True,{},17.714009218136496,7.565686743240191,40.14212576374746
+2024-10-31,LRCX,73.23,True,True,True,True,{},59.82439036996708,37.87442486958641,162.66060081466395
+2024-10-31,MSI,439.82,False,False,True,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""insufficient historical multiple snapshots""}",,,
+2024-10-31,MU,99.12,True,True,True,True,{},35.566997075935255,14.841333333333333,172.96150304608364
+2024-10-31,ON,70.49,True,True,True,True,{},67.52135227157561,28.682007663293213,214.44002036659876
+2024-10-31,ORCL,163.99,True,True,True,True,{},129.08360587280114,83.33419266894846,248.57463311451272
+2024-10-31,PANW,180.17,True,True,True,True,{},131.1487099424815,33.24097450319693,514.4896275622264
+2024-10-31,TER,105.51,False,False,True,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""insufficient historical multiple snapshots""}",,,
+2024-10-31,TTWO,161.72,False,False,False,False,"{""dcf"": ""Equity value is non-positive (-5.7): net debt (15.9) exceeds the enterprise value (10.2). A negative per-share fair value is not meaningful — DCF is not applicable; use relative valuation or distressed/credit analysis instead."", ""history"": ""nonpositive TTM EBITDA"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-10-31,TYL,605.59,True,True,True,True,{},183.08228430566967,118.09460952380954,555.5389004479553
+2024-10-31,ZS,180.79,False,False,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-4.27); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-11-29,ADSK,291.9,True,True,True,True,{},164.2737881329552,110.56363010849907,322.79475830921706
+2024-11-29,ANET,101.46,True,True,True,True,{},69.94896205511702,47.70229887393927,113.8508545206072
+2024-11-29,APP,336.75,True,True,True,True,{},114.30913610976404,76.69931338155514,402.37162267749363
+2024-11-29,CDW,170.62,True,True,True,True,{},205.8158441267355,128.15119827924832,443.1096638384196
+2024-11-29,CSCO,56.67,True,True,True,True,{},49.460146351135684,33.59964502381717,136.8348298463636
+2024-11-29,DDOG,152.75,True,True,True,True,{},23.856127039041258,12.80637450271248,913.0618319482458
+2024-11-29,FTNT,95.05,True,True,True,True,{},66.00817546046254,45.077666636528015,140.44962722133965
+2024-11-29,IBM,217.26,True,True,True,True,{},234.25638152610443,121.95762173419112,415.75851936282555
+2024-11-29,JNPR,35.27,True,True,True,True,{},17.657395084263285,7.716172716590119,41.02372340120471
+2024-11-29,LRCX,72.77,True,True,True,True,{},58.78052642623574,38.31805562763526,166.23293782116826
+2024-11-29,MCHP,64.99,True,True,True,True,{},35.02358480289551,12.549771327692481,78.03861389675423
+2024-11-29,MSI,489.11,False,False,True,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""insufficient historical multiple snapshots""}",,,
+2024-11-29,NWSA,28.93,True,True,True,True,{},10.685059417222856,6.080078881219753,27.424307734498583
+2024-11-29,ORCL,180.6,True,True,True,True,{},130.7027553893736,85.23751408951648,261.0085727507623
+2024-11-29,PANW,193.91,True,True,True,True,{},131.0311542722615,33.59468642870672,514.4896275622264
+2024-11-29,PAYC,228.65,True,True,True,True,{},279.2927590361446,97.39577318475942,600.3241280017692
+2024-11-29,TTWO,188.38,True,False,False,False,"{""history"": ""nonpositive TTM EBITDA"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-11-29,TYL,629.17,True,True,True,True,{},182.91817776854546,124.91671799276672,531.0331009430395
+2024-11-29,WBD,10.48,True,False,False,False,"{""history"": ""nonpositive historical-band equity"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-11-29,ZS,206.59,False,False,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-4.27); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-12-31,ADSK,295.57,True,True,True,True,{},162.0292537313433,113.21950954141698,322.4742697581791
+2024-12-31,ANET,110.53,True,True,True,True,{},67.93746268656716,45.82583109102207,102.92716575837301
+2024-12-31,CDNS,300.46,True,True,True,True,{},122.47880597014925,82.84143227773214,315.36796268487495
+2024-12-31,DDOG,142.89,True,True,True,True,{},22.60049097196043,12.738333545837053,884.8801183180893
+2024-12-31,DELL,112.0,True,True,True,True,{},191.48784530386746,33.83530897003329,387.76159209944166
+2024-12-31,FFIV,251.47,True,True,True,True,{},231.28245242484763,158.98876587115288,472.2808573149664
+2024-12-31,FTNT,94.48,True,True,True,True,{},64.10999999999999,44.79748310595435,129.05036474934906
+2024-12-31,GEN,26.52,True,True,True,True,{},32.078305709023944,21.841558927281227,139.7243189240106
+2024-12-31,HPQ,30.08,True,True,True,True,{},92.63429097605895,12.995000084087575,153.2318930260329
+2024-12-31,KEYS,160.63,True,True,True,True,{},112.27223880597016,46.252870500450044,172.2723956216251
+2024-12-31,MCHP,54.67,True,True,True,True,{},35.33865218526701,11.502087115434213,71.45389136578767
+2024-12-31,MSI,453.49,False,False,True,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""insufficient historical multiple snapshots""}",,,
+2024-12-31,NOW,212.02,True,True,True,True,{},41.46417910447761,28.973496536189383,281.82255526775344
+2024-12-31,ON,63.05,True,True,True,True,{},67.52135227157561,27.908588070583914,200.65818808200646
+2024-12-31,PAYC,202.08,True,True,True,True,{},272.0109392265194,92.49938047769443,579.0379974936195
+2024-12-31,ROP,511.72,True,True,True,True,{},550.3988427265831,304.90816262484594,775.0504306127847
+2024-12-31,TRMB,70.66,False,False,False,False,"{""dcf"": ""missing revenue"", ""history"": ""missing EBITDA"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-12-31,TTWO,184.08,False,False,False,False,"{""dcf"": ""Equity value is non-positive (-0.356): net debt (16.5) exceeds the enterprise value (16.2). A negative per-share fair value is not meaningful — DCF is not applicable; use relative valuation or distressed/credit analysis instead."", ""history"": ""nonpositive TTM EBITDA"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2024-12-31,TYL,576.64,True,True,True,True,{},177.65805970149253,124.1402890050576,551.3634673712247
+2024-12-31,ZS,180.41,False,False,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-2.94); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-01-31,ADSK,311.34,True,True,True,True,{},158.2316326530612,114.99798817374707,319.25341741448034
+2025-01-31,ANET,115.23,True,True,True,True,{},66.34515306122448,45.667832353273994,97.41787804661655
+2025-01-31,APP,369.59,True,True,True,True,{},114.32295208513412,77.41990542405807,359.2349312405441
+2025-01-31,CSCO,58.4,True,True,True,True,{},38.647971056085865,30.021899698223546,112.06858949416343
+2025-01-31,DDOG,142.71,True,True,True,True,{},22.183977717127917,12.962395710853231,865.6693233991424
+2025-01-31,DELL,101.09,True,True,True,True,{},186.225,37.50059594378219,389.5306530647674
+2025-01-31,FFIV,297.26,True,True,True,True,{},231.28245242484763,159.1228918521295,462.16320026439183
+2025-01-31,FTNT,100.88,True,True,True,True,{},62.607397959183665,45.50117248606921,128.7313063667967
+2025-01-31,HPQ,29.96,True,True,True,True,{},90.08833333333332,12.995000084087575,152.94590274460938
+2025-01-31,INTC,19.43,False,False,False,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""nonpositive historical-band equity"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-01-31,JNPR,34.44,True,True,True,True,{},17.714009218136496,7.33525722583601,36.75753950289335
+2025-01-31,KEYS,178.35,True,True,True,True,{},109.64081632653063,45.087756291160204,160.9910472883053
+2025-01-31,KLAC,72.92,True,True,True,True,{},146.45880047912627,30.588508828721253,574.8543930335229
+2025-01-31,LDOS,139.31,True,True,True,True,{},277.9918186100533,161.0736544820443,424.80700376633746
+2025-01-31,LRCX,80.07,True,True,True,True,{},79.5139689916024,47.514146626411645,158.52437231866708
+2025-01-31,MCHP,51.77,True,True,True,True,{},35.33865218526701,11.434402108230222,69.92313703481992
+2025-01-31,MSI,460.38,False,False,True,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""insufficient historical multiple snapshots""}",,,
+2025-01-31,PAYC,204.64,True,True,True,True,{},264.53499999999997,90.20546175072634,572.2565120589272
+2025-01-31,TTWO,185.51,False,False,False,False,"{""dcf"": ""Equity value is non-positive (-0.613): net debt (16.5) exceeds the enterprise value (15.9). A negative per-share fair value is not meaningful — DCF is not applicable; use relative valuation or distressed/credit analysis instead."", ""history"": ""nonpositive TTM EBITDA"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-01-31,TYL,601.64,True,True,True,True,{},173.49413265306123,126.09031380467938,551.3634673712247
+2025-02-28,ADSK,274.21,True,True,True,True,{},156.1418536585366,113.2909589041096,318.2700037932644
+2025-02-28,ANET,93.05,True,True,True,True,{},70.07941463414635,50.847123287671245,104.3148305084746
+2025-02-28,APH,32.56,True,True,True,True,{},19.75163092932603,12.428966428820281,66.79809322033898
+2025-02-28,CPAY,367.05,True,True,True,True,{},442.71891598915977,278.4896686362195,1205.3844681722364
+2025-02-28,CSCO,61.78,True,True,True,True,{},40.17939193000956,30.21106940256796,107.05995762711866
+2025-02-28,DDOG,116.55,True,True,True,True,{},26.426920269150422,12.124411289988826,744.3449802281889
+2025-02-28,DELL,100.27,True,True,True,True,{},181.23902439024388,49.33475831580958,459.3830631239971
+2025-02-28,FTNT,108.01,True,True,True,True,{},70.38678048780488,51.07013698630138,141.05831004318958
+2025-02-28,GRMN,222.55,False,True,True,True,"{""dcf"": ""need eight consecutive quarters""}",185.5802930377585,128.5951832415464,336.73559322033896
+2025-02-28,HPQ,28.45,True,True,True,True,{},87.67631436314362,12.995000084087575,181.9739719105505
+2025-02-28,INTC,23.73,False,False,False,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""nonpositive historical-band equity"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-02-28,IPG,27.4,True,True,True,True,{},38.182738499384996,20.78046553191489,70.35133827495616
+2025-02-28,KEYS,159.53,True,True,True,True,{},108.1927804878049,43.874766234354,161.0474576271187
+2025-02-28,KLAC,70.17,True,True,True,True,{},153.98346405454024,31.040128959020116,549.1626800847458
+2025-02-28,PAYC,216.38,True,True,True,True,{},276.04097560975606,108.89946821539293,598.2738501275005
+2025-02-28,ROP,576.29,True,True,True,True,{},607.6799252333943,322.4332054794521,900.6310613190059
+2025-02-28,TDY,515.02,False,False,True,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""insufficient historical multiple snapshots""}",,,
+2025-02-28,TTD,70.32,True,True,True,True,{},24.429438048780487,17.725128767123287,231.16896967340088
+2025-02-28,TTWO,211.98,False,False,False,False,"{""dcf"": ""Equity value is non-positive (-7.13): net debt (16.6) exceeds the enterprise value (9.45). A negative per-share fair value is not meaningful — DCF is not applicable; use relative valuation or distressed/credit analysis instead."", ""history"": ""nonpositive TTM EBITDA"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-02-28,UBER,76.01,True,True,True,True,{},108.94569791944997,45.65673590897208,214.57743644067796
+2025-03-31,ADSK,261.8,True,True,True,True,{},150.66522222276723,105.01386104218362,326.62215774266394
+2025-03-31,ANET,77.48,True,True,True,True,{},66.44423726652018,46.311722084367254,100.52583771312177
+2025-03-31,APH,32.24,True,True,True,True,{},19.75163092932603,12.605586302676826,64.37180836015692
+2025-03-31,APP,264.97,True,True,True,True,{},137.40440867016855,95.06090322580644,458.22615729728346
+2025-03-31,CPAY,348.72,True,True,True,True,{},423.3716905971443,278.4896686362195,1239.4735876880434
+2025-03-31,DDOG,99.21,True,True,True,True,{},25.710675866571567,10.968565756823821,494.66543443181524
+2025-03-31,DELL,88.94,True,True,True,True,{},189.90990459955879,60.085717708407486,529.3589436048708
+2025-03-31,FTNT,96.26,True,True,True,True,{},66.73565935979438,46.51484367245658,138.8283632473247
+2025-03-31,IBM,239.15,True,True,True,True,{},190.29862690805996,120.41774449980164,423.1839454201329
+2025-03-31,INTC,22.71,False,False,False,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""nonpositive historical-band equity"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-03-31,IPG,27.16,True,True,True,True,{},34.71588659286593,20.362983404255317,72.70539953269919
+2025-03-31,KLAC,67.3,True,True,True,True,{},154.484395792059,32.08536237586385,529.2156272239476
+2025-03-31,MCHP,46.5,True,True,True,True,{},16.91122407270248,7.440806134985554,30.047924872702747
+2025-03-31,ROP,581.29,True,True,True,True,{},604.6929768944908,293.67319205955334,869.4282608527276
+2025-03-31,STX,83.74,True,True,True,True,{},293.8032519851082,117.98643094038623,713.9709251705707
+2025-03-31,TDY,497.71,False,True,True,True,"{""dcf"": ""need eight consecutive quarters""}",482.6091455167373,354.44717121588087,769.3753807429714
+2025-03-31,TTWO,207.25,False,False,False,False,"{""dcf"": ""Equity value is non-positive (-7.56): net debt (16.6) exceeds the enterprise value (9.02). A negative per-share fair value is not meaningful — DCF is not applicable; use relative valuation or distressed/credit analysis instead."", ""history"": ""nonpositive TTM EBITDA"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-03-31,UBER,72.86,True,True,True,True,{},106.84362066630285,46.047121317793696,206.78341178707942
+2025-03-31,VRSN,249.36,True,True,True,True,{},228.49660346966405,162.70039205955334,353.1631403868883
+2025-03-31,ZS,198.42,False,False,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-2.36); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-04-30,ADSK,274.25,True,True,True,True,{},154.8246997408753,101.33717771148517,322.284533712483
+2025-04-30,ANSS,321.88,True,True,True,True,{},203.03896793871073,132.89479011293412,413.58946067401706
+2025-04-30,APH,37.82,True,True,True,True,{},18.030725174135387,10.683722561928237,59.3187624435645
+2025-04-30,APP,269.31,True,True,True,True,{},140.1507920284906,91.73268698060939,467.1805626911367
+2025-04-30,DDOG,102.16,True,True,True,True,{},25.687149989652088,10.584540805454932,469.73456746971607
+2025-04-30,DELL,90.11,True,True,True,True,{},192.72589605149653,62.40411837967568,540.6547280706732
+2025-04-30,FTNT,103.76,True,True,True,True,{},68.57805849257339,44.88629341572554,135.99416822265349
+2025-04-30,IBM,232.57,True,True,True,True,{},191.74045165450102,116.03792883017255,462.43453362222783
+2025-04-30,INTC,20.1,False,False,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-1.21); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""history"": ""nonpositive historical-band equity"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-04-30,IPG,25.12,True,True,True,True,{},22.918994481236204,13.792104680851065,62.311587641483804
+2025-04-30,KLAC,69.57,True,True,True,True,{},155.08645546894277,32.440887366001625,545.5962495096588
+2025-04-30,MCHP,44.26,True,True,True,True,{},17.378099276524168,7.267040159991925,30.76511937913705
+2025-04-30,NFLX,113.17,True,True,True,True,{},63.68713283862119,22.780382978723406,242.08675295684603
+2025-04-30,NOW,191.0,True,True,True,True,{},44.44097764322223,29.087886213509474,292.59613233660826
+2025-04-30,NTAP,87.58,True,True,True,True,{},166.86875555160773,78.174428886507,311.93473529315827
+2025-04-30,ROP,553.0,True,True,True,True,{},603.2099644524853,283.39127956530996,920.1729516585544
+2025-04-30,TTD,53.63,True,True,True,True,{},23.80167724449665,15.57887598551033,219.14109479414336
+2025-04-30,TTWO,233.32,False,False,False,False,"{""dcf"": ""Equity value is non-positive (-7.62): net debt (16.6) exceeds the enterprise value (8.96). A negative per-share fair value is not meaningful — DCF is not applicable; use relative valuation or distressed/credit analysis instead."", ""history"": ""nonpositive TTM EBITDA"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-04-30,UBER,81.01,True,True,True,True,{},106.69731333227973,47.01408237560257,213.1839048738065
+2025-04-30,ZS,226.17,False,False,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-2.36); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-05-30,ANET,86.64,True,True,True,True,{},79.6241155234657,54.1780915562101,109.52119844735566
+2025-05-30,APH,44.2,True,True,True,True,{},18.291843153994506,10.400149534286957,59.05998511314014
+2025-05-30,APP,393.0,True,True,True,True,{},186.8863537906137,127.16180166912123,414.66233971614736
+2025-05-30,CDW,176.12,True,True,True,True,{},239.25119898735392,165.47267774878327,414.82010542280017
+2025-05-30,DDOG,117.88,True,True,True,True,{},25.01729188903148,10.796799178939615,440.044378480575
+2025-05-30,DELL,109.27,True,True,True,True,{},211.78255159474674,69.9159918307927,615.3905925538859
+2025-05-30,FTNT,101.78,True,True,True,True,{},80.9402166064982,55.07359720176729,145.80383626842385
+2025-05-30,GFS,35.66,True,True,False,True,"{""peer"": ""nonpositive/missing EPS or too few peers""}",35.66303884604242,25.018004977810087,47.14732291114517
+2025-05-30,GLW,48.96,True,True,True,True,{},28.059460993595366,11.641573392243494,43.635101612157946
+2025-05-30,IBM,250.81,True,True,True,True,{},198.5408231981775,119.99459820883908,413.64439150563913
+2025-05-30,INTC,19.55,False,False,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-1.21); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""history"": ""nonpositive historical-band equity"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-05-30,IPG,23.96,True,True,True,True,{},24.866492715231793,16.526306419753087,59.56763490368295
+2025-05-30,KLAC,75.12,True,True,True,True,{},99.12905299924637,21.627696756819013,378.5269850469764
+2025-05-30,MCHP,56.18,True,True,True,True,{},6.085872190014468,0.0067227890279828294,21.86633348137662
+2025-05-30,SHOP,107.22,True,True,True,True,{},40.79913357400722,22.94718357038153,163.77432711343982
+2025-05-30,TEAM,207.63,False,False,False,False,"{""dcf"": ""nonpositive median EBITDA margin"", ""history"": ""nonpositive TTM EBITDA"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-05-30,TTD,75.22,True,True,True,True,{},27.309097472924186,17.01468101181635,242.0498015944504
+2025-05-30,TTWO,226.28,False,False,False,False,"{""dcf"": ""Equity value is non-positive (-4.18): net debt (15) exceeds the enterprise value (10.8). A negative per-share fair value is not meaningful — DCF is not applicable; use relative valuation or distressed/credit analysis instead."", ""history"": ""nonpositive TTM EBITDA"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-05-30,UBER,84.16,True,True,True,True,{},146.8737396199577,57.45609932677692,264.75165740373166
+2025-05-30,WDC,51.3,True,False,True,True,"{""history"": ""insufficient historical multiple snapshots""}",99.59738767723546,37.638534774866116,209.4072468329584
+2025-06-30,ANET,102.31,True,True,True,True,{},81.68506679382031,55.80031144172419,116.62347007180949
+2025-06-30,APH,48.71,True,True,True,True,{},20.22087965752569,10.63116332567339,62.88992910897164
+2025-06-30,APP,350.08,True,True,True,True,{},191.72362784665265,131.07934737778504,438.5471498776928
+2025-06-30,CDW,174.39,True,True,True,True,{},250.80065588613616,171.45243438218023,447.7644366427088
+2025-06-30,DDOG,134.33,True,True,True,True,{},25.53673389661629,11.799428808864265,390.24886395144546
+2025-06-30,GDDY,180.06,True,True,True,True,{},185.67777154000805,129.07020324887765,579.4745919640409
+2025-06-30,IBM,285.39,True,True,True,True,{},206.278667245498,128.580768282644,447.51295208204385
+2025-06-30,INTC,22.4,False,False,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-1.21); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""history"": ""nonpositive historical-band equity"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-06-30,IPG,24.48,True,True,True,True,{},25.548769646799116,16.941532098765432,63.177547988188856
+2025-06-30,KLAC,88.89,True,True,True,True,{},101.72118599152188,22.22888424524348,403.07384449612175
+2025-06-30,MCHP,68.11,True,True,True,True,{},6.410396250523805,0.007347091412742933,24.238826545187564
+2025-06-30,META,735.1,True,True,True,True,{},646.3267250939365,339.39802469135805,882.4825124894724
+2025-06-30,MSTR,404.23,False,False,False,False,"{""dcf"": ""nonpositive median EBITDA margin"", ""history"": ""nonpositive TTM EBITDA"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-06-30,NFLX,133.91,True,True,True,True,{},67.21523570156862,27.982283950617283,235.76723637134043
+2025-06-30,NTAP,103.98,True,True,True,True,{},197.21163948412695,80.21687791697136,328.8558258650842
+2025-06-30,PLTR,136.32,True,True,True,True,{},9.490555653195845,6.10543296398892,99.84226040453072
+2025-06-30,SHOP,115.35,True,True,True,True,{},41.85515819187487,23.288088664197943,163.3484635922721
+2025-06-30,SMCI,49.01,True,True,True,True,{},48.605990158306305,26.746349676757692,89.16330736716323
+2025-06-30,TTWO,242.85,False,False,False,False,"{""dcf"": ""Equity value is non-positive (-3.75): net debt (15) exceeds the enterprise value (11.2). A negative per-share fair value is not meaningful — DCF is not applicable; use relative valuation or distressed/credit analysis instead."", ""history"": ""nonpositive TTM EBITDA"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-06-30,UBER,93.3,True,True,True,True,{},144.99245723058092,58.49132131386044,281.9203718678039
+2025-07-31,ADSK,303.11,True,True,True,True,{},161.0531271996818,104.11746008253255,304.4710609296504
+2025-07-31,ANET,123.22,True,True,True,True,{},76.99721014492754,53.495595201640924,115.5303739840656
+2025-07-31,APH,52.54,True,True,True,True,{},21.261280201633355,9.88524503719708,66.36129868389291
+2025-07-31,APP,390.7,True,True,True,True,{},180.72072463768117,125.55990939889274,421.228114701263
+2025-07-31,CDW,170.28,True,True,True,True,{},241.63586994972627,166.71923962404327,421.4630786846621
+2025-07-31,DDOG,139.98,True,True,True,True,{},24.74256258284714,10.67388560856822,380.88197355930106
+2025-07-31,FTNT,99.9,True,True,True,True,{},78.26989130434784,54.37981991571763,138.6173856118822
+2025-07-31,INTC,19.8,False,False,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-1.63); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""history"": ""nonpositive historical-band equity"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-07-31,IPG,24.6,True,True,True,True,{},23.93885854430379,15.137294444444445,45.467501447995474
+2025-07-31,KLAC,87.24,True,True,True,True,{},99.4183687118746,22.42602684050365,422.0881385491106
+2025-07-31,MCHP,65.42,True,True,True,True,{},6.118521158657634,0.006646255048922179,24.498661525253517
+2025-07-31,MSTR,401.86,False,False,False,False,"{""dcf"": ""nonpositive median EBITDA margin"", ""history"": ""nonpositive TTM EBITDA"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-07-31,NVDA,177.44,True,True,True,True,{},100.58545116023969,69.4116400550217,294.2439056613499
+2025-07-31,ON,56.36,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2025-07-31,PLTR,158.35,True,True,True,True,{},9.393758480497167,5.523037945653917,106.10660436947921
+2025-07-31,SMCI,58.97,True,True,True,True,{},45.81652173913044,26.746349676757692,86.58190811733296
+2025-07-31,SWKS,65.78,True,True,True,True,{},60.702394762786334,35.91299869709135,129.69470541262723
+2025-07-31,TTWO,222.73,False,False,False,False,"{""dcf"": ""Equity value is non-positive (-4.05): net debt (15) exceeds the enterprise value (10.9). A negative per-share fair value is not meaningful — DCF is not applicable; use relative valuation or distressed/credit analysis instead."", ""history"": ""nonpositive TTM EBITDA"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-07-31,UBER,87.75,True,True,True,True,{},143.0625196029474,57.7719045085348,295.21946562796467
+2025-07-31,ZS,285.56,False,True,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-2.55); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-08-29,AMD,162.63,True,True,True,True,{},82.717358776248,40.27251854684512,165.7180866941178
+2025-08-29,ANET,136.55,True,True,True,True,{},79.71818560133165,59.49349330783938,120.1854815381388
+2025-08-29,APH,53.69,True,True,True,True,{},22.101218716667972,10.088500366311731,61.062549132800484
+2025-08-29,FOX,54.01,True,True,True,True,{},111.44120424250592,52.55446226725907,704.799733787565
+2025-08-29,FOXA,59.16,True,True,True,True,{},111.44120424250592,60.13125225158063,767.3787088642871
+2025-08-29,GFS,33.26,True,True,False,True,"{""peer"": ""nonpositive/missing EPS or too few peers""}",37.07244352151288,28.555060643813214,47.15927645163679
+2025-08-29,HPE,22.06,True,True,True,True,{},32.379762845849804,13.752662947384398,72.36877667164457
+2025-08-29,INTC,24.35,False,False,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-1.63); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""history"": ""nonpositive historical-band equity"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-08-29,IPG,26.84,True,True,True,True,{},26.532479430379745,13.868312854251013,47.521497643897135
+2025-08-29,KLAC,86.73,True,True,True,True,{},34.99924847405883,7.292291882090639,141.86014266213346
+2025-08-29,META,735.71,True,True,True,True,{},680.6690880252308,331.41964068825916,1061.9692395209124
+2025-08-29,MSTR,334.41,False,True,True,True,"{""dcf"": ""nonpositive median EBITDA margin""}",622.4514238193544,277.6279275067146,5873.354570326962
+2025-08-29,NTAP,110.6,True,True,True,True,{},180.890790513834,83.33909939043474,330.2188351514946
+2025-08-29,PLTR,156.71,True,True,True,True,{},12.052331756469828,7.557133768642447,135.1379868471092
+2025-08-29,PTC,213.5,True,True,True,True,{},144.07132834367232,97.47780057361375,247.98077646126413
+2025-08-29,TTD,54.66,True,True,True,True,{},25.755106117353307,16.122572838201975,238.0661787225109
+2025-08-29,TTWO,233.27,True,False,False,False,"{""history"": ""nonpositive TTM EBITDA"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-08-29,UBER,93.75,True,True,True,True,{},150.91485838250583,68.60895464924191,279.07674546625924
+2025-08-29,WDC,80.1,True,True,True,True,{},114.52535789758221,52.39181514968321,247.5006744318073
+2025-08-29,ZS,277.05,False,True,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-2.55); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-09-30,ANET,145.71,True,True,True,True,{},85.99005120909044,61.72699983082389,125.75456193415012
+2025-09-30,APH,61.21,True,True,True,True,{},23.26327202981283,10.139940452568347,65.57206733098336
+2025-09-30,FOX,57.01,True,True,True,True,{},121.40944607154391,53.28507182496252,741.2128131102363
+2025-09-30,FOXA,62.78,True,True,True,True,{},121.40944607154391,59.56519877658287,804.2789394673671
+2025-09-30,HPQ,25.91,True,True,True,True,{},92.79362355753942,23.45008700731959,198.88627197606039
+2025-09-30,INTC,33.55,False,False,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-1.63); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""history"": ""nonpositive historical-band equity"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-09-30,KLAC,107.28,True,True,True,True,{},35.17878085230206,7.32573607756729,152.33662790582068
+2025-09-30,MRVL,83.87,True,True,False,True,"{""peer"": ""nonpositive/missing EPS or too few peers""}",88.25017707018385,58.851682434064756,118.8743475621572
+2025-09-30,NVDA,186.13,True,True,True,True,{},117.07876203083852,84.04368438504484,334.45890279730554
+2025-09-30,NWS,34.32,True,True,True,True,{},26.40066742636563,10.152970394736844,37.49466909194698
+2025-09-30,NWSA,30.48,True,True,True,True,{},18.655538799316012,10.152970394736844,35.90950757261411
+2025-09-30,PLTR,182.42,True,True,True,True,{},11.820106663358036,7.821663535329612,146.34355363783703
+2025-09-30,PSKY,18.57,False,False,False,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-09-30,PTC,203.02,True,True,True,True,{},146.3886874361655,101.13731510742683,247.64182747723672
+2025-09-30,SHOP,148.61,True,True,True,True,{},59.8623048801745,26.498712776186746,173.72516653422014
+2025-09-30,SMCI,47.94,True,True,True,True,{},40.67990884122356,29.20161915073592,99.40187531806879
+2025-09-30,TTD,49.01,True,True,True,True,{},27.781401159859993,16.289443168036662,230.83938621586012
+2025-09-30,UBER,97.97,True,True,True,True,{},142.77863329333246,68.85859122933583,299.68678681308745
+2025-09-30,WDC,119.84,True,True,True,True,{},114.52535789758221,52.725279709635274,265.77879762292116
+2025-09-30,ZS,299.66,False,True,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-2.33); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-10-31,ANET,157.69,True,True,True,True,{},81.53430080517292,64.73759730140178,140.72086490479495
+2025-10-31,APH,68.92,True,True,True,True,{},29.065493967712648,12.606560481769156,89.27721957946913
+2025-10-31,DAY,68.74,True,True,False,True,"{""peer"": ""nonpositive/missing EPS or too few peers""}",26.935100254988427,15.946983629229097,223.09123443291782
+2025-10-31,HPQ,26.32,True,True,True,True,{},89.3970215755419,23.84394229133513,204.1145022749868
+2025-10-31,INTC,39.99,False,False,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-1.63); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""history"": ""nonpositive historical-band equity"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-10-31,IPG,25.66,True,True,True,True,{},27.900627454641047,14.61831580459019,50.633931317626875
+2025-10-31,KLAC,120.22,True,True,True,True,{},36.58470033774939,7.963146092591003,181.4453205548449
+2025-10-31,NTAP,116.0,True,True,True,True,{},186.21690053822266,91.61010925967489,327.0663853800234
+2025-10-31,NVDA,202.01,True,True,True,True,{},111.7898271469536,88.14272863344702,334.45890279730554
+2025-10-31,NWS,30.27,True,True,True,True,{},28.036003595689742,10.09748000795185,40.64272027794196
+2025-10-31,NWSA,26.3,True,True,True,True,{},16.925537414167646,10.09748000795185,35.47057203787499
+2025-10-31,PANW,220.24,True,True,True,True,{},56.583175870230754,42.82641052246578,435.0117084215641
+2025-10-31,PLTR,200.47,True,True,True,True,{},12.5304273114808,8.20563219208761,159.5146591945124
+2025-10-31,PSKY,15.11,False,False,False,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-10-31,PTC,198.54,True,True,True,True,{},150.10923538142242,106.07006327075828,247.64182747723672
+2025-10-31,SHOP,173.86,True,True,True,True,{},56.02230125337514,26.091113865622834,173.82629163355503
+2025-10-31,TER,181.41,True,True,True,True,{},85.11675604794564,23.943099326731186,148.83937634161003
+2025-10-31,TTD,50.28,True,True,True,True,{},25.999300029190675,17.085258088270287,228.26037080480336
+2025-10-31,UBER,96.5,True,True,True,True,{},136.67651559808516,72.45201361440068,340.67053312546636
+2025-10-31,WDC,149.93,True,True,True,True,{},117.18267894879111,52.326765192969845,302.12544784671144
+2025-11-28,AMAT,251.35,True,True,True,True,{},181.76942612139223,122.58448562631227,396.093367759899
+2025-11-28,ANET,130.68,True,True,True,True,{},89.80474001522585,64.22412269067136,138.93613157187653
+2025-11-28,APH,69.69,True,True,True,True,{},29.983533423562218,12.751640118915875,74.0032092789847
+2025-11-28,CSCO,75.54,True,True,True,True,{},79.04543790849674,36.71530502977342,124.15741080984621
+2025-11-28,DAY,69.1,True,True,False,True,"{""peer"": ""nonpositive/missing EPS or too few peers""}",26.928849143079482,16.237331618600805,222.11570331534614
+2025-11-28,DDOG,160.01,True,True,True,True,{},22.133966868880325,7.4135121349829305,305.6527518878896
+2025-11-28,FOX,57.97,True,True,True,True,{},125.14058264997843,52.66863859458118,672.5139530143745
+2025-11-28,FSLR,272.92,True,True,True,True,{},403.5640130718955,225.57596659417243,754.2340928806121
+2025-11-28,IBM,302.43,True,True,True,True,{},299.62,192.44910150606182,778.0137842125449
+2025-11-28,MCHP,52.69,True,True,False,True,"{""peer"": ""nonpositive/missing EPS or too few peers""}",7.524654737968778,1.5433972170342098,20.21579865001974
+2025-11-28,NTAP,109.87,True,True,True,True,{},178.16100653594773,92.69193776048456,316.0975531505999
+2025-11-28,NVDA,176.58,True,True,True,True,{},113.57913988580775,84.83335609140919,339.7229838680041
+2025-11-28,NWSA,25.49,True,True,True,True,{},20.61417840768445,9.286325130952457,35.56349751734172
+2025-11-28,ON,50.24,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2025-11-28,PLTR,168.45,True,True,True,True,{},16.489182478827615,11.253256841555956,218.68255096869748
+2025-11-28,PSKY,15.73,False,False,False,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-11-28,SHOP,158.64,True,True,True,True,{},41.90452157598499,29.695832070711358,190.44243533191135
+2025-11-28,TER,181.67,True,True,True,True,{},84.11491557223265,23.993657624719187,130.11860593833097
+2025-11-28,TTWO,246.07,True,False,False,False,"{""history"": ""nonpositive TTM EBITDA"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-11-28,WDC,163.03,True,True,True,True,{},117.18267894879111,52.736626817582334,250.43625743300854
+2025-12-31,ANET,131.03,True,True,True,True,{},87.39120528155696,61.484558636479264,137.66701511712503
+2025-12-31,APH,67.1,True,True,True,True,{},30.495370495761488,12.469256443500397,72.18232758620688
+2025-12-31,DAY,69.16,True,True,False,True,"{""peer"": ""nonpositive/missing EPS or too few peers""}",26.945486705691767,15.961618226146959,217.27869485738634
+2025-12-31,DDOG,135.99,True,True,True,True,{},21.78027182425584,7.1385911613852455,211.6619874560374
+2025-12-31,FICO,1690.62,True,True,True,True,{},1729.1880115365243,617.139786313915,3089.3622387944274
+2025-12-31,FSLR,261.23,True,True,True,True,{},406.3514689265537,227.19444411824594,742.7670462061466
+2025-12-31,GOOG,313.18,True,True,True,True,{},195.98836049856186,129.55730263157895,381.32640584375395
+2025-12-31,GOOGL,312.39,True,True,True,True,{},195.98836049856186,129.55730263157895,381.32640584375395
+2025-12-31,HPQ,21.45,True,True,True,True,{},83.63316384180791,24.54813595055143,232.43205386099734
+2025-12-31,INTC,36.9,False,True,True,True,"{""dcf"": ""Steady-state terminal FCF is non-positive (-0.434); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead.""}",59.18813895039493,0.25145722290593897,328.15293705206534
+2025-12-31,KLAC,121.06,True,True,True,True,{},36.116497987287765,8.274006850901376,146.70198768472903
+2025-12-31,LRCX,170.68,True,True,True,True,{},141.76825493171472,86.77450458781381,208.98502463054186
+2025-12-31,NTAP,105.47,True,True,True,True,{},181.2570056497175,94.82165747236014,296.55192399790167
+2025-12-31,PLTR,177.75,True,True,True,True,{},16.166764206953903,10.835943661150338,207.69534522182872
+2025-12-31,PSKY,13.21,False,False,False,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-12-31,SHOP,160.97,True,True,True,True,{},42.592655538694984,29.272722231027767,190.36859818698588
+2025-12-31,STX,274.49,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2025-12-31,TEAM,162.14,False,True,False,False,"{""dcf"": ""nonpositive median EBITDA margin"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2025-12-31,TER,193.33,True,True,True,True,{},85.49620637329286,23.799053062957103,138.7963415054662
+2025-12-31,TTWO,256.03,True,False,False,False,"{""history"": ""nonpositive TTM EBITDA"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2026-01-30,AMD,236.73,True,True,True,True,{},91.95874831914146,47.17206896551725,215.28369297562907
+2026-01-30,ANET,141.74,True,True,True,True,{},87.19684891782153,61.971149425287365,138.93613157187653
+2026-01-30,APH,71.54,True,True,True,True,{},30.531597751695582,12.361580384647768,76.59043269230769
+2026-01-30,DAY,69.27,True,True,False,True,"{""peer"": ""nonpositive/missing EPS or too few peers""}",26.635038511850485,15.823993606335245,142.5567992113424
+2026-01-30,DDOG,129.32,True,True,True,True,{},21.769921916711088,7.1201879866935895,204.3770047700189
+2026-01-30,DELL,113.74,True,True,True,True,{},239.78693814609625,108.28786303442665,863.2279108109788
+2026-01-30,FSLR,225.52,True,True,True,True,{},411.2880946941572,225.57596659417243,739.4554274717633
+2026-01-30,FTNT,81.26,True,True,True,True,{},77.07943262411347,56.65272988505747,119.14067307692306
+2026-01-30,GOOG,337.86,True,True,True,True,{},190.35842761265582,124.77092105263156,365.5290330568281
+2026-01-30,GOOGL,337.34,True,True,True,True,{},190.35842761265582,124.77092105263156,365.5290330568281
+2026-01-30,JBL,237.01,True,True,True,True,{},204.8110638297872,96.63146681521513,1087.736824777586
+2026-01-30,MU,414.58,True,True,True,True,{},283.98478537619775,165.26557792031892,516.9246346153845
+2026-01-30,ON,59.89,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2026-01-30,PLTR,146.59,True,True,True,True,{},15.89207478899933,10.80800877040834,207.69534522182872
+2026-01-30,PSKY,11.05,False,False,False,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2026-01-30,SHOP,131.23,True,True,True,True,{},43.10156028368794,29.219071242608724,190.36859818698588
+2026-01-30,STX,406.37,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2026-01-30,TEAM,118.18,False,True,False,False,"{""dcf"": ""nonpositive median EBITDA margin"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2026-01-30,TER,240.76,True,True,True,True,{},86.5177304964539,23.850044446858202,138.7963415054662
+2026-01-30,TTWO,220.3,True,False,False,False,"{""history"": ""nonpositive TTM EBITDA"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2026-02-27,ANET,133.5,True,True,True,True,{},99.67241445166424,62.14761114723225,150.58410828672478
+2026-02-27,CSCO,78.43,True,True,True,True,{},84.2122950819672,39.84937748555274,155.3406468198541
+2026-02-27,DELL,147.18,True,True,True,True,{},246.8068032786885,108.28786303442665,998.2095599832877
+2026-02-27,FTNT,79.03,True,True,True,True,{},77.19344051446946,54.15720399973096,121.54763288009889
+2026-02-27,GEN,22.36,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2026-02-27,GRMN,249.79,True,True,True,True,{},250.49905018286466,191.99172729412822,430.89632148067847
+2026-02-27,HPQ,18.28,True,True,True,True,{},87.12733606557377,24.551414450500825,201.9349949931088
+2026-02-27,MCHP,73.83,True,True,False,True,"{""peer"": ""nonpositive/missing EPS or too few peers""}",11.661888125181363,3.9016311267270076,39.27565323301876
+2026-02-27,MSI,478.31,True,True,True,True,{},584.2640517591268,286.9887900477547,1113.340693414235
+2026-02-27,MU,412.07,True,True,True,True,{},285.2,171.59502179039717,529.5292366866603
+2026-02-27,NTAP,98.01,True,True,True,True,{},188.82987704918034,95.51935399039698,325.1790254901637
+2026-02-27,ON,66.48,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2026-02-27,PSKY,13.32,True,False,False,False,"{""history"": ""insufficient historical multiple snapshots"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2026-02-27,PTC,156.59,True,True,True,True,{},299.49952209555653,152.9275145730108,467.4892746697036
+2026-02-27,Q,126.61,False,False,True,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""insufficient historical multiple snapshots""}",,,
+2026-02-27,SHOP,120.73,True,True,True,True,{},32.910094396349024,21.085796639239515,212.2853260854762
+2026-02-27,SMCI,32.39,True,True,True,True,{},47.28844262295082,29.210332810255288,92.63340371283391
+2026-02-27,STX,406.51,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2026-02-27,TMUS,214.68,True,True,True,True,{},270.03830181582725,119.23173340832396,1110.2592303384295
+2026-02-27,TXN,208.94,True,True,True,True,{},169.35555344011286,114.9513899095259,272.98402794382866
+2026-03-31,ADSK,239.4,True,True,True,True,{},235.23701415077593,109.68068653414576,361.44163675297904
+2026-03-31,DELL,163.13,True,True,True,True,{},281.2013344176285,126.29101434533507,1510.5382193283028
+2026-03-31,GRMN,230.09,True,True,True,True,{},249.79,179.6852156288562,388.97477272727275
+2026-03-31,JBL,265.51,True,True,True,True,{},198.99367487577817,104.82644663823925,1078.7475702025395
+2026-03-31,LRCX,213.28,True,True,True,True,{},149.78018539037066,101.78700076085497,222.83966247703768
+2026-03-31,LYV,152.51,True,True,False,True,"{""peer"": ""nonpositive/missing EPS or too few peers""}",181.97750593596953,93.42840237489371,350.0381758233042
+2026-03-31,MPWR,1090.08,True,True,True,True,{},391.8738727968473,266.3080305620736,1094.8142858041897
+2026-03-31,MRVL,98.95,True,True,True,True,{},95.06456664572507,64.60358619719571,392.21913490374857
+2026-03-31,MSI,431.56,True,True,True,True,{},582.5437370128075,268.5930448648683,1230.5536902978404
+2026-03-31,ON,61.92,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2026-03-31,ORCL,145.55,True,True,True,True,{},179.98150650577125,1.3201424419104697,255.86895454545456
+2026-03-31,PTC,142.49,True,True,True,True,{},298.59505629646213,147.4571451661765,427.1079055948152
+2026-03-31,Q,115.24,False,False,True,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""insufficient historical multiple snapshots""}",,,
+2026-03-31,SHOP,118.62,True,True,True,True,{},32.212289895592,19.73421443322698,208.96312816567072
+2026-03-31,SNDK,635.34,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2026-03-31,TDY,605.01,True,True,True,True,{},556.6251369277601,395.93066010242774,857.0935454545456
+2026-03-31,TER,296.23,True,True,True,True,{},106.68017285967217,45.19633952254646,216.75737631387523
+2026-03-31,TRMB,65.23,False,True,True,True,"{""dcf"": ""gap in eight-quarter growth input""}",62.594858422067404,36.767957417696586,79.86053439557217
+2026-03-31,TXN,191.24,True,True,True,True,{},167.5092685590268,107.41581916407975,246.4256363636364
+2026-03-31,ZS,140.29,False,True,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-1.91); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2026-04-30,BR,152.0,True,True,True,True,{},305.771162474849,197.5154630351098,608.042449104027
+2026-04-30,CIEN,527.58,True,True,True,True,{},52.309803214285715,32.41347298360656,128.3255570764106
+2026-04-30,FICO,1025.0,True,True,True,True,{},2154.0086668732,637.368929110852,5900.2544694796225
+2026-04-30,GOOG,381.46,True,True,True,True,{},289.2627467811159,169.40567393453628,524.1156701836655
+2026-04-30,GOOGL,384.32,True,True,True,True,{},289.2627467811159,168.29691699227203,524.1156701836655
+2026-04-30,GRMN,249.06,True,True,True,True,{},258.94440735339583,180.56117275690596,438.09139900119493
+2026-04-30,INTC,94.48,False,True,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-0.883); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2026-04-30,MCHP,91.9,True,True,False,True,"{""peer"": ""nonpositive/missing EPS or too few peers""}",12.19374891237534,3.1307527794725516,57.635924267970005
+2026-04-30,MU,517.0,True,True,True,True,{},495.3109598447394,296.46404110686285,1042.2884060494061
+2026-04-30,ON,100.81,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2026-04-30,ORCL,160.24,True,True,True,True,{},181.38761450108908,12.313630514326256,276.3569911659423
+2026-04-30,Q,140.49,False,False,True,False,"{""dcf"": ""need eight consecutive quarters"", ""history"": ""insufficient historical multiple snapshots""}",,,
+2026-04-30,SHOP,121.13,True,True,True,True,{},32.02710124775099,19.016974957767257,207.30202920576798
+2026-04-30,SNDK,1096.51,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2026-04-30,SNPS,482.6,True,True,True,True,{},474.12822315672474,131.717573918009,856.8242462810261
+2026-04-30,STX,672.62,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2026-04-30,TER,343.21,True,True,True,True,{},112.76949757717158,44.46002703898722,234.1823482004437
+2026-04-30,TXN,276.88,True,True,True,True,{},190.31872227207464,117.905244738157,286.0707694143058
+2026-04-30,VRSK,183.5,True,True,True,True,{},292.96165257423326,131.717573918009,668.4612385352756
+2026-04-30,WDC,434.27,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2026-05-29,AAPL,311.79,True,True,True,True,{},282.6881765731598,178.06698551250562,474.0092665222101
+2026-05-29,APH,74.16,True,True,True,True,{},70.35224372957975,32.384966305246195,166.78596621204179
+2026-05-29,FSLR,306.79,True,True,True,True,{},610.5142144377422,232.41972250604655,887.4093867822318
+2026-05-29,FTNT,137.97,True,True,True,True,{},99.95400748464881,55.84730546833711,148.6639436619718
+2026-05-29,GRMN,231.99,True,True,True,True,{},260.85312089675114,193.74719050938492,515.7495276273022
+2026-05-29,INTC,114.68,False,True,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-0.883); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2026-05-29,MU,970.7,True,True,True,True,{},507.9398433261647,317.1995347613165,1227.0493196099674
+2026-05-29,NTAP,173.37,True,True,True,True,{},181.31055891563142,102.52108151196614,345.92956121343445
+2026-05-29,NXPI,318.83,True,True,True,True,{},241.40344868156433,163.1564663358847,600.3736186348862
+2026-05-29,ORCL,224.17,True,True,True,True,{},182.6751705842556,9.9352573987643,325.34532286023835
+2026-05-29,PANW,281.69,True,True,True,True,{},71.88999769088204,40.16710047145785,287.6054235665689
+2026-05-29,QCOM,248.74,True,True,True,True,{},193.9788712090885,144.2446618723476,533.4748439869988
+2026-05-29,SHOP,118.71,True,True,True,True,{},39.59716450353396,22.124124858610475,230.0663232893448
+2026-05-29,SMCI,46.09,True,True,True,True,{},78.34274515463918,35.823483878388416,119.50293932827736
+2026-05-29,SNDK,1694.98,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2026-05-29,STX,878.47,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2026-05-29,TXN,302.65,True,True,True,True,{},196.07015917724326,126.21617896110301,336.78101083423616
+2026-05-29,VRSK,174.05,True,True,True,True,{},291.65267125168856,141.33664230063778,651.8872344898735
+2026-05-29,WBD,27.01,True,True,False,True,"{""peer"": ""nonpositive/missing EPS or too few peers""}",42.54608291431373,11.334027089857958,95.14718125289386
+2026-05-29,WDC,530.91,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2026-06-30,AKAM,118.21,True,True,True,True,{},89.82286265595279,37.916396387348826,177.8446923076923
+2026-06-30,AMAT,722.23,True,True,True,True,{},237.35273823421937,111.48335574093338,627.9900591715976
+2026-06-30,AMD,580.91,True,True,True,True,{},122.0564864069542,62.60692307692309,321.7656844846797
+2026-06-30,DELL,430.15,True,True,True,True,{},446.3942098914355,179.44735283138058,3192.879473037479
+2026-06-30,ECHO,101.5,False,False,False,False,"{""dcf"": ""nonpositive median EBITDA margin"", ""history"": ""nonpositive TTM EBITDA"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2026-06-30,FSLR,235.96,True,True,True,True,{},541.2529794933655,233.08585953843138,916.9932307692308
+2026-06-30,FTNT,153.62,True,True,True,True,{},87.78376623376622,52.85,152.73846153846154
+2026-06-30,GLW,254.95,True,True,True,True,{},85.2311912406333,42.889807692307706,133.82570498928956
+2026-06-30,HPQ,21.73,True,True,True,True,{},95.55626055488541,23.09580148409195,194.07287606108824
+2026-06-30,INTC,139.63,False,True,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-0.883); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2026-06-30,LITE,858.06,True,True,True,True,{},209.66814935064937,81.27735456616637,1501.6978208903765
+2026-06-30,MRVL,297.75,True,True,True,True,{},99.23279512987014,59.74285961538463,398.2172826629054
+2026-06-30,MU,1153.93,True,True,True,True,{},1019.8959426457685,613.1230342717328,2647.5816153846154
+2026-06-30,QCOM,183.79,True,True,True,True,{},191.76547965706186,147.45736869425426,551.2594615384616
+2026-06-30,SMCI,29.33,True,True,True,True,{},72.88780458383596,35.267142163978406,123.48684615384617
+2026-06-30,SNDK,2273.73,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2026-06-30,STX,964.23,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2026-06-30,TER,483.66,True,True,True,True,{},183.33301948051945,110.37519230769232,356.39821260154923
+2026-06-30,WBD,26.66,True,True,False,True,"{""peer"": ""nonpositive/missing EPS or too few peers""}",44.2477230587066,11.49854093367658,96.1492124690484
+2026-06-30,WDC,638.52,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2026-07-31,AKAM,115.18,True,True,True,True,{},89.82286265595279,33.88171487892939,167.57372535607684
+2026-07-31,AMAT,507.13,True,True,True,True,{},246.63851979798125,108.72155769113158,595.1372505170968
+2026-07-31,AMD,476.15,True,True,True,True,{},118.73630190982439,60.131782491162404,329.75536722303497
+2026-07-31,ARM,239.69,True,True,True,True,{},32.923768115942025,14.183547791260516,352.21752938107977
+2026-07-31,DELL,404.81,True,True,True,True,{},442.9770997929607,187.4628622261156,2719.335329425635
+2026-07-31,ECHO,84.09,False,False,False,False,"{""dcf"": ""nonpositive median EBITDA margin"", ""history"": ""nonpositive TTM EBITDA"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2026-07-31,FSLR,211.03,True,True,True,True,{},534.6786244076914,235.47722233744955,905.2321509268472
+2026-07-31,HPQ,27.01,True,True,True,True,{},94.82478542443066,23.117544844999674,170.1772523628382
+2026-07-31,INTC,90.2,False,True,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-1.01); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2026-07-31,LITE,713.94,True,True,True,True,{},210.27647610921503,77.58228036711247,1417.7467202330029
+2026-07-31,LRCX,292.71,True,True,True,True,{},172.66646635059686,113.03994176098387,322.34281389092524
+2026-07-31,MRVL,187.52,True,True,True,True,{},99.52070707449177,57.380948675251766,398.2172826629054
+2026-07-31,MU,822.9,True,True,True,True,{},987.3686455988361,613.1230342717328,2494.677286779337
+2026-07-31,SMCI,28.4,True,True,True,True,{},72.32985457556937,34.69110782320264,116.35517807116302
+2026-07-31,SNDK,1214.83,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2026-07-31,STX,855.45,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2026-07-31,TEL,204.89,True,True,True,True,{},284.26018678611376,202.40856877729257,572.8683169149604
+2026-07-31,TER,367.55,True,True,True,True,{},248.2007358905871,143.10583300656506,456.5629210978855
+2026-07-31,WBD,26.3,True,True,False,True,"{""peer"": ""nonpositive/missing EPS or too few peers""}",42.5835262116545,11.49854093367658,89.15488374271925
+2026-07-31,WDC,544.67,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2026-08-31,AMAT,458.39,True,True,True,True,{},251.6224023048264,108.8184477466231,587.803998742962
+2026-08-31,AMD,470.72,True,True,True,True,{},146.6448712697152,80.00419459262183,446.04798270014686
+2026-08-31,APH,79.16,True,True,True,True,{},74.98252477134146,42.64182960520453,202.9320799245061
+2026-08-31,ARM,241.91,True,True,True,True,{},34.76030487804878,13.988910269282576,349.199839473953
+2026-08-31,DELL,455.38,True,True,True,True,{},461.09948432055756,193.71043795363582,2709.225771083459
+2026-08-31,FSLR,201.9,True,True,True,True,{},516.5859754682988,224.65449504241292,894.0779251225972
+2026-08-31,HPQ,29.73,True,True,True,True,{},98.70410836236935,23.1392882059074,169.98499203839316
+2026-08-31,INTC,89.51,False,True,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-1.01); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2026-08-31,LITE,914.76,True,False,False,False,"{""history"": ""nonpositive TTM EBITDA"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2026-08-31,LRCX,301.17,True,True,True,True,{},180.77133315203693,117.56961591149249,318.3709216764968
+2026-08-31,MRVL,211.61,True,True,True,True,{},104.94339931211891,59.68028637745555,398.2172826629054
+2026-08-31,MU,958.58,True,True,True,True,{},987.6526711536059,613.1230342717328,2463.9379966016963
+2026-08-31,NBIS,206.32,False,True,True,True,"{""dcf"": ""Steady-state terminal FCF is non-positive (-9.58); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead.""}",100.12425424656665,5.310585152838426,218.5421563653685
+2026-08-31,SHOP,147.37,True,True,True,True,{},53.20188662347561,30.255393386549883,243.80333294762625
+2026-08-31,SNDK,1566.7,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2026-08-31,STX,827.72,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2026-08-31,TEL,205.25,True,True,True,True,{},283.482762288579,205.16000000000003,565.8094618395771
+2026-08-31,TER,349.7,True,True,True,True,{},261.72471741615857,148.84029095530914,449.49550522242725
+2026-08-31,WDC,450.41,False,False,False,False,"{""input"": ""incomplete four quarters, missing price or nonmember""}",,,
+2026-08-31,ZBRA,353.55,True,True,True,True,{},296.99230052103917,177.4712336902322,480.5806313389606
+2026-09-30,APH,84.3,True,True,True,True,{},64.50205831903943,41.34028213758795,176.66741282742728
+2026-09-30,ARM,289.66,True,True,True,True,{},30.31314772620602,13.478262230024443,349.199839473953
+2026-09-30,DDOG,273.85,True,True,True,True,{},29.738865292950955,9.906631852299434,277.8622078275746
+2026-09-30,DELL,537.21,True,True,True,True,{},555.9383582089554,252.69117632963298,2497.74553306159
+2026-09-30,DIS,104.9,True,True,True,True,{},83.03022840119165,56.84341604160918,183.7174962526666
+2026-09-30,FSLR,175.16,True,True,True,True,{},483.7200515342082,216.14579745784263,905.9412247206103
+2026-09-30,HPQ,31.28,True,True,True,True,{},84.23308457711444,25.050558344338015,176.60292890418415
+2026-09-30,INTC,120.23,False,True,False,False,"{""dcf"": ""Steady-state terminal FCF is non-positive (-1.01); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead."", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2026-09-30,LITE,971.26,True,False,False,False,"{""history"": ""nonpositive TTM EBITDA"", ""peer"": ""nonpositive/missing EPS or too few peers""}",,,
+2026-09-30,LRCX,328.51,True,True,True,True,{},176.79642920134674,113.98106360792107,311.5222694984247
+2026-09-30,MPWR,1347.22,True,True,True,True,{},503.73036020583186,316.47245685199766,1491.665350349989
+2026-09-30,MSFT,512.9,True,True,True,True,{},572.1492537313434,267.12209045463766,1002.8869646353619
+2026-09-30,NBIS,235.88,False,True,True,True,"{""dcf"": ""Steady-state terminal FCF is non-positive (-9.58); the Gordon Growth Model would capitalize it into a perpetual negative terminal value and a negative implied price. DCF is not applicable — use relative valuation instead.""}",101.54908482716566,5.180459134348053,231.54553909134214
+2026-09-30,SHOP,148.3,True,True,True,True,{},45.7657461406518,29.3319144690505,240.55670879284335
+2026-09-30,STX,922.34,False,True,True,True,"{""dcf"": ""gap in eight-quarter growth input""}",470.54262914101156,286.23223918120425,1043.5325567360983
+2026-09-30,TDY,606.81,True,True,True,True,{},617.4036211125367,374.37864511288177,1157.220125304248
+2026-09-30,TEL,211.08,True,True,True,True,{},259.2386858443301,202.56738247418096,573.3170481165484
+2026-09-30,VRSK,167.85,True,True,True,True,{},284.10139487507166,128.3517331128921,559.2038378969619
+2026-09-30,WDC,454.46,False,True,True,True,"{""dcf"": ""gap in eight-quarter growth input""}",548.5815058780291,204.45644737935734,1513.2449977498013
+2026-09-30,ZBRA,373.31,True,True,True,True,{},323.40332974502394,224.0249574884528,634.0474254194676

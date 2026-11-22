@@ -1,0 +1,30 @@
+{
+  "name": "Growth (sector-focused)",
+  "model": {
+    "inference_mode": "mixed-alpha",
+    "bucket_alpha": {
+      "growth_tech": 0.0,
+      "cyclical": 0.0,
+      "real_assets": 0.0,
+      "defensive": 0.0
+    },
+    "universes": [
+      "sp500",
+      "nasdaq100"
+    ],
+    "val_cutoff": "2099-12-31",
+    "val_quarters": 3
+  },
+  "parameters": {
+    "picks_per_bucket": {
+      "growth_tech": 10
+    },
+    "global_picks": 0,
+    "exposure_rate": 1.0,
+    "weight_mode": "score-global",
+    "min_weight_pct": 0.05,
+    "max_weight_pct": 0.15,
+    "incumbent_multiplier": 2,
+    "blacklist": []
+  }
+}

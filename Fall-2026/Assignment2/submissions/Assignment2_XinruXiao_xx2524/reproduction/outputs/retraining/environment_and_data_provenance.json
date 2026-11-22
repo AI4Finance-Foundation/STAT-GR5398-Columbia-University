@@ -1,0 +1,60 @@
+{
+  "python": "3.11.17",
+  "os": "Darwin",
+  "architecture": "arm64",
+  "dependencies": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.1",
+    "pyarrow": "24.0.0",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.17.1",
+    "pydantic": "2.12.5",
+    "xgboost": "3.2.0",
+    "lightgbm": "4.7.0",
+    "threadpoolctl": "3.8.0",
+    "joblib": "1.6.0"
+  },
+  "course_data_hashes": {
+    "fundamentals.db": {
+      "sha256": "e74901655ff7f61f55c90c6c23377b551a06f5df7eaa7378a0780849fb201652",
+      "bytes": 21368832
+    },
+    "DATA_MANIFEST.json": {
+      "sha256": "7d49ffe15c270cd93ba08d6058024ff656b3217396e3a42cd9b79c49e34fee42",
+      "bytes": 1714
+    },
+    "prices/daily_adjusted.parquet": {
+      "sha256": "5e5972854acdae9e3c57afc08fe056b519f44f0185f2a3c89831498baed0e56f",
+      "bytes": 19918368
+    },
+    "prices/market_series.parquet": {
+      "sha256": "e38d2d4106162670e79464ec9d4beec476e118ecd9f992a784c1ec2605851abc",
+      "bytes": 167538
+    },
+    "macro/BAA10Y.parquet": {
+      "sha256": "7888723057a8de1d0e94df7f772eb1aabe79814c3c38110b3f90967751abfab2",
+      "bytes": 112264
+    },
+    "macro/DGS10.parquet": {
+      "sha256": "f346ef7896e587c3205329e13f84152f9aba1aee7af23c28566cb856fadcf652",
+      "bytes": 177231
+    },
+    "macro/BAMLH0A0HYM2.parquet": {
+      "sha256": "b25b6d8923f8017a17e03721f95acf38d55518d155a3e618caa7ed7eb0953118",
+      "bytes": 10459
+    },
+    "macro/T10Y2Y.parquet": {
+      "sha256": "48c746209085df59c57c75f5c85ff6e2761628e6ce6d3b16163d1c6da406d059",
+      "bytes": 132953
+    },
+    "selection/monthly_scores.parquet": {
+      "sha256": "f32b737d5a6bc4178fd272d99e4ee291f0e2f671ca3eb4e2e6572d908d8edc32",
+      "bytes": 826979
+    },
+    "selection/monthly_scores.json": {
+      "sha256": "6c0dd342558e4788f86153c1e38189220f174294d90cdfcc753b6809973718fa",
+      "bytes": 292
+    }
+  },
+  "baseline_selector_byte_identical_to_course": true
+}

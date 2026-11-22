@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "frozen_commit": "1ba67615924078d9680702870352496583672341",
+  "financial_sources_match_git_objects": {
+    "baseline/selection/selector.py": "3c99bba27efd543aae348c165447b565992a8b74b2a406fda6ee18740daba97f",
+    "baseline/selection/configs/growth.json": "559281b687879029fa1d5899a9721efb63ca36467d9902da32e869b7176cccd3",
+    "baseline/valuation/student_valuation.py": "dfac06b16b6ad13632d19b496ccea62963d7d39be6249a774e314a8175e1e444",
+    "improved/selection/selector.py": "9edd567bf8184e7e7d012e5419388a4c65db0eb676a232957f63d39433ab459a",
+    "improved/selection/configs/growth.json": "559281b687879029fa1d5899a9721efb63ca36467d9902da32e869b7176cccd3",
+    "improved/selection/configs/improved.json": "487b6d091171b677050a0677910aab92714819625e4c9a08367ffc45e9878dd0",
+    "improved/valuation/student_valuation.py": "dfac06b16b6ad13632d19b496ccea62963d7d39be6249a774e314a8175e1e444"
+  },
+  "unchanged_course_components": [
+    "valuation/finrobot/__init__.py",
+    "valuation/finrobot/dcf.py",
+    "valuation/finrobot/financial.py",
+    "valuation/finrobot/valuation_thresholds.py",
+    "valuation/finrobot/wacc.py",
+    "portfolio/backtester.py",
+    "selection/allocation.py",
+    "selection/strategy.py",
+    "shared/data_view.py",
+    "shared/metrics.py"
+  ],
+  "note": "Wrapper/runtime and report-source hashes are recorded separately; no financial source changed after freeze."
+}

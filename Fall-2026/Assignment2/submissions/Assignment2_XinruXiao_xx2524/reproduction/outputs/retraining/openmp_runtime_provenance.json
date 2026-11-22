@@ -1,0 +1,58 @@
+{
+  "package_index": {
+    "arch": "arm64",
+    "build": "h7cfbb63_0",
+    "build_number": 0,
+    "constrains": [
+      "openmp 15.0.5|15.0.5.*"
+    ],
+    "depends": [],
+    "license": "Apache-2.0 WITH LLVM-exception",
+    "name": "llvm-openmp",
+    "platform": "osx",
+    "subdir": "osx-arm64",
+    "timestamp": 1668673093909,
+    "version": "15.0.5"
+  },
+  "matched_release_metadata": [
+    {
+      "description": null,
+      "dependencies": [],
+      "distribution_type": "conda",
+      "basename": "osx-arm64/llvm-openmp-15.0.5-h7cfbb63_0.tar.bz2",
+      "attrs": {
+        "constrains": [
+          "openmp 15.0.5|15.0.5.*"
+        ],
+        "build_number": 0,
+        "license": "Apache-2.0 WITH LLVM-exception",
+        "has_prefix": false,
+        "machine": "arm64",
+        "platform": "osx",
+        "depends": [],
+        "build": "h7cfbb63_0",
+        "timestamp": 1668673093909,
+        "arch": "arm64",
+        "operatingsystem": "darwin",
+        "target-triplet": "arm64-any-darwin",
+        "subdir": "osx-arm64"
+      },
+      "upload_time": "2022-11-17 08:18:36.634000+00:00",
+      "md5": "60555769c8c25cbf502fefb0df10e22d",
+      "sha256": "df8d545338b3a895d5d010aa1d672d484006b4f3f406ff5146b18f51f3acd0ea",
+      "size": 311799,
+      "full_name": "conda-forge/llvm-openmp/15.0.5/osx-arm64/llvm-openmp-15.0.5-h7cfbb63_0.tar.bz2",
+      "download_url": "//conda.anaconda.org/conda-forge/osx-arm64/llvm-openmp-15.0.5-h7cfbb63_0.tar.bz2",
+      "type": "conda",
+      "version": "15.0.5",
+      "ndownloads": 24055,
+      "owner": "conda-forge",
+      "labels": [
+        "main"
+      ]
+    }
+  ],
+  "archive_sha256": "df8d545338b3a895d5d010aa1d672d484006b4f3f406ff5146b18f51f3acd0ea",
+  "library_sha256": "927bc0eb282a96c2dc8600c52f3eabb8a641eca09967fceff33ae25db6b63e2c",
+  "usage": "Extract the matching osx-arm64 conda-forge package into work/openmp; run with DYLD_LIBRARY_PATH set to that lib directory. Linux and Intel require their matching platform runtime, not this binary."
+}
