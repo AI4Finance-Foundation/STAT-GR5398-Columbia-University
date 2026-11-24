@@ -42,7 +42,10 @@ def main():
         shutil.copytree(src/'output', dest/'output')
         (dest/'output/test_runs.jsonl').touch(exist_ok=True)
         if args.with_bonus:
-            run(HERE/'bonus/retrain.py', '--source', src, '--out', dest/'bonus')
+            bonus = dest/'bonus'
+            run(HERE/'bonus/retrain.py', '--source', src, '--out', bonus)
+            run(HERE/'bonus/path_efficiency/run.py', '--source', src,
+                '--control-results', bonus/'control', '--out', bonus/'path_efficiency')
 
 
 if __name__ == '__main__':

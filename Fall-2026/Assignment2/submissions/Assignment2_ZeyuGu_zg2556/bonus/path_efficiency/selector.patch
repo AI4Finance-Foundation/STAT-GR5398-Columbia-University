@@ -1,0 +1,45 @@
+--- a/selection/selector.py
++++ b/selection/selector.py
+@@ -86,8 +86,24 @@
+ 
+ MOMENTUM_COLS = [
+     "ret_1q", "ret_4q", "ret_accel",
+-    "eps_chg", "roe_chg", "gm_chg", "om_chg",
++    "eps_chg", "roe_chg", "gm_chg", "om_chg", "trend_efficiency_4q",
+ ]
++
++def _trend_efficiency(frame: pd.DataFrame) -> pd.Series:
++    """Signed path efficiency over four consecutive quarterly price changes.
++
++    The caller sorts by ticker and date and applies the monthly as-of price cap.
++    A zero encodes either no net trend or insufficient valid observations.
++    """
++    symbols = frame["tic"]
++    quarters = pd.to_datetime(frame["datadate"]).dt.to_period("Q").astype("int64")
++    consecutive = quarters.groupby(symbols).diff().eq(1)
++    price = frame["trade_price"].where(frame["trade_price"] > 0)
++    change = np.log(price).groupby(symbols).diff().where(consecutive)
++    net = change.groupby(symbols).rolling(4, min_periods=4).sum().droplevel(0)
++    path = change.abs().groupby(symbols).rolling(4, min_periods=4).sum().droplevel(0)
++    return net.div(path.where(path > 0)).fillna(0.0).clip(-1.0, 1.0).reindex(frame.index)
++
+ 
+ # datadate -> tradedate mapping (2-month lag: first day of next-next month)
+ DATADATE_TO_TRADEDATE_MAP = {
+@@ -1289,7 +1305,7 @@
+             df[dst] = df.groupby("tic")[src].diff()
+ 
+         # Fill and clean
+-        pre_accel = [c for c in FEATURE_COLS + MOMENTUM_COLS if c != "ret_accel"]
++        pre_accel = [c for c in FEATURE_COLS + MOMENTUM_COLS if c not in ("ret_accel", "trend_efficiency_4q")]
+         for c in pre_accel:
+             df[c] = pd.to_numeric(df[c], errors="coerce")
+         global_medians = df[pre_accel].median()
+@@ -1305,6 +1321,7 @@
+         df["ret_accel"] = df["ret_accel"].fillna(0)
+         p01, p99 = df["ret_accel"].quantile(0.01), df["ret_accel"].quantile(0.99)
+         df["ret_accel"] = df["ret_accel"].clip(lower=p01, upper=p99)
++        df["trend_efficiency_4q"] = _trend_efficiency(df)
+ 
+         return df
+ 
