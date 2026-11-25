@@ -1,0 +1,42 @@
+{
+  "months": [
+    "2017-01",
+    "2023-12"
+  ],
+  "max_date": "2023-12-29",
+  "libraries": {
+    "numpy": "2.5.5",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "pyarrow": "26.0.1",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.7.0",
+    "joblib": "1.6.0"
+  },
+  "python": "3.13.2",
+  "source_manifest_sha256": "81f5895bdb0d140788b6f465ed80d9683e94155472e05a09ca87c105f77138e9",
+  "feature_patch_sha256": "02f5557ad555675f231ce167d6946f0993cc0f46d3669dbbcb8efae0c35d003e",
+  "bounded_inputs_sha256": {
+    "fundamentals": "a04108e702167a1453ebe4808c01a3885f447a9a51a8a1b5606a1cf30a8a7341",
+    "prices": "2518d16eacd5588e606b1df7d097e965112da99bdea9a29343fb508ccc93fd33"
+  },
+  "config_sha256": "559281b687879029fa1d5899a9721efb63ca36467d9902da32e869b7176cccd3",
+  "thread_limits": 1,
+  "PYTHONHASHSEED": 0,
+  "arms": {
+    "control": {
+      "score_rows": 42217,
+      "growth_rows": 8285,
+      "score_sha256": "e38e67dc6adb34d6e91e58a7387bee2a254969f7a136bcb4d9d6e6281eedc2fa",
+      "anchor_rows_exact": 2975
+    },
+    "path_efficiency": {
+      "score_rows": 42217,
+      "growth_rows": 8285,
+      "score_sha256": "144a7f3b1c6aeac86b4086270898c540280aa1690b96382cc4aba3d9a0b95e68",
+      "anchor_rows_exact": 2975
+    }
+  },
+  "complete_refits": 168
+}

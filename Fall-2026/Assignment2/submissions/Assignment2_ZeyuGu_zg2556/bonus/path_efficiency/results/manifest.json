@@ -1,0 +1,55 @@
+{
+  "original_selector_sha256": "3c99bba27efd543aae348c165447b565992a8b74b2a406fda6ee18740daba97f",
+  "changed_selector_sha256": "395329d8aef348c350c8a648aec4e0198ee9340bcd645df0d4cde1fadba4ead9",
+  "patch_sha256": "02f5557ad555675f231ce167d6946f0993cc0f46d3669dbbcb8efae0c35d003e",
+  "course_scores_sha256_before_and_after": "f32b737d5a6bc4178fd272d99e4ee291f0e2f671ca3eb4e2e6572d908d8edc32",
+  "control_refit_this_invocation": false,
+  "python": "3.13.2",
+  "libraries": {
+    "numpy": "2.5.5",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "pyarrow": "26.0.1",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.7.0",
+    "joblib": "1.6.0"
+  },
+  "arms": {
+    "control": {
+      "train_wall_seconds": 171.769,
+      "replay_wall_seconds": 1.544,
+      "config_sha256": "559281b687879029fa1d5899a9721efb63ca36467d9902da32e869b7176cccd3",
+      "scores_sha256": "0d385842878bc6c36d3b5c2350903cc8cf99b3e68a91411360e7779c314aa7dc"
+    },
+    "path_efficiency": {
+      "train_wall_seconds": 164.423,
+      "replay_wall_seconds": 1.422,
+      "config_sha256": "559281b687879029fa1d5899a9721efb63ca36467d9902da32e869b7176cccd3",
+      "scores_sha256": "a81f768b5375a25e216eb55eeae201b1f096ad0c491363f8a6d3d3e41b48d15d"
+    }
+  },
+  "formula_checks": {
+    "monotone_up": 1,
+    "monotone_down": -1,
+    "round_trip": 0,
+    "flat": 0,
+    "nonpositive": 0,
+    "missing_quarter": 0,
+    "four_return_minimum_checked": true,
+    "future_append_invariant": true
+  },
+  "score_audit": {
+    "matched_score_rows": 2975,
+    "matched_growth_rows": 523,
+    "distinct_months": 6
+  },
+  "workers_per_arm": 2,
+  "course_config_sha256": "559281b687879029fa1d5899a9721efb63ca36467d9902da32e869b7176cccd3",
+  "months": [
+    "2018-01",
+    "2018-06"
+  ],
+  "start": "2018-01-02",
+  "end": "2018-06-29"
+}

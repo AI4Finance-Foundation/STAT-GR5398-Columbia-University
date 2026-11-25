@@ -1,0 +1,96 @@
+{
+  "course_base": "43eeda7b011270814fa28cc38e9081e36128cf8a",
+  "command_from_submission_folder": "python bonus/path_efficiency/run.py --source \"$SOURCE\" --out \"$REPLAY\" --refit-control --workers 2",
+  "dev_dates": [
+    "2018-01-02",
+    "2018-06-29"
+  ],
+  "simultaneous_workers": 2,
+  "sequential_arms": [
+    "control",
+    "path_efficiency"
+  ],
+  "months_fitted_per_arm": 6,
+  "python": "3.13.2",
+  "libraries": {
+    "numpy": "2.5.5",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "pyarrow": "26.0.1",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.7.0",
+    "joblib": "1.6.0"
+  },
+  "matched_arm_files": {
+    "control": {
+      "files_sha256": {
+        "scores.parquet": "0d385842878bc6c36d3b5c2350903cc8cf99b3e68a91411360e7779c314aa7dc",
+        "scores.json": "17d586d1b479f98e57faa07da8593ae047f4feae8ed5b141328a8ee1c1b6b7c9",
+        "equity.csv": "a7c5016c58fce20572abe104cdf3a2565ad0f138a8d3bdecd902e75ba3b16f83",
+        "trades.csv": "d3ee62ece7966a989f3f7c5f80b073dab1acaf7f7a9ae19b0c8fa31aa8ea72ee",
+        "stats.json": "3a14f60f8142d6e6167fede170d024b0bd249753f90ec0ee7474277b4adc3aa0"
+      },
+      "score_rows": 2975,
+      "equity_sessions": 125,
+      "trades": 78,
+      "stats": {
+        "run": "2018-01-02_2018-06-29_control_selection",
+        "start": "2018-01-02",
+        "end": "2018-06-29",
+        "total_return_pct": 10.93,
+        "cagr_pct": 23.46,
+        "volatility_pct": 23.73,
+        "sharpe": 1.007,
+        "max_drawdown_pct": -11.37,
+        "calmar": 2.062,
+        "trades": 78,
+        "turnover_per_year": 9.45,
+        "SPY_total_return_pct": 1.79,
+        "SPY_sharpe": 0.301,
+        "QQQ_total_return_pct": 8.71,
+        "QQQ_sharpe": 0.927
+      },
+      "repeat_train_wall_seconds": 166.253,
+      "repeat_replay_wall_seconds": 1.441
+    },
+    "path_efficiency": {
+      "files_sha256": {
+        "scores.parquet": "a81f768b5375a25e216eb55eeae201b1f096ad0c491363f8a6d3d3e41b48d15d",
+        "scores.json": "17d586d1b479f98e57faa07da8593ae047f4feae8ed5b141328a8ee1c1b6b7c9",
+        "equity.csv": "b0e64955c587d56ee6d7a4e69f7295efbc94e2b02798c9a2ef8ce6ab0c5a74bc",
+        "trades.csv": "b82ba48ffd3535e7862d4e822507086dfcc6765b23089026e62eef4124a8f620",
+        "stats.json": "7951b2071de257f142ee2990b4125ac06561b315d5719abff4a4f3d230c9959d"
+      },
+      "score_rows": 2975,
+      "equity_sessions": 125,
+      "trades": 82,
+      "stats": {
+        "run": "2018-01-02_2018-06-29_path_efficiency_selection",
+        "start": "2018-01-02",
+        "end": "2018-06-29",
+        "total_return_pct": 14.71,
+        "cagr_pct": 32.18,
+        "volatility_pct": 23.63,
+        "sharpe": 1.299,
+        "max_drawdown_pct": -10.84,
+        "calmar": 2.968,
+        "trades": 82,
+        "turnover_per_year": 10.52,
+        "SPY_total_return_pct": 1.79,
+        "SPY_sharpe": 0.301,
+        "QQQ_total_return_pct": 8.71,
+        "QQQ_sharpe": 0.927
+      },
+      "repeat_train_wall_seconds": 166.865,
+      "repeat_replay_wall_seconds": 1.455
+    }
+  },
+  "matched_comparison_files": {
+    "portfolio_comparison.csv": "e486c1ab1bb82b0065d2c9654eae67b5d514a15d0131dba587cd3440d7d8e129",
+    "monthly_rank_comparison.csv": "9ec61a96d3b2182f08ac4de9a2ce61b6b4beae3b20dc0383453b7629e0b71954",
+    "feature_distribution.csv": "eab8904251d9e0ad74f11995a7ec1881d4ea67f410933833cf0af68d565eaf8b"
+  },
+  "total_files_matched_byte_for_byte": 13,
+  "official_score_sha256_before_and_after": "f32b737d5a6bc4178fd272d99e4ee291f0e2f671ca3eb4e2e6572d908d8edc32"
+}

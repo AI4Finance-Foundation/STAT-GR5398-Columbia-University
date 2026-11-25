@@ -1,0 +1,39 @@
+{
+  "months": [
+    "2018-01",
+    "2018-06"
+  ],
+  "start": "2018-01-02",
+  "end": "2018-06-29",
+  "control_val_quarters": 3,
+  "variant_val_quarters": 6,
+  "workers_per_arm": 2,
+  "course_scores_sha256_before_and_after": "f32b737d5a6bc4178fd272d99e4ee291f0e2f671ca3eb4e2e6572d908d8edc32",
+  "python": "3.13.2",
+  "python_platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "libraries": {
+    "numpy": "2.5.5",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "pyarrow": "26.0.1",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.7.0",
+    "joblib": "1.6.0"
+  },
+  "arms": {
+    "control": {
+      "train_wall_seconds": 171.769,
+      "replay_wall_seconds": 1.544,
+      "config_sha256": "559281b687879029fa1d5899a9721efb63ca36467d9902da32e869b7176cccd3",
+      "scores_sha256": "0d385842878bc6c36d3b5c2350903cc8cf99b3e68a91411360e7779c314aa7dc"
+    },
+    "six_dates": {
+      "train_wall_seconds": 74.737,
+      "replay_wall_seconds": 2.284,
+      "config_sha256": "6bdac0f5d0b58849cdea1b692a5ad9ab2bcd6fd311c4d6a8bd391f7219d12ed0",
+      "scores_sha256": "5edc66deb18e0ec22b81f59b73d4d80f2b02208b925a9a4d8a380bbf1d6d5720"
+    }
+  },
+  "total_wall_seconds": 173.42
+}
