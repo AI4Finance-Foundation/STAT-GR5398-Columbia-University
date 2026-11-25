@@ -1,0 +1,25 @@
+*** Test-period run #2 (logged in output/test_runs.jsonl). Report this number. ***
+running A_selection  2024-01-02 -> 2026-10-09
+running B_valuation_absolute  2024-01-02 -> 2026-10-09
+running C_timing_full  2024-01-02 -> 2026-10-09
+running D_both_full_absolute  2024-01-02 -> 2026-10-09
+run                         test_A_selection test_B_valuation_absolute test_C_timing_full test_D_both_full_absolute
+start                             2024-01-02                2024-01-02         2024-01-02                2024-01-02
+end                               2026-10-09                2026-10-09         2026-10-09                2026-10-09
+total_return_pct                      167.33                    159.23             167.33                    159.23
+cagr_pct                               42.84                     41.25              42.84                     41.25
+volatility_pct                         31.14                     30.88              31.14                     30.88
+sharpe                                 1.301                     1.273              1.301                     1.273
+max_drawdown_pct                      -30.53                    -30.83             -30.53                    -30.83
+calmar                                 1.403                     1.338              1.403                     1.338
+trades                                   704                       790                704                       790
+turnover_per_year                      12.88                     14.68              12.88                     14.68
+SPY_total_return_pct                   70.12                     70.12              70.12                     70.12
+SPY_sharpe                              1.32                      1.32               1.32                      1.32
+QQQ_total_return_pct                   89.31                     89.31              89.31                     89.31
+QQQ_sharpe                             1.218                     1.218              1.218                     1.218
+filter_rule                              NaN                  absolute                NaN                  absolute
+avg_removed_per_week                     NaN                     7.048                NaN                     7.048
+avg_weekly_removed_fraction              NaN                  0.062501                NaN                  0.062501
+overall_removed_fraction                 NaN                  0.062672                NaN                  0.062672
+avg_exposure                             NaN                       NaN                1.0                       1.0

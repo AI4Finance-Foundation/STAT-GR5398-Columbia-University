@@ -1,0 +1,5 @@
+run,start,end,total_return_pct,cagr_pct,volatility_pct,sharpe,max_drawdown_pct,calmar,trades,turnover_per_year,SPY_total_return_pct,SPY_sharpe,QQQ_total_return_pct,QQQ_sharpe,filter_rule,avg_removed_per_week,avg_weekly_removed_fraction,overall_removed_fraction,avg_exposure
+test_A_selection,2024-01-02,2026-10-09,167.33,42.84,31.14,1.301,-30.53,1.403,704,12.88,70.12,1.32,89.31,1.218,,,,,
+test_B_valuation_absolute,2024-01-02,2026-10-09,159.23,41.25,30.88,1.273,-30.83,1.338,790,14.68,70.12,1.32,89.31,1.218,absolute,7.048,0.062501,0.062672,
+test_C_timing_full,2024-01-02,2026-10-09,167.33,42.84,31.14,1.301,-30.53,1.403,704,12.88,70.12,1.32,89.31,1.218,,,,,1.0
+test_D_both_full_absolute,2024-01-02,2026-10-09,159.23,41.25,30.88,1.273,-30.83,1.338,790,14.68,70.12,1.32,89.31,1.218,absolute,7.048,0.062501,0.062672,1.0
