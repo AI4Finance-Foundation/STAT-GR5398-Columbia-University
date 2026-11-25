@@ -1,0 +1,11 @@
+
+2022-01-03 -> 2023-12-29: 24 months, 480 candidate-months, slowest value_detail 0.42s
+               coverage   IC63   t63  IC126  t126  IC252  t252
+combined          0.758 -0.110 -1.85 -0.117 -2.08 -0.155 -3.20
+dcf               0.702 -0.066 -1.06 -0.079 -1.19 -0.072 -1.28
+ev_ebitda         0.758 -0.010 -0.19 -0.045 -0.72 -0.127 -2.43
+peer_multiple     0.654 -0.059 -0.89 -0.149 -2.22 -0.133 -2.24
+price 252 sessions later inside [low, high]: 39% of 364;  median (high/low - 1) 82%
+median mispricing -1.8%, median method_spread 1.93, share n_methods>=2 94%
+flagged (price above every method) share 14.2%; mean next-126 return flagged +6.1% vs rest +5.8%
+peer groups: correlation 0, sector fallback 0

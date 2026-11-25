@@ -1,0 +1,15 @@
+D:\Columbia University\2026 Fall\Bruce Yang MR\course-repo\Fall-2026\Assignment2\source_code\evaluate_valuation.py:111: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: g["mispricing"].corr(g[col], method="spearman") if len(g) >= 5 else np.nan)
+D:\Columbia University\2026 Fall\Bruce Yang MR\course-repo\Fall-2026\Assignment2\source_code\evaluate_valuation.py:111: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: g["mispricing"].corr(g[col], method="spearman") if len(g) >= 5 else np.nan)
+D:\Columbia University\2026 Fall\Bruce Yang MR\course-repo\Fall-2026\Assignment2\source_code\evaluate_valuation.py:111: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: g["mispricing"].corr(g[col], method="spearman") if len(g) >= 5 else np.nan)
+*** Test-period run #1 (logged in output\test_runs.jsonl). Report this number. ***
+
+Valuation, 2024-01-02 -> 2026-10-09, top 20 growth_tech candidates each month
+valued 583 of 680 candidate-months (86%)
+rank IC  63 sessions: mean +0.032   t +0.66   months 32
+rank IC 126 sessions: mean +0.032   t +0.64   months 29
+rank IC 252 sessions: mean -0.021   t -0.46   months 23
+price 252 sessions later inside [low, high]: 26% of 393
+median mispricing -29.4%   median method_spread 2.22

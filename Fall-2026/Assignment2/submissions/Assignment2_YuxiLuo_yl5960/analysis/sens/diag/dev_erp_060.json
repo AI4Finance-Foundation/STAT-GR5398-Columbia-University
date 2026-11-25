@@ -1,0 +1,56 @@
+{
+ "period": "dev",
+ "overrides": {
+  "EQUITY_RISK_PREMIUM": "0.06"
+ },
+ "months": 60,
+ "asked": 1200,
+ "rows": {
+  "combined": {
+   "coverage": 0.744,
+   "IC63": -0.143,
+   "t63": -3.48,
+   "IC126": -0.113,
+   "t126": -2.47,
+   "IC252": -0.076,
+   "t252": -1.77
+  },
+  "dcf": {
+   "coverage": 0.572,
+   "IC63": -0.136,
+   "t63": -2.78,
+   "IC126": -0.109,
+   "t126": -2.11,
+   "IC252": -0.083,
+   "t252": -2.0
+  },
+  "ev_ebitda": {
+   "coverage": 0.58,
+   "IC63": -0.083,
+   "t63": -2.17,
+   "IC126": -0.008,
+   "t126": -0.25,
+   "IC252": 0.028,
+   "t252": 0.87
+  },
+  "peer_multiple": {
+   "coverage": 0.699,
+   "IC63": -0.086,
+   "t63": -1.72,
+   "IC126": -0.062,
+   "t126": -1.24,
+   "IC252": -0.059,
+   "t252": -1.43
+  }
+ },
+ "range_inside": 0.342,
+ "range_n": 893,
+ "median_width": 0.792,
+ "median_mispricing": -0.128,
+ "median_spread": 1.679,
+ "share_2plus": 0.781,
+ "flag_share": 0.199,
+ "flagged_ret126": 0.1279,
+ "rest_ret126": 0.0903,
+ "slowest_s": 1.06
+}

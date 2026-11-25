@@ -1,0 +1,9 @@
+dev {'dcf_calls': 706, 'gordon_reject': 8, 'grid_cells': 6120, 'grid_dropped_spread': 228, 'tax_fallback': 0}
+val {'dcf_calls': 355, 'gordon_reject': 0, 'grid_cells': 3033, 'grid_dropped_spread': 25, 'tax_fallback': 0}
+months whose score cutoff is after as_of: none
+2022-06-30 lagged macro: removed only with lag ['MRVL'], only without []
+DGS10 on as_of vs previous: {Timestamp('2022-06-29 00:00:00'): 3.1, Timestamp('2022-06-30 00:00:00'): 2.98}
+ticker  price  fair_dcf  fair_ev_ebitda  fair_peer_multiple
+  MRVL  42.83     43.29           34.54                 NaN
+ticker  price  fair_dcf  fair_ev_ebitda  fair_peer_multiple
+  MRVL  42.83     42.37           34.54                 NaN

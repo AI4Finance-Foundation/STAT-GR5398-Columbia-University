@@ -1,0 +1,25 @@
+{
+ "run": "tuning/val_B_m2_p0.0",
+ "start": "2022-01-03",
+ "end": "2023-12-29",
+ "total_return_pct": -4.29,
+ "cagr_pct": -2.18,
+ "volatility_pct": 26.86,
+ "sharpe": 0.052,
+ "max_drawdown_pct": -40.73,
+ "calmar": -0.054,
+ "trades": 405,
+ "turnover_per_year": 11.64,
+ "avg_removed_per_week": 3.3,
+ "SPY_total_return_pct": 2.65,
+ "SPY_sharpe": 0.165,
+ "QQQ_total_return_pct": 3.42,
+ "QQQ_sharpe": 0.195,
+ "tag": "m2_p0.0",
+ "period": "val",
+ "overrides": {
+  "FILTER_MIN_METHODS": 2,
+  "FILTER_PREMIUM": 0.0
+ },
+ "seconds": 130
+}

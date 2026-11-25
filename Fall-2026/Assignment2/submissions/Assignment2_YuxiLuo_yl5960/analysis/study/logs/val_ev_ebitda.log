@@ -1,0 +1,58 @@
+{
+ "run": "tuning/val_B_study_ev_ebitda",
+ "start": "2022-01-03",
+ "end": "2023-12-29",
+ "total_return_pct": -5.09,
+ "cagr_pct": -2.6,
+ "volatility_pct": 28.05,
+ "sharpe": 0.046,
+ "max_drawdown_pct": -40.92,
+ "calmar": -0.063,
+ "trades": 482,
+ "turnover_per_year": 13.64,
+ "avg_removed_per_week": 8.9,
+ "SPY_total_return_pct": 2.65,
+ "SPY_sharpe": 0.165,
+ "QQQ_total_return_pct": 3.42,
+ "QQQ_sharpe": 0.195,
+ "variant": "ev_ebitda",
+ "period": "val",
+ "swaps": {
+  "weeks": 104,
+  "weeks_with_swap": 102,
+  "names_swapped_per_week": 3.31,
+  "h5": {
+   "n": 101,
+   "out_mean": 0.001,
+   "in_mean": 0.0041,
+   "in_minus_out": 0.0031,
+   "t_nw": 0.79,
+   "in_beats_out": 0.525
+  },
+  "h21": {
+   "n": 98,
+   "out_mean": 0.0108,
+   "in_mean": 0.0162,
+   "in_minus_out": 0.0053,
+   "t_nw": 0.46,
+   "in_beats_out": 0.5
+  },
+  "h63": {
+   "n": 91,
+   "out_mean": 0.0449,
+   "in_mean": -0.0056,
+   "in_minus_out": -0.0505,
+   "t_nw": -2.58,
+   "in_beats_out": 0.363
+  },
+  "h126": {
+   "n": 78,
+   "out_mean": 0.0759,
+   "in_mean": 0.0062,
+   "in_minus_out": -0.0697,
+   "t_nw": -3.43,
+   "in_beats_out": 0.295
+  }
+ },
+ "seconds": 50
+}

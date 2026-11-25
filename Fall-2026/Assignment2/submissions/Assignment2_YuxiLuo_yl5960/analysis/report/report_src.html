@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Valuation Filter Study</title>
+<style>
+  @page { size: A4; margin: 16mm 16mm 18mm 16mm; }
+  body { font-family: "Helvetica Neue", "Segoe UI", Arial, sans-serif; font-size: 10pt; line-height: 1.45; color: #1b1b1a; background: #ffffff; }
+  h1 { font-size: 17pt; margin: 0 0 2pt; line-height: 1.2; }
+  .byline { color: #52514e; margin-bottom: 10pt; }
+  h2 { font-size: 12.5pt; margin: 16pt 0 5pt; border-bottom: 1px solid #d9d8d4; padding-bottom: 2pt; break-after: avoid; }
+  h3 { font-size: 10.5pt; margin: 11pt 0 3pt; break-after: avoid; }
+  p { margin: 4pt 0 6pt; }
+  ul, ol { margin: 3pt 0 6pt 16pt; padding: 0; }
+  li { margin: 1.5pt 0; }
+  table { border-collapse: collapse; width: 100%; margin: 5pt 0 8pt; font-size: 8.6pt; break-inside: avoid; }
+  table.small { font-size: 7.6pt; }
+  th, td { border-bottom: 1px solid #e4e3df; padding: 2.5pt 5pt; text-align: left; vertical-align: top; }
+  th { background: #f4f3f0; font-weight: 600; }
+  td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
+  td.n, td.k { white-space: nowrap; }
+  tr.grp td { border-top: 1px solid #b9b8b3; }
+  .abstract { background: #f7f6f3; border-left: 3px solid #2a78d6; padding: 6pt 9pt; margin: 6pt 0 10pt; }
+  figure { margin: 6pt 0 10pt; break-inside: avoid; }
+  figure img { width: 100%; }
+  figure.half img { width: 62%; }
+  figcaption { font-size: 8.5pt; color: #52514e; margin-top: 2pt; }
+  code { font-family: Menlo, Consolas, monospace; font-size: 8.4pt; background: #f4f3f0; padding: 0 2pt; }
+  .small { font-size: 8.5pt; color: #52514e; }
+  .todo { border: 1.5px dashed #c98500; background: #fff8e6; padding: 5pt 9pt; margin: 6pt 0 8pt; font-size: 8.8pt; color: #5a4300; }
+  .todo::before { content: "TO WRITE"; display: block; font-weight: 700; font-size: 7.5pt; letter-spacing: 0.06em; color: #9a6a00; margin-bottom: 2pt; }
+  .todo.yours::before { content: "YOURS TO WRITE (Judgment: your own words, no agent text)"; }
+</style>
+</head>
+<body>
+
+<h1>Does a valuation filter help a growth portfolio?<br>Three point-in-time methods against the course selection model</h1>
+<div class="byline">Yuxi Luo (yl5960) · STAT GR5398, Fall 2026 · Assignment 2, valuation group · November 2026</div>
+
+<div class="abstract">
+I built a valuation module for the course's growth portfolio from three point-in-time methods: a DCF on FinRobot's
+engine, EV/EBITDA against the stock's own five-year history, and trailing P/E against same-sector index members. The
+filter removes a candidate only when at least two methods value it and the price is above every one of their values.
+The module's rank IC is negative in dev and val (126 sessions: −0.111 and −0.117): the stocks it called cheap did
+worse than the ones it called expensive. In test it is close to zero (+0.032). In the portfolio, the filter lowered
+volatility in all three periods and cost return in the two rising markets: Sharpe 0.846 against 0.980 without it in
+dev, and 1.011 against 1.301 in test. In val it gained a little (0.052 against 0.028), but the names that replaced
+the removed holdings did no better over the following week, so there is little evidence that it chose better stocks.
+After the test run I
+traced part of the problem on dev and val: the peer P/E calls fast growers expensive while the DCF calls them cheap,
+and requiring all methods to agree kept the disputed names that later lagged. A variant that combines a growth-adjusted
+peer multiple with correlation-based peers, tried on dev and val only, cut the filter's dev Sharpe shortfall against no
+filter by about 70% but did not make the signal positive.
+A test that randomises
+every input dated after the decision date leaves the output unchanged on all 14 dates checked. The test period was
+run twice, both times at the final commit <code>8288c74</code>.
+</div>
+<p class="small"><b>AI assistance.</b> Claude Code (Anthropic) assisted with writing and debugging the module code,
+writing the analysis scripts, drafting and editing the report text, and drafting the README. Section 8 (Judgment) is my
+own writing.</p>
+
+<h2>1. Design</h2>
+
+<h3>1.1 What the module does</h3>
+<p><code>value(as_of, tickers, data)</code> returns a fair value, a range and a mispricing for each ticker.
+<code>filter_candidates(as_of, candidates, data)</code> takes the week's ranked candidates from the selection model and
+removes the ones that look clearly overpriced; the backtester then fills its ten slots from the names that remain.</p>
+<p>Everything is per share, because the database stores per-share and ratio columns but no totals. These columns are
+single-quarter values, so trailing-twelve-month (TTM) figures are sums of four consecutive quarters, and a TTM value
+is voided when its four quarter dates do not span 250–300 days (a missing quarter).</p>
+<ul>
+<li><b>Combination.</b> Each method returns a fair value and a low/high. The module's fair value is the median of the
+methods that produced one; low and high are the medians of the method lows and highs, widened to contain the fair
+value; mispricing = fair value / last close − 1 (positive = undervalued); method_spread = highest / lowest method value.</li>
+<li><b>Filter.</b> Each week it values the 25 best-ranked growth_tech members (the portfolio holds 10) and removes a
+name when at least two methods value it and the price is above every one of their values. Every other candidate passes
+unchanged. I used a consensus rule because each method alone is noisy (their yearly ICs change sign, §5.1) and a
+removal has a cost: the name is replaced by a lower-ranked one.</li>
+</ul>
+<p><b>When the methods disagree.</b> They often do. Among stocks valued by at least two methods, the highest value is
+more than twice the lowest in 50–61% of cases, and more than 2.6 times in 29–45% (the course brief's example of a
+disagreement at which FinRobot reports only a range). The module handles this in three ways:</p>
+<ol>
+<li><b>The point estimate is the median.</b> With three methods one outlier cannot move it; with two it is their
+midpoint.</li>
+<li><b>The disagreement stays visible.</b> <code>method_spread</code> is reported for every stock, and [low, high] is built
+from the methods' own lows and highs rather than from the point estimate.</li>
+<li><b>The filter acts only on agreement.</b> A name is removed only if the price is above every method's value, so a
+single method that calls it cheap keeps it in the portfolio. This is also why the module keeps a point estimate even
+when the spread is large, unlike FinRobot: the filter never acts on the point estimate alone.</li>
+</ol>
+<p>§5.5 shows, after the fact, that this veto is where the rule went wrong for growth stocks: the methods disagree about
+them in a structured way.</p>
+<!-- TABLE:disagreement -->
+
+<h3>1.2 The three methods</h3>
+<table class="small">
+<colgroup><col style="width:13%"><col style="width:47%"><col style="width:14%"><col style="width:26%"></colgroup>
+<thead><tr><th>method</th><th>fair value</th><th>range (low, high)</th><th>changed from FinRobot / README defaults</th></tr></thead>
+<tbody>
+<tr><td>DCF</td><td>FinRobot <code>calculate_dcf</code> on inputs from the last four quarters: TTM revenue per share; EBITDA
+margin = median of four quarters (clipped 0–90%); D&amp;A = EBITDA margin − operating margin (0–30%); capex = TTM capex /
+revenue (0–50%); tax = median effective rate (0–35%); ΔNWC = 10% of the revenue increase. Year-1 growth = 0.5 × last
+year's growth + 0.5 × 3-year CAGR, clipped to −5%…35%, fading linearly to 2.5% terminal growth over 10 years. WACC:
+risk-free = DGS10 on as_of, ERP 5%, beta = 5-year weekly against SPY, Blume-adjusted, bounded 0.3–3.0; cost of debt =
+DGS10 + BAA10Y on as_of; debt weight = market value D / (D + E), capped at 80%.</td>
+<td>min and max of the 3 × 3 sensitivity grid: WACC ±1 pp × terminal growth ±0.5 pp</td>
+<td>risk-free rate from DGS10, not FinRobot's fixed 2026 rate; growth from the company's own revenue history, not
+consensus; range from the grid, not ±20%; market-value debt weight instead of book <code>debt_to_capital</code>,
+which reaches 4.8 with negative book equity (§2)</td></tr>
+<tr><td>EV/EBITDA, own history</td><td>Weekly EV / TTM EBITDA over the last five years (1,260 sessions), each week paired
+with the filings that were public that week. Fair value = median multiple × current TTM EBITDA − current net debt.
+Needs at least 52 weekly multiples.</td><td>P25 and P75 of the multiples</td>
+<td>past multiples from past prices and past filings only</td></tr>
+<tr><td>Peer trailing P/E</td><td>Median trailing P/E (price / TTM EPS) of same-sector index members on as_of, excluding the
+stock, using peers with positive EPS and P/E up to 200; at least 5 peers. Fair value = median × the stock's TTM EPS.</td>
+<td>P25 and P75 of the peer multiples</td><td>trailing, not forward, earnings; peers are index members on as_of</td></tr>
+</tbody></table>
+
+<h3>1.3 Every constant and where it came from</h3>
+<p class="small">Parsed from the committed module file (<code>8288c74</code>); the right column is the comment in the code.</p>
+<!-- TABLE:constants -->
+<p>Only <code>FILTER_MIN_METHODS</code> and <code>FILTER_PREMIUM</code> were tuned (§1.4). The others were set once, from
+standard practice or from limits of the data: the price file starts in June 2016, so beta and the multiple history accept
+one year of weekly data. Two comments cite ranges that end after 2017 (the ERP and terminal growth); §3.4 discusses this,
+and §5.2 shows the conclusions do not depend on those values.</p>
+
+<h3>1.4 How the filter configuration was chosen</h3>
+<!-- TABLE:tuning -->
+<p>I tuned the rule on dev: at least 2 or 3 methods, and a premium of 0, 0.5, 1 or 2 (remove only when the price is above
+(1 + premium) × every value). On dev every setting that removes 0.2 or more names a week costs return; the two settings
+that almost never fire, (3, 1.0) and (3, 2.0), end within half a percentage point of A. On val only the strictest setting, (2, 0.0), beat A, so I committed it (<code>8288c74</code>) and then
+ran test. Dev and val disagree, and the val margin is small (Sharpe 0.052 against 0.028); §4 and §5 ask whether it means
+anything.</p>
+<p class="small">The table shows the grid rerun with <code>PYTHONHASHSEED=0</code> (<code>analysis/tuning_seeded.jsonl</code>). I
+made the original runs, the ones I chose from, before I found that the backtester depends on the hash seed, so they did
+not fix it (<code>analysis/tuning_log.jsonl</code>, kept as the record of the choice). They agree with the seeded reruns
+except for the two other val finalists: (2, 0.5) and (2, 1.0) gave −6.81% and −6.82% (Sharpe 0.011) then and −7.32%
+and −7.23% (Sharpe 0.002) under seed 0. Either way (2, 0.0) is the only setting that beats A on val.</p>
+
+<h2>2. Data audit</h2>
+<p>I checked the inputs the module uses on the 2021-12-31 membership snapshot (531 tickers, 11,161 quarterly rows known by
+that date) and then across the dev and val samples.</p>
+<ul>
+<li><b>Coverage and spacing.</b> Every column the module uses is more than 99.9% non-null. The median gap between
+quarters is 92 days; 1% of gaps fall outside 80–100 days.</li>
+<li><b><code>datadate</code> is a calendar-quarter label, not the fiscal period end.</b> NVDA's fiscal Q3 FY22 ended
+2021-10-31, was accepted on 2021-11-19 and is labelled 2021-12-31. Accepted date minus datadate ranges from −72 to 392
+days (median 32). The DataView shows a row only after both dates have passed, so such labels delay information; they
+never leak it.</li>
+<li><b>Outliers.</b> <code>ebitda_margin</code> ranges from −2,196 to 6.8 and <code>debt_to_capital</code> reaches 4.8
+(negative book equity). The module clips margins to [0, 0.9], tax to [0, 0.35] and D&amp;A to [0, 0.3], and uses a
+market-value debt weight. Implied D&amp;A (EBITDA margin − operating margin) is negative for 2.9% of tickers and is
+clipped at 0.</li>
+<li><b>History.</b> Prices start on 2016-06-01. In 2017 the DCF (which needs a beta) and the EV/EBITDA history cover too
+few candidates for a monthly IC, so 2017 rests on peer P/E (§5.1).</li>
+<li><b>Columns not used.</b> <code>pe</code> and <code>ev_multiple</code> (basis not verified, per the README);
+<code>trade_price</code>, <code>adj_close_q</code> and <code>y_return</code> are removed by the DataView.</li>
+<li><b>Stale and duplicate filings.</b> NTES and BIDU have no filings after 2022-09-30, and the module has no freshness
+check, so it would value NTES in 2023 on fundamentals 9–15 months old. Neither name is in the 2023 evaluation sample and
+the filter never removed either, so nothing reported depends on it. 724 rows are versions of 358 ticker-quarters with
+more than one filing; almost all are from 2024 onwards.</li>
+</ul>
+<p><b>The share basis of prices and per-share data do not always match.</b> The price file is split- and
+dividend-adjusted to its November 2026 basis, while each per-share row is on its own filing's basis. Because
+<code>ps × revenue_per_share</code> recovers the filing's own price, adjusted close / (ps × revenue per share) at the
+period end measures the factor between the two. Over 18,106 ticker-quarters its median is 0.951, which is the dividend
+adjustment. The outliers are real errors: KLAC ≈ 0.095 and APH ≈ 0.47 in every row up to 2024-06 (the per-share rows
+were not restated for their later splits; on 2021-09-30 KLAC's adjusted close is 31.85 while its EPS implies a price
+of about 330); NTES, BIDU and PDD at 0.13–0.15 (RMB per ordinary share against a USD ADS price); CTVA (≈ 0.14) and CRWD
+(0.16–0.31) before 2024-06. Heavy dividend payers (MO, T, VZ, OKE) fall to 0.5–0.7 in 2016–2019, which is genuine
+dividend adjustment. <code>_align_basis</code> rescales each row's per-share columns by this factor, smoothed with a
+centred 9-quarter rolling median over the quarters visible on as_of; the median removes the noise from the calendar
+label while keeping a split step sharp.</p>
+<h3>Spot check of the alignment (7 dev/val dates, 2018-06 to 2023-12)</h3>
+<!-- TABLE:spot -->
+<p>The P/E the module uses (price / aligned TTM EPS) tracks the filing's own P/E, (ps × revenue per share) / TTM EPS,
+which is on one basis by construction; the gaps are the price move between the period end and as_of. Without the
+alignment KLAC trades at 1–3 times earnings, its DCF value is 14–56 times its price, and it could never be flagged.
+MSFT, the control, moves only by the dividend factor.</p>
+
+<h2>3. Look-ahead audit</h2>
+<h3>3.1 What the module can see</h3>
+<ul>
+<li><b>Only the DataView.</b> The module imports numpy, pandas and four FinRobot functions, and calls only five public
+DataView methods: <code>members()</code>, <code>fundamentals()</code>, <code>close()</code>, <code>last_close()</code> and
+<code>macro()</code> (DGS10 and BAA10Y). It never calls <code>extra()</code> and never touches the view's private bundle.
+While a student function runs, <code>shared/guard.py</code> blocks file opens, SQLite connections, sockets and the pandas
+readers. <code>check_submission.py</code>'s static scan passes.</li>
+<li><b>How each call is cut at as_of.</b> Prices and macro series are sliced to dates up to as_of. Fundamentals are rows
+with datadate ≤ as_of and accepted date ≤ as_of (or filing date; a row with neither becomes visible about two months
+after quarter end), and where a quarter has several versions, the latest version visible on as_of. Membership is the
+latest index snapshot on or before as_of (422 S&amp;P 500 and 145 Nasdaq-100 snapshots since 2005); without one the
+store raises an error instead of falling back to today's members, so peer sets carry no survivorship bias.</li>
+<li><b>Inside the module.</b> A quarter enters the EV/EBITDA history only from the later of its accepted date and its
+datadate, and each historical week is paired with the filings known that week.</li>
+<li><b>Timing.</b> <code>filter_candidates</code> receives as_of = the last session before the rebalance day, and the
+backtester fills at that day's open. The selection scores it receives have a model cutoff on or before as_of in every
+dev and val month.</li>
+</ul>
+<h3>3.2 Empirical tests (14 dates, 2016-12 to 2023-06, 25 candidates each)</h3>
+<!-- TABLE:lookahead -->
+<p>The first test is the strongest evidence. On each date I copied the database and multiplied every numeric field of
+every filing not yet visible by a random factor, replaced every later membership snapshot with a fake ticker, and
+multiplied all later prices, market series and macro values by random factors. If anything after as_of reached the
+module, its output would change; it did not change at all, on any date. A first version of this test showed
+differences on 4 dates; the cause was the test itself, which had also poisoned old rows without filing dates that are
+visible (for example ADI 2016-12-31 on 2020-06-30). Matching the store's visibility rule removed every difference. One
+limit: on these dates no visible quarter had a later restated version, so the test does not exercise restatements.</p>
+<h3>3.3 The adjusted price file</h3>
+<p>Because the price file is adjusted to its 2026 basis, a 2018 price level carries every later split and dividend
+(KLAC's 2018 adjusted close is about 9 against a filing price of about 100). Returns are safe: the ratio of two adjusted
+prices contains only the splits and dividends between the two dates, so beta, the multiple history and forward returns
+carry no future information. Price levels are not, and the alignment of §2 is what handles them: it puts per-share
+fundamentals on the price file's basis, so every ratio the module uses (P/E, EV/EBITDA, debt weight, fair value / price)
+is the same as on an unadjusted basis. The second test confirms it: multiplying a stock's whole price history by 10, as
+a different future split would, changes no mispricing beyond rounding. What remains is small: for dividend payers the
+factor drifts each quarter and the 9-quarter median follows it only approximately, which matters least for growth_tech
+names.</p>
+<h3>3.4 Labels and constants fixed with later knowledge</h3>
+<table class="small">
+<colgroup><col style="width:20%"><col style="width:42%"><col style="width:38%"></colgroup>
+<thead><tr><th>item</th><th>what it uses</th><th>effect in dev and val</th></tr></thead>
+<tbody>
+<tr><td><code>gsector</code> (peer groups)</td><td>The sector label at download time (about 2024), applied to all earlier rows.
+Only 14 of 727 tickers change label, all in 2024; GOOGL and META are "Communication Services" in 2016, two years before
+GICS created that sector.</td><td>Cannot be measured without historical labels. The peer median uses at least 5 and usually
+dozens of peers, so a few mislabelled names move it little. A mild look-ahead.</td></tr>
+<tr><td><code>TERMINAL_GROWTH</code> 2.5%</td><td>The code comment cites the 2017–2026 average 10-year yield and inflation,
+which includes test.</td><td>2.5% is also the usual long-run nominal growth assumption before 2017. At 2% and 3% the
+IC stays negative in dev and val and B still loses to A in dev (§5.2).</td></tr>
+<tr><td><code>EQUITY_RISK_PREMIUM</code> 5%</td><td>The comment cites Damodaran's implied ERP for 2017–2023, which covers dev
+and val.</td><td>At 4% and 6% the 126-session IC stays between −0.127 and −0.092 (§5.2).</td></tr>
+<tr><td><code>STATUTORY_TAX</code> 21%</td><td>The federal rate from 2018; it was 35% in 2017.</td><td>A fallback for a missing
+effective tax rate; used 0 times in 1,061 DCF calls.</td></tr>
+<tr><td>FinRobot <code>MIN_GORDON_SPREAD</code> 1.5 pp</td><td>A floor on WACC − g set in FinRobot in 2026, imported by
+<code>calculate_dcf</code> and <code>calculate_sensitivity</code>.</td><td>Rejected 8 of 706 dev DCF values (1.1%) and none of
+355 in val; dropped 3.7% of dev grid cells and 0.8% of val. A stability guard, not a return signal.</td></tr>
+<tr><td><code>_align_basis</code></td><td>Found by looking at KLAC's and APH's 2024 splits in the data.</td><td>Applied as a
+formula to every ticker with as_of data only (tests 1 and 2); knowing about the splits found the bug, but does not enter
+the values.</td></tr>
+<tr><td>filter configuration</td><td>Tuned on dev, chosen on val, committed before test.</td><td>Test run twice, both at
+<code>8288c74</code> (§6).</td></tr>
+</tbody></table>
+<p><b>Macro timing.</b> The value of a FRED series dated as_of may not have been published before the next open, even
+though the yields themselves are market prices at the as_of close. The third test lags DGS10 and BAA10Y by one
+observation: the median mispricing does not change, and the filter's decision changes on 1 of 14 dates (MRVL on
+2022-06-30, whose DCF value of 43.29 against a price of 42.83 fell to 42.37 with the previous day's 10-year yield).</p>
+<h3>3.5 LLM look-ahead</h3>
+<p><b>The module uses no LLM.</b> It calls no model and reads no LLM-generated number. The FinRobot functions it uses
+(<code>calculate_dcf</code>, <code>calculate_sensitivity</code>, <code>adjust_beta_blume</code>) are deterministic
+arithmetic; in FinRobot an LLM chooses the DCF assumptions, while here every assumption comes from as_of data or a stated
+constant. The FinRobot defaults the README rules out (fixed rates, consensus growth, forward-P/E peers) are not used,
+nor are the database's <code>pe</code> and <code>ev_multiple</code> columns, and the module reads no
+<code>student_data</code> file.</p>
+<p><b>The development process is the remaining channel.</b> I wrote and debugged the module with Claude Code, an AI
+coding assistant whose training data runs past all three periods, and anyone who designs a backtested module in 2026
+already knows how 2017–2026 turned out: for example, that semiconductor and other growth stocks rallied in 2023–2025. That knowledge could enter through the choice of
+methods, constants or filter rule, without any data being read. What limits it: the
+constants are stated with their sources and checked in §3.4; only two filter parameters were tuned, on dev and val;
+test was run after the commit; the sensitivity grid in §5.2 shows the conclusions do not depend on the constants; and
+the result is the opposite of what tuning with hindsight would produce, since the filter removes exactly the expensive
+growth names that went on to rally. This channel cannot be ruled out completely.</p>
+
+<h2>4. Results</h2>
+<h3>4.1 Evaluation script output, against the course example</h3>
+<!-- TABLE:eval -->
+<p>The rank IC is negative at every horizon in dev and val: the names the module called cheap did worse than the ones
+it called expensive (126 sessions: −0.111, t −2.37, in dev; −0.117, t −2.08, in val). In test it is close to zero
+(+0.032, t +0.64). The course's one-method example is just as negative, so combining three methods did not change the
+sign, as the README expected for growth stocks. The example cannot be evaluated on test without a third test run, so
+it is compared on dev and val only.</p>
+<p class="small"><b>How the IC t-statistics are computed.</b> Every IC t-statistic in this report is the course script's:
+the mean of the monthly rank ICs divided by their standard deviation over √(number of months), which treats the months
+as independent. The forward windows (63, 126 and 252 sessions) start one month apart, so they overlap and the monthly
+ICs are serially correlated; these t-values therefore overstate the precision. I read them as rough guides to
+significance, not formal tests. The swap comparisons (§4.4 and §5.6) use Newey-West t-statistics instead.</p>
+<p><b>How often does [low, high] contain the later price?</b> The ranges have no stated predictive coverage level. For
+the two multiple methods, low and high are the 25th and 75th percentiles of the historical or peer multiples: they
+describe the middle half of the multiple distribution, not a 50% chance for the price a year later. The DCF's low and
+high are the extremes of its WACC × growth grid, which has no probability attached, and the combined range mixes both.
+I report their one-year price coverage as a descriptive diagnostic rather than a calibration test. The price 252
+sessions later lands inside the range 35% (dev), 39% (val) and 26% (test) of the time. The misses are lopsided: the
+price ends above high two to four times as often as below low (59% against 15% in test), so the range sits low, the
+same bias as the negative median mispricing. Widening the multiple bands to 10–90% (dev and val only, §5.2) more than
+doubles the width and raises coverage to 56–59%, and the misses stay mostly on the upside. I therefore read [low, high]
+as the spread of the methods' views, not as a confidence interval.</p>
+<!-- TABLE:range -->
+<h3>4.2 Ablation: dev, val and test against every baseline</h3>
+<!-- TABLE:ablation -->
+<!-- FIG:equity -->
+<p>C equals A and D equals B because this is the valuation group: timing stays at the <code>full</code> baseline. The
+filter lowers return in dev and test and raises it slightly in val. Against the market, A matches SPY's Sharpe in dev
+(0.980 against 0.982) while B is below it; in val both are below SPY and QQQ; in test A beats QQQ but not SPY, and B is
+below both.</p>
+<h3>4.3 Marginal contribution of the filter</h3>
+<!-- TABLE:marginal -->
+<p>Two effects hold in all three periods: volatility is lower (−0.70, −1.58 and −2.47 pp) and turnover is higher
+(+2.54, +1.93 and +0.99 a year), because the filter changed portfolio targets and generated additional trades. The drawdown is shallower in val and test and
+0.88 pp deeper in dev. Return is not stable: −5.18 pp CAGR in dev, +1.02 pp in val, −14.59 pp in test. The test cost
+is the largest because the filter fired most often there, 7.7 removals a week against 4.1 in dev and 3.3 in val: in the
+2024–2026 rally the median candidate's combined fair value was 29% below its price, so many more names were above every
+method's value. Measured against its baseline, the filter is stable in what it does (it lowers risk, and costs return
+whenever expensive growth keeps rising) but not in whether that pays.</p>
+<h3>4.4 What the filter actually removes</h3>
+<!-- TABLE:swaps -->
+<p>Most removed names would not have been held anyway. To see what the filter changes in the portfolio, I called the
+backtester's <code>target_weights()</code> a second time each week on the unfiltered candidates, with the same tradeable
+set and B's actual positions. Names in the unfiltered targets but not in B's are the removed holdings; names in B's
+targets but not in the unfiltered ones are their replacements. On average 1.88 of the 10 holdings were swapped a week
+in dev (in 185 of 261 weeks) and 1.24 in val (75 of 104 weeks).</p>
+<p>In dev the replacements did worse than the names they replaced at every horizon, by 1.89 pp over 21 sessions
+(Newey-West t −2.25) and 4.03 pp over 63 (t −2.16): the negative rank IC, seen at the portfolio level. In val the
+difference over the week a swap is held is zero (−0.03 pp), so the replacement comparison provides little evidence of
+better stock selection. Differences in weights, compounding and the return path may help explain B's gain over A in
+val; this comparison does not attribute it. Over 63–126
+sessions the removed names again did better, though not significantly. Limits: both sides are equal-weighted, costs are
+ignored, windows stop at the period end, and weekly windows overlap, hence the Newey-West t.</p>
+
+<h2>5. Robustness</h2>
+<h3>5.1 Across years</h3>
+<!-- TABLE:ic_by_year -->
+<p class="small">Years are the calendar years of the months valued. DCF, EV/EBITDA, peer P/E and the flag columns come from
+the per-method diagnostics (<code>analysis/method_diagnostics.py</code>, committed configuration) and exist for dev and val
+only; the test rows are read from the single logged test evaluation, not a new run.</p>
+<p>The combined 126-session IC is negative in six of seven dev and val years (2021 is the exception, +0.05), and no single
+method is reliably positive: EV/EBITDA is +0.12 in 2019 and peer P/E +0.11 in 2021, and each is negative in other years. In test the IC is
++0.21 in 2024 and −0.14 in 2025. The flag ("at least two methods, price above all of them") picked out weaker names
+only in 2018, when flagged names returned −6.8% over the next 126 sessions against +2.5% for the rest. In 2019–2021 the
+flagged names beat the rest, and even in 2022, when expensive growth fell, they did not do worse (−4.1% against −4.8%).</p>
+<h3>5.2 Sensitivity of the valuation assumptions (dev and val only, after the test run)</h3>
+<!-- TABLE:sensitivity -->
+<!-- FIG:sens -->
+<p class="small">Rank corr: mean monthly Spearman correlation of mispricing with the committed configuration's. Flag
+overlap: Jaccard overlap of the flagged (month, ticker) pairs. "=" marks changes that move only [low, high], which leave
+the filter and portfolio B unchanged.</p>
+<ul>
+<li><b>The sign of the signal does not depend on the assumptions.</b> In all 18 configurations that move fair values
+the 126-session IC is negative: −0.123 to −0.092 in dev, −0.171 to −0.104 in val. The ranking hardly moves (rank
+correlation at least 0.926 in dev and 0.935 in val).</li>
+<li><b>Neither does the dev result.</b> B loses to A in dev in all 18 (Sharpe B − A from −0.175 to −0.085). In val B beats
+A in 15 of 18.</li>
+<li><b>What moves B is how many names get flagged.</b> Across the 18, names removed a week and B's Sharpe have a Spearman
+correlation of −0.72 in dev and −0.71 in val. Changes that raise DCF values (ERP 4%, 15-year projection, terminal growth
+3%) flag fewer names and cost less.</li>
+<li><b>The committed constants were not val-optimal</b>: 11 of the 17 alternatives do better on val. They were set once
+and not tuned.</li>
+<li><b>Range coverage is set by the band width, not the fair values</b>: 31.5–37.2% (dev) and 35.7–43.4% (val) across
+the 18, against 55.6% and 59.3% with 10–90% multiple bands.</li>
+</ul>
+<p>Two results I report without acting on them. Turning off the share-basis alignment moves Sharpe B − A from −0.134
+to −0.175 in dev but from +0.024 to +0.073 in val; the alignment stays because it fixes data that is wrong by a factor of
+10, and the two periods point in opposite directions. The best val configuration is a 3-year price window (val B
++2.81% against A −6.24%, Sharpe 0.188 against 0.028); it was the best of 18 on two years of data, found after the test
+run, so it is a candidate for future work, not a reason to change the submission.</p>
+<h3>5.3 Which filter rule (dev and val only, after the test run)</h3>
+<!-- TABLE:rules -->
+<!-- FIG:rules -->
+<p>No rule rescues dev, and every rule beats A in val, so the split between the periods belongs to the periods, not to
+the rule. The committed rule is 3rd of 8 in dev and 7th of 8 in val. Single methods remove 5.5–11.5 names a week and
+cost more in dev than the committed rule; peer P/E alone is the best rule in val and the second worst in dev. The rule
+without the DCF (EV/EBITDA + peer P/E) beats the committed rule in both periods (Sharpe +0.059 in dev, +0.085 in val)
+although it removes more names. It was found after the test run, among 8 rules on two periods, so it is not a
+reason to change the submission; §5.5 explains it.</p>
+<h3>5.4 Hash-seed dependence of the course backtester</h3>
+<!-- TABLE:seeds -->
+<p><code>portfolio/backtester.py:148</code> loops over a Python set, and orders are sorted only by the change in share
+count, so names with equal changes fill in set order, which depends on <code>PYTHONHASHSEED</code>. A is the same under seeds 0–4 in dev,
+but in val seed 2 gives −5.84% (Sharpe 0.035) against −6.24% (0.028) under the others. B is identical under all five
+seeds in both periods, and B beats A in val under every seed. Every number in this report uses seed 0.</p>
+
+<h3>5.5 Where the three methods disagree (diagnostic, after the test run)</h3>
+<p class="small"><code>analysis/dcf_diagnostic.py</code> on the submitted configuration's evaluation sample. Growth is the DCF's year-1
+revenue growth estimate before its clip, recomputed on each as_of (known for 695 of 895 dev rows and 355 of 364 val
+rows). A diagnostic, not a new rule.</p>
+<!-- TABLE:dcf_quintiles -->
+<p>I expected the DCF, with growth capped at 35% and fading to 2.5%, to be the method that penalises fast growers. It is
+the opposite. In dev the DCF's value / price is above one in every growth quintile except the slowest, and in val it
+does not fall with growth. The peer P/E is the method that penalises growth: its value / price falls from the slowest
+to the fastest quintile in both periods (0.77 to 0.48 in dev, 0.97 to 0.63 in val), because a fast grower's trailing
+P/E is high against the median of its sector. EV/EBITDA against the stock's own history is roughly flat, since that
+history already prices the stock's growth. In a flag the price must exceed the highest of the values; that is
+EV/EBITDA in 58% of dev flags and 79% of val flags, the DCF in 33% and 21%, and the peer P/E, usually the lowest
+value, almost never.</p>
+<!-- TABLE:dcf_groups -->
+<p>This explains why the rule without the DCF does better (§5.3). In the submitted rule the DCF acts as a veto: a stock
+the two multiples call expensive is kept whenever its DCF value is above the price, which is true of every stock in
+the third group. Those vetoed stocks are the ones that went on to lag (over 126 sessions, dev +5.3% against +10.1% for
+unflagged stocks; val −2.1% against +6.8%), while the stocks all three methods call expensive, the ones the submitted
+rule removes, beat the unflagged rest in both periods. The methods disagree about growth stocks in a structured way,
+and requiring all of them to agree keeps the disputed names that lagged and removes the consensus-expensive names that
+kept rising. These are descriptive statistics on overlapping monthly windows, without significance tests, on the
+evaluation sample rather than the portfolio; they point the same way as the rule ablation.</p>
+
+<h3>5.6 A growth-adjusted, finer-peer variant (exploratory, after the test run)</h3>
+<p>Two weaknesses of the design are a peer P/E that ignores growth (§5.5) and peer groups that are too coarse: the
+data's "Technology" sector holds 127 tickers, semiconductors and software together. I tried both fixes in a separate
+file, <code>analysis/valuation_v2.py</code>, which was never run on test and is not the submission. It changes only the
+peer method; the DCF, the EV/EBITDA history, the combination and the filter rule are the submitted ones.</p>
+<ul>
+<li><b>Correlation peers (v2a):</b> the 15 index members on as_of whose weekly returns over the last 52 weeks correlate
+most with the stock (at least 40 weeks of overlap), with the sector as a fallback.</li>
+<li><b>Growth-adjusted peer P/E (v2b):</b> each peer's P/E divided by 100 × its revenue growth (the DCF's year-1
+estimate, clipped to 5–50%); the stock's fair P/E is the median peer ratio × 100 × its own growth.</li>
+<li><b>Both (v2c).</b> The constants were fixed before the first run and not tuned. With both changes switched off, v2
+reproduces the submitted module exactly (portfolio B identical in dev and val, dev diagnostics identical row by row),
+and the look-ahead poison test of §3.2 passes for v2c on all 14 dates.</li>
+</ul>
+<!-- TABLE:v2_eval -->
+<!-- TABLE:v2_portfolio -->
+<!-- TABLE:v2_years -->
+<p>The growth adjustment is the change that matters. Correlation peers alone barely change the portfolio and make the
+peer signal more negative (val peer IC126 −0.149 → −0.181): among stocks that move together, the expensive ones did even
+better. With both changes (v2c) the filter's Sharpe cost against A in dev falls from −0.134 to −0.038, about 70% less,
+and val Sharpe rises from 0.052 to 0.082. The gain is in the growth rally: in 2021 v1 trailed A by 14.38 pp and v2c by
+4.49 pp, while all versions earn the same in 2017. Over 21 sessions, v2c's replacements do as well as the names they
+replace (−0.07 pp, against −1.89 pp for v1), but over 126 sessions the removed names still do better.</p>
+<p>Two cautions. First, the dev IC improvement is mostly a sample effect: the growth estimate needs seven quarters of
+filings, so the growth-adjusted peer method has no values in most of 2017, when the IC was most negative; on the rows
+both versions value, the dev IC126 hardly changes. In val the coverage is the same, and there the adjustment does move
+the combined IC126 from −0.117 to −0.062 (v2b). Second, this direction was chosen after seeing every period, test
+included, so within the dev, val and test periods evaluated here there is no unseen period left to check it; the
+forward period would be the first. The signal stays negative in every version and no
+version beats A in dev: the growth adjustment makes the filter much cheaper, not useful.</p>
+
+<h2>6. Number of test-period runs: 2</h2>
+<!-- TABLE:testruns -->
+<p>Both runs used <code>PYTHONHASHSEED=0</code> and came after the configuration was chosen on val and committed; nothing in
+the module changed afterwards. One caveat about the log: <code>record_test_run</code> checks for uncommitted student files
+with a path that does not match <code>valuation/student_valuation.py</code>, so <code>student_files_uncommitted</code> is
+always false. The log therefore proves that HEAD was <code>8288c74</code> at both runs, but not that the working tree was
+clean. The supporting evidence is that the committed module, on a fresh clone, reproduces every dev and val number
+exactly.</p>
+
+<h2>7. What did not work, and what I would do next</h2>
+<ul>
+<li><b>The signal has the wrong sign for this universe.</b> Among the selection model's top growth names, the expensive
+ones kept outperforming in dev and val, whichever method or assumption I used, and with a growth-adjusted peer
+multiple too (§5.6). In these backtests the filter reduced volatility but usually did so at the expense of return.</li>
+<li><b>The consensus rule was part of the problem.</b> The methods disagree about growth stocks in a structured way
+(peer P/E calls them expensive, the DCF calls them cheap), and requiring all of them to agree removed the wrong names
+(§5.5).</li>
+<li><b>As a risk tool it is expensive.</b> The volatility it removes (0.7–2.5 pp) costs up to 14.6 pp of CAGR in a rally.
+Holding less of the portfolio is the natural benchmark for this trade-off; I have not tested whether it reaches the
+same risk level at a smaller cost.</li>
+<li><b>The ranges sit low.</b> They have no stated coverage level; as a descriptive check, they contain the price a year
+later 26–39% of the time, and they miss mostly on the upside (§4.1).</li>
+<li><b>Next:</b> a growth-adjusted peer multiple (combined with correlation peers, it removed about 70% of the filter's
+dev Sharpe shortfall, §5.6), and no DCF veto
+(§5.5), both tested on data that has not been seen; a freshness limit on fundamentals;
+point-in-time sector labels; ERP and terminal-growth sources dated before 2017 (or the ERP published each January);
+the 3-year price window; and using the valuation as a position-size overlay instead of a hard filter.</li>
+</ul>
+
+<h2>8. Judgment: would I put money behind this module?</h2>
+<p>I would not put money behind this module in its current form. My aim was to reduce exposure to growth stocks whose prices appeared to reflect overly optimistic expectations. The module compares stock prices with estimates from DCF, historical EV/EBITDA multiples, and P/E multiples of index constituents in the same GICS sector. It excludes a stock only if at least two estimates are available and its price exceeds all available estimates.</p>
+<p>The portfolio results leave me unconvinced that the risk reduction was worth the returns given up. B had lower total returns than A on dev and test, although it performed slightly better on validation. Its volatility was lower in all three periods. However, maximum drawdown improved only on validation and test and worsened on dev. B also had lower Sharpe ratios on dev and test. Higher turnover added trading costs, which were already deducted from the reported returns. The small validation advantage gives me little additional confidence. Replacement stocks performed almost the same as excluded stocks during the holding week, offering little evidence of better stock selection.</p>
+<p>I also question whether the valuation signal reliably identifies stocks to exclude. Rank IC126 was −0.111 on dev and −0.117 on validation, meaning that stocks classified as cheaper tended to have lower subsequent return rankings. Test IC126 was positive at +0.032, but its t-statistic of 0.64 offered little evidence of a reliable positive relationship. The sector P/E method may partly explain the negative IC by penalizing high-growth stocks. The growth-adjusted version had less negative IC on dev and validation, although neither was statistically significant. The improvement on dev mainly reflected changes in sample coverage, while the validation improvement reflected the growth adjustment itself. Since this version was explored after testing, I would still need independent evidence before relying on it.</p>
+<p>Before reconsidering, I would test the changes proposed in §7: adjusting peer P/E for growth and removing DCF’s ability to block an exclusion. Making exclusions harder would move B closer to A, without establishing that the valuation signal had improved. I would set the revised rules before running the forward evaluation and reviewing its results. I would then look for replacement stocks to outperform excluded stocks over 21 and 63 trading days. I would also want a positive IC126 with statistical support and a Sharpe ratio after costs at least as high as A’s. Finally, I would compare the module with simply reducing equity exposure to judge whether the additional complexity provides a worthwhile benefit.</p>
+
+<h2>Appendix: reproducing the numbers</h2>
+<p><b>One command:</b> <code>submissions/Assignment2_YuxiLuo_yl5960/reproduce.sh</code> regenerates the dev and val
+evaluation and ablation, runs <code>check_submission.py</code>, and compares every file with the shipped
+<code>output/</code>; <code>reproduce.sh --all</code> also reruns every analysis below and compares it file by file. It never
+runs the test period. Paths below are relative to the submission folder (<code>analysis/</code> holds the scripts and
+their results).</p>
+<p class="small">Individual commands, from <code>Fall-2026/Assignment2/source_code/</code> with the course environment,
+<code>export PYTHONHASHSEED=0</code> and <code>A=../submissions/Assignment2_YuxiLuo_yl5960/analysis</code>; final
+configuration commit <code>8288c74</code>. Never rerun the test commands (they are listed only to show what produced
+the test files).</p>
+<table class="small">
+<colgroup><col style="width:62%"><col style="width:38%"></colgroup>
+<thead><tr><th>command</th><th>produces</th></tr></thead>
+<tbody>
+<tr><td><code>python evaluate_valuation.py --period dev --example</code>, then rename the output to <code>valuation_eval_dev_example.csv</code>; same for val</td><td>§4.1 course example rows</td></tr>
+<tr><td><code>python evaluate_valuation.py --period dev</code> (and <code>val</code>)</td><td>§4.1, §5.1</td></tr>
+<tr><td><code>python run_portfolio.py --period dev --ablation --timing full</code> (and <code>val</code>)</td><td>§4.2, §4.3, figure 1</td></tr>
+<tr><td><code>python check_submission.py --valuation</code></td><td>0 FAIL, 1 WARN (the 2 test runs), 6 PASS</td></tr>
+<tr><td><code>python $A/tune_filter.py --period dev --tag m2_p0.0 --set FILTER_MIN_METHODS=2 --set FILTER_PREMIUM=0.0 --log $A/tuning_seeded.jsonl</code> (each grid point)</td><td>§1.4</td></tr>
+<tr><td><code>python $A/method_diagnostics.py --period dev</code> (and <code>val</code>)</td><td>§5.1 per-method columns</td></tr>
+<tr><td><code>python $A/run_sensitivity.py</code>, then <code>summarize_sensitivity.py</code></td><td>§5.2</td></tr>
+<tr><td><code>python $A/filter_study.py --period dev --variant committed</code> (8 rules × 2 periods)</td><td>§4.4, §5.3</td></tr>
+<tr><td><code>python $A/spot_check_basis.py</code></td><td>§2 spot check</td></tr>
+<tr><td><code>python $A/lookahead_test.py</code>; <code>python $A/constant_binding.py</code></td><td>§3.2, §3.4</td></tr>
+<tr><td><code>PYTHONHASHSEED=&lt;s&gt; python $A/seed_check.py --period dev</code> (s = 0–4, and val)</td><td>§5.4</td></tr>
+<tr><td><code>python $A/dcf_diagnostic.py</code></td><td>§5.5</td></tr>
+<tr><td><code>python $A/v2_eval.py --period dev --variant v2c</code>;
+<code>python $A/filter_study.py --period dev --variant committed --version v2c</code>
+(v2_0, v2a, v2b, v2c × dev, val); <code>python $A/lookahead_test.py --version v2c</code></td><td>§5.6 (never on test)</td></tr>
+<tr><td>Test (already run, do not rerun): <code>evaluate_valuation.py --period test</code>; <code>run_portfolio.py --period test --ablation --timing full</code></td><td>test rows of §4, §6</td></tr>
+</tbody></table>
+
+</body>
+</html>
