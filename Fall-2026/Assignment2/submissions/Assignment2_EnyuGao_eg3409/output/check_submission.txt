@@ -1,0 +1,12 @@
+[PASS] timing/student_timing.py static scan: no direct data, network or LLM access
+[PASS] exposure() on 6 sample dates: a number in [0, 1], same answer twice
+[PASS] exposure() speed: slowest call 0.00s; about 520 weekly calls per backtest
+[PASS] valuation/student_valuation.py static scan: no direct data, network or LLM access
+[PASS] value() on 6 sample dates: columns, ranges and mispricing consistent; repeatable
+[PASS] value() coverage: valued 101 of 120 candidates
+[PASS] filter_candidates() on 6 sample dates: only removes rows
+[PASS] value() speed: slowest call 0.96s; about 60 monthly calls per evaluation period
+[PASS] filter_candidates() speed: slowest call 3.43s; about 520 weekly calls per backtest
+[WARN] test-period runs: 2 logged in output/test_runs.jsonl; report this number
+
+0 FAIL, 1 WARN, 9 PASS
