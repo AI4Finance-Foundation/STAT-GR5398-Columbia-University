@@ -1,0 +1,11 @@
+
+2017-01-03 -> 2021-12-31: 60 months, 1200 candidate-months, slowest value_detail 0.74s
+               coverage   IC63   t63  IC126  t126  IC252  t252
+combined          0.588 -0.051 -1.28 -0.060 -1.22 -0.004 -0.09
+dcf               0.567 -0.118 -2.47 -0.103 -2.00 -0.085 -2.06
+ev_ebitda         0.580 -0.083 -2.17 -0.008 -0.25  0.028  0.87
+peer_multiple     0.532  0.012  0.27 -0.009 -0.17  0.030  0.81
+price 252 sessions later inside [low, high]: 32% of 705;  median (high/low - 1) 80%
+median mispricing -3.8%, median method_spread 2.38, share n_methods>=2 97%
+flagged (price above every method) share 14.4%; mean next-126 return flagged +13.1% vs rest +8.5%
+peer groups: correlation 667, sector fallback 176

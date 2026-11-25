@@ -1,0 +1,25 @@
+{
+ "run": "tuning/dev_B_m3_p0.5",
+ "start": "2017-01-03",
+ "end": "2021-12-31",
+ "total_return_pct": 218.94,
+ "cagr_pct": 26.15,
+ "volatility_pct": 28.01,
+ "sharpe": 0.97,
+ "max_drawdown_pct": -32.98,
+ "calmar": 0.793,
+ "trades": 1150,
+ "turnover_per_year": 11.37,
+ "avg_removed_per_week": 0.9,
+ "SPY_total_return_pct": 130.39,
+ "SPY_sharpe": 0.982,
+ "QQQ_total_return_pct": 245.56,
+ "QQQ_sharpe": 1.225,
+ "tag": "m3_p0.5",
+ "period": "dev",
+ "overrides": {
+  "FILTER_MIN_METHODS": 3,
+  "FILTER_PREMIUM": 0.5
+ },
+ "seconds": 228
+}

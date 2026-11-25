@@ -1,0 +1,67 @@
+  return pd.concat(out)
+
+===== dev: 895 rows, growth known for 695
+
+1) median value / price by growth quintile (rows where the method values the stock)
+          growth_median    dcf  ev_ebitda  peer_pe  dcf_n  flagged
+growth_q                                                          
+Q1 slow          -0.022  0.803      0.768    0.767    138    0.486
+Q2                0.068  1.259      0.856    0.968    131    0.312
+Q3                0.136  1.681      0.885    0.719    138    0.262
+Q4                0.197  1.509      1.002    0.637    138    0.123
+Q5 fast           0.298  1.274      0.977    0.484    135    0.225
+
+2) binding method among 196 committed-rule flags, by growth group (share of flags)
+binding             dcf  ev_ebitda  peer_multiple
+fast                                             
+bottom 60% growth  0.31       0.57           0.11
+top 40% growth     0.40       0.60           0.00
+All                0.33       0.58           0.09
+binding            dcf  ev_ebitda  peer_multiple  All
+fast                                                 
+bottom 60% growth   46         85             17  148
+top 40% growth      19         29              0   48
+All                 65        114             17  196
+
+3) flagged by which rule: count, median growth, mean next-63 / next-126 return
+                  n  growth_median  dcf_present  ret63  ret126
+group                                                         
+EV+peer only    149          0.159        1.000  0.024   0.053
+both            172          0.099        0.936  0.073   0.135
+committed only   28          0.037        1.000  0.113   0.109
+neither         546          0.151        0.626  0.053   0.101
+committed-only flags, methods present: {(True, True, False): 27, (True, False, True): 1}
+EV+peer-only flags: median DCF value / price 1.489 share with DCF above price 1.0
+
+===== val: 364 rows, growth known for 355
+
+1) median value / price by growth quintile (rows where the method values the stock)
+          growth_median    dcf  ev_ebitda  peer_pe  dcf_n  flagged
+growth_q                                                          
+Q1 slow           0.055  1.386      1.080    0.974     68    0.169
+Q2                0.118  1.310      1.038    0.965     71    0.155
+Q3                0.154  0.985      0.973    0.927     60    0.197
+Q4                0.210  1.079      1.058    0.807     72    0.167
+Q5 fast           0.326  1.259      0.970    0.625     66    0.271
+
+2) binding method among 68 committed-rule flags, by growth group (share of flags)
+binding             dcf  ev_ebitda
+fast                              
+bottom 60% growth  0.08       0.92
+top 40% growth     0.35       0.65
+All                0.21       0.79
+binding            dcf  ev_ebitda  All
+fast                                  
+bottom 60% growth    3         34   37
+top 40% growth      11         20   31
+All                 14         54   68
+
+3) flagged by which rule: count, median growth, mean next-63 / next-126 return
+                  n  growth_median  dcf_present  ret63  ret126
+group                                                         
+EV+peer only     34          0.144        1.000 -0.051  -0.021
+both             50          0.169        1.000  0.027   0.107
+committed only   18          0.146        1.000 -0.062  -0.068
+neither         262          0.151        0.897  0.030   0.068
+committed-only flags, methods present: {(True, True, False): 18}
+EV+peer-only flags: median DCF value / price 1.466 share with DCF above price 1.0

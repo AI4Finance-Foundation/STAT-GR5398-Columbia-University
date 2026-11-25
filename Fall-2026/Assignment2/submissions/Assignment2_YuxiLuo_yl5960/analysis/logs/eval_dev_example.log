@@ -1,0 +1,14 @@
+/Users/yl/Columbia/2026 Fall/Bruce Yang MR/assignment 2/course-repo/Fall-2026/Assignment2/source_code/evaluate_valuation.py:111: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: g["mispricing"].corr(g[col], method="spearman") if len(g) >= 5 else np.nan)
+/Users/yl/Columbia/2026 Fall/Bruce Yang MR/assignment 2/course-repo/Fall-2026/Assignment2/source_code/evaluate_valuation.py:111: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: g["mispricing"].corr(g[col], method="spearman") if len(g) >= 5 else np.nan)
+/Users/yl/Columbia/2026 Fall/Bruce Yang MR/assignment 2/course-repo/Fall-2026/Assignment2/source_code/evaluate_valuation.py:111: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: g["mispricing"].corr(g[col], method="spearman") if len(g) >= 5 else np.nan)
+
+Valuation, 2017-01-03 -> 2021-12-31, top 20 growth_tech candidates each month
+valued 900 of 1200 candidate-months (75%)
+rank IC  63 sessions: mean -0.129   t -2.70   months 57
+rank IC 126 sessions: mean -0.087   t -1.81   months 57
+rank IC 252 sessions: mean -0.068   t -1.91   months 57
+price 252 sessions later inside [low, high]: 35% of 900
+median mispricing -25.3%   median method_spread 1.00

@@ -1,0 +1,25 @@
+{
+ "run": "tuning/dev_B_m2_p1.0",
+ "start": "2017-01-03",
+ "end": "2021-12-31",
+ "total_return_pct": 222.95,
+ "cagr_pct": 26.47,
+ "volatility_pct": 28.15,
+ "sharpe": 0.976,
+ "max_drawdown_pct": -32.97,
+ "calmar": 0.803,
+ "trades": 1149,
+ "turnover_per_year": 11.14,
+ "avg_removed_per_week": 0.4,
+ "SPY_total_return_pct": 130.39,
+ "SPY_sharpe": 0.982,
+ "QQQ_total_return_pct": 245.56,
+ "QQQ_sharpe": 1.225,
+ "tag": "m2_p1.0",
+ "period": "dev",
+ "overrides": {
+  "FILTER_MIN_METHODS": 2,
+  "FILTER_PREMIUM": 1.0
+ },
+ "seconds": 228
+}

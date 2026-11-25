@@ -1,0 +1,56 @@
+{
+ "period": "dev",
+ "overrides": {
+  "HISTORY_SESSIONS": "756"
+ },
+ "months": 60,
+ "asked": 1200,
+ "rows": {
+  "combined": {
+   "coverage": 0.746,
+   "IC63": -0.122,
+   "t63": -2.89,
+   "IC126": -0.11,
+   "t126": -2.35,
+   "IC252": -0.082,
+   "t252": -1.97
+  },
+  "dcf": {
+   "coverage": 0.564,
+   "IC63": -0.111,
+   "t63": -2.27,
+   "IC126": -0.093,
+   "t126": -1.76,
+   "IC252": -0.079,
+   "t252": -1.97
+  },
+  "ev_ebitda": {
+   "coverage": 0.58,
+   "IC63": -0.087,
+   "t63": -2.23,
+   "IC126": -0.012,
+   "t126": -0.35,
+   "IC252": 0.023,
+   "t252": 0.65
+  },
+  "peer_multiple": {
+   "coverage": 0.699,
+   "IC63": -0.086,
+   "t63": -1.72,
+   "IC126": -0.062,
+   "t126": -1.24,
+   "IC252": -0.059,
+   "t252": -1.43
+  }
+ },
+ "range_inside": 0.347,
+ "range_n": 895,
+ "median_width": 0.828,
+ "median_mispricing": -0.088,
+ "median_spread": 1.841,
+ "share_2plus": 0.779,
+ "flag_share": 0.166,
+ "flagged_ret126": 0.1355,
+ "rest_ret126": 0.0899,
+ "slowest_s": 1.09
+}

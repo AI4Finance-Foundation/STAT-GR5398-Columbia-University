@@ -1,0 +1,58 @@
+{
+ "run": "tuning/val_B_study_dcf",
+ "start": "2022-01-03",
+ "end": "2023-12-29",
+ "total_return_pct": -3.27,
+ "cagr_pct": -1.66,
+ "volatility_pct": 26.47,
+ "sharpe": 0.069,
+ "max_drawdown_pct": -38.73,
+ "calmar": -0.043,
+ "trades": 362,
+ "turnover_per_year": 10.07,
+ "avg_removed_per_week": 7.7,
+ "SPY_total_return_pct": 2.65,
+ "SPY_sharpe": 0.165,
+ "QQQ_total_return_pct": 3.42,
+ "QQQ_sharpe": 0.195,
+ "variant": "dcf",
+ "period": "val",
+ "swaps": {
+  "weeks": 104,
+  "weeks_with_swap": 96,
+  "names_swapped_per_week": 2.93,
+  "h5": {
+   "n": 95,
+   "out_mean": 0.004,
+   "in_mean": 0.0035,
+   "in_minus_out": -0.0006,
+   "t_nw": -0.12,
+   "in_beats_out": 0.495
+  },
+  "h21": {
+   "n": 92,
+   "out_mean": 0.0216,
+   "in_mean": 0.013,
+   "in_minus_out": -0.0086,
+   "t_nw": -0.58,
+   "in_beats_out": 0.467
+  },
+  "h63": {
+   "n": 83,
+   "out_mean": 0.0551,
+   "in_mean": 0.0069,
+   "in_minus_out": -0.0482,
+   "t_nw": -1.36,
+   "in_beats_out": 0.349
+  },
+  "h126": {
+   "n": 70,
+   "out_mean": 0.094,
+   "in_mean": 0.0029,
+   "in_minus_out": -0.0911,
+   "t_nw": -2.11,
+   "in_beats_out": 0.343
+  }
+ },
+ "seconds": 51
+}

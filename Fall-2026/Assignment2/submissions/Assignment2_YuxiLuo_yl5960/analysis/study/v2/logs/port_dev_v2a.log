@@ -1,0 +1,59 @@
+{
+ "run": "tuning/dev_B_study_committed_v2a",
+ "start": "2017-01-03",
+ "end": "2021-12-31",
+ "total_return_pct": 166.89,
+ "cagr_pct": 21.73,
+ "volatility_pct": 27.56,
+ "sharpe": 0.852,
+ "max_drawdown_pct": -33.77,
+ "calmar": 0.643,
+ "trades": 1278,
+ "turnover_per_year": 12.6,
+ "avg_removed_per_week": 4.1,
+ "SPY_total_return_pct": 130.39,
+ "SPY_sharpe": 0.982,
+ "QQQ_total_return_pct": 245.56,
+ "QQQ_sharpe": 1.225,
+ "variant": "committed",
+ "version": "v2a",
+ "period": "dev",
+ "swaps": {
+  "weeks": 261,
+  "weeks_with_swap": 185,
+  "names_swapped_per_week": 1.93,
+  "h5": {
+   "n": 184,
+   "out_mean": 0.0071,
+   "in_mean": 0.0035,
+   "in_minus_out": -0.0035,
+   "t_nw": -1.17,
+   "in_beats_out": 0.505
+  },
+  "h21": {
+   "n": 181,
+   "out_mean": 0.0353,
+   "in_mean": 0.0195,
+   "in_minus_out": -0.0158,
+   "t_nw": -1.89,
+   "in_beats_out": 0.425
+  },
+  "h63": {
+   "n": 172,
+   "out_mean": 0.0923,
+   "in_mean": 0.0581,
+   "in_minus_out": -0.0341,
+   "t_nw": -2.24,
+   "in_beats_out": 0.297
+  },
+  "h126": {
+   "n": 159,
+   "out_mean": 0.1819,
+   "in_mean": 0.1048,
+   "in_minus_out": -0.0771,
+   "t_nw": -1.68,
+   "in_beats_out": 0.27
+  }
+ },
+ "seconds": 125
+}
