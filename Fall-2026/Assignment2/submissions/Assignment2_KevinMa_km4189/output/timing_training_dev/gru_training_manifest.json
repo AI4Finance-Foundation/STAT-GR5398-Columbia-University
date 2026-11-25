@@ -1,0 +1,82 @@
+{
+  "status": "NEW_DEV_TRAINING_RUN",
+  "warning": "This is a new documented training run, not recovery of historical weights. Cross-platform exact equality is not guaranteed.",
+  "bank_sha256_float32_le": "e6368e1a37e95ba3fea20f15ad87d9ef94e745daf301f965766007f0135ace75",
+  "data_sha256": {
+    "daily_adjusted.parquet": "5e5972854acdae9e3c57afc08fe056b519f44f0185f2a3c89831498baed0e56f",
+    "market_series.parquet": "e38d2d4106162670e79464ec9d4beec476e118ecd9f992a784c1ec2605851abc"
+  },
+  "created_utc": "2026-11-25T09:06:36.951441+00:00",
+  "dataset": "Course QQQ/SPY/^VIX adjusted daily prices; DEV only, 2016 lookback to 2021-12-31",
+  "labels": "Future five trading sessions, min/max/last adjusted QQQ close return / 0.08",
+  "inputs": "20 days x 6 features, fixed normalization copied from frozen student_timing.py",
+  "architecture": {
+    "input_size": 6,
+    "hidden_size": 8,
+    "num_layers": 1,
+    "head_size": 3,
+    "gate_order": "reset, update, new"
+  },
+  "optimization": {
+    "seed": 5398,
+    "epochs_initial": 75,
+    "epochs_update": 35,
+    "lr_initial": 0.003,
+    "lr_update": 0.0015,
+    "weight_decay": 0.01,
+    "loss": "SmoothL1Loss(beta=0.25)",
+    "torch_version": "2.15.0+cpu"
+  },
+  "checkpoints": [
+    {
+      "year": 2017,
+      "last_complete_label": "2017-12-29",
+      "training_examples": 246,
+      "epochs_this_year": 75,
+      "learning_rate": 0.003,
+      "train_smooth_l1": 0.035239603370428085,
+      "torch_vs_numpy_max_abs_error": 2.610819033188605e-08,
+      "eligible_for_inference_from": 2018
+    },
+    {
+      "year": 2018,
+      "last_complete_label": "2018-12-31",
+      "training_examples": 497,
+      "epochs_this_year": 35,
+      "learning_rate": 0.0015,
+      "train_smooth_l1": 0.08496620506048203,
+      "torch_vs_numpy_max_abs_error": 2.3832954720859334e-08,
+      "eligible_for_inference_from": 2019
+    },
+    {
+      "year": 2019,
+      "last_complete_label": "2019-12-31",
+      "training_examples": 749,
+      "epochs_this_year": 35,
+      "learning_rate": 0.0015,
+      "train_smooth_l1": 0.08163286745548248,
+      "torch_vs_numpy_max_abs_error": 1.2354209766307633e-08,
+      "eligible_for_inference_from": 2020
+    },
+    {
+      "year": 2020,
+      "last_complete_label": "2020-12-31",
+      "training_examples": 1002,
+      "epochs_this_year": 35,
+      "learning_rate": 0.0015,
+      "train_smooth_l1": 0.10843884199857712,
+      "torch_vs_numpy_max_abs_error": 1.89274712569798e-08,
+      "eligible_for_inference_from": 2021
+    },
+    {
+      "year": 2021,
+      "last_complete_label": "2021-12-31",
+      "training_examples": 1254,
+      "epochs_this_year": 35,
+      "learning_rate": 0.0015,
+      "train_smooth_l1": 0.10454704612493515,
+      "torch_vs_numpy_max_abs_error": 1.2378558678083351e-08,
+      "eligible_for_inference_from": 2022
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+(finrl) PS C:\Users\kisum\Desktop\Fall 26\GE5398\repo\Fall-2026\Assignment2\submissions\Assignment2_KevinMa_km4189> python reproduce.py --check-only --data-dir "C:\Users\kisum\Desktop\Fall 26\GE5398\Assignment 2\source_code\data"
+Course source and data fingerprints MATCH.
+(finrl) PS C:\Users\kisum\Desktop\Fall 26\GE5398\repo\Fall-2026\Assignment2\submissions\Assignment2_KevinMa_km4189> python reproduce.py --verify-training --data-dir "C:\Users\kisum\Desktop\Fall 26\GE5398\Assignment 2\source_code\data" --out "$env:TEMP\GR5398_KevinMa_Pretest"
+Course source and data fingerprints MATCH.
+> train_timing.py --course-root . --verify
+2017: 246 fully observed examples; loss=0.035240; gate-check=2.61e-08; deploy no earlier than 2018
+2018: 497 fully observed examples; loss=0.084966; gate-check=2.38e-08; deploy no earlier than 2019
+2019: 749 fully observed examples; loss=0.081633; gate-check=1.24e-08; deploy no earlier than 2020
+2020: 1002 fully observed examples; loss=0.108439; gate-check=1.89e-08; deploy no earlier than 2021
+2021: 1254 fully observed examples; loss=0.104547; gate-check=1.24e-08; deploy no earlier than 2022
+Output directory: C:\Users\kisum\AppData\Local\Temp\gr5398_lpps3qjy\output\timing_training_dev
+Timing source has NOT been modified.
+Q {'year': 2018, 'decisions': 51, 'action_rows': 65, 'last_complete_label': '2018-12-28', 'rmse': 0.5270486749819105, 'deploy_from': 2019}
+Q {'year': 2019, 'decisions': 103, 'action_rows': 125, 'last_complete_label': '2019-12-27', 'rmse': 0.4330345883220078, 'deploy_from': 2020}
+Q {'year': 2020, 'decisions': 156, 'action_rows': 199, 'last_complete_label': '2020-12-31', 'rmse': 0.6350727632315596, 'deploy_from': 2021}
+Q {'year': 2021, 'decisions': 208, 'action_rows': 258, 'last_complete_label': '2021-12-31', 'rmse': 0.5861144730898858, 'deploy_from': 2022}
+2017 weight_ih_l0     exact=True max_diff=0.000e+00
+2017 weight_hh_l0     exact=True max_diff=0.000e+00
+2017 bias_ih_l0       exact=True max_diff=0.000e+00
+2017 bias_hh_l0       exact=True max_diff=0.000e+00
+2017 head_weight      exact=True max_diff=0.000e+00
+2017 head_bias        exact=True max_diff=0.000e+00
+2018 weight_ih_l0     exact=True max_diff=0.000e+00
+2018 weight_hh_l0     exact=True max_diff=0.000e+00
+2018 bias_ih_l0       exact=True max_diff=0.000e+00
+2018 bias_hh_l0       exact=True max_diff=0.000e+00
+2018 head_weight      exact=True max_diff=0.000e+00
+2018 head_bias        exact=True max_diff=0.000e+00
+2019 weight_ih_l0     exact=True max_diff=0.000e+00
+2019 weight_hh_l0     exact=True max_diff=0.000e+00
+2019 bias_ih_l0       exact=True max_diff=0.000e+00
+2019 bias_hh_l0       exact=True max_diff=0.000e+00
+2019 head_weight      exact=True max_diff=0.000e+00
+2019 head_bias        exact=True max_diff=0.000e+00
+2020 weight_ih_l0     exact=True max_diff=0.000e+00
+2020 weight_hh_l0     exact=True max_diff=0.000e+00
+2020 bias_ih_l0       exact=True max_diff=0.000e+00
+2020 bias_hh_l0       exact=True max_diff=0.000e+00
+2020 head_weight      exact=True max_diff=0.000e+00
+2020 head_bias        exact=True max_diff=0.000e+00
+2021 weight_ih_l0     exact=True max_diff=0.000e+00
+2021 weight_hh_l0     exact=True max_diff=0.000e+00
+2021 bias_ih_l0       exact=True max_diff=0.000e+00
+2021 bias_hh_l0       exact=True max_diff=0.000e+00
+2021 head_weight      exact=True max_diff=0.000e+00
+2021 head_bias        exact=True max_diff=0.000e+00
+Embedded SHA256: e6368e1a37e95ba3fea20f15ad87d9ef94e745daf301f965766007f0135ace75
+Trained  SHA256: e6368e1a37e95ba3fea20f15ad87d9ef94e745daf301f965766007f0135ace75
+EXACT PASS
+Q maximum coefficient error: 0.0
+Q TOLERANCE PASS
+Unified training finished: C:\Users\kisum\AppData\Local\Temp\gr5398_lpps3qjy\output\timing_training_dev
+> check_submission.py --timing
+[PASS] timing\student_timing.py static scan: no direct data, network or LLM access
+[PASS] exposure() on 6 sample dates: a number in [0, 1], same answer twice
+[PASS] exposure() speed: slowest call 0.05s; about 520 weekly calls per backtest
+[PASS] test-period runs: 0 logged in output\test_runs.jsonl; report this number
+
+0 FAIL, 0 WARN, 4 PASS
+> evaluate_timing.py --period dev
+
+SPY timing, 2017-01-03 -> 2021-12-31
+
+                total_return_pct  cagr_pct  volatility_pct  sharpe  max_drawdown_pct  calmar  avg_exposure  time_in_market_pct  exposure_changes
+timing                                                                                                                                          
+student                   100.91     15.00           13.23   1.123            -19.98   0.751         0.900                96.7             104.0
+full                      130.39     18.20           18.86   0.982            -33.72   0.540         1.000               100.0               0.0
+sma200                     90.07     13.73           12.74   1.074            -15.86   0.866         0.894                89.4              10.0
+engine                     82.82     12.85           10.78   1.175            -13.73   0.935         0.830                84.4             122.0
+SPY buy & hold            130.39     18.20           18.86   0.982            -33.72   0.540         1.000                 NaN               NaN
+
+Crises, percent (fall_avoided > 0 is good, rebound_missed > 0 is bad)
+
+                 fall_strategy_pct  fall_benchmark_pct  fall_avoided_pct  rebound_strategy_pct  rebound_benchmark_pct  rebound_missed_pct
+crisis  timing                                                                                                                           
+2018Q4  engine              -12.16              -19.35              7.19                 14.31                  26.02               11.71
+        full                -19.35              -19.35             -0.00                 26.02                  26.02                0.00
+        sma200              -14.71              -19.35              4.64                  6.40                  26.02               19.62
+        student             -15.38              -19.35              3.97                 17.00                  26.02                9.02
+2020-03 engine              -13.64              -33.72             20.07                 15.21                  57.36               42.16
+        full                -33.72              -33.72             -0.00                 57.36                  57.36                0.00
+        sma200              -12.49              -33.72             21.23                 15.22                  57.36               42.14
+        student             -19.83              -33.72             13.88                 28.28                  57.36               29.09
+> run_portfolio.py --period dev --ablation --timing student
+running A_selection  2017-01-03 -> 2021-12-31
+running B_valuation  2017-01-03 -> 2021-12-31
+running C_timing_student  2017-01-03 -> 2021-12-31
+running D_both_student  2017-01-03 -> 2021-12-31
+run                  dev_A_selection dev_B_valuation dev_C_timing_student dev_D_both_student
+start                     2017-01-03      2017-01-03           2017-01-03         2017-01-03
+end                       2021-12-31      2021-12-31           2021-12-31         2021-12-31
+total_return_pct              226.02          226.02               179.14             179.14
+cagr_pct                       26.71           26.71                22.83              22.83
+volatility_pct                 28.26           28.26                22.28              22.28
+sharpe                          0.98            0.98                1.035              1.035
+max_drawdown_pct              -32.99          -32.99               -25.09             -25.09
+calmar                          0.81            0.81                 0.91               0.91
+trades                          1092            1092                 1427               1427
+turnover_per_year              10.48           10.48                11.12              11.12
+SPY_total_return_pct          130.39          130.39               130.39             130.39
+SPY_sharpe                     0.982           0.982                0.982              0.982
+QQQ_total_return_pct          245.56          245.56               245.56             245.56
+QQQ_sharpe                     1.225           1.225                1.225              1.225
+avg_removed_per_week             NaN             0.0                  NaN                0.0
+avg_exposure                     NaN             NaN                  0.9                0.9
+> evaluate_timing.py --period val
+C:\Users\kisum\AppData\Local\Temp\gr5398_lpps3qjy\evaluate_timing.py:45: FutureWarning: The default fill_method='pad' in Series.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
+  ret = spy.pct_change().reindex(expo.index).fillna(0.0)
+C:\Users\kisum\AppData\Local\Temp\gr5398_lpps3qjy\evaluate_timing.py:45: FutureWarning: The default fill_method='pad' in Series.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
+  ret = spy.pct_change().reindex(expo.index).fillna(0.0)
+C:\Users\kisum\AppData\Local\Temp\gr5398_lpps3qjy\evaluate_timing.py:45: FutureWarning: The default fill_method='pad' in Series.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
+  ret = spy.pct_change().reindex(expo.index).fillna(0.0)
+C:\Users\kisum\AppData\Local\Temp\gr5398_lpps3qjy\evaluate_timing.py:45: FutureWarning: The default fill_method='pad' in Series.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
+  ret = spy.pct_change().reindex(expo.index).fillna(0.0)
+
+SPY timing, 2022-01-03 -> 2023-12-29
+
+                total_return_pct  cagr_pct  volatility_pct  sharpe  max_drawdown_pct  calmar  avg_exposure  time_in_market_pct  exposure_changes
+timing                                                                                                                                          
+student                     8.79      4.34           15.01   0.358            -16.55   0.262         0.833                90.2              73.0
+full                        2.65      1.33           19.53   0.165            -24.50   0.054         1.000               100.0               0.0
+sma200                      6.77      3.36           16.87   0.280            -21.46   0.156         0.874                87.4               6.0
+engine                      1.74      0.87           10.37   0.136            -14.65   0.060         0.633                62.5              89.0
+SPY buy & hold              2.65      1.33           19.53   0.165            -24.50   0.054         1.000                 NaN               NaN
+
+Crises, percent (fall_avoided > 0 is good, rebound_missed > 0 is bad)
+
+                fall_strategy_pct  fall_benchmark_pct  fall_avoided_pct  rebound_strategy_pct  rebound_benchmark_pct  rebound_missed_pct
+crisis timing                                                                                                                           
+2022   engine              -14.62               -24.5              9.88                  4.61                  15.78               11.17
+       full                -24.50               -24.5             -0.00                 15.78                  15.78               -0.00
+       sma200              -21.46               -24.5              3.04                 15.78                  15.78               -0.00
+       student             -16.27               -24.5              8.22                 11.45                  15.78                4.33
+> run_portfolio.py --period val --ablation --timing student
+running A_selection  2022-01-03 -> 2023-12-29
+running B_valuation  2022-01-03 -> 2023-12-29
+running C_timing_student  2022-01-03 -> 2023-12-29
+running D_both_student  2022-01-03 -> 2023-12-29
+run                  val_A_selection val_B_valuation val_C_timing_student val_D_both_student
+start                     2022-01-03      2022-01-03           2022-01-03         2022-01-03
+end                       2023-12-29      2023-12-29           2023-12-29         2023-12-29
+total_return_pct               -6.24           -6.24                  4.8                4.8
+cagr_pct                        -3.2            -3.2                 2.39               2.39
+volatility_pct                 28.44           28.44                 23.9               23.9
+sharpe                         0.028           0.028                0.218              0.218
+max_drawdown_pct              -42.52          -42.52               -34.63             -34.63
+calmar                        -0.075          -0.075                0.069              0.069
+trades                           303             303                  522                522
+turnover_per_year               9.71            9.71                11.28              11.28
+SPY_total_return_pct            2.65            2.65                 2.65               2.65
+SPY_sharpe                     0.165           0.165                0.165              0.165
+QQQ_total_return_pct            3.42            3.42                 3.42               3.42
+QQQ_sharpe                     0.195           0.195                0.195              0.195
+avg_removed_per_week             NaN             0.0                  NaN                0.0
+avg_exposure                     NaN             NaN                0.833              0.833
+DEV/VAL reproduction output: C:\Users\kisum\AppData\Local\Temp\GR5398_KevinMa_Pretest

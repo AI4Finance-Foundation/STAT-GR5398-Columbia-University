@@ -1,0 +1,9 @@
+numpy==2.4.6
+pandas==2.3.3
+pyarrow>=14
+scikit-learn>=1.3
+pydantic>=2.5
+xgboost>=2.0
+lightgbm>=4.0
+# For offline training only: PyTorch CPU 2.15.0+cpu (as recorded in the final manifest).
+# Install separately using the appropriate PyTorch CPU wheel for your environment.

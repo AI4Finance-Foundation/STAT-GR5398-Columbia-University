@@ -1,0 +1,45 @@
+{
+  "gru_sha256": "e6368e1a37e95ba3fea20f15ad87d9ef94e745daf301f965766007f0135ace75",
+  "q_sha256": "6c43297d983bfe7c1da91e9ee18b943b231934a3d95fa479360d3b904fa880ab",
+  "q_ridge": 24.0,
+  "q_reward": "selection-only NAV close-to-close counterfactual; upside 0.08, downside 0.22, cost 0.0006, residual 0.00065",
+  "q_checkpoints": [
+    {
+      "year": 2018,
+      "decisions": 51,
+      "action_rows": 65,
+      "last_complete_label": "2018-12-28",
+      "rmse": 0.5270486749819105,
+      "deploy_from": 2019
+    },
+    {
+      "year": 2019,
+      "decisions": 103,
+      "action_rows": 125,
+      "last_complete_label": "2019-12-27",
+      "rmse": 0.4330345883220078,
+      "deploy_from": 2020
+    },
+    {
+      "year": 2020,
+      "decisions": 156,
+      "action_rows": 199,
+      "last_complete_label": "2020-12-31",
+      "rmse": 0.6350727632315596,
+      "deploy_from": 2021
+    },
+    {
+      "year": 2021,
+      "decisions": 208,
+      "action_rows": 258,
+      "last_complete_label": "2021-12-31",
+      "rmse": 0.5861144730898858,
+      "deploy_from": 2022
+    }
+  ],
+  "gru_manifest": "gru_training_manifest.json",
+  "training_end": "2021-12-31",
+  "numpy": "2.4.6",
+  "pandas": "2.3.3",
+  "torch": "2.15.0+cpu"
+}
