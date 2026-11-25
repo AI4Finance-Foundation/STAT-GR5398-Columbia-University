@@ -18,6 +18,7 @@ The principal research result is **not** a consistent improvement in growth-stoc
 ## Final model and integrity
 
 - **Pre-test frozen model commit:** `f88ada700dd8fa2ba46a4fe762b081d364d4616c`
+- **Git history note:** The original pre-test frozen commit was `f88ada700dd8fa2ba46a4fe762b081d364d4616c`, as recorded in the Test logs. After rebasing onto the updated course repository, the corresponding model commit became `be265c7550c1d09a1de672479332c82372501ad3`. Both commits contain the identical `student_valuation.py` Git blob (`9b78919c77918d39a0e2c3e8ec6c51473a1c2203`). The rebase did not modify the frozen valuation model.
 - **Module to grade:** `student_valuation.py`, a copy of `source_code/valuation/student_valuation.py` at the frozen commit.
 - **Test-period executions:** **2**, both after the freeze, recorded in `output/test_runs.jsonl`:
   1. `PYTHONHASHSEED=0 python run_portfolio.py --period test --ablation --timing engine`
