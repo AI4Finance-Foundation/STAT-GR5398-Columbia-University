@@ -1,0 +1,6 @@
+Strategy,run,start,end,total_return_pct,cagr_pct,volatility_pct,sharpe,max_drawdown_pct,calmar,trades,turnover_per_year,SPY_total_return_pct,SPY_sharpe,QQQ_total_return_pct,QQQ_sharpe,avg_exposure
+"A (seed=0, full run)",val_A_selection,2022-01-03,2023-12-29,-6.24,-3.2,28.44,0.028,-42.52,-0.075,303,9.71,2.65,0.165,3.42,0.195,
+Full timing (seed=0),val_C_timing_full,2022-01-03,2023-12-29,-6.24,-3.2,28.44,0.028,-42.52,-0.075,303,9.71,2.65,0.165,3.42,0.195,1.0
+"A (seed=0, student run)",val_A_selection,2022-01-03,2023-12-29,-6.24,-3.2,28.44,0.028,-42.52,-0.075,303,9.71,2.65,0.165,3.42,0.195,
+E5 (seed=0),val_C_timing_student,2022-01-03,2023-12-29,5.02,2.5,24.6,0.223,-36.66,0.068,377,10.62,2.65,0.165,3.42,0.195,0.918
+E5 (original Val archive),val_timing_student,2022-01-03,2023-12-29,5.02,2.5,24.6,0.223,-36.66,0.068,377,10.62,2.65,0.165,3.42,0.195,0.918

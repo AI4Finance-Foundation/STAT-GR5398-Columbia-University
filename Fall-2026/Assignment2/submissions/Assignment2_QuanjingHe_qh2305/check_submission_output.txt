@@ -1,0 +1,7 @@
+$ python check_submission.py --timing
+[PASS] timing\student_timing.py static scan: no direct data, network or LLM access
+[PASS] exposure() on 6 sample dates: a number in [0, 1], same answer twice
+[PASS] exposure() speed: slowest call 0.00s; about 520 weekly calls per backtest
+[PASS] test-period runs: 1 logged in output\test_runs.jsonl; report this number
+
+0 FAIL, 0 WARN, 4 PASS
