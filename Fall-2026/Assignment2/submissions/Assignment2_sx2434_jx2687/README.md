@@ -36,7 +36,7 @@ From this directory, run `python3 analysis/check_report_evidence.py` to verify a
 
 ## Investment judgments in Chinese
 
-An AI writing assistant helped draft and translate the judgments. The Chinese versions corresponding to page 1 are included below.
+An AI assistant helped translate the judgments from Chinese into English. The Chinese versions corresponding to page 1 are included below.
 
 **Patrick Xiong (sx2434)**
 
@@ -48,4 +48,4 @@ An AI writing assistant helped draft and translate the judgments. The Chinese ve
 
 **Jiao Xu (jx2687)**
 
-我目前不会把自己的钱交给这个过滤器自动交易。做历史 EV/EBITDA 估值时，最让我犹豫的是 NVDA。11 月 4 日调仓前，能看到的股价是 5.02 美元，已经高于历史估值上限 4.63 美元，但随后 63 个交易日它又涨了 22.11%。历史倍数能告诉我一只股票比过去贵，却不能单凭这一点决定要不要换掉它。我想连续记录每周被剔除和递补的股票，再看扣除成本后，换进去的股票是否持续表现更好。
+我目前不会把自己的钱交给这个过滤器自动交易。做历史 EV/EBITDA 估值时，最让我犹豫的是 NVDA。2019 年 11 月 4 日调仓前，能看到的股价是 5.02 美元，已经高于历史估值上限 4.63 美元，但随后 63 个交易日它又涨了 22.11%。历史倍数能告诉我一只股票比过去贵，却不能单凭这一点决定要不要换掉它。我想连续记录每周被剔除和递补的股票，再看扣除成本后，换进去的股票是否持续表现更好。
