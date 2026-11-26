@@ -22,7 +22,7 @@
 
 Git commit: `32a02b5a004dfc50a968538c0a28b426cfa48337`
 
-Medium blog: TODO link
+Medium blog: [TODO link](https://medium.com/@xz3490/testing-a-valuation-filter-on-growth-stocks-b18f34b979f5?postPublishedType=initial)
 
 ## Reproduce
 
