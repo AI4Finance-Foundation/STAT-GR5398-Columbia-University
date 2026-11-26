@@ -1,0 +1,259 @@
+== worst_k grid
+running k=1 depth=10 lookback=182
+running k=1 depth=15 lookback=182
+running k=1 depth=20 lookback=182
+running k=2 depth=10 lookback=182
+running k=2 depth=15 lookback=182
+running k=2 depth=20 lookback=182
+running k=3 depth=10 lookback=182
+running k=3 depth=15 lookback=182
+running k=3 depth=20 lookback=182
+running k=2 depth=15 lookback=91
+running k=2 depth=15 lookback=365
+
+   rule  k  depth  rate_lookback  total_return_pct  cagr_pct  volatility_pct  sharpe  max_drawdown_pct  calmar  turnover_per_year  avg_removed_per_week
+worst_k  1     10            182            203.48     24.91           27.79   0.940            -33.04   0.754              11.70                   0.9
+worst_k  1     15            182            202.96     24.86           27.78   0.939            -33.04   0.753              11.68                   0.9
+worst_k  1     20            182            202.96     24.86           27.78   0.939            -33.04   0.753              11.68                   0.9
+worst_k  2     10            182            201.65     24.75           27.36   0.946            -32.79   0.755              12.95                   1.7
+worst_k  2     15            182            202.37     24.81           27.30   0.949            -32.79   0.757              12.94                   1.7
+worst_k  2     20            182            202.37     24.81           27.30   0.949            -32.79   0.757              12.94                   1.7
+worst_k  3     10            182            184.12     23.27           27.10   0.908            -34.30   0.678              13.30                   2.5
+worst_k  3     15            182            184.33     23.28           27.12   0.908            -34.30   0.679              13.24                   2.5
+worst_k  3     20            182            184.33     23.28           27.12   0.908            -34.30   0.679              13.24                   2.5
+worst_k  2     15             91            202.37     24.81           27.30   0.949            -32.79   0.757              12.94                   1.7
+worst_k  2     15            365            202.37     24.81           27.30   0.949            -32.79   0.757              12.94                   1.7
+
+              fwd5                     fwd21                     fwd63                
+              mean    median count      mean    median count      mean    median count
+side                                                                                  
+backfill  0.005002  0.004584   449  0.013315  0.016141   441  0.051060  0.051062   425
+removed   0.005738  0.005731   449  0.026807  0.032533   441  0.092534  0.088870   425
+
+most removed:
+ticker
+NVDA    74
+NFLX    38
+INTU    36
+NOW     35
+AMD     31
+MRVL    30
+ANSS    29
+ANET    21
+WDC     18
+ADSK    17
+== robustness
+running k=1 depth=10 lookback=182
+running k=1 depth=15 lookback=182
+running k=1 depth=20 lookback=182
+running k=2 depth=10 lookback=182
+running k=2 depth=15 lookback=182
+running k=2 depth=20 lookback=182
+running k=3 depth=10 lookback=182
+running k=3 depth=15 lookback=182
+running k=3 depth=20 lookback=182
+running k=2 depth=15 lookback=91
+running k=2 depth=15 lookback=365
+
+         rule  k  depth  rate_lookback  total_return_pct  cagr_pct  volatility_pct  sharpe  max_drawdown_pct  calmar  turnover_per_year  avg_removed_per_week
+worst_k_rates  1     10            182            228.25     26.88           28.05   0.990            -32.89   0.817              11.55                   0.4
+worst_k_rates  1     15            182            228.25     26.88           28.05   0.990            -32.89   0.817              11.55                   0.4
+worst_k_rates  1     20            182            228.25     26.88           28.05   0.990            -32.89   0.817              11.55                   0.4
+worst_k_rates  2     10            182            233.02     27.25           27.91   1.004            -32.95   0.827              12.79                   0.8
+worst_k_rates  2     15            182            233.47     27.29           27.86   1.006            -32.95   0.828              12.77                   0.8
+worst_k_rates  2     20            182            233.47     27.29           27.86   1.006            -32.95   0.828              12.77                   0.8
+worst_k_rates  3     10            182            239.68     27.76           27.70   1.023            -32.52   0.853              13.75                   1.1
+worst_k_rates  3     15            182            239.68     27.76           27.70   1.023            -32.52   0.853              13.75                   1.1
+worst_k_rates  3     20            182            239.68     27.76           27.70   1.023            -32.52   0.853              13.75                   1.1
+worst_k_rates  2     15             91            208.43     25.31           27.74   0.953            -33.01   0.767              13.51                   0.9
+worst_k_rates  2     15            365            227.28     26.81           27.73   0.996            -32.94   0.814              12.01                   0.9
+
+              fwd5                     fwd21                     fwd63                
+              mean    median count      mean    median count      mean    median count
+side                                                                                  
+backfill  0.000872  0.003246   196 -0.010717 -0.000972   192  0.022594  0.009252   190
+removed  -0.001284  0.000674   196  0.001151  0.015880   192  0.056048  0.068461   190
+
+most removed:
+ticker
+NVDA    43
+ANSS    24
+NOW     22
+NFLX    18
+MRVL    17
+EA      14
+ASML    10
+AMD      9
+INTU     8
+HPE      8
+== yearly
+period  year  A_ret  B_ret  B_minus_A  A_maxdd  B_maxdd
+   dev  2017  30.85  30.00      -0.84   -11.29   -11.69
+   dev  2018   4.65   5.43       0.77   -28.08   -27.58
+   dev  2019  22.61  22.69       0.08   -16.26   -16.24
+   dev  2020  37.96  39.05       1.10   -32.99   -32.95
+   dev  2021  40.77  42.62       1.86   -14.76   -12.18
+   val  2022 -38.68 -32.02       6.66   -42.52   -37.25
+   val  2023  52.90  47.32      -5.58   -10.64   -11.38
+== cost
+{'cost_bps': 6, 'run': 'A', 'total_return_pct': np.float64(226.02), 'cagr_pct': np.float64(26.71), 'sharpe': np.float64(0.98), 'max_drawdown_pct': np.float64(-32.99), 'calmar': np.float64(0.81), 'turnover_per_year': np.float64(10.48)}
+{'cost_bps': 6, 'run': 'B', 'total_return_pct': np.float64(233.47), 'cagr_pct': np.float64(27.29), 'sharpe': np.float64(1.006), 'max_drawdown_pct': np.float64(-32.95), 'calmar': np.float64(0.828), 'turnover_per_year': np.float64(12.77)}
+{'cost_bps': 12, 'run': 'A', 'total_return_pct': np.float64(215.75), 'cagr_pct': np.float64(25.9), 'sharpe': np.float64(0.957), 'max_drawdown_pct': np.float64(-33.01), 'calmar': np.float64(0.785), 'turnover_per_year': np.float64(10.49)}
+{'cost_bps': 12, 'run': 'B', 'total_return_pct': np.float64(220.1), 'cagr_pct': np.float64(26.25), 'sharpe': np.float64(0.977), 'max_drawdown_pct': np.float64(-33.06), 'calmar': np.float64(0.794), 'turnover_per_year': np.float64(12.78)}
+{'cost_bps': 20, 'run': 'A', 'total_return_pct': np.float64(202.09), 'cagr_pct': np.float64(24.79), 'sharpe': np.float64(0.926), 'max_drawdown_pct': np.float64(-33.07), 'calmar': np.float64(0.75), 'turnover_per_year': np.float64(10.49)}
+{'cost_bps': 20, 'run': 'B', 'total_return_pct': np.float64(205.19), 'cagr_pct': np.float64(25.05), 'sharpe': np.float64(0.942), 'max_drawdown_pct': np.float64(-33.15), 'calmar': np.float64(0.755), 'turnover_per_year': np.float64(12.77)}
+
+ cost_bps run  total_return_pct  cagr_pct  sharpe  max_drawdown_pct  calmar  turnover_per_year
+        6   A            226.02     26.71   0.980            -32.99   0.810              10.48
+        6   B            233.47     27.29   1.006            -32.95   0.828              12.77
+       12   A            215.75     25.90   0.957            -33.01   0.785              10.49
+       12   B            220.10     26.25   0.977            -33.06   0.794              12.78
+       20   A            202.09     24.79   0.926            -33.07   0.750              10.49
+       20   B            205.19     25.05   0.942            -33.15   0.755              12.77
+== ratelag
+      dgs10  total_return_pct  sharpe  max_drawdown_pct  calmar  turnover_per_year  avg_removed_per_week
+   same_day            233.47   1.006            -32.95   0.828              12.77                   0.8
+   lagged_1            227.33   0.992            -33.00   0.812              12.83                   0.7
+ dcf_lagged            233.47   1.006            -32.95   0.828              12.77                   0.8
+both_lagged            227.33   0.992            -33.00   0.812              12.83                   0.7
+== baseline
+running value
+running trailing_pe
+
+         rule   valuation  total_return_pct  cagr_pct  volatility_pct  sharpe  max_drawdown_pct  calmar  turnover_per_year  avg_removed_per_week
+worst_k_rates       value            233.47     27.29           27.86   1.006            -32.95   0.828              12.77                   0.8
+worst_k_rates trailing_pe            208.24     25.29           27.68   0.954            -32.69   0.774              12.58                   0.9
+== bootstrap
+dev {
+ "bootstrap_B_minus_A": {
+  "sessions": 1258,
+  "ann_return_diff": 0.0034,
+  "ann_return_diff_95ci": [
+   -0.0167,
+   0.0242
+  ],
+  "sharpe_diff": 0.0263,
+  "sharpe_diff_95ci": [
+   -0.0471,
+   0.1079
+  ],
+  "p_b_beats_a_sharpe": 0.753
+ },
+ "deflated_sharpe_B": {
+  "trials": 21,
+  "chosen_sharpe_ann": 1.006,
+  "trial_sharpes_ann": [
+   0.909,
+   0.937,
+   0.98,
+   0.983,
+   0.993,
+   0.858,
+   0.872,
+   0.854,
+   0.934,
+   0.897,
+   0.935,
+   0.99,
+   0.93,
+   0.991,
+   1.004,
+   1.006,
+   0.996,
+   0.953,
+   0.864,
+   1.023,
+   0.856
+  ],
+  "sr0_ann": 0.109,
+  "psr_vs_zero": 0.987,
+  "deflated_sharpe": 0.976
+ },
+ "deflated_sharpe_edge_B_minus_A": {
+  "trials": 20,
+  "chosen_sharpe_ann": 0.11,
+  "trial_sharpes_ann": [
+   -0.604,
+   -0.475,
+   -0.137,
+   -0.01,
+   -1.004,
+   -0.822,
+   -0.866,
+   -0.413,
+   -0.603,
+   -0.454,
+   0.038,
+   -0.502,
+   -0.094,
+   0.105,
+   0.11,
+   -0.021,
+   -0.358,
+   -0.657,
+   0.161,
+   -0.69
+  ],
+  "sr0_ann": 0.685,
+  "psr_vs_zero": 0.597,
+  "deflated_sharpe": 0.099
+ }
+}
+val {
+ "bootstrap_B_minus_A": {
+  "sessions": 500,
+  "ann_return_diff": 0.0313,
+  "ann_return_diff_95ci": [
+   -0.0264,
+   0.0906
+  ],
+  "sharpe_diff": 0.1134,
+  "sharpe_diff_95ci": [
+   -0.0914,
+   0.3164
+  ],
+  "p_b_beats_a_sharpe": 0.857
+ },
+ "deflated_sharpe_B": {
+  "trials": 12,
+  "chosen_sharpe_ann": 0.141,
+  "trial_sharpes_ann": [
+   0.028,
+   0.089,
+   0.029,
+   0.014,
+   0.005,
+   -0.111,
+   0.036,
+   0.178,
+   0.073,
+   0.018,
+   0.134,
+   0.141
+  ],
+  "sr0_ann": 0.128,
+  "psr_vs_zero": 0.579,
+  "deflated_sharpe": 0.507
+ },
+ "deflated_sharpe_edge_B_minus_A": {
+  "trials": 11,
+  "chosen_sharpe_ann": 0.68,
+  "trial_sharpes_ann": [
+   0.262,
+   0.0,
+   -0.115,
+   -0.191,
+   -1.061,
+   0.053,
+   0.81,
+   0.315,
+   -0.215,
+   0.615,
+   0.68
+  ],
+  "sr0_ann": 0.854,
+  "psr_vs_zero": 0.83,
+  "deflated_sharpe": 0.404
+ }
+}
+DONE

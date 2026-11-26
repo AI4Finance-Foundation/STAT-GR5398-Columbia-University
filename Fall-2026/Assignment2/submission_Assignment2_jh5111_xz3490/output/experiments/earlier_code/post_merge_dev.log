@@ -1,0 +1,57 @@
+running A_selection  2017-01-03 -> 2021-12-31
+running B_valuation  2017-01-03 -> 2021-12-31
+running C_timing_full  2017-01-03 -> 2021-12-31
+running D_both_full  2017-01-03 -> 2021-12-31
+run                  dev_A_selection dev_B_valuation dev_C_timing_full dev_D_both_full
+start                     2017-01-03      2017-01-03        2017-01-03      2017-01-03
+end                       2021-12-31      2021-12-31        2021-12-31      2021-12-31
+total_return_pct              226.02          233.47            226.02          233.47
+cagr_pct                       26.71           27.29             26.71           27.29
+volatility_pct                 28.26           27.86             28.26           27.86
+sharpe                          0.98           1.006              0.98           1.006
+max_drawdown_pct              -32.99          -32.95            -32.99          -32.95
+calmar                          0.81           0.828              0.81           0.828
+trades                          1092            1262              1092            1262
+turnover_per_year              10.48           12.77             10.48           12.77
+SPY_total_return_pct          130.39          130.39            130.39          130.39
+SPY_sharpe                     0.982           0.982             0.982           0.982
+QQQ_total_return_pct          245.56          245.56            245.56          245.56
+QQQ_sharpe                     1.225           1.225             1.225           1.225
+avg_removed_per_week             NaN             0.8               NaN             0.8
+avg_exposure                     NaN             NaN               1.0             1.0
+== value
+
+Valuation, 2017-01-03 -> 2021-12-31, top 20 growth_tech candidates each month
+valued 905 of 1200 candidate-months (75%)
+rank IC  63 sessions: mean -0.123   t -2.76   months 55
+rank IC 126 sessions: mean -0.116   t -2.57   months 55
+rank IC 252 sessions: mean -0.050   t -1.26   months 55
+price 252 sessions later inside [low, high]: 55% of 905
+median mispricing -2.0%   median method_spread 2.64
+== dcf
+
+Valuation, 2017-01-03 -> 2021-12-31, top 20 growth_tech candidates each month
+valued 814 of 1200 candidate-months (68%)
+rank IC  63 sessions: mean -0.136   t -3.26   months 54
+rank IC 126 sessions: mean -0.156   t -3.57   months 54
+rank IC 252 sessions: mean -0.083   t -2.46   months 54
+price 252 sessions later inside [low, high]: 40% of 814
+median mispricing +65.4%   median method_spread 1.00
+== ev
+
+Valuation, 2017-01-03 -> 2021-12-31, top 20 growth_tech candidates each month
+valued 665 of 1200 candidate-months (55%)
+rank IC  63 sessions: mean -0.093   t -2.36   months 44
+rank IC 126 sessions: mean -0.012   t -0.34   months 44
+rank IC 252 sessions: mean +0.050   t +1.48   months 44
+price 252 sessions later inside [low, high]: 42% of 665
+median mispricing -11.6%   median method_spread 1.00
+== peer_pe
+
+Valuation, 2017-01-03 -> 2021-12-31, top 20 growth_tech candidates each month
+valued 822 of 1200 candidate-months (68%)
+rank IC  63 sessions: mean -0.132   t -2.63   months 55
+rank IC 126 sessions: mean -0.086   t -1.68   months 55
+rank IC 252 sessions: mean -0.051   t -1.31   months 55
+price 252 sessions later inside [low, high]: 62% of 822
+median mispricing -25.9%   median method_spread 1.00

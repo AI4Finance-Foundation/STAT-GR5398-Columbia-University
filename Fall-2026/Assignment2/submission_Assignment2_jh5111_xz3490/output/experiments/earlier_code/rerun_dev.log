@@ -1,0 +1,83 @@
+running A_selection  2017-01-03 -> 2021-12-31
+running B_valuation  2017-01-03 -> 2021-12-31
+running C_timing_full  2017-01-03 -> 2021-12-31
+running D_both_full  2017-01-03 -> 2021-12-31
+run                  dev_A_selection dev_B_valuation dev_C_timing_full dev_D_both_full
+start                     2017-01-03      2017-01-03        2017-01-03      2017-01-03
+end                       2021-12-31      2021-12-31        2021-12-31      2021-12-31
+total_return_pct              226.02          227.35            226.02          227.35
+cagr_pct                       26.71           26.81             26.71           26.81
+volatility_pct                 28.26           27.86             28.26           27.86
+sharpe                          0.98           0.993              0.98           0.993
+max_drawdown_pct              -32.99          -32.66            -32.99          -32.66
+calmar                          0.81           0.821              0.81           0.821
+trades                          1092            1231              1092            1231
+turnover_per_year              10.48           12.48             10.48           12.48
+SPY_total_return_pct          130.39          130.39            130.39          130.39
+SPY_sharpe                     0.982           0.982             0.982           0.982
+QQQ_total_return_pct          245.56          245.56            245.56          245.56
+QQQ_sharpe                     1.225           1.225             1.225           1.225
+avg_removed_per_week             NaN             0.8               NaN             0.8
+avg_exposure                     NaN             NaN               1.0             1.0
+running k=1 depth=10 lookback=182
+running k=1 depth=15 lookback=182
+running k=1 depth=20 lookback=182
+running k=2 depth=10 lookback=182
+running k=2 depth=15 lookback=182
+running k=2 depth=20 lookback=182
+running k=3 depth=10 lookback=182
+running k=3 depth=15 lookback=182
+running k=3 depth=20 lookback=182
+running k=2 depth=15 lookback=91
+running k=2 depth=15 lookback=365
+
+         rule  k  depth  rate_lookback  total_return_pct  cagr_pct  volatility_pct  sharpe  max_drawdown_pct  calmar  turnover_per_year  avg_removed_per_week
+worst_k_rates  1     10            182            221.39     26.35           28.08   0.974            -32.77   0.804              11.82                   0.4
+worst_k_rates  1     15            182            218.43     26.11           28.11   0.967            -32.81   0.796              11.80                   0.4
+worst_k_rates  1     20            182            218.43     26.11           28.11   0.967            -32.81   0.796              11.80                   0.4
+worst_k_rates  2     10            182            229.82     27.01           27.87   0.998            -32.70   0.826              12.45                   0.8
+worst_k_rates  2     15            182            227.35     26.81           27.86   0.993            -32.66   0.821              12.48                   0.8
+worst_k_rates  2     20            182            227.35     26.81           27.86   0.993            -32.66   0.821              12.48                   0.8
+worst_k_rates  3     10            182            211.30     25.54           27.63   0.962            -32.56   0.785              13.51                   1.1
+worst_k_rates  3     15            182            206.81     25.18           27.61   0.952            -32.56   0.773              13.53                   1.1
+worst_k_rates  3     20            182            206.81     25.18           27.61   0.952            -32.56   0.773              13.53                   1.1
+worst_k_rates  2     15             91            227.46     26.82           27.83   0.994            -32.97   0.814              13.13                   0.9
+worst_k_rates  2     15            365            222.10     26.40           27.82   0.982            -32.96   0.801              11.94                   0.9
+
+              fwd5                     fwd21                     fwd63                
+              mean    median count      mean    median count      mean    median count
+side                                                                                  
+backfill  0.000393  0.002202   206 -0.011345 -0.001931   202  0.016459 -0.000415   200
+removed  -0.000304  0.000363   206  0.009418  0.015880   202  0.076124  0.071874   200
+
+most removed:
+ticker
+NVDA    62
+ANSS    25
+NOW     23
+MRVL    17
+EA      14
+AMD     11
+ASML     9
+INTU     7
+HPE      6
+ADI      5
+running value
+running trailing_pe
+
+         rule   valuation  total_return_pct  cagr_pct  volatility_pct  sharpe  max_drawdown_pct  calmar  turnover_per_year  avg_removed_per_week
+worst_k_rates       value            227.35     26.81           27.86   0.993            -32.66   0.821              12.48                   0.8
+worst_k_rates trailing_pe            208.24     25.29           27.68   0.954            -32.69   0.774              12.58                   0.9
+running none
+running abs
+running agree
+running worst_k
+running worst_k_rates
+
+                         total_return_pct  cagr_pct  volatility_pct  sharpe  max_drawdown_pct  calmar  turnover_per_year  avg_removed_per_week
+run                                                                                                                                           
+rules_dev_none                     226.02     26.71           28.26   0.980            -32.99   0.810              10.48                   NaN
+rules_dev_abs                      190.25     23.79           27.71   0.909            -34.82   0.683              12.45                   1.5
+rules_dev_agree                    203.17     24.88           27.87   0.937            -32.87   0.757              12.10                   0.8
+rules_dev_worst_k                  218.44     26.11           27.47   0.983            -33.45   0.781              13.09                   1.7
+rules_dev_worst_k_rates            227.35     26.81           27.86   0.993            -32.66   0.821              12.48                   0.8

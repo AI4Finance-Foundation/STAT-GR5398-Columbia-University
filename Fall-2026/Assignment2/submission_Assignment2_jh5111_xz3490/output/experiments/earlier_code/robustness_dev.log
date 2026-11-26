@@ -1,0 +1,39 @@
+running k=1 depth=10
+running k=1 depth=15
+running k=1 depth=20
+running k=2 depth=10
+running k=2 depth=15
+running k=2 depth=20
+running k=3 depth=10
+running k=3 depth=15
+running k=3 depth=20
+
+ k  depth  total_return_pct  cagr_pct  volatility_pct  sharpe  max_drawdown_pct  calmar  turnover_per_year  avg_removed_per_week
+ 1     10            202.87     24.85           27.94   0.935            -33.71   0.737              11.99                   0.9
+ 1     15            200.60     24.67           27.94   0.930            -33.70   0.732              11.96                   0.9
+ 1     20            200.60     24.67           27.94   0.930            -33.70   0.732              11.96                   0.9
+ 2     10            221.83     26.38           27.46   0.991            -33.54   0.787              13.08                   1.7
+ 2     15            218.44     26.11           27.47   0.983            -33.45   0.781              13.09                   1.7
+ 2     20            218.44     26.11           27.47   0.983            -33.45   0.781              13.09                   1.7
+ 3     10            168.22     21.85           27.18   0.864            -34.69   0.630              13.39                   2.4
+ 3     15            165.58     21.61           27.18   0.856            -34.63   0.624              13.41                   2.4
+ 3     20            165.58     21.61           27.18   0.856            -34.63   0.624              13.41                   2.4
+
+              fwd5                     fwd21                     fwd63                
+              mean    median count      mean    median count      mean    median count
+side                                                                                  
+backfill  0.004160  0.004198   443  0.006952  0.011323   443  0.035721  0.031295   443
+removed   0.004405  0.002824   443  0.027656  0.031398   443  0.092580  0.089921   443
+
+most removed:
+ticker
+NVDA    105
+NOW      48
+AMD      34
+ANSS     30
+MRVL     30
+INTU     25
+NFLX     17
+ADBE     15
+EA       14
+ADSK     14
