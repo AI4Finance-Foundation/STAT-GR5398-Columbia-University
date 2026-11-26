@@ -1,0 +1,16 @@
+{
+  "frozen_at": "2026-11-25T12:49:28-05:00",
+  "K": 1.983,
+  "split": "val",
+  "start": "2022-01-03",
+  "end": "2023-12-29",
+  "universe": "Course growth_tech selection with NVDA eligible in both arms",
+  "veto": "Three valid positive centers and valid DCF band. Weighted center strictly below 0.85 times prior close AND max/min central value <= K. Missing evidence abstains.",
+  "weights": "Equal thirds normally. If DCF width/center exceeds same-week eligible 75th percentile, DCF 1/6, peer 5/12, own history 5/12.",
+  "implementation": "weighted_valuation_research/study.py:evaluate",
+  "implementation_sha256": "53ed3e8810cfefdd2f9b3a2a26f87f4f4bc578d2dad38b17c421e345f2aea3e1",
+  "reference": "Course selection-only scores, weights, weekly execution, costs; no timing overlay",
+  "primary": "Net CAGR difference in percentage points, measured by course performance methodology",
+  "uncertainty": "Paired circular 20-session blocks, 5000 draws, seed 20261124 (original weighted study protocol).",
+  "selection_context": "K chosen on development data. Earlier experiments using other specifications have used this historical validation split."
+}

@@ -1,0 +1,27 @@
+--- a/selection/selector.py
++++ b/selection/selector.py
+@@ -669,6 +669,24 @@
+         all_feat_imp: list,
+     ) -> pd.DataFrame:
+         """Blend unified and bucket-split ranks with per-bucket alpha."""
++        # Equivalent compute pruning: when every blend weight is zero, the
++        # unified model cannot affect rank_score or weight_score. Keep all
++        # per-bucket fits and feature engineering exactly as in the course.
++        if all(float(alpha) == 0.0 for alpha in self._bucket_alpha.values()):
++            bucket_preds = bucket_preds.copy()
++            bucket_preds["bucket_pctile"] = bucket_preds.groupby(
++                ["bucket", "datadate"]
++            )["pred_ensemble_avg"].rank(pct=True)
++            bucket_preds["mixed_score"] = bucket_preds["bucket_pctile"]
++            bucket_preds["applied_alpha"] = 0.0
++            bucket_preds["rank_mixed"] = bucket_preds.groupby(
++                ["bucket", "datadate"]
++            )["mixed_score"].rank(ascending=False).astype(int)
++            bucket_preds["pred_ensemble_avg_bucket"] = bucket_preds["pred_ensemble_avg"]
++            bucket_preds["pred_ensemble_avg"] = bucket_preds["mixed_score"]
++            bucket_preds["rank_ensemble"] = bucket_preds["rank_mixed"]
++            return bucket_preds
++
+         logger.info("Mixed-alpha: training unified model on all stocks")
+         for bucket, alpha in self._bucket_alpha.items():
+             logger.info("  %s: alpha=%s", bucket, alpha)

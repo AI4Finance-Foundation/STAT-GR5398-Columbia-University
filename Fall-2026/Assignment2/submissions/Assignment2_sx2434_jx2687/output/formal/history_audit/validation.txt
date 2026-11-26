@@ -1,0 +1,35 @@
+PASS MSFT valid months reference: 50
+PASS MSFT median reference rounded to 2dp: 15.77848259501496
+PASS MSFT fair value reference rounded to cents: 171.60135192884934
+PASS Caller cutoff unchanged
+PASS Exactly 20 unique course candidates
+PASS AMD included: rank 1
+PASS Repeatability
+PASS All candidates retained including failures
+PASS Earlier four-year-end reference
+PASS 2021-06-30 MSFT quantiles and three prices
+PASS 2021-06-30 historical cutoff and availability
+PASS 2019-08-02 AMD quantiles and three prices
+PASS 2019-08-02 NFLX quantiles and three prices
+PASS 2019-08-02 AVGO quantiles and three prices
+PASS 2019-08-02 FISV quantiles and three prices
+PASS 2019-08-02 MCHP quantiles and three prices
+PASS 2019-08-02 TTWO quantiles and three prices
+PASS 2019-08-02 VRSK quantiles and three prices
+PASS 2019-08-02 CHKP quantiles and three prices
+PASS 2019-08-02 VRSN quantiles and three prices
+PASS 2019-08-02 MSFT quantiles and three prices
+PASS 2019-08-02 APH quantiles and three prices
+PASS 2019-08-02 MXIM quantiles and three prices
+PASS 2019-08-02 INTC quantiles and three prices
+PASS 2019-08-02 LRCX quantiles and three prices
+PASS 2019-08-02 CRM quantiles and three prices
+PASS 2019-08-02 JKHY quantiles and three prices
+PASS 2019-08-02 CSCO quantiles and three prices
+PASS 2019-08-02 historical cutoff and availability
+PASS Independent rebuild of all valid monthly multiples: max absolute difference 1.4210854715202004e-14
+PASS 11 valid months are unavailable; failure row retained
+PASS 12 valid months are accepted; valuation day excluded
+PASS nonpositive EBITDA is unavailable with a stated reason
+PASS earlier views re-query filings instead of backfilling latest revised values
+PASS empty ticker list and future-cutoff rejection

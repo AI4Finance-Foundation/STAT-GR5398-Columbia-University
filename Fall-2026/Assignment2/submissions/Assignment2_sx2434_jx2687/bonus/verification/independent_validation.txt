@@ -1,0 +1,14 @@
+PASS recorded training package versions unchanged; optional LightGBM remains absent
+PASS selector code hash matches the score-equivalence-validated optimization
+PASS frozen configuration SHA-256 fingerprints unchanged
+PASS dev/base_q3: dates, CAGR, Sharpe, drawdown, turnover and trades independently reconciled
+PASS dev/variant_q4: dates, CAGR, Sharpe, drawdown, turnover and trades independently reconciled
+PASS val/base_q3: dates, CAGR, Sharpe, drawdown, turnover and trades independently reconciled
+PASS val/variant_q4: dates, CAGR, Sharpe, drawdown, turnover and trades independently reconciled
+PASS no test-period runs recorded in the isolated working copy
+PASS configurations differ only in model.val_quarters: 3 versus 4
+PASS base_q3: 84 months; last cutoff 2023-11-30; 42,217 score rows
+PASS variant_q4: 84 months; last cutoff 2023-11-30; 41,987 score rows
+PASS Q3 and Q4 use identical input hashes
+PASS scoring-row differences are confined to non-growth buckets; growth_tech candidate keys match
+PASS two-month Q3 repeat agrees within 1e-8; top-ten membership identical

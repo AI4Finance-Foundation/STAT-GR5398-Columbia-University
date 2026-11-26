@@ -1,0 +1,9 @@
+[PASS] valuation/student_valuation.py static scan: no direct data, network or LLM access
+[PASS] value() on 6 sample dates: columns, ranges and mispricing consistent; repeatable
+[PASS] value() coverage: valued 71 of 120 candidates
+[PASS] filter_candidates() on 6 sample dates: only removes rows
+[PASS] value() speed: slowest call 0.29s; about 60 monthly calls per evaluation period
+[PASS] filter_candidates() speed: slowest call 0.50s; about 520 weekly calls per backtest
+[PASS] test-period runs: 0 logged in output/test_runs.jsonl; report this number
+
+0 FAIL, 0 WARN, 7 PASS
