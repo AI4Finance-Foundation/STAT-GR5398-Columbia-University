@@ -1,0 +1,13 @@
+period,scores,run,total_return_pct,cagr_pct,volatility_pct,sharpe,max_drawdown_pct,calmar,turnover_per_year
+dev,course scores,A,226.02,26.71,28.26,0.98,-32.99,0.81,10.48
+dev,course scores,B,232.65,27.22,27.82,1.005,-32.65,0.834,12.92
+dev,"retrained, unchanged",A,203.34,24.89,28.28,0.928,-33.31,0.747,10.13
+dev,"retrained, unchanged",B,203.89,24.94,27.9,0.938,-33.11,0.753,12.81
+dev,"retrained, growth_tech 50/50 blend",A,253.55,28.78,27.45,1.059,-33.59,0.857,10.49
+dev,"retrained, growth_tech 50/50 blend",B,275.42,30.34,27.05,1.115,-32.85,0.924,12.99
+val,course scores,A,-6.24,-3.2,28.44,0.028,-42.52,-0.075,9.71
+val,course scores,B,0.5,0.25,27.75,0.147,-37.8,0.007,10.41
+val,"retrained, unchanged",A,-5.11,-2.61,28.49,0.049,-41.38,-0.063,9.6
+val,"retrained, unchanged",B,2.95,1.47,27.58,0.191,-37.71,0.039,10.8
+val,"retrained, growth_tech 50/50 blend",A,-8.67,-4.47,28.18,-0.022,-43.03,-0.104,9.25
+val,"retrained, growth_tech 50/50 blend",B,0.35,0.18,27.87,0.145,-36.52,0.005,10.75
