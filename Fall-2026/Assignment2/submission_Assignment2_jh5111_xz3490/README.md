@@ -5,7 +5,7 @@
 | Name | UNI | Contribution |
 | --- | --- | --- |
 | Jiayi (Alisa) He | jh5111 | DCF (`dcf_value`), combining the methods in `value()`, `filter_candidates()`, A/B/C/D ablation runs, robustness experiments, merging the code |
-| Xinyu Zhang | xz3490 | Historical EV/EBITDA (`ev_ebitda_value`, `historical_ev_estimates`), peer P/E (`peer_pe_value`, `peer_pe_estimates`) |
+| Xinyu Zhang | xz3490 | Historical EV/EBITDA and peer P/E implementation; initial two-method aggregation; point-in-time data checks and development-period valuation evaluation; Medium formatting/publication |
 
 ## Contents
 
