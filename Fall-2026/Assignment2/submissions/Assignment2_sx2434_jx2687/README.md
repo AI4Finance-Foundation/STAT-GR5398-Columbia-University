@@ -33,3 +33,15 @@ The standalone valuation results use the course evaluator on development data an
 ## Reproducing the results
 
 From this directory, run `python3 analysis/check_report_evidence.py` to verify archived portfolio summaries and attributions without market data. The [step-by-step instructions](REPRODUCE.md) give the module installation paths, development and validation commands, environment, and provenance of the formal test. Table and case-study commands are listed in the [output guide](output/SOURCES.md).
+
+## Investment judgments in Chinese
+
+An AI writing assistant helped draft and translate the judgments. The Chinese versions corresponding to page 1 are included below.
+
+**Patrick Xiong (sx2434)**
+
+我不会用自己的钱让两票规则自动卖出，但我会用它提醒自己复核持仓。测试期最大回撤从 30.53% 降到 27.75%，这对我有价值。可在开发期，过滤组合期末比原选股少了约 6.46 万美元，其中一半以上来自少持有 NVDA。三种估值分歧大时，我会先保留原选股，查清它们对增长的判断差在哪里。这个做法在开发期有利、验证期不利，所以我想先用纸面交易看清楚：每少承受一点回撤，我放弃了多少上涨？
+
+**Jiao Xu (jx2687)**
+
+我目前不会把自己的钱交给这个过滤器自动交易。做历史 EV/EBITDA 估值时，最让我犹豫的是 NVDA。11 月 4 日调仓前，能看到的股价是 5.02 美元，已经高于历史估值上限 4.63 美元，但随后 63 个交易日它又涨了 22.11%。历史倍数能告诉我一只股票比过去贵，却不能单凭这一点决定要不要换掉它。我想连续记录每周被剔除和递补的股票，再看扣除成本后，换进去的股票是否持续表现更好。

@@ -28,6 +28,7 @@ Every result in `extension/` is from development or historical validation. The e
 
 | Directory | Contents |
 | --- | --- |
+| [DCF weight experiment](extension/weights/) | Equal weights versus a reduced DCF weight on sensitive weeks, before applying any disagreement cutoff. The summary reports net CAGR in percent. The intervals report paired differences in percentage points from a 20-session block bootstrap. The protocol specifies both weighting rules. |
 | `extension/protocol.json`, `extension/val_metrics.csv` | Time-stamped 1.983 specification and course-convention validation metrics. |
 | `extension/gate/` | Net metrics and daily NAVs for each fixed cutoff, including the ungated weighted filter (`K_inf`). The annual comparisons use the same initial-capital convention as the formal annual table. |
 | `extension/threshold/` | Full development curve, its leave-NVDA-out counterpart, and the MPWR/INTU events defining the peak. Each curve measures the difference against its own selection-only portfolio. |
